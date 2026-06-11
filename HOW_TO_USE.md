@@ -49,10 +49,53 @@ The LENS decides color: `Ion mono` (one color — geometry only), `Aurora`
 (sequence order), `Residue classes` (`n mod k`), `Signal` (sign), `Pulse`
 (magnitude).
 
+## The playable canvas
+
+The default scene is **Riemann's explicit formula**: the prime staircase
+`ψ(x)` with the smooth curve `x − Σ x^ρ/ρ` built from the first `K` zeta
+zeros. Drag the `K` slider and watch the curve grow wiggles that lock onto
+the staircase — primes assembling out of zero waves.
+
+From there, bend any view directly:
+
+- **Transform chips** (top-left of the canvas): drag an op (`log`, `sqrt`,
+  `mod m`, `× a`, `Δ`, `Σ`, …) onto the `x` or `y` row — or click to add it —
+  and the axis reshapes with an animated morph. Chips compose left to right;
+  values like `m` and `a` drag horizontally to scrub. `Ctrl+Z` undoes.
+- **RESIDUAL** (header): subtracts the best-known prediction for the current
+  view — `π(x) − Li(x)`, `ψ(x) − x`, `gap − ln p`, `M(x)/√x`, the normalized
+  Chebyshev race, or zero spacings against their mean. What survives the
+  subtraction is what the encoded theory does not explain.
+- **TWIN** (header): overlays Cramér-model pseudoprimes in rose. Structure
+  in both layers is generic to any random set with the primes' density;
+  structure only in the cyan layer is arithmetic.
+- **×2×4×8** (header): renders the same pipeline at growing range plus a
+  holdout panel that uses only the unseen range `(N, 2N]` — real structure
+  strengthens, flukes fade.
+- **LINK / PIN** (header): every view lives in the URL, so `LINK` copies an
+  exact reproducible link and `PIN` keeps it in the notebook.
+- On the polar plane, `▶ sweep` animates α and a readout shows the best
+  fraction `α/2π ≈ p/q` — spokes lock exactly when that fraction is exact.
+
+## Anomaly scan
+
+The `ANOMALY SCAN` panel sweeps residue classes, exponential-sum angles,
+and gap correlations without you choosing where to look. Candidates are
+found on primes `≤ N` and re-scored on the disjoint half `(N, 2N]`, so
+look-elsewhere flukes die at the holdout step. The leaderboard ranks the
+survivors; `view` opens one, `pin` keeps it in the notebook with an OEIS
+lookup link when a sequence is attached.
+
+Expect the top entries to be *known* structure (primes are odd, avoid
+multiples of 3, …) — that is the scanner working honestly. The interesting
+candidates are survivors further down that you cannot immediately explain.
+
 ## Presets
 
 | Preset | What you're seeing | Look for |
 | --- | --- | --- |
+| Riemann explicit formula | `ψ(x)` staircase vs `x − Σ x^ρ/ρ` | raise `K`: zero waves converging on the primes |
+| Family sweep mod q | one row per modulus q, columns are residues r/q | coherent vertical bands shared across the family |
 | Sacks spiral | primes on the `r = sqrt(p)` spiral | curved prime-rich streaks (polynomial paths) |
 | Ulam spiral | primes on a square spiral | dense and sparse diagonals (quadratics) |
 | Polar α-dial | each prime at angle `α·p` | turn `α` slowly until spokes or petals lock in |
@@ -68,7 +111,7 @@ The LENS decides color: `Ion mono` (one color — geometry only), `Aurora`
 
 `LAB` is a blank canvas for building your own relationships:
 
-1. Pick a domain: integer `n`, real `t`, or complex `s`.
+1. Pick a domain: integer `n`, primes only `p`, real `t`, or complex `s`.
 2. Drag objects from the palette; connect `OUT` handles to `IN` handles.
 3. Connect results to visual channels: `x position`, `y position`,
    `color hue`, or complex field `w`.

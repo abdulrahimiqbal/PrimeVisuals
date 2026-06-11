@@ -272,7 +272,7 @@ export default function PrimeVisuals() {
       ys = r.ys; if (r.xs) xs = r.xs;
       bounds = r.bounds || bounds; decor = r.decor || null; dmode = r.mode || dmode;
     }
-    if (chips.x.length || chips.y.length) {
+    if ((chips.x.length || chips.y.length) && xs.length) {
       xs = applyChips(xs, chips.x);
       ys = applyChips(ys, chips.y);
       bounds = padBounds(xs, ys, 0.07);
@@ -725,7 +725,14 @@ export default function PrimeVisuals() {
       setSelectedNodeId(null);
       setConnectFrom(null);
     }
-    else { setMode("patch"); setCfg(withDefaults(JSON.parse(JSON.stringify(item.cfg)))); }
+    else {
+      setMode("patch");
+      setCfg(withDefaults(JSON.parse(JSON.stringify(item.cfg))));
+      setChips({ x: [], y: [] });
+      setResidual(false);
+      setTwinMode("real");
+      setSweeping(false);
+    }
   };
 
   /* ----- config plumbing ----- */

@@ -2,10 +2,10 @@
 
 import { runScan, prepareScan, sequenceFor } from "./anomaly.js";
 
-self.onmessage = (e) => {
+self.onmessage = async (e) => {
   const { N } = e.data;
   try {
-    const results = runScan(N, (frac, note) => self.postMessage({ type: "progress", frac, note }));
+    const results = await runScan(N, (frac, note) => self.postMessage({ type: "progress", frac, note }));
     const prep = prepareScan(N);
     for (const r of results) {
       try { r.seq = sequenceFor(r, prep); } catch (err) { r.seq = null; }
