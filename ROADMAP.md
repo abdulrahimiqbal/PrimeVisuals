@@ -18,6 +18,11 @@ mathematics does not yet explain.
    built into the tool, not left to willpower.
 4. **Record everything reproducibly.** An anomaly that can't be re-rendered
    from a link is a memory, not a discovery.
+5. **Direct manipulation, layered complexity.** The default gesture is
+   dragging a math operation onto the picture and watching it respond.
+   Node graphs and formula text exist as deeper views of the same state,
+   never as a prerequisite. Complete freedom, nothing you can do breaks
+   the canvas.
 
 ## Phase 0 — Foundation (fast and trustworthy)
 
@@ -33,18 +38,41 @@ mathematics does not yet explain.
       zeros); Riemann–Siegel formula for ζ at larger t.
 - [ ] URL-encoded view state so any view is a shareable, reproducible link.
 
-## Phase 1 — See known structure properly
+## Phase 1 — The playable canvas
 
-- [ ] **Explicit formula view**: ψ(x) ≈ x − Σ x^ρ/ρ with a slider for the
-      number of zeros included — watch the prime staircase assemble out of
-      zero waves. The bridge between the tool's two halves.
-- [ ] α auto-sweep (play button) and a live continued-fraction readout of
-      α/2π, so spoke lock-in is *explained* the moment it is seen.
-- [ ] Drag-on-canvas parameter control.
+The centerpiece. Open the default Riemann-hypothesis scene, then bend the
+prime distribution by dragging math operations onto it. The goal is
+complete freedom and ease of use without overcomplicating the interface.
+
+- [ ] **Default RH scene**: the explicit-formula view — the prime staircase
+      ψ(x) with x − Σ x^ρ/ρ overlaid and a slider for how many zeros are
+      included, so the staircase visibly assembles out of zero waves. This
+      is the object you pick up and start playing with.
+- [ ] **Transform chips — drag ops onto the picture, not into a graph**:
+      drop `log`, `sqrt`, `mod m`, `× a`, `diff`, `Σ` directly onto an
+      axis, a curve, or the dot cloud and it applies to that channel. Each
+      channel shows its pipeline as a row of chips (`x: n → sqrt → × a`)
+      that can be reordered or removed. Node wiring is never required for
+      the common case.
+- [ ] **Animated transitions**: every applied or removed op morphs the
+      picture from old positions to new ones, so you *see what the
+      operation did* instead of a before/after jump cut.
+- [ ] **Everything scrubbable**: any constant inside a chip, and the knobs
+      `a` and `b`, drag in place. α auto-sweep (play button) with a live
+      continued-fraction readout of α/2π, so spoke lock-in explains itself.
+- [ ] **Freedom that is safe**: undo/redo history; ops compose
+      valid-by-construction (every op accepts whatever the previous one
+      produces); the canvas never blanks — the last valid picture stays up
+      while an edit is in flight.
+- [ ] **One state, four views — the complexity ladder**: presets → chip
+      rows → node canvas → formula text are progressively disclosed views
+      of the same underlying expression. Editing any one updates the
+      others; nobody is forced up the ladder to get work done.
+- [ ] Engine support for real play: sum-over-range node (Σ over n ≤ N —
+      Dirichlet series, exponential sums like Σ exp(2πi·α·p)) and a
+      primes-only domain.
 - [ ] Stats side panel per view: gap histogram vs. predicted distribution,
       residue counts vs. equidistribution, zero spacings vs. GUE.
-- [ ] Lab: sum-over-range node (Σ over n ≤ N — enables Dirichlet series and
-      exponential sums like Σ exp(2πi·α·p)) and a primes-only domain.
 
 ## Phase 2 — Hunt unexplained structure (the discovery loop)
 
