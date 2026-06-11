@@ -2,7 +2,7 @@
    Adding a visualization = adding an entry. */
 
 import { T } from "./theme.js";
-import { primesUpTo, mobiusUpTo, zetaHalf, ulamXY, ZEROS } from "./math.js";
+import { primesUpTo, mobiusUpTo, zetaHalf, ulamXY, ZEROS, primePowersUpTo, psiExplicit } from "./math.js";
 
 /* ───────────────────────── shared helpers ───────────────────────── */
 
@@ -56,6 +56,21 @@ export const SOURCES = {
       const w = new Float64Array(ps.length);
       for (let i = 0; i < ps.length; i++) w[i] = ps[i] % 4 === 1 ? 1 : ps[i] % 4 === 3 ? -1 : 0;
       return { kind: "primes", domain: "int", n, w, ww: w, stats: `π(${fmt(p.N)}) = ${fmt(ps.length)}` };
+    },
+  },
+  psi: {
+    label: "ψ(x) — explicit formula", domain: "int",
+    blurb: "the prime staircase vs x − Σ x^ρ/ρ over the first K zeros",
+    params: [
+      { key: "N", label: "range x ≤", min: 50, max: 10000, step: 50, def: 500 },
+      { key: "K", label: "zeros used K", min: 0, max: ZEROS.length, step: 1, def: 10 },
+    ],
+    gen: (p) => {
+      const { x, w } = primePowersUpTo(p.N);
+      return {
+        kind: "psi", domain: "int", n: x, w, ww: w, K: Math.round(p.K),
+        stats: `${fmt(x.length)} prime powers ≤ ${fmt(p.N)} · explicit formula over K = ${Math.round(p.K)} zero pairs`,
+      };
     },
   },
   gaps: {
@@ -195,6 +210,32 @@ export const PLANES = {
     label: "Function graph", accepts: ["int", "curve", "zeros"],
     map: (d, p) => {
       const L = d.n.length, xs = new Float64Array(L), ys = new Float64Array(L);
+      if (d.kind === "psi") {
+        let acc = 0;
+        for (let i = 0; i < L; i++) { xs[i] = d.n[i]; acc += d.w[i]; ys[i] = acc; }
+        const K = d.K || 0;
+        return {
+          xs, ys, mode: "step",
+          bounds: padBounds(xs, ys, 0.05, { y0: 0 }),
+          decor: (ctx, px, th2) => {
+            ctx.strokeStyle = th2.amber; ctx.lineWidth = 1.5; ctx.globalAlpha = 0.95;
+            ctx.beginPath();
+            const x0 = Math.max(2, xs[0]), x1 = xs[L - 1];
+            for (let i = 0; i <= 420; i++) {
+              const x = x0 + (i / 420) * (x1 - x0);
+              const [sx, sy] = px(x, psiExplicit(x, K));
+              if (i === 0) ctx.moveTo(sx, sy); else ctx.lineTo(sx, sy);
+            }
+            ctx.stroke(); ctx.globalAlpha = 1;
+            ctx.fillStyle = th2.amber; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "right";
+            const [lx, ly] = px(x1, psiExplicit(x1, K));
+            ctx.fillText(`x − Σ x^ρ/ρ  (K = ${K} zero pairs)`, lx - 6, ly - 10);
+            ctx.fillStyle = th2.dim; ctx.textAlign = "left";
+            const [tx, ty] = px(x0 + (x1 - x0) * 0.02, ys[L - 1]);
+            ctx.fillText("ψ(x): each prime power p^k adds log p", tx, ty - 6);
+          },
+        };
+      }
       if (d.kind === "primes") {
         for (let i = 0; i < L; i++) { xs[i] = d.n[i]; ys[i] = i + 1; }
         return {
@@ -318,6 +359,64 @@ export const PLANES = {
       };
     },
   },
+  family: {
+    label: "Family sweep (mod-q heatmap)", accepts: ["int"],
+    params: [{ key: "famQ", label: "moduli q from 3 to", min: 10, max: 150, step: 1, def: 80 }],
+    map: (d, p) => {
+      const Q = Math.max(3, Math.round(p.famQ));
+      const C = 360, rows = Q - 2;
+      const cv = typeof document !== "undefined" ? document.createElement("canvas") : null;
+      if (cv) {
+        cv.width = C; cv.height = rows;
+        const ctx = cv.getContext("2d");
+        const img = ctx.createImageData(C, rows);
+        const gcd = (a, b) => { while (b) { const t = a % b; a = b; b = t; } return a; };
+        for (let q = 3; q <= Q; q++) {
+          const counts = new Float64Array(q);
+          for (let i = 0; i < d.n.length; i++) counts[d.n[i] % q]++;
+          let phi = 0; for (let r = 0; r < q; r++) if (gcd(r, q) === 1) phi++;
+          let coprimeTotal = 0;
+          for (let r = 0; r < q; r++) if (gcd(r, q) === 1) coprimeTotal += counts[r];
+          const exp = coprimeTotal / Math.max(1, phi);
+          const row = q - 3;
+          for (let c = 0; c < C; c++) {
+            const r = Math.floor((c / C) * q);
+            const o = (row * C + c) * 4;
+            if (gcd(r, q) !== 1) { // impossible class: near-black
+              img.data[o] = 10; img.data[o + 1] = 12; img.data[o + 2] = 18; img.data[o + 3] = 255;
+              continue;
+            }
+            const z = Math.max(-4, Math.min(4, (counts[r] - exp) / Math.sqrt(exp || 1)));
+            const k = z / 4; // −1 … 1
+            img.data[o] = k > 0 ? 40 + 215 * k : 40;
+            img.data[o + 1] = 46 + 30 * (1 - Math.abs(k));
+            img.data[o + 2] = k < 0 ? 60 + 195 * -k : 60;
+            img.data[o + 3] = 255;
+          }
+        }
+        ctx.putImageData(img, 0, 0);
+      }
+      return {
+        xs: new Float64Array(0), ys: new Float64Array(0), mode: "points",
+        bounds: { x0: 0, x1: 1, y0: 0, y1: 1 },
+        decor: (ctx, px, th2) => {
+          const [X0, Y0] = px(0, 1), [X1, Y1] = px(1, 0);
+          if (cv) {
+            ctx.imageSmoothingEnabled = false;
+            ctx.drawImage(cv, X0, Y0, X1 - X0, Y1 - Y0);
+          }
+          ctx.font = `10px ${th2.mono}`; ctx.fillStyle = th2.dim; ctx.textAlign = "right";
+          for (let q = 10; q <= Q; q += 10) {
+            const [, sy] = px(0, 1 - (q - 3 + 0.5) / rows);
+            ctx.fillText(`q=${q}`, X0 - 6, sy + 3);
+          }
+          ctx.textAlign = "left";
+          ctx.fillText("each row: counts of n ≡ r (mod q) · warm = excess, cold = deficit, black = impossible class", X0, Y1 + 16);
+          ctx.fillText("columns are residue position r/q — coherent vertical bands are family-wide structure", X0, Y1 + 30);
+        },
+      };
+    },
+  },
 };
 
 /* ═══════════════════════ LENSES — how they glow ═══════════════════════ */
@@ -361,6 +460,8 @@ export function ramp(f) { const a = new Array(NB); for (let i = 0; i < NB; i++) 
 /* ═══════════════════ LIBRARY — stored interesting ways ═══════════════════ */
 
 export const LIBRARY = [
+  { name: "Riemann explicit formula", cfg: { source: "psi", plane: "graph", lens: "mono", p: { N: 500, K: 10 } } },
+  { name: "Family sweep mod q", cfg: { source: "primes", plane: "family", lens: "mono", p: { N: 200000, famQ: 80 } } },
   { name: "Sacks spiral", cfg: { source: "primes", plane: "sacks", lens: "mono", p: { N: 12000 } } },
   { name: "Ulam spiral", cfg: { source: "primes", plane: "ulam", lens: "mono", p: { N: 60000 } } },
   { name: "Polar α-dial", cfg: { source: "primes", plane: "polar", lens: "residue", p: { N: 20000, alpha: 1, kres: 6 } } },

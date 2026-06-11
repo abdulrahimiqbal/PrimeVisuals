@@ -14,6 +14,160 @@ import {
   NODE_PALETTE, createNodeFromPalette, nodeInputPorts, nextInputPort, gedge,
 } from "./core/labkit.js";
 import { patchGuide, labGuide, hoverInfo, sceneProjector } from "./core/guides.js";
+import { CHIP_OPS, CHIP_ORDER, makeChip, applyChips, chipLabel, chipSummary } from "./core/chips.js";
+import { decodeState, writeStateToUrl, currentShareUrl } from "./core/urlState.js";
+import { residualFor } from "./core/residuals.js";
+import { genTwin, TWIN_SOURCES } from "./core/twin.js";
+import { contFrac, histogram, wignerGUE, expPdf, normalizedSpacings, residueChi } from "./core/stats.js";
+import { primesUpTo } from "./core/math.js";
+
+/* ── tiny renderer for the persistence / holdout mini-views ── */
+function drawMini(cv, xs, ys, dmode, color = T.ion) {
+  const ctx = cv.getContext("2d");
+  ctx.fillStyle = T.panel2; ctx.fillRect(0, 0, cv.width, cv.height);
+  const L = xs.length; if (!L) return;
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (let i = 0; i < L; i++) {
+    if (xs[i] < x0) x0 = xs[i]; if (xs[i] > x1) x1 = xs[i];
+    if (ys[i] < y0) y0 = ys[i]; if (ys[i] > y1) y1 = ys[i];
+  }
+  const dx = x1 - x0 || 1, dy = y1 - y0 || 1, M = 6;
+  const px = (x) => M + ((x - x0) / dx) * (cv.width - 2 * M);
+  const py = (y) => cv.height - M - ((y - y0) / dy) * (cv.height - 2 * M);
+  if (y0 < 0 && y1 > 0) {
+    ctx.strokeStyle = T.faint; ctx.beginPath();
+    ctx.moveTo(M, py(0)); ctx.lineTo(cv.width - M, py(0)); ctx.stroke();
+  }
+  ctx.fillStyle = color; ctx.strokeStyle = color;
+  if (dmode === "path" || dmode === "step") {
+    ctx.lineWidth = 1; ctx.beginPath();
+    const stride = Math.max(1, Math.floor(L / 600));
+    ctx.moveTo(px(xs[0]), py(ys[0]));
+    for (let i = stride; i < L; i += stride) ctx.lineTo(px(xs[i]), py(ys[i]));
+    ctx.stroke();
+  } else {
+    const stride = Math.max(1, Math.floor(L / 4000));
+    ctx.globalAlpha = 0.85;
+    for (let i = 0; i < L; i += stride) ctx.fillRect(px(xs[i]) - 0.7, py(ys[i]) - 0.7, 1.4, 1.4);
+    ctx.globalAlpha = 1;
+  }
+}
+
+/* Shape one pipeline pass outside React (mini-views, holdout). */
+function shapePipeline(cfg, chips, residual, filter) {
+  const data = SOURCES[cfg.source].gen(cfg.p);
+  const mapped = PLANES[cfg.plane].map(data, cfg.p);
+  let xs = mapped.xs, ys = mapped.ys;
+  const res = residual && residualFor(cfg);
+  if (res) { const r = res.transform(data, mapped, cfg.p); ys = r.ys; if (r.xs) xs = r.xs; }
+  if (chips.x.length || chips.y.length) { xs = applyChips(xs, chips.x); ys = applyChips(ys, chips.y); }
+  if (filter && data.n) {
+    const keep = [];
+    const lim = Math.min(xs.length, data.n.length);
+    for (let i = 0; i < lim; i++) if (filter(data.n[i])) keep.push(i);
+    xs = Float64Array.from(keep, (i) => xs[i]);
+    ys = Float64Array.from(keep, (i) => ys[i]);
+  }
+  return { xs, ys, mode: mapped.mode };
+}
+
+function MiniView({ cfg, chips, residual, label, filter }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const cv = ref.current; if (!cv) return;
+    const t = setTimeout(() => {
+      try {
+        const s = shapePipeline(cfg, chips, residual, filter);
+        drawMini(cv, s.xs, s.ys, s.mode);
+      } catch (e) { /* leave the panel blank rather than crash the app */ }
+    }, 30);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(cfg), chips, residual]);
+  return (
+    <div className="mb-2">
+      <div style={{ fontFamily: T.mono, fontSize: 9, color: T.dim }} className="mb-1">{label}</div>
+      <canvas ref={ref} width={252} height={92} style={{ borderRadius: 6, border: `1px solid ${T.line}`, display: "block" }} />
+    </div>
+  );
+}
+
+/* Per-view statistics against the null prediction: the number next to the picture. */
+function StatReadout({ cfg, data }) {
+  const ref = useRef(null);
+  const spec = useMemo(() => {
+    try {
+      if (data.kind === "gaps") {
+        const vals = [];
+        for (let i = 0; i < data.n.length; i++) vals.push(data.w[i] / Math.log(data.n[i]));
+        return { title: "gap / ln p  vs  Cramér e⁻ˣ", vals, lo: 0, hi: 4, pdf: expPdf };
+      }
+      if (data.kind === "zeros") {
+        const vals = Array.from(normalizedSpacings(Array.from(data.n)));
+        return { title: "zero spacings vs GUE (Wigner)", vals, lo: 0, hi: 3, pdf: wignerGUE };
+      }
+      if (data.kind === "primes") {
+        const k = Math.max(2, Math.round(cfg.p.kres || cfg.p.mod || 4));
+        const rc = residueChi(Array.from(data.n), k);
+        return { title: `primes mod ${k} · χ² z = ${rc.z.toFixed(2)}`, bars: rc.classes, expected: rc.expected };
+      }
+      return null;
+    } catch (e) { return null; }
+  }, [cfg, data]);
+  useEffect(() => {
+    const cv = ref.current; if (!cv || !spec) return;
+    const ctx = cv.getContext("2d");
+    const W = cv.width, H = cv.height, M = 6;
+    ctx.fillStyle = T.panel2; ctx.fillRect(0, 0, W, H);
+    if (spec.bars) {
+      const n = spec.bars.length; if (!n) return;
+      let mx = spec.expected;
+      for (const b of spec.bars) mx = Math.max(mx, b.count);
+      const bw = (W - 2 * M) / n;
+      ctx.fillStyle = T.ion; ctx.globalAlpha = 0.8;
+      spec.bars.forEach((b, i) => {
+        const h = (b.count / mx) * (H - 2 * M);
+        ctx.fillRect(M + i * bw + 1, H - M - h, Math.max(1, bw - 2), h);
+      });
+      ctx.globalAlpha = 1;
+      const ey = H - M - (spec.expected / mx) * (H - 2 * M);
+      ctx.strokeStyle = T.amber; ctx.setLineDash([3, 3]);
+      ctx.beginPath(); ctx.moveTo(M, ey); ctx.lineTo(W - M, ey); ctx.stroke(); ctx.setLineDash([]);
+      return;
+    }
+    const bins = 26;
+    const h = histogram(spec.vals, bins, spec.lo, spec.hi);
+    const dx = (spec.hi - spec.lo) / bins;
+    let mx = 0;
+    const dens = [];
+    for (let i = 0; i < bins; i++) { dens[i] = h.counts[i] / dx; mx = Math.max(mx, dens[i]); }
+    for (let i = 0; i <= 60; i++) mx = Math.max(mx, spec.pdf(spec.lo + (i / 60) * (spec.hi - spec.lo)));
+    const bw = (W - 2 * M) / bins;
+    ctx.fillStyle = T.ion; ctx.globalAlpha = 0.75;
+    for (let i = 0; i < bins; i++) {
+      const hh = (dens[i] / mx) * (H - 2 * M);
+      ctx.fillRect(M + i * bw + 0.5, H - M - hh, Math.max(1, bw - 1), hh);
+    }
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = T.amber; ctx.lineWidth = 1.4; ctx.beginPath();
+    for (let i = 0; i <= 120; i++) {
+      const x = spec.lo + (i / 120) * (spec.hi - spec.lo);
+      const sx = M + (i / 120) * (W - 2 * M);
+      const sy = H - M - (spec.pdf(x) / mx) * (H - 2 * M);
+      if (i === 0) ctx.moveTo(sx, sy); else ctx.lineTo(sx, sy);
+    }
+    ctx.stroke();
+  }, [spec]);
+  if (!spec) return null;
+  return (
+    <div className="p-3 mt-4" style={{ background: T.panel, border: `1px solid ${T.line}`, borderRadius: 10 }}>
+      <div style={{ fontFamily: T.mono, color: T.dim, fontSize: 10, letterSpacing: "0.18em" }} className="mb-2">READOUTS</div>
+      <div style={{ fontFamily: T.mono, fontSize: 9, color: T.ion }} className="mb-1">{spec.title}</div>
+      <canvas ref={ref} width={252} height={96} style={{ display: "block", borderRadius: 6, border: `1px solid ${T.line}` }} />
+      <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.faint }}>cyan = measured · amber = prediction</div>
+    </div>
+  );
+}
 
 /* ════════════════════════════════════════════════════════════════
    PRIMEVISUALS — a patchable instrument for prime-number structure
@@ -25,9 +179,21 @@ import { patchGuide, labGuide, hoverInfo, sceneProjector } from "./core/guides.j
 /* ═══════════════════════════════ THE INSTRUMENT ═══════════════════════════════ */
 
 export default function PrimeVisuals() {
-  const [cfg, setCfg] = useState(() => withDefaults(LIBRARY[0].cfg));
-  const [mode, setMode] = useState("patch"); // 'patch' | 'lab'
-  const [lab, setLab] = useState(() => withLabDefaults(LAB_TEMPLATES[0].lab));
+  const boot = useMemo(() => decodeState(), []);
+  const [cfg, setCfg] = useState(() => withDefaults(boot?.cfg || LIBRARY[0].cfg));
+  const [mode, setMode] = useState(boot?.mode || "patch"); // 'patch' | 'lab'
+  const [chips, setChips] = useState(() => boot?.chips || { x: [], y: [] });
+  const [residual, setResidual] = useState(!!boot?.residual);
+  const [twinMode, setTwinMode] = useState(boot?.twinMode || "real"); // 'real' | 'both' | 'twin'
+  const [chipTarget, setChipTarget] = useState("y");
+  const [sweeping, setSweeping] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [persistOpen, setPersistOpen] = useState(false);
+  const [scan, setScan] = useState({ running: false, progress: 0, note: "", results: null, N: 100000 });
+  const [notebook, setNotebook] = useState(() => {
+    try { return JSON.parse(window.localStorage.getItem("primevisuals:notebook") || "[]"); } catch (e) { return []; }
+  });
+  const [lab, setLab] = useState(() => withLabDefaults(boot?.lab || LAB_TEMPLATES[0].lab));
   const [labGraph, setLabGraph] = useState(() => cloneGraph(LAB_TEMPLATES[0].graph));
   const [labEditor, setLabEditor] = useState("canvas");
   const [selectedNodeId, setSelectedNodeId] = useState(null);
@@ -52,6 +218,10 @@ export default function PrimeVisuals() {
   const lastLab = useRef(null);      // last good lab result, kept through typos
   const hoverFrame = useRef(0);
   const hoverPoint = useRef(null);
+  const workerRef = useRef(null);   // anomaly scanner worker, created on demand
+  const history = useRef({ stack: [], idx: -1, lock: false });
+  const anim = useRef(null);        // {fromXs, fromYs, start} during a morph
+  const prevShaped = useRef(null);
 
   /* ----- pipeline computation (each stage re-runs only when ITS params change) ----- */
   const srcKey = (SOURCES[cfg.source].params || []).map((d) => cfg.p[d.key]).join("|");
@@ -93,6 +263,57 @@ export default function PrimeVisuals() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, mapped, cfg.lens, lensKey]);
 
+  /* ----- shaping: residual subtraction, then transform chips, per axis ----- */
+  const activeResidual = residual ? residualFor(cfg) : null;
+  const shaped = useMemo(() => {
+    let xs = mapped.xs, ys = mapped.ys, dmode = mapped.mode, bounds = mapped.bounds, decor = mapped.decor;
+    if (activeResidual) {
+      const r = activeResidual.transform(data, mapped, cfg.p);
+      ys = r.ys; if (r.xs) xs = r.xs;
+      bounds = r.bounds || bounds; decor = r.decor || null; dmode = r.mode || dmode;
+    }
+    if (chips.x.length || chips.y.length) {
+      xs = applyChips(xs, chips.x);
+      ys = applyChips(ys, chips.y);
+      bounds = padBounds(xs, ys, 0.07);
+      decor = null; // original annotations live in pre-transform coordinates
+    }
+    return { xs, ys, mode: dmode, bounds, decor };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mapped, data, chips, activeResidual, cfg.p.K]);
+
+  const twinScene = useMemo(() => {
+    if (mode !== "patch" || twinMode === "real" || !TWIN_SOURCES.has(cfg.source) || cfg.plane === "family") return null;
+    const td = genTwin(cfg);
+    if (!td) return null;
+    const tm = PLANES[cfg.plane].map(td, cfg.p);
+    let xs = tm.xs, ys = tm.ys;
+    if (activeResidual) {
+      const r = activeResidual.transform(td, tm, cfg.p);
+      ys = r.ys; if (r.xs) xs = r.xs;
+    }
+    if (chips.x.length || chips.y.length) { xs = applyChips(xs, chips.x); ys = applyChips(ys, chips.y); }
+    return { xs, ys, mode: tm.mode };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, twinMode, cfg, chips, activeResidual]);
+
+  /* morph animation: when a chip/residual reshapes the same items, glide them */
+  useEffect(() => {
+    const prev = prevShaped.current;
+    if (prev && prev !== shaped && prev.xs.length === shaped.xs.length && shaped.xs.length > 0 && shaped.xs.length < 80000) {
+      anim.current = { fromXs: prev.xs, fromYs: prev.ys, start: performance.now() };
+      const tick = () => {
+        if (!anim.current) return;
+        const k = (performance.now() - anim.current.start) / 350;
+        drawRef.current();
+        if (k < 1) requestAnimationFrame(tick);
+        else { anim.current = null; drawRef.current(); }
+      };
+      requestAnimationFrame(tick);
+    }
+    prevShaped.current = shaped;
+  }, [shaped]);
+
   /* ----- LAB evaluation: formulas → series (or a field spec for ℂ) ----- */
   const labData = useMemo(() => {
     if (mode !== "lab") return null;
@@ -126,7 +347,10 @@ export default function PrimeVisuals() {
   /* ----- unified scene: what draw() renders, whichever mode we're in ----- */
   const scene = useMemo(() => {
     if (mode === "patch") {
-      return { xs: mapped.xs, ys: mapped.ys, mode: mapped.mode, bounds: mapped.bounds, decor: mapped.decor, pal: colors.pal, buckets: colors.buckets };
+      return {
+        xs: shaped.xs, ys: shaped.ys, mode: shaped.mode, bounds: shaped.bounds, decor: shaped.decor,
+        pal: colors.pal, buckets: colors.buckets, twin: twinScene, twinMode,
+      };
     }
     if (!labData) return { xs: new Float64Array(0), ys: new Float64Array(0), mode: "points", pal: [], buckets: new Uint8Array(0) };
     if (labData.field) {
@@ -158,7 +382,7 @@ export default function PrimeVisuals() {
     };
     return { xs: S.xs, ys: S.ys, mode: S.mode, bounds: padBounds(S.xs, S.ys, 0.07, { y0: 0 }), decor, pal, buckets };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, mapped, colors, labData, lab.tMax, lab.ey, lab.ex, lab.domain]);
+  }, [mode, shaped, colors, twinScene, twinMode, labData, lab.tMax, lab.ey, lab.ex, lab.domain]);
 
   /* ----- renderer ----- */
   const draw = useCallback(() => {
@@ -222,57 +446,96 @@ export default function PrimeVisuals() {
       return;
     }
 
-    const L = xs.length; if (!L) return;
+    const L = xs.length;
+    if (!L) { if (scene.decor) scene.decor(ctx, px, T); return; }
     const { pal, buckets } = scene;
 
-    if (dmode === "points") {
-      ctx.globalCompositeOperation = "lighter";
-      const s = L < 2500 ? 3 : L < 16000 ? 2.3 : 1.7;
-      const groups = []; for (let k = 0; k < NB; k++) groups.push([]);
-      for (let i = 0; i < L; i++) groups[buckets[i]].push(i);
-      for (let k = 0; k < NB; k++) {
-        const idx = groups[k]; if (!idx.length) continue;
-        ctx.fillStyle = pal[k]; ctx.globalAlpha = 0.92;
-        for (let j = 0; j < idx.length; j++) {
-          const [sx, sy] = px(xs[idx[j]], ys[idx[j]]);
+    /* mid-morph: draw items between their old and new positions */
+    let dxs = xs, dys = ys;
+    const an = anim.current;
+    if (an && an.fromXs.length === L) {
+      let k = Math.min(1, (performance.now() - an.start) / 350);
+      k = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      dxs = new Float64Array(L); dys = new Float64Array(L);
+      for (let i = 0; i < L; i++) {
+        dxs[i] = an.fromXs[i] + (xs[i] - an.fromXs[i]) * k;
+        dys[i] = an.fromYs[i] + (ys[i] - an.fromYs[i]) * k;
+      }
+    }
+
+    if (scene.twinMode !== "twin") {
+      if (dmode === "points") {
+        ctx.globalCompositeOperation = "lighter";
+        const s = L < 2500 ? 3 : L < 16000 ? 2.3 : 1.7;
+        const groups = []; for (let k = 0; k < NB; k++) groups.push([]);
+        for (let i = 0; i < L; i++) groups[buckets[i]].push(i);
+        for (let k = 0; k < NB; k++) {
+          const idx = groups[k]; if (!idx.length) continue;
+          ctx.fillStyle = pal[k]; ctx.globalAlpha = 0.92;
+          for (let j = 0; j < idx.length; j++) {
+            const [sx, sy] = px(dxs[idx[j]], dys[idx[j]]);
+            if (sx < -4 || sy < -4 || sx > W + 4 || sy > H + 4) continue;
+            ctx.fillRect(sx - s / 2, sy - s / 2, s, s);
+          }
+        }
+        ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
+      } else if (dmode === "orbs") {
+        ctx.globalCompositeOperation = "source-over";
+        for (let i = 0; i < L; i++) {
+          const [sx, sy] = px(dxs[i], dys[i]);
+          ctx.fillStyle = pal[buckets[i]];
+          ctx.shadowColor = pal[buckets[i]]; ctx.shadowBlur = 14;
+          ctx.beginPath(); ctx.arc(sx, sy, 4, 0, 7); ctx.fill();
+        }
+        ctx.shadowBlur = 0;
+      } else {
+        const heavyPath = L > 24000;
+        const simplifyPx = heavyPath ? 0.85 : 0;
+        ctx.lineWidth = heavyPath ? 1.1 : 1.6; ctx.lineJoin = "round";
+        ctx.shadowBlur = heavyPath ? 0 : 7;
+        let i0 = 0;
+        while (i0 < L - 1) {
+          let i1 = i0 + 1;
+          while (i1 < L - 1 && buckets[i1] === buckets[i0] && i1 - i0 < 80) i1++;
+          ctx.strokeStyle = pal[buckets[i0]]; ctx.shadowColor = pal[buckets[i0]];
+          ctx.beginPath();
+          let [sx, sy] = px(dxs[i0], dys[i0]); ctx.moveTo(sx, sy);
+          let lastDrawX = sx, lastDrawY = sy;
+          for (let i = i0 + 1; i <= i1; i++) {
+            const [nx, ny] = px(dxs[i], dys[i]);
+            if (simplifyPx && i < i1 && Math.abs(nx - lastDrawX) < simplifyPx && Math.abs(ny - lastDrawY) < simplifyPx) continue;
+            if (dmode === "step") ctx.lineTo(nx, sy);
+            ctx.lineTo(nx, ny); sx = nx; sy = ny;
+            lastDrawX = nx; lastDrawY = ny;
+          }
+          ctx.stroke();
+          i0 = i1;
+        }
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    /* the Cramér twin, always rose so it can't be mistaken for the real thing */
+    if (scene.twin && scene.twinMode !== "real") {
+      const tw = scene.twin, TL = tw.xs.length;
+      ctx.fillStyle = T.rose; ctx.strokeStyle = T.rose;
+      if (tw.mode === "points" || tw.mode === "orbs") {
+        ctx.globalAlpha = scene.twinMode === "both" ? 0.55 : 0.9;
+        const s = TL < 2500 ? 3 : TL < 16000 ? 2.3 : 1.7;
+        for (let i = 0; i < TL; i++) {
+          const [sx, sy] = px(tw.xs[i], tw.ys[i]);
           if (sx < -4 || sy < -4 || sx > W + 4 || sy > H + 4) continue;
           ctx.fillRect(sx - s / 2, sy - s / 2, s, s);
         }
+        ctx.globalAlpha = 1;
+      } else if (TL > 1) {
+        ctx.globalAlpha = scene.twinMode === "both" ? 0.6 : 0.95;
+        ctx.lineWidth = 1.2; ctx.beginPath();
+        const stride = Math.max(1, Math.floor(TL / 24000));
+        ctx.moveTo(...px(tw.xs[0], tw.ys[0]));
+        for (let i = stride; i < TL; i += stride) ctx.lineTo(...px(tw.xs[i], tw.ys[i]));
+        ctx.stroke(); ctx.globalAlpha = 1;
       }
-      ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
-    } else if (dmode === "orbs") {
-      ctx.globalCompositeOperation = "source-over";
-      for (let i = 0; i < L; i++) {
-        const [sx, sy] = px(xs[i], ys[i]);
-        ctx.fillStyle = pal[buckets[i]];
-        ctx.shadowColor = pal[buckets[i]]; ctx.shadowBlur = 14;
-        ctx.beginPath(); ctx.arc(sx, sy, 4, 0, 7); ctx.fill();
-      }
-      ctx.shadowBlur = 0;
-    } else {
-      const heavyPath = L > 24000;
-      const simplifyPx = heavyPath ? 0.85 : 0;
-      ctx.lineWidth = heavyPath ? 1.1 : 1.6; ctx.lineJoin = "round";
-      ctx.shadowBlur = heavyPath ? 0 : 7;
-      let i0 = 0;
-      while (i0 < L - 1) {
-        let i1 = i0 + 1;
-        while (i1 < L - 1 && buckets[i1] === buckets[i0] && i1 - i0 < 80) i1++;
-        ctx.strokeStyle = pal[buckets[i0]]; ctx.shadowColor = pal[buckets[i0]];
-        ctx.beginPath();
-        let [sx, sy] = px(xs[i0], ys[i0]); ctx.moveTo(sx, sy);
-        let lastDrawX = sx, lastDrawY = sy;
-        for (let i = i0 + 1; i <= i1; i++) {
-          const [nx, ny] = px(xs[i], ys[i]);
-          if (simplifyPx && i < i1 && Math.abs(nx - lastDrawX) < simplifyPx && Math.abs(ny - lastDrawY) < simplifyPx) continue;
-          if (dmode === "step") ctx.lineTo(nx, sy);
-          ctx.lineTo(nx, ny); sx = nx; sy = ny;
-          lastDrawX = nx; lastDrawY = ny;
-        }
-        ctx.stroke();
-        i0 = i1;
-      }
-      ctx.shadowBlur = 0;
     }
 
     if (scene.decor) scene.decor(ctx, px, T);
@@ -477,6 +740,161 @@ export default function PrimeVisuals() {
   const setLens = (id) => setCfg(withDefaults({ ...cfg, lens: id }));
   const setParam = (key, val) => setCfg({ ...cfg, p: { ...cfg.p, [key]: val } });
 
+  /* ----- history: undo/redo over the playable state (debounced for scrubs) ----- */
+  useEffect(() => {
+    if (history.current.lock) { history.current.lock = false; return; }
+    const t = setTimeout(() => {
+      const snap = JSON.stringify({ cfg, chips, residual, twinMode });
+      const h = history.current;
+      if (h.stack[h.idx] === snap) return;
+      h.stack = h.stack.slice(0, h.idx + 1);
+      h.stack.push(snap);
+      if (h.stack.length > 80) h.stack.shift();
+      h.idx = h.stack.length - 1;
+    }, 350);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cfg, chips, residual, twinMode]);
+
+  const restoreSnap = (snap) => {
+    const s = JSON.parse(snap);
+    history.current.lock = true;
+    setCfg(s.cfg); setChips(s.chips); setResidual(s.residual); setTwinMode(s.twinMode);
+  };
+  const undo = () => { const h = history.current; if (h.idx > 0) { h.idx--; restoreSnap(h.stack[h.idx]); } };
+  const redo = () => { const h = history.current; if (h.idx < h.stack.length - 1) { h.idx++; restoreSnap(h.stack[h.idx]); } };
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z" && e.target.tagName !== "INPUT") {
+        e.preventDefault();
+        if (e.shiftKey) redo(); else undo();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /* ----- the view state lives in the URL: every view is a shareable link ----- */
+  const shareState = () => (mode === "lab" ? { mode, lab, cfg, chips, residual, twinMode } : { mode, cfg, chips, residual, twinMode });
+  useEffect(() => {
+    const t = setTimeout(() => writeStateToUrl(shareState()), 400);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, cfg, chips, residual, twinMode, lab]);
+  const copyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(currentShareUrl(shareState()));
+      setCopied(true); setTimeout(() => setCopied(false), 1500);
+    } catch (e) { /* clipboard unavailable */ }
+  };
+
+  /* ----- α auto-sweep + continued-fraction readout ----- */
+  useEffect(() => {
+    if (!sweeping || cfg.plane !== "polar") return;
+    let raf;
+    const step = () => {
+      setCfg((c) => ({ ...c, p: { ...c.p, alpha: ((+c.p.alpha || 0) + 0.0025) % 6.3 } }));
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [sweeping, cfg.plane]);
+
+  const alphaCF = useMemo(() => {
+    if (cfg.plane !== "polar" || !cfg.p.alpha) return null;
+    try {
+      const cs = contFrac((+cfg.p.alpha) / (2 * Math.PI), 64);
+      const best = cs[cs.length - 1];
+      return best ? `α/2π ≈ ${best.p}/${best.q}  ·  spokes lock when this fraction is exact` : null;
+    } catch (e) { return null; }
+  }, [cfg.plane, cfg.p.alpha]);
+
+  /* ----- transform chips ----- */
+  const addChip = (op, axis = chipTarget) => { setChips((c) => ({ ...c, [axis]: [...c[axis], makeChip(op)] })); setChipTarget(axis); };
+  const removeChip = (axis, id) => setChips((c) => ({ ...c, [axis]: c[axis].filter((x) => x.id !== id) }));
+  const moveChip = (axis, id, dir) => setChips((c) => {
+    const arr = [...c[axis]]; const i = arr.findIndex((x) => x.id === id);
+    const j = i + dir;
+    if (i < 0 || j < 0 || j >= arr.length) return c;
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    return { ...c, [axis]: arr };
+  });
+  const scrubChip = (e, axis, id) => {
+    e.preventDefault(); e.stopPropagation();
+    const chip = chips[axis].find((x) => x.id === id);
+    const def = chip && CHIP_OPS[chip.op].param;
+    if (!def) return;
+    const startX = e.clientX, startV = +chip.p[def.key];
+    const pxStep = def.step >= 1 ? Math.max(def.step, (def.max - def.min) / 400) : def.step;
+    const move = (ev) => {
+      let v = startV + (ev.clientX - startX) * pxStep;
+      v = Math.max(def.min, Math.min(def.max, v));
+      if (def.step >= 1) v = Math.round(v);
+      setChips((c) => ({ ...c, [axis]: c[axis].map((x) => (x.id === id ? { ...x, p: { ...x.p, [def.key]: v } } : x)) }));
+    };
+    const up = () => { window.removeEventListener("pointermove", move); window.removeEventListener("pointerup", up); };
+    window.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", up);
+  };
+
+  /* ----- anomaly scanner (web worker) + notebook ----- */
+  const runScanNow = () => {
+    if (scan.running) return;
+    if (!workerRef.current) {
+      workerRef.current = new Worker(new URL("./core/scanner.worker.js", import.meta.url), { type: "module" });
+      workerRef.current.onmessage = (e) => {
+        const m = e.data;
+        if (m.type === "progress") setScan((s) => ({ ...s, progress: m.frac, note: m.note || "" }));
+        else if (m.type === "done") setScan((s) => ({ ...s, running: false, progress: 1, results: m.results, note: "" }));
+        else if (m.type === "error") setScan((s) => ({ ...s, running: false, note: `error: ${m.message}` }));
+      };
+    }
+    setScan((s) => ({ ...s, running: true, progress: 0, results: null, note: "sieving…" }));
+    workerRef.current.postMessage({ N: scan.N });
+  };
+  useEffect(() => () => { if (workerRef.current) workerRef.current.terminate(); }, []);
+
+  const applyScanView = (r) => {
+    setMode("patch");
+    setChips({ x: [], y: [] });
+    setResidual(false);
+    setTwinMode("real");
+    setCfg(withDefaults(JSON.parse(JSON.stringify(r.view))));
+  };
+  const saveNotebook = (list) => {
+    setNotebook(list);
+    try { window.localStorage.setItem("primevisuals:notebook", JSON.stringify(list)); } catch (e) { /* session-only */ }
+  };
+  const pinResult = (r) => saveNotebook([...notebook, {
+    id: `${r.id || r.kind}-${Date.now()}`, ts: Date.now(), label: r.label, z: r.zScore,
+    state: { mode: "patch", cfg: withDefaults(JSON.parse(JSON.stringify(r.view))), chips: { x: [], y: [] }, residual: false, twinMode: "real" },
+    seq: r.seq || null,
+  }]);
+  const pinCurrentView = () => saveNotebook([...notebook, {
+    id: `view-${Date.now()}`, ts: Date.now(),
+    label: mode === "patch" ? `${SOURCES[cfg.source].label} → ${PLANES[cfg.plane].label}` : `LAB · ${lab.domain}`,
+    z: null, state: shareState(), seq: null,
+  }]);
+  const openNotebookEntry = (en) => {
+    const s = en.state || {};
+    if (s.mode === "lab" && s.lab) { setMode("lab"); setLab(withLabDefaults(s.lab)); }
+    else if (s.cfg) {
+      setMode("patch");
+      setCfg(withDefaults(s.cfg));
+      setChips(s.chips || { x: [], y: [] });
+      setResidual(!!s.residual);
+      setTwinMode(s.twinMode || "real");
+    }
+  };
+  const copyEntryLink = async (en) => {
+    try {
+      await navigator.clipboard.writeText(currentShareUrl(en.state));
+      setCopied(true); setTimeout(() => setCopied(false), 1500);
+    } catch (e) { /* clipboard unavailable */ }
+  };
+
   const dv = lab.domain === "int" ? "n" : lab.domain === "real" ? "t" : "s";
   const insertTok = (txt) => {
     const f = focusRef.current;
@@ -630,7 +1048,19 @@ export default function PrimeVisuals() {
     defs.map((d) => (
       <div key={d.key} className="mt-3">
         <div className="flex justify-between mb-1" style={{ fontFamily: T.mono, fontSize: 10, color: T.dim }}>
-          <span>{d.label}</span>
+          <span>
+            {d.label}
+            {d.key === "alpha" && (
+              <button
+                onClick={() => setSweeping(!sweeping)}
+                className="ml-2 px-1 rounded"
+                title="auto-sweep α and watch spokes lock in and dissolve"
+                style={{ border: `1px solid ${sweeping ? T.ion : T.line}`, color: sweeping ? T.ion : T.dim, fontFamily: T.mono, fontSize: 9 }}
+              >
+                {sweeping ? "⏸ stop" : "▶ sweep"}
+              </button>
+            )}
+          </span>
           <span style={{ color: T.ink }}>{d.step < 1 ? (+cfg.p[d.key]).toFixed(3) : fmt(+cfg.p[d.key])}</span>
         </div>
         <input
@@ -638,6 +1068,9 @@ export default function PrimeVisuals() {
           onChange={(e) => setParam(d.key, +e.target.value)}
           className="w-full" style={{ accentColor: T.ion, height: 14 }}
         />
+        {d.key === "alpha" && alphaCF && (
+          <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.amber }}>{alphaCF}</div>
+        )}
       </div>
     ));
 
@@ -983,7 +1416,46 @@ export default function PrimeVisuals() {
               </button>
             ))}
           </div>
-          <span className="hidden sm:inline" style={{ fontFamily: T.mono, fontSize: 10, color: T.faint, letterSpacing: "0.08em" }}>
+          {mode === "patch" && (
+            <div className="flex gap-1 ml-1 flex-wrap">
+              {[
+                ["↶", undo, { title: "undo (Ctrl+Z)" }],
+                ["↷", redo, { title: "redo (Ctrl+Shift+Z)" }],
+                ["RESIDUAL", () => setResidual(!residual), {
+                  active: residual,
+                  disabled: !residualFor(cfg),
+                  title: residualFor(cfg) ? `subtract the prediction: ${residualFor(cfg).label}` : "no prediction encoded for this source × plane",
+                }],
+                ...(TWIN_SOURCES.has(cfg.source) && cfg.plane !== "family" ? [[
+                  twinMode === "real" ? "TWIN" : twinMode === "both" ? "TWIN·BOTH" : "TWIN·ONLY",
+                  () => setTwinMode(twinMode === "real" ? "both" : twinMode === "both" ? "twin" : "real"),
+                  { active: twinMode !== "real", title: "Cramér pseudoprime twin (rose): real → both → twin only" },
+                ]] : []),
+                ["×2×4×8", () => setPersistOpen(!persistOpen), {
+                  active: persistOpen,
+                  disabled: !cfg.p.N || cfg.plane === "family",
+                  title: "persistence & holdout: the same view at growing range",
+                }],
+                [copied ? "COPIED ✓" : "LINK", copyLink, { title: "copy a shareable link to this exact view" }],
+                ["PIN", pinCurrentView, { title: "pin this view to the notebook" }],
+              ].map(([label, onClick, opts]) => (
+                <button
+                  key={label} onClick={onClick} disabled={opts.disabled} title={opts.title}
+                  className="px-2 py-1 rounded-md"
+                  style={{
+                    fontFamily: T.mono, fontSize: 10, letterSpacing: "0.06em",
+                    background: opts.active ? T.panel2 : "transparent",
+                    border: `1px solid ${opts.active ? T.ion + "66" : T.line}`,
+                    color: opts.disabled ? T.faint : opts.active ? T.ion : T.dim,
+                    cursor: opts.disabled ? "default" : "pointer",
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
+          <span className="hidden xl:inline" style={{ fontFamily: T.mono, fontSize: 10, color: T.faint, letterSpacing: "0.08em" }}>
             {mode === "patch" ? "patch a source into a plane · turn the lens" : "write the math · turn the knobs"}
           </span>
         </div>
@@ -1023,6 +1495,7 @@ export default function PrimeVisuals() {
                 </>
               ))}
               {readingPanel}
+              <StatReadout cfg={cfg} data={data} />
 
               {/* library */}
               <div className="mt-4">
@@ -1031,6 +1504,53 @@ export default function PrimeVisuals() {
                   {LIBRARY.map((it) => chip(it.name, it.name, () => applyAny(it)))}
                 </div>
               </div>
+
+              {/* anomaly scanner */}
+              <div className="mt-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span style={{ fontFamily: T.mono, fontSize: 10, color: T.dim, letterSpacing: "0.18em" }}>ANOMALY SCAN</span>
+                  <select
+                    value={scan.N}
+                    onChange={(e) => setScan((s) => ({ ...s, N: +e.target.value }))}
+                    className="rounded px-1 py-0.5 outline-none"
+                    style={{ background: T.panel2, color: T.dim, border: `1px solid ${T.line}`, fontFamily: T.mono, fontSize: 9 }}
+                  >
+                    {[50000, 100000, 200000].map((n) => <option key={n} value={n}>find ≤ {fmt(n)}</option>)}
+                  </select>
+                </div>
+                <div style={{ fontFamily: T.mono, fontSize: 9, color: T.faint, lineHeight: 1.5 }} className="mb-2">
+                  Sweeps residue classes, exponential-sum angles, and gap correlations.
+                  Candidates are found on primes ≤ N, then re-scored on the unseen half (N, 2N] — flukes die there.
+                </div>
+                <button
+                  onClick={runScanNow} disabled={scan.running}
+                  className="w-full rounded-md px-2 py-1 text-xs"
+                  style={{ background: T.panel2, border: `1px solid ${scan.running ? T.line : T.ion + "55"}`, color: scan.running ? T.dim : T.ion, fontFamily: T.mono }}
+                >
+                  {scan.running ? `scanning… ${Math.round(scan.progress * 100)}%${scan.note ? ` · ${scan.note}` : ""}` : "Run scan"}
+                </button>
+                {!scan.running && scan.note && (
+                  <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.rose }}>{scan.note}</div>
+                )}
+                {scan.results && (
+                  <div className="flex flex-col gap-1 mt-2">
+                    {scan.results.slice(0, 12).map((r) => (
+                      <div key={r.id} className="rounded-md px-2 py-1" style={{ background: T.panel2, border: `1px solid ${T.line}` }}>
+                        <div className="truncate" style={{ fontFamily: T.mono, fontSize: 9, color: T.ink }} title={r.label}>{r.label}</div>
+                        <div className="flex items-center justify-between">
+                          <span style={{ fontFamily: T.mono, fontSize: 9, color: Math.abs(r.zScore) > 4 ? T.rose : T.dim }}>
+                            z {(+r.zFind).toFixed(1)} → {(+r.zScore).toFixed(1)} holdout
+                          </span>
+                          <span className="flex gap-2">
+                            <button onClick={() => applyScanView(r)} style={{ color: T.ion, fontFamily: T.mono, fontSize: 9 }}>view</button>
+                            <button onClick={() => pinResult(r)} style={{ color: T.amber, fontFamily: T.mono, fontSize: 9 }}>pin</button>
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </>)}
 
             {mode === "lab" && (<>
@@ -1038,16 +1558,18 @@ export default function PrimeVisuals() {
                 <>
                   {select(lab.domain, setGraphDomain, [
                     ["int", { label: "Integers  n = 1 … N" }],
+                    ["prime", { label: "Primes  p ≤ N" }],
                     ["real", { label: "Real line  t ∈ [0, T]" }],
                     ["complex", { label: "Complex plane  s = σ + it" }],
                   ])}
                   <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.faint }}>
                     {lab.domain === "int" ? "drop integer relationships, sequences, operators, and visual channels"
-                      : lab.domain === "real" ? "build curves from t, knobs, functions, and comparisons"
-                        : "paint a complex relationship w(s) across a plane"}
+                      : lab.domain === "prime" ? "n runs over the primes only — every formula samples at p"
+                        : lab.domain === "real" ? "build curves from t, knobs, functions, and comparisons"
+                          : "paint a complex relationship w(s) across a plane"}
                   </div>
-                  {lab.domain === "int" && labSlider("N", "range n ≤", 500, 20000, 500)}
-                  {lab.domain !== "int" && labSlider("tMax", "height t ≤", 10, lab.domain === "complex" ? 60 : 100, 1)}
+                  {(lab.domain === "int" || lab.domain === "prime") && labSlider("N", "range n ≤", 500, 20000, 500)}
+                  {(lab.domain === "real" || lab.domain === "complex") && labSlider("tMax", "height t ≤", 10, lab.domain === "complex" ? 60 : 100, 1)}
                   {lab.domain === "complex" && labSlider("sMax", "σ up to", 0.8, 3, 0.05)}
                 </>
               ))}
@@ -1113,6 +1635,47 @@ export default function PrimeVisuals() {
                 )}
               </div>
 
+              {/* anomaly notebook */}
+              <div className="mt-4">
+                <div style={{ fontFamily: T.mono, fontSize: 10, color: T.dim, letterSpacing: "0.18em" }} className="mb-2">NOTEBOOK</div>
+                {notebook.length === 0 ? (
+                  <div style={{ fontFamily: T.mono, fontSize: 10, color: T.faint, lineHeight: 1.5 }}>
+                    Pin scan results or views worth keeping — each entry stores its exact reproducible state.
+                  </div>
+                ) : (
+                  <div className="flex flex-col gap-1">
+                    {notebook.map((en) => (
+                      <div key={en.id} className="rounded-md px-2 py-1" style={{ background: T.panel2, border: `1px solid ${T.line}` }}>
+                        <div className="truncate" style={{ fontFamily: T.mono, fontSize: 9, color: T.ink }} title={en.label}>
+                          {en.label}{en.z != null ? ` · z = ${(+en.z).toFixed(1)}` : ""}
+                        </div>
+                        <div className="flex gap-2 mt-0.5 items-center">
+                          <button onClick={() => openNotebookEntry(en)} style={{ color: T.ion, fontFamily: T.mono, fontSize: 9 }}>open</button>
+                          <button onClick={() => copyEntryLink(en)} style={{ color: T.dim, fontFamily: T.mono, fontSize: 9 }}>link</button>
+                          {en.seq && en.seq.length > 0 && (
+                            <a
+                              href={`https://oeis.org/search?q=${en.seq.join(",")}`}
+                              target="_blank" rel="noreferrer"
+                              title="is this sequence already known?"
+                              style={{ color: T.amber, fontFamily: T.mono, fontSize: 9 }}
+                            >
+                              OEIS
+                            </a>
+                          )}
+                          <button
+                            onClick={() => saveNotebook(notebook.filter((x) => x.id !== en.id))}
+                            className="ml-auto"
+                            style={{ color: T.rose, fontFamily: T.mono, fontSize: 9 }}
+                          >
+                            ✕
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <div className="mt-5 pb-2" style={{ fontFamily: T.mono, fontSize: 9, color: T.faint, lineHeight: 1.6 }}>
                 Extend it: a new visualization is one entry in the SOURCES, PLANES, or LENSES registry. Presets are plain JSON of the patch.
               </div>
@@ -1161,6 +1724,98 @@ export default function PrimeVisuals() {
               ))}
             </div>
           )}
+          {uiVisible && mode === "patch" && cfg.plane !== "family" && (
+            <div className="absolute top-3 left-3 flex flex-col gap-1" style={{ zIndex: 16, maxWidth: "calc(100% - 150px)" }}>
+              <div className="flex flex-wrap gap-1">
+                {CHIP_ORDER.map((op) => (
+                  <button
+                    key={op} draggable
+                    onDragStart={(e) => { e.dataTransfer.setData("application/x-pv-op", op); e.dataTransfer.effectAllowed = "copy"; }}
+                    onClick={() => addChip(op)}
+                    title={`${CHIP_OPS[op].title} — drag onto an axis row, or click to add to “${chipTarget}”`}
+                    className="px-1.5 rounded"
+                    style={{ background: "rgba(12,15,23,0.85)", border: `1px solid ${T.line}`, color: T.ion, fontFamily: T.mono, fontSize: 10, lineHeight: "20px", cursor: "grab" }}
+                  >
+                    {CHIP_OPS[op].label}
+                  </button>
+                ))}
+              </div>
+              {["x", "y"].map((axis) => (
+                <div
+                  key={axis}
+                  onDragOver={(e) => e.preventDefault()}
+                  onDrop={(e) => { e.preventDefault(); const op = e.dataTransfer.getData("application/x-pv-op"); if (op) addChip(op, axis); }}
+                  onClick={() => setChipTarget(axis)}
+                  className="flex items-center flex-wrap gap-1 rounded-md px-2 py-1"
+                  style={{ background: "rgba(7,8,15,0.78)", border: `1px dashed ${chipTarget === axis ? T.ion + "88" : T.line}`, minHeight: 28, cursor: "default" }}
+                >
+                  <span style={{ fontFamily: T.mono, fontSize: 10, color: T.amber, width: 12 }}>{axis}</span>
+                  {chips[axis].length === 0 && (
+                    <span style={{ fontFamily: T.mono, fontSize: 9, color: T.faint }}>drop a math op here — it reshapes this axis</span>
+                  )}
+                  {chips[axis].map((c) => {
+                    const def = CHIP_OPS[c.op];
+                    return (
+                      <span
+                        key={c.id}
+                        className="flex items-center gap-1 rounded px-1.5 py-0.5"
+                        style={{ background: T.panel2, border: `1px solid ${T.line}`, fontFamily: T.mono, fontSize: 10, color: T.ink }}
+                      >
+                        {def.param ? (
+                          <>
+                            <span>{def.label.split(" ")[0]}</span>
+                            <span
+                              onPointerDown={(e) => scrubChip(e, axis, c.id)}
+                              title="drag horizontally to change"
+                              style={{ color: T.ion, cursor: "ew-resize", userSelect: "none" }}
+                            >
+                              {def.param.step >= 1 ? Math.round(c.p[def.param.key]) : (+c.p[def.param.key]).toFixed(2)}
+                            </span>
+                          </>
+                        ) : <span>{def.label}</span>}
+                        <span onClick={() => moveChip(axis, c.id, -1)} title="earlier in the pipeline" style={{ color: T.faint, cursor: "pointer" }}>◂</span>
+                        <span onClick={() => moveChip(axis, c.id, 1)} title="later in the pipeline" style={{ color: T.faint, cursor: "pointer" }}>▸</span>
+                        <span onClick={() => removeChip(axis, c.id)} style={{ color: T.rose, cursor: "pointer" }}>✕</span>
+                      </span>
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+          )}
+          {uiVisible && persistOpen && mode === "patch" && cfg.p.N && cfg.plane !== "family" && (
+            <div
+              className="absolute top-12 right-3 rounded-md p-3 overflow-y-auto"
+              style={{ zIndex: 18, width: 288, maxHeight: "calc(100% - 70px)", background: "rgba(7,8,15,0.94)", border: `1px solid ${T.line}` }}
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span style={{ fontFamily: T.mono, fontSize: 10, color: T.ion, letterSpacing: "0.14em" }}>PERSISTENCE · HOLDOUT</span>
+                <button onClick={() => setPersistOpen(false)} style={{ color: T.dim }}>✕</button>
+              </div>
+              <div style={{ fontFamily: T.mono, fontSize: 9, color: T.faint, lineHeight: 1.5 }} className="mb-2">
+                The same pipeline at growing range — real structure strengthens, noise fades.
+                The last panel renders only the unseen range (N, 2N]: structure that survives there was not found by luck.
+              </div>
+              {[1, 2, 4, 8].map((s) => {
+                const def = (SOURCES[cfg.source].params || []).find((d) => d.key === "N");
+                const N2 = Math.min(Math.round(cfg.p.N * s), def ? def.max * 8 : Infinity);
+                return (
+                  <MiniView
+                    key={`${s}-${N2}`}
+                    cfg={{ ...cfg, p: { ...cfg.p, N: N2 } }}
+                    chips={chips} residual={residual}
+                    label={`N = ${fmt(N2)}${s > 1 ? `  (×${s})` : ""}`}
+                  />
+                );
+              })}
+              <MiniView
+                cfg={{ ...cfg, p: { ...cfg.p, N: cfg.p.N * 2 } }}
+                chips={chips} residual={residual}
+                label={`holdout — only (${fmt(cfg.p.N)}, ${fmt(cfg.p.N * 2)}]`}
+                filter={(n) => n > cfg.p.N}
+              />
+            </div>
+          )}
           {uiVisible && <div className="absolute top-3 right-3 flex gap-1" style={{ paddingRight: 36 }}>
             {[["−", () => zoomBy(1 / 1.35)], ["+", () => zoomBy(1.35)], ["⟲", resetView]].map(([t, fn]) => (
               <button key={t} onClick={fn}
@@ -1174,6 +1829,9 @@ export default function PrimeVisuals() {
             style={{ background: "rgba(7,8,15,0.7)", border: `1px solid ${T.line}`, fontFamily: T.mono, fontSize: 10, color: T.dim, maxWidth: "calc(100% - 24px)" }}>
             {mode === "patch"
               ? `${SOURCES[cfg.source].label} → ${PLANES[cfg.plane].label} → ${LENSES[cfg.lens].label}`
+                + (activeResidual ? `  ·  residual: ${activeResidual.label}` : "")
+                + (twinMode !== "real" ? `  ·  twin: ${twinMode}` : "")
+                + [chipSummary("x", chips.x), chipSummary("y", chips.y)].filter(Boolean).map((s) => `  ·  ${s}`).join("")
               : lab.domain === "complex" ? `LAB · w(s) = ${lab.ew}` : `LAB · x = ${lab.ex} · y = ${lab.ey}`}
             <span className="hidden sm:inline" style={{ color: T.faint }}>  ·  drag to pan, scroll to zoom, double-click to reset</span>
           </div>}
