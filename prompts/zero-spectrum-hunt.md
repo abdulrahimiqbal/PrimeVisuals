@@ -1,7 +1,6 @@
 # GOAL: prime spectroscopy — recover the zeros from raw primes, then point the instrument at sets that have no known spectrum
 
-Read MACHINE_HOW_TO_USE.md and KNOWLEDGE.md first (your previous run's ψ
-entry is the starting point). Create `logs/<today>-zero-spectrum-hunt.md`;
+Read MACHINE_HOW_TO_USE.md and KNOWLEDGE.md first. Create `logs/<today>-zero-spectrum-hunt.md`;
 append-only; ⭐-flag findings the moment you see them.
 
 ## Why this can matter
@@ -13,8 +12,7 @@ same spectrometer at prime families with NO known L-function — twin primes
 and primes of the form n²+1. Nobody can predict their fluctuation spectra;
 even proving these sets are infinite is open. A reproducible discrete
 spectrum there, surviving every control, would be a genuinely new
-observation. That is the breakthrough bar. It is high; expect to miss it
-and say so plainly.
+observation. That is the bar. It is high; expect to miss it and say so.
 
 ## Phase A — calibration (sharp, checkable)
 
@@ -29,7 +27,7 @@ and say so plainly.
 SUCCESS CRITERION: the first ≥ 20 peak frequencies match the bundled ZEROS
 table (used ONLY as ground truth for checking) within the frequency
 resolution Δγ ≈ 2π/(u_max − u_min) ≈ 0.9. Report matched / missed /
-spurious counts and a peak-vs-truth table. If Phase A fails, debug it; do
+spurious counts. If Phase A fails, debug it; do
 not proceed.
 
 ## Phase B — controls
