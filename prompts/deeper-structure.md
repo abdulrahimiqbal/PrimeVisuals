@@ -1,10 +1,10 @@
 # OPEN GOAL v2: a reformulation that TEACHES — deeper prime structure, not new coordinates
 
-Supersedes prompts/novel-equivalent.md (completed as L2/E2 — independently
-verified correct, judged content-free: a zero-free-multiplier twist of ψ;
-see KNOWLEDGE.md). The goal is now: the reformulation must tell us
-something about prime patterns we could not say before. Stays open across
-sessions; resume from a HANDOFF if one exists.
+Supersedes prompts/novel-equivalent.md (completed as L2/E2 — verified
+correct, judged content-free: a zero-free-multiplier twist of ψ; see
+KNOWLEDGE.md). The reformulation must now tell us something about prime
+patterns we could not say before. Stays open across sessions; resume from
+a HANDOFF if one exists.
 Log: `logs/<today>-deeper-structure.md`.
 
 ## The lesson learned (read first)
@@ -20,9 +20,8 @@ where the derivation is hard.
 ## Completion criteria — ALL of them
 
 1. **DIFFERENT WORLD.** The new object G is defined with NO primality test
-   and no μ/Λ/prime-indexed sums. Divisibility, gcd, divisor sums,
-   fractions, lattice points, permutations, matrices, continued fractions
-   are all allowed. The prime content must enter through the THEOREM, not
+   and no μ/Λ/prime-indexed sums. Divisibility, gcd, divisor sums, fractions,
+   lattice points, permutations, continued fractions are allowed. The prime content must enter through the THEOREM, not
    the definition.
 2. **FACTOR CHECK** (the upgraded disguise check). Write G's
    Dirichlet/generating series if it has one. If it factors as
