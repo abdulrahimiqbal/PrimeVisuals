@@ -121,6 +121,10 @@ export const makeFns = (tab) => ({
   tau: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.tau.length - 1, Math.round(z[0]))); return [tab.tau[k], 0]; },
   phi: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.phi.length - 1, Math.round(z[0]))); return [tab.phi[k], 0]; },
   rad: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.rad.length - 1, Math.round(z[0]))); return [tab.rad[k], 0]; },
+  g2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.g2.length - 1, Math.round(z[0]))); return [tab.g2[k], 0]; },
+  G2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.G2.length - 1, Math.round(z[0]))); return [tab.G2[k], 0]; },
+  l2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.l2.length - 1, Math.round(z[0]))); return [tab.l2[k], 0]; },
+  L2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.L2.length - 1, Math.round(z[0]))); return [tab.L2[k], 0]; },
 });
 
 /* Evaluate x/y/hue formulas over ℤ, the primes, or ℝ. Throws on parse/eval errors. */

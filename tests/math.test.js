@@ -7,6 +7,9 @@ import {
   zetaHalf,
   zetaC,
   integerLabTables,
+  dyadicExpMobiusValue,
+  dyadicExpMangoldtValue,
+  dyadicExpTransform,
   liUpTo,
   primePowersUpTo,
   psiExplicit,
@@ -139,6 +142,90 @@ describe("integerLabTables(100)", () => {
   it("pic[100] = 25", () => expect(tab.pic[100]).toBe(25));
   it("gap[7] = 4 (next prime after 7 is 11)", () => expect(tab.gap[7]).toBe(4));
   it("mertens[100] = 1", () => expect(tab.mertens[100]).toBe(1));
+  it("g2[12] = 1/2 and G2[12] is the cumulative sum", () => {
+    expect(tab.g2[12]).toBeCloseTo(0.5, 14);
+    let sum = 0;
+    for (let n = 1; n <= 12; n++) sum += tab.g2[n];
+    expect(tab.G2[12]).toBeCloseTo(sum, 14);
+  });
+  it("l2[12] = log(3)/2 and L2[12] is the cumulative sum", () => {
+    expect(tab.l2[12]).toBeCloseTo(Math.log(3) / 2, 14);
+    let sum = 0;
+    for (let n = 1; n <= 12; n++) sum += tab.l2[n];
+    expect(tab.L2[12]).toBeCloseTo(sum, 14);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// dyadic exponential Mobius atom g2
+// ---------------------------------------------------------------------------
+describe("dyadic exponential Mobius atom g2", () => {
+  it("has the first hand-computed values", () => {
+    const expected = [
+      1, 0, -1, -0.5, -1, 0, -1, -1 / 3,
+      0, 0, -1, 0.5, -1, 0, 1, -1 / 8,
+    ];
+    for (let n = 1; n <= expected.length; n++) {
+      expect(dyadicExpMobiusValue(n)).toBeCloseTo(expected[n - 1], 14);
+    }
+  });
+
+  it("table values match the direct value function through 200", () => {
+    const tab = integerLabTables(200);
+    for (let n = 1; n <= 200; n++) {
+      expect(tab.g2[n]).toBeCloseTo(dyadicExpMobiusValue(n), 14);
+    }
+  });
+
+  it("G2 is exactly the dyadic exponential transform of Mertens, and inverts back", () => {
+    const tab = integerLabTables(200);
+    const M = Float64Array.from({ length: 200 }, (_, i) => tab.mertens[i + 1]);
+    const A = dyadicExpTransform(M);
+    const recoveredM = dyadicExpTransform(A, true);
+    for (let n = 1; n <= 200; n++) {
+      expect(tab.G2[n]).toBeCloseTo(A[n - 1], 12);
+      expect(recoveredM[n - 1]).toBeCloseTo(tab.mertens[n], 12);
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// dyadic exponential von Mangoldt atom l2
+// ---------------------------------------------------------------------------
+describe("dyadic exponential von Mangoldt atom l2", () => {
+  it("has the first hand-computed values", () => {
+    const L2 = Math.log(2);
+    const L3 = Math.log(3);
+    const expected = [
+      0, L2, L3, 2 * L2, Math.log(5), L3, Math.log(7), 2.5 * L2,
+      L3, Math.log(5), Math.log(11), 0.5 * L3, Math.log(13), Math.log(7), 0, (8 / 3) * L2,
+    ];
+    for (let n = 1; n <= expected.length; n++) {
+      expect(dyadicExpMangoldtValue(n)).toBeCloseTo(expected[n - 1], 14);
+    }
+  });
+
+  it("table values match the direct value function through 200", () => {
+    const tab = integerLabTables(200);
+    for (let n = 1; n <= 200; n++) {
+      expect(tab.l2[n]).toBeCloseTo(dyadicExpMangoldtValue(n), 14);
+    }
+  });
+
+  it("L2 is exactly the dyadic exponential transform of psi, and inverts back", () => {
+    const tab = integerLabTables(200);
+    const psi = new Float64Array(200);
+    for (let n = 1; n <= 200; n++) {
+      const r = tab.rad[n];
+      psi[n - 1] = (n > 1 ? psi[n - 2] : 0) + (r >= 2 && tab.isp[r] ? Math.log(r) : 0);
+    }
+    const A = dyadicExpTransform(psi);
+    const recoveredPsi = dyadicExpTransform(A, true);
+    for (let n = 1; n <= 200; n++) {
+      expect(tab.L2[n]).toBeCloseTo(A[n - 1], 12);
+      expect(recoveredPsi[n - 1]).toBeCloseTo(psi[n - 1], 12);
+    }
+  });
 });
 
 // ---------------------------------------------------------------------------

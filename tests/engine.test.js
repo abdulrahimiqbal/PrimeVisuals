@@ -118,6 +118,16 @@ describe("makeFns — table functions", () => {
   it("gcd([12,0],[18,0]) → [6,0]", () => {
     expect(fns.gcd([12, 0], [18, 0])).toEqual([6, 0]);
   });
+
+  it("g2 and G2 expose the dyadic exponential Mobius atom and sum", () => {
+    expect(fns.g2([12, 0])[0]).toBeCloseTo(0.5, 14);
+    expect(fns.G2([12, 0])[0]).toBeCloseTo(tab.G2[12], 14);
+  });
+
+  it("l2 and L2 expose the dyadic exponential von Mangoldt atom and sum", () => {
+    expect(fns.l2([12, 0])[0]).toBeCloseTo(Math.log(3) / 2, 14);
+    expect(fns.L2([12, 0])[0]).toBeCloseTo(tab.L2[12], 14);
+  });
 });
 
 // ---------------------------------------------------------------------------
@@ -167,5 +177,33 @@ describe("computeLabSeries", () => {
     });
     expect(result.L).toBe(1200);
     expect(result.ys[result.L - 1]).toBeCloseTo(Math.sin(10), 10);
+  });
+
+  it("domain=int can evaluate g2(n) and G2(n)", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 12,
+      ex: "n",
+      ey: "g2(n)+G2(n)",
+      eh: "",
+      a: 1,
+      b: 1,
+    });
+    const tab = integerLabTables(12);
+    expect(result.ys[11]).toBeCloseTo(tab.g2[12] + tab.G2[12], 14);
+  });
+
+  it("domain=int can evaluate l2(n) and L2(n)", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 12,
+      ex: "n",
+      ey: "l2(n)+L2(n)",
+      eh: "",
+      a: 1,
+      b: 1,
+    });
+    const tab = integerLabTables(12);
+    expect(result.ys[11]).toBeCloseTo(tab.l2[12] + tab.L2[12], 14);
   });
 });

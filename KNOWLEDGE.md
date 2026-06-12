@@ -8,6 +8,47 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-06-12 · NEW-OBJECT — dyadic exponential Chebyshev transform `l2/L2`
+
+Source: `logs/2026-06-12-novel-equivalent.md`; implementation in
+`src/core/math.js`, `src/core/engine.js`, and the `E2` chip in
+`src/core/chips.js`.
+
+**NEW-OBJECT — `l2(n)=Σ_{2^k|n} Λ(n/2^k)/k!`, with `L2(x)=Σ_{n≤x}l2(n)`.**
+This is the dyadic exponential transform `E2` applied to Chebyshev's
+`ψ(x)`: `L2(x)=Σ_{k≥0}ψ(x/2^k)/k!`. The transformed main term is exactly
+`sqrt(e)x`, so the clean statement is
+`sup_{x≥3}|L2(x)-sqrt(e)x|/(sqrt(x)(1+log x)^2)<∞`. The inverse
+coefficients are `(-1)^k/k!`, hence this statement is equivalent, by
+Dirichlet convolution and summatory switching, to the classical
+`ψ(x)-x=O(sqrt(x)log^2x)` RH-equivalent.
+
+First values:
+`l2(1..8) = 0, log2, log3, 2log2, log5, log3, log7, (5/2)log2`;
+`l2(9..16) = log3, log5, log11, (1/2)log3, log13, log7, 0, (8/3)log2`.
+
+Disguise check: not `Λ`, since `l2(4)=2log2` while `Λ(4)=log2`, and
+`l2(6)=log3` while `Λ(6)=0`; not `ψ`, since `L2` has main term
+`sqrt(e)x` rather than `x`; not a Redheffer/Farey/Mertens catalog object.
+Nearest catalog neighbors are the classical `ψ` residual and broad
+Möbius-convolution/Riesz-type criteria, but this concrete dyadic
+factorial multiplier `exp(2^{-s})` and residual statement were not found
+in the checked catalogs.
+
+Evidence: interval envelope fits for `|L2(x)-sqrt(e)x|` gave
+`theta=0.515111` over `2e4..1e6` and `theta=0.512133` over `1e5..1e7`.
+Through `1e7`, `max |R2|/sqrt(x)=0.828718` for `x≥10000`; Cramér
+prime-power fakes through `4e6` reached `7.84`, `9.72`, and `10.37`.
+Live raw-residual view:
+`http://localhost:5174/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6ImludCIsIk4iOjIwMDAwLCJ0TWF4Ijo2MCwic01heCI6MS42LCJleCI6Im4iLCJleSI6IkwyKG4pLXNxcnQoZSkqbiIsImVoIjoiKEwyKG4pLXNxcnQoZSkqbikvc3FydChuKSIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ`;
+shot `logs/novel-equivalent-artifacts/l2-raw-residual-shot.png`;
+numeric artifact `logs/novel-equivalent-artifacts/l2-numerics.json`.
+
+CONNECTION: this is the 2026-06-12 `ψ(x)-x` entry seen through a new
+invertible transform. It preserves the RH-sensitive square-root residual
+while changing the main line from `x` to `sqrt(e)x`; the Cramér contrast
+extends the earlier ψ real-vs-fake test to the transformed object.
+
 ## 2026-06-13 · Decoding the first anomaly-scan leaderboard
 
 Source: in-app anomaly scan over primes ≤ 200,000 (find ≤ N, score on
