@@ -164,7 +164,11 @@ the instrument itself:
   definition, first ~20 values, motivation, and a **disguise check** —
   your own serious attempt to prove the new object is a known one in
   costume (precedent: `isprime(rad(n))·log(rad(n))` is exactly the von
-  Mangoldt function Λ(n)).
+  Mangoldt function Λ(n)). The disguise check includes a **factor check**:
+  if the object's Dirichlet/generating series factors as
+  (known RH-sensitive object) × (zero-free bounded multiplier), it is the
+  known object in new coordinates and inherits no new content (precedent:
+  L2 = e^(2^−s)-twist of ψ — correct equivalence, zero new information).
 
 Epistemics for created math: numerics about a new object earn `OBSERVED`.
 "Equivalent to RH" (or to any theorem) is a theorem-shaped claim and

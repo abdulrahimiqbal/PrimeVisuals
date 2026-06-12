@@ -1,5 +1,9 @@
 # OPEN GOAL: a clean, novel RH-equivalent — built from chips that have never existed
 
+> SUPERSEDED by prompts/deeper-structure.md — completed as L2/E2, verified
+> correct but judged content-free (zero-free multiplier twist). The v2 goal
+> requires the reformulation to teach something new about prime patterns.
+
 This goal stays open across sessions until completed. Read
 MACHINE_HOW_TO_USE.md (especially "Creating new math") and KNOWLEDGE.md.
 Log: `logs/<today>-novel-equivalent.md`. If an earlier log of this goal
