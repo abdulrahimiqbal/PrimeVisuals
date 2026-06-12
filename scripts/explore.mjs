@@ -101,7 +101,30 @@ if (cmd === "eval") {
     labVariables: ["n (int/prime)", "t (real)", "s (complex)", "i", "a", "b", "pi", "e"],
     labFunctions: fns,
   });
+} else if (cmd === "shot") {
+  // node scripts/explore.mjs shot '<spec>' [outfile.png]
+  // Renders the spec in headless Chromium (focus mode, math only) so an
+  // agent with vision can SEE the picture, not just its metrics.
+  const file = process.argv[4] || "/tmp/pv-shot.png";
+  const base = process.env.PV_URL || "http://localhost:5173/";
+  try {
+    const spec = JSON.parse(arg);
+    const hash = encodeState(stateFor(spec));
+    const { chromium } = await import("playwright");
+    const browser = await chromium.launch();
+    const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+    await page.goto(base + hash, { waitUntil: "networkidle" });
+    await page.waitForTimeout(1800); // let the pipeline compute and draw
+    await page.locator(".pv-eye-toggle").click().catch(() => {}); // hide chrome, keep the math
+    await page.waitForTimeout(500);
+    await page.screenshot({ path: file });
+    await browser.close();
+    out({ ok: true, file, url: base + hash });
+  } catch (e) {
+    out({ ok: false, error: e.message, hint: "shot needs a running dev server (npm run dev) and `npx playwright install chromium`" });
+    process.exitCode = 1;
+  }
 } else {
-  console.error("usage: explore.mjs eval '<spec>' | batch | link '<spec>' | ops   (see MACHINE_HOW_TO_USE.md)");
+  console.error("usage: explore.mjs eval '<spec>' | batch | link '<spec>' | shot '<spec>' [out.png] | ops   (see MACHINE_HOW_TO_USE.md)");
   process.exitCode = 1;
 }

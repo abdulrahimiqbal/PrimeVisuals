@@ -25,7 +25,10 @@ node scripts/explore.mjs eval '{"domain":"real","tMax":60,"ex":"t","ey":"abs(zet
 printf '%s\n%s\n' '{"domain":"int","N":5000,"ey":"M(n)"}' '{"domain":"int","N":5000,"ey":"pi(n)"}' \
   | node scripts/explore.mjs batch
 
-# 4. Hand the human a link for anything interesting
+# 4. LOOK at a candidate (renders a PNG you can read with vision)
+node scripts/explore.mjs shot '<spec>' /tmp/candidate.png
+
+# 5. Hand the human a link for anything interesting
 node scripts/explore.mjs link '<the same spec>'
 # append the "#v=..." to the app URL: http://localhost:5173/#v=...
 ```
@@ -80,6 +83,68 @@ For the rendered series (xs, ys):
 - `finiteFrac` — fraction of finite samples; < 1 means the formula blew up
   somewhere (poles, log of 0). Treat < 0.99 as suspect.
 - `n`, `yMin`, `yMax`, and `ms` (evaluation time).
+
+## Seeing what you generate
+
+Metrics are one-dimensional; much real structure is two-dimensional. A
+spiral with prime-rich curves, stripes in a matrix view, or spokes on the
+polar dial have **no linearity signature at all** — if you only read
+metrics you will walk straight past them. So for any candidate that
+involves a 2-D plane (spirals, clock, matrix, polar, family), or whose
+metrics look odd, render it and look:
+
+```sh
+npm run dev &                          # once per session
+npx playwright install chromium        # once per machine
+node scripts/explore.mjs shot '<spec>' /tmp/candidate.png
+```
+
+`shot` opens the exact view in headless Chromium in focus mode (math only,
+no UI) and writes a PNG — read it with your vision capability. It accepts
+the same specs as `eval`, including patch specs with chips, residual, and
+`"twinMode":"both"` (render the Cramér twin overlay to visually separate
+arithmetic structure from density artifacts). Set `PV_URL` if the dev
+server isn't on localhost:5173.
+
+## Logging: one log file per goal
+
+Every goal you are given gets its own append-only journal:
+`logs/<YYYY-MM-DD>-<goal-slug>.md`. Create it before the first evaluation.
+Record:
+
+1. **The goal**, restated precisely, and your search plan.
+2. **Every batch**: the specs tried and their scores (a compact table or
+   JSONL block — enough that the search is reproducible).
+3. **Anything mathematically interesting, the moment you notice it**,
+   flagged with a `⭐ INTERESTING` line: what you saw, the spec, the
+   metrics at 1×/2×/4×, the screenshot path if you took one, and the
+   shareable link. Interesting includes *negative* surprises (something
+   that should have shown structure and didn't).
+4. **A closing summary**: findings ranked, what was trivial/known/open,
+   and concrete next questions.
+
+The log is for the human to audit your search and for future agents to
+avoid repeating it. Never overwrite a log; append.
+
+## Compounding knowledge across goals
+
+Maintain `KNOWLEDGE.md` at the repo root — the project's growing memory of
+prime-number facts established *through this tool*. The rules:
+
+- **Read it before starting any goal.** Your first action on a new goal is
+  to check what is already known here, so searches build on each other
+  instead of rediscovering.
+- **Append after every goal**: each entry is a dated fact with its
+  evidence (spec + metrics + link), classified as `KNOWN-MATH` (matches an
+  established theorem — name it), `OBSERVED` (replicated here, no
+  explanation in hand), or `OPEN` (a question worth pursuing).
+- **Hunt connections explicitly.** After appending, scan the existing
+  entries and ask: does the new fact share a mechanism with an old one?
+  (Example: exponential-sum peaks at rationals and matrix-view stripes are
+  the *same* fact — residue classes — seen through two lenses. Say so in a
+  `CONNECTION:` line.) Cross-linking entries is where compound interest
+  lives; an entry without at least an attempted connection is incomplete.
+- **Never delete.** Corrections are new entries that cite the old one.
 
 ## Discipline — do not skip this
 
