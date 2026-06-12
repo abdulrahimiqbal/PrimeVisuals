@@ -49,6 +49,15 @@ The LENS decides color: `Ion mono` (one color — geometry only), `Aurora`
 (sequence order), `Residue classes` (`n mod k`), `Signal` (sign), `Pulse`
 (magnitude).
 
+The `IN PLAIN WORDS` panel at the top of the sidebar narrates whatever you
+are currently looking at in non-specialist language and updates live as you
+change anything. If a Lab formula is mathematically inconsistent (like
+using the complex variable `s` on the real line), the error message says
+what's wrong in plain terms and offers a one-click fix.
+
+Driving the tool from an AI coding agent instead of by hand? See
+[MACHINE_HOW_TO_USE.md](MACHINE_HOW_TO_USE.md).
+
 ## The playable canvas
 
 The default scene is **Riemann's explicit formula**: the prime staircase
@@ -95,7 +104,8 @@ candidates are survivors further down that you cannot immediately explain.
 | Preset | What you're seeing | Look for |
 | --- | --- | --- |
 | Riemann explicit formula | `ψ(x)` staircase vs `x − Σ x^ρ/ρ` | raise `K`: zero waves converging on the primes |
-| Family sweep mod q | one row per modulus q, columns are residues r/q | coherent vertical bands shared across the family |
+| Family sweep mod q | one row per modulus q, columns are residues r/q | coherent vertical bands shared across the family; the black lattice is a portrait of the rationals (cells where r/q isn't in lowest terms) |
+| Prime matrix | numbers poured into a table W columns wide, primes lit | drag `row width W`: stripes snap in when W shares factors with small primes |
 | Sacks spiral | primes on the `r = sqrt(p)` spiral | curved prime-rich streaks (polynomial paths) |
 | Ulam spiral | primes on a square spiral | dense and sparse diagonals (quadratics) |
 | Polar α-dial | each prime at angle `α·p` | turn `α` slowly until spokes or petals lock in |

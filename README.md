@@ -19,6 +19,13 @@ See [HOW_TO_USE.md](HOW_TO_USE.md) for a practical guide to the controls,
 presets, and what each dot represents. [ROADMAP.md](ROADMAP.md) tracks what
 is built and what comes next.
 
+[MACHINE_HOW_TO_USE.md](MACHINE_HOW_TO_USE.md) documents the headless
+interface for AI coding agents: `scripts/explore.mjs` evaluates any
+pipeline without a browser, scores its shape (linearity, flatness,
+oscillation), and emits shareable links — so you can hand your IDE a goal
+like "find another straight line by a different route" and open whatever
+it finds.
+
 ## Run locally
 
 ```sh

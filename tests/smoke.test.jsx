@@ -66,4 +66,50 @@ describe("PrimeVisuals", () => {
     fireEvent.click(getByText("LAB"));
     expect(container.textContent).toContain("CANVAS LAB");
   });
+
+  it("renders the prime matrix plane and the plain-words panel", () => {
+    const { container, getAllByText } = render(<PrimeVisuals />);
+    // The "IN PLAIN WORDS" panel is always present in patch mode
+    expect(container.textContent).toContain("IN PLAIN WORDS");
+    // Click the "Prime matrix" library chip — library chips render as span.truncate inside a div
+    const truncateSpans = container.querySelectorAll("span.truncate");
+    const matrixSpan = Array.from(truncateSpans).find((el) => el.textContent === "Prime matrix");
+    expect(matrixSpan).toBeTruthy();
+    fireEvent.click(matrixSpan);
+    // After clicking, the plane is "matrix" whose label is "Matrix rows (width W)"
+    expect(container.textContent).toMatch(/Matrix rows|row width/);
+  });
+
+  it("shows a friendly lab error with a domain fix for 's' on integer domain", async () => {
+    // Directly test the friendlyLabError function — reliable, no brittle input targeting
+    const { friendlyLabError } = await import("../src/core/guides.js");
+
+    // The engine emits errors with curly/smart double quotes (“ and ”)
+    const lq = "“"; // left double quotation mark
+    const rq = "”"; // right double quotation mark
+
+    // 's' on int domain → switch to ℂ
+    const errS = friendlyLabError(`unknown ${lq}s${rq}`, { domain: "int" });
+    expect(errS).toBeTruthy();
+    expect(errS.text).toContain("complex plane");
+    expect(errS.fix).toBeTruthy();
+    expect(errS.fix.label).toContain("switch domain to ℂ"); // ℂ
+
+    // Clicking the fix would change domain to complex, removing the error
+    // We verify fix.domain is "complex" so the error would disappear
+    expect(errS.fix.domain).toBe("complex");
+
+    // 't' on int domain → switch to ℝ
+    const errT = friendlyLabError(`unknown ${lq}t${rq}`, { domain: "int" });
+    expect(errT.fix.label).toContain("switch domain to ℝ"); // ℝ
+
+    // 'n' on real domain → switch to ℤ
+    const errN = friendlyLabError(`unknown ${lq}n${rq}`, { domain: "real" });
+    expect(errN.fix.label).toContain("switch domain to ℤ"); // ℤ
+
+    // unknown function
+    const errFn = friendlyLabError(`unknown function ${lq}foo${rq}`, { domain: "int" });
+    expect(errFn.text).toContain("foo");
+    expect(errFn.fix).toBeUndefined();
+  });
 });
