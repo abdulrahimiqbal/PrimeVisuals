@@ -135,6 +135,59 @@ export function hoverInfo(mode, cfg, data, lab, labData, idx) {
   return null;
 }
 
+/* One live plain-English sentence about the current view, plus what a
+   pattern would mean if one appeared. Written for non-number-theorists. */
+export function explainView(cfg, opts = {}) {
+  const { chips, residual, twinMode } = opts;
+  const what = {
+    "psi:graph": "You're watching the primes being rebuilt out of zeta-zero waves: the staircase climbs at every prime power, and the smooth curve knows nothing about primes — only about the first K zeros of the zeta function.",
+    "primes:sacks": "Every prime is wrapped onto a spiral. Nothing about the spiral favors primes, so any curve you see is the primes choosing certain polynomial paths.",
+    "primes:ulam": "The counting numbers are written in a square spiral and only the primes are lit. Diagonals are quadratic formulas; bright diagonals are formulas unusually rich in primes.",
+    "primes:polar": "Each prime p is placed at angle α·p, like winding a number line around a dial. When α/2π is close to a simple fraction, primes sort themselves into spokes by remainder.",
+    "primes:clock": "Each prime is placed on a clock by its remainder. Empty spokes aren't gaps in the data — they're remainders no prime can ever have.",
+    "primes:walk": "Two teams of primes (remainder 1 vs remainder 3 when divided by 4) race; the line shows who's ahead. They should tie in the long run, yet one team leads suspiciously often.",
+    "primes:matrix": "The numbers up to N are poured into a table W columns wide and the primes are lit. Drag W and watch: stripes snap in whenever W shares a factor with small primes, because whole columns become impossible.",
+    "primes:family": "Every row asks the same question for a different divisor q: do the primes spread evenly among the allowed remainders? Green = fair, warm = excess, cold = deficit, black = impossible.",
+    "gaps:graph": "Each point is the distance from one prime to the next. The floor slowly rises (primes thin out), but individual gaps swing wildly.",
+    "mobius:walk": "A coin-flip-like walk driven by the Möbius function. If this walk ever strays too far from zero, the Riemann Hypothesis is false.",
+    "zeta:graph": "The height of the zeta function as you climb the critical line. Every touch of zero is one of the zeros that secretly steer the primes.",
+    "zeta:argand": "The zeta function drawn as a moving point in the plane. Each loop through the origin is a zero.",
+    "zeros:strip": "The known zeros plotted in their natural home. The Riemann Hypothesis says they all sit exactly on the center line — none have ever been found off it.",
+    "zeros:graph": "The spacing between consecutive zeros. They repel each other like energy levels of a heavy atom — one of math's strangest unexplained connections.",
+  }[`${cfg.source}:${cfg.plane}`]
+    || "A stream of arithmetic data placed into a coordinate system — structure you see is structure the numbers brought with them.";
+
+  const mods = [];
+  if (residual) mods.push("RESIDUAL is on: the best-known prediction has been subtracted, so anything left on screen is what current theory does not explain.");
+  if (twinMode && twinMode !== "real") mods.push("The rose layer is fake primes (random numbers with the primes' density): patterns in both layers are coincidence-grade; patterns only in cyan are real arithmetic.");
+  if (chips && (chips.x.length || chips.y.length)) mods.push("Transform chips are reshaping the axes, so you're looking at a function of the original picture.");
+  return [what, ...mods];
+}
+
+/* Map raw engine errors to friendly explanations with a one-click fix. */
+export function friendlyLabError(msg, lab) {
+  if (!msg) return null;
+  let m = /unknown function “(.+?)”/.exec(msg);
+  if (m) {
+    return { text: `“${m[1]}” isn't a function here. Available: abs arg re im conj exp log sqrt sin cos floor frac min max dot mod gcd pow zeta — and on integer domains mu M isprime pi gap omega bigomega tau phi rad.` };
+  }
+  m = /unknown “(.+?)”/.exec(msg);
+  if (m) {
+    const name = m[1];
+    if (name === "s" && lab.domain !== "complex") {
+      return { text: "“s” only exists on the complex plane.", fix: { label: "switch domain to ℂ", domain: "complex" } };
+    }
+    if (name === "t" && (lab.domain === "int" || lab.domain === "prime")) {
+      return { text: "“t” is the real-line variable; this domain steps through whole numbers as “n”.", fix: { label: "switch domain to ℝ", domain: "real" } };
+    }
+    if (name === "n" && (lab.domain === "real" || lab.domain === "complex")) {
+      return { text: "“n” is the integer variable; this domain doesn't have it.", fix: { label: "switch domain to ℤ", domain: "int" } };
+    }
+    return { text: `“${name}” isn't defined. The variables are n (integers), t (real line), s (complex plane), i, and the knobs a and b.` };
+  }
+  return { text: msg };
+}
+
 export function sceneProjector(scene, wrap, viewState) {
   if (!scene || scene.fieldMeta || !scene.xs || !scene.ys || !wrap) return null;
   const W = wrap.clientWidth, H = wrap.clientHeight;

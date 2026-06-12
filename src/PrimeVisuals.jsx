@@ -13,7 +13,7 @@ import {
   withLabDefaults, LAB_TEMPLATES, cloneGraph, compileGraphToLab,
   NODE_PALETTE, createNodeFromPalette, nodeInputPorts, nextInputPort, gedge,
 } from "./core/labkit.js";
-import { patchGuide, labGuide, hoverInfo, sceneProjector } from "./core/guides.js";
+import { patchGuide, labGuide, hoverInfo, sceneProjector, explainView, friendlyLabError } from "./core/guides.js";
 import { CHIP_OPS, CHIP_ORDER, makeChip, applyChips, chipLabel, chipSummary } from "./core/chips.js";
 import { decodeState, writeStateToUrl, currentShareUrl } from "./core/urlState.js";
 import { residualFor } from "./core/residuals.js";
@@ -983,7 +983,7 @@ export default function PrimeVisuals() {
 
   const cap = useMemo(() => {
     if (mode === "lab") {
-      if (labData && labData.err) return `⚠ ${labData.err}`;
+      if (labData && labData.err) return `⚠ ${friendlyLabError(labData.err, lab).text}`;
       if (labData && labData.field) return fieldNote || "complex field";
       const S = labData && labData.series;
       if (!S) return "";
@@ -1477,6 +1477,14 @@ export default function PrimeVisuals() {
         >
           <div className="flex flex-col">
             {mode === "patch" && (<>
+              <div className="p-3 mb-4" style={{ background: T.panel, border: `1px solid ${T.ion}33`, borderRadius: 10 }}>
+                <div style={{ fontFamily: T.mono, color: T.ion, fontSize: 10, letterSpacing: "0.18em" }} className="mb-1">IN PLAIN WORDS</div>
+                {explainView(cfg, { chips, residual, twinMode }).map((line, i) => (
+                  <div key={i} style={{ fontSize: 11, color: i === 0 ? T.ink : T.dim, lineHeight: 1.5 }} className={i > 0 ? "mt-1" : ""}>
+                    {line}
+                  </div>
+                ))}
+              </div>
               {slot("01", "SOURCE", (
                 <>
                   {select(cfg.source, setSource, Object.entries(SOURCES))}
@@ -1584,11 +1592,23 @@ export default function PrimeVisuals() {
               {slot("02", "CANVAS LAB", (
                 <>
                   {graphBuilder}
-                  {labData && labData.err && (
-                    <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.rose }}>
-                      ⚠ {labData.err} — showing the last good render
-                    </div>
-                  )}
+                  {labData && labData.err && (() => {
+                    const fe = friendlyLabError(labData.err, lab);
+                    return (
+                      <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.rose, lineHeight: 1.5 }}>
+                        ⚠ {fe.text} The last good picture stays up.
+                        {fe.fix && (
+                          <button
+                            onClick={() => setGraphDomain(fe.fix.domain)}
+                            className="ml-2 px-1 rounded"
+                            style={{ border: `1px solid ${T.ion}66`, color: T.ion, fontFamily: T.mono, fontSize: 9 }}
+                          >
+                            {fe.fix.label}
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })()}
                   <div className="mt-1" style={{ fontFamily: T.mono, fontSize: 9, color: T.faint }}>
                     drag palette items onto the canvas · drag OUT to IN to make relationships
                   </div>

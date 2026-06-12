@@ -359,6 +359,30 @@ export const PLANES = {
       };
     },
   },
+  matrix: {
+    label: "Matrix rows (width W)", accepts: ["int"],
+    params: [{ key: "matW", label: "row width W", min: 2, max: 512, step: 1, def: 360 }],
+    map: (d, p) => {
+      const W = Math.max(2, Math.round(p.matW));
+      const L = d.n.length, xs = new Float64Array(L), ys = new Float64Array(L);
+      const nMax = L ? d.n[L - 1] : 1;
+      const rows = Math.max(1, Math.ceil((nMax + 1) / W));
+      // normalize to a unit square so any W stays readable on screen
+      for (let i = 0; i < L; i++) {
+        xs[i] = (d.n[i] % W) / W;
+        ys[i] = -Math.floor(d.n[i] / W) / rows;
+      }
+      return {
+        xs, ys, mode: "points",
+        bounds: { x0: -0.02, x1: 1.02, y0: -1.02, y1: 0.04 },
+        decor: (ctx, px, th2) => {
+          ctx.fillStyle = th2.dim; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "left";
+          const [sx, sy] = px(0, 0);
+          ctx.fillText(`${fmt(rows)} rows of width ${fmt(W)} · vertical stripes appear when W shares factors with small primes`, sx, sy - 10);
+        },
+      };
+    },
+  },
   family: {
     label: "Family sweep (mod-q heatmap)", accepts: ["int"],
     params: [{ key: "famQ", label: "moduli q from 3 to", min: 10, max: 150, step: 1, def: 80 }],
@@ -462,6 +486,7 @@ export function ramp(f) { const a = new Array(NB); for (let i = 0; i < NB; i++) 
 export const LIBRARY = [
   { name: "Riemann explicit formula", cfg: { source: "psi", plane: "graph", lens: "mono", p: { N: 500, K: 10 } } },
   { name: "Family sweep mod q", cfg: { source: "primes", plane: "family", lens: "mono", p: { N: 200000, famQ: 80 } } },
+  { name: "Prime matrix", cfg: { source: "primes", plane: "matrix", lens: "mono", p: { N: 100000, matW: 360 } } },
   { name: "Sacks spiral", cfg: { source: "primes", plane: "sacks", lens: "mono", p: { N: 12000 } } },
   { name: "Ulam spiral", cfg: { source: "primes", plane: "ulam", lens: "mono", p: { N: 60000 } } },
   { name: "Polar α-dial", cfg: { source: "primes", plane: "polar", lens: "residue", p: { N: 20000, alpha: 1, kres: 6 } } },

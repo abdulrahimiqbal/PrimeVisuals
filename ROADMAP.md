@@ -24,6 +24,12 @@ browser verification). Differences from the original plan:
 - Lab engine: primes-only domain and a cumulative-Σ chip shipped; a true
   sum-over-range node (Dirichlet series, exponential sums in Lab) is
   still open.
+- Machine interface (added after user feedback): `scripts/explore.mjs`
+  evaluates any pipeline headlessly, scores its shape via
+  `src/core/metrics.js`, and emits shareable URL hashes;
+  `MACHINE_HOW_TO_USE.md` documents the schema and the search discipline
+  for AI agents. Also added: the matrix-rows plane, the live IN PLAIN
+  WORDS panel, and friendly Lab errors with one-click domain fixes.
 
 ## Principles
 
