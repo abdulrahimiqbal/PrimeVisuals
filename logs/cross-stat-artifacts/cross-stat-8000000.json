@@ -1,0 +1,420 @@
+{
+  "generatedAt": "2026-06-13T14:07:02.407Z",
+  "parameters": {
+    "maxN": 8000000,
+    "ranges": [
+      2000000,
+      4000000,
+      8000000
+    ],
+    "holdout": [
+      4000000,
+      8000000
+    ],
+    "seeds": [
+      12345,
+      271828,
+      314159,
+      161803,
+      424242
+    ],
+    "qrModuli": [
+      5,
+      7,
+      11,
+      13
+    ]
+  },
+  "rows": [
+    {
+      "id": "qr_minus_qnr_gap_mod_11",
+      "kind": "welch",
+      "realPrefixValues": [
+        10.606618939385227,
+        14.010798943875836,
+        18.328594998006725
+      ],
+      "realHoldout": 11.885204485843373,
+      "nullLargest": {
+        "n": 5,
+        "mean": 0.3556800011343956,
+        "meanAbs": 0.8690130615271594,
+        "sd": 0.8730740906483212,
+        "min": -1.2833326509819096,
+        "max": 1.0127104274504422
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": -0.3134331663190153,
+        "meanAbs": 0.7784262007567118,
+        "sd": 0.9505166881731575,
+        "min": -1.9875271187330958,
+        "max": 0.6260233269869317
+      },
+      "stableSign": true,
+      "largestPass": true,
+      "holdoutPass": true,
+      "star": true
+    },
+    {
+      "id": "corr_omega_n_gap_to_next",
+      "kind": "corr",
+      "realPrefixValues": [
+        -90.21006698055922,
+        -120.0323571655622,
+        -161.45304931297628
+      ],
+      "realHoldout": -109.37747488431702,
+      "nullLargest": {
+        "n": 5,
+        "mean": -76.71050039686548,
+        "meanAbs": 76.71050039686548,
+        "sd": 0.5931666654381095,
+        "min": -77.84772061096612,
+        "max": -76.29408743523368
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": -51.271944412648295,
+        "meanAbs": 51.271944412648295,
+        "sd": 0.46051379577424495,
+        "min": -52.03492616756201,
+        "max": -50.646905659072694
+      },
+      "stableSign": true,
+      "largestPass": true,
+      "holdoutPass": true,
+      "star": true
+    },
+    {
+      "id": "qr_minus_qnr_gap_mod_5",
+      "kind": "welch",
+      "realPrefixValues": [
+        2.7374969959749227,
+        3.361624140712124,
+        4.208334040914441
+      ],
+      "realHoldout": 2.569355225409124,
+      "nullLargest": {
+        "n": 5,
+        "mean": 0.44683743366272,
+        "meanAbs": 1.4114235032820328,
+        "sd": 1.4330222793311262,
+        "min": -1.6599113205628633,
+        "max": 2.2421300047600976
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 0.5656281324412705,
+        "meanAbs": 1.351494872480109,
+        "sd": 1.5269593218882749,
+        "min": -1.895123519707012,
+        "max": 2.7533036724660325
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_mu_n_gap_to_next",
+      "kind": "corr",
+      "realPrefixValues": [
+        0.53978583988372,
+        0.9276075064174306,
+        1.3927381946238373
+      ],
+      "realHoldout": 1.0426509523532475,
+      "nullLargest": {
+        "n": 5,
+        "mean": 0.26098344300685394,
+        "meanAbs": 0.4966887743240596,
+        "sd": 0.539188235622301,
+        "min": -0.32257894287981803,
+        "max": 1.0381150442620815
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 0.5289939274300242,
+        "meanAbs": 0.8110336090071577,
+        "sd": 0.7602070274789031,
+        "min": -0.4732753027185834,
+        "max": 1.532452824176384
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_mu_p_plus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        1.4000448009054256,
+        0.6117003381332679,
+        1.2232536749508416
+      ],
+      "realHoldout": 1.1273630823890042,
+      "nullLargest": {
+        "n": 5,
+        "mean": -0.26052777850782244,
+        "meanAbs": 0.610785516671192,
+        "sd": 0.5963018841005703,
+        "min": -0.8439642252654296,
+        "max": 0.875644345408424
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 0.03952473327119366,
+        "meanAbs": 0.9455718552692426,
+        "sd": 1.0593169042947057,
+        "min": -1.5844236996859404,
+        "max": 1.2472339847774507
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_abs_mu_n_gap_to_next",
+      "kind": "corr",
+      "realPrefixValues": [
+        51.088737393810185,
+        68.11170009241603,
+        91.21153800501105
+      ],
+      "realHoldout": 60.928227519667416,
+      "nullLargest": {
+        "n": 5,
+        "mean": 65.8844406918472,
+        "meanAbs": 65.8844406918472,
+        "sd": 0.48010508842313315,
+        "min": 65.26011731240322,
+        "max": 66.70721143180306
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 44.03953608169914,
+        "meanAbs": 44.03953608169914,
+        "sd": 0.31520067601140755,
+        "min": 43.528434675966714,
+        "max": 44.39898505362062
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_omega_p_plus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        -11.697874968096228,
+        -15.421263424668258,
+        -19.047177337684097
+      ],
+      "realHoldout": -11.53201145851701,
+      "nullLargest": {
+        "n": 5,
+        "mean": -15.016528637406399,
+        "meanAbs": 15.016528637406399,
+        "sd": 0.3073302050305132,
+        "min": -15.546988042001992,
+        "max": -14.59854005543423
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": -9.293152452546874,
+        "meanAbs": 9.293152452546874,
+        "sd": 0.27880811719006565,
+        "min": -9.632164645858749,
+        "max": -8.857964977362116
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "qr_minus_qnr_gap_mod_13",
+      "kind": "welch",
+      "realPrefixValues": [
+        -1.4706965502735445,
+        -2.6793913872158117,
+        -0.7532796114065778
+      ],
+      "realHoldout": 1.6810794631347756,
+      "nullLargest": {
+        "n": 5,
+        "mean": 0.12286786086206396,
+        "meanAbs": 0.7551263462625337,
+        "sd": 0.7729071096116263,
+        "min": -0.984395383903329,
+        "max": 0.9927041760407828
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 0.2730029212984506,
+        "meanAbs": 0.6197847866040299,
+        "sd": 0.6767782169101115,
+        "min": -0.7536650823064833,
+        "max": 1.1415429795542362
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_abs_mu_p_plus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        2.422000843136718,
+        2.9427428609831323,
+        4.3317877110831695
+      ],
+      "realHoldout": 3.1946775042056803,
+      "nullLargest": {
+        "n": 5,
+        "mean": 4.558561562456601,
+        "meanAbs": 4.558561562456601,
+        "sd": 1.066734494874434,
+        "min": 2.7383565285713485,
+        "max": 5.409778314824879
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 2.862286644839664,
+        "meanAbs": 2.862286644839664,
+        "sd": 0.5858694292464957,
+        "min": 2.1232600890634385,
+        "max": 3.384047379813185
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_abs_mu_p_minus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        -3.012327856623689,
+        -3.2271542878465485,
+        -4.124252315026964
+      ],
+      "realHoldout": -2.6058043453133504,
+      "nullLargest": {
+        "n": 5,
+        "mean": -4.594070242423446,
+        "meanAbs": 4.594070242423446,
+        "sd": 0.8446279212937681,
+        "min": -5.75937621261141,
+        "max": -3.5355636583713994
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": -3.305541613224679,
+        "meanAbs": 3.305541613224679,
+        "sd": 0.5185883613108694,
+        "min": -3.944525966000995,
+        "max": -2.730542371926138
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_omega_p_minus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        8.797088818858827,
+        10.503507731759179,
+        13.733602766842765
+      ],
+      "realHoldout": 8.962704883955261,
+      "nullLargest": {
+        "n": 5,
+        "mean": 15.320025893197684,
+        "meanAbs": 15.320025893197684,
+        "sd": 0.6452445309568896,
+        "min": 14.625542084772835,
+        "max": 16.424077749305805
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 9.55083998140626,
+        "meanAbs": 9.55083998140626,
+        "sd": 0.8356475996718644,
+        "min": 8.953802748839292,
+        "max": 11.154737967883182
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "qr_minus_qnr_gap_mod_7",
+      "kind": "welch",
+      "realPrefixValues": [
+        -3.2510183481654593,
+        -2.2546157152870543,
+        -0.35028013935630503
+      ],
+      "realHoldout": 1.8372378817956274,
+      "nullLargest": {
+        "n": 5,
+        "mean": 0.032991804440260133,
+        "meanAbs": 0.6498425098109152,
+        "sd": 0.6999026395282488,
+        "min": -0.6913363240431691,
+        "max": 0.9934365653069662
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": -0.2666295522616854,
+        "meanAbs": 0.46857180863205966,
+        "sd": 0.4258106084831336,
+        "min": -0.740320515385795,
+        "max": 0.5048556409259355
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    },
+    {
+      "id": "corr_mu_p_minus_1_gap",
+      "kind": "corr",
+      "realPrefixValues": [
+        -0.9146374144082866,
+        -0.9467762175490103,
+        -0.35508391156231817
+      ],
+      "realHoldout": 0.4832382512739295,
+      "nullLargest": {
+        "n": 5,
+        "mean": -0.11740905421953918,
+        "meanAbs": 0.7743777901716771,
+        "sd": 0.7728017622497237,
+        "min": -0.833869982433938,
+        "max": 0.8715072477373262
+      },
+      "nullHoldout": {
+        "n": 5,
+        "mean": 0.1029615400518343,
+        "meanAbs": 0.7735362335223671,
+        "sd": 0.9217325190586454,
+        "min": -1.2589636477500084,
+        "max": 1.4401126078291773
+      },
+      "stableSign": true,
+      "largestPass": false,
+      "holdoutPass": false,
+      "star": false
+    }
+  ]
+}

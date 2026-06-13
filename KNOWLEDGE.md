@@ -83,6 +83,254 @@ theorems and exact count formulas. It also connects to the twin-prime spectrum
 entry by replacing spectral/noise evidence with a direct observed/predicted
 density ratio in both universes.
 
+## 2026-06-13 · TWO-UNIVERSES / OBSERVED + OPEN — homogeneous gap anti-correlation audit
+
+Source: `logs/2026-06-13-research-loop.md`; audit script
+`scripts/two-universes-audit.mjs`; artifacts
+`logs/two-universes-artifacts/audit-q2-25-q3-16.json` and
+`logs/two-universes-artifacts/audit-q2-25-q3-16.md`.
+
+Correction to the first divergence table: the old `[F_3[t]: measured]` prefix
+gap-autocorrelation divergence was a degree-boundary artifact. When the
+holdout is the homogeneous last-degree block, `F_3[t]` shows the same negative
+lag-1 gap autocorrelation direction as `F_2[t]` and `Z`.
+
+Expanded audit:
+- `[F_2[t]: measured]` degrees `23,24,25` prefix gap z values:
+  `-22.114425`, `-30.102265`, `-38.674010`; degree-25 holdout:
+  `-29.693543`. The degree-25 sampled local polynomial wheel null
+  (`degree<=2`) has prefix meanAbs z `3.053767`.
+- `[F_3[t]: measured]` degree-16 prefix gap z is only `-0.009527`, but the
+  degree-16 homogeneous holdout is `-38.498676`; the sampled local polynomial
+  wheel null (`degree<=1`) has holdout meanAbs z `12.355884`.
+- `[Z: measured]` at `N=2^25` has prefix/holdout gap z
+  `-48.855444` / `-37.440042`; at `N=3^16`, prefix/holdout gap z
+  `-53.817891` / `-47.842984`. The strongest sampled integer wheel null
+  (`W=210`) has prefix meanAbs z `11.583438` at `2^25` and `12.873099` at
+  `3^16`.
+
+Spacing L1 did not clear the local-null threshold. Example: `F_2[t]`
+degree-25 prefix is `0.302540` versus degree-2 wheel null `0.280673`, and
+`Z` at `2^25` is `0.215654` versus `W=210` null `0.206883`.
+
+STATUS: `OBSERVED`, not a breakthrough. The homogeneous gap
+anti-correlation passes numeric persistence, five-seed Cramer contrast, and
+disjoint holdout, but in this coarse form it is too close to the known
+consecutive-prime residue-bias layer (LO-S-adjacent) to satisfy novelty. The
+live `OPEN` version is to compute the full two-universes transition law for
+consecutive residue/gap-bin pairs after subtracting local-wheel nulls.
+
+CONNECTION: this corrects the previous two-universes divergence row and
+connects it to the 2026-06-13 "consecutive prime gaps anti-correlate" entry:
+the phenomenon is shared on homogeneous finite-field degree blocks, while
+prefix mixing across polynomial degrees can hide it.
+
+## 2026-06-13 · CROSS-STATISTICS / CLOSED-ARTIFACT — QR mod 11 gap effect
+
+Source: `logs/2026-06-13-research-loop.md`; scripts
+`scripts/cross-stat-battery.mjs` and `scripts/qr-gap-audit.mjs`; artifacts
+`logs/cross-stat-artifacts/cross-stat-8000000.json`,
+`logs/cross-stat-artifacts/cross-stat-8000000.md`,
+`logs/cross-stat-artifacts/qr-gap-mod-11-32000000.json`, and
+`logs/cross-stat-artifacts/qr-gap-mod-11-32000000.md`.
+
+The broad uncomputed cross-statistic battery tested correlations between
+following prime gaps and `mu(p-1)`, `|mu(p-1)|`, `omega(p-1)`, the analogous
+`p+1` features, all-integer `mu(n)`, `|mu(n)|`, `omega(n)` versus
+gap-to-next-prime countdowns, and QR-vs-QNR conditional gaps modulo
+`5,7,11,13`.
+
+First-pass survivor: primes in quadratic-residue classes modulo `11` have
+larger normalized following gaps than primes in nonresidue classes. At `N=8e6`,
+the Welch z-score was `18.328595`, with QR mean `1.021042` and QNR mean
+`0.979813`; five ordinary Cramer controls had meanAbs z `0.869013`.
+
+Targeted audit through `32e6` killed breakthrough status. Real QR-vs-QNR z
+scores were `18.328595`, `24.015158`, `32.214839`, and holdout
+`21.507889` on `(16e6,32e6]`, but a composite-permitting control matched to
+the real per-residue densities modulo `11` produced meanAbs z scores
+`15.620890`, `21.235547`, `28.619727`, and holdout `18.467626`. Thus most of
+the effect is reproduced by residue/wheel geometry without primality.
+
+`corr_omega_n_gap_to_next` also crossed the mechanical first-pass threshold
+(`-161.453049` at `8e6`, holdout `-109.377475`), but fake controls were
+already huge (`76.710500` and `51.271944` meanAbs), so it is classified as
+local countdown geometry rather than a prime law.
+
+STATUS: `CLOSED-ARTIFACT`, not a breakthrough. The useful lesson is
+methodological: QR/QNR gap differences must be audited against
+residue-count-matched composite controls, not just ordinary Cramer labels.
+
+CONNECTION: this is the integer-only analog of the two-universes local-wheel
+audit above. In both cases, ordinary Cramer labels under-control residue
+position effects; a stronger wheel/count-matched null is required before
+calling a conditional gap statistic new.
+
+## 2026-06-13 · TWO-UNIVERSES / KNOWN-MATH + OPEN — residue transition screen
+
+Source: `logs/2026-06-13-research-loop.md`; scripts
+`scripts/two-universes-transition-audit.mjs` and
+`scripts/transition-targeted-residue.mjs`; artifacts
+`logs/two-universes-artifacts/transition-audit.json`,
+`logs/two-universes-artifacts/transition-audit.md`,
+`logs/two-universes-artifacts/transition-targeted-residue-mod-11.json`, and
+`logs/two-universes-artifacts/transition-targeted-residue-mod-11.md`.
+
+Transition audit scope: full `F_2[t]` degrees `23,24,25`, but reduced
+`F_3[t]` degrees `13,14,15` because the full degree-16 transition screen needs
+a streaming sampler/matrix accumulator. Integer comparison intervals were
+`(2^22,2^23]`, `(2^23,2^24]`, `(2^24,2^25]` and reduced base-3 intervals
+`(3^12,3^13]`, `(3^13,3^14]`, `(3^14,3^15]`.
+
+Result:
+- `[F_2[t]: measured]` had no passing transition row. The strongest row,
+  degree-2 residue transition, had local-wheel ratios `3.223,2.637,6.954`
+  but failed the sharpen rule.
+- Reduced `[F_3[t]: measured]` had no passing transition row. The strongest
+  degree-1 residue row had ratios `0.395,1.097,2.326` with unstable top-cell
+  sign.
+- `[Z: measured]` reproduced a strong mod-11 consecutive-prime
+  residue-transition bias. On `(2^24,2^25]`, the residue-count-matched
+  composite control still left L1 ratio `10.352`; on the reduced
+  `(3^14,3^15]` interval, ratio `8.097`.
+
+STATUS: `KNOWN-MATH` calibration plus `OPEN` tooling lead, not a breakthrough.
+The integer mod-11 survivor is exactly the Lemke Oliver-Soundararajan
+consecutive-prime residue-pair phenomenon, not a new statistic. Nearest catalog:
+Lemke Oliver and Soundararajan, "Unexpected biases in the distribution of
+consecutive primes", arXiv:1603.03720 / PNAS 2016; Tao's 2016 exposition
+describes the same object as the distribution of
+`(p_n mod q, p_{n+1} mod q)` for small `q`.
+
+OPEN: finish the full `F_3[t]` degree-16 transition audit with a streaming
+null sampler that accumulates transition matrices online instead of
+materializing five multi-million-entry null sequences. Only after that can the
+two-universes transition-law branch be considered fully exhausted.
+
+CONNECTION: this closes the local-wheel transition lead at reduced scale by
+linking its only survivor back to the already logged LO-S/residue layer. It
+also explains why scalar gap anti-correlation is too coarse: the integer
+transition matrix carries known residue-pair bias, while the tested finite-field
+blocks did not show a matching residual law.
+
+## 2026-06-13 · TWO-UNIVERSES / CLOSED-ARTIFACT — full transition audit
+
+Source: `logs/2026-06-13-research-loop.md`; updated streaming implementation in
+`scripts/two-universes-transition-audit.mjs`; targeted integer controls in
+`scripts/transition-targeted-residue.mjs`; artifacts
+`logs/two-universes-artifacts/transition-audit.json`,
+`logs/two-universes-artifacts/transition-audit.md`,
+`logs/two-universes-artifacts/transition-targeted-residue-mod-11.json`,
+`logs/two-universes-artifacts/transition-targeted-residue-mod-11.md`,
+`logs/two-universes-artifacts/transition-targeted-residue-mod-5.json`, and
+`logs/two-universes-artifacts/transition-targeted-residue-mod-5.md`.
+
+Correction/update to the previous OPEN tooling note: the full `F_3[t]`
+degree-16 transition audit now completes. Polynomial local-wheel nulls stream
+directly into transition matrices rather than materializing sampled null
+sequences.
+
+Full transition screen:
+- `[F_2[t]: measured]` strongest transition row:
+  `poly-mod-deg-2-residue-transition`, ratios `3.223,2.637,6.954`; it fails
+  the sharpen/persistence rule.
+- `[F_3[t]: measured]` strongest transition row:
+  `poly-mod-deg-2-residue-transition`, ratios `1.123,1.206,1.371`; it remains
+  below the ratio `2` threshold at degree `16`.
+- `[Z: measured]` reproduces integer residue-pair bias. `Z-mod-11` ratios are
+  `4.092,4.640,6.539` on the base-2-aligned intervals and
+  `3.615,5.498,8.453` on the base-3-aligned intervals.
+
+Targeted residue-count matched controls for integer survivors:
+- Mod `11` transition ratios are `10.352` on `(2^24,2^25]`, `8.097` on
+  `(3^14,3^15]`, and `13.061` on `(3^15,3^16]`.
+- Mod `5` transition ratios are `5.275`, `4.550`, and `6.479` on the same
+  intervals.
+
+STATUS: `CLOSED-ARTIFACT / KNOWN-MATH calibration`, not a breakthrough. The
+integer survivor is the known Lemke Oliver-Soundararajan consecutive-prime
+residue-pair bias family. There is no S1 shared transition law in the tested
+finite-field blocks, and the S2 contrast is not novel enough for escalation:
+it is "known integer LO-S transition bias not mirrored by these finite-field
+local-wheel screens."
+
+CONNECTION: this closes the homogeneous-transition branch spawned by the gap
+anti-correlation audit. The scalar anti-correlation was too coarse because the
+integer effect decomposes into known residue-pair transitions, while the
+finite-field transition matrices did not expose a new matched residual.
+
+## 2026-06-13 · TWO-UNIVERSES / ⭐⭐ CONJECTURAL — `F_3[t]` Mobius-parity gap bias
+
+Source: `logs/2026-06-13-research-loop.md`; implementation in
+`scripts/two-universes-mobius-gap.mjs`,
+`scripts/mobius-gap-leakage-audit.mjs`,
+`scripts/mobius-gap-cyclic-audit.mjs`,
+`scripts/mobius-gap-holdout-q3.mjs`,
+`scripts/mobius-gap-factor-audit-q3.mjs`, and
+`scripts/mobius-gap-composite-control-q3.mjs`; expert pack
+`logs/two-universes-artifacts/mobius-gap-expert-pack.md`; artifacts
+`logs/two-universes-artifacts/mobius-gap-battery.json`,
+`logs/two-universes-artifacts/mobius-gap-leakage.json`,
+`logs/two-universes-artifacts/mobius-gap-cyclic.json`,
+`logs/two-universes-artifacts/mobius-gap-holdout-q3-d17.json`,
+`logs/two-universes-artifacts/mobius-gap-factor-audit-q3.json`, and
+`logs/two-universes-artifacts/mobius-gap-composite-control-q3.json`.
+
+Breakthrough object: in `F_3[t]`, order monic irreducibles of fixed degree by
+base-3 coefficient encoding. After removing direct short-gap leakage, Mobius
+parity of a neighboring polynomial predicts the following irreducible gap. For
+negative shifts, remove rows with previous gap `<= h`; for positive shifts,
+remove rows with next gap `<= h`.
+
+CONJECTURAL law:
+`Corr(mu(f-t), next_gap(f) | f irreducible deg n, previous_gap(f)>t)` stays
+near `0.022` for `n=14,15,16,17`, with z-scores
+`12.836,19.614,32.434,56.220` and scrubbed sample sizes
+`289209,819906,2330338,6641716`. The `t+1` negative shift has the same sign
+and nearly the same size. Positive-shift rows `mu(f+1)`, `mu(f+t)`, and
+`mu(f+t+1)` are weaker but survive the same degree-17 holdout.
+
+Audit status:
+- Direct leakage removed: `F_2[t]` rows die; five `F_3[t]` Mobius-sign rows
+  survive.
+- Five cyclic-shift controls preserve the exact scrubbed feature and gap
+  distributions but break alignment; all five `F_3[t]` survivors pass.
+- Degree-17 holdout was not used for discovery. Real z/local-wheel meanAbs:
+  `56.220/0.876`, `50.123/0.649`, `15.664/0.305`, `11.219/0.736`,
+  `9.126/1.006`.
+- Squarefree-only parity control passes, so the row is not merely
+  squarefree-vs-squareful. `omega` and `abs_mu` rows fail matched-null
+  comparison.
+- Negative-shift rows survive linear control for previous gap, so they are not
+  just adjacent-gap mediation.
+- Composite-only degree-17 sparse reducible sequences fail to reproduce the
+  effect; real/composite ratios are `24.323,20.683,18.558,21.625,7.065`.
+- Integer analogs `mu(p±1)`, `|mu(p±1)|`, and `omega(p±1)` are Cramer-noise
+  in the matched intervals, so this is a finite-field S2 divergence rather
+  than a shared integer law.
+
+Novelty check: nearby literature covers adjacent territory but not this
+conditional lexicographic gap-tail statistic. Sawin-Shusterman prove Chowla
+and twin-prime results over `F_q[T]` under large-field hypotheses, with
+Theorem 1.3 requiring `q > p^(2k^2 e^2)` and examples beginning at `F_3^6`,
+not fixed `F_3`; their odd-characteristic Frobenius-sign/discriminant
+mechanism is a plausible proof route. Kurlberg-Rosenzweig study prime and
+Mobius correlations in very short intervals, but as interval sums rather than
+following-gap correlations conditioned on consecutive irreducibles. Thorne's
+function-field Maier matrix uses lexicographic consecutive primes, but for
+prime-count irregularities and residue strings, not Mobius parity of gap
+tails. Gomez-Perez/Ostafe/Sha study consecutive polynomial sequences and
+irreducible runs, not this Mobius-gap predictor.
+
+STATUS: `⭐⭐ / CONJECTURAL`. Stop condition met for the campaign. The honest
+expert question is whether the observed fixed-`F_3` law can be derived from
+the odd-characteristic Frobenius-sign/discriminant representation of Mobius
+combined with lexicographic prime-gap tail conditioning.
+
+CONNECTION: this is the two-universes divergence the transition screen did not
+find: the integer side and `F_2[t]` side are null under matched controls, while
+fixed odd characteristic `F_3[t]` retains a parity-specific Mobius/gap law.
+
 ## 2026-06-12 · NEW-OBJECT / OPEN — bounded continued-fraction denominators
 
 Source: `logs/2026-06-12-deeper-structure.md`; implementation in
