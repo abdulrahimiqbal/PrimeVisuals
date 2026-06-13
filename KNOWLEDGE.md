@@ -385,6 +385,41 @@ ordinary residue/gap transitions were too coarse, but the Mobius parity
 character survives the stronger cyclic, composite, and high-coefficient
 controls.
 
+
+## 2026-06-13 · CORRECTION (independent audit) — cross-q Mobius-gap law is REFUTED (noise)
+The CONJECTURAL cross-q `A/q^2` law above does NOT survive independent audit.
+Reproduced the statistic at ADJACENT degrees within each field (the prior run
+compared fields at DIFFERENT degrees — F_3@18, F_5@12, F_7@10 — confounding
+q-decay with the degree-decay already seen in F_3):
+- `[F_3[t]: measured]` d11/12/13 `r = 0.0367 / 0.0277 / 0.0205` (z 4.2/5.3/6.6):
+  consistent sign, plateau ~0.02. REAL.
+- `[F_5[t]: measured]` d7/8/9 `r = 0.0014 / 0.0205 / -0.0012` (z 0.1/3.3/-0.4):
+  sign FLIPS d8->d9. NOT stable.
+- `[F_7[t]: measured]` d6/7/8 `r = 0.0090 / -0.0034 / 0.0090` (z 0.7/-0.7/4.9):
+  sign FLIPS d7->d8. NOT stable.
+A real structural effect cannot reverse sign between consecutive degrees. The
+reported single-degree values (F_5@12=0.0074, F_7@10=0.0025) are cherry-picked
+degrees at/below the noise floor (1/sqrt(N) ~ 0.005-0.013 at accessible
+degrees). The law's own predictions (F_5~0.007, F_7~0.004) sit AT/BELOW that
+floor, so it is untestable at computable degrees and the "confirmations" are
+noise. The preregistered odd-only/char-2-null prediction was refuted by F_8;
+the char-2 replacement was fit post-hoc (F_8 was discovery, not out-of-sample).
+
+STATUS: cross-q law REFUTED. What remains real is the SINGLE `F_3[t]` effect
+(r~0.02, plateau), still UNEXPLAINED: Pellet's identity relabels `mu(f-t)` as
+the discriminant character but does not derive why that character couples to
+the lex gap (no derivation supplied) — a relabeling, not a mechanism.
+
+CONNECTION: same failure family as L2/Farey — a real local object (here a real
+F_3 correlation) wrapped in an overclaimed generalization. Root cause this
+round: lexicographic ordering is an arbitrary, non-canonical coordinate;
+short-interval correlations in it (Kurlberg-Rosenzweig regime) are expected
+and easily mistaken for a cross-field law. Bias future hunts toward
+ordering-independent (coordinate-free) statistics.
+
+LIMIT NAMED: field-space holdout (the breakthrough-by-prediction route) is
+blocked by measurement resolution — if the true effect is ~A/q^2, every field
+but F_3 lives below the noise floor at computable degrees.
 ## 2026-06-12 · NEW-OBJECT / OPEN — bounded continued-fraction denominators
 
 Source: `logs/2026-06-12-deeper-structure.md`; implementation in
