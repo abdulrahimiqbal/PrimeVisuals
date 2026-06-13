@@ -1,0 +1,1436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CA-XA Frontier Skip Exhibit</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7f3;
+      --ink: #17212b;
+      --muted: #5b6572;
+      --line: #d8d1c5;
+      --teal: #0f766e;
+      --rust: #9f1239;
+      --gold: #a16207;
+      --panel: #ffffff;
+      --wash: #ebe7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 28px 22px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 31px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 34px 0 12px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    p {
+      max-width: 920px;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    code {
+      padding: 2px 5px;
+      background: var(--wash);
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+      color: #24303b;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin: 22px 0 4px;
+    }
+    .metric {
+      min-height: 104px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 13px 14px;
+    }
+    .metric span,
+    .metric em {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: normal;
+    }
+    .metric strong {
+      display: block;
+      margin: 8px 0 6px;
+      font-size: 26px;
+      line-height: 1.1;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    .chart {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .svg-title {
+      font-size: 16px;
+      font-weight: 700;
+      fill: var(--ink);
+    }
+    .svg-label,
+    .svg-value {
+      font-size: 13px;
+      fill: var(--muted);
+    }
+    .svg-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      fill: var(--ink);
+    }
+    .track {
+      fill: #e9e2d8;
+    }
+    .timeline-chart {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin: 10px 0 14px;
+    }
+    .axis {
+      stroke: #b7aea1;
+      stroke-width: 1;
+    }
+    .mark-line {
+      stroke: #9f1239;
+      stroke-width: 1;
+      stroke-dasharray: 3 3;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .timeline-wrap {
+      max-height: 420px;
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+    th, td {
+      padding: 9px 11px;
+      border-bottom: 1px solid #ece7df;
+      text-align: right;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    th {
+      background: #f0ece5;
+      color: #303b45;
+      font-weight: 700;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    .statement {
+      border-left: 4px solid var(--teal);
+      padding: 10px 14px;
+      background: #eef7f5;
+      max-width: 980px;
+      color: #173b38;
+    }
+    footer {
+      max-width: 1160px;
+      margin: 8px auto 0;
+      padding: 18px 22px 34px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 640px) {
+      header, main { padding: 22px 14px; }
+      h1 { font-size: 25px; }
+      .grid { grid-template-columns: 1fr; }
+      .metric strong { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CA-XA Frontier Skip Exhibit</h1>
+    <p>Divisor-world records define the object. Prime structure enters only after applying the CA factorization and the XA closure theorem.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Live Statement</h2>
+      <p class="statement">Through A004394 rows <code>s1..s8436</code>, every non-CA XA record closes at the next CA endpoint. The resulting <code>CA &cap; XA</code> largest-prime frontier sequence changes frontier <strong>356</strong> times and skips only <strong>11</strong> prime frontiers in total.</p>
+      <div class="metrics">
+        <div class="metric"><span>XA records</span><strong>579</strong><em>record scan of sigma(n)/(n log log n)</em></div>
+        <div class="metric"><span>CA records</span><strong>443</strong><em>epsilon-interval classifier</em></div>
+        <div class="metric"><span>CA-XA records</span><strong>384</strong><em>intersection sequence H</em></div>
+        <div class="metric"><span>Closure failures</span><strong>0</strong><em>theorem predicts zero</em></div>
+        <div class="metric"><span>Frontier changes</span><strong>356</strong><em>353 prime-adjacent</em></div>
+        <div class="metric"><span>Aggregate skipped/Li</span><strong>0.029370</strong><em>11 skipped over Li 374.537</em></div>
+        <div class="metric"><span>CA endpoint barriers</span><strong>13</strong><em>5 transitions; closest -4.356e-7</em></div>
+        <div class="metric"><span>CA quotient steps</span><strong>442</strong><em>442 prime, 0 semiprime</em></div>
+        <div class="metric"><span>Negative prime-step margins</span><strong>9 / 396</strong><em>after first CA-XA; min -1.178e-5</em></div>
+        <div class="metric"><span>New-frontier asymptotic</span><strong>0 mismatches</strong><em>second-order max relative error 6.874e-5</em></div>
+        <div class="metric"><span>CA-boundary classifier</span><strong>0 mismatches</strong><em>F(p,1) below critical in 8 cases</em></div>
+        <div class="metric"><span>Explicit P2 boundary</span><strong>0 mismatches</strong><em>p above P2 in 8 cases</em></div>
+        <div class="metric"><span>P2 no-base runs</span><strong>3</strong><em>8 events in 4 runs</em></div>
+        <div class="metric"><span>Ordinary gap fit</span><strong>10 / 367</strong><em>BHP-scale fit; 0 no-base cases</em></div>
+        <div class="metric"><span>No-base recovery</span><strong>3 extra steps</strong><em>0 unrecovered runs</em></div>
+        <div class="metric"><span>Recovery mode</span><strong>3 new-frontier</strong><em>1 uses old-frontier step</em></div>
+        <div class="metric"><span>Boundary Taylor</span><strong>0 mismatches</strong><em>max log-error 6.872e-5</em></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cramer Contrast</h2>
+      <p>The controls keep the same exponent shapes and replace prime bases by fixed-shape Cramer bases. Seeds with many frontier changes produce substantially larger skipped-frontier ratios or threshold excursions than the real divisor-world sequence.</p>
+      <div class="grid">
+        <svg class="chart" viewBox="0 0 920 262" role="img" aria-label="Skipped frontiers / integrated transition main">
+    <text x="18" y="26" class="svg-title">Skipped frontiers / integrated transition main</text>
+    <text x="18" y="67" class="svg-label">real CA-XA</text>
+<rect x="165" y="50" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="50" width="23.263641721068478" height="20" rx="3" fill="#0f766e"/>
+<text x="783" y="66" class="svg-value">0.029370</text>
+<text x="18" y="101" class="svg-label">seed 12345</text>
+<rect x="165" y="84" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="84" width="604" height="20" rx="3" fill="#a16207"/>
+<text x="783" y="100" class="svg-value">0.762531</text>
+<text x="18" y="135" class="svg-label">seed 271828</text>
+<rect x="165" y="118" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="118" width="122.99265605121592" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="134" class="svg-value">0.155274</text>
+<text x="18" y="169" class="svg-label">seed 314159</text>
+<rect x="165" y="152" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="152" width="191.89432699266044" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="168" class="svg-value">0.242260</text>
+<text x="18" y="203" class="svg-label">seed 161803</text>
+<rect x="165" y="186" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="186" width="421.96310223361155" height="20" rx="3" fill="#a16207"/>
+<text x="783" y="202" class="svg-value">0.532715</text>
+<text x="18" y="237" class="svg-label">seed 424242</text>
+<rect x="165" y="220" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="220" width="299.88217688689934" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="236" class="svg-value">0.378592</text>
+  </svg>
+        <svg class="chart" viewBox="0 0 920 262" role="img" aria-label="Max skipped frontiers in one transition">
+    <text x="18" y="26" class="svg-title">Max skipped frontiers in one transition</text>
+    <text x="18" y="67" class="svg-label">real CA-XA</text>
+<rect x="165" y="50" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="50" width="81.62162162162163" height="20" rx="3" fill="#0f766e"/>
+<text x="783" y="66" class="svg-value">5</text>
+<text x="18" y="101" class="svg-label">seed 12345</text>
+<rect x="165" y="84" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="84" width="97.94594594594595" height="20" rx="3" fill="#a16207"/>
+<text x="783" y="100" class="svg-value">6</text>
+<text x="18" y="135" class="svg-label">seed 271828</text>
+<rect x="165" y="118" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="118" width="97.94594594594595" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="134" class="svg-value">6</text>
+<text x="18" y="169" class="svg-label">seed 314159</text>
+<rect x="165" y="152" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="152" width="391.7837837837838" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="168" class="svg-value">24</text>
+<text x="18" y="203" class="svg-label">seed 161803</text>
+<rect x="165" y="186" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="186" width="97.94594594594595" height="20" rx="3" fill="#a16207"/>
+<text x="783" y="202" class="svg-value">6</text>
+<text x="18" y="237" class="svg-label">seed 424242</text>
+<rect x="165" y="220" width="604" height="20" rx="3" class="track"/>
+<rect x="165" y="220" width="604" height="20" rx="3" fill="#9f1239"/>
+<text x="783" y="236" class="svg-value">37</text>
+  </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nonzero Real Skips</h2>
+      <div class="table-wrap">
+        <table>
+    <thead><tr><th>frontier transition</th><th>SA indices</th><th>skipped prime frontiers</th><th>skip</th><th>Li main</th><th>skip/Li</th></tr></thead>
+    <tbody><tr><td>139 &rarr; 151</td><td>409 &rarr; 440</td><td>149</td><td>1</td><td>2.411414</td><td>0.414694</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>1409, 1423, 1427, 1429, 1433</td><td>5</td><td>5.511414</td><td>0.907208</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>2647, 2657, 2659, 2663, 2671</td><td>5</td><td>5.580792</td><td>0.895930</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section id="frontier-timeline">
+      <h2>Full Frontier Timeline</h2>
+      <p>Each mark is one frontier-changing transition between consecutive <code>CA &cap; XA</code> records. Gold marks have skipped CA endpoint barriers; red marks are the nonzero skipped-prime transitions.</p>
+      <svg class="timeline-chart" viewBox="0 0 920 168" role="img" aria-label="All 356 CA-XA frontier-changing transitions">
+    <text x="18" y="24" class="svg-title">All 356 CA-XA frontier-changing transitions</text>
+    <line x1="54" y1="108" x2="898" y2="108" class="axis"/>
+    <rect x="54.000" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>113-&gt;127; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="56.377" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>127-&gt;131; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="58.755" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>131-&gt;137; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="61.132" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>137-&gt;139; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="63.510" y="78.400" width="1.707" height="29.600" rx="1.4" fill="#9f1239">
+      <title>139-&gt;151; skipped primes 1; CA barriers 1</title>
+    </rect>
+<rect x="65.887" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>151-&gt;157; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="68.265" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>157-&gt;163; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="70.642" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>163-&gt;167; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="73.020" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>167-&gt;173; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="75.397" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>173-&gt;179; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="77.775" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>179-&gt;181; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="80.152" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>181-&gt;191; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="82.530" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>191-&gt;193; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="84.907" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>193-&gt;197; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="87.285" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>197-&gt;199; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="89.662" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>199-&gt;211; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="92.039" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>211-&gt;223; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="94.417" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>223-&gt;227; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="96.794" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>227-&gt;229; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="99.172" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>229-&gt;233; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="101.549" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>233-&gt;239; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="103.927" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>239-&gt;241; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="106.304" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>241-&gt;251; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="108.682" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>251-&gt;257; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="111.059" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>257-&gt;263; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="113.437" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>263-&gt;269; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="115.814" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>269-&gt;271; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="118.192" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>271-&gt;277; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="120.569" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>277-&gt;281; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="122.946" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>281-&gt;283; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="125.324" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>283-&gt;293; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="127.701" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>293-&gt;307; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="130.079" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>307-&gt;311; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="132.456" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>311-&gt;313; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="134.834" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>313-&gt;317; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="137.211" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>317-&gt;331; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="139.589" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>331-&gt;337; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="141.966" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>337-&gt;347; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="144.344" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>347-&gt;349; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="146.721" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>349-&gt;353; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="149.099" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>353-&gt;359; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="151.476" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>359-&gt;367; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="153.854" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>367-&gt;373; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="156.231" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>373-&gt;379; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="158.608" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>379-&gt;383; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="160.986" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>383-&gt;389; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="163.363" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>389-&gt;397; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="165.741" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>397-&gt;401; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="168.118" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>401-&gt;409; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="170.496" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>409-&gt;419; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="172.873" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>419-&gt;421; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="175.251" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>421-&gt;431; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="177.628" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>431-&gt;433; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="180.006" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>433-&gt;439; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="182.383" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>439-&gt;443; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="184.761" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>443-&gt;449; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="187.138" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>449-&gt;457; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="189.515" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>457-&gt;461; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="191.893" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>461-&gt;463; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="194.270" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>463-&gt;467; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="196.648" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>467-&gt;479; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="199.025" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>479-&gt;487; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="201.403" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>487-&gt;491; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="203.780" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>491-&gt;499; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="206.158" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>499-&gt;503; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="208.535" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>503-&gt;509; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="210.913" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>509-&gt;521; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="213.290" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>521-&gt;523; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="215.668" y="78.400" width="1.707" height="29.600" rx="1.4" fill="#a16207">
+      <title>523-&gt;541; skipped primes 0; CA barriers 1</title>
+    </rect>
+<rect x="218.045" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>541-&gt;547; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="220.423" y="78.400" width="1.707" height="29.600" rx="1.4" fill="#a16207">
+      <title>547-&gt;557; skipped primes 0; CA barriers 1</title>
+    </rect>
+<rect x="222.800" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>557-&gt;563; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="225.177" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>563-&gt;569; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="227.555" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>569-&gt;571; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="229.932" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>571-&gt;577; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="232.310" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>577-&gt;587; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="234.687" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>587-&gt;593; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="237.065" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>593-&gt;599; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="239.442" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>599-&gt;601; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="241.820" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>601-&gt;607; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="244.197" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>607-&gt;613; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="246.575" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>613-&gt;617; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="248.952" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>617-&gt;619; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="251.330" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>619-&gt;631; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="253.707" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>631-&gt;641; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="256.085" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>641-&gt;643; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="258.462" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>643-&gt;647; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="260.839" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>647-&gt;653; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="263.217" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>653-&gt;659; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="265.594" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>659-&gt;661; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="267.972" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>661-&gt;673; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="270.349" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>673-&gt;677; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="272.727" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>677-&gt;683; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="275.104" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>683-&gt;691; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="277.482" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>691-&gt;701; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="279.859" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>701-&gt;709; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="282.237" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>709-&gt;719; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="284.614" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>719-&gt;727; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="286.992" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>727-&gt;733; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="289.369" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>733-&gt;739; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="291.746" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>739-&gt;743; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="294.124" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>743-&gt;751; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="296.501" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>751-&gt;757; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="298.879" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>757-&gt;761; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="301.256" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>761-&gt;769; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="303.634" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>769-&gt;773; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="306.011" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>773-&gt;787; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="308.389" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>787-&gt;797; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="310.766" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>797-&gt;809; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="313.144" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>809-&gt;811; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="315.521" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>811-&gt;821; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="317.899" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>821-&gt;823; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="320.276" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>823-&gt;827; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="322.654" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>827-&gt;829; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="325.031" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>829-&gt;839; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="327.408" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>839-&gt;853; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="329.786" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>853-&gt;857; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="332.163" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>857-&gt;859; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="334.541" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>859-&gt;863; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="336.918" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>863-&gt;877; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="339.296" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>877-&gt;881; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="341.673" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>881-&gt;883; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="344.051" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>883-&gt;887; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="346.428" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>887-&gt;907; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="348.806" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>907-&gt;911; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="351.183" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>911-&gt;919; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="353.561" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>919-&gt;929; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="355.938" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>929-&gt;937; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="358.315" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>937-&gt;941; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="360.693" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>941-&gt;947; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="363.070" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>947-&gt;953; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="365.448" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>953-&gt;967; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="367.825" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>967-&gt;971; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="370.203" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>971-&gt;977; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="372.580" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>977-&gt;983; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="374.958" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>983-&gt;991; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="377.335" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>991-&gt;997; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="379.713" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>997-&gt;1009; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="382.090" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1009-&gt;1013; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="384.468" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1013-&gt;1019; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="386.845" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1019-&gt;1021; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="389.223" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1021-&gt;1031; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="391.600" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1031-&gt;1033; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="393.977" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1033-&gt;1039; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="396.355" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1039-&gt;1049; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="398.732" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1049-&gt;1051; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="401.110" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1051-&gt;1061; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="403.487" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1061-&gt;1063; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="405.865" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1063-&gt;1069; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="408.242" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1069-&gt;1087; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="410.620" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1087-&gt;1091; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="412.997" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1091-&gt;1093; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="415.375" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1093-&gt;1097; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="417.752" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1097-&gt;1103; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="420.130" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1103-&gt;1109; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="422.507" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1109-&gt;1117; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="424.885" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1117-&gt;1123; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="427.262" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1123-&gt;1129; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="429.639" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1129-&gt;1151; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="432.017" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1151-&gt;1153; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="434.394" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1153-&gt;1163; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="436.772" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1163-&gt;1171; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="439.149" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1171-&gt;1181; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="441.527" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1181-&gt;1187; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="443.904" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1187-&gt;1193; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="446.282" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1193-&gt;1201; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="448.659" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1201-&gt;1213; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="451.037" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1213-&gt;1217; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="453.414" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1217-&gt;1223; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="455.792" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1223-&gt;1229; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="458.169" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1229-&gt;1231; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="460.546" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1231-&gt;1237; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="462.924" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1237-&gt;1249; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="465.301" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1249-&gt;1259; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="467.679" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1259-&gt;1277; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="470.056" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1277-&gt;1279; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="472.434" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1279-&gt;1283; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="474.811" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1283-&gt;1289; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="477.189" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1289-&gt;1291; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="479.566" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1291-&gt;1297; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="481.944" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1297-&gt;1301; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="484.321" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1301-&gt;1303; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="486.699" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1303-&gt;1307; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="489.076" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1307-&gt;1319; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="491.454" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1319-&gt;1321; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="493.831" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1321-&gt;1327; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="496.208" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1327-&gt;1361; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="498.586" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1361-&gt;1367; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="500.963" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1367-&gt;1373; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="503.341" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1373-&gt;1381; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="505.718" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1381-&gt;1399; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="508.096" y="56.000" width="1.707" height="52.000" rx="1.4" fill="#9f1239">
+      <title>1399-&gt;1439; skipped primes 5; CA barriers 5</title>
+    </rect>
+<rect x="510.473" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1439-&gt;1447; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="512.851" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1447-&gt;1451; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="515.228" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1451-&gt;1453; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="517.606" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1453-&gt;1459; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="519.983" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1459-&gt;1471; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="522.361" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1471-&gt;1481; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="524.738" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1481-&gt;1483; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="527.115" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1483-&gt;1487; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="529.493" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1487-&gt;1489; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="531.870" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1489-&gt;1493; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="534.248" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1493-&gt;1499; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="536.625" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1499-&gt;1511; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="539.003" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1511-&gt;1523; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="541.380" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1523-&gt;1531; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="543.758" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1531-&gt;1543; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="546.135" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1543-&gt;1549; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="548.513" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1549-&gt;1553; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="550.890" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1553-&gt;1559; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="553.268" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1559-&gt;1567; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="555.645" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1567-&gt;1571; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="558.023" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1571-&gt;1579; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="560.400" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1579-&gt;1583; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="562.777" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1583-&gt;1597; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="565.155" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1597-&gt;1601; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="567.532" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1601-&gt;1607; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="569.910" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1607-&gt;1609; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="572.287" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1609-&gt;1613; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="574.665" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1613-&gt;1619; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="577.042" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1619-&gt;1621; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="579.420" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1621-&gt;1627; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="581.797" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1627-&gt;1637; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="584.175" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1637-&gt;1657; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="586.552" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1657-&gt;1663; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="588.930" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1663-&gt;1667; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="591.307" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1667-&gt;1669; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="593.685" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1669-&gt;1693; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="596.062" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1693-&gt;1697; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="598.439" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1697-&gt;1699; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="600.817" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1699-&gt;1709; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="603.194" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1709-&gt;1721; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="605.572" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1721-&gt;1723; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="607.949" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1723-&gt;1733; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="610.327" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1733-&gt;1741; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="612.704" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1741-&gt;1747; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="615.082" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1747-&gt;1753; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="617.459" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1753-&gt;1759; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="619.837" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1759-&gt;1777; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="622.214" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1777-&gt;1783; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="624.592" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1783-&gt;1787; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="626.969" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1787-&gt;1789; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="629.346" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1789-&gt;1801; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="631.724" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1801-&gt;1811; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="634.101" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1811-&gt;1823; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="636.479" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1823-&gt;1831; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="638.856" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1831-&gt;1847; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="641.234" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1847-&gt;1861; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="643.611" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1861-&gt;1867; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="645.989" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1867-&gt;1871; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="648.366" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1871-&gt;1873; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="650.744" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1873-&gt;1877; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="653.121" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1877-&gt;1879; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="655.499" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1879-&gt;1889; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="657.876" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1889-&gt;1901; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="660.254" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1901-&gt;1907; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="662.631" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1907-&gt;1913; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="665.008" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1913-&gt;1931; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="667.386" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1931-&gt;1933; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="669.763" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1933-&gt;1949; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="672.141" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1949-&gt;1951; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="674.518" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1951-&gt;1973; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="676.896" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1973-&gt;1979; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="679.273" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1979-&gt;1987; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="681.651" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1987-&gt;1993; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="684.028" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1993-&gt;1997; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="686.406" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1997-&gt;1999; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="688.783" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>1999-&gt;2003; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="691.161" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2003-&gt;2011; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="693.538" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2011-&gt;2017; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="695.915" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2017-&gt;2027; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="698.293" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2027-&gt;2029; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="700.670" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2029-&gt;2039; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="703.048" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2039-&gt;2053; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="705.425" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2053-&gt;2063; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="707.803" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2063-&gt;2069; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="710.180" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2069-&gt;2081; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="712.558" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2081-&gt;2083; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="714.935" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2083-&gt;2087; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="717.313" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2087-&gt;2089; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="719.690" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2089-&gt;2099; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="722.068" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2099-&gt;2111; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="724.445" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2111-&gt;2113; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="726.823" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2113-&gt;2129; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="729.200" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2129-&gt;2131; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="731.577" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2131-&gt;2137; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="733.955" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2137-&gt;2141; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="736.332" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2141-&gt;2143; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="738.710" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2143-&gt;2153; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="741.087" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2153-&gt;2161; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="743.465" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2161-&gt;2179; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="745.842" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2179-&gt;2203; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="748.220" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2203-&gt;2207; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="750.597" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2207-&gt;2213; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="752.975" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2213-&gt;2221; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="755.352" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2221-&gt;2237; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="757.730" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2237-&gt;2239; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="760.107" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2239-&gt;2243; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="762.485" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2243-&gt;2251; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="764.862" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2251-&gt;2267; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="767.239" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2267-&gt;2269; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="769.617" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2269-&gt;2273; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="771.994" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2273-&gt;2281; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="774.372" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2281-&gt;2287; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="776.749" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2287-&gt;2293; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="779.127" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2293-&gt;2297; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="781.504" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2297-&gt;2309; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="783.882" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2309-&gt;2311; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="786.259" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2311-&gt;2333; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="788.637" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2333-&gt;2339; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="791.014" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2339-&gt;2341; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="793.392" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2341-&gt;2347; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="795.769" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2347-&gt;2351; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="798.146" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2351-&gt;2357; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="800.524" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2357-&gt;2371; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="802.901" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2371-&gt;2377; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="805.279" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2377-&gt;2381; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="807.656" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2381-&gt;2383; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="810.034" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2383-&gt;2389; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="812.411" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2389-&gt;2393; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="814.789" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2393-&gt;2399; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="817.166" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2399-&gt;2411; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="819.544" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2411-&gt;2417; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="821.921" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2417-&gt;2423; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="824.299" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2423-&gt;2437; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="826.676" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2437-&gt;2441; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="829.054" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2441-&gt;2447; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="831.431" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2447-&gt;2459; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="833.808" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2459-&gt;2467; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="836.186" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2467-&gt;2473; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="838.563" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2473-&gt;2477; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="840.941" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2477-&gt;2503; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="843.318" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2503-&gt;2521; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="845.696" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2521-&gt;2531; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="848.073" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2531-&gt;2539; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="850.451" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2539-&gt;2543; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="852.828" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2543-&gt;2549; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="855.206" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2549-&gt;2551; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="857.583" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2551-&gt;2557; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="859.961" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2557-&gt;2579; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="862.338" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2579-&gt;2591; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="864.715" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2591-&gt;2593; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="867.093" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2593-&gt;2609; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="869.470" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2609-&gt;2617; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="871.848" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2617-&gt;2621; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="874.225" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2621-&gt;2633; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="876.603" y="56.000" width="1.707" height="52.000" rx="1.4" fill="#9f1239">
+      <title>2633-&gt;2677; skipped primes 5; CA barriers 5</title>
+    </rect>
+<rect x="878.980" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2677-&gt;2683; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="881.358" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2683-&gt;2687; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="883.735" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2687-&gt;2689; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="886.113" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2689-&gt;2693; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="888.490" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2693-&gt;2699; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="890.868" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2699-&gt;2707; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="893.245" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2707-&gt;2711; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="895.623" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2711-&gt;2713; skipped primes 0; CA barriers 0</title>
+    </rect>
+<rect x="898.000" y="96.000" width="1.707" height="12.000" rx="1.4" fill="#0f766e">
+      <title>2713-&gt;2719; skipped primes 0; CA barriers 0</title>
+    </rect>
+    <line x1="63.510" y1="54" x2="63.510" y2="54" class="mark-line"/>
+<text x="63.510" y="47" text-anchor="start" class="svg-value">139-&gt;151</text>
+<line x1="508.096" y1="54" x2="508.096" y2="54" class="mark-line"/>
+<text x="508.096" y="47" text-anchor="middle" class="svg-value">1399-&gt;1439</text>
+<line x1="876.603" y1="54" x2="876.603" y2="54" class="mark-line"/>
+<text x="876.603" y="47" text-anchor="end" class="svg-value">2633-&gt;2677</text>
+    <text x="54" y="133" class="svg-label">113</text>
+    <text x="898" y="133" text-anchor="end" class="svg-label">2719</text>
+    <text x="54" y="155" class="svg-label">teal = no CA barrier; gold = CA barrier; red = skipped prime frontier(s)</text>
+    <text x="898" y="155" text-anchor="end" class="svg-label">red labels name prime-frontier skips</text>
+  </svg>
+      <div class="table-wrap timeline-wrap" data-timeline-count="356">
+        <table>
+    <thead><tr><th>#</th><th>frontier transition</th><th>SA indices</th><th>prime skip</th><th>CA barriers</th><th>skipped prime frontiers</th><th>closest f(C)-f(A)</th><th>final f(B)-f(A)</th><th>Li main</th><th>skip/Li</th></tr></thead>
+    <tbody><tr><td>1</td><td>113 &rarr; 127</td><td>356 &rarr; 368</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.849e-4</td><td>2.924779</td><td>0.000000</td></tr><tr><td>2</td><td>127 &rarr; 131</td><td>368 &rarr; 380</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.758e-4</td><td>0.823087</td><td>0.000000</td></tr><tr><td>3</td><td>131 &rarr; 137</td><td>380 &rarr; 394</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.321e-4</td><td>1.225059</td><td>0.000000</td></tr><tr><td>4</td><td>137 &rarr; 139</td><td>394 &rarr; 408</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.335e-4</td><td>0.405907</td><td>0.000000</td></tr><tr><td>5</td><td>139 &rarr; 151</td><td>409 &rarr; 440</td><td>1</td><td>1</td><td>149</td><td>-2.071e-5</td><td>2.308e-4</td><td>2.411414</td><td>0.414694</td></tr><tr><td>6</td><td>151 &rarr; 157</td><td>444 &rarr; 459</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.123e-4</td><td>1.191217</td><td>0.000000</td></tr><tr><td>7</td><td>157 &rarr; 163</td><td>459 &rarr; 476</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.201e-4</td><td>1.182245</td><td>0.000000</td></tr><tr><td>8</td><td>163 &rarr; 167</td><td>476 &rarr; 493</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.890e-4</td><td>0.783406</td><td>0.000000</td></tr><tr><td>9</td><td>167 &rarr; 173</td><td>502 &rarr; 519</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.985e-4</td><td>1.168287</td><td>0.000000</td></tr><tr><td>10</td><td>173 &rarr; 179</td><td>519 &rarr; 537</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.219e-4</td><td>1.160448</td><td>0.000000</td></tr><tr><td>11</td><td>179 &rarr; 181</td><td>537 &rarr; 555</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.028e-4</td><td>0.385138</td><td>0.000000</td></tr><tr><td>12</td><td>181 &rarr; 191</td><td>555 &rarr; 575</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.968e-4</td><td>1.913663</td><td>0.000000</td></tr><tr><td>13</td><td>191 &rarr; 193</td><td>575 &rarr; 596</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.649e-4</td><td>0.380410</td><td>0.000000</td></tr><tr><td>14</td><td>193 &rarr; 197</td><td>596 &rarr; 613</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.134e-4</td><td>0.758585</td><td>0.000000</td></tr><tr><td>15</td><td>197 &rarr; 199</td><td>613 &rarr; 628</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.612e-4</td><td>0.378196</td><td>0.000000</td></tr><tr><td>16</td><td>199 &rarr; 211</td><td>636 &rarr; 653</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.418e-4</td><td>2.254447</td><td>0.000000</td></tr><tr><td>17</td><td>211 &rarr; 223</td><td>656 &rarr; 673</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.591e-5</td><td>2.230598</td><td>0.000000</td></tr><tr><td>18</td><td>223 &rarr; 227</td><td>673 &rarr; 688</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.385e-4</td><td>0.738541</td><td>0.000000</td></tr><tr><td>19</td><td>227 &rarr; 229</td><td>688 &rarr; 704</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.655e-4</td><td>0.368369</td><td>0.000000</td></tr><tr><td>20</td><td>229 &rarr; 233</td><td>708 &rarr; 724</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.646e-4</td><td>0.734970</td><td>0.000000</td></tr><tr><td>21</td><td>233 &rarr; 239</td><td>724 &rarr; 740</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.289e-4</td><td>1.098138</td><td>0.000000</td></tr><tr><td>22</td><td>239 &rarr; 241</td><td>740 &rarr; 755</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.363e-4</td><td>0.364921</td><td>0.000000</td></tr><tr><td>23</td><td>241 &rarr; 251</td><td>755 &rarr; 774</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.676e-4</td><td>1.816452</td><td>0.000000</td></tr><tr><td>24</td><td>251 &rarr; 257</td><td>775 &rarr; 792</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.621e-4</td><td>1.083560</td><td>0.000000</td></tr><tr><td>25</td><td>257 &rarr; 263</td><td>792 &rarr; 809</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.381e-4</td><td>1.079010</td><td>0.000000</td></tr><tr><td>26</td><td>263 &rarr; 269</td><td>809 &rarr; 826</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.165e-4</td><td>1.074601</td><td>0.000000</td></tr><tr><td>27</td><td>269 &rarr; 271</td><td>826 &rarr; 843</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.075e-4</td><td>0.357244</td><td>0.000000</td></tr><tr><td>28</td><td>271 &rarr; 277</td><td>843 &rarr; 860</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.849e-4</td><td>1.068928</td><td>0.000000</td></tr><tr><td>29</td><td>277 &rarr; 281</td><td>860 &rarr; 875</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.161e-4</td><td>0.710328</td><td>0.000000</td></tr><tr><td>30</td><td>281 &rarr; 283</td><td>875 &rarr; 890</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.962e-4</td><td>0.354490</td><td>0.000000</td></tr><tr><td>31</td><td>283 &rarr; 293</td><td>890 &rarr; 904</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.758e-4</td><td>1.765882</td><td>0.000000</td></tr><tr><td>32</td><td>293 &rarr; 307</td><td>912 &rarr; 927</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.454e-4</td><td>2.454564</td><td>0.000000</td></tr><tr><td>33</td><td>307 &rarr; 311</td><td>927 &rarr; 942</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.768e-4</td><td>0.697675</td><td>0.000000</td></tr><tr><td>34</td><td>311 &rarr; 313</td><td>942 &rarr; 957</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.482e-4</td><td>0.348250</td><td>0.000000</td></tr><tr><td>35</td><td>313 &rarr; 317</td><td>957 &rarr; 972</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.751e-4</td><td>0.695342</td><td>0.000000</td></tr><tr><td>36</td><td>317 &rarr; 331</td><td>972 &rarr; 986</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.072e-4</td><td>2.421878</td><td>0.000000</td></tr><tr><td>37</td><td>331 &rarr; 337</td><td>986 &rarr; 1,001</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.001e-4</td><td>1.032503</td><td>0.000000</td></tr><tr><td>38</td><td>337 &rarr; 347</td><td>1,001 &rarr; 1,017</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.451e-5</td><td>1.713866</td><td>0.000000</td></tr><tr><td>39</td><td>347 &rarr; 349</td><td>1,017 &rarr; 1,034</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.818e-5</td><td>0.341752</td><td>0.000000</td></tr><tr><td>40</td><td>349 &rarr; 353</td><td>1,034 &rarr; 1,050</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.159e-4</td><td>0.682503</td><td>0.000000</td></tr><tr><td>41</td><td>353 &rarr; 359</td><td>1,050 &rarr; 1,065</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.101e-4</td><td>1.021291</td><td>0.000000</td></tr><tr><td>42</td><td>359 &rarr; 367</td><td>1,065 &rarr; 1,083</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.423e-5</td><td>1.357226</td><td>0.000000</td></tr><tr><td>43</td><td>367 &rarr; 373</td><td>1,083 &rarr; 1,099</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.061e-5</td><td>1.014630</td><td>0.000000</td></tr><tr><td>44</td><td>373 &rarr; 379</td><td>1,099 &rarr; 1,113</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.740e-5</td><td>1.011877</td><td>0.000000</td></tr><tr><td>45</td><td>379 &rarr; 383</td><td>1,113 &rarr; 1,128</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.242e-5</td><td>0.673084</td><td>0.000000</td></tr><tr><td>46</td><td>383 &rarr; 389</td><td>1,128 &rarr; 1,143</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.901e-5</td><td>1.007417</td><td>0.000000</td></tr><tr><td>47</td><td>389 &rarr; 397</td><td>1,143 &rarr; 1,158</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.978e-5</td><td>1.339184</td><td>0.000000</td></tr><tr><td>48</td><td>397 &rarr; 401</td><td>1,158 &rarr; 1,172</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.330e-5</td><td>0.667896</td><td>0.000000</td></tr><tr><td>49</td><td>401 &rarr; 409</td><td>1,172 &rarr; 1,186</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.622e-5</td><td>1.332475</td><td>0.000000</td></tr><tr><td>50</td><td>409 &rarr; 419</td><td>1,186 &rarr; 1,199</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.613e-6</td><td>1.659521</td><td>0.000000</td></tr><tr><td>51</td><td>419 &rarr; 421</td><td>1,199 &rarr; 1,212</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.380e-5</td><td>0.331112</td><td>0.000000</td></tr><tr><td>52</td><td>421 &rarr; 431</td><td>1,212 &rarr; 1,226</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.233e-6</td><td>1.651689</td><td>0.000000</td></tr><tr><td>53</td><td>431 &rarr; 433</td><td>1,226 &rarr; 1,240</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.216e-5</td><td>0.329575</td><td>0.000000</td></tr><tr><td>54</td><td>433 &rarr; 439</td><td>1,240 &rarr; 1,254</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.155e-5</td><td>0.987227</td><td>0.000000</td></tr><tr><td>55</td><td>439 &rarr; 443</td><td>1,254 &rarr; 1,268</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.187e-5</td><td>0.656918</td><td>0.000000</td></tr><tr><td>56</td><td>443 &rarr; 449</td><td>1,268 &rarr; 1,282</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.095e-5</td><td>0.983557</td><td>0.000000</td></tr><tr><td>57</td><td>449 &rarr; 457</td><td>1,282 &rarr; 1,295</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.048e-5</td><td>1.308071</td><td>0.000000</td></tr><tr><td>58</td><td>457 &rarr; 461</td><td>1,295 &rarr; 1,308</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.959e-5</td><td>0.652630</td><td>0.000000</td></tr><tr><td>59</td><td>461 &rarr; 463</td><td>1,309 &rarr; 1,322</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.132e-4</td><td>0.325968</td><td>0.000000</td></tr><tr><td>60</td><td>463 &rarr; 467</td><td>1,322 &rarr; 1,336</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.303e-4</td><td>0.651250</td><td>0.000000</td></tr><tr><td>61</td><td>467 &rarr; 479</td><td>1,344 &rarr; 1,361</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.030e-4</td><td>1.948349</td><td>0.000000</td></tr><tr><td>62</td><td>479 &rarr; 487</td><td>1,361 &rarr; 1,379</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.465e-5</td><td>1.294498</td><td>0.000000</td></tr><tr><td>63</td><td>487 &rarr; 491</td><td>1,379 &rarr; 1,398</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.011e-4</td><td>0.645957</td><td>0.000000</td></tr><tr><td>64</td><td>491 &rarr; 499</td><td>1,398 &rarr; 1,415</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.377e-5</td><td>1.289378</td><td>0.000000</td></tr><tr><td>65</td><td>499 &rarr; 503</td><td>1,415 &rarr; 1,432</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.955e-5</td><td>0.643438</td><td>0.000000</td></tr><tr><td>66</td><td>503 &rarr; 509</td><td>1,432 &rarr; 1,450</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.893e-5</td><td>0.963619</td><td>0.000000</td></tr><tr><td>67</td><td>509 &rarr; 521</td><td>1,450 &rarr; 1,471</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.273e-5</td><td>1.921803</td><td>0.000000</td></tr><tr><td>68</td><td>521 &rarr; 523</td><td>1,471 &rarr; 1,490</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.304e-5</td><td>0.319608</td><td>0.000000</td></tr><tr><td>69</td><td>523 &rarr; 541</td><td>1,490 &rarr; 1,516</td><td>0</td><td>1</td><td>&mdash;</td><td>-2.665e-6</td><td>1.414e-5</td><td>2.867804</td><td>0.000000</td></tr><tr><td>70</td><td>541 &rarr; 547</td><td>1,516 &rarr; 1,532</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.280e-5</td><td>0.952541</td><td>0.000000</td></tr><tr><td>71</td><td>547 &rarr; 557</td><td>1,532 &rarr; 1,557</td><td>0</td><td>1</td><td>&mdash;</td><td>-4.356e-7</td><td>1.313e-5</td><td>1.583900</td><td>0.000000</td></tr><tr><td>72</td><td>557 &rarr; 563</td><td>1,557 &rarr; 1,576</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.537e-5</td><td>0.948177</td><td>0.000000</td></tr><tr><td>73</td><td>563 &rarr; 569</td><td>1,581 &rarr; 1,598</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.403e-5</td><td>0.946583</td><td>0.000000</td></tr><tr><td>74</td><td>569 &rarr; 571</td><td>1,598 &rarr; 1,615</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.052e-5</td><td>0.315177</td><td>0.000000</td></tr><tr><td>75</td><td>571 &rarr; 577</td><td>1,615 &rarr; 1,633</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.157e-5</td><td>0.944492</td><td>0.000000</td></tr><tr><td>76</td><td>577 &rarr; 587</td><td>1,633 &rarr; 1,650</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.879e-5</td><td>1.570733</td><td>0.000000</td></tr><tr><td>77</td><td>587 &rarr; 593</td><td>1,650 &rarr; 1,666</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.037e-5</td><td>0.940422</td><td>0.000000</td></tr><tr><td>78</td><td>593 &rarr; 599</td><td>1,666 &rarr; 1,683</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.195e-5</td><td>0.938933</td><td>0.000000</td></tr><tr><td>79</td><td>599 &rarr; 601</td><td>1,683 &rarr; 1,700</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.593e-5</td><td>0.312650</td><td>0.000000</td></tr><tr><td>80</td><td>601 &rarr; 607</td><td>1,700 &rarr; 1,718</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.699e-5</td><td>0.936978</td><td>0.000000</td></tr><tr><td>81</td><td>607 &rarr; 613</td><td>1,718 &rarr; 1,738</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.805e-5</td><td>0.935533</td><td>0.000000</td></tr><tr><td>82</td><td>613 &rarr; 617</td><td>1,738 &rarr; 1,758</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.976e-5</td><td>0.622896</td><td>0.000000</td></tr><tr><td>83</td><td>617 &rarr; 619</td><td>1,758 &rarr; 1,778</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.169e-5</td><td>0.311212</td><td>0.000000</td></tr><tr><td>84</td><td>619 &rarr; 631</td><td>1,778 &rarr; 1,797</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.113e-5</td><td>1.864011</td><td>0.000000</td></tr><tr><td>85</td><td>631 &rarr; 641</td><td>1,797 &rarr; 1,814</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.222e-5</td><td>1.549142</td><td>0.000000</td></tr><tr><td>86</td><td>641 &rarr; 643</td><td>1,814 &rarr; 1,831</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.323e-5</td><td>0.309378</td><td>0.000000</td></tr><tr><td>87</td><td>643 &rarr; 647</td><td>1,831 &rarr; 1,848</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.394e-5</td><td>0.618310</td><td>0.000000</td></tr><tr><td>88</td><td>647 &rarr; 653</td><td>1,848 &rarr; 1,867</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.476e-5</td><td>0.926359</td><td>0.000000</td></tr><tr><td>89</td><td>653 &rarr; 659</td><td>1,867 &rarr; 1,888</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.558e-5</td><td>0.925047</td><td>0.000000</td></tr><tr><td>90</td><td>659 &rarr; 661</td><td>1,888 &rarr; 1,910</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.489e-5</td><td>0.308060</td><td>0.000000</td></tr><tr><td>91</td><td>661 &rarr; 673</td><td>1,910 &rarr; 1,932</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.819e-5</td><td>1.845367</td><td>0.000000</td></tr><tr><td>92</td><td>673 &rarr; 677</td><td>1,932 &rarr; 1,954</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.801e-5</td><td>0.613995</td><td>0.000000</td></tr><tr><td>93</td><td>677 &rarr; 683</td><td>1,954 &rarr; 1,974</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.881e-5</td><td>0.919951</td><td>0.000000</td></tr><tr><td>94</td><td>683 &rarr; 691</td><td>1,974 &rarr; 1,995</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.107e-5</td><td>1.224678</td><td>0.000000</td></tr><tr><td>95</td><td>691 &rarr; 701</td><td>1,995 &rarr; 2,017</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.539e-5</td><td>1.527805</td><td>0.000000</td></tr><tr><td>96</td><td>701 &rarr; 709</td><td>2,017 &rarr; 2,040</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.852e-5</td><td>1.219849</td><td>0.000000</td></tr><tr><td>97</td><td>709 &rarr; 719</td><td>2,040 &rarr; 2,062</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.407e-5</td><td>1.521868</td><td>0.000000</td></tr><tr><td>98</td><td>719 &rarr; 727</td><td>2,062 &rarr; 2,084</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.799e-5</td><td>1.215177</td><td>0.000000</td></tr><tr><td>99</td><td>727 &rarr; 733</td><td>2,084 &rarr; 2,108</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.973e-5</td><td>0.910050</td><td>0.000000</td></tr><tr><td>100</td><td>733 &rarr; 739</td><td>2,108 &rarr; 2,132</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.144e-5</td><td>0.908922</td><td>0.000000</td></tr><tr><td>101</td><td>739 &rarr; 743</td><td>2,132 &rarr; 2,157</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.046e-5</td><td>0.605327</td><td>0.000000</td></tr><tr><td>102</td><td>743 &rarr; 751</td><td>2,157 &rarr; 2,181</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.475e-5</td><td>1.209179</td><td>0.000000</td></tr><tr><td>103</td><td>751 &rarr; 757</td><td>2,181 &rarr; 2,205</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.636e-5</td><td>0.905607</td><td>0.000000</td></tr><tr><td>104</td><td>757 &rarr; 761</td><td>2,205 &rarr; 2,230</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.494e-5</td><td>0.603136</td><td>0.000000</td></tr><tr><td>105</td><td>761 &rarr; 769</td><td>2,244 &rarr; 2,270</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.146e-5</td><td>1.204843</td><td>0.000000</td></tr><tr><td>106</td><td>769 &rarr; 773</td><td>2,270 &rarr; 2,296</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.955e-5</td><td>0.601713</td><td>0.000000</td></tr><tr><td>107</td><td>773 &rarr; 787</td><td>2,296 &rarr; 2,321</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.425e-5</td><td>2.102330</td><td>0.000000</td></tr><tr><td>108</td><td>787 &rarr; 797</td><td>2,321 &rarr; 2,347</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.299e-5</td><td>1.498228</td><td>0.000000</td></tr><tr><td>109</td><td>797 &rarr; 809</td><td>2,347 &rarr; 2,376</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.992e-6</td><td>1.794166</td><td>0.000000</td></tr><tr><td>110</td><td>809 &rarr; 811</td><td>2,376 &rarr; 2,405</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.033e-5</td><td>0.298640</td><td>0.000000</td></tr><tr><td>111</td><td>811 &rarr; 821</td><td>2,411 &rarr; 2,438</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.583e-5</td><td>1.491556</td><td>0.000000</td></tr><tr><td>112</td><td>821 &rarr; 823</td><td>2,438 &rarr; 2,464</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.962e-5</td><td>0.297985</td><td>0.000000</td></tr><tr><td>113</td><td>823 &rarr; 827</td><td>2,464 &rarr; 2,490</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.718e-5</td><td>0.595647</td><td>0.000000</td></tr><tr><td>114</td><td>827 &rarr; 829</td><td>2,490 &rarr; 2,516</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.043e-5</td><td>0.297663</td><td>0.000000</td></tr><tr><td>115</td><td>829 &rarr; 839</td><td>2,516 &rarr; 2,543</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.016e-5</td><td>1.486718</td><td>0.000000</td></tr><tr><td>116</td><td>839 &rarr; 853</td><td>2,546 &rarr; 2,573</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.100e-5</td><td>2.076996</td><td>0.000000</td></tr><tr><td>117</td><td>853 &rarr; 857</td><td>2,573 &rarr; 2,597</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.825e-5</td><td>0.592496</td><td>0.000000</td></tr><tr><td>118</td><td>857 &rarr; 859</td><td>2,597 &rarr; 2,621</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.081e-5</td><td>0.296094</td><td>0.000000</td></tr><tr><td>119</td><td>859 &rarr; 863</td><td>2,621 &rarr; 2,645</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.766e-5</td><td>0.591883</td><td>0.000000</td></tr><tr><td>120</td><td>863 &rarr; 877</td><td>2,645 &rarr; 2,668</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.769e-5</td><td>2.068411</td><td>0.000000</td></tr><tr><td>121</td><td>877 &rarr; 881</td><td>2,668 &rarr; 2,693</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.451e-5</td><td>0.590076</td><td>0.000000</td></tr><tr><td>122</td><td>881 &rarr; 883</td><td>2,693 &rarr; 2,718</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.635e-5</td><td>0.294890</td><td>0.000000</td></tr><tr><td>123</td><td>883 &rarr; 887</td><td>2,718 &rarr; 2,743</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.280e-5</td><td>0.589485</td><td>0.000000</td></tr><tr><td>124</td><td>887 &rarr; 907</td><td>2,751 &rarr; 2,779</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.519e-5</td><td>2.941596</td><td>0.000000</td></tr><tr><td>125</td><td>907 &rarr; 911</td><td>2,779 &rarr; 2,805</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.167e-5</td><td>0.587169</td><td>0.000000</td></tr><tr><td>126</td><td>911 &rarr; 919</td><td>2,805 &rarr; 2,831</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.836e-5</td><td>1.173206</td><td>0.000000</td></tr><tr><td>127</td><td>919 &rarr; 929</td><td>2,836 &rarr; 2,863</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.417e-5</td><td>1.464406</td><td>0.000000</td></tr><tr><td>128</td><td>929 &rarr; 937</td><td>2,877 &rarr; 2,905</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.951e-5</td><td>1.169864</td><td>0.000000</td></tr><tr><td>129</td><td>937 &rarr; 941</td><td>2,905 &rarr; 2,933</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.557e-5</td><td>0.584384</td><td>0.000000</td></tr><tr><td>130</td><td>941 &rarr; 947</td><td>2,933 &rarr; 2,962</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.697e-5</td><td>0.875897</td><td>0.000000</td></tr><tr><td>131</td><td>947 &rarr; 953</td><td>2,962 &rarr; 2,992</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.835e-5</td><td>0.875087</td><td>0.000000</td></tr><tr><td>132</td><td>953 &rarr; 967</td><td>2,992 &rarr; 3,019</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.224e-5</td><td>2.038759</td><td>0.000000</td></tr><tr><td>133</td><td>967 &rarr; 971</td><td>3,019 &rarr; 3,046</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.809e-5</td><td>0.581711</td><td>0.000000</td></tr><tr><td>134</td><td>971 &rarr; 977</td><td>3,046 &rarr; 3,072</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.956e-5</td><td>0.871914</td><td>0.000000</td></tr><tr><td>135</td><td>977 &rarr; 983</td><td>3,072 &rarr; 3,097</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.101e-5</td><td>0.871137</td><td>0.000000</td></tr><tr><td>136</td><td>983 &rarr; 991</td><td>3,097 &rarr; 3,124</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.830e-5</td><td>1.160317</td><td>0.000000</td></tr><tr><td>137</td><td>991 &rarr; 997</td><td>3,124 &rarr; 3,149</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.974e-5</td><td>0.869347</td><td>0.000000</td></tr><tr><td>138</td><td>997 &rarr; 1,009</td><td>3,149 &rarr; 3,174</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.916e-5</td><td>1.736427</td><td>0.000000</td></tr><tr><td>139</td><td>1,009 &rarr; 1,013</td><td>3,174 &rarr; 3,196</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.464e-5</td><td>0.578144</td><td>0.000000</td></tr><tr><td>140</td><td>1,013 &rarr; 1,019</td><td>3,196 &rarr; 3,218</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.611e-5</td><td>0.866598</td><td>0.000000</td></tr><tr><td>141</td><td>1,019 &rarr; 1,021</td><td>3,218 &rarr; 3,240</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.528e-5</td><td>0.288702</td><td>0.000000</td></tr><tr><td>142</td><td>1,021 &rarr; 1,031</td><td>3,252 &rarr; 3,275</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.587e-5</td><td>1.442290</td><td>0.000000</td></tr><tr><td>143</td><td>1,031 &rarr; 1,033</td><td>3,275 &rarr; 3,298</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.471e-5</td><td>0.288215</td><td>0.000000</td></tr><tr><td>144</td><td>1,033 &rarr; 1,039</td><td>3,298 &rarr; 3,320</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.588e-5</td><td>0.864165</td><td>0.000000</td></tr><tr><td>145</td><td>1,039 &rarr; 1,049</td><td>3,320 &rarr; 3,342</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.966e-5</td><td>1.438681</td><td>0.000000</td></tr><tr><td>146</td><td>1,049 &rarr; 1,051</td><td>3,342 &rarr; 3,362</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.816e-5</td><td>0.287499</td><td>0.000000</td></tr><tr><td>147</td><td>1,051 &rarr; 1,061</td><td>3,362 &rarr; 3,382</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.207e-5</td><td>1.436320</td><td>0.000000</td></tr><tr><td>148</td><td>1,061 &rarr; 1,063</td><td>3,382 &rarr; 3,402</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.036e-5</td><td>0.287030</td><td>0.000000</td></tr><tr><td>149</td><td>1,063 &rarr; 1,069</td><td>3,402 &rarr; 3,422</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.143e-5</td><td>0.860626</td><td>0.000000</td></tr><tr><td>150</td><td>1,069 &rarr; 1,087</td><td>3,422 &rarr; 3,444</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.174e-5</td><td>2.577745</td><td>0.000000</td></tr><tr><td>151</td><td>1,087 &rarr; 1,091</td><td>3,444 &rarr; 3,467</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.641e-5</td><td>0.571999</td><td>0.000000</td></tr><tr><td>152</td><td>1,091 &rarr; 1,093</td><td>3,467 &rarr; 3,490</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.435e-5</td><td>0.285887</td><td>0.000000</td></tr><tr><td>153</td><td>1,093 &rarr; 1,097</td><td>3,490 &rarr; 3,513</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.881e-5</td><td>0.571550</td><td>0.000000</td></tr><tr><td>154</td><td>1,097 &rarr; 1,103</td><td>3,513 &rarr; 3,533</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.986e-5</td><td>0.856768</td><td>0.000000</td></tr><tr><td>155</td><td>1,103 &rarr; 1,109</td><td>3,533 &rarr; 3,552</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.089e-5</td><td>0.856103</td><td>0.000000</td></tr><tr><td>156</td><td>1,109 &rarr; 1,117</td><td>3,552 &rarr; 3,572</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.866e-5</td><td>1.140444</td><td>0.000000</td></tr><tr><td>157</td><td>1,117 &rarr; 1,123</td><td>3,572 &rarr; 3,592</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.970e-5</td><td>0.854569</td><td>0.000000</td></tr><tr><td>158</td><td>1,123 &rarr; 1,129</td><td>3,592 &rarr; 3,611</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.071e-5</td><td>0.853919</td><td>0.000000</td></tr><tr><td>159</td><td>1,129 &rarr; 1,151</td><td>3,611 &rarr; 3,628</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.699e-5</td><td>3.125549</td><td>0.000000</td></tr><tr><td>160</td><td>1,151 &rarr; 1,153</td><td>3,628 &rarr; 3,645</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.430e-5</td><td>0.283718</td><td>0.000000</td></tr><tr><td>161</td><td>1,153 &rarr; 1,163</td><td>3,645 &rarr; 3,662</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.948e-5</td><td>1.417546</td><td>0.000000</td></tr><tr><td>162</td><td>1,163 &rarr; 1,171</td><td>3,662 &rarr; 3,679</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.774e-5</td><td>1.132793</td><td>0.000000</td></tr><tr><td>163</td><td>1,171 &rarr; 1,181</td><td>3,679 &rarr; 3,696</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.315e-5</td><td>1.414453</td><td>0.000000</td></tr><tr><td>164</td><td>1,181 &rarr; 1,187</td><td>3,696 &rarr; 3,712</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.442e-5</td><td>0.847859</td><td>0.000000</td></tr><tr><td>165</td><td>1,187 &rarr; 1,193</td><td>3,712 &rarr; 3,728</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.567e-5</td><td>0.847253</td><td>0.000000</td></tr><tr><td>166</td><td>1,193 &rarr; 1,201</td><td>3,728 &rarr; 3,744</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.409e-5</td><td>1.128736</td><td>0.000000</td></tr><tr><td>167</td><td>1,201 &rarr; 1,213</td><td>3,744 &rarr; 3,761</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.704e-5</td><td>1.691120</td><td>0.000000</td></tr><tr><td>168</td><td>1,213 &rarr; 1,217</td><td>3,761 &rarr; 3,778</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.107e-5</td><td>0.563182</td><td>0.000000</td></tr><tr><td>169</td><td>1,217 &rarr; 1,223</td><td>3,787 &rarr; 3,804</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.736e-5</td><td>0.844285</td><td>0.000000</td></tr><tr><td>170</td><td>1,223 &rarr; 1,229</td><td>3,804 &rarr; 3,821</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.852e-5</td><td>0.843703</td><td>0.000000</td></tr><tr><td>171</td><td>1,229 &rarr; 1,231</td><td>3,821 &rarr; 3,838</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.498e-5</td><td>0.281105</td><td>0.000000</td></tr><tr><td>172</td><td>1,231 &rarr; 1,237</td><td>3,838 &rarr; 3,855</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.605e-5</td><td>0.842932</td><td>0.000000</td></tr><tr><td>173</td><td>1,237 &rarr; 1,249</td><td>3,855 &rarr; 3,870</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.931e-5</td><td>1.684145</td><td>0.000000</td></tr><tr><td>174</td><td>1,249 &rarr; 1,259</td><td>3,870 &rarr; 3,885</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.533e-5</td><td>1.401720</td><td>0.000000</td></tr><tr><td>175</td><td>1,259 &rarr; 1,277</td><td>3,885 &rarr; 3,903</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.149e-5</td><td>2.519179</td><td>0.000000</td></tr><tr><td>176</td><td>1,277 &rarr; 1,279</td><td>3,903 &rarr; 3,921</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.770e-5</td><td>0.279601</td><td>0.000000</td></tr><tr><td>177</td><td>1,279 &rarr; 1,283</td><td>3,921 &rarr; 3,939</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.136e-5</td><td>0.559019</td><td>0.000000</td></tr><tr><td>178</td><td>1,283 &rarr; 1,289</td><td>3,939 &rarr; 3,957</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.253e-5</td><td>0.838072</td><td>0.000000</td></tr><tr><td>179</td><td>1,289 &rarr; 1,291</td><td>3,957 &rarr; 3,975</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.850e-5</td><td>0.279236</td><td>0.000000</td></tr><tr><td>180</td><td>1,291 &rarr; 1,297</td><td>3,975 &rarr; 3,994</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.959e-5</td><td>0.837347</td><td>0.000000</td></tr><tr><td>181</td><td>1,297 &rarr; 1,301</td><td>3,994 &rarr; 4,013</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.303e-5</td><td>0.557931</td><td>0.000000</td></tr><tr><td>182</td><td>1,301 &rarr; 1,303</td><td>4,013 &rarr; 4,033</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.878e-5</td><td>0.278876</td><td>0.000000</td></tr><tr><td>183</td><td>1,303 &rarr; 1,307</td><td>4,033 &rarr; 4,053</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.209e-5</td><td>0.557572</td><td>0.000000</td></tr><tr><td>184</td><td>1,307 &rarr; 1,319</td><td>4,053 &rarr; 4,071</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.604e-5</td><td>1.671294</td><td>0.000000</td></tr><tr><td>185</td><td>1,319 &rarr; 1,321</td><td>4,071 &rarr; 4,089</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.161e-5</td><td>0.278343</td><td>0.000000</td></tr><tr><td>186</td><td>1,321 &rarr; 1,327</td><td>4,089 &rarr; 4,107</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.252e-5</td><td>0.834677</td><td>0.000000</td></tr><tr><td>187</td><td>1,327 &rarr; 1,361</td><td>4,107 &rarr; 4,128</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.233e-5</td><td>4.720012</td><td>0.000000</td></tr><tr><td>188</td><td>1,361 &rarr; 1,367</td><td>4,128 &rarr; 4,147</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.351e-5</td><td>0.831235</td><td>0.000000</td></tr><tr><td>189</td><td>1,367 &rarr; 1,373</td><td>4,147 &rarr; 4,166</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.468e-5</td><td>0.830730</td><td>0.000000</td></tr><tr><td>190</td><td>1,373 &rarr; 1,381</td><td>4,166 &rarr; 4,185</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.371e-5</td><td>1.106859</td><td>0.000000</td></tr><tr><td>191</td><td>1,381 &rarr; 1,399</td><td>4,185 &rarr; 4,204</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.384e-6</td><td>2.487201</td><td>0.000000</td></tr><tr><td>192</td><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>5</td><td>5</td><td>1409, 1423, 1427, 1429, 1433</td><td>-4.456e-7</td><td>4.018e-9</td><td>5.511414</td><td>0.907208</td></tr><tr><td>193</td><td>1,439 &rarr; 1,447</td><td>4,310 &rarr; 4,328</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.948e-6</td><td>1.099735</td><td>0.000000</td></tr><tr><td>194</td><td>1,447 &rarr; 1,451</td><td>4,328 &rarr; 4,346</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.032e-6</td><td>0.549554</td><td>0.000000</td></tr><tr><td>195</td><td>1,451 &rarr; 1,453</td><td>4,346 &rarr; 4,364</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.298e-5</td><td>0.274699</td><td>0.000000</td></tr><tr><td>196</td><td>1,453 &rarr; 1,459</td><td>4,364 &rarr; 4,382</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.406e-5</td><td>0.823786</td><td>0.000000</td></tr><tr><td>197</td><td>1,459 &rarr; 1,471</td><td>4,382 &rarr; 4,401</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.519e-6</td><td>1.646179</td><td>0.000000</td></tr><tr><td>198</td><td>1,471 &rarr; 1,481</td><td>4,403 &rarr; 4,422</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.935e-6</td><td>1.370410</td><td>0.000000</td></tr><tr><td>199</td><td>1,481 &rarr; 1,483</td><td>4,422 &rarr; 4,441</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.270e-5</td><td>0.273930</td><td>0.000000</td></tr><tr><td>200</td><td>1,483 &rarr; 1,487</td><td>4,441 &rarr; 4,460</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.558e-5</td><td>0.547707</td><td>0.000000</td></tr><tr><td>201</td><td>1,487 &rarr; 1,489</td><td>4,460 &rarr; 4,479</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.022e-5</td><td>0.273778</td><td>0.000000</td></tr><tr><td>202</td><td>1,489 &rarr; 1,493</td><td>4,479 &rarr; 4,497</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.301e-5</td><td>0.547405</td><td>0.000000</td></tr><tr><td>203</td><td>1,493 &rarr; 1,499</td><td>4,497 &rarr; 4,516</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.396e-5</td><td>0.820732</td><td>0.000000</td></tr><tr><td>204</td><td>1,499 &rarr; 1,511</td><td>4,516 &rarr; 4,534</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.958e-5</td><td>1.640118</td><td>0.000000</td></tr><tr><td>205</td><td>1,511 &rarr; 1,523</td><td>4,534 &rarr; 4,552</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.533e-5</td><td>1.638340</td><td>0.000000</td></tr><tr><td>206</td><td>1,523 &rarr; 1,531</td><td>4,552 &rarr; 4,570</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.460e-5</td><td>1.091248</td><td>0.000000</td></tr><tr><td>207</td><td>1,531 &rarr; 1,543</td><td>4,570 &rarr; 4,588</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.051e-5</td><td>1.635416</td><td>0.000000</td></tr><tr><td>208</td><td>1,543 &rarr; 1,549</td><td>4,600 &rarr; 4,618</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.537e-5</td><td>0.817057</td><td>0.000000</td></tr><tr><td>209</td><td>1,549 &rarr; 1,553</td><td>4,618 &rarr; 4,636</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.801e-5</td><td>0.544465</td><td>0.000000</td></tr><tr><td>210</td><td>1,553 &rarr; 1,559</td><td>4,636 &rarr; 4,655</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.896e-5</td><td>0.816341</td><td>0.000000</td></tr><tr><td>211</td><td>1,559 &rarr; 1,567</td><td>4,655 &rarr; 4,674</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.825e-5</td><td>1.087790</td><td>0.000000</td></tr><tr><td>212</td><td>1,567 &rarr; 1,571</td><td>4,674 &rarr; 4,693</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.081e-5</td><td>0.543612</td><td>0.000000</td></tr><tr><td>213</td><td>1,571 &rarr; 1,579</td><td>4,693 &rarr; 4,712</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.010e-5</td><td>1.086660</td><td>0.000000</td></tr><tr><td>214</td><td>1,579 &rarr; 1,583</td><td>4,712 &rarr; 4,733</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.261e-5</td><td>0.543049</td><td>0.000000</td></tr><tr><td>215</td><td>1,583 &rarr; 1,597</td><td>4,733 &rarr; 4,756</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.716e-5</td><td>1.899210</td><td>0.000000</td></tr><tr><td>216</td><td>1,597 &rarr; 1,601</td><td>4,756 &rarr; 4,779</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.964e-5</td><td>0.542216</td><td>0.000000</td></tr><tr><td>217</td><td>1,601 &rarr; 1,607</td><td>4,779 &rarr; 4,802</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.054e-5</td><td>0.812980</td><td>0.000000</td></tr><tr><td>218</td><td>1,607 &rarr; 1,609</td><td>4,802 &rarr; 4,825</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.452e-5</td><td>0.270902</td><td>0.000000</td></tr><tr><td>219</td><td>1,609 &rarr; 1,613</td><td>4,825 &rarr; 4,848</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.690e-5</td><td>0.541667</td><td>0.000000</td></tr><tr><td>220</td><td>1,613 &rarr; 1,619</td><td>4,848 &rarr; 4,871</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.772e-5</td><td>0.812160</td><td>0.000000</td></tr><tr><td>221</td><td>1,619 &rarr; 1,621</td><td>4,871 &rarr; 4,894</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.158e-5</td><td>0.270629</td><td>0.000000</td></tr><tr><td>222</td><td>1,621 &rarr; 1,627</td><td>4,894 &rarr; 4,916</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.235e-5</td><td>0.811617</td><td>0.000000</td></tr><tr><td>223</td><td>1,627 &rarr; 1,637</td><td>4,916 &rarr; 4,938</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.011e-5</td><td>1.351797</td><td>0.000000</td></tr><tr><td>224</td><td>1,637 &rarr; 1,657</td><td>4,938 &rarr; 4,960</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.055e-5</td><td>2.700257</td><td>0.000000</td></tr><tr><td>225</td><td>1,657 &rarr; 1,663</td><td>4,960 &rarr; 4,983</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.140e-5</td><td>0.809217</td><td>0.000000</td></tr><tr><td>226</td><td>1,663 &rarr; 1,667</td><td>4,983 &rarr; 5,007</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.368e-5</td><td>0.539259</td><td>0.000000</td></tr><tr><td>227</td><td>1,667 &rarr; 1,669</td><td>5,007 &rarr; 5,031</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.736e-5</td><td>0.269564</td><td>0.000000</td></tr><tr><td>228</td><td>1,669 &rarr; 1,693</td><td>5,031 &rarr; 5,053</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.539e-5</td><td>3.231395</td><td>0.000000</td></tr><tr><td>229</td><td>1,693 &rarr; 1,697</td><td>5,053 &rarr; 5,075</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.765e-5</td><td>0.537964</td><td>0.000000</td></tr><tr><td>230</td><td>1,697 &rarr; 1,699</td><td>5,075 &rarr; 5,097</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.127e-5</td><td>0.268918</td><td>0.000000</td></tr><tr><td>231</td><td>1,699 &rarr; 1,709</td><td>5,097 &rarr; 5,120</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.932e-5</td><td>1.343954</td><td>0.000000</td></tr><tr><td>232</td><td>1,709 &rarr; 1,721</td><td>5,120 &rarr; 5,142</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.606e-5</td><td>1.611351</td><td>0.000000</td></tr><tr><td>233</td><td>1,721 &rarr; 1,723</td><td>5,142 &rarr; 5,164</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.960e-5</td><td>0.268412</td><td>0.000000</td></tr><tr><td>234</td><td>1,723 &rarr; 1,733</td><td>5,164 &rarr; 5,186</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.772e-5</td><td>1.341432</td><td>0.000000</td></tr><tr><td>235</td><td>1,733 &rarr; 1,741</td><td>5,186 &rarr; 5,209</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.721e-5</td><td>1.072398</td><td>0.000000</td></tr><tr><td>236</td><td>1,741 &rarr; 1,747</td><td>5,209 &rarr; 5,232</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.803e-5</td><td>0.803865</td><td>0.000000</td></tr><tr><td>237</td><td>1,747 &rarr; 1,753</td><td>5,232 &rarr; 5,254</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.883e-5</td><td>0.803496</td><td>0.000000</td></tr><tr><td>238</td><td>1,753 &rarr; 1,759</td><td>5,254 &rarr; 5,276</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.963e-5</td><td>0.803128</td><td>0.000000</td></tr><tr><td>239</td><td>1,759 &rarr; 1,777</td><td>5,276 &rarr; 5,297</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.273e-5</td><td>2.407190</td><td>0.000000</td></tr><tr><td>240</td><td>1,777 &rarr; 1,783</td><td>5,297 &rarr; 5,318</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.356e-5</td><td>0.801671</td><td>0.000000</td></tr><tr><td>241</td><td>1,783 &rarr; 1,787</td><td>5,318 &rarr; 5,339</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.564e-5</td><td>0.534247</td><td>0.000000</td></tr><tr><td>242</td><td>1,787 &rarr; 1,789</td><td>5,339 &rarr; 5,360</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.894e-5</td><td>0.267064</td><td>0.000000</td></tr><tr><td>243</td><td>1,789 &rarr; 1,801</td><td>5,360 &rarr; 5,381</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.599e-5</td><td>1.601546</td><td>0.000000</td></tr><tr><td>244</td><td>1,801 &rarr; 1,811</td><td>5,381 &rarr; 5,402</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.432e-5</td><td>1.333535</td><td>0.000000</td></tr><tr><td>245</td><td>1,811 &rarr; 1,823</td><td>5,402 &rarr; 5,423</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.148e-5</td><td>1.598947</td><td>0.000000</td></tr><tr><td>246</td><td>1,823 &rarr; 1,831</td><td>5,423 &rarr; 5,444</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.109e-5</td><td>1.065185</td><td>0.000000</td></tr><tr><td>247</td><td>1,831 &rarr; 1,847</td><td>5,444 &rarr; 5,467</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.980e-6</td><td>2.128516</td><td>0.000000</td></tr><tr><td>248</td><td>1,847 &rarr; 1,861</td><td>5,467 &rarr; 5,491</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.159e-6</td><td>1.860441</td><td>0.000000</td></tr><tr><td>249</td><td>1,861 &rarr; 1,867</td><td>5,491 &rarr; 5,515</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.024e-6</td><td>0.796762</td><td>0.000000</td></tr><tr><td>250</td><td>1,867 &rarr; 1,871</td><td>5,515 &rarr; 5,541</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.025e-6</td><td>0.530986</td><td>0.000000</td></tr><tr><td>251</td><td>1,871 &rarr; 1,873</td><td>5,541 &rarr; 5,567</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.145e-6</td><td>0.265436</td><td>0.000000</td></tr><tr><td>252</td><td>1,873 &rarr; 1,877</td><td>5,567 &rarr; 5,593</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.009e-5</td><td>0.530760</td><td>0.000000</td></tr><tr><td>253</td><td>1,877 &rarr; 1,879</td><td>5,593 &rarr; 5,619</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.315e-5</td><td>0.265324</td><td>0.000000</td></tr><tr><td>254</td><td>1,879 &rarr; 1,889</td><td>5,619 &rarr; 5,645</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.166e-5</td><td>1.326058</td><td>0.000000</td></tr><tr><td>255</td><td>1,889 &rarr; 1,901</td><td>5,645 &rarr; 5,670</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.089e-6</td><td>1.590042</td><td>0.000000</td></tr><tr><td>256</td><td>1,901 &rarr; 1,907</td><td>5,670 &rarr; 5,694</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.873e-6</td><td>0.794522</td><td>0.000000</td></tr><tr><td>257</td><td>1,907 &rarr; 1,913</td><td>5,707 &rarr; 5,732</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.283e-5</td><td>0.794191</td><td>0.000000</td></tr><tr><td>258</td><td>1,913 &rarr; 1,931</td><td>5,732 &rarr; 5,757</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.082e-6</td><td>2.380601</td><td>0.000000</td></tr><tr><td>259</td><td>1,931 &rarr; 1,933</td><td>5,757 &rarr; 5,782</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.001e-5</td><td>0.264330</td><td>0.000000</td></tr><tr><td>260</td><td>1,933 &rarr; 1,949</td><td>5,782 &rarr; 5,805</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.456e-6</td><td>2.113340</td><td>0.000000</td></tr><tr><td>261</td><td>1,949 &rarr; 1,951</td><td>5,805 &rarr; 5,826</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.347e-6</td><td>0.264006</td><td>0.000000</td></tr><tr><td>262</td><td>1,951 &rarr; 1,973</td><td>5,835 &rarr; 5,857</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.246e-6</td><td>2.901719</td><td>0.000000</td></tr><tr><td>263</td><td>1,973 &rarr; 1,979</td><td>5,857 &rarr; 5,880</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.043e-6</td><td>0.790636</td><td>0.000000</td></tr><tr><td>264</td><td>1,979 &rarr; 1,987</td><td>5,880 &rarr; 5,904</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.812e-6</td><td>1.053690</td><td>0.000000</td></tr><tr><td>265</td><td>1,987 &rarr; 1,993</td><td>5,904 &rarr; 5,929</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.597e-6</td><td>0.789901</td><td>0.000000</td></tr><tr><td>266</td><td>1,993 &rarr; 1,997</td><td>5,929 &rarr; 5,954</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.378e-6</td><td>0.526427</td><td>0.000000</td></tr><tr><td>267</td><td>1,997 &rarr; 1,999</td><td>5,954 &rarr; 5,979</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.143e-6</td><td>0.263161</td><td>0.000000</td></tr><tr><td>268</td><td>1,999 &rarr; 2,003</td><td>5,979 &rarr; 6,002</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.879e-6</td><td>0.526219</td><td>0.000000</td></tr><tr><td>269</td><td>2,003 &rarr; 2,011</td><td>6,002 &rarr; 6,024</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.608e-6</td><td>1.052023</td><td>0.000000</td></tr><tr><td>270</td><td>2,011 &rarr; 2,017</td><td>6,024 &rarr; 6,046</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.033e-5</td><td>0.788656</td><td>0.000000</td></tr><tr><td>271</td><td>2,017 &rarr; 2,027</td><td>6,046 &rarr; 6,068</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.083e-6</td><td>1.313743</td><td>0.000000</td></tr><tr><td>272</td><td>2,027 &rarr; 2,029</td><td>6,068 &rarr; 6,090</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.174e-5</td><td>0.262646</td><td>0.000000</td></tr><tr><td>273</td><td>2,029 &rarr; 2,039</td><td>6,090 &rarr; 6,111</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.051e-5</td><td>1.312722</td><td>0.000000</td></tr><tr><td>274</td><td>2,039 &rarr; 2,053</td><td>6,124 &rarr; 6,146</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.306e-6</td><td>1.836393</td><td>0.000000</td></tr><tr><td>275</td><td>2,053 &rarr; 2,063</td><td>6,146 &rarr; 6,171</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.118e-6</td><td>1.310704</td><td>0.000000</td></tr><tr><td>276</td><td>2,063 &rarr; 2,069</td><td>6,171 &rarr; 6,197</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.823e-6</td><td>0.786023</td><td>0.000000</td></tr><tr><td>277</td><td>2,069 &rarr; 2,081</td><td>6,197 &rarr; 6,221</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.733e-6</td><td>1.571151</td><td>0.000000</td></tr><tr><td>278</td><td>2,081 &rarr; 2,083</td><td>6,221 &rarr; 6,245</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.285e-6</td><td>0.261743</td><td>0.000000</td></tr><tr><td>279</td><td>2,083 &rarr; 2,087</td><td>6,245 &rarr; 6,269</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.089e-5</td><td>0.523387</td><td>0.000000</td></tr><tr><td>280</td><td>2,087 &rarr; 2,089</td><td>6,269 &rarr; 6,293</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.340e-5</td><td>0.261644</td><td>0.000000</td></tr><tr><td>281</td><td>2,089 &rarr; 2,099</td><td>6,293 &rarr; 6,318</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.223e-5</td><td>1.307731</td><td>0.000000</td></tr><tr><td>282</td><td>2,099 &rarr; 2,111</td><td>6,318 &rarr; 6,342</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.018e-5</td><td>1.568203</td><td>0.000000</td></tr><tr><td>283</td><td>2,111 &rarr; 2,113</td><td>6,342 &rarr; 6,367</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.264e-5</td><td>0.261254</td><td>0.000000</td></tr><tr><td>284</td><td>2,113 &rarr; 2,129</td><td>6,367 &rarr; 6,392</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.844e-6</td><td>2.088871</td><td>0.000000</td></tr><tr><td>285</td><td>2,129 &rarr; 2,131</td><td>6,392 &rarr; 6,417</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.127e-5</td><td>0.260965</td><td>0.000000</td></tr><tr><td>286</td><td>2,131 &rarr; 2,137</td><td>6,417 &rarr; 6,441</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.192e-5</td><td>0.782702</td><td>0.000000</td></tr><tr><td>287</td><td>2,137 &rarr; 2,141</td><td>6,441 &rarr; 6,465</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.344e-5</td><td>0.521642</td><td>0.000000</td></tr><tr><td>288</td><td>2,141 &rarr; 2,143</td><td>6,465 &rarr; 6,489</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.581e-5</td><td>0.260773</td><td>0.000000</td></tr><tr><td>289</td><td>2,143 &rarr; 2,153</td><td>6,489 &rarr; 6,513</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.469e-5</td><td>1.303392</td><td>0.000000</td></tr><tr><td>290</td><td>2,153 &rarr; 2,161</td><td>6,513 &rarr; 6,538</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.445e-5</td><td>1.042145</td><td>0.000000</td></tr><tr><td>291</td><td>2,161 &rarr; 2,179</td><td>6,538 &rarr; 6,563</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.972e-6</td><td>2.342994</td><td>0.000000</td></tr><tr><td>292</td><td>2,179 &rarr; 2,203</td><td>6,563 &rarr; 6,588</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.115e-6</td><td>3.120081</td><td>0.000000</td></tr><tr><td>293</td><td>2,203 &rarr; 2,207</td><td>6,588 &rarr; 6,612</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.613e-6</td><td>0.519583</td><td>0.000000</td></tr><tr><td>294</td><td>2,207 &rarr; 2,213</td><td>6,612 &rarr; 6,636</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.277e-6</td><td>0.779145</td><td>0.000000</td></tr><tr><td>295</td><td>2,213 &rarr; 2,221</td><td>6,636 &rarr; 6,661</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.120e-6</td><td>1.038434</td><td>0.000000</td></tr><tr><td>296</td><td>2,221 &rarr; 2,237</td><td>6,661 &rarr; 6,684</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.749e-6</td><td>2.075414</td><td>0.000000</td></tr><tr><td>297</td><td>2,237 &rarr; 2,239</td><td>6,684 &rarr; 6,707</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.017e-6</td><td>0.259291</td><td>0.000000</td></tr><tr><td>298</td><td>2,239 &rarr; 2,243</td><td>6,707 &rarr; 6,730</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.467e-6</td><td>0.518492</td><td>0.000000</td></tr><tr><td>299</td><td>2,243 &rarr; 2,251</td><td>6,730 &rarr; 6,754</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.318e-6</td><td>1.036625</td><td>0.000000</td></tr><tr><td>300</td><td>2,251 &rarr; 2,267</td><td>6,754 &rarr; 6,782</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.040e-6</td><td>2.071821</td><td>0.000000</td></tr><tr><td>301</td><td>2,267 &rarr; 2,269</td><td>6,782 &rarr; 6,810</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.251e-6</td><td>0.258844</td><td>0.000000</td></tr><tr><td>302</td><td>2,269 &rarr; 2,273</td><td>6,810 &rarr; 6,838</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.666e-6</td><td>0.517600</td><td>0.000000</td></tr><tr><td>303</td><td>2,273 &rarr; 2,281</td><td>6,838 &rarr; 6,863</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.524e-6</td><td>1.034847</td><td>0.000000</td></tr><tr><td>304</td><td>2,281 &rarr; 2,287</td><td>6,863 &rarr; 6,888</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.150e-6</td><td>0.775827</td><td>0.000000</td></tr><tr><td>305</td><td>2,287 &rarr; 2,293</td><td>6,888 &rarr; 6,914</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.770e-6</td><td>0.775564</td><td>0.000000</td></tr><tr><td>306</td><td>2,293 &rarr; 2,297</td><td>6,914 &rarr; 6,940</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.142e-6</td><td>0.516897</td><td>0.000000</td></tr><tr><td>307</td><td>2,297 &rarr; 2,309</td><td>6,940 &rarr; 6,967</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.484e-6</td><td>1.549994</td><td>0.000000</td></tr><tr><td>308</td><td>2,309 &rarr; 2,311</td><td>6,967 &rarr; 6,994</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.590e-6</td><td>0.258231</td><td>0.000000</td></tr><tr><td>309</td><td>2,311 &rarr; 2,333</td><td>6,994 &rarr; 7,019</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.255e-6</td><td>2.838644</td><td>0.000000</td></tr><tr><td>310</td><td>2,333 &rarr; 2,339</td><td>7,019 &rarr; 7,044</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.876e-6</td><td>0.773575</td><td>0.000000</td></tr><tr><td>311</td><td>2,339 &rarr; 2,341</td><td>7,044 &rarr; 7,068</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.950e-6</td><td>0.257802</td><td>0.000000</td></tr><tr><td>312</td><td>2,341 &rarr; 2,347</td><td>7,068 &rarr; 7,091</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.551e-6</td><td>0.773234</td><td>0.000000</td></tr><tr><td>313</td><td>2,347 &rarr; 2,351</td><td>7,091 &rarr; 7,114</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.868e-6</td><td>0.515348</td><td>0.000000</td></tr><tr><td>314</td><td>2,351 &rarr; 2,357</td><td>7,114 &rarr; 7,137</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.452e-6</td><td>0.772810</td><td>0.000000</td></tr><tr><td>315</td><td>2,357 &rarr; 2,371</td><td>7,137 &rarr; 7,160</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.170e-6</td><td>1.802241</td><td>0.000000</td></tr><tr><td>316</td><td>2,371 &rarr; 2,377</td><td>7,160 &rarr; 7,183</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.758e-6</td><td>0.771969</td><td>0.000000</td></tr><tr><td>317</td><td>2,377 &rarr; 2,381</td><td>7,183 &rarr; 7,206</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>8.045e-6</td><td>0.514507</td><td>0.000000</td></tr><tr><td>318</td><td>2,381 &rarr; 2,383</td><td>7,206 &rarr; 7,229</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.002e-5</td><td>0.257212</td><td>0.000000</td></tr><tr><td>319</td><td>2,383 &rarr; 2,389</td><td>7,229 &rarr; 7,253</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.058e-5</td><td>0.771469</td><td>0.000000</td></tr><tr><td>320</td><td>2,389 &rarr; 2,393</td><td>7,253 &rarr; 7,277</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.183e-5</td><td>0.514174</td><td>0.000000</td></tr><tr><td>321</td><td>2,393 &rarr; 2,399</td><td>7,277 &rarr; 7,301</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.237e-5</td><td>0.771054</td><td>0.000000</td></tr><tr><td>322</td><td>2,399 &rarr; 2,411</td><td>7,301 &rarr; 7,325</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.084e-5</td><td>1.541366</td><td>0.000000</td></tr><tr><td>323</td><td>2,411 &rarr; 2,417</td><td>7,325 &rarr; 7,350</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.138e-5</td><td>0.770313</td><td>0.000000</td></tr><tr><td>324</td><td>2,417 &rarr; 2,423</td><td>7,350 &rarr; 7,375</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.192e-5</td><td>0.770068</td><td>0.000000</td></tr><tr><td>325</td><td>2,423 &rarr; 2,437</td><td>7,375 &rarr; 7,400</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.749e-6</td><td>1.795875</td><td>0.000000</td></tr><tr><td>326</td><td>2,437 &rarr; 2,441</td><td>7,400 &rarr; 7,426</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.096e-5</td><td>0.512864</td><td>0.000000</td></tr><tr><td>327</td><td>2,441 &rarr; 2,447</td><td>7,426 &rarr; 7,452</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.149e-5</td><td>0.769094</td><td>0.000000</td></tr><tr><td>328</td><td>2,447 &rarr; 2,459</td><td>7,467 &rarr; 7,494</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.138e-5</td><td>1.537463</td><td>0.000000</td></tr><tr><td>329</td><td>2,459 &rarr; 2,467</td><td>7,494 &rarr; 7,522</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.125e-5</td><td>1.024441</td><td>0.000000</td></tr><tr><td>330</td><td>2,467 &rarr; 2,473</td><td>7,522 &rarr; 7,550</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.177e-5</td><td>0.768052</td><td>0.000000</td></tr><tr><td>331</td><td>2,473 &rarr; 2,477</td><td>7,550 &rarr; 7,578</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.294e-5</td><td>0.511902</td><td>0.000000</td></tr><tr><td>332</td><td>2,477 &rarr; 2,503</td><td>7,578 &rarr; 7,604</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.009e-6</td><td>3.324794</td><td>0.000000</td></tr><tr><td>333</td><td>2,503 &rarr; 2,521</td><td>7,604 &rarr; 7,634</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.749e-6</td><td>2.299194</td><td>0.000000</td></tr><tr><td>334</td><td>2,521 &rarr; 2,531</td><td>7,634 &rarr; 7,665</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.049e-6</td><td>1.276423</td><td>0.000000</td></tr><tr><td>335</td><td>2,531 &rarr; 2,539</td><td>7,665 &rarr; 7,695</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.979e-6</td><td>1.020675</td><td>0.000000</td></tr><tr><td>336</td><td>2,539 &rarr; 2,543</td><td>7,695 &rarr; 7,725</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.148e-6</td><td>0.510184</td><td>0.000000</td></tr><tr><td>337</td><td>2,543 &rarr; 2,549</td><td>7,725 &rarr; 7,755</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.690e-6</td><td>0.765084</td><td>0.000000</td></tr><tr><td>338</td><td>2,549 &rarr; 2,551</td><td>7,755 &rarr; 7,785</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.454e-6</td><td>0.254977</td><td>0.000000</td></tr><tr><td>339</td><td>2,551 &rarr; 2,557</td><td>7,785 &rarr; 7,817</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.978e-6</td><td>0.764778</td><td>0.000000</td></tr><tr><td>340</td><td>2,557 &rarr; 2,579</td><td>7,817 &rarr; 7,846</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.655e-6</td><td>2.802234</td><td>0.000000</td></tr><tr><td>341</td><td>2,579 &rarr; 2,591</td><td>7,846 &rarr; 7,875</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.401e-6</td><td>1.527207</td><td>0.000000</td></tr><tr><td>342</td><td>2,591 &rarr; 2,593</td><td>7,875 &rarr; 7,904</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.134e-6</td><td>0.254447</td><td>0.000000</td></tr><tr><td>343</td><td>2,593 &rarr; 2,609</td><td>7,904 &rarr; 7,929</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.144e-7</td><td>2.034679</td><td>0.000000</td></tr><tr><td>344</td><td>2,609 &rarr; 2,617</td><td>7,929 &rarr; 7,954</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.716e-7</td><td>1.016744</td><td>0.000000</td></tr><tr><td>345</td><td>2,617 &rarr; 2,621</td><td>7,954 &rarr; 7,979</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>1.794e-6</td><td>0.508224</td><td>0.000000</td></tr><tr><td>346</td><td>2,621 &rarr; 2,633</td><td>7,979 &rarr; 8,003</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.896e-7</td><td>1.524081</td><td>0.000000</td></tr><tr><td>347</td><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>5</td><td>5</td><td>2647, 2657, 2659, 2663, 2671</td><td>-1.037e-6</td><td>4.561e-7</td><td>5.580792</td><td>0.895930</td></tr><tr><td>348</td><td>2,677 &rarr; 2,683</td><td>8,163 &rarr; 8,190</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>2.010e-6</td><td>0.760112</td><td>0.000000</td></tr><tr><td>349</td><td>2,683 &rarr; 2,687</td><td>8,190 &rarr; 8,218</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>3.076e-6</td><td>0.506622</td><td>0.000000</td></tr><tr><td>350</td><td>2,687 &rarr; 2,689</td><td>8,218 &rarr; 8,246</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>4.686e-6</td><td>0.253275</td><td>0.000000</td></tr><tr><td>351</td><td>2,689 &rarr; 2,693</td><td>8,246 &rarr; 8,274</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>5.731e-6</td><td>0.506479</td><td>0.000000</td></tr><tr><td>352</td><td>2,693 &rarr; 2,699</td><td>8,286 &rarr; 8,314</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.013e-6</td><td>0.759539</td><td>0.000000</td></tr><tr><td>353</td><td>2,699 &rarr; 2,707</td><td>8,314 &rarr; 8,343</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>6.945e-6</td><td>1.012387</td><td>0.000000</td></tr><tr><td>354</td><td>2,707 &rarr; 2,711</td><td>8,343 &rarr; 8,372</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>7.965e-6</td><td>0.506051</td><td>0.000000</td></tr><tr><td>355</td><td>2,711 &rarr; 2,713</td><td>8,372 &rarr; 8,401</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.518e-6</td><td>0.252990</td><td>0.000000</td></tr><tr><td>356</td><td>2,713 &rarr; 2,719</td><td>8,401 &rarr; 8,430</td><td>0</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>9.978e-6</td><td>0.758829</td><td>0.000000</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>CA Endpoint Barriers</h2>
+      <p>These are the skipped CA endpoints inside consecutive <code>CA &cap; XA</code> transitions. Each deficit is measured against the previous <code>CA &cap; XA</code> record height.</p>
+      <div class="table-wrap" data-barrier-count="13">
+        <table>
+    <thead><tr><th>H frontier transition</th><th>SA indices</th><th>skipped CA index</th><th>CA frontier</th><th>f(C)-f(A)</th><th>final f(B)-f(A)</th><th>non-CA XA witnesses</th></tr></thead>
+    <tbody><tr><td>139 &rarr; 151</td><td>409 &rarr; 440</td><td>425</td><td>149</td><td>-2.071e-5</td><td>2.308e-4</td><td>1</td></tr><tr><td>523 &rarr; 541</td><td>1,490 &rarr; 1,516</td><td>1,508</td><td>541</td><td>-2.665e-6</td><td>1.414e-5</td><td>0</td></tr><tr><td>547 &rarr; 557</td><td>1,532 &rarr; 1,557</td><td>1,538</td><td>547</td><td>-4.356e-7</td><td>1.313e-5</td><td>0</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>4,223</td><td>1,409</td><td>-4.456e-7</td><td>4.018e-9</td><td>0</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>4,240</td><td>1,423</td><td>-7.645e-6</td><td>4.018e-9</td><td>0</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>4,257</td><td>1,427</td><td>-1.154e-5</td><td>4.018e-9</td><td>0</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>4,274</td><td>1,429</td><td>-1.022e-5</td><td>4.018e-9</td><td>0</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,310</td><td>4,291</td><td>1,433</td><td>-5.701e-6</td><td>4.018e-9</td><td>0</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>8,029</td><td>2,647</td><td>-1.167e-6</td><td>4.561e-7</td><td>0</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>8,055</td><td>2,657</td><td>-2.928e-6</td><td>4.561e-7</td><td>0</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>8,082</td><td>2,659</td><td>-3.016e-6</td><td>4.561e-7</td><td>0</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>8,109</td><td>2,663</td><td>-2.008e-6</td><td>4.561e-7</td><td>0</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,163</td><td>8,136</td><td>2,671</td><td>-1.037e-6</td><td>4.561e-7</td><td>0</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>CA Quotient Path</h2>
+      <p>Each row is a consecutive CA endpoint step inside a barrier transition. The margin is <code>log(local sigma gain) - log(loglog penalty)</code>; <code>p/critical</code> above <code>1</code>, equivalently <code>F/Fcrit</code> below <code>1</code>, means the step loses.</p>
+      <div class="table-wrap" data-ca-quotient-total="442" data-ca-quotient-prime-count="442">
+        <table>
+    <thead><tr><th>H frontier transition</th><th>CA index step</th><th>frontier step</th><th>quotient kind</th><th>quotient</th><th>role</th><th>log sigma gain</th><th>loglog penalty</th><th>margin</th><th>p/critical</th><th>F/Fcrit</th><th>f(C)-f(A)</th></tr></thead>
+    <tbody><tr><td>139 &rarr; 151</td><td>409 &rarr; 425</td><td>139 &rarr; 149</td><td>prime</td><td>149</td><td>barrier</td><td>0.006688988</td><td>0.006700764</td><td>-1.178e-5</td><td>1.001476</td><td>0.998237</td><td>-2.071e-5</td></tr><tr><td>139 &rarr; 151</td><td>425 &rarr; 440</td><td>149 &rarr; 151</td><td>prime</td><td>151</td><td>terminal H</td><td>0.006600684</td><td>0.006457674</td><td>1.430e-4</td><td>0.981790</td><td>1.022218</td><td>2.308e-4</td></tr><tr><td>523 &rarr; 541</td><td>1,490 &rarr; 1,508</td><td>523 &rarr; 541</td><td>prime</td><td>541</td><td>barrier</td><td>0.001846723</td><td>0.001848228</td><td>-1.505e-6</td><td>1.000704</td><td>0.999185</td><td>-2.665e-6</td></tr><tr><td>523 &rarr; 541</td><td>1,508 &rarr; 1,516</td><td>541 &rarr; 541</td><td>prime</td><td>31</td><td>terminal H</td><td>0.001007557</td><td>9.981e-4</td><td>9.490e-6</td><td>0.995817</td><td>1.009513</td><td>1.414e-5</td></tr><tr><td>547 &rarr; 557</td><td>1,532 &rarr; 1,538</td><td>547 &rarr; 547</td><td>prime</td><td>11</td><td>barrier</td><td>6.833e-4</td><td>6.835e-4</td><td>-2.460e-7</td><td>1.000109</td><td>0.999640</td><td>-4.356e-7</td></tr><tr><td>547 &rarr; 557</td><td>1,538 &rarr; 1,557</td><td>547 &rarr; 557</td><td>prime</td><td>557</td><td>terminal H</td><td>0.001793722</td><td>0.001786062</td><td>7.660e-6</td><td>0.996305</td><td>1.004293</td><td>1.313e-5</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,204 &rarr; 4,223</td><td>1,399 &rarr; 1,409</td><td>prime</td><td>1409</td><td>barrier</td><td>7.095e-4</td><td>7.097e-4</td><td>-2.510e-7</td><td>1.000311</td><td>0.999646</td><td>-4.456e-7</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,223 &rarr; 4,240</td><td>1,409 &rarr; 1,423</td><td>prime</td><td>1423</td><td>barrier</td><td>7.025e-4</td><td>7.065e-4</td><td>-4.055e-6</td><td>1.005075</td><td>0.994259</td><td>-7.645e-6</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,240 &rarr; 4,257</td><td>1,423 &rarr; 1,427</td><td>prime</td><td>1427</td><td>barrier</td><td>7.005e-4</td><td>7.027e-4</td><td>-2.195e-6</td><td>1.002756</td><td>0.996875</td><td>-1.154e-5</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,257 &rarr; 4,274</td><td>1,427 &rarr; 1,429</td><td>prime</td><td>1429</td><td>barrier</td><td>6.995e-4</td><td>6.988e-4</td><td>7.472e-7</td><td>0.999060</td><td>1.001070</td><td>-1.022e-5</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,274 &rarr; 4,291</td><td>1,429 &rarr; 1,433</td><td>prime</td><td>1433</td><td>barrier</td><td>6.976e-4</td><td>6.951e-4</td><td>2.543e-6</td><td>0.996793</td><td>1.003660</td><td>-5.701e-6</td></tr><tr><td>1,399 &rarr; 1,439</td><td>4,291 &rarr; 4,310</td><td>1,433 &rarr; 1,439</td><td>prime</td><td>1439</td><td>terminal H</td><td>6.947e-4</td><td>6.915e-4</td><td>3.213e-6</td><td>0.995930</td><td>1.004649</td><td>4.018e-9</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,003 &rarr; 8,029</td><td>2,633 &rarr; 2,647</td><td>prime</td><td>2647</td><td>barrier</td><td>3.777e-4</td><td>3.784e-4</td><td>-6.567e-7</td><td>1.001543</td><td>0.998264</td><td>-1.167e-6</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,029 &rarr; 8,055</td><td>2,647 &rarr; 2,657</td><td>prime</td><td>2657</td><td>barrier</td><td>3.763e-4</td><td>3.773e-4</td><td>-9.910e-7</td><td>1.002338</td><td>0.997373</td><td>-2.928e-6</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,055 &rarr; 8,082</td><td>2,657 &rarr; 2,659</td><td>prime</td><td>2659</td><td>barrier</td><td>3.760e-4</td><td>3.761e-4</td><td>-4.936e-8</td><td>1.000117</td><td>0.999869</td><td>-3.016e-6</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,082 &rarr; 8,109</td><td>2,659 &rarr; 2,663</td><td>prime</td><td>2663</td><td>barrier</td><td>3.754e-4</td><td>3.749e-4</td><td>5.673e-7</td><td>0.998658</td><td>1.001514</td><td>-2.008e-6</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,109 &rarr; 8,136</td><td>2,663 &rarr; 2,671</td><td>prime</td><td>2671</td><td>barrier</td><td>3.743e-4</td><td>3.738e-4</td><td>5.463e-7</td><td>0.998704</td><td>1.001462</td><td>-1.037e-6</td></tr><tr><td>2,633 &rarr; 2,677</td><td>8,136 &rarr; 8,163</td><td>2,671 &rarr; 2,677</td><td>prime</td><td>2677</td><td>terminal H</td><td>3.735e-4</td><td>3.726e-4</td><td>8.401e-7</td><td>0.998003</td><td>1.002255</td><td>4.561e-7</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Range Checks</h2>
+      <div class="table-wrap">
+        <table>
+    <thead><tr><th>range</th><th>frontier changes</th><th>prime-adjacent</th><th>nonzero skips</th><th>skipped total</th><th>transition Li</th><th>skipped/Li</th><th>max skip</th></tr></thead>
+    <tbody><tr><td>(100, 182]</td><td>11</td><td>10</td><td>1</td><td>1</td><td>13.660985</td><td>0.073201</td><td>1</td></tr><tr><td>(182, 300]</td><td>19</td><td>19</td><td>0</td><td>0</td><td>18.617670</td><td>0.000000</td><td>0</td></tr><tr><td>(300, 500]</td><td>32</td><td>32</td><td>0</td><td>0</td><td>32.074549</td><td>0.000000</td><td>0</td></tr><tr><td>(500, 1,000]</td><td>72</td><td>72</td><td>0</td><td>0</td><td>74.898895</td><td>0.000000</td><td>0</td></tr><tr><td>(1,000, 2,000]</td><td>129</td><td>128</td><td>1</td><td>5</td><td>135.765983</td><td>0.036828</td><td>5</td></tr><tr><td>(2,000, 2,800]</td><td>88</td><td>87</td><td>1</td><td>5</td><td>92.244474</td><td>0.054204</td><td>5</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fixed-Shape Controls</h2>
+      <div class="table-wrap">
+        <table>
+    <thead><tr><th>seed</th><th>fake records</th><th>CA-fake records</th><th>closure failures</th><th>frontier changes</th><th>skipped total</th><th>skipped/Li</th><th>max skip</th><th>above critical</th><th>max p/critical</th><th>P2 no-base</th><th>max P2 run</th><th>unrecovered P2 runs</th><th>max recovery steps</th></tr></thead>
+    <tbody><tr><td>12,345</td><td>4</td><td>2</td><td>0</td><td>1</td><td>6</td><td>0.762531</td><td>6</td><td>206 / 285</td><td>1.083178</td><td>195 / 264</td><td>143</td><td>13</td><td>10</td></tr><tr><td>271,828</td><td>388</td><td>112</td><td>0</td><td>98</td><td>19</td><td>0.155274</td><td>6</td><td>50 / 136</td><td>1.043470</td><td>47 / 126</td><td>23</td><td>5</td><td>0</td></tr><tr><td>314,159</td><td>1,083</td><td>182</td><td>344</td><td>164</td><td>49</td><td>0.242260</td><td>24</td><td>0 / 151</td><td>0.984225</td><td>0 / 140</td><td>0</td><td>0</td><td>0</td></tr><tr><td>161,803</td><td>18</td><td>9</td><td>0</td><td>5</td><td>7</td><td>0.532715</td><td>6</td><td>139 / 290</td><td>1.100411</td><td>127 / 271</td><td>46</td><td>8</td><td>108</td></tr><tr><td>424,242</td><td>1,117</td><td>266</td><td>1</td><td>245</td><td>146</td><td>0.378592</td><td>37</td><td>0 / 238</td><td>0.995157</td><td>0 / 222</td><td>0</td><td>0</td><td>0</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Theorem Status</h2>
+      <p>Proposition 20 and Lemma 21 license the closure statement: a non-CA XA record between consecutive CA numbers forces the next CA endpoint to be XA. The small skipped-frontier statistic is verified finite evidence, not a theorem yet. The missing theorem is a global bound on skipped prime frontiers between consecutive <code>CA &cap; XA</code> records.</p>
+    </section>
+  </main>
+  <footer>
+    Generated from /Users/rahim/Downloads/PrimeVisuals/logs/divisor-extremes-artifacts/ca-xa-transitions.json. Source rows parsed: 8,436. Generated at 2026-06-12T21:49:45.634Z.
+  </footer>
+</body>
+</html>

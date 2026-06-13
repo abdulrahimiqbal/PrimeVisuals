@@ -48,9 +48,14 @@ node scripts/explore.mjs link '<the same spec>'
 Variables: `n` (int/prime domains), `t` (real), `i`, `pi`, `e`, knobs `a` `b`.
 Functions: `abs arg re im conj exp log sqrt sin cos floor frac min max dot
 mod gcd pow zeta` everywhere; on integer domains also `mu M isprime pi gap
-omega bigomega tau phi rad` (Möbius, Mertens, primality 0/1, prime count,
-next-prime gap, distinct/total prime factors, divisor count, totient,
-radical). Arithmetic is complex-valued; only the real part lands on the
+omega bigomega tau phi rad rowvis rowgap rowrun rowcount roughcount
+roughfirst` (Möbius, Mertens, primality 0/1, prime count, next-prime gap,
+distinct/total prime factors, divisor count, totient, radical, row
+visibility against `lcm(1..floor(sqrt(N)))`, and rough interval witness
+counts). `rowvis(n,a)` instead tests visibility against
+`lcm(1..floor(a))`; `roughcount(n,a)` counts integers `m` with
+`n<m<n+a` and no divisor in `2..a-1`, while `roughfirst(n,a)` returns the
+first offset. Arithmetic is complex-valued; only the real part lands on the
 axis. `zeta(z)` works for any complex argument with Re > 0, accurate for
 |Im| ≲ 500. `domain:"complex"` is image-valued and not supported by the CLI
 — evaluate `re/im/abs` of the same expression over `real` instead.

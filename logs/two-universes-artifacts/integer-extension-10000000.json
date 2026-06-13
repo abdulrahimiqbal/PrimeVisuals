@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-06-12T22:08:08.711Z",
+  "parameters": {
+    "N": 10000000,
+    "samples": [
+      10000000
+    ]
+  },
+  "timingsMs": {
+    "mobius": 132,
+    "chowla": 2095,
+    "twins": 151,
+    "total": 2380
+  },
+  "chowla": [
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 10000000,
+      "weightedSum": -0.7939835314421032,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.04755727605451183
+    },
+    {
+      "universe": "Z",
+      "shift": "2",
+      "N": 10000000,
+      "weightedSum": -0.6412551002193395,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.038409292655106606
+    },
+    {
+      "universe": "Z",
+      "shift": "3",
+      "N": 10000000,
+      "weightedSum": -0.5042079036190757,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.030200569044205164
+    }
+  ],
+  "twins": [
+    {
+      "universe": "Z",
+      "N": 10000000,
+      "observed": 58980,
+      "predicted": 59850.89745954208,
+      "ratio": 0.9854488821971168
+    }
+  ]
+}

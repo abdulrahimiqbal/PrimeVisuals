@@ -195,7 +195,7 @@ export default function PrimeVisuals() {
   });
   const [lab, setLab] = useState(() => withLabDefaults(boot?.lab || LAB_TEMPLATES[0].lab));
   const [labGraph, setLabGraph] = useState(() => cloneGraph(LAB_TEMPLATES[0].graph));
-  const [labEditor, setLabEditor] = useState("canvas");
+  const [labEditor, setLabEditor] = useState(() => (boot?.mode === "lab" ? "formula" : "canvas"));
   const [selectedNodeId, setSelectedNodeId] = useState(null);
   const [connectFrom, setConnectFrom] = useState(null);
   const [fieldNote, setFieldNote] = useState(""); // complex-field render status
@@ -1367,7 +1367,7 @@ export default function PrimeVisuals() {
               </>)}
             <div className="mt-2 flex flex-wrap gap-1">
               {[`zeta(${dv})`, "abs()", "re()", "im()", "arg()", "conj()", "dot(,)", "mod(,)", "gcd(,)", "exp()", "log()", "sin()", "cos()", "sqrt()", "i", "a", "b", "^"]
-                .concat(lab.domain === "int" ? ["mu(n)", "M(n)", "isprime(n)", "pi(n)", "gap(n)", "omega(n)", "tau(n)", "phi(n)", "rad(n)"] : [])
+                .concat(lab.domain === "int" ? ["mu(n)", "M(n)", "g2(n)", "G2(n)", "l2(n)", "L2(n)", "rowvis(n)", "rowvis(n,a)", "rowgap(n)", "rowrun(n)", "rowcount(n)", "roughcount(n,a)", "roughfirst(n,a)", "fareynew(n)", "fareydef(n)", "fareyord(n,a)", "cf2den(n)", "cf2num(n)", "cfheight(n)", "isprime(n)", "pi(n)", "gap(n)", "omega(n)", "tau(n)", "phi(n)", "rad(n)"] : [])
                 .map((o) => (
                   <button key={o} onClick={() => insertTok(o)}
                     className="px-1 rounded"

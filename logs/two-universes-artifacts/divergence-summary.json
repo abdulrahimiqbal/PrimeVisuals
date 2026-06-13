@@ -1,0 +1,256 @@
+{
+  "generatedAt": "2026-06-12T23:27:48.510Z",
+  "parameters": {
+    "q3Degree": 15,
+    "q2Degree": 24,
+    "nullSeeds": [
+      12345,
+      271828,
+      314159,
+      161803,
+      424242
+    ]
+  },
+  "thresholds": {
+    "residueAbsZ": 4,
+    "gapAutocorrAbsZ": 4,
+    "spacingL1AboveNull": 0.05,
+    "sharedRelativeTolerance": 0.5
+  },
+  "rows": [
+    {
+      "id": "F3-residue-deg1",
+      "statistic": "residue chi z-score; poly modulus degree 1; Z modulus 3",
+      "universe": "F_3[t]",
+      "integerRange": 14348907,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 14,
+          "integerN": 4782969,
+          "fqValue": -0.6196186608510276,
+          "zValue": -0.6516038011613648
+        },
+        "larger": {
+          "degree": 15,
+          "integerN": 14348907,
+          "fqValue": -0.6757705364808532,
+          "zValue": -0.653784801255266
+        }
+      },
+      "fqValue": -0.6757705364808532,
+      "zValue": -0.653784801255266,
+      "matchedNull": {
+        "fq": {
+          "mean": -0.2638668390125506,
+          "meanAbs": 0.5559847424742114,
+          "min": -0.6302156752344966,
+          "max": 0.7302947586541519
+        },
+        "z": {
+          "mean": 0.5112184989020216,
+          "meanAbs": 0.7915543744116589,
+          "min": -0.7008396887740931,
+          "max": 1.0503643760299783
+        }
+      },
+      "verdict": "noise",
+      "star": false,
+      "notes": "[F_3[t]: measured] chi-square over nonzero residue classes modulo an irreducible polynomial; [Z: measured] uses an integer modulus with the same number of coprime classes when possible."
+    },
+    {
+      "id": "F3-residue-deg2",
+      "statistic": "residue chi z-score; poly modulus degree 2; Z modulus 15",
+      "universe": "F_3[t]",
+      "integerRange": 14348907,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 14,
+          "integerN": 4782969,
+          "fqValue": -1.7605741503072958,
+          "zValue": -1.777030226794689
+        },
+        "larger": {
+          "degree": 15,
+          "integerN": 14348907,
+          "fqValue": -1.7878877877686805,
+          "zValue": -1.7594825179584832
+        }
+      },
+      "fqValue": -1.7878877877686805,
+      "zValue": -1.7594825179584832,
+      "matchedNull": {
+        "fq": {
+          "mean": 0.7039361464879003,
+          "meanAbs": 1.0602375717325583,
+          "min": -0.8665651456399098,
+          "max": 2.8937893022072885
+        },
+        "z": {
+          "mean": 0.115474825241987,
+          "meanAbs": 0.3533255160205064,
+          "min": -0.3612227760956902,
+          "max": 0.5892178044123522
+        }
+      },
+      "verdict": "noise",
+      "star": false,
+      "notes": "[F_3[t]: measured] chi-square over nonzero residue classes modulo an irreducible polynomial; [Z: measured] uses an integer modulus with the same number of coprime classes when possible."
+    },
+    {
+      "id": "F3-gap-autocorr-lag1",
+      "statistic": "gap autocorrelation lag 1 z-score",
+      "universe": "F_3[t]",
+      "integerRange": 14348907,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 14,
+          "integerN": 4782969,
+          "fqValue": -0.014646836619548331,
+          "zValue": -23.494123759661402
+        },
+        "larger": {
+          "degree": 15,
+          "integerN": 14348907,
+          "fqValue": -0.009526520867829994,
+          "zValue": -35.55695299683736
+        }
+      },
+      "fqValue": -0.009526520867829994,
+      "zValue": -35.55695299683736,
+      "matchedNull": {
+        "fq": {
+          "mean": 0.003246447181537021,
+          "meanAbs": 0.004525809038870404,
+          "min": -0.001651940453351549,
+          "max": 0.009654314086659994
+        },
+        "z": {
+          "mean": 4.071342243383469,
+          "meanAbs": 4.071342243383469,
+          "min": 2.9473065465293247,
+          "max": 5.247825913453811
+        }
+      },
+      "verdict": "DIVERGENCE candidate",
+      "star": true,
+      "notes": "[F_3[t]: measured] gaps are consecutive encoding gaps in degree/value order; [Z: measured] gaps are consecutive prime gaps."
+    },
+    {
+      "id": "F3-spacing-l1",
+      "statistic": "spacing histogram L1 distance from Exp(1)",
+      "universe": "F_3[t]",
+      "integerRange": 14348907,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 14,
+          "integerN": 4782969,
+          "fqValue": 0.2398188407780523,
+          "zValue": 0.41639923715147337
+        },
+        "larger": {
+          "degree": 15,
+          "integerN": 14348907,
+          "fqValue": 0.2976863344807276,
+          "zValue": 0.33675092592911826
+        }
+      },
+      "fqValue": 0.2976863344807276,
+      "zValue": 0.33675092592911826,
+      "matchedNull": {
+        "fq": {
+          "mean": 0.22611796619511154,
+          "meanAbs": 0.22611796619511154,
+          "min": 0.2255157724031004,
+          "max": 0.22651933206956068
+        },
+        "z": {
+          "mean": 0.3301218246731199,
+          "meanAbs": 0.3301218246731199,
+          "min": 0.32855415648185565,
+          "max": 0.33100650834132145
+        }
+      },
+      "verdict": "DIVERGENCE candidate",
+      "star": true,
+      "notes": "[F_3[t]: measured] and [Z: measured] spacings are normalized consecutive gaps; null is matched Cramer-style sampling."
+    },
+    {
+      "id": "F2-gap-autocorr-lag1",
+      "statistic": "gap autocorrelation lag 1 z-score",
+      "universe": "F_2[t]",
+      "integerRange": 16777216,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 23,
+          "integerN": 8388608,
+          "fqValue": -30.10226482641362,
+          "zValue": -29.27064361780769
+        },
+        "larger": {
+          "degree": 24,
+          "integerN": 16777216,
+          "fqValue": -38.67401010518227,
+          "zValue": -37.3979831165328
+        }
+      },
+      "fqValue": -38.67401010518227,
+      "zValue": -37.3979831165328,
+      "matchedNull": {
+        "fq": {
+          "mean": 5.876399357881831,
+          "meanAbs": 5.876399357881831,
+          "min": 5.069062175363644,
+          "max": 7.11557347852001
+        },
+        "z": {
+          "mean": 4.370919058247247,
+          "meanAbs": 4.370919058247247,
+          "min": 3.1230311389016223,
+          "max": 5.878860249521724
+        }
+      },
+      "verdict": "SHARED-LAW candidate",
+      "star": true,
+      "notes": "[F_2[t]: measured] gaps are consecutive encoding gaps in degree/value order; [Z: measured] gaps are consecutive prime gaps."
+    },
+    {
+      "id": "F2-spacing-l1",
+      "statistic": "spacing histogram L1 distance from Exp(1)",
+      "universe": "F_2[t]",
+      "integerRange": 16777216,
+      "rangeCheck": {
+        "smaller": {
+          "degree": 23,
+          "integerN": 8388608,
+          "fqValue": 0.29194469188226185,
+          "zValue": 0.3490980422825876
+        },
+        "larger": {
+          "degree": 24,
+          "integerN": 16777216,
+          "fqValue": 0.30254011140102294,
+          "zValue": 0.3342482920453296
+        }
+      },
+      "fqValue": 0.30254011140102294,
+      "zValue": 0.3342482920453296,
+      "matchedNull": {
+        "fq": {
+          "mean": 0.08131738563386602,
+          "meanAbs": 0.08131738563386602,
+          "min": 0.08040100813057027,
+          "max": 0.08217201661212387
+        },
+        "z": {
+          "mean": 0.32857613405372804,
+          "meanAbs": 0.32857613405372804,
+          "min": 0.32748475934816385,
+          "max": 0.32946184077718826
+        }
+      },
+      "verdict": "DIVERGENCE candidate",
+      "star": true,
+      "notes": "[F_2[t]: measured] and [Z: measured] spacings are normalized consecutive gaps; null is matched Cramer-style sampling."
+    }
+  ]
+}

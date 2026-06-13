@@ -2,6 +2,8 @@
    mapped coordinate array; chips compose left to right and always accept
    what the previous chip produced, so any stack is valid. */
 
+import { dyadicExpTransform } from "./math.js";
+
 export const CHIP_OPS = {
   symlog: { label: "log", title: "sign(v)·ln(1+|v|) — symmetric log", apply: (a) => a.map((v) => Math.sign(v) * Math.log1p(Math.abs(v))) },
   sqrt: { label: "sqrt", title: "sign(v)·√|v|", apply: (a) => a.map((v) => Math.sign(v) * Math.sqrt(Math.abs(v))) },
@@ -31,13 +33,17 @@ export const CHIP_OPS = {
     label: "Σ", title: "running sum",
     apply: (a) => { const o = new Float64Array(a.length); let s = 0; for (let i = 0; i < a.length; i++) { s += a[i]; o[i] = s; } return o; },
   },
+  dyexp: {
+    label: "E2", title: "dyadic exponential transform: Σ v(⌊n/2^k⌋)/k!",
+    apply: (a) => dyadicExpTransform(a),
+  },
   norm: {
     label: "÷max", title: "divide by max |v|",
     apply: (a) => { let m = 0; for (let i = 0; i < a.length; i++) m = Math.max(m, Math.abs(a[i])); return m > 0 ? a.map((v) => v / m) : a; },
   },
 };
 
-export const CHIP_ORDER = ["symlog", "sqrt", "abs", "sin", "cos", "scale", "offset", "mod", "diff", "cumsum", "norm"];
+export const CHIP_ORDER = ["symlog", "sqrt", "abs", "sin", "cos", "scale", "offset", "mod", "diff", "cumsum", "dyexp", "norm"];
 
 let chipSeq = 0;
 export function makeChip(op) {

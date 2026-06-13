@@ -1,0 +1,5624 @@
+{
+  "object": "rough witnesses inside prime gaps",
+  "generatedAt": "2026-06-12T17:58:12.766Z",
+  "definition": "R(a,h)=#{m:a<m<a+h and gcd(m,lcm(1..h-1))=1}",
+  "ranges": [
+    100000,
+    1000000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "results": [
+    {
+      "X": 100000,
+      "upper": 200000,
+      "eventLimit": 210000,
+      "mainTerms": {
+        "primeGapCountLi": 8406.24312084622,
+        "exceptionalScaleLi2": 706.8460407267967
+      },
+      "real": {
+        "gaps": 8392,
+        "exceptions": 1939,
+        "exceptionRate": 0.23105338417540514,
+        "totalWitnesses": 10810,
+        "avgWitnesses": 1.2881315538608198,
+        "maxWidth": 86,
+        "maxWitnessCount": 8,
+        "topExceptions": [
+          {
+            "start": 134293,
+            "end": 134327,
+            "width": 34,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 151057,
+            "end": 151091,
+            "width": 34,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 129553,
+            "end": 129581,
+            "width": 28,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 127373,
+            "end": 127399,
+            "width": 26,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 171053,
+            "end": 171077,
+            "width": 24,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 185923,
+            "end": 185947,
+            "width": 24,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 107719,
+            "end": 107741,
+            "width": 22,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 121039,
+            "end": 121061,
+            "width": 22,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 122299,
+            "end": 122321,
+            "width": 22,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 163789,
+            "end": 163811,
+            "width": 22,
+            "roughCount": 0,
+            "firstOffset": 0
+          }
+        ],
+        "topWitnessRich": [
+          {
+            "start": 188029,
+            "end": 188107,
+            "width": 78,
+            "roughCount": 8,
+            "firstOffset": 22
+          },
+          {
+            "start": 180569,
+            "end": 180617,
+            "width": 48,
+            "roughCount": 8,
+            "firstOffset": 2
+          },
+          {
+            "start": 155921,
+            "end": 156007,
+            "width": 86,
+            "roughCount": 7,
+            "firstOffset": 6
+          },
+          {
+            "start": 175141,
+            "end": 175211,
+            "width": 70,
+            "roughCount": 7,
+            "firstOffset": 16
+          },
+          {
+            "start": 186481,
+            "end": 186551,
+            "width": 70,
+            "roughCount": 7,
+            "firstOffset": 12
+          },
+          {
+            "start": 190409,
+            "end": 190471,
+            "width": 62,
+            "roughCount": 7,
+            "firstOffset": 14
+          },
+          {
+            "start": 171947,
+            "end": 172001,
+            "width": 54,
+            "roughCount": 7,
+            "firstOffset": 2
+          },
+          {
+            "start": 152681,
+            "end": 152717,
+            "width": 36,
+            "roughCount": 7,
+            "firstOffset": 2
+          },
+          {
+            "start": 177553,
+            "end": 177589,
+            "width": 36,
+            "roughCount": 7,
+            "firstOffset": 4
+          },
+          {
+            "start": 112363,
+            "end": 112397,
+            "width": 34,
+            "roughCount": 7,
+            "firstOffset": 4
+          }
+        ],
+        "byWidth": [
+          {
+            "width": 2,
+            "gaps": 936,
+            "exceptions": 0,
+            "witnesses": 936
+          },
+          {
+            "width": 4,
+            "gaps": 920,
+            "exceptions": 920,
+            "witnesses": 0
+          },
+          {
+            "width": 6,
+            "gaps": 1515,
+            "exceptions": 624,
+            "witnesses": 891
+          },
+          {
+            "width": 8,
+            "gaps": 618,
+            "exceptions": 132,
+            "witnesses": 566
+          },
+          {
+            "width": 10,
+            "gaps": 789,
+            "exceptions": 119,
+            "witnesses": 848
+          },
+          {
+            "width": 12,
+            "gaps": 856,
+            "exceptions": 58,
+            "witnesses": 1223
+          },
+          {
+            "width": 14,
+            "gaps": 475,
+            "exceptions": 41,
+            "witnesses": 696
+          },
+          {
+            "width": 16,
+            "gaps": 298,
+            "exceptions": 4,
+            "witnesses": 543
+          },
+          {
+            "width": 18,
+            "gaps": 521,
+            "exceptions": 22,
+            "witnesses": 991
+          },
+          {
+            "width": 20,
+            "gaps": 233,
+            "exceptions": 5,
+            "witnesses": 516
+          },
+          {
+            "width": 22,
+            "gaps": 220,
+            "exceptions": 8,
+            "witnesses": 472
+          },
+          {
+            "width": 24,
+            "gaps": 251,
+            "exceptions": 2,
+            "witnesses": 622
+          },
+          {
+            "width": 26,
+            "gaps": 110,
+            "exceptions": 1,
+            "witnesses": 306
+          },
+          {
+            "width": 28,
+            "gaps": 119,
+            "exceptions": 1,
+            "witnesses": 324
+          },
+          {
+            "width": 30,
+            "gaps": 173,
+            "exceptions": 0,
+            "witnesses": 543
+          },
+          {
+            "width": 32,
+            "gaps": 36,
+            "exceptions": 0,
+            "witnesses": 109
+          },
+          {
+            "width": 34,
+            "gaps": 57,
+            "exceptions": 2,
+            "witnesses": 163
+          },
+          {
+            "width": 36,
+            "gaps": 63,
+            "exceptions": 0,
+            "witnesses": 250
+          },
+          {
+            "width": 38,
+            "gaps": 38,
+            "exceptions": 0,
+            "witnesses": 147
+          },
+          {
+            "width": 40,
+            "gaps": 38,
+            "exceptions": 0,
+            "witnesses": 137
+          },
+          {
+            "width": 42,
+            "gaps": 38,
+            "exceptions": 0,
+            "witnesses": 144
+          },
+          {
+            "width": 44,
+            "gaps": 9,
+            "exceptions": 0,
+            "witnesses": 32
+          },
+          {
+            "width": 46,
+            "gaps": 16,
+            "exceptions": 0,
+            "witnesses": 71
+          },
+          {
+            "width": 48,
+            "gaps": 15,
+            "exceptions": 0,
+            "witnesses": 57
+          },
+          {
+            "width": 50,
+            "gaps": 6,
+            "exceptions": 0,
+            "witnesses": 19
+          },
+          {
+            "width": 52,
+            "gaps": 4,
+            "exceptions": 0,
+            "witnesses": 17
+          },
+          {
+            "width": 54,
+            "gaps": 14,
+            "exceptions": 0,
+            "witnesses": 66
+          },
+          {
+            "width": 56,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 16
+          },
+          {
+            "width": 58,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 9
+          },
+          {
+            "width": 60,
+            "gaps": 9,
+            "exceptions": 0,
+            "witnesses": 42
+          },
+          {
+            "width": 62,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 7
+          },
+          {
+            "width": 64,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 5
+          },
+          {
+            "width": 66,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 6
+          },
+          {
+            "width": 68,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 4
+          },
+          {
+            "width": 70,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 17
+          },
+          {
+            "width": 78,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 8
+          },
+          {
+            "width": 86,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 7
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "gaps": 8352,
+          "exceptions": 1429,
+          "exceptionRate": 0.17109674329501914,
+          "totalWitnesses": 14664,
+          "avgWitnesses": 1.7557471264367817,
+          "maxWidth": 106,
+          "maxWitnessCount": 12,
+          "topExceptions": [
+            {
+              "start": 110659,
+              "end": 110677,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 150259,
+              "end": 150277,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 116071,
+              "end": 116087,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 142741,
+              "end": 142757,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 150443,
+              "end": 150457,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 170723,
+              "end": 170737,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 177983,
+              "end": 177997,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 108571,
+              "end": 108583,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 122219,
+              "end": 122231,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 126839,
+              "end": 126851,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 152359,
+              "end": 152425,
+              "width": 66,
+              "roughCount": 12,
+              "firstOffset": 4
+            },
+            {
+              "start": 187709,
+              "end": 187775,
+              "width": 66,
+              "roughCount": 12,
+              "firstOffset": 2
+            },
+            {
+              "start": 138469,
+              "end": 138575,
+              "width": 106,
+              "roughCount": 11,
+              "firstOffset": 24
+            },
+            {
+              "start": 153239,
+              "end": 153319,
+              "width": 80,
+              "roughCount": 11,
+              "firstOffset": 8
+            },
+            {
+              "start": 139127,
+              "end": 139201,
+              "width": 74,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 108635,
+              "end": 108707,
+              "width": 72,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 106723,
+              "end": 106789,
+              "width": 66,
+              "roughCount": 11,
+              "firstOffset": 4
+            },
+            {
+              "start": 166405,
+              "end": 166489,
+              "width": 84,
+              "roughCount": 10,
+              "firstOffset": 4
+            },
+            {
+              "start": 118903,
+              "end": 118985,
+              "width": 82,
+              "roughCount": 10,
+              "firstOffset": 4
+            },
+            {
+              "start": 135035,
+              "end": 135107,
+              "width": 72,
+              "roughCount": 10,
+              "firstOffset": 6
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 1070,
+              "exceptions": 0,
+              "witnesses": 1070
+            },
+            {
+              "width": 4,
+              "gaps": 1006,
+              "exceptions": 1006,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 1638,
+              "exceptions": 321,
+              "witnesses": 1317
+            },
+            {
+              "width": 8,
+              "gaps": 565,
+              "exceptions": 35,
+              "witnesses": 784
+            },
+            {
+              "width": 10,
+              "gaps": 589,
+              "exceptions": 46,
+              "witnesses": 786
+            },
+            {
+              "width": 12,
+              "gaps": 867,
+              "exceptions": 14,
+              "witnesses": 1648
+            },
+            {
+              "width": 14,
+              "gaps": 324,
+              "exceptions": 3,
+              "witnesses": 754
+            },
+            {
+              "width": 16,
+              "gaps": 330,
+              "exceptions": 2,
+              "witnesses": 762
+            },
+            {
+              "width": 18,
+              "gaps": 466,
+              "exceptions": 2,
+              "witnesses": 1231
+            },
+            {
+              "width": 20,
+              "gaps": 180,
+              "exceptions": 0,
+              "witnesses": 551
+            },
+            {
+              "width": 22,
+              "gaps": 191,
+              "exceptions": 0,
+              "witnesses": 593
+            },
+            {
+              "width": 24,
+              "gaps": 290,
+              "exceptions": 0,
+              "witnesses": 1022
+            },
+            {
+              "width": 26,
+              "gaps": 101,
+              "exceptions": 0,
+              "witnesses": 391
+            },
+            {
+              "width": 28,
+              "gaps": 117,
+              "exceptions": 0,
+              "witnesses": 472
+            },
+            {
+              "width": 30,
+              "gaps": 164,
+              "exceptions": 0,
+              "witnesses": 708
+            },
+            {
+              "width": 32,
+              "gaps": 51,
+              "exceptions": 0,
+              "witnesses": 237
+            },
+            {
+              "width": 34,
+              "gaps": 59,
+              "exceptions": 0,
+              "witnesses": 258
+            },
+            {
+              "width": 36,
+              "gaps": 72,
+              "exceptions": 0,
+              "witnesses": 376
+            },
+            {
+              "width": 38,
+              "gaps": 36,
+              "exceptions": 0,
+              "witnesses": 188
+            },
+            {
+              "width": 40,
+              "gaps": 33,
+              "exceptions": 0,
+              "witnesses": 176
+            },
+            {
+              "width": 42,
+              "gaps": 52,
+              "exceptions": 0,
+              "witnesses": 300
+            },
+            {
+              "width": 44,
+              "gaps": 14,
+              "exceptions": 0,
+              "witnesses": 80
+            },
+            {
+              "width": 46,
+              "gaps": 15,
+              "exceptions": 0,
+              "witnesses": 90
+            },
+            {
+              "width": 48,
+              "gaps": 27,
+              "exceptions": 0,
+              "witnesses": 156
+            },
+            {
+              "width": 50,
+              "gaps": 12,
+              "exceptions": 0,
+              "witnesses": 79
+            },
+            {
+              "width": 52,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 55
+            },
+            {
+              "width": 54,
+              "gaps": 20,
+              "exceptions": 0,
+              "witnesses": 135
+            },
+            {
+              "width": 56,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 25
+            },
+            {
+              "width": 58,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 53
+            },
+            {
+              "width": 60,
+              "gaps": 12,
+              "exceptions": 0,
+              "witnesses": 93
+            },
+            {
+              "width": 62,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 25
+            },
+            {
+              "width": 64,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 66,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 79
+            },
+            {
+              "width": 68,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 23
+            },
+            {
+              "width": 70,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 72,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 39
+            },
+            {
+              "width": 74,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 18
+            },
+            {
+              "width": 80,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 82,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 10
+            },
+            {
+              "width": 84,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 18
+            },
+            {
+              "width": 106,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            }
+          ]
+        },
+        {
+          "seed": 271828,
+          "gaps": 8385,
+          "exceptions": 1476,
+          "exceptionRate": 0.17602862254025045,
+          "totalWitnesses": 14566,
+          "avgWitnesses": 1.737149672033393,
+          "maxWidth": 120,
+          "maxWitnessCount": 14,
+          "topExceptions": [
+            {
+              "start": 172903,
+              "end": 172933,
+              "width": 30,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 110993,
+              "end": 111011,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 171679,
+              "end": 171697,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 197479,
+              "end": 197497,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 196855,
+              "end": 196871,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 101303,
+              "end": 101317,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 117599,
+              "end": 117613,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 134063,
+              "end": 134077,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 189293,
+              "end": 189307,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 194507,
+              "end": 194521,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 178535,
+              "end": 178625,
+              "width": 90,
+              "roughCount": 14,
+              "firstOffset": 2
+            },
+            {
+              "start": 123973,
+              "end": 124093,
+              "width": 120,
+              "roughCount": 13,
+              "firstOffset": 6
+            },
+            {
+              "start": 185051,
+              "end": 185161,
+              "width": 110,
+              "roughCount": 13,
+              "firstOffset": 6
+            },
+            {
+              "start": 133955,
+              "end": 134035,
+              "width": 80,
+              "roughCount": 12,
+              "firstOffset": 2
+            },
+            {
+              "start": 102913,
+              "end": 102991,
+              "width": 78,
+              "roughCount": 12,
+              "firstOffset": 4
+            },
+            {
+              "start": 120383,
+              "end": 120479,
+              "width": 96,
+              "roughCount": 11,
+              "firstOffset": 6
+            },
+            {
+              "start": 182407,
+              "end": 182497,
+              "width": 90,
+              "roughCount": 11,
+              "firstOffset": 10
+            },
+            {
+              "start": 152833,
+              "end": 152911,
+              "width": 78,
+              "roughCount": 11,
+              "firstOffset": 4
+            },
+            {
+              "start": 168607,
+              "end": 168679,
+              "width": 72,
+              "roughCount": 11,
+              "firstOffset": 4
+            },
+            {
+              "start": 121319,
+              "end": 121369,
+              "width": 50,
+              "roughCount": 11,
+              "firstOffset": 2
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 1063,
+              "exceptions": 0,
+              "witnesses": 1063
+            },
+            {
+              "width": 4,
+              "gaps": 1078,
+              "exceptions": 1078,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 1580,
+              "exceptions": 295,
+              "witnesses": 1285
+            },
+            {
+              "width": 8,
+              "gaps": 609,
+              "exceptions": 36,
+              "witnesses": 833
+            },
+            {
+              "width": 10,
+              "gaps": 616,
+              "exceptions": 36,
+              "witnesses": 828
+            },
+            {
+              "width": 12,
+              "gaps": 823,
+              "exceptions": 21,
+              "witnesses": 1530
+            },
+            {
+              "width": 14,
+              "gaps": 331,
+              "exceptions": 5,
+              "witnesses": 739
+            },
+            {
+              "width": 16,
+              "gaps": 321,
+              "exceptions": 1,
+              "witnesses": 719
+            },
+            {
+              "width": 18,
+              "gaps": 462,
+              "exceptions": 3,
+              "witnesses": 1238
+            },
+            {
+              "width": 20,
+              "gaps": 205,
+              "exceptions": 0,
+              "witnesses": 637
+            },
+            {
+              "width": 22,
+              "gaps": 184,
+              "exceptions": 0,
+              "witnesses": 557
+            },
+            {
+              "width": 24,
+              "gaps": 275,
+              "exceptions": 0,
+              "witnesses": 934
+            },
+            {
+              "width": 26,
+              "gaps": 110,
+              "exceptions": 0,
+              "witnesses": 435
+            },
+            {
+              "width": 28,
+              "gaps": 112,
+              "exceptions": 0,
+              "witnesses": 442
+            },
+            {
+              "width": 30,
+              "gaps": 156,
+              "exceptions": 1,
+              "witnesses": 683
+            },
+            {
+              "width": 32,
+              "gaps": 57,
+              "exceptions": 0,
+              "witnesses": 250
+            },
+            {
+              "width": 34,
+              "gaps": 53,
+              "exceptions": 0,
+              "witnesses": 259
+            },
+            {
+              "width": 36,
+              "gaps": 95,
+              "exceptions": 0,
+              "witnesses": 483
+            },
+            {
+              "width": 38,
+              "gaps": 24,
+              "exceptions": 0,
+              "witnesses": 122
+            },
+            {
+              "width": 40,
+              "gaps": 33,
+              "exceptions": 0,
+              "witnesses": 182
+            },
+            {
+              "width": 42,
+              "gaps": 43,
+              "exceptions": 0,
+              "witnesses": 257
+            },
+            {
+              "width": 44,
+              "gaps": 19,
+              "exceptions": 0,
+              "witnesses": 117
+            },
+            {
+              "width": 46,
+              "gaps": 20,
+              "exceptions": 0,
+              "witnesses": 112
+            },
+            {
+              "width": 48,
+              "gaps": 22,
+              "exceptions": 0,
+              "witnesses": 137
+            },
+            {
+              "width": 50,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 64
+            },
+            {
+              "width": 52,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 68
+            },
+            {
+              "width": 54,
+              "gaps": 21,
+              "exceptions": 0,
+              "witnesses": 147
+            },
+            {
+              "width": 56,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 38
+            },
+            {
+              "width": 58,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 34
+            },
+            {
+              "width": 60,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 62
+            },
+            {
+              "width": 62,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 30
+            },
+            {
+              "width": 64,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 48
+            },
+            {
+              "width": 66,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 29
+            },
+            {
+              "width": 68,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 70,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 16
+            },
+            {
+              "width": 72,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 31
+            },
+            {
+              "width": 76,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 17
+            },
+            {
+              "width": 78,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 32
+            },
+            {
+              "width": 80,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 84,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 8
+            },
+            {
+              "width": 90,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 25
+            },
+            {
+              "width": 96,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 110,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            },
+            {
+              "width": 120,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            }
+          ]
+        },
+        {
+          "seed": 314159,
+          "gaps": 8371,
+          "exceptions": 1468,
+          "exceptionRate": 0.17536733962489548,
+          "totalWitnesses": 14604,
+          "avgWitnesses": 1.7445944331621073,
+          "maxWidth": 96,
+          "maxWitnessCount": 12,
+          "topExceptions": [
+            {
+              "start": 127375,
+              "end": 127399,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 129553,
+              "end": 129577,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 195203,
+              "end": 195223,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 101221,
+              "end": 101237,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 110663,
+              "end": 110677,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 144983,
+              "end": 144997,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 175013,
+              "end": 175027,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 194123,
+              "end": 194137,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 196853,
+              "end": 196867,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 101627,
+              "end": 101639,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 120119,
+              "end": 120215,
+              "width": 96,
+              "roughCount": 12,
+              "firstOffset": 2
+            },
+            {
+              "start": 133379,
+              "end": 133457,
+              "width": 78,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 181481,
+              "end": 181555,
+              "width": 74,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 147455,
+              "end": 147523,
+              "width": 68,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 191411,
+              "end": 191479,
+              "width": 68,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 174431,
+              "end": 174517,
+              "width": 86,
+              "roughCount": 10,
+              "firstOffset": 12
+            },
+            {
+              "start": 186329,
+              "end": 186413,
+              "width": 84,
+              "roughCount": 10,
+              "firstOffset": 2
+            },
+            {
+              "start": 152681,
+              "end": 152755,
+              "width": 74,
+              "roughCount": 10,
+              "firstOffset": 6
+            },
+            {
+              "start": 177757,
+              "end": 177829,
+              "width": 72,
+              "roughCount": 10,
+              "firstOffset": 4
+            },
+            {
+              "start": 138515,
+              "end": 138575,
+              "width": 60,
+              "roughCount": 10,
+              "firstOffset": 2
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 1104,
+              "exceptions": 0,
+              "witnesses": 1104
+            },
+            {
+              "width": 4,
+              "gaps": 1049,
+              "exceptions": 1049,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 1574,
+              "exceptions": 320,
+              "witnesses": 1254
+            },
+            {
+              "width": 8,
+              "gaps": 537,
+              "exceptions": 35,
+              "witnesses": 719
+            },
+            {
+              "width": 10,
+              "gaps": 617,
+              "exceptions": 37,
+              "witnesses": 834
+            },
+            {
+              "width": 12,
+              "gaps": 842,
+              "exceptions": 18,
+              "witnesses": 1552
+            },
+            {
+              "width": 14,
+              "gaps": 327,
+              "exceptions": 5,
+              "witnesses": 783
+            },
+            {
+              "width": 16,
+              "gaps": 329,
+              "exceptions": 1,
+              "witnesses": 761
+            },
+            {
+              "width": 18,
+              "gaps": 519,
+              "exceptions": 0,
+              "witnesses": 1385
+            },
+            {
+              "width": 20,
+              "gaps": 179,
+              "exceptions": 1,
+              "witnesses": 561
+            },
+            {
+              "width": 22,
+              "gaps": 176,
+              "exceptions": 0,
+              "witnesses": 552
+            },
+            {
+              "width": 24,
+              "gaps": 283,
+              "exceptions": 2,
+              "witnesses": 947
+            },
+            {
+              "width": 26,
+              "gaps": 97,
+              "exceptions": 0,
+              "witnesses": 386
+            },
+            {
+              "width": 28,
+              "gaps": 110,
+              "exceptions": 0,
+              "witnesses": 453
+            },
+            {
+              "width": 30,
+              "gaps": 158,
+              "exceptions": 0,
+              "witnesses": 651
+            },
+            {
+              "width": 32,
+              "gaps": 69,
+              "exceptions": 0,
+              "witnesses": 316
+            },
+            {
+              "width": 34,
+              "gaps": 46,
+              "exceptions": 0,
+              "witnesses": 208
+            },
+            {
+              "width": 36,
+              "gaps": 97,
+              "exceptions": 0,
+              "witnesses": 474
+            },
+            {
+              "width": 38,
+              "gaps": 28,
+              "exceptions": 0,
+              "witnesses": 155
+            },
+            {
+              "width": 40,
+              "gaps": 25,
+              "exceptions": 0,
+              "witnesses": 129
+            },
+            {
+              "width": 42,
+              "gaps": 49,
+              "exceptions": 0,
+              "witnesses": 300
+            },
+            {
+              "width": 44,
+              "gaps": 24,
+              "exceptions": 0,
+              "witnesses": 139
+            },
+            {
+              "width": 46,
+              "gaps": 19,
+              "exceptions": 0,
+              "witnesses": 113
+            },
+            {
+              "width": 48,
+              "gaps": 33,
+              "exceptions": 0,
+              "witnesses": 218
+            },
+            {
+              "width": 50,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 61
+            },
+            {
+              "width": 52,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 54
+            },
+            {
+              "width": 54,
+              "gaps": 13,
+              "exceptions": 0,
+              "witnesses": 77
+            },
+            {
+              "width": 56,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 45
+            },
+            {
+              "width": 58,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 64
+            },
+            {
+              "width": 60,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 64
+            },
+            {
+              "width": 62,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 64,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 8
+            },
+            {
+              "width": 66,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 32
+            },
+            {
+              "width": 68,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 38
+            },
+            {
+              "width": 70,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 22
+            },
+            {
+              "width": 72,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 27
+            },
+            {
+              "width": 74,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 30
+            },
+            {
+              "width": 78,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 80,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 8
+            },
+            {
+              "width": 84,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 86,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 10
+            },
+            {
+              "width": 90,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 17
+            },
+            {
+              "width": 96,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            }
+          ]
+        },
+        {
+          "seed": 161803,
+          "gaps": 8461,
+          "exceptions": 1443,
+          "exceptionRate": 0.17054721664105899,
+          "totalWitnesses": 14652,
+          "avgWitnesses": 1.7317101997399835,
+          "maxWidth": 96,
+          "maxWitnessCount": 12,
+          "topExceptions": [
+            {
+              "start": 170719,
+              "end": 170741,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 134303,
+              "end": 134323,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 125269,
+              "end": 125287,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 171053,
+              "end": 171071,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 180163,
+              "end": 180179,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 115373,
+              "end": 115387,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 124613,
+              "end": 124627,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 183203,
+              "end": 183217,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 103471,
+              "end": 103483,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 116009,
+              "end": 116021,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 110149,
+              "end": 110245,
+              "width": 96,
+              "roughCount": 12,
+              "firstOffset": 12
+            },
+            {
+              "start": 148427,
+              "end": 148507,
+              "width": 80,
+              "roughCount": 10,
+              "firstOffset": 2
+            },
+            {
+              "start": 166241,
+              "end": 166309,
+              "width": 68,
+              "roughCount": 10,
+              "firstOffset": 6
+            },
+            {
+              "start": 172831,
+              "end": 172897,
+              "width": 66,
+              "roughCount": 10,
+              "firstOffset": 10
+            },
+            {
+              "start": 195005,
+              "end": 195067,
+              "width": 62,
+              "roughCount": 10,
+              "firstOffset": 6
+            },
+            {
+              "start": 126203,
+              "end": 126257,
+              "width": 54,
+              "roughCount": 10,
+              "firstOffset": 6
+            },
+            {
+              "start": 162955,
+              "end": 163009,
+              "width": 54,
+              "roughCount": 10,
+              "firstOffset": 4
+            },
+            {
+              "start": 169891,
+              "end": 169943,
+              "width": 52,
+              "roughCount": 10,
+              "firstOffset": 12
+            },
+            {
+              "start": 182941,
+              "end": 183031,
+              "width": 90,
+              "roughCount": 9,
+              "firstOffset": 6
+            },
+            {
+              "start": 149389,
+              "end": 149459,
+              "width": 70,
+              "roughCount": 9,
+              "firstOffset": 4
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 1093,
+              "exceptions": 0,
+              "witnesses": 1093
+            },
+            {
+              "width": 4,
+              "gaps": 1055,
+              "exceptions": 1055,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 1630,
+              "exceptions": 309,
+              "witnesses": 1321
+            },
+            {
+              "width": 8,
+              "gaps": 548,
+              "exceptions": 26,
+              "witnesses": 752
+            },
+            {
+              "width": 10,
+              "gaps": 609,
+              "exceptions": 35,
+              "witnesses": 824
+            },
+            {
+              "width": 12,
+              "gaps": 875,
+              "exceptions": 10,
+              "witnesses": 1617
+            },
+            {
+              "width": 14,
+              "gaps": 364,
+              "exceptions": 3,
+              "witnesses": 826
+            },
+            {
+              "width": 16,
+              "gaps": 361,
+              "exceptions": 1,
+              "witnesses": 824
+            },
+            {
+              "width": 18,
+              "gaps": 461,
+              "exceptions": 2,
+              "witnesses": 1256
+            },
+            {
+              "width": 20,
+              "gaps": 184,
+              "exceptions": 1,
+              "witnesses": 539
+            },
+            {
+              "width": 22,
+              "gaps": 176,
+              "exceptions": 1,
+              "witnesses": 535
+            },
+            {
+              "width": 24,
+              "gaps": 281,
+              "exceptions": 0,
+              "witnesses": 984
+            },
+            {
+              "width": 26,
+              "gaps": 115,
+              "exceptions": 0,
+              "witnesses": 448
+            },
+            {
+              "width": 28,
+              "gaps": 94,
+              "exceptions": 0,
+              "witnesses": 393
+            },
+            {
+              "width": 30,
+              "gaps": 156,
+              "exceptions": 0,
+              "witnesses": 691
+            },
+            {
+              "width": 32,
+              "gaps": 61,
+              "exceptions": 0,
+              "witnesses": 281
+            },
+            {
+              "width": 34,
+              "gaps": 61,
+              "exceptions": 0,
+              "witnesses": 280
+            },
+            {
+              "width": 36,
+              "gaps": 84,
+              "exceptions": 0,
+              "witnesses": 413
+            },
+            {
+              "width": 38,
+              "gaps": 35,
+              "exceptions": 0,
+              "witnesses": 187
+            },
+            {
+              "width": 40,
+              "gaps": 36,
+              "exceptions": 0,
+              "witnesses": 196
+            },
+            {
+              "width": 42,
+              "gaps": 47,
+              "exceptions": 0,
+              "witnesses": 267
+            },
+            {
+              "width": 44,
+              "gaps": 17,
+              "exceptions": 0,
+              "witnesses": 103
+            },
+            {
+              "width": 46,
+              "gaps": 12,
+              "exceptions": 0,
+              "witnesses": 77
+            },
+            {
+              "width": 48,
+              "gaps": 23,
+              "exceptions": 0,
+              "witnesses": 141
+            },
+            {
+              "width": 50,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 41
+            },
+            {
+              "width": 52,
+              "gaps": 13,
+              "exceptions": 0,
+              "witnesses": 92
+            },
+            {
+              "width": 54,
+              "gaps": 18,
+              "exceptions": 0,
+              "witnesses": 128
+            },
+            {
+              "width": 56,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 58,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 45
+            },
+            {
+              "width": 60,
+              "gaps": 13,
+              "exceptions": 0,
+              "witnesses": 94
+            },
+            {
+              "width": 62,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 64,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 66,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 43
+            },
+            {
+              "width": 68,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 10
+            },
+            {
+              "width": 70,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 33
+            },
+            {
+              "width": 72,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 8
+            },
+            {
+              "width": 80,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 10
+            },
+            {
+              "width": 82,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 90,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 9
+            },
+            {
+              "width": 96,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            }
+          ]
+        },
+        {
+          "seed": 424242,
+          "gaps": 8370,
+          "exceptions": 1405,
+          "exceptionRate": 0.16786140979689368,
+          "totalWitnesses": 14700,
+          "avgWitnesses": 1.7562724014336917,
+          "maxWidth": 98,
+          "maxWitnessCount": 13,
+          "topExceptions": [
+            {
+              "start": 155929,
+              "end": 155951,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 110989,
+              "end": 111007,
+              "width": 18,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 108973,
+              "end": 108989,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 165133,
+              "end": 165149,
+              "width": 16,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 126527,
+              "end": 126541,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 184913,
+              "end": 184927,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 188663,
+              "end": 188677,
+              "width": 14,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 106135,
+              "end": 106147,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 108091,
+              "end": 108103,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 108571,
+              "end": 108583,
+              "width": 12,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 130289,
+              "end": 130387,
+              "width": 98,
+              "roughCount": 13,
+              "firstOffset": 12
+            },
+            {
+              "start": 193681,
+              "end": 193777,
+              "width": 96,
+              "roughCount": 13,
+              "firstOffset": 12
+            },
+            {
+              "start": 176497,
+              "end": 176591,
+              "width": 94,
+              "roughCount": 13,
+              "firstOffset": 6
+            },
+            {
+              "start": 173261,
+              "end": 173327,
+              "width": 66,
+              "roughCount": 13,
+              "firstOffset": 2
+            },
+            {
+              "start": 192185,
+              "end": 192253,
+              "width": 68,
+              "roughCount": 11,
+              "firstOffset": 2
+            },
+            {
+              "start": 186277,
+              "end": 186341,
+              "width": 64,
+              "roughCount": 11,
+              "firstOffset": 4
+            },
+            {
+              "start": 171911,
+              "end": 171973,
+              "width": 62,
+              "roughCount": 10,
+              "firstOffset": 6
+            },
+            {
+              "start": 130025,
+              "end": 130081,
+              "width": 56,
+              "roughCount": 10,
+              "firstOffset": 2
+            },
+            {
+              "start": 199561,
+              "end": 199657,
+              "width": 96,
+              "roughCount": 9,
+              "firstOffset": 6
+            },
+            {
+              "start": 184399,
+              "end": 184469,
+              "width": 70,
+              "roughCount": 9,
+              "firstOffset": 10
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 1099,
+              "exceptions": 0,
+              "witnesses": 1099
+            },
+            {
+              "width": 4,
+              "gaps": 1032,
+              "exceptions": 1032,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 1512,
+              "exceptions": 287,
+              "witnesses": 1225
+            },
+            {
+              "width": 8,
+              "gaps": 582,
+              "exceptions": 38,
+              "witnesses": 793
+            },
+            {
+              "width": 10,
+              "gaps": 596,
+              "exceptions": 28,
+              "witnesses": 822
+            },
+            {
+              "width": 12,
+              "gaps": 939,
+              "exceptions": 13,
+              "witnesses": 1787
+            },
+            {
+              "width": 14,
+              "gaps": 292,
+              "exceptions": 3,
+              "witnesses": 666
+            },
+            {
+              "width": 16,
+              "gaps": 333,
+              "exceptions": 2,
+              "witnesses": 761
+            },
+            {
+              "width": 18,
+              "gaps": 474,
+              "exceptions": 1,
+              "witnesses": 1274
+            },
+            {
+              "width": 20,
+              "gaps": 193,
+              "exceptions": 0,
+              "witnesses": 619
+            },
+            {
+              "width": 22,
+              "gaps": 194,
+              "exceptions": 1,
+              "witnesses": 607
+            },
+            {
+              "width": 24,
+              "gaps": 280,
+              "exceptions": 0,
+              "witnesses": 960
+            },
+            {
+              "width": 26,
+              "gaps": 114,
+              "exceptions": 0,
+              "witnesses": 443
+            },
+            {
+              "width": 28,
+              "gaps": 118,
+              "exceptions": 0,
+              "witnesses": 465
+            },
+            {
+              "width": 30,
+              "gaps": 172,
+              "exceptions": 0,
+              "witnesses": 717
+            },
+            {
+              "width": 32,
+              "gaps": 51,
+              "exceptions": 0,
+              "witnesses": 225
+            },
+            {
+              "width": 34,
+              "gaps": 51,
+              "exceptions": 0,
+              "witnesses": 215
+            },
+            {
+              "width": 36,
+              "gaps": 79,
+              "exceptions": 0,
+              "witnesses": 386
+            },
+            {
+              "width": 38,
+              "gaps": 29,
+              "exceptions": 0,
+              "witnesses": 161
+            },
+            {
+              "width": 40,
+              "gaps": 38,
+              "exceptions": 0,
+              "witnesses": 204
+            },
+            {
+              "width": 42,
+              "gaps": 49,
+              "exceptions": 0,
+              "witnesses": 288
+            },
+            {
+              "width": 44,
+              "gaps": 24,
+              "exceptions": 0,
+              "witnesses": 149
+            },
+            {
+              "width": 46,
+              "gaps": 19,
+              "exceptions": 0,
+              "witnesses": 115
+            },
+            {
+              "width": 48,
+              "gaps": 26,
+              "exceptions": 0,
+              "witnesses": 167
+            },
+            {
+              "width": 50,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 69
+            },
+            {
+              "width": 52,
+              "gaps": 11,
+              "exceptions": 0,
+              "witnesses": 70
+            },
+            {
+              "width": 54,
+              "gaps": 12,
+              "exceptions": 0,
+              "witnesses": 76
+            },
+            {
+              "width": 56,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 50
+            },
+            {
+              "width": 58,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 45
+            },
+            {
+              "width": 60,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 62,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 49
+            },
+            {
+              "width": 64,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 66,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 34
+            },
+            {
+              "width": 68,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 70,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 25
+            },
+            {
+              "width": 76,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 23
+            },
+            {
+              "width": 94,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            },
+            {
+              "width": 96,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 22
+            },
+            {
+              "width": 98,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "X": 1000000,
+      "upper": 2000000,
+      "eventLimit": 2010000,
+      "mainTerms": {
+        "primeGapCountLi": 70427.28401466481,
+        "exceptionalScaleLi2": 4960.970646891037
+      },
+      "real": {
+        "gaps": 70435,
+        "exceptions": 13590,
+        "exceptionRate": 0.19294384893873784,
+        "totalWitnesses": 110389,
+        "avgWitnesses": 1.5672463973876625,
+        "maxWidth": 132,
+        "maxWitnessCount": 12,
+        "topExceptions": [
+          {
+            "start": 1756709,
+            "end": 1756747,
+            "width": 38,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1140577,
+            "end": 1140611,
+            "width": 34,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1041919,
+            "end": 1041949,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1154789,
+            "end": 1154819,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1404133,
+            "end": 1404163,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1417777,
+            "end": 1417807,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1448687,
+            "end": 1448717,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1958867,
+            "end": 1958897,
+            "width": 30,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1069639,
+            "end": 1069667,
+            "width": 28,
+            "roughCount": 0,
+            "firstOffset": 0
+          },
+          {
+            "start": 1170751,
+            "end": 1170779,
+            "width": 28,
+            "roughCount": 0,
+            "firstOffset": 0
+          }
+        ],
+        "topWitnessRich": [
+          {
+            "start": 1561919,
+            "end": 1562051,
+            "width": 132,
+            "roughCount": 12,
+            "firstOffset": 2
+          },
+          {
+            "start": 1562753,
+            "end": 1562833,
+            "width": 80,
+            "roughCount": 12,
+            "firstOffset": 8
+          },
+          {
+            "start": 1761187,
+            "end": 1761289,
+            "width": 102,
+            "roughCount": 11,
+            "firstOffset": 4
+          },
+          {
+            "start": 1448087,
+            "end": 1448171,
+            "width": 84,
+            "roughCount": 11,
+            "firstOffset": 2
+          },
+          {
+            "start": 1544227,
+            "end": 1544311,
+            "width": 84,
+            "roughCount": 11,
+            "firstOffset": 6
+          },
+          {
+            "start": 1050631,
+            "end": 1050713,
+            "width": 82,
+            "roughCount": 11,
+            "firstOffset": 18
+          },
+          {
+            "start": 1280023,
+            "end": 1280101,
+            "width": 78,
+            "roughCount": 11,
+            "firstOffset": 6
+          },
+          {
+            "start": 1365583,
+            "end": 1365659,
+            "width": 76,
+            "roughCount": 11,
+            "firstOffset": 6
+          },
+          {
+            "start": 1272679,
+            "end": 1272749,
+            "width": 70,
+            "roughCount": 11,
+            "firstOffset": 4
+          },
+          {
+            "start": 1928873,
+            "end": 1928929,
+            "width": 56,
+            "roughCount": 11,
+            "firstOffset": 6
+          }
+        ],
+        "byWidth": [
+          {
+            "width": 2,
+            "gaps": 6702,
+            "exceptions": 0,
+            "witnesses": 6702
+          },
+          {
+            "width": 4,
+            "gaps": 6598,
+            "exceptions": 6598,
+            "witnesses": 0
+          },
+          {
+            "width": 6,
+            "gaps": 10982,
+            "exceptions": 4338,
+            "witnesses": 6644
+          },
+          {
+            "width": 8,
+            "gaps": 4711,
+            "exceptions": 890,
+            "witnesses": 4519
+          },
+          {
+            "width": 10,
+            "gaps": 5889,
+            "exceptions": 845,
+            "witnesses": 6343
+          },
+          {
+            "width": 12,
+            "gaps": 7136,
+            "exceptions": 380,
+            "witnesses": 10485
+          },
+          {
+            "width": 14,
+            "gaps": 3708,
+            "exceptions": 248,
+            "witnesses": 5768
+          },
+          {
+            "width": 16,
+            "gaps": 2669,
+            "exceptions": 48,
+            "witnesses": 5096
+          },
+          {
+            "width": 18,
+            "gaps": 4650,
+            "exceptions": 108,
+            "witnesses": 9285
+          },
+          {
+            "width": 20,
+            "gaps": 2179,
+            "exceptions": 26,
+            "witnesses": 5130
+          },
+          {
+            "width": 22,
+            "gaps": 1997,
+            "exceptions": 45,
+            "witnesses": 4568
+          },
+          {
+            "width": 24,
+            "gaps": 2840,
+            "exceptions": 44,
+            "witnesses": 7099
+          },
+          {
+            "width": 26,
+            "gaps": 1259,
+            "exceptions": 6,
+            "witnesses": 3580
+          },
+          {
+            "width": 28,
+            "gaps": 1325,
+            "exceptions": 6,
+            "witnesses": 3882
+          },
+          {
+            "width": 30,
+            "gaps": 2105,
+            "exceptions": 6,
+            "witnesses": 6835
+          },
+          {
+            "width": 32,
+            "gaps": 599,
+            "exceptions": 0,
+            "witnesses": 2042
+          },
+          {
+            "width": 34,
+            "gaps": 663,
+            "exceptions": 1,
+            "witnesses": 2309
+          },
+          {
+            "width": 36,
+            "gaps": 959,
+            "exceptions": 0,
+            "witnesses": 3736
+          },
+          {
+            "width": 38,
+            "gaps": 403,
+            "exceptions": 1,
+            "witnesses": 1592
+          },
+          {
+            "width": 40,
+            "gaps": 481,
+            "exceptions": 0,
+            "witnesses": 1994
+          },
+          {
+            "width": 42,
+            "gaps": 629,
+            "exceptions": 0,
+            "witnesses": 2666
+          },
+          {
+            "width": 44,
+            "gaps": 236,
+            "exceptions": 0,
+            "witnesses": 1016
+          },
+          {
+            "width": 46,
+            "gaps": 195,
+            "exceptions": 0,
+            "witnesses": 883
+          },
+          {
+            "width": 48,
+            "gaps": 301,
+            "exceptions": 0,
+            "witnesses": 1391
+          },
+          {
+            "width": 50,
+            "gaps": 161,
+            "exceptions": 0,
+            "witnesses": 753
+          },
+          {
+            "width": 52,
+            "gaps": 117,
+            "exceptions": 0,
+            "witnesses": 617
+          },
+          {
+            "width": 54,
+            "gaps": 204,
+            "exceptions": 0,
+            "witnesses": 1008
+          },
+          {
+            "width": 56,
+            "gaps": 105,
+            "exceptions": 0,
+            "witnesses": 571
+          },
+          {
+            "width": 58,
+            "gaps": 108,
+            "exceptions": 0,
+            "witnesses": 577
+          },
+          {
+            "width": 60,
+            "gaps": 117,
+            "exceptions": 0,
+            "witnesses": 644
+          },
+          {
+            "width": 62,
+            "gaps": 42,
+            "exceptions": 0,
+            "witnesses": 251
+          },
+          {
+            "width": 64,
+            "gaps": 50,
+            "exceptions": 0,
+            "witnesses": 291
+          },
+          {
+            "width": 66,
+            "gaps": 68,
+            "exceptions": 0,
+            "witnesses": 408
+          },
+          {
+            "width": 68,
+            "gaps": 21,
+            "exceptions": 0,
+            "witnesses": 127
+          },
+          {
+            "width": 70,
+            "gaps": 40,
+            "exceptions": 0,
+            "witnesses": 268
+          },
+          {
+            "width": 72,
+            "gaps": 36,
+            "exceptions": 0,
+            "witnesses": 230
+          },
+          {
+            "width": 74,
+            "gaps": 8,
+            "exceptions": 0,
+            "witnesses": 55
+          },
+          {
+            "width": 76,
+            "gaps": 13,
+            "exceptions": 0,
+            "witnesses": 84
+          },
+          {
+            "width": 78,
+            "gaps": 38,
+            "exceptions": 0,
+            "witnesses": 271
+          },
+          {
+            "width": 80,
+            "gaps": 22,
+            "exceptions": 0,
+            "witnesses": 147
+          },
+          {
+            "width": 82,
+            "gaps": 11,
+            "exceptions": 0,
+            "witnesses": 84
+          },
+          {
+            "width": 84,
+            "gaps": 17,
+            "exceptions": 0,
+            "witnesses": 127
+          },
+          {
+            "width": 86,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 16
+          },
+          {
+            "width": 88,
+            "gaps": 4,
+            "exceptions": 0,
+            "witnesses": 23
+          },
+          {
+            "width": 90,
+            "gaps": 8,
+            "exceptions": 0,
+            "witnesses": 50
+          },
+          {
+            "width": 92,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 26
+          },
+          {
+            "width": 94,
+            "gaps": 2,
+            "exceptions": 0,
+            "witnesses": 18
+          },
+          {
+            "width": 96,
+            "gaps": 4,
+            "exceptions": 0,
+            "witnesses": 30
+          },
+          {
+            "width": 98,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 8
+          },
+          {
+            "width": 100,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 21
+          },
+          {
+            "width": 102,
+            "gaps": 3,
+            "exceptions": 0,
+            "witnesses": 27
+          },
+          {
+            "width": 104,
+            "gaps": 2,
+            "exceptions": 0,
+            "witnesses": 18
+          },
+          {
+            "width": 106,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 8
+          },
+          {
+            "width": 110,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 8
+          },
+          {
+            "width": 118,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 9
+          },
+          {
+            "width": 120,
+            "gaps": 1,
+            "exceptions": 0,
+            "witnesses": 9
+          },
+          {
+            "width": 126,
+            "gaps": 2,
+            "exceptions": 0,
+            "witnesses": 18
+          },
+          {
+            "width": 132,
+            "gaps": 2,
+            "exceptions": 0,
+            "witnesses": 22
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "gaps": 70393,
+          "exceptions": 10610,
+          "exceptionRate": 0.15072521415481652,
+          "totalWitnesses": 144165,
+          "avgWitnesses": 2.048001932010285,
+          "maxWidth": 144,
+          "maxWitnessCount": 17,
+          "topExceptions": [
+            {
+              "start": 1344409,
+              "end": 1344433,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1448273,
+              "end": 1448297,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1542731,
+              "end": 1542755,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1560373,
+              "end": 1560397,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1741937,
+              "end": 1741961,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1073665,
+              "end": 1073687,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1225465,
+              "end": 1225487,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1267969,
+              "end": 1267991,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1450879,
+              "end": 1450901,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1954837,
+              "end": 1954859,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 1015447,
+              "end": 1015549,
+              "width": 102,
+              "roughCount": 17,
+              "firstOffset": 4
+            },
+            {
+              "start": 1359637,
+              "end": 1359781,
+              "width": 144,
+              "roughCount": 16,
+              "firstOffset": 4
+            },
+            {
+              "start": 1651645,
+              "end": 1651781,
+              "width": 136,
+              "roughCount": 15,
+              "firstOffset": 22
+            },
+            {
+              "start": 1646627,
+              "end": 1646725,
+              "width": 98,
+              "roughCount": 15,
+              "firstOffset": 2
+            },
+            {
+              "start": 1225703,
+              "end": 1225835,
+              "width": 132,
+              "roughCount": 14,
+              "firstOffset": 20
+            },
+            {
+              "start": 1836847,
+              "end": 1836971,
+              "width": 124,
+              "roughCount": 14,
+              "firstOffset": 4
+            },
+            {
+              "start": 1855759,
+              "end": 1855873,
+              "width": 114,
+              "roughCount": 14,
+              "firstOffset": 10
+            },
+            {
+              "start": 1463947,
+              "end": 1464059,
+              "width": 112,
+              "roughCount": 14,
+              "firstOffset": 4
+            },
+            {
+              "start": 1953299,
+              "end": 1953401,
+              "width": 102,
+              "roughCount": 14,
+              "firstOffset": 8
+            },
+            {
+              "start": 1003541,
+              "end": 1003639,
+              "width": 98,
+              "roughCount": 14,
+              "firstOffset": 2
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 7426,
+              "exceptions": 0,
+              "witnesses": 7426
+            },
+            {
+              "width": 4,
+              "gaps": 7462,
+              "exceptions": 7462,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 11727,
+              "exceptions": 2417,
+              "witnesses": 9310
+            },
+            {
+              "width": 8,
+              "gaps": 4589,
+              "exceptions": 265,
+              "witnesses": 6287
+            },
+            {
+              "width": 10,
+              "gaps": 4671,
+              "exceptions": 258,
+              "witnesses": 6390
+            },
+            {
+              "width": 12,
+              "gaps": 7308,
+              "exceptions": 113,
+              "witnesses": 13662
+            },
+            {
+              "width": 14,
+              "gaps": 2844,
+              "exceptions": 46,
+              "witnesses": 6519
+            },
+            {
+              "width": 16,
+              "gaps": 2760,
+              "exceptions": 17,
+              "witnesses": 6292
+            },
+            {
+              "width": 18,
+              "gaps": 4541,
+              "exceptions": 17,
+              "witnesses": 12367
+            },
+            {
+              "width": 20,
+              "gaps": 1775,
+              "exceptions": 5,
+              "witnesses": 5426
+            },
+            {
+              "width": 22,
+              "gaps": 1872,
+              "exceptions": 5,
+              "witnesses": 5724
+            },
+            {
+              "width": 24,
+              "gaps": 2843,
+              "exceptions": 5,
+              "witnesses": 9737
+            },
+            {
+              "width": 26,
+              "gaps": 1130,
+              "exceptions": 0,
+              "witnesses": 4397
+            },
+            {
+              "width": 28,
+              "gaps": 1138,
+              "exceptions": 0,
+              "witnesses": 4458
+            },
+            {
+              "width": 30,
+              "gaps": 1721,
+              "exceptions": 0,
+              "witnesses": 7433
+            },
+            {
+              "width": 32,
+              "gaps": 721,
+              "exceptions": 0,
+              "witnesses": 3390
+            },
+            {
+              "width": 34,
+              "gaps": 655,
+              "exceptions": 0,
+              "witnesses": 2974
+            },
+            {
+              "width": 36,
+              "gaps": 1125,
+              "exceptions": 0,
+              "witnesses": 5712
+            },
+            {
+              "width": 38,
+              "gaps": 430,
+              "exceptions": 0,
+              "witnesses": 2291
+            },
+            {
+              "width": 40,
+              "gaps": 433,
+              "exceptions": 0,
+              "witnesses": 2330
+            },
+            {
+              "width": 42,
+              "gaps": 664,
+              "exceptions": 0,
+              "witnesses": 3830
+            },
+            {
+              "width": 44,
+              "gaps": 295,
+              "exceptions": 0,
+              "witnesses": 1738
+            },
+            {
+              "width": 46,
+              "gaps": 268,
+              "exceptions": 0,
+              "witnesses": 1576
+            },
+            {
+              "width": 48,
+              "gaps": 447,
+              "exceptions": 0,
+              "witnesses": 2796
+            },
+            {
+              "width": 50,
+              "gaps": 185,
+              "exceptions": 0,
+              "witnesses": 1242
+            },
+            {
+              "width": 52,
+              "gaps": 153,
+              "exceptions": 0,
+              "witnesses": 1043
+            },
+            {
+              "width": 54,
+              "gaps": 255,
+              "exceptions": 0,
+              "witnesses": 1748
+            },
+            {
+              "width": 56,
+              "gaps": 101,
+              "exceptions": 0,
+              "witnesses": 750
+            },
+            {
+              "width": 58,
+              "gaps": 102,
+              "exceptions": 0,
+              "witnesses": 739
+            },
+            {
+              "width": 60,
+              "gaps": 150,
+              "exceptions": 0,
+              "witnesses": 1161
+            },
+            {
+              "width": 62,
+              "gaps": 68,
+              "exceptions": 0,
+              "witnesses": 518
+            },
+            {
+              "width": 64,
+              "gaps": 55,
+              "exceptions": 0,
+              "witnesses": 425
+            },
+            {
+              "width": 66,
+              "gaps": 85,
+              "exceptions": 0,
+              "witnesses": 714
+            },
+            {
+              "width": 68,
+              "gaps": 46,
+              "exceptions": 0,
+              "witnesses": 399
+            },
+            {
+              "width": 70,
+              "gaps": 48,
+              "exceptions": 0,
+              "witnesses": 409
+            },
+            {
+              "width": 72,
+              "gaps": 65,
+              "exceptions": 0,
+              "witnesses": 577
+            },
+            {
+              "width": 74,
+              "gaps": 30,
+              "exceptions": 0,
+              "witnesses": 261
+            },
+            {
+              "width": 76,
+              "gaps": 15,
+              "exceptions": 0,
+              "witnesses": 141
+            },
+            {
+              "width": 78,
+              "gaps": 39,
+              "exceptions": 0,
+              "witnesses": 372
+            },
+            {
+              "width": 80,
+              "gaps": 18,
+              "exceptions": 0,
+              "witnesses": 186
+            },
+            {
+              "width": 82,
+              "gaps": 16,
+              "exceptions": 0,
+              "witnesses": 136
+            },
+            {
+              "width": 84,
+              "gaps": 26,
+              "exceptions": 0,
+              "witnesses": 253
+            },
+            {
+              "width": 86,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 111
+            },
+            {
+              "width": 88,
+              "gaps": 17,
+              "exceptions": 0,
+              "witnesses": 167
+            },
+            {
+              "width": 90,
+              "gaps": 16,
+              "exceptions": 0,
+              "witnesses": 178
+            },
+            {
+              "width": 92,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 39
+            },
+            {
+              "width": 94,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 69
+            },
+            {
+              "width": 96,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 73
+            },
+            {
+              "width": 98,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 67
+            },
+            {
+              "width": 100,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 37
+            },
+            {
+              "width": 102,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 76
+            },
+            {
+              "width": 104,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 22
+            },
+            {
+              "width": 106,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 21
+            },
+            {
+              "width": 108,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 19
+            },
+            {
+              "width": 110,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 24
+            },
+            {
+              "width": 112,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 114,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 118,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 124,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 132,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 136,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 144,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 16
+            }
+          ]
+        },
+        {
+          "seed": 271828,
+          "gaps": 70362,
+          "exceptions": 10356,
+          "exceptionRate": 0.1471817174042807,
+          "totalWitnesses": 144288,
+          "avgWitnesses": 2.0506523407521104,
+          "maxWidth": 132,
+          "maxWitnessCount": 16,
+          "topExceptions": [
+            {
+              "start": 1246139,
+              "end": 1246169,
+              "width": 30,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1420849,
+              "end": 1420873,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1546427,
+              "end": 1546451,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1870967,
+              "end": 1870991,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1041925,
+              "end": 1041947,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1330969,
+              "end": 1330991,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1344535,
+              "end": 1344557,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1360789,
+              "end": 1360811,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1363099,
+              "end": 1363121,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1691167,
+              "end": 1691189,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 1907579,
+              "end": 1907701,
+              "width": 122,
+              "roughCount": 16,
+              "firstOffset": 14
+            },
+            {
+              "start": 1540685,
+              "end": 1540811,
+              "width": 126,
+              "roughCount": 15,
+              "firstOffset": 2
+            },
+            {
+              "start": 1879205,
+              "end": 1879321,
+              "width": 116,
+              "roughCount": 15,
+              "firstOffset": 6
+            },
+            {
+              "start": 1678673,
+              "end": 1678783,
+              "width": 110,
+              "roughCount": 15,
+              "firstOffset": 6
+            },
+            {
+              "start": 1538539,
+              "end": 1538635,
+              "width": 96,
+              "roughCount": 15,
+              "firstOffset": 10
+            },
+            {
+              "start": 1480619,
+              "end": 1480699,
+              "width": 80,
+              "roughCount": 15,
+              "firstOffset": 2
+            },
+            {
+              "start": 1900301,
+              "end": 1900433,
+              "width": 132,
+              "roughCount": 14,
+              "firstOffset": 2
+            },
+            {
+              "start": 1711703,
+              "end": 1711823,
+              "width": 120,
+              "roughCount": 14,
+              "firstOffset": 8
+            },
+            {
+              "start": 1393121,
+              "end": 1393235,
+              "width": 114,
+              "roughCount": 14,
+              "firstOffset": 2
+            },
+            {
+              "start": 1186037,
+              "end": 1186145,
+              "width": 108,
+              "roughCount": 14,
+              "firstOffset": 12
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 7418,
+              "exceptions": 0,
+              "witnesses": 7418
+            },
+            {
+              "width": 4,
+              "gaps": 7394,
+              "exceptions": 7394,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 11785,
+              "exceptions": 2213,
+              "witnesses": 9572
+            },
+            {
+              "width": 8,
+              "gaps": 4575,
+              "exceptions": 295,
+              "witnesses": 6233
+            },
+            {
+              "width": 10,
+              "gaps": 4656,
+              "exceptions": 252,
+              "witnesses": 6358
+            },
+            {
+              "width": 12,
+              "gaps": 7305,
+              "exceptions": 127,
+              "witnesses": 13642
+            },
+            {
+              "width": 14,
+              "gaps": 2792,
+              "exceptions": 35,
+              "witnesses": 6399
+            },
+            {
+              "width": 16,
+              "gaps": 2803,
+              "exceptions": 9,
+              "witnesses": 6442
+            },
+            {
+              "width": 18,
+              "gaps": 4600,
+              "exceptions": 17,
+              "witnesses": 12464
+            },
+            {
+              "width": 20,
+              "gaps": 1833,
+              "exceptions": 3,
+              "witnesses": 5663
+            },
+            {
+              "width": 22,
+              "gaps": 1737,
+              "exceptions": 7,
+              "witnesses": 5356
+            },
+            {
+              "width": 24,
+              "gaps": 2887,
+              "exceptions": 3,
+              "witnesses": 9834
+            },
+            {
+              "width": 26,
+              "gaps": 1129,
+              "exceptions": 0,
+              "witnesses": 4440
+            },
+            {
+              "width": 28,
+              "gaps": 1114,
+              "exceptions": 0,
+              "witnesses": 4392
+            },
+            {
+              "width": 30,
+              "gaps": 1740,
+              "exceptions": 1,
+              "witnesses": 7461
+            },
+            {
+              "width": 32,
+              "gaps": 671,
+              "exceptions": 0,
+              "witnesses": 3075
+            },
+            {
+              "width": 34,
+              "gaps": 712,
+              "exceptions": 0,
+              "witnesses": 3287
+            },
+            {
+              "width": 36,
+              "gaps": 1132,
+              "exceptions": 0,
+              "witnesses": 5743
+            },
+            {
+              "width": 38,
+              "gaps": 428,
+              "exceptions": 0,
+              "witnesses": 2290
+            },
+            {
+              "width": 40,
+              "gaps": 435,
+              "exceptions": 0,
+              "witnesses": 2335
+            },
+            {
+              "width": 42,
+              "gaps": 720,
+              "exceptions": 0,
+              "witnesses": 4052
+            },
+            {
+              "width": 44,
+              "gaps": 245,
+              "exceptions": 0,
+              "witnesses": 1459
+            },
+            {
+              "width": 46,
+              "gaps": 266,
+              "exceptions": 0,
+              "witnesses": 1600
+            },
+            {
+              "width": 48,
+              "gaps": 443,
+              "exceptions": 0,
+              "witnesses": 2712
+            },
+            {
+              "width": 50,
+              "gaps": 156,
+              "exceptions": 0,
+              "witnesses": 1045
+            },
+            {
+              "width": 52,
+              "gaps": 165,
+              "exceptions": 0,
+              "witnesses": 1141
+            },
+            {
+              "width": 54,
+              "gaps": 261,
+              "exceptions": 0,
+              "witnesses": 1822
+            },
+            {
+              "width": 56,
+              "gaps": 112,
+              "exceptions": 0,
+              "witnesses": 802
+            },
+            {
+              "width": 58,
+              "gaps": 92,
+              "exceptions": 0,
+              "witnesses": 677
+            },
+            {
+              "width": 60,
+              "gaps": 153,
+              "exceptions": 0,
+              "witnesses": 1209
+            },
+            {
+              "width": 62,
+              "gaps": 63,
+              "exceptions": 0,
+              "witnesses": 495
+            },
+            {
+              "width": 64,
+              "gaps": 70,
+              "exceptions": 0,
+              "witnesses": 521
+            },
+            {
+              "width": 66,
+              "gaps": 100,
+              "exceptions": 0,
+              "witnesses": 810
+            },
+            {
+              "width": 68,
+              "gaps": 45,
+              "exceptions": 0,
+              "witnesses": 387
+            },
+            {
+              "width": 70,
+              "gaps": 44,
+              "exceptions": 0,
+              "witnesses": 375
+            },
+            {
+              "width": 72,
+              "gaps": 66,
+              "exceptions": 0,
+              "witnesses": 569
+            },
+            {
+              "width": 74,
+              "gaps": 28,
+              "exceptions": 0,
+              "witnesses": 250
+            },
+            {
+              "width": 76,
+              "gaps": 18,
+              "exceptions": 0,
+              "witnesses": 164
+            },
+            {
+              "width": 78,
+              "gaps": 31,
+              "exceptions": 0,
+              "witnesses": 314
+            },
+            {
+              "width": 80,
+              "gaps": 19,
+              "exceptions": 0,
+              "witnesses": 177
+            },
+            {
+              "width": 82,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 100
+            },
+            {
+              "width": 84,
+              "gaps": 17,
+              "exceptions": 0,
+              "witnesses": 175
+            },
+            {
+              "width": 86,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 53
+            },
+            {
+              "width": 88,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 70
+            },
+            {
+              "width": 90,
+              "gaps": 20,
+              "exceptions": 0,
+              "witnesses": 213
+            },
+            {
+              "width": 92,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 68
+            },
+            {
+              "width": 94,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 48
+            },
+            {
+              "width": 96,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 75
+            },
+            {
+              "width": 98,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 46
+            },
+            {
+              "width": 100,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 54
+            },
+            {
+              "width": 102,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 70
+            },
+            {
+              "width": 104,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 106,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 35
+            },
+            {
+              "width": 108,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 88
+            },
+            {
+              "width": 110,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 27
+            },
+            {
+              "width": 112,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 114,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 52
+            },
+            {
+              "width": 116,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 120,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 24
+            },
+            {
+              "width": 122,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 24
+            },
+            {
+              "width": 126,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 15
+            },
+            {
+              "width": 132,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            }
+          ]
+        },
+        {
+          "seed": 314159,
+          "gaps": 70302,
+          "exceptions": 10554,
+          "exceptionRate": 0.15012375181360416,
+          "totalWitnesses": 144153,
+          "avgWitnesses": 2.0504822053426643,
+          "maxWidth": 154,
+          "maxWitnessCount": 19,
+          "topExceptions": [
+            {
+              "start": 1213159,
+              "end": 1213183,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1471463,
+              "end": 1471487,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1688809,
+              "end": 1688833,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1948519,
+              "end": 1948543,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1548667,
+              "end": 1548689,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1658905,
+              "end": 1658927,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1122317,
+              "end": 1122337,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1232537,
+              "end": 1232557,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1390817,
+              "end": 1390837,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1398521,
+              "end": 1398541,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 1447273,
+              "end": 1447397,
+              "width": 124,
+              "roughCount": 19,
+              "firstOffset": 6
+            },
+            {
+              "start": 1968025,
+              "end": 1968179,
+              "width": 154,
+              "roughCount": 17,
+              "firstOffset": 12
+            },
+            {
+              "start": 1512233,
+              "end": 1512373,
+              "width": 140,
+              "roughCount": 16,
+              "firstOffset": 6
+            },
+            {
+              "start": 1488997,
+              "end": 1489109,
+              "width": 112,
+              "roughCount": 16,
+              "firstOffset": 4
+            },
+            {
+              "start": 1975577,
+              "end": 1975699,
+              "width": 122,
+              "roughCount": 15,
+              "firstOffset": 6
+            },
+            {
+              "start": 1466855,
+              "end": 1466959,
+              "width": 104,
+              "roughCount": 15,
+              "firstOffset": 8
+            },
+            {
+              "start": 1533395,
+              "end": 1533479,
+              "width": 84,
+              "roughCount": 15,
+              "firstOffset": 2
+            },
+            {
+              "start": 1226831,
+              "end": 1226953,
+              "width": 122,
+              "roughCount": 14,
+              "firstOffset": 20
+            },
+            {
+              "start": 1069483,
+              "end": 1069597,
+              "width": 114,
+              "roughCount": 14,
+              "firstOffset": 16
+            },
+            {
+              "start": 1094893,
+              "end": 1095005,
+              "width": 112,
+              "roughCount": 14,
+              "firstOffset": 4
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 7379,
+              "exceptions": 0,
+              "witnesses": 7379
+            },
+            {
+              "width": 4,
+              "gaps": 7414,
+              "exceptions": 7414,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 11736,
+              "exceptions": 2370,
+              "witnesses": 9366
+            },
+            {
+              "width": 8,
+              "gaps": 4625,
+              "exceptions": 304,
+              "witnesses": 6275
+            },
+            {
+              "width": 10,
+              "gaps": 4656,
+              "exceptions": 271,
+              "witnesses": 6380
+            },
+            {
+              "width": 12,
+              "gaps": 7160,
+              "exceptions": 113,
+              "witnesses": 13354
+            },
+            {
+              "width": 14,
+              "gaps": 2958,
+              "exceptions": 31,
+              "witnesses": 6786
+            },
+            {
+              "width": 16,
+              "gaps": 2884,
+              "exceptions": 18,
+              "witnesses": 6662
+            },
+            {
+              "width": 18,
+              "gaps": 4569,
+              "exceptions": 21,
+              "witnesses": 12442
+            },
+            {
+              "width": 20,
+              "gaps": 1807,
+              "exceptions": 6,
+              "witnesses": 5533
+            },
+            {
+              "width": 22,
+              "gaps": 1821,
+              "exceptions": 2,
+              "witnesses": 5628
+            },
+            {
+              "width": 24,
+              "gaps": 2772,
+              "exceptions": 4,
+              "witnesses": 9487
+            },
+            {
+              "width": 26,
+              "gaps": 1107,
+              "exceptions": 0,
+              "witnesses": 4393
+            },
+            {
+              "width": 28,
+              "gaps": 1073,
+              "exceptions": 0,
+              "witnesses": 4189
+            },
+            {
+              "width": 30,
+              "gaps": 1707,
+              "exceptions": 0,
+              "witnesses": 7273
+            },
+            {
+              "width": 32,
+              "gaps": 676,
+              "exceptions": 0,
+              "witnesses": 3126
+            },
+            {
+              "width": 34,
+              "gaps": 673,
+              "exceptions": 0,
+              "witnesses": 3089
+            },
+            {
+              "width": 36,
+              "gaps": 1164,
+              "exceptions": 0,
+              "witnesses": 5875
+            },
+            {
+              "width": 38,
+              "gaps": 443,
+              "exceptions": 0,
+              "witnesses": 2402
+            },
+            {
+              "width": 40,
+              "gaps": 431,
+              "exceptions": 0,
+              "witnesses": 2315
+            },
+            {
+              "width": 42,
+              "gaps": 669,
+              "exceptions": 0,
+              "witnesses": 3738
+            },
+            {
+              "width": 44,
+              "gaps": 259,
+              "exceptions": 0,
+              "witnesses": 1545
+            },
+            {
+              "width": 46,
+              "gaps": 310,
+              "exceptions": 0,
+              "witnesses": 1863
+            },
+            {
+              "width": 48,
+              "gaps": 435,
+              "exceptions": 0,
+              "witnesses": 2765
+            },
+            {
+              "width": 50,
+              "gaps": 167,
+              "exceptions": 0,
+              "witnesses": 1101
+            },
+            {
+              "width": 52,
+              "gaps": 178,
+              "exceptions": 0,
+              "witnesses": 1184
+            },
+            {
+              "width": 54,
+              "gaps": 242,
+              "exceptions": 0,
+              "witnesses": 1674
+            },
+            {
+              "width": 56,
+              "gaps": 115,
+              "exceptions": 0,
+              "witnesses": 858
+            },
+            {
+              "width": 58,
+              "gaps": 99,
+              "exceptions": 0,
+              "witnesses": 714
+            },
+            {
+              "width": 60,
+              "gaps": 160,
+              "exceptions": 0,
+              "witnesses": 1215
+            },
+            {
+              "width": 62,
+              "gaps": 56,
+              "exceptions": 0,
+              "witnesses": 436
+            },
+            {
+              "width": 64,
+              "gaps": 66,
+              "exceptions": 0,
+              "witnesses": 514
+            },
+            {
+              "width": 66,
+              "gaps": 112,
+              "exceptions": 0,
+              "witnesses": 935
+            },
+            {
+              "width": 68,
+              "gaps": 54,
+              "exceptions": 0,
+              "witnesses": 453
+            },
+            {
+              "width": 70,
+              "gaps": 37,
+              "exceptions": 0,
+              "witnesses": 309
+            },
+            {
+              "width": 72,
+              "gaps": 59,
+              "exceptions": 0,
+              "witnesses": 527
+            },
+            {
+              "width": 74,
+              "gaps": 26,
+              "exceptions": 0,
+              "witnesses": 242
+            },
+            {
+              "width": 76,
+              "gaps": 22,
+              "exceptions": 0,
+              "witnesses": 197
+            },
+            {
+              "width": 78,
+              "gaps": 34,
+              "exceptions": 0,
+              "witnesses": 337
+            },
+            {
+              "width": 80,
+              "gaps": 14,
+              "exceptions": 0,
+              "witnesses": 133
+            },
+            {
+              "width": 82,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 98
+            },
+            {
+              "width": 84,
+              "gaps": 30,
+              "exceptions": 0,
+              "witnesses": 297
+            },
+            {
+              "width": 86,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 62
+            },
+            {
+              "width": 88,
+              "gaps": 13,
+              "exceptions": 0,
+              "witnesses": 138
+            },
+            {
+              "width": 90,
+              "gaps": 16,
+              "exceptions": 0,
+              "witnesses": 172
+            },
+            {
+              "width": 92,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 70
+            },
+            {
+              "width": 94,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 48
+            },
+            {
+              "width": 96,
+              "gaps": 11,
+              "exceptions": 0,
+              "witnesses": 126
+            },
+            {
+              "width": 98,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 25
+            },
+            {
+              "width": 100,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 63
+            },
+            {
+              "width": 102,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 104,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 38
+            },
+            {
+              "width": 106,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 108,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 110,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 112,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 42
+            },
+            {
+              "width": 114,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 51
+            },
+            {
+              "width": 116,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            },
+            {
+              "width": 118,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 37
+            },
+            {
+              "width": 120,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 122,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 29
+            },
+            {
+              "width": 124,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 19
+            },
+            {
+              "width": 138,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 10
+            },
+            {
+              "width": 140,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 16
+            },
+            {
+              "width": 142,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 13
+            },
+            {
+              "width": 154,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 17
+            }
+          ]
+        },
+        {
+          "seed": 161803,
+          "gaps": 70288,
+          "exceptions": 10492,
+          "exceptionRate": 0.14927156840427955,
+          "totalWitnesses": 143913,
+          "avgWitnesses": 2.0474760983382656,
+          "maxWidth": 146,
+          "maxWitnessCount": 18,
+          "topExceptions": [
+            {
+              "start": 1216223,
+              "end": 1216249,
+              "width": 26,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1899017,
+              "end": 1899043,
+              "width": 26,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1333925,
+              "end": 1333949,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1781207,
+              "end": 1781231,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1016089,
+              "end": 1016111,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1030459,
+              "end": 1030481,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1193785,
+              "end": 1193807,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1503589,
+              "end": 1503611,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1775749,
+              "end": 1775771,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1786801,
+              "end": 1786823,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 1643693,
+              "end": 1643839,
+              "width": 146,
+              "roughCount": 18,
+              "firstOffset": 6
+            },
+            {
+              "start": 1935979,
+              "end": 1936117,
+              "width": 138,
+              "roughCount": 17,
+              "firstOffset": 12
+            },
+            {
+              "start": 1036439,
+              "end": 1036561,
+              "width": 122,
+              "roughCount": 15,
+              "firstOffset": 8
+            },
+            {
+              "start": 1260857,
+              "end": 1260979,
+              "width": 122,
+              "roughCount": 15,
+              "firstOffset": 14
+            },
+            {
+              "start": 1051885,
+              "end": 1052005,
+              "width": 120,
+              "roughCount": 15,
+              "firstOffset": 4
+            },
+            {
+              "start": 1460899,
+              "end": 1460995,
+              "width": 96,
+              "roughCount": 15,
+              "firstOffset": 4
+            },
+            {
+              "start": 1440137,
+              "end": 1440269,
+              "width": 132,
+              "roughCount": 14,
+              "firstOffset": 2
+            },
+            {
+              "start": 1329193,
+              "end": 1329319,
+              "width": 126,
+              "roughCount": 14,
+              "firstOffset": 4
+            },
+            {
+              "start": 1163315,
+              "end": 1163425,
+              "width": 110,
+              "roughCount": 14,
+              "firstOffset": 14
+            },
+            {
+              "start": 1706783,
+              "end": 1706891,
+              "width": 108,
+              "roughCount": 14,
+              "firstOffset": 8
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 7325,
+              "exceptions": 0,
+              "witnesses": 7325
+            },
+            {
+              "width": 4,
+              "gaps": 7457,
+              "exceptions": 7457,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 11619,
+              "exceptions": 2292,
+              "witnesses": 9327
+            },
+            {
+              "width": 8,
+              "gaps": 4634,
+              "exceptions": 301,
+              "witnesses": 6336
+            },
+            {
+              "width": 10,
+              "gaps": 4680,
+              "exceptions": 235,
+              "witnesses": 6457
+            },
+            {
+              "width": 12,
+              "gaps": 7351,
+              "exceptions": 110,
+              "witnesses": 13706
+            },
+            {
+              "width": 14,
+              "gaps": 2913,
+              "exceptions": 41,
+              "witnesses": 6661
+            },
+            {
+              "width": 16,
+              "gaps": 2894,
+              "exceptions": 20,
+              "witnesses": 6656
+            },
+            {
+              "width": 18,
+              "gaps": 4508,
+              "exceptions": 22,
+              "witnesses": 12214
+            },
+            {
+              "width": 20,
+              "gaps": 1770,
+              "exceptions": 3,
+              "witnesses": 5422
+            },
+            {
+              "width": 22,
+              "gaps": 1726,
+              "exceptions": 7,
+              "witnesses": 5305
+            },
+            {
+              "width": 24,
+              "gaps": 2860,
+              "exceptions": 2,
+              "witnesses": 9800
+            },
+            {
+              "width": 26,
+              "gaps": 1132,
+              "exceptions": 2,
+              "witnesses": 4380
+            },
+            {
+              "width": 28,
+              "gaps": 1128,
+              "exceptions": 0,
+              "witnesses": 4366
+            },
+            {
+              "width": 30,
+              "gaps": 1713,
+              "exceptions": 0,
+              "witnesses": 7326
+            },
+            {
+              "width": 32,
+              "gaps": 720,
+              "exceptions": 0,
+              "witnesses": 3276
+            },
+            {
+              "width": 34,
+              "gaps": 712,
+              "exceptions": 0,
+              "witnesses": 3327
+            },
+            {
+              "width": 36,
+              "gaps": 1111,
+              "exceptions": 0,
+              "witnesses": 5608
+            },
+            {
+              "width": 38,
+              "gaps": 437,
+              "exceptions": 0,
+              "witnesses": 2351
+            },
+            {
+              "width": 40,
+              "gaps": 422,
+              "exceptions": 0,
+              "witnesses": 2289
+            },
+            {
+              "width": 42,
+              "gaps": 676,
+              "exceptions": 0,
+              "witnesses": 3759
+            },
+            {
+              "width": 44,
+              "gaps": 270,
+              "exceptions": 0,
+              "witnesses": 1635
+            },
+            {
+              "width": 46,
+              "gaps": 232,
+              "exceptions": 0,
+              "witnesses": 1401
+            },
+            {
+              "width": 48,
+              "gaps": 420,
+              "exceptions": 0,
+              "witnesses": 2657
+            },
+            {
+              "width": 50,
+              "gaps": 158,
+              "exceptions": 0,
+              "witnesses": 1015
+            },
+            {
+              "width": 52,
+              "gaps": 154,
+              "exceptions": 0,
+              "witnesses": 1025
+            },
+            {
+              "width": 54,
+              "gaps": 256,
+              "exceptions": 0,
+              "witnesses": 1743
+            },
+            {
+              "width": 56,
+              "gaps": 109,
+              "exceptions": 0,
+              "witnesses": 785
+            },
+            {
+              "width": 58,
+              "gaps": 87,
+              "exceptions": 0,
+              "witnesses": 672
+            },
+            {
+              "width": 60,
+              "gaps": 158,
+              "exceptions": 0,
+              "witnesses": 1169
+            },
+            {
+              "width": 62,
+              "gaps": 70,
+              "exceptions": 0,
+              "witnesses": 526
+            },
+            {
+              "width": 64,
+              "gaps": 64,
+              "exceptions": 0,
+              "witnesses": 506
+            },
+            {
+              "width": 66,
+              "gaps": 108,
+              "exceptions": 0,
+              "witnesses": 892
+            },
+            {
+              "width": 68,
+              "gaps": 48,
+              "exceptions": 0,
+              "witnesses": 408
+            },
+            {
+              "width": 70,
+              "gaps": 53,
+              "exceptions": 0,
+              "witnesses": 457
+            },
+            {
+              "width": 72,
+              "gaps": 59,
+              "exceptions": 0,
+              "witnesses": 489
+            },
+            {
+              "width": 74,
+              "gaps": 29,
+              "exceptions": 0,
+              "witnesses": 278
+            },
+            {
+              "width": 76,
+              "gaps": 22,
+              "exceptions": 0,
+              "witnesses": 190
+            },
+            {
+              "width": 78,
+              "gaps": 37,
+              "exceptions": 0,
+              "witnesses": 348
+            },
+            {
+              "width": 80,
+              "gaps": 17,
+              "exceptions": 0,
+              "witnesses": 171
+            },
+            {
+              "width": 82,
+              "gaps": 11,
+              "exceptions": 0,
+              "witnesses": 113
+            },
+            {
+              "width": 84,
+              "gaps": 29,
+              "exceptions": 0,
+              "witnesses": 297
+            },
+            {
+              "width": 86,
+              "gaps": 15,
+              "exceptions": 0,
+              "witnesses": 152
+            },
+            {
+              "width": 88,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 100
+            },
+            {
+              "width": 90,
+              "gaps": 19,
+              "exceptions": 0,
+              "witnesses": 201
+            },
+            {
+              "width": 92,
+              "gaps": 7,
+              "exceptions": 0,
+              "witnesses": 76
+            },
+            {
+              "width": 94,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 56
+            },
+            {
+              "width": 96,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 112
+            },
+            {
+              "width": 98,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 62
+            },
+            {
+              "width": 100,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 46
+            },
+            {
+              "width": 102,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 92
+            },
+            {
+              "width": 104,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 106,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 47
+            },
+            {
+              "width": 108,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 64
+            },
+            {
+              "width": 110,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 34
+            },
+            {
+              "width": 112,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 114,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 34
+            },
+            {
+              "width": 120,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 41
+            },
+            {
+              "width": 122,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 30
+            },
+            {
+              "width": 126,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 132,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 27
+            },
+            {
+              "width": 138,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 17
+            },
+            {
+              "width": 146,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 18
+            }
+          ]
+        },
+        {
+          "seed": 424242,
+          "gaps": 70832,
+          "exceptions": 10527,
+          "exceptionRate": 0.14861926812740003,
+          "totalWitnesses": 144161,
+          "avgWitnesses": 2.035252428281003,
+          "maxWidth": 156,
+          "maxWitnessCount": 19,
+          "topExceptions": [
+            {
+              "start": 1417781,
+              "end": 1417807,
+              "width": 26,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1216225,
+              "end": 1216249,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1225463,
+              "end": 1225487,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1348819,
+              "end": 1348843,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1546943,
+              "end": 1546967,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1909517,
+              "end": 1909541,
+              "width": 24,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1241209,
+              "end": 1241231,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1716529,
+              "end": 1716551,
+              "width": 22,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1296527,
+              "end": 1296547,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            },
+            {
+              "start": 1368023,
+              "end": 1368043,
+              "width": 20,
+              "roughCount": 0,
+              "firstOffset": 0
+            }
+          ],
+          "topWitnessRich": [
+            {
+              "start": 1977185,
+              "end": 1977335,
+              "width": 150,
+              "roughCount": 19,
+              "firstOffset": 2
+            },
+            {
+              "start": 1978289,
+              "end": 1978445,
+              "width": 156,
+              "roughCount": 18,
+              "firstOffset": 8
+            },
+            {
+              "start": 1207031,
+              "end": 1207141,
+              "width": 110,
+              "roughCount": 16,
+              "firstOffset": 2
+            },
+            {
+              "start": 1199603,
+              "end": 1199737,
+              "width": 134,
+              "roughCount": 15,
+              "firstOffset": 14
+            },
+            {
+              "start": 1883497,
+              "end": 1883627,
+              "width": 130,
+              "roughCount": 14,
+              "firstOffset": 4
+            },
+            {
+              "start": 1562417,
+              "end": 1562537,
+              "width": 120,
+              "roughCount": 14,
+              "firstOffset": 6
+            },
+            {
+              "start": 1391041,
+              "end": 1391159,
+              "width": 118,
+              "roughCount": 14,
+              "firstOffset": 10
+            },
+            {
+              "start": 1544407,
+              "end": 1544513,
+              "width": 106,
+              "roughCount": 14,
+              "firstOffset": 12
+            },
+            {
+              "start": 1367879,
+              "end": 1367981,
+              "width": 102,
+              "roughCount": 14,
+              "firstOffset": 2
+            },
+            {
+              "start": 1263313,
+              "end": 1263413,
+              "width": 100,
+              "roughCount": 14,
+              "firstOffset": 6
+            }
+          ],
+          "byWidth": [
+            {
+              "width": 2,
+              "gaps": 7526,
+              "exceptions": 0,
+              "witnesses": 7526
+            },
+            {
+              "width": 4,
+              "gaps": 7489,
+              "exceptions": 7489,
+              "witnesses": 0
+            },
+            {
+              "width": 6,
+              "gaps": 11914,
+              "exceptions": 2327,
+              "witnesses": 9587
+            },
+            {
+              "width": 8,
+              "gaps": 4686,
+              "exceptions": 241,
+              "witnesses": 6434
+            },
+            {
+              "width": 10,
+              "gaps": 4643,
+              "exceptions": 256,
+              "witnesses": 6356
+            },
+            {
+              "width": 12,
+              "gaps": 7316,
+              "exceptions": 121,
+              "witnesses": 13637
+            },
+            {
+              "width": 14,
+              "gaps": 2873,
+              "exceptions": 52,
+              "witnesses": 6534
+            },
+            {
+              "width": 16,
+              "gaps": 2928,
+              "exceptions": 17,
+              "witnesses": 6746
+            },
+            {
+              "width": 18,
+              "gaps": 4633,
+              "exceptions": 12,
+              "witnesses": 12603
+            },
+            {
+              "width": 20,
+              "gaps": 1769,
+              "exceptions": 4,
+              "witnesses": 5460
+            },
+            {
+              "width": 22,
+              "gaps": 1763,
+              "exceptions": 2,
+              "witnesses": 5450
+            },
+            {
+              "width": 24,
+              "gaps": 2847,
+              "exceptions": 5,
+              "witnesses": 9708
+            },
+            {
+              "width": 26,
+              "gaps": 1130,
+              "exceptions": 1,
+              "witnesses": 4425
+            },
+            {
+              "width": 28,
+              "gaps": 1133,
+              "exceptions": 0,
+              "witnesses": 4425
+            },
+            {
+              "width": 30,
+              "gaps": 1736,
+              "exceptions": 0,
+              "witnesses": 7403
+            },
+            {
+              "width": 32,
+              "gaps": 667,
+              "exceptions": 0,
+              "witnesses": 3040
+            },
+            {
+              "width": 34,
+              "gaps": 686,
+              "exceptions": 0,
+              "witnesses": 3103
+            },
+            {
+              "width": 36,
+              "gaps": 1063,
+              "exceptions": 0,
+              "witnesses": 5349
+            },
+            {
+              "width": 38,
+              "gaps": 421,
+              "exceptions": 0,
+              "witnesses": 2271
+            },
+            {
+              "width": 40,
+              "gaps": 430,
+              "exceptions": 0,
+              "witnesses": 2353
+            },
+            {
+              "width": 42,
+              "gaps": 693,
+              "exceptions": 0,
+              "witnesses": 3919
+            },
+            {
+              "width": 44,
+              "gaps": 251,
+              "exceptions": 0,
+              "witnesses": 1503
+            },
+            {
+              "width": 46,
+              "gaps": 247,
+              "exceptions": 0,
+              "witnesses": 1463
+            },
+            {
+              "width": 48,
+              "gaps": 404,
+              "exceptions": 0,
+              "witnesses": 2537
+            },
+            {
+              "width": 50,
+              "gaps": 169,
+              "exceptions": 0,
+              "witnesses": 1110
+            },
+            {
+              "width": 52,
+              "gaps": 170,
+              "exceptions": 0,
+              "witnesses": 1136
+            },
+            {
+              "width": 54,
+              "gaps": 279,
+              "exceptions": 0,
+              "witnesses": 1916
+            },
+            {
+              "width": 56,
+              "gaps": 101,
+              "exceptions": 0,
+              "witnesses": 719
+            },
+            {
+              "width": 58,
+              "gaps": 95,
+              "exceptions": 0,
+              "witnesses": 699
+            },
+            {
+              "width": 60,
+              "gaps": 140,
+              "exceptions": 0,
+              "witnesses": 1064
+            },
+            {
+              "width": 62,
+              "gaps": 72,
+              "exceptions": 0,
+              "witnesses": 556
+            },
+            {
+              "width": 64,
+              "gaps": 67,
+              "exceptions": 0,
+              "witnesses": 528
+            },
+            {
+              "width": 66,
+              "gaps": 108,
+              "exceptions": 0,
+              "witnesses": 901
+            },
+            {
+              "width": 68,
+              "gaps": 42,
+              "exceptions": 0,
+              "witnesses": 347
+            },
+            {
+              "width": 70,
+              "gaps": 43,
+              "exceptions": 0,
+              "witnesses": 375
+            },
+            {
+              "width": 72,
+              "gaps": 54,
+              "exceptions": 0,
+              "witnesses": 491
+            },
+            {
+              "width": 74,
+              "gaps": 27,
+              "exceptions": 0,
+              "witnesses": 234
+            },
+            {
+              "width": 76,
+              "gaps": 29,
+              "exceptions": 0,
+              "witnesses": 259
+            },
+            {
+              "width": 78,
+              "gaps": 37,
+              "exceptions": 0,
+              "witnesses": 359
+            },
+            {
+              "width": 80,
+              "gaps": 13,
+              "exceptions": 0,
+              "witnesses": 124
+            },
+            {
+              "width": 82,
+              "gaps": 16,
+              "exceptions": 0,
+              "witnesses": 155
+            },
+            {
+              "width": 84,
+              "gaps": 30,
+              "exceptions": 0,
+              "witnesses": 301
+            },
+            {
+              "width": 86,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 85
+            },
+            {
+              "width": 88,
+              "gaps": 12,
+              "exceptions": 0,
+              "witnesses": 121
+            },
+            {
+              "width": 90,
+              "gaps": 10,
+              "exceptions": 0,
+              "witnesses": 106
+            },
+            {
+              "width": 92,
+              "gaps": 6,
+              "exceptions": 0,
+              "witnesses": 72
+            },
+            {
+              "width": 94,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 97
+            },
+            {
+              "width": 96,
+              "gaps": 8,
+              "exceptions": 0,
+              "witnesses": 88
+            },
+            {
+              "width": 98,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 45
+            },
+            {
+              "width": 100,
+              "gaps": 3,
+              "exceptions": 0,
+              "witnesses": 35
+            },
+            {
+              "width": 102,
+              "gaps": 9,
+              "exceptions": 0,
+              "witnesses": 107
+            },
+            {
+              "width": 104,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 106,
+              "gaps": 5,
+              "exceptions": 0,
+              "witnesses": 59
+            },
+            {
+              "width": 108,
+              "gaps": 4,
+              "exceptions": 0,
+              "witnesses": 45
+            },
+            {
+              "width": 110,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 29
+            },
+            {
+              "width": 112,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 114,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 11
+            },
+            {
+              "width": 118,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 120,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 122,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 12
+            },
+            {
+              "width": 130,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 14
+            },
+            {
+              "width": 134,
+              "gaps": 2,
+              "exceptions": 0,
+              "witnesses": 26
+            },
+            {
+              "width": 150,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 19
+            },
+            {
+              "width": 156,
+              "gaps": 1,
+              "exceptions": 0,
+              "witnesses": 18
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

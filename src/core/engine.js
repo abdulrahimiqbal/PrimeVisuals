@@ -2,7 +2,17 @@
    parse to an AST and evaluate over a domain (n ∈ ℤ, p prime, t ∈ ℝ, or
    s ∈ ℂ), with free knobs a and b. */
 
-import { zetaC, integerLabTables, primesUpTo } from "./math.js";
+import {
+  zetaC,
+  integerLabTables,
+  primesUpTo,
+  rowVisibleValue,
+  roughIntervalWitnesses,
+  fareyBaseDivisorSurplusTable,
+  boundedCfDenominatorTable,
+  boundedCfMinHeightTable,
+  boundedCfNumeratorCountTable,
+} from "./math.js";
 
 export const CX = {
   add: (a, b) => [a[0] + b[0], a[1] + b[1]],
@@ -95,7 +105,31 @@ export function astUses(node, name) {
   return false;
 }
 
-export const makeFns = (tab) => ({
+export const makeFns = (tab) => {
+  const fareyOrdCache = new Map();
+  let cf2Table = null;
+  let cf2NumeratorTable = null;
+  let cfHeightTable = null;
+  const maxTableIndex = tab ? tab.phi.length - 1 : 0;
+  const fareyOrdTable = (base) => {
+    const b = Math.max(2, Math.round(base || 2));
+    if (!fareyOrdCache.has(b)) fareyOrdCache.set(b, fareyBaseDivisorSurplusTable(maxTableIndex, b));
+    return fareyOrdCache.get(b);
+  };
+  const cf2 = () => {
+    if (!cf2Table) cf2Table = boundedCfDenominatorTable(maxTableIndex, 2);
+    return cf2Table;
+  };
+  const cfHeight = () => {
+    if (!cfHeightTable) cfHeightTable = boundedCfMinHeightTable(maxTableIndex, 5);
+    return cfHeightTable;
+  };
+  const cf2Numerators = () => {
+    if (!cf2NumeratorTable) cf2NumeratorTable = boundedCfNumeratorCountTable(maxTableIndex, 2);
+    return cf2NumeratorTable;
+  };
+
+  return ({
   abs: (z) => [CX.abs(z), 0], arg: (z) => [Math.atan2(z[1], z[0]), 0],
   re: (z) => [z[0], 0], im: (z) => [z[1], 0], conj: (z) => [z[0], -z[1]],
   exp: CX.exp, log: CX.log, sqrt: (z) => CX.pow(z, [0.5, 0]), sin: CX.sin, cos: CX.cos,
@@ -120,8 +154,50 @@ export const makeFns = (tab) => ({
   bigomega: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.bigomega.length - 1, Math.round(z[0]))); return [tab.bigomega[k], 0]; },
   tau: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.tau.length - 1, Math.round(z[0]))); return [tab.tau[k], 0]; },
   phi: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.phi.length - 1, Math.round(z[0]))); return [tab.phi[k], 0]; },
+  fareynew: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.fareynew.length - 1, Math.round(z[0]))); return [tab.fareynew[k], 0]; },
+  fareydef: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.fareydef.length - 1, Math.round(z[0]))); return [tab.fareydef[k], 0]; },
+  fareyord: (z, b) => {
+    if (!tab) return [0, 0];
+    const ord = fareyOrdTable(b ? b[0] : 2);
+    const k = Math.max(0, Math.min(ord.length - 1, Math.round(z[0])));
+    return [ord[k], 0];
+  },
+  cf2den: (z) => {
+    if (!tab) return [0, 0];
+    const den = cf2();
+    const k = Math.max(0, Math.min(den.length - 1, Math.round(z[0])));
+    return [den[k], 0];
+  },
+  cfheight: (z) => {
+    if (!tab) return [0, 0];
+    const height = cfHeight();
+    const k = Math.max(0, Math.min(height.length - 1, Math.round(z[0])));
+    return [height[k], 0];
+  },
+  cf2num: (z) => {
+    if (!tab) return [0, 0];
+    const numerators = cf2Numerators();
+    const k = Math.max(0, Math.min(numerators.length - 1, Math.round(z[0])));
+    return [numerators[k], 0];
+  },
   rad: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.rad.length - 1, Math.round(z[0]))); return [tab.rad[k], 0]; },
-});
+  g2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.g2.length - 1, Math.round(z[0]))); return [tab.g2[k], 0]; },
+  G2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.G2.length - 1, Math.round(z[0]))); return [tab.G2[k], 0]; },
+  l2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.l2.length - 1, Math.round(z[0]))); return [tab.l2[k], 0]; },
+  L2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.L2.length - 1, Math.round(z[0]))); return [tab.L2[k], 0]; },
+  rowvis: (z, y) => {
+    if (y) return [rowVisibleValue(z[0], y[0]), 0];
+    if (!tab) return [0, 0];
+    const k = Math.max(0, Math.min(tab.rowvis.length - 1, Math.round(z[0])));
+    return [tab.rowvis[k], 0];
+  },
+  rowcount: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.rowcount.length - 1, Math.round(z[0]))); return [tab.rowcount[k], 0]; },
+  rowgap: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.rowgap.length - 1, Math.round(z[0]))); return [tab.rowgap[k], 0]; },
+  rowrun: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.rowrun.length - 1, Math.round(z[0]))); return [tab.rowrun[k], 0]; },
+  roughcount: (z, w) => [roughIntervalWitnesses(z[0], w ? w[0] : 0).count, 0],
+  roughfirst: (z, w) => [roughIntervalWitnesses(z[0], w ? w[0] : 0).firstOffset, 0],
+  });
+};
 
 /* Evaluate x/y/hue formulas over ℤ, the primes, or ℝ. Throws on parse/eval errors. */
 export function computeLabSeries(lab) {

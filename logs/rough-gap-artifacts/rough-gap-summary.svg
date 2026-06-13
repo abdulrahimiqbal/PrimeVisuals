@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#080b12"/>
+<text x="70" y="36" fill="#e5eef7" font-family="ui-monospace, Menlo, monospace" font-size="18">rough-gap exceptions / ∫[X,2X]dt/log²t</text>
+<line x1="70" x2="830" y1="350" y2="350" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="354" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">0.0</text>
+<line x1="70" x2="830" y1="303.3333333333333" y2="303.3333333333333" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="307.3333333333333" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">0.5</text>
+<line x1="70" x2="830" y1="256.6666666666667" y2="256.6666666666667" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="260.6666666666667" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">1.0</text>
+<line x1="70" x2="830" y1="210" y2="210" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="214" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">1.5</text>
+<line x1="70" x2="830" y1="163.33333333333334" y2="163.33333333333334" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="167.33333333333334" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">2.0</text>
+<line x1="70" x2="830" y1="116.66666666666666" y2="116.66666666666666" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="120.66666666666666" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">2.5</text>
+<line x1="70" x2="830" y1="70" y2="70" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="74" fill="#94a3b8" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="11">3.0</text>
+<rect x="78.9" y="94.0" width="45.6" height="256.0" rx="3" fill="#7dd3fc"/>
+<text x="101.7" y="87.97064861924946" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.74</text>
+<text x="101.7" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">real</text>
+<text x="101.7" y="381" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">X=100,000</text>
+<rect x="142.2" y="161.3" width="45.6" height="188.7" rx="3" fill="#fb7185"/>
+<text x="165.0" y="155.31204583646596" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.02</text>
+<text x="165.0" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 12345</text>
+<rect x="205.5" y="155.1" width="45.6" height="194.9" rx="3" fill="#fb7185"/>
+<text x="228.3" y="149.1060739360558" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.09</text>
+<text x="228.3" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 271828</text>
+<rect x="268.9" y="156.2" width="45.6" height="193.8" rx="3" fill="#fb7185"/>
+<text x="291.7" y="150.16240957867882" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.08</text>
+<text x="291.7" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 314159</text>
+<rect x="332.2" y="159.5" width="45.6" height="190.5" rx="3" fill="#fb7185"/>
+<text x="355.0" y="153.4634584618757" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.04</text>
+<text x="355.0" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 161803</text>
+<rect x="395.5" y="164.5" width="45.6" height="185.5" rx="3" fill="#fb7185"/>
+<text x="418.3" y="158.48105276433498" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">1.99</text>
+<text x="418.3" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 424242</text>
+<rect x="458.9" y="94.3" width="45.6" height="255.7" rx="3" fill="#7dd3fc"/>
+<text x="481.7" y="88.32422800266184" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.74</text>
+<text x="481.7" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">real</text>
+<text x="481.7" y="381" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">X=1,000,000</text>
+<rect x="522.2" y="150.4" width="45.6" height="199.6" rx="3" fill="#fb7185"/>
+<text x="545.0" y="144.38852532069475" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.14</text>
+<text x="545.0" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 12345</text>
+<rect x="585.5" y="155.2" width="45.6" height="194.8" rx="3" fill="#fb7185"/>
+<text x="608.3" y="149.16716005854056" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.09</text>
+<text x="608.3" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 271828</text>
+<rect x="648.9" y="151.4" width="45.6" height="198.6" rx="3" fill="#fb7185"/>
+<text x="671.7" y="145.44208258573164" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.13</text>
+<text x="671.7" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 314159</text>
+<rect x="712.2" y="152.6" width="45.6" height="197.4" rx="3" fill="#fb7185"/>
+<text x="735.0" y="146.60852098630818" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.11</text>
+<text x="735.0" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 161803</text>
+<rect x="775.5" y="152.0" width="45.6" height="198.0" rx="3" fill="#fb7185"/>
+<text x="798.3" y="145.95004769566012" fill="#e5eef7" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">2.12</text>
+<text x="798.3" y="368" fill="#94a3b8" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9">seed 424242</text>
+<text x="830" y="36" fill="#7dd3fc" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="12">real</text>
+<text x="830" y="54" fill="#fb7185" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="12">Cramér seeds</text>
+</svg>

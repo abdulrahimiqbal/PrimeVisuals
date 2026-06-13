@@ -30,6 +30,248 @@ export function mobiusUpTo(N) {
   return mu;
 }
 
+function oddMobius(n) {
+  let m = Math.max(1, Math.round(n));
+  let mu = 1;
+  for (let p = 3; p * p <= m; p += 2) {
+    if (m % p !== 0) continue;
+    m = Math.floor(m / p);
+    if (m % p === 0) return 0;
+    mu = -mu;
+    while (m % p === 0) m = Math.floor(m / p);
+  }
+  return m > 1 ? -mu : mu;
+}
+
+/* Dyadic exponential Mobius atom:
+   g2(n) = Σ_{2^k|n} μ(n/2^k)/k!, so Σ_{m≤x}g2(m)
+   is the factorial-weighted dyadic transform of M(x). */
+export function dyadicExpMobiusValue(n) {
+  let m = Math.round(n);
+  if (m < 1) return 0;
+  let twos = 0;
+  while (m % 2 === 0) { twos++; m = Math.floor(m / 2); }
+  const muOdd = oddMobius(m);
+  if (muOdd === 0) return 0;
+  if (twos === 0) return muOdd;
+  let prevFact = 1;
+  for (let k = 2; k <= twos - 1; k++) prevFact *= k;
+  const fact = prevFact * twos;
+  return muOdd * (1 / fact - 1 / prevFact);
+}
+
+function mangoldtValue(n) {
+  let m = Math.round(n);
+  if (m < 2) return 0;
+  let base = 0;
+  for (let p = 2; p * p <= m; p += p === 2 ? 1 : 2) {
+    if (m % p !== 0) continue;
+    base = p;
+    while (m % p === 0) m = Math.floor(m / p);
+    return m === 1 ? Math.log(base) : 0;
+  }
+  return Math.log(m);
+}
+
+/* Dyadic exponential von Mangoldt atom:
+   l2(n) = Σ_{2^k|n} Λ(n/2^k)/k!, so Σ_{m≤x}l2(m)
+   is the same transform applied to Chebyshev's ψ(x). */
+export function dyadicExpMangoldtValue(n) {
+  let m = Math.round(n);
+  if (m < 1) return 0;
+  let s = 0, fact = 1, k = 0;
+  while (m >= 1) {
+    s += mangoldtValue(m) / fact;
+    if (m % 2 !== 0) break;
+    k++;
+    fact *= k;
+    m = Math.floor(m / 2);
+  }
+  return s;
+}
+
+export function dyadicExpTransform(values, inverse = false) {
+  const out = new Float64Array(values.length);
+  const sign = inverse ? -1 : 1;
+  for (let n = 1; n <= values.length; n++) {
+    let m = n, k = 0, fact = 1, coeff = 1, sum = 0;
+    while (m >= 1) {
+      sum += coeff * values[m - 1];
+      k++;
+      fact *= k;
+      coeff = Math.pow(sign, k) / fact;
+      m = Math.floor(n / (2 ** k));
+    }
+    out[n - 1] = sum;
+  }
+  return out;
+}
+
+/* Row visibility with respect to lcm(1..y):
+   rowVisible(n, y) = 1 iff gcd(n, lcm(1..y)) = 1.
+   The implementation uses the equivalent "no divisor d in 2..y divides n"
+   test, avoiding construction of the enormous lcm. */
+export function rowVisibleValue(n, y) {
+  const m = Math.max(0, Math.round(n));
+  const yy = Math.max(1, Math.floor(y));
+  if (m < 1) return 0;
+  for (let d = 2; d <= yy; d++) if (m % d === 0) return 0;
+  return 1;
+}
+
+export function rowVisibilityTable(N, y = Math.floor(Math.sqrt(N))) {
+  const nMax = Math.max(0, Math.round(N));
+  const yy = Math.max(1, Math.min(nMax, Math.floor(y)));
+  const visible = new Uint8Array(nMax + 1);
+  const count = new Int32Array(nMax + 1);
+  const gap = new Int32Array(nMax + 1);
+  const run = new Int32Array(nMax + 1);
+  if (nMax >= 1) visible.fill(1, 1);
+  for (let d = 2; d <= yy; d++) {
+    for (let j = d; j <= nMax; j += d) visible[j] = 0;
+  }
+  let c = 0, last = 0, desert = 0;
+  for (let n = 1; n <= nMax; n++) {
+    if (visible[n]) {
+      c++;
+      gap[n] = last ? n - last : 0;
+      last = n;
+      desert = 0;
+    } else {
+      desert++;
+    }
+    count[n] = c;
+    run[n] = desert;
+  }
+  return { y: yy, visible, count, gap, run };
+}
+
+export function roughIntervalWitnesses(start, width) {
+  const a = Math.round(start);
+  const h = Math.max(0, Math.round(width));
+  let count = 0, firstOffset = 0;
+  for (let m = a + 1; m < a + h; m++) {
+    if (!rowVisibleValue(m, h - 1)) continue;
+    count++;
+    if (!firstOffset) firstOffset = m - a;
+  }
+  return { count, firstOffset };
+}
+
+function gcdInt(a, b) {
+  let x = Math.abs(Math.round(a));
+  let y = Math.abs(Math.round(b));
+  while (y) {
+    const t = x % y;
+    x = y;
+    y = t;
+  }
+  return x;
+}
+
+function basePowerValuation(n, base) {
+  let m = Math.abs(Math.round(n));
+  const b = Math.max(2, Math.round(base));
+  let e = 0;
+  while (m > 0 && m % b === 0) {
+    e++;
+    m = Math.floor(m / b);
+  }
+  return e;
+}
+
+function totientsUpTo(N) {
+  const nMax = Math.max(0, Math.round(N));
+  const phi = new Int32Array(nMax + 1);
+  for (let i = 0; i <= nMax; i++) phi[i] = i;
+  for (let p = 2; p <= nMax; p++) {
+    if (phi[p] !== p) continue;
+    for (let j = p; j <= nMax; j += p) phi[j] -= Math.floor(phi[j] / p);
+  }
+  return phi;
+}
+
+/* Reciprocal Farey-product base surplus:
+   B_b(n)=Σ_{1≤h≤k≤n, gcd(h,k)=1}(ν_b(k)-ν_b(h)).
+   For prime b=p this is the p-adic valuation ord_p(1/F_n). */
+export function fareyBaseDivisorSurplusTable(N, base) {
+  const nMax = Math.max(0, Math.round(N));
+  const b = Math.max(2, Math.round(base));
+  const phi = totientsUpTo(nMax);
+  const out = new Int32Array(nMax + 1);
+  let acc = 0;
+  for (let k = 1; k <= nMax; k++) {
+    let numeratorValuation = 0;
+    for (let h = 1; h <= k; h++) {
+      if (gcdInt(h, k) === 1) numeratorValuation += basePowerValuation(h, b);
+    }
+    acc += basePowerValuation(k, b) * phi[k] - numeratorValuation;
+    out[k] = acc;
+  }
+  return out;
+}
+
+/* Denominators of finite regular continued fractions [0; a1,...,ak]
+   whose partial quotients all lie in {1,...,maxPartial}. */
+export function boundedCfDenominatorTable(N, maxPartial) {
+  const nMax = Math.max(0, Math.round(N));
+  const bound = Math.max(1, Math.round(maxPartial));
+  const out = new Uint8Array(nMax + 1);
+  const seenState = new Set();
+  const stride = nMax + 1;
+  function visit(prevQ, q) {
+    for (let a = 1; a <= bound; a++) {
+      const nextQ = a * q + prevQ;
+      if (nextQ > nMax) break;
+      if (a > 1) out[nextQ] = 1;
+      const key = q * stride + nextQ;
+      if (seenState.has(key)) continue;
+      seenState.add(key);
+      visit(q, nextQ);
+    }
+  }
+  visit(0, 1);
+  return out;
+}
+
+export function boundedCfMinHeightTable(N, maxPartial = 5) {
+  const nMax = Math.max(0, Math.round(N));
+  const maxH = Math.max(1, Math.round(maxPartial));
+  const out = new Int16Array(nMax + 1);
+  for (let h = 1; h <= maxH; h++) {
+    const den = boundedCfDenominatorTable(nMax, h);
+    for (let n = 1; n <= nMax; n++) if (!out[n] && den[n]) out[n] = h;
+  }
+  return out;
+}
+
+export function boundedCfNumeratorCountTable(N, maxPartial) {
+  const nMax = Math.max(0, Math.round(N));
+  const bound = Math.max(1, Math.round(maxPartial));
+  const numeratorSets = new Map();
+  function record(q, p) {
+    let set = numeratorSets.get(q);
+    if (!set) {
+      set = new Set();
+      numeratorSets.set(q, set);
+    }
+    set.add(p);
+  }
+  function visit(prevP, p, prevQ, q) {
+    for (let a = 1; a <= bound; a++) {
+      const nextP = a * p + prevP;
+      const nextQ = a * q + prevQ;
+      if (nextQ > nMax) break;
+      if (a > 1) record(nextQ, nextP);
+      visit(p, nextP, q, nextQ);
+    }
+  }
+  visit(1, 0, 0, 1);
+  const out = new Uint32Array(nMax + 1);
+  for (const [q, set] of numeratorSets) out[q] = set.size;
+  return out;
+}
+
 /* ζ(1/2 + it) via the Dirichlet eta series, ζ = η / (1 − 2^{1−s}). */
 export const Z_TERMS = 3000;
 let _ln = null, _rs = null;
@@ -102,7 +344,14 @@ export function integerLabTables(N) {
   const bigomega = new Int16Array(N + 1);
   const tau = new Int32Array(N + 1);
   const phi = new Int32Array(N + 1);
+  const fareynew = new Int32Array(N + 1);
+  const fareydef = new Int32Array(N + 1);
   const rad = new Int32Array(N + 1);
+  const g2 = new Float64Array(N + 1);
+  const G2 = new Float64Array(N + 1);
+  const l2 = new Float64Array(N + 1);
+  const L2 = new Float64Array(N + 1);
+  const row = rowVisibilityTable(N);
   tau.fill(1); rad.fill(1);
   for (let i = 0; i <= N; i++) phi[i] = i;
   let pc = 0, mc = 0, lastPrime = 0;
@@ -123,8 +372,39 @@ export function integerLabTables(N) {
       while (q % p === 0) { bigomega[j]++; q = Math.floor(q / p); }
     }
   }
+  for (let i = 1; i <= N; i++) {
+    fareynew[i] = phi[i];
+    fareydef[i] = Math.max(0, i - 1 - phi[i]);
+  }
   for (let d = 2; d <= N; d++) for (let j = d; j <= N; j += d) tau[j]++;
-  return { isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, rad };
+  for (let i = 1; i <= N; i++) {
+    let s = 0, fact = 1, k = 0, d = i;
+    while (d >= 1) {
+      s += (mu[d] || 0) / fact;
+      if (d % 2 !== 0) break;
+      k++;
+      fact *= k;
+      d = Math.floor(d / 2);
+    }
+    g2[i] = s;
+    G2[i] = G2[i - 1] + s;
+
+    let ls = 0, lfact = 1, lk = 0, ld = i;
+    while (ld >= 1) {
+      const r = rad[ld];
+      ls += (r >= 2 && isp[r] ? Math.log(r) : 0) / lfact;
+      if (ld % 2 !== 0) break;
+      lk++;
+      lfact *= lk;
+      ld = Math.floor(ld / 2);
+    }
+    l2[i] = ls;
+    L2[i] = L2[i - 1] + ls;
+  }
+  return {
+    isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2,
+    rowY: row.y, rowvis: row.visible, rowcount: row.count, rowgap: row.gap, rowrun: row.run,
+  };
 }
 
 /* Logarithmic integral Li(x) (offset, Li(2) = 0) by Simpson integration. */

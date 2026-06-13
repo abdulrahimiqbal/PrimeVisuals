@@ -3,6 +3,7 @@
 
 import { T } from "./theme.js";
 import { primesUpTo, mobiusUpTo, zetaHalf, ulamXY, ZEROS, primePowersUpTo, psiExplicit } from "./math.js";
+import { polynomialPrimeSourceData } from "./ffield.js";
 
 /* ───────────────────────── shared helpers ───────────────────────── */
 
@@ -98,6 +99,26 @@ export const SOURCES = {
       const n = new Float64Array(p.N), w = new Float64Array(p.N);
       for (let i = 1; i <= p.N; i++) { n[i - 1] = i; w[i - 1] = mu[i]; }
       return { kind: "mobius", domain: "int", n, w, ww: w, stats: `μ over n ≤ ${fmt(p.N)}` };
+    },
+  },
+  polyprimes: {
+    label: "Polynomial primes F_q[t]", domain: "int",
+    blurb: "monic irreducible polynomials over F_2 or F_3; degree is the log analog",
+    params: [
+      { key: "q", label: "field size q", min: 2, max: 3, step: 1, def: 2 },
+      { key: "deg", label: "max degree", min: 2, max: 24, step: 1, def: 10 },
+    ],
+    gen: (p) => {
+      const q = Math.round(p.q) === 3 ? 3 : 2;
+      const hardMax = q === 2 ? 24 : 15;
+      const maxDegree = Math.max(1, Math.min(hardMax, Math.round(p.deg)));
+      const { universe, n, w, ww } = polynomialPrimeSourceData(q, maxDegree);
+      const total = n.length;
+      const topCount = universe.counts[maxDegree];
+      return {
+        kind: "polyprimes", domain: "int", n, w, ww, q, maxDegree,
+        stats: `F_${q}[t] · ${fmt(total)} monic irreducibles through degree ${maxDegree} · I_${maxDegree}=${fmt(topCount)}`,
+      };
     },
   },
   zeta: {
@@ -494,6 +515,7 @@ export const LIBRARY = [
   { name: "Zeta pirouette", cfg: { source: "zeta", plane: "argand", lens: "aurora", p: { tMax: 34 } } },
   { name: "Zeros on the strip", cfg: { source: "zeros", plane: "strip", lens: "mono", p: { tMax: 100 } } },
   { name: "Mertens walk", cfg: { source: "mobius", plane: "walk", lens: "signal", p: { N: 50000 } } },
+  { name: "Polynomial primes F₂[t]", cfg: { source: "polyprimes", plane: "graph", lens: "pulse", p: { q: 2, deg: 10 } } },
   { name: "Chebyshev race", cfg: { source: "primes", plane: "walk", lens: "signal", p: { N: 100000 } } },
   { name: "Gap skyline", cfg: { source: "gaps", plane: "graph", lens: "pulse", p: { N: 100000 } } },
   { name: "Prime clock m=30", cfg: { source: "primes", plane: "clock", lens: "residue", p: { N: 9000, mod: 30, kres: 30 } } },

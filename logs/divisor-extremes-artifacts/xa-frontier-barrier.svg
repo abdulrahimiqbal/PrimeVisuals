@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="980" height="520" fill="#f8f6f0"/>
+<text x="34" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#18212b">XA frontier record barrier</text>
+<text x="34" y="68" font-family="Arial, sans-serif" font-size="14" fill="#52616f">Margin = best f(n) among superabundant rows with frontier p minus the previous XA record value.</text>
+<line x1="76" y1="166.12384874024036" x2="944" y2="166.12384874024036" stroke="#4b5563" stroke-width="1.5"/>
+<line x1="76" y1="82" x2="76" y2="430" stroke="#a8a29e"/>
+<line x1="76" y1="430" x2="944" y2="430" stroke="#a8a29e"/>
+<line x1="76" y1="166.12384874024036" x2="76" y2="430" stroke="#c2410c" stroke-width="3"/>
+<circle cx="76" cy="430" r="5" fill="#c2410c"/>
+<text x="76" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">101</text>
+<line x1="110.72" y1="166.12384874024036" x2="110.72" y2="354.6585002148815" stroke="#c2410c" stroke-width="3"/>
+<circle cx="110.72" cy="354.6585002148815" r="5" fill="#c2410c"/>
+<text x="110.72" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">103</text>
+<line x1="180.16" y1="166.12384874024036" x2="180.16" y2="278.26213130942153" stroke="#c2410c" stroke-width="3"/>
+<circle cx="180.16" cy="278.26213130942153" r="5" fill="#c2410c"/>
+<text x="180.16" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">107</text>
+<line x1="214.88" y1="166.12384874024036" x2="214.88" y2="179.819892502728" stroke="#c2410c" stroke-width="3"/>
+<circle cx="214.88" cy="179.819892502728" r="5" fill="#c2410c"/>
+<text x="214.88" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">109</text>
+<line x1="284.32" y1="166.12384874024036" x2="284.32" y2="82" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="284.32" cy="82" r="5" fill="#1f8a5b"/>
+<text x="284.32" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">113</text>
+<line x1="527.36" y1="166.12384874024036" x2="527.36" y2="154.76016690264777" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="527.36" cy="154.76016690264777" r="5" fill="#1f8a5b"/>
+<text x="527.36" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">127</text>
+<line x1="596.8" y1="166.12384874024036" x2="596.8" y2="149.17514130914128" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="596.8" cy="149.17514130914128" r="5" fill="#1f8a5b"/>
+<text x="596.8" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">131</text>
+<line x1="700.9599999999999" y1="166.12384874024036" x2="700.9599999999999" y2="158.00455211476353" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="700.9599999999999" cy="158.00455211476353" r="5" fill="#1f8a5b"/>
+<text x="700.9599999999999" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">137</text>
+<line x1="735.6800000000001" y1="166.12384874024036" x2="735.6800000000001" y2="136.4434368350497" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="735.6800000000001" cy="136.4434368350497" r="5" fill="#1f8a5b"/>
+<text x="735.6800000000001" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">139</text>
+<line x1="909.28" y1="166.12384874024036" x2="909.28" y2="167.39608987927085" stroke="#c2410c" stroke-width="3"/>
+<circle cx="909.28" cy="167.39608987927085" r="5" fill="#c2410c"/>
+<text x="909.28" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">149</text>
+<text x="909.28" y="155.39608987927085" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#9a3412">149 skipped</text>
+<line x1="944" y1="166.12384874024036" x2="944" y2="144.93049576498686" stroke="#1f8a5b" stroke-width="3"/>
+<circle cx="944" cy="144.93049576498686" r="5" fill="#1f8a5b"/>
+<text x="944" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">151</text>
+<text x="76" y="66" font-family="Arial, sans-serif" font-size="12" fill="#52616f">positive: frontier can set a new XA record</text>
+<text x="76" y="486" font-family="Arial, sans-serif" font-size="13" fill="#374151">At p=149, the CA endpoint at F(p,1) is also the best scanned SA row with frontier 149, but its margin is -2.0706e-5.</text>
+</svg>

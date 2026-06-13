@@ -118,6 +118,48 @@ describe("makeFns — table functions", () => {
   it("gcd([12,0],[18,0]) → [6,0]", () => {
     expect(fns.gcd([12, 0], [18, 0])).toEqual([6, 0]);
   });
+
+  it("g2 and G2 expose the dyadic exponential Mobius atom and sum", () => {
+    expect(fns.g2([12, 0])[0]).toBeCloseTo(0.5, 14);
+    expect(fns.G2([12, 0])[0]).toBeCloseTo(tab.G2[12], 14);
+  });
+
+  it("l2 and L2 expose the dyadic exponential von Mangoldt atom and sum", () => {
+    expect(fns.l2([12, 0])[0]).toBeCloseTo(Math.log(3) / 2, 14);
+    expect(fns.L2([12, 0])[0]).toBeCloseTo(tab.L2[12], 14);
+  });
+
+  it("row visibility functions expose the lcm-row survivor table", () => {
+    expect(fns.rowvis([11, 0])[0]).toBe(1);
+    expect(fns.rowvis([49, 0])[0]).toBe(0);
+    expect(fns.rowvis([11, 0], [10, 0])[0]).toBe(1);
+    expect(fns.rowgap([13, 0])[0]).toBe(2);
+    expect(fns.rowrun([12, 0])[0]).toBe(1);
+    expect(fns.rowcount([13, 0])[0]).toBe(3);
+  });
+
+  it("rough interval functions expose rough witness counts and offsets", () => {
+    expect(fns.roughcount([3, 0], [2, 0])[0]).toBe(1);
+    expect(fns.roughfirst([3, 0], [2, 0])[0]).toBe(1);
+    expect(fns.roughcount([7, 0], [4, 0])[0]).toBe(0);
+    expect(fns.roughfirst([7, 0], [4, 0])[0]).toBe(0);
+  });
+
+  it("Farey functions expose insertion rows and product base surplus", () => {
+    expect(fns.fareynew([6, 0])[0]).toBe(2);
+    expect(fns.fareydef([6, 0])[0]).toBe(3);
+    expect(fns.fareyord([7, 0], [2, 0])[0]).toBe(-1);
+    expect(fns.fareyord([8, 0], [3, 0])[0]).toBe(-1);
+  });
+
+  it("continued-fraction functions expose bounded-denominator tables", () => {
+    expect(fns.cf2den([5, 0])[0]).toBe(1);
+    expect(fns.cf2den([6, 0])[0]).toBe(0);
+    expect(fns.cf2num([5, 0])[0]).toBe(2);
+    expect(fns.cf2num([6, 0])[0]).toBe(0);
+    expect(fns.cfheight([6, 0])[0]).toBe(5);
+    expect(fns.cfheight([20, 0])[0]).toBe(4);
+  });
 });
 
 // ---------------------------------------------------------------------------
@@ -167,5 +209,91 @@ describe("computeLabSeries", () => {
     });
     expect(result.L).toBe(1200);
     expect(result.ys[result.L - 1]).toBeCloseTo(Math.sin(10), 10);
+  });
+
+  it("domain=int can evaluate g2(n) and G2(n)", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 12,
+      ex: "n",
+      ey: "g2(n)+G2(n)",
+      eh: "",
+      a: 1,
+      b: 1,
+    });
+    const tab = integerLabTables(12);
+    expect(result.ys[11]).toBeCloseTo(tab.g2[12] + tab.G2[12], 14);
+  });
+
+  it("domain=int can evaluate l2(n) and L2(n)", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 12,
+      ex: "n",
+      ey: "l2(n)+L2(n)",
+      eh: "",
+      a: 1,
+      b: 1,
+    });
+    const tab = integerLabTables(12);
+    expect(result.ys[11]).toBeCloseTo(tab.l2[12] + tab.L2[12], 14);
+  });
+
+  it("domain=int can evaluate row visibility functions", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 100,
+      ex: "n",
+      ey: "rowvis(n)+rowvis(n,a)+rowgap(n)+rowrun(n)+rowcount(n)",
+      eh: "",
+      a: 10,
+      b: 1,
+    });
+    const tab = integerLabTables(100);
+    expect(result.ys[12]).toBe(
+      tab.rowvis[13] + 1 + tab.rowgap[13] + tab.rowrun[13] + tab.rowcount[13],
+    );
+  });
+
+  it("domain=int can evaluate rough interval witness functions", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 60,
+      ex: "n",
+      ey: "roughcount(n,a)+roughfirst(n,a)",
+      eh: "",
+      a: 6,
+      b: 1,
+    });
+    expect(result.ys[46]).toBe(3);
+  });
+
+  it("domain=int can evaluate Farey insertion and product functions", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 12,
+      ex: "n",
+      ey: "fareynew(n)+fareydef(n)+fareyord(n,a)",
+      eh: "",
+      a: 3,
+      b: 1,
+    });
+    const tab = integerLabTables(12);
+    expect(result.ys[7]).toBe(tab.fareynew[8] + tab.fareydef[8] - 1);
+  });
+
+  it("domain=int can evaluate bounded continued-fraction functions", () => {
+    const result = computeLabSeries({
+      domain: "int",
+      N: 20,
+      ex: "n",
+      ey: "cf2den(n)+cf2num(n)+cfheight(n)",
+      eh: "",
+      a: 3,
+      b: 1,
+    });
+    expect(result.ys[4]).toBe(5);
+    expect(result.ys[5]).toBe(5);
+    expect(result.ys[19]).toBe(4);
   });
 });
