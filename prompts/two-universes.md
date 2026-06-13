@@ -1,74 +1,78 @@
-# GOAL: the Two-Universes Program, Sprint 1 — build and calibrate the function-field world
+# GOAL: the Two-Universes Program — Sprints 1–3, run in order, gated
 
-Read COUNCIL.md (the strategy this serves), MACHINE_HOW_TO_USE.md, and
-KNOWLEDGE.md. Log: `logs/<today>-two-universes.md`. This goal persists
-across sessions via HANDOFF sections.
+Read COUNCIL.md (the strategy), MACHINE_HOW_TO_USE.md, KNOWLEDGE.md.
+Log: `logs/<today>-two-universes.md`. Persists across sessions via
+HANDOFF. Do not start a sprint until the previous one's EXIT criteria
+pass; commit at each gate with the sprint named in the message.
 
 ## Why
 
-In F_q[t], the Riemann Hypothesis, twin primes, and Chowla are THEOREMS
-(Weil 1948; Sawin–Shusterman, Annals 2022). Over ℤ they are open. We are
-instrumenting the bridge: every statistic computed in both universes, with
-the function-field side calibrated against exact theorems, so the measured
-agreement (S1) or divergence (S2) between worlds becomes our primary
-object. See COUNCIL.md for the success taxonomy.
+In F_q[t], RH, twin primes, and Chowla are THEOREMS (Weil 1948;
+Sawin–Shusterman, Annals 2022). Over ℤ they are open. We instrument the
+bridge: every statistic computed in both universes; the function-field
+side calibrated against exact theorems; measured agreement (S1) or
+divergence (S2) between worlds is the primary object (see COUNCIL.md).
+Every claim carries a universe label — [F_q[t]: THEOREM], [F_q[t]:
+measured], [ℤ: measured], [ℤ: conjecture] — never mix grades. The Mertens
+lesson applies only to the ℤ column; that asymmetry is the point.
 
-## Part 1 — build the universe (with tests)
+## SPRINT 1 — build the universe
 
-In src/core/ffield.js implement, for q = 2 and 3:
-- Monic polynomial enumeration by degree n ≤ ~24 (q=2) / ~15 (q=3),
-  represented compactly (bitmask for F_2).
-- Irreducibility via distinct-degree sieving (polynomial Eratosthenes:
-  cross off products), NOT per-poly factoring.
-- Polynomial Möbius μ(f) (0 if a square factor; else (−1)^{#irreducible factors}).
-- Counts must match the EXACT formula: the number of monic irreducibles of
-  degree n is (1/n)·Σ_{d|n} μ(d)·q^(n/d). This is the unit test anchor —
-  verify for all n you support.
-- Twin pairs: (f, f+1) both irreducible (and (f, f+t) as a second shift).
-- Expose as a SOURCE in the registry ("Polynomial primes F_q[t]": x = index
-  or integer encoding of f, with degree as the log-analog) so existing
-  planes/lenses/chips/Readouts work on it. Tests throughout.
+In src/core/ffield.js, for q = 2 and 3:
+- Monic polynomials by degree (n ≤ ~24 for q=2, ~15 for q=3), bitmask
+  representation for F_2.
+- Irreducibility via polynomial Eratosthenes (cross off products), not
+  per-poly factoring. Polynomial Möbius μ(f). Twin pairs (f, f+1) and
+  (f, f+t).
+- Registry SOURCE ("Polynomial primes F_q[t]", degree as the log-analog)
+  so existing planes/lenses/chips/readouts work on it.
+EXIT: tests pass anchoring counts to the EXACT formula
+#irreducibles(n) = (1/n)·Σ_{d|n} μ(d)·q^(n/d) for every supported n;
+`shot` of the source rendering in-app; KNOWLEDGE entry listing which
+statements are theorems in this universe (with citations). Commit.
 
-## Part 2 — calibration experiments (exact side must match theorems)
+## SPRINT 2 — calibrate against theorems
 
-1. **PNT analog**: plot/measure #irreducibles vs the exact formula —
-   must match exactly (this validates the build, not the math).
-2. **Chowla two-point**: C(h, n) = average of μ(f)μ(f+h) over deg f = n,
-   for h ∈ {1, t, t+1}. Sawin–Shusterman ⇒ decay (q=3 satisfies their
-   condition; note any q=2 caveat you find). Measure the decay rate.
-   Then compute the integer analog Σ μ(m)μ(m+h)/m normalization at
-   N = 10^7–10^8 and put the two decay curves on one plot. The GAP
-   between curves is the deliverable, not either curve alone.
-3. **Twin densities**: twin-irreducible counts vs the Hardy–Littlewood
-   polynomial analog (explicit singular-series product over irreducibles)
-   and integer twins vs 2C₂·∫dt/log²t (properly integrated main term).
-   Report both ratios observed/predicted as range grows, on one axis
-   (degree n ↔ log N alignment: n plays the role of log N).
+1. PNT analog: measured irreducible counts vs the exact formula (must
+   match — validates the build).
+2. Chowla two-point: C(h,n) = avg of μ(f)μ(f+h) over deg f = n for
+   h ∈ {1, t, t+1} — decay is a theorem (note any q=2 caveat in
+   Sawin–Shusterman's condition). Compute the integer analog at
+   N = 10^7–10^8. Put both decay curves on ONE plot; the gap between
+   curves is the deliverable.
+3. Twin densities: twin-irreducibles vs the polynomial Hardy–Littlewood
+   singular series; integer twins vs 2C₂·∫dt/log²t (integrated main term,
+   not c·x/log x). Both observed/predicted ratios on one axis, aligning
+   degree n ↔ log N.
+EXIT: all three calibrations logged with `shot`s and links; decay-rate and
+density-gap numbers in KNOWLEDGE with universe labels. Commit.
 
-## Part 3 — first divergence hunt
+## SPRINT 3 — first divergence hunt
 
-Run the matched battery: for each statistic in src/core/stats.js that
-makes sense in both worlds (residue/χ² with poly moduli, gap
-autocorrelation in the ordered-by-(degree, value) sequence, spacing
-histograms), compute both universes + Cramér-style nulls for each.
-Produce a DIVERGENCE table: statistic | F_q[t] value | ℤ value | matched
-null | verdict (SHARED-LAW candidate / DIVERGENCE candidate / noise).
-Apply the standard discipline (range doubling, predeclared thresholds).
-⭐-flag anything in the first two verdict classes.
+Generalize the anomaly battery (src/core/stats.js + anomaly.js patterns)
+to run MATCHED in both universes: residue/χ² with polynomial moduli, gap
+autocorrelation in the (degree, value)-ordered sequence, spacing
+histograms, exponential-sum analogs where sensible. Each statistic gets:
+F_q[t] value, ℤ value, a matched Cramér-style null per universe,
+predeclared thresholds, range doubling.
+Produce the DIVERGENCE TABLE: statistic | F_q[t] | ℤ | nulls | verdict ∈
+{SHARED-LAW candidate, DIVERGENCE candidate, noise}. ⭐-flag the first two
+classes; for each flagged row: persistence at 2×, `shot`, link, and a
+one-paragraph plain-language reading of what agreement or divergence
+means.
+EXIT: the table in the log and KNOWLEDGE (with CONNECTION lines to
+existing entries — the residue catalog especially), plus the single best
+S1 candidate and the single best S2 candidate, each stated precisely.
+Commit.
 
-## Deliverables
+## Deliverables (cumulative)
 
-1. src/core/ffield.js + registry integration + tests (exact-formula
-   anchored).
-2. The log with all calibration plots (`shot` for visuals).
-3. KNOWLEDGE.md entries: which function-field statements are THEOREMS
-   (with citations), the measured decay/density gaps, the divergence
-   table, CONNECTION lines to existing entries.
-4. HANDOFF if incomplete: exactly where the build or calibration stands.
+1. src/core/ffield.js + registry integration + exact-formula tests.
+2. The log: every batch, calibration plots, the divergence table.
+3. KNOWLEDGE.md entries per sprint, universe-labeled, with citations.
+4. Final report: build status, calibration verdicts, top S1 and S2
+   candidates with links — and a HANDOFF if any sprint is incomplete.
 
-## Rules
-
-Honesty regime as always. One addition: in this program every claim gets a
-universe label — [F_q[t]: THEOREM], [F_q[t]: measured], [ℤ: measured],
-[ℤ: conjecture] — never mix grades. The Mertens lesson applies only to the
-ℤ column; that asymmetry is the whole point of the program.
+Honesty regime as always: predeclared nulls, no all-x claims from finite
+ℤ data, ranked graveyard is a valid outcome, STUCK PACK after two stuck
+sessions.
