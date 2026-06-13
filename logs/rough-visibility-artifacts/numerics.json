@@ -1,0 +1,799 @@
+{
+  "object": "rough-row visibility",
+  "generatedAt": "2026-06-12T17:45:16.469Z",
+  "ranges": [
+    1000000,
+    10000000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "results": [
+    {
+      "N": 1000000,
+      "y": 1000,
+      "rowDefinition": "rowvis(n,y)=1 iff gcd(n,lcm(1..y))=1",
+      "exactBridgeWindow": "(floor(sqrt(N)), N] with y=floor(sqrt(N))",
+      "visibleCount": 78330,
+      "primeCountAboveY": 78330,
+      "liMainTerm": 78449.93950147163,
+      "countMinusLi": -119.93950147162832,
+      "visibleCompositeAboveY": 0,
+      "missingPrimeAboveY": 0,
+      "realGaps": {
+        "maxGap": 114,
+        "start": 492113,
+        "end": 492227,
+        "normalizedAtStart": 8.697998414931552,
+        "overLogSquaredN": 0.5972718437689409,
+        "top": [
+          {
+            "gap": 114,
+            "start": 492113,
+            "end": 492227,
+            "normalized": 8.697998414931552
+          },
+          {
+            "gap": 112,
+            "start": 370261,
+            "end": 370373,
+            "normalized": 8.735011647190985
+          },
+          {
+            "gap": 100,
+            "start": 396733,
+            "end": 396833,
+            "normalized": 7.757338782468821
+          },
+          {
+            "gap": 100,
+            "start": 838249,
+            "end": 838349,
+            "normalized": 7.331877946516902
+          },
+          {
+            "gap": 98,
+            "start": 604073,
+            "end": 604171,
+            "normalized": 7.362082835944221
+          },
+          {
+            "gap": 96,
+            "start": 360653,
+            "end": 360749,
+            "normalized": 7.502537055462237
+          },
+          {
+            "gap": 96,
+            "start": 860143,
+            "end": 860239,
+            "normalized": 7.025322075694928
+          },
+          {
+            "gap": 92,
+            "start": 927869,
+            "end": 927961,
+            "normalized": 6.695464033102491
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 78408,
+          "countMinusLi": -41.93950147162832,
+          "rowInvisibleHits": 59889,
+          "rowInvisibleRate": 0.7638123660850934,
+          "gaps": {
+            "maxGap": 138,
+            "start": 420035,
+            "end": 420173,
+            "normalizedAtStart": 10.657939867142689,
+            "overLogSquaredN": 0.7230120285459576,
+            "top": [
+              {
+                "gap": 138,
+                "start": 420035,
+                "end": 420173,
+                "normalized": 10.657939867142689
+              },
+              {
+                "gap": 132,
+                "start": 823195,
+                "end": 823327,
+                "normalized": 9.690955154087481
+              },
+              {
+                "gap": 126,
+                "start": 534095,
+                "end": 534221,
+                "normalized": 9.553901783516507
+              },
+              {
+                "gap": 124,
+                "start": 929653,
+                "end": 929777,
+                "normalized": 9.023059732030255
+              },
+              {
+                "gap": 116,
+                "start": 729377,
+                "end": 729493,
+                "normalized": 8.592626947765478
+              },
+              {
+                "gap": 114,
+                "start": 997727,
+                "end": 997841,
+                "normalized": 8.252954520875308
+              },
+              {
+                "gap": 108,
+                "start": 495311,
+                "end": 495419,
+                "normalized": 8.236138556045665
+              },
+              {
+                "gap": 106,
+                "start": 138469,
+                "end": 138575,
+                "normalized": 8.953911365151537
+              }
+            ]
+          }
+        },
+        {
+          "seed": 271828,
+          "count": 78449,
+          "countMinusLi": -0.9395014716283185,
+          "rowInvisibleHits": 59897,
+          "rowInvisibleRate": 0.7635151499700442,
+          "gaps": {
+            "maxGap": 124,
+            "start": 765025,
+            "end": 765149,
+            "normalizedAtStart": 9.152869594616126,
+            "overLogSquaredN": 0.64966298217173,
+            "top": [
+              {
+                "gap": 124,
+                "start": 765025,
+                "end": 765149,
+                "normalized": 9.152869594616126
+              },
+              {
+                "gap": 120,
+                "start": 123973,
+                "end": 124093,
+                "normalized": 10.232081446026255
+              },
+              {
+                "gap": 114,
+                "start": 432701,
+                "end": 432815,
+                "normalized": 8.784230019511392
+              },
+              {
+                "gap": 114,
+                "start": 693337,
+                "end": 693451,
+                "normalized": 8.476295568236932
+              },
+              {
+                "gap": 112,
+                "start": 873223,
+                "end": 873335,
+                "normalized": 8.1871666751314
+              },
+              {
+                "gap": 110,
+                "start": 185051,
+                "end": 185161,
+                "normalized": 9.069631628862231
+              },
+              {
+                "gap": 110,
+                "start": 968867,
+                "end": 968977,
+                "normalized": 7.980334930313257
+              },
+              {
+                "gap": 108,
+                "start": 489365,
+                "end": 489473,
+                "normalized": 8.243731156303308
+              }
+            ]
+          }
+        },
+        {
+          "seed": 314159,
+          "count": 78065,
+          "countMinusLi": -384.9395014716283,
+          "rowInvisibleHits": 59659,
+          "rowInvisibleRate": 0.7642221225901492,
+          "gaps": {
+            "maxGap": 132,
+            "start": 380075,
+            "end": 380207,
+            "normalizedAtStart": 10.273873541864688,
+            "overLogSquaredN": 0.6915773236583265,
+            "top": [
+              {
+                "gap": 132,
+                "start": 380075,
+                "end": 380207,
+                "normalized": 10.273873541864688
+              },
+              {
+                "gap": 132,
+                "start": 776959,
+                "end": 777091,
+                "normalized": 9.732257586144335
+              },
+              {
+                "gap": 124,
+                "start": 644365,
+                "end": 644489,
+                "normalized": 9.270320641069263
+              },
+              {
+                "gap": 122,
+                "start": 869897,
+                "end": 870019,
+                "normalized": 8.920652200001612
+              },
+              {
+                "gap": 120,
+                "start": 744185,
+                "end": 744305,
+                "normalized": 8.87571014320003
+              },
+              {
+                "gap": 116,
+                "start": 272255,
+                "end": 272371,
+                "normalized": 9.269251815995254
+              },
+              {
+                "gap": 114,
+                "start": 438443,
+                "end": 438557,
+                "normalized": 8.775316050117437
+              },
+              {
+                "gap": 110,
+                "start": 410219,
+                "end": 410329,
+                "normalized": 8.511002810843209
+              }
+            ]
+          }
+        },
+        {
+          "seed": 161803,
+          "count": 78318,
+          "countMinusLi": -131.93950147162832,
+          "rowInvisibleHits": 59729,
+          "rowInvisibleRate": 0.7626471564646696,
+          "gaps": {
+            "maxGap": 150,
+            "start": 856499,
+            "end": 856649,
+            "normalizedAtStart": 10.980477244288311,
+            "overLogSquaredN": 0.7858840049591328,
+            "top": [
+              {
+                "gap": 150,
+                "start": 856499,
+                "end": 856649,
+                "normalized": 10.980477244288311
+              },
+              {
+                "gap": 132,
+                "start": 332105,
+                "end": 332237,
+                "normalized": 10.382903824035857
+              },
+              {
+                "gap": 126,
+                "start": 536881,
+                "end": 537007,
+                "normalized": 9.550134293981602
+              },
+              {
+                "gap": 118,
+                "start": 798139,
+                "end": 798257,
+                "normalized": 8.682830731913825
+              },
+              {
+                "gap": 116,
+                "start": 415109,
+                "end": 415225,
+                "normalized": 8.967017782813638
+              },
+              {
+                "gap": 116,
+                "start": 928595,
+                "end": 928711,
+                "normalized": 8.441626318048819
+              },
+              {
+                "gap": 114,
+                "start": 813619,
+                "end": 813733,
+                "normalized": 8.37665713679837
+              },
+              {
+                "gap": 114,
+                "start": 840137,
+                "end": 840251,
+                "normalized": 8.356962367842883
+              }
+            ]
+          }
+        },
+        {
+          "seed": 424242,
+          "count": 78959,
+          "countMinusLi": 509.0604985283717,
+          "rowInvisibleHits": 60180,
+          "rowInvisibleRate": 0.7621677072911258,
+          "gaps": {
+            "maxGap": 132,
+            "start": 757171,
+            "end": 757303,
+            "normalizedAtStart": 9.750804597523,
+            "overLogSquaredN": 0.6915777241283128,
+            "top": [
+              {
+                "gap": 132,
+                "start": 757171,
+                "end": 757303,
+                "normalized": 9.750804597523
+              },
+              {
+                "gap": 120,
+                "start": 852215,
+                "end": 852335,
+                "normalized": 8.787607403473482
+              },
+              {
+                "gap": 116,
+                "start": 921881,
+                "end": 921997,
+                "normalized": 8.446086508885575
+              },
+              {
+                "gap": 114,
+                "start": 652147,
+                "end": 652261,
+                "normalized": 8.515072062763766
+              },
+              {
+                "gap": 114,
+                "start": 793897,
+                "end": 794011,
+                "normalized": 8.391788143962088
+              },
+              {
+                "gap": 110,
+                "start": 541895,
+                "end": 542005,
+                "normalized": 8.331548655827959
+              },
+              {
+                "gap": 108,
+                "start": 791659,
+                "end": 791767,
+                "normalized": 7.951767510114844
+              },
+              {
+                "gap": 108,
+                "start": 799667,
+                "end": 799775,
+                "normalized": 7.945879338601793
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "N": 10000000,
+      "y": 3162,
+      "rowDefinition": "rowvis(n,y)=1 iff gcd(n,lcm(1..y))=1",
+      "exactBridgeWindow": "(floor(sqrt(N)), N] with y=floor(sqrt(N))",
+      "visibleCount": 664133,
+      "primeCountAboveY": 664133,
+      "liMainTerm": 664455.4786958446,
+      "countMinusLi": -322.47869584464934,
+      "visibleCompositeAboveY": 0,
+      "missingPrimeAboveY": 0,
+      "realGaps": {
+        "maxGap": 154,
+        "start": 4652353,
+        "end": 4652507,
+        "normalizedAtStart": 10.03068891155968,
+        "overLogSquaredN": 0.5927796853784864,
+        "top": [
+          {
+            "gap": 154,
+            "start": 4652353,
+            "end": 4652507,
+            "normalized": 10.03068891155968
+          },
+          {
+            "gap": 152,
+            "start": 8421251,
+            "end": 8421403,
+            "normalized": 9.532010307650042
+          },
+          {
+            "gap": 148,
+            "start": 2010733,
+            "end": 2010881,
+            "normalized": 10.197044174552891
+          },
+          {
+            "gap": 148,
+            "start": 7230331,
+            "end": 7230479,
+            "normalized": 9.370768487887135
+          },
+          {
+            "gap": 146,
+            "start": 6034247,
+            "end": 6034393,
+            "normalized": 9.351204687230014
+          },
+          {
+            "gap": 140,
+            "start": 7621259,
+            "end": 7621399,
+            "normalized": 8.834785148665706
+          },
+          {
+            "gap": 140,
+            "start": 8917523,
+            "end": 8917663,
+            "normalized": 8.748070626467989
+          },
+          {
+            "gap": 138,
+            "start": 3826019,
+            "end": 3826157,
+            "normalized": 9.104502632144415
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 663835,
+          "countMinusLi": -620.4786958446493,
+          "rowInvisibleHits": 530783,
+          "rowInvisibleRate": 0.7995706764482138,
+          "gaps": {
+            "maxGap": 194,
+            "start": 9716381,
+            "end": 9716575,
+            "normalizedAtStart": 12.057685122664736,
+            "overLogSquaredN": 0.7467483977635632,
+            "top": [
+              {
+                "gap": 194,
+                "start": 9716381,
+                "end": 9716575,
+                "normalized": 12.057685122664736
+              },
+              {
+                "gap": 182,
+                "start": 5529209,
+                "end": 5529391,
+                "normalized": 11.722608060498867
+              },
+              {
+                "gap": 172,
+                "start": 5283409,
+                "end": 5283581,
+                "normalized": 11.111052188595947
+              },
+              {
+                "gap": 168,
+                "start": 2145787,
+                "end": 2145955,
+                "normalized": 11.523410711360707
+              },
+              {
+                "gap": 168,
+                "start": 5529523,
+                "end": 5529691,
+                "normalized": 10.820829399657727
+              },
+              {
+                "gap": 168,
+                "start": 7719709,
+                "end": 7719877,
+                "normalized": 10.593162075663187
+              },
+              {
+                "gap": 168,
+                "start": 9298475,
+                "end": 9298643,
+                "normalized": 10.47031602181313
+              },
+              {
+                "gap": 162,
+                "start": 5397421,
+                "end": 5397583,
+                "normalized": 10.450647529812583
+              }
+            ]
+          }
+        },
+        {
+          "seed": 271828,
+          "count": 663767,
+          "countMinusLi": -688.4786958446493,
+          "rowInvisibleHits": 530903,
+          "rowInvisibleRate": 0.7998333752657183,
+          "gaps": {
+            "maxGap": 210,
+            "start": 2927449,
+            "end": 2927659,
+            "normalizedAtStart": 14.103764258316103,
+            "overLogSquaredN": 0.8083360549692287,
+            "top": [
+              {
+                "gap": 210,
+                "start": 2927449,
+                "end": 2927659,
+                "normalized": 14.103764258316103
+              },
+              {
+                "gap": 190,
+                "start": 5123611,
+                "end": 5123801,
+                "normalized": 12.298236091899028
+              },
+              {
+                "gap": 186,
+                "start": 7104025,
+                "end": 7104211,
+                "normalized": 11.789932248703094
+              },
+              {
+                "gap": 174,
+                "start": 6018121,
+                "end": 6018295,
+                "normalized": 11.146496866675314
+              },
+              {
+                "gap": 162,
+                "start": 3182831,
+                "end": 3182993,
+                "normalized": 10.819271567608265
+              },
+              {
+                "gap": 162,
+                "start": 4727591,
+                "end": 4727753,
+                "normalized": 10.54074933657532
+              },
+              {
+                "gap": 162,
+                "start": 8976083,
+                "end": 8976245,
+                "normalized": 10.11862896111263
+              },
+              {
+                "gap": 158,
+                "start": 3232013,
+                "end": 3232171,
+                "normalized": 10.541333698999816
+              }
+            ]
+          }
+        },
+        {
+          "seed": 314159,
+          "count": 663954,
+          "countMinusLi": -501.47869584464934,
+          "rowInvisibleHits": 530875,
+          "rowInvisibleRate": 0.7995659337845694,
+          "gaps": {
+            "maxGap": 244,
+            "start": 3921583,
+            "end": 3921827,
+            "normalizedAtStart": 16.0716575065638,
+            "overLogSquaredN": 0.93920960472111,
+            "top": [
+              {
+                "gap": 244,
+                "start": 3921583,
+                "end": 3921827,
+                "normalized": 16.0716575065638
+              },
+              {
+                "gap": 188,
+                "start": 9271697,
+                "end": 9271885,
+                "normalized": 11.718888559566894
+              },
+              {
+                "gap": 184,
+                "start": 5436919,
+                "end": 5437103,
+                "normalized": 11.864290750190538
+              },
+              {
+                "gap": 168,
+                "start": 7828985,
+                "end": 7829153,
+                "normalized": 10.583781592174057
+              },
+              {
+                "gap": 166,
+                "start": 5239261,
+                "end": 5239427,
+                "normalized": 10.729273214562886
+              },
+              {
+                "gap": 164,
+                "start": 9710153,
+                "end": 9710317,
+                "normalized": 10.193500866852359
+              },
+              {
+                "gap": 162,
+                "start": 2592461,
+                "end": 2592623,
+                "normalized": 10.969576358611224
+              },
+              {
+                "gap": 154,
+                "start": 1968025,
+                "end": 1968179,
+                "normalized": 10.62615585251203
+              }
+            ]
+          }
+        },
+        {
+          "seed": 161803,
+          "count": 665511,
+          "countMinusLi": 1055.5213041553507,
+          "rowInvisibleHits": 532478,
+          "rowInvisibleRate": 0.8001039802497629,
+          "gaps": {
+            "maxGap": 204,
+            "start": 7753817,
+            "end": 7754021,
+            "normalizedAtStart": 12.859550675997463,
+            "overLogSquaredN": 0.785240797574668,
+            "top": [
+              {
+                "gap": 204,
+                "start": 7753817,
+                "end": 7754021,
+                "normalized": 12.859550675997463
+              },
+              {
+                "gap": 198,
+                "start": 8661889,
+                "end": 8662087,
+                "normalized": 12.394798066798947
+              },
+              {
+                "gap": 166,
+                "start": 3992755,
+                "end": 3992921,
+                "normalized": 10.921058360257824
+              },
+              {
+                "gap": 164,
+                "start": 7939049,
+                "end": 7939213,
+                "normalized": 10.322707959479805
+              },
+              {
+                "gap": 156,
+                "start": 8628689,
+                "end": 8628845,
+                "normalized": 9.767946685328285
+              },
+              {
+                "gap": 150,
+                "start": 856499,
+                "end": 856649,
+                "normalized": 10.980477244288311
+              },
+              {
+                "gap": 150,
+                "start": 8908577,
+                "end": 8908727,
+                "normalized": 9.373520695276886
+              },
+              {
+                "gap": 150,
+                "start": 9224699,
+                "end": 9224849,
+                "normalized": 9.353139889016637
+              }
+            ]
+          }
+        },
+        {
+          "seed": 424242,
+          "count": 666651,
+          "countMinusLi": 2195.5213041553507,
+          "rowInvisibleHits": 532940,
+          "rowInvisibleRate": 0.7994287865764845,
+          "gaps": {
+            "maxGap": 174,
+            "start": 7889177,
+            "end": 7889351,
+            "normalizedAtStart": 10.956487245391171,
+            "overLogSquaredN": 0.6697640601029652,
+            "top": [
+              {
+                "gap": 174,
+                "start": 7889177,
+                "end": 7889351,
+                "normalized": 10.956487245391171
+              },
+              {
+                "gap": 172,
+                "start": 3704365,
+                "end": 3704537,
+                "normalized": 11.371883975750345
+              },
+              {
+                "gap": 170,
+                "start": 8213339,
+                "end": 8213509,
+                "normalized": 10.677540105450648
+              },
+              {
+                "gap": 164,
+                "start": 3285047,
+                "end": 3285211,
+                "normalized": 10.929769123048235
+              },
+              {
+                "gap": 158,
+                "start": 9476909,
+                "end": 9477067,
+                "normalized": 9.835431587721331
+              },
+              {
+                "gap": 158,
+                "start": 9978635,
+                "end": 9978793,
+                "normalized": 9.803947808978808
+              },
+              {
+                "gap": 156,
+                "start": 1978289,
+                "end": 1978445,
+                "normalized": 10.76029566869075
+              },
+              {
+                "gap": 156,
+                "start": 2731553,
+                "end": 2731709,
+                "normalized": 10.526045273030789
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

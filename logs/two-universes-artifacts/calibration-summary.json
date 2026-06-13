@@ -1,0 +1,2508 @@
+{
+  "generatedAt": "2026-06-12T21:48:20.186Z",
+  "parameters": {
+    "maxQ2": 24,
+    "maxQ3": 15,
+    "integerN": 10000000
+  },
+  "labels": {
+    "pnt": "[F_q[t]: measured] observed counts compared with [F_q[t]: THEOREM] exact formula",
+    "chowla": "[F_q[t]: measured] and [Z: measured] two-point Mobius correlations",
+    "twins": "[F_q[t]: measured]/[F_q[t]: conjecture-asymptotic] and [Z: measured]/[Z: conjecture] density ratios"
+  },
+  "pnt": [
+    {
+      "universe": "F_2[t]",
+      "degree": 1,
+      "observed": 2,
+      "exact": 2,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 2,
+      "observed": 1,
+      "exact": 1,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 3,
+      "observed": 2,
+      "exact": 2,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 4,
+      "observed": 3,
+      "exact": 3,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 5,
+      "observed": 6,
+      "exact": 6,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 6,
+      "observed": 9,
+      "exact": 9,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 7,
+      "observed": 18,
+      "exact": 18,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 8,
+      "observed": 30,
+      "exact": 30,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 9,
+      "observed": 56,
+      "exact": 56,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 10,
+      "observed": 99,
+      "exact": 99,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 11,
+      "observed": 186,
+      "exact": 186,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 12,
+      "observed": 335,
+      "exact": 335,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 13,
+      "observed": 630,
+      "exact": 630,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 14,
+      "observed": 1161,
+      "exact": 1161,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 15,
+      "observed": 2182,
+      "exact": 2182,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 16,
+      "observed": 4080,
+      "exact": 4080,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 17,
+      "observed": 7710,
+      "exact": 7710,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 18,
+      "observed": 14532,
+      "exact": 14532,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 19,
+      "observed": 27594,
+      "exact": 27594,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 20,
+      "observed": 52377,
+      "exact": 52377,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 21,
+      "observed": 99858,
+      "exact": 99858,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 22,
+      "observed": 190557,
+      "exact": 190557,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 23,
+      "observed": 364722,
+      "exact": 364722,
+      "delta": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "degree": 24,
+      "observed": 698870,
+      "exact": 698870,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 1,
+      "observed": 3,
+      "exact": 3,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 2,
+      "observed": 3,
+      "exact": 3,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 3,
+      "observed": 8,
+      "exact": 8,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 4,
+      "observed": 18,
+      "exact": 18,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 5,
+      "observed": 48,
+      "exact": 48,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 6,
+      "observed": 116,
+      "exact": 116,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 7,
+      "observed": 312,
+      "exact": 312,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 8,
+      "observed": 810,
+      "exact": 810,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 9,
+      "observed": 2184,
+      "exact": 2184,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 10,
+      "observed": 5880,
+      "exact": 5880,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 11,
+      "observed": 16104,
+      "exact": 16104,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 12,
+      "observed": 44220,
+      "exact": 44220,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 13,
+      "observed": 122640,
+      "exact": 122640,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 14,
+      "observed": 341484,
+      "exact": 341484,
+      "delta": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "degree": 15,
+      "observed": 956576,
+      "exact": 956576,
+      "delta": 0
+    }
+  ],
+  "chowla": [
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 1,
+      "value": 1
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 2,
+      "value": -0.5
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 3,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 4,
+      "value": 0.25
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 5,
+      "value": 0.125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 6,
+      "value": 0.0625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 7,
+      "value": -0.0625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 8,
+      "value": 0.03125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 9,
+      "value": -0.0234375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 10,
+      "value": -0.01953125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 11,
+      "value": -0.01171875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 12,
+      "value": 0.025390625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 13,
+      "value": -0.00439453125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 14,
+      "value": 0.008544921875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 15,
+      "value": -0.00048828125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 16,
+      "value": 0.0057373046875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 17,
+      "value": 0.001953125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 18,
+      "value": 0.0010986328125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 19,
+      "value": 0.0008697509765625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 20,
+      "value": 0.00060272216796875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 21,
+      "value": 0.0000934600830078125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 22,
+      "value": 0.0011110305786132812
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 23,
+      "value": 0.000423431396484375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 24,
+      "value": 0.00009584426879882812
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 1,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 2,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 3,
+      "value": -0.25
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 4,
+      "value": -0.125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 5,
+      "value": -0.0625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 6,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 7,
+      "value": 0.09375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 8,
+      "value": -0.0078125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 9,
+      "value": -0.00390625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 10,
+      "value": 0.0078125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 11,
+      "value": 0.017578125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 12,
+      "value": 0.01318359375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 13,
+      "value": -0.002197265625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 14,
+      "value": -0.000244140625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 15,
+      "value": 0.0052490234375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 16,
+      "value": 0.0050048828125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 17,
+      "value": -0.000244140625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 18,
+      "value": 0.000030517578125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 19,
+      "value": 0.0001068115234375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 20,
+      "value": 0.0009021759033203125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 21,
+      "value": 0.00032711029052734375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 22,
+      "value": 0.0001506805419921875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 23,
+      "value": -0.000041961669921875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 24,
+      "value": 0.00015985965728759766
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 1,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 2,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 3,
+      "value": -0.25
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 4,
+      "value": -0.125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 5,
+      "value": -0.0625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 6,
+      "value": 0
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 7,
+      "value": 0.09375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 8,
+      "value": -0.0078125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 9,
+      "value": -0.00390625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 10,
+      "value": 0.0078125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 11,
+      "value": 0.017578125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 12,
+      "value": 0.01318359375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 13,
+      "value": -0.002197265625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 14,
+      "value": -0.000244140625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 15,
+      "value": 0.0052490234375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 16,
+      "value": 0.0050048828125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 17,
+      "value": -0.000244140625
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 18,
+      "value": 0.000030517578125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 19,
+      "value": 0.0001068115234375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 20,
+      "value": 0.0009021759033203125
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 21,
+      "value": 0.00032711029052734375
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 22,
+      "value": 0.0001506805419921875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 23,
+      "value": -0.000041961669921875
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 24,
+      "value": 0.00015985965728759766
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 1,
+      "value": 1
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 2,
+      "value": -0.3333333333333333
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 3,
+      "value": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 4,
+      "value": -0.1111111111111111
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 5,
+      "value": 0.14814814814814814
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 6,
+      "value": 0.024691358024691357
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 7,
+      "value": -0.00823045267489712
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 8,
+      "value": 0.007773205304069501
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 9,
+      "value": -0.0016765736930345985
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 10,
+      "value": -0.006299852664736066
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 11,
+      "value": 0.0036410438788125115
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 12,
+      "value": 0.0006999836294151185
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 13,
+      "value": 0.0014150206702155084
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 14,
+      "value": -0.0007990852543681551
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 15,
+      "value": -0.0002473359120663337
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 1,
+      "value": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 2,
+      "value": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 3,
+      "value": -0.1111111111111111
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 4,
+      "value": 0.037037037037037035
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 5,
+      "value": 0.012345679012345678
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 6,
+      "value": 0.0823045267489712
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 7,
+      "value": 0.0027434842249657062
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 8,
+      "value": -0.0007620789513793629
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 9,
+      "value": -0.0012701315856322715
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 10,
+      "value": 0.003420887737302918
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 11,
+      "value": -0.0009370748587331425
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 12,
+      "value": 0.003087831010403789
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 13,
+      "value": 0.0005268693984844978
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 14,
+      "value": 0.0002632256240841201
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 15,
+      "value": -0.0005555823868675154
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 1,
+      "value": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 2,
+      "value": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 3,
+      "value": -0.1111111111111111
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 4,
+      "value": 0.037037037037037035
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 5,
+      "value": 0.012345679012345678
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 6,
+      "value": 0.0823045267489712
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 7,
+      "value": 0.0027434842249657062
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 8,
+      "value": -0.0007620789513793629
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 9,
+      "value": -0.0012701315856322715
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 10,
+      "value": 0.003420887737302918
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 11,
+      "value": -0.0009370748587331425
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 12,
+      "value": 0.003087831010403789
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 13,
+      "value": 0.0005268693984844978
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 14,
+      "value": 0.0002632256240841201
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 15,
+      "value": -0.0005555823868675154
+    }
+  ],
+  "chowlaFits": [
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "fit": {
+        "slope": -0.35586579136937196,
+        "intercept": -0.3287062229602775,
+        "expPerDegree": 0.70056663601513,
+        "points": 22
+      }
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "fit": {
+        "slope": -0.37795313507495076,
+        "intercept": -0.844819904145369,
+        "expPerDegree": 0.6852626146944303,
+        "points": 21
+      }
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "fit": {
+        "slope": -0.37795313507495076,
+        "intercept": -0.844819904145369,
+        "expPerDegree": 0.6852626146944303,
+        "points": 21
+      }
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "fit": {
+        "slope": -0.5281040286526075,
+        "intercept": -0.2799375947652272,
+        "expPerDegree": 0.5897220064360231,
+        "points": 13
+      }
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "fit": {
+        "slope": -0.43755531885836424,
+        "intercept": -1.7426868191477851,
+        "expPerDegree": 0.6456128108763863,
+        "points": 13
+      }
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "fit": {
+        "slope": -0.43755531885836424,
+        "intercept": -1.7426868191477851,
+        "expPerDegree": 0.6456128108763863,
+        "points": 13
+      }
+    }
+  ],
+  "integerChowla": [
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 100000,
+      "weightedSum": -0.7947431759192322,
+      "harmonic": 12.090146129863335,
+      "normalized": -0.06573478660908591
+    },
+    {
+      "universe": "Z",
+      "shift": "t",
+      "N": 100000,
+      "weightedSum": -0.6404268212406606,
+      "harmonic": 12.090146129863335,
+      "normalized": -0.05297097440855331
+    },
+    {
+      "universe": "Z",
+      "shift": "t+1",
+      "N": 100000,
+      "weightedSum": -0.5051071406809479,
+      "harmonic": 12.090146129863335,
+      "normalized": -0.04177841485582255
+    },
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 300000,
+      "weightedSum": -0.7966628171308813,
+      "harmonic": 13.188755085205663,
+      "normalized": -0.060404701731441565
+    },
+    {
+      "universe": "Z",
+      "shift": "t",
+      "N": 300000,
+      "weightedSum": -0.6404280950534383,
+      "harmonic": 13.188755085205663,
+      "normalized": -0.048558646431446084
+    },
+    {
+      "universe": "Z",
+      "shift": "t+1",
+      "N": 300000,
+      "weightedSum": -0.5041002331913486,
+      "harmonic": 13.188755085205663,
+      "normalized": -0.03822197242534417
+    },
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 1000000,
+      "weightedSum": -0.7951477229126153,
+      "harmonic": 14.392726722864989,
+      "normalized": -0.055246496249345495
+    },
+    {
+      "universe": "Z",
+      "shift": "t",
+      "N": 1000000,
+      "weightedSum": -0.6417053530503718,
+      "harmonic": 14.392726722864989,
+      "normalized": -0.04458539131649928
+    },
+    {
+      "universe": "Z",
+      "shift": "t+1",
+      "N": 1000000,
+      "weightedSum": -0.5045528993946263,
+      "harmonic": 14.392726722864989,
+      "normalized": -0.03505610223204398
+    },
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 3000000,
+      "weightedSum": -0.7938681987925265,
+      "harmonic": 15.491338678199934,
+      "normalized": -0.05124593912014146
+    },
+    {
+      "universe": "Z",
+      "shift": "t",
+      "N": 3000000,
+      "weightedSum": -0.6413841023722935,
+      "harmonic": 15.491338678199934,
+      "normalized": -0.04140275515858912
+    },
+    {
+      "universe": "Z",
+      "shift": "t+1",
+      "N": 3000000,
+      "weightedSum": -0.5043077698251265,
+      "harmonic": 15.491338678199934,
+      "normalized": -0.03255417625946101
+    },
+    {
+      "universe": "Z",
+      "shift": "1",
+      "N": 10000000,
+      "weightedSum": -0.7939835314421032,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.04755727605451183
+    },
+    {
+      "universe": "Z",
+      "shift": "t",
+      "N": 10000000,
+      "weightedSum": -0.6412551002193395,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.038409292655106606
+    },
+    {
+      "universe": "Z",
+      "shift": "t+1",
+      "N": 10000000,
+      "weightedSum": -0.5042079036190757,
+      "harmonic": 16.695311365857272,
+      "normalized": -0.030200569044205164
+    }
+  ],
+  "polyTwins": [
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 1,
+      "observed": 2,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 2,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 3,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 4,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 5,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 6,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 7,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 8,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 9,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 10,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 11,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 12,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 13,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 14,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 15,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 16,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 17,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 18,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 19,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 20,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 21,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 22,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 23,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "1",
+      "degree": 24,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 1,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 2,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 3,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 4,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 5,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 6,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 7,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 8,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 9,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 10,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 11,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 12,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 13,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 14,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 15,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 16,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 17,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 18,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 19,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 20,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 21,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 22,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 23,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t",
+      "degree": 24,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 1,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 2,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 3,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 4,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 5,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 6,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 7,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 8,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 9,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 10,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 11,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 12,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 13,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 14,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 15,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 16,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 17,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 18,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 19,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 20,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 21,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 22,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 23,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_2[t]",
+      "q": 2,
+      "shift": "t+1",
+      "degree": 24,
+      "observed": 0,
+      "singularSeries": 0,
+      "predicted": 0,
+      "ratio": null
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 1,
+      "observed": 3,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 1.1883128473413365,
+      "ratio": 2.5245877015569
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 2,
+      "observed": 0,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 0.8912346355060023,
+      "ratio": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 3,
+      "observed": 1,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 1.1883128473413365,
+      "ratio": 0.8415292338523
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 4,
+      "observed": 0,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 2.0052779298885053,
+      "ratio": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 5,
+      "observed": 6,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 3.85013362538593,
+      "ratio": 1.5583874700968519
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 6,
+      "observed": 6,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 8.021111719554021,
+      "ratio": 0.7480259856464889
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 7,
+      "observed": 15,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 17.67918501452723,
+      "ratio": 0.8484554003860637
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 8,
+      "observed": 36,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 40.60687808024223,
+      "ratio": 0.8865493163217646
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 9,
+      "observed": 105,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 96.25334063464825,
+      "ratio": 1.0908712290677962
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 10,
+      "observed": 216,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 233.89561774219524,
+      "ratio": 0.9234888711685049
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 11,
+      "observed": 585,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 579.9064902699056,
+      "ratio": 1.0087833294083737
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 12,
+      "observed": 1506,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 1461.8476108887203,
+      "ratio": 1.0302031407257544
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 13,
+      "observed": 3747,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 3736.7938929226457,
+      "ratio": 1.0027312469913539
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 14,
+      "observed": 9510,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 9666.094406692762,
+      "ratio": 0.9838513467668303
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "1",
+      "degree": 15,
+      "observed": 25555,
+      "singularSeries": 0.39610428244711215,
+      "predicted": 25260.726716157085,
+      "ratio": 1.0116494385592911
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 1,
+      "observed": 0,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2.376625694682673,
+      "ratio": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 2,
+      "observed": 1,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 1.7824692710120047,
+      "ratio": 0.5610194892348667
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 3,
+      "observed": 2,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2.376625694682673,
+      "ratio": 0.8415292338523
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 4,
+      "observed": 4,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 4.010555859777011,
+      "ratio": 0.9973679808619852
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 5,
+      "observed": 8,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 7.70026725077186,
+      "ratio": 1.038924980064568
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 6,
+      "observed": 16,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 16.042223439108042,
+      "ratio": 0.9973679808619852
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 7,
+      "observed": 34,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 35.35837002905446,
+      "ratio": 0.9615827871042055
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 8,
+      "observed": 80,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 81.21375616048446,
+      "ratio": 0.9850547959130718
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 9,
+      "observed": 190,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 192.5066812692965,
+      "ratio": 0.9869787310613395
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 10,
+      "observed": 465,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 467.7912354843905,
+      "ratio": 0.9940331599383212
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 11,
+      "observed": 1176,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 1159.8129805398112,
+      "ratio": 1.0139565772514936
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 12,
+      "observed": 2960,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2923.6952217774406,
+      "ratio": 1.0124174291328794
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 13,
+      "observed": 7264,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 7473.587785845291,
+      "ratio": 0.971956202047664
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 14,
+      "observed": 19586,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 19332.188813385525,
+      "ratio": 1.013128942049166
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t",
+      "degree": 15,
+      "observed": 50532,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 50521.45343231417,
+      "ratio": 1.0002087542414029
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 1,
+      "observed": 0,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2.376625694682673,
+      "ratio": 0
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 2,
+      "observed": 1,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 1.7824692710120047,
+      "ratio": 0.5610194892348667
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 3,
+      "observed": 2,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2.376625694682673,
+      "ratio": 0.8415292338523
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 4,
+      "observed": 4,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 4.010555859777011,
+      "ratio": 0.9973679808619852
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 5,
+      "observed": 8,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 7.70026725077186,
+      "ratio": 1.038924980064568
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 6,
+      "observed": 16,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 16.042223439108042,
+      "ratio": 0.9973679808619852
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 7,
+      "observed": 34,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 35.35837002905446,
+      "ratio": 0.9615827871042055
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 8,
+      "observed": 80,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 81.21375616048446,
+      "ratio": 0.9850547959130718
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 9,
+      "observed": 190,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 192.5066812692965,
+      "ratio": 0.9869787310613395
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 10,
+      "observed": 465,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 467.7912354843905,
+      "ratio": 0.9940331599383212
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 11,
+      "observed": 1176,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 1159.8129805398112,
+      "ratio": 1.0139565772514936
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 12,
+      "observed": 2960,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 2923.6952217774406,
+      "ratio": 1.0124174291328794
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 13,
+      "observed": 7264,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 7473.587785845291,
+      "ratio": 0.971956202047664
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 14,
+      "observed": 19586,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 19332.188813385525,
+      "ratio": 1.013128942049166
+    },
+    {
+      "universe": "F_3[t]",
+      "q": 3,
+      "shift": "t+1",
+      "degree": 15,
+      "observed": 50532,
+      "singularSeries": 0.7922085648942243,
+      "predicted": 50521.45343231417,
+      "ratio": 1.0002087542414029
+    }
+  ],
+  "integerTwins": [
+    {
+      "universe": "Z",
+      "N": 100000,
+      "observed": 1224,
+      "predicted": 1347.7405312491494,
+      "ratio": 0.9081866810561371
+    },
+    {
+      "universe": "Z",
+      "N": 300000,
+      "observed": 2994,
+      "predicted": 3218.064548794429,
+      "ratio": 0.9303728855039998
+    },
+    {
+      "universe": "Z",
+      "N": 1000000,
+      "observed": 8169,
+      "predicted": 8586.423857219801,
+      "ratio": 0.9513855984562404
+    },
+    {
+      "universe": "Z",
+      "N": 3000000,
+      "observed": 20932,
+      "predicted": 21480.937622014273,
+      "ratio": 0.974445360269018
+    },
+    {
+      "universe": "Z",
+      "N": 10000000,
+      "observed": 58980,
+      "predicted": 59850.89745954208,
+      "ratio": 0.9854488821971168
+    }
+  ]
+}

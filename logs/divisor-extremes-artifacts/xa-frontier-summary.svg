@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<rect width="980" height="420" fill="#f7f4ed"/>
+<text x="32" y="46" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#17202a">Extremely abundant frontier primes</text>
+<text x="32" y="78" font-family="Arial, sans-serif" font-size="14" fill="#34495e">Divisor-record object: XA records of sigma(n)/(n log log n), scanned over OEIS A004394 prefix</text>
+<text x="32" y="118" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Real XA through s600: 22 records, frontier primes used 15/44</text>
+<text x="32" y="146" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Skipped frontiers up to 193: 2, 3, 5, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 149</text>
+<text x="32" y="174" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Real (100,140]: 5/9 frontiers used; skipped 101, 103, 107, 109; Li=8.37</text>
+<text x="32" y="202" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Real (140,182]: 7/8 frontiers used; skipped 149; Li=8.27</text>
+<text x="32" y="230" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Cramer seed 12345: 4 records, max frontier 35, window use 0/0 and 0/0</text>
+<text x="32" y="258" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Cramer seed 271828: 114 records, max frontier 151, window use 10/10 and 4/4</text>
+<text x="32" y="286" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Cramer seed 314159: 111 records, max frontier 181, window use 10/10 and 5/5</text>
+<text x="32" y="314" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Cramer seed 161803: 18 records, max frontier 55, window use 0/0 and 0/0</text>
+<text x="32" y="342" font-family="Arial, sans-serif" font-size="15" fill="#1f2d3d">Cramer seed 424242: 97 records, max frontier 173, window use 9/9 and 6/6</text>
+<rect x="32" y="362" width="916" height="1" fill="#c7c0b4"/>
+<text x="32" y="392" font-family="Arial, sans-serif" font-size="13" fill="#5d6d7e">Key finite pattern: 149 is prime, lies between used frontier primes 139 and 151, and is not a largest prime factor of any XA record in this scan.</text>
+</svg>

@@ -1,0 +1,300 @@
+{
+  "object": "bounded continued-fraction denominator set",
+  "generatedAt": "2026-06-12T20:26:06.932Z",
+  "definition": "Z_A={q: q is the denominator of some finite continued fraction [0;a1,...,ak] with every ai<=A}; cfheight(q)=least tested A.",
+  "conjecturalPrimePattern": "Hensley conjectures that every sufficiently large prime denominator lies in Z_2.",
+  "theoremBackstop": "Shkredov proves the prime-denominator Zaremba case with an absolute constant; Zhang's 2026 preprint claims the full Zaremba conjecture.",
+  "ranges": [
+    [
+      10000,
+      20000
+    ],
+    [
+      50000,
+      100000
+    ]
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "results": [
+    {
+      "range": [
+        10000,
+        20000
+      ],
+      "mainTerms": {
+        "primeLi": 1042.4768271902074,
+        "cf2CramerWeightedMain": 656.422019831512,
+        "cf2NumeratorWeightedMain": 2443.808235700846
+      },
+      "denominatorWorld": {
+        "cf2DenominatorCount": 4535,
+        "cf2Density": 0.45345465453454653,
+        "cf2NumeratorTotal": 14866,
+        "avgCf2NumeratorsPerDenominator": 3.2780595369349506
+      },
+      "real": {
+        "count": 1033,
+        "cf2Count": 674,
+        "cf2Rate": 0.6524685382381413,
+        "cf2NumeratorTotal": 2636,
+        "avgCf2NumeratorsPerLabel": 2.5517909002904164,
+        "avgCf2NumeratorsPerHit": 3.9109792284866467,
+        "cf3Only": 359,
+        "above3": 0,
+        "cf2MinusWeightedMain": 17.57798016848801,
+        "cf2NumeratorMinusWeightedMain": 192.19176429915387,
+        "cf3PrimeMisses": [],
+        "firstCf2Misses": [
+          {
+            "n": 10007,
+            "inZ3": true
+          },
+          {
+            "n": 10009,
+            "inZ3": true
+          },
+          {
+            "n": 10099,
+            "inZ3": true
+          },
+          {
+            "n": 10133,
+            "inZ3": true
+          },
+          {
+            "n": 10163,
+            "inZ3": true
+          },
+          {
+            "n": 10193,
+            "inZ3": true
+          },
+          {
+            "n": 10267,
+            "inZ3": true
+          },
+          {
+            "n": 10273,
+            "inZ3": true
+          },
+          {
+            "n": 10301,
+            "inZ3": true
+          },
+          {
+            "n": 10333,
+            "inZ3": true
+          },
+          {
+            "n": 10337,
+            "inZ3": true
+          },
+          {
+            "n": 10369,
+            "inZ3": true
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 1016,
+          "cf2Count": 631,
+          "cf2Rate": 0.6210629921259843,
+          "cf2NumeratorTotal": 2340,
+          "avgCf2NumeratorsPerLabel": 2.3031496062992125,
+          "avgCf2NumeratorsPerHit": 3.7083993660855783,
+          "cf3Only": 385,
+          "above3": 0
+        },
+        {
+          "seed": 271828,
+          "count": 1062,
+          "cf2Count": 668,
+          "cf2Rate": 0.6290018832391714,
+          "cf2NumeratorTotal": 2531,
+          "avgCf2NumeratorsPerLabel": 2.3832391713747647,
+          "avgCf2NumeratorsPerHit": 3.788922155688623,
+          "cf3Only": 394,
+          "above3": 0
+        },
+        {
+          "seed": 314159,
+          "count": 1050,
+          "cf2Count": 662,
+          "cf2Rate": 0.6304761904761905,
+          "cf2NumeratorTotal": 2462,
+          "avgCf2NumeratorsPerLabel": 2.3447619047619046,
+          "avgCf2NumeratorsPerHit": 3.719033232628399,
+          "cf3Only": 388,
+          "above3": 0
+        },
+        {
+          "seed": 161803,
+          "count": 1023,
+          "cf2Count": 637,
+          "cf2Rate": 0.6226783968719453,
+          "cf2NumeratorTotal": 2395,
+          "avgCf2NumeratorsPerLabel": 2.3411534701857284,
+          "avgCf2NumeratorsPerHit": 3.759811616954474,
+          "cf3Only": 386,
+          "above3": 0
+        },
+        {
+          "seed": 424242,
+          "count": 1077,
+          "cf2Count": 677,
+          "cf2Rate": 0.6285979572887651,
+          "cf2NumeratorTotal": 2536,
+          "avgCf2NumeratorsPerLabel": 2.3546889507892295,
+          "avgCf2NumeratorsPerHit": 3.7459379615952733,
+          "cf3Only": 400,
+          "above3": 0
+        }
+      ]
+    },
+    {
+      "range": [
+        50000,
+        100000
+      ],
+      "mainTerms": {
+        "primeLi": 4463.2622371133075,
+        "cf2CramerWeightedMain": 2861.6722293771177,
+        "cf2NumeratorWeightedMain": 10133.857730392103
+      },
+      "denominatorWorld": {
+        "cf2DenominatorCount": 24282,
+        "cf2Density": 0.4856302873942521,
+        "cf2NumeratorTotal": 77091,
+        "avgCf2NumeratorsPerDenominator": 3.1748208549542873
+      },
+      "real": {
+        "count": 4459,
+        "cf2Count": 2978,
+        "cf2Rate": 0.6678627494954026,
+        "cf2NumeratorTotal": 10820,
+        "avgCf2NumeratorsPerLabel": 2.4265530387979366,
+        "avgCf2NumeratorsPerHit": 3.633310946944258,
+        "cf3Only": 1481,
+        "above3": 0,
+        "cf2MinusWeightedMain": 116.32777062288233,
+        "cf2NumeratorMinusWeightedMain": 686.1422696078971,
+        "cf3PrimeMisses": [],
+        "firstCf2Misses": [
+          {
+            "n": 50023,
+            "inZ3": true
+          },
+          {
+            "n": 50033,
+            "inZ3": true
+          },
+          {
+            "n": 50053,
+            "inZ3": true
+          },
+          {
+            "n": 50069,
+            "inZ3": true
+          },
+          {
+            "n": 50087,
+            "inZ3": true
+          },
+          {
+            "n": 50093,
+            "inZ3": true
+          },
+          {
+            "n": 50101,
+            "inZ3": true
+          },
+          {
+            "n": 50129,
+            "inZ3": true
+          },
+          {
+            "n": 50147,
+            "inZ3": true
+          },
+          {
+            "n": 50153,
+            "inZ3": true
+          },
+          {
+            "n": 50207,
+            "inZ3": true
+          },
+          {
+            "n": 50227,
+            "inZ3": true
+          }
+        ]
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 4372,
+          "cf2Count": 2772,
+          "cf2Rate": 0.6340347666971637,
+          "cf2NumeratorTotal": 9784,
+          "avgCf2NumeratorsPerLabel": 2.2378774016468435,
+          "avgCf2NumeratorsPerHit": 3.5295815295815296,
+          "cf3Only": 1600,
+          "above3": 0
+        },
+        {
+          "seed": 271828,
+          "count": 4335,
+          "cf2Count": 2762,
+          "cf2Rate": 0.6371395617070358,
+          "cf2NumeratorTotal": 9561,
+          "avgCf2NumeratorsPerLabel": 2.2055363321799306,
+          "avgCf2NumeratorsPerHit": 3.461622013034033,
+          "cf3Only": 1573,
+          "above3": 0
+        },
+        {
+          "seed": 314159,
+          "count": 4469,
+          "cf2Count": 2909,
+          "cf2Rate": 0.6509286193779369,
+          "cf2NumeratorTotal": 10317,
+          "avgCf2NumeratorsPerLabel": 2.3085701499216826,
+          "avgCf2NumeratorsPerHit": 3.546579580611894,
+          "cf3Only": 1560,
+          "above3": 0
+        },
+        {
+          "seed": 161803,
+          "count": 4433,
+          "cf2Count": 2847,
+          "cf2Rate": 0.6422287390029325,
+          "cf2NumeratorTotal": 10180,
+          "avgCf2NumeratorsPerLabel": 2.2964132641551998,
+          "avgCf2NumeratorsPerHit": 3.575693712680014,
+          "cf3Only": 1586,
+          "above3": 0
+        },
+        {
+          "seed": 424242,
+          "count": 4471,
+          "cf2Count": 2856,
+          "cf2Rate": 0.6387832699619772,
+          "cf2NumeratorTotal": 10242,
+          "avgCf2NumeratorsPerLabel": 2.2907626929098637,
+          "avgCf2NumeratorsPerHit": 3.5861344537815127,
+          "cf3Only": 1615,
+          "above3": 0
+        }
+      ]
+    }
+  ]
+}

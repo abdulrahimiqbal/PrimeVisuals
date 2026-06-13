@@ -1,3 +1,5 @@
+// @vitest-environment happy-dom
+
 import { describe, it, expect, vi, beforeAll, afterEach } from "vitest";
 import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
@@ -5,7 +7,7 @@ afterEach(cleanup);
 import PrimeVisuals from "../src/PrimeVisuals.jsx";
 
 beforeAll(() => {
-  // jsdom has no canvas; stub out everything draw() touches
+  // The DOM test environment has no canvas; stub out everything draw() touches.
   const ctx = new Proxy({}, {
     get: (t, prop) => {
       if (prop === "createRadialGradient" || prop === "createLinearGradient") {

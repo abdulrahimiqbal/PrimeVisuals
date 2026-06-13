@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520">
+<rect width="1180" height="520" fill="#f7f6f1"/>
+<text x="34" y="46" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933">CA ∩ XA transition closure through s8436</text>
+<text x="34" y="76" font-family="Arial, sans-serif" font-size="14" fill="#52616f">Noe compact notation parsed: primorials, factorials, and integer multipliers.</text>
+<text x="44" y="118" font-family="Arial, sans-serif" font-size="15" fill="#25313d">Factored SA prefix scanned: s1..s8436 (8436 rows)</text>
+<text x="44" y="146" font-family="Arial, sans-serif" font-size="15" fill="#25313d">XA records: 579; CA records: 443; CA ∩ XA records: 384</text>
+<text x="44" y="174" font-family="Arial, sans-serif" font-size="15" fill="#25313d">Non-CA XA records after 10080: 194; next-CA closure failures: 0</text>
+<text x="44" y="202" font-family="Arial, sans-serif" font-size="15" fill="#25313d">CA∩XA transitions: 383; repeated frontier 27; frontier changes 356; prime-adjacent changes 353</text>
+<text x="44" y="230" font-family="Arial, sans-serif" font-size="15" fill="#25313d">Skipped frontiers: 11 / transition Li total 374.537 = 0.029; max skip 5; nonzero norms 0.415, 0.907, 0.896</text>
+<text x="44" y="258" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(100,182]: 12/17 frontiers, closures 4/4, Li=16.64</text>
+<text x="44" y="286" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(182,300]: 20/20 frontiers, closures 21/21, Li=21.57</text>
+<text x="44" y="314" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(300,500]: 33/33 frontiers, closures 13/13, Li=33.46</text>
+<text x="44" y="342" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(500,1000]: 73/73 frontiers, closures 49/49, Li=75.82</text>
+<text x="44" y="370" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(1000,2000]: 130/135 frontiers, closures 87/87, Li=137.20</text>
+<text x="44" y="398" font-family="Arial, sans-serif" font-size="15" fill="#25313d">(2000,2800]: 89/104 frontiers, closures 20/20, Li=102.86</text>
+<rect x="34" y="442" width="1110" height="1" fill="#c7c0b4"/>
+<text x="34" y="470" font-family="Arial, sans-serif" font-size="12" fill="#52616f">Cramér fixed-shape contrast: seed 12345: records 4, CA∩fake 2, failures 0 | seed 271828: records 388, CA∩fake 112, failures 0 | seed 314159: records 1083, CA∩fake 182, failures 344 | seed 161803: records 18, CA∩fake 9, failures 0 | seed 424242: records 1117, CA∩fake 266, failures 1</text>
+<text x="34" y="496" font-family="Arial, sans-serif" font-size="12" fill="#52616f">The theorem is closure at the next CA endpoint; the small normalized frontier-skip statistic is finite evidence and remains the theorem target.</text>
+</svg>

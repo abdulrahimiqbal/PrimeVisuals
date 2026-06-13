@@ -10,6 +10,13 @@ import {
   dyadicExpMobiusValue,
   dyadicExpMangoldtValue,
   dyadicExpTransform,
+  rowVisibleValue,
+  rowVisibilityTable,
+  roughIntervalWitnesses,
+  fareyBaseDivisorSurplusTable,
+  boundedCfDenominatorTable,
+  boundedCfMinHeightTable,
+  boundedCfNumeratorCountTable,
   liUpTo,
   primePowersUpTo,
   psiExplicit,
@@ -153,6 +160,129 @@ describe("integerLabTables(100)", () => {
     let sum = 0;
     for (let n = 1; n <= 12; n++) sum += tab.l2[n];
     expect(tab.L2[12]).toBeCloseTo(sum, 14);
+  });
+  it("row visibility uses y=floor(sqrt(N)) and counts rough-row survivors", () => {
+    expect(tab.rowY).toBe(10);
+    expect(tab.rowvis[1]).toBe(1);
+    expect(tab.rowvis[2]).toBe(0);
+    expect(tab.rowvis[11]).toBe(1);
+    expect(tab.rowvis[49]).toBe(0);
+    expect(tab.rowvis[97]).toBe(1);
+    expect(tab.rowcount[100]).toBe(22);
+  });
+
+  it("Farey insertion rows expose phi and the composite deficit", () => {
+    expect(tab.fareynew[5]).toBe(4);
+    expect(tab.fareydef[5]).toBe(0);
+    expect(tab.fareynew[6]).toBe(2);
+    expect(tab.fareydef[6]).toBe(3);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// row visibility against lcm(1..y)
+// ---------------------------------------------------------------------------
+describe("row visibility", () => {
+  it("rowVisibleValue(n,y) is 1 exactly when no divisor 2..y divides n", () => {
+    expect(rowVisibleValue(1, 10)).toBe(1);
+    expect(rowVisibleValue(2, 10)).toBe(0);
+    expect(rowVisibleValue(11, 10)).toBe(1);
+    expect(rowVisibleValue(49, 10)).toBe(0);
+    expect(rowVisibleValue(97, 10)).toBe(1);
+  });
+
+  it("table values match the direct divisibility predicate through 120", () => {
+    const row = rowVisibilityTable(120, 10);
+    for (let n = 1; n <= 120; n++) {
+      expect(row.visible[n]).toBe(rowVisibleValue(n, 10));
+    }
+  });
+
+  it("with y=floor(sqrt(N)), survivors above y are exactly primes above y", () => {
+    const N = 100;
+    const y = Math.floor(Math.sqrt(N));
+    const row = rowVisibilityTable(N, y);
+    const primes = new Set(primesUpTo(N).filter((p) => p > y));
+    for (let n = y + 1; n <= N; n++) {
+      expect(row.visible[n]).toBe(primes.has(n) ? 1 : 0);
+    }
+  });
+
+  it("visible-row gaps above y match prime gaps above y", () => {
+    const N = 100;
+    const y = Math.floor(Math.sqrt(N));
+    const row = rowVisibilityTable(N, y);
+    const primes = primesUpTo(N).filter((p) => p > y);
+    for (let i = 1; i < primes.length; i++) {
+      expect(row.gap[primes[i]]).toBe(primes[i] - primes[i - 1]);
+    }
+  });
+
+  it("rough interval witnesses count numbers with no divisor below the width", () => {
+    expect(roughIntervalWitnesses(3, 2)).toEqual({ count: 1, firstOffset: 1 });
+    expect(roughIntervalWitnesses(7, 4)).toEqual({ count: 0, firstOffset: 0 });
+    expect(roughIntervalWitnesses(47, 6)).toEqual({ count: 1, firstOffset: 2 });
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Farey insertion rows and reciprocal-product valuations
+// ---------------------------------------------------------------------------
+describe("Farey objects", () => {
+  it("full insertion rows are exactly prime rows for n>=2 through 100", () => {
+    const tab = integerLabTables(100);
+    for (let n = 2; n <= 100; n++) {
+      expect(tab.fareydef[n] === 0).toBe(Boolean(tab.isp[n]));
+    }
+  });
+
+  it("composite rows have the sqrt defect forced by their smallest divisor", () => {
+    const tab = integerLabTables(200);
+    for (let n = 4; n <= 200; n++) {
+      if (!tab.isp[n]) expect(tab.fareydef[n]).toBeGreaterThanOrEqual(Math.ceil(Math.sqrt(n)) - 1);
+    }
+  });
+
+  it("reciprocal Farey-product base surplus matches small p-adic signatures", () => {
+    const ord2 = fareyBaseDivisorSurplusTable(12, 2);
+    const ord3 = fareyBaseDivisorSurplusTable(12, 3);
+    expect(ord2[2]).toBe(1);
+    expect(ord2[3]).toBe(0);
+    expect(ord2[4]).toBe(4);
+    expect(ord2[7]).toBe(-1);
+    expect(ord3[3]).toBe(2);
+    expect(ord3[8]).toBe(-1);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// bounded continued-fraction denominators
+// ---------------------------------------------------------------------------
+describe("bounded continued-fraction denominators", () => {
+  it("alphabet {1,2} gives canonical bounded denominators", () => {
+    const den = boundedCfDenominatorTable(40, 2);
+    const boundedDenominators = [2, 3, 5, 7, 8, 11, 12, 13, 17, 18, 19, 21, 26, 27, 29, 30, 31, 34];
+    for (let n = 1; n <= 40; n++) {
+      expect(den[n]).toBe(boundedDenominators.includes(n) ? 1 : 0);
+    }
+  });
+
+  it("min-height table matches small Zaremba denominator examples", () => {
+    const height = boundedCfMinHeightTable(60, 5);
+    expect(height[5]).toBe(2);
+    expect(height[6]).toBe(5);
+    expect(height[20]).toBe(4);
+    expect(height[54]).toBe(5);
+    expect(height[59]).toBeLessThanOrEqual(3);
+  });
+
+  it("numerator count table counts canonical bounded continued fractions", () => {
+    const count = boundedCfNumeratorCountTable(60, 2);
+    expect(count[2]).toBe(1);
+    expect(count[5]).toBe(2);
+    expect(count[6]).toBe(0);
+    expect(count[19]).toBe(4);
+    expect(count[31]).toBe(4);
   });
 });
 

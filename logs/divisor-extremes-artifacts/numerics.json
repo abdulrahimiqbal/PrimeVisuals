@@ -1,0 +1,5327 @@
+{
+  "object": "extremely abundant frontier primes",
+  "generatedAt": "2026-06-12T18:17:08.299Z",
+  "definition": "XA records of sigma(n)/(n log log n), generated through the SA prefix-exponent theorem",
+  "logLimits": [
+    40,
+    70
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "gamma": 0.5772156649015329,
+  "eGamma": 1.781072417990198,
+  "results": [
+    {
+      "logLimit": 40,
+      "real": {
+        "label": "real primes",
+        "logLimit": 40,
+        "baseCount": 14,
+        "candidateCount": 27055,
+        "superabundantCount": 105,
+        "xaCount": 1,
+        "maxFrontier": 7,
+        "frontierUsed": 1,
+        "frontierAvailable": 4,
+        "frontierSkipped": 3,
+        "skippedFrontiers": [
+          2,
+          3,
+          5
+        ],
+        "windows": [],
+        "bigJumps": [],
+        "firstRecords": [
+          {
+            "n": "10080",
+            "logN": 9.218308541625358,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "exponentDrops": [
+              {
+                "afterIndex": 1,
+                "drop": 3
+              },
+              {
+                "afterIndex": 2,
+                "drop": 1
+              }
+            ],
+            "sigmaOverN": 3.9,
+            "robinRatio": 0.9858186119723291
+          }
+        ],
+        "lastRecords": [
+          {
+            "n": "10080",
+            "logN": 9.218308541625358,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "exponentDrops": [
+              {
+                "afterIndex": 1,
+                "drop": 3
+              },
+              {
+                "afterIndex": 2,
+                "drop": 1
+              }
+            ],
+            "sigmaOverN": 3.9,
+            "robinRatio": 0.9858186119723291
+          }
+        ],
+        "maxRobinRatio": 0.9858186119723291
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "label": "cramer seed 12345",
+          "logLimit": 40,
+          "baseCount": 14,
+          "candidateCount": 27092,
+          "superabundantCount": 102,
+          "xaCount": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "maxRobinRatio": 0.9858186119723291
+        },
+        {
+          "seed": 271828,
+          "label": "cramer seed 271828",
+          "logLimit": 40,
+          "baseCount": 14,
+          "candidateCount": 27116,
+          "superabundantCount": 103,
+          "xaCount": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439492672304492,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "maxRobinRatio": 0.9904981386743222
+        },
+        {
+          "seed": 314159,
+          "label": "cramer seed 314159",
+          "logLimit": 40,
+          "baseCount": 14,
+          "candidateCount": 27117,
+          "superabundantCount": 103,
+          "xaCount": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439492672304492,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "maxRobinRatio": 0.9904981386743222
+        },
+        {
+          "seed": 161803,
+          "label": "cramer seed 161803",
+          "logLimit": 40,
+          "baseCount": 14,
+          "candidateCount": 27116,
+          "superabundantCount": 103,
+          "xaCount": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439492672304492,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            }
+          ],
+          "maxRobinRatio": 0.9904981386743222
+        },
+        {
+          "seed": 424242,
+          "label": "cramer seed 424242",
+          "logLimit": 40,
+          "baseCount": 14,
+          "candidateCount": 27078,
+          "superabundantCount": 103,
+          "xaCount": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "maxRobinRatio": 0.9858186119723291
+        }
+      ]
+    },
+    {
+      "logLimit": 70,
+      "real": {
+        "label": "real primes",
+        "logLimit": 70,
+        "baseCount": 21,
+        "candidateCount": 795050,
+        "superabundantCount": 195,
+        "xaCount": 1,
+        "maxFrontier": 7,
+        "frontierUsed": 1,
+        "frontierAvailable": 4,
+        "frontierSkipped": 3,
+        "skippedFrontiers": [
+          2,
+          3,
+          5
+        ],
+        "windows": [],
+        "bigJumps": [],
+        "firstRecords": [
+          {
+            "n": "10080",
+            "logN": 9.218308541625358,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "exponentDrops": [
+              {
+                "afterIndex": 1,
+                "drop": 3
+              },
+              {
+                "afterIndex": 2,
+                "drop": 1
+              }
+            ],
+            "sigmaOverN": 3.9,
+            "robinRatio": 0.9858186119723291
+          }
+        ],
+        "lastRecords": [
+          {
+            "n": "10080",
+            "logN": 9.218308541625358,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "exponentDrops": [
+              {
+                "afterIndex": 1,
+                "drop": 3
+              },
+              {
+                "afterIndex": 2,
+                "drop": 1
+              }
+            ],
+            "sigmaOverN": 3.9,
+            "robinRatio": 0.9858186119723291
+          }
+        ],
+        "maxRobinRatio": 0.9858186119723291
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "label": "cramer seed 12345",
+          "logLimit": 70,
+          "baseCount": 21,
+          "candidateCount": 797672,
+          "superabundantCount": 186,
+          "xaCount": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            }
+          ],
+          "maxRobinRatio": 0.9858186119723291
+        },
+        {
+          "seed": 271828,
+          "label": "cramer seed 271828",
+          "logLimit": 70,
+          "baseCount": 22,
+          "candidateCount": 803131,
+          "superabundantCount": 185,
+          "xaCount": 27,
+          "maxFrontier": 55,
+          "frontierUsed": 9,
+          "frontierAvailable": 19,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 13,
+              "liMain": 12.303096860019753,
+              "usedCount": 6,
+              "usedShare": 0.46153846153846156
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.5115300023299527,
+              "usedCount": 2,
+              "usedShare": 1
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            },
+            {
+              "n": "884471761473300000",
+              "logN": 41.32376698202383,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.566337854754821,
+              "robinRatio": 0.9906742643253356
+            },
+            {
+              "n": "1768943522946600000",
+              "logN": 42.016914162583774,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.618451647252876,
+              "robinRatio": 0.9940932625204855
+            },
+            {
+              "n": "5306830568839800000",
+              "logN": 43.11552645125188,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.673605410979984,
+              "robinRatio": 0.9955035461084317
+            },
+            {
+              "n": "72526684440810600000",
+              "logN": 45.73048622928808,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.779877297185872,
+              "robinRatio": 0.9957782485764409
+            },
+            {
+              "n": "145053368881621200000",
+              "logN": 46.42363340984803,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                7,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 4
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.8065697274897525,
+              "robinRatio": 0.9957800016559682
+            },
+            {
+              "n": "217580053322431800000",
+              "logN": 46.82909851795619,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.836376274662422,
+              "robinRatio": 0.9978795086048756
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "9355942292864567400000",
+              "logN": 50.59029863364975,
+              "frontierBase": 43,
+              "frontierIndex": 15,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.995361769422014,
+              "robinRatio": 1.0009818070638956
+            },
+            {
+              "n": "18711884585729134800000",
+              "logN": 51.2834458142097,
+              "frontierBase": 43,
+              "frontierIndex": 15,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.022902563789814,
+              "robinRatio": 1.001449506415678
+            },
+            {
+              "n": "439729287764634667800000",
+              "logN": 54.44044623535981,
+              "frontierBase": 47,
+              "frontierIndex": 16,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.144199253877801,
+              "robinRatio": 1.003520307983763
+            },
+            {
+              "n": "879458575529269335600000",
+              "logN": 55.133593415919755,
+              "frontierBase": 47,
+              "frontierIndex": 16,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.172326022593852,
+              "robinRatio": 1.0042923408772055
+            },
+            {
+              "n": "21546735100467098722200000",
+              "logN": 58.33226653347043,
+              "frontierBase": 49,
+              "frontierIndex": 17,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.289999238650817,
+              "robinRatio": 1.0066116043338096
+            },
+            {
+              "n": "43093470200934197444400000",
+              "logN": 59.02541371403038,
+              "frontierBase": 49,
+              "frontierIndex": 17,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.3187000230549515,
+              "robinRatio": 1.0076472994741437
+            },
+            {
+              "n": "1141976960324756232276600000",
+              "logN": 62.302558447022555,
+              "frontierBase": 53,
+              "frontierIndex": 18,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.427546394097059,
+              "robinRatio": 1.009260369799344
+            },
+            {
+              "n": "2283953920649512464553200000",
+              "logN": 62.9957056275825,
+              "frontierBase": 53,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.456788702735234,
+              "robinRatio": 1.0105279927446962
+            },
+            {
+              "n": "11419769603247562322766000000",
+              "logN": 64.6051435400166,
+              "frontierBase": 53,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.504897016946431,
+              "robinRatio": 1.0108921237466217
+            },
+            {
+              "n": "62808732817861592775213000000",
+              "logN": 66.30989163225503,
+              "frontierBase": 55,
+              "frontierIndex": 19,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.562592692171551,
+              "robinRatio": 1.0123381312889805
+            },
+            {
+              "n": "125617465635723185550426000000",
+              "logN": 67.00303881281498,
+              "frontierBase": 55,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.5923666791486015,
+              "robinRatio": 1.0138102067976051
+            },
+            {
+              "n": "628087328178615927752130000000",
+              "logN": 68.61247672524907,
+              "frontierBase": 55,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.641349689981819,
+              "robinRatio": 1.0146232069215422
+            }
+          ],
+          "maxRobinRatio": 1.0146232069215422
+        },
+        {
+          "seed": 314159,
+          "label": "cramer seed 314159",
+          "logLimit": 70,
+          "baseCount": 22,
+          "candidateCount": 803783,
+          "superabundantCount": 188,
+          "xaCount": 31,
+          "maxFrontier": 55,
+          "frontierUsed": 10,
+          "frontierAvailable": 20,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 14,
+              "liMain": 12.303096860019753,
+              "usedCount": 7,
+              "usedShare": 0.5
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.5115300023299527,
+              "usedCount": 2,
+              "usedShare": 1
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            },
+            {
+              "n": "884471761473300000",
+              "logN": 41.32376698202383,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.566337854754821,
+              "robinRatio": 0.9906742643253356
+            },
+            {
+              "n": "1768943522946600000",
+              "logN": 42.016914162583774,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.618451647252876,
+              "robinRatio": 0.9940932625204855
+            },
+            {
+              "n": "5306830568839800000",
+              "logN": 43.11552645125188,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.673605410979984,
+              "robinRatio": 0.9955035461084317
+            },
+            {
+              "n": "65450910349024200000",
+              "logN": 45.627832075228,
+              "frontierBase": 37,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.797328718800251,
+              "robinRatio": 0.9989286241050348
+            },
+            {
+              "n": "196352731047072600000",
+              "logN": 46.72644436389611,
+              "frontierBase": 37,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.853973124790253,
+              "robinRatio": 1.0010191545107796
+            },
+            {
+              "n": "392705462094145200000",
+              "logN": 47.419591544456054,
+              "frontierBase": 37,
+              "frontierIndex": 14,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.880957270950842,
+              "robinRatio": 1.001125475213161
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "692339729671977987600000",
+              "logN": 54.894363726853925,
+              "frontierBase": 43,
+              "frontierIndex": 16,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.212710741189539,
+              "robinRatio": 1.0110436038955095
+            },
+            {
+              "n": "10846655764860988472400000",
+              "logN": 57.64589903989587,
+              "frontierBase": 47,
+              "frontierIndex": 17,
+              "exponents": [
+                7,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 4
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.305295211755186,
+              "robinRatio": 1.0116685852585543
+            },
+            {
+              "n": "16269983647291482708600000",
+              "logN": 58.05136414800403,
+              "frontierBase": 47,
+              "frontierIndex": 17,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.337285720198821,
+              "robinRatio": 1.014345170069381
+            },
+            {
+              "n": "32539967294582965417200000",
+              "logN": 58.74451132856398,
+              "frontierBase": 47,
+              "frontierIndex": 17,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.366172671853145,
+              "robinRatio": 1.0153711614247962
+            },
+            {
+              "n": "531486132478188435147600000",
+              "logN": 61.5377193380065,
+              "frontierBase": 49,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 4
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.454382869137945,
+              "robinRatio": 1.0159439859471244
+            },
+            {
+              "n": "797229198717282652721400000",
+              "logN": 61.94318444611466,
+              "frontierBase": 49,
+              "frontierIndex": 18,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.487026245100838,
+              "robinRatio": 1.0187688366935355
+            },
+            {
+              "n": "1594458397434565305442800000",
+              "logN": 62.636331626674604,
+              "frontierBase": 49,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.516502726380761,
+              "robinRatio": 1.0200288450806354
+            },
+            {
+              "n": "7972291987172826527214000000",
+              "logN": 64.24576953910871,
+              "frontierBase": 49,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.564996292357413,
+              "robinRatio": 1.0203528264047008
+            },
+            {
+              "n": "42253147532015980594234200000",
+              "logN": 65.91347635966677,
+              "frontierBase": 53,
+              "frontierIndex": 19,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.6282908912348155,
+              "robinRatio": 1.022594460013501
+            },
+            {
+              "n": "84506295064031961188468400000",
+              "logN": 66.60662354022672,
+              "frontierBase": 53,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.658323532538889,
+              "robinRatio": 1.0240626496985417
+            },
+            {
+              "n": "422531475320159805942342000000",
+              "logN": 68.21606145266082,
+              "frontierBase": 53,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.707732071458496,
+              "robinRatio": 1.0248418599015203
+            },
+            {
+              "n": "2323923114260878932682881000000",
+              "logN": 69.92080954489924,
+              "frontierBase": 55,
+              "frontierIndex": 20,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.766987089257266,
+              "robinRatio": 1.026718988298756
+            }
+          ],
+          "maxRobinRatio": 1.026718988298756
+        },
+        {
+          "seed": 161803,
+          "label": "cramer seed 161803",
+          "logLimit": 70,
+          "baseCount": 22,
+          "candidateCount": 802587,
+          "superabundantCount": 192,
+          "xaCount": 15,
+          "maxFrontier": 55,
+          "frontierUsed": 6,
+          "frontierAvailable": 17,
+          "frontierSkipped": 11,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29,
+            53
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 11,
+              "liMain": 12.303096860019753,
+              "usedCount": 4,
+              "usedShare": 0.36363636363636365
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.5115300023299527,
+              "usedCount": 1,
+              "usedShare": 0.5
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.29734741041369
+            },
+            {
+              "from": 49,
+              "to": 55,
+              "skippedBases": [
+                53
+              ],
+              "logRatio": 7.977625098784593
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "7220177644680000",
+              "logN": 36.51565595203905,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.321717947668436,
+              "robinRatio": 0.9865602878763268
+            },
+            {
+              "n": "21660532934040000",
+              "logN": 37.614268240707155,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.374398930565675,
+              "robinRatio": 0.9866524391687667
+            },
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            },
+            {
+              "n": "884471761473300000",
+              "logN": 41.32376698202383,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.566337854754821,
+              "robinRatio": 0.9906742643253356
+            },
+            {
+              "n": "1768943522946600000",
+              "logN": 42.016914162583774,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.618451647252876,
+              "robinRatio": 0.9940932625204855
+            },
+            {
+              "n": "5306830568839800000",
+              "logN": 43.11552645125188,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.673605410979984,
+              "robinRatio": 0.9955035461084317
+            },
+            {
+              "n": "72526684440810600000",
+              "logN": 45.73048622928808,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.779877297185872,
+              "robinRatio": 0.9957782485764409
+            },
+            {
+              "n": "145053368881621200000",
+              "logN": 46.42363340984803,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                7,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 4
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.8065697274897525,
+              "robinRatio": 0.9957800016559682
+            },
+            {
+              "n": "217580053322431800000",
+              "logN": 46.82909851795619,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.836376274662422,
+              "robinRatio": 0.9978795086048756
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "25270621756380000",
+              "logN": 37.768418920534415,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.3839395810116315,
+              "robinRatio": 0.9870163288348395
+            },
+            {
+              "n": "50541243512760000",
+              "logN": 38.46156610109436,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.434605768162519,
+              "robinRatio": 0.9898924739559186
+            },
+            {
+              "n": "151623730538280000",
+              "logN": 39.56017838976247,
+              "frontierBase": 31,
+              "frontierIndex": 12,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.488227482897207,
+              "robinRatio": 0.9904981386743222
+            },
+            {
+              "n": "884471761473300000",
+              "logN": 41.32376698202383,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                5,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.566337854754821,
+              "robinRatio": 0.9906742643253356
+            },
+            {
+              "n": "1768943522946600000",
+              "logN": 42.016914162583774,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.618451647252876,
+              "robinRatio": 0.9940932625204855
+            },
+            {
+              "n": "5306830568839800000",
+              "logN": 43.11552645125188,
+              "frontierBase": 35,
+              "frontierIndex": 13,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.673605410979984,
+              "robinRatio": 0.9955035461084317
+            },
+            {
+              "n": "72526684440810600000",
+              "logN": 45.73048622928808,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.779877297185872,
+              "robinRatio": 0.9957782485764409
+            },
+            {
+              "n": "145053368881621200000",
+              "logN": 46.42363340984803,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                7,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 4
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.8065697274897525,
+              "robinRatio": 0.9957800016559682
+            },
+            {
+              "n": "217580053322431800000",
+              "logN": 46.82909851795619,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.836376274662422,
+              "robinRatio": 0.9978795086048756
+            },
+            {
+              "n": "435160106644863600000",
+              "logN": 47.52224569851614,
+              "frontierBase": 41,
+              "frontierIndex": 14,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 6.8632911418855,
+              "robinRatio": 0.9979959504932321
+            },
+            {
+              "n": "21322845225598316400000",
+              "logN": 51.41406599662676,
+              "frontierBase": 49,
+              "frontierIndex": 15,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.003358308046429,
+              "robinRatio": 0.9980177592577518
+            },
+            {
+              "n": "62156093832619092306000000",
+              "logN": 59.39169109541135,
+              "frontierBase": 55,
+              "frontierIndex": 17,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.265233455757255,
+              "robinRatio": 0.9987708319616736
+            }
+          ],
+          "maxRobinRatio": 0.9987708319616736
+        },
+        {
+          "seed": 424242,
+          "label": "cramer seed 424242",
+          "logLimit": 70,
+          "baseCount": 22,
+          "candidateCount": 796962,
+          "superabundantCount": 185,
+          "xaCount": 6,
+          "maxFrontier": 59,
+          "frontierUsed": 3,
+          "frontierAvailable": 19,
+          "frontierSkipped": 16,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            35,
+            37,
+            41,
+            43,
+            47,
+            49,
+            53
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 12,
+              "liMain": 12.303096860019753,
+              "usedCount": 0,
+              "usedShare": 0
+            },
+            {
+              "range": [
+                50,
+                60
+              ],
+              "baseCount": 3,
+              "liMain": 2.496715987907607,
+              "usedCount": 2,
+              "usedShare": 0.6666666666666666
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 55,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                35,
+                37,
+                41,
+                43,
+                47,
+                49,
+                53
+              ],
+              "logRatio": 54.59436514936222
+            }
+          ],
+          "firstRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "5170018051748340228438000000",
+              "logN": 63.81267369098757,
+              "frontierBase": 55,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.302095453070791,
+              "robinRatio": 0.9864962159716725
+            },
+            {
+              "n": "25850090258741701142190000000",
+              "logN": 65.42211160342167,
+              "frontierBase": 55,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.349205746316411,
+              "robinRatio": 0.9869455010756993
+            },
+            {
+              "n": "152515532526576036738921000000",
+              "logN": 67.19706395433334,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.396738764027843,
+              "robinRatio": 0.9870092107281081
+            },
+            {
+              "n": "305031065053152073477842000000",
+              "logN": 67.89021113489329,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.425859782783855,
+              "robinRatio": 0.9884841856513379
+            },
+            {
+              "n": "1525155325265760367389210000000",
+              "logN": 69.4996490473274,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.473768555576011,
+              "robinRatio": 0.9893657042481585
+            }
+          ],
+          "lastRecords": [
+            {
+              "n": "10080",
+              "logN": 9.218308541625358,
+              "frontierBase": 7,
+              "frontierIndex": 4,
+              "exponents": [
+                5,
+                2,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 3.9,
+              "robinRatio": 0.9858186119723291
+            },
+            {
+              "n": "5170018051748340228438000000",
+              "logN": 63.81267369098757,
+              "frontierBase": 55,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.302095453070791,
+              "robinRatio": 0.9864962159716725
+            },
+            {
+              "n": "25850090258741701142190000000",
+              "logN": 65.42211160342167,
+              "frontierBase": 55,
+              "frontierIndex": 18,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.349205746316411,
+              "robinRatio": 0.9869455010756993
+            },
+            {
+              "n": "152515532526576036738921000000",
+              "logN": 67.19706395433334,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.396738764027843,
+              "robinRatio": 0.9870092107281081
+            },
+            {
+              "n": "305031065053152073477842000000",
+              "logN": 67.89021113489329,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 2
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.425859782783855,
+              "robinRatio": 0.9884841856513379
+            },
+            {
+              "n": "1525155325265760367389210000000",
+              "logN": 69.4996490473274,
+              "frontierBase": 59,
+              "frontierIndex": 19,
+              "exponents": [
+                7,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "exponentDrops": [
+                {
+                  "afterIndex": 1,
+                  "drop": 3
+                },
+                {
+                  "afterIndex": 2,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 3,
+                  "drop": 1
+                },
+                {
+                  "afterIndex": 4,
+                  "drop": 1
+                }
+              ],
+              "sigmaOverN": 7.473768555576011,
+              "robinRatio": 0.9893657042481585
+            }
+          ],
+          "maxRobinRatio": 0.9893657042481585
+        }
+      ]
+    }
+  ]
+}

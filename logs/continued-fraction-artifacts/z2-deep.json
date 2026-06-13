@@ -1,0 +1,844 @@
+{
+  "object": "deep bounded continued-fraction Z_2 witness scan",
+  "generatedAt": "2026-06-12T20:33:42.674Z",
+  "definition": "cf2num(q)=#{a: a/q has canonical continued fraction digits all in {1,2}}.",
+  "ranges": [
+    [
+      100000,
+      200000
+    ],
+    [
+      500000,
+      1000000
+    ]
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "results": [
+    {
+      "range": [
+        100000,
+        200000
+      ],
+      "mainTerms": {
+        "primeLi": 8406.24312084622,
+        "cf2CramerWeightedMain": 5336.400256205991,
+        "cf2NumeratorWeightedMain": 20200.01506432495
+      },
+      "denominatorWorld": {
+        "cf2DenominatorCount": 47810,
+        "cf2Density": 0.4780952190478095,
+        "cf2NumeratorTotal": 162213,
+        "avgCf2NumeratorsPerDenominator": 3.3928676009203094
+      },
+      "real": {
+        "count": 8392,
+        "cf2Count": 5594,
+        "cf2Rate": 0.6665872259294566,
+        "cf2NumeratorTotal": 22438,
+        "avgCf2NumeratorsPerLabel": 2.6737368922783604,
+        "avgCf2NumeratorsPerHit": 4.011083303539507,
+        "firstCf2Misses": [
+          100109,
+          100129,
+          100151,
+          100189,
+          100207,
+          100213,
+          100447,
+          100493,
+          100501,
+          100511,
+          100519,
+          100703
+        ],
+        "topWitnesses": [
+          {
+            "n": 153743,
+            "witnesses": 20
+          },
+          {
+            "n": 134171,
+            "witnesses": 19
+          },
+          {
+            "n": 110563,
+            "witnesses": 18
+          },
+          {
+            "n": 140401,
+            "witnesses": 18
+          },
+          {
+            "n": 133559,
+            "witnesses": 17
+          },
+          {
+            "n": 154487,
+            "witnesses": 17
+          },
+          {
+            "n": 159017,
+            "witnesses": 17
+          },
+          {
+            "n": 162997,
+            "witnesses": 17
+          },
+          {
+            "n": 164621,
+            "witnesses": 17
+          },
+          {
+            "n": 166303,
+            "witnesses": 17
+          }
+        ],
+        "cf2MinusWeightedMain": 257.59974379400865,
+        "cf2NumeratorMinusWeightedMain": 2237.984935675049
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 8352,
+          "cf2Count": 5304,
+          "cf2Rate": 0.6350574712643678,
+          "cf2NumeratorTotal": 20023,
+          "avgCf2NumeratorsPerLabel": 2.397389846743295,
+          "avgCf2NumeratorsPerHit": 3.775075414781297,
+          "firstCf2Misses": [
+            100031,
+            100097,
+            100099,
+            100109,
+            100129,
+            100175,
+            100187,
+            100205,
+            100207,
+            100241,
+            100619,
+            100625
+          ],
+          "topWitnesses": [
+            {
+              "n": 146821,
+              "witnesses": 24
+            },
+            {
+              "n": 158207,
+              "witnesses": 21
+            },
+            {
+              "n": 160097,
+              "witnesses": 20
+            },
+            {
+              "n": 140401,
+              "witnesses": 18
+            },
+            {
+              "n": 162863,
+              "witnesses": 18
+            },
+            {
+              "n": 166303,
+              "witnesses": 17
+            },
+            {
+              "n": 176413,
+              "witnesses": 17
+            },
+            {
+              "n": 107663,
+              "witnesses": 16
+            },
+            {
+              "n": 108107,
+              "witnesses": 16
+            },
+            {
+              "n": 111757,
+              "witnesses": 16
+            }
+          ]
+        },
+        {
+          "seed": 271828,
+          "count": 8385,
+          "cf2Count": 5316,
+          "cf2Rate": 0.6339892665474061,
+          "cf2NumeratorTotal": 20302,
+          "avgCf2NumeratorsPerLabel": 2.4212283840190816,
+          "avgCf2NumeratorsPerHit": 3.8190368698269377,
+          "firstCf2Misses": [
+            100001,
+            100031,
+            100105,
+            100159,
+            100201,
+            100207,
+            100213,
+            100301,
+            100321,
+            100387,
+            100429,
+            100447
+          ],
+          "topWitnesses": [
+            {
+              "n": 146821,
+              "witnesses": 24
+            },
+            {
+              "n": 107969,
+              "witnesses": 22
+            },
+            {
+              "n": 158207,
+              "witnesses": 21
+            },
+            {
+              "n": 108419,
+              "witnesses": 20
+            },
+            {
+              "n": 143423,
+              "witnesses": 19
+            },
+            {
+              "n": 110563,
+              "witnesses": 18
+            },
+            {
+              "n": 156251,
+              "witnesses": 17
+            },
+            {
+              "n": 171917,
+              "witnesses": 17
+            },
+            {
+              "n": 176413,
+              "witnesses": 17
+            },
+            {
+              "n": 180547,
+              "witnesses": 17
+            }
+          ]
+        },
+        {
+          "seed": 314159,
+          "count": 8371,
+          "cf2Count": 5372,
+          "cf2Rate": 0.641739338191375,
+          "cf2NumeratorTotal": 20034,
+          "avgCf2NumeratorsPerLabel": 2.393262453709234,
+          "avgCf2NumeratorsPerHit": 3.72933730454207,
+          "firstCf2Misses": [
+            100009,
+            100105,
+            100109,
+            100141,
+            100175,
+            100201,
+            100259,
+            100277,
+            100289,
+            100331,
+            100337,
+            100435
+          ],
+          "topWitnesses": [
+            {
+              "n": 102491,
+              "witnesses": 21
+            },
+            {
+              "n": 108419,
+              "witnesses": 20
+            },
+            {
+              "n": 151919,
+              "witnesses": 20
+            },
+            {
+              "n": 153743,
+              "witnesses": 20
+            },
+            {
+              "n": 178777,
+              "witnesses": 20
+            },
+            {
+              "n": 134171,
+              "witnesses": 19
+            },
+            {
+              "n": 143423,
+              "witnesses": 19
+            },
+            {
+              "n": 140401,
+              "witnesses": 18
+            },
+            {
+              "n": 108473,
+              "witnesses": 17
+            },
+            {
+              "n": 160181,
+              "witnesses": 17
+            }
+          ]
+        },
+        {
+          "seed": 161803,
+          "count": 8461,
+          "cf2Count": 5321,
+          "cf2Rate": 0.6288854745301974,
+          "cf2NumeratorTotal": 20283,
+          "avgCf2NumeratorsPerLabel": 2.397234369459875,
+          "avgCf2NumeratorsPerHit": 3.811877466641609,
+          "firstCf2Misses": [
+            100001,
+            100079,
+            100109,
+            100121,
+            100141,
+            100151,
+            100187,
+            100189,
+            100201,
+            100427,
+            100429,
+            100447
+          ],
+          "topWitnesses": [
+            {
+              "n": 146821,
+              "witnesses": 24
+            },
+            {
+              "n": 107969,
+              "witnesses": 22
+            },
+            {
+              "n": 105073,
+              "witnesses": 21
+            },
+            {
+              "n": 158207,
+              "witnesses": 21
+            },
+            {
+              "n": 151919,
+              "witnesses": 20
+            },
+            {
+              "n": 153743,
+              "witnesses": 20
+            },
+            {
+              "n": 143423,
+              "witnesses": 19
+            },
+            {
+              "n": 143929,
+              "witnesses": 18
+            },
+            {
+              "n": 154487,
+              "witnesses": 17
+            },
+            {
+              "n": 160181,
+              "witnesses": 17
+            }
+          ]
+        },
+        {
+          "seed": 424242,
+          "count": 8370,
+          "cf2Count": 5376,
+          "cf2Rate": 0.6422939068100358,
+          "cf2NumeratorTotal": 20468,
+          "avgCf2NumeratorsPerLabel": 2.445400238948626,
+          "avgCf2NumeratorsPerHit": 3.8072916666666665,
+          "firstCf2Misses": [
+            100031,
+            100079,
+            100129,
+            100157,
+            100217,
+            100259,
+            100331,
+            100345,
+            100435,
+            100447,
+            100481,
+            100493
+          ],
+          "topWitnesses": [
+            {
+              "n": 101387,
+              "witnesses": 26
+            },
+            {
+              "n": 153743,
+              "witnesses": 20
+            },
+            {
+              "n": 162863,
+              "witnesses": 18
+            },
+            {
+              "n": 164621,
+              "witnesses": 17
+            },
+            {
+              "n": 176413,
+              "witnesses": 17
+            },
+            {
+              "n": 182359,
+              "witnesses": 17
+            },
+            {
+              "n": 193517,
+              "witnesses": 17
+            },
+            {
+              "n": 110327,
+              "witnesses": 16
+            },
+            {
+              "n": 111757,
+              "witnesses": 16
+            },
+            {
+              "n": 112819,
+              "witnesses": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": [
+        500000,
+        1000000
+      ],
+      "mainTerms": {
+        "primeLi": 37021.260373029465,
+        "cf2CramerWeightedMain": 26248.674028406986,
+        "cf2NumeratorWeightedMain": 103756.38625078367
+      },
+      "denominatorWorld": {
+        "cf2DenominatorCount": 269722,
+        "cf2Density": 0.5394429211141578,
+        "cf2NumeratorTotal": 924092,
+        "avgCf2NumeratorsPerDenominator": 3.4260905673248754
+      },
+      "real": {
+        "count": 36960,
+        "cf2Count": 27490,
+        "cf2Rate": 0.7437770562770563,
+        "cf2NumeratorTotal": 113540,
+        "avgCf2NumeratorsPerLabel": 3.071969696969697,
+        "avgCf2NumeratorsPerHit": 4.13022917424518,
+        "firstCf2Misses": [
+          500041,
+          500057,
+          500069,
+          500107,
+          500113,
+          500153,
+          500167,
+          500177,
+          500231,
+          500239,
+          500257,
+          500299
+        ],
+        "topWitnesses": [
+          {
+            "n": 904781,
+            "witnesses": 29
+          },
+          {
+            "n": 883471,
+            "witnesses": 25
+          },
+          {
+            "n": 962471,
+            "witnesses": 24
+          },
+          {
+            "n": 616961,
+            "witnesses": 23
+          },
+          {
+            "n": 852199,
+            "witnesses": 23
+          },
+          {
+            "n": 595141,
+            "witnesses": 22
+          },
+          {
+            "n": 661019,
+            "witnesses": 22
+          },
+          {
+            "n": 661321,
+            "witnesses": 22
+          },
+          {
+            "n": 959603,
+            "witnesses": 22
+          },
+          {
+            "n": 583031,
+            "witnesses": 21
+          }
+        ],
+        "cf2MinusWeightedMain": 1241.3259715930144,
+        "cf2NumeratorMinusWeightedMain": 9783.613749216325
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "count": 36994,
+          "cf2Count": 26360,
+          "cf2Rate": 0.7125479807536357,
+          "cf2NumeratorTotal": 103918,
+          "avgCf2NumeratorsPerLabel": 2.809050116235065,
+          "avgCf2NumeratorsPerHit": 3.942261001517451,
+          "firstCf2Misses": [
+            500033,
+            500041,
+            500057,
+            500059,
+            500065,
+            500069,
+            500093,
+            500113,
+            500201,
+            500257,
+            500263,
+            500275
+          ],
+          "topWitnesses": [
+            {
+              "n": 904781,
+              "witnesses": 29
+            },
+            {
+              "n": 986209,
+              "witnesses": 28
+            },
+            {
+              "n": 883471,
+              "witnesses": 25
+            },
+            {
+              "n": 899041,
+              "witnesses": 24
+            },
+            {
+              "n": 616961,
+              "witnesses": 23
+            },
+            {
+              "n": 590417,
+              "witnesses": 21
+            },
+            {
+              "n": 617521,
+              "witnesses": 21
+            },
+            {
+              "n": 635191,
+              "witnesses": 21
+            },
+            {
+              "n": 705845,
+              "witnesses": 21
+            },
+            {
+              "n": 858113,
+              "witnesses": 21
+            }
+          ]
+        },
+        {
+          "seed": 271828,
+          "count": 36988,
+          "cf2Count": 26355,
+          "cf2Rate": 0.7125283875851628,
+          "cf2NumeratorTotal": 104028,
+          "avgCf2NumeratorsPerLabel": 2.812479723153455,
+          "avgCf2NumeratorsPerHit": 3.9471826977803075,
+          "firstCf2Misses": [
+            500003,
+            500045,
+            500071,
+            500087,
+            500147,
+            500155,
+            500165,
+            500245,
+            500257,
+            500263,
+            500285,
+            500297
+          ],
+          "topWitnesses": [
+            {
+              "n": 904781,
+              "witnesses": 29
+            },
+            {
+              "n": 616961,
+              "witnesses": 23
+            },
+            {
+              "n": 634789,
+              "witnesses": 21
+            },
+            {
+              "n": 699833,
+              "witnesses": 21
+            },
+            {
+              "n": 575141,
+              "witnesses": 20
+            },
+            {
+              "n": 658591,
+              "witnesses": 20
+            },
+            {
+              "n": 663001,
+              "witnesses": 20
+            },
+            {
+              "n": 666695,
+              "witnesses": 20
+            },
+            {
+              "n": 683659,
+              "witnesses": 20
+            },
+            {
+              "n": 684181,
+              "witnesses": 20
+            }
+          ]
+        },
+        {
+          "seed": 314159,
+          "count": 37083,
+          "cf2Count": 26317,
+          "cf2Rate": 0.7096782892430493,
+          "cf2NumeratorTotal": 104440,
+          "avgCf2NumeratorsPerLabel": 2.8163848663808215,
+          "avgCf2NumeratorsPerHit": 3.9685374472774253,
+          "firstCf2Misses": [
+            500045,
+            500069,
+            500095,
+            500125,
+            500221,
+            500245,
+            500255,
+            500263,
+            500275,
+            500317,
+            500323,
+            500353
+          ],
+          "topWitnesses": [
+            {
+              "n": 986209,
+              "witnesses": 28
+            },
+            {
+              "n": 896731,
+              "witnesses": 25
+            },
+            {
+              "n": 581531,
+              "witnesses": 24
+            },
+            {
+              "n": 595141,
+              "witnesses": 22
+            },
+            {
+              "n": 902099,
+              "witnesses": 22
+            },
+            {
+              "n": 583031,
+              "witnesses": 21
+            },
+            {
+              "n": 635191,
+              "witnesses": 21
+            },
+            {
+              "n": 637859,
+              "witnesses": 21
+            },
+            {
+              "n": 858113,
+              "witnesses": 21
+            },
+            {
+              "n": 875159,
+              "witnesses": 21
+            }
+          ]
+        },
+        {
+          "seed": 161803,
+          "count": 36878,
+          "cf2Count": 26204,
+          "cf2Rate": 0.7105591409512446,
+          "cf2NumeratorTotal": 103613,
+          "avgCf2NumeratorsPerLabel": 2.809615488909377,
+          "avgCf2NumeratorsPerHit": 3.9540909784765685,
+          "firstCf2Misses": [
+            500033,
+            500059,
+            500065,
+            500113,
+            500137,
+            500239,
+            500245,
+            500261,
+            500263,
+            500353,
+            500395,
+            500399
+          ],
+          "topWitnesses": [
+            {
+              "n": 904781,
+              "witnesses": 29
+            },
+            {
+              "n": 610873,
+              "witnesses": 28
+            },
+            {
+              "n": 986209,
+              "witnesses": 28
+            },
+            {
+              "n": 899041,
+              "witnesses": 24
+            },
+            {
+              "n": 616961,
+              "witnesses": 23
+            },
+            {
+              "n": 661321,
+              "witnesses": 22
+            },
+            {
+              "n": 724081,
+              "witnesses": 22
+            },
+            {
+              "n": 860017,
+              "witnesses": 22
+            },
+            {
+              "n": 996799,
+              "witnesses": 22
+            },
+            {
+              "n": 617521,
+              "witnesses": 21
+            }
+          ]
+        },
+        {
+          "seed": 424242,
+          "count": 37333,
+          "cf2Count": 26420,
+          "cf2Rate": 0.7076848900436611,
+          "cf2NumeratorTotal": 104511,
+          "avgCf2NumeratorsPerLabel": 2.799426780596255,
+          "avgCf2NumeratorsPerHit": 3.9557532172596517,
+          "firstCf2Misses": [
+            500033,
+            500063,
+            500069,
+            500087,
+            500137,
+            500165,
+            500213,
+            500231,
+            500255,
+            500257,
+            500261,
+            500275
+          ],
+          "topWitnesses": [
+            {
+              "n": 610873,
+              "witnesses": 28
+            },
+            {
+              "n": 588419,
+              "witnesses": 22
+            },
+            {
+              "n": 595141,
+              "witnesses": 22
+            },
+            {
+              "n": 952561,
+              "witnesses": 22
+            },
+            {
+              "n": 567475,
+              "witnesses": 21
+            },
+            {
+              "n": 609989,
+              "witnesses": 21
+            },
+            {
+              "n": 637859,
+              "witnesses": 21
+            },
+            {
+              "n": 697259,
+              "witnesses": 21
+            },
+            {
+              "n": 705845,
+              "witnesses": 21
+            },
+            {
+              "n": 837121,
+              "witnesses": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

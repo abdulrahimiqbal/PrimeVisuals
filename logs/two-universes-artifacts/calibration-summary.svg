@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <rect width="980" height="560" fill="#08111f"/>
+  <text x="62" y="24" fill="#e5edf7" font-family="system-ui" font-size="17">Two-universes calibration: F_3[t] Chowla decay and twin-density ratios</text>
+  <line x1="62" y1="264.72" x2="950" y2="264.72" stroke="#243244"/>
+  <line x1="62" y1="292.56" x2="950" y2="292.56" stroke="#243244"/>
+  <text x="14" y="60" fill="#9fb0c4" font-family="ui-monospace" font-size="12">|C(h,n)|</text>
+  <text x="14" y="301.84000000000003" fill="#9fb0c4" font-family="ui-monospace" font-size="12">obs/pred</text>
+  <text x="62" y="538" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">1</text><text x="252.28571428571428" y="538" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">4</text><text x="506" y="538" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">8</text><text x="759.7142857142857" y="538" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">12</text><text x="950" y="538" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">15</text>
+  <text x="506" y="552" fill="#9fb0c4" font-family="ui-monospace" font-size="12" text-anchor="middle">degree n (log analog)</text>
+  <path d="M125.43,59.71 L188.86,264.72 L252.29,77.42 L315.71,72.78 L379.14,101.67 L442.57,119.38 L506.00,120.30 L569.43,145.03 L632.86,123.69 L696.29,132.53 L759.71,159.11 L823.14,147.76 L886.57,156.98 L950.00,175.88" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M125.43,468.88 L188.86,386.45 L252.29,468.88 L315.71,316.23 L379.14,395.61 L442.57,385.77 L506.00,382.04 L569.43,362.02 L632.86,378.42 L696.29,370.06 L759.71,367.97 L823.14,370.66 L886.57,372.51 L950.00,369.78" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M125.43,264.72 L188.86,77.42 L252.29,95.13 L315.71,112.84 L379.14,82.26 L442.57,137.09 L506.00,157.74 L569.43,149.51 L632.86,133.53 L696.29,154.41 L759.71,135.18 L823.14,163.69 L886.57,174.88 L950.00,162.83" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M125.43,413.93 L188.86,386.45 L252.29,371.18 L315.71,367.11 L379.14,371.18 L442.57,374.69 L506.00,372.39 L569.43,372.20 L632.86,371.51 L696.29,369.56 L759.71,369.71 L823.14,373.67 L886.57,369.64 L950.00,370.90" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M125.43,264.72 L188.86,77.42 L252.29,95.13 L315.71,112.84 L379.14,82.26 L442.57,137.09 L506.00,157.74 L569.43,149.51 L632.86,133.53 L696.29,154.41 L759.71,135.18 L823.14,163.69 L886.57,174.88 L950.00,162.83" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <path d="M125.43,413.93 L188.86,386.45 L252.29,371.18 L315.71,367.11 L379.14,371.18 L442.57,374.69 L506.00,372.39 L569.43,372.20 L632.86,371.51 L696.29,369.56 L759.71,369.71 L823.14,373.67 L886.57,369.64 L950.00,370.90" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5 4"/>
+  <g transform="translate(770,58)"><line x1="0" y1="0" x2="30" y2="0" stroke="#38bdf8" stroke-width="2"/><text x="38" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">h=1</text></g><g transform="translate(770,80)"><line x1="0" y1="0" x2="30" y2="0" stroke="#f59e0b" stroke-width="2"/><text x="38" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">h=t</text></g><g transform="translate(770,102)"><line x1="0" y1="0" x2="30" y2="0" stroke="#a78bfa" stroke-width="2"/><text x="38" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">h=t+1</text></g>
+  <rect x="760" y="132" width="204" height="42" rx="3" fill="#08111f" stroke="#243244"/>
+  <text x="770" y="149" fill="#9fb0c4" font-family="ui-monospace" font-size="11">solid: Chowla |avg mu(f)mu(f+h)|</text>
+  <text x="770" y="167" fill="#9fb0c4" font-family="ui-monospace" font-size="11">dashed: twin obs/pred</text>
+</svg>

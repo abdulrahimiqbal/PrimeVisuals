@@ -107,6 +107,171 @@ export function dyadicExpTransform(values, inverse = false) {
   return out;
 }
 
+/* Row visibility with respect to lcm(1..y):
+   rowVisible(n, y) = 1 iff gcd(n, lcm(1..y)) = 1.
+   The implementation uses the equivalent "no divisor d in 2..y divides n"
+   test, avoiding construction of the enormous lcm. */
+export function rowVisibleValue(n, y) {
+  const m = Math.max(0, Math.round(n));
+  const yy = Math.max(1, Math.floor(y));
+  if (m < 1) return 0;
+  for (let d = 2; d <= yy; d++) if (m % d === 0) return 0;
+  return 1;
+}
+
+export function rowVisibilityTable(N, y = Math.floor(Math.sqrt(N))) {
+  const nMax = Math.max(0, Math.round(N));
+  const yy = Math.max(1, Math.min(nMax, Math.floor(y)));
+  const visible = new Uint8Array(nMax + 1);
+  const count = new Int32Array(nMax + 1);
+  const gap = new Int32Array(nMax + 1);
+  const run = new Int32Array(nMax + 1);
+  if (nMax >= 1) visible.fill(1, 1);
+  for (let d = 2; d <= yy; d++) {
+    for (let j = d; j <= nMax; j += d) visible[j] = 0;
+  }
+  let c = 0, last = 0, desert = 0;
+  for (let n = 1; n <= nMax; n++) {
+    if (visible[n]) {
+      c++;
+      gap[n] = last ? n - last : 0;
+      last = n;
+      desert = 0;
+    } else {
+      desert++;
+    }
+    count[n] = c;
+    run[n] = desert;
+  }
+  return { y: yy, visible, count, gap, run };
+}
+
+export function roughIntervalWitnesses(start, width) {
+  const a = Math.round(start);
+  const h = Math.max(0, Math.round(width));
+  let count = 0, firstOffset = 0;
+  for (let m = a + 1; m < a + h; m++) {
+    if (!rowVisibleValue(m, h - 1)) continue;
+    count++;
+    if (!firstOffset) firstOffset = m - a;
+  }
+  return { count, firstOffset };
+}
+
+function gcdInt(a, b) {
+  let x = Math.abs(Math.round(a));
+  let y = Math.abs(Math.round(b));
+  while (y) {
+    const t = x % y;
+    x = y;
+    y = t;
+  }
+  return x;
+}
+
+function basePowerValuation(n, base) {
+  let m = Math.abs(Math.round(n));
+  const b = Math.max(2, Math.round(base));
+  let e = 0;
+  while (m > 0 && m % b === 0) {
+    e++;
+    m = Math.floor(m / b);
+  }
+  return e;
+}
+
+function totientsUpTo(N) {
+  const nMax = Math.max(0, Math.round(N));
+  const phi = new Int32Array(nMax + 1);
+  for (let i = 0; i <= nMax; i++) phi[i] = i;
+  for (let p = 2; p <= nMax; p++) {
+    if (phi[p] !== p) continue;
+    for (let j = p; j <= nMax; j += p) phi[j] -= Math.floor(phi[j] / p);
+  }
+  return phi;
+}
+
+/* Reciprocal Farey-product base surplus:
+   B_b(n)=Σ_{1≤h≤k≤n, gcd(h,k)=1}(ν_b(k)-ν_b(h)).
+   For prime b=p this is the p-adic valuation ord_p(1/F_n). */
+export function fareyBaseDivisorSurplusTable(N, base) {
+  const nMax = Math.max(0, Math.round(N));
+  const b = Math.max(2, Math.round(base));
+  const phi = totientsUpTo(nMax);
+  const out = new Int32Array(nMax + 1);
+  let acc = 0;
+  for (let k = 1; k <= nMax; k++) {
+    let numeratorValuation = 0;
+    for (let h = 1; h <= k; h++) {
+      if (gcdInt(h, k) === 1) numeratorValuation += basePowerValuation(h, b);
+    }
+    acc += basePowerValuation(k, b) * phi[k] - numeratorValuation;
+    out[k] = acc;
+  }
+  return out;
+}
+
+/* Denominators of finite regular continued fractions [0; a1,...,ak]
+   whose partial quotients all lie in {1,...,maxPartial}. */
+export function boundedCfDenominatorTable(N, maxPartial) {
+  const nMax = Math.max(0, Math.round(N));
+  const bound = Math.max(1, Math.round(maxPartial));
+  const out = new Uint8Array(nMax + 1);
+  const seenState = new Set();
+  const stride = nMax + 1;
+  function visit(prevQ, q) {
+    for (let a = 1; a <= bound; a++) {
+      const nextQ = a * q + prevQ;
+      if (nextQ > nMax) break;
+      if (a > 1) out[nextQ] = 1;
+      const key = q * stride + nextQ;
+      if (seenState.has(key)) continue;
+      seenState.add(key);
+      visit(q, nextQ);
+    }
+  }
+  visit(0, 1);
+  return out;
+}
+
+export function boundedCfMinHeightTable(N, maxPartial = 5) {
+  const nMax = Math.max(0, Math.round(N));
+  const maxH = Math.max(1, Math.round(maxPartial));
+  const out = new Int16Array(nMax + 1);
+  for (let h = 1; h <= maxH; h++) {
+    const den = boundedCfDenominatorTable(nMax, h);
+    for (let n = 1; n <= nMax; n++) if (!out[n] && den[n]) out[n] = h;
+  }
+  return out;
+}
+
+export function boundedCfNumeratorCountTable(N, maxPartial) {
+  const nMax = Math.max(0, Math.round(N));
+  const bound = Math.max(1, Math.round(maxPartial));
+  const numeratorSets = new Map();
+  function record(q, p) {
+    let set = numeratorSets.get(q);
+    if (!set) {
+      set = new Set();
+      numeratorSets.set(q, set);
+    }
+    set.add(p);
+  }
+  function visit(prevP, p, prevQ, q) {
+    for (let a = 1; a <= bound; a++) {
+      const nextP = a * p + prevP;
+      const nextQ = a * q + prevQ;
+      if (nextQ > nMax) break;
+      if (a > 1) record(nextQ, nextP);
+      visit(p, nextP, q, nextQ);
+    }
+  }
+  visit(1, 0, 0, 1);
+  const out = new Uint32Array(nMax + 1);
+  for (const [q, set] of numeratorSets) out[q] = set.size;
+  return out;
+}
+
 /* ζ(1/2 + it) via the Dirichlet eta series, ζ = η / (1 − 2^{1−s}). */
 export const Z_TERMS = 3000;
 let _ln = null, _rs = null;
@@ -179,11 +344,14 @@ export function integerLabTables(N) {
   const bigomega = new Int16Array(N + 1);
   const tau = new Int32Array(N + 1);
   const phi = new Int32Array(N + 1);
+  const fareynew = new Int32Array(N + 1);
+  const fareydef = new Int32Array(N + 1);
   const rad = new Int32Array(N + 1);
   const g2 = new Float64Array(N + 1);
   const G2 = new Float64Array(N + 1);
   const l2 = new Float64Array(N + 1);
   const L2 = new Float64Array(N + 1);
+  const row = rowVisibilityTable(N);
   tau.fill(1); rad.fill(1);
   for (let i = 0; i <= N; i++) phi[i] = i;
   let pc = 0, mc = 0, lastPrime = 0;
@@ -203,6 +371,10 @@ export function integerLabTables(N) {
       let q = j;
       while (q % p === 0) { bigomega[j]++; q = Math.floor(q / p); }
     }
+  }
+  for (let i = 1; i <= N; i++) {
+    fareynew[i] = phi[i];
+    fareydef[i] = Math.max(0, i - 1 - phi[i]);
   }
   for (let d = 2; d <= N; d++) for (let j = d; j <= N; j += d) tau[j]++;
   for (let i = 1; i <= N; i++) {
@@ -229,7 +401,10 @@ export function integerLabTables(N) {
     l2[i] = ls;
     L2[i] = L2[i - 1] + ls;
   }
-  return { isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, rad, g2, G2, l2, L2 };
+  return {
+    isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2,
+    rowY: row.y, rowvis: row.visible, rowcount: row.count, rowgap: row.gap, rowrun: row.run,
+  };
 }
 
 /* Logarithmic integral Li(x) (offset, Li(2) = 0) by Simpson integration. */

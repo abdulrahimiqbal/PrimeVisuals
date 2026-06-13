@@ -11,6 +11,7 @@ export function patchGuide(cfg, data) {
     primes: `Each dot is one prime p${N ? ` from the ${count} primes up to ${N}` : ""}.`,
     gaps: `Each point is one gap between consecutive primes: next prime minus p.`,
     mobius: `Each point is one integer n; the signal is mu(n), which is -1, 0, or +1.`,
+    polyprimes: "Each dot is one monic irreducible polynomial over F_q[t].",
     zeta: `Each sample is zeta(1/2 + it) at one height t, not an individual prime.`,
     zeros: `Each dot is one known nontrivial zeta zero height t_k.`,
     psi: `Each step is one prime power p^k weighted by log p; the staircase is Chebyshev psi(x).`,
@@ -27,6 +28,7 @@ export function patchGuide(cfg, data) {
     if (cfg.plane === "family") return "Each row is one member of the swept family; brightness shows where its values land.";
     if (cfg.plane === "graph" && cfg.source === "psi") return "X is x; Y is psi(x). The smooth curve is the explicit formula built from the first K zeros.";
     if (cfg.plane === "graph" && cfg.source === "primes") return "X is prime p; Y is pi(p), the count of primes up to p.";
+    if (cfg.plane === "graph" && cfg.source === "polyprimes") return "X is the compact polynomial encoding; Y is the polynomial degree, the log-size analog.";
     if (cfg.plane === "graph" && cfg.source === "gaps") return "X is prime p; Y is the following prime gap.";
     if (cfg.plane === "graph" && cfg.source === "zeta") return "X is height t; Y is |zeta(1/2 + it)|.";
     if (cfg.plane === "graph" && cfg.source === "zeros") return "X is the zero height; Y is spacing to the next zero.";
@@ -53,6 +55,7 @@ export function patchGuide(cfg, data) {
       "primes:clock": "Empty spokes are usually impossible residue classes, not missing data.",
       "primes:walk": "Watch which residue class leads, then see whether the lead persists as N grows.",
       "primes:family": "Each row is one modulus or angle; coherent vertical bands mean structure shared across the family.",
+      "polyprimes:graph": "Compare degree layers with the exact irreducible-count formula; mismatches would mean the finite-field build is wrong.",
       "gaps:graph": "Tall spikes are unusually large prime gaps; the baseline slowly drifts upward.",
       "mobius:walk": "Read it as balance. Long drift means one Mobius sign has led for a while.",
       "zeta:graph": "Deep dips toward zero mark zero heights on the critical line.",
@@ -148,6 +151,7 @@ export function explainView(cfg, opts = {}) {
     "primes:walk": "Two teams of primes (remainder 1 vs remainder 3 when divided by 4) race; the line shows who's ahead. They should tie in the long run, yet one team leads suspiciously often.",
     "primes:matrix": "The numbers up to N are poured into a table W columns wide and the primes are lit. Drag W and watch: stripes snap in whenever W shares a factor with small primes, because whole columns become impossible.",
     "primes:family": "Every row asks the same question for a different divisor q: do the primes spread evenly among the allowed remainders? Green = fair, warm = excess, cold = deficit, black = impossible.",
+    "polyprimes:graph": "These are polynomial primes in F_q[t]. Their degree plays the role of log size, so each horizontal layer is a finite-field prime-counting test.",
     "gaps:graph": "Each point is the distance from one prime to the next. The floor slowly rises (primes thin out), but individual gaps swing wildly.",
     "mobius:walk": "A coin-flip-like walk driven by the Möbius function. If this walk ever strays too far from zero, the Riemann Hypothesis is false.",
     "zeta:graph": "The height of the zeta function as you climb the critical line. Every touch of zero is one of the zeros that secretly steer the primes.",

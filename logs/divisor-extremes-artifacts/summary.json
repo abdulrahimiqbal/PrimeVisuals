@@ -1,0 +1,921 @@
+{
+  "object": "extremely abundant frontier primes",
+  "generatedAt": "2026-06-12T18:17:08.299Z",
+  "logLimits": [
+    40,
+    70
+  ],
+  "ranges": [
+    {
+      "logLimit": 40,
+      "real": {
+        "candidates": 27055,
+        "superabundant": 105,
+        "xa": 1,
+        "maxFrontier": 7,
+        "frontierUsed": 1,
+        "frontierAvailable": 4,
+        "frontierSkipped": 3,
+        "skippedFrontiers": [
+          2,
+          3,
+          5
+        ],
+        "windows": [],
+        "bigJumps": [],
+        "first": {
+          "n": "10080",
+          "logN": 9.218309,
+          "frontierBase": 7,
+          "frontierIndex": 4,
+          "exponents": [
+            5,
+            2,
+            1,
+            1
+          ],
+          "robinRatio": 0.985818612
+        },
+        "last": {
+          "n": "10080",
+          "logN": 9.218309,
+          "frontierBase": 7,
+          "frontierIndex": 4,
+          "exponents": [
+            5,
+            2,
+            1,
+            1
+          ],
+          "robinRatio": 0.985818612
+        },
+        "maxRobinRatio": 0.985818612
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "candidates": 27092,
+          "superabundant": 102,
+          "xa": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "maxRobinRatio": 0.985818612
+        },
+        {
+          "seed": 271828,
+          "candidates": 27116,
+          "superabundant": 103,
+          "xa": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439493,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "151623730538280000",
+            "logN": 39.560178,
+            "frontierBase": 31,
+            "frontierIndex": 12,
+            "exponents": [
+              6,
+              4,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 0.990498139
+          },
+          "maxRobinRatio": 0.990498139
+        },
+        {
+          "seed": 314159,
+          "candidates": 27117,
+          "superabundant": 103,
+          "xa": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439493,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "151623730538280000",
+            "logN": 39.560178,
+            "frontierBase": 31,
+            "frontierIndex": 12,
+            "exponents": [
+              6,
+              4,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 0.990498139
+          },
+          "maxRobinRatio": 0.990498139
+        },
+        {
+          "seed": 161803,
+          "candidates": 27116,
+          "superabundant": 103,
+          "xa": 6,
+          "maxFrontier": 31,
+          "frontierUsed": 2,
+          "frontierAvailable": 12,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                32
+              ],
+              "baseCount": 8,
+              "liMain": 7.439493,
+              "usedCount": 1,
+              "usedShare": 0.125
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "151623730538280000",
+            "logN": 39.560178,
+            "frontierBase": 31,
+            "frontierIndex": 12,
+            "exponents": [
+              6,
+              4,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 0.990498139
+          },
+          "maxRobinRatio": 0.990498139
+        },
+        {
+          "seed": 424242,
+          "candidates": 27078,
+          "superabundant": 103,
+          "xa": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "maxRobinRatio": 0.985818612
+        }
+      ]
+    },
+    {
+      "logLimit": 70,
+      "real": {
+        "candidates": 795050,
+        "superabundant": 195,
+        "xa": 1,
+        "maxFrontier": 7,
+        "frontierUsed": 1,
+        "frontierAvailable": 4,
+        "frontierSkipped": 3,
+        "skippedFrontiers": [
+          2,
+          3,
+          5
+        ],
+        "windows": [],
+        "bigJumps": [],
+        "first": {
+          "n": "10080",
+          "logN": 9.218309,
+          "frontierBase": 7,
+          "frontierIndex": 4,
+          "exponents": [
+            5,
+            2,
+            1,
+            1
+          ],
+          "robinRatio": 0.985818612
+        },
+        "last": {
+          "n": "10080",
+          "logN": 9.218309,
+          "frontierBase": 7,
+          "frontierIndex": 4,
+          "exponents": [
+            5,
+            2,
+            1,
+            1
+          ],
+          "robinRatio": 0.985818612
+        },
+        "maxRobinRatio": 0.985818612
+      },
+      "cramer": [
+        {
+          "seed": 12345,
+          "candidates": 797672,
+          "superabundant": 186,
+          "xa": 1,
+          "maxFrontier": 7,
+          "frontierUsed": 1,
+          "frontierAvailable": 4,
+          "frontierSkipped": 3,
+          "skippedFrontiers": [
+            2,
+            3,
+            5
+          ],
+          "windows": [],
+          "bigJumps": [],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "maxRobinRatio": 0.985818612
+        },
+        {
+          "seed": 271828,
+          "candidates": 803131,
+          "superabundant": 185,
+          "xa": 27,
+          "maxFrontier": 55,
+          "frontierUsed": 9,
+          "frontierAvailable": 19,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 13,
+              "liMain": 12.303097,
+              "usedCount": 6,
+              "usedShare": 0.461538
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.51153,
+              "usedCount": 2,
+              "usedShare": 1
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "628087328178615927752130000000",
+            "logN": 68.612477,
+            "frontierBase": 55,
+            "frontierIndex": 19,
+            "exponents": [
+              7,
+              4,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 1.014623207
+          },
+          "maxRobinRatio": 1.014623207
+        },
+        {
+          "seed": 314159,
+          "candidates": 803783,
+          "superabundant": 188,
+          "xa": 31,
+          "maxFrontier": 55,
+          "frontierUsed": 10,
+          "frontierAvailable": 20,
+          "frontierSkipped": 10,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 14,
+              "liMain": 12.303097,
+              "usedCount": 7,
+              "usedShare": 0.5
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.51153,
+              "usedCount": 2,
+              "usedShare": 1
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "2323923114260878932682881000000",
+            "logN": 69.92081,
+            "frontierBase": 55,
+            "frontierIndex": 20,
+            "exponents": [
+              6,
+              4,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 1.026718988
+          },
+          "maxRobinRatio": 1.026718988
+        },
+        {
+          "seed": 161803,
+          "candidates": 802587,
+          "superabundant": 192,
+          "xa": 15,
+          "maxFrontier": 55,
+          "frontierUsed": 6,
+          "frontierAvailable": 17,
+          "frontierSkipped": 11,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            29,
+            53
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 11,
+              "liMain": 12.303097,
+              "usedCount": 4,
+              "usedShare": 0.363636
+            },
+            {
+              "range": [
+                50,
+                56
+              ],
+              "baseCount": 2,
+              "liMain": 1.51153,
+              "usedCount": 1,
+              "usedShare": 0.5
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 31,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                29
+              ],
+              "logRatio": 27.297347
+            },
+            {
+              "from": 49,
+              "to": 55,
+              "skippedBases": [
+                53
+              ],
+              "logRatio": 7.977625
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "62156093832619092306000000",
+            "logN": 59.391691,
+            "frontierBase": 55,
+            "frontierIndex": 17,
+            "exponents": [
+              7,
+              4,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 0.998770832
+          },
+          "maxRobinRatio": 0.998770832
+        },
+        {
+          "seed": 424242,
+          "candidates": 796962,
+          "superabundant": 185,
+          "xa": 6,
+          "maxFrontier": 59,
+          "frontierUsed": 3,
+          "frontierAvailable": 19,
+          "frontierSkipped": 16,
+          "skippedFrontiers": [
+            2,
+            3,
+            5,
+            11,
+            13,
+            17,
+            19,
+            23,
+            25,
+            35,
+            37,
+            41,
+            43,
+            47,
+            49,
+            53
+          ],
+          "windows": [
+            {
+              "range": [
+                10,
+                50
+              ],
+              "baseCount": 12,
+              "liMain": 12.303097,
+              "usedCount": 0,
+              "usedShare": 0
+            },
+            {
+              "range": [
+                50,
+                60
+              ],
+              "baseCount": 3,
+              "liMain": 2.496716,
+              "usedCount": 2,
+              "usedShare": 0.666667
+            }
+          ],
+          "bigJumps": [
+            {
+              "from": 7,
+              "to": 55,
+              "skippedBases": [
+                11,
+                13,
+                17,
+                19,
+                23,
+                25,
+                35,
+                37,
+                41,
+                43,
+                47,
+                49,
+                53
+              ],
+              "logRatio": 54.594365
+            }
+          ],
+          "first": {
+            "n": "10080",
+            "logN": 9.218309,
+            "frontierBase": 7,
+            "frontierIndex": 4,
+            "exponents": [
+              5,
+              2,
+              1,
+              1
+            ],
+            "robinRatio": 0.985818612
+          },
+          "last": {
+            "n": "1525155325265760367389210000000",
+            "logN": 69.499649,
+            "frontierBase": 59,
+            "frontierIndex": 19,
+            "exponents": [
+              7,
+              4,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "robinRatio": 0.989365704
+          },
+          "maxRobinRatio": 0.989365704
+        }
+      ]
+    }
+  ]
+}

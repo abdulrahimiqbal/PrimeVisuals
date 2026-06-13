@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680">
+  <rect width="1120" height="680" fill="#08111f"/>
+  <text x="68" y="28" fill="#e5edf7" font-family="system-ui" font-size="18">Two-universes comparison: F_3[t] degree vs Z log_3(N)</text>
+  <text x="68" y="38" fill="#9fb0c4" font-family="ui-monospace" font-size="12">top: Chowla |average| / |log-weighted normalization|</text>
+  <text x="68" y="389" fill="#9fb0c4" font-family="ui-monospace" font-size="12">bottom: twin observed/predicted ratios</text>
+  <line x1="68" y1="338" x2="1084" y2="338" stroke="#243244"/>
+  <line x1="68" y1="510" x2="1084" y2="510" stroke="#243244" stroke-dasharray="4 5"/>
+  <line x1="68" y1="48" x2="68" y2="615" stroke="#152133"/><text x="68" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">1</text><line x1="258.295121204058" y1="48" x2="258.295121204058" y2="615" stroke="#152133"/><text x="258.295121204058" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">4</text><line x1="512.0219494761352" y1="48" x2="512.0219494761352" y2="615" stroke="#152133"/><text x="512.0219494761352" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">8</text><line x1="765.7487777482125" y1="48" x2="765.7487777482125" y2="615" stroke="#152133"/><text x="765.7487777482125" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">12</text><line x1="956.0438989522705" y1="48" x2="956.0438989522705" y2="615" stroke="#152133"/><text x="956.0438989522705" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">15</text><line x1="1082.9073130883091" y1="48" x2="1082.9073130883091" y2="615" stroke="#152133"/><text x="1082.9073130883091" y="660" fill="#8091a8" font-family="ui-monospace" font-size="11" text-anchor="middle">17</text>
+  <text x="576" y="674" fill="#9fb0c4" font-family="ui-monospace" font-size="12" text-anchor="middle">degree n for F_3[t]; log_3(N) for Z</text>
+  <path d="M131.43,82.59 L194.86,338.00 L258.30,117.18 L321.73,108.12 L385.16,164.54 L448.59,199.13 L512.02,200.93 L575.45,249.23 L638.89,207.55 L702.32,224.81 L765.75,276.73 L829.18,254.57 L892.61,272.56 L956.04,309.49" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M935.20,143.90 L998.63,145.91 L1068.14,147.97" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 5"/>
+  <circle cx="935.20" cy="143.90" r="3.2" fill="#38bdf8"/>
+  <circle cx="998.63" cy="145.91" r="3.2" fill="#38bdf8"/>
+  <circle cx="1068.14" cy="147.97" r="3.2" fill="#38bdf8"/>
+  <path d="M131.43,615.00 L194.86,602.44 L258.30,615.00 L321.73,405.00 L385.16,615.00 L448.59,598.40 L512.02,576.18 L575.45,456.99 L638.89,554.63 L702.32,504.88 L765.75,492.38 L829.18,508.41 L892.61,519.42 L956.04,503.20" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M131.43,338.00 L194.86,117.18 L258.30,151.77 L321.73,186.37 L385.16,126.63 L448.59,233.72 L512.02,274.06 L575.45,257.97 L638.89,226.77 L702.32,267.55 L765.75,230.00 L829.18,285.68 L892.61,307.53 L956.04,284.01" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M935.20,150.63 L998.63,152.63 L1068.14,154.69" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 5"/>
+  <circle cx="935.20" cy="150.63" r="3.2" fill="#f59e0b"/>
+  <circle cx="998.63" cy="152.63" r="3.2" fill="#f59e0b"/>
+  <circle cx="1068.14" cy="154.69" r="3.2" fill="#f59e0b"/>
+  <path d="M131.43,615.00 L194.86,602.44 L258.30,511.54 L321.73,487.29 L385.16,511.54 L448.59,532.41 L512.02,518.72 L575.45,517.60 L638.89,513.48 L702.32,501.86 L765.75,502.76 L829.18,526.36 L892.61,502.34 L956.04,509.88" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M131.43,338.00 L194.86,117.18 L258.30,151.77 L321.73,186.37 L385.16,126.63 L448.59,233.72 L512.02,274.06 L575.45,257.97 L638.89,226.77 L702.32,267.55 L765.75,230.00 L829.18,285.68 L892.61,307.53 L956.04,284.01" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <path d="M935.20,158.20 L998.63,160.21 L1068.14,162.27" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="8 5"/>
+  <circle cx="935.20" cy="158.20" r="3.2" fill="#a78bfa"/>
+  <circle cx="998.63" cy="160.21" r="3.2" fill="#a78bfa"/>
+  <circle cx="1068.14" cy="162.27" r="3.2" fill="#a78bfa"/>
+  <path d="M131.43,615.00 L194.86,602.44 L258.30,511.54 L321.73,487.29 L385.16,511.54 L448.59,532.41 L512.02,518.72 L575.45,517.60 L638.89,513.48 L702.32,501.86 L765.75,502.76 L829.18,526.36 L892.61,502.34 L956.04,509.88" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <path d="M935.20,518.49 L998.63,516.88 L1068.14,514.73" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="8 5"/>
+  <circle cx="935.20" cy="518.49" r="3.4" fill="#e5e7eb"/>
+  <circle cx="998.63" cy="516.88" r="3.4" fill="#e5e7eb"/>
+  <circle cx="1068.14" cy="514.73" r="3.4" fill="#e5e7eb"/>
+  <g transform="translate(860,62)"><line x1="0" y1="0" x2="32" y2="0" stroke="#38bdf8" stroke-width="2"/><text x="42" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">F_3 h=1; Z h=1</text></g><g transform="translate(860,84)"><line x1="0" y1="0" x2="32" y2="0" stroke="#f59e0b" stroke-width="2"/><text x="42" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">F_3 h=t; Z h=2</text></g><g transform="translate(860,106)"><line x1="0" y1="0" x2="32" y2="0" stroke="#a78bfa" stroke-width="2"/><text x="42" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">F_3 h=t+1; Z h=3</text></g>
+  <g transform="translate(860,150)"><line x1="0" y1="0" x2="32" y2="0" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="8 5"/><text x="42" y="4" fill="#d8e2ee" font-family="ui-monospace" font-size="12">Z twin ratio</text></g>
+  <rect x="846" y="178" width="242" height="54" rx="3" fill="#08111f" stroke="#243244"/>
+  <text x="858" y="198" fill="#9fb0c4" font-family="ui-monospace" font-size="11">solid = F_3[t]</text>
+  <text x="858" y="216" fill="#9fb0c4" font-family="ui-monospace" font-size="11">dashed + points = Z samples</text>
+</svg>
