@@ -169,6 +169,24 @@ the instrument itself:
   (known RH-sensitive object) × (zero-free bounded multiplier), it is the
   known object in new coordinates and inherits no new content (precedent:
   L2 = e^(2^−s)-twist of ψ — correct equivalence, zero new information).
+  The disguise check ALSO includes a **composite control**: any claim of
+  the form "for every prime p, P(p)" must be tested on composites and
+  semiprimes (25, 35, 49, 77, 91, 143, …). If a non-prime satisfies P, the
+  primality hypothesis is doing no work — the statement is about a larger
+  family (e.g. 5-rough numbers), and certifying it as a prime pattern is
+  disqualified (precedent: the Farey B_b(n) "prime signature" is shared by
+  35, 65, 77, 91, 143 — a totient identity, not a prime theorem).
+
+**Audit gate — run BEFORE declaring any goal complete.** A `complete`
+self-certification is not valid until the candidate has passed, in writing
+in the log: (1) the factor check, (2) the composite control if the claim
+mentions primes, (3) ≥5-seed Cramér contrast, (4) range-doubling
+persistence. Cramér controls test "is it density" — they do NOT test "is
+it primality"; the composite control is the only thing that does. Three
+prior "completes" (ψ, L2, Farey) were each locally correct and globally
+mis-certified; the gate exists because the agent's own checks passed every
+time. If any gate item fails, the goal stays open and the finding is logged
+at its true grade, not as a completion.
 
 Epistemics for created math: numerics about a new object earn `OBSERVED`.
 "Equivalent to RH" (or to any theorem) is a theorem-shaped claim and

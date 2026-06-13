@@ -7,6 +7,13 @@ patterns we could not say before. Stays open across sessions; resume from
 a HANDOFF if one exists.
 Log: `logs/<today>-deeper-structure.md`.
 
+STILL OPEN. A prior run certified this complete via the Farey object
+B_b(n); that certificate was REVOKED on audit — the "for every odd prime p"
+signature is shared by composites 35, 65, 77, 91, 143, … so it is a
+totient identity, not a prime pattern (criterion 3 fails). B_b(b)=φ(b) and
+B_b(3b−1)=−φ(b)/2 (odd b) are true but prime-decorative. Do not resubmit
+B_b(n); do not repeat the mistake.
+
 ## The lesson learned (read first)
 
 Equivalences that are easy to derive are easy BECAUSE they are
@@ -35,7 +42,12 @@ where the derivation is hard.
    main terms and the Cramér contrast. Renaming a residual bound does not
    count: the statement must constrain something other than the *size* of
    a residual — spacings, sign patterns, ordering, geometry, extremal
-   structure.
+   structure. **COMPOSITE CONTROL (mandatory):** test the statement on
+   composites and semiprimes (25, 35, 49, 77, 91, 143, …). If any non-prime
+   satisfies it, the primality hypothesis does no work and the criterion
+   FAILS — this is exactly how the Farey certificate was revoked. A Cramér
+   contrast does not substitute: random sparse sets miss 35/77/143 by
+   construction and will wrongly "pass".
 4. **DERIVATION.** The bridge itself: exact identities, named classical
    tools, both directions or honestly one-directional. Gaps marked
    CONJECTURAL keep the goal open but count as reportable progress.
