@@ -146,6 +146,37 @@ prime-number facts established *through this tool*. The rules:
   lives; an entry without at least an attempted connection is incomplete.
 - **Never delete.** Corrections are new entries that cite the old one.
 
+## Creating new math (allowed and encouraged)
+
+Breakthroughs may require objects that do not exist yet. You may extend
+the instrument itself:
+
+- **New arithmetic functions**: add a sieve-style table in
+  `integerLabTables` (src/core/math.js), expose it in `makeFns`
+  (src/core/engine.js) — it becomes usable in every lab formula and shows
+  up in `ops` automatically.
+- **New chips**: add an entry to `CHIP_OPS` in src/core/chips.js
+  (pointwise or sequence ops).
+- **New sources/planes/lenses**: one registry entry each in
+  src/core/registry.js.
+- Every extension ships with tests against hand-computed values (pattern:
+  tests/math.test.js) and a `NEW-OBJECT` entry in KNOWLEDGE.md:
+  definition, first ~20 values, motivation, and a **disguise check** —
+  your own serious attempt to prove the new object is a known one in
+  costume (precedent: `isprime(rad(n))·log(rad(n))` is exactly the von
+  Mangoldt function Λ(n)). The disguise check includes a **factor check**:
+  if the object's Dirichlet/generating series factors as
+  (known RH-sensitive object) × (zero-free bounded multiplier), it is the
+  known object in new coordinates and inherits no new content (precedent:
+  L2 = e^(2^−s)-twist of ψ — correct equivalence, zero new information).
+
+Epistemics for created math: numerics about a new object earn `OBSERVED`.
+"Equivalent to RH" (or to any theorem) is a theorem-shaped claim and
+requires a step-by-step derivation using named classical tools (Abel /
+partial summation, Möbius inversion, Dirichlet convolution identities);
+without one, label it `EQUIVALENT-CANDIDATE` and keep the goal open.
+Expert review is the exit, not self-verification.
+
 ## Discipline — do not skip this
 
 A search over thousands of formulas will produce "discoveries" by chance.
