@@ -1,18 +1,93 @@
-/* Function-field arithmetic for F_q[t], q prime in {2,3}.
+/* Function-field arithmetic for small F_q[t].
    Polynomials are encoded as base-q integers with coeff(t^i) in digit i.
-   For q=2 this is the usual bitmask representation. */
+   For q=2 this is the usual bitmask representation. For q=4 and q=8,
+   digits are polynomial-basis field-element labels over F_2. */
 
-const SUPPORTED_Q = new Set([2, 3]);
+const SUPPORTED_Q = new Set([2, 3, 4, 5, 7, 8]);
 const universeCache = new Map();
+const fieldCache = new Map();
 
 function assertSupported(q) {
-  if (!SUPPORTED_Q.has(q)) throw new Error(`unsupported finite field F_${q}; expected q=2 or q=3`);
+  if (!SUPPORTED_Q.has(q)) throw new Error(`unsupported finite field F_${q}; expected q in {2,3,4,5,7,8}`);
+}
+
+function buildPrimeField(p) {
+  const add = new Uint8Array(p * p);
+  const sub = new Uint8Array(p * p);
+  const mul = new Uint8Array(p * p);
+  const inv = new Uint8Array(p);
+  for (let a = 0; a < p; a++) {
+    for (let b = 0; b < p; b++) {
+      add[a * p + b] = (a + b) % p;
+      sub[a * p + b] = (a - b + p) % p;
+      mul[a * p + b] = (a * b) % p;
+    }
+  }
+  for (let a = 1; a < p; a++) {
+    for (let b = 1; b < p; b++) {
+      if ((a * b) % p === 1) {
+        inv[a] = b;
+        break;
+      }
+    }
+  }
+  return { q: p, add, sub, mul, inv };
+}
+
+function binaryExtensionProduct(a, b, degree, modulus) {
+  let product = 0;
+  let x = a, y = b;
+  while (y) {
+    if (y & 1) product ^= x;
+    y >>= 1;
+    x <<= 1;
+  }
+  for (let bit = 2 * degree - 2; bit >= degree; bit--) {
+    if (product & (1 << bit)) product ^= modulus << (bit - degree);
+  }
+  return product & ((1 << degree) - 1);
+}
+
+function buildBinaryExtensionField(q, degree, modulus) {
+  const add = new Uint8Array(q * q);
+  const sub = new Uint8Array(q * q);
+  const mul = new Uint8Array(q * q);
+  const inv = new Uint8Array(q);
+  for (let a = 0; a < q; a++) {
+    for (let b = 0; b < q; b++) {
+      add[a * q + b] = a ^ b;
+      sub[a * q + b] = a ^ b;
+      mul[a * q + b] = binaryExtensionProduct(a, b, degree, modulus);
+    }
+  }
+  for (let a = 1; a < q; a++) {
+    for (let b = 1; b < q; b++) {
+      if (mul[a * q + b] === 1) {
+        inv[a] = b;
+        break;
+      }
+    }
+  }
+  return { q, add, sub, mul, inv };
+}
+
+function fieldSpec(q) {
+  assertSupported(q);
+  const cached = fieldCache.get(q);
+  if (cached) return cached;
+  const field = q === 4
+    ? buildBinaryExtensionField(4, 2, 0b111) // u^2 + u + 1
+    : q === 8
+      ? buildBinaryExtensionField(8, 3, 0b1011) // u^3 + u + 1
+      : buildPrimeField(q);
+  fieldCache.set(q, field);
+  return field;
 }
 
 export function qPowers(q, maxDegree) {
   assertSupported(q);
   const max = Math.max(0, Math.floor(maxDegree));
-  const out = new Int32Array(max + 1);
+  const out = new Array(max + 1);
   out[0] = 1;
   for (let i = 1; i <= max; i++) out[i] = out[i - 1] * q;
   return out;
@@ -97,12 +172,39 @@ function addShiftedFactorQ3(state, terms, shift, pow) {
   }
 }
 
+function addScaledShiftedFactor(state, terms, shift, scale, field, pow) {
+  const q = field.q;
+  for (let i = 0; i < terms.positions.length; i++) {
+    const pos = terms.positions[i] + shift;
+    const addend = field.mul[scale * q + terms.coefficients[i]];
+    if (!addend) continue;
+    const old = state.digits[pos];
+    const next = field.add[old * q + addend];
+    if (next === old) continue;
+    state.digits[pos] = next;
+    state.value += (next - old) * pow[pos];
+  }
+}
+
 function advanceMultipleProductQ3(state, lower, terms, hDegree, pow) {
   let carry = lower, pos = 0;
   while (pos < hDegree) {
     addShiftedFactorQ3(state, terms, pos, pow);
     if (carry % 3 !== 2) break;
     carry = Math.floor(carry / 3);
+    pos++;
+  }
+}
+
+function advanceMultipleProductGeneric(state, lower, terms, hDegree, field, pow) {
+  let carry = lower, pos = 0;
+  while (pos < hDegree) {
+    const oldDigit = carry % field.q;
+    const nextDigit = oldDigit + 1 < field.q ? oldDigit + 1 : 0;
+    const delta = field.sub[nextDigit * field.q + oldDigit];
+    if (delta) addScaledShiftedFactor(state, terms, pos, delta, field, pow);
+    if (oldDigit + 1 < field.q) break;
+    carry = Math.floor(carry / field.q);
     pos++;
   }
 }
@@ -120,6 +222,17 @@ function advanceMultipleProduct2(product, lower, factor, hDegree, pow) {
   return out;
 }
 
+function markCompositeMultiplesGeneric(composite, factor, q, hDegree, targetDegree, pow) {
+  const field = fieldSpec(q);
+  const terms = factorTerms(factor, q);
+  const state = shiftedProductState(terms, hDegree, targetDegree, pow);
+  const limit = pow[hDegree];
+  for (let hLower = 0; hLower < limit; hLower++) {
+    composite[lowerIndex(state.value, targetDegree, pow)] = 1;
+    if (hLower + 1 < limit) advanceMultipleProductGeneric(state, hLower, terms, hDegree, field, pow);
+  }
+}
+
 function markCompositeMultiples(composite, factor, q, hDegree, targetDegree, pow) {
   if (q === 3) {
     const terms = factorTerms(factor, q);
@@ -131,11 +244,27 @@ function markCompositeMultiples(composite, factor, q, hDegree, targetDegree, pow
     }
     return;
   }
+  if (q !== 2) {
+    markCompositeMultiplesGeneric(composite, factor, q, hDegree, targetDegree, pow);
+    return;
+  }
   const limit = pow[hDegree];
   let product = factor * pow[hDegree];
   for (let hLower = 0; hLower < limit; hLower++) {
     composite[lowerIndex(product, targetDegree, pow)] = 1;
     if (hLower + 1 < limit) product = advanceMultipleProduct2(product, hLower, factor, hDegree, pow);
+  }
+}
+
+function flipMobiusMultiplesGeneric(muTable, factor, q, hDegree, targetDegree, pow) {
+  const field = fieldSpec(q);
+  const terms = factorTerms(factor, q);
+  const state = shiftedProductState(terms, hDegree, targetDegree, pow);
+  const limit = pow[hDegree];
+  for (let hLower = 0; hLower < limit; hLower++) {
+    const idx = lowerIndex(state.value, targetDegree, pow);
+    if (muTable[idx] !== 0) muTable[idx] *= -1;
+    if (hLower + 1 < limit) advanceMultipleProductGeneric(state, hLower, terms, hDegree, field, pow);
   }
 }
 
@@ -151,12 +280,27 @@ function flipMobiusMultiples(muTable, factor, q, hDegree, targetDegree, pow) {
     }
     return;
   }
+  if (q !== 2) {
+    flipMobiusMultiplesGeneric(muTable, factor, q, hDegree, targetDegree, pow);
+    return;
+  }
   const limit = pow[hDegree];
   let product = factor * pow[hDegree];
   for (let hLower = 0; hLower < limit; hLower++) {
     const idx = lowerIndex(product, targetDegree, pow);
     if (muTable[idx] !== 0) muTable[idx] *= -1;
     if (hLower + 1 < limit) product = advanceMultipleProduct2(product, hLower, factor, hDegree, pow);
+  }
+}
+
+function zeroMobiusMultiplesGeneric(muTable, factor, q, hDegree, targetDegree, pow) {
+  const field = fieldSpec(q);
+  const terms = factorTerms(factor, q);
+  const state = shiftedProductState(terms, hDegree, targetDegree, pow);
+  const limit = pow[hDegree];
+  for (let hLower = 0; hLower < limit; hLower++) {
+    muTable[lowerIndex(state.value, targetDegree, pow)] = 0;
+    if (hLower + 1 < limit) advanceMultipleProductGeneric(state, hLower, terms, hDegree, field, pow);
   }
 }
 
@@ -171,6 +315,10 @@ function zeroMobiusMultiples(muTable, factor, q, hDegree, targetDegree, pow) {
     }
     return;
   }
+  if (q !== 2) {
+    zeroMobiusMultiplesGeneric(muTable, factor, q, hDegree, targetDegree, pow);
+    return;
+  }
   const limit = pow[hDegree];
   let product = factor * pow[hDegree];
   for (let hLower = 0; hLower < limit; hLower++) {
@@ -182,11 +330,12 @@ function zeroMobiusMultiples(muTable, factor, q, hDegree, targetDegree, pow) {
 export function polyAdd(a, b, q) {
   assertSupported(q);
   if (q === 2) return (a ^ b) >>> 0;
+  const field = fieldSpec(q);
   const da = polyDegree(a, q), db = polyDegree(b, q);
   const d = Math.max(da, db);
   let aa = Math.floor(a), bb = Math.floor(b), pow = 1, out = 0;
   for (let i = 0; i <= d; i++) {
-    const c = ((aa % q) + (bb % q)) % q;
+    const c = field.add[(aa % q) * q + (bb % q)];
     out += c * pow;
     aa = Math.floor(aa / q);
     bb = Math.floor(bb / q);
@@ -198,11 +347,12 @@ export function polyAdd(a, b, q) {
 export function polySub(a, b, q) {
   assertSupported(q);
   if (q === 2) return (a ^ b) >>> 0;
+  const field = fieldSpec(q);
   const da = polyDegree(a, q), db = polyDegree(b, q);
   const d = Math.max(da, db);
   let aa = Math.floor(a), bb = Math.floor(b), pow = 1, out = 0;
   for (let i = 0; i <= d; i++) {
-    const c = ((aa % q) - (bb % q) + q) % q;
+    const c = field.sub[(aa % q) * q + (bb % q)];
     out += c * pow;
     aa = Math.floor(aa / q);
     bb = Math.floor(bb / q);
@@ -215,12 +365,16 @@ export function polyMul(a, b, q) {
   assertSupported(q);
   if (a === 0 || b === 0) return 0;
   if (q === 2) return polyMul2(a, b);
+  const field = fieldSpec(q);
   const ca = coeffs(a, q), cb = coeffs(b, q);
   const outCoeffs = new Int8Array(ca.length + cb.length - 1);
   for (let i = 0; i < ca.length; i++) {
     if (!ca[i]) continue;
     for (let j = 0; j < cb.length; j++) {
-      if (cb[j]) outCoeffs[i + j] = (outCoeffs[i + j] + ca[i] * cb[j]) % q;
+      if (cb[j]) {
+        const product = field.mul[ca[i] * q + cb[j]];
+        outCoeffs[i + j] = field.add[outCoeffs[i + j] * q + product];
+      }
     }
   }
   let out = 0, pow = 1;
@@ -234,17 +388,17 @@ export function polyMul(a, b, q) {
 export function polyDivMod(a, b, q) {
   assertSupported(q);
   if (b === 0) throw new Error("division by zero polynomial");
+  const field = fieldSpec(q);
   let r = Math.floor(a);
   let dr = polyDegree(r, q);
   const db = polyDegree(b, q);
   if (dr < db) return { quotient: 0, remainder: r };
-  const inv = q === 2 ? [0, 1] : [0, 1, 2];
   const bLead = Math.floor(b / (q ** db)) % q;
-  const bLeadInv = inv[bLead];
+  const bLeadInv = field.inv[bLead];
   let quotient = 0;
   while (r && dr >= db) {
     const rLead = Math.floor(r / (q ** dr)) % q;
-    const c = (rLead * bLeadInv) % q;
+    const c = field.mul[rLead * q + bLeadInv];
     const shift = dr - db;
     const term = c * (q ** shift);
     quotient = polyAdd(quotient, term, q);

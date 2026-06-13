@@ -331,6 +331,60 @@ CONNECTION: this is the two-universes divergence the transition screen did not
 find: the integer side and `F_2[t]` side are null under matched controls, while
 fixed odd characteristic `F_3[t]` retains a parity-specific Mobius/gap law.
 
+## 2026-06-13 · TWO-UNIVERSES / CONJECTURAL — cross-q Mobius-parity gap law
+
+Source: `logs/2026-06-13-mobius-gap-cross-q.md`; implementation in
+`src/core/ffield.js` and `scripts/mobius-gap-cross-q-law.mjs`; expert pack
+`logs/two-universes-artifacts/mobius-gap-cross-q-expert-pack.md`; Lean stub
+`logs/two-universes-artifacts/mobius_gap_cross_q_stub.lean`; artifacts
+`logs/two-universes-artifacts/mobius-gap-cross-q-law.json`,
+`logs/two-universes-artifacts/mobius-gap-cross-q-law-refined.json`,
+`logs/two-universes-artifacts/mobius-gap-cross-q-law-f8-holdout.json`, and
+`logs/two-universes-artifacts/mobius-gap-cross-q-law-f2-null.json`.
+
+Mechanism: the quantity coupling `mu(f-t)` to the following lexicographic
+irreducible gap is the Frobenius-parity character of `f-t`. For odd `q`, this
+is Pellet's discriminant character
+`mu(g)=(-1)^deg(g) chi_q(Disc(g))`. For characteristic `2`, the ordinary
+quadratic character degenerates, but Berlekamp's discriminant with the
+Artin-Schreier trace character is the parity analogue. The gap tail is a
+waiting time for the next nearby `n`-cycle Frobenius class, hence for the next
+polynomial with Mobius value `-1`.
+
+Prediction audit:
+- First preregistration, "odd characteristic gives an approximately `1/q`
+  effect and characteristic `2` is null," was refuted by `F_5`, `F_7`, and
+  `F_8`.
+- Replacement odd-prime prediction held: `[F_3[t]: measured]` degree `18`
+  `r=0.019551`; `[F_5[t]: measured]` degree `12` `r=0.007364`;
+  `[F_7[t]: measured]` degree `10` `r=0.002492`. Cyclic, composite-only, and
+  high-coefficient placebo controls stayed near zero.
+- Replacement characteristic-2 prediction held after correcting the direct
+  `f-t=f+t` collapse with a two-sided scrub: `[F_8[t]: measured]` degree `9`
+  `r=0.006483`, while `[F_2[t]: measured]` degree `25` was null
+  (`r=0.000076`).
+
+CONJECTURAL law: for odd prime `q`,
+`Corr(mu(f-t), G_+(f) | G_-(f)>t)` is positive and decays at about `A/q^2`
+with `A` in the observed range `0.12..0.19` for `q=3,5,7`. For characteristic
+`2`, the comparable statistic must use a two-sided direct-leak scrub; `F_2` is
+a degenerate null endpoint, while extension fields can carry a smaller
+Berlekamp-Artin-Schreier parity-gap coupling.
+
+Nearest catalog: Pellet's theorem / Stickelberger-Swan-Berlekamp parity
+identities and Kurlberg-Rosenzweig's very-short-interval prime/Mobius
+correlations. Difference: the catalog covers Mobius identities, Chowla-type
+sums, short-interval independence, and prime counts; this statistic is a
+conditional consecutive-gap tail law.
+
+CONNECTION: this corrects and explains the previous `F_3[t]` divergence
+entry. The phenomenon is not "all odd characteristic at F_3 size"; it is a
+low-coefficient Frobenius-parity law whose visible size depends sharply on
+the finite field. It also connects to the earlier transition-audit closures:
+ordinary residue/gap transitions were too coarse, but the Mobius parity
+character survives the stronger cyclic, composite, and high-coefficient
+controls.
+
 ## 2026-06-12 · NEW-OBJECT / OPEN — bounded continued-fraction denominators
 
 Source: `logs/2026-06-12-deeper-structure.md`; implementation in

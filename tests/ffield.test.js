@@ -29,6 +29,12 @@ describe("F_q[t] polynomial arithmetic", () => {
     expect(polyToString(9 + 2, 3)).toBe("t^2 + 2");
   });
 
+  it("uses extension-field coefficient arithmetic over F_4", () => {
+    // Coefficient label 2 is u in F_4 = F_2[u]/(u^2 + u + 1), so u^2 = u + 1.
+    expect(polyMul(2, 2, 4)).toBe(3);
+    expect(polyAdd(2, 3, 4)).toBe(1);
+  });
+
   it("encodes monic polynomials as q^degree + lower coefficients", () => {
     expect(monicPolynomial(2, 3, 0b011)).toBe(0b1011);
     expect(monicPolynomial(3, 2, 5)).toBe(14);
@@ -49,6 +55,16 @@ describe("F_q[t] irreducible sieve", () => {
     for (let n = 1; n <= 8; n++) {
       expect(universe.counts[n]).toBe(irreducibleCountFormula(3, n));
       expect(universe.counts[n]).toBe(universe.exactCounts[n]);
+    }
+  });
+
+  it("matches the exact irreducible-count formula over F_4 and F_5", () => {
+    for (const [q, maxDegree] of [[4, 6], [5, 6]]) {
+      const universe = buildPolynomialUniverse(q, maxDegree);
+      for (let n = 1; n <= maxDegree; n++) {
+        expect(universe.counts[n]).toBe(irreducibleCountFormula(q, n));
+        expect(universe.counts[n]).toBe(universe.exactCounts[n]);
+      }
     }
   });
 
