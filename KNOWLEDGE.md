@@ -4560,3 +4560,47 @@ CONNECTION: this extends the 2026-06-12 straight-line hunt by routing around
 the logged `psi`, Mertens, and `L2` successes. The only survivors are better
 treated as calibration panels or project-native transform diagnostics, not as
 new critical lines.
+
+## 2026-06-15 · CRITICAL-LINE HUNT / CLOSED-NO-SURVIVOR — wildcard gauntlet scan
+
+Source: `logs/2026-06-15-critical-line-hunt.md`; result artifacts
+`logs/2026-06-15-critical-line-hunt-cycle1.jsonl`,
+`logs/2026-06-15-critical-line-hunt-crossdomain1.jsonl`, and
+`logs/2026-06-15-critical-line-hunt-cycle3.jsonl`.
+
+Run scope: `153` total wildcard specs: `60` initial generator specs, `13`
+explicit cross-domain registry probes, and `80` post-update generator specs.
+`scripts/hunt.mjs update` nudged `logs/bias.md` after each cycle.
+
+Result: `21` specs mechanically cleared bars 2-4, but `0` cleared the full
+five-bar check.
+
+Rejected promoted buckets:
+- `KNOWN-MATH`: `domain:"prime", ey:"n - pi(n)*log(pi(n))"` produced a
+  near-perfect straight line (`R2=0.9999`, holdout `0.994`), but it is the
+  prime-index Prime Number Theorem coordinate `p_k ~ k log k`.
+- `ARTIFACT`: `cross-domain/primon` produced `R2=0.9994`, holdout `0.951`,
+  and slope `-1.03`, but the source itself plots a hard-coded
+  statistical-mechanics critical proxy `log(1/delta - 0.58)` against
+  `log(delta)`. It is a calibration line, not a prime residual.
+- `KNOWN/ARTIFACT`: repeated `gaps:walk` plus `dyexp`, `symlog+cumsum`,
+  `scale`, and `abs` promotions are cumulative-gap/additive-cost transforms.
+  They either have holdout `0`, are duplicates, or fall into the already
+  logged cumulative centered gaps / Chebyshev telescope branch.
+- `KNOWN/ARTIFACT`: repeated `mobius:walk` plus `dyexp`, modulo, or absolute
+  chips are postprocessed Mertens walks, not new statements.
+- `ARTIFACT`: a normalized/sqrt/mod prime walk gave flatness `0.026` but
+  holdout `0` and depends on arbitrary display chips.
+
+STATUS: `CLOSED-NO-SURVIVOR`. The session did not find a previously unknown
+critical line. The generator's strongest apparent frontier is not a new
+object; it is a scoring weakness where exponent contrast promotes dyadic,
+gap, and Mertens chip stacks even when holdout is zero or the construction is
+known.
+
+CONNECTION: direct continuation of the critical-line no-zeta visualization
+batch and the playground graveyard. The same funnels reappeared under
+brute-force mutation: PNT-linear prime-index coordinates, Mertens/Mobius
+postprocessing, dyadic transforms, and cumulative-gap telescopes. Future hunts
+should downweight bar-5-failed `dyexp-compose` promotions or require a
+non-telescoping residual statement before rewarding that family.
