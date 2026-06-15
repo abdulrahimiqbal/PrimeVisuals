@@ -116,31 +116,40 @@ function gauntlet(rawSpec) {
   const link = encodeState(stateFor(spec));
   if (real.finite < 0.99) return { ok: true, verdict: "REJECT blew-up", finiteFrac: +real.finite.toFixed(3), link };
 
-  const twins = [];
-  if (spec.cfg && (spec.cfg.source === "primes" || spec.cfg.source === "gaps")) { const t = ladder(spec, "cramer", 0); if (t) twins.push(t); }
-  const sh = avgLadder(spec, "shuffle", 3); if (sh) twins.push(sh);
+  const chipsAll = spec.cfg ? [...(spec.chips?.x || []), ...(spec.chips?.y || [])] : [];
+  const orderSensitive = chipsAll.some((c) => c.op === "dyexp" || c.op === "diff");
 
+  const twins = [];
+  if (spec.cfg && (spec.cfg.source === "primes" || spec.cfg.source === "gaps")) { const t = ladder(spec, "cramer", 0); if (t) twins.push({ kind: "cramer", ...t }); }
+  const sh = avgLadder(spec, "shuffle", 3); if (sh) twins.push({ kind: "shuffle", ...sh });
+
+  // For order-sensitive pipelines (dyexp/diff) the shuffle null is INVALID — it
+  // breaks the very ordering the transform depends on, so it always "loses".
+  // Only a structure-matched Cramér twin is a fair exponent null in that case.
+  const expTwins = orderSensitive ? twins.filter((t) => t.kind === "cramer") : twins;
   const twinLin = twins.length ? Math.max(...twins.map((t) => t.lin)) : 0;
   const twinFlat = twins.length ? Math.min(...twins.map((t) => t.flat)) : 1;
-  const nearest = (key) => twins.length ? twins.reduce((a, t) => Math.abs(t[key] - real[key]) < Math.abs(a - real[key]) ? t[key] : a, twins[0][key]) : real[key];
+  const nearest = (key) => expTwins.length ? expTwins.reduce((a, t) => Math.abs(t[key] - real[key]) < Math.abs(a - real[key]) ? t[key] : a, expTwins[0][key]) : null;
   const twinThetaY = nearest("thetaY"), twinThetaX = nearest("thetaX");
 
   const ho = holdoutR2(spec);
   const line = real.lin >= 0.999, flatLaw = real.flat <= 0.03 && real.lin < 0.6;
-  const dTheta = Math.max(Math.abs(real.thetaY - twinThetaY), Math.abs(real.thetaX - twinThetaX));
   const persistent = real.linDrift >= -0.02;
+  const expComparable = expTwins.length > 0;
+  const dTheta = expComparable ? Math.max(Math.abs(real.thetaY - twinThetaY), Math.abs(real.thetaX - twinThetaX)) : 0;
   const twinBeatsLine = line && real.lin - twinLin >= 0.05;
-  const twinBeatsExp = dTheta >= 0.10 && persistent; // robust gap + must persist
+  const twinBeatsExp = expComparable && dTheta >= 0.10 && persistent;
   const twinBeatsFlat = flatLaw && twinFlat - real.flat >= 0.05;
   const promote = (twinBeatsLine && ho >= 0.95 && persistent) || twinBeatsExp || twinBeatsFlat;
+  const note = orderSensitive && !expComparable ? "order-sensitive (dyexp/diff): shuffle null invalid & no Cramér twin — exponent inconclusive, not promoted" : undefined;
 
   return {
     ok: true,
     verdict: promote ? "PROMOTE — beats twin; now do bars 1 & 5 (state it precisely, grep KNOWLEDGE.md)" : "discard — generic / twin-matched / known",
     promote,
     real: { lin: +real.lin.toFixed(4), flat: +real.flat.toFixed(3), slope: +real.slope.toPrecision(3), thetaY: +real.thetaY.toFixed(3), thetaX: +real.thetaX.toFixed(3) },
-    twin: { lin: +twinLin.toFixed(4), flat: +twinFlat.toFixed(3), thetaY: +twinThetaY.toFixed(3), thetaX: +twinThetaX.toFixed(3) },
-    holdoutR2: +ho.toFixed(3), persistent, link,
+    twin: { lin: +twinLin.toFixed(4), flat: +twinFlat.toFixed(3), thetaY: twinThetaY == null ? null : +twinThetaY.toFixed(3), thetaX: twinThetaX == null ? null : +twinThetaX.toFixed(3) },
+    holdoutR2: +ho.toFixed(3), persistent, note, link,
   };
 }
 
@@ -188,20 +197,28 @@ function gen(count, seed) {
 /* ───────────────────────── update (self-improvement write side) ───────────────────────── */
 function update(resultsFile) {
   const lines = readFileSync(resultsFile, "utf8").trim().split("\n").filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
-  const tried = {}, won = {};
-  for (const o of lines) { const f = o._family || "?"; tried[f] = (tried[f] || 0) + 1; if (o.promote) won[f] = (won[f] || 0) + 1; }
+  // Reward SURVIVAL (all 5 bars) when the agent has annotated `survived`; fall
+  // back to mechanical `promote` only if it hasn't. Penalize promoted-but-retired.
+  const hasSurv = lines.some((o) => o && Object.prototype.hasOwnProperty.call(o, "survived"));
+  const tried = {}, won = {}, retired = {};
+  for (const o of lines) {
+    const f = o._family || "?"; tried[f] = (tried[f] || 0) + 1;
+    if (hasSurv ? o.survived === true : !!o.promote) won[f] = (won[f] || 0) + 1;
+    if (hasSurv && o.promote && o.survived === false) retired[f] = (retired[f] || 0) + 1;
+  }
   let txt = readFileSync(BIAS, "utf8");
   const newLines = txt.split("\n").map((line) => {
     const m = line.match(/^(\s*)([\d.]+)(\s*\|\s*)(\S+)(\s*\|.*)$/); if (!m) return line;
-    const id = m[4], rate = tried[id] ? (won[id] || 0) / tried[id] : 0;
-    let w = parseFloat(m[2]); w = w + 0.1 * (1 - w); w *= 1 + rate; w = Math.max(0.1, Math.min(5, w)); // decay toward uniform, then reward yield
+    const id = m[4], t = tried[id] || 0, rate = t ? (won[id] || 0) / t : 0, pen = t ? (retired[id] || 0) / t : 0;
+    let w = parseFloat(m[2]); w = w + 0.1 * (1 - w); w *= 1 + rate; w *= 1 - 0.5 * pen; w = Math.max(0.1, Math.min(5, w));
     return m[1] + w.toFixed(2) + m[3] + id + m[5];
   });
-  // distil <=2 lessons
-  const ranked = Object.keys(tried).sort((a, b) => ((won[b] || 0) / tried[b]) - ((won[a] || 0) / tried[a]));
   const lessons = [];
-  if (ranked.length && won[ranked[0]]) lessons.push(`- LEAD ${ranked[0]}: ${won[ranked[0]]}/${tried[ranked[0]]} beat their twin — pursue/mutate`);
-  const worst = ranked.reverse().find((f) => tried[f] >= 3 && !won[f]); if (worst) lessons.push(`- FAIL ${worst}: 0/${tried[worst]} beat the twin — generic, downweighted`);
+  const byWin = Object.keys(tried).sort((a, b) => ((won[b] || 0) / tried[b]) - ((won[a] || 0) / tried[a]));
+  if (byWin.length && won[byWin[0]]) lessons.push(`- LEAD ${byWin[0]}: ${won[byWin[0]]}/${tried[byWin[0]]} ${hasSurv ? "survived all 5 bars" : "beat their twin"} — pursue/mutate`);
+  const byRet = Object.keys(retired).sort((a, b) => retired[b] - retired[a]);
+  if (byRet.length && retired[byRet[0]] >= 3) lessons.push(`- FAIL ${byRet[0]}: ${retired[byRet[0]]}/${tried[byRet[0]]} promoted but retired at bar 5 (known) — penalized`);
+  else { const z = byWin.reverse().find((f) => tried[f] >= 3 && !won[f]); if (z) lessons.push(`- FAIL ${z}: 0/${tried[z]} ${hasSurv ? "survived" : "beat the twin"} — downweighted`); }
   let out = newLines.join("\n");
   const marker = "<!--LESSONS";
   const mi = out.indexOf(marker);
@@ -212,7 +229,7 @@ function update(resultsFile) {
     out = head + kept + "\n";
   }
   writeFileSync(BIAS, out);
-  return { tried, won, lessons };
+  return { tried, won, retired, survivalAware: hasSurv, lessons };
 }
 
 /* ───────────────────────── CLI ───────────────────────── */
