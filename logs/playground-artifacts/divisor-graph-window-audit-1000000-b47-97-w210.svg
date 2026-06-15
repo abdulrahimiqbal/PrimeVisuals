@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">local divisor-graph edge energy</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">mean omega(offset difference) for prime pairs minus exact local-eligible count-matched shuffles</text>
+<rect x="82" y="72" width="1000" height="310" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="227.00" y2="227.00" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 184.97 L 415.33 209.41 L 748.67 350.66 L 1082.00 226.74" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 155.51 L 415.33 192.02 L 748.67 310.99 L 1082.00 230.07" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 149.76 L 415.33 172.66 L 748.67 155.38 L 1082.00 304.10" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 82.00 119.91 L 415.33 200.37 L 748.67 341.31 L 1082.00 260.20" fill="none" stroke="#fb7185" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="82" y="406" fill="#94a3b8" font-size="12">fresh integer blocks</text>
+<text x="602" y="406" fill="#a7f3d0" font-size="12">B=47 prime</text>
+<text x="752" y="406" fill="#7dd3fc" font-size="12">B=97 prime</text>
+<text x="902" y="406" fill="#fbbf24" font-size="12">composite dashed</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="90" y="460" fill="#e5e7eb">B=47: aggregate 0.000155, residual 0.000003186, windows 2380</text>
+<text x="90" y="484" fill="#a7f3d0">fake controls -0.032209 .. 0.027646</text>
+<text x="90" y="508" fill="#fbbf24">composite range -0.074821 .. 0.003658</text>
+<text x="90" y="550" fill="#e5e7eb">B=97: aggregate -0.001825, residual -0.000037415, windows 2380</text>
+<text x="90" y="574" fill="#7dd3fc">fake controls -0.066654 .. 0.034317</text>
+<text x="90" y="598" fill="#fbbf24">composite range -0.046792 .. -0.002196</text>
+<text x="650" y="460" fill="#e5e7eb">top weighted differences at final cutoff 97</text>
+<text x="650" y="488" fill="#94a3b8">d=170, omega=3, excess=-56.9, weighted=-170.8</text>
+<text x="650" y="510" fill="#94a3b8">d=84, omega=3, excess=-56.5, weighted=-169.5</text>
+<text x="650" y="532" fill="#94a3b8">d=24, omega=2, excess=-80.4, weighted=-160.9</text>
+<text x="650" y="554" fill="#94a3b8">d=144, omega=2, excess=-79.3, weighted=-158.5</text>
+<text x="650" y="576" fill="#94a3b8">d=156, omega=3, excess=52.0, weighted=155.9</text>
+<text x="650" y="598" fill="#94a3b8">d=138, omega=3, excess=-47.9, weighted=-143.7</text>
+</g>
+</svg>

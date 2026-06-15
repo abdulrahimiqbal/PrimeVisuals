@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="780" viewBox="0 0 1040 780">
+<rect width="1040" height="780" fill="#08111f"/>
+<text x="90" y="38" fill="#e5e7eb" font-size="24" font-weight="700">Near-Wieferich Euler quotient tail bridge</text>
+<text x="90" y="66" fill="#94a3b8" font-size="15">Tail hit: min(EQ_2(n), n-EQ_2(n)) &lt;= sqrt(n); y=max residual/sqrt(variance)</text>
+<line x1="90" x2="1000" y1="92" y2="92" stroke="#223044" stroke-width="1"/>
+<text x="78" y="97" fill="#94a3b8" text-anchor="end" font-size="13">2.10</text>
+<line x1="90" x2="1000" y1="236" y2="236" stroke="#223044" stroke-width="1"/>
+<text x="78" y="241" fill="#94a3b8" text-anchor="end" font-size="13">1.57</text>
+<line x1="90" x2="1000" y1="380" y2="380" stroke="#223044" stroke-width="1"/>
+<text x="78" y="385" fill="#94a3b8" text-anchor="end" font-size="13">1.05</text>
+<line x1="90" x2="1000" y1="524" y2="524" stroke="#223044" stroke-width="1"/>
+<text x="78" y="529" fill="#94a3b8" text-anchor="end" font-size="13">0.52</text>
+<line x1="90" x2="1000" y1="668" y2="668" stroke="#223044" stroke-width="1"/>
+<text x="78" y="673" fill="#94a3b8" text-anchor="end" font-size="13">0.00</text>
+<path d="M90,261.73814757954966 L317.5,316.69502776693275 L545,350.21913870663525 L772.5,393.35852236397983 L1000,308.1296164166918" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,438.3393875345228 L317.5,469.4066184050305 L545,496.2924593582285 L772.5,501.1212912343498 L1000,523.9049360699231" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,393.3408972606438 L317.5,430.49527764780197 L545,462.64898860992196 L772.5,490.52579663645145 L1000,424.4226410023727" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,297.13401209743006 L317.5,336.06434793726874 L545,163.37406861253294 L772.5,231.8780419763416 L1000,267.9085511609347" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,431.57664495744575 L317.5,463.5587026356693 L545,491.23624234549254 L772.5,515.2322738469998 L1000,452.74875689703646" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,447.83977756554765 L317.5,477.822742505832 L545,503.9650564376974 L772.5,419.5063092154967 L1000,276.820768840138" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,442.5510495084739 L317.5,386.64021296476227 L545,369.5618488036506 L772.5,308.5835625041432 L1000,338.45079626562045" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,505.5587096393613 L317.5,480.89395359680884 L545,472.928259041703 L772.5,307.5543171383075 L1000,193.64507955344254" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,268.68972113535153 L317.5,323.1494362137761 L545,262.9610188444716 L772.5,317.9625434091131 L1000,269.6329882870345" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,337.88444226413696 L317.5,377.2586626195926 L545,371.46633888153264 L772.5,411.69373841925216 L1000,446.54082671029494" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,519.3004337859077 L317.5,539.4924885118918 L545,557.0708515784911 L772.5,567.0820180898984 L1000,538.1180433393317" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,365.41487010922685 L317.5,393.0020855484156 L545,400.1358446211266 L772.5,436.4048149817918 L1000,467.8739301549739" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,227.41620280598272 L317.5,286.6171440412928 L545,307.0787386087111 L772.5,203.34573298541505 L1000,233.2982891011264" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,346.34794368287464 L317.5,307.75389680542474 L545,334.8016006679873 L772.5,380.0508567189393 L1000,419.52759557269064" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,441.8935912232563 L317.5,177.93559401846812 L545,232.91169582304423 L772.5,292.0264228891317 L1000,342.24123024508555" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,325.3139542296692 L317.5,388.7451662932467 L545,223.2688072073703 L772.5,162.73684210526307 L1000,215.13310895550728" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,227.84343285149566 L317.5,309.4227026695057 L545,373.916822560471 L772.5,426.10155154415634 L1000,468.42097961139916" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,254.23223012923455 L317.5,331.7533861993655 L545,364.59828508085036 L772.5,354.2821591098649 L1000,408.87334504144195" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,486.3534146623969 L317.5,519.5676935034447 L545,365.1631316265687 L772.5,357.1011166084935 L1000,411.4813406084826" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,455.6722403971862 L317.5,495.29762832779267 L545,436.25017842296427 L772.5,288.61731753460197 L1000,236.2237995201972" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.38"/>
+<path d="M90,292.82066968038225 L317.5,343.57287637248146 L545,387.4942597373233 L772.5,425.57347161316994 L1000,458.67152206155333" fill="none" stroke="#67e8f9" stroke-width="4"/>
+<circle cx="90" cy="292.82066968038225" r="5" fill="#67e8f9"/>
+<text x="90" y="692" fill="#94a3b8" text-anchor="middle" font-size="12">125000</text>
+<circle cx="317.5" cy="343.57287637248146" r="5" fill="#67e8f9"/>
+<text x="317.5" y="692" fill="#94a3b8" text-anchor="middle" font-size="12">250000</text>
+<circle cx="545" cy="387.4942597373233" r="5" fill="#67e8f9"/>
+<text x="545" y="692" fill="#94a3b8" text-anchor="middle" font-size="12">500000</text>
+<circle cx="772.5" cy="425.57347161316994" r="5" fill="#67e8f9"/>
+<text x="772.5" y="692" fill="#94a3b8" text-anchor="middle" font-size="12">1000000</text>
+<circle cx="1000" cy="458.67152206155333" r="5" fill="#67e8f9"/>
+<text x="1000" y="692" fill="#94a3b8" text-anchor="middle" font-size="12">2000000</text>
+<line x1="90" x2="114" y1="728" y2="728" stroke="#67e8f9" stroke-width="4"/>
+<text x="120" y="733" fill="#cbd5e1" font-size="13">real primes</text>
+<line x1="268" x2="292" y1="728" y2="728" stroke="#a78bfa" stroke-width="4"/>
+<text x="298" y="733" fill="#cbd5e1" font-size="13">random quotient</text>
+<line x1="446" x2="470" y1="728" y2="728" stroke="#f59e0b" stroke-width="4"/>
+<text x="476" y="733" fill="#cbd5e1" font-size="13">Cramer labels</text>
+<line x1="624" x2="648" y1="728" y2="728" stroke="#22c55e" stroke-width="4"/>
+<text x="654" y="733" fill="#cbd5e1" font-size="13">W210 labels</text>
+<line x1="802" x2="826" y1="728" y2="728" stroke="#fb7185" stroke-width="4"/>
+<text x="832" y="733" fill="#cbd5e1" font-size="13">composites</text>
+<text x="90" y="756" fill="#cbd5e1" font-size="14">Endpoint real hits=466, expected=468.0, z=-0.094, max/sqrtVar=0.763, theta=0.000</text>
+</svg>

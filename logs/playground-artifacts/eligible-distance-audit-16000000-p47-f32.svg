@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">local eligible distance-transport residual</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">calibrated W1 excess of sorted pair-distance vector beyond local fake excess</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="159.15" y2="159.15" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 157.21 L 415.33 152.78 L 748.67 166.45 L 1082.00 152.27" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 155.88 L 415.33 163.46 L 748.67 165.52 L 1082.00 151.76" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 164.97 L 415.33 160.83 L 748.67 194.81 L 1082.00 281.60" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 121.29 L 415.33 319.20 L 748.67 78.46 L 1082.00 276.48" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest distance residuals</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15492330 residual=0.17556</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>14518140 residual=0.16381</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>8421210 residual=0.11678</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>12623100 residual=0.11429</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15825810 residual=0.11165</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>11097660 residual=0.11070</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>9810570 residual=0.10159</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>13626270 residual=0.09743</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest distance residuals</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:534 residual=0.75000</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:770 residual=0.75000</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:966 residual=0.75000</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:1262 residual=0.75000</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:1485 residual=0.75000</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:1498 residual=0.75000</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:1922 residual=0.75000</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>24:1942 residual=0.75000</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest distance residuals</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:644 residual=0.88889</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1065 residual=0.88889</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1201 residual=0.88889</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1311 residual=0.88889</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1420 residual=0.88889</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1528 residual=0.88889</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1548 residual=0.88889</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,85,85)"><title>15:1670 residual=0.88889</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate 0.014350, mean residual 0.000074</text>
+<text x="650" y="484" fill="#94a3b8">Z controls -0.005988 .. 0.004882</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate 0.015428</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate -0.255471, controls -0.133575 .. 0.279732</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate -0.244778, controls -0.197279 .. 0.301270</text>
+<text x="650" y="594" fill="#94a3b8">red = farther from local shuffled center, blue = closer</text>
+</g>
+</svg>

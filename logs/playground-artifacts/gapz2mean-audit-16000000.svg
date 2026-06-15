@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#070b14"/>
+<path d="M 56.00 464.00 L 273.00 457.64 L 490.00 453.77 L 707.00 451.10 L 924.00 448.41" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 56.00 427.26 L 273.00 424.69 L 490.00 421.94 L 707.00 418.36 L 924.00 416.20" fill="none" stroke="#fbbf24" stroke-width="1.5" />
+<path d="M 56.00 426.08 L 273.00 424.21 L 490.00 421.43 L 707.00 418.45 L 924.00 416.19" fill="none" stroke="#f472b6" stroke-width="1.5" />
+<path d="M 56.00 448.47 L 273.00 442.76 L 490.00 439.74 L 707.00 436.64 L 924.00 433.81" fill="none" stroke="#a7f3d0" stroke-width="1.5" />
+<path d="M 56.00 446.13 L 273.00 442.12 L 490.00 439.52 L 707.00 436.43 L 924.00 433.47" fill="none" stroke="#c4b5fd" stroke-width="1.5" />
+<path d="M 56.00 56.00 L 273.00 88.13 L 490.00 115.74 L 707.00 141.20 L 924.00 159.56" fill="none" stroke="#fb7185" stroke-width="1.5" />
+<g font-family="Menlo, Consolas, monospace" font-size="12"><text x="56" y="22" fill="#7dd3fc">real-primes</text>
+<text x="56" y="40" fill="#fbbf24">cramer-seed-12345</text>
+<text x="56" y="58" fill="#f472b6">cramer-seed-271828</text>
+<text x="56" y="76" fill="#a7f3d0">wheel-W210-seed-12345</text>
+<text x="56" y="94" fill="#c4b5fd">wheel-W210-seed-271828</text>
+<text x="56" y="112" fill="#fb7185">composite-W210-seed-12345</text></g>
+<text x="56" y="502" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="12">mean((gap/log p - 1)^2), x-axis log-scaled, N=16000000</text>
+</svg>

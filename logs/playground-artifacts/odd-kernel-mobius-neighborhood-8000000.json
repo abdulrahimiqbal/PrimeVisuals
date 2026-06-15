@@ -1,0 +1,4857 @@
+{
+  "maxN": 8000000,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "endpoints": [
+    500000,
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "localMod": 11025,
+  "ffSpecs": [
+    {
+      "q": 3,
+      "degree": 12
+    },
+    {
+      "q": 5,
+      "degree": 8
+    }
+  ],
+  "real": {
+    "name": "real",
+    "labels": 539776,
+    "endpointRows": [
+      {
+        "N": 500000,
+        "count": 41537,
+        "nonzero": 22262,
+        "zero": 19275,
+        "sum": -4,
+        "normalized": -0.019626480542219778,
+        "nonzeroNormalized": -0.026808832552536382,
+        "maxAbs": 171,
+        "maxAbsNormalized": 0.8390320431798954,
+        "maxAbsNonzeroNormalized": 1.1460775916209303,
+        "mean": -0.00009629968461853288,
+        "nonzeroRate": 0.5359558947444447
+      },
+      {
+        "N": 1000000,
+        "count": 78497,
+        "nonzero": 41999,
+        "zero": 36498,
+        "sum": 149,
+        "normalized": 0.5318139667823583,
+        "nonzeroNormalized": 0.7270542098054378,
+        "maxAbs": 268,
+        "maxAbsNormalized": 0.9565512959575302,
+        "maxAbsNonzeroNormalized": 1.3077216659587738,
+        "mean": 0.0018981617131864912,
+        "nonzeroRate": 0.5350395556518084
+      },
+      {
+        "N": 2000000,
+        "count": 148932,
+        "nonzero": 79740,
+        "zero": 69192,
+        "sum": -202,
+        "normalized": -0.5234284914412975,
+        "nonzeroNormalized": -0.715341224500081,
+        "maxAbs": 268,
+        "maxAbsNormalized": 0.6944496817141969,
+        "maxAbsNonzeroNormalized": 0.9490665750793154,
+        "mean": -0.0013563236913490722,
+        "nonzeroRate": 0.5354121343969059
+      },
+      {
+        "N": 4000000,
+        "count": 283145,
+        "nonzero": 151498,
+        "zero": 131647,
+        "sum": -744,
+        "normalized": -1.3981973899640063,
+        "nonzeroNormalized": -1.9114788004674195,
+        "maxAbs": 824,
+        "maxAbsNormalized": 1.54854119533648,
+        "maxAbsNonzeroNormalized": 2.1170141553563893,
+        "mean": -0.002627628953363118,
+        "nonzeroRate": 0.5350544773879108
+      },
+      {
+        "N": 8000000,
+        "count": 539776,
+        "nonzero": 288802,
+        "zero": 250974,
+        "sum": -808,
+        "normalized": -1.0997768545087072,
+        "nonzeroNormalized": -1.5035271075710892,
+        "maxAbs": 973,
+        "maxAbsNormalized": 1.3243599993031834,
+        "maxAbsNonzeroNormalized": 1.81055925206271,
+        "mean": -0.0014969172397438937,
+        "nonzeroRate": 0.5350404612283614
+      }
+    ],
+    "blockRows": [
+      {
+        "from": 1,
+        "to": 500000,
+        "count": 41537,
+        "nonzero": 22262,
+        "zero": 19275,
+        "sum": -4,
+        "normalized": -0.019626480542219778,
+        "nonzeroNormalized": -0.026808832552536382,
+        "nonzeroRate": 0.5359558947444447
+      },
+      {
+        "from": 500000,
+        "to": 1000000,
+        "count": 36960,
+        "nonzero": 19737,
+        "zero": 17223,
+        "sum": 153,
+        "normalized": 0.795839424513758,
+        "nonzeroNormalized": 1.0890576254854043,
+        "nonzeroRate": 0.5340097402597402
+      },
+      {
+        "from": 1000000,
+        "to": 2000000,
+        "count": 70435,
+        "nonzero": 37741,
+        "zero": 32694,
+        "sum": -351,
+        "normalized": -1.3225523057352218,
+        "nonzeroNormalized": -1.8067597825957693,
+        "nonzeroRate": 0.5358273585575353
+      },
+      {
+        "from": 2000000,
+        "to": 4000000,
+        "count": 134213,
+        "nonzero": 71758,
+        "zero": 62455,
+        "sum": -542,
+        "normalized": -1.4794557991124886,
+        "nonzeroNormalized": -2.0233178998187538,
+        "nonzeroRate": 0.5346575965070448
+      },
+      {
+        "from": 4000000,
+        "to": 8000000,
+        "count": 256631,
+        "nonzero": 137304,
+        "zero": 119327,
+        "sum": -64,
+        "normalized": -0.12633550359366036,
+        "nonzeroNormalized": -0.17271830974047345,
+        "nonzeroRate": 0.5350249969800999
+      }
+    ]
+  },
+  "signShuffleRuns": [
+    {
+      "name": "sign-shuffle-12345",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22208,
+          "zero": 19329,
+          "sum": -216,
+          "normalized": -1.059829949279868,
+          "nonzeroNormalized": -1.4494359431565513,
+          "maxAbs": 367,
+          "maxAbsNormalized": 1.8007295897486646,
+          "maxAbsNonzeroNormalized": 2.4626990330483993,
+          "mean": -0.005200182969400775,
+          "nonzeroRate": 0.5346558490020945
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42086,
+          "zero": 36411,
+          "sum": -222,
+          "normalized": -0.7923671182931781,
+          "nonzeroNormalized": -1.082141740515795,
+          "maxAbs": 367,
+          "maxAbsNormalized": 1.3099042000612446,
+          "maxAbsNonzeroNormalized": 1.7889460304923277,
+          "mean": -0.0028281335592443024,
+          "nonzeroRate": 0.5361478782628636
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 79677,
+          "zero": 69255,
+          "sum": -133,
+          "normalized": -0.34463361070144843,
+          "nonzeroNormalized": -0.47117816245596594,
+          "maxAbs": 367,
+          "maxAbsNormalized": 0.9509814671235456,
+          "maxAbsNonzeroNormalized": 1.3001683129424022,
+          "mean": -0.0008930250047001317,
+          "nonzeroRate": 0.5349891225525744
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 151636,
+          "zero": 131509,
+          "sum": -472,
+          "normalized": -0.8870284516975954,
+          "nonzeroNormalized": -1.212106663637704,
+          "maxAbs": 499,
+          "maxAbsNormalized": 0.9377694860108053,
+          "maxAbsNonzeroNormalized": 1.2814432736339285,
+          "mean": -0.0016669904112733757,
+          "nonzeroRate": 0.5355418601776475
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 288802,
+          "zero": 250974,
+          "sum": -808,
+          "normalized": -1.0997768545087072,
+          "nonzeroNormalized": -1.5035271075710892,
+          "maxAbs": 992,
+          "maxAbsNormalized": 1.3502210887037593,
+          "maxAbsNonzeroNormalized": 1.8459144687011393,
+          "mean": -0.0014969172397438937,
+          "nonzeroRate": 0.5350404612283614
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22208,
+          "zero": 19329,
+          "sum": -216,
+          "normalized": -1.059829949279868,
+          "nonzeroNormalized": -1.4494359431565513,
+          "nonzeroRate": 0.5346558490020945
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19878,
+          "zero": 17082,
+          "sum": -6,
+          "normalized": -0.031209389196617962,
+          "nonzeroNormalized": -0.04255640244514739,
+          "nonzeroRate": 0.5378246753246754
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37591,
+          "zero": 32844,
+          "sum": 89,
+          "normalized": 0.3353480205425491,
+          "nonzeroNormalized": 0.4590373958592756,
+          "nonzeroRate": 0.5336977355008163
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 71959,
+          "zero": 62254,
+          "sum": -339,
+          "normalized": -0.9253422802567041,
+          "nonzeroNormalized": -1.2637382728949103,
+          "nonzeroRate": 0.5361552159626862
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137166,
+          "zero": 119465,
+          "sum": -336,
+          "normalized": -0.6632613938667169,
+          "nonzeroNormalized": -0.9072271537150721,
+          "nonzeroRate": 0.5344872599179367
+        }
+      ]
+    },
+    {
+      "name": "sign-shuffle-271828",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22150,
+          "zero": 19387,
+          "sum": 32,
+          "normalized": 0.15701184433775822,
+          "nonzeroNormalized": 0.21501220501868665,
+          "maxAbs": 144,
+          "maxAbsNormalized": 0.706553299519912,
+          "maxAbsNonzeroNormalized": 0.9675549225840899,
+          "mean": 0.000770397476948263,
+          "nonzeroRate": 0.5332595035751257
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 41964,
+          "zero": 36533,
+          "sum": -242,
+          "normalized": -0.8637515433646354,
+          "nonzeroNormalized": -1.1813454877284706,
+          "maxAbs": 296,
+          "maxAbsNormalized": 1.0564894910575706,
+          "maxAbsNonzeroNormalized": 1.4449515056513524,
+          "mean": -0.0030829203663834286,
+          "nonzeroRate": 0.5345936787393148
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 79735,
+          "zero": 69197,
+          "sum": -277,
+          "normalized": -0.7177707531150467,
+          "nonzeroNormalized": -0.9809689695116083,
+          "maxAbs": 381,
+          "maxAbsNormalized": 0.9872586893026455,
+          "maxAbsNonzeroNormalized": 1.3492750086062193,
+          "mean": -0.0018599092203153117,
+          "nonzeroRate": 0.5353785620283082
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 151669,
+          "zero": 131476,
+          "sum": -445,
+          "normalized": -0.8362874173843855,
+          "nonzeroNormalized": -1.1426457254554399,
+          "maxAbs": 550,
+          "maxAbsNormalized": 1.0336136619357574,
+          "maxAbsNonzeroNormalized": 1.412258761798858,
+          "mean": -0.0015716329089335852,
+          "nonzeroRate": 0.5356584082360628
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 288802,
+          "zero": 250974,
+          "sum": -808,
+          "normalized": -1.0997768545087072,
+          "nonzeroNormalized": -1.5035271075710892,
+          "maxAbs": 816,
+          "maxAbsNormalized": 1.1106657342563182,
+          "maxAbsNonzeroNormalized": 1.5184135145767437,
+          "mean": -0.0014969172397438937,
+          "nonzeroRate": 0.5350404612283614
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22150,
+          "zero": 19387,
+          "sum": 32,
+          "normalized": 0.15701184433775822,
+          "nonzeroNormalized": 0.21501220501868665,
+          "nonzeroRate": 0.5332595035751257
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19814,
+          "zero": 17146,
+          "sum": -274,
+          "normalized": -1.4252287733122202,
+          "nonzeroNormalized": -1.9465451584541473,
+          "nonzeroRate": 0.5360930735930736
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37771,
+          "zero": 32664,
+          "sum": -35,
+          "normalized": -0.13187843504482266,
+          "nonzeroNormalized": -0.1800896702270735,
+          "nonzeroRate": 0.5362532831688791
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 71934,
+          "zero": 62279,
+          "sum": -168,
+          "normalized": -0.4585767052599595,
+          "nonzeroNormalized": -0.6263861931942938,
+          "nonzeroRate": 0.5359689448861139
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137133,
+          "zero": 119498,
+          "sum": -363,
+          "normalized": -0.7165591844452924,
+          "nonzeroNormalized": -0.9802472589030751,
+          "nonzeroRate": 0.5343586706204628
+        }
+      ]
+    },
+    {
+      "name": "sign-shuffle-314159",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22352,
+          "zero": 19185,
+          "sum": 62,
+          "normalized": 0.30421044840440653,
+          "nonzeroNormalized": 0.41469948412451935,
+          "maxAbs": 113,
+          "maxAbsNormalized": 0.5544480753177087,
+          "maxAbsNonzeroNormalized": 0.7558232533237207,
+          "mean": 0.0014926451115872595,
+          "nonzeroRate": 0.5381226376483617
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42117,
+          "zero": 36380,
+          "sum": -105,
+          "normalized": -0.37476823162515177,
+          "nonzeroNormalized": -0.5116353988874169,
+          "maxAbs": 180,
+          "maxAbsNormalized": 0.6424598256431173,
+          "maxAbsNonzeroNormalized": 0.8770892552355719,
+          "mean": -0.0013376307374804134,
+          "nonzeroRate": 0.5365427978139292
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 79658,
+          "zero": 69274,
+          "sum": -268,
+          "normalized": -0.6944496817141969,
+          "nonzeroNormalized": -0.9495549343249505,
+          "maxAbs": 373,
+          "maxAbsNormalized": 0.9665288480574455,
+          "maxAbsNonzeroNormalized": 1.3215820541164423,
+          "mean": -0.001799478956839363,
+          "nonzeroRate": 0.5348615475519028
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 151292,
+          "zero": 131853,
+          "sum": -620,
+          "normalized": -1.165164491636672,
+          "nonzeroNormalized": -1.5939830814107154,
+          "maxAbs": 740,
+          "maxAbsNormalized": 1.3906801996953826,
+          "maxAbsNonzeroNormalized": 1.9024959358773055,
+          "mean": -0.002189690794469265,
+          "nonzeroRate": 0.5343269349626516
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 288802,
+          "zero": 250974,
+          "sum": -808,
+          "normalized": -1.0997768545087072,
+          "nonzeroNormalized": -1.5035271075710892,
+          "maxAbs": 1134,
+          "maxAbsNormalized": 1.543498704223854,
+          "maxAbsNonzeroNormalized": 2.110148193051504,
+          "mean": -0.0014969172397438937,
+          "nonzeroRate": 0.5350404612283614
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22352,
+          "zero": 19185,
+          "sum": 62,
+          "normalized": 0.30421044840440653,
+          "nonzeroNormalized": 0.41469948412451935,
+          "nonzeroRate": 0.5381226376483617
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19765,
+          "zero": 17195,
+          "sum": -167,
+          "normalized": -0.8686613326392,
+          "nonzeroNormalized": -1.1878676684605245,
+          "nonzeroRate": 0.534767316017316
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37541,
+          "zero": 32894,
+          "sum": -163,
+          "normalized": -0.6141767117801742,
+          "nonzeroNormalized": -0.8412686127030219,
+          "nonzeroRate": 0.5329878611485767
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 71634,
+          "zero": 62579,
+          "sum": -352,
+          "normalized": -0.960827382449439,
+          "nonzeroNormalized": -1.315173538431153,
+          "nonzeroRate": 0.5337336919672461
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137510,
+          "zero": 119121,
+          "sum": -188,
+          "normalized": -0.3711105418063773,
+          "nonzeroNormalized": -0.50697986127622,
+          "nonzeroRate": 0.5358277059279666
+        }
+      ]
+    },
+    {
+      "name": "sign-shuffle-161803",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22121,
+          "zero": 19416,
+          "sum": -123,
+          "normalized": -0.6035142766732582,
+          "nonzeroNormalized": -0.8269947138704004,
+          "maxAbs": 149,
+          "maxAbsNormalized": 0.7310864001976867,
+          "maxAbsNonzeroNormalized": 1.001806604607233,
+          "mean": -0.0029612153020198858,
+          "nonzeroRate": 0.5325613308616415
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 41808,
+          "zero": 36689,
+          "sum": -154,
+          "normalized": -0.5496600730502226,
+          "nonzeroNormalized": -0.7531665516824864,
+          "maxAbs": 312,
+          "maxAbsNormalized": 1.1135970311147367,
+          "maxAbsNonzeroNormalized": 1.5258958709411412,
+          "mean": -0.001961858414971273,
+          "nonzeroRate": 0.5326063416436297
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 79634,
+          "zero": 69298,
+          "sum": -176,
+          "normalized": -0.4560565073943979,
+          "nonzeroNormalized": -0.6236822761516916,
+          "maxAbs": 401,
+          "maxAbsNormalized": 1.0390832924156452,
+          "maxAbsNonzeroNormalized": 1.4210033678228882,
+          "mean": -0.0011817473746407756,
+          "nonzeroRate": 0.5347004001826337
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 151386,
+          "zero": 131759,
+          "sum": -320,
+          "normalized": -0.6013752214898952,
+          "nonzeroNormalized": -0.8224454860297143,
+          "maxAbs": 410,
+          "maxAbsNormalized": 0.7705120025339283,
+          "maxAbsNonzeroNormalized": 1.0537582789755715,
+          "mean": -0.0011301629906938142,
+          "nonzeroRate": 0.5346589203411679
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 288802,
+          "zero": 250974,
+          "sum": -808,
+          "normalized": -1.0997768545087072,
+          "nonzeroNormalized": -1.5035271075710892,
+          "maxAbs": 949,
+          "maxAbsNormalized": 1.2916933600603504,
+          "maxAbsNonzeroNormalized": 1.765900031045747,
+          "mean": -0.0014969172397438937,
+          "nonzeroRate": 0.5350404612283614
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22121,
+          "zero": 19416,
+          "sum": -123,
+          "normalized": -0.6035142766732582,
+          "nonzeroNormalized": -0.8269947138704004,
+          "nonzeroRate": 0.5325613308616415
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19687,
+          "zero": 17273,
+          "sum": -31,
+          "normalized": -0.1612485108491928,
+          "nonzeroNormalized": -0.22093876557037717,
+          "nonzeroRate": 0.5326569264069264
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37826,
+          "zero": 32609,
+          "sum": -22,
+          "normalized": -0.08289501631388854,
+          "nonzeroNormalized": -0.1131168940239968,
+          "nonzeroRate": 0.5370341449563427
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 71752,
+          "zero": 62461,
+          "sum": -144,
+          "normalized": -0.3930657473656796,
+          "nonzeroNormalized": -0.5375829505284292,
+          "nonzeroRate": 0.5346128914486674
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137416,
+          "zero": 119215,
+          "sum": -488,
+          "normalized": -0.9633082149016603,
+          "nonzeroNormalized": -1.316440305635763,
+          "nonzeroRate": 0.5354614212624351
+        }
+      ]
+    },
+    {
+      "name": "sign-shuffle-424242",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22242,
+          "zero": 19295,
+          "sum": -8,
+          "normalized": -0.039252961084439555,
+          "nonzeroNormalized": -0.05364176618288677,
+          "maxAbs": 143,
+          "maxAbsNormalized": 0.701646679384357,
+          "maxAbsNonzeroNormalized": 0.9588465705191009,
+          "mean": -0.00019259936923706576,
+          "nonzeroRate": 0.5354743963213521
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42119,
+          "zero": 36378,
+          "sum": -95,
+          "normalized": -0.33907601908942303,
+          "nonzeroNormalized": -0.4628972274259908,
+          "maxAbs": 159,
+          "maxAbsNormalized": 0.567506179318087,
+          "maxAbsNonzeroNormalized": 0.7747437806392898,
+          "mean": -0.00121023733391085,
+          "nonzeroRate": 0.5365682764946431
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 79488,
+          "zero": 69444,
+          "sum": -270,
+          "normalized": -0.6996321420254968,
+          "nonzeroNormalized": -0.9576635971035923,
+          "maxAbs": 313,
+          "maxAbsNormalized": 0.8110550387184463,
+          "maxAbsNonzeroNormalized": 1.1101803921978681,
+          "mean": -0.0018129079042784628,
+          "nonzeroRate": 0.5337200870195794
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 151327,
+          "zero": 131818,
+          "sum": -667,
+          "normalized": -1.2534914772930004,
+          "nonzeroNormalized": -1.7146189636210285,
+          "maxAbs": 809,
+          "maxAbsNormalized": 1.5203517318291413,
+          "maxAbsNonzeroNormalized": 2.0796502872105127,
+          "mean": -0.0023556834837274187,
+          "nonzeroRate": 0.5344505465397588
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 288802,
+          "zero": 250974,
+          "sum": -808,
+          "normalized": -1.0997768545087072,
+          "nonzeroNormalized": -1.5035271075710892,
+          "maxAbs": 819,
+          "maxAbsNormalized": 1.1147490641616724,
+          "maxAbsNonzeroNormalized": 1.523995917203864,
+          "mean": -0.0014969172397438937,
+          "nonzeroRate": 0.5350404612283614
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22242,
+          "zero": 19295,
+          "sum": -8,
+          "normalized": -0.039252961084439555,
+          "nonzeroNormalized": -0.05364176618288677,
+          "nonzeroRate": 0.5354743963213521
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19877,
+          "zero": 17083,
+          "sum": -87,
+          "normalized": -0.4525361433509605,
+          "nonzeroNormalized": -0.6170833574165675,
+          "nonzeroRate": 0.537797619047619
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37369,
+          "zero": 33066,
+          "sum": -175,
+          "normalized": -0.6593921752241133,
+          "nonzeroNormalized": -0.9052787176247625,
+          "nonzeroRate": 0.5305458933768723
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 71839,
+          "zero": 62374,
+          "sum": -397,
+          "normalized": -1.083660428501214,
+          "nonzeroNormalized": -1.481188623096365,
+          "nonzeroRate": 0.535261114795139
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137475,
+          "zero": 119156,
+          "sum": -141,
+          "normalized": -0.278332906354783,
+          "nonzeroNormalized": -0.3802832952094854,
+          "nonzeroRate": 0.5356913233397368
+        }
+      ]
+    }
+  ],
+  "cramerRuns": [
+    {
+      "name": "cramer-12345",
+      "labels": 539133,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41576,
+          "nonzero": 23052,
+          "zero": 18524,
+          "sum": 92,
+          "normalized": 0.4511972826576216,
+          "nonzeroNormalized": 0.6059454404484595,
+          "maxAbs": 134,
+          "maxAbsNormalized": 0.6571786508274053,
+          "maxAbsNonzeroNormalized": 0.8825727067401475,
+          "mean": 0.002212815085626323,
+          "nonzeroRate": 0.5544544929767173
+        },
+        {
+          "N": 1000000,
+          "count": 78570,
+          "nonzero": 43694,
+          "zero": 34876,
+          "sum": 80,
+          "normalized": 0.28540502180797134,
+          "nonzeroNormalized": 0.3827181730486427,
+          "maxAbs": 145,
+          "maxAbsNormalized": 0.517296602026948,
+          "maxAbsNonzeroNormalized": 0.6936766886506649,
+          "mean": 0.0010182003309151075,
+          "nonzeroRate": 0.5561155657375588
+        },
+        {
+          "N": 2000000,
+          "count": 148963,
+          "nonzero": 82822,
+          "zero": 66141,
+          "sum": -40,
+          "normalized": -0.10363842068671272,
+          "nonzeroNormalized": -0.13899114559049616,
+          "maxAbs": 190,
+          "maxAbsNormalized": 0.4922824982618854,
+          "maxAbsNonzeroNormalized": 0.6602079415548567,
+          "mean": -0.00026852305606090104,
+          "nonzeroRate": 0.5559904137268986
+        },
+        {
+          "N": 4000000,
+          "count": 283083,
+          "nonzero": 157079,
+          "zero": 126004,
+          "sum": -297,
+          "normalized": -0.5582124964295236,
+          "nonzeroNormalized": -0.7493718681875468,
+          "maxAbs": 312,
+          "maxAbsNormalized": 0.586405046754247,
+          "maxAbsNonzeroNormalized": 0.7872189322374229,
+          "mean": -0.001049162259831922,
+          "nonzeroRate": 0.5548867293337997
+        },
+        {
+          "N": 8000000,
+          "count": 539133,
+          "nonzero": 298353,
+          "zero": 240780,
+          "sum": -843,
+          "normalized": -1.1480997354026705,
+          "nonzeroNormalized": -1.5433426928602578,
+          "maxAbs": 886,
+          "maxAbsNormalized": 1.2066623553579667,
+          "maxAbsNonzeroNormalized": 1.622065985615882,
+          "mean": -0.0015636215924456488,
+          "nonzeroRate": 0.5533940604637446
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41576,
+          "nonzero": 23052,
+          "zero": 18524,
+          "sum": 92,
+          "normalized": 0.4511972826576216,
+          "nonzeroNormalized": 0.6059454404484595,
+          "nonzeroRate": 0.5544544929767173
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36994,
+          "nonzero": 20642,
+          "zero": 16352,
+          "sum": -12,
+          "normalized": -0.06239008825010569,
+          "nonzeroNormalized": -0.08352286040626676,
+          "nonzeroRate": 0.5579823755203547
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70393,
+          "nonzero": 39128,
+          "zero": 31265,
+          "sum": -120,
+          "normalized": -0.45228950340946306,
+          "nonzeroNormalized": -0.6066489093393451,
+          "nonzeroRate": 0.555850723793559
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134120,
+          "nonzero": 74257,
+          "zero": 59863,
+          "sum": -257,
+          "normalized": -0.7017563497050292,
+          "nonzeroNormalized": -0.9431145032634195,
+          "nonzeroRate": 0.5536609006859529
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256050,
+          "nonzero": 141274,
+          "zero": 114776,
+          "sum": -546,
+          "normalized": -1.079021883446329,
+          "nonzeroNormalized": -1.4526517839560114,
+          "nonzeroRate": 0.5517438000390549
+        }
+      ]
+    },
+    {
+      "name": "cramer-271828",
+      "labels": 539681,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41625,
+          "nonzero": 23080,
+          "zero": 18545,
+          "sum": 448,
+          "normalized": 2.1958410046535057,
+          "nonzeroNormalized": 2.94890045013697,
+          "maxAbs": 464,
+          "maxAbsNormalized": 2.2742638976768452,
+          "maxAbsNonzeroNormalized": 3.0542183233561477,
+          "mean": 0.010762762762762763,
+          "nonzeroRate": 0.5544744744744745
+        },
+        {
+          "N": 1000000,
+          "count": 78613,
+          "nonzero": 43487,
+          "zero": 35126,
+          "sum": 367,
+          "normalized": 1.308937407152333,
+          "nonzeroNormalized": 1.7598933086650352,
+          "maxAbs": 595,
+          "maxAbsNormalized": 2.1221192295793956,
+          "maxAbsNonzeroNormalized": 2.8532330208602072,
+          "mean": 0.004668439062241614,
+          "nonzeroRate": 0.5531782275196214
+        },
+        {
+          "N": 2000000,
+          "count": 148975,
+          "nonzero": 82470,
+          "zero": 66505,
+          "sum": 302,
+          "normalized": 0.7824385614002985,
+          "nonzeroNormalized": 1.0516202630419185,
+          "maxAbs": 595,
+          "maxAbsNormalized": 1.5415594173284028,
+          "maxAbsNonzeroNormalized": 2.0719008493706674,
+          "mean": 0.0020271857694244,
+          "nonzeroRate": 0.5535828159087095
+        },
+        {
+          "N": 4000000,
+          "count": 283530,
+          "nonzero": 156725,
+          "zero": 126805,
+          "sum": 203,
+          "normalized": 0.38123830410562765,
+          "nonzeroNormalized": 0.5127750653710597,
+          "maxAbs": 595,
+          "maxAbsNormalized": 1.1174226154820122,
+          "maxAbsNonzeroNormalized": 1.5029613985013817,
+          "mean": 0.0007159736183119952,
+          "nonzeroRate": 0.5527633760095934
+        },
+        {
+          "N": 8000000,
+          "count": 539681,
+          "nonzero": 298512,
+          "zero": 241169,
+          "sum": -468,
+          "normalized": -0.6370555282486894,
+          "nonzeroNormalized": -0.8565741342507598,
+          "maxAbs": 595,
+          "maxAbsNormalized": 0.8099317079230133,
+          "maxAbsNonzeroNormalized": 1.0890205339299188,
+          "mean": -0.0008671789445987537,
+          "nonzeroRate": 0.553126754508682
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41625,
+          "nonzero": 23080,
+          "zero": 18545,
+          "sum": 448,
+          "normalized": 2.1958410046535057,
+          "nonzeroNormalized": 2.94890045013697,
+          "nonzeroRate": 0.5544744744744745
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36988,
+          "nonzero": 20407,
+          "zero": 16581,
+          "sum": -81,
+          "normalized": -0.421167251307758,
+          "nonzeroNormalized": -0.5670161601908514,
+          "nonzeroRate": 0.5517194765870012
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70362,
+          "nonzero": 38983,
+          "zero": 31379,
+          "sum": -65,
+          "normalized": -0.24504411046008592,
+          "nonzeroNormalized": -0.3292120534679397,
+          "nonzeroRate": 0.5540348483556465
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134555,
+          "nonzero": 74255,
+          "zero": 60300,
+          "sum": -99,
+          "normalized": -0.269889056021713,
+          "nonzeroNormalized": -0.3633058101787655,
+          "nonzeroRate": 0.5518561183159303
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256151,
+          "nonzero": 141787,
+          "zero": 114364,
+          "sum": -671,
+          "normalized": -1.3257892471233526,
+          "nonzeroNormalized": -1.7819861052557677,
+          "nonzeroRate": 0.5535289731447467
+        }
+      ]
+    },
+    {
+      "name": "cramer-314159",
+      "labels": 539268,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41167,
+          "nonzero": 22741,
+          "zero": 18426,
+          "sum": 205,
+          "normalized": 1.010367228537495,
+          "nonzeroNormalized": 1.359405685501596,
+          "maxAbs": 230,
+          "maxAbsNormalized": 1.1335827442127993,
+          "maxAbsNonzeroNormalized": 1.5251868666603272,
+          "mean": 0.004979716763427016,
+          "nonzeroRate": 0.5524084825224087
+        },
+        {
+          "N": 1000000,
+          "count": 78250,
+          "nonzero": 43282,
+          "zero": 34968,
+          "sum": 430,
+          "normalized": 1.5371855116167992,
+          "nonzeroNormalized": 2.0668777744651194,
+          "maxAbs": 460,
+          "maxAbsNormalized": 1.6444310124272734,
+          "maxAbsNonzeroNormalized": 2.211078549427802,
+          "mean": 0.00549520766773163,
+          "nonzeroRate": 0.5531246006389776
+        },
+        {
+          "N": 2000000,
+          "count": 148552,
+          "nonzero": 82052,
+          "zero": 66500,
+          "sum": 248,
+          "normalized": 0.6434464797379384,
+          "nonzeroNormalized": 0.8657790949384196,
+          "maxAbs": 521,
+          "maxAbsNormalized": 1.3517565159010723,
+          "maxAbsNonzeroNormalized": 1.8188343083182124,
+          "mean": 0.001669449081803005,
+          "nonzeroRate": 0.5523453066939523
+        },
+        {
+          "N": 4000000,
+          "count": 282624,
+          "nonzero": 156268,
+          "zero": 126356,
+          "sum": -102,
+          "normalized": -0.19186495335544465,
+          "nonzeroNormalized": -0.2580269951428307,
+          "maxAbs": 521,
+          "maxAbsNormalized": 0.9800160852763399,
+          "maxAbsNonzeroNormalized": 1.3179614163668116,
+          "mean": -0.00036090353260869563,
+          "nonzeroRate": 0.5529183650362319
+        },
+        {
+          "N": 8000000,
+          "count": 539268,
+          "nonzero": 298820,
+          "zero": 240448,
+          "sum": -768,
+          "normalized": -1.0458247007089283,
+          "nonzeroNormalized": -1.4049355093941223,
+          "maxAbs": 795,
+          "maxAbsNormalized": 1.0825919753432267,
+          "maxAbsNonzeroNormalized": 1.4543277733962594,
+          "mean": -0.0014241527403814058,
+          "nonzeroRate": 0.5541215128655882
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41167,
+          "nonzero": 22741,
+          "zero": 18426,
+          "sum": 205,
+          "normalized": 1.010367228537495,
+          "nonzeroNormalized": 1.359405685501596,
+          "nonzeroRate": 0.5524084825224087
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 37083,
+          "nonzero": 20541,
+          "zero": 16542,
+          "sum": 225,
+          "normalized": 1.168409521791922,
+          "nonzeroNormalized": 1.56989905059651,
+          "nonzeroRate": 0.5539195857940296
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70302,
+          "nonzero": 38770,
+          "zero": 31532,
+          "sum": -182,
+          "normalized": -0.686416236597641,
+          "nonzeroNormalized": -0.9243224205139356,
+          "nonzeroRate": 0.5514779095900544
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134072,
+          "nonzero": 74216,
+          "zero": 59856,
+          "sum": -350,
+          "normalized": -0.9558703717302693,
+          "nonzeroNormalized": -1.2847519116152546,
+          "nonzeroRate": 0.5535533146369115
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256644,
+          "nonzero": 142552,
+          "zero": 114092,
+          "sum": -666,
+          "normalized": -1.3146455370947387,
+          "nonzeroNormalized": -1.7639552844935722,
+          "nonzeroRate": 0.5554464550116114
+        }
+      ]
+    },
+    {
+      "name": "cramer-161803",
+      "labels": 540579,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41607,
+          "nonzero": 23117,
+          "zero": 18490,
+          "sum": 69,
+          "normalized": 0.3382718739365089,
+          "nonzeroNormalized": 0.4538197102975079,
+          "maxAbs": 166,
+          "maxAbsNormalized": 0.8138134938182678,
+          "maxAbsNonzeroNormalized": 1.0917981436142943,
+          "mean": 0.001658374792703151,
+          "nonzeroRate": 0.5556036243901267
+        },
+        {
+          "N": 1000000,
+          "count": 78485,
+          "nonzero": 43565,
+          "zero": 34920,
+          "sum": 29,
+          "normalized": 0.10351532895807554,
+          "nonzeroNormalized": 0.1389405899920648,
+          "maxAbs": 166,
+          "maxAbsNormalized": 0.5925360209324324,
+          "maxAbsNonzeroNormalized": 0.795315101333888,
+          "mean": 0.00036949735618271005,
+          "nonzeroRate": 0.5550742180034401
+        },
+        {
+          "N": 2000000,
+          "count": 148773,
+          "nonzero": 82485,
+          "zero": 66288,
+          "sum": -177,
+          "normalized": -0.45889276022274317,
+          "nonzeroNormalized": -0.6162909310783385,
+          "maxAbs": 215,
+          "maxAbsNormalized": 0.5574121098750835,
+          "maxAbsNonzeroNormalized": 0.7486019784284903,
+          "mean": -0.0011897320078240003,
+          "nonzeroRate": 0.5544352805952693
+        },
+        {
+          "N": 4000000,
+          "count": 283064,
+          "nonzero": 156859,
+          "zero": 126205,
+          "sum": -327,
+          "normalized": -0.614618223436256,
+          "nonzeroNormalized": -0.8256443848997741,
+          "maxAbs": 593,
+          "maxAbsNormalized": 1.1145828944883787,
+          "maxAbsNonzeroNormalized": 1.4972694808732907,
+          "mean": -0.001155215781590029,
+          "nonzeroRate": 0.5541467653958115
+        },
+        {
+          "N": 8000000,
+          "count": 540579,
+          "nonzero": 299362,
+          "zero": 241217,
+          "sum": -658,
+          "normalized": -0.8949449223754711,
+          "nonzeroNormalized": -1.2026176067936314,
+          "maxAbs": 718,
+          "maxAbsNormalized": 0.9765508423489183,
+          "maxAbsNonzeroNormalized": 1.3122787867444186,
+          "mean": -0.0012172133952669268,
+          "nonzeroRate": 0.5537802985317595
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41607,
+          "nonzero": 23117,
+          "zero": 18490,
+          "sum": 69,
+          "normalized": 0.3382718739365089,
+          "nonzeroNormalized": 0.4538197102975079,
+          "nonzeroRate": 0.5556036243901267
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36878,
+          "nonzero": 20448,
+          "zero": 16430,
+          "sum": -40,
+          "normalized": -0.2082937847741265,
+          "nonzeroNormalized": -0.27972711943222967,
+          "nonzeroRate": 0.554476923911275
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70288,
+          "nonzero": 38920,
+          "zero": 31368,
+          "sum": -206,
+          "normalized": -0.7770100344730114,
+          "nonzeroNormalized": -1.044193065120446,
+          "nonzeroRate": 0.5537218301843843
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134291,
+          "nonzero": 74374,
+          "zero": 59917,
+          "sum": -150,
+          "normalized": -0.4093245614059032,
+          "nonzeroNormalized": -0.550022795861597,
+          "nonzeroRate": 0.553827136591432
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 257515,
+          "nonzero": 142503,
+          "zero": 115012,
+          "sum": -331,
+          "normalized": -0.6522689842956696,
+          "nonzeroNormalized": -0.8768311906236299,
+          "nonzeroRate": 0.5533774731569034
+        }
+      ]
+    },
+    {
+      "name": "cramer-424242",
+      "labels": 541712,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41809,
+          "nonzero": 23145,
+          "zero": 18664,
+          "sum": 271,
+          "normalized": 1.3253616528055108,
+          "nonzeroNormalized": 1.781314890538037,
+          "maxAbs": 272,
+          "maxAbsNormalized": 1.3302522862106974,
+          "maxAbsNonzeroNormalized": 1.787888008215299,
+          "mean": 0.006481857973163673,
+          "nonzeroRate": 0.553588940180344
+        },
+        {
+          "N": 1000000,
+          "count": 79142,
+          "nonzero": 43849,
+          "zero": 35293,
+          "sum": 499,
+          "normalized": 1.7737688960618363,
+          "nonzeroNormalized": 2.3829816542432405,
+          "maxAbs": 530,
+          "maxAbsNormalized": 1.8839629557370206,
+          "maxAbsNonzeroNormalized": 2.5310225986952255,
+          "mean": 0.00630512243814915,
+          "nonzeroRate": 0.5540547370549139
+        },
+        {
+          "N": 2000000,
+          "count": 149974,
+          "nonzero": 83064,
+          "zero": 66910,
+          "sum": 510,
+          "normalized": 1.3169284764580416,
+          "nonzeroNormalized": 1.7695537368562941,
+          "maxAbs": 745,
+          "maxAbsNormalized": 1.9237484607083157,
+          "maxAbsNonzeroNormalized": 2.5849363410939983,
+          "mean": 0.0034005894355021537,
+          "nonzeroRate": 0.5538560017069626
+        },
+        {
+          "N": 4000000,
+          "count": 284734,
+          "nonzero": 157694,
+          "zero": 127040,
+          "sum": 42,
+          "normalized": 0.07870994805659613,
+          "nonzeroNormalized": 0.10576493471921784,
+          "maxAbs": 745,
+          "maxAbsNormalized": 1.3961645548134314,
+          "maxAbsNonzeroNormalized": 1.876068484900412,
+          "mean": 0.00014750609340647761,
+          "nonzeroRate": 0.5538291879438353
+        },
+        {
+          "N": 8000000,
+          "count": 541712,
+          "nonzero": 299694,
+          "zero": 242018,
+          "sum": 26,
+          "normalized": 0.035325565257200944,
+          "nonzeroNormalized": 0.047493516190055145,
+          "maxAbs": 745,
+          "maxAbsNormalized": 1.0122133121774886,
+          "maxAbsNonzeroNormalized": 1.3608719062150416,
+          "mean": 0.00004799598310541395,
+          "nonzeroRate": 0.5532349292613049
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41809,
+          "nonzero": 23145,
+          "zero": 18664,
+          "sum": 271,
+          "normalized": 1.3253616528055108,
+          "nonzeroNormalized": 1.781314890538037,
+          "nonzeroRate": 0.553588940180344
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 37333,
+          "nonzero": 20704,
+          "zero": 16629,
+          "sum": 228,
+          "normalized": 1.1800173744218918,
+          "nonzeroNormalized": 1.584556456986835,
+          "nonzeroRate": 0.5545763801462513
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70832,
+          "nonzero": 39215,
+          "zero": 31617,
+          "sum": 11,
+          "normalized": 0.04133119221290659,
+          "nonzeroNormalized": 0.05554776320604594,
+          "nonzeroRate": 0.5536339507567202
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134760,
+          "nonzero": 74630,
+          "zero": 60130,
+          "sum": -468,
+          "normalized": -1.2748683866908748,
+          "nonzeroNormalized": -1.7131253131250452,
+          "nonzeroRate": 0.5537993469872365
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256978,
+          "nonzero": 142000,
+          "zero": 114978,
+          "sum": -16,
+          "normalized": -0.031562544681047904,
+          "nonzeroNormalized": -0.04245959139474202,
+          "nonzeroRate": 0.5525764851465884
+        }
+      ]
+    }
+  ],
+  "w210Runs": [
+    {
+      "name": "w210-12345",
+      "labels": 539767,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41762,
+          "nonzero": 22435,
+          "zero": 19327,
+          "sum": 169,
+          "normalized": 0.8269820061780155,
+          "nonzeroNormalized": 1.1282976086336074,
+          "maxAbs": 173,
+          "maxAbsNormalized": 0.8465555447857792,
+          "maxAbsNonzeroNormalized": 1.1550028774770065,
+          "mean": 0.004046741056462813,
+          "nonzeroRate": 0.5372108615487764
+        },
+        {
+          "N": 1000000,
+          "count": 78801,
+          "nonzero": 42356,
+          "zero": 36445,
+          "sum": 314,
+          "normalized": 1.1185715872972464,
+          "nonzeroNormalized": 1.5257106517057233,
+          "maxAbs": 365,
+          "maxAbsNormalized": 1.3002504119856526,
+          "maxAbsNonzeroNormalized": 1.7735171588299012,
+          "mean": 0.003984721006078603,
+          "nonzeroRate": 0.5375058692148577
+        },
+        {
+          "N": 2000000,
+          "count": 149169,
+          "nonzero": 80150,
+          "zero": 69019,
+          "sum": 198,
+          "normalized": 0.5126558305955033,
+          "nonzeroNormalized": 0.6993803513523715,
+          "maxAbs": 387,
+          "maxAbsNormalized": 1.0020091234366655,
+          "maxAbsNonzeroNormalized": 1.3669706867341809,
+          "mean": 0.0013273535386038654,
+          "nonzeroRate": 0.5373100309045445
+        },
+        {
+          "N": 4000000,
+          "count": 283453,
+          "nonzero": 152267,
+          "zero": 131186,
+          "sum": 335,
+          "normalized": 0.629222549570628,
+          "nonzeroNormalized": 0.8585031863905004,
+          "maxAbs": 387,
+          "maxAbsNormalized": 0.7268929154741285,
+          "maxAbsNonzeroNormalized": 0.9917633824869363,
+          "mean": 0.0011818537817557056,
+          "nonzeroRate": 0.5371860590644657
+        },
+        {
+          "N": 8000000,
+          "count": 539767,
+          "nonzero": 290041,
+          "zero": 249726,
+          "sum": 431,
+          "normalized": 0.5866432871457311,
+          "nonzeroNormalized": 0.8002903372945073,
+          "maxAbs": 893,
+          "maxAbsNormalized": 1.2154813350838465,
+          "maxAbsNonzeroNormalized": 1.6581421605661137,
+          "mean": 0.0007984926829539413,
+          "nonzeroRate": 0.5373448173007983
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41762,
+          "nonzero": 22435,
+          "zero": 19327,
+          "sum": 169,
+          "normalized": 0.8269820061780155,
+          "nonzeroNormalized": 1.1282976086336074,
+          "nonzeroRate": 0.5372108615487764
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 37039,
+          "nonzero": 19921,
+          "zero": 17118,
+          "sum": 145,
+          "normalized": 0.7534221358703994,
+          "nonzeroNormalized": 1.0273358285747949,
+          "nonzeroRate": 0.5378384945597884
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70368,
+          "nonzero": 37794,
+          "zero": 32574,
+          "sum": -116,
+          "normalized": -0.43729084521699707,
+          "nonzeroNormalized": -0.5966869778421344,
+          "nonzeroRate": 0.5370907230559345
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134284,
+          "nonzero": 72117,
+          "zero": 62167,
+          "sum": 137,
+          "normalized": 0.3738595100381376,
+          "nonzeroNormalized": 0.5101545225670358,
+          "nonzeroRate": 0.537048345298025
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256314,
+          "nonzero": 137774,
+          "zero": 118540,
+          "sum": 96,
+          "normalized": 0.18962040460892032,
+          "nonzeroNormalized": 0.2586351807477595,
+          "nonzeroRate": 0.5375203851525863
+        }
+      ]
+    },
+    {
+      "name": "w210-271828",
+      "labels": 539266,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41529,
+          "nonzero": 22304,
+          "zero": 19225,
+          "sum": 182,
+          "normalized": 0.8930908731819186,
+          "nonzeroNormalized": 1.2186528536126948,
+          "maxAbs": 187,
+          "maxAbsNormalized": 0.9176263367308725,
+          "maxAbsNonzeroNormalized": 1.2521323276130436,
+          "mean": 0.004382479712971658,
+          "nonzeroRate": 0.5370704808687905
+        },
+        {
+          "N": 1000000,
+          "count": 78569,
+          "nonzero": 42203,
+          "zero": 36366,
+          "sum": 73,
+          "normalized": 0.2604337397407972,
+          "nonzeroNormalized": 0.35534580941245847,
+          "maxAbs": 235,
+          "maxAbsNormalized": 0.838382586836813,
+          "maxAbsNonzeroNormalized": 1.143921441259284,
+          "mean": 0.0009291196273339357,
+          "nonzeroRate": 0.5371456935941656
+        },
+        {
+          "N": 2000000,
+          "count": 148964,
+          "nonzero": 80086,
+          "zero": 68878,
+          "sum": -66,
+          "normalized": -0.17100282015654097,
+          "nonzeroNormalized": -0.2332199157580905,
+          "maxAbs": 235,
+          "maxAbsNormalized": 0.608873677830108,
+          "maxAbsNonzeroNormalized": 0.830404245502292,
+          "mean": -0.0004430600682043984,
+          "nonzeroRate": 0.5376198276093552
+        },
+        {
+          "N": 4000000,
+          "count": 283007,
+          "nonzero": 152152,
+          "zero": 130855,
+          "sum": -368,
+          "normalized": -0.6917500988048259,
+          "nonzeroNormalized": -0.9434284875442032,
+          "maxAbs": 606,
+          "maxAbsNormalized": 1.1391319561840338,
+          "maxAbsNonzeroNormalized": 1.5535806072059433,
+          "mean": -0.0013003211934687127,
+          "nonzeroRate": 0.5376262777952489
+        },
+        {
+          "N": 8000000,
+          "count": 539266,
+          "nonzero": 289975,
+          "zero": 249291,
+          "sum": -831,
+          "normalized": -1.1316171066226788,
+          "nonzeroNormalized": -1.5431947787012426,
+          "maxAbs": 856,
+          "maxAbsNormalized": 1.1656609425619893,
+          "maxAbsNonzeroNormalized": 1.5896206144022427,
+          "mean": -0.0015409834849591853,
+          "nonzeroRate": 0.5377216438640671
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41529,
+          "nonzero": 22304,
+          "zero": 19225,
+          "sum": 182,
+          "normalized": 0.8930908731819186,
+          "nonzeroNormalized": 1.2186528536126948,
+          "nonzeroRate": 0.5370704808687905
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 37040,
+          "nonzero": 19899,
+          "zero": 17141,
+          "sum": -109,
+          "normalized": -0.5663579602096828,
+          "nonzeroNormalized": -0.7726999282740561,
+          "nonzeroRate": 0.5372300215982722
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70395,
+          "nonzero": 37883,
+          "zero": 32512,
+          "sum": -139,
+          "normalized": -0.5238945657446377,
+          "nonzeroNormalized": -0.7141552254470404,
+          "nonzeroRate": 0.5381490162653597
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134043,
+          "nonzero": 72066,
+          "zero": 61977,
+          "sum": -302,
+          "normalized": -0.8248687929739947,
+          "nonzeroNormalized": -1.124972054590208,
+          "nonzeroRate": 0.5376334459837515
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256259,
+          "nonzero": 137823,
+          "zero": 118436,
+          "sum": -463,
+          "normalized": -0.9146215449919028,
+          "nonzeroNormalized": -1.2471541652771918,
+          "nonzeroRate": 0.5378269641261381
+        }
+      ]
+    },
+    {
+      "name": "w210-314159",
+      "labels": 539688,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41650,
+          "nonzero": 22340,
+          "zero": 19310,
+          "sum": 90,
+          "normalized": 0.4409963617950227,
+          "nonzeroNormalized": 0.6021447789572083,
+          "maxAbs": 99,
+          "maxAbsNormalized": 0.48509599797452496,
+          "maxAbsNonzeroNormalized": 0.6623592568529292,
+          "mean": 0.0021608643457382954,
+          "nonzeroRate": 0.5363745498199279
+        },
+        {
+          "N": 1000000,
+          "count": 78369,
+          "nonzero": 42135,
+          "zero": 36234,
+          "sum": -47,
+          "normalized": -0.16789033874418488,
+          "nonzeroNormalized": -0.2289688267569165,
+          "maxAbs": 197,
+          "maxAbsNormalized": 0.7037105687788175,
+          "maxAbsNonzeroNormalized": 0.959720401513033,
+          "mean": -0.0005997269328433437,
+          "nonzeroRate": 0.5376488152203039
+        },
+        {
+          "N": 2000000,
+          "count": 148929,
+          "nonzero": 80048,
+          "zero": 68881,
+          "sum": -174,
+          "normalized": -0.4508785882246136,
+          "nonzeroNormalized": -0.614998427770595,
+          "maxAbs": 230,
+          "maxAbsNormalized": 0.5959889384578225,
+          "maxAbsNonzeroNormalized": 0.8129289562484876,
+          "mean": -0.001168341961605866,
+          "nonzeroRate": 0.5374910192104962
+        },
+        {
+          "N": 4000000,
+          "count": 283411,
+          "nonzero": 152230,
+          "zero": 131181,
+          "sum": -48,
+          "normalized": -0.0901639409993376,
+          "nonzeroNormalized": -0.12302435979326291,
+          "maxAbs": 559,
+          "maxAbsNormalized": 1.0500342295547858,
+          "maxAbsNonzeroNormalized": 1.4327211900923744,
+          "mean": -0.00016936533867775068,
+          "nonzeroRate": 0.5371351147273747
+        },
+        {
+          "N": 8000000,
+          "count": 539688,
+          "nonzero": 290090,
+          "zero": 249598,
+          "sum": -52,
+          "normalized": -0.0707834885316248,
+          "nonzeroNormalized": -0.0965465956459443,
+          "maxAbs": 559,
+          "maxAbsNormalized": 0.7609225017149666,
+          "maxAbsNonzeroNormalized": 1.037875903193901,
+          "mean": -0.00009635196632128193,
+          "nonzeroRate": 0.5375142675027053
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41650,
+          "nonzero": 22340,
+          "zero": 19310,
+          "sum": 90,
+          "normalized": 0.4409963617950227,
+          "nonzeroNormalized": 0.6021447789572083,
+          "nonzeroRate": 0.5363745498199279
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36719,
+          "nonzero": 19795,
+          "zero": 16924,
+          "sum": -137,
+          "normalized": -0.7149491342013224,
+          "nonzeroNormalized": -0.9737395593674629,
+          "nonzeroRate": 0.5390942019118168
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70560,
+          "nonzero": 37913,
+          "zero": 32647,
+          "sum": -127,
+          "normalized": -0.4781062652873621,
+          "nonzeroNormalized": -0.6522433283891561,
+          "nonzeroRate": 0.5373157596371883
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134482,
+          "nonzero": 72182,
+          "zero": 62300,
+          "sum": 126,
+          "normalized": 0.34358837819716626,
+          "nonzeroNormalized": 0.46898190835860787,
+          "nonzeroRate": 0.5367409764875597
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256277,
+          "nonzero": 137860,
+          "zero": 118417,
+          "sum": -4,
+          "normalized": -0.007901420514202501,
+          "nonzeroNormalized": -0.01077310404581487,
+          "nonzeroRate": 0.5379335640732489
+        }
+      ]
+    },
+    {
+      "name": "w210-161803",
+      "labels": 539970,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41515,
+          "nonzero": 22457,
+          "zero": 19058,
+          "sum": 123,
+          "normalized": 0.6036741653345189,
+          "nonzeroNormalized": 0.8207846804434829,
+          "maxAbs": 129,
+          "maxAbsNormalized": 0.6331216855947394,
+          "maxAbsNonzeroNormalized": 0.8608229575382869,
+          "mean": 0.002962784535709984,
+          "nonzeroRate": 0.5409370107190172
+        },
+        {
+          "N": 1000000,
+          "count": 78299,
+          "nonzero": 42304,
+          "zero": 35995,
+          "sum": -76,
+          "normalized": -0.2716035765423291,
+          "nonzeroNormalized": -0.36950717475259665,
+          "maxAbs": 148,
+          "maxAbsNormalized": 0.5289122280034829,
+          "maxAbsNonzeroNormalized": 0.7195666034655829,
+          "mean": -0.000970638194612958,
+          "nonzeroRate": 0.5402878708540338
+        },
+        {
+          "N": 2000000,
+          "count": 148732,
+          "nonzero": 80160,
+          "zero": 68572,
+          "sum": -218,
+          "normalized": -0.5652678490521471,
+          "nonzeroNormalized": -0.7699767992979307,
+          "maxAbs": 228,
+          "maxAbsNormalized": 0.5911975668985758,
+          "maxAbsNonzeroNormalized": 0.8052968359629734,
+          "mean": -0.0014657235833579862,
+          "nonzeroRate": 0.5389559745044779
+        },
+        {
+          "N": 4000000,
+          "count": 282949,
+          "nonzero": 152186,
+          "zero": 130763,
+          "sum": -368,
+          "normalized": -0.6918209940012664,
+          "nonzeroNormalized": -0.9433230955885048,
+          "maxAbs": 627,
+          "maxAbsNormalized": 1.178727617496723,
+          "maxAbsNonzeroNormalized": 1.6072379916684578,
+          "mean": -0.0013005877384263595,
+          "nonzeroRate": 0.5378566455438966
+        },
+        {
+          "N": 8000000,
+          "count": 539970,
+          "nonzero": 289942,
+          "zero": 250028,
+          "sum": -758,
+          "normalized": -1.0315360014144912,
+          "nonzeroNormalized": -1.407711441565471,
+          "maxAbs": 759,
+          "maxAbsNormalized": 1.0328968668517136,
+          "maxAbsNonzeroNormalized": 1.4095685806704386,
+          "mean": -0.001403781691575458,
+          "nonzeroRate": 0.5369594607107803
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41515,
+          "nonzero": 22457,
+          "zero": 19058,
+          "sum": 123,
+          "normalized": 0.6036741653345189,
+          "nonzeroNormalized": 0.8207846804434829,
+          "nonzeroRate": 0.5409370107190172
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36784,
+          "nonzero": 19847,
+          "zero": 16937,
+          "sum": -199,
+          "normalized": -1.0375847963691316,
+          "nonzeroNormalized": -1.4125558938578446,
+          "nonzeroRate": 0.5395552414093084
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70433,
+          "nonzero": 37856,
+          "zero": 32577,
+          "sum": -142,
+          "normalized": -0.5350572472755432,
+          "nonzeroNormalized": -0.7298287759916204,
+          "nonzeroRate": 0.5374753311657887
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134217,
+          "nonzero": 72026,
+          "zero": 62191,
+          "sum": -150,
+          "normalized": -0.40943738557730075,
+          "nonzeroNormalized": -0.5589160880789292,
+          "nonzeroRate": 0.5366384288130416
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 257021,
+          "nonzero": 137756,
+          "zero": 119265,
+          "sum": -390,
+          "normalized": -0.7692726682875927,
+          "nonzeroNormalized": -1.0507740651855986,
+          "nonzeroRate": 0.5359717688437909
+        }
+      ]
+    },
+    {
+      "name": "w210-424242",
+      "labels": 541991,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41722,
+          "nonzero": 22315,
+          "zero": 19407,
+          "sum": 325,
+          "normalized": 1.591112184843119,
+          "nonzeroNormalized": 2.1756293821798045,
+          "maxAbs": 327,
+          "maxAbsNormalized": 1.6009036444421536,
+          "maxAbsNonzeroNormalized": 2.1890178706855266,
+          "mean": 0.007789655337711519,
+          "nonzeroRate": 0.5348497195724078
+        },
+        {
+          "N": 1000000,
+          "count": 78912,
+          "nonzero": 42287,
+          "zero": 36625,
+          "sum": 349,
+          "normalized": 1.242378427263123,
+          "nonzeroNormalized": 1.6971568802275667,
+          "maxAbs": 417,
+          "maxAbsNormalized": 1.4844464302828722,
+          "maxAbsNonzeroNormalized": 2.0278350116186115,
+          "mean": 0.0044226480129764805,
+          "nonzeroRate": 0.535875405515004
+        },
+        {
+          "N": 2000000,
+          "count": 149799,
+          "nonzero": 80415,
+          "zero": 69384,
+          "sum": 513,
+          "normalized": 1.3254486526966835,
+          "nonzeroNormalized": 1.809042758558887,
+          "maxAbs": 520,
+          "maxAbsNormalized": 1.3435346966905954,
+          "maxAbsNonzeroNormalized": 1.8337275525353243,
+          "mean": 0.003424588949191917,
+          "nonzeroRate": 0.5368193379128031
+        },
+        {
+          "N": 4000000,
+          "count": 284239,
+          "nonzero": 152657,
+          "zero": 131582,
+          "sum": 447,
+          "normalized": 0.8384278384957304,
+          "nonzeroNormalized": 1.1440609480322779,
+          "maxAbs": 573,
+          "maxAbsNormalized": 1.0747632023670102,
+          "maxAbsNonzeroNormalized": 1.4665479266722488,
+          "mean": 0.0015726202245293574,
+          "nonzeroRate": 0.5370726747561031
+        },
+        {
+          "N": 8000000,
+          "count": 541991,
+          "nonzero": 291291,
+          "zero": 250700,
+          "sum": 177,
+          "normalized": 0.24042367367474002,
+          "nonzeroNormalized": 0.32795158419019743,
+          "maxAbs": 573,
+          "maxAbsNormalized": 0.7783207063029719,
+          "maxAbsNonzeroNormalized": 1.0616737725479273,
+          "mean": 0.00032657368849298233,
+          "nonzeroRate": 0.5374461937559849
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41722,
+          "nonzero": 22315,
+          "zero": 19407,
+          "sum": 325,
+          "normalized": 1.591112184843119,
+          "nonzeroNormalized": 2.1756293821798045,
+          "nonzeroRate": 0.5348497195724078
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 37190,
+          "nonzero": 19972,
+          "zero": 17218,
+          "sum": 24,
+          "normalized": 0.12445093176772226,
+          "nonzeroNormalized": 0.169824546303348,
+          "nonzeroRate": 0.5370260822801829
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70887,
+          "nonzero": 38128,
+          "zero": 32759,
+          "sum": 164,
+          "normalized": 0.6159714021486591,
+          "nonzeroNormalized": 0.8398888882011177,
+          "nonzeroRate": 0.537870131335788
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134440,
+          "nonzero": 72242,
+          "zero": 62198,
+          "sum": -66,
+          "normalized": -0.18000297528037904,
+          "nonzeroNormalized": -0.24555515462081792,
+          "nonzeroRate": 0.537354953882773
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 257752,
+          "nonzero": 138634,
+          "zero": 119118,
+          "sum": -270,
+          "normalized": -0.5318176446289131,
+          "nonzeroNormalized": -0.7251517295025401,
+          "nonzeroRate": 0.537858096154443
+        }
+      ]
+    }
+  ],
+  "compositeRuns": [
+    {
+      "name": "composite-12345",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 30432,
+          "nonzero": 16341,
+          "zero": 14091,
+          "sum": 283,
+          "normalized": 1.6222627192223704,
+          "nonzeroNormalized": 2.2138445391108834,
+          "maxAbs": 294,
+          "maxAbsNormalized": 1.685318867319353,
+          "maxAbsNonzeroNormalized": 2.2998950335639567,
+          "mean": 0.009299421661409043,
+          "nonzeroRate": 0.536967665615142
+        },
+        {
+          "N": 1000000,
+          "count": 62821,
+          "nonzero": 33781,
+          "zero": 29040,
+          "sum": 311,
+          "normalized": 1.2408176611361517,
+          "nonzeroNormalized": 1.6920926469399151,
+          "maxAbs": 340,
+          "maxAbsNormalized": 1.3565209157115483,
+          "maxAbsNonzeroNormalized": 1.849876205657785,
+          "mean": 0.004950573852692571,
+          "nonzeroRate": 0.5377341971633689
+        },
+        {
+          "N": 2000000,
+          "count": 129110,
+          "nonzero": 69349,
+          "zero": 59761,
+          "sum": 411,
+          "normalized": 1.1438310493445523,
+          "nonzeroNormalized": 1.560708229461217,
+          "maxAbs": 428,
+          "maxAbsNormalized": 1.1911427959111152,
+          "maxAbsNonzeroNormalized": 1.6252630710691018,
+          "mean": 0.0031833320424444274,
+          "nonzeroRate": 0.5371311284950817
+        },
+        {
+          "N": 4000000,
+          "count": 264455,
+          "nonzero": 142171,
+          "zero": 122284,
+          "sum": 567,
+          "normalized": 1.1025725288578159,
+          "nonzeroNormalized": 1.5037566115553618,
+          "maxAbs": 619,
+          "maxAbsNormalized": 1.2036902916454815,
+          "maxAbsNonzeroNormalized": 1.641667270816171,
+          "mean": 0.0021440320659469477,
+          "nonzeroRate": 0.5375999697491066
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290333,
+          "zero": 249443,
+          "sum": 883,
+          "normalized": 1.2018601021425601,
+          "nonzeroNormalized": 1.6387492379454809,
+          "maxAbs": 1033,
+          "maxAbsNormalized": 1.4060265974102657,
+          "maxAbsNonzeroNormalized": 1.9171324606995264,
+          "mean": 0.0016358637657102205,
+          "nonzeroRate": 0.5378768229784207
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 30432,
+          "nonzero": 16341,
+          "zero": 14091,
+          "sum": 283,
+          "normalized": 1.6222627192223704,
+          "nonzeroNormalized": 2.2138445391108834,
+          "nonzeroRate": 0.536967665615142
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 32389,
+          "nonzero": 17440,
+          "zero": 14949,
+          "sum": 28,
+          "normalized": 0.15558196831688278,
+          "nonzeroNormalized": 0.21202388648538395,
+          "nonzeroRate": 0.5384544135354595
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 66289,
+          "nonzero": 35568,
+          "zero": 30721,
+          "sum": 100,
+          "normalized": 0.38840004024135344,
+          "nonzeroNormalized": 0.5302373024798148,
+          "nonzeroRate": 0.5365596101917361
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 135345,
+          "nonzero": 72822,
+          "zero": 62523,
+          "sum": 156,
+          "normalized": 0.4240367430793297,
+          "nonzeroNormalized": 0.5780871252644134,
+          "nonzeroRate": 0.5380472126787099
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 275321,
+          "nonzero": 148162,
+          "zero": 127159,
+          "sum": 316,
+          "normalized": 0.6022369715177031,
+          "nonzeroNormalized": 0.820953704099062,
+          "nonzeroRate": 0.538142749735763
+        }
+      ]
+    },
+    {
+      "name": "composite-271828",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 30455,
+          "nonzero": 16496,
+          "zero": 13959,
+          "sum": 108,
+          "normalized": 0.6188629077892241,
+          "nonzeroNormalized": 0.8408807908168044,
+          "maxAbs": 175,
+          "maxAbsNormalized": 1.0027871191029094,
+          "maxAbsNonzeroNormalized": 1.3625383184531554,
+          "mean": 0.003546215728123461,
+          "nonzeroRate": 0.5416516171400427
+        },
+        {
+          "N": 1000000,
+          "count": 62757,
+          "nonzero": 34058,
+          "zero": 28699,
+          "sum": -180,
+          "normalized": -0.718524229719174,
+          "nonzeroNormalized": -0.9753554938090733,
+          "maxAbs": 204,
+          "maxAbsNormalized": 0.8143274603483971,
+          "maxAbsNonzeroNormalized": 1.1054028929836164,
+          "mean": -0.00286820593718629,
+          "nonzeroRate": 0.5426964322705037
+        },
+        {
+          "N": 2000000,
+          "count": 129010,
+          "nonzero": 69736,
+          "zero": 59274,
+          "sum": 4,
+          "normalized": 0.011136489289287338,
+          "nonzeroNormalized": 0.01514716913554888,
+          "maxAbs": 262,
+          "maxAbsNormalized": 0.7294400484483207,
+          "maxAbsNonzeroNormalized": 0.9921395783784517,
+          "mean": 0.0000310053484226029,
+          "nonzeroRate": 0.540547244399659
+        },
+        {
+          "N": 4000000,
+          "count": 264457,
+          "nonzero": 142730,
+          "zero": 121727,
+          "sum": 434,
+          "normalized": 0.8439412135638262,
+          "nonzeroNormalized": 1.1487673842810115,
+          "maxAbs": 461,
+          "maxAbsNormalized": 0.896444468785539,
+          "maxAbsNonzeroNormalized": 1.2202344796164661,
+          "mean": 0.0016410985528838337,
+          "nonzeroRate": 0.5397096692467963
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290828,
+          "zero": 248948,
+          "sum": 612,
+          "normalized": 0.8329993006922387,
+          "nonzeroNormalized": 1.1348365473932875,
+          "maxAbs": 883,
+          "maxAbsNormalized": 1.2018601021425601,
+          "maxAbsNonzeroNormalized": 1.6373540381507727,
+          "mean": 0.0011338036518852264,
+          "nonzeroRate": 0.5387938700497984
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 30455,
+          "nonzero": 16496,
+          "zero": 13959,
+          "sum": 108,
+          "normalized": 0.6188629077892241,
+          "nonzeroNormalized": 0.8408807908168044,
+          "nonzeroRate": 0.5416516171400427
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 32302,
+          "nonzero": 17562,
+          "zero": 14740,
+          "sum": -288,
+          "normalized": -1.6024252562139096,
+          "nonzeroNormalized": -2.1732290482300898,
+          "nonzeroRate": 0.5436815057891152
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 66253,
+          "nonzero": 35678,
+          "zero": 30575,
+          "sum": 184,
+          "normalized": 0.7148502095904077,
+          "nonzeroNormalized": 0.9741314670150376,
+          "nonzeroRate": 0.5385114636318356
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 135447,
+          "nonzero": 72994,
+          "zero": 62453,
+          "sum": 430,
+          "normalized": 1.1683790481110872,
+          "nonzeroNormalized": 1.5915668101240936,
+          "nonzeroRate": 0.5389118991192127
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 275319,
+          "nonzero": 148098,
+          "zero": 127221,
+          "sum": 178,
+          "normalized": 0.33923598192833404,
+          "nonzeroNormalized": 0.46253585644051415,
+          "nonzeroRate": 0.5379142013446221
+        }
+      ]
+    },
+    {
+      "name": "composite-314159",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 30485,
+          "nonzero": 16431,
+          "zero": 14054,
+          "sum": 125,
+          "normalized": 0.7159239864246756,
+          "nonzeroNormalized": 0.9751647972723412,
+          "maxAbs": 157,
+          "maxAbsNormalized": 0.8992005269493926,
+          "maxAbsNonzeroNormalized": 1.2248069853740604,
+          "mean": 0.004100377234705593,
+          "nonzeroRate": 0.5389863867475808
+        },
+        {
+          "N": 1000000,
+          "count": 62808,
+          "nonzero": 33863,
+          "zero": 28945,
+          "sum": -51,
+          "normalized": -0.20349919421989546,
+          "nonzeroNormalized": -0.277145263519369,
+          "maxAbs": 187,
+          "maxAbsNormalized": 0.7461637121396166,
+          "maxAbsNonzeroNormalized": 1.0161992995710196,
+          "mean": -0.0008119984715322889,
+          "nonzeroRate": 0.5391510635587823
+        },
+        {
+          "N": 2000000,
+          "count": 128819,
+          "nonzero": 69369,
+          "zero": 59450,
+          "sum": -1,
+          "normalized": -0.0027861855676374306,
+          "nonzeroNormalized": -0.003796796172340538,
+          "maxAbs": 209,
+          "maxAbsNormalized": 0.582312783636223,
+          "maxAbsNonzeroNormalized": 0.7935304000191724,
+          "mean": -0.00000776283001731111,
+          "nonzeroRate": 0.5384997554708545
+        },
+        {
+          "N": 4000000,
+          "count": 264383,
+          "nonzero": 142477,
+          "zero": 121906,
+          "sum": -137,
+          "normalized": -0.2664426865491706,
+          "nonzeroNormalized": -0.3629511578130186,
+          "maxAbs": 365,
+          "maxAbsNormalized": 0.7098655517550896,
+          "maxAbsNonzeroNormalized": 0.9669866613266555,
+          "mean": -0.0005181876293105078,
+          "nonzeroRate": 0.5389037873085637
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290306,
+          "zero": 249470,
+          "sum": -490,
+          "normalized": -0.6669438845411715,
+          "nonzeroNormalized": -0.9094274821733543,
+          "maxAbs": 499,
+          "maxAbsNormalized": 0.6791938742572338,
+          "maxAbsNonzeroNormalized": 0.9261312522540894,
+          "mean": -0.0009077839696466682,
+          "nonzeroRate": 0.5378268022290728
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 30485,
+          "nonzero": 16431,
+          "zero": 14054,
+          "sum": 125,
+          "normalized": 0.7159239864246756,
+          "nonzeroNormalized": 0.9751647972723412,
+          "nonzeroRate": 0.5389863867475808
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 32323,
+          "nonzero": 17432,
+          "zero": 14891,
+          "sum": -176,
+          "normalized": -0.9789417183747495,
+          "nonzeroNormalized": -1.3330273474811496,
+          "nonzeroRate": 0.5393063762645794
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 66011,
+          "nonzero": 35506,
+          "zero": 30505,
+          "sum": 50,
+          "normalized": 0.19460851933943685,
+          "nonzeroNormalized": 0.2653500232189241,
+          "nonzeroRate": 0.5378800502946479
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 135564,
+          "nonzero": 73108,
+          "zero": 62456,
+          "sum": -136,
+          "normalized": -0.3693743389302877,
+          "nonzeroNormalized": -0.5029866481333978,
+          "nonzeroRate": 0.5392877165029064
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 275393,
+          "nonzero": 147829,
+          "zero": 127564,
+          "sum": -353,
+          "normalized": -0.6726641105249911,
+          "nonzeroNormalized": -0.91811035539374,
+          "nonzeroRate": 0.5367928741834397
+        }
+      ]
+    },
+    {
+      "name": "composite-161803",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 30468,
+          "nonzero": 16401,
+          "zero": 14067,
+          "sum": 47,
+          "normalized": 0.2692625066593028,
+          "nonzeroNormalized": 0.3669971516712312,
+          "maxAbs": 146,
+          "maxAbsNormalized": 0.8364324674948556,
+          "maxAbsNonzeroNormalized": 1.1400337051914842,
+          "mean": 0.0015426020743074702,
+          "nonzeroRate": 0.5383024812918472
+        },
+        {
+          "N": 1000000,
+          "count": 62871,
+          "nonzero": 33893,
+          "zero": 28978,
+          "sum": -13,
+          "normalized": -0.051846347722558125,
+          "nonzeroNormalized": -0.0706135989231198,
+          "maxAbs": 242,
+          "maxAbsNormalized": 0.9651397037583898,
+          "maxAbsNonzeroNormalized": 1.314499303030384,
+          "mean": -0.00020677259785910834,
+          "nonzeroRate": 0.5390879737875969
+        },
+        {
+          "N": 2000000,
+          "count": 129254,
+          "nonzero": 69302,
+          "zero": 59952,
+          "sum": 244,
+          "normalized": 0.6786843430683452,
+          "nonzeroNormalized": 0.9268659806120775,
+          "maxAbs": 249,
+          "maxAbsNormalized": 0.6925918091148278,
+          "maxAbsNonzeroNormalized": 0.9458591359524889,
+          "mean": 0.0018877558915004564,
+          "nonzeroRate": 0.5361690934129698
+        },
+        {
+          "N": 4000000,
+          "count": 264315,
+          "nonzero": 142168,
+          "zero": 122147,
+          "sum": 412,
+          "normalized": 0.8013759614011662,
+          "nonzeroNormalized": 1.0926882904953708,
+          "maxAbs": 444,
+          "maxAbsNormalized": 0.8636187545197034,
+          "maxAbsNonzeroNormalized": 1.1775572839319044,
+          "mean": 0.0015587461929894254,
+          "nonzeroRate": 0.5378733707886424
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290503,
+          "zero": 249273,
+          "sum": -65,
+          "normalized": -0.08847214794933908,
+          "nonzeroNormalized": -0.1205974280470768,
+          "maxAbs": 444,
+          "maxAbsNormalized": 0.6043328259924085,
+          "maxAbsNonzeroNormalized": 0.8237732008138784,
+          "mean": -0.00012042032250414987,
+          "nonzeroRate": 0.5381917684372777
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 30468,
+          "nonzero": 16401,
+          "zero": 14067,
+          "sum": 47,
+          "normalized": 0.2692625066593028,
+          "nonzeroNormalized": 0.3669971516712312,
+          "nonzeroRate": 0.5383024812918472
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 32403,
+          "nonzero": 17492,
+          "zero": 14911,
+          "sum": -60,
+          "normalized": -0.3333179023061587,
+          "nonzeroNormalized": -0.45366107342416023,
+          "nonzeroRate": 0.5398265592692034
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 66383,
+          "nonzero": 35409,
+          "zero": 30974,
+          "sum": 257,
+          "normalized": 0.997481123308216,
+          "nonzeroNormalized": 1.3657659855867303,
+          "nonzeroRate": 0.5334046367292831
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 135061,
+          "nonzero": 72866,
+          "zero": 62195,
+          "sum": 168,
+          "normalized": 0.45713481837643427,
+          "nonzeroNormalized": 0.6223673728293847,
+          "nonzeroRate": 0.5395043720985333
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 275461,
+          "nonzero": 148335,
+          "zero": 127126,
+          "sum": -477,
+          "normalized": -0.908841854407875,
+          "nonzeroNormalized": -1.2385015688770162,
+          "nonzeroRate": 0.5384972827369392
+        }
+      ]
+    },
+    {
+      "name": "composite-424242",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 30418,
+          "nonzero": 16414,
+          "zero": 14004,
+          "sum": 274,
+          "normalized": 1.571032737465029,
+          "nonzeroNormalized": 2.1386678865563606,
+          "maxAbs": 311,
+          "maxAbsNormalized": 1.7831794939840293,
+          "maxAbsNonzeroNormalized": 2.427466104813971,
+          "mean": 0.009007824314550595,
+          "nonzeroRate": 0.53961470182129
+        },
+        {
+          "N": 1000000,
+          "count": 62618,
+          "nonzero": 33713,
+          "zero": 28905,
+          "sum": 301,
+          "normalized": 1.2028650308636823,
+          "nonzeroNormalized": 1.63933531743109,
+          "maxAbs": 356,
+          "maxAbsNormalized": 1.4226576444766477,
+          "maxAbsNonzeroNormalized": 1.9388816378919205,
+          "mean": 0.004806924526493979,
+          "nonzeroRate": 0.538391516816251
+        },
+        {
+          "N": 2000000,
+          "count": 128759,
+          "nonzero": 69233,
+          "zero": 59526,
+          "sum": 463,
+          "normalized": 1.2903044452367238,
+          "nonzeroNormalized": 1.7596423898373141,
+          "maxAbs": 476,
+          "maxAbsNormalized": 1.32653329575093,
+          "maxAbsNonzeroNormalized": 1.809049195599485,
+          "mean": 0.003595865143407451,
+          "nonzeroRate": 0.5376944524266265
+        },
+        {
+          "N": 4000000,
+          "count": 264219,
+          "nonzero": 142145,
+          "zero": 122074,
+          "sum": 267,
+          "normalized": 0.5194326433958231,
+          "nonzeroNormalized": 0.708182951373933,
+          "maxAbs": 476,
+          "maxAbsNormalized": 0.9260297312974224,
+          "maxAbsNonzeroNormalized": 1.2625284076928542,
+          "mean": 0.0010105253596448401,
+          "nonzeroRate": 0.5379817499876995
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290378,
+          "zero": 249398,
+          "sum": -42,
+          "normalized": -0.05716661867495756,
+          "nonzeroNormalized": -0.07794126237410832,
+          "maxAbs": 476,
+          "maxAbsNormalized": 0.6478883449828523,
+          "maxAbsNonzeroNormalized": 0.883334306906561,
+          "mean": -0.000077810054541143,
+          "nonzeroRate": 0.5379601908940005
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 30418,
+          "nonzero": 16414,
+          "zero": 14004,
+          "sum": 274,
+          "normalized": 1.571032737465029,
+          "nonzeroNormalized": 2.1386678865563606,
+          "nonzeroRate": 0.53961470182129
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 32200,
+          "nonzero": 17299,
+          "zero": 14901,
+          "sum": 27,
+          "normalized": 0.15046511739534527,
+          "nonzeroNormalized": 0.2052831318670538,
+          "nonzeroRate": 0.5372360248447205
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 66141,
+          "nonzero": 35520,
+          "zero": 30621,
+          "sum": 162,
+          "normalized": 0.6299116435912264,
+          "nonzeroNormalized": 0.8595646289554679,
+          "nonzeroRate": 0.5370345171678687
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 135460,
+          "nonzero": 72912,
+          "zero": 62548,
+          "sum": -196,
+          "normalized": -0.5325379176101951,
+          "nonzeroNormalized": -0.7258661863112977,
+          "nonzeroRate": 0.5382548353757567
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 275557,
+          "nonzero": 148233,
+          "zero": 127324,
+          "sum": -309,
+          "normalized": -0.5886440458308492,
+          "nonzeroNormalized": -0.802575744579775,
+          "nonzeroRate": 0.5379395188654253
+        }
+      ]
+    }
+  ],
+  "localCompositeRuns": [
+    {
+      "name": "local-composite-12345",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22399,
+          "zero": 19138,
+          "sum": 341,
+          "normalized": 1.6731574662242361,
+          "nonzeroNormalized": 2.2784529461957375,
+          "maxAbs": 354,
+          "maxAbsNormalized": 1.7369435279864502,
+          "maxAbsNonzeroNormalized": 2.3653147887193287,
+          "mean": 0.008209548113729927,
+          "nonzeroRate": 0.5392541589426295
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42282,
+          "zero": 36215,
+          "sum": 284,
+          "normalized": 1.0136588360146963,
+          "nonzeroNormalized": 1.3811491456356002,
+          "maxAbs": 458,
+          "maxAbsNormalized": 1.6347033341363764,
+          "maxAbsNonzeroNormalized": 2.227346157398257,
+          "mean": 0.003617972661375594,
+          "nonzeroRate": 0.538644788972827
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 80306,
+          "zero": 68626,
+          "sum": 700,
+          "normalized": 1.8138611089549916,
+          "nonzeroNormalized": 2.4701540733557708,
+          "maxAbs": 751,
+          "maxAbsNormalized": 1.9460138468931412,
+          "maxAbsNonzeroNormalized": 2.6501224415574054,
+          "mean": 0.004700131603684903,
+          "nonzeroRate": 0.5392125265221712
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 152575,
+          "zero": 130570,
+          "sum": 659,
+          "normalized": 1.2384570967557529,
+          "nonzeroNormalized": 1.6871112650849875,
+          "maxAbs": 793,
+          "maxAbsNormalized": 1.4902829707546466,
+          "maxAbsNonzeroNormalized": 2.0301657560127393,
+          "mean": 0.0023274294089600735,
+          "nonzeroRate": 0.5388581822034647
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290639,
+          "zero": 249137,
+          "sum": 953,
+          "normalized": 1.297137799934156,
+          "nonzeroNormalized": 1.7677300935654618,
+          "maxAbs": 1121,
+          "maxAbsNormalized": 1.5258042746339862,
+          "maxAbsNonzeroNormalized": 2.079355125799457,
+          "mean": 0.0017655471899454588,
+          "nonzeroRate": 0.5384437248043633
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22399,
+          "zero": 19138,
+          "sum": 341,
+          "normalized": 1.6731574662242361,
+          "nonzeroNormalized": 2.2784529461957375,
+          "nonzeroRate": 0.5392541589426295
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19883,
+          "zero": 17077,
+          "sum": -57,
+          "normalized": -0.29648919736787066,
+          "nonzeroNormalized": -0.40423498693118665,
+          "nonzeroRate": 0.5379599567099567
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 38024,
+          "zero": 32411,
+          "sum": 416,
+          "normalized": 1.5674693993898923,
+          "nonzeroNormalized": 2.1333613856069933,
+          "nonzeroRate": 0.5398452473912118
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 72269,
+          "zero": 61944,
+          "sum": -41,
+          "normalized": -0.11191455306939489,
+          "nonzeroNormalized": -0.15251334068086758,
+          "nonzeroRate": 0.5384649773121829
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 138064,
+          "zero": 118567,
+          "sum": 294,
+          "normalized": 0.5803537196333773,
+          "nonzeroNormalized": 0.7912379418283177,
+          "nonzeroRate": 0.5379864474673753
+        }
+      ]
+    },
+    {
+      "name": "local-composite-271828",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22310,
+          "zero": 19227,
+          "sum": -104,
+          "normalized": -0.5102884940977143,
+          "nonzeroNormalized": -0.6962794124274588,
+          "maxAbs": 201,
+          "maxAbsNormalized": 0.9862306472465439,
+          "maxAbsNonzeroNormalized": 1.3456938644030694,
+          "mean": -0.002503791800081855,
+          "nonzeroRate": 0.5371114909598671
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42229,
+          "zero": 36268,
+          "sum": 23,
+          "normalized": 0.0820920888321761,
+          "nonzeroNormalized": 0.11192379758327592,
+          "maxAbs": 228,
+          "maxAbsNormalized": 0.8137824458146152,
+          "maxAbsNonzeroNormalized": 1.1095054716950832,
+          "mean": 0.0002930048282099953,
+          "nonzeroRate": 0.5379696039339082
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 80184,
+          "zero": 68748,
+          "sum": -30,
+          "normalized": -0.07773690466949965,
+          "nonzeroNormalized": -0.10594425126421607,
+          "maxAbs": 228,
+          "maxAbsNormalized": 0.5908004754881973,
+          "maxAbsNonzeroNormalized": 0.8051763096080421,
+          "mean": -0.00020143421158649584,
+          "nonzeroRate": 0.5383933607283861
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 152428,
+          "zero": 130717,
+          "sum": 238,
+          "normalized": 0.44727282098310955,
+          "nonzeroNormalized": 0.6095994709190296,
+          "maxAbs": 311,
+          "maxAbsNormalized": 0.5844615433854919,
+          "maxAbsNonzeroNormalized": 0.7965774598983958,
+          "mean": 0.0008405587243285243,
+          "nonzeroRate": 0.5383390135796147
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290410,
+          "zero": 249366,
+          "sum": 858,
+          "normalized": 1.1678323529312757,
+          "nonzeroNormalized": 1.5921409201504235,
+          "maxAbs": 1111,
+          "maxAbsNormalized": 1.5121931749494726,
+          "maxAbsNonzeroNormalized": 2.06161837096401,
+          "mean": 0.0015895482570547784,
+          "nonzeroRate": 0.5380194747450795
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22310,
+          "zero": 19227,
+          "sum": -104,
+          "normalized": -0.5102884940977143,
+          "nonzeroNormalized": -0.6962794124274588,
+          "nonzeroRate": 0.5371114909598671
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19919,
+          "zero": 17041,
+          "sum": 127,
+          "normalized": 0.6605987379950802,
+          "nonzeroNormalized": 0.8998496563796368,
+          "nonzeroRate": 0.5389339826839827
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37955,
+          "zero": 32480,
+          "sum": -53,
+          "normalized": -0.19970163021073148,
+          "nonzeroNormalized": -0.2720453905263837,
+          "nonzeroRate": 0.538865620785121
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 72244,
+          "zero": 61969,
+          "sum": 268,
+          "normalized": 0.7315390298194593,
+          "nonzeroNormalized": 0.9970889470945601,
+          "nonzeroRate": 0.5382787062356106
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 137982,
+          "zero": 118649,
+          "sum": 620,
+          "normalized": 1.2238751910635848,
+          "nonzeroNormalized": 1.6690927538053755,
+          "nonzeroRate": 0.5376669225463798
+        }
+      ]
+    },
+    {
+      "name": "local-composite-314159",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22386,
+          "zero": 19151,
+          "sum": 50,
+          "normalized": 0.24533100677774722,
+          "nonzeroNormalized": 0.3341810002756495,
+          "maxAbs": 153,
+          "maxAbsNormalized": 0.7507128807399065,
+          "maxAbsNonzeroNormalized": 1.0225938608434875,
+          "mean": 0.001203746057731661,
+          "nonzeroRate": 0.5389411849676192
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42311,
+          "zero": 36186,
+          "sum": 95,
+          "normalized": 0.33907601908942303,
+          "nonzeroNormalized": 0.4618457594464406,
+          "maxAbs": 206,
+          "maxAbsNormalized": 0.7352595782360121,
+          "maxAbsNonzeroNormalized": 1.0014760678522816,
+          "mean": 0.00121023733391085,
+          "nonzeroRate": 0.5390142298431787
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 80219,
+          "zero": 68713,
+          "sum": -33,
+          "normalized": -0.08551059513644961,
+          "nonzeroNormalized": -0.1165132503776143,
+          "maxAbs": 206,
+          "maxAbsNormalized": 0.5337934120638975,
+          "maxAbsNonzeroNormalized": 0.727325138720865,
+          "mean": -0.00022157763274514543,
+          "nonzeroRate": 0.5386283673085703
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 152521,
+          "zero": 130624,
+          "sum": -23,
+          "normalized": -0.043223844044586214,
+          "nonzeroNormalized": -0.058892909987046965,
+          "maxAbs": 298,
+          "maxAbsNormalized": 0.560030675012465,
+          "maxAbsNonzeroNormalized": 0.7630472685278259,
+          "mean": -0.00008123046495611788,
+          "nonzeroRate": 0.5386674671987851
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290556,
+          "zero": 249220,
+          "sum": 28,
+          "normalized": 0.03811107911663837,
+          "nonzeroNormalized": 0.05194492305624548,
+          "maxAbs": 369,
+          "maxAbsNormalized": 0.5022495783585557,
+          "maxAbsNonzeroNormalized": 0.684559878848378,
+          "mean": 0.00005187336969409533,
+          "nonzeroRate": 0.5382899573156272
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22386,
+          "zero": 19151,
+          "sum": 50,
+          "normalized": 0.24533100677774722,
+          "nonzeroNormalized": 0.3341810002756495,
+          "nonzeroRate": 0.5389411849676192
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19925,
+          "zero": 17035,
+          "sum": 45,
+          "normalized": 0.2340704189746347,
+          "nonzeroNormalized": 0.3187963561391165,
+          "nonzeroRate": 0.5390963203463204
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37908,
+          "zero": 32527,
+          "sum": -128,
+          "normalized": -0.48229827673535147,
+          "nonzeroNormalized": -0.6574224547854568,
+          "nonzeroRate": 0.5381983388940158
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 72302,
+          "zero": 61911,
+          "sum": 10,
+          "normalized": 0.027296232455949972,
+          "nonzeroNormalized": 0.03718988578590805,
+          "nonzeroRate": 0.5387108551332583
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 138035,
+          "zero": 118596,
+          "sum": 51,
+          "normalized": 0.1006736044261981,
+          "nonzeroNormalized": 0.1372699787035883,
+          "nonzeroRate": 0.5378734447514135
+        }
+      ]
+    },
+    {
+      "name": "local-composite-161803",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22339,
+          "zero": 19198,
+          "sum": 289,
+          "normalized": 1.418013219175379,
+          "nonzeroNormalized": 1.9335970672595428,
+          "maxAbs": 330,
+          "maxAbsNormalized": 1.6191846447331317,
+          "maxAbsNonzeroNormalized": 2.2079136062133187,
+          "mean": 0.0069576522136890005,
+          "nonzeroRate": 0.5378096636733515
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42162,
+          "zero": 36335,
+          "sum": 386,
+          "normalized": 1.3777194038791294,
+          "nonzeroNormalized": 1.8798651757708438,
+          "maxAbs": 394,
+          "maxAbsNormalized": 1.4062731739077123,
+          "maxAbsNonzeroNormalized": 1.9188261120562498,
+          "mean": 0.004917385377785138,
+          "nonzeroRate": 0.5371160681299922
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 80106,
+          "zero": 68826,
+          "sum": 222,
+          "normalized": 0.5752530945542974,
+          "nonzeroNormalized": 0.7843690546366678,
+          "maxAbs": 465,
+          "maxAbsNormalized": 1.2049220223772446,
+          "maxAbsNonzeroNormalized": 1.6429351820092368,
+          "mean": 0.0014906131657400692,
+          "nonzeroRate": 0.5378696317782612
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 152209,
+          "zero": 130936,
+          "sum": 133,
+          "normalized": 0.24994657643173768,
+          "nonzeroNormalized": 0.34090351141396336,
+          "maxAbs": 465,
+          "maxAbsNormalized": 0.873873368727504,
+          "maxAbsNonzeroNormalized": 1.191880697800699,
+          "mean": 0.0004697239930071165,
+          "nonzeroRate": 0.5375655582828586
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290251,
+          "zero": 249525,
+          "sum": -195,
+          "normalized": -0.2654164438480172,
+          "nonzeroNormalized": -0.36194930664082753,
+          "maxAbs": 465,
+          "maxAbsNormalized": 0.6329161353298872,
+          "maxAbsNonzeroNormalized": 0.8631098850665888,
+          "mean": -0.0003612609675124496,
+          "nonzeroRate": 0.5377249081100308
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22339,
+          "zero": 19198,
+          "sum": 289,
+          "normalized": 1.418013219175379,
+          "nonzeroNormalized": 1.9335970672595428,
+          "nonzeroRate": 0.5378096636733515
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19823,
+          "zero": 17137,
+          "sum": 97,
+          "normalized": 0.5045517920119904,
+          "nonzeroNormalized": 0.6889489519015082,
+          "nonzeroRate": 0.5363365800865801
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 37944,
+          "zero": 32491,
+          "sum": -164,
+          "normalized": -0.6179446670671691,
+          "nonzeroNormalized": -0.8419228416327197,
+          "nonzeroRate": 0.5387094484276284
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 72103,
+          "zero": 62110,
+          "sum": -89,
+          "normalized": -0.24293646885795475,
+          "nonzeroNormalized": -0.33144642512714995,
+          "nonzeroRate": 0.5372281373637428
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 138042,
+          "zero": 118589,
+          "sum": -328,
+          "normalized": -0.6474694559175094,
+          "nonzeroNormalized": -0.8828119886406375,
+          "nonzeroRate": 0.5379007212690594
+        }
+      ]
+    },
+    {
+      "name": "local-composite-424242",
+      "labels": 539776,
+      "endpointRows": [
+        {
+          "N": 500000,
+          "count": 41537,
+          "nonzero": 22354,
+          "zero": 19183,
+          "sum": -76,
+          "normalized": -0.37290313030217576,
+          "nonzeroNormalized": -0.5083185621042793,
+          "maxAbs": 153,
+          "maxAbsNormalized": 0.7507128807399065,
+          "maxAbsNonzeroNormalized": 1.0233255263415098,
+          "mean": -0.0018296940077521247,
+          "nonzeroRate": 0.5381707874906709
+        },
+        {
+          "N": 1000000,
+          "count": 78497,
+          "nonzero": 42275,
+          "zero": 36222,
+          "sum": 93,
+          "normalized": 0.3319375765822773,
+          "nonzeroNormalized": 0.45231515626979163,
+          "maxAbs": 153,
+          "maxAbsNormalized": 0.5460908517966497,
+          "maxAbsNonzeroNormalized": 0.7441313861212702,
+          "mean": 0.0011847586531969375,
+          "nonzeroRate": 0.5385556135903283
+        },
+        {
+          "N": 2000000,
+          "count": 148932,
+          "nonzero": 80298,
+          "zero": 68634,
+          "sum": -420,
+          "normalized": -1.088316665372995,
+          "nonzeroNormalized": -1.4821662717815787,
+          "maxAbs": 487,
+          "maxAbsNormalized": 1.2619290858015442,
+          "maxAbsNonzeroNormalized": 1.7186070818038781,
+          "mean": -0.0028200789622109417,
+          "nonzeroRate": 0.5391588107324148
+        },
+        {
+          "N": 4000000,
+          "count": 283145,
+          "nonzero": 152550,
+          "zero": 130595,
+          "sum": -100,
+          "normalized": -0.18792975671559226,
+          "nonzeroNormalized": -0.2560317908808562,
+          "maxAbs": 487,
+          "maxAbsNormalized": 0.9152179152049342,
+          "maxAbsNonzeroNormalized": 1.2468748215897696,
+          "mean": -0.0003531759345918169,
+          "nonzeroRate": 0.5387698882198168
+        },
+        {
+          "N": 8000000,
+          "count": 539776,
+          "nonzero": 290585,
+          "zero": 249191,
+          "sum": -195,
+          "normalized": -0.2654164438480172,
+          "nonzeroNormalized": -0.3617412335699334,
+          "maxAbs": 616,
+          "maxAbsNormalized": 0.8384437405660442,
+          "maxAbsNonzeroNormalized": 1.142731281431174,
+          "mean": -0.0003612609675124496,
+          "nonzeroRate": 0.5383436833056675
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 500000,
+          "count": 41537,
+          "nonzero": 22354,
+          "zero": 19183,
+          "sum": -76,
+          "normalized": -0.37290313030217576,
+          "nonzeroNormalized": -0.5083185621042793,
+          "nonzeroRate": 0.5381707874906709
+        },
+        {
+          "from": 500000,
+          "to": 1000000,
+          "count": 36960,
+          "nonzero": 19921,
+          "zero": 17039,
+          "sum": 169,
+          "normalized": 0.8790644623714059,
+          "nonzeroNormalized": 1.1973776208906228,
+          "nonzeroRate": 0.5389880952380952
+        },
+        {
+          "from": 1000000,
+          "to": 2000000,
+          "count": 70435,
+          "nonzero": 38023,
+          "zero": 32412,
+          "sum": -513,
+          "normalized": -1.9329610622284008,
+          "nonzeroNormalized": -2.6308384187511686,
+          "nonzeroRate": 0.539831049904167
+        },
+        {
+          "from": 2000000,
+          "to": 4000000,
+          "count": 134213,
+          "nonzero": 72252,
+          "zero": 61961,
+          "sum": 320,
+          "normalized": 0.8734794385903991,
+          "nonzeroNormalized": 1.1904880536576445,
+          "nonzeroRate": 0.5383383129801137
+        },
+        {
+          "from": 4000000,
+          "to": 8000000,
+          "count": 256631,
+          "nonzero": 138035,
+          "zero": 118596,
+          "sum": -95,
+          "normalized": -0.1875292631468396,
+          "nonzeroNormalized": -0.2556989799380567,
+          "nonzeroRate": 0.5378734447514135
+        }
+      ]
+    }
+  ],
+  "localDiagnostics": [
+    {
+      "primes": [
+        3
+      ],
+      "run": {
+        "name": "local-3",
+        "labels": 539776,
+        "endpointRows": [
+          {
+            "N": 500000,
+            "count": 41537,
+            "nonzero": 27712,
+            "zero": 13825,
+            "sum": -27710,
+            "normalized": -135.9624439562275,
+            "nonzeroNormalized": -166.45720214019516,
+            "maxAbs": 27710,
+            "maxAbsNormalized": 135.9624439562275,
+            "maxAbsNonzeroNormalized": 166.45720214019516,
+            "mean": -0.6671160651948865,
+            "nonzeroRate": 0.6671642150371958
+          },
+          {
+            "N": 1000000,
+            "count": 78497,
+            "nonzero": 52335,
+            "zero": 26162,
+            "sum": -52333,
+            "normalized": -186.7880558632292,
+            "nonzeroNormalized": -228.75969941497712,
+            "maxAbs": 52333,
+            "maxAbsNormalized": 186.7880558632292,
+            "maxAbsNonzeroNormalized": 228.75969941497712,
+            "mean": -0.6666878989005949,
+            "nonzeroRate": 0.6667133775813089
+          },
+          {
+            "N": 2000000,
+            "count": 148932,
+            "nonzero": 99329,
+            "zero": 49603,
+            "sum": -99327,
+            "normalized": -257.3791176702464,
+            "nonzeroNormalized": -315.1586902502773,
+            "maxAbs": 99327,
+            "maxAbsNormalized": 257.3791176702464,
+            "maxAbsNonzeroNormalized": 315.1586902502773,
+            "mean": -0.6669285311417291,
+            "nonzeroRate": 0.6669419600891682
+          },
+          {
+            "N": 4000000,
+            "count": 283145,
+            "nonzero": 188791,
+            "zero": 94354,
+            "sum": -188789,
+            "normalized": -354.7907084057995,
+            "nonzeroNormalized": -434.49626007733076,
+            "maxAbs": 188789,
+            "maxAbsNormalized": 354.7907084057995,
+            "maxAbsNonzeroNormalized": 434.49626007733076,
+            "mean": -0.6667573151565452,
+            "nonzeroRate": 0.6667643786752371
+          },
+          {
+            "N": 8000000,
+            "count": 539776,
+            "nonzero": 359854,
+            "zero": 179922,
+            "sum": -359852,
+            "normalized": -489.79814436716254,
+            "nonzeroNormalized": -599.8749869857182,
+            "maxAbs": 359852,
+            "maxAbsNormalized": 489.79814436716254,
+            "maxAbsNonzeroNormalized": 599.8749869857182,
+            "mean": -0.6666691368271283,
+            "nonzeroRate": 0.6666728420678207
+          }
+        ],
+        "blockRows": [
+          {
+            "from": 1,
+            "to": 500000,
+            "count": 41537,
+            "nonzero": 27712,
+            "zero": 13825,
+            "sum": -27710,
+            "normalized": -135.9624439562275,
+            "nonzeroNormalized": -166.45720214019516,
+            "nonzeroRate": 0.6671642150371958
+          },
+          {
+            "from": 500000,
+            "to": 1000000,
+            "count": 36960,
+            "nonzero": 24623,
+            "zero": 12337,
+            "sum": -24623,
+            "normalized": -128.07813169805402,
+            "nonzeroNormalized": -156.91717560547664,
+            "nonzeroRate": 0.6662067099567099
+          },
+          {
+            "from": 1000000,
+            "to": 2000000,
+            "count": 70435,
+            "nonzero": 46994,
+            "zero": 23441,
+            "sum": -46994,
+            "normalized": -177.0712907570399,
+            "nonzeroNormalized": -216.7809954770021,
+            "nonzeroRate": 0.6671967061830056
+          },
+          {
+            "from": 2000000,
+            "to": 4000000,
+            "count": 134213,
+            "nonzero": 89462,
+            "zero": 44751,
+            "sum": -89462,
+            "normalized": -244.19755479741966,
+            "nonzeroNormalized": -299.1019892946217,
+            "nonzeroRate": 0.6665673220924948
+          },
+          {
+            "from": 4000000,
+            "to": 8000000,
+            "count": 256631,
+            "nonzero": 171063,
+            "zero": 85568,
+            "sum": -171063,
+            "normalized": -337.67703517566133,
+            "nonzeroNormalized": -413.59763055414135,
+            "nonzeroRate": 0.6665718482958022
+          }
+        ]
+      },
+      "correlation": 0.0014577982423604147
+    },
+    {
+      "primes": [
+        3,
+        5
+      ],
+      "run": {
+        "name": "local-3-5",
+        "labels": 539776,
+        "endpointRows": [
+          {
+            "N": 500000,
+            "count": 41537,
+            "nonzero": 24958,
+            "zero": 16579,
+            "sum": -2796,
+            "normalized": -13.718909899011624,
+            "nonzeroNormalized": -17.698329521680893,
+            "maxAbs": 2797,
+            "maxAbsNormalized": 13.72381651914718,
+            "maxAbsNonzeroNormalized": 17.704659396330992,
+            "mean": -0.06731347954835448,
+            "nonzeroRate": 0.6008618821773358
+          },
+          {
+            "N": 1000000,
+            "count": 78497,
+            "nonzero": 47106,
+            "zero": 31391,
+            "sum": -5296,
+            "normalized": -18.90259575892194,
+            "nonzeroNormalized": -24.40112572251806,
+            "maxAbs": 5301,
+            "maxAbsNormalized": 18.920441865189805,
+            "maxAbsNonzeroNormalized": 24.42416303909899,
+            "mean": -0.06746754653044065,
+            "nonzeroRate": 0.6000993668547843
+          },
+          {
+            "N": 2000000,
+            "count": 148932,
+            "nonzero": 89409,
+            "zero": 59523,
+            "sum": -9969,
+            "normalized": -25.831973421674732,
+            "nonzeroNormalized": -33.33964546706836,
+            "maxAbs": 9971,
+            "maxAbsNormalized": 25.837155881986032,
+            "maxAbsNonzeroNormalized": 33.34633413102002,
+            "mean": -0.06693658851019257,
+            "nonzeroRate": 0.6003343807912336
+          },
+          {
+            "N": 4000000,
+            "count": 283145,
+            "nonzero": 169902,
+            "zero": 113243,
+            "sum": -18862,
+            "normalized": -35.44731071169501,
+            "nonzeroNormalized": -45.76026121812408,
+            "maxAbs": 18876,
+            "maxAbsNormalized": 35.47362087763519,
+            "maxAbsNonzeroNormalized": 45.79422599688846,
+            "mean": -0.06661604478270851,
+            "nonzeroRate": 0.6000529763901887
+          },
+          {
+            "N": 8000000,
+            "count": 539776,
+            "nonzero": 323806,
+            "zero": 215970,
+            "sum": -36280,
+            "normalized": -49.381069655415715,
+            "nonzeroNormalized": -63.756553529883746,
+            "maxAbs": 36281,
+            "maxAbsNormalized": 49.38243076538417,
+            "maxAbsNonzeroNormalized": 63.7583108770042,
+            "mean": -0.06721306616077781,
+            "nonzeroRate": 0.5998895838273655
+          }
+        ],
+        "blockRows": [
+          {
+            "from": 1,
+            "to": 500000,
+            "count": 41537,
+            "nonzero": 24958,
+            "zero": 16579,
+            "sum": -2796,
+            "normalized": -13.718909899011624,
+            "nonzeroNormalized": -17.698329521680893,
+            "nonzeroRate": 0.6008618821773358
+          },
+          {
+            "from": 500000,
+            "to": 1000000,
+            "count": 36960,
+            "nonzero": 22148,
+            "zero": 14812,
+            "sum": -2500,
+            "normalized": -13.003912165257484,
+            "nonzeroNormalized": -16.79858693542138,
+            "nonzeroRate": 0.5992424242424242
+          },
+          {
+            "from": 1000000,
+            "to": 2000000,
+            "count": 70435,
+            "nonzero": 42303,
+            "zero": 28132,
+            "sum": -4673,
+            "normalized": -17.607655056127324,
+            "nonzeroNormalized": -22.720097846044673,
+            "nonzeroRate": 0.6005962944558814
+          },
+          {
+            "from": 2000000,
+            "to": 4000000,
+            "count": 134213,
+            "nonzero": 80493,
+            "zero": 53720,
+            "sum": -8893,
+            "normalized": -24.27453952307631,
+            "nonzeroNormalized": -31.345069370377054,
+            "nonzeroRate": 0.5997407106614113
+          },
+          {
+            "from": 4000000,
+            "to": 8000000,
+            "count": 256631,
+            "nonzero": 153904,
+            "zero": 102727,
+            "sum": -17418,
+            "normalized": -34.38299689991213,
+            "nonzeroNormalized": -44.39901471358532,
+            "nonzeroRate": 0.5997093102548017
+          }
+        ]
+      },
+      "correlation": 0.000543877327380326
+    },
+    {
+      "primes": [
+        3,
+        5,
+        7
+      ],
+      "run": {
+        "name": "local-3-5-7",
+        "labels": 539776,
+        "endpointRows": [
+          {
+            "N": 500000,
+            "count": 41537,
+            "nonzero": 23756,
+            "zero": 17781,
+            "sum": -968,
+            "normalized": -4.749608291217186,
+            "nonzeroNormalized": -6.2804201600502365,
+            "maxAbs": 976,
+            "maxAbsNormalized": 4.788861252301626,
+            "maxAbsNonzeroNormalized": 6.332324458893627,
+            "mean": -0.023304523677684954,
+            "nonzeroRate": 0.5719238269494668
+          },
+          {
+            "N": 1000000,
+            "count": 78497,
+            "nonzero": 44862,
+            "zero": 33635,
+            "sum": -1974,
+            "normalized": -7.045642754552853,
+            "nonzeroNormalized": -9.319826614028523,
+            "maxAbs": 1977,
+            "maxAbsNormalized": 7.0563504183135715,
+            "maxAbsNonzeroNormalized": 9.333990484262609,
+            "mean": -0.02514745786463177,
+            "nonzeroRate": 0.5715122870937743
+          },
+          {
+            "N": 2000000,
+            "count": 148932,
+            "nonzero": 85172,
+            "zero": 63760,
+            "sum": -3728,
+            "normalized": -9.660106020263155,
+            "nonzeroNormalized": -12.774016740503262,
+            "maxAbs": 3756,
+            "maxAbsNormalized": 9.732660464621356,
+            "maxAbsNonzeroNormalized": 12.869958926322493,
+            "mean": -0.025031558026481885,
+            "nonzeroRate": 0.5718851556415008
+          },
+          {
+            "N": 4000000,
+            "count": 283145,
+            "nonzero": 161819,
+            "zero": 121326,
+            "sum": -7327,
+            "normalized": -13.769613274551444,
+            "nonzeroNormalized": -18.21425594849429,
+            "maxAbs": 7346,
+            "maxAbsNormalized": 13.805319928327407,
+            "maxAbsNonzeroNormalized": 18.26148822132374,
+            "mean": -0.025877200727542425,
+            "nonzeroRate": 0.5715057655971322
+          },
+          {
+            "N": 8000000,
+            "count": 539776,
+            "nonzero": 308399,
+            "zero": 231377,
+            "sum": -13925,
+            "normalized": -18.953456310685333,
+            "nonzeroNormalized": -25.074871914356923,
+            "maxAbs": 13926,
+            "maxAbsNormalized": 18.954817420653782,
+            "maxAbsNonzeroNormalized": 25.076672623291525,
+            "mean": -0.025797738321081336,
+            "nonzeroRate": 0.5713462621531895
+          }
+        ],
+        "blockRows": [
+          {
+            "from": 1,
+            "to": 500000,
+            "count": 41537,
+            "nonzero": 23756,
+            "zero": 17781,
+            "sum": -968,
+            "normalized": -4.749608291217186,
+            "nonzeroNormalized": -6.2804201600502365,
+            "nonzeroRate": 0.5719238269494668
+          },
+          {
+            "from": 500000,
+            "to": 1000000,
+            "count": 36960,
+            "nonzero": 21106,
+            "zero": 15854,
+            "sum": -1006,
+            "normalized": -5.232774255299612,
+            "nonzeroNormalized": -6.9246051406302955,
+            "nonzeroRate": 0.5710497835497835
+          },
+          {
+            "from": 1000000,
+            "to": 2000000,
+            "count": 70435,
+            "nonzero": 40310,
+            "zero": 30125,
+            "sum": -1754,
+            "normalized": -6.608993573389113,
+            "nonzeroNormalized": -8.736212513419808,
+            "nonzeroRate": 0.5723007027756087
+          },
+          {
+            "from": 2000000,
+            "to": 4000000,
+            "count": 134213,
+            "nonzero": 76647,
+            "zero": 57566,
+            "sum": -3599,
+            "normalized": -9.823914060896396,
+            "nonzeroNormalized": -12.999728021032599,
+            "nonzeroRate": 0.5710847682415265
+          },
+          {
+            "from": 4000000,
+            "to": 8000000,
+            "count": 256631,
+            "nonzero": 146580,
+            "zero": 110051,
+            "sum": -6598,
+            "normalized": -13.024400823608923,
+            "nonzeroNormalized": -17.23355809541922,
+            "nonzeroRate": 0.571170279506373
+          }
+        ]
+      },
+      "correlation": 0.0019685683487976236
+    }
+  ],
+  "functionFieldRows": [
+    {
+      "q": 3,
+      "degree": 1,
+      "primeCount": 3,
+      "primeNonzero": 3,
+      "primeSum": 3,
+      "primeNormalized": 1.7320508075688774,
+      "primeNonzeroNormalized": 1.7320508075688774,
+      "primeMean": 1,
+      "primeNonzeroRate": 1,
+      "monicCount": 3,
+      "monicNonzero": 3,
+      "monicSum": 3,
+      "monicNormalized": 1.7320508075688774,
+      "monicNonzeroNormalized": 1.7320508075688774,
+      "monicMean": 1,
+      "monicNonzeroRate": 1
+    },
+    {
+      "q": 3,
+      "degree": 2,
+      "primeCount": 3,
+      "primeNonzero": 0,
+      "primeSum": 0,
+      "primeNormalized": 0,
+      "primeNonzeroNormalized": 0,
+      "primeMean": 0,
+      "primeNonzeroRate": 0,
+      "monicCount": 9,
+      "monicNonzero": 3,
+      "monicSum": -3,
+      "monicNormalized": -1,
+      "monicNonzeroNormalized": -1.7320508075688774,
+      "monicMean": -0.3333333333333333,
+      "monicNonzeroRate": 0.3333333333333333
+    },
+    {
+      "q": 3,
+      "degree": 3,
+      "primeCount": 8,
+      "primeNonzero": 2,
+      "primeSum": 2,
+      "primeNormalized": 0.7071067811865475,
+      "primeNonzeroNormalized": 1.414213562373095,
+      "primeMean": 0.25,
+      "primeNonzeroRate": 0.25,
+      "monicCount": 27,
+      "monicNonzero": 12,
+      "monicSum": 0,
+      "monicNormalized": 0,
+      "monicNonzeroNormalized": 0,
+      "monicMean": 0,
+      "monicNonzeroRate": 0.4444444444444444
+    },
+    {
+      "q": 3,
+      "degree": 4,
+      "primeCount": 18,
+      "primeNonzero": 6,
+      "primeSum": -6,
+      "primeNormalized": -1.4142135623730951,
+      "primeNonzeroNormalized": -2.4494897427831783,
+      "primeMean": -0.3333333333333333,
+      "primeNonzeroRate": 0.3333333333333333,
+      "monicCount": 81,
+      "monicNonzero": 33,
+      "monicSum": -9,
+      "monicNormalized": -1,
+      "monicNonzeroNormalized": -1.5666989036012806,
+      "monicMean": -0.1111111111111111,
+      "monicNonzeroRate": 0.4074074074074074
+    },
+    {
+      "q": 3,
+      "degree": 5,
+      "primeCount": 48,
+      "primeNonzero": 18,
+      "primeSum": -6,
+      "primeNormalized": -0.8660254037844387,
+      "primeNonzeroNormalized": -1.4142135623730951,
+      "primeMean": -0.125,
+      "primeNonzeroRate": 0.375,
+      "monicCount": 243,
+      "monicNonzero": 108,
+      "monicSum": 36,
+      "monicNormalized": 2.309401076758503,
+      "monicNonzeroNormalized": 3.4641016151377544,
+      "monicMean": 0.14814814814814814,
+      "monicNonzeroRate": 0.4444444444444444
+    },
+    {
+      "q": 3,
+      "degree": 6,
+      "primeCount": 116,
+      "primeNonzero": 30,
+      "primeSum": 18,
+      "primeNormalized": 1.671258043593467,
+      "primeNonzeroNormalized": 3.2863353450309964,
+      "primeMean": 0.15517241379310345,
+      "primeNonzeroRate": 0.25862068965517243,
+      "monicCount": 729,
+      "monicNonzero": 306,
+      "monicSum": 18,
+      "monicNormalized": 0.6666666666666666,
+      "monicNonzeroNormalized": 1.0289915108550531,
+      "monicMean": 0.024691358024691357,
+      "monicNonzeroRate": 0.41975308641975306
+    },
+    {
+      "q": 3,
+      "degree": 7,
+      "primeCount": 312,
+      "primeNonzero": 96,
+      "primeSum": -12,
+      "primeNormalized": -0.6793662204867574,
+      "primeNonzeroNormalized": -1.2247448713915892,
+      "primeMean": -0.038461538461538464,
+      "primeNonzeroRate": 0.3076923076923077,
+      "monicCount": 2187,
+      "monicNonzero": 930,
+      "monicSum": -18,
+      "monicNormalized": -0.3849001794597505,
+      "monicNonzeroNormalized": -0.5902432522055576,
+      "monicMean": -0.00823045267489712,
+      "monicNonzeroRate": 0.4252400548696845
+    },
+    {
+      "q": 3,
+      "degree": 8,
+      "primeCount": 810,
+      "primeNonzero": 198,
+      "primeSum": 18,
+      "primeNormalized": 0.6324555320336759,
+      "primeNonzeroNormalized": 1.2792042981336627,
+      "primeMean": 0.022222222222222223,
+      "primeNonzeroRate": 0.24444444444444444,
+      "monicCount": 6561,
+      "monicNonzero": 2781,
+      "monicSum": 51,
+      "monicNormalized": 0.6296296296296297,
+      "monicNonzeroNormalized": 0.9670962107805763,
+      "monicMean": 0.007773205304069501,
+      "monicNonzeroRate": 0.42386831275720166
+    },
+    {
+      "q": 3,
+      "degree": 9,
+      "primeCount": 2184,
+      "primeNonzero": 528,
+      "primeSum": 24,
+      "primeNormalized": 0.5135525910130955,
+      "primeNonzeroNormalized": 1.044465935734187,
+      "primeMean": 0.01098901098901099,
+      "primeNonzeroRate": 0.24175824175824176,
+      "monicCount": 19683,
+      "monicNonzero": 8319,
+      "monicSum": -33,
+      "monicNormalized": -0.2352167763365142,
+      "monicNonzeroNormalized": -0.3618081768973942,
+      "monicMean": -0.0016765736930345985,
+      "monicNonzeroRate": 0.42264898643499466
+    },
+    {
+      "q": 3,
+      "degree": 10,
+      "primeCount": 5880,
+      "primeNonzero": 1608,
+      "primeSum": -156,
+      "primeNormalized": -2.034398070733474,
+      "primeNonzeroNormalized": -3.890286410819768,
+      "primeMean": -0.026530612244897958,
+      "primeNonzeroRate": 0.27346938775510204,
+      "monicCount": 59049,
+      "monicNonzero": 25008,
+      "monicSum": -372,
+      "monicNormalized": -1.5308641975308641,
+      "monicNonzeroNormalized": -2.3523582319535303,
+      "monicMean": -0.006299852664736066,
+      "monicNonzeroRate": 0.4235126759132246
+    },
+    {
+      "q": 3,
+      "degree": 11,
+      "primeCount": 16104,
+      "primeNonzero": 4194,
+      "primeSum": -114,
+      "primeNormalized": -0.8983342757230725,
+      "primeNonzeroNormalized": -1.760316007525902,
+      "primeMean": -0.007078986587183309,
+      "primeNonzeroRate": 0.26043219076005963,
+      "monicCount": 177147,
+      "monicNonzero": 75105,
+      "monicSum": 645,
+      "monicNormalized": 1.5324729367378955,
+      "monicNonzeroNormalized": 2.3535600814341473,
+      "monicMean": 0.0036410438788125115,
+      "monicNonzeroRate": 0.42396992328405225
+    },
+    {
+      "q": 3,
+      "degree": 12,
+      "primeCount": 44220,
+      "primeNonzero": 11800,
+      "primeSum": 152,
+      "primeNormalized": 0.7228267541453949,
+      "primeNonzeroNormalized": 1.3992734192054515,
+      "primeMean": 0.0034373586612392584,
+      "primeNonzeroRate": 0.2668475802804161,
+      "monicCount": 531441,
+      "monicNonzero": 225204,
+      "monicSum": 372,
+      "monicNormalized": 0.5102880658436214,
+      "monicNonzeroNormalized": 0.7838895769593839,
+      "monicMean": 0.0006999836294151185,
+      "monicNonzeroRate": 0.4237610572010816
+    },
+    {
+      "q": 5,
+      "degree": 1,
+      "primeCount": 5,
+      "primeNonzero": 5,
+      "primeSum": 5,
+      "primeNormalized": 2.23606797749979,
+      "primeNonzeroNormalized": 2.23606797749979,
+      "primeMean": 1,
+      "primeNonzeroRate": 1,
+      "monicCount": 5,
+      "monicNonzero": 5,
+      "monicSum": 5,
+      "monicNormalized": 2.23606797749979,
+      "monicNonzeroNormalized": 2.23606797749979,
+      "monicMean": 1,
+      "monicNonzeroRate": 1
+    },
+    {
+      "q": 5,
+      "degree": 2,
+      "primeCount": 10,
+      "primeNonzero": 10,
+      "primeSum": -10,
+      "primeNormalized": -3.162277660168379,
+      "primeNonzeroNormalized": -3.162277660168379,
+      "primeMean": -1,
+      "primeNonzeroRate": 1,
+      "monicCount": 25,
+      "monicNonzero": 15,
+      "monicSum": -5,
+      "monicNormalized": -1,
+      "monicNonzeroNormalized": -1.2909944487358056,
+      "monicMean": -0.2,
+      "monicNonzeroRate": 0.6
+    },
+    {
+      "q": 5,
+      "degree": 3,
+      "primeCount": 40,
+      "primeNonzero": 20,
+      "primeSum": -20,
+      "primeNormalized": -3.162277660168379,
+      "primeNonzeroNormalized": -4.47213595499958,
+      "primeMean": -0.5,
+      "primeNonzeroRate": 0.5,
+      "monicCount": 125,
+      "monicNonzero": 80,
+      "monicSum": 0,
+      "monicNormalized": 0,
+      "monicNonzeroNormalized": 0,
+      "monicMean": 0,
+      "monicNonzeroRate": 0.64
+    },
+    {
+      "q": 5,
+      "degree": 4,
+      "primeCount": 150,
+      "primeNonzero": 90,
+      "primeSum": -10,
+      "primeNormalized": -0.816496580927726,
+      "primeNonzeroNormalized": -1.0540925533894598,
+      "primeMean": -0.06666666666666667,
+      "primeNonzeroRate": 0.6,
+      "monicCount": 625,
+      "monicNonzero": 395,
+      "monicSum": -25,
+      "monicNormalized": -1,
+      "monicNonzeroNormalized": -1.257886513566569,
+      "monicMean": -0.04,
+      "monicNonzeroRate": 0.632
+    },
+    {
+      "q": 5,
+      "degree": 5,
+      "primeCount": 624,
+      "primeNonzero": 374,
+      "primeSum": -6,
+      "primeNormalized": -0.24019223070763068,
+      "primeNonzeroNormalized": -0.3102526139970115,
+      "primeMean": -0.009615384615384616,
+      "primeNonzeroRate": 0.5993589743589743,
+      "monicCount": 3125,
+      "monicNonzero": 1985,
+      "monicSum": 25,
+      "monicNormalized": 0.4472135954999579,
+      "monicNonzeroNormalized": 0.5611251740540419,
+      "monicMean": 0.008,
+      "monicNonzeroRate": 0.6352
+    },
+    {
+      "q": 5,
+      "degree": 6,
+      "primeCount": 2580,
+      "primeNonzero": 1510,
+      "primeSum": -70,
+      "primeNormalized": -1.378123654176776,
+      "primeNonzeroNormalized": -1.8013975442924255,
+      "primeMean": -0.027131782945736434,
+      "primeNonzeroRate": 0.5852713178294574,
+      "monicCount": 15625,
+      "monicNonzero": 9900,
+      "monicSum": -240,
+      "monicNormalized": -1.92,
+      "monicNonzeroNormalized": -2.412090756622109,
+      "monicMean": -0.01536,
+      "monicNonzeroRate": 0.6336
+    },
+    {
+      "q": 5,
+      "degree": 7,
+      "primeCount": 11160,
+      "primeNonzero": 6350,
+      "primeSum": 190,
+      "primeNormalized": 1.7985458084490387,
+      "primeNonzeroNormalized": 2.3843320595250024,
+      "primeMean": 0.017025089605734768,
+      "primeNonzeroRate": 0.5689964157706093,
+      "monicCount": 78125,
+      "monicNonzero": 49605,
+      "monicSum": 365,
+      "monicNormalized": 1.305863698859877,
+      "monicNonzeroNormalized": 1.638815781474021,
+      "monicMean": 0.004672,
+      "monicNonzeroRate": 0.634944
+    },
+    {
+      "q": 5,
+      "degree": 8,
+      "primeCount": 48750,
+      "primeNonzero": 27710,
+      "primeSum": -70,
+      "primeNormalized": -0.31703756956048684,
+      "primeNonzeroNormalized": -0.42051333960272,
+      "primeMean": -0.001435897435897436,
+      "primeNonzeroRate": 0.5684102564102564,
+      "monicCount": 390625,
+      "monicNonzero": 247835,
+      "monicSum": 1135,
+      "monicNormalized": 1.816,
+      "monicNonzeroNormalized": 2.279893404235005,
+      "monicMean": 0.0029056,
+      "monicNonzeroRate": 0.6344576
+    }
+  ],
+  "controlSummaries": {
+    "signShuffle": [
+      {
+        "normalized": [
+          -1.059829949279868,
+          0.30421044840440653
+        ],
+        "maxAbsNormalized": [
+          0.5544480753177087,
+          1.8007295897486646
+        ],
+        "nonzeroRate": [
+          0.5325613308616415,
+          0.5381226376483617
+        ],
+        "theta": [
+          0.33123798675813687,
+          0.8693580289240715
+        ]
+      },
+      {
+        "normalized": [
+          -0.8637515433646354,
+          -0.33907601908942303
+        ],
+        "maxAbsNormalized": [
+          0.567506179318087,
+          1.3099042000612446
+        ],
+        "nonzeroRate": [
+          0.5326063416436297,
+          0.5365682764946431
+        ],
+        "theta": [
+          0.33123798675813687,
+          0.8693580289240715
+        ]
+      },
+      {
+        "normalized": [
+          -0.7177707531150467,
+          -0.34463361070144843
+        ],
+        "maxAbsNormalized": [
+          0.8110550387184463,
+          1.0390832924156452
+        ],
+        "nonzeroRate": [
+          0.5337200870195794,
+          0.5353785620283082
+        ],
+        "theta": [
+          0.33123798675813687,
+          0.8693580289240715
+        ]
+      },
+      {
+        "normalized": [
+          -1.2534914772930004,
+          -0.6013752214898952
+        ],
+        "maxAbsNormalized": [
+          0.7705120025339283,
+          1.5203517318291413
+        ],
+        "nonzeroRate": [
+          0.5343269349626516,
+          0.5356584082360628
+        ],
+        "theta": [
+          0.33123798675813687,
+          0.8693580289240715
+        ]
+      },
+      {
+        "normalized": [
+          -1.0997768545087072,
+          -1.0997768545087072
+        ],
+        "maxAbsNormalized": [
+          1.1106657342563182,
+          1.543498704223854
+        ],
+        "nonzeroRate": [
+          0.5350404612283614,
+          0.5350404612283614
+        ],
+        "theta": [
+          0.33123798675813687,
+          0.8693580289240715
+        ]
+      }
+    ],
+    "cramer": [
+      {
+        "normalized": [
+          0.3382718739365089,
+          2.1958410046535057
+        ],
+        "maxAbsNormalized": [
+          0.6571786508274053,
+          2.2742638976768452
+        ],
+        "nonzeroRate": [
+          0.5524084825224087,
+          0.5556036243901267
+        ],
+        "theta": [
+          0.07175297261354682,
+          0.6555640525041806
+        ]
+      },
+      {
+        "normalized": [
+          0.10351532895807554,
+          1.7737688960618363
+        ],
+        "maxAbsNormalized": [
+          0.517296602026948,
+          2.1221192295793956
+        ],
+        "nonzeroRate": [
+          0.5531246006389776,
+          0.5561155657375588
+        ],
+        "theta": [
+          0.07175297261354682,
+          0.6555640525041806
+        ]
+      },
+      {
+        "normalized": [
+          -0.45889276022274317,
+          1.3169284764580416
+        ],
+        "maxAbsNormalized": [
+          0.4922824982618854,
+          1.9237484607083157
+        ],
+        "nonzeroRate": [
+          0.5523453066939523,
+          0.5559904137268986
+        ],
+        "theta": [
+          0.07175297261354682,
+          0.6555640525041806
+        ]
+      },
+      {
+        "normalized": [
+          -0.614618223436256,
+          0.38123830410562765
+        ],
+        "maxAbsNormalized": [
+          0.586405046754247,
+          1.3961645548134314
+        ],
+        "nonzeroRate": [
+          0.5527633760095934,
+          0.5548867293337997
+        ],
+        "theta": [
+          0.07175297261354682,
+          0.6555640525041806
+        ]
+      },
+      {
+        "normalized": [
+          -1.1480997354026705,
+          0.035325565257200944
+        ],
+        "maxAbsNormalized": [
+          0.8099317079230133,
+          1.2066623553579667
+        ],
+        "nonzeroRate": [
+          0.553126754508682,
+          0.5541215128655882
+        ],
+        "theta": [
+          0.07175297261354682,
+          0.6555640525041806
+        ]
+      }
+    ],
+    "w210": [
+      {
+        "normalized": [
+          0.4409963617950227,
+          1.591112184843119
+        ],
+        "maxAbsNormalized": [
+          0.48509599797452496,
+          1.6009036444421536
+        ],
+        "nonzeroRate": [
+          0.5348497195724078,
+          0.5409370107190172
+        ],
+        "theta": [
+          0.20769767618298868,
+          0.7196325907157511
+        ]
+      },
+      {
+        "normalized": [
+          -0.2716035765423291,
+          1.242378427263123
+        ],
+        "maxAbsNormalized": [
+          0.5289122280034829,
+          1.4844464302828722
+        ],
+        "nonzeroRate": [
+          0.535875405515004,
+          0.5402878708540338
+        ],
+        "theta": [
+          0.20769767618298868,
+          0.7196325907157511
+        ]
+      },
+      {
+        "normalized": [
+          -0.5652678490521471,
+          1.3254486526966835
+        ],
+        "maxAbsNormalized": [
+          0.5911975668985758,
+          1.3435346966905954
+        ],
+        "nonzeroRate": [
+          0.5368193379128031,
+          0.5389559745044779
+        ],
+        "theta": [
+          0.20769767618298868,
+          0.7196325907157511
+        ]
+      },
+      {
+        "normalized": [
+          -0.6918209940012664,
+          0.8384278384957304
+        ],
+        "maxAbsNormalized": [
+          0.7268929154741285,
+          1.178727617496723
+        ],
+        "nonzeroRate": [
+          0.5370726747561031,
+          0.5378566455438966
+        ],
+        "theta": [
+          0.20769767618298868,
+          0.7196325907157511
+        ]
+      },
+      {
+        "normalized": [
+          -1.1316171066226788,
+          0.5866432871457311
+        ],
+        "maxAbsNormalized": [
+          0.7609225017149666,
+          1.2154813350838465
+        ],
+        "nonzeroRate": [
+          0.5369594607107803,
+          0.5377216438640671
+        ],
+        "theta": [
+          0.20769767618298868,
+          0.7196325907157511
+        ]
+      }
+    ],
+    "composite": [
+      {
+        "normalized": [
+          0.2692625066593028,
+          1.6222627192223704
+        ],
+        "maxAbsNormalized": [
+          0.8364324674948556,
+          1.7831794939840293
+        ],
+        "nonzeroRate": [
+          0.536967665615142,
+          0.5416516171400427
+        ],
+        "theta": [
+          0.16471783186962294,
+          0.5846314630090114
+        ]
+      },
+      {
+        "normalized": [
+          -0.718524229719174,
+          1.2408176611361517
+        ],
+        "maxAbsNormalized": [
+          0.7461637121396166,
+          1.4226576444766477
+        ],
+        "nonzeroRate": [
+          0.5377341971633689,
+          0.5426964322705037
+        ],
+        "theta": [
+          0.16471783186962294,
+          0.5846314630090114
+        ]
+      },
+      {
+        "normalized": [
+          -0.0027861855676374306,
+          1.2903044452367238
+        ],
+        "maxAbsNormalized": [
+          0.582312783636223,
+          1.32653329575093
+        ],
+        "nonzeroRate": [
+          0.5361690934129698,
+          0.540547244399659
+        ],
+        "theta": [
+          0.16471783186962294,
+          0.5846314630090114
+        ]
+      },
+      {
+        "normalized": [
+          -0.2664426865491706,
+          1.1025725288578159
+        ],
+        "maxAbsNormalized": [
+          0.7098655517550896,
+          1.2036902916454815
+        ],
+        "nonzeroRate": [
+          0.5375999697491066,
+          0.5397096692467963
+        ],
+        "theta": [
+          0.16471783186962294,
+          0.5846314630090114
+        ]
+      },
+      {
+        "normalized": [
+          -0.6669438845411715,
+          1.2018601021425601
+        ],
+        "maxAbsNormalized": [
+          0.6043328259924085,
+          1.4060265974102657
+        ],
+        "nonzeroRate": [
+          0.5378268022290728,
+          0.5387938700497984
+        ],
+        "theta": [
+          0.16471783186962294,
+          0.5846314630090114
+        ]
+      }
+    ],
+    "localComposite": [
+      {
+        "normalized": [
+          -0.5102884940977143,
+          1.6731574662242361
+        ],
+        "maxAbsNormalized": [
+          0.7507128807399065,
+          1.7369435279864502
+        ],
+        "nonzeroRate": [
+          0.5371114909598671,
+          0.5392541589426295
+        ],
+        "theta": [
+          0.1228564470038172,
+          0.5689187515394187
+        ]
+      },
+      {
+        "normalized": [
+          0.0820920888321761,
+          1.3777194038791294
+        ],
+        "maxAbsNormalized": [
+          0.5460908517966497,
+          1.6347033341363764
+        ],
+        "nonzeroRate": [
+          0.5371160681299922,
+          0.5390142298431787
+        ],
+        "theta": [
+          0.1228564470038172,
+          0.5689187515394187
+        ]
+      },
+      {
+        "normalized": [
+          -1.088316665372995,
+          1.8138611089549916
+        ],
+        "maxAbsNormalized": [
+          0.5337934120638975,
+          1.9460138468931412
+        ],
+        "nonzeroRate": [
+          0.5378696317782612,
+          0.5392125265221712
+        ],
+        "theta": [
+          0.1228564470038172,
+          0.5689187515394187
+        ]
+      },
+      {
+        "normalized": [
+          -0.18792975671559226,
+          1.2384570967557529
+        ],
+        "maxAbsNormalized": [
+          0.560030675012465,
+          1.4902829707546466
+        ],
+        "nonzeroRate": [
+          0.5375655582828586,
+          0.5388581822034647
+        ],
+        "theta": [
+          0.1228564470038172,
+          0.5689187515394187
+        ]
+      },
+      {
+        "normalized": [
+          -0.2654164438480172,
+          1.297137799934156
+        ],
+        "maxAbsNormalized": [
+          0.5022495783585557,
+          1.5258042746339862
+        ],
+        "nonzeroRate": [
+          0.5377249081100308,
+          0.5384437248043633
+        ],
+        "theta": [
+          0.1228564470038172,
+          0.5689187515394187
+        ]
+      }
+    ]
+  },
+  "blockSummaries": {
+    "signShuffle": [
+      [
+        -1.059829949279868,
+        0.30421044840440653
+      ],
+      [
+        -1.4252287733122202,
+        -0.031209389196617962
+      ],
+      [
+        -0.6593921752241133,
+        0.3353480205425491
+      ],
+      [
+        -1.083660428501214,
+        -0.3930657473656796
+      ],
+      [
+        -0.9633082149016603,
+        -0.278332906354783
+      ]
+    ],
+    "cramer": [
+      [
+        0.3382718739365089,
+        2.1958410046535057
+      ],
+      [
+        -0.421167251307758,
+        1.1800173744218918
+      ],
+      [
+        -0.7770100344730114,
+        0.04133119221290659
+      ],
+      [
+        -1.2748683866908748,
+        -0.269889056021713
+      ],
+      [
+        -1.3257892471233526,
+        -0.031562544681047904
+      ]
+    ],
+    "w210": [
+      [
+        0.4409963617950227,
+        1.591112184843119
+      ],
+      [
+        -1.0375847963691316,
+        0.7534221358703994
+      ],
+      [
+        -0.5350572472755432,
+        0.6159714021486591
+      ],
+      [
+        -0.8248687929739947,
+        0.3738595100381376
+      ],
+      [
+        -0.9146215449919028,
+        0.18962040460892032
+      ]
+    ],
+    "composite": [
+      [
+        0.2692625066593028,
+        1.6222627192223704
+      ],
+      [
+        -1.6024252562139096,
+        0.15558196831688278
+      ],
+      [
+        0.19460851933943685,
+        0.997481123308216
+      ],
+      [
+        -0.5325379176101951,
+        1.1683790481110872
+      ],
+      [
+        -0.908841854407875,
+        0.6022369715177031
+      ]
+    ],
+    "localComposite": [
+      [
+        -0.5102884940977143,
+        1.6731574662242361
+      ],
+      [
+        -0.29648919736787066,
+        0.8790644623714059
+      ],
+      [
+        -1.9329610622284008,
+        1.5674693993898923
+      ],
+      [
+        -0.24293646885795475,
+        0.8734794385903991
+      ],
+      [
+        -0.6474694559175094,
+        1.2238751910635848
+      ]
+    ]
+  },
+  "jsonPath": "logs/playground-artifacts/odd-kernel-mobius-neighborhood-8000000.json",
+  "mdPath": "logs/playground-artifacts/odd-kernel-mobius-neighborhood-8000000.md",
+  "svgPath": "logs/playground-artifacts/odd-kernel-mobius-neighborhood-8000000.svg"
+}

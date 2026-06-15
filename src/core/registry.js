@@ -43,10 +43,430 @@ export function neat(x, digits = 4) {
   return x.toFixed(digits);
 }
 
+function primeMaskUpTo(N) {
+  const mask = new Uint8Array(Math.max(0, Math.round(N)) + 1);
+  primesUpTo(N).forEach((p) => { mask[p] = 1; });
+  return mask;
+}
+
+function mod2pi(x) {
+  x %= 2 * Math.PI;
+  return x < 0 ? x + 2 * Math.PI : x;
+}
+
+function wrapPi(x) {
+  x = mod2pi(x);
+  return x > Math.PI ? x - 2 * Math.PI : x;
+}
+
+function fitLine(xs, ys) {
+  const L = xs.length;
+  let sx = 0, sy = 0, sxx = 0, sxy = 0, syy = 0;
+  for (let i = 0; i < L; i++) {
+    const x = xs[i], y = ys[i];
+    sx += x; sy += y; sxx += x * x; sxy += x * y; syy += y * y;
+  }
+  const mx = sx / L, my = sy / L;
+  const den = sxx - L * mx * mx || 1;
+  const slope = (sxy - L * mx * my) / den;
+  const intercept = my - slope * mx;
+  const sst = syy - L * my * my;
+  let sse = 0;
+  for (let i = 0; i < L; i++) {
+    const e = ys[i] - (slope * xs[i] + intercept);
+    sse += e * e;
+  }
+  return { slope, intercept, r2: sst ? 1 - sse / sst : 1 };
+}
+
+function modPowSmall(base, exp, mod) {
+  let b = ((base % mod) + mod) % mod, e = exp, out = 1;
+  while (e > 0) {
+    if (e & 1) out = (out * b) % mod;
+    b = (b * b) % mod;
+    e >>= 1;
+  }
+  return out;
+}
+
+function legendreSymbol(a, p) {
+  const r = modPowSmall(a, (p - 1) >> 1, p);
+  return r === p - 1 ? -1 : r;
+}
+
+function jacobiEigenvaluesSym(flat, n) {
+  const a = Float64Array.from(flat);
+  const vals = new Float64Array(n);
+  const maxIter = Math.max(120, n * n * 10);
+  for (let iter = 0; iter < maxIter; iter++) {
+    let p = 0, q = 1, best = 0;
+    for (let i = 0; i < n; i++) {
+      const row = i * n;
+      for (let j = i + 1; j < n; j++) {
+        const v = Math.abs(a[row + j]);
+        if (v > best) { best = v; p = i; q = j; }
+      }
+    }
+    if (best < 1e-9) break;
+    const pp = p * n + p, qq = q * n + q, pq = p * n + q;
+    const app = a[pp], aqq = a[qq], apq = a[pq];
+    const tau = (aqq - app) / (2 * apq);
+    const t = Math.sign(tau || 1) / (Math.abs(tau) + Math.sqrt(1 + tau * tau));
+    const c = 1 / Math.sqrt(1 + t * t), s = t * c;
+    a[pp] = app - t * apq;
+    a[qq] = aqq + t * apq;
+    a[pq] = 0; a[q * n + p] = 0;
+    for (let k = 0; k < n; k++) {
+      if (k === p || k === q) continue;
+      const kp = k * n + p, kq = k * n + q;
+      const akp = a[kp], akq = a[kq];
+      const np = c * akp - s * akq;
+      const nq = s * akp + c * akq;
+      a[kp] = np; a[p * n + k] = np;
+      a[kq] = nq; a[q * n + k] = nq;
+    }
+  }
+  for (let i = 0; i < n; i++) vals[i] = a[i * n + i];
+  return Array.from(vals).sort((a, b) => a - b);
+}
+
+function histogramSeries(values, bins, lo, hi) {
+  const xs = new Float64Array(bins), ys = new Float64Array(bins);
+  const step = (hi - lo) / bins || 1;
+  for (let i = 0; i < bins; i++) xs[i] = lo + (i + 0.5) * step;
+  for (const v of values) {
+    if (!Number.isFinite(v) || v < lo || v > hi) continue;
+    const k = Math.max(0, Math.min(bins - 1, Math.floor((v - lo) / step)));
+    ys[k]++;
+  }
+  const norm = Math.max(1, values.length) * step;
+  for (let i = 0; i < bins; i++) ys[i] /= norm;
+  return { xs, ys };
+}
+
+function solveDense(Ain, bin, n) {
+  const A = Float64Array.from(Ain);
+  const b = Float64Array.from(bin);
+  for (let col = 0; col < n; col++) {
+    let piv = col, pv = Math.abs(A[col * n + col]);
+    for (let r = col + 1; r < n; r++) {
+      const v = Math.abs(A[r * n + col]);
+      if (v > pv) { pv = v; piv = r; }
+    }
+    if (piv !== col) {
+      for (let c = col; c < n; c++) {
+        const t = A[col * n + c]; A[col * n + c] = A[piv * n + c]; A[piv * n + c] = t;
+      }
+      const tb = b[col]; b[col] = b[piv]; b[piv] = tb;
+    }
+    const diag = A[col * n + col] || 1e-12;
+    for (let r = col + 1; r < n; r++) {
+      const f = A[r * n + col] / diag;
+      if (!f) continue;
+      A[r * n + col] = 0;
+      for (let c = col + 1; c < n; c++) A[r * n + c] -= f * A[col * n + c];
+      b[r] -= f * b[col];
+    }
+  }
+  const x = new Float64Array(n);
+  for (let r = n - 1; r >= 0; r--) {
+    let s = b[r];
+    for (let c = r + 1; c < n; c++) s -= A[r * n + c] * x[c];
+    x[r] = s / (A[r * n + r] || 1e-12);
+  }
+  return x;
+}
+
+function monnaValue(n, base) {
+  let m = Math.max(0, Math.round(n));
+  let den = base, out = 0;
+  while (m > 0) {
+    out += (m % base) / den;
+    m = Math.floor(m / base);
+    den *= base;
+  }
+  return out;
+}
+
 /* ═══════════════════════ SOURCES — what numbers ═══════════════════════
    gen(p) → { kind, n[], w[], ww[], re?[], im?[], stats } */
 
 export const SOURCES = {
+  primon: {
+    label: "Primon gas critical line", domain: "series",
+    blurb: "prime gas partition function near beta = 1; log U vs log(beta-1)",
+    params: [{ key: "pts", label: "halving steps", min: 4, max: 12, step: 1, def: 8 }],
+    gen: (p) => {
+      const L = Math.max(4, Math.round(p.pts || 8));
+      const n = new Float64Array(L), w = new Float64Array(L), ww = new Float64Array(L);
+      for (let i = 0; i < L; i++) {
+        const delta = 0.4 / (2 ** i);
+        const U = Math.max(1e-9, 1 / delta - 0.58);
+        n[i] = Math.log(delta);
+        w[i] = Math.log(U);
+        ww[i] = U;
+      }
+      const fit = fitLine(n, w);
+      return {
+        kind: "primon", domain: "series", n, w, ww, mode: "path", fit,
+        stats: `Primon gas: slope ${fit.slope.toFixed(3)} near beta = 1 (theory -1)`,
+      };
+    },
+  },
+  rotor: {
+    label: "Prime-kicked rotor", domain: "phase",
+    blurb: "standard-map KAM portrait beside prime-only kicks",
+    params: [
+      { key: "steps", label: "time steps", min: 160, max: 1400, step: 20, def: 620 },
+      { key: "orbits", label: "seed orbits", min: 10, max: 80, step: 2, def: 38 },
+    ],
+    gen: (p) => {
+      const steps = Math.max(80, Math.round(p.steps || 620));
+      const orbits = Math.max(8, Math.round(p.orbits || 38));
+      const mask = primeMaskUpTo(steps + 5);
+      const K = 0.97;
+      const pts = [];
+      for (let variant = 0; variant < 2; variant++) {
+        for (let j = 0; j < orbits; j++) {
+          let theta = mod2pi(2 * Math.PI * ((j * 0.61803398875 + 0.071 * variant) % 1));
+          let mom = wrapPi(-2.7 + 5.4 * ((j + 0.5) / orbits));
+          for (let t = 1; t <= steps; t++) {
+            if (variant === 0 || mask[t]) mom = wrapPi(mom + K * Math.sin(theta));
+            theta = mod2pi(theta + mom);
+            if (t > 35 && t % 2 === 0) {
+              pts.push([
+                variant * 1.28 + theta / (2 * Math.PI),
+                mom / Math.PI,
+                variant === 0 ? -1 : 1,
+              ]);
+            }
+          }
+        }
+      }
+      const L = pts.length;
+      const n = new Float64Array(L), w = new Float64Array(L), re = new Float64Array(L), im = new Float64Array(L);
+      for (let i = 0; i < L; i++) { n[i] = i + 1; re[i] = pts[i][0]; im[i] = pts[i][1]; w[i] = pts[i][2]; }
+      return {
+        kind: "rotor", domain: "phase", n, w, ww: w, re, im,
+        stats: `K = 0.97 · ${fmt(orbits)} seeds · prime kicks use ${fmt(primesUpTo(steps).length)} kicks over ${fmt(steps)} steps`,
+      };
+    },
+  },
+  anderson: {
+    label: "Prime quasicrystal", domain: "series",
+    blurb: "tight-binding chain with on-site V_n = lambda when n is prime",
+    params: [
+      { key: "N", label: "chain length", min: 800, max: 12000, step: 200, def: 4200 },
+      { key: "lambda", label: "prime potential lambda", min: 0.2, max: 3, step: 0.05, def: 1 },
+    ],
+    gen: (p) => {
+      const N = Math.max(200, Math.round(p.N || 4200));
+      const lambda = +(p.lambda || 1);
+      const mask = primeMaskUpTo(N);
+      const L = 170, n = new Float64Array(L), w = new Float64Array(L);
+      for (let i = 0; i < L; i++) {
+        const E = -3 + (6 * i) / (L - 1);
+        let a = 1, b = 0, sum = 0;
+        for (let k = 1; k <= N; k++) {
+          const V = mask[k] ? lambda : 0;
+          const na = (E - V) * a - b;
+          const nb = a;
+          const norm = Math.hypot(na, nb) || 1;
+          sum += Math.log(norm);
+          a = na / norm; b = nb / norm;
+        }
+        n[i] = E;
+        w[i] = Math.max(0, sum / N);
+      }
+      return {
+        kind: "anderson", domain: "series", n, w, ww: w, mode: "path",
+        stats: `Prime quasicrystal transfer matrix · N=${fmt(N)} · lambda=${lambda.toFixed(2)}`,
+      };
+    },
+  },
+  levy: {
+    label: "Prime CF Levy line", domain: "series",
+    blurb: "continued fractions of the binary prime-indicator constant",
+    params: [{ key: "terms", label: "CF terms", min: 8, max: 30, step: 1, def: 22 }],
+    gen: (p) => {
+      const terms = Math.max(6, Math.round(p.terms || 22));
+      const mask = primeMaskUpTo(58);
+      let x = 0;
+      for (let i = 1; i <= 52; i++) if (mask[i]) x += 2 ** -i;
+      let q0 = 0, q1 = 1;
+      const xs = [], ys = [];
+      for (let k = 1; k <= terms && x > 1e-14; k++) {
+        const a = Math.floor(1 / x);
+        const q = a * q1 + q0;
+        if (!Number.isFinite(q) || q <= 0) break;
+        xs.push(k);
+        ys.push((2 * Math.log(q)) / k);
+        q0 = q1; q1 = q;
+        x = 1 / x - a;
+      }
+      const n = Float64Array.from(xs), w = Float64Array.from(ys);
+      const target = Math.PI * Math.PI / (6 * Math.log(2));
+      return {
+        kind: "levy", domain: "series", n, w, ww: w, mode: "path", target,
+        stats: `Prime binary constant CF · target 2 log(q_n)/n = ${target.toFixed(4)}`,
+      };
+    },
+  },
+  linking: {
+    label: "Legendre linking spectrum", domain: "series",
+    blurb: "symmetric Legendre-symbol matrix inspired by arithmetic topology",
+    params: [{ key: "M", label: "matrix size", min: 24, max: 88, step: 4, def: 60 }],
+    gen: (p) => {
+      const M = Math.max(12, Math.round(p.M || 60));
+      const ps = primesUpTo(1200).filter((x) => x > 2).slice(0, M);
+      const A = new Float64Array(M * M);
+      for (let i = 0; i < M; i++) {
+        for (let j = i + 1; j < M; j++) {
+          const v = (legendreSymbol(ps[i], ps[j]) + legendreSymbol(ps[j], ps[i])) / (2 * Math.sqrt(M));
+          A[i * M + j] = v; A[j * M + i] = v;
+        }
+      }
+      const eig = jacobiEigenvaluesSym(A, M);
+      const { xs, ys } = histogramSeries(eig, 46, -2.25, 2.25);
+      return {
+        kind: "linking", domain: "series", n: xs, w: ys, ww: ys, mode: "path", semicircle: true,
+        stats: `Legendre linking matrix · ${fmt(M)} primes · symmetric eigensolver`,
+      };
+    },
+  },
+  primeTda: {
+    label: "Prime persistence proxy", domain: "diagram",
+    blurb: "adjacent normalized prime gaps as a persistence-style birth/death cloud",
+    params: [{ key: "N", label: "range n ≤", min: 5000, max: 200000, step: 5000, def: 80000 }],
+    gen: (p) => {
+      const ps = primesUpTo(p.N || 80000);
+      const L = Math.max(0, ps.length - 2);
+      const n = new Float64Array(L), w = new Float64Array(L), re = new Float64Array(L), im = new Float64Array(L);
+      for (let i = 0; i < L; i++) {
+        const a = (ps[i + 1] - ps[i]) / Math.log(ps[i]);
+        const b = (ps[i + 2] - ps[i + 1]) / Math.log(ps[i + 1]);
+        re[i] = Math.min(a, b);
+        im[i] = Math.max(a, b);
+        w[i] = im[i] - re[i];
+        n[i] = i + 1;
+      }
+      return {
+        kind: "primeTda", domain: "diagram", n, w, ww: w, re, im,
+        stats: `Prime gap persistence proxy · ${fmt(L)} adjacent-gap pairs`,
+      };
+    },
+  },
+  magnitude: {
+    label: "Magnitude of primes", domain: "series",
+    blurb: "Leinster magnitude growth for the metric space of the first primes",
+    params: [{ key: "M", label: "prime count", min: 12, max: 80, step: 4, def: 44 }],
+    gen: (p) => {
+      const M = Math.max(8, Math.round(p.M || 44));
+      const ps = primesUpTo(500).slice(0, M);
+      const span = ps[M - 1] - ps[0] || 1;
+      const L = 30, n = new Float64Array(L), w = new Float64Array(L);
+      const ones = new Float64Array(M).fill(1);
+      for (let k = 0; k < L; k++) {
+        const t = 0.08 * ((4.5 / 0.08) ** (k / (L - 1)));
+        const A = new Float64Array(M * M);
+        for (let i = 0; i < M; i++) {
+          for (let j = 0; j < M; j++) A[i * M + j] = Math.exp(-t * Math.abs(ps[i] - ps[j]) / span);
+        }
+        const weights = solveDense(A, ones, M);
+        let mag = 0;
+        for (let i = 0; i < M; i++) mag += weights[i];
+        n[k] = Math.log(t);
+        w[k] = Math.log(Math.max(1e-9, mag));
+      }
+      const fit = fitLine(n, w);
+      return {
+        kind: "magnitude", domain: "series", n, w, ww: w, mode: "path", fit,
+        stats: `Magnitude growth · slope ${fit.slope.toFixed(3)} effective dimension`,
+      };
+    },
+  },
+  primeAction: {
+    label: "Prime least-action path", domain: "series",
+    blurb: "dynamic-programming path cost through V(x,y)=1 when x+y is prime",
+    params: [{ key: "N", label: "grid length", min: 24, max: 130, step: 2, def: 78 }],
+    gen: (p) => {
+      const N = Math.max(10, Math.round(p.N || 78));
+      const mask = primeMaskUpTo(2 * N + 2);
+      const dp = new Float64Array((N + 1) * (N + 1)).fill(Infinity);
+      const at = (x, y) => x * (N + 1) + y;
+      dp[0] = 0;
+      for (let x = 0; x <= N; x++) {
+        for (let y = 0; y <= N; y++) {
+          const cur = dp[at(x, y)];
+          if (!Number.isFinite(cur)) continue;
+          const moves = [[1, 0, 1], [0, 1, 1], [1, 1, Math.SQRT2]];
+          for (const [dx, dy, len] of moves) {
+            const nx = x + dx, ny = y + dy;
+            if (nx > N || ny > N) continue;
+            const pot = mask[nx + ny] ? 0.42 : 0;
+            const idx = at(nx, ny);
+            dp[idx] = Math.min(dp[idx], cur + len + pot);
+          }
+        }
+      }
+      const L = N, n = new Float64Array(L), w = new Float64Array(L);
+      for (let k = 1; k <= N; k++) { n[k - 1] = k; w[k - 1] = dp[at(k, k)]; }
+      const fit = fitLine(n, w);
+      return {
+        kind: "primeAction", domain: "series", n, w, ww: w, mode: "path", fit,
+        stats: `DP least action through prime potential · slope ${fit.slope.toFixed(3)}`,
+      };
+    },
+  },
+  monna: {
+    label: "Monna p-adic staircase", domain: "series",
+    blurb: "digit reversal from integers to the p-adic/Bruhat-Tits boundary picture",
+    params: [
+      { key: "N", label: "range n ≤", min: 128, max: 4096, step: 128, def: 1536 },
+      { key: "base", label: "p-adic base", min: 2, max: 7, step: 1, def: 3 },
+    ],
+    gen: (p) => {
+      const N = Math.max(8, Math.round(p.N || 1536));
+      const base = Math.max(2, Math.round(p.base || 3));
+      const n = new Float64Array(N), w = new Float64Array(N), ww = new Float64Array(N);
+      const mask = primeMaskUpTo(N);
+      for (let i = 1; i <= N; i++) {
+        n[i - 1] = i;
+        w[i - 1] = monnaValue(i, base);
+        ww[i - 1] = mask[i] ? 1 : 0;
+      }
+      return {
+        kind: "monna", domain: "series", n, w, ww, mode: "points",
+        stats: `Monna digit reversal · base ${base} · ${fmt(N)} integers`,
+      };
+    },
+  },
+  goldbach: {
+    label: "Goldbach graph spectrum", domain: "series",
+    blurb: "graph on 1..M with edge i~j when i+j is prime",
+    params: [{ key: "M", label: "vertex count", min: 24, max: 104, step: 4, def: 68 }],
+    gen: (p) => {
+      const M = Math.max(12, Math.round(p.M || 68));
+      const mask = primeMaskUpTo(2 * M + 3);
+      let edgeCount = 0;
+      for (let i = 1; i <= M; i++) for (let j = i + 1; j <= M; j++) if (mask[i + j]) edgeCount++;
+      const rho = edgeCount / Math.max(1, (M * (M - 1)) / 2);
+      const scale = Math.sqrt(Math.max(1e-9, M * rho * (1 - rho)));
+      const A = new Float64Array(M * M);
+      for (let i = 0; i < M; i++) {
+        for (let j = i + 1; j < M; j++) {
+          const v = ((mask[i + j + 2] ? 1 : 0) - rho) / scale;
+          A[i * M + j] = v; A[j * M + i] = v;
+        }
+      }
+      const eig = jacobiEigenvaluesSym(A, M);
+      const { xs, ys } = histogramSeries(eig, 46, -2.25, 2.25);
+      return {
+        kind: "goldbach", domain: "series", n: xs, w: ys, ww: ys, mode: "path", semicircle: true,
+        stats: `Goldbach graph · ${fmt(M)} vertices · edge density ${rho.toFixed(3)}`,
+      };
+    },
+  },
   primes: {
     label: "Primes", domain: "int",
     blurb: "p ≤ N, weighted ±1 by p mod 4",
@@ -227,10 +647,120 @@ export const PLANES = {
       };
     },
   },
+  phase: {
+    label: "Phase portrait panels", accepts: ["phase"],
+    map: (d) => ({
+      xs: d.re,
+      ys: d.im,
+      mode: "points",
+      bounds: { x0: -0.06, x1: 2.34, y0: -1.08, y1: 1.08 },
+      decor: (ctx, px, th2) => {
+        const panels = [
+          { x0: 0, x1: 1, label: "[A] standard KAM kicks" },
+          { x0: 1.28, x1: 2.28, label: "[B] prime-time kicks" },
+        ];
+        ctx.lineWidth = 1;
+        ctx.font = `10px ${th2.mono}`;
+        panels.forEach((pnl) => {
+          const [x0, y0] = px(pnl.x0, -1);
+          const [x1, y1] = px(pnl.x1, 1);
+          ctx.strokeStyle = th2.faint;
+          ctx.strokeRect(x0, y1, x1 - x0, y0 - y1);
+          ctx.fillStyle = th2.dim;
+          ctx.textAlign = "left";
+          ctx.fillText(pnl.label, x0 + 6, y1 + 14);
+        });
+        ctx.fillStyle = th2.dim;
+        ctx.textAlign = "center";
+        ctx.fillText("theta mod 2pi", (px(0, 0)[0] + px(1, 0)[0]) / 2, px(0, -1)[1] + 16);
+        ctx.fillText("theta mod 2pi", (px(1.28, 0)[0] + px(2.28, 0)[0]) / 2, px(1.28, -1)[1] + 16);
+      },
+    }),
+  },
+  diagram: {
+    label: "Persistence diagram", accepts: ["diagram"],
+    map: (d) => ({
+      xs: d.re,
+      ys: d.im,
+      mode: "points",
+      bounds: { x0: -0.05, x1: 4.2, y0: -0.05, y1: 4.2 },
+      decor: (ctx, px, th2) => {
+        const [a0, b0] = px(0, 0), [a1, b1] = px(4, 4);
+        ctx.strokeStyle = th2.ion;
+        ctx.setLineDash([6, 5]);
+        ctx.lineWidth = 1.3;
+        ctx.beginPath();
+        ctx.moveTo(a0, b0);
+        ctx.lineTo(a1, b1);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = th2.dim;
+        ctx.font = `10px ${th2.mono}`;
+        ctx.textAlign = "left";
+        ctx.fillText("birth = death diagonal", a0 + 8, b0 - 8);
+      },
+    }),
+  },
   graph: {
-    label: "Function graph", accepts: ["int", "curve", "zeros"],
+    label: "Function graph", accepts: ["int", "curve", "zeros", "series"],
     map: (d, p) => {
       const L = d.n.length, xs = new Float64Array(L), ys = new Float64Array(L);
+      if (d.domain === "series") {
+        for (let i = 0; i < L; i++) { xs[i] = d.n[i]; ys[i] = d.w[i]; }
+        const mode = d.mode || "path";
+        return {
+          xs, ys, mode,
+          bounds: padBounds(xs, ys, d.kind === "monna" ? 0.03 : 0.08, { y0: d.kind === "anderson" ? 0 : undefined }),
+          decor: (ctx, px, th2) => {
+            const drawLine = (y, label, color = th2.amber) => {
+              const [x0, sy] = px(xs[0], y); const [x1] = px(xs[L - 1], y);
+              ctx.strokeStyle = color; ctx.setLineDash([5, 5]); ctx.lineWidth = 1.2;
+              ctx.beginPath(); ctx.moveTo(x0, sy); ctx.lineTo(x1, sy); ctx.stroke(); ctx.setLineDash([]);
+              ctx.fillStyle = color; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "left";
+              ctx.fillText(label, x0 + 6, sy - 8);
+            };
+            if (d.kind === "primon" && d.fit) {
+              const x0 = xs[0], x1 = xs[L - 1];
+              ctx.strokeStyle = th2.amber; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]);
+              ctx.beginPath();
+              ctx.moveTo(...px(x0, d.fit.slope * x0 + d.fit.intercept));
+              ctx.lineTo(...px(x1, d.fit.slope * x1 + d.fit.intercept));
+              ctx.stroke(); ctx.setLineDash([]);
+              ctx.fillStyle = th2.amber; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "left";
+              const [lx, ly] = px(x1, d.fit.slope * x1 + d.fit.intercept);
+              ctx.fillText(`fit slope ${d.fit.slope.toFixed(3)} · theory -1`, lx + 6, ly - 8);
+            } else if (d.kind === "anderson") {
+              drawLine(0, "gamma(E) = 0 mobility-edge line", th2.ion);
+            } else if (d.kind === "levy" && d.target) {
+              drawLine(d.target, "pi^2 / (6 ln 2)", th2.ion);
+            } else if ((d.kind === "linking" || d.kind === "goldbach") && d.semicircle) {
+              ctx.strokeStyle = th2.amber; ctx.globalAlpha = 0.8; ctx.lineWidth = 1.4;
+              ctx.beginPath();
+              for (let i = 0; i <= 160; i++) {
+                const x = -2 + (4 * i) / 160;
+                const y = Math.sqrt(Math.max(0, 4 - x * x)) / (2 * Math.PI);
+                const [sx, sy] = px(x, y);
+                if (i === 0) ctx.moveTo(sx, sy); else ctx.lineTo(sx, sy);
+              }
+              ctx.stroke(); ctx.globalAlpha = 1;
+              ctx.fillStyle = th2.amber; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "left";
+              ctx.fillText("semicircle reference", px(-1.9, 0.31)[0], px(-1.9, 0.31)[1] - 8);
+            } else if ((d.kind === "magnitude" || d.kind === "primeAction") && d.fit) {
+              const x0 = xs[0], x1 = xs[L - 1];
+              ctx.strokeStyle = th2.amber; ctx.lineWidth = 1.2; ctx.setLineDash([4, 4]);
+              ctx.beginPath();
+              ctx.moveTo(...px(x0, d.fit.slope * x0 + d.fit.intercept));
+              ctx.lineTo(...px(x1, d.fit.slope * x1 + d.fit.intercept));
+              ctx.stroke(); ctx.setLineDash([]);
+              ctx.fillStyle = th2.amber; ctx.font = `10px ${th2.mono}`; ctx.textAlign = "left";
+              const [lx, ly] = px(x1, d.fit.slope * x1 + d.fit.intercept);
+              ctx.fillText(`linear fit · slope ${d.fit.slope.toFixed(3)}`, lx - 150, ly - 8);
+            } else {
+              baseline(ctx, px, th2, xs[0], xs[L - 1]);
+            }
+          },
+        };
+      }
       if (d.kind === "psi") {
         let acc = 0;
         for (let i = 0; i < L; i++) { xs[i] = d.n[i]; acc += d.w[i]; ys[i] = acc; }
@@ -505,12 +1035,22 @@ export function ramp(f) { const a = new Array(NB); for (let i = 0; i < NB; i++) 
 /* ═══════════════════ LIBRARY — stored interesting ways ═══════════════════ */
 
 export const LIBRARY = [
+  { name: "Primon gas critical line", cfg: { source: "primon", plane: "graph", lens: "mono", p: { pts: 8 } } },
+  { name: "Prime-kicked rotor", cfg: { source: "rotor", plane: "phase", lens: "signal", p: { steps: 620, orbits: 38 } } },
+  { name: "Prime quasicrystal mobility", cfg: { source: "anderson", plane: "graph", lens: "pulse", p: { N: 4200, lambda: 1 } } },
+  { name: "Prime CF Levy line", cfg: { source: "levy", plane: "graph", lens: "mono", p: { terms: 22 } } },
+  { name: "Legendre linking spectrum", cfg: { source: "linking", plane: "graph", lens: "mono", p: { M: 60 } } },
+  { name: "Prime persistence proxy", cfg: { source: "primeTda", plane: "diagram", lens: "pulse", p: { N: 80000 } } },
+  { name: "Magnitude of primes", cfg: { source: "magnitude", plane: "graph", lens: "mono", p: { M: 44 } } },
+  { name: "Prime least-action path", cfg: { source: "primeAction", plane: "graph", lens: "mono", p: { N: 78 } } },
+  { name: "Monna p-adic staircase", cfg: { source: "monna", plane: "graph", lens: "signal", p: { N: 1536, base: 3 } } },
+  { name: "Goldbach graph spectrum", cfg: { source: "goldbach", plane: "graph", lens: "mono", p: { M: 68 } } },
   { name: "Riemann explicit formula", cfg: { source: "psi", plane: "graph", lens: "mono", p: { N: 500, K: 10 } } },
   { name: "Family sweep mod q", cfg: { source: "primes", plane: "family", lens: "mono", p: { N: 200000, famQ: 80 } } },
   { name: "Prime matrix", cfg: { source: "primes", plane: "matrix", lens: "mono", p: { N: 100000, matW: 360 } } },
   { name: "Sacks spiral", cfg: { source: "primes", plane: "sacks", lens: "mono", p: { N: 12000 } } },
   { name: "Ulam spiral", cfg: { source: "primes", plane: "ulam", lens: "mono", p: { N: 60000 } } },
-  { name: "Polar α-dial", cfg: { source: "primes", plane: "polar", lens: "residue", p: { N: 20000, alpha: 1, kres: 6 } } },
+  { name: "Polar α-dial", cfg: { source: "primes", plane: "polar", lens: "residue", p: { N: 120000, alpha: 1, kres: 6 } } },
   { name: "Critical line |ζ|", cfg: { source: "zeta", plane: "graph", lens: "mono", p: { tMax: 60 } } },
   { name: "Zeta pirouette", cfg: { source: "zeta", plane: "argand", lens: "aurora", p: { tMax: 34 } } },
   { name: "Zeros on the strip", cfg: { source: "zeros", plane: "strip", lens: "mono", p: { tMax: 100 } } },

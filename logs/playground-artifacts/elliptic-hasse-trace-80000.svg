@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">Elliptic Hasse-trace moment audit</text>
+<text x="70" y="38" fill="#67e8f9" font-size="13">real Z2</text>
+<text x="300" y="38" fill="#fbbf24" font-size="13">real max |Z2|</text>
+<text x="530" y="38" fill="#a78bfa" font-size="13">shuffle mean max</text>
+<text x="70" y="56" fill="#34d399" font-size="13">bootstrap mean max</text>
+<text x="300" y="56" fill="#fb7185" font-size="13">Sato-Tate mean max</text>
+<text x="530" y="56" fill="#f97316" font-size="13">Cramer-index mean max</text>
+<rect x="70" y="70" width="790" height="512" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="70" x2="860" y2="70" stroke="#1f2937"/>
+<text x="18" y="74" fill="#94a3b8" font-size="12">2.72</text>
+<line x1="70" y1="155.33333333333331" x2="860" y2="155.33333333333331" stroke="#1f2937"/>
+<text x="18" y="159.33333333333331" fill="#94a3b8" font-size="12">2.08</text>
+<line x1="70" y1="240.66666666666666" x2="860" y2="240.66666666666666" stroke="#1f2937"/>
+<text x="18" y="244.66666666666666" fill="#94a3b8" font-size="12">1.44</text>
+<line x1="70" y1="326" x2="860" y2="326" stroke="#1f2937"/>
+<text x="18" y="330" fill="#94a3b8" font-size="12">0.81</text>
+<line x1="70" y1="411.3333333333333" x2="860" y2="411.3333333333333" stroke="#1f2937"/>
+<text x="18" y="415.3333333333333" fill="#94a3b8" font-size="12">0.17</text>
+<line x1="70" y1="496.6666666666667" x2="860" y2="496.6666666666667" stroke="#1f2937"/>
+<text x="18" y="500.6666666666667" fill="#94a3b8" font-size="12">-0.46</text>
+<line x1="70" y1="582" x2="860" y2="582" stroke="#1f2937"/>
+<text x="18" y="586" fill="#94a3b8" font-size="12">-1.10</text>
+<line x1="70" y1="434.40850042399836" x2="860" y2="434.40850042399836" stroke="#475569" stroke-width="1.5"/>
+<polyline points="70.00,497.82 267.50,486.81 465.00,508.51 662.50,386.34 860.00,481.57" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="497.8221231028624" r="4" fill="#67e8f9"/><circle cx="267.5" cy="486.8138357417846" r="4" fill="#67e8f9"/><circle cx="465" cy="508.51355409188284" r="4" fill="#67e8f9"/><circle cx="662.5" cy="386.33804701270043" r="4" fill="#67e8f9"/><circle cx="860" cy="481.565000567927" r="4" fill="#67e8f9"/>
+<polyline points="70.00,166.06 267.50,166.06 465.00,166.06 662.50,166.06 860.00,166.06" fill="none" stroke="#fbbf24" stroke-width="3"/><circle cx="70" cy="166.06031937672265" r="4" fill="#fbbf24"/><circle cx="267.5" cy="166.06031937672265" r="4" fill="#fbbf24"/><circle cx="465" cy="166.06031937672265" r="4" fill="#fbbf24"/><circle cx="662.5" cy="166.06031937672265" r="4" fill="#fbbf24"/><circle cx="860" cy="166.06031937672265" r="4" fill="#fbbf24"/>
+<polyline points="70.00,174.91 267.50,168.83 465.00,167.20 662.50,167.20 860.00,167.20" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="174.90787997075648" r="4" fill="#a78bfa"/><circle cx="267.5" cy="168.83028056598198" r="4" fill="#a78bfa"/><circle cx="465" cy="167.2015209944173" r="4" fill="#a78bfa"/><circle cx="662.5" cy="167.2015209944173" r="4" fill="#a78bfa"/><circle cx="860" cy="167.2015209944173" r="4" fill="#a78bfa"/>
+<polyline points="70.00,127.51 267.50,124.45 465.00,115.94 662.50,109.14 860.00,103.13" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="70" cy="127.51268694956605" r="4" fill="#34d399"/><circle cx="267.5" cy="124.44968451469867" r="4" fill="#34d399"/><circle cx="465" cy="115.93965630120215" r="4" fill="#34d399"/><circle cx="662.5" cy="109.13779380241238" r="4" fill="#34d399"/><circle cx="860" cy="103.12804549309078" r="4" fill="#34d399"/>
+<polyline points="70.00,148.67 267.50,126.49 465.00,114.47 662.50,111.31 860.00,103.76" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="148.67347378558964" r="4" fill="#fb7185"/><circle cx="267.5" cy="126.48651471421931" r="4" fill="#fb7185"/><circle cx="465" cy="114.47068631698136" r="4" fill="#fb7185"/><circle cx="662.5" cy="111.3071565662542" r="4" fill="#fb7185"/><circle cx="860" cy="103.75662535926688" r="4" fill="#fb7185"/>
+<polyline points="70.00,174.85 267.50,172.68 465.00,153.10 662.50,145.90 860.00,142.79" fill="none" stroke="#f97316" stroke-width="3"/><circle cx="70" cy="174.8450011949384" r="4" fill="#f97316"/><circle cx="267.5" cy="172.6793948275598" r="4" fill="#f97316"/><circle cx="465" cy="153.10217454795009" r="4" fill="#f97316"/><circle cx="662.5" cy="145.89551144468743" r="4" fill="#f97316"/><circle cx="860" cy="142.7926507970776" r="4" fill="#f97316"/>
+<text x="890" y="110" fill="#cbd5e1" font-size="13">curve y^2=x^3-x+1</text>
+<text x="890" y="136" fill="#cbd5e1" font-size="13">good primes 7835</text>
+<text x="890" y="162" fill="#cbd5e1" font-size="13">real final Z2 -0.351458</text>
+<text x="890" y="188" fill="#cbd5e1" font-size="13">real max |Z2| 2.000000</text>
+<text x="890" y="214" fill="#cbd5e1" font-size="13">shuffle max 1.578314..2.881151</text>
+<text x="890" y="240" fill="#cbd5e1" font-size="13">ST max 1.771226..3.265835</text>
+<text x="890" y="266" fill="#cbd5e1" font-size="13">Cramer-index max 1.725203..2.692539</text>
+<text x="70" y="622" fill="#94a3b8" font-size="13">Z2: cumulative sum of a_p^2/p - 1, normalized by sqrt(good-prime count).</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">valid gap-residue holdout law</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">train P(gap mod W | current residue, coarse gap/log p bin), score against valid landing-residue baseline</text>
+<rect x="82" y="72" width="1000" height="310" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="382.00" y2="382.00" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 272.06 L 415.33 236.59 L 748.67 175.26 L 1082.00 94.96" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 312.59 L 415.33 288.37 L 748.67 255.73 L 1082.00 212.03" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 82.00 314.69 L 415.33 294.80 L 748.67 251.16 L 1082.00 197.05" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<path d="M 82.00 273.16 L 415.33 241.54 L 748.67 178.61 L 1082.00 98.02" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<path d="M 82.00 300.50 L 415.33 276.88 L 748.67 226.59 L 1082.00 160.69" fill="none" stroke="#fb7185" stroke-width="2"/>
+<path d="M 82.00 364.46 L 415.33 358.56 L 748.67 350.75 L 1082.00 340.15" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+<path d="M 82.00 378.52 L 415.33 376.81 L 748.67 373.82 L 1082.00 369.16" fill="none" stroke="#f472b6" stroke-width="2"/>
+<text x="82" y="406" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="592" y="406" fill="#a7f3d0" font-size="12">Z primes + bins</text>
+<text x="732" y="406" fill="#f8fafc" font-size="12">state only</text>
+<text x="842" y="406" fill="#7dd3fc" font-size="12">wheel</text>
+<text x="922" y="406" fill="#fb7185" font-size="12">composite</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="90" y="460" fill="#e5e7eb">final integer mod 210</text>
+<text x="90" y="488" fill="#a7f3d0">prime bin aggregate 1407.034906, advantage 2.853908759, transitions 243069</text>
+<text x="90" y="512" fill="#f8fafc">state-only aggregate 833.187491, incremental bin aggregate 573.847414</text>
+<text x="90" y="536" fill="#fbbf24">Cramer bin aggregate range 905.054574 .. 908.335731</text>
+<text x="90" y="560" fill="#7dd3fc">wheel bin aggregate range 1389.175994 .. 1395.788612</text>
+<text x="90" y="584" fill="#fb7185">composite bin aggregate range 1080.668308 .. 1089.737444</text>
+<text x="650" y="460" fill="#e5e7eb">function-field encoded-order check</text>
+<text x="650" y="488" fill="#c4b5fd">F2 bin aggregate 205.164066, state 12.896507</text>
+<text x="650" y="512" fill="#f472b6">F3 bin aggregate 62.933607, state 21.902811</text>
+<text x="650" y="560" fill="#94a3b8">positive = previous half predicts gap residues better than valid uniform</text>
+</g>
+</svg>

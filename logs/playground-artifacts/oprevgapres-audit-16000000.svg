@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="560" viewBox="0 0 1040 560">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="58" x2="982" y1="330.4175958651715" y2="330.4175958651715" stroke="#64748b" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M 58.00 58.00 L 289.00 163.65 L 520.00 206.74 L 751.00 234.07 L 982.00 280.53" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<circle cx="58.00" cy="58.00" r="3" fill="#7dd3fc"/>
+<circle cx="289.00" cy="163.65" r="3" fill="#7dd3fc"/>
+<circle cx="520.00" cy="206.74" r="3" fill="#7dd3fc"/>
+<circle cx="751.00" cy="234.07" r="3" fill="#7dd3fc"/>
+<circle cx="982.00" cy="280.53" r="3" fill="#7dd3fc"/>
+<path d="M 58.00 58.00 L 289.00 502.00 L 520.00 438.24 L 751.00 419.03 L 982.00 464.23" fill="none" stroke="#f472b6" stroke-width="2"/>
+<circle cx="58.00" cy="58.00" r="3" fill="#f472b6"/>
+<circle cx="289.00" cy="502.00" r="3" fill="#f472b6"/>
+<circle cx="520.00" cy="438.24" r="3" fill="#f472b6"/>
+<circle cx="751.00" cy="419.03" r="3" fill="#f472b6"/>
+<circle cx="982.00" cy="464.23" r="3" fill="#f472b6"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="58" y="26" fill="#7dd3fc">cumulative real - composite baseline</text>
+<text x="58" y="46" fill="#f472b6">dyadic block real - composite baseline</text>
+<text x="58" y="542" fill="#94a3b8">residual of residue-centered omega(label-1) gap covariance</text>
+</g>
+</svg>

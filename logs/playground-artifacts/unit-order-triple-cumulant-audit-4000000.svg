@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#080d17"/>
+<style>text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }</style>
+<text x="64" y="30" fill="#e5e7eb" font-size="18" font-weight="700">Centered unit-order triple cumulant</text>
+<text x="64" y="54" fill="#a8b3c7" font-size="13">y: sqrt(label-count)-scaled rms of centered Z(a)Z(b)Z(c) over p-1 / f-1 factors</text>
+<line x1="64" x2="684" y1="494" y2="494" stroke="#334155"/>
+<line x1="64" x2="64" y1="64" y2="494" stroke="#334155"/>
+<polygon points="64,189.90842031380288 219,193.77159257612362 374,149.2973390343044 529,119.96485308649329 684,155.3965059558654 684,255.89588204240331 529,266.59936009969624 374,251.30306266879197 219,266.60298665885387 64,227.36140623778755" fill="#facc15" opacity="0.16"/>
+<polygon points="64,184.51139388184652 219,171.10946187791166 374,180.94721513571528 529,151.70226230868548 684,169.62932976338055 684,226.30894842715696 529,206.74093429859062 374,261.0878584695528 219,207.37016266441458 64,211.24255249016562" fill="#fb7185" opacity="0.16"/>
+<polygon points="64,119.51781330452019 219,95.85185185185185 374,128.8496899391884 529,111.61440125587495 684,131.80416926658904 684,215.58797265021258 529,173.44175079040275 374,173.51039115713678 219,176.59896568815753 64,175.53648363994006" fill="#94a3b8" opacity="0.16"/>
+<polyline points="64,302.04142617811584 219,280.1311843306298 374,297.7478378096041 529,288.4314431722262 684,326.15576686614475" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="38" y="516" fill="#94a3b8" font-size="11">0.25M</text>
+<text x="193" y="516" fill="#94a3b8" font-size="11">0.5M</text>
+<text x="348" y="516" fill="#94a3b8" font-size="11">1M</text>
+<text x="503" y="516" fill="#94a3b8" font-size="11">2M</text>
+<text x="658" y="516" fill="#94a3b8" font-size="11">4M</text>
+<text x="760" y="72" fill="#e5e7eb" font-size="15" font-weight="700">Function-field real / local-reducible range</text>
+<text x="680" y="106" fill="#9b7bdb" font-size="13">F2 d17</text>
+<line x1="865.2239878326171" x2="912.1240085844793" y1="102" y2="102" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="98" width="86.77026136075206" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="107" fill="#dbeafe" font-size="12">0.575616</text>
+<text x="680" y="134" fill="#9b7bdb" font-size="13">F2 d18</text>
+<line x1="888.7480797827078" x2="949.5077616946367" y1="130" y2="130" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="126" width="142.2875451999604" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="135" fill="#dbeafe" font-size="12">0.943906</text>
+<text x="680" y="162" fill="#9b7bdb" font-size="13">F2 d19</text>
+<line x1="867.0630137380085" x2="930.7466545919203" y1="158" y2="158" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="154" width="98.84015463960709" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="163" fill="#dbeafe" font-size="12">0.655685</text>
+<text x="680" y="190" fill="#9b7bdb" font-size="13">F2 d20</text>
+<line x1="865.0397148938496" x2="906.2357083228412" y1="186" y2="186" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="182" width="101.20518876275754" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="191" fill="#dbeafe" font-size="12">0.671374</text>
+<text x="680" y="218" fill="#38b98d" font-size="13">F3 d9</text>
+<line x1="915.6432603882444" x2="990" y1="214" y2="214" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="210" width="104.66193316080577" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="219" fill="#dbeafe" font-size="12">0.694305</text>
+<text x="680" y="246" fill="#38b98d" font-size="13">F3 d10</text>
+<line x1="810.118191247397" x2="824.375162794877" y1="242" y2="242" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="238" width="39.102222644986924" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="247" fill="#dbeafe" font-size="12">0.259396</text>
+<text x="680" y="274" fill="#38b98d" font-size="13">F3 d11</text>
+<line x1="832.8349225053944" x2="861.4574547214821" y1="270" y2="270" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="266" width="57.394677776898526" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="275" fill="#dbeafe" font-size="12">0.380744</text>
+<text x="680" y="302" fill="#38b98d" font-size="13">F3 d12</text>
+<line x1="844.7229353255854" x2="866.2040833292758" y1="298" y2="298" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="294" width="88.08199948754863" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="303" fill="#dbeafe" font-size="12">0.584317</text>
+<text x="64" y="596" fill="#a8b3c7" font-size="12">cyan real; yellow local-random, red local-composite, gray column-null bands; bars compare function-field real to local-reducible controls</text>
+</svg>

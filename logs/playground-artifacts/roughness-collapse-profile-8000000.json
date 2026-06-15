@@ -1,0 +1,1740 @@
+{
+  "candidate": "roughness-collapse profile line",
+  "maxN": 8000000,
+  "integer": {
+    "maxN": 8000000,
+    "shifts": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "roughCutoffs": [
+      7,
+      13,
+      19,
+      31,
+      43,
+      67,
+      97,
+      151,
+      257,
+      401,
+      631,
+      997,
+      1543,
+      2237
+    ],
+    "endpoints": [
+      500000,
+      1000000,
+      2000000,
+      4000000,
+      8000000
+    ],
+    "rows": [
+      {
+        "N": 500000,
+        "real": {
+          "N": 500000,
+          "centers": 41370,
+          "count": 210323,
+          "mean": 0.49315287991413276,
+          "variance": 0.02825827940311526
+        },
+        "points": [
+          {
+            "N": 500000,
+            "cutoff": 7,
+            "tailMass": 0.9721396842671179,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.48942154578398217,
+            "delta": 0.0037313341301505876,
+            "roughCenters": 114059,
+            "roughCount": 576627,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 13,
+            "tailMass": 0.80430751643495,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49111779917232107,
+            "delta": 0.00203508074181169,
+            "roughCenters": 95714,
+            "roughCount": 485411,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 19,
+            "tailMass": 0.6928524080758168,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.4919672298108591,
+            "delta": 0.00118565010327365,
+            "roughCenters": 85340,
+            "roughCount": 433314,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 31,
+            "tailMass": 0.5826333240694328,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49255788795536154,
+            "delta": 0.0005949919587712182,
+            "roughCenters": 76259,
+            "roughCount": 387556,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 43,
+            "tailMass": 0.5079602391864789,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49279964988276886,
+            "delta": 0.00035323003136389364,
+            "roughCenters": 70747,
+            "roughCount": 359717,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 67,
+            "tailMass": 0.4195477506138441,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49297173831107516,
+            "delta": 0.00018114160305759963,
+            "roughCenters": 64840,
+            "roughCount": 329832,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 97,
+            "tailMass": 0.3455129594087235,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.4930163464776488,
+            "delta": 0.00013653343648395433,
+            "roughCenters": 60128,
+            "roughCount": 305953,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 151,
+            "tailMass": 0.2551985234405181,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.4930616481247912,
+            "delta": 0.00009123178934156151,
+            "roughCenters": 54269,
+            "roughCount": 276276,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 257,
+            "tailMass": 0.16079990769869915,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49305577611030776,
+            "delta": 0.00009710380382499384,
+            "roughCenters": 48202,
+            "roughCount": 245395,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 401,
+            "tailMass": 0.08705986844909532,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49310456185777407,
+            "delta": 0.000048318056358687134,
+            "roughCenters": 43987,
+            "roughCount": 223824,
+            "realCenters": 41370,
+            "realCount": 210323
+          },
+          {
+            "N": 500000,
+            "cutoff": 631,
+            "tailMass": 0.016523400310276746,
+            "realMean": 0.49315287991413276,
+            "roughMean": 0.49313952903876695,
+            "delta": 0.000013350875365802928,
+            "roughCenters": 41507,
+            "roughCount": 211036,
+            "realCenters": 41370,
+            "realCount": 210323
+          }
+        ],
+        "fit": {
+          "slope": 0.0032778774421341013,
+          "intercept": -0.0006738024883547733,
+          "r2": 0.7401799572444598,
+          "rmse": 0.0005647257690501585,
+          "maxAbs": 0.0012185818768428074
+        },
+        "originFit": {
+          "slope": 0.0022124247340124382,
+          "intercept": 0,
+          "r2": 0.6278852670932373,
+          "rmse": 0.0006758334966675446,
+          "maxAbs": 0.0015805482477629735
+        },
+        "named": [
+          {
+            "center": 25,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.531049074088966,
+            "variance": 0.009890796496271448
+          },
+          {
+            "center": 35,
+            "centers": 1,
+            "count": 2,
+            "mean": 0.5372809638687772,
+            "variance": 0.013778208758055799
+          },
+          {
+            "center": 77,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.5276761578588625,
+            "variance": 0.026096933831037894
+          },
+          {
+            "center": 289,
+            "centers": 1,
+            "count": 5,
+            "mean": 0.4746939419403793,
+            "variance": 0.017596483254169015
+          }
+        ]
+      },
+      {
+        "N": 1000000,
+        "real": {
+          "N": 1000000,
+          "centers": 78330,
+          "count": 402036,
+          "mean": 0.4931819499025108,
+          "variance": 0.02885998609793558
+        },
+        "points": [
+          {
+            "N": 1000000,
+            "cutoff": 7,
+            "tailMass": 1.0218896509846107,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4894075455347944,
+            "delta": 0.003774404367716422,
+            "roughCenters": 228343,
+            "roughCount": 1166069,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 13,
+            "tailMass": 0.8540574831524432,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4910415927596608,
+            "delta": 0.0021403571428499912,
+            "roughCenters": 191618,
+            "roughCount": 981419,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 19,
+            "tailMass": 0.74260237479331,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4918226037410594,
+            "delta": 0.0013593461614513913,
+            "roughCenters": 170851,
+            "roughCount": 876096,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 31,
+            "tailMass": 0.632383290786926,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4924081314107889,
+            "delta": 0.0007738184917219226,
+            "roughCenters": 152682,
+            "roughCount": 783505,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 43,
+            "tailMass": 0.5577102059039721,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.49264026986641724,
+            "delta": 0.0005416800360935614,
+            "roughCenters": 141573,
+            "roughCount": 726788,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 67,
+            "tailMass": 0.46929771733133746,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4928323983200175,
+            "delta": 0.00034955158249327933,
+            "roughCenters": 129702,
+            "roughCount": 666037,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 97,
+            "tailMass": 0.3952629261262169,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.49290184738942516,
+            "delta": 0.00028010251308563383,
+            "roughCenters": 120616,
+            "roughCount": 619567,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 151,
+            "tailMass": 0.30494849015801145,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.49298231885104443,
+            "delta": 0.00019963105146636462,
+            "roughCenters": 109600,
+            "roughCount": 563211,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 257,
+            "tailMass": 0.21054987441619255,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4930313890104688,
+            "delta": 0.0001505608920420176,
+            "roughCenters": 97816,
+            "roughCount": 502700,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 401,
+            "tailMass": 0.13680983516658868,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4930587068671466,
+            "delta": 0.00012324303536420667,
+            "roughCenters": 88902,
+            "roughCount": 456792,
+            "realCenters": 78330,
+            "realCount": 402036
+          },
+          {
+            "N": 1000000,
+            "cutoff": 631,
+            "tailMass": 0.06627336702777012,
+            "realMean": 0.4931819499025108,
+            "roughMean": 0.4931897596075862,
+            "delta": -0.000007809705075412232,
+            "roughCenters": 81636,
+            "roughCount": 419188,
+            "realCenters": 78330,
+            "realCount": 402036
+          }
+        ],
+        "fit": {
+          "slope": 0.0033569554594677555,
+          "intercept": -0.0007650088406733648,
+          "r2": 0.7870028295873879,
+          "rmse": 0.0005078337716149165,
+          "maxAbs": 0.0011089751655433988
+        },
+        "originFit": {
+          "slope": 0.002202525557108585,
+          "intercept": 0,
+          "r2": 0.6611742602098281,
+          "rmse": 0.0006405054939285447,
+          "maxAbs": 0.0015236662948780446
+        },
+        "named": [
+          {
+            "center": 25,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.531049074088966,
+            "variance": 0.009890796496271448
+          },
+          {
+            "center": 35,
+            "centers": 1,
+            "count": 2,
+            "mean": 0.5372809638687772,
+            "variance": 0.013778208758055799
+          },
+          {
+            "center": 77,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.5276761578588625,
+            "variance": 0.026096933831037894
+          },
+          {
+            "center": 289,
+            "centers": 1,
+            "count": 5,
+            "mean": 0.4746939419403793,
+            "variance": 0.017596483254169015
+          }
+        ]
+      },
+      {
+        "N": 2000000,
+        "real": {
+          "N": 2000000,
+          "centers": 148765,
+          "count": 769838,
+          "mean": 0.4931403567400059,
+          "variance": 0.029402759606043744
+        },
+        "points": [
+          {
+            "N": 2000000,
+            "cutoff": 7,
+            "tailMass": 1.0684774858976749,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.48947931572510717,
+            "delta": 0.003661041014898725,
+            "roughCenters": 456915,
+            "roughCount": 2354115,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 13,
+            "tailMass": 0.9006453180655077,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4910617497555365,
+            "delta": 0.0020786069844693777,
+            "roughCenters": 383427,
+            "roughCount": 1980906,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 19,
+            "tailMass": 0.7891902097063745,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.49183393506475115,
+            "delta": 0.001306421675254743,
+            "roughCenters": 341879,
+            "roughCount": 1768283,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 31,
+            "tailMass": 0.6789711256999905,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4923824724721169,
+            "delta": 0.0007578842678889752,
+            "roughCenters": 305529,
+            "roughCount": 1581314,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 43,
+            "tailMass": 0.6042980408170366,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.49263541248702636,
+            "delta": 0.0005049442529795334,
+            "roughCenters": 283246,
+            "roughCount": 1466502,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 67,
+            "tailMass": 0.5158855522444018,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4928459391977019,
+            "delta": 0.00029441754230397077,
+            "roughCenters": 259282,
+            "roughCount": 1342830,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 97,
+            "tailMass": 0.441850761039281,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4929537312639981,
+            "delta": 0.00018662547600778456,
+            "roughCenters": 241187,
+            "roughCount": 1249360,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 151,
+            "tailMass": 0.3515363250710756,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4930453205883202,
+            "delta": 0.00009503615168571233,
+            "roughCenters": 220399,
+            "roughCount": 1142000,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 257,
+            "tailMass": 0.25713770932925656,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.49306159825015283,
+            "delta": 0.00007875848985305911,
+            "roughCenters": 198095,
+            "roughCount": 1026495,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 401,
+            "tailMass": 0.18339767007965269,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.493072085974852,
+            "delta": 0.0000682707651538661,
+            "roughCenters": 180492,
+            "roughCount": 935206,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 631,
+            "tailMass": 0.11286120194083422,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4931405597679079,
+            "delta": -2.0302790199044907e-7,
+            "roughCenters": 164508,
+            "roughCount": 852105,
+            "realCenters": 148765,
+            "realCount": 769838
+          },
+          {
+            "N": 2000000,
+            "cutoff": 997,
+            "tailMass": 0.04658783491306411,
+            "realMean": 0.4931403567400059,
+            "roughMean": 0.4931358887286889,
+            "delta": 0.000004468011316982601,
+            "roughCenters": 152527,
+            "roughCount": 789518,
+            "realCenters": 148765,
+            "realCount": 769838
+          }
+        ],
+        "fit": {
+          "slope": 0.0030026359432511794,
+          "intercept": -0.0007359943479184623,
+          "r2": 0.7627935811237139,
+          "rmse": 0.0005184316057169257,
+          "maxAbs": 0.001188786459106173
+        },
+        "originFit": {
+          "slope": 0.0019347646339440223,
+          "intercept": 0,
+          "r2": 0.6287030541237633,
+          "rmse": 0.0006486179152678344,
+          "maxAbs": 0.0015937885630184809
+        },
+        "named": [
+          {
+            "center": 25,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.531049074088966,
+            "variance": 0.009890796496271448
+          },
+          {
+            "center": 35,
+            "centers": 1,
+            "count": 2,
+            "mean": 0.5372809638687772,
+            "variance": 0.013778208758055799
+          },
+          {
+            "center": 77,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.5276761578588625,
+            "variance": 0.026096933831037894
+          },
+          {
+            "center": 289,
+            "centers": 1,
+            "count": 5,
+            "mean": 0.4746939419403793,
+            "variance": 0.017596483254169015
+          }
+        ]
+      },
+      {
+        "N": 4000000,
+        "real": {
+          "N": 4000000,
+          "centers": 282978,
+          "count": 1475958,
+          "mean": 0.4933410132116797,
+          "variance": 0.029854268553742874
+        },
+        "points": [
+          {
+            "N": 4000000,
+            "cutoff": 7,
+            "tailMass": 1.116258015778354,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.48957630886520964,
+            "delta": 0.0037647043464700825,
+            "roughCenters": 914057,
+            "roughCount": 4747487,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 13,
+            "tailMass": 0.9484258479461872,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.4910931497661315,
+            "delta": 0.002247863445548226,
+            "roughCenters": 767043,
+            "roughCount": 3994333,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 19,
+            "tailMass": 0.836970739587054,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.4918575376188092,
+            "delta": 0.0014834755928705423,
+            "roughCenters": 683926,
+            "roughCount": 3565107,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 31,
+            "tailMass": 0.72675165558067,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.4924058892870841,
+            "delta": 0.0009351239245956044,
+            "roughCenters": 611245,
+            "roughCount": 3188167,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 43,
+            "tailMass": 0.6520785706977161,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49265176023464835,
+            "delta": 0.0006892529770313738,
+            "roughCenters": 566647,
+            "roughCount": 2956478,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 67,
+            "tailMass": 0.5636660821250813,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49287689797136297,
+            "delta": 0.00046411524031675366,
+            "roughCenters": 518352,
+            "roughCount": 2705212,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 97,
+            "tailMass": 0.48963129091996,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49299755119835426,
+            "delta": 0.00034346201332546844,
+            "roughCenters": 481853,
+            "roughCount": 2515232,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 151,
+            "tailMass": 0.39931685495175456,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49309772139285296,
+            "delta": 0.00024329181882676298,
+            "roughCenters": 441426,
+            "roughCount": 2304582,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 257,
+            "tailMass": 0.3049182392099355,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49315497639043016,
+            "delta": 0.00018603682124956888,
+            "roughCenters": 399528,
+            "roughCount": 2086203,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 401,
+            "tailMass": 0.23117819996033173,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49321130044547495,
+            "delta": 0.00012971276620477035,
+            "roughCenters": 365842,
+            "roughCount": 1910399,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 631,
+            "tailMass": 0.16064173182151328,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49325181700671833,
+            "delta": 0.0000891962049613948,
+            "roughCenters": 333690,
+            "roughCount": 1742161,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 997,
+            "tailMass": 0.09436836479374312,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.493291984196107,
+            "delta": 0.00004902901557274353,
+            "roughCenters": 305740,
+            "roughCount": 1595584,
+            "realCenters": 282978,
+            "realCount": 1475958
+          },
+          {
+            "N": 4000000,
+            "cutoff": 1543,
+            "tailMass": 0.03420057093307766,
+            "realMean": 0.4933410132116797,
+            "roughMean": 0.49332003147971765,
+            "delta": 0.000020981731962077532,
+            "roughCenters": 286906,
+            "roughCount": 1496723,
+            "realCenters": 282978,
+            "realCount": 1475958
+          }
+        ],
+        "fit": {
+          "slope": 0.002854245357997639,
+          "intercept": -0.0006210041885689508,
+          "r2": 0.7802910609258902,
+          "rmse": 0.000495244430337519,
+          "maxAbs": 0.0011996342751760115
+        },
+        "originFit": {
+          "slope": 0.00198744359399423,
+          "intercept": 0,
+          "r2": 0.6780951818293953,
+          "rmse": 0.0005994589865120363,
+          "maxAbs": 0.0015462045037666831
+        },
+        "named": [
+          {
+            "center": 25,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.531049074088966,
+            "variance": 0.009890796496271448
+          },
+          {
+            "center": 35,
+            "centers": 1,
+            "count": 2,
+            "mean": 0.5372809638687772,
+            "variance": 0.013778208758055799
+          },
+          {
+            "center": 77,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.5276761578588625,
+            "variance": 0.026096933831037894
+          },
+          {
+            "center": 289,
+            "centers": 1,
+            "count": 5,
+            "mean": 0.4746939419403793,
+            "variance": 0.017596483254169015
+          }
+        ]
+      },
+      {
+        "N": 8000000,
+        "real": {
+          "N": 8000000,
+          "centers": 539609,
+          "count": 2834639,
+          "mean": 0.4933841845034422,
+          "variance": 0.03030065240974944
+        },
+        "points": [
+          {
+            "N": 8000000,
+            "cutoff": 7,
+            "tailMass": 1.160978370272968,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.48971140962883747,
+            "delta": 0.0036727748746047117,
+            "roughCenters": 1828344,
+            "roughCount": 9564872,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 13,
+            "tailMass": 0.9931462024408014,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4911718877858335,
+            "delta": 0.002212296717608697,
+            "roughCenters": 1534276,
+            "roughCount": 8046409,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 19,
+            "tailMass": 0.8816910940816682,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4919044169166859,
+            "delta": 0.0014797675867562754,
+            "roughCenters": 1368025,
+            "roughCount": 7181605,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 31,
+            "tailMass": 0.7714720100752842,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4924332564107602,
+            "delta": 0.0009509280926819907,
+            "roughCenters": 1222664,
+            "roughCount": 6422441,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 43,
+            "tailMass": 0.6967989251923303,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.49269316198110935,
+            "delta": 0.0006910225223328292,
+            "roughCenters": 1133531,
+            "roughCount": 5955924,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 67,
+            "tailMass": 0.6083864366196955,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.49292014071162216,
+            "delta": 0.00046404379182002353,
+            "roughCenters": 1036620,
+            "roughCount": 5448057,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 97,
+            "tailMass": 0.5343516454145741,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4930605912706622,
+            "delta": 0.00032359323277997287,
+            "roughCenters": 962853,
+            "roughCount": 5061181,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 151,
+            "tailMass": 0.4440372094463688,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.493186591185186,
+            "delta": 0.00019759331825619508,
+            "roughCenters": 882007,
+            "roughCount": 4636645,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 257,
+            "tailMass": 0.34963859370454975,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4932378105607645,
+            "delta": 0.0001463739426776911,
+            "roughCenters": 802914,
+            "roughCount": 4221466,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 401,
+            "tailMass": 0.27589855445494604,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4932652535983659,
+            "delta": 0.00011893090507625326,
+            "roughCenters": 739281,
+            "roughCount": 3887246,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 631,
+            "tailMass": 0.20536208631612735,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.49330499084422724,
+            "delta": 0.00007919365921493782,
+            "roughCenters": 677103,
+            "roughCount": 3560305,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 997,
+            "tailMass": 0.13908871928835723,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.49333859064037355,
+            "delta": 0.000045593863068627005,
+            "roughCenters": 619606,
+            "roughCount": 3257378,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 1543,
+            "tailMass": 0.07892092542769177,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4933754241505725,
+            "delta": 0.00000876035286967447,
+            "roughCenters": 572609,
+            "roughCount": 3009377,
+            "realCenters": 539609,
+            "realCount": 2834639
+          },
+          {
+            "N": 8000000,
+            "cutoff": 2237,
+            "tailMass": 0.030971473764767787,
+            "realMean": 0.4933841845034422,
+            "roughMean": 0.4933787303670366,
+            "delta": 0.000005454136405569354,
+            "roughCenters": 545729,
+            "roughCount": 2867228,
+            "realCenters": 539609,
+            "realCount": 2834639
+          }
+        ],
+        "fit": {
+          "slope": 0.002626879861388571,
+          "intercept": -0.0006028822430275702,
+          "r2": 0.7728221736243759,
+          "rmse": 0.0004873691834704833,
+          "maxAbs": 0.0012259064172544989
+        },
+        "originFit": {
+          "slope": 0.0018130708267820018,
+          "intercept": 0,
+          "r2": 0.6655423439572663,
+          "rmse": 0.0005913514500218862,
+          "maxAbs": 0.0015678388609378807
+        },
+        "named": [
+          {
+            "center": 25,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.531049074088966,
+            "variance": 0.009890796496271448
+          },
+          {
+            "center": 35,
+            "centers": 1,
+            "count": 2,
+            "mean": 0.5372809638687772,
+            "variance": 0.013778208758055799
+          },
+          {
+            "center": 77,
+            "centers": 1,
+            "count": 3,
+            "mean": 0.5276761578588625,
+            "variance": 0.026096933831037894
+          },
+          {
+            "center": 289,
+            "centers": 1,
+            "count": 5,
+            "mean": 0.4746939419403793,
+            "variance": 0.017596483254169015
+          }
+        ]
+      }
+    ],
+    "theta": {
+      "slope": -0.08728674228470343,
+      "intercept": -0.06217724583406876,
+      "rmse": -0.04612864545499426,
+      "originSlope": -0.07226310272372802
+    }
+  },
+  "fields": [
+    {
+      "q": 3,
+      "maxDegree": 11,
+      "rows": [
+        {
+          "q": 3,
+          "degree": 8,
+          "real": {
+            "centers": 810,
+            "count": 1548,
+            "mean": 0.567405523255814,
+            "variance": 0.03330586256154788
+          },
+          "points": [
+            {
+              "degree": 8,
+              "roughDegree": 0,
+              "tailMass": 1.8518518518518516,
+              "realMean": 0.567405523255814,
+              "roughMean": 0.5183229003651539,
+              "delta": 0.04908262289066001,
+              "roughCenters": 6561,
+              "roughCount": 11502,
+              "realCenters": 810,
+              "realCount": 1548
+            },
+            {
+              "degree": 8,
+              "roughDegree": 1,
+              "tailMass": 0.8518518518518517,
+              "realMean": 0.567405523255814,
+              "roughMean": 0.5623476848090982,
+              "delta": 0.005057838446715701,
+              "roughCenters": 1944,
+              "roughCount": 3693,
+              "realCenters": 810,
+              "realCount": 1548
+            },
+            {
+              "degree": 8,
+              "roughDegree": 2,
+              "tailMass": 0.5185185185185185,
+              "realMean": 0.567405523255814,
+              "roughMean": 0.5673243087557603,
+              "delta": 0.00008121450005360575,
+              "roughCenters": 1365,
+              "roughCount": 2604,
+              "realCenters": 810,
+              "realCount": 1548
+            },
+            {
+              "degree": 8,
+              "roughDegree": 3,
+              "tailMass": 0.2222222222222222,
+              "realMean": 0.567405523255814,
+              "roughMean": 0.5677083333333334,
+              "delta": -0.000302810077519422,
+              "roughCenters": 981,
+              "roughCount": 1872,
+              "realCenters": 810,
+              "realCount": 1548
+            },
+            {
+              "degree": 8,
+              "roughDegree": 4,
+              "tailMass": 0,
+              "realMean": 0.567405523255814,
+              "roughMean": 0.567405523255814,
+              "delta": 0,
+              "roughCenters": 810,
+              "roughCount": 1548,
+              "realCenters": 810,
+              "realCount": 1548
+            }
+          ],
+          "fit": {
+            "slope": 0.032342693465738474,
+            "intercept": -0.014370936266630656,
+            "r2": 0.9230872696910715,
+            "rmse": 0.0057307254466568485,
+            "maxAbs": 0.008122408609319749
+          },
+          "originFit": {
+            "slope": 0.02127694033310751,
+            "intercept": 0,
+            "r2": 0.760121181913511,
+            "rmse": 0.010120604143599813,
+            "maxAbs": 0.013066962577783288
+          }
+        },
+        {
+          "q": 3,
+          "degree": 9,
+          "real": {
+            "centers": 2184,
+            "count": 4158,
+            "mean": 0.5659416029786386,
+            "variance": 0.03320388761052212
+          },
+          "points": [
+            {
+              "degree": 9,
+              "roughDegree": 0,
+              "tailMass": 1.8518518518518516,
+              "realMean": 0.5659416029786386,
+              "roughMean": 0.5149923910995872,
+              "delta": 0.05094921187905144,
+              "roughCenters": 19683,
+              "roughCount": 34998,
+              "realCenters": 2184,
+              "realCount": 4158
+            },
+            {
+              "degree": 9,
+              "roughDegree": 1,
+              "tailMass": 0.8518518518518517,
+              "realMean": 0.5659416029786386,
+              "roughMean": 0.5548826394302376,
+              "delta": 0.011058963548400969,
+              "roughCenters": 5832,
+              "roughCount": 11118,
+              "realCenters": 2184,
+              "realCount": 4158
+            },
+            {
+              "degree": 9,
+              "roughDegree": 2,
+              "tailMass": 0.5185185185185185,
+              "realMean": 0.5659416029786386,
+              "roughMean": 0.5609712144923563,
+              "delta": 0.0049703884862822845,
+              "roughCenters": 4096,
+              "roughCount": 7810,
+              "realCenters": 2184,
+              "realCount": 4158
+            },
+            {
+              "degree": 9,
+              "roughDegree": 3,
+              "tailMass": 0.2222222222222222,
+              "realMean": 0.5659416029786386,
+              "roughMean": 0.5636881279763136,
+              "delta": 0.0022534750023249783,
+              "roughCenters": 3048,
+              "roughCount": 5802,
+              "realCenters": 2184,
+              "realCount": 4158
+            },
+            {
+              "degree": 9,
+              "roughDegree": 4,
+              "tailMass": 0,
+              "realMean": 0.5659416029786386,
+              "roughMean": 0.5659416029786386,
+              "delta": 0,
+              "roughCenters": 2184,
+              "roughCount": 4158,
+              "realCenters": 2184,
+              "realCount": 4158
+            }
+          ],
+          "fit": {
+            "slope": 0.031337892849976186,
+            "intercept": -0.009677398002909017,
+            "r2": 0.9551706568613003,
+            "rmse": 0.004167409496598438,
+            "maxAbs": 0.005958880506077131
+          },
+          "originFit": {
+            "slope": 0.023886207359235755,
+            "intercept": 0,
+            "r2": 0.8737198640485166,
+            "rmse": 0.0069944329247690175,
+            "maxAbs": 0.009288546424281337
+          }
+        },
+        {
+          "q": 3,
+          "degree": 10,
+          "real": {
+            "centers": 5880,
+            "count": 11328,
+            "mean": 0.5563665254237307,
+            "variance": 0.034697391082836426
+          },
+          "points": [
+            {
+              "degree": 10,
+              "roughDegree": 0,
+              "tailMass": 2.0493827160493825,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5120645488913191,
+              "delta": 0.044301976532411524,
+              "roughCenters": 59049,
+              "roughCount": 106338,
+              "realCenters": 5880,
+              "realCount": 11328
+            },
+            {
+              "degree": 10,
+              "roughDegree": 1,
+              "tailMass": 1.0493827160493825,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5496923076923185,
+              "delta": 0.006674217731412191,
+              "roughCenters": 17496,
+              "roughCount": 33540,
+              "realCenters": 5880,
+              "realCount": 11328
+            },
+            {
+              "degree": 10,
+              "roughDegree": 2,
+              "tailMass": 0.7160493827160493,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5550444952962199,
+              "delta": 0.0013220301275107538,
+              "roughCenters": 12288,
+              "roughCount": 23598,
+              "realCenters": 5880,
+              "realCount": 11328
+            },
+            {
+              "degree": 10,
+              "roughDegree": 3,
+              "tailMass": 0.41975308641975306,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5562922499146555,
+              "delta": 0.00007427550907512792,
+              "roughCenters": 9144,
+              "roughCount": 17574,
+              "realCenters": 5880,
+              "realCount": 11328
+            },
+            {
+              "degree": 10,
+              "roughDegree": 4,
+              "tailMass": 0.19753086419753085,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5571573828470439,
+              "delta": -0.000790857423313196,
+              "roughCenters": 7056,
+              "roughCount": 13572,
+              "realCenters": 5880,
+              "realCount": 11328
+            },
+            {
+              "degree": 10,
+              "roughDegree": 5,
+              "tailMass": 0,
+              "realMean": 0.5563665254237307,
+              "roughMean": 0.5563665254237307,
+              "delta": 0,
+              "roughCenters": 5880,
+              "roughCount": 11328,
+              "realCenters": 5880,
+              "realCount": 11328
+            }
+          ],
+          "fit": {
+            "slope": 0.025182743402974116,
+            "intercept": -0.012006152693883698,
+            "r2": 0.9015627372328362,
+            "rmse": 0.005393268251804135,
+            "maxAbs": 0.007745965244491759
+          },
+          "originFit": {
+            "slope": 0.016356823485249212,
+            "intercept": 0,
+            "r2": 0.7316154281511071,
+            "rmse": 0.008905350778015447,
+            "maxAbs": 0.010780585192271167
+          }
+        },
+        {
+          "q": 3,
+          "degree": 11,
+          "real": {
+            "centers": 16104,
+            "count": 31038,
+            "mean": 0.5523370712200483,
+            "variance": 0.035063615508357626
+          },
+          "points": [
+            {
+              "degree": 11,
+              "roughDegree": 0,
+              "tailMass": 2.0493827160493825,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5100679696291629,
+              "delta": 0.04226910159088537,
+              "roughCenters": 177147,
+              "roughCount": 322086,
+              "realCenters": 16104,
+              "realCount": 31038
+            },
+            {
+              "degree": 11,
+              "roughDegree": 1,
+              "tailMass": 1.0493827160493825,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5448572446060864,
+              "delta": 0.0074798266139618486,
+              "roughCenters": 52488,
+              "roughCount": 100950,
+              "realCenters": 16104,
+              "realCount": 31038
+            },
+            {
+              "degree": 11,
+              "roughDegree": 2,
+              "tailMass": 0.7160493827160493,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5500634385804574,
+              "delta": 0.0022736326395909057,
+              "roughCenters": 36864,
+              "roughCount": 71052,
+              "realCenters": 16104,
+              "realCount": 31038
+            },
+            {
+              "degree": 11,
+              "roughDegree": 3,
+              "tailMass": 0.41975308641975306,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5516430023340768,
+              "delta": 0.000694068885971455,
+              "roughCenters": 27288,
+              "roughCount": 52644,
+              "realCenters": 16104,
+              "realCount": 31038
+            },
+            {
+              "degree": 11,
+              "roughDegree": 4,
+              "tailMass": 0.19753086419753085,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5520865217834673,
+              "delta": 0.0002505494365809824,
+              "roughCenters": 21672,
+              "roughCount": 41796,
+              "realCenters": 16104,
+              "realCount": 31038
+            },
+            {
+              "degree": 11,
+              "roughDegree": 5,
+              "tailMass": 0,
+              "realMean": 0.5523370712200483,
+              "roughMean": 0.5523370712200483,
+              "delta": 0,
+              "roughCenters": 16104,
+              "roughCount": 31038,
+              "realCenters": 16104,
+              "realCount": 31038
+            }
+          ],
+          "fit": {
+            "slope": 0.02356322779166382,
+            "intercept": -0.010293474727607593,
+            "r2": 0.9059753210424355,
+            "rmse": 0.00491999567984536,
+            "maxAbs": 0.00695354263733703
+          },
+          "originFit": {
+            "slope": 0.015996325559338286,
+            "intercept": 0,
+            "r2": 0.7625956749381946,
+            "rmse": 0.007817863892381604,
+            "maxAbs": 0.009486508469278516
+          }
+        }
+      ],
+      "slopeRange": [
+        0.02356322779166382,
+        0.032342693465738474
+      ],
+      "r2Range": [
+        0.9015627372328362,
+        0.9551706568613003
+      ],
+      "rmseRange": [
+        0.004167409496598438,
+        0.0057307254466568485
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 7,
+      "rows": [
+        {
+          "q": 5,
+          "degree": 4,
+          "real": {
+            "centers": 150,
+            "count": 510,
+            "mean": 0.5416666666666666,
+            "variance": 0.021854575163398726
+          },
+          "points": [
+            {
+              "degree": 4,
+              "roughDegree": 0,
+              "tailMass": 1.4,
+              "realMean": 0.5416666666666666,
+              "roughMean": 0.5236842105263158,
+              "delta": 0.017982456140350878,
+              "roughCenters": 625,
+              "roughCount": 1900,
+              "realCenters": 150,
+              "realCount": 510
+            },
+            {
+              "degree": 4,
+              "roughDegree": 1,
+              "tailMass": 0.4,
+              "realMean": 0.5416666666666666,
+              "roughMean": 0.5452898550724637,
+              "delta": -0.0036231884057971175,
+              "roughCenters": 205,
+              "roughCount": 690,
+              "realCenters": 150,
+              "realCount": 510
+            },
+            {
+              "degree": 4,
+              "roughDegree": 2,
+              "tailMass": 0,
+              "realMean": 0.5416666666666666,
+              "roughMean": 0.5416666666666666,
+              "delta": 0,
+              "roughCenters": 150,
+              "roughCount": 510,
+              "realCenters": 150,
+              "realCount": 510
+            }
+          ],
+          "fit": {
+            "slope": 0.021605644546148,
+            "intercept": -0.012265446224256318,
+            "r2": 1,
+            "rmse": 0,
+            "maxAbs": 0
+          },
+          "originFit": {
+            "slope": 0.011191586431213388,
+            "intercept": 0,
+            "r2": 0.6959630364828411,
+            "rmse": 0.005956627256561722,
+            "maxAbs": 0.008099822978282472
+          }
+        },
+        {
+          "q": 5,
+          "degree": 5,
+          "real": {
+            "centers": 624,
+            "count": 2104,
+            "mean": 0.545247148288972,
+            "variance": 0.025564862872092253
+          },
+          "points": [
+            {
+              "degree": 5,
+              "roughDegree": 0,
+              "tailMass": 1.4,
+              "realMean": 0.545247148288972,
+              "roughMean": 0.518512594962019,
+              "delta": 0.02673455332695307,
+              "roughCenters": 3125,
+              "roughCount": 10004,
+              "realCenters": 624,
+              "realCount": 2104
+            },
+            {
+              "degree": 5,
+              "roughDegree": 1,
+              "tailMass": 0.4,
+              "realMean": 0.545247148288972,
+              "roughMean": 0.5406392694063852,
+              "delta": 0.004607878882586847,
+              "roughCenters": 1024,
+              "roughCount": 3504,
+              "realCenters": 624,
+              "realCount": 2104
+            },
+            {
+              "degree": 5,
+              "roughDegree": 2,
+              "tailMass": 0,
+              "realMean": 0.545247148288972,
+              "roughMean": 0.545247148288972,
+              "delta": 0,
+              "roughCenters": 624,
+              "roughCount": 2104,
+              "realCenters": 624,
+              "realCount": 2104
+            }
+          ],
+          "fit": {
+            "slope": 0.022126674444366227,
+            "intercept": -0.004242790895159644,
+            "r2": 1,
+            "rmse": 0,
+            "maxAbs": 0
+          },
+          "originFit": {
+            "slope": 0.01852430481640049,
+            "intercept": 0,
+            "r2": 0.9653131310819747,
+            "rmse": 0.0020604814067033423,
+            "maxAbs": 0.00280184304397335
+          }
+        },
+        {
+          "q": 5,
+          "degree": 6,
+          "real": {
+            "centers": 2580,
+            "count": 9280,
+            "mean": 0.5321479885057471,
+            "variance": 0.028689926375266794
+          },
+          "points": [
+            {
+              "degree": 6,
+              "roughDegree": 0,
+              "tailMass": 1.72,
+              "realMean": 0.5321479885057471,
+              "roughMean": 0.5125207614666589,
+              "delta": 0.019627227039088146,
+              "roughCenters": 15625,
+              "roughCount": 52180,
+              "realCenters": 2580,
+              "realCount": 9280
+            },
+            {
+              "degree": 6,
+              "roughDegree": 1,
+              "tailMass": 0.72,
+              "realMean": 0.5321479885057471,
+              "roughMean": 0.5333087512290831,
+              "delta": -0.001160762723335984,
+              "roughCenters": 5120,
+              "roughCount": 18080,
+              "realCenters": 2580,
+              "realCount": 9280
+            },
+            {
+              "degree": 6,
+              "roughDegree": 2,
+              "tailMass": 0.32,
+              "realMean": 0.5321479885057471,
+              "roughMean": 0.5351698806244197,
+              "delta": -0.0030218921186726533,
+              "roughCenters": 3400,
+              "roughCount": 12100,
+              "realCenters": 2580,
+              "realCount": 9280
+            },
+            {
+              "degree": 6,
+              "roughDegree": 3,
+              "tailMass": 0,
+              "realMean": 0.5321479885057471,
+              "roughMean": 0.5321479885057471,
+              "delta": 0,
+              "roughCenters": 2580,
+              "roughCount": 9280,
+              "realCenters": 2580,
+              "realCount": 9280
+            }
+          ],
+          "fit": {
+            "slope": 0.017064489853020486,
+            "intercept": -0.010551139932419011,
+            "r2": 0.9577762888371697,
+            "rmse": 0.002109577632990016,
+            "maxAbs": 0.002896055485091722
+          },
+          "originFit": {
+            "slope": 0.00892827332042201,
+            "intercept": 0,
+            "r2": 0.6508659519649619,
+            "rmse": 0.006066153743490506,
+            "maxAbs": 0.007589119514039832
+          }
+        },
+        {
+          "q": 5,
+          "degree": 7,
+          "real": {
+            "centers": 11160,
+            "count": 40080,
+            "mean": 0.5312232677503106,
+            "variance": 0.02931708502872915
+          },
+          "points": [
+            {
+              "degree": 7,
+              "roughDegree": 0,
+              "tailMass": 1.72,
+              "realMean": 0.5312232677503106,
+              "roughMean": 0.5096265639837777,
+              "delta": 0.021596703766532888,
+              "roughCenters": 78125,
+              "roughCount": 267860,
+              "realCenters": 11160,
+              "realCount": 40080
+            },
+            {
+              "degree": 7,
+              "roughDegree": 1,
+              "tailMass": 0.72,
+              "realMean": 0.5312232677503106,
+              "roughMean": 0.5291265590804837,
+              "delta": 0.002096708669826919,
+              "roughCenters": 25600,
+              "roughCount": 91760,
+              "realCenters": 11160,
+              "realCount": 40080
+            },
+            {
+              "degree": 7,
+              "roughDegree": 2,
+              "tailMass": 0.32,
+              "realMean": 0.5312232677503106,
+              "roughMean": 0.531141983074985,
+              "delta": 0.00008128467532564354,
+              "roughCenters": 17160,
+              "roughCount": 61640,
+              "realCenters": 11160,
+              "realCount": 40080
+            },
+            {
+              "degree": 7,
+              "roughDegree": 3,
+              "tailMass": 0,
+              "realMean": 0.5312232677503106,
+              "roughMean": 0.5312232677503106,
+              "delta": 0,
+              "roughCenters": 11160,
+              "roughCount": 40080,
+              "realCenters": 11160,
+              "realCount": 40080
+            }
+          ],
+          "fit": {
+            "slope": 0.016162740840447633,
+            "intercept": -0.006944822535983339,
+            "r2": 0.9620238733915228,
+            "rmse": 0.0018907471749424244,
+            "maxAbs": 0.002595642199312038
+          },
+          "originFit": {
+            "slope": 0.010807435129865935,
+            "intercept": 0,
+            "r2": 0.8131517359512862,
+            "rmse": 0.004193944321614322,
+            "maxAbs": 0.005684644623676554
+          }
+        }
+      ],
+      "slopeRange": [
+        0.016162740840447633,
+        0.022126674444366227
+      ],
+      "r2Range": [
+        0.9577762888371697,
+        1
+      ],
+      "rmseRange": [
+        0,
+        0.002109577632990016
+      ]
+    }
+  ],
+  "generatedAt": "2026-06-15T12:22:59.267Z",
+  "jsonPath": "logs/playground-artifacts/roughness-collapse-profile-8000000.json",
+  "mdPath": "logs/playground-artifacts/roughness-collapse-profile-8000000.md",
+  "svgPath": "logs/playground-artifacts/roughness-collapse-profile-8000000.svg"
+}

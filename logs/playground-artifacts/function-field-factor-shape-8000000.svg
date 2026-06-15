@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="1180" height="660" fill="#111827"/>
+<text x="64" y="34" fill="#f9fafb" font-size="20" font-weight="700">Composite-only factor-shape residual</text>
+<text x="64" y="56" fill="#a7b0c4" font-size="13">Integer y-axis: z against W=30030 local composite-mate split null. Function-field bars: cumulative z.</text>
+<rect x="64" y="64" width="650" height="430" fill="#0b1220" stroke="#273244"/>
+<line x1="64" y1="337.2643039396711" x2="714" y2="337.2643039396711" stroke="#243044"/><text x="50" y="341.2643039396711" text-anchor="end" fill="#8fa0b8" font-size="11">-10</text>
+<line x1="64" y1="296.4984462049779" x2="714" y2="296.4984462049779" stroke="#243044"/><text x="50" y="300.4984462049779" text-anchor="end" fill="#8fa0b8" font-size="11">-5</text>
+<line x1="64" y1="255.73258847028467" x2="714" y2="255.73258847028467" stroke="#243044"/><text x="50" y="259.73258847028467" text-anchor="end" fill="#8fa0b8" font-size="11">0</text>
+<line x1="64" y1="214.9667307355915" x2="714" y2="214.9667307355915" stroke="#243044"/><text x="50" y="218.9667307355915" text-anchor="end" fill="#8fa0b8" font-size="11">5</text>
+<line x1="64" y1="174.2008730008983" x2="714" y2="174.2008730008983" stroke="#243044"/><text x="50" y="178.2008730008983" text-anchor="end" fill="#8fa0b8" font-size="11">10</text>
+<line x1="64" y1="133.4350152662051" x2="714" y2="133.4350152662051" stroke="#243044"/><text x="50" y="137.4350152662051" text-anchor="end" fill="#8fa0b8" font-size="11">15</text>
+<line x1="64" y1="92.66915753151193" x2="714" y2="92.66915753151193" stroke="#243044"/><text x="50" y="96.66915753151193" text-anchor="end" fill="#8fa0b8" font-size="11">20</text>
+<polygon points="64,312.0043561144794 226.5,331.6148215866914 389,361.5961915903091 551.5,403.23133709675596 714,452.12762071185324 714,329.6342694136385 551.5,357.272668957249 389,379.463207484657 226.5,418.45703358464607 64,472.3393262245714" fill="#e76f51" opacity="0.1"/>
+<polygon points="64,248.70600592659954 226.5,247.215921237101 389,242.75481523134314 551.5,234.42360540084488 714,237.44564963353875 714,259.6628927714832 551.5,262.83833621261147 389,264.8701952543754 226.5,271.4272021025946 64,269.33184406850694" fill="#2a9d8f" opacity="0.16"/>
+<polygon points="64,285.1507577531853 226.5,295.92743514196115 389,302.63988857011645 551.5,322.2422949731277 714,341.7144567503189 714,296.32880544749594 551.5,307.0325473759623 389,317.678469441827 226.5,343.2886288400108 64,358.28133706597936" fill="#a78bfa" opacity="0.14"/>
+<polyline points="64,210.569547613933 226.5,190.69992812482832 389,169.08875972530456 551.5,127.01460269951775 714,81.43023531548045" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<circle cx="64" cy="210.569547613933" r="4" fill="#f8fafc"/><text x="64" y="518" text-anchor="middle" fill="#9ca3af" font-size="11">500k</text>
+<circle cx="226.5" cy="190.69992812482832" r="4" fill="#f8fafc"/><text x="226.5" y="518" text-anchor="middle" fill="#9ca3af" font-size="11">1M</text>
+<circle cx="389" cy="169.08875972530456" r="4" fill="#f8fafc"/><text x="389" y="518" text-anchor="middle" fill="#9ca3af" font-size="11">2M</text>
+<circle cx="551.5" cy="127.01460269951775" r="4" fill="#f8fafc"/><text x="551.5" y="518" text-anchor="middle" fill="#9ca3af" font-size="11">4M</text>
+<circle cx="714" cy="81.43023531548045" r="4" fill="#f8fafc"/><text x="714" y="518" text-anchor="middle" fill="#9ca3af" font-size="11">8M</text>
+<text x="64" y="542" fill="#9ca3af" font-size="12">endpoint</text>
+<rect x="740" y="82" width="370" height="450" fill="#0b1220" stroke="#273244"/>
+<text x="780" y="58" fill="#dbeafe" font-size="14">control bands: Cramer red, W-fake teal, W-composite violet</text>
+<line x1="960" y1="92" x2="960" y2="500" stroke="#52617a"/>
+<text x="820" y="117" fill="#4f8cc9" font-size="13">F3 d8</text>
+<line x1="954.9323577764517" y1="105" x2="963.1951205015151" y2="105" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="953.3032605182436" y1="114" x2="959.6816984329613" y2="114" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="99" width="26.70463990794041" height="13" fill="#4f8cc9"/>
+<text x="1102" y="113" fill="#dbeafe" font-size="12">10.76</text>
+<text x="820" y="151" fill="#4f8cc9" font-size="13">F3 d9</text>
+<line x1="954.4679455695464" y1="139" x2="965.0201743831982" y2="139" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="949.9369124142" y1="148" x2="957.0733479174197" y2="148" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="133" width="52.376294352074694" height="13" fill="#4f8cc9"/>
+<text x="1102" y="147" fill="#dbeafe" font-size="12">21.10</text>
+<text x="820" y="185" fill="#4f8cc9" font-size="13">F3 d10</text>
+<line x1="957.6545836644536" y1="173" x2="964.6571238166995" y2="173" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="948.9346582344539" y1="182" x2="957.3146959317244" y2="182" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="167" width="82.57529222918616" height="13" fill="#4f8cc9"/>
+<text x="1102" y="181" fill="#dbeafe" font-size="12">33.26</text>
+<text x="820" y="219" fill="#4f8cc9" font-size="13">F3 d11</text>
+<line x1="954.0476708591976" y1="207" x2="963.700200093896" y2="207" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="946.7483367805868" y1="216" x2="955.9492904275373" y2="216" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="201" width="130" height="13" fill="#4f8cc9"/>
+<text x="1102" y="215" fill="#dbeafe" font-size="12">52.36</text>
+<text x="820" y="253" fill="#38a06d" font-size="13">F5 d4</text>
+<line x1="958.1288152267758" y1="241" x2="963.413779271907" y2="241" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="951.8444769227817" y1="250" x2="959.3271711289618" y2="250" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="235" width="7.1001431072674155" height="13" fill="#38a06d"/>
+<text x="1102" y="249" fill="#dbeafe" font-size="12">2.86</text>
+<text x="820" y="287" fill="#38a06d" font-size="13">F5 d5</text>
+<line x1="954.916994965988" y1="275" x2="964.7627333377757" y2="275" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="953.3106717617784" y1="284" x2="957.5711735292939" y2="284" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="269" width="20.918438839296442" height="13" fill="#38a06d"/>
+<text x="1102" y="283" fill="#dbeafe" font-size="12">8.43</text>
+<text x="820" y="321" fill="#38a06d" font-size="13">F5 d6</text>
+<line x1="956.527121637074" y1="309" x2="964.5722714762244" y2="309" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="948.2943948322114" y1="318" x2="955.9704711624996" y2="318" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="303" width="35.173956461505014" height="13" fill="#38a06d"/>
+<text x="1102" y="317" fill="#dbeafe" font-size="12">14.17</text>
+<text x="820" y="355" fill="#38a06d" font-size="13">F5 d7</text>
+<line x1="954.9757296342593" y1="343" x2="963.8633948817879" y2="343" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<line x1="945.4616838839488" y1="352" x2="951.8227952424255" y2="352" stroke="#a78bfa" stroke-width="5" opacity="0.65"/>
+<rect x="960" y="337" width="73.17104698600482" height="13" fill="#38a06d"/>
+<text x="1102" y="351" fill="#dbeafe" font-size="12">29.47</text>
+<text x="820" y="548" fill="#a7b0c4" font-size="12">field bars use the same split statistic on reducible f+c; orange/violet are sampled monic/reducible-center ranges.</text>
+</svg>

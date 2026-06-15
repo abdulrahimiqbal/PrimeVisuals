@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">local eligible Fourier-power entropy</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">entropy residual = observed spectrum entropy - exact eligible/count shuffled mean</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="195.39" y2="195.39" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 218.27 L 415.33 211.58 L 748.67 187.47 L 1082.00 215.86" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 253.44 L 415.33 192.85 L 748.67 232.25 L 1082.00 200.09" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 196.61 L 415.33 234.50 L 748.67 181.88 L 1082.00 186.61" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 321.88 L 415.33 81.14 L 748.67 143.66 L 1082.00 107.38" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest entropy residuals</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(59,153,184)"><title>13881000 residual=-0.10603</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(60,151,183)"><title>12073530 residual=-0.09962</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(61,149,182)"><title>14383320 residual=-0.09086</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(61,148,181)"><title>10305120 residual=-0.08838</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(61,148,181)"><title>15563100 residual=-0.08785</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(61,148,181)"><title>15846390 residual=-0.08756</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(61,147,181)"><title>15131550 residual=-0.08599</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(61,147,181)"><title>15711570 residual=-0.08522</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest entropy residuals</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:23832 residual=-0.21075</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:25714 residual=-0.21075</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:32278 residual=-0.21075</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:34026 residual=-0.21075</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:34298 residual=-0.21075</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:42990 residual=-0.21075</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:44049 residual=-0.21075</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(49,186,197)"><title>24:44339 residual=-0.21075</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest entropy residuals</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(41,210,207)"><title>15:326024 residual=-0.28725</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(45,200,203)"><title>15:333943 residual=-0.25465</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(46,197,201)"><title>15:424360 residual=-0.24490</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(46,195,201)"><title>15:408361 residual=-0.23834</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(46,195,201)"><title>15:490041 residual=-0.23834</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(47,194,200)"><title>15:435327 residual=-0.23491</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(47,194,200)"><title>15:419185 residual=-0.23491</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(47,193,200)"><title>15:196191 residual=-0.23372</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate -0.016780, mean residual -0.000086</text>
+<text x="650" y="484" fill="#94a3b8">Z controls -0.009769 .. 0.013741</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate -0.003852</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate 0.007196, controls -0.038732 .. 0.027194</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate 0.072130, controls -0.051791 .. 0.028561</text>
+<text x="650" y="594" fill="#94a3b8">red = higher entropy than controls, blue = lower entropy</text>
+</g>
+</svg>

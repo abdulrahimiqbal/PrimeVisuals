@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<g stroke="#1f2937" stroke-width="1">
+<line x1="66" x2="1054" y1="447.00" y2="447.00"/>
+<line x1="66" x2="1054" y1="320.00" y2="320.00"/>
+<line x1="66" x2="1054" y1="193.00" y2="193.00"/>
+<line x1="66" x2="1054" y1="66.00" y2="66.00"/>
+</g>
+<path d="M 864.79 560.78 L 883.13 562.25 L 940.09 560.87 L 997.04 563.79 L 1054.00 565.12" fill="none" stroke="#67e8f9" stroke-width="2.5"/>
+<circle cx="864.79" cy="560.78" r="4" fill="#67e8f9"/>
+<circle cx="883.13" cy="562.25" r="4" fill="#67e8f9"/>
+<circle cx="940.09" cy="560.87" r="4" fill="#67e8f9"/>
+<circle cx="997.04" cy="563.79" r="4" fill="#67e8f9"/>
+<circle cx="1054.00" cy="565.12" r="4" fill="#67e8f9"/>
+<path d="M 864.79 561.42 L 883.13 561.38 L 940.09 559.10 L 997.04 553.92 L 1054.00 545.33" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<circle cx="864.79" cy="561.42" r="4" fill="#fbbf24"/>
+<circle cx="883.13" cy="561.38" r="4" fill="#fbbf24"/>
+<circle cx="940.09" cy="559.10" r="4" fill="#fbbf24"/>
+<circle cx="997.04" cy="553.92" r="4" fill="#fbbf24"/>
+<circle cx="1054.00" cy="545.33" r="4" fill="#fbbf24"/>
+<path d="M 864.79 344.77 L 883.13 329.23 L 940.09 271.94 L 997.04 197.38 L 1054.00 103.63" fill="none" stroke="#fb7185" stroke-width="2.5"/>
+<circle cx="864.79" cy="344.77" r="4" fill="#fb7185"/>
+<circle cx="883.13" cy="329.23" r="4" fill="#fb7185"/>
+<circle cx="940.09" cy="271.94" r="4" fill="#fb7185"/>
+<circle cx="997.04" cy="197.38" r="4" fill="#fb7185"/>
+<circle cx="1054.00" cy="103.63" r="4" fill="#fb7185"/>
+<path d="M 66.00 562.56 L 99.32 566.41 L 156.27 570.08 L 198.25 570.21" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+<circle cx="66.00" cy="562.56" r="4" fill="#a78bfa"/>
+<circle cx="99.32" cy="566.41" r="4" fill="#a78bfa"/>
+<circle cx="156.27" cy="570.08" r="4" fill="#a78bfa"/>
+<circle cx="198.25" cy="570.21" r="4" fill="#a78bfa"/>
+<path d="M 714.74 566.84 L 797.74 563.73 L 881.56 551.12 L 965.71 539.69 L 1050.35 550.45" fill="none" stroke="#34d399" stroke-width="2.5"/>
+<circle cx="714.74" cy="566.84" r="4" fill="#34d399"/>
+<circle cx="797.74" cy="563.73" r="4" fill="#34d399"/>
+<circle cx="881.56" cy="551.12" r="4" fill="#34d399"/>
+<circle cx="965.71" cy="539.69" r="4" fill="#34d399"/>
+<circle cx="1050.35" cy="550.45" r="4" fill="#34d399"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="66" y="22" fill="#f8fafc" font-size="18">HL-whitened additive triple constellation surface</text>
+<text x="66" y="30" fill="#67e8f9" font-size="13">Z residual energy</text>
+<text x="66" y="49" fill="#fbbf24" font-size="13">wheel residual energy</text>
+<text x="66" y="68" fill="#fb7185" font-size="13">composite residual energy</text>
+<text x="66" y="87" fill="#a78bfa" font-size="13">F_2 residual energy</text>
+<text x="66" y="106" fill="#34d399" font-size="13">F_3 residual energy</text>
+<text x="66" y="614" fill="#94a3b8" font-size="12">x = log(range/labels), y = RMS cell residual after tuple singular-series subtraction</text>
+</g>
+</svg>

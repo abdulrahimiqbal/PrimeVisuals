@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="56" x2="924" y1="56.80188700246521" y2="56.80188700246521" stroke="#64748b" stroke-width="1"/>
+<path d="M 56.00 57.29 L 273.00 57.12 L 490.00 57.23 L 707.00 57.14 L 924.00 57.15" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 56.00 56.00 L 273.00 56.42 L 490.00 56.57 L 707.00 57.24 L 924.00 56.89" fill="none" stroke="#fbbf24" stroke-width="1.5" />
+<path d="M 56.00 57.09 L 273.00 57.10 L 490.00 57.63 L 707.00 58.08 L 924.00 57.51" fill="none" stroke="#f472b6" stroke-width="1.5" />
+<path d="M 56.00 57.95 L 273.00 57.19 L 490.00 56.62 L 707.00 57.34 L 924.00 56.51" fill="none" stroke="#a7f3d0" stroke-width="1.5" />
+<path d="M 56.00 159.15 L 273.00 200.90 L 490.00 260.54 L 707.00 345.50 L 924.00 464.00" fill="none" stroke="#c4b5fd" stroke-width="1.5" />
+<path d="M 56.00 167.41 L 273.00 205.14 L 490.00 256.79 L 707.00 326.58 L 924.00 422.22" fill="none" stroke="#fb7185" stroke-width="1.5" />
+<g font-family="Menlo, Consolas, monospace" font-size="12"><text x="56" y="22" fill="#7dd3fc">real-primes</text>
+<text x="56" y="40" fill="#fbbf24">wheel-W210-seed-12345</text>
+<text x="56" y="58" fill="#f472b6">wheel-W210-seed-271828</text>
+<text x="56" y="76" fill="#a7f3d0">wheel-W210-seed-314159</text>
+<text x="56" y="94" fill="#c4b5fd">cramer-seed-12345</text>
+<text x="56" y="112" fill="#fb7185">composite-W210-seed-12345</text></g>
+<text x="56" y="502" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="12">Theta210res(x)/sqrt(x), x-axis log-scaled, N=16000000</text>
+</svg>

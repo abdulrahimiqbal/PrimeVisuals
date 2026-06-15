@@ -1,0 +1,1998 @@
+{
+  "candidate": "roughmiss(x) * log(x)^2 / x, audited on dyadic windows as exceptions / integral dt/log^2(t)",
+  "preregisteredConfirm": "stable real constant distinct from ordinary Cramer and composite-permitting controls",
+  "preregisteredBreak": "known Gafni-Tao rough-gap law, or reproduction by non-prime/wheel controls",
+  "N": 16000000,
+  "eventLimit": 16010000,
+  "windows": [
+    [
+      1000000,
+      2000000
+    ],
+    [
+      2000000,
+      4000000
+    ],
+    [
+      4000000,
+      8000000
+    ],
+    [
+      8000000,
+      16000000
+    ]
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "real": {
+    "name": "real-primes",
+    "windows": [
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "gaps": 70435,
+        "exceptions": 13590,
+        "witnesses": 110389,
+        "maxGap": 132,
+        "constant": 2.739383271400052,
+        "exceptionRate": 0.19294384893873784,
+        "avgWitnesses": 1.5672463973876625,
+        "mainLi2": 4960.970646891037
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "gaps": 134213,
+        "exceptions": 24562,
+        "witnesses": 221704,
+        "maxGap": 148,
+        "constant": 2.723211241917913,
+        "exceptionRate": 0.1830076073107672,
+        "avgWitnesses": 1.6518817104155334,
+        "mainLi2": 9019.498605881705
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "gaps": 256631,
+        "exceptions": 45211,
+        "witnesses": 445669,
+        "maxGap": 154,
+        "constant": 2.7451110932470777,
+        "exceptionRate": 0.17617123418449057,
+        "avgWitnesses": 1.7366140489652457,
+        "mainLi2": 16469.64310887753
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "gaps": 491353,
+        "exceptions": 82929,
+        "witnesses": 894020,
+        "maxGap": 154,
+        "constant": 2.7466214070083708,
+        "exceptionRate": 0.16877682643639094,
+        "avgWitnesses": 1.8195065462101585,
+        "mainLi2": 30193.09461012559
+      }
+    ],
+    "cumulative": [
+      {
+        "N": 2000000,
+        "gaps": 148933,
+        "exceptions": 30536,
+        "witnesses": 219465,
+        "constant": 2.7248050535348716,
+        "mainLi2": 11206.673284896418
+      },
+      {
+        "N": 4000000,
+        "gaps": 283146,
+        "exceptions": 55098,
+        "witnesses": 441169,
+        "constant": 2.724094321828702,
+        "mainLi2": 20226.17189077813
+      },
+      {
+        "N": 8000000,
+        "gaps": 539777,
+        "exceptions": 100309,
+        "witnesses": 886838,
+        "constant": 2.733526970335481,
+        "mainLi2": 36695.814999655646
+      },
+      {
+        "N": 16000000,
+        "gaps": 1031130,
+        "exceptions": 183238,
+        "witnesses": 1780858,
+        "constant": 2.7394376895808104,
+        "mainLi2": 66888.90960978168
+      }
+    ],
+    "residualFit": {
+      "cHat": 2.736908512978482,
+      "theta": -0.010640919901110265,
+      "residuals": [
+        {
+          "N": 2000000,
+          "residual": -135.63951560153873,
+          "absResidual": 135.63951560153873
+        },
+        {
+          "N": 4000000,
+          "residual": -259.1820328367394,
+          "absResidual": 259.1820328367394
+        },
+        {
+          "N": 8000000,
+          "residual": -124.08846324101614,
+          "absResidual": 124.08846324101614
+        },
+        {
+          "N": 16000000,
+          "residual": 169.17386514032842,
+          "absResidual": 169.17386514032842
+        }
+      ]
+    }
+  },
+  "cramer": [
+    {
+      "name": "cramer-seed-12345",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70393,
+          "exceptions": 10610,
+          "witnesses": 144165,
+          "maxGap": 144,
+          "constant": 2.1386943715639846,
+          "exceptionRate": 0.15072521415481652,
+          "avgWitnesses": 2.048001932010285,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134120,
+          "exceptions": 19113,
+          "witnesses": 287214,
+          "maxGap": 168,
+          "constant": 2.1190756643097903,
+          "exceptionRate": 0.1425067104085893,
+          "avgWitnesses": 2.141470325082016,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256050,
+          "exceptions": 35395,
+          "witnesses": 571478,
+          "maxGap": 182,
+          "constant": 2.1491054642781693,
+          "exceptionRate": 0.1382347197812927,
+          "avgWitnesses": 2.231900019527436,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491619,
+          "exceptions": 64792,
+          "witnesses": 1139094,
+          "maxGap": 226,
+          "constant": 2.14592113980497,
+          "exceptionRate": 0.1317931162139787,
+          "avgWitnesses": 2.3170259896383176,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148964,
+          "exceptions": 23536,
+          "witnesses": 289805,
+          "constant": 2.1001772249147477,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283084,
+          "exceptions": 42649,
+          "witnesses": 577019,
+          "constant": 2.1086046450265403,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539134,
+          "exceptions": 78044,
+          "witnesses": 1148497,
+          "constant": 2.1267820322489737,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1030753,
+          "exceptions": 142836,
+          "witnesses": 2287591,
+          "constant": 2.135421265397814,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.1311681316296265,
+        "theta": -0.23671009974945642,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -347.30496635635063,
+            "absResidual": 347.30496635635063
+          },
+          {
+            "N": 4000000,
+            "residual": -456.3729584892935,
+            "absResidual": 456.3729584892935
+          },
+          {
+            "N": 8000000,
+            "residual": -160.9514914425381,
+            "absResidual": 160.9514914425381
+          },
+          {
+            "N": 16000000,
+            "residual": 284.4874801786209,
+            "absResidual": 284.4874801786209
+          }
+        ]
+      }
+    },
+    {
+      "name": "cramer-seed-271828",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70362,
+          "exceptions": 10356,
+          "witnesses": 144288,
+          "maxGap": 132,
+          "constant": 2.087494713658494,
+          "exceptionRate": 0.1471817174042807,
+          "avgWitnesses": 2.0506523407521104,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134555,
+          "exceptions": 19309,
+          "witnesses": 287222,
+          "maxGap": 210,
+          "constant": 2.1408063622747733,
+          "exceptionRate": 0.14350265690609787,
+          "avgWitnesses": 2.1346066664189367,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256151,
+          "exceptions": 34780,
+          "witnesses": 572090,
+          "maxGap": 190,
+          "constant": 2.111764035812819,
+          "exceptionRate": 0.13577928643651596,
+          "avgWitnesses": 2.233409200042163,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491922,
+          "exceptions": 65184,
+          "witnesses": 1138818,
+          "maxGap": 196,
+          "constant": 2.158904240910099,
+          "exceptionRate": 0.13250881237269324,
+          "avgWitnesses": 2.315037749887177,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148976,
+          "exceptions": 23399,
+          "witnesses": 289663,
+          "constant": 2.0879523659831825,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283531,
+          "exceptions": 42708,
+          "witnesses": 576885,
+          "constant": 2.111521657712806,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539682,
+          "exceptions": 77488,
+          "witnesses": 1148975,
+          "constant": 2.111630440711758,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1031604,
+          "exceptions": 142672,
+          "witnesses": 2287793,
+          "constant": 2.132969438914818,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.12617794355847,
+        "theta": 0.11026596856464671,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -428.38155901270875,
+            "absResidual": 428.38155901270875
+          },
+          {
+            "N": 4000000,
+            "residual": -296.4405567947688,
+            "absResidual": 296.4405567947688
+          },
+          {
+            "N": 8000000,
+            "residual": -533.8324731698958,
+            "absResidual": 533.8324731698958
+          },
+          {
+            "N": 16000000,
+            "residual": 454.275719006022,
+            "absResidual": 454.275719006022
+          }
+        ]
+      }
+    },
+    {
+      "name": "cramer-seed-314159",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70302,
+          "exceptions": 10554,
+          "witnesses": 144153,
+          "maxGap": 154,
+          "constant": 2.127406258010018,
+          "exceptionRate": 0.15012375181360416,
+          "avgWitnesses": 2.0504822053426643,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134072,
+          "exceptions": 19105,
+          "witnesses": 287090,
+          "maxGap": 244,
+          "constant": 2.1181886970459134,
+          "exceptionRate": 0.14249806074348112,
+          "avgWitnesses": 2.1413121307953937,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256644,
+          "exceptions": 35091,
+          "witnesses": 571949,
+          "maxGap": 184,
+          "constant": 2.1306472622400126,
+          "exceptionRate": 0.1367302566979941,
+          "avgWitnesses": 2.2285695360109723,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491482,
+          "exceptions": 64744,
+          "witnesses": 1138199,
+          "maxGap": 222,
+          "constant": 2.1443313723227093,
+          "exceptionRate": 0.1317321895817141,
+          "avgWitnesses": 2.315850834822028,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148553,
+          "exceptions": 23361,
+          "witnesses": 289616,
+          "constant": 2.0845615291992448,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 282625,
+          "exceptions": 42466,
+          "witnesses": 576706,
+          "constant": 2.0995569616098164,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539269,
+          "exceptions": 77557,
+          "witnesses": 1148655,
+          "constant": 2.113510764121952,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1030751,
+          "exceptions": 142301,
+          "witnesses": 2286854,
+          "constant": 2.127422929005113,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.1218344913632348,
+        "theta": -0.10415062739954836,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -417.7059093321441,
+            "absResidual": 417.7059093321441
+          },
+          {
+            "N": 4000000,
+            "residual": -450.58914609456406,
+            "absResidual": 450.58914609456406
+          },
+          {
+            "N": 8000000,
+            "residual": -305.4459549536987,
+            "absResidual": 305.4459549536987
+          },
+          {
+            "N": 16000000,
+            "residual": 373.8045002875151,
+            "absResidual": 373.8045002875151
+          }
+        ]
+      }
+    },
+    {
+      "name": "cramer-seed-161803",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70288,
+          "exceptions": 10492,
+          "witnesses": 143913,
+          "maxGap": 146,
+          "constant": 2.1149087037181267,
+          "exceptionRate": 0.14927156840427955,
+          "avgWitnesses": 2.0474760983382656,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134291,
+          "exceptions": 19079,
+          "witnesses": 287540,
+          "maxGap": 166,
+          "constant": 2.1153060534383137,
+          "exceptionRate": 0.14207206737607136,
+          "avgWitnesses": 2.141171039012294,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 257515,
+          "exceptions": 35577,
+          "witnesses": 571771,
+          "maxGap": 204,
+          "constant": 2.1601560983931187,
+          "exceptionRate": 0.1381550589286061,
+          "avgWitnesses": 2.220340562685669,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 492486,
+          "exceptions": 64882,
+          "witnesses": 1139001,
+          "maxGap": 198,
+          "constant": 2.148901953834209,
+          "exceptionRate": 0.13174384652558652,
+          "avgWitnesses": 2.312758129165093,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148774,
+          "exceptions": 23491,
+          "witnesses": 289340,
+          "constant": 2.0961617603021896,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283065,
+          "exceptions": 42570,
+          "witnesses": 576880,
+          "constant": 2.1046988144805225,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 540580,
+          "exceptions": 78147,
+          "witnesses": 1148651,
+          "constant": 2.1295888918323067,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1033066,
+          "exceptions": 143029,
+          "witnesses": 2287652,
+          "constant": 2.138306646563779,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.133463355907252,
+        "theta": -0.3136137261094487,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -418.02679495125994,
+            "absResidual": 418.02679495125994
+          },
+          {
+            "N": 4000000,
+            "residual": -581.796559256436,
+            "absResidual": 581.796559256436
+          },
+          {
+            "N": 8000000,
+            "residual": -142.17661691701505,
+            "absResidual": 142.17661691701505
+          },
+          {
+            "N": 16000000,
+            "residual": 323.96243093835074,
+            "absResidual": 323.96243093835074
+          }
+        ]
+      }
+    },
+    {
+      "name": "cramer-seed-424242",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70832,
+          "exceptions": 10527,
+          "witnesses": 144161,
+          "maxGap": 156,
+          "constant": 2.121963774689356,
+          "exceptionRate": 0.14861926812740003,
+          "avgWitnesses": 2.035252428281003,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134760,
+          "exceptions": 19312,
+          "witnesses": 287258,
+          "maxGap": 172,
+          "constant": 2.141138974998727,
+          "exceptionRate": 0.14330661917482931,
+          "avgWitnesses": 2.131626595428911,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256978,
+          "exceptions": 35480,
+          "witnesses": 572003,
+          "maxGap": 174,
+          "constant": 2.15426647471647,
+          "exceptionRate": 0.1380662936126828,
+          "avgWitnesses": 2.22588314953031,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 492707,
+          "exceptions": 65078,
+          "witnesses": 1138881,
+          "maxGap": 232,
+          "constant": 2.1553935043867734,
+          "exceptionRate": 0.1320825561642112,
+          "avgWitnesses": 2.3114772065345126,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 149975,
+          "exceptions": 23744,
+          "witnesses": 289402,
+          "constant": 2.1187375946794598,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 284735,
+          "exceptions": 43056,
+          "witnesses": 576660,
+          "constant": 2.128727088472478,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 541713,
+          "exceptions": 78536,
+          "witnesses": 1148663,
+          "constant": 2.140189555695574,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1034420,
+          "exceptions": 143614,
+          "witnesses": 2287544,
+          "constant": 2.147052491030564,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.1438592282592843,
+        "theta": -0.23797549630095738,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -281.5299399119758,
+            "absResidual": 281.5299399119758
+          },
+          {
+            "N": 4000000,
+            "residual": -306.06526040322933,
+            "absResidual": 306.06526040322933
+          },
+          {
+            "N": 8000000,
+            "residual": -134.66162550722947,
+            "absResidual": 134.66162550722947
+          },
+          {
+            "N": 16000000,
+            "residual": 213.59386486842413,
+            "absResidual": 213.59386486842413
+          }
+        ]
+      }
+    }
+  ],
+  "wheel": [
+    {
+      "name": "wheel-W210-seed-12345",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70369,
+          "exceptions": 13548,
+          "witnesses": 126701,
+          "maxGap": 140,
+          "constant": 2.730917186234577,
+          "exceptionRate": 0.19252795975500575,
+          "avgWitnesses": 1.8005229575523314,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134283,
+          "exceptions": 24628,
+          "witnesses": 253817,
+          "maxGap": 154,
+          "constant": 2.730528721844897,
+          "exceptionRate": 0.18340370709620726,
+          "avgWitnesses": 1.8901648012034287,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256314,
+          "exceptions": 45027,
+          "witnesses": 509264,
+          "maxGap": 166,
+          "constant": 2.733939023592404,
+          "exceptionRate": 0.17567124698611858,
+          "avgWitnesses": 1.986875473052584,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491599,
+          "exceptions": 82650,
+          "witnesses": 1019454,
+          "maxGap": 194,
+          "constant": 2.73738088351773,
+          "exceptionRate": 0.16812483345165471,
+          "avgWitnesses": 2.0737511671097786,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 149170,
+          "exceptions": 30481,
+          "witnesses": 252300,
+          "constant": 2.7198972634528564,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283453,
+          "exceptions": 55109,
+          "witnesses": 506117,
+          "constant": 2.724638171651565,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539767,
+          "exceptions": 100136,
+          "witnesses": 1015381,
+          "constant": 2.728812536278038,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1031366,
+          "exceptions": 182786,
+          "witnesses": 2034835,
+          "constant": 2.7326802165910893,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.7310904587368148,
+        "theta": -0.13577018768855326,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -125.43848256136698,
+            "absResidual": 125.43848256136698
+          },
+          {
+            "N": 4000000,
+            "residual": -130.5050676749088,
+            "absResidual": 130.5050676749088
+          },
+          {
+            "N": 8000000,
+            "residual": -83.59022113082756,
+            "absResidual": 83.59022113082756
+          },
+          {
+            "N": 16000000,
+            "residual": 106.33716941601597,
+            "absResidual": 106.33716941601597
+          }
+        ]
+      }
+    },
+    {
+      "name": "wheel-W210-seed-271828",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70395,
+          "exceptions": 13600,
+          "witnesses": 126462,
+          "maxGap": 146,
+          "constant": 2.74139900596326,
+          "exceptionRate": 0.19319553945592727,
+          "avgWitnesses": 1.7964628169614318,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134043,
+          "exceptions": 24769,
+          "witnesses": 253915,
+          "maxGap": 142,
+          "constant": 2.7461615198707263,
+          "exceptionRate": 0.1847839872279791,
+          "avgWitnesses": 1.8942801936691958,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256260,
+          "exceptions": 44880,
+          "witnesses": 508601,
+          "maxGap": 156,
+          "constant": 2.7250135114226373,
+          "exceptionRate": 0.17513462889253104,
+          "avgWitnesses": 1.9847069382658238,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491587,
+          "exceptions": 82619,
+          "witnesses": 1019269,
+          "maxGap": 188,
+          "constant": 2.7363541586854367,
+          "exceptionRate": 0.16806587643692775,
+          "avgWitnesses": 2.0734254567350234,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148963,
+          "exceptions": 30701,
+          "witnesses": 252129,
+          "constant": 2.7395284237809174,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283006,
+          "exceptions": 55470,
+          "witnesses": 506044,
+          "constant": 2.742486334020075,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539266,
+          "exceptions": 100350,
+          "witnesses": 1014645,
+          "constant": 2.734644263956031,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1030853,
+          "exceptions": 182969,
+          "witnesses": 2033914,
+          "constant": 2.7354160961422376,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.735788936710149,
+        "theta": -0.3935675181350215,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": 41.907209855195106,
+            "absResidual": 41.907209855195106
+          },
+          {
+            "N": 4000000,
+            "residual": 135.4627092114024,
+            "absResidual": 135.4627092114024
+          },
+          {
+            "N": 8000000,
+            "residual": -42.00469962025818,
+            "absResidual": 42.00469962025818
+          },
+          {
+            "N": 16000000,
+            "residual": -24.93889904586831,
+            "absResidual": 24.93889904586831
+          }
+        ]
+      }
+    },
+    {
+      "name": "wheel-W210-seed-314159",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70559,
+          "exceptions": 13777,
+          "witnesses": 126499,
+          "maxGap": 162,
+          "constant": 2.7770775077320464,
+          "exceptionRate": 0.195255034793577,
+          "avgWitnesses": 1.7928116895080712,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134482,
+          "exceptions": 24715,
+          "witnesses": 254219,
+          "maxGap": 168,
+          "constant": 2.7401744908395576,
+          "exceptionRate": 0.1837792418316206,
+          "avgWitnesses": 1.8903570738091342,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 256277,
+          "exceptions": 44838,
+          "witnesses": 509193,
+          "maxGap": 190,
+          "constant": 2.722463365088418,
+          "exceptionRate": 0.17495912625791624,
+          "avgWitnesses": 1.9868852842822415,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491945,
+          "exceptions": 82946,
+          "witnesses": 1018561,
+          "maxGap": 168,
+          "constant": 2.747184449658338,
+          "exceptionRate": 0.1686082793808251,
+          "avgWitnesses": 2.0704773907652276,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148929,
+          "exceptions": 30775,
+          "witnesses": 251984,
+          "constant": 2.7461316322549014,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 283411,
+          "exceptions": 55490,
+          "witnesses": 506203,
+          "constant": 2.743475151879826,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539688,
+          "exceptions": 100328,
+          "witnesses": 1015396,
+          "constant": 2.7340447405498822,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1031633,
+          "exceptions": 183274,
+          "witnesses": 2033957,
+          "constant": 2.739975895394151,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.7390660928025556,
+        "theta": -0.00922985676685552,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": 79.18119222398673,
+            "absResidual": 79.18119222398673
+          },
+          {
+            "N": 4000000,
+            "residual": 89.17838677347027,
+            "absResidual": 89.17838677347027
+          },
+          {
+            "N": 8000000,
+            "residual": -184.2626133122103,
+            "absResidual": 184.2626133122103
+          },
+          {
+            "N": 16000000,
+            "residual": 60.85570331197232,
+            "absResidual": 60.85570331197232
+          }
+        ]
+      }
+    },
+    {
+      "name": "wheel-W210-seed-161803",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70432,
+          "exceptions": 13502,
+          "witnesses": 126716,
+          "maxGap": 136,
+          "constant": 2.721644807243819,
+          "exceptionRate": 0.19170263516583372,
+          "avgWitnesses": 1.7991253975465697,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134218,
+          "exceptions": 24719,
+          "witnesses": 254149,
+          "maxGap": 150,
+          "constant": 2.740617974471496,
+          "exceptionRate": 0.1841705285431164,
+          "avgWitnesses": 1.8935537707311985,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 257022,
+          "exceptions": 44942,
+          "witnesses": 508717,
+          "maxGap": 180,
+          "constant": 2.7287780131541033,
+          "exceptionRate": 0.17485662705916225,
+          "avgWitnesses": 1.979274147738326,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 492351,
+          "exceptions": 82934,
+          "witnesses": 1018860,
+          "maxGap": 194,
+          "constant": 2.746787007787773,
+          "exceptionRate": 0.16844486961537602,
+          "avgWitnesses": 2.069377334462609,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 148731,
+          "exceptions": 30339,
+          "witnesses": 252413,
+          "constant": 2.7072262417865622,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 282949,
+          "exceptions": 55058,
+          "witnesses": 506562,
+          "constant": 2.7221166861091994,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 539971,
+          "exceptions": 100000,
+          "witnesses": 1015279,
+          "constant": 2.725106391585482,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1032322,
+          "exceptions": 182934,
+          "witnesses": 2034139,
+          "constant": 2.7348928404903785,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.7314501601913594,
+        "theta": -0.04099393281201619,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -271.4695392425492,
+            "absResidual": 271.4695392425492
+          },
+          {
+            "N": 4000000,
+            "residual": -188.78045112389373,
+            "absResidual": 188.78045112389373
+          },
+          {
+            "N": 8000000,
+            "residual": -232.7897591619112,
+            "absResidual": 232.7897591619112
+          },
+          {
+            "N": 16000000,
+            "residual": 230.27713133647921,
+            "absResidual": 230.27713133647921
+          }
+        ]
+      }
+    },
+    {
+      "name": "wheel-W210-seed-424242",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 70887,
+          "exceptions": 13609,
+          "witnesses": 126641,
+          "maxGap": 120,
+          "constant": 2.7432131670701474,
+          "exceptionRate": 0.19198160452551244,
+          "avgWitnesses": 1.7865193900150944,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 134440,
+          "exceptions": 24789,
+          "witnesses": 254145,
+          "maxGap": 146,
+          "constant": 2.7483789380304184,
+          "exceptionRate": 0.1843870871764356,
+          "avgWitnesses": 1.8903972032133294,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 257752,
+          "exceptions": 45526,
+          "witnesses": 508549,
+          "maxGap": 176,
+          "constant": 2.7642371907537204,
+          "exceptionRate": 0.17662714547316802,
+          "avgWitnesses": 1.9730166982215462,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 491852,
+          "exceptions": 82773,
+          "witnesses": 1018850,
+          "maxGap": 180,
+          "constant": 2.741454662691023,
+          "exceptionRate": 0.16828842822637705,
+          "avgWitnesses": 2.071456454380586,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 149798,
+          "exceptions": 30785,
+          "witnesses": 252104,
+          "constant": 2.747023957724359,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 284238,
+          "exceptions": 55574,
+          "witnesses": 506249,
+          "constant": 2.7476281868907817,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 541990,
+          "exceptions": 101100,
+          "witnesses": 1014798,
+          "constant": 2.755082561892922,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 1033842,
+          "exceptions": 183873,
+          "witnesses": 2033648,
+          "constant": 2.7489310421216797,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 2.7501128764063383,
+        "theta": 0.5433485662302636,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -34.61650247255602,
+            "absResidual": 34.61650247255602
+          },
+          {
+            "N": 4000000,
+            "residual": -50.255757236867794,
+            "absResidual": 50.255757236867794
+          },
+          {
+            "N": 8000000,
+            "residual": 182.36665922215616,
+            "absResidual": 182.36665922215616
+          },
+          {
+            "N": 16000000,
+            "residual": -79.05160664024879,
+            "absResidual": 79.05160664024879
+          }
+        ]
+      }
+    }
+  ],
+  "composite": [
+    {
+      "name": "composite-W210-seed-12345",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 48807,
+          "exceptions": 6546,
+          "witnesses": 133876,
+          "maxGap": 208,
+          "constant": 1.3194998450761397,
+          "exceptionRate": 0.1341201057225398,
+          "avgWitnesses": 2.742967197328252,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 94766,
+          "exceptions": 12174,
+          "witnesses": 266800,
+          "maxGap": 210,
+          "constant": 1.3497424338046033,
+          "exceptionRate": 0.1284637950319735,
+          "avgWitnesses": 2.8153557182955913,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 184537,
+          "exceptions": 22943,
+          "witnesses": 531127,
+          "maxGap": 222,
+          "constant": 1.3930477939520847,
+          "exceptionRate": 0.12432737066279391,
+          "avgWitnesses": 2.878159935405908,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 358601,
+          "exceptions": 43536,
+          "witnesses": 1057748,
+          "maxGap": 252,
+          "constant": 1.4419191064105008,
+          "exceptionRate": 0.1214051271468847,
+          "avgWitnesses": 2.949651562600216,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 100237,
+          "exceptions": 13604,
+          "witnesses": 269195,
+          "constant": 1.2139195686497377,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 195003,
+          "exceptions": 25778,
+          "witnesses": 535995,
+          "constant": 1.2744873394333782,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 379540,
+          "exceptions": 48721,
+          "witnesses": 1067122,
+          "constant": 1.3276990850443626,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 738141,
+          "exceptions": 92257,
+          "witnesses": 2124870,
+          "constant": 1.3792570478157196,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 1.3583216424199407,
+        "theta": -0.12195509128259426,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -1618.2668624041744,
+            "absResidual": 1618.2668624041744
+          },
+          {
+            "N": 4000000,
+            "residual": -1695.6470225497833,
+            "absResidual": 1695.6470225497833
+          },
+          {
+            "N": 8000000,
+            "residual": -1123.7197002705507,
+            "absResidual": 1123.7197002705507
+          },
+          {
+            "N": 16000000,
+            "residual": 1400.3464391624002,
+            "absResidual": 1400.3464391624002
+          }
+        ]
+      }
+    },
+    {
+      "name": "composite-W210-seed-271828",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 48655,
+          "exceptions": 6467,
+          "witnesses": 133937,
+          "maxGap": 206,
+          "constant": 1.3035755420267943,
+          "exceptionRate": 0.13291542493063405,
+          "avgWitnesses": 2.752790052409824,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 94801,
+          "exceptions": 12270,
+          "witnesses": 266326,
+          "maxGap": 214,
+          "constant": 1.3603860409711257,
+          "exceptionRate": 0.12942901446187277,
+          "avgWitnesses": 2.8093163574223903,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 184745,
+          "exceptions": 23146,
+          "witnesses": 531452,
+          "maxGap": 210,
+          "constant": 1.4053735012341435,
+          "exceptionRate": 0.1252862053100219,
+          "avgWitnesses": 2.87667866518715,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 358991,
+          "exceptions": 43572,
+          "witnesses": 1057955,
+          "maxGap": 240,
+          "constant": 1.4431114320221965,
+          "exceptionRate": 0.12137351632770738,
+          "avgWitnesses": 2.947023741542267,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 100008,
+          "exceptions": 13543,
+          "witnesses": 269384,
+          "constant": 1.2084763832860481,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 194809,
+          "exceptions": 25813,
+          "witnesses": 535710,
+          "constant": 1.276217770687943,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 379554,
+          "exceptions": 48959,
+          "witnesses": 1067162,
+          "constant": 1.3341848382563362,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 738545,
+          "exceptions": 92531,
+          "witnesses": 2125117,
+          "constant": 1.3833533920617012,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 1.3625834494725273,
+        "theta": -0.1687110271702492,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -1727.0275416457807,
+            "absResidual": 1727.0275416457807
+          },
+          {
+            "N": 4000000,
+            "residual": -1746.847064560734,
+            "absResidual": 1746.847064560734
+          },
+          {
+            "N": 8000000,
+            "residual": -1042.1101834364963,
+            "absResidual": 1042.1101834364963
+          },
+          {
+            "N": 16000000,
+            "residual": 1389.278812447592,
+            "absResidual": 1389.278812447592
+          }
+        ]
+      }
+    },
+    {
+      "name": "composite-W210-seed-314159",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 48615,
+          "exceptions": 6489,
+          "witnesses": 133700,
+          "maxGap": 186,
+          "constant": 1.3080101580658525,
+          "exceptionRate": 0.13347732181425487,
+          "avgWitnesses": 2.750179985601152,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 94920,
+          "exceptions": 12237,
+          "witnesses": 266851,
+          "maxGap": 234,
+          "constant": 1.3567273010076337,
+          "exceptionRate": 0.1289190897597977,
+          "avgWitnesses": 2.811325326590813,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 184825,
+          "exceptions": 23250,
+          "witnesses": 531084,
+          "maxGap": 288,
+          "constant": 1.4116881492998288,
+          "exceptionRate": 0.12579467063438388,
+          "avgWitnesses": 2.8734424455566074,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 359437,
+          "exceptions": 44223,
+          "witnesses": 1058061,
+          "maxGap": 242,
+          "constant": 1.4646726535003578,
+          "exceptionRate": 0.12303407829466638,
+          "avgWitnesses": 2.943661893461163,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 99809,
+          "exceptions": 13496,
+          "witnesses": 269119,
+          "constant": 1.2042824535795986,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 194729,
+          "exceptions": 25733,
+          "witnesses": 535970,
+          "constant": 1.272262499248938,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 379554,
+          "exceptions": 48983,
+          "witnesses": 1067054,
+          "constant": 1.3348388637903166,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 738991,
+          "exceptions": 93206,
+          "witnesses": 2125115,
+          "constant": 1.3934447510618377,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 1.369488747246373,
+        "theta": -0.12543046767707644,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -1851.4129577321928,
+            "absResidual": 1851.4129577321928
+          },
+          {
+            "N": 4000000,
+            "residual": -1966.5148042915425,
+            "absResidual": 1966.5148042915425
+          },
+          {
+            "N": 8000000,
+            "residual": -1271.505713063074,
+            "absResidual": 1271.505713063074
+          },
+          {
+            "N": 16000000,
+            "residual": 1602.3909738242073,
+            "absResidual": 1602.3909738242073
+          }
+        ]
+      }
+    },
+    {
+      "name": "composite-W210-seed-161803",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 48674,
+          "exceptions": 6453,
+          "witnesses": 134078,
+          "maxGap": 202,
+          "constant": 1.3007535136383026,
+          "exceptionRate": 0.1325759132185561,
+          "avgWitnesses": 2.754612318691704,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 94766,
+          "exceptions": 12050,
+          "witnesses": 266610,
+          "maxGap": 252,
+          "constant": 1.3359944412145122,
+          "exceptionRate": 0.127155308866049,
+          "avgWitnesses": 2.8133507798155457,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 184791,
+          "exceptions": 23237,
+          "witnesses": 530858,
+          "maxGap": 262,
+          "constant": 1.410898818291618,
+          "exceptionRate": 0.12574746605624731,
+          "avgWitnesses": 2.872748131673079,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 360027,
+          "exceptions": 44010,
+          "witnesses": 1057877,
+          "maxGap": 252,
+          "constant": 1.4576180602978257,
+          "exceptionRate": 0.12224083193760468,
+          "avgWitnesses": 2.938326847708644,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 99962,
+          "exceptions": 13443,
+          "witnesses": 269726,
+          "constant": 1.199553128591475,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 194728,
+          "exceptions": 25493,
+          "witnesses": 536336,
+          "constant": 1.260396684931923,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 379519,
+          "exceptions": 48730,
+          "witnesses": 1067194,
+          "constant": 1.3279443446196053,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 739546,
+          "exceptions": 92740,
+          "witnesses": 2125071,
+          "constant": 1.386477975811373,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 1.3622661440422417,
+        "theta": -0.12235419531598558,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -1823.4716033570458,
+            "absResidual": 1823.4716033570458
+          },
+          {
+            "N": 4000000,
+            "residual": -2060.4291903858975,
+            "absResidual": 2060.4291903858975
+          },
+          {
+            "N": 8000000,
+            "residual": -1259.4664020683485,
+            "absResidual": 1259.4664020683485
+          },
+          {
+            "N": 16000000,
+            "residual": 1619.5030266926624,
+            "absResidual": 1619.5030266926624
+          }
+        ]
+      }
+    },
+    {
+      "name": "composite-W210-seed-424242",
+      "windows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "gaps": 49273,
+          "exceptions": 6425,
+          "witnesses": 133877,
+          "maxGap": 200,
+          "constant": 1.2951094568613195,
+          "exceptionRate": 0.13039595721794897,
+          "avgWitnesses": 2.717045846609705,
+          "mainLi2": 4960.970646891037
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "gaps": 94941,
+          "exceptions": 12126,
+          "witnesses": 267057,
+          "maxGap": 220,
+          "constant": 1.3444206302213424,
+          "exceptionRate": 0.1277214269915,
+          "avgWitnesses": 2.812873258128733,
+          "mainLi2": 9019.498605881705
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "gaps": 185170,
+          "exceptions": 23449,
+          "witnesses": 531033,
+          "maxGap": 210,
+          "constant": 1.423770985502438,
+          "exceptionRate": 0.12663498406869364,
+          "avgWitnesses": 2.867813360695577,
+          "mainLi2": 16469.64310887753
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "gaps": 359989,
+          "exceptions": 43919,
+          "witnesses": 1058165,
+          "maxGap": 258,
+          "constant": 1.4546041261127063,
+          "exceptionRate": 0.12200095002902867,
+          "avgWitnesses": 2.9394370383539496,
+          "mainLi2": 30193.09461012559
+        }
+      ],
+      "cumulative": [
+        {
+          "N": 2000000,
+          "gaps": 100843,
+          "exceptions": 13556,
+          "witnesses": 269330,
+          "constant": 1.2096364063963427,
+          "mainLi2": 11206.673284896418
+        },
+        {
+          "N": 4000000,
+          "gaps": 195784,
+          "exceptions": 25682,
+          "witnesses": 536387,
+          "constant": 1.2697410137065723,
+          "mainLi2": 20226.17189077813
+        },
+        {
+          "N": 8000000,
+          "gaps": 380954,
+          "exceptions": 49131,
+          "witnesses": 1067420,
+          "constant": 1.338872021249863,
+          "mainLi2": 36695.814999655646
+        },
+        {
+          "N": 16000000,
+          "gaps": 740943,
+          "exceptions": 93050,
+          "witnesses": 2125585,
+          "constant": 1.3911125258706951,
+          "mainLi2": 66888.90960978168
+        }
+      ],
+      "residualFit": {
+        "cHat": 1.3686449252212736,
+        "theta": -0.160996680152733,
+        "residuals": [
+          {
+            "N": 2000000,
+            "residual": -1781.9565199863027,
+            "absResidual": 1781.9565199863027
+          },
+          {
+            "N": 4000000,
+            "residual": -2000.4475149666578,
+            "absResidual": 2000.4475149666578
+          },
+          {
+            "N": 8000000,
+            "residual": -1092.5409761373885,
+            "absResidual": 1092.5409761373885
+          },
+          {
+            "N": 16000000,
+            "residual": 1502.8333089878288,
+            "absResidual": 1502.8333089878288
+          }
+        ]
+      }
+    }
+  ],
+  "groupSummary": {
+    "cramer": [
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "constantRange": [
+          2.087494713658494,
+          2.1386943715639846
+        ],
+        "exceptionRateRange": [
+          0.1471817174042807,
+          0.15072521415481652
+        ]
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "constantRange": [
+          2.1153060534383137,
+          2.141138974998727
+        ],
+        "exceptionRateRange": [
+          0.14207206737607136,
+          0.14350265690609787
+        ]
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "constantRange": [
+          2.111764035812819,
+          2.1601560983931187
+        ],
+        "exceptionRateRange": [
+          0.13577928643651596,
+          0.1382347197812927
+        ]
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "constantRange": [
+          2.1443313723227093,
+          2.158904240910099
+        ],
+        "exceptionRateRange": [
+          0.1317321895817141,
+          0.13250881237269324
+        ]
+      }
+    ],
+    "wheel": [
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "constantRange": [
+          2.721644807243819,
+          2.7770775077320464
+        ],
+        "exceptionRateRange": [
+          0.19170263516583372,
+          0.195255034793577
+        ]
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "constantRange": [
+          2.730528721844897,
+          2.7483789380304184
+        ],
+        "exceptionRateRange": [
+          0.18340370709620726,
+          0.1847839872279791
+        ]
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "constantRange": [
+          2.722463365088418,
+          2.7642371907537204
+        ],
+        "exceptionRateRange": [
+          0.17485662705916225,
+          0.17662714547316802
+        ]
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "constantRange": [
+          2.7363541586854367,
+          2.747184449658338
+        ],
+        "exceptionRateRange": [
+          0.16806587643692775,
+          0.1686082793808251
+        ]
+      }
+    ],
+    "composite": [
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "constantRange": [
+          1.2951094568613195,
+          1.3194998450761397
+        ],
+        "exceptionRateRange": [
+          0.13039595721794897,
+          0.1341201057225398
+        ]
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "constantRange": [
+          1.3359944412145122,
+          1.3603860409711257
+        ],
+        "exceptionRateRange": [
+          0.127155308866049,
+          0.12942901446187277
+        ]
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "constantRange": [
+          1.3930477939520847,
+          1.423770985502438
+        ],
+        "exceptionRateRange": [
+          0.12432737066279391,
+          0.12663498406869364
+        ]
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "constantRange": [
+          1.4419191064105008,
+          1.4646726535003578
+        ],
+        "exceptionRateRange": [
+          0.12137351632770738,
+          0.12303407829466638
+        ]
+      }
+    ]
+  }
+}

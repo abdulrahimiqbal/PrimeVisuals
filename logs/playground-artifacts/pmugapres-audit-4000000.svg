@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="54" x2="926" y1="225.52615967928864" y2="225.52615967928864" stroke="#64748b" stroke-width="1"/>
+<path d="M 54.00 217.56 L 272.00 350.50 L 490.00 318.07 L 708.00 390.14 L 926.00 466.00" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 54.00 226.27 L 272.00 303.60 L 490.00 163.32 L 708.00 209.03 L 926.00 204.25" fill="none" stroke="#fbbf24" stroke-width="1.6" />
+<path d="M 54.00 302.35 L 272.00 272.00 L 490.00 62.24 L 708.00 54.00 L 926.00 98.89" fill="none" stroke="#f472b6" stroke-width="1.6" />
+<path d="M 54.00 208.39 L 272.00 239.38 L 490.00 347.82 L 708.00 365.08 L 926.00 265.55" fill="none" stroke="#a7f3d0" stroke-width="1.6" />
+<path d="M 54.00 179.99 L 272.00 222.17 L 490.00 78.26 L 708.00 170.95 L 926.00 193.78" fill="none" stroke="#c4b5fd" stroke-width="1.6" />
+<path d="M 54.00 364.33 L 272.00 261.07 L 490.00 240.09 L 708.00 227.88 L 926.00 67.22" fill="none" stroke="#fb7185" stroke-width="1.6" />
+<g font-family="Menlo, Consolas, monospace" font-size="12"><text x="54" y="22" fill="#7dd3fc">real-primes</text>
+<text x="54" y="40" fill="#fbbf24">cramer-seed-12345</text>
+<text x="54" y="58" fill="#f472b6">cramer-seed-271828</text>
+<text x="54" y="76" fill="#a7f3d0">cramer-seed-314159</text>
+<text x="54" y="94" fill="#c4b5fd">composite-W210-seed-12345</text>
+<text x="54" y="112" fill="#fb7185">composite-W210-seed-271828</text></g>
+<text x="54" y="502" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="12">Σ μ(label-1)(next-label gap - log label), x-axis log-scaled, N=4000000</text>
+</svg>

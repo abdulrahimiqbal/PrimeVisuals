@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="54" x2="926" y1="432.87623107570136" y2="432.87623107570136" stroke="#64748b" stroke-width="1"/>
+<path d="M 54.00 462.21 L 272.00 466.00 L 490.00 462.19 L 708.00 462.04 L 926.00 459.55" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 54.00 416.67 L 272.00 417.19 L 490.00 418.62 L 708.00 419.84 L 926.00 419.63" fill="none" stroke="#fbbf24" stroke-width="1.6" />
+<path d="M 54.00 422.52 L 272.00 422.17 L 490.00 420.29 L 708.00 419.54 L 926.00 419.93" fill="none" stroke="#f472b6" stroke-width="1.6" />
+<path d="M 54.00 413.13 L 272.00 417.62 L 490.00 415.65 L 708.00 416.90 L 926.00 417.74" fill="none" stroke="#a7f3d0" stroke-width="1.6" />
+<path d="M 54.00 437.38 L 272.00 435.51 L 490.00 434.71 L 708.00 432.85 L 926.00 432.09" fill="none" stroke="#c4b5fd" stroke-width="1.6" />
+<path d="M 54.00 433.54 L 272.00 434.25 L 490.00 436.39 L 708.00 434.47 L 926.00 433.51" fill="none" stroke="#fb7185" stroke-width="1.6" />
+<path d="M 54.00 54.00 L 272.00 109.20 L 490.00 149.89 L 708.00 184.87 L 926.00 211.16" fill="none" stroke="#93c5fd" stroke-width="1.6" />
+<g font-family="Menlo, Consolas, monospace" font-size="12"><text x="54" y="22" fill="#7dd3fc">real-primes</text>
+<text x="54" y="40" fill="#fbbf24">cramer-seed-12345</text>
+<text x="54" y="58" fill="#f472b6">cramer-seed-271828</text>
+<text x="54" y="76" fill="#a7f3d0">cramer-seed-314159</text>
+<text x="54" y="94" fill="#c4b5fd">wheel-W210-seed-12345</text>
+<text x="54" y="112" fill="#fb7185">wheel-W210-seed-271828</text>
+<text x="54" y="130" fill="#93c5fd">composite-W210-seed-12345</text></g>
+<text x="54" y="502" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="12">gapac1mean minus five-seed W=210 fake-label baseline, x-axis log-scaled, N=16000000</text>
+</svg>

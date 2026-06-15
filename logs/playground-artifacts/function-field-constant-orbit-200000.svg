@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="780" viewBox="0 0 1120 780">
+<rect width="1120" height="780" fill="#08111f"/>
+<text x="92" y="38" fill="#e5e7eb" font-size="24" font-weight="700">Function-field constant-orbit companion residual</text>
+<text x="92" y="66" fill="#94a3b8" font-size="15">Finite-field constant shifts first; integer shifts H={2,4,6,8,10,12} with HL Bernoulli controls</text>
+<line x1="92" x2="1078" y1="92" y2="92" stroke="#223044" stroke-width="1"/>
+<text x="80" y="97" fill="#94a3b8" text-anchor="end" font-size="13">5.80</text>
+<line x1="92" x2="1078" y1="234.5" y2="234.5" stroke="#223044" stroke-width="1"/>
+<text x="80" y="239.5" fill="#94a3b8" text-anchor="end" font-size="13">2.90</text>
+<line x1="92" x2="1078" y1="377" y2="377" stroke="#223044" stroke-width="1"/>
+<text x="80" y="382" fill="#94a3b8" text-anchor="end" font-size="13">0.00</text>
+<line x1="92" x2="1078" y1="519.5" y2="519.5" stroke="#223044" stroke-width="1"/>
+<text x="80" y="524.5" fill="#94a3b8" text-anchor="end" font-size="13">-2.90</text>
+<line x1="92" x2="1078" y1="662" y2="662" stroke="#223044" stroke-width="1"/>
+<text x="80" y="667" fill="#94a3b8" text-anchor="end" font-size="13">-5.80</text>
+<line x1="92" x2="1078" y1="377" y2="377" stroke="#cbd5e1" stroke-width="1.2" opacity="0.5"/>
+<path d="M92,400.0712868741723 L338.5,370.60487648393354 L585,423.1592063879333 L831.5,445.930972334119 L1078,424.75443013645474" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,346.87512554683514 L338.5,405.50576533537617 L585,434.2292109757973 L831.5,492.5621030038413 L1078,458.6637368299296" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,345.5111214102368 L338.5,357.64168919625484 L585,322.79116479129954 L831.5,359.8005309794556 L1078,401.87586176495375" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,423.2593571963449 L338.5,417.47178437015646 L585,451.9412183163797 L831.5,436.05614466288375 L1078,379.8143851210063" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,348.23912968343353 L338.5,320.7464638390156 L585,333.8611693791635 L831.5,374.61277248630853 L1078,339.36834460710264" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,402.7992951473691 L338.5,401.5170923237827 L585,349.3591758021732 L831.5,341.69668024885755 L1078,308.72740482384233" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,344.14711727363834 L338.5,304.7917717926418 L585,281.4631476632739 L831.5,280.8019096095732 L1078,258.47626357929533" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,404.1632992839675 L338.5,368.61053997813684 L585,429.06320883479407 L831.5,410.82047394750464 L1078,366.74091748014854" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,300.49898490248995 L338.5,334.7068193795926 L585,346.40717457874274 L831.5,346.6340940844752 L1078,370.00928439036295" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,387.79524964478685 L338.5,351.6586796788647 L585,372.97518558961644 L831.5,351.022906382802 L1078,349.17344533774593" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,338.6911007272448 L338.5,339.6926606440844 L585,323.5291650971572 L831.5,321.3984233690961 L1078,265.0129973997242" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,314.13902626847386 L338.5,341.6869971498811 L585,316.14916203858115 L831.5,354.3145156065471 L1078,338.9597987433258" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,389.1592537813852 L338.5,313.7662860687271 L585,315.41116173272354 L831.5,373.5155694117268 L1078,387.57675653276556" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,451.90344406491107 L338.5,488.27073032594006 L585,430.5392094465093 L831.5,447.02817540870075 L1078,417.8091504522491" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,380.97522896179487 L338.5,363.62469871364505 L585,396.59119537705965 L831.5,353.21731253196543 L1078,392.88785276186405" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.28"/>
+<path d="M92,393.2512661911804 L338.5,402.5142605766811 L585,409.87520088249653 L831.5,438.2505508120471 L1078,437.0108060497589" fill="none" stroke="#67e8f9" stroke-width="4"/>
+<circle cx="92" cy="393.2512661911804" r="5" fill="#67e8f9"/>
+<circle cx="338.5" cy="402.5142605766811" r="5" fill="#67e8f9"/>
+<circle cx="585" cy="409.87520088249653" r="5" fill="#67e8f9"/>
+<circle cx="831.5" cy="438.2505508120471" r="5" fill="#67e8f9"/>
+<circle cx="1078" cy="437.0108060497589" r="5" fill="#67e8f9"/>
+<path d="M92,458.3151642111972 L338.5,408.1863203080683 L585,331.3316849187093 L831.5,339.7574711042507 L1078,440.56685369015975" fill="none" stroke="#f472b6" stroke-width="4"/>
+<circle cx="92" cy="458.3151642111972" r="5" fill="#f472b6"/>
+<circle cx="338.5" cy="408.1863203080683" r="5" fill="#f472b6"/>
+<circle cx="585" cy="331.3316849187093" r="5" fill="#f472b6"/>
+<circle cx="831.5" cy="339.7574711042507" r="5" fill="#f472b6"/>
+<circle cx="1078" cy="440.56685369015975" r="5" fill="#f472b6"/>
+<path d="M92,279.8921863438838 L338.5,567.7503691077828 L585,452.2891233188131 L831.5,310.4417000851759 L1078,242.2215329191152" fill="none" stroke="#f59e0b" stroke-width="4"/>
+<circle cx="92" cy="279.8921863438838" r="5" fill="#f59e0b"/>
+<circle cx="338.5" cy="567.7503691077828" r="5" fill="#f59e0b"/>
+<circle cx="585" cy="452.2891233188131" r="5" fill="#f59e0b"/>
+<circle cx="831.5" cy="310.4417000851759" r="5" fill="#f59e0b"/>
+<circle cx="1078" cy="242.2215329191152" r="5" fill="#f59e0b"/>
+<text x="92" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">12500</text>
+<text x="338.5" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">25000</text>
+<text x="585" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">50000</text>
+<text x="831.5" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">100000</text>
+<text x="1078" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">200000</text>
+<line x1="92" x2="116" y1="718" y2="718" stroke="#67e8f9" stroke-width="4"/>
+<text x="122" y="723" fill="#cbd5e1" font-size="13">Z primes</text>
+<line x1="452" x2="476" y1="718" y2="718" stroke="#a78bfa" stroke-width="4"/>
+<text x="482" y="723" fill="#cbd5e1" font-size="13">HL Bernoulli controls</text>
+<line x1="92" x2="116" y1="742" y2="742" stroke="#f472b6" stroke-width="4"/>
+<text x="122" y="747" fill="#cbd5e1" font-size="13">F3 constant orbit</text>
+<line x1="452" x2="476" y1="742" y2="742" stroke="#f59e0b" stroke-width="4"/>
+<text x="482" y="747" fill="#cbd5e1" font-size="13">F5 constant orbit</text>
+<text x="92" y="762" fill="#cbd5e1" font-size="14">Integer endpoint z=-1.221, obs=17614, exp=17760.9, theta=1.111</text>
+</svg>

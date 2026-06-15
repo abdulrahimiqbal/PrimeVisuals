@@ -1,0 +1,4630 @@
+{
+  "maxN": 200000,
+  "W": 30030,
+  "phiW": 5760,
+  "endpoints": [
+    12500,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    112358,
+    141421,
+    173205,
+    223606,
+    99991,
+    100003,
+    444444,
+    555555,
+    777777
+  ],
+  "real": {
+    "name": "real",
+    "labels": 17816,
+    "endpointRows": [
+      {
+        "N": 12500,
+        "count": 1324,
+        "rankMean": 1.6661631419939578,
+        "expectedRankMean": 1.6504474395954292,
+        "rawGapMean": 8.681268882175226,
+        "roughCandidatesPerGap": 1.6661631419939578,
+        "residual": 20.807589975653105,
+        "variance": 1441.9635583970853,
+        "z": 0.5479546778234792,
+        "residualPerSqrtCount": 0.5718442897222902
+      },
+      {
+        "N": 25000,
+        "count": 2594,
+        "rankMean": 1.7752505782575174,
+        "expectedRankMean": 1.7641325648171469,
+        "rawGapMean": 9.25366229760987,
+        "roughCandidatesPerGap": 1.7752505782575174,
+        "residual": 28.840126864312303,
+        "variance": 3554.194078225347,
+        "z": 0.4837562588650589,
+        "residualPerSqrtCount": 0.566255170483517
+      },
+      {
+        "N": 50000,
+        "count": 4965,
+        "rankMean": 1.8936555891238671,
+        "expectedRankMean": 1.8843087310402884,
+        "rawGapMean": 9.871500503524672,
+        "roughCandidatesPerGap": 1.8936555891238671,
+        "residual": 46.40715038495026,
+        "variance": 8412.505786544145,
+        "z": 0.5059670246883883,
+        "residualPerSqrtCount": 0.6586053816294373
+      },
+      {
+        "N": 100000,
+        "count": 9424,
+        "rankMean": 2.0149617996604414,
+        "expectedRankMean": 2.0094501899491175,
+        "rawGapMean": 10.504456706281834,
+        "roughCandidatesPerGap": 2.0149617996604414,
+        "residual": 51.94140991952213,
+        "variance": 19426.072249982175,
+        "z": 0.3726672548697883,
+        "residualPerSqrtCount": 0.5350521276775985
+      },
+      {
+        "N": 200000,
+        "count": 17815,
+        "rankMean": 2.142464215548695,
+        "expectedRankMean": 2.1377274793439365,
+        "rawGapMean": 11.169800729722144,
+        "roughCandidatesPerGap": 2.142464215548695,
+        "residual": 84.38495548772346,
+        "variance": 43980.16710980369,
+        "z": 0.40238018691746147,
+        "residualPerSqrtCount": 0.6322256510103027
+      }
+    ]
+  },
+  "w30030Runs": [
+    {
+      "name": "w30030-12345",
+      "labels": 17853,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1315,
+          "rankMean": 1.679087452471483,
+          "expectedRankMean": 1.6537705788876023,
+          "rawGapMean": 8.74828897338403,
+          "roughCandidatesPerGap": 1.679087452471483,
+          "residual": 33.29168876280429,
+          "variance": 1441.726492943216,
+          "z": 0.8767875740821263,
+          "residualPerSqrtCount": 0.9180639824118184
+        },
+        {
+          "N": 25000,
+          "count": 2544,
+          "rankMean": 1.8101415094339623,
+          "expectedRankMean": 1.7649886416471041,
+          "rawGapMean": 9.434748427672956,
+          "roughCandidatesPerGap": 1.8101415094339623,
+          "residual": 114.86889564975715,
+          "variance": 3490.2704670300286,
+          "z": 1.9443431058478875,
+          "residualPerSqrtCount": 2.2774239961182983
+        },
+        {
+          "N": 50000,
+          "count": 4951,
+          "rankMean": 1.8988083215512017,
+          "expectedRankMean": 1.8871297967919705,
+          "rawGapMean": 9.896182589375883,
+          "roughCandidatesPerGap": 1.8988083215512017,
+          "residual": 57.82037608293809,
+          "variance": 8425.563083615352,
+          "z": 0.6299142670041588,
+          "residualPerSqrtCount": 0.8217400402027821
+        },
+        {
+          "N": 100000,
+          "count": 9540,
+          "rankMean": 1.990566037735849,
+          "expectedRankMean": 2.0129990479692474,
+          "rawGapMean": 10.376939203354297,
+          "roughCandidatesPerGap": 1.990566037735849,
+          "residual": -214.01091762664575,
+          "variance": 19760.286619956903,
+          "z": -1.522436927082039,
+          "residualPerSqrtCount": -2.191097694120024
+        },
+        {
+          "N": 200000,
+          "count": 17852,
+          "rankMean": 2.138079766972888,
+          "expectedRankMean": 2.138093335877595,
+          "rawGapMean": 11.146762267533049,
+          "roughCandidatesPerGap": 2.138079766972888,
+          "residual": -0.2422320870035226,
+          "variance": 44079.41800870074,
+          "z": -0.0011537553956501565,
+          "residualPerSqrtCount": -0.0018129600403460836
+        }
+      ]
+    },
+    {
+      "name": "w30030-271828",
+      "labels": 17882,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1370,
+          "rankMean": 1.6131386861313868,
+          "expectedRankMean": 1.651032906819625,
+          "rawGapMean": 8.404379562043795,
+          "roughCandidatesPerGap": 1.6131386861313868,
+          "residual": -51.91508234288711,
+          "variance": 1493.9020088963916,
+          "z": -1.3431746650592327,
+          "residualPerSqrtCount": -1.402598156048072
+        },
+        {
+          "N": 25000,
+          "count": 2661,
+          "rankMean": 1.7301766253288238,
+          "expectedRankMean": 1.7632619992930938,
+          "rawGapMean": 9.018414130026306,
+          "roughCandidatesPerGap": 1.7301766253288238,
+          "residual": -88.0401801189206,
+          "variance": 3640.0085015233562,
+          "z": -1.4592500719770378,
+          "residualPerSqrtCount": -1.7067050955323582
+        },
+        {
+          "N": 50000,
+          "count": 5058,
+          "rankMean": 1.8592328983788058,
+          "expectedRankMean": 1.8827145421540463,
+          "rawGapMean": 9.691182285488335,
+          "roughCandidatesPerGap": 1.8592328983788058,
+          "residual": -118.77015421517827,
+          "variance": 8548.292055330337,
+          "z": -1.284599192239078,
+          "residualPerSqrtCount": -1.6700055246649552
+        },
+        {
+          "N": 100000,
+          "count": 9548,
+          "rankMean": 1.9892124005027232,
+          "expectedRankMean": 2.0076454685519582,
+          "rawGapMean": 10.369710934227063,
+          "roughCandidatesPerGap": 1.9892124005027232,
+          "residual": -175.99893373411336,
+          "variance": 19632.389243548285,
+          "z": -1.2560978107523841,
+          "residualPerSqrtCount": -1.8011663782432863
+        },
+        {
+          "N": 200000,
+          "count": 17881,
+          "rankMean": 2.1346680834405234,
+          "expectedRankMean": 2.1355349647562005,
+          "rawGapMean": 11.12890777920698,
+          "roughCandidatesPerGap": 2.1346680834405234,
+          "residual": -15.500704805522087,
+          "variance": 44024.817772831004,
+          "z": -0.07387587914585926,
+          "residualPerSqrtCount": -0.11591924506157952
+        }
+      ]
+    },
+    {
+      "name": "w30030-314159",
+      "labels": 17937,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1334,
+          "rankMean": 1.6551724137931034,
+          "expectedRankMean": 1.6505573775497995,
+          "rawGapMean": 8.620689655172415,
+          "roughCandidatesPerGap": 1.6551724137931034,
+          "residual": 6.156458348569424,
+          "variance": 1453.5099095738647,
+          "z": 0.16148119220017057,
+          "residualPerSqrtCount": 0.16855942100353838
+        },
+        {
+          "N": 25000,
+          "count": 2611,
+          "rankMean": 1.7633090769819992,
+          "expectedRankMean": 1.764519482080188,
+          "rawGapMean": 9.191114515511298,
+          "roughCandidatesPerGap": 1.7633090769819992,
+          "residual": -3.160367711370667,
+          "variance": 3580.5434906495893,
+          "z": -0.052815712079993984,
+          "residualPerSqrtCount": -0.06184921333367123
+        },
+        {
+          "N": 50000,
+          "count": 5017,
+          "rankMean": 1.8740283037671916,
+          "expectedRankMean": 1.8850824043437195,
+          "rawGapMean": 9.766792904125971,
+          "roughCandidatesPerGap": 1.8740283037671916,
+          "residual": -55.45842259241491,
+          "variance": 8511.46798427737,
+          "z": -0.601125675075623,
+          "residualPerSqrtCount": -0.782970613210904
+        },
+        {
+          "N": 100000,
+          "count": 9493,
+          "rankMean": 2.0005267038870747,
+          "expectedRankMean": 2.009059265227279,
+          "rawGapMean": 10.428736964078794,
+          "roughCandidatesPerGap": 2.0005267038870747,
+          "residual": -80.9996048025871,
+          "variance": 19555.615206791448,
+          "z": -0.5792248135043366,
+          "residualPerSqrtCount": -0.8313447518993654
+        },
+        {
+          "N": 200000,
+          "count": 17936,
+          "rankMean": 2.1280107047279215,
+          "expectedRankMean": 2.1374718086236033,
+          "rawGapMean": 11.094112399643176,
+          "roughCandidatesPerGap": 2.1280107047279215,
+          "residual": -169.69435947296142,
+          "variance": 44263.6527139447,
+          "z": -0.8065731895662177,
+          "residualPerSqrtCount": -1.2670816727760617
+        }
+      ]
+    },
+    {
+      "name": "w30030-161803",
+      "labels": 17704,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1284,
+          "rankMean": 1.722741433021807,
+          "expectedRankMean": 1.6490930752341695,
+          "rawGapMean": 8.975077881619939,
+          "roughCandidatesPerGap": 1.722741433021807,
+          "residual": 94.56449139932849,
+          "variance": 1394.2614664041957,
+          "z": 2.5325380475932033,
+          "residualPerSqrtCount": 2.639037608027566
+        },
+        {
+          "N": 25000,
+          "count": 2507,
+          "rankMean": 1.8372556840845633,
+          "expectedRankMean": 1.7636167161993264,
+          "rawGapMean": 9.575588352612684,
+          "roughCandidatesPerGap": 1.8372556840845633,
+          "residual": 184.61289248828479,
+          "variance": 3432.387602971003,
+          "z": 3.1511121804539566,
+          "residualPerSqrtCount": 3.6870995187471127
+        },
+        {
+          "N": 50000,
+          "count": 4815,
+          "rankMean": 1.9528556593977155,
+          "expectedRankMean": 1.8842302616593285,
+          "rawGapMean": 10.177777777777777,
+          "roughCandidatesPerGap": 1.9528556593977155,
+          "residual": 330.4312901103407,
+          "variance": 8157.853009380352,
+          "z": 3.6584171822773386,
+          "residualPerSqrtCount": 4.761930145332979
+        },
+        {
+          "N": 100000,
+          "count": 9282,
+          "rankMean": 2.0461107519931048,
+          "expectedRankMean": 2.0113818122100104,
+          "rawGapMean": 10.666235725059254,
+          "roughCandidatesPerGap": 2.0461107519931048,
+          "residual": 322.35401906672854,
+          "variance": 19186.044966678215,
+          "z": 2.3272356458842505,
+          "residualPerSqrtCount": 3.3458949949166796
+        },
+        {
+          "N": 200000,
+          "count": 17703,
+          "rankMean": 2.1559057786815794,
+          "expectedRankMean": 2.14031145922447,
+          "rawGapMean": 11.239337965316613,
+          "roughCandidatesPerGap": 2.1559057786815794,
+          "residual": 276.0662373490919,
+          "variance": 43846.900982595085,
+          "z": 1.3183898299903296,
+          "residualPerSqrtCount": 2.074865079117705
+        }
+      ]
+    },
+    {
+      "name": "w30030-424242",
+      "labels": 17922,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1322,
+          "rankMean": 1.6701966717095311,
+          "expectedRankMean": 1.6496920709250362,
+          "rawGapMean": 8.69894099848714,
+          "roughCandidatesPerGap": 1.6701966717095311,
+          "residual": 27.10708223709943,
+          "variance": 1438.1675519602093,
+          "z": 0.7147892796363485,
+          "residualPerSqrtCount": 0.7455332988566901
+        },
+        {
+          "N": 25000,
+          "count": 2626,
+          "rankMean": 1.7532368621477532,
+          "expectedRankMean": 1.7655657565802458,
+          "rawGapMean": 9.138613861386139,
+          "roughCandidatesPerGap": 1.7532368621477532,
+          "residual": -32.375676779726916,
+          "variance": 3608.290517382624,
+          "z": -0.538974362065519,
+          "residualPerSqrtCount": -0.6317881774754667
+        },
+        {
+          "N": 50000,
+          "count": 4991,
+          "rankMean": 1.8839911841314365,
+          "expectedRankMean": 1.8835258027771604,
+          "rawGapMean": 9.818873973151673,
+          "roughCandidatesPerGap": 1.8839911841314365,
+          "residual": 2.3227183391826496,
+          "variance": 8445.17031032232,
+          "z": 0.025275068590260404,
+          "residualPerSqrtCount": 0.032877801116960315
+        },
+        {
+          "N": 100000,
+          "count": 9443,
+          "rankMean": 2.011119347664937,
+          "expectedRankMean": 2.008432793897477,
+          "rawGapMean": 10.483956369797733,
+          "roughCandidatesPerGap": 2.011119347664937,
+          "residual": 25.36912722610034,
+          "variance": 19436.667247833204,
+          "z": 0.1819678344139201,
+          "residualPerSqrtCount": 0.26106613017851676
+        },
+        {
+          "N": 200000,
+          "count": 17921,
+          "rankMean": 2.1296802633781597,
+          "expectedRankMean": 2.137703781310627,
+          "rawGapMean": 11.10261704145974,
+          "roughCandidatesPerGap": 2.1296802633781597,
+          "residual": -143.78946486775186,
+          "variance": 44242.09531954636,
+          "z": -0.6836112857370163,
+          "residualPerSqrtCount": -1.074103044342733
+        }
+      ]
+    },
+    {
+      "name": "w30030-8675309",
+      "labels": 18046,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1338,
+          "rankMean": 1.6509715994020926,
+          "expectedRankMean": 1.65015971656077,
+          "rawGapMean": 8.600896860986547,
+          "roughCandidatesPerGap": 1.6509715994020926,
+          "residual": 1.0862992416917685,
+          "variance": 1456.4140959540075,
+          "z": 0.02846472809023808,
+          "residualPerSqrtCount": 0.02969760453088814
+        },
+        {
+          "N": 25000,
+          "count": 2599,
+          "rankMean": 1.7714505579068873,
+          "expectedRankMean": 1.7630016904150168,
+          "rawGapMean": 9.233551365909966,
+          "roughCandidatesPerGap": 1.7714505579068873,
+          "residual": 21.95860661136674,
+          "variance": 3553.925837629155,
+          "z": 0.3683414538886492,
+          "residualPerSqrtCount": 0.43072654615835954
+        },
+        {
+          "N": 50000,
+          "count": 5046,
+          "rankMean": 1.8632580261593341,
+          "expectedRankMean": 1.8853044918687847,
+          "rawGapMean": 9.710661910424099,
+          "roughCandidatesPerGap": 1.8632580261593341,
+          "residual": -111.24646596987964,
+          "variance": 8563.711659109369,
+          "z": -1.202140435182349,
+          "residualPerSqrtCount": -1.566075156977575
+        },
+        {
+          "N": 100000,
+          "count": 9544,
+          "rankMean": 1.9898365465213748,
+          "expectedRankMean": 2.009523408420918,
+          "rawGapMean": 10.37300922045264,
+          "roughCandidatesPerGap": 1.9898365465213748,
+          "residual": -187.89140996926938,
+          "variance": 19674.874696392315,
+          "z": -1.339525353097135,
+          "residualPerSqrtCount": -1.9232764336350698
+        },
+        {
+          "N": 200000,
+          "count": 18045,
+          "rankMean": 2.115267387087836,
+          "expectedRankMean": 2.1377373137683167,
+          "rawGapMean": 11.027763923524523,
+          "roughCandidatesPerGap": 2.115267387087836,
+          "residual": -405.4698269491947,
+          "variance": 44547.404590073376,
+          "z": -1.9210883509021497,
+          "residualPerSqrtCount": -3.018422979420514
+        }
+      ]
+    },
+    {
+      "name": "w30030-112358",
+      "labels": 17892,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1345,
+          "rankMean": 1.6423791821561338,
+          "expectedRankMean": 1.6508974401867953,
+          "rawGapMean": 8.556133828996282,
+          "roughCandidatesPerGap": 1.6423791821561338,
+          "residual": -11.457057051240914,
+          "variance": 1465.7311371439694,
+          "z": -0.29925810311140405,
+          "residualPerSqrtCount": -0.3124006533835838
+        },
+        {
+          "N": 25000,
+          "count": 2614,
+          "rankMean": 1.7612853863810252,
+          "expectedRankMean": 1.763124686712269,
+          "rawGapMean": 9.180566182096404,
+          "roughCandidatesPerGap": 1.7612853863810252,
+          "residual": -4.807931065876583,
+          "variance": 3574.2523913506325,
+          "z": -0.08042028800735226,
+          "residualPerSqrtCount": -0.09403844534058337
+        },
+        {
+          "N": 50000,
+          "count": 4998,
+          "rankMean": 1.8813525410164065,
+          "expectedRankMean": 1.883597117502399,
+          "rawGapMean": 9.805122048819527,
+          "roughCandidatesPerGap": 1.8813525410164065,
+          "residual": -11.218393277006145,
+          "variance": 8458.592888257828,
+          "z": -0.12197802558797202,
+          "residualPerSqrtCount": -0.15868377913390966
+        },
+        {
+          "N": 100000,
+          "count": 9505,
+          "rankMean": 1.9980010520778537,
+          "expectedRankMean": 2.0092548998529796,
+          "rawGapMean": 10.415570752235665,
+          "roughCandidatesPerGap": 1.9980010520778537,
+          "residual": -106.96782310255327,
+          "variance": 19587.87998807179,
+          "z": -0.7642922227560095,
+          "residualPerSqrtCount": -1.0971780156531221
+        },
+        {
+          "N": 200000,
+          "count": 17891,
+          "rankMean": 2.1334190375048907,
+          "expectedRankMean": 2.136821549129354,
+          "rawGapMean": 11.122352020569002,
+          "roughCandidatesPerGap": 2.1334190375048907,
+          "residual": -60.87433547344875,
+          "variance": 44115.73671201228,
+          "z": -0.2898260815881723,
+          "residualPerSqrtCount": -0.45511057346592854
+        }
+      ]
+    },
+    {
+      "name": "w30030-141421",
+      "labels": 17796,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1342,
+          "rankMean": 1.646795827123696,
+          "expectedRankMean": 1.6491789857018686,
+          "rawGapMean": 8.57973174366617,
+          "roughCandidatesPerGap": 1.646795827123696,
+          "residual": -3.1981988119057787,
+          "variance": 1458.070622428579,
+          "z": -0.08375604811525536,
+          "residualPerSqrtCount": -0.08730300643901254
+        },
+        {
+          "N": 25000,
+          "count": 2612,
+          "rankMean": 1.762633996937213,
+          "expectedRankMean": 1.7618691985267927,
+          "rawGapMean": 9.187595712098009,
+          "roughCandidatesPerGap": 1.762633996937213,
+          "residual": 1.9976534480141637,
+          "variance": 3564.340959226916,
+          "z": 0.03346035378682715,
+          "residualPerSqrtCount": 0.0390871101721407
+        },
+        {
+          "N": 50000,
+          "count": 4991,
+          "rankMean": 1.8839911841314365,
+          "expectedRankMean": 1.8831478623206537,
+          "rawGapMean": 9.818873973151673,
+          "roughCandidatesPerGap": 1.8839911841314365,
+          "residual": 4.209019157616243,
+          "variance": 8442.782245950031,
+          "z": 0.0458076601222786,
+          "residualPerSqrtCount": 0.05957816426862971
+        },
+        {
+          "N": 100000,
+          "count": 9421,
+          "rankMean": 2.0158157308141385,
+          "expectedRankMean": 2.008137984749858,
+          "rawGapMean": 10.50843859462902,
+          "roughCandidatesPerGap": 2.0158157308141385,
+          "residual": 72.33204567155752,
+          "variance": 19386.973986570236,
+          "z": 0.5194882561134959,
+          "residualPerSqrtCount": 0.7452161290363588
+        },
+        {
+          "N": 200000,
+          "count": 17795,
+          "rankMean": 2.1449845462208486,
+          "expectedRankMean": 2.1368851852909807,
+          "rawGapMean": 11.182691767350379,
+          "roughCandidatesPerGap": 2.1449845462208486,
+          "residual": 144.12812774696835,
+          "variance": 43889.267498745256,
+          "z": 0.6879701239030593,
+          "residualPerSqrtCount": 1.0804377477525275
+        }
+      ]
+    },
+    {
+      "name": "w30030-173205",
+      "labels": 17930,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1368,
+          "rankMean": 1.6133040935672514,
+          "expectedRankMean": 1.6526849008574198,
+          "rawGapMean": 8.403508771929825,
+          "roughCandidatesPerGap": 1.6133040935672514,
+          "residual": -53.87294437295367,
+          "variance": 1496.9821941038829,
+          "z": -1.3923948067323153,
+          "residualPerSqrtCount": -1.45655759944651
+        },
+        {
+          "N": 25000,
+          "count": 2665,
+          "rankMean": 1.727954971857411,
+          "expectedRankMean": 1.7654033022473599,
+          "rawGapMean": 9.006378986866793,
+          "roughCandidatesPerGap": 1.727954971857411,
+          "residual": -99.79980048921799,
+          "variance": 3660.0013378761546,
+          "z": -1.6496395149276473,
+          "residualPerSqrtCount": -1.9332190516264252
+        },
+        {
+          "N": 50000,
+          "count": 5040,
+          "rankMean": 1.8652777777777778,
+          "expectedRankMean": 1.8832784281631467,
+          "rawGapMean": 9.721428571428572,
+          "roughCandidatesPerGap": 1.8652777777777778,
+          "residual": -90.72327794226723,
+          "variance": 8524.740903979804,
+          "z": -0.9826031212313422,
+          "residualPerSqrtCount": -1.2779194059304153
+        },
+        {
+          "N": 100000,
+          "count": 9497,
+          "rankMean": 1.9997894071812152,
+          "expectedRankMean": 2.0080770497436515,
+          "rawGapMean": 10.424976308307887,
+          "roughCandidatesPerGap": 1.9997894071812152,
+          "residual": -78.70774141544682,
+          "variance": 19539.37578605048,
+          "z": -0.563069634878828,
+          "residualPerSqrtCount": -0.8076519223946653
+        },
+        {
+          "N": 200000,
+          "count": 17929,
+          "rankMean": 2.128841541636455,
+          "expectedRankMean": 2.1367138892638855,
+          "rawGapMean": 11.098555413018016,
+          "roughCandidatesPerGap": 2.128841541636455,
+          "residual": -141.14332061228046,
+          "variance": 44207.511522995395,
+          "z": -0.6712932746963889,
+          "residualPerSqrtCount": -1.0541011740579604
+        }
+      ]
+    },
+    {
+      "name": "w30030-223606",
+      "labels": 17930,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1366,
+          "rankMean": 1.6149341142020497,
+          "expectedRankMean": 1.6514133210273667,
+          "rawGapMean": 8.414348462664714,
+          "roughCandidatesPerGap": 1.6149341142020497,
+          "residual": -49.830596523382916,
+          "variance": 1490.93896240159,
+          "z": -1.2905242034635864,
+          "residualPerSqrtCount": -1.3482509546836612
+        },
+        {
+          "N": 25000,
+          "count": 2622,
+          "rankMean": 1.7551487414187643,
+          "expectedRankMean": 1.7625241235459461,
+          "rawGapMean": 9.150266971777269,
+          "roughCandidatesPerGap": 1.7551487414187643,
+          "residual": -19.338251937477146,
+          "variance": 3582.368074730355,
+          "z": -0.323096393958945,
+          "residualPerSqrtCount": -0.3776598968789981
+        },
+        {
+          "N": 50000,
+          "count": 4939,
+          "rankMean": 1.9032192751569144,
+          "expectedRankMean": 1.8814017493027828,
+          "rawGapMean": 9.919821826280623,
+          "roughCandidatesPerGap": 1.9032192751569144,
+          "residual": 107.75676019354842,
+          "variance": 8330.964557138042,
+          "z": 1.1805839699114633,
+          "residualPerSqrtCount": 1.5332925035621991
+        },
+        {
+          "N": 100000,
+          "count": 9439,
+          "rankMean": 2.011759720309355,
+          "expectedRankMean": 2.0089458054552685,
+          "rawGapMean": 10.487763534272698,
+          "roughCandidatesPerGap": 2.011759720309355,
+          "residual": 26.560542307742562,
+          "variance": 19447.907853336812,
+          "z": 0.19045855896400374,
+          "residualPerSqrtCount": 0.27338453601549273
+        },
+        {
+          "N": 200000,
+          "count": 17929,
+          "rankMean": 2.128785766077305,
+          "expectedRankMean": 2.13844147455917,
+          "rawGapMean": 11.098443861899716,
+          "roughCandidatesPerGap": 2.128785766077305,
+          "residual": -173.11719737141152,
+          "variance": 44310.40008568671,
+          "z": -0.8224080958896073,
+          "residualPerSqrtCount": -1.292891794009211
+        }
+      ]
+    },
+    {
+      "name": "w30030-99991",
+      "labels": 17895,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1360,
+          "rankMean": 1.6235294117647059,
+          "expectedRankMean": 1.6467793256737449,
+          "rawGapMean": 8.455882352941176,
+          "roughCandidatesPerGap": 1.6235294117647059,
+          "residual": -31.61988291629079,
+          "variance": 1470.5982770016365,
+          "z": -0.8245428519070691,
+          "residualPerSqrtCount": -0.8574144596504083
+        },
+        {
+          "N": 25000,
+          "count": 2695,
+          "rankMean": 1.7087198515769944,
+          "expectedRankMean": 1.7640406791651841,
+          "rawGapMean": 8.90686456400742,
+          "roughCandidatesPerGap": 1.7087198515769944,
+          "residual": -149.08963035015654,
+          "variance": 3694.053643633865,
+          "z": -2.4529903463503793,
+          "residualPerSqrtCount": -2.871891665050604
+        },
+        {
+          "N": 50000,
+          "count": 5074,
+          "rankMean": 1.8531730390224674,
+          "expectedRankMean": 1.882042564184708,
+          "rawGapMean": 9.65825778478518,
+          "roughCandidatesPerGap": 1.8531730390224674,
+          "residual": -146.48397067320462,
+          "variance": 8568.26311140684,
+          "z": -1.5824999558474837,
+          "residualPerSqrtCount": -2.0564344573107296
+        },
+        {
+          "N": 100000,
+          "count": 9529,
+          "rankMean": 1.993073774792738,
+          "expectedRankMean": 2.0071416862079543,
+          "rawGapMean": 10.389757582117745,
+          "roughCandidatesPerGap": 1.993073774792738,
+          "residual": -134.0531278755403,
+          "variance": 19584.135722879415,
+          "z": -0.9579100875640665,
+          "residualPerSqrtCount": -1.3732616385397862
+        },
+        {
+          "N": 200000,
+          "count": 17894,
+          "rankMean": 2.133117246004247,
+          "expectedRankMean": 2.135843406206562,
+          "rawGapMean": 11.12082262210797,
+          "roughCandidatesPerGap": 2.133117246004247,
+          "residual": -48.78191066011287,
+          "variance": 44081.83151505976,
+          "z": -0.23234267830574873,
+          "residualPerSqrtCount": -0.3646742428993045
+        }
+      ]
+    },
+    {
+      "name": "w30030-100003",
+      "labels": 17909,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1341,
+          "rankMean": 1.6472781506338554,
+          "expectedRankMean": 1.6501887721306452,
+          "rawGapMean": 8.58165548098434,
+          "roughCandidatesPerGap": 1.6472781506338554,
+          "residual": -3.9031434271943857,
+          "variance": 1459.574325779267,
+          "z": -0.10216482671065372,
+          "residualPerSqrtCount": -0.1065859895307242
+        },
+        {
+          "N": 25000,
+          "count": 2621,
+          "rankMean": 1.756581457458985,
+          "expectedRankMean": 1.7637974504142908,
+          "rawGapMean": 9.15604731018695,
+          "roughCandidatesPerGap": 1.756581457458985,
+          "residual": -18.91311753585702,
+          "variance": 3588.973799453442,
+          "z": -0.3157024684100218,
+          "residualPerSqrtCount": -0.3694278317907553
+        },
+        {
+          "N": 50000,
+          "count": 4977,
+          "rankMean": 1.8892907373920031,
+          "expectedRankMean": 1.8826841942968198,
+          "rawGapMean": 9.846493871810328,
+          "roughCandidatesPerGap": 1.8892907373920031,
+          "residual": 32.880764984725964,
+          "variance": 8410.578411697556,
+          "z": 0.358532872798089,
+          "residualPerSqrtCount": 0.46607745158307906
+        },
+        {
+          "N": 100000,
+          "count": 9492,
+          "rankMean": 2.0009481668773703,
+          "expectedRankMean": 2.009205158212858,
+          "rawGapMean": 10.430889169827223,
+          "roughCandidatesPerGap": 2.0009481668773703,
+          "residual": -78.37536175646393,
+          "variance": 19560.637245154554,
+          "z": -0.5603870090403237,
+          "residualPerSqrtCount": -0.8044530333953362
+        },
+        {
+          "N": 200000,
+          "count": 17908,
+          "rankMean": 2.1311704266249722,
+          "expectedRankMean": 2.1372237273343426,
+          "rawGapMean": 11.110341746705384,
+          "roughCandidatesPerGap": 2.1311704266249722,
+          "residual": -108.40250910339782,
+          "variance": 44182.20675587595,
+          "z": -0.5157219697558918,
+          "residualPerSqrtCount": -0.8100573962708354
+        }
+      ]
+    },
+    {
+      "name": "w30030-444444",
+      "labels": 17839,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1312,
+          "rankMean": 1.6836890243902438,
+          "expectedRankMean": 1.6514288425401504,
+          "rawGapMean": 8.771341463414634,
+          "roughCandidatesPerGap": 1.6836890243902438,
+          "residual": 42.32535858732383,
+          "variance": 1431.1292651325145,
+          "z": 1.1188225598444284,
+          "residualPerSqrtCount": 1.1685134851158203
+        },
+        {
+          "N": 25000,
+          "count": 2595,
+          "rankMean": 1.7741811175337188,
+          "expectedRankMean": 1.7658045793163284,
+          "rawGapMean": 9.247784200385356,
+          "roughCandidatesPerGap": 1.7741811175337188,
+          "residual": 21.73711667412487,
+          "variance": 3565.3346041927466,
+          "z": 0.36404224948429303,
+          "residualPerSqrtCount": 0.42671042705405515
+        },
+        {
+          "N": 50000,
+          "count": 4957,
+          "rankMean": 1.896913455719185,
+          "expectedRankMean": 1.8849222670646357,
+          "rawGapMean": 9.886221504942506,
+          "roughCandidatesPerGap": 1.896913455719185,
+          "residual": 59.4403221605985,
+          "variance": 8405.254750433278,
+          "z": 0.6483443256163974,
+          "residualPerSqrtCount": 0.8442512165907109
+        },
+        {
+          "N": 100000,
+          "count": 9478,
+          "rankMean": 2.003903777168179,
+          "expectedRankMean": 2.010657947838814,
+          "rawGapMean": 10.446296687064782,
+          "roughCandidatesPerGap": 2.003903777168179,
+          "residual": -64.01602961627086,
+          "variance": 19568.019604954407,
+          "z": -0.45763085415381943,
+          "residualPerSqrtCount": -0.6575524235258101
+        },
+        {
+          "N": 200000,
+          "count": 17838,
+          "rankMean": 2.1397017602870276,
+          "expectedRankMean": 2.137790656169945,
+          "rawGapMean": 11.15506222670703,
+          "roughCandidatesPerGap": 2.1397017602870276,
+          "residual": 34.090275240462326,
+          "variance": 44035.22331444196,
+          "z": 0.16245399886307155,
+          "residualPerSqrtCount": 0.25524510840448533
+        }
+      ]
+    },
+    {
+      "name": "w30030-555555",
+      "labels": 17762,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1369,
+          "rankMean": 1.6135865595325054,
+          "expectedRankMean": 1.650954196896528,
+          "rawGapMean": 8.406135865595324,
+          "roughCandidatesPerGap": 1.6135865595325054,
+          "residual": -51.15629555134743,
+          "variance": 1492.2855860578798,
+          "z": -1.3242595565604094,
+          "residualPerSqrtCount": -1.3826025824688493
+        },
+        {
+          "N": 25000,
+          "count": 2633,
+          "rankMean": 1.7485757690846944,
+          "expectedRankMean": 1.7623648134378798,
+          "rawGapMean": 9.114318268135207,
+          "roughCandidatesPerGap": 1.7485757690846944,
+          "residual": -36.30655378193424,
+          "variance": 3595.825966654306,
+          "z": -0.6054603331143373,
+          "residualPerSqrtCount": -0.7075540123625631
+        },
+        {
+          "N": 50000,
+          "count": 4977,
+          "rankMean": 1.8896925858951175,
+          "expectedRankMean": 1.882310775214267,
+          "rawGapMean": 9.849306811332127,
+          "roughCandidatesPerGap": 1.8896925858951175,
+          "residual": 36.73927175859583,
+          "variance": 8407.649456073774,
+          "z": 0.40067592244292527,
+          "residualPerSqrtCount": 0.5207709176540998
+        },
+        {
+          "N": 100000,
+          "count": 9400,
+          "rankMean": 2.020425531914894,
+          "expectedRankMean": 2.007758598962132,
+          "rawGapMean": 10.532340425531915,
+          "roughCandidatesPerGap": 2.020425531914894,
+          "residual": 119.06916975595259,
+          "variance": 19334.104264129335,
+          "z": 0.8563223854744164,
+          "residualPerSqrtCount": 1.2281047146068444
+        },
+        {
+          "N": 200000,
+          "count": 17761,
+          "rankMean": 2.1490907043522323,
+          "expectedRankMean": 2.136696732936871,
+          "rawGapMean": 11.204098868306964,
+          "roughCandidatesPerGap": 2.1490907043522323,
+          "residual": 220.12932630820566,
+          "variance": 43796.12708816003,
+          "z": 1.051865112027538,
+          "residualPerSqrtCount": 1.6517495506118096
+        }
+      ]
+    },
+    {
+      "name": "w30030-777777",
+      "labels": 17805,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1337,
+          "rankMean": 1.6514584891548243,
+          "expectedRankMean": 1.647653023964459,
+          "rawGapMean": 8.604338070306657,
+          "roughCandidatesPerGap": 1.6514584891548243,
+          "residual": 5.087906959517567,
+          "variance": 1447.4709882405307,
+          "z": 0.13373165738228954,
+          "residualPerSqrtCount": 0.13914687501434683
+        },
+        {
+          "N": 25000,
+          "count": 2624,
+          "rankMean": 1.7545731707317074,
+          "expectedRankMean": 1.7628796284204529,
+          "rawGapMean": 9.146341463414634,
+          "roughCandidatesPerGap": 1.7545731707317074,
+          "residual": -21.796144975277723,
+          "variance": 3587.723663975112,
+          "z": -0.3638900623118488,
+          "residualPerSqrtCount": -0.4254982444323201
+        },
+        {
+          "N": 50000,
+          "count": 5031,
+          "rankMean": 1.8690121248260783,
+          "expectedRankMean": 1.884170428681742,
+          "rawGapMean": 9.742397137745975,
+          "roughCandidatesPerGap": 1.8690121248260783,
+          "residual": -76.2614266978699,
+          "variance": 8524.258462563273,
+          "z": -0.8259934835476064,
+          "residualPerSqrtCount": -1.0751715576377228
+        },
+        {
+          "N": 100000,
+          "count": 9490,
+          "rankMean": 2.0010537407797684,
+          "expectedRankMean": 2.00818556667408,
+          "rawGapMean": 10.431612223393046,
+          "roughCandidatesPerGap": 2.0010537407797684,
+          "residual": -67.68102773703473,
+          "variance": 19527.83571080172,
+          "z": -0.48432834714115636,
+          "residualPerSqrtCount": -0.6947584516713213
+        },
+        {
+          "N": 200000,
+          "count": 17804,
+          "rankMean": 2.143731745675129,
+          "expectedRankMean": 2.135714632342654,
+          "rawGapMean": 11.176140193215009,
+          "roughCandidatesPerGap": 2.143731745675129,
+          "residual": 142.73668577129334,
+          "variance": 43841.52585654672,
+          "z": 0.6816991902618444,
+          "residualPerSqrtCount": 1.0697365033173338
+        }
+      ]
+    }
+  ],
+  "w210Runs": [
+    {
+      "name": "w210-12345",
+      "labels": 14986,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1066,
+          "rankMean": 2.075046904315197,
+          "expectedRankMean": 1.6538847021709278,
+          "rawGapMean": 10.812382739212007,
+          "roughCandidatesPerGap": 2.075046904315197,
+          "residual": 448.9589074857921,
+          "variance": 1169.0439480639718,
+          "z": 13.130799608396574,
+          "residualPerSqrtCount": 13.750800782099997
+        },
+        {
+          "N": 25000,
+          "count": 2098,
+          "rankMean": 2.193994280266921,
+          "expectedRankMean": 1.7667567865094862,
+          "rawGapMean": 11.436606291706386,
+          "roughCandidatesPerGap": 2.193994280266921,
+          "residual": 896.3442619031055,
+          "variance": 2887.3961816664582,
+          "z": 16.6809835357252,
+          "residualPerSqrtCount": 19.569156241374937
+        },
+        {
+          "N": 50000,
+          "count": 4168,
+          "rankMean": 2.2557581573896353,
+          "expectedRankMean": 1.8908341975909995,
+          "rawGapMean": 11.756717850287908,
+          "roughCandidatesPerGap": 2.2557581573896353,
+          "residual": 1521.0030644407448,
+          "variance": 7134.002117550591,
+          "z": 18.0079166597956,
+          "residualPerSqrtCount": 23.559508932522075
+        },
+        {
+          "N": 100000,
+          "count": 7957,
+          "rankMean": 2.3868292069875583,
+          "expectedRankMean": 2.0136774139848486,
+          "rawGapMean": 12.442629131582255,
+          "roughCandidatesPerGap": 2.3868292069875583,
+          "residual": 2969.1688169225777,
+          "variance": 16492.89149542848,
+          "z": 23.119928672646587,
+          "residualPerSqrtCount": 33.28589292421641
+        },
+        {
+          "N": 200000,
+          "count": 14985,
+          "rankMean": 2.5470136803470136,
+          "expectedRankMean": 2.1396316749812585,
+          "rawGapMean": 13.278611945278612,
+          "roughCandidatesPerGap": 2.5470136803470136,
+          "residual": 6104.619350405848,
+          "variance": 37069.44024702025,
+          "z": 31.706665790010096,
+          "residualPerSqrtCount": 49.86894898594647
+        }
+      ]
+    },
+    {
+      "name": "w210-271828",
+      "labels": 14995,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1128,
+          "rankMean": 1.9565602836879432,
+          "expectedRankMean": 1.6536351724608402,
+          "rawGapMean": 10.191489361702128,
+          "roughCandidatesPerGap": 1.9565602836879432,
+          "residual": 341.6995254641742,
+          "variance": 1236.332717302001,
+          "z": 9.717995521095924,
+          "residualPerSqrtCount": 10.173955315288342
+        },
+        {
+          "N": 25000,
+          "count": 2222,
+          "rankMean": 2.0715571557155714,
+          "expectedRankMean": 1.7667890235990333,
+          "rawGapMean": 10.798379837983799,
+          "roughCandidatesPerGap": 2.0715571557155714,
+          "residual": 677.1947895629525,
+          "variance": 3058.327189368334,
+          "z": 12.245362188859117,
+          "residualPerSqrtCount": 14.366189163941652
+        },
+        {
+          "N": 50000,
+          "count": 4263,
+          "rankMean": 2.2059582453671123,
+          "expectedRankMean": 1.8863458016479304,
+          "rawGapMean": 11.49800609899132,
+          "roughCandidatesPerGap": 2.2059582453671123,
+          "residual": 1362.5078475749006,
+          "variance": 7244.898039259073,
+          "z": 16.007476518586643,
+          "residualPerSqrtCount": 20.868024888570204
+        },
+        {
+          "N": 100000,
+          "count": 8020,
+          "rankMean": 2.368204488778055,
+          "expectedRankMean": 2.0091553775002398,
+          "rawGapMean": 12.34563591022444,
+          "roughCandidatesPerGap": 2.368204488778055,
+          "residual": 2879.5738724480716,
+          "variance": 16521.001631498108,
+          "z": 22.403199038558416,
+          "residualPerSqrtCount": 32.154446656120435
+        },
+        {
+          "N": 200000,
+          "count": 14994,
+          "rankMean": 2.5455515539549154,
+          "expectedRankMean": 2.1357968023392204,
+          "rawGapMean": 13.271041750033346,
+          "roughCandidatesPerGap": 2.5455515539549154,
+          "residual": 6143.862745725726,
+          "variance": 36919.45410802763,
+          "z": 31.97524416841646,
+          "residualPerSqrtCount": 50.17446515246341
+        }
+      ]
+    },
+    {
+      "name": "w210-314159",
+      "labels": 15119,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1105,
+          "rankMean": 1.9981900452488688,
+          "expectedRankMean": 1.6465141331765136,
+          "rawGapMean": 10.407239819004525,
+          "roughCandidatesPerGap": 1.9981900452488688,
+          "residual": 388.6018828399532,
+          "variance": 1194.1728769108308,
+          "z": 11.245306553627655,
+          "residualPerSqrtCount": 11.690248995670506
+        },
+        {
+          "N": 25000,
+          "count": 2160,
+          "rankMean": 2.1319444444444446,
+          "expectedRankMean": 1.7614527351139329,
+          "rawGapMean": 11.112962962962962,
+          "roughCandidatesPerGap": 2.1319444444444446,
+          "residual": 800.2620921539103,
+          "variance": 2946.4494218495547,
+          "z": 14.742894234450784,
+          "residualPerSqrtCount": 17.21889864174
+        },
+        {
+          "N": 50000,
+          "count": 4196,
+          "rankMean": 2.2409437559580554,
+          "expectedRankMean": 1.8847302053957184,
+          "rawGapMean": 11.679218303145854,
+          "roughCandidatesPerGap": 2.2409437559580554,
+          "residual": 1494.6720581595866,
+          "variance": 7116.635723662347,
+          "z": 17.717749109113345,
+          "residualPerSqrtCount": 23.074280937081216
+        },
+        {
+          "N": 100000,
+          "count": 7995,
+          "rankMean": 2.3753595997498436,
+          "expectedRankMean": 2.0100679962361747,
+          "rawGapMean": 12.382739212007504,
+          "roughCandidatesPerGap": 2.3753595997498436,
+          "residual": 2920.5063700918367,
+          "variance": 16496.436807122107,
+          "z": 22.738566596947567,
+          "residualPerSqrtCount": 32.662462476101695
+        },
+        {
+          "N": 200000,
+          "count": 15118,
+          "rankMean": 2.524804868368832,
+          "expectedRankMean": 2.1379210348863755,
+          "rawGapMean": 13.162852229130838,
+          "roughCandidatesPerGap": 2.524804868368832,
+          "residual": 5848.909794587881,
+          "variance": 37330.684286105745,
+          "z": 30.272058087635987,
+          "residualPerSqrtCount": 47.56940868902289
+        }
+      ]
+    },
+    {
+      "name": "w210-161803",
+      "labels": 14875,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1096,
+          "rankMean": 2.0127737226277373,
+          "expectedRankMean": 1.6498841203407772,
+          "rawGapMean": 10.487226277372264,
+          "roughCandidatesPerGap": 2.0127737226277373,
+          "residual": 397.727004106508,
+          "variance": 1192.1808591910396,
+          "z": 11.518979528990991,
+          "residualPerSqrtCount": 12.013783514738176
+        },
+        {
+          "N": 25000,
+          "count": 2142,
+          "rankMean": 2.148926237161531,
+          "expectedRankMean": 1.764400834744377,
+          "rawGapMean": 11.203548085901026,
+          "roughCandidatesPerGap": 2.148926237161531,
+          "residual": 823.6534119775497,
+          "variance": 2936.882541579051,
+          "z": 15.198516980506657,
+          "residualPerSqrtCount": 17.796506952009754
+        },
+        {
+          "N": 50000,
+          "count": 4091,
+          "rankMean": 2.2977267171840627,
+          "expectedRankMean": 1.884247608728986,
+          "rawGapMean": 11.976044976778294,
+          "roughCandidatesPerGap": 2.2977267171840627,
+          "residual": 1691.543032689744,
+          "variance": 6931.554615544938,
+          "z": 20.317381054899453,
+          "residualPerSqrtCount": 26.44650648138545
+        },
+        {
+          "N": 100000,
+          "count": 7807,
+          "rankMean": 2.432560522607916,
+          "expectedRankMean": 2.010037064597697,
+          "rawGapMean": 12.681439733572436,
+          "roughCandidatesPerGap": 2.432560522607916,
+          "residual": 3298.640636685759,
+          "variance": 16106.577935484467,
+          "z": 25.991620999595593,
+          "residualPerSqrtCount": 37.333002136788956
+        },
+        {
+          "N": 200000,
+          "count": 14874,
+          "rankMean": 2.5660884765362377,
+          "expectedRankMean": 2.139276898358395,
+          "rawGapMean": 13.378378378378379,
+          "roughCandidatesPerGap": 2.5660884765362377,
+          "residual": 6348.395413817362,
+          "variance": 36792.433609650114,
+          "z": 33.09670140324481,
+          "residualPerSqrtCount": 52.05351732081534
+        }
+      ]
+    },
+    {
+      "name": "w210-424242",
+      "labels": 15061,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1118,
+          "rankMean": 1.9758497316636852,
+          "expectedRankMean": 1.64971834484997,
+          "rawGapMean": 10.293381037567084,
+          "roughCandidatesPerGap": 1.9758497316636852,
+          "residual": 364.61489045773544,
+          "variance": 1216.1771923603862,
+          "z": 10.4552873534071,
+          "residualPerSqrtCount": 10.90469439635576
+        },
+        {
+          "N": 25000,
+          "count": 2212,
+          "rankMean": 2.0822784810126582,
+          "expectedRankMean": 1.7653025850529842,
+          "rawGapMean": 10.85262206148282,
+          "roughCandidatesPerGap": 2.0822784810126582,
+          "residual": 701.1506818628028,
+          "variance": 3037.9542749849384,
+          "z": 12.720985109844447,
+          "residualPerSqrtCount": 14.907979929762433
+        },
+        {
+          "N": 50000,
+          "count": 4199,
+          "rankMean": 2.239104548702072,
+          "expectedRankMean": 1.8836606021010882,
+          "rawGapMean": 11.669445105977614,
+          "roughCandidatesPerGap": 2.239104548702072,
+          "residual": 1492.5091317775564,
+          "variance": 7107.223450225218,
+          "z": 17.703821090380067,
+          "residualPerSqrtCount": 23.032658034561088
+        },
+        {
+          "N": 100000,
+          "count": 7923,
+          "rankMean": 2.3970718162312257,
+          "expectedRankMean": 2.008317759814382,
+          "rawGapMean": 12.495771803609744,
+          "roughCandidatesPerGap": 2.3970718162312257,
+          "residual": 3080.0983889906724,
+          "variance": 16306.485046430329,
+          "z": 24.12039476165836,
+          "residualPerSqrtCount": 34.6034787685157
+        },
+        {
+          "N": 200000,
+          "count": 15060,
+          "rankMean": 2.5344621513944223,
+          "expectedRankMean": 2.137945495455983,
+          "rawGapMean": 13.213147410358566,
+          "roughCandidatesPerGap": 2.5344621513944223,
+          "residual": 5971.5408384329185,
+          "variance": 37192.33021514558,
+          "z": 30.964189179379037,
+          "residualPerSqrtCount": 48.66020349377152
+        }
+      ]
+    },
+    {
+      "name": "w210-8675309",
+      "labels": 15135,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1126,
+          "rankMean": 1.9609236234458258,
+          "expectedRankMean": 1.6495317507237455,
+          "rawGapMean": 10.213143872113676,
+          "roughCandidatesPerGap": 1.9609236234458258,
+          "residual": 350.62724868506467,
+          "variance": 1224.4136157499952,
+          "z": 10.020319946560399,
+          "residualPerSqrtCount": 10.4490418505925
+        },
+        {
+          "N": 25000,
+          "count": 2210,
+          "rankMean": 2.0832579185520363,
+          "expectedRankMean": 1.7641435418043308,
+          "rawGapMean": 10.858823529411765,
+          "roughCandidatesPerGap": 2.0832579185520363,
+          "residual": 705.2427726124326,
+          "variance": 3028.9557257396814,
+          "z": 12.814220166511268,
+          "residualPerSqrtCount": 15.00177015681954
+        },
+        {
+          "N": 50000,
+          "count": 4212,
+          "rankMean": 2.232905982905983,
+          "expectedRankMean": 1.883615495607804,
+          "rawGapMean": 11.638176638176638,
+          "roughCandidatesPerGap": 2.232905982905983,
+          "residual": 1471.211532499938,
+          "variance": 7129.446389515713,
+          "z": 17.42397409620264,
+          "residualPerSqrtCount": 22.6689257157371
+        },
+        {
+          "N": 100000,
+          "count": 8048,
+          "rankMean": 2.360089463220676,
+          "expectedRankMean": 2.0101361222633387,
+          "rawGapMean": 12.303180914512922,
+          "roughCandidatesPerGap": 2.360089463220676,
+          "residual": 2816.424488024628,
+          "variance": 16607.644786397977,
+          "z": 21.85466169314105,
+          "residualPerSqrtCount": 31.39454027595035
+        },
+        {
+          "N": 200000,
+          "count": 15134,
+          "rankMean": 2.5221355887405843,
+          "expectedRankMean": 2.1372053539736124,
+          "rawGapMean": 13.148936170212766,
+          "roughCandidatesPerGap": 2.5221355887405843,
+          "residual": 5825.534172963402,
+          "variance": 37336.19740506509,
+          "z": 30.148847301077033,
+          "residualPerSqrtCount": 47.354242015281365
+        }
+      ]
+    },
+    {
+      "name": "w210-112358",
+      "labels": 15009,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1145,
+          "rankMean": 1.9275109170305678,
+          "expectedRankMean": 1.6521738581039014,
+          "rawGapMean": 10.040174672489083,
+          "roughCandidatesPerGap": 1.9275109170305678,
+          "residual": 315.2609324710349,
+          "variance": 1251.2634509413444,
+          "z": 8.912422701780724,
+          "residualPerSqrtCount": 9.316813722569194
+        },
+        {
+          "N": 25000,
+          "count": 2214,
+          "rankMean": 2.0799457994579944,
+          "expectedRankMean": 1.7635636855081103,
+          "rawGapMean": 10.841011743450768,
+          "roughCandidatesPerGap": 2.0799457994579944,
+          "residual": 700.4700002850519,
+          "variance": 3029.864192238758,
+          "z": 12.725590937908034,
+          "residualPerSqrtCount": 14.886778679373968
+        },
+        {
+          "N": 50000,
+          "count": 4218,
+          "rankMean": 2.2287814129919394,
+          "expectedRankMean": 1.883824881633012,
+          "rawGapMean": 11.61593172119488,
+          "roughCandidatesPerGap": 2.2287814129919394,
+          "residual": 1455.0266492719766,
+          "variance": 7141.71349361027,
+          "z": 17.21748589596946,
+          "residualPerSqrtCount": 22.403592255878763
+        },
+        {
+          "N": 100000,
+          "count": 7945,
+          "rankMean": 2.390308370044053,
+          "expectedRankMean": 2.008179001340586,
+          "rawGapMean": 12.460667086217747,
+          "roughCandidatesPerGap": 2.390308370044053,
+          "residual": 3036.0178343490466,
+          "variance": 16348.739769017366,
+          "z": 23.744453474394916,
+          "residualPerSqrtCount": 34.06099790687684
+        },
+        {
+          "N": 200000,
+          "count": 15008,
+          "rankMean": 2.543243603411514,
+          "expectedRankMean": 2.1368714255089833,
+          "rawGapMean": 13.2590618336887,
+          "roughCandidatesPerGap": 2.543243603411514,
+          "residual": 6098.833645961129,
+          "variance": 37012.763511859295,
+          "z": 31.70085906437016,
+          "residualPerSqrtCount": 49.7834943668525
+        }
+      ]
+    },
+    {
+      "name": "w210-141421",
+      "labels": 14884,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1127,
+          "rankMean": 1.9618456078083408,
+          "expectedRankMean": 1.6496398301803321,
+          "rawGapMean": 10.220053238686779,
+          "roughCandidatesPerGap": 1.9618456078083408,
+          "residual": 351.85591138676835,
+          "variance": 1225.9431404536801,
+          "z": 10.049158307308248,
+          "residualPerSqrtCount": 10.481004170761432
+        },
+        {
+          "N": 25000,
+          "count": 2142,
+          "rankMean": 2.149393090569561,
+          "expectedRankMean": 1.7598974616438174,
+          "rawGapMean": 11.203548085901026,
+          "roughCandidatesPerGap": 2.149393090569561,
+          "residual": 834.2996371589473,
+          "variance": 2913.181915878235,
+          "z": 15.457464296533479,
+          "residualPerSqrtCount": 18.02653771215498
+        },
+        {
+          "N": 50000,
+          "count": 4122,
+          "rankMean": 2.2816593886462884,
+          "expectedRankMean": 1.8829084994625263,
+          "rawGapMean": 11.892285298398836,
+          "roughCandidatesPerGap": 2.2816593886462884,
+          "residual": 1643.651165215487,
+          "variance": 6971.440587508386,
+          "z": 19.685587781140082,
+          "residualPerSqrtCount": 25.60092505433368
+        },
+        {
+          "N": 100000,
+          "count": 7820,
+          "rankMean": 2.4290281329923276,
+          "expectedRankMean": 2.0081106952594983,
+          "rawGapMean": 12.662148337595909,
+          "roughCandidatesPerGap": 2.4290281329923276,
+          "residual": 3291.574363070726,
+          "variance": 16091.548669376018,
+          "z": 25.94805139959986,
+          "residualPerSqrtCount": 37.222050548173726
+        },
+        {
+          "N": 200000,
+          "count": 14883,
+          "rankMean": 2.5644695289928108,
+          "expectedRankMean": 2.1380137643052772,
+          "rawGapMean": 13.369481959282403,
+          "roughCandidatesPerGap": 2.5644695289928108,
+          "residual": 6346.941145844506,
+          "variance": 36760.73356491726,
+          "z": 33.103383596455345,
+          "residualPerSqrtCount": 52.02585549299372
+        }
+      ]
+    },
+    {
+      "name": "w210-173205",
+      "labels": 15086,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1149,
+          "rankMean": 1.9216710182767625,
+          "expectedRankMean": 1.6504742572471263,
+          "rawGapMean": 10.01218450826806,
+          "roughCandidatesPerGap": 1.9216710182767625,
+          "residual": 311.60507842305367,
+          "variance": 1251.0202833348717,
+          "z": 8.809927844555872,
+          "residualPerSqrtCount": 9.19273017055969
+        },
+        {
+          "N": 25000,
+          "count": 2234,
+          "rankMean": 2.060429722470904,
+          "expectedRankMean": 1.7635271281162548,
+          "rawGapMean": 10.740376007162041,
+          "roughCandidatesPerGap": 2.060429722470904,
+          "residual": 663.2803957882894,
+          "variance": 3057.3077364849896,
+          "z": 11.995754901876026,
+          "residualPerSqrtCount": 14.033163231934651
+        },
+        {
+          "N": 50000,
+          "count": 4213,
+          "rankMean": 2.2314265369095656,
+          "expectedRankMean": 1.8817453969664832,
+          "rawGapMean": 11.629717540944695,
+          "roughCandidatesPerGap": 2.2314265369095656,
+          "residual": 1473.2066425802195,
+          "variance": 7108.845721064121,
+          "z": 17.47286509607557,
+          "residualPerSqrtCount": 22.69697288514874
+        },
+        {
+          "N": 100000,
+          "count": 8002,
+          "rankMean": 2.373781554611347,
+          "expectedRankMean": 2.008464171672772,
+          "rawGapMean": 12.3744063984004,
+          "roughCandidatesPerGap": 2.373781554611347,
+          "residual": 2923.269698274443,
+          "variance": 16474.555766734054,
+          "z": 22.775191034630282,
+          "residualPerSqrtCount": 32.67906418178533
+        },
+        {
+          "N": 200000,
+          "count": 15085,
+          "rankMean": 2.5299303944315543,
+          "expectedRankMean": 2.136768990575584,
+          "rawGapMean": 13.189260855154126,
+          "roughCandidatesPerGap": 2.5299303944315543,
+          "residual": 5930.839777167263,
+          "variance": 37199.156686243165,
+          "z": 30.750320343163942,
+          "residualPerSqrtCount": 48.288479918463906
+        }
+      ]
+    },
+    {
+      "name": "w210-223606",
+      "labels": 15003,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1155,
+          "rankMean": 1.9099567099567099,
+          "expectedRankMean": 1.652304893144926,
+          "rawGapMean": 9.951515151515151,
+          "roughCandidatesPerGap": 1.9099567099567099,
+          "residual": 297.587848417613,
+          "variance": 1262.2567175096078,
+          "z": 8.376090250527616,
+          "residualPerSqrtCount": 8.756371954520228
+        },
+        {
+          "N": 25000,
+          "count": 2203,
+          "rankMean": 2.0903313663186562,
+          "expectedRankMean": 1.7618829360300856,
+          "rawGapMean": 10.896050839763959,
+          "roughCandidatesPerGap": 2.0903313663186562,
+          "residual": 723.5718919257217,
+          "variance": 3005.2287823879296,
+          "z": 13.199057413965708,
+          "residualPerSqrtCount": 15.416097174834324
+        },
+        {
+          "N": 50000,
+          "count": 4185,
+          "rankMean": 2.2461170848267624,
+          "expectedRankMean": 1.8824215956450705,
+          "rawGapMean": 11.70704898446834,
+          "roughCandidatesPerGap": 2.2461170848267624,
+          "residual": 1522.0656222254172,
+          "variance": 7070.157359192197,
+          "z": 18.101678075001335,
+          "residualPerSqrtCount": 23.528034364177618
+        },
+        {
+          "N": 100000,
+          "count": 7942,
+          "rankMean": 2.3912112817929994,
+          "expectedRankMean": 2.008436912891776,
+          "rawGapMean": 12.465877612692017,
+          "roughCandidatesPerGap": 2.3912112817929994,
+          "residual": 3039.994037813534,
+          "variance": 16349.988143727036,
+          "z": 23.774643357131687,
+          "residualPerSqrtCount": 34.11204771466474
+        },
+        {
+          "N": 200000,
+          "count": 15002,
+          "rankMean": 2.5439941341154513,
+          "expectedRankMean": 2.1371579701241608,
+          "rawGapMean": 13.26303159578723,
+          "roughCandidatesPerGap": 2.5439941341154513,
+          "residual": 6103.356132197475,
+          "variance": 37013.18804319961,
+          "z": 31.724184361083825,
+          "residualPerSqrtCount": 49.830372227146725
+        }
+      ]
+    },
+    {
+      "name": "w210-99991",
+      "labels": 15040,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1148,
+          "rankMean": 1.9233449477351916,
+          "expectedRankMean": 1.6470901240790201,
+          "rawGapMean": 10.017421602787456,
+          "roughCandidatesPerGap": 1.9233449477351916,
+          "residual": 317.1405375572864,
+          "variance": 1241.948722126571,
+          "z": 8.999117565230321,
+          "residualPerSqrtCount": 9.36010701205451
+        },
+        {
+          "N": 25000,
+          "count": 2237,
+          "rankMean": 2.059901654000894,
+          "expectedRankMean": 1.7613779913494996,
+          "rawGapMean": 10.735806884219937,
+          "roughCandidatesPerGap": 2.059901654000894,
+          "residual": 667.7974333511762,
+          "variance": 3050.741660911393,
+          "z": 12.09043785525309,
+          "residualPerSqrtCount": 14.119254077790215
+        },
+        {
+          "N": 50000,
+          "count": 4226,
+          "rankMean": 2.22479886417416,
+          "expectedRankMean": 1.880927692709692,
+          "rawGapMean": 11.59488878371983,
+          "roughCandidatesPerGap": 2.22479886417416,
+          "residual": 1453.1995706088508,
+          "variance": 7123.961780879756,
+          "z": 17.21727714936487,
+          "residualPerSqrtCount": 22.354271151547987
+        },
+        {
+          "N": 100000,
+          "count": 7969,
+          "rankMean": 2.3833605220228384,
+          "expectedRankMean": 2.0066826014538353,
+          "rawGapMean": 12.424394528799096,
+          "roughCandidatesPerGap": 2.3833605220228384,
+          "residual": 3001.746349014346,
+          "variance": 16367.379247978934,
+          "z": 23.463047417994222,
+          "residualPerSqrtCount": 33.62575757990154
+        },
+        {
+          "N": 200000,
+          "count": 15039,
+          "rankMean": 2.538067690670922,
+          "expectedRankMean": 2.136259838167952,
+          "rawGapMean": 13.231996808298424,
+          "roughCandidatesPerGap": 2.538067690670922,
+          "residual": 6042.788293792056,
+          "variance": 37068.91721805966,
+          "z": 31.38574406498492,
+          "residualPerSqrtCount": 49.2751437081479
+        }
+      ]
+    },
+    {
+      "name": "w210-100003",
+      "labels": 14997,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1115,
+          "rankMean": 1.9820627802690582,
+          "expectedRankMean": 1.6493878201230845,
+          "rawGapMean": 10.32645739910314,
+          "roughCandidatesPerGap": 1.9820627802690582,
+          "residual": 370.93258056276073,
+          "variance": 1212.123649784676,
+          "z": 10.654216520229186,
+          "residualPerSqrtCount": 11.108554426907203
+        },
+        {
+          "N": 25000,
+          "count": 2203,
+          "rankMean": 2.0898774398547437,
+          "expectedRankMean": 1.7646314890591996,
+          "rawGapMean": 10.89332728098048,
+          "roughCandidatesPerGap": 2.0898774398547437,
+          "residual": 716.5168296025824,
+          "variance": 3021.9238593037085,
+          "z": 13.03420768783615,
+          "residualPerSqrtCount": 15.265785191240587
+        },
+        {
+          "N": 50000,
+          "count": 4203,
+          "rankMean": 2.237211515584107,
+          "expectedRankMean": 1.8840962014476375,
+          "rawGapMean": 11.659766833214372,
+          "roughCandidatesPerGap": 2.237211515584107,
+          "residual": 1484.1436653156,
+          "variance": 7119.515934515668,
+          "z": 17.589387212351507,
+          "residualPerSqrtCount": 22.892659447988475
+        },
+        {
+          "N": 100000,
+          "count": 7980,
+          "rankMean": 2.3798245614035087,
+          "expectedRankMean": 2.0092116905740185,
+          "rawGapMean": 12.406015037593985,
+          "roughCandidatesPerGap": 2.3798245614035087,
+          "residual": 2957.490709219353,
+          "variance": 16444.07630937573,
+          "z": 23.063151255742216,
+          "residualPerSqrtCount": 33.107161192034226
+        },
+        {
+          "N": 200000,
+          "count": 14996,
+          "rankMean": 2.545345425446786,
+          "expectedRankMean": 2.1363394062818144,
+          "rawGapMean": 13.269938650306749,
+          "roughCandidatesPerGap": 2.545345425446786,
+          "residual": 6133.454263398048,
+          "variance": 36953.094395015585,
+          "z": 31.906541052036843,
+          "residualPerSqrtCount": 50.08612294840672
+        }
+      ]
+    },
+    {
+      "name": "w210-444444",
+      "labels": 14993,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1133,
+          "rankMean": 1.9488084730803177,
+          "expectedRankMean": 1.6510927699599967,
+          "rawGapMean": 10.150044130626656,
+          "roughCandidatesPerGap": 1.9488084730803177,
+          "residual": 337.31189163532554,
+          "variance": 1235.2110798593908,
+          "z": 9.597565016167048,
+          "residualPerSqrtCount": 10.021130025553854
+        },
+        {
+          "N": 25000,
+          "count": 2216,
+          "rankMean": 2.077617328519856,
+          "expectedRankMean": 1.7638195524148295,
+          "rawGapMean": 10.82942238267148,
+          "roughCandidatesPerGap": 2.077617328519856,
+          "residual": 695.3758718487375,
+          "variance": 3033.794390608237,
+          "z": 12.624859262589696,
+          "residualPerSqrtCount": 14.77184491332167
+        },
+        {
+          "N": 50000,
+          "count": 4228,
+          "rankMean": 2.2237464522232733,
+          "expectedRankMean": 1.884397360793626,
+          "rawGapMean": 11.589403973509933,
+          "roughCandidatesPerGap": 2.2237464522232733,
+          "residual": 1434.767958564554,
+          "variance": 7165.101677883775,
+          "z": 16.950030754221547,
+          "residualPerSqrtCount": 22.06552068615769
+        },
+        {
+          "N": 100000,
+          "count": 7935,
+          "rankMean": 2.3934467548834277,
+          "expectedRankMean": 2.00759612695103,
+          "rawGapMean": 12.476874606175173,
+          "roughCandidatesPerGap": 2.3934467548834277,
+          "residual": 3061.7247326435813,
+          "variance": 16312.85473269393,
+          "z": 23.9718282828968,
+          "residualPerSqrtCount": 34.37104029043463
+        },
+        {
+          "N": 200000,
+          "count": 14992,
+          "rankMean": 2.5457577374599785,
+          "expectedRankMean": 2.136599423513378,
+          "rawGapMean": 13.27174493062967,
+          "roughCandidatesPerGap": 2.5457577374599785,
+          "residual": 6134.101442687441,
+          "variance": 36959.69315036968,
+          "z": 31.907058999199595,
+          "residualPerSqrtCount": 50.0980898225412
+        }
+      ]
+    },
+    {
+      "name": "w210-555555",
+      "labels": 15010,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1141,
+          "rankMean": 1.9360210341805433,
+          "expectedRankMean": 1.6512739903454305,
+          "rawGapMean": 10.085889570552148,
+          "roughCandidatesPerGap": 1.9360210341805433,
+          "residual": 324.8963770158647,
+          "variance": 1244.5151071408175,
+          "z": 9.209685123234651,
+          "residualPerSqrtCount": 9.618382551552317
+        },
+        {
+          "N": 25000,
+          "count": 2197,
+          "rankMean": 2.095584888484297,
+          "expectedRankMean": 1.762017153274052,
+          "rawGapMean": 10.923076923076923,
+          "roughCandidatesPerGap": 2.095584888484297,
+          "residual": 732.8483142569104,
+          "variance": 2997.98987311275,
+          "z": 13.384403241121184,
+          "residualPerSqrtCount": 15.635042450832175
+        },
+        {
+          "N": 50000,
+          "count": 4201,
+          "rankMean": 2.238038562247084,
+          "expectedRankMean": 1.8830547765442205,
+          "rawGapMean": 11.663889550107116,
+          "roughCandidatesPerGap": 2.238038562247084,
+          "residual": 1491.2868837377455,
+          "variance": 7104.051373528259,
+          "z": 17.69327189523831,
+          "residualPerSqrtCount": 23.008317269158486
+        },
+        {
+          "N": 100000,
+          "count": 7943,
+          "rankMean": 2.391036132443661,
+          "expectedRankMean": 2.008046005256239,
+          "rawGapMean": 12.464308195895757,
+          "roughCandidatesPerGap": 2.391036132443661,
+          "residual": 3042.090580249722,
+          "variance": 16341.401178745456,
+          "z": 23.79728957587171,
+          "residualPerSqrtCount": 34.133424355688526
+        },
+        {
+          "N": 200000,
+          "count": 15009,
+          "rankMean": 2.543074155506696,
+          "expectedRankMean": 2.136585590851209,
+          "rawGapMean": 13.258045172896262,
+          "roughCandidatesPerGap": 2.543074155506696,
+          "residual": 6100.986866914258,
+          "variance": 37000.37555479966,
+          "z": 31.71735944905171,
+          "residualPerSqrtCount": 49.79941158802958
+        }
+      ]
+    },
+    {
+      "name": "w210-777777",
+      "labels": 14999,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1133,
+          "rankMean": 1.9479258605472198,
+          "expectedRankMean": 1.64680833346591,
+          "rawGapMean": 10.146513680494262,
+          "roughCandidatesPerGap": 1.9479258605472198,
+          "residual": 341.1661581831258,
+          "variance": 1224.2127326915522,
+          "z": 9.750738262869998,
+          "residualPerSqrtCount": 10.135635642421954
+        },
+        {
+          "N": 25000,
+          "count": 2201,
+          "rankMean": 2.0913221263062245,
+          "expectedRankMean": 1.7608686194827146,
+          "rawGapMean": 10.901408450704226,
+          "roughCandidatesPerGap": 2.0913221263062245,
+          "residual": 727.3281685185547,
+          "variance": 2998.1767348027965,
+          "z": 13.283171891201468,
+          "residualPerSqrtCount": 15.503165608948395
+        },
+        {
+          "N": 50000,
+          "count": 4250,
+          "rankMean": 2.212,
+          "expectedRankMean": 1.8832414998562588,
+          "rawGapMean": 11.528470588235294,
+          "roughCandidatesPerGap": 2.212,
+          "residual": 1397.2236256109272,
+          "variance": 7189.874995316446,
+          "z": 16.478028537013618,
+          "residualPerSqrtCount": 21.43243204867935
+        },
+        {
+          "N": 100000,
+          "count": 7976,
+          "rankMean": 2.3808926780341024,
+          "expectedRankMean": 2.0072608084361345,
+          "rawGapMean": 12.41173520561685,
+          "roughCandidatesPerGap": 2.3808926780341024,
+          "residual": 2980.087791913433,
+          "variance": 16391.990108250313,
+          "z": 23.276260911697737,
+          "residualPerSqrtCount": 33.36848473123572
+        },
+        {
+          "N": 200000,
+          "count": 14998,
+          "rankMean": 2.544939325243366,
+          "expectedRankMean": 2.1357995574990354,
+          "rawGapMean": 13.26790238698493,
+          "roughCandidatesPerGap": 2.544939325243366,
+          "residual": 6136.278236629604,
+          "variance": 36940.23344042043,
+          "z": 31.92678780096636,
+          "residualPerSqrtCount": 50.10584249914656
+        }
+      ]
+    }
+  ],
+  "cramerRuns": [
+    {
+      "name": "cramer-12345",
+      "labels": 10034,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 719,
+          "rankMean": 3.075104311543811,
+          "expectedRankMean": 1.6535679792390645,
+          "rawGapMean": 16.019471488178024,
+          "roughCandidatesPerGap": 3.075104311543811,
+          "residual": 1022.0846229271122,
+          "variance": 787.7360348045617,
+          "z": 36.41635701937667,
+          "residualPerSqrtCount": 38.117324488752956
+        },
+        {
+          "N": 25000,
+          "count": 1427,
+          "rankMean": 3.2263489838822705,
+          "expectedRankMean": 1.7665113508759283,
+          "rawGapMean": 16.817098808689558,
+          "roughCandidatesPerGap": 3.2263489838822705,
+          "residual": 2083.188302300051,
+          "variance": 1962.4182063110272,
+          "z": 47.02542681581279,
+          "residualPerSqrtCount": 55.14632064187245
+        },
+        {
+          "N": 50000,
+          "count": 2808,
+          "rankMean": 3.350071225071225,
+          "expectedRankMean": 1.8888372165548284,
+          "rawGapMean": 17.460826210826212,
+          "roughCandidatesPerGap": 3.350071225071225,
+          "residual": 4103.145095914055,
+          "variance": 4789.897265577752,
+          "z": 59.28622193778816,
+          "residualPerSqrtCount": 77.43161599777515
+        },
+        {
+          "N": 100000,
+          "count": 5251,
+          "rankMean": 3.617787088173681,
+          "expectedRankMean": 2.0097618296860094,
+          "rawGapMean": 18.85888402209103,
+          "roughCandidatesPerGap": 3.617787088173681,
+          "residual": 8443.740632318755,
+          "variance": 10823.757426572023,
+          "z": 81.16071403901174,
+          "residualPerSqrtCount": 116.52359509081072
+        },
+        {
+          "N": 200000,
+          "count": 10033,
+          "rankMean": 3.804445330409648,
+          "expectedRankMean": 2.13945853664085,
+          "rawGapMean": 19.834147313864246,
+          "roughCandidatesPerGap": 3.804445330409648,
+          "residual": 16704.812501882418,
+          "variance": 24818.464842926594,
+          "z": 106.03619817571581,
+          "residualPerSqrtCount": 166.77317592472193
+        }
+      ]
+    },
+    {
+      "name": "cramer-271828",
+      "labels": 10342,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 787,
+          "rankMean": 2.8055908513341805,
+          "expectedRankMean": 1.652629525387554,
+          "rawGapMean": 14.612452350698856,
+          "roughCandidatesPerGap": 2.8055908513341805,
+          "residual": 907.3805635199936,
+          "variance": 860.4212262591667,
+          "z": 30.93384566322335,
+          "residualPerSqrtCount": 32.344623937436765
+        },
+        {
+          "N": 25000,
+          "count": 1537,
+          "rankMean": 3.0013012361743656,
+          "expectedRankMean": 1.7649983562781102,
+          "rawGapMean": 15.636955107351984,
+          "roughCandidatesPerGap": 3.0013012361743656,
+          "residual": 1900.1975264005464,
+          "variance": 2108.3460947937397,
+          "z": 41.38355510060483,
+          "residualPerSqrtCount": 48.46874946045894
+        },
+        {
+          "N": 50000,
+          "count": 2924,
+          "rankMean": 3.216826265389877,
+          "expectedRankMean": 1.8839091425738617,
+          "rawGapMean": 16.766073871409027,
+          "roughCandidatesPerGap": 3.216826265389877,
+          "residual": 3897.4496671140364,
+          "variance": 4949.971772675789,
+          "z": 55.39609534730104,
+          "residualPerSqrtCount": 72.0761916072838
+        },
+        {
+          "N": 100000,
+          "count": 5427,
+          "rankMean": 3.500276395798784,
+          "expectedRankMean": 2.0056492805299935,
+          "rawGapMean": 18.246545052515202,
+          "roughCandidatesPerGap": 3.500276395798784,
+          "residual": 8111.34135456374,
+          "variance": 11124.725317126638,
+          "z": 76.90384078887998,
+          "residualPerSqrtCount": 110.10645180793026
+        },
+        {
+          "N": 200000,
+          "count": 10341,
+          "rankMean": 3.691132385649357,
+          "expectedRankMean": 2.1370186531568773,
+          "rawGapMean": 19.243400058021468,
+          "roughCandidatesPerGap": 3.691132385649357,
+          "residual": 16071.090107704715,
+          "variance": 25509.692377206335,
+          "z": 100.62194905290244,
+          "residualPerSqrtCount": 158.03892505489878
+        }
+      ]
+    },
+    {
+      "name": "cramer-314159",
+      "labels": 10320,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 774,
+          "rankMean": 2.8488372093023258,
+          "expectedRankMean": 1.652247082609103,
+          "rawGapMean": 14.844961240310077,
+          "roughCandidatesPerGap": 2.8488372093023258,
+          "residual": 926.1607580605548,
+          "variance": 845.869343047872,
+          "z": 31.844521919497204,
+          "residualPerSqrtCount": 33.29016099128947
+        },
+        {
+          "N": 25000,
+          "count": 1518,
+          "rankMean": 3.0316205533596836,
+          "expectedRankMean": 1.7660097665098948,
+          "rawGapMean": 15.806324110671937,
+          "roughCandidatesPerGap": 3.0316205533596836,
+          "residual": 1921.197174437984,
+          "variance": 2086.7741055059405,
+          "z": 42.056605794281374,
+          "residualPerSqrtCount": 49.31011932285353
+        },
+        {
+          "N": 50000,
+          "count": 2871,
+          "rankMean": 3.274468826192964,
+          "expectedRankMean": 1.8834967568983276,
+          "rawGapMean": 17.070010449320794,
+          "roughCandidatesPerGap": 3.274468826192964,
+          "residual": 3993.480810944923,
+          "variance": 4857.2193736488225,
+          "z": 57.30041173891487,
+          "residualPerSqrtCount": 74.53066662313248
+        },
+        {
+          "N": 100000,
+          "count": 5486,
+          "rankMean": 3.462085308056872,
+          "expectedRankMean": 2.010315659372137,
+          "rawGapMean": 18.04848705796573,
+          "roughCandidatesPerGap": 3.462085308056872,
+          "residual": 7964.408292684466,
+          "variance": 11322.617377714758,
+          "z": 74.8479827613802,
+          "residualPerSqrtCount": 107.52900180440777
+        },
+        {
+          "N": 200000,
+          "count": 10319,
+          "rankMean": 3.6986142068029846,
+          "expectedRankMean": 2.13759801077491,
+          "rawGapMean": 19.28287624769842,
+          "roughCandidatesPerGap": 3.6986142068029846,
+          "residual": 16108.126126813853,
+          "variance": 25469.90430937724,
+          "z": 100.93257771207226,
+          "residualPerSqrtCount": 158.57189464599216
+        }
+      ]
+    },
+    {
+      "name": "cramer-161803",
+      "labels": 10282,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 729,
+          "rankMean": 3.0315500685871055,
+          "expectedRankMean": 1.6487171805920369,
+          "rawGapMean": 15.794238683127572,
+          "roughCandidatesPerGap": 3.0315500685871055,
+          "residual": 1008.0851753484067,
+          "variance": 791.3341602841001,
+          "z": 35.835813793922696,
+          "residualPerSqrtCount": 37.336487975866916
+        },
+        {
+          "N": 25000,
+          "count": 1448,
+          "rankMean": 3.178867403314917,
+          "expectedRankMean": 1.7643648916535237,
+          "rawGapMean": 16.570441988950275,
+          "roughCandidatesPerGap": 3.178867403314917,
+          "residual": 2048.1996368856994,
+          "variance": 1985.1073629518562,
+          "z": 45.970611917388844,
+          "residualPerSqrtCount": 53.825491458590314
+        },
+        {
+          "N": 50000,
+          "count": 2831,
+          "rankMean": 3.3207347227128223,
+          "expectedRankMean": 1.886987192581885,
+          "rawGapMean": 17.306958671847404,
+          "roughCandidatesPerGap": 3.3207347227128223,
+          "residual": 4058.9392578006887,
+          "variance": 4817.242923071242,
+          "z": 58.480796421414674,
+          "residualPerSqrtCount": 76.2856089693413
+        },
+        {
+          "N": 100000,
+          "count": 5378,
+          "rankMean": 3.531610264038676,
+          "expectedRankMean": 2.0113279253976595,
+          "rawGapMean": 18.41056154704351,
+          "roughCandidatesPerGap": 3.531610264038676,
+          "residual": 8176.07841721139,
+          "variance": 11114.471601681087,
+          "z": 77.553363485613,
+          "residualPerSqrtCount": 111.48967493463454
+        },
+        {
+          "N": 200000,
+          "count": 10281,
+          "rankMean": 3.7125765976072365,
+          "expectedRankMean": 2.140008190111012,
+          "rawGapMean": 19.355315630775216,
+          "roughCandidatesPerGap": 3.7125765976072365,
+          "residual": 16167.575797468626,
+          "variance": 25450.806604887894,
+          "z": 101.34308726178723,
+          "residualPerSqrtCount": 159.45099223554442
+        }
+      ]
+    },
+    {
+      "name": "cramer-424242",
+      "labels": 10275,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 753,
+          "rankMean": 2.9322709163346614,
+          "expectedRankMean": 1.6548435524870801,
+          "rawGapMean": 15.277556440903055,
+          "roughCandidatesPerGap": 2.9322709163346614,
+          "residual": 961.9028049772281,
+          "variance": 827.5745942137698,
+          "z": 33.43702395207058,
+          "residualPerSqrtCount": 35.053686887967345
+        },
+        {
+          "N": 25000,
+          "count": 1494,
+          "rankMean": 3.0816599732262384,
+          "expectedRankMean": 1.7675092308233642,
+          "rawGapMean": 16.06425702811245,
+          "roughCandidatesPerGap": 3.0816599732262384,
+          "residual": 1963.341209149898,
+          "variance": 2058.6274287785013,
+          "z": 43.27199365424747,
+          "residualPerSqrtCount": 50.79494372075335
+        },
+        {
+          "N": 50000,
+          "count": 2880,
+          "rankMean": 3.264236111111111,
+          "expectedRankMean": 1.886800750357878,
+          "rawGapMean": 17.0125,
+          "roughCandidatesPerGap": 3.264236111111111,
+          "residual": 3967.01383896931,
+          "variance": 4896.968591712086,
+          "z": 56.68916449445485,
+          "residualPerSqrtCount": 73.92093843014818
+        },
+        {
+          "N": 100000,
+          "count": 5473,
+          "rankMean": 3.4699433583044033,
+          "expectedRankMean": 2.0104874657496956,
+          "rawGapMean": 18.088799561483647,
+          "roughCandidatesPerGap": 3.4699433583044033,
+          "residual": 7987.602099951893,
+          "variance": 11293.569932092309,
+          "z": 75.1624278150309,
+          "residualPerSqrtCount": 107.97014843074504
+        },
+        {
+          "N": 200000,
+          "count": 10274,
+          "rankMean": 3.71500875997664,
+          "expectedRankMean": 2.1371947711069015,
+          "rawGapMean": 19.367919018882617,
+          "roughCandidatesPerGap": 3.71500875997664,
+          "residual": 16210.46092164765,
+          "variance": 25339.729239931665,
+          "z": 101.83436943341762,
+          "residualPerSqrtCount": 159.92839650356603
+        }
+      ]
+    },
+    {
+      "name": "cramer-8675309",
+      "labels": 10556,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 770,
+          "rankMean": 2.8675324675324676,
+          "expectedRankMean": 1.6487693149479086,
+          "rawGapMean": 14.935064935064934,
+          "roughCandidatesPerGap": 2.8675324675324676,
+          "residual": 938.4476274901099,
+          "variance": 835.9219195232521,
+          "z": 32.458405681388946,
+          "residualPerSqrtCount": 33.81930497534427
+        },
+        {
+          "N": 25000,
+          "count": 1557,
+          "rankMean": 2.9576107899807322,
+          "expectedRankMean": 1.767276437779153,
+          "rawGapMean": 15.416827231856134,
+          "roughCandidatesPerGap": 2.9576107899807322,
+          "residual": 1853.3505863778607,
+          "variance": 2146.0833184379317,
+          "z": 40.0068437814106,
+          "residualPerSqrtCount": 46.96921193333469
+        },
+        {
+          "N": 50000,
+          "count": 2977,
+          "rankMean": 3.158884783338932,
+          "expectedRankMean": 1.885823468539016,
+          "rawGapMean": 16.465569365132684,
+          "roughCandidatesPerGap": 3.158884783338932,
+          "residual": 3789.9035341593626,
+          "variance": 5055.827197331833,
+          "z": 53.300593504267205,
+          "residualPerSqrtCount": 69.46063328362176
+        },
+        {
+          "N": 100000,
+          "count": 5637,
+          "rankMean": 3.368990597835728,
+          "expectedRankMean": 2.009527390469767,
+          "rawGapMean": 17.562533262373602,
+          "roughCandidatesPerGap": 3.368990597835728,
+          "residual": 7663.294099921891,
+          "variance": 11618.771002708676,
+          "z": 71.09440060328043,
+          "residualPerSqrtCount": 102.06843966706072
+        },
+        {
+          "N": 200000,
+          "count": 10555,
+          "rankMean": 3.6162008526764566,
+          "expectedRankMean": 2.136288682830832,
+          "rawGapMean": 18.85267645665561,
+          "roughCandidatesPerGap": 3.6162008526764566,
+          "residual": 15620.472952720695,
+          "variance": 26006.326100606704,
+          "z": 96.8622777030974,
+          "residualPerSqrtCount": 152.042520439106
+        }
+      ]
+    },
+    {
+      "name": "cramer-112358",
+      "labels": 10334,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 765,
+          "rankMean": 2.891503267973856,
+          "expectedRankMean": 1.6502809912394467,
+          "rawGapMean": 15.0640522875817,
+          "roughCandidatesPerGap": 2.891503267973856,
+          "residual": 949.5350417018246,
+          "variance": 832.4164500331098,
+          "z": 32.910969009497975,
+          "residualPerSqrtCount": 34.3305118852056
+        },
+        {
+          "N": 25000,
+          "count": 1497,
+          "rankMean": 3.0761523046092183,
+          "expectedRankMean": 1.7639788686814446,
+          "rawGapMean": 16.034736138944556,
+          "roughCandidatesPerGap": 3.0761523046092183,
+          "residual": 1964.323633583881,
+          "variance": 2050.17219790151,
+          "z": 43.38282929394639,
+          "residualPerSqrtCount": 50.769412952622325
+        },
+        {
+          "N": 50000,
+          "count": 2896,
+          "rankMean": 3.248618784530387,
+          "expectedRankMean": 1.8855600464983269,
+          "rawGapMean": 16.933011049723756,
+          "roughCandidatesPerGap": 3.248618784530387,
+          "residual": 3947.4181053408643,
+          "variance": 4916.290541694164,
+          "z": 56.298180397861614,
+          "residualPerSqrtCount": 73.35231926224861
+        },
+        {
+          "N": 100000,
+          "count": 5521,
+          "rankMean": 3.440681036044195,
+          "expectedRankMean": 2.011340844497352,
+          "rawGapMean": 17.93588118094548,
+          "roughCandidatesPerGap": 3.440681036044195,
+          "residual": 7891.387197530134,
+          "variance": 11411.271715394452,
+          "z": 73.87310094990562,
+          "residualPerSqrtCount": 106.20488166034575
+        },
+        {
+          "N": 200000,
+          "count": 10333,
+          "rankMean": 3.693119132875254,
+          "expectedRankMean": 2.137119398516118,
+          "rawGapMean": 19.253653343656246,
+          "roughCandidatesPerGap": 3.693119132875254,
+          "residual": 16078.145255133102,
+          "variance": 25486.115585613723,
+          "z": 100.71267323938213,
+          "residualPerSqrtCount": 158.16949688854342
+        }
+      ]
+    },
+    {
+      "name": "cramer-141421",
+      "labels": 10134,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 748,
+          "rankMean": 2.950534759358289,
+          "expectedRankMean": 1.6550773169196624,
+          "rawGapMean": 15.377005347593583,
+          "roughCandidatesPerGap": 2.950534759358289,
+          "residual": 969.0021669440921,
+          "variance": 821.970056962617,
+          "z": 33.798447331187305,
+          "residualPerSqrtCount": 35.430228180282434
+        },
+        {
+          "N": 25000,
+          "count": 1447,
+          "rankMean": 3.178991015894955,
+          "expectedRankMean": 1.7650806189747592,
+          "rawGapMean": 16.573600552868,
+          "roughCandidatesPerGap": 3.178991015894955,
+          "residual": 2045.928344343527,
+          "variance": 1984.785723599866,
+          "z": 45.923354662519955,
+          "residualPerSqrtCount": 53.784378377192766
+        },
+        {
+          "N": 50000,
+          "count": 2835,
+          "rankMean": 3.3160493827160495,
+          "expectedRankMean": 1.8874142980933009,
+          "rawGapMean": 17.28536155202822,
+          "roughCandidatesPerGap": 3.3160493827160495,
+          "residual": 4050.1804649055,
+          "variance": 4825.411162831312,
+          "z": 58.305189652069295,
+          "residualPerSqrtCount": 76.0672722740712
+        },
+        {
+          "N": 100000,
+          "count": 5255,
+          "rankMean": 3.6133206470028543,
+          "expectedRankMean": 2.007687393864093,
+          "rawGapMean": 18.836917221693625,
+          "roughCandidatesPerGap": 3.6133206470028543,
+          "residual": 8437.602745244196,
+          "variance": 10801.11437942903,
+          "z": 81.18668182532555,
+          "residualPerSqrtCount": 116.39456836355807
+        },
+        {
+          "N": 200000,
+          "count": 10133,
+          "rankMean": 3.7665054771538538,
+          "expectedRankMean": 2.139890871789149,
+          "rawGapMean": 19.636830158886806,
+          "roughCandidatesPerGap": 3.7665054771538538,
+          "residual": 16482.48579616059,
+          "variance": 25084.329851170496,
+          "z": 104.06901850637941,
+          "residualPerSqrtCount": 163.73958632154645
+        }
+      ]
+    },
+    {
+      "name": "cramer-173205",
+      "labels": 10408,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 823,
+          "rankMean": 2.686512758201701,
+          "expectedRankMean": 1.6497282468103778,
+          "rawGapMean": 14.004860267314703,
+          "roughCandidatesPerGap": 2.686512758201701,
+          "residual": 853.2736528750598,
+          "variance": 895.3798255378003,
+          "z": 28.515742441946234,
+          "residualPerSqrtCount": 29.743249776699912
+        },
+        {
+          "N": 25000,
+          "count": 1559,
+          "rankMean": 2.9518922386144966,
+          "expectedRankMean": 1.758462207870448,
+          "rawGapMean": 15.390635022450288,
+          "roughCandidatesPerGap": 2.9518922386144966,
+          "residual": 1860.5574179299776,
+          "variance": 2114.148007516195,
+          "z": 40.46461224290917,
+          "residualPerSqrtCount": 47.1215990441883
+        },
+        {
+          "N": 50000,
+          "count": 2907,
+          "rankMean": 3.2342621259029927,
+          "expectedRankMean": 1.8779892902929831,
+          "rawGapMean": 16.859305125558997,
+          "roughCandidatesPerGap": 3.2342621259029927,
+          "residual": 3942.685133118312,
+          "variance": 4878.128792039508,
+          "z": 56.45019728826869,
+          "residualPerSqrtCount": 73.12562304289668
+        },
+        {
+          "N": 100000,
+          "count": 5541,
+          "rankMean": 3.427720628045479,
+          "expectedRankMean": 2.0063856066428807,
+          "rawGapMean": 17.869337664681467,
+          "roughCandidatesPerGap": 3.427720628045479,
+          "residual": 7875.617353591848,
+          "variance": 11377.874627708019,
+          "z": 73.83359844738071,
+          "residualPerSqrtCount": 105.8011850587044
+        },
+        {
+          "N": 200000,
+          "count": 10407,
+          "rankMean": 3.6668588450081674,
+          "expectedRankMean": 2.135134494514461,
+          "rawGapMean": 19.116940520803304,
+          "roughCandidatesPerGap": 3.6668588450081674,
+          "residual": 15940.655315588108,
+          "variance": 25616.04594814068,
+          "z": 99.5978868907939,
+          "residualPerSqrtCount": 156.25840748488832
+        }
+      ]
+    },
+    {
+      "name": "cramer-223606",
+      "labels": 10242,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 783,
+          "rankMean": 2.818646232439336,
+          "expectedRankMean": 1.6447598606011504,
+          "rawGapMean": 14.68199233716475,
+          "roughCandidatesPerGap": 2.818646232439336,
+          "residual": 919.1530291492999,
+          "variance": 842.74963840961,
+          "z": 31.662013910490717,
+          "residualPerSqrtCount": 32.847849466169784
+        },
+        {
+          "N": 25000,
+          "count": 1506,
+          "rankMean": 3.056440903054449,
+          "expectedRankMean": 1.7603775238926815,
+          "rawGapMean": 15.93227091633466,
+          "roughCandidatesPerGap": 3.056440903054449,
+          "residual": 1951.8714490176203,
+          "variance": 2051.1046225002165,
+          "z": 43.09801865370477,
+          "residualPerSqrtCount": 50.29661127653781
+        },
+        {
+          "N": 50000,
+          "count": 2918,
+          "rankMean": 3.2217272104180945,
+          "expectedRankMean": 1.8840119072507893,
+          "rawGapMean": 16.79095270733379,
+          "roughCandidatesPerGap": 3.2217272104180945,
+          "residual": 3903.453254642206,
+          "variance": 4944.757299201883,
+          "z": 55.51067301499491,
+          "residualPerSqrtCount": 72.26139463041878
+        },
+        {
+          "N": 100000,
+          "count": 5451,
+          "rankMean": 3.484314804623005,
+          "expectedRankMean": 2.0070535837166257,
+          "rawGapMean": 18.16400660429279,
+          "roughCandidatesPerGap": 3.484314804623005,
+          "residual": 8052.550915160675,
+          "variance": 11201.187820821258,
+          "z": 76.08541954672373,
+          "residualPerSqrtCount": 109.06750751869707
+        },
+        {
+          "N": 200000,
+          "count": 10241,
+          "rankMean": 3.727077433844351,
+          "expectedRankMean": 2.1351347591613337,
+          "rawGapMean": 19.43091494971194,
+          "roughCandidatesPerGap": 3.727077433844351,
+          "residual": 16303.084931428737,
+          "variance": 25202.335041011487,
+          "z": 102.69502397359135,
+          "residualPerSqrtCount": 161.1011378958044
+        }
+      ]
+    },
+    {
+      "name": "cramer-99991",
+      "labels": 10388,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 813,
+          "rankMean": 2.715867158671587,
+          "expectedRankMean": 1.6530299028710609,
+          "rawGapMean": 14.154981549815497,
+          "roughCandidatesPerGap": 2.715867158671587,
+          "residual": 864.0866889658281,
+          "variance": 890.0856185117055,
+          "z": 28.962858532670648,
+          "residualPerSqrtCount": 30.304843264306843
+        },
+        {
+          "N": 25000,
+          "count": 1545,
+          "rankMean": 2.978640776699029,
+          "expectedRankMean": 1.76139168855278,
+          "rawGapMean": 15.528802588996763,
+          "roughCandidatesPerGap": 2.978640776699029,
+          "residual": 1880.6498411859582,
+          "variance": 2105.7305394535174,
+          "z": 40.983264011858886,
+          "residualPerSqrtCount": 47.845786693354725
+        },
+        {
+          "N": 50000,
+          "count": 2903,
+          "rankMean": 3.239751980709611,
+          "expectedRankMean": 1.880619813375613,
+          "rawGapMean": 16.88735790561488,
+          "roughCandidatesPerGap": 3.239751980709611,
+          "residual": 3945.5606817706102,
+          "variance": 4890.337968614092,
+          "z": 56.42080653563,
+          "residualPerSqrtCount": 73.22935504811385
+        },
+        {
+          "N": 100000,
+          "count": 5401,
+          "rankMean": 3.5160155526754306,
+          "expectedRankMean": 2.0041641958558416,
+          "rawGapMean": 18.329568598407704,
+          "roughCandidatesPerGap": 3.5160155526754306,
+          "residual": 8165.50917818262,
+          "variance": 11051.60705564777,
+          "z": 77.67308483936908,
+          "residualPerSqrtCount": 111.10821810360488
+        },
+        {
+          "N": 200000,
+          "count": 10387,
+          "rankMean": 3.6735342254741505,
+          "expectedRankMean": 2.13732900833548,
+          "rawGapMean": 19.152209492635023,
+          "roughCandidatesPerGap": 3.6735342254741505,
+          "residual": 15956.56359041941,
+          "variance": 25638.00261187928,
+          "z": 99.65458240143542,
+          "residualPerSqrtCount": 156.56486270938098
+        }
+      ]
+    },
+    {
+      "name": "cramer-100003",
+      "labels": 10307,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 753,
+          "rankMean": 2.9216467463479416,
+          "expectedRankMean": 1.6552703566196667,
+          "rawGapMean": 15.227091633466136,
+          "roughCandidatesPerGap": 2.9216467463479416,
+          "residual": 953.5814214653923,
+          "variance": 827.7025054380825,
+          "z": 33.145200178730974,
+          "residualPerSqrtCount": 34.75043881488839
+        },
+        {
+          "N": 25000,
+          "count": 1508,
+          "rankMean": 3.0490716180371353,
+          "expectedRankMean": 1.7685188718099427,
+          "rawGapMean": 15.89655172413793,
+          "roughCandidatesPerGap": 3.0490716180371353,
+          "residual": 1931.0735413106106,
+          "variance": 2080.9098995579143,
+          "z": 42.33233021920877,
+          "residualPerSqrtCount": 49.72767364850258
+        },
+        {
+          "N": 50000,
+          "count": 2881,
+          "rankMean": 3.264144394307532,
+          "expectedRankMean": 1.886528099999809,
+          "rawGapMean": 17.015619576535926,
+          "roughCandidatesPerGap": 3.264144394307532,
+          "residual": 3968.9125439005747,
+          "variance": 4895.668121989301,
+          "z": 56.723829713110064,
+          "residualPerSqrtCount": 73.94348241163505
+        },
+        {
+          "N": 100000,
+          "count": 5436,
+          "rankMean": 3.492273730684327,
+          "expectedRankMean": 2.010129992643901,
+          "rawGapMean": 18.206401766004415,
+          "roughCandidatesPerGap": 3.492273730684327,
+          "residual": 8056.93335998777,
+          "variance": 11212.363090294404,
+          "z": 76.0888806151229,
+          "residualPerSqrtCount": 109.27732302410644
+        },
+        {
+          "N": 200000,
+          "count": 10306,
+          "rankMean": 3.702891519503202,
+          "expectedRankMean": 2.138547183019939,
+          "rawGapMean": 19.30545313409664,
+          "roughCandidatesPerGap": 3.702891519503202,
+          "residual": 16122.13273179654,
+          "variance": 25464.772011921432,
+          "z": 101.0305218405291,
+          "residualPerSqrtCount": 158.80984551033794
+        }
+      ]
+    },
+    {
+      "name": "cramer-444444",
+      "labels": 10294,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 778,
+          "rankMean": 2.8380462724935733,
+          "expectedRankMean": 1.6507721280359207,
+          "rawGapMean": 14.781491002570695,
+          "roughCandidatesPerGap": 2.8380462724935733,
+          "residual": 923.699284388054,
+          "variance": 847.7438731996409,
+          "z": 31.724755031605625,
+          "residualPerSqrtCount": 33.11622378242986
+        },
+        {
+          "N": 25000,
+          "count": 1507,
+          "rankMean": 3.05706702057067,
+          "expectedRankMean": 1.7623836075032384,
+          "rawGapMean": 15.93231585932316,
+          "roughCandidatesPerGap": 3.05706702057067,
+          "residual": 1951.087903492625,
+          "variance": 2057.8297709566846,
+          "z": 43.01026450444396,
+          "residualPerSqrtCount": 50.25973682868245
+        },
+        {
+          "N": 50000,
+          "count": 2938,
+          "rankMean": 3.201837985023826,
+          "expectedRankMean": 1.885727099906525,
+          "rawGapMean": 16.688223281143635,
+          "roughCandidatesPerGap": 3.201837985023826,
+          "residual": 3866.733780474655,
+          "variance": 4989.394343442126,
+          "z": 54.74196180851977,
+          "residualPerSqrtCount": 71.33758068741537
+        },
+        {
+          "N": 100000,
+          "count": 5543,
+          "rankMean": 3.426123038066029,
+          "expectedRankMean": 2.008937387245956,
+          "rawGapMean": 17.86036442359733,
+          "roughCandidatesPerGap": 3.426123038066029,
+          "residual": 7855.460062495698,
+          "variance": 11415.987019963906,
+          "z": 73.52159019841484,
+          "residualPerSqrtCount": 105.51135143272076
+        },
+        {
+          "N": 200000,
+          "count": 10293,
+          "rankMean": 3.7070824832410376,
+          "expectedRankMean": 2.13457449104095,
+          "rawGapMean": 19.327115515398816,
+          "roughCandidatesPerGap": 3.7070824832410376,
+          "residual": 16185.824763715515,
+          "variance": 25305.1815496684,
+          "z": 101.74898965022571,
+          "residualPerSqrtCount": 159.53789142800142
+        }
+      ]
+    },
+    {
+      "name": "cramer-555555",
+      "labels": 10332,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 793,
+          "rankMean": 2.789407313997478,
+          "expectedRankMean": 1.6478955964433744,
+          "rawGapMean": 14.532156368221942,
+          "roughCandidatesPerGap": 2.789407313997478,
+          "residual": 905.2187920204035,
+          "variance": 858.9719213238535,
+          "z": 30.88617141498981,
+          "residualPerSqrtCount": 32.14526182878996
+        },
+        {
+          "N": 25000,
+          "count": 1494,
+          "rankMean": 3.0829986613119145,
+          "expectedRankMean": 1.757530257603976,
+          "rawGapMean": 16.068273092369477,
+          "roughCandidatesPerGap": 3.0829986613119145,
+          "residual": 1980.249795139659,
+          "variance": 2022.6958627787212,
+          "z": 44.03060814850541,
+          "residualPerSqrtCount": 51.23239731758348
+        },
+        {
+          "N": 50000,
+          "count": 2832,
+          "rankMean": 3.320268361581921,
+          "expectedRankMean": 1.8797941132486335,
+          "rawGapMean": 17.304378531073446,
+          "roughCandidatesPerGap": 3.320268361581921,
+          "residual": 4079.42307127988,
+          "variance": 4766.528618735488,
+          "z": 59.087776184734686,
+          "residualPerSqrtCount": 76.65705370176556
+        },
+        {
+          "N": 100000,
+          "count": 5485,
+          "rankMean": 3.463081130355515,
+          "expectedRankMean": 2.0101073342115106,
+          "rawGapMean": 18.05250683682771,
+          "roughCandidatesPerGap": 3.463081130355515,
+          "residual": 7969.561271849867,
+          "variance": 11322.929972556849,
+          "z": 74.89537562331107,
+          "residualPerSqrtCount": 107.6083811548243
+        },
+        {
+          "N": 200000,
+          "count": 10331,
+          "rankMean": 3.693834091569064,
+          "expectedRankMean": 2.13772944668412,
+          "rawGapMean": 19.257380698867486,
+          "roughCandidatesPerGap": 3.693834091569064,
+          "residual": 16076.117086306424,
+          "variance": 25510.07380159344,
+          "z": 100.65267074962809,
+          "residualPerSqrtCount": 158.16485219452437
+        }
+      ]
+    },
+    {
+      "name": "cramer-777777",
+      "labels": 10404,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 783,
+          "rankMean": 2.817369093231162,
+          "expectedRankMean": 1.6497477911497775,
+          "rawGapMean": 14.679438058748403,
+          "roughCandidatesPerGap": 2.817369093231162,
+          "residual": 914.2474795297251,
+          "variance": 851.8720118779761,
+          "z": 31.32395539129388,
+          "residualPerSqrtCount": 32.67253942492262
+        },
+        {
+          "N": 25000,
+          "count": 1503,
+          "rankMean": 3.0691949434464405,
+          "expectedRankMean": 1.7614578984758837,
+          "rawGapMean": 15.994677312042581,
+          "roughCandidatesPerGap": 3.0691949434464405,
+          "residual": 1965.5287785907524,
+          "variance": 2049.931947005656,
+          "z": 43.411989083582235,
+          "residualPerSqrtCount": 50.699061102932326
+        },
+        {
+          "N": 50000,
+          "count": 2903,
+          "rankMean": 3.238029624526352,
+          "expectedRankMean": 1.884034590981139,
+          "rawGapMean": 16.87702376851533,
+          "roughCandidatesPerGap": 3.238029624526352,
+          "residual": 3930.647582381771,
+          "variance": 4917.927972717406,
+          "z": 56.0496655220983,
+          "residualPerSqrtCount": 72.95256887294265
+        },
+        {
+          "N": 100000,
+          "count": 5431,
+          "rankMean": 3.4971460136254833,
+          "expectedRankMean": 2.007340111673763,
+          "rawGapMean": 18.23089670410606,
+          "roughCandidatesPerGap": 3.4971460136254833,
+          "residual": 8091.13585349983,
+          "variance": 11163.25963989622,
+          "z": 76.57975635754251,
+          "residualPerSqrtCount": 109.79172076271175
+        },
+        {
+          "N": 200000,
+          "count": 10403,
+          "rankMean": 3.668845525329232,
+          "expectedRankMean": 2.138434720725209,
+          "rawGapMean": 19.127559357877534,
+          "roughCandidatesPerGap": 3.668845525329232,
+          "residual": 15920.863600295663,
+          "variance": 25709.63352194187,
+          "z": 99.29301053852156,
+          "residualPerSqrtCount": 156.09439987558622
+        }
+      ]
+    }
+  ],
+  "compositeRuns": [
+    {
+      "name": "composite-12345",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 762,
+          "rankMean": 2.9015748031496065,
+          "expectedRankMean": 1.6741620003379776,
+          "rawGapMean": 15.115485564304462,
+          "roughCandidatesPerGap": 2.9015748031496065,
+          "residual": 935.2885557424618,
+          "variance": 869.8630871596849,
+          "z": 31.711747104295345,
+          "residualPerSqrtCount": 33.881929514735376
+        },
+        {
+          "N": 25000,
+          "count": 1756,
+          "rankMean": 2.6224373576309796,
+          "expectedRankMean": 1.793126526196996,
+          "rawGapMean": 13.669703872437358,
+          "roughCandidatesPerGap": 2.6224373576309796,
+          "residual": 1456.2698199980828,
+          "variance": 2527.643472208422,
+          "z": 28.96569418620356,
+          "residualPerSqrtCount": 34.751983183911015
+        },
+        {
+          "N": 50000,
+          "count": 3907,
+          "rankMean": 2.406705912464807,
+          "expectedRankMean": 1.9166004551486726,
+          "rawGapMean": 12.54312771947786,
+          "roughCandidatesPerGap": 2.406705912464807,
+          "residual": 1914.8420217341638,
+          "variance": 6945.647547890969,
+          "z": 22.97611407677812,
+          "residualPerSqrtCount": 30.634531573865903
+        },
+        {
+          "N": 100000,
+          "count": 8425,
+          "rankMean": 2.2542433234421364,
+          "expectedRankMean": 2.0419767565079336,
+          "rawGapMean": 11.751216617210682,
+          "roughCandidatesPerGap": 2.2542433234421364,
+          "residual": 1788.345826420682,
+          "variance": 18128.766756422076,
+          "z": 13.282119240343642,
+          "residualPerSqrtCount": 19.483480927838148
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1688984878047455,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -469.9265602415518,
+          "variance": 45638.91390406903,
+          "z": -2.199694362007176,
+          "residualPerSqrtCount": -3.5207653278785
+        }
+      ]
+    },
+    {
+      "name": "composite-271828",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 767,
+          "rankMean": 2.8813559322033897,
+          "expectedRankMean": 1.6742201805533838,
+          "rawGapMean": 15.01173402868318,
+          "roughCandidatesPerGap": 2.8813559322033897,
+          "residual": 925.8731215155559,
+          "variance": 875.4004446206479,
+          "z": 31.293064487538082,
+          "residualPerSqrtCount": 33.431340781865444
+        },
+        {
+          "N": 25000,
+          "count": 1766,
+          "rankMean": 2.6064552661381652,
+          "expectedRankMean": 1.7932012765775467,
+          "rawGapMean": 13.586636466591166,
+          "roughCandidatesPerGap": 2.6064552661381652,
+          "residual": 1436.206545564062,
+          "variance": 2542.1210590497185,
+          "z": 28.48516815346367,
+          "residualPerSqrtCount": 34.17602526645039
+        },
+        {
+          "N": 50000,
+          "count": 3907,
+          "rankMean": 2.406194010749936,
+          "expectedRankMean": 1.9158683468713011,
+          "rawGapMean": 12.540568210903507,
+          "roughCandidatesPerGap": 2.406194010749936,
+          "residual": 1915.70236877385,
+          "variance": 6937.321184406383,
+          "z": 23.000227687232176,
+          "residualPerSqrtCount": 30.64829580519809
+        },
+        {
+          "N": 100000,
+          "count": 8382,
+          "rankMean": 2.2656883798616083,
+          "expectedRankMean": 2.041005847292452,
+          "rawGapMean": 11.811023622047244,
+          "roughCandidatesPerGap": 2.2656883798616083,
+          "residual": 1883.2889879946888,
+          "variance": 18011.98091457173,
+          "z": 14.032538031642655,
+          "residualPerSqrtCount": 20.570419037595098
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.142464215548695,
+          "expectedRankMean": 2.1691253679608753,
+          "rawGapMean": 11.169576199831603,
+          "roughCandidatesPerGap": 2.142464215548695,
+          "residual": -474.9684302231245,
+          "variance": 45654.52980059361,
+          "z": -2.2229147476756976,
+          "residualPerSqrtCount": -3.5585398282380205
+        }
+      ]
+    },
+    {
+      "name": "composite-314159",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 778,
+          "rankMean": 2.841902313624679,
+          "expectedRankMean": 1.6715177765828173,
+          "rawGapMean": 14.804627249357326,
+          "roughCandidatesPerGap": 2.841902313624679,
+          "residual": 910.5591698185686,
+          "variance": 883.4438644710767,
+          "z": 30.635057009139775,
+          "residualPerSqrtCount": 32.645127851140785
+        },
+        {
+          "N": 25000,
+          "count": 1772,
+          "rankMean": 2.598194130925508,
+          "expectedRankMean": 1.7909988686429388,
+          "rawGapMean": 13.542889390519187,
+          "roughCandidatesPerGap": 2.598194130925508,
+          "residual": 1430.350004764721,
+          "variance": 2541.7305010687514,
+          "z": 28.371191259410228,
+          "residualPerSqrtCount": 33.97898979151587
+        },
+        {
+          "N": 50000,
+          "count": 3874,
+          "rankMean": 2.4284976768198243,
+          "expectedRankMean": 1.913726252816636,
+          "rawGapMean": 12.658234383066597,
+          "roughCandidatesPerGap": 2.4284976768198243,
+          "residual": 1994.2244965883797,
+          "variance": 6857.695245336124,
+          "z": 24.08157880145785,
+          "residualPerSqrtCount": 32.04012771339803
+        },
+        {
+          "N": 100000,
+          "count": 8392,
+          "rankMean": 2.2631077216396567,
+          "expectedRankMean": 2.041054291836631,
+          "rawGapMean": 11.797426120114395,
+          "roughCandidatesPerGap": 2.2631077216396567,
+          "residual": 1863.4723829070388,
+          "variance": 18038.281162743922,
+          "z": 13.874756970952504,
+          "residualPerSqrtCount": 20.34183949321535
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1689472780967716,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -470.7957592940779,
+          "variance": 45647.434998474426,
+          "z": -2.2035573238910424,
+          "residualPerSqrtCount": -3.5272775068998046
+        }
+      ]
+    },
+    {
+      "name": "composite-161803",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 787,
+          "rankMean": 2.809402795425667,
+          "expectedRankMean": 1.671982478534134,
+          "rawGapMean": 14.635324015247777,
+          "roughCandidatesPerGap": 2.809402795425667,
+          "residual": 895.1497893936373,
+          "variance": 894.6362772587786,
+          "z": 29.927639336894664,
+          "residualPerSqrtCount": 31.90864392476592
+        },
+        {
+          "N": 25000,
+          "count": 1784,
+          "rankMean": 2.5812780269058297,
+          "expectedRankMean": 1.790773680614813,
+          "rawGapMean": 13.455156950672645,
+          "roughCandidatesPerGap": 2.5812780269058297,
+          "residual": 1410.2597537831832,
+          "variance": 2558.0195570832966,
+          "z": 27.883493283682625,
+          "residualPerSqrtCount": 33.388867377689124
+        },
+        {
+          "N": 50000,
+          "count": 3885,
+          "rankMean": 2.42007722007722,
+          "expectedRankMean": 1.9131688037207493,
+          "rawGapMean": 12.612612612612613,
+          "roughCandidatesPerGap": 2.42007722007722,
+          "residual": 1969.3391975449176,
+          "variance": 6871.427679079454,
+          "z": 23.757297445673597,
+          "residualPerSqrtCount": 31.595484074408983
+        },
+        {
+          "N": 100000,
+          "count": 8394,
+          "rankMean": 2.2625685013104597,
+          "expectedRankMean": 2.040395038068403,
+          "rawGapMean": 11.794615201334286,
+          "roughCandidatesPerGap": 2.2625685013104597,
+          "residual": 1864.9240504538589,
+          "variance": 18026.600229259864,
+          "z": 13.89006365242853,
+          "residualPerSqrtCount": 20.355260621587377
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1684269966953944,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -461.52694612837485,
+          "variance": 45618.34559031733,
+          "z": -2.160863316256516,
+          "residualPerSqrtCount": -3.457834068742964
+        }
+      ]
+    },
+    {
+      "name": "composite-424242",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 775,
+          "rankMean": 2.8529032258064517,
+          "expectedRankMean": 1.6723084631958864,
+          "rawGapMean": 14.861935483870967,
+          "roughCandidatesPerGap": 2.8529032258064517,
+          "residual": 914.9609410231897,
+          "variance": 881.4785585475265,
+          "z": 30.817448462593276,
+          "residualPerSqrtCount": 32.86636723103443
+        },
+        {
+          "N": 25000,
+          "count": 1764,
+          "rankMean": 2.611111111111111,
+          "expectedRankMean": 1.7913311506427607,
+          "rawGapMean": 13.608843537414966,
+          "roughCandidatesPerGap": 2.611111111111111,
+          "residual": 1446.0918502661812,
+          "variance": 2531.654248477967,
+          "z": 28.740457822847286,
+          "residualPerSqrtCount": 34.43075833967098
+        },
+        {
+          "N": 50000,
+          "count": 3893,
+          "rankMean": 2.4151040328795275,
+          "expectedRankMean": 1.9148433902607658,
+          "rawGapMean": 12.586694066272797,
+          "roughCandidatesPerGap": 2.4151040328795275,
+          "residual": 1947.5146817148645,
+          "variance": 6903.05297385052,
+          "z": 23.440136547860856,
+          "residualPerSqrtCount": 31.213217491699954
+        },
+        {
+          "N": 100000,
+          "count": 8358,
+          "rankMean": 2.2723139507059105,
+          "expectedRankMean": 2.0404605729646486,
+          "rawGapMean": 11.845417564010528,
+          "roughCandidatesPerGap": 2.2723139507059105,
+          "residual": 1937.8305311615018,
+          "variance": 17948.969134538587,
+          "z": 14.464253968922659,
+          "residualPerSqrtCount": 21.19652221804195
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.169144784746954,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -474.3143402669973,
+          "variance": 45658.75773664802,
+          "z": -2.2197507405993546,
+          "residualPerSqrtCount": -3.5536392811447417
+        }
+      ]
+    },
+    {
+      "name": "composite-8675309",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 763,
+          "rankMean": 2.8977719528178243,
+          "expectedRankMean": 1.6719050987873576,
+          "rawGapMean": 15.0956749672346,
+          "roughCandidatesPerGap": 2.8977719528178243,
+          "residual": 935.3364096252471,
+          "variance": 866.9559779367173,
+          "z": 31.76649635999092,
+          "residualPerSqrtCount": 33.86145156261697
+        },
+        {
+          "N": 25000,
+          "count": 1772,
+          "rankMean": 2.598194130925508,
+          "expectedRankMean": 1.7929602273898493,
+          "rawGapMean": 13.542889390519187,
+          "roughCandidatesPerGap": 2.598194130925508,
+          "residual": 1426.874477065194,
+          "variance": 2550.2331390390873,
+          "z": 28.25503354404239,
+          "residualPerSqrtCount": 33.896426139382505
+        },
+        {
+          "N": 50000,
+          "count": 3878,
+          "rankMean": 2.4244455905105724,
+          "expectedRankMean": 1.91473039325478,
+          "rawGapMean": 12.635379061371841,
+          "roughCandidatesPerGap": 2.4244455905105724,
+          "residual": 1976.6755349579817,
+          "variance": 6874.431018614902,
+          "z": 23.84059048868382,
+          "residualPerSqrtCount": 31.741795163661052
+        },
+        {
+          "N": 100000,
+          "count": 8394,
+          "rankMean": 2.2625685013104597,
+          "expectedRankMean": 2.0413891747975907,
+          "rawGapMean": 11.794615201334286,
+          "roughCandidatesPerGap": 2.2625685013104597,
+          "residual": 1856.5792667490416,
+          "variance": 18048.993986756057,
+          "z": 13.81933026503748,
+          "residualPerSqrtCount": 20.26417903191031
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1690494178946125,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -472.61537979257974,
+          "variance": 45650.513397713876,
+          "z": -2.211999463205906,
+          "residualPerSqrtCount": -3.5409103961702666
+        }
+      ]
+    },
+    {
+      "name": "composite-112358",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 783,
+          "rankMean": 2.8237547892720305,
+          "expectedRankMean": 1.6708925827981813,
+          "rawGapMean": 14.710089399744572,
+          "roughCandidatesPerGap": 2.8237547892720305,
+          "residual": 902.6911076690252,
+          "variance": 888.0410394371227,
+          "z": 30.29163018041879,
+          "residualPerSqrtCount": 32.25954838728585
+        },
+        {
+          "N": 25000,
+          "count": 1767,
+          "rankMean": 2.6055461233729487,
+          "expectedRankMean": 1.7901391574513195,
+          "rawGapMean": 13.581211092246745,
+          "roughCandidatesPerGap": 2.6055461233729487,
+          "residual": 1440.8241087835297,
+          "variance": 2531.0541043874614,
+          "z": 28.639158455854282,
+          "residualPerSqrtCount": 34.27620187491494
+        },
+        {
+          "N": 50000,
+          "count": 3873,
+          "rankMean": 2.4275755228505034,
+          "expectedRankMean": 1.9136623530547898,
+          "rawGapMean": 12.651691195455719,
+          "roughCandidatesPerGap": 2.4275755228505034,
+          "residual": 1990.3857066188239,
+          "variance": 6856.03209948083,
+          "z": 24.038137947691588,
+          "residualPerSqrtCount": 31.98258006485052
+        },
+        {
+          "N": 100000,
+          "count": 8358,
+          "rankMean": 2.2723139507059105,
+          "expectedRankMean": 2.0405101921152107,
+          "rawGapMean": 11.845417564010528,
+          "roughCandidatesPerGap": 2.2723139507059105,
+          "residual": 1937.41581430112,
+          "variance": 17952.32771217742,
+          "z": 14.45980567822078,
+          "residualPerSqrtCount": 21.1919859311975
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.169030703337983,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -472.2819799662001,
+          "variance": 45653.32568818711,
+          "z": -2.2103709558363374,
+          "residualPerSqrtCount": -3.5384125110785303
+        }
+      ]
+    },
+    {
+      "name": "composite-141421",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 765,
+          "rankMean": 2.8901960784313725,
+          "expectedRankMean": 1.6732019880406905,
+          "rawGapMean": 15.056209150326797,
+          "roughCandidatesPerGap": 2.8901960784313725,
+          "residual": 931.0004791488734,
+          "variance": 871.5933911100618,
+          "z": 31.535007617000065,
+          "residualPerSqrtCount": 33.660393361858894
+        },
+        {
+          "N": 25000,
+          "count": 1759,
+          "rankMean": 2.6173962478681068,
+          "expectedRankMean": 1.7922115268736303,
+          "rawGapMean": 13.642978965321205,
+          "roughCandidatesPerGap": 2.6173962478681068,
+          "residual": 1451.4999242292938,
+          "variance": 2527.9119987744707,
+          "z": 28.86928592564771,
+          "residualPerSqrtCount": 34.6086052882612
+        },
+        {
+          "N": 50000,
+          "count": 3881,
+          "rankMean": 2.422571502190157,
+          "expectedRankMean": 1.9156143576143696,
+          "rawGapMean": 12.625611955681526,
+          "roughCandidatesPerGap": 2.422571502190157,
+          "residual": 1967.5006780986557,
+          "variance": 6889.608308034899,
+          "z": 23.70378093208543,
+          "residualPerSqrtCount": 31.58225016872345
+        },
+        {
+          "N": 100000,
+          "count": 8397,
+          "rankMean": 2.2617601524353934,
+          "expectedRankMean": 2.041607711053502,
+          "rawGapMean": 11.790401333809694,
+          "roughCandidatesPerGap": 2.2617601524353934,
+          "residual": 1848.620050283757,
+          "variance": 18060.095866129,
+          "z": 13.755856399410424,
+          "residualPerSqrtCount": 20.173701129378497
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1691093796294263,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -473.6835980982478,
+          "variance": 45652.64918558064,
+          "z": -2.216947225324785,
+          "residualPerSqrtCount": -3.5489136594275466
+        }
+      ]
+    },
+    {
+      "name": "composite-173205",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 770,
+          "rankMean": 2.874025974025974,
+          "expectedRankMean": 1.6701986089717673,
+          "rawGapMean": 14.974025974025974,
+          "roughCandidatesPerGap": 2.874025974025974,
+          "residual": 926.9470710917399,
+          "variance": 872.2564513373031,
+          "z": 31.385773871275305,
+          "residualPerSqrtCount": 33.40485369129888
+        },
+        {
+          "N": 25000,
+          "count": 1714,
+          "rankMean": 2.686114352392065,
+          "expectedRankMean": 1.7884912402357294,
+          "rawGapMean": 14.001166861143524,
+          "roughCandidatesPerGap": 2.686114352392065,
+          "residual": 1538.526014235968,
+          "variance": 2448.335287651041,
+          "z": 31.093484771733124,
+          "residualPerSqrtCount": 37.162030475096216
+        },
+        {
+          "N": 50000,
+          "count": 3858,
+          "rankMean": 2.43701399688958,
+          "expectedRankMean": 1.9154504963151466,
+          "rawGapMean": 12.700881285640229,
+          "roughCandidatesPerGap": 2.43701399688958,
+          "residual": 2012.1919852161852,
+          "variance": 6849.066901329986,
+          "z": 24.313848743673024,
+          "residualPerSqrtCount": 32.39576971823919
+        },
+        {
+          "N": 100000,
+          "count": 8351,
+          "rankMean": 2.2742186564483293,
+          "expectedRankMean": 2.0417607368857924,
+          "rawGapMean": 11.855346665070051,
+          "roughCandidatesPerGap": 2.2742186564483293,
+          "residual": 1941.2560862667656,
+          "variance": 17967.626448071547,
+          "z": 14.482297858171652,
+          "residualPerSqrtCount": 21.24288942568053
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1699806486802053,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -489.20525623793117,
+          "variance": 45706.16957240059,
+          "z": -2.2882512135817987,
+          "residualPerSqrtCount": -3.665204417245726
+        }
+      ]
+    },
+    {
+      "name": "composite-223606",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 764,
+          "rankMean": 2.893979057591623,
+          "expectedRankMean": 1.6731758870610565,
+          "rawGapMean": 15.075916230366492,
+          "roughCandidatesPerGap": 2.893979057591623,
+          "residual": 932.6936222853532,
+          "variance": 870.2278606411958,
+          "z": 31.617135134953717,
+          "residualPerSqrtCount": 33.74367098019417
+        },
+        {
+          "N": 25000,
+          "count": 1749,
+          "rankMean": 2.6323613493424816,
+          "expectedRankMean": 1.7919031480354213,
+          "rawGapMean": 13.720983419096626,
+          "roughCandidatesPerGap": 2.6323613493424816,
+          "residual": 1469.961394086056,
+          "variance": 2512.078279045793,
+          "z": 29.328465768486158,
+          "residualPerSqrtCount": 35.14884221797913
+        },
+        {
+          "N": 50000,
+          "count": 3855,
+          "rankMean": 2.438910505836576,
+          "expectedRankMean": 1.9150785067217675,
+          "rawGapMean": 12.710765239948119,
+          "roughCandidatesPerGap": 2.438910505836576,
+          "residual": 2019.3723565876128,
+          "variance": 6837.481505582656,
+          "z": 24.421274462565783,
+          "residualPerSqrtCount": 32.52401971633403
+        },
+        {
+          "N": 100000,
+          "count": 8334,
+          "rankMean": 2.2788576913846894,
+          "expectedRankMean": 2.0413025465940136,
+          "rawGapMean": 11.87952963762899,
+          "roughCandidatesPerGap": 2.2788576913846894,
+          "residual": 1979.7845766854985,
+          "variance": 17917.352078545868,
+          "z": 14.790437573423114,
+          "residualPerSqrtCount": 21.686585986938375
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.169863453270842,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -487.11742002011897,
+          "variance": 45697.30847462735,
+          "z": -2.2787062850340587,
+          "residualPerSqrtCount": -3.6495620126917383
+        }
+      ]
+    },
+    {
+      "name": "composite-99991",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 771,
+          "rankMean": 2.867704280155642,
+          "expectedRankMean": 1.6731214707971067,
+          "rawGapMean": 14.939040207522698,
+          "roughCandidatesPerGap": 2.867704280155642,
+          "residual": 921.0233460154309,
+          "variance": 878.3252232803691,
+          "z": 31.07727718747211,
+          "residualPerSqrtCount": 33.16984558553012
+        },
+        {
+          "N": 25000,
+          "count": 1734,
+          "rankMean": 2.6557093425605536,
+          "expectedRankMean": 1.7905813663225065,
+          "rawGapMean": 13.843137254901961,
+          "roughCandidatesPerGap": 2.6557093425605536,
+          "residual": 1500.1319107967809,
+          "variance": 2485.1896360087453,
+          "z": 30.091905033073168,
+          "residualPerSqrtCount": 36.025075767827886
+        },
+        {
+          "N": 50000,
+          "count": 3850,
+          "rankMean": 2.4420779220779223,
+          "expectedRankMean": 1.9151525519031498,
+          "rawGapMean": 12.727272727272727,
+          "roughCandidatesPerGap": 2.4420779220779223,
+          "residual": 2028.6626751728982,
+          "variance": 6830.233984979979,
+          "z": 24.54663969843175,
+          "residualPerSqrtCount": 32.69485939830964
+        },
+        {
+          "N": 100000,
+          "count": 8345,
+          "rankMean": 2.2758538046734573,
+          "expectedRankMean": 2.0416303573712793,
+          "rawGapMean": 11.863870581186339,
+          "roughCandidatesPerGap": 2.2758538046734573,
+          "residual": 1954.5946677366833,
+          "variance": 17949.930186210295,
+          "z": 14.588993398071153,
+          "residualPerSqrtCount": 21.39653946683302
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1698029152308864,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -486.03893483829745,
+          "variance": 45693.608007502386,
+          "z": -2.2737532591954794,
+          "residualPerSqrtCount": -3.641481828347963
+        }
+      ]
+    },
+    {
+      "name": "composite-100003",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 772,
+          "rankMean": 2.866580310880829,
+          "expectedRankMean": 1.6763189739410116,
+          "rawGapMean": 14.935233160621761,
+          "roughCandidatesPerGap": 2.866580310880829,
+          "residual": 918.8817521175397,
+          "variance": 885.1974902425306,
+          "z": 30.88442641832475,
+          "residualPerSqrtCount": 33.071277912488135
+        },
+        {
+          "N": 25000,
+          "count": 1771,
+          "rankMean": 2.5996612083568604,
+          "expectedRankMean": 1.7938478473806272,
+          "rawGapMean": 13.550536420101638,
+          "roughCandidatesPerGap": 2.5996612083568604,
+          "residual": 1427.095462288918,
+          "variance": 2552.27127757739,
+          "z": 28.248123850779997,
+          "residualPerSqrtCount": 33.911245788100615
+        },
+        {
+          "N": 50000,
+          "count": 3886,
+          "rankMean": 2.419454451878538,
+          "expectedRankMean": 1.9153295921033688,
+          "rawGapMean": 12.609366958311888,
+          "roughCandidatesPerGap": 2.419454451878538,
+          "residual": 1959.029205086328,
+          "variance": 6894.122923883179,
+          "z": 23.59399044054151,
+          "residualPerSqrtCount": 31.426029391407635
+        },
+        {
+          "N": 100000,
+          "count": 8392,
+          "rankMean": 2.2631077216396567,
+          "expectedRankMean": 2.0412592203273796,
+          "rawGapMean": 11.797426120114395,
+          "roughCandidatesPerGap": 2.2631077216396567,
+          "residual": 1861.7526230126796,
+          "variance": 18039.58643459927,
+          "z": 13.861450739792271,
+          "residualPerSqrtCount": 20.323066432740287
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1689787946224874,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -471.35722619967805,
+          "variance": 45644.66261743372,
+          "z": -2.2062522660843995,
+          "residualPerSqrtCount": -3.531484107209802
+        }
+      ]
+    },
+    {
+      "name": "composite-444444",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 768,
+          "rankMean": 2.87890625,
+          "expectedRankMean": 1.6748001990279502,
+          "rawGapMean": 14.997395833333334,
+          "roughCandidatesPerGap": 2.87890625,
+          "residual": 924.7534471465344,
+          "variance": 877.7981564406603,
+          "z": 31.21250512597588,
+          "residualPerSqrtCount": 33.36916572775538
+        },
+        {
+          "N": 25000,
+          "count": 1745,
+          "rankMean": 2.6383954154727793,
+          "expectedRankMean": 1.7924859333495435,
+          "rawGapMean": 13.75243553008596,
+          "roughCandidatesPerGap": 2.6383954154727793,
+          "residual": 1476.1120463050543,
+          "variance": 2509.028227084521,
+          "z": 29.469078173442863,
+          "residualPerSqrtCount": 35.336343566444235
+        },
+        {
+          "N": 50000,
+          "count": 3889,
+          "rankMean": 2.4175880689123166,
+          "expectedRankMean": 1.9165107377801172,
+          "rawGapMean": 12.59964001028542,
+          "roughCandidatesPerGap": 2.4175880689123166,
+          "residual": 1948.689740773148,
+          "variance": 6913.0150487710525,
+          "z": 23.43737385414661,
+          "residualPerSqrtCount": 31.24810801490738
+        },
+        {
+          "N": 100000,
+          "count": 8410,
+          "rankMean": 2.2582639714625445,
+          "expectedRankMean": 2.0419658880646754,
+          "rawGapMean": 11.77217598097503,
+          "roughCandidatesPerGap": 2.2582639714625445,
+          "residual": 1819.066881376121,
+          "variance": 18095.933641119744,
+          "z": 13.52253672227504,
+          "residualPerSqrtCount": 19.835843314923693
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.169029723649,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -472.26452680698657,
+          "variance": 45645.84719635668,
+          "z": -2.210470328162371,
+          "residualPerSqrtCount": -3.538281749204187
+        }
+      ]
+    },
+    {
+      "name": "composite-555555",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 791,
+          "rankMean": 2.79519595448799,
+          "expectedRankMean": 1.6745268813850211,
+          "rawGapMean": 14.561314791403287,
+          "roughCandidatesPerGap": 2.79519595448799,
+          "residual": 886.4492368244495,
+          "variance": 903.5248589356637,
+          "z": 29.490614186810024,
+          "residualPerSqrtCount": 31.518506382519007
+        },
+        {
+          "N": 25000,
+          "count": 1782,
+          "rankMean": 2.5836139169472503,
+          "expectedRankMean": 1.7914457068837832,
+          "rawGapMean": 13.4668911335578,
+          "roughCandidatesPerGap": 2.5836139169472503,
+          "residual": 1411.6437503331063,
+          "variance": 2557.502913049855,
+          "z": 27.913676513389127,
+          "residualPerSqrtCount": 33.440384312215414
+        },
+        {
+          "N": 50000,
+          "count": 3907,
+          "rankMean": 2.4064499616073713,
+          "expectedRankMean": 1.9139846911612473,
+          "rawGapMean": 12.541592014333249,
+          "roughCandidatesPerGap": 2.4064499616073713,
+          "residual": 1924.061811633021,
+          "variance": 6917.909464839778,
+          "z": 23.13298002610451,
+          "residualPerSqrtCount": 30.782034052689276
+        },
+        {
+          "N": 100000,
+          "count": 8376,
+          "rankMean": 2.267430754536772,
+          "expectedRankMean": 2.0398218974861293,
+          "rawGapMean": 11.819961795606496,
+          "roughCandidatesPerGap": 2.267430754536772,
+          "residual": 1906.451786656197,
+          "variance": 17971.504153029226,
+          "z": 14.221113835849685,
+          "residualPerSqrtCount": 20.830874013900036
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.1685600557036304,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -463.89739236025974,
+          "variance": 45625.96575229761,
+          "z": -2.1717803342214355,
+          "residualPerSqrtCount": -3.4755938329506533
+        }
+      ]
+    },
+    {
+      "name": "composite-777777",
+      "labels": 17816,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 789,
+          "rankMean": 2.802281368821293,
+          "expectedRankMean": 1.6709690355562126,
+          "rawGapMean": 14.598225602027883,
+          "roughCandidatesPerGap": 2.802281368821293,
+          "residual": 892.6054309461492,
+          "variance": 894.8423067132402,
+          "z": 29.839137835961946,
+          "residualPerSqrtCount": 31.777594823535207
+        },
+        {
+          "N": 25000,
+          "count": 1771,
+          "rankMean": 2.5996612083568604,
+          "expectedRankMean": 1.7892209191680588,
+          "rawGapMean": 13.550536420101638,
+          "roughCandidatesPerGap": 2.5996612083568604,
+          "residual": 1435.2897521533737,
+          "variance": 2532.371718781646,
+          "z": 28.521729497100672,
+          "residualPerSqrtCount": 34.10596196861933
+        },
+        {
+          "N": 50000,
+          "count": 3891,
+          "rankMean": 2.4163454124903625,
+          "expectedRankMean": 1.913430369804515,
+          "rawGapMean": 12.593163711128245,
+          "roughCandidatesPerGap": 2.4163454124903625,
+          "residual": 1956.842431090654,
+          "variance": 6885.3805045755435,
+          "z": 23.58261082360832,
+          "residualPerSqrtCount": 31.370774532380366
+        },
+        {
+          "N": 100000,
+          "count": 8365,
+          "rankMean": 2.270412432755529,
+          "expectedRankMean": 2.0399018198945855,
+          "rawGapMean": 11.835505080693364,
+          "roughCandidatesPerGap": 2.270412432755529,
+          "residual": 1928.2212765818074,
+          "variance": 17952.102009353195,
+          "z": 14.391273173784485,
+          "residualPerSqrtCount": 21.082586847832186
+        },
+        {
+          "N": 200000,
+          "count": 17815,
+          "rankMean": 2.14252034802133,
+          "expectedRankMean": 2.168761896300711,
+          "rawGapMean": 11.169800729722144,
+          "roughCandidatesPerGap": 2.14252034802133,
+          "residual": -467.49318259722367,
+          "variance": 45639.774103991826,
+          "z": -2.1882832640368326,
+          "residualPerSqrtCount": -3.502534071412849
+        }
+      ]
+    }
+  ],
+  "controlSummaries": {
+    "w30030": [
+      {
+        "count": [
+          1284,
+          1370
+        ],
+        "z": [
+          -1.3923948067323153,
+          2.5325380475932033
+        ],
+        "absZ": [
+          0.02846472809023808,
+          2.5325380475932033
+        ],
+        "residualPerSqrtCount": [
+          -1.45655759944651,
+          2.639037608027566
+        ],
+        "rankMean": [
+          1.6131386861313868,
+          1.722741433021807
+        ],
+        "theta": [
+          -1.3307560323261705,
+          2.0185099044164607
+        ]
+      },
+      {
+        "count": [
+          2507,
+          2695
+        ],
+        "z": [
+          -2.4529903463503793,
+          3.1511121804539566
+        ],
+        "absZ": [
+          0.03346035378682715,
+          3.1511121804539566
+        ],
+        "residualPerSqrtCount": [
+          -2.871891665050604,
+          3.6870995187471127
+        ],
+        "rankMean": [
+          1.7087198515769944,
+          1.8372556840845633
+        ],
+        "theta": [
+          -1.3307560323261705,
+          2.0185099044164607
+        ]
+      },
+      {
+        "count": [
+          4815,
+          5074
+        ],
+        "z": [
+          -1.5824999558474837,
+          3.6584171822773386
+        ],
+        "absZ": [
+          0.025275068590260404,
+          3.6584171822773386
+        ],
+        "residualPerSqrtCount": [
+          -2.0564344573107296,
+          4.761930145332979
+        ],
+        "rankMean": [
+          1.8531730390224674,
+          1.9528556593977155
+        ],
+        "theta": [
+          -1.3307560323261705,
+          2.0185099044164607
+        ]
+      },
+      {
+        "count": [
+          9282,
+          9548
+        ],
+        "z": [
+          -1.522436927082039,
+          2.3272356458842505
+        ],
+        "absZ": [
+          0.1819678344139201,
+          2.3272356458842505
+        ],
+        "residualPerSqrtCount": [
+          -2.191097694120024,
+          3.3458949949166796
+        ],
+        "rankMean": [
+          1.9892124005027232,
+          2.0461107519931048
+        ],
+        "theta": [
+          -1.3307560323261705,
+          2.0185099044164607
+        ]
+      },
+      {
+        "count": [
+          17703,
+          18045
+        ],
+        "z": [
+          -1.9210883509021497,
+          1.3183898299903296
+        ],
+        "absZ": [
+          0.0011537553956501565,
+          1.9210883509021497
+        ],
+        "residualPerSqrtCount": [
+          -3.018422979420514,
+          2.074865079117705
+        ],
+        "rankMean": [
+          2.115267387087836,
+          2.1559057786815794
+        ],
+        "theta": [
+          -1.3307560323261705,
+          2.0185099044164607
+        ]
+      }
+    ],
+    "w210": [
+      {
+        "count": [
+          1066,
+          1155
+        ],
+        "z": [
+          8.376090250527616,
+          13.130799608396574
+        ],
+        "absZ": [
+          8.376090250527616,
+          13.130799608396574
+        ],
+        "residualPerSqrtCount": [
+          8.756371954520228,
+          13.750800782099997
+        ],
+        "rankMean": [
+          1.9099567099567099,
+          2.075046904315197
+        ],
+        "theta": [
+          0.9258426340394145,
+          1.0787290727584686
+        ]
+      },
+      {
+        "count": [
+          2098,
+          2237
+        ],
+        "z": [
+          11.995754901876026,
+          16.6809835357252
+        ],
+        "absZ": [
+          11.995754901876026,
+          16.6809835357252
+        ],
+        "residualPerSqrtCount": [
+          14.033163231934651,
+          19.569156241374937
+        ],
+        "rankMean": [
+          2.059901654000894,
+          2.193994280266921
+        ],
+        "theta": [
+          0.9258426340394145,
+          1.0787290727584686
+        ]
+      },
+      {
+        "count": [
+          4091,
+          4263
+        ],
+        "z": [
+          16.007476518586643,
+          20.317381054899453
+        ],
+        "absZ": [
+          16.007476518586643,
+          20.317381054899453
+        ],
+        "residualPerSqrtCount": [
+          20.868024888570204,
+          26.44650648138545
+        ],
+        "rankMean": [
+          2.2059582453671123,
+          2.2977267171840627
+        ],
+        "theta": [
+          0.9258426340394145,
+          1.0787290727584686
+        ]
+      },
+      {
+        "count": [
+          7807,
+          8048
+        ],
+        "z": [
+          21.85466169314105,
+          25.991620999595593
+        ],
+        "absZ": [
+          21.85466169314105,
+          25.991620999595593
+        ],
+        "residualPerSqrtCount": [
+          31.39454027595035,
+          37.333002136788956
+        ],
+        "rankMean": [
+          2.360089463220676,
+          2.432560522607916
+        ],
+        "theta": [
+          0.9258426340394145,
+          1.0787290727584686
+        ]
+      },
+      {
+        "count": [
+          14874,
+          15134
+        ],
+        "z": [
+          30.148847301077033,
+          33.103383596455345
+        ],
+        "absZ": [
+          30.148847301077033,
+          33.103383596455345
+        ],
+        "residualPerSqrtCount": [
+          47.354242015281365,
+          52.05351732081534
+        ],
+        "rankMean": [
+          2.5221355887405843,
+          2.5660884765362377
+        ],
+        "theta": [
+          0.9258426340394145,
+          1.0787290727584686
+        ]
+      }
+    ],
+    "cramer": [
+      {
+        "count": [
+          719,
+          823
+        ],
+        "z": [
+          28.515742441946234,
+          36.41635701937667
+        ],
+        "absZ": [
+          28.515742441946234,
+          36.41635701937667
+        ],
+        "residualPerSqrtCount": [
+          29.743249776699912,
+          38.117324488752956
+        ],
+        "rankMean": [
+          2.686512758201701,
+          3.075104311543811
+        ],
+        "theta": [
+          1.0003880549435278,
+          1.0531971829944777
+        ]
+      },
+      {
+        "count": [
+          1427,
+          1559
+        ],
+        "z": [
+          40.0068437814106,
+          47.02542681581279
+        ],
+        "absZ": [
+          40.0068437814106,
+          47.02542681581279
+        ],
+        "residualPerSqrtCount": [
+          46.96921193333469,
+          55.14632064187245
+        ],
+        "rankMean": [
+          2.9518922386144966,
+          3.2263489838822705
+        ],
+        "theta": [
+          1.0003880549435278,
+          1.0531971829944777
+        ]
+      },
+      {
+        "count": [
+          2808,
+          2977
+        ],
+        "z": [
+          53.300593504267205,
+          59.28622193778816
+        ],
+        "absZ": [
+          53.300593504267205,
+          59.28622193778816
+        ],
+        "residualPerSqrtCount": [
+          69.46063328362176,
+          77.43161599777515
+        ],
+        "rankMean": [
+          3.158884783338932,
+          3.350071225071225
+        ],
+        "theta": [
+          1.0003880549435278,
+          1.0531971829944777
+        ]
+      },
+      {
+        "count": [
+          5251,
+          5637
+        ],
+        "z": [
+          71.09440060328043,
+          81.18668182532555
+        ],
+        "absZ": [
+          71.09440060328043,
+          81.18668182532555
+        ],
+        "residualPerSqrtCount": [
+          102.06843966706072,
+          116.52359509081072
+        ],
+        "rankMean": [
+          3.368990597835728,
+          3.617787088173681
+        ],
+        "theta": [
+          1.0003880549435278,
+          1.0531971829944777
+        ]
+      },
+      {
+        "count": [
+          10033,
+          10555
+        ],
+        "z": [
+          96.8622777030974,
+          106.03619817571581
+        ],
+        "absZ": [
+          96.8622777030974,
+          106.03619817571581
+        ],
+        "residualPerSqrtCount": [
+          152.042520439106,
+          166.77317592472193
+        ],
+        "rankMean": [
+          3.6162008526764566,
+          3.804445330409648
+        ],
+        "theta": [
+          1.0003880549435278,
+          1.0531971829944777
+        ]
+      }
+    ],
+    "composite": [
+      {
+        "count": [
+          762,
+          791
+        ],
+        "z": [
+          29.490614186810024,
+          31.76649635999092
+        ],
+        "absZ": [
+          29.490614186810024,
+          31.76649635999092
+        ],
+        "residualPerSqrtCount": [
+          31.518506382519007,
+          33.881929514735376
+        ],
+        "rankMean": [
+          2.79519595448799,
+          2.9015748031496065
+        ],
+        "theta": [
+          -0.1689604383628083,
+          -0.1434950561997895
+        ]
+      },
+      {
+        "count": [
+          1714,
+          1784
+        ],
+        "z": [
+          27.883493283682625,
+          31.093484771733124
+        ],
+        "absZ": [
+          27.883493283682625,
+          31.093484771733124
+        ],
+        "residualPerSqrtCount": [
+          33.388867377689124,
+          37.162030475096216
+        ],
+        "rankMean": [
+          2.5812780269058297,
+          2.686114352392065
+        ],
+        "theta": [
+          -0.1689604383628083,
+          -0.1434950561997895
+        ]
+      },
+      {
+        "count": [
+          3850,
+          3907
+        ],
+        "z": [
+          22.97611407677812,
+          24.54663969843175
+        ],
+        "absZ": [
+          22.97611407677812,
+          24.54663969843175
+        ],
+        "residualPerSqrtCount": [
+          30.634531573865903,
+          32.69485939830964
+        ],
+        "rankMean": [
+          2.406194010749936,
+          2.4420779220779223
+        ],
+        "theta": [
+          -0.1689604383628083,
+          -0.1434950561997895
+        ]
+      },
+      {
+        "count": [
+          8334,
+          8425
+        ],
+        "z": [
+          13.282119240343642,
+          14.790437573423114
+        ],
+        "absZ": [
+          13.282119240343642,
+          14.790437573423114
+        ],
+        "residualPerSqrtCount": [
+          19.483480927838148,
+          21.686585986938375
+        ],
+        "rankMean": [
+          2.2542433234421364,
+          2.2788576913846894
+        ],
+        "theta": [
+          -0.1689604383628083,
+          -0.1434950561997895
+        ]
+      },
+      {
+        "count": [
+          17815,
+          17815
+        ],
+        "z": [
+          -2.2882512135817987,
+          -2.160863316256516
+        ],
+        "absZ": [
+          2.160863316256516,
+          2.2882512135817987
+        ],
+        "residualPerSqrtCount": [
+          -3.665204417245726,
+          -3.457834068742964
+        ],
+        "rankMean": [
+          2.142464215548695,
+          2.14252034802133
+        ],
+        "theta": [
+          -0.1689604383628083,
+          -0.1434950561997895
+        ]
+      }
+    ]
+  },
+  "namedCenterChecks": [
+    {
+      "n": 25,
+      "isPrime": false,
+      "eligible": false,
+      "nextPrime": 29,
+      "rankToNextPrime": null,
+      "expectedRank": null
+    },
+    {
+      "n": 35,
+      "isPrime": false,
+      "eligible": false,
+      "nextPrime": 37,
+      "rankToNextPrime": null,
+      "expectedRank": null
+    },
+    {
+      "n": 77,
+      "isPrime": false,
+      "eligible": false,
+      "nextPrime": 79,
+      "rankToNextPrime": null,
+      "expectedRank": null
+    },
+    {
+      "n": 289,
+      "isPrime": false,
+      "eligible": true,
+      "nextPrime": 293,
+      "rankToNextPrime": 1,
+      "expectedRank": 1.3249640495150552
+    }
+  ],
+  "jsonPath": "logs/playground-artifacts/primorial-recovery-debt-200000.json",
+  "mdPath": "logs/playground-artifacts/primorial-recovery-debt-200000.md",
+  "svgPath": "logs/playground-artifacts/primorial-recovery-debt-200000.svg"
+}

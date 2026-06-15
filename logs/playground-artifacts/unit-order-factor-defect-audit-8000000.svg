@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#080d17"/>
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+</style>
+<text x="64" y="30" fill="#e5e7eb" font-size="18" font-weight="700">Unit-order local-factor defect</text>
+<text x="64" y="54" fill="#a8b3c7" font-size="13">y: sqrt(label-count)-scaled first + second order defect of p-1 / f-1 small factors</text>
+<line x1="64" x2="684" y1="494" y2="494" stroke="#334155"/>
+<line x1="64" x2="64" y1="64" y2="494" stroke="#334155"/>
+<polygon points="64,139.0303995454032 219,119.11579091848756 374,140.91853713189954 529,95.85185185185185 684,116.18363987912574 684,193.1577564876709 529,223.93323478603025 374,188.17849668194083 219,253.96658405089224 64,210.5421508775945" fill="#facc15" opacity="0.16"/>
+<polygon points="64,151.0005764941762 219,195.3028224609228 374,152.21984003449165 529,144.97183441526727 684,162.57525509299705 684,216.36078050966796 529,263.8286794057677 374,232.59920536010708 219,272.0781858795617 64,239.07968756145524" fill="#fb7185" opacity="0.16"/>
+<polygon points="64,205.0638230467502 219,207.5864059055021 374,226.827261513645 529,227.9039979245498 684,166.90337670981654 684,245.65411706708855 529,234.4914024881774 374,269.3564201331022 219,271.4048379952184 64,258.1649863823054" fill="#94a3b8" opacity="0.16"/>
+<polyline points="64,345.4386721414893 219,344.11585478948183 374,345.7721567197833 529,354.1358745049465 684,357.88321258232236" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<polyline points="64,419.35504705155876 219,421.49872745284256 374,408.49136249683625 529,436.705454750366 684,426.85261085446234" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+<polyline points="64,365.5531271910098 219,362.8175984953374 374,372.92247757797065 529,366.4096058273441 684,375.59810834346024" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.8"/>
+<text x="38" y="516" fill="#94a3b8" font-size="11">0.5M</text>
+<text x="193" y="516" fill="#94a3b8" font-size="11">1M</text>
+<text x="348" y="516" fill="#94a3b8" font-size="11">2M</text>
+<text x="503" y="516" fill="#94a3b8" font-size="11">4M</text>
+<text x="658" y="516" fill="#94a3b8" font-size="11">8M</text>
+<text x="760" y="72" fill="#e5e7eb" font-size="15" font-weight="700">Function-field real / local-reducible range</text>
+<text x="680" y="106" fill="#9b7bdb" font-size="13">F2 d19</text>
+<line x1="930.1798458938175" x2="990" y1="102" y2="102" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="98" width="94.32370721632086" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="107" fill="#dbeafe" font-size="12">0.647964</text>
+<text x="680" y="134" fill="#9b7bdb" font-size="13">F2 d20</text>
+<line x1="926.1675917176053" x2="974.0384468161485" y1="130" y2="130" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="126" width="102.30226527932541" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="135" fill="#dbeafe" font-size="12">0.702774</text>
+<text x="680" y="162" fill="#9b7bdb" font-size="13">F2 d21</text>
+<line x1="892.8278570211443" x2="964.6892608993652" y1="158" y2="158" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="154" width="89.39881340931042" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="163" fill="#dbeafe" font-size="12">0.614132</text>
+<text x="680" y="190" fill="#9b7bdb" font-size="13">F2 d22</text>
+<line x1="911.7287409208045" x2="945.2242105702151" y1="186" y2="186" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="182" width="84.7334967402922" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="191" fill="#dbeafe" font-size="12">0.582084</text>
+<text x="680" y="218" fill="#38b98d" font-size="13">F3 d10</text>
+<line x1="821.2790702451896" x2="861.88162216056" y1="214" y2="214" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="210" width="76.98142662801266" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="219" fill="#dbeafe" font-size="12">0.528830</text>
+<text x="680" y="246" fill="#38b98d" font-size="13">F3 d11</text>
+<line x1="862.1880487541064" x2="885.7001524923764" y1="242" y2="242" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="238" width="65.1965314397508" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="247" fill="#dbeafe" font-size="12">0.447873</text>
+<text x="680" y="274" fill="#38b98d" font-size="13">F3 d12</text>
+<line x1="858.613698683242" x2="894.5058397795377" y1="270" y2="270" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="266" width="68.06341299775097" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="275" fill="#dbeafe" font-size="12">0.467567</text>
+<text x="680" y="302" fill="#38b98d" font-size="13">F3 d13</text>
+<line x1="860.386269671185" x2="895.7987291288946" y1="298" y2="298" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="294" width="44.588593904137205" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="303" fill="#dbeafe" font-size="12">0.306305</text>
+<text x="64" y="596" fill="#a8b3c7" font-size="12">cyan combined real; green first-order; purple second-order; yellow local-random, red local-composite, gray column-null bands</text>
+</svg>

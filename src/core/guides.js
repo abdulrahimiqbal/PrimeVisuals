@@ -15,6 +15,16 @@ export function patchGuide(cfg, data) {
     zeta: `Each sample is zeta(1/2 + it) at one height t, not an individual prime.`,
     zeros: `Each dot is one known nontrivial zeta zero height t_k.`,
     psi: `Each step is one prime power p^k weighted by log p; the staircase is Chebyshev psi(x).`,
+    primon: "Each point is one approach to beta = 1 in the prime-gas partition function.",
+    rotor: "Each dot is one standard-map phase sample; the left panel is ordinary KAM forcing and the right panel is prime-time forcing.",
+    anderson: "Each point is one energy E in a tight-binding chain whose prime sites carry the on-site potential.",
+    levy: "Each point is one continued-fraction denominator growth estimate from the prime-indicator constant.",
+    linking: "Each point is one spectral-density bin from a symmetric Legendre-symbol linking matrix.",
+    primeTda: "Each point is a persistence-style adjacent-gap pair built from normalized prime gaps.",
+    magnitude: "Each point is one scale in the Leinster magnitude calculation for the metric space of primes.",
+    primeAction: "Each point is the least action to cross a grid whose potential turns on at prime coordinate sums.",
+    monna: "Each point is an integer sent through the Monna digit-reversal map.",
+    goldbach: "Each point is one spectral-density bin for the centered Goldbach graph adjacency matrix.",
   }[cfg.source] || `Each item comes from ${source.label}.`;
 
   const position = (() => {
@@ -22,6 +32,8 @@ export function patchGuide(cfg, data) {
     if (cfg.plane === "sacks") return "The number is wrapped onto a spiral with r = sqrt(n) and theta = 2*pi*sqrt(n).";
     if (cfg.plane === "polar") return `The angle is alpha*n, currently alpha = ${(+cfg.p.alpha).toFixed(3)}; radius comes from n or |zeta|.`;
     if (cfg.plane === "clock") return `The spoke is n mod ${Math.round(cfg.p.mod || 12)} and radius grows like sqrt(n).`;
+    if (cfg.plane === "phase") return "The source supplies canonical coordinates: theta horizontally and wrapped momentum vertically, split into two panels.";
+    if (cfg.plane === "diagram") return "The source supplies birth/death-like coordinates; the diagonal is the zero-persistence reference.";
     if (cfg.plane === "walk") return "X moves along n; Y is the cumulative total of the source signal.";
     if (cfg.plane === "argand") return "The complex zeta value becomes a point: x = Re(zeta), y = Im(zeta).";
     if (cfg.plane === "strip") return "Zeros are placed at x = 1/2 and y = t_k inside the critical strip.";
@@ -32,6 +44,7 @@ export function patchGuide(cfg, data) {
     if (cfg.plane === "graph" && cfg.source === "gaps") return "X is prime p; Y is the following prime gap.";
     if (cfg.plane === "graph" && cfg.source === "zeta") return "X is height t; Y is |zeta(1/2 + it)|.";
     if (cfg.plane === "graph" && cfg.source === "zeros") return "X is the zero height; Y is spacing to the next zero.";
+    if (cfg.plane === "graph" && source.domain === "series") return "X and Y are the natural coordinates for this experiment: a critical-line, spectrum, action, or staircase readout.";
     return `The ${plane.label} plane decides the x/y position.`;
   })();
 
@@ -62,6 +75,16 @@ export function patchGuide(cfg, data) {
       "zeta:argand": "Loops passing through the origin correspond to zeta zeros.",
       "zeros:strip": "The visual question is whether zeros stay on the center line Re(s) = 1/2.",
       "zeros:graph": "Compare each spacing with the mean line; nearby zeros tend to repel.",
+      "primon:graph": "The question is whether log U falls on a straight line with slope -1 as beta approaches 1.",
+      "rotor:phase": "Compare the invariant KAM curves on the left with the prime-kicked panel on the right.",
+      "anderson:graph": "Look for energies where gamma(E) collapses toward zero: those are mobility-edge candidates.",
+      "levy:graph": "Watch the running estimate flatten toward the horizontal Levy reference line.",
+      "linking:graph": "Compare the measured eigenvalue density with the semicircle reference.",
+      "primeTda:diagram": "Mass close to the diagonal means low persistence; off-diagonal structure is the anomaly to compare against random gaps.",
+      "magnitude:graph": "A straight log-log section reads as an effective dimension of the prime metric space.",
+      "primeAction:graph": "The dashed fit asks whether the least action grows linearly with path length.",
+      "monna:graph": "The digit-reversal staircase should show self-similar blocks at powers of the base.",
+      "goldbach:graph": "The edge of the spectral density is the expander-style threshold to compare with a random graph.",
     };
     return notes[key] || "Increase the range and see which structures persist instead of disappearing.";
   })();
@@ -122,6 +145,15 @@ export function hoverInfo(mode, cfg, data, lab, labData, idx) {
     if (data.kind === "psi") {
       return { title: "Prime Power", lines: [`x = ${fmt(Math.round(n))}`, `weight log p = ${neat(data.w[idx], 3)}`] };
     }
+    if (data.kind === "rotor") {
+      return { title: data.w[idx] > 0 ? "Prime-Kicked Rotor" : "Standard Rotor", lines: [`theta panel x = ${neat(data.re[idx], 3)}`, `p/pi = ${neat(data.im[idx], 3)}`] };
+    }
+    if (data.domain === "series") {
+      return { title: SOURCES[cfg.source].label, lines: [`x = ${neat(data.n[idx], 4)}`, `y = ${neat(data.w[idx], 4)}`] };
+    }
+    if (data.domain === "diagram") {
+      return { title: SOURCES[cfg.source].label, lines: [`birth proxy = ${neat(data.re[idx], 4)}`, `death proxy = ${neat(data.im[idx], 4)}`, `persistence = ${neat(data.w[idx], 4)}`] };
+    }
   }
   if (mode === "lab" && labData && labData.series) {
     const S = labData.series;
@@ -158,6 +190,16 @@ export function explainView(cfg, opts = {}) {
     "zeta:argand": "The zeta function drawn as a moving point in the plane. Each loop through the origin is a zero.",
     "zeros:strip": "The known zeros plotted in their natural home. The Riemann Hypothesis says they all sit exactly on the center line — none have ever been found off it.",
     "zeros:graph": "The spacing between consecutive zeros. They repel each other like energy levels of a heavy atom — one of math's strangest unexplained connections.",
+    "primon:graph": "The prime gas is approaching beta = 1. A straight log-log line with slope -1 is the Hagedorn-style critical exponent, with the zeta pole hiding underneath.",
+    "rotor:phase": "The left panel is the textbook standard-map phase portrait; the right panel fires the same kick only at prime time steps, so you can see whether KAM curves survive sparse prime forcing.",
+    "anderson:graph": "A prime quasicrystal: the curve is inverse localization length gamma(E). Where it touches zero, the chain behaves like it has a mobility edge.",
+    "levy:graph": "A prime-built continued-fraction constant is being tested against the Levy denominator-growth line; flattening means the Gauss-map Lyapunov rate is settling.",
+    "linking:graph": "Primes are treated like linked knots through Legendre symbols. The eigenvalue density is compared to the semicircle shape expected from a random-like symmetric matrix.",
+    "primeTda:diagram": "This is a lightweight persistence proxy: adjacent normalized prime gaps become birth/death points, and distance from the diagonal marks persistence.",
+    "magnitude:graph": "The metric space of primes is being measured by magnitude. A straight log-log region reads like an effective geometric dimension.",
+    "primeAction:graph": "A shortest-path solver crosses a grid where prime coordinate sums add potential. The line asks whether action grows linearly with path length.",
+    "monna:graph": "Integers are digit-reversed into a p-adic boundary coordinate. The staircase blocks are the Bruhat-Tits-tree flavor showing up in ordinary pixels.",
+    "goldbach:graph": "The Goldbach graph connects i and j when i+j is prime. The centered adjacency spectrum shows the spectral edge you would compare to an expander threshold.",
   }[`${cfg.source}:${cfg.plane}`]
     || "A stream of arithmetic data placed into a coordinate system — structure you see is structure the numbers brought with them.";
 

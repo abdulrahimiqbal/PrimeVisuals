@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#080d17"/>
+<style>text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }</style>
+<text x="64" y="30" fill="#e5e7eb" font-size="18" font-weight="700">Unlabeled prime-pair difference roughness</text>
+<text x="64" y="54" fill="#a8b3c7" font-size="13">y: abs aggregate z of omega(pair difference) after difference-size buckets</text>
+<line x1="64" x2="684" y1="494" y2="494" stroke="#334155"/>
+<line x1="64" x2="64" y1="64" y2="494" stroke="#334155"/>
+<polygon points="64,364.71829694196845 219,355.0970001549431 374,314.63052720594703 529,244.5972821025169 684,248.34096991300544 684,379.5747309919554 529,370.29481289728903 374,323.4269068585327 219,258.47280118040135 64,263.3277213819414" fill="#facc15" opacity="0.18"/>
+<polygon points="64,477.847970978025 219,475.5294128268555 374,478.1867501339697 529,473.957828173256 684,479.67697380733597 684,491.10771059477827 529,485.88376779075634 374,488.5048821929539 219,488.6473641224207 64,490.24205276751724" fill="#fb7185" opacity="0.18"/>
+<polyline points="64,309.7047865605788 219,293.7322336114201 374,216.59328412886998 529,110.07142857142867 684,120.71783162182192" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="38" y="516" fill="#94a3b8" font-size="11">0.2M</text>
+<text x="193" y="516" fill="#94a3b8" font-size="11">0.25M</text>
+<text x="348" y="516" fill="#94a3b8" font-size="11">0.5M</text>
+<text x="503" y="516" fill="#94a3b8" font-size="11">1M</text>
+<text x="658" y="516" fill="#94a3b8" font-size="11">2M</text>
+<text x="760" y="72" fill="#e5e7eb" font-size="15" font-weight="700">Function-field real / reducible range</text>
+<text x="680" y="106" fill="#9b7bdb" font-size="13">F2 d14</text>
+<line x1="760.0913703353222" x2="763.4089679303955" y1="102" y2="102" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="98" width="191.11875930923418" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="107" fill="#dbeafe" font-size="12">105.540675</text>
+<text x="680" y="134" fill="#9b7bdb" font-size="13">F2 d15</text>
+<line x1="761.0118949673451" x2="762.6198846086703" y1="130" y2="130" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="126" width="187.9473288526965" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="135" fill="#dbeafe" font-size="12">103.789330</text>
+<text x="680" y="162" fill="#9b7bdb" font-size="13">F2 d16</text>
+<line x1="761.0739112938659" x2="763.9950451006372" y1="158" y2="158" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="154" width="186.63790156844428" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="163" fill="#dbeafe" font-size="12">103.066231</text>
+<text x="680" y="190" fill="#9b7bdb" font-size="13">F2 d17</text>
+<line x1="760.2151335202631" x2="762.8008527658932" y1="186" y2="186" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="182" width="230" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="191" fill="#dbeafe" font-size="12">127.011892</text>
+<text x="680" y="218" fill="#38b98d" font-size="13">F3 d7</text>
+<line x1="760.605997839554" x2="763.2375007229748" y1="214" y2="214" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="210" width="90.28117370307774" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="219" fill="#dbeafe" font-size="12">49.855577</text>
+<text x="680" y="246" fill="#38b98d" font-size="13">F3 d8</text>
+<line x1="760.1247814706012" x2="764.1615775459464" y1="242" y2="242" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="238" width="93.81229663822562" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="247" fill="#dbeafe" font-size="12">51.805554</text>
+<text x="680" y="274" fill="#38b98d" font-size="13">F3 d9</text>
+<line x1="760.2712462226406" x2="761.8487145309074" y1="270" y2="270" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="266" width="92.78622108352921" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="275" fill="#dbeafe" font-size="12">51.238928</text>
+<text x="680" y="302" fill="#38b98d" font-size="13">F3 d10</text>
+<line x1="760.6499279996574" x2="763.2991094743949" y1="298" y2="298" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="294" width="98.2331213721313" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="303" fill="#dbeafe" font-size="12">54.246846</text>
+<text x="64" y="596" fill="#a8b3c7" font-size="12">cyan real; yellow Cramer band; red odd-composite band; bars compare function-field real to reducible controls</text>
+</svg>

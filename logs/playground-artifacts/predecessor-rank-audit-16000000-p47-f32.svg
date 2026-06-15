@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">local-eligible predecessor-squarefree rank discrepancy</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">aggregate Z of Q(n)=1_{n-1 squarefree} inside window-specific local eligible sets</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="236.07" y2="236.07" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 210.59 L 415.33 236.01 L 748.67 208.40 L 1082.00 256.62" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 213.65 L 415.33 258.09 L 748.67 252.96 L 1082.00 240.13" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 211.27 L 415.33 281.08 L 748.67 316.29 L 1082.00 269.35" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 84.15 L 415.33 324.89 L 748.67 235.47 L 1082.00 295.41" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest windows</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>14449050 k=13 eligible=32 z=4.126</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(224,81,83)"><title>11812290 k=6 eligible=27 z=3.854</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(36,225,213)"><title>12592230 k=14 eligible=30 z=-3.833</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(36,223,212)"><title>13140120 k=14 eligible=27 z=-3.742</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(36,222,212)"><title>13652940 k=15 eligible=28 z=-3.728</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(216,83,87)"><title>9061710 k=12 eligible=28 z=3.690</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(216,83,87)"><title>12092850 k=12 eligible=28 z=3.690</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(37,221,211)"><title>9723840 k=14 eligible=22 z=-3.682</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest windows</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:1807 k=2 eligible=6 z=2.236</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:1909 k=2 eligible=6 z=2.236</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:3210 k=2 eligible=6 z=2.236</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:3272 k=2 eligible=6 z=2.236</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:4693 k=2 eligible=6 z=2.236</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:4804 k=2 eligible=6 z=2.236</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:5457 k=2 eligible=6 z=2.236</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(153,95,117)"><title>24:5647 k=2 eligible=6 z=2.236</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest windows</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:3663 k=4 eligible=8 z=-2.646</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:23407 k=4 eligible=8 z=-2.646</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:42331 k=4 eligible=8 z=-2.646</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:105115 k=2 eligible=8 z=-2.646</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:105791 k=2 eligible=8 z=-2.646</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:106546 k=2 eligible=8 z=-2.646</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:108075 k=3 eligible=8 z=-2.646</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(42,191,200)"><title>15:123930 k=2 eligible=8 z=-2.646</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate -0.240925, mean z -0.001234</text>
+<text x="650" y="484" fill="#94a3b8">Z controls -1.170858 .. 1.253823</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate -0.047546</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate -0.390244, controls -0.453207 .. 0.209119</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate -0.695799, controls -0.651960 .. 1.369031</text>
+<text x="650" y="594" fill="#94a3b8">red = positive z, blue = negative z, clamp +/-4</text>
+</g>
+</svg>

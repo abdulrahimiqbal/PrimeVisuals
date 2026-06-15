@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="25" fill="#e5e7eb" font-size="18" font-weight="700">Thue-Morse prime balance audit</text>
+<text x="70" y="36" fill="#67e8f9" font-size="13">Z base 2</text>
+<text x="275" y="36" fill="#fbbf24" font-size="13">Z base 3</text>
+<text x="480" y="36" fill="#fb7185" font-size="13">Z base 10</text>
+<text x="70" y="54" fill="#eab308" font-size="13">W6 candidates</text>
+<text x="275" y="54" fill="#84cc16" font-size="13">W210 candidates</text>
+<text x="480" y="54" fill="#a78bfa" font-size="13">Cramer mean</text>
+<text x="70" y="72" fill="#34d399" font-size="13">Composite mean</text>
+<text x="275" y="72" fill="#f97316" font-size="13">Rough31 composite mean</text>
+<text x="480" y="72" fill="#22d3ee" font-size="13">F2 coeff parity</text>
+<text x="70" y="90" fill="#60a5fa" font-size="13">F3 coeff parity</text>
+<rect x="70" y="70" width="780" height="532" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="70" x2="850" y2="70" stroke="#1f2937"/>
+<text x="18" y="74" fill="#94a3b8" font-size="12">1116.99</text>
+<line x1="70" y1="158.66666666666666" x2="850" y2="158.66666666666666" stroke="#1f2937"/>
+<text x="18" y="162.66666666666666" fill="#94a3b8" font-size="12">930.82</text>
+<line x1="70" y1="247.33333333333331" x2="850" y2="247.33333333333331" stroke="#1f2937"/>
+<text x="18" y="251.33333333333331" fill="#94a3b8" font-size="12">744.66</text>
+<line x1="70" y1="336" x2="850" y2="336" stroke="#1f2937"/>
+<text x="18" y="340" fill="#94a3b8" font-size="12">558.49</text>
+<line x1="70" y1="424.66666666666663" x2="850" y2="424.66666666666663" stroke="#1f2937"/>
+<text x="18" y="428.66666666666663" fill="#94a3b8" font-size="12">372.33</text>
+<line x1="70" y1="513.3333333333334" x2="850" y2="513.3333333333334" stroke="#1f2937"/>
+<text x="18" y="517.3333333333334" fill="#94a3b8" font-size="12">186.16</text>
+<line x1="70" y1="602" x2="850" y2="602" stroke="#1f2937"/>
+<text x="18" y="606" fill="#94a3b8" font-size="12">0.00</text>
+<polyline points="70.00,593.90 125.71,595.61 181.43,590.62 237.14,592.54 292.86,585.88" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="593.8980824288781" r="4" fill="#67e8f9"/><circle cx="125.71428571428571" cy="595.6095762760134" r="4" fill="#67e8f9"/><circle cx="181.42857142857142" cy="590.6209525119768" r="4" fill="#67e8f9"/><circle cx="237.14285714285714" cy="592.535258732275" r="4" fill="#67e8f9"/><circle cx="292.85714285714283" cy="585.8843850441634" r="4" fill="#67e8f9"/>
+<polyline points="70.00,468.56 125.71,418.20 181.43,348.57 237.14,252.08 292.86,118.36" fill="none" stroke="#fbbf24" stroke-width="3"/><circle cx="70" cy="468.56145160243653" r="4" fill="#fbbf24"/><circle cx="125.71428571428571" cy="418.1969494714096" r="4" fill="#fbbf24"/><circle cx="181.42857142857142" cy="348.5657970621544" r="4" fill="#fbbf24"/><circle cx="237.14285714285714" cy="252.0800878228584" r="4" fill="#fbbf24"/><circle cx="292.85714285714283" cy="118.36363636363637" r="4" fill="#fbbf24"/>
+<polyline points="70.00,598.73 125.71,597.52 181.43,597.07 237.14,597.84 292.86,597.52" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="598.7344138367341" r="4" fill="#fb7185"/><circle cx="125.71428571428571" cy="597.5237414355158" r="4" fill="#fb7185"/><circle cx="181.42857142857142" cy="597.0699446579067" r="4" fill="#fb7185"/><circle cx="237.14285714285714" cy="597.8445896214988" r="4" fill="#fb7185"/><circle cx="292.85714285714283" cy="597.5216423179276" r="4" fill="#fb7185"/>
+<polyline points="70.00,586.97 125.71,590.52 181.43,579.45 237.14,584.78 292.86,568.17" fill="none" stroke="#eab308" stroke-width="3"/><circle cx="70" cy="586.9662168738909" r="4" fill="#eab308"/><circle cx="125.71428571428571" cy="590.5190413606143" r="4" fill="#eab308"/><circle cx="181.42857142857142" cy="579.4485341939435" r="4" fill="#eab308"/><circle cx="237.14285714285714" cy="584.7779851764185" r="4" fill="#eab308"/><circle cx="292.85714285714283" cy="568.172401504793" r="4" fill="#eab308"/>
+<polyline points="70.00,589.03 125.71,592.00 181.43,583.06 237.14,586.83 292.86,572.90" fill="none" stroke="#84cc16" stroke-width="3"/><circle cx="70" cy="589.0252842639594" r="4" fill="#84cc16"/><circle cx="125.71428571428571" cy="591.9963971026982" r="4" fill="#84cc16"/><circle cx="181.42857142857142" cy="583.0574944189053" r="4" fill="#84cc16"/><circle cx="237.14285714285714" cy="586.8258972436107" r="4" fill="#84cc16"/><circle cx="292.85714285714283" cy="572.9026098609729" r="4" fill="#84cc16"/>
+<polyline points="70.00,594.61 125.71,596.07 181.43,591.55 237.14,593.71 292.86,587.05" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="594.611972258498" r="4" fill="#a78bfa"/><circle cx="125.71428571428571" cy="596.0673417860587" r="4" fill="#a78bfa"/><circle cx="181.42857142857142" cy="591.550587824033" r="4" fill="#a78bfa"/><circle cx="237.14285714285714" cy="593.7074235906512" r="4" fill="#a78bfa"/><circle cx="292.85714285714283" cy="587.048397046583" r="4" fill="#a78bfa"/>
+<polyline points="70.00,595.63 125.71,596.95 181.43,592.37 237.14,594.38 292.86,586.75" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="70" cy="595.6264250427889" r="4" fill="#34d399"/><circle cx="125.71428571428571" cy="596.9535534201043" r="4" fill="#34d399"/><circle cx="181.42857142857142" cy="592.3657885441331" r="4" fill="#34d399"/><circle cx="237.14285714285714" cy="594.380767891911" r="4" fill="#34d399"/><circle cx="292.85714285714283" cy="586.7535404004747" r="4" fill="#34d399"/>
+<polyline points="70.00,595.95 125.71,597.23 181.43,592.78 237.14,594.80 292.86,587.10" fill="none" stroke="#f97316" stroke-width="3"/><circle cx="70" cy="595.9460996479625" r="4" fill="#f97316"/><circle cx="125.71428571428571" cy="597.2254072720363" r="4" fill="#f97316"/><circle cx="181.42857142857142" cy="592.7799938222686" r="4" fill="#f97316"/><circle cx="237.14285714285714" cy="594.7988156086242" r="4" fill="#f97316"/><circle cx="292.85714285714283" cy="587.1011587662866" r="4" fill="#f97316"/>
+<polyline points="404.29,522.88 460.00,493.00 515.71,451.49 571.43,394.09" fill="none" stroke="#22d3ee" stroke-width="3"/><circle cx="404.2857142857143" cy="522.8828912201211" r="4" fill="#22d3ee"/><circle cx="460" cy="492.998270685565" r="4" fill="#22d3ee"/><circle cx="515.7142857142857" cy="451.49375867090157" r="4" fill="#22d3ee"/><circle cx="571.4285714285714" cy="394.08992661031925" r="4" fill="#22d3ee"/>
+<polyline points="682.86,601.49 738.57,599.25 794.29,600.96 850.00,600.45" fill="none" stroke="#60a5fa" stroke-width="3"/><circle cx="682.8571428571429" cy="601.4906828882733" r="4" fill="#60a5fa"/><circle cx="738.5714285714286" cy="599.2526924582365" r="4" fill="#60a5fa"/><circle cx="794.2857142857143" cy="600.9558698548068" r="4" fill="#60a5fa"/><circle cx="850" cy="600.4522911378076" r="4" fill="#60a5fa"/>
+<text x="890" y="110" fill="#cbd5e1" font-size="13">Z endpoint base2 33.836373</text>
+<text x="890" y="138" fill="#cbd5e1" font-size="13">W6 endpoint 71.024484</text>
+<text x="890" y="166" fill="#cbd5e1" font-size="13">W210 endpoint 61.092931</text>
+<text x="890" y="194" fill="#cbd5e1" font-size="13">Cramer 29.884983..32.853785</text>
+<text x="890" y="222" fill="#cbd5e1" font-size="13">composite 30.668306..33.647293</text>
+<text x="890" y="250" fill="#cbd5e1" font-size="13">rough31 comp 30.090235..32.325706</text>
+<text x="890" y="278" fill="#cbd5e1" font-size="13">F2 endpoint 436.528350</text>
+<text x="890" y="306" fill="#cbd5e1" font-size="13">F3 endpoint 3.249572</text>
+<text x="70" y="644" fill="#94a3b8" font-size="13">y: max |sum sign(label)| / sqrt(label count). Integer scales first, then coefficient-parity function-field checks.</text>
+</svg>

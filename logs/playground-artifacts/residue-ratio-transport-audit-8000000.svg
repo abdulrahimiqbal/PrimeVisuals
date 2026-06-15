@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">consecutive residue-ratio transport spectrum</text>
+<text x="70" y="42" fill="#67e8f9" font-size="13">prime transport</text>
+<text x="340" y="42" fill="#34d399" font-size="13">gap-conditioned</text>
+<text x="610" y="42" fill="#fb7185" font-size="13">Cramer transport</text>
+<text x="70" y="60" fill="#a78bfa" font-size="13">composite transport</text>
+<text x="340" y="60" fill="#f8fafc" font-size="13">random order</text>
+<rect x="70" y="62" width="1020" height="508" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="62" x2="1090" y2="62" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="66" fill="#94a3b8" font-size="12">47.67</text>
+<line x1="70" y1="163.60000000000002" x2="1090" y2="163.60000000000002" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="167.60000000000002" fill="#94a3b8" font-size="12">38.13</text>
+<line x1="70" y1="265.20000000000005" x2="1090" y2="265.20000000000005" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="269.20000000000005" fill="#94a3b8" font-size="12">28.60</text>
+<line x1="70" y1="366.8" x2="1090" y2="366.8" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="370.8" fill="#94a3b8" font-size="12">19.07</text>
+<line x1="70" y1="468.40000000000003" x2="1090" y2="468.40000000000003" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="472.40000000000003" fill="#94a3b8" font-size="12">9.53</text>
+<line x1="70" y1="570" x2="1090" y2="570" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="574" fill="#94a3b8" font-size="12">0.00</text>
+<polyline points="70.00,459.40 325.00,404.19 580.00,353.97 835.00,330.90 1090.00,108.18" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="459.4012332385353" r="4" fill="#67e8f9"/><circle cx="325" cy="404.18805497989024" r="4" fill="#67e8f9"/><circle cx="580" cy="353.9699654249951" r="4" fill="#67e8f9"/><circle cx="835" cy="330.90039861323874" r="4" fill="#67e8f9"/><circle cx="1090" cy="108.18181818181819" r="4" fill="#67e8f9"/>
+<polyline points="70.00,540.51 325.00,535.55 580.00,528.86 835.00,516.52 1090.00,502.08" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="70" cy="540.5079393356035" r="4" fill="#34d399"/><circle cx="325" cy="535.5524521680989" r="4" fill="#34d399"/><circle cx="580" cy="528.8573954268453" r="4" fill="#34d399"/><circle cx="835" cy="516.523313586428" r="4" fill="#34d399"/><circle cx="1090" cy="502.0836268942482" r="4" fill="#34d399"/>
+<polyline points="70.00,505.18 325.00,484.72 580.00,448.80 835.00,382.58 1090.00,353.54" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="505.18403814231425" r="4" fill="#fb7185"/><circle cx="325" cy="484.7156453913977" r="4" fill="#fb7185"/><circle cx="580" cy="448.80055148585126" r="4" fill="#fb7185"/><circle cx="835" cy="382.5765881374631" r="4" fill="#fb7185"/><circle cx="1090" cy="353.54006016911075" r="4" fill="#fb7185"/>
+<polyline points="70.00,461.64 325.00,410.45 580.00,343.65 835.00,227.68 1090.00,182.58" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="461.6388262236767" r="4" fill="#a78bfa"/><circle cx="325" cy="410.4546109353581" r="4" fill="#a78bfa"/><circle cx="580" cy="343.6464626881449" r="4" fill="#a78bfa"/><circle cx="835" cy="227.6846577076678" r="4" fill="#a78bfa"/><circle cx="1090" cy="182.58203049238773" r="4" fill="#a78bfa"/>
+<polyline points="70.00,552.43 325.00,551.99 580.00,550.45 835.00,551.88 1090.00,551.69" fill="none" stroke="#f8fafc" stroke-width="3"/><circle cx="70" cy="552.4272877246547" r="4" fill="#f8fafc"/><circle cx="325" cy="551.9870904408624" r="4" fill="#f8fafc"/><circle cx="580" cy="550.4535588553086" r="4" fill="#f8fafc"/><circle cx="835" cy="551.8828608261831" r="4" fill="#f8fafc"/><circle cx="1090" cy="551.6852179493533" r="4" fill="#f8fafc"/>
+<text x="70" y="606" fill="#94a3b8" font-size="13">y: transition-ratio spectrum energy versus random shuffles of the same endpoint residue multiset</text>
+</svg>

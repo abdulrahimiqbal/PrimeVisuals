@@ -1,0 +1,1027 @@
+{
+  "candidate": "psqprevmean(x)=mean_{p<=x} mu(p-1)^2",
+  "expectedArtinProduct": 0.37395583896432805,
+  "preregisteredConfirm": "stable flat line whose count residual relative to A*pi(x) is materially smaller than five Cramer and W=210 fake/composite controls",
+  "preregisteredBreak": "flat line explained by local congruence Euler product and reproduced by fake labels or composite controls",
+  "N": 16000000,
+  "endpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000,
+    16000000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "real": {
+    "name": "real-primes",
+    "rows": [
+      {
+        "N": 1000000,
+        "labels": 78498,
+        "squarefree": 29397,
+        "mean": 0.3744936176717878,
+        "residual": 42.21455297817738,
+        "residualOverSqrtLabels": 0.150672119971136,
+        "maxAbsResidual": 42.21455297817738,
+        "maxAbsResidualOverSqrtLabels": 0.150672119971136
+      },
+      {
+        "N": 2000000,
+        "labels": 148933,
+        "squarefree": 55778,
+        "mean": 0.3745174004418094,
+        "residual": 83.63503552573093,
+        "residualOverSqrtLabels": 0.21671689855439338,
+        "maxAbsResidual": 83.63503552573093,
+        "maxAbsResidualOverSqrtLabels": 0.21671689855439338
+      },
+      {
+        "N": 4000000,
+        "labels": 283146,
+        "squarefree": 105993,
+        "mean": 0.37434044627153484,
+        "residual": 108.9000206063647,
+        "residualOverSqrtLabels": 0.20465518239266356,
+        "maxAbsResidual": 108.9000206063647,
+        "maxAbsResidualOverSqrtLabels": 0.20465518239266356
+      },
+      {
+        "N": 8000000,
+        "labels": 539777,
+        "squarefree": 202013,
+        "mean": 0.3742527006523064,
+        "residual": 160.239111351897,
+        "residualOverSqrtLabels": 0.2181028497660612,
+        "maxAbsResidual": 160.239111351897,
+        "maxAbsResidualOverSqrtLabels": 0.2181028497660612
+      },
+      {
+        "N": 16000000,
+        "labels": 1031130,
+        "squarefree": 385704,
+        "mean": 0.37405952692676964,
+        "residual": 106.91576871240977,
+        "residualOverSqrtLabels": 0.10528949715269526,
+        "maxAbsResidual": 160.239111351897,
+        "maxAbsResidualOverSqrtLabels": 0.1578017504959275
+      }
+    ],
+    "exponent": {
+      "theta": 0.47868749589730375,
+      "C": 0.06895400985347837
+    }
+  },
+  "cramer": [
+    {
+      "name": "cramer-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78571,
+          "squarefree": 29912,
+          "mean": 0.3807002583650456,
+          "residual": 529.915776733782,
+          "residualOverSqrtLabels": 1.890495767080596,
+          "maxAbsResidual": 529.915776733782,
+          "maxAbsResidualOverSqrtLabels": 1.890495767080596
+        },
+        {
+          "N": 2000000,
+          "labels": 148964,
+          "squarefree": 56883,
+          "mean": 0.38185736151016353,
+          "residual": 1177.042404517837,
+          "residualOverSqrtLabels": 3.0496601608543368,
+          "maxAbsResidual": 1177.042404517837,
+          "maxAbsResidualOverSqrtLabels": 3.0496601608543368
+        },
+        {
+          "N": 4000000,
+          "labels": 283084,
+          "squarefree": 108137,
+          "mean": 0.3819961566178237,
+          "residual": 2276.0852826221526,
+          "residualOverSqrtLabels": 4.277902369003814,
+          "maxAbsResidual": 2276.0852826221526,
+          "maxAbsResidualOverSqrtLabels": 4.277902369003814
+        },
+        {
+          "N": 8000000,
+          "labels": 539134,
+          "squarefree": 205180,
+          "mean": 0.3805732897572774,
+          "residual": 3567.6927158059552,
+          "residualOverSqrtLabels": 4.858912531751291,
+          "maxAbsResidual": 3567.6927158059552,
+          "maxAbsResidualOverSqrtLabels": 4.858912531751291
+        },
+        {
+          "N": 16000000,
+          "labels": 1030753,
+          "squarefree": 391751,
+          "mean": 0.38006292487142895,
+          "residual": 6294.897120001959,
+          "residualOverSqrtLabels": 6.200280436255598,
+          "maxAbsResidual": 6294.897120001959,
+          "maxAbsResidualOverSqrtLabels": 6.200280436255598
+        }
+      ],
+      "exponent": {
+        "theta": 0.8740520694100096,
+        "C": 0.0033897566058668487
+      }
+    },
+    {
+      "name": "cramer-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78614,
+          "squarefree": 29868,
+          "mean": 0.37993232757524104,
+          "residual": 469.8356756583162,
+          "residualOverSqrtLabels": 1.6756991271026402,
+          "maxAbsResidual": 469.8356756583162,
+          "maxAbsResidualOverSqrtLabels": 1.6756991271026402
+        },
+        {
+          "N": 2000000,
+          "labels": 148976,
+          "squarefree": 56548,
+          "mean": 0.379577918590914,
+          "residual": 837.5549344502651,
+          "residualOverSqrtLabels": 2.1699770812428754,
+          "maxAbsResidual": 837.5549344502651,
+          "maxAbsResidualOverSqrtLabels": 2.1699770812428754
+        },
+        {
+          "N": 4000000,
+          "labels": 283531,
+          "squarefree": 107673,
+          "mean": 0.3797574162966307,
+          "residual": 1644.9270226051012,
+          "residualOverSqrtLabels": 3.0892023772549826,
+          "maxAbsResidual": 1644.9270226051012,
+          "maxAbsResidualOverSqrtLabels": 3.0892023772549826
+        },
+        {
+          "N": 8000000,
+          "labels": 539682,
+          "squarefree": 204885,
+          "mean": 0.37964023258140905,
+          "residual": 3067.7649160535075,
+          "residualOverSqrtLabels": 4.17592903525905,
+          "maxAbsResidual": 3067.7649160535075,
+          "maxAbsResidualOverSqrtLabels": 4.17592903525905
+        },
+        {
+          "N": 16000000,
+          "labels": 1031604,
+          "squarefree": 391239,
+          "mean": 0.3792530854862913,
+          "residual": 5464.660701043322,
+          "residualOverSqrtLabels": 5.3803024907816015,
+          "maxAbsResidual": 5464.660701043322,
+          "maxAbsResidualOverSqrtLabels": 5.3803024907816015
+        }
+      ],
+      "exponent": {
+        "theta": 0.8952739714304798,
+        "C": 0.0019789999037928
+      }
+    },
+    {
+      "name": "cramer-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78251,
+          "squarefree": 29747,
+          "mean": 0.380148496504837,
+          "residual": 484.5816452023646,
+          "residualOverSqrtLabels": 1.732295638496688,
+          "maxAbsResidual": 484.5816452023646,
+          "maxAbsResidualOverSqrtLabels": 1.732295638496688
+        },
+        {
+          "N": 2000000,
+          "labels": 148553,
+          "squarefree": 56580,
+          "mean": 0.38087416612252867,
+          "residual": 1027.7382543321728,
+          "residualOverSqrtLabels": 2.666501355047085,
+          "maxAbsResidual": 1027.7382543321728,
+          "maxAbsResidualOverSqrtLabels": 2.666501355047085
+        },
+        {
+          "N": 4000000,
+          "labels": 282625,
+          "squarefree": 107663,
+          "mean": 0.38093940734188414,
+          "residual": 1973.7310127067904,
+          "residualOverSqrtLabels": 3.712638615074311,
+          "maxAbsResidual": 1973.7310127067904,
+          "maxAbsResidualOverSqrtLabels": 3.712638615074311
+        },
+        {
+          "N": 8000000,
+          "labels": 539269,
+          "squarefree": 205299,
+          "mean": 0.3806986865553184,
+          "residual": 3636.208677545772,
+          "residualOverSqrtLabels": 4.951605893215624,
+          "maxAbsResidual": 3636.208677545772,
+          "maxAbsResidualOverSqrtLabels": 4.951605893215624
+        },
+        {
+          "N": 16000000,
+          "labels": 1030751,
+          "squarefree": 392254,
+          "mean": 0.38055165602555807,
+          "residual": 6798.645031679887,
+          "residualOverSqrtLabels": 6.696463162983934,
+          "maxAbsResidual": 6798.645031679887,
+          "maxAbsResidualOverSqrtLabels": 6.696463162983934
+        }
+      ],
+      "exponent": {
+        "theta": 0.9443833274771227,
+        "C": 0.0011021642999066935
+      }
+    },
+    {
+      "name": "cramer-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78486,
+          "squarefree": 29711,
+          "mean": 0.378551588818388,
+          "residual": 360.70202304574923,
+          "residualOverSqrtLabels": 1.2875155415650836,
+          "maxAbsResidual": 360.70202304574923,
+          "maxAbsResidualOverSqrtLabels": 1.2875155415650836
+        },
+        {
+          "N": 2000000,
+          "labels": 148774,
+          "squarefree": 56536,
+          "mean": 0.3800126366166131,
+          "residual": 901.0940139210579,
+          "residualOverSqrtLabels": 2.336181522914088,
+          "maxAbsResidual": 901.0940139210579,
+          "maxAbsResidualOverSqrtLabels": 2.336181522914088
+        },
+        {
+          "N": 4000000,
+          "labels": 283065,
+          "squarefree": 107650,
+          "mean": 0.3803013442142264,
+          "residual": 1796.1904435624747,
+          "residualOverSqrtLabels": 3.37605330074081,
+          "maxAbsResidual": 1796.1904435624747,
+          "maxAbsResidualOverSqrtLabels": 3.37605330074081
+        },
+        {
+          "N": 8000000,
+          "labels": 540580,
+          "squarefree": 205608,
+          "mean": 0.38034703466646935,
+          "residual": 3454.9525726635475,
+          "residualOverSqrtLabels": 4.699072039616898,
+          "maxAbsResidual": 3454.9525726635475,
+          "maxAbsResidualOverSqrtLabels": 4.699072039616898
+        },
+        {
+          "N": 16000000,
+          "labels": 1033066,
+          "squarefree": 392784,
+          "mean": 0.38021191288843115,
+          "residual": 6462.937264477485,
+          "residualOverSqrtLabels": 6.35866442685976,
+          "maxAbsResidual": 6462.937264477485,
+          "maxAbsResidualOverSqrtLabels": 6.35866442685976
+        }
+      ],
+      "exponent": {
+        "theta": 1.0265537501899853,
+        "C": 0.00027903531776786363
+      }
+    },
+    {
+      "name": "cramer-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 79143,
+          "squarefree": 30187,
+          "mean": 0.38142349923556096,
+          "residual": 591.0130368461869,
+          "residualOverSqrtLabels": 2.1008294968980676,
+          "maxAbsResidual": 591.0130368461869,
+          "maxAbsResidualOverSqrtLabels": 2.1008294968980676
+        },
+        {
+          "N": 2000000,
+          "labels": 149975,
+          "squarefree": 57083,
+          "mean": 0.3806167694615769,
+          "residual": 998.9730513249015,
+          "residualOverSqrtLabels": 2.579552299043346,
+          "maxAbsResidual": 998.9730513249015,
+          "maxAbsResidualOverSqrtLabels": 2.579552299043346
+        },
+        {
+          "N": 4000000,
+          "labels": 284735,
+          "squarefree": 108308,
+          "mean": 0.38038175847718053,
+          "residual": 1829.684192492059,
+          "residualOverSqrtLabels": 3.4289070204501764,
+          "maxAbsResidual": 1829.684192492059,
+          "maxAbsResidualOverSqrtLabels": 3.4289070204501764
+        },
+        {
+          "N": 8000000,
+          "labels": 541713,
+          "squarefree": 206283,
+          "mean": 0.38079758100691696,
+          "residual": 3706.260607116972,
+          "residualOverSqrtLabels": 5.0356011574094435,
+          "maxAbsResidual": 3706.260607116972,
+          "maxAbsResidualOverSqrtLabels": 5.0356011574094435
+        },
+        {
+          "N": 16000000,
+          "labels": 1034420,
+          "squarefree": 393298,
+          "mean": 0.3802111328087237,
+          "residual": 6470.601058519795,
+          "residualOverSqrtLabels": 6.362036699901938,
+          "maxAbsResidual": 6470.601058519795,
+          "maxAbsResidualOverSqrtLabels": 6.362036699901938
+        }
+      ],
+      "exponent": {
+        "theta": 0.8796722407300441,
+        "C": 0.002985606747149239
+      }
+    }
+  ],
+  "wheel": [
+    {
+      "name": "wheel-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78801,
+          "squarefree": 29345,
+          "mean": 0.37239375134833314,
+          "residual": -123.09406622801544,
+          "residualOverSqrtLabels": -0.438501672125935,
+          "maxAbsResidual": 123.09406622801544,
+          "maxAbsResidualOverSqrtLabels": 0.438501672125935
+        },
+        {
+          "N": 2000000,
+          "labels": 149170,
+          "squarefree": 55699,
+          "mean": 0.37339277334584703,
+          "residual": -83.99249830881308,
+          "residualOverSqrtLabels": -0.21747020027584812,
+          "maxAbsResidual": 123.09406622801544,
+          "maxAbsResidualOverSqrtLabels": 0.318710501227777
+        },
+        {
+          "N": 4000000,
+          "labels": 283453,
+          "squarefree": 105813,
+          "mean": 0.3732999827131835,
+          "residual": -185.90442195568176,
+          "residualOverSqrtLabels": -0.3491798637594266,
+          "maxAbsResidual": 185.90442195568176,
+          "maxAbsResidualOverSqrtLabels": 0.3491798637594266
+        },
+        {
+          "N": 8000000,
+          "labels": 539767,
+          "squarefree": 202102,
+          "mean": 0.374424520209646,
+          "residual": 252.97866974154022,
+          "residualOverSqrtLabels": 0.3443346598490289,
+          "maxAbsResidual": 252.97866974154022,
+          "maxAbsResidualOverSqrtLabels": 0.3443346598490289
+        },
+        {
+          "N": 16000000,
+          "labels": 1031366,
+          "squarefree": 386295,
+          "mean": 0.3745469600510391,
+          "residual": 609.6621907168301,
+          "residualOverSqrtLabels": 0.6003200618863014,
+          "maxAbsResidual": 609.6621907168301,
+          "maxAbsResidualOverSqrtLabels": 0.6003200618863014
+        }
+      ],
+      "exponent": {
+        "theta": 0.5655752247739335,
+        "C": 0.039230682269301924
+      }
+    },
+    {
+      "name": "wheel-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78568,
+          "squarefree": 29487,
+          "mean": 0.37530546787496183,
+          "residual": 106.03764425067493,
+          "residualOverSqrtLabels": 0.3783007669780896,
+          "maxAbsResidual": 106.03764425067493,
+          "maxAbsResidualOverSqrtLabels": 0.3783007669780896
+        },
+        {
+          "N": 2000000,
+          "labels": 148963,
+          "squarefree": 55975,
+          "mean": 0.37576445157522337,
+          "residual": 269.4163603568013,
+          "residualOverSqrtLabels": 0.6980471523635291,
+          "maxAbsResidual": 269.4163603568013,
+          "maxAbsResidualOverSqrtLabels": 0.6980471523635291
+        },
+        {
+          "N": 4000000,
+          "labels": 283006,
+          "squarefree": 106276,
+          "mean": 0.3755256072309421,
+          "residual": 444.2538380613696,
+          "residualOverSqrtLabels": 0.8350901611863387,
+          "maxAbsResidual": 444.2538380613696,
+          "maxAbsResidualOverSqrtLabels": 0.8350901611863387
+        },
+        {
+          "N": 8000000,
+          "labels": 539266,
+          "squarefree": 202293,
+          "mean": 0.3751265609179885,
+          "residual": 631.3305450626649,
+          "residualOverSqrtLabels": 0.8597165399835518,
+          "maxAbsResidual": 631.3305450626649,
+          "maxAbsResidualOverSqrtLabels": 0.8597165399835518
+        },
+        {
+          "N": 16000000,
+          "labels": 1030853,
+          "squarefree": 386831,
+          "mean": 0.3752533096377466,
+          "residual": 1337.5015361055266,
+          "residualOverSqrtLabels": 1.3173340573860433,
+          "maxAbsResidual": 1337.5015361055266,
+          "maxAbsResidualOverSqrtLabels": 1.3173340573860433
+        }
+      ],
+      "exponent": {
+        "theta": 0.8542342329533971,
+        "C": 0.0009253533690514237
+      }
+    },
+    {
+      "name": "wheel-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78370,
+          "squarefree": 29389,
+          "mean": 0.375003189996172,
+          "residual": 82.08090036561043,
+          "residualOverSqrtLabels": 0.2932021754568042,
+          "maxAbsResidual": 82.08090036561043,
+          "maxAbsResidualOverSqrtLabels": 0.2932021754568042
+        },
+        {
+          "N": 2000000,
+          "labels": 148929,
+          "squarefree": 55829,
+          "mean": 0.3748699044511143,
+          "residual": 136.1308588815882,
+          "residualOverSqrtLabels": 0.3527499394616931,
+          "maxAbsResidual": 136.1308588815882,
+          "maxAbsResidualOverSqrtLabels": 0.3527499394616931
+        },
+        {
+          "N": 4000000,
+          "labels": 283411,
+          "squarefree": 106505,
+          "mean": 0.3757969874140383,
+          "residual": 521.8017232808197,
+          "residualOverSqrtLabels": 0.980160412317594,
+          "maxAbsResidual": 521.8017232808197,
+          "maxAbsResidualOverSqrtLabels": 0.980160412317594
+        },
+        {
+          "N": 8000000,
+          "labels": 539688,
+          "squarefree": 202545,
+          "mean": 0.3753001734335394,
+          "residual": 725.5211810197216,
+          "residualOverSqrtLabels": 0.9875946191569296,
+          "maxAbsResidual": 725.5211810197216,
+          "maxAbsResidualOverSqrtLabels": 0.9875946191569296
+        },
+        {
+          "N": 16000000,
+          "labels": 1031633,
+          "squarefree": 386702,
+          "mean": 0.37484454258442684,
+          "residual": 916.8159817133565,
+          "residualOverSqrtLabels": 0.9026503652650175,
+          "maxAbsResidual": 916.8159817133565,
+          "maxAbsResidualOverSqrtLabels": 0.9026503652650175
+        }
+      ],
+      "exponent": {
+        "theta": 0.9377051054603002,
+        "C": 0.0002122960603302238
+      }
+    },
+    {
+      "name": "wheel-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78299,
+          "squarefree": 29412,
+          "mean": 0.3756369813152148,
+          "residual": 131.6317649320772,
+          "residualOverSqrtLabels": 0.4704165545017276,
+          "maxAbsResidual": 131.6317649320772,
+          "maxAbsResidualOverSqrtLabels": 0.4704165545017276
+        },
+        {
+          "N": 2000000,
+          "labels": 148731,
+          "squarefree": 55760,
+          "mean": 0.37490502988617036,
+          "residual": 141.1741149965237,
+          "residualOverSqrtLabels": 0.36606172751848554,
+          "maxAbsResidual": 141.1741149965237,
+          "maxAbsResidualOverSqrtLabels": 0.36606172751848554
+        },
+        {
+          "N": 4000000,
+          "labels": 282949,
+          "squarefree": 106251,
+          "mean": 0.37551290161831286,
+          "residual": 440.56932088235044,
+          "residualOverSqrtLabels": 0.8282475692915504,
+          "maxAbsResidual": 440.56932088235044,
+          "maxAbsResidualOverSqrtLabels": 0.8282475692915504
+        },
+        {
+          "N": 8000000,
+          "labels": 539971,
+          "squarefree": 202252,
+          "mean": 0.37456085604597283,
+          "residual": 326.6916785928188,
+          "residualOverSqrtLabels": 0.44458300235148984,
+          "maxAbsResidual": 440.56932088235044,
+          "maxAbsResidualOverSqrtLabels": 0.5995550063151741
+        },
+        {
+          "N": 16000000,
+          "labels": 1032322,
+          "squarefree": 386382,
+          "mean": 0.3742843802611976,
+          "residual": 339.1604086669395,
+          "residualOverSqrtLabels": 0.3338086285736689,
+          "maxAbsResidual": 440.56932088235044,
+          "maxAbsResidualOverSqrtLabels": 0.43361735932978807
+        }
+      ],
+      "exponent": {
+        "theta": 0.5127616166674512,
+        "C": 0.11348768895154157
+      }
+    },
+    {
+      "name": "wheel-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78911,
+          "squarefree": 29660,
+          "mean": 0.3758664824929351,
+          "residual": 150.77079148590929,
+          "residualOverSqrtLabels": 0.5367208185411783,
+          "maxAbsResidual": 150.77079148590929,
+          "maxAbsResidualOverSqrtLabels": 0.5367208185411783
+        },
+        {
+          "N": 2000000,
+          "labels": 149798,
+          "squarefree": 56228,
+          "mean": 0.3753588165396067,
+          "residual": 210.16323482158623,
+          "residualOverSqrtLabels": 0.5430048854317056,
+          "maxAbsResidual": 210.16323482158623,
+          "maxAbsResidualOverSqrtLabels": 0.5430048854317056
+        },
+        {
+          "N": 4000000,
+          "labels": 284238,
+          "squarefree": 106455,
+          "mean": 0.37452768454604946,
+          "residual": 162.54024445732648,
+          "residualOverSqrtLabels": 0.30487361421552694,
+          "maxAbsResidual": 210.16323482158623,
+          "maxAbsResidualOverSqrtLabels": 0.394199142429033
+        },
+        {
+          "N": 8000000,
+          "labels": 541990,
+          "squarefree": 202975,
+          "mean": 0.3744995295116146,
+          "residual": 294.67483972385526,
+          "residualOverSqrtLabels": 0.4002648184403034,
+          "maxAbsResidual": 294.67483972385526,
+          "maxAbsResidualOverSqrtLabels": 0.4002648184403034
+        },
+        {
+          "N": 16000000,
+          "labels": 1033842,
+          "squarefree": 387842,
+          "mean": 0.3751462989509035,
+          "residual": 1230.747533441172,
+          "residualOverSqrtLabels": 1.2104361578117981,
+          "maxAbsResidual": 1230.747533441172,
+          "maxAbsResidualOverSqrtLabels": 1.2104361578117981
+        }
+      ],
+      "exponent": {
+        "theta": 0.6545825527766996,
+        "C": 0.014288783765508926
+      }
+    }
+  ],
+  "composite": [
+    {
+      "name": "composite-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51430,
+          "squarefree": 19121,
+          "mean": 0.37178689480847754,
+          "residual": -111.54879793539294,
+          "residualOverSqrtLabels": -0.49187713239601066,
+          "maxAbsResidual": 111.54879793539294,
+          "maxAbsResidualOverSqrtLabels": 0.49187713239601066
+        },
+        {
+          "N": 2000000,
+          "labels": 100237,
+          "squarefree": 37318,
+          "mean": 0.3722976545586959,
+          "residual": -166.2114302673508,
+          "residualOverSqrtLabels": -0.5249849537911904,
+          "maxAbsResidual": 166.2114302673508,
+          "maxAbsResidualOverSqrtLabels": 0.5249849537911904
+        },
+        {
+          "N": 4000000,
+          "labels": 195003,
+          "squarefree": 72893,
+          "mean": 0.37380450557170913,
+          "residual": -29.510465560859302,
+          "residualOverSqrtLabels": -0.06682753078700002,
+          "maxAbsResidual": 166.2114302673508,
+          "maxAbsResidualOverSqrtLabels": 0.37639187529711265
+        },
+        {
+          "N": 8000000,
+          "labels": 379540,
+          "squarefree": 141993,
+          "mean": 0.37411866996890975,
+          "residual": 61.80087947892025,
+          "residualOverSqrtLabels": 0.100315000321897,
+          "maxAbsResidual": 166.2114302673508,
+          "maxAbsResidualOverSqrtLabels": 0.2697938900118637
+        },
+        {
+          "N": 16000000,
+          "labels": 738141,
+          "squarefree": 276374,
+          "mean": 0.37441897957165365,
+          "residual": 341.86307103192667,
+          "residualOverSqrtLabels": 0.397907866647446,
+          "maxAbsResidual": 341.86307103192667,
+          "maxAbsResidualOverSqrtLabels": 0.397907866647446
+        }
+      ],
+      "exponent": {
+        "theta": 0.32314872407953976,
+        "C": 1.303805132600744
+      }
+    },
+    {
+      "name": "composite-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51353,
+          "squarefree": 19334,
+          "mean": 0.37649212314762526,
+          "residual": 130.2458016648634,
+          "residualOverSqrtLabels": 0.5747524394932683,
+          "maxAbsResidual": 130.2458016648634,
+          "maxAbsResidualOverSqrtLabels": 0.5747524394932683
+        },
+        {
+          "N": 2000000,
+          "labels": 100008,
+          "squarefree": 37391,
+          "mean": 0.3738800895928326,
+          "residual": -7.575543144521362,
+          "residualOverSqrtLabels": -0.023955012668218135,
+          "maxAbsResidual": 130.2458016648634,
+          "maxAbsResidualOverSqrtLabels": 0.4118569149883919
+        },
+        {
+          "N": 4000000,
+          "labels": 194809,
+          "squarefree": 73057,
+          "mean": 0.37501860796985764,
+          "residual": 207.03696719821892,
+          "residualOverSqrtLabels": 0.46907618969322973,
+          "maxAbsResidual": 207.03696719821892,
+          "maxAbsResidualOverSqrtLabels": 0.46907618969322973
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "squarefree": 142384,
+          "mean": 0.3751350268999932,
+          "residual": 447.56549773341976,
+          "residualOverSqrtLabels": 0.7264735613545621,
+          "maxAbsResidual": 447.56549773341976,
+          "maxAbsResidualOverSqrtLabels": 0.7264735613545621
+        },
+        {
+          "N": 16000000,
+          "labels": 738545,
+          "squarefree": 276752,
+          "mean": 0.37472598149063363,
+          "residual": 568.7849120903411,
+          "residualOverSqrtLabels": 0.6618500201116128,
+          "maxAbsResidual": 568.7849120903411,
+          "maxAbsResidualOverSqrtLabels": 0.6618500201116128
+        }
+      ],
+      "exponent": {
+        "theta": 0.6034154607950377,
+        "C": 0.025497108634486346
+      }
+    },
+    {
+      "name": "composite-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51194,
+          "squarefree": 19317,
+          "mean": 0.37732937453607845,
+          "residual": 172.7047800601904,
+          "residualOverSqrtLabels": 0.7632992328991186,
+          "maxAbsResidual": 172.7047800601904,
+          "maxAbsResidualOverSqrtLabels": 0.7632992328991186
+        },
+        {
+          "N": 2000000,
+          "labels": 99809,
+          "squarefree": 37406,
+          "mean": 0.37477582181967556,
+          "residual": 81.84166880937846,
+          "residualOverSqrtLabels": 0.25905359537500816,
+          "maxAbsResidual": 172.7047800601904,
+          "maxAbsResidualOverSqrtLabels": 0.5466627802672015
+        },
+        {
+          "N": 4000000,
+          "labels": 194729,
+          "squarefree": 73134,
+          "mean": 0.37556809720175216,
+          "residual": 313.9534343153646,
+          "residualOverSqrtLabels": 0.7114590716566512,
+          "maxAbsResidual": 313.9534343153646,
+          "maxAbsResidualOverSqrtLabels": 0.7114590716566512
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "squarefree": 142620,
+          "mean": 0.3757568093077665,
+          "residual": 683.5654977334198,
+          "residualOverSqrtLabels": 1.109540981314165,
+          "maxAbsResidual": 683.5654977334198,
+          "maxAbsResidualOverSqrtLabels": 1.109540981314165
+        },
+        {
+          "N": 16000000,
+          "labels": 738991,
+          "squarefree": 276870,
+          "mean": 0.3746595019425135,
+          "residual": 520.000607912254,
+          "residualOverSqrtLabels": 0.6049009641435433,
+          "maxAbsResidual": 683.5654977334198,
+          "maxAbsResidualOverSqrtLabels": 0.7951710485384275
+        }
+      ],
+      "exponent": {
+        "theta": 0.595431469947612,
+        "C": 0.03954873157027444
+      }
+    },
+    {
+      "name": "composite-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51288,
+          "squarefree": 19343,
+          "mean": 0.37714475120885976,
+          "residual": 163.55293119754424,
+          "residualOverSqrtLabels": 0.7221883029549199,
+          "maxAbsResidual": 163.55293119754424,
+          "maxAbsResidualOverSqrtLabels": 0.7221883029549199
+        },
+        {
+          "N": 2000000,
+          "labels": 99962,
+          "squarefree": 37664,
+          "mean": 0.37678317760749086,
+          "residual": 282.6264254478374,
+          "residualOverSqrtLabels": 0.8939130909924263,
+          "maxAbsResidual": 282.6264254478374,
+          "maxAbsResidualOverSqrtLabels": 0.8939130909924263
+        },
+        {
+          "N": 4000000,
+          "labels": 194728,
+          "squarefree": 73392,
+          "mean": 0.376894950905879,
+          "residual": 572.3273901543289,
+          "residualOverSqrtLabels": 1.296971189687444,
+          "maxAbsResidual": 572.3273901543289,
+          "maxAbsResidualOverSqrtLabels": 1.296971189687444
+        },
+        {
+          "N": 8000000,
+          "labels": 379519,
+          "squarefree": 142613,
+          "mean": 0.3757730179516704,
+          "residual": 689.653952097171,
+          "residualOverSqrtLabels": 1.1194751762717063,
+          "maxAbsResidual": 689.653952097171,
+          "maxAbsResidualOverSqrtLabels": 1.1194751762717063
+        },
+        {
+          "N": 16000000,
+          "labels": 739546,
+          "squarefree": 277871,
+          "mean": 0.37573186792978397,
+          "residual": 1313.455117287056,
+          "residualOverSqrtLabels": 1.5273291502253534,
+          "maxAbsResidual": 1313.455117287056,
+          "maxAbsResidualOverSqrtLabels": 1.5273291502253534
+        }
+      ],
+      "exponent": {
+        "theta": 0.7298051041554408,
+        "C": 0.007206017944945987
+      }
+    },
+    {
+      "name": "composite-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51570,
+          "squarefree": 19190,
+          "mean": 0.37211557106845067,
+          "residual": -94.90261539039784,
+          "residualOverSqrtLabels": -0.41790697091308515,
+          "maxAbsResidual": 94.90261539039784,
+          "maxAbsResidualOverSqrtLabels": 0.41790697091308515
+        },
+        {
+          "N": 2000000,
+          "labels": 100843,
+          "squarefree": 37634,
+          "mean": 0.3731939747924992,
+          "residual": -76.82866867973644,
+          "residualOverSqrtLabels": -0.24193596267690404,
+          "maxAbsResidual": 94.90261539039784,
+          "maxAbsResidualOverSqrtLabels": 0.2988514054661429
+        },
+        {
+          "N": 4000000,
+          "labels": 195784,
+          "squarefree": 73123,
+          "mean": 0.37348812977567114,
+          "residual": -91.56997579200834,
+          "residualOverSqrtLabels": -0.20694955685629027,
+          "maxAbsResidual": 94.90261539039784,
+          "maxAbsResidualOverSqrtLabels": 0.21448137372184223
+        },
+        {
+          "N": 8000000,
+          "labels": 380954,
+          "squarefree": 142403,
+          "mean": 0.3738062863232831,
+          "residual": -56.972676816629246,
+          "residualOverSqrtLabels": -0.09230609018545854,
+          "maxAbsResidual": 94.90261539039784,
+          "maxAbsResidualOverSqrtLabels": 0.15375948374791906
+        },
+        {
+          "N": 16000000,
+          "labels": 740943,
+          "squarefree": 277292,
+          "mean": 0.37424201321829076,
+          "residual": 212.0388102539,
+          "residualOverSqrtLabels": 0.2463332059133577,
+          "maxAbsResidual": 212.0388102539,
+          "maxAbsResidualOverSqrtLabels": 0.2463332059133577
+        }
+      ],
+      "exponent": {
+        "theta": 0.23196171982749708,
+        "C": 3.2785395472534873
+      }
+    }
+  ],
+  "summaries": {
+    "cramer": {
+      "meanRange": [
+        0.3792530854862913,
+        0.38055165602555807
+      ],
+      "residualOverSqrtLabelsRange": [
+        5.3803024907816015,
+        6.696463162983934
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        5.3803024907816015,
+        6.696463162983934
+      ],
+      "thetaRange": [
+        0.8740520694100096,
+        1.0265537501899853
+      ]
+    },
+    "wheel": {
+      "meanRange": [
+        0.3742843802611976,
+        0.3752533096377466
+      ],
+      "residualOverSqrtLabelsRange": [
+        0.3338086285736689,
+        1.3173340573860433
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        0.43361735932978807,
+        1.3173340573860433
+      ],
+      "thetaRange": [
+        0.5127616166674512,
+        0.9377051054603002
+      ]
+    },
+    "composite": {
+      "meanRange": [
+        0.37424201321829076,
+        0.37573186792978397
+      ],
+      "residualOverSqrtLabelsRange": [
+        0.2463332059133577,
+        1.5273291502253534
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        0.2463332059133577,
+        1.5273291502253534
+      ],
+      "thetaRange": [
+        0.23196171982749708,
+        0.7298051041554408
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">local-sieve-subtracted triple-shape cumulant</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">aggregate residual after count-matching inside window-specific small-factor eligible sets</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="199.64" y2="199.64" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 187.24 L 415.33 189.46 L 748.67 206.73 L 1082.00 206.86" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 190.12 L 415.33 211.88 L 748.67 179.57 L 1082.00 200.02" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 213.05 L 415.33 245.18 L 748.67 211.26 L 1082.00 215.06" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 81.46 L 415.33 292.93 L 748.67 268.48 L 1082.00 322.20" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest residual windows</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11385570 k=4 eligible=25 residual=0.148672</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(213,83,88)"><title>8421210 k=7 eligible=23 residual=0.134237</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(205,85,92)"><title>15492330 k=3 eligible=24 residual=0.127810</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(188,88,100)"><title>13599810 k=8 eligible=20 residual=0.113072</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(40,199,203)"><title>9690870 k=3 eligible=25 residual=-0.108652</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(182,90,103)"><title>12703320 k=6 eligible=22 residual=0.107600</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(181,90,104)"><title>9111270 k=8 eligible=24 residual=0.107128</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(181,90,104)"><title>14001750 k=5 eligible=24 residual=0.106879</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest residual windows</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:132 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:188 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:271 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:279 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:281 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:436 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:463 k=3 eligible=5 residual=0.113778</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>18:641 k=3 eligible=5 residual=0.113778</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest residual windows</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:345 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:591 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:1190 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:1406 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:1803 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:1919 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:2049 k=3 eligible=7 residual=0.224617</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(230,80,80)"><title>11:2135 k=3 eligible=7 residual=0.224617</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z residual agg -0.014724, mean -0.000075</text>
+<text x="650" y="484" fill="#94a3b8">Z controls -0.033718 .. 0.013122</text>
+<text x="650" y="508" fill="#7dd3fc">composite residual agg -0.000765</text>
+<text x="650" y="532" fill="#fbbf24">F2 residual agg -0.031464, controls -0.020812 .. 0.121595</text>
+<text x="650" y="556" fill="#f472b6">F3 residual agg -0.250118, controls -0.063228 .. 0.100471</text>
+<text x="650" y="594" fill="#94a3b8">red = positive residual, blue = negative residual, per-panel clamp</text>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">holdout residue-transition Markov surprise</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">train lower-half transition matrix, test upper-half log-score versus row-shuffled next residues</text>
+<rect x="82" y="72" width="1000" height="310" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="382.00" y2="382.00" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 276.83 L 415.33 260.70 L 748.67 193.16 L 1082.00 94.96" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 319.36 L 415.33 308.87 L 748.67 267.20 L 1082.00 204.76" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<path d="M 82.00 276.78 L 415.33 260.69 L 748.67 193.82 L 1082.00 96.05" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<path d="M 82.00 327.07 L 415.33 316.37 L 748.67 272.39 L 1082.00 207.15" fill="none" stroke="#fb7185" stroke-width="2"/>
+<path d="M 82.00 380.78 L 415.33 380.08 L 748.67 379.73 L 1082.00 379.39" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+<path d="M 82.00 380.51 L 415.33 379.44 L 748.67 379.02 L 1082.00 377.70" fill="none" stroke="#f472b6" stroke-width="2"/>
+<text x="82" y="406" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="642" y="406" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="737" y="406" fill="#fbbf24" font-size="12">Cramer mean</text>
+<text x="862" y="406" fill="#7dd3fc" font-size="12">wheel mean</text>
+<text x="982" y="406" fill="#fb7185" font-size="12">comp mean</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="90" y="460" fill="#e5e7eb">final integer mod 210</text>
+<text x="90" y="488" fill="#a7f3d0">prime aggregate 514.900323, residual 3.810524, transitions 18259</text>
+<text x="90" y="512" fill="#94a3b8">row-shuffle controls -3.005254 .. 2.542452</text>
+<text x="90" y="536" fill="#fbbf24">Cramer aggregate range 316.580079 .. 319.681982</text>
+<text x="90" y="560" fill="#7dd3fc">wheel aggregate range 509.741415 .. 516.850641</text>
+<text x="90" y="584" fill="#fb7185">composite aggregate range 312.288767 .. 314.910216</text>
+<text x="650" y="460" fill="#e5e7eb">function-field encoded-order check</text>
+<text x="650" y="488" fill="#c4b5fd">F2 aggregate 4.688114, controls -0.506718 .. 0.368479</text>
+<text x="650" y="512" fill="#f472b6">F3 aggregate 7.713475, controls -1.053196 .. 0.431022</text>
+<text x="650" y="560" fill="#94a3b8">positive = test transitions match previous-block Markov memory</text>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="560" viewBox="0 0 1040 560">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="58" x2="982" y1="354.94605057717996" y2="354.94605057717996" stroke="#64748b" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M 58.00 321.76 L 289.00 343.59 L 520.00 348.45 L 751.00 332.24 L 982.00 339.76" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 58.00 378.61 L 289.00 250.76 L 520.00 328.40 L 751.00 395.29 L 982.00 380.22" fill="none" stroke="#fbbf24" stroke-width="1.4" />
+<path d="M 58.00 238.32 L 289.00 380.38 L 520.00 336.45 L 751.00 288.87 L 982.00 291.47" fill="none" stroke="#f472b6" stroke-width="1.4" />
+<path d="M 58.00 356.15 L 289.00 406.93 L 520.00 387.86 L 751.00 371.45 L 982.00 389.53" fill="none" stroke="#a7f3d0" stroke-width="1.4" />
+<path d="M 58.00 185.72 L 289.00 58.00 L 520.00 135.98 L 751.00 207.32 L 982.00 216.33" fill="none" stroke="#c4b5fd" stroke-width="1.4" />
+<g font-family="Menlo, Consolas, monospace" font-size="12"><text x="58" y="24" fill="#7dd3fc">real-primes</text>
+<text x="58" y="42" fill="#fbbf24">cramer-seed-12345</text>
+<text x="58" y="60" fill="#f472b6">wheel-W210-seed-12345</text>
+<text x="58" y="78" fill="#a7f3d0">wheel-W210-seed-271828</text>
+<text x="58" y="96" fill="#c4b5fd">composite-W210-seed-12345</text></g>
+<text x="58" y="542" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="12">mean((mu(label-1)^2-A_tail)*(gap/log(label)-1)) after removing 2^2,3^2,5^2,7^2 obstructions</text>
+</svg>

@@ -1,0 +1,3320 @@
+{
+  "candidate": "local eligible distance-transport residual",
+  "N": 16000000,
+  "integer": {
+    "W": 210,
+    "integerCutoff": 97,
+    "cutoffPrimes": [
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "metric": "Z/210Z circular",
+    "rows": [
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "summary": {
+          "windows": 4761,
+          "meanDistance": 0.01175181232666876,
+          "meanLocalDistance": 0.008974150580765441,
+          "meanRealExcess": 0.0027776617459033016,
+          "meanFakeExcess": 0.002643393902916584,
+          "meanResidual": 0.0001342678429867208,
+          "aggregateResidual": 0.009264481166083735,
+          "rmsResidual": 0.006347389481554366,
+          "sdResidual": 0.006345969222812737,
+          "controlAggregates": [
+            -0.005369930449752288,
+            -0.012502638774932892,
+            0.0025558650843200918,
+            0.01943866610766763,
+            -0.004121961967302595
+          ],
+          "controlAggregateRange": [
+            -0.012502638774932892,
+            0.01943866610766763
+          ],
+          "compositeWindows": 1055,
+          "compositeMeanResidual": 0.00016385455363112755,
+          "compositeAggregateResidual": 0.005322121011088261,
+          "strongest": [
+            {
+              "id": "1889790",
+              "k": 8,
+              "eligibleSize": 21,
+              "realDistance": 0.08534013605442178,
+              "localMean": 0.01656462585034013,
+              "realExcess": 0.06877551020408162,
+              "fakeExcessMean": 0.0048639455782312985,
+              "residual": 0.06391156462585032,
+              "controlResiduals": [
+                0.0021045918367347052,
+                0.01640093537414966,
+                -0.0064519557823129224,
+                -0.001243622448979599,
+                -0.010809948979591845
+              ],
+              "compositeDistance": 0.03979591836734692,
+              "compositeResidual": 0.018367346938775495
+            },
+            {
+              "id": "1719060",
+              "k": 9,
+              "eligibleSize": 24,
+              "realDistance": 0.08735449735449734,
+              "localMean": 0.022592592592592588,
+              "realExcess": 0.06476190476190476,
+              "fakeExcessMean": 0.006428571428571434,
+              "residual": 0.05833333333333332,
+              "controlResiduals": [
+                -0.019320436507936505,
+                0.03524305555555557,
+                0.008085317460317463,
+                -0.01832837301587302,
+                -0.00567956349206351
+              ],
+              "compositeDistance": 0.02166666666666666,
+              "compositeResidual": -0.007354497354497356
+            },
+            {
+              "id": "1904280",
+              "k": 13,
+              "eligibleSize": 27,
+              "realDistance": 0.08136752136752136,
+              "localMean": 0.01753357753357752,
+              "realExcess": 0.06383394383394383,
+              "fakeExcessMean": 0.005543345543345538,
+              "residual": 0.058290598290598294,
+              "controlResiduals": [
+                0.003621031746031747,
+                0.01920787545787544,
+                -0.005231227106227122,
+                -0.0017208485958485889,
+                -0.01587683150183148
+              ],
+              "compositeDistance": 0.013162393162393154,
+              "compositeResidual": -0.009914529914529905
+            },
+            {
+              "id": "1272600",
+              "k": 9,
+              "eligibleSize": 23,
+              "realDistance": 0.07246031746031746,
+              "localMean": 0.013915343915343914,
+              "realExcess": 0.058544973544973546,
+              "fakeExcessMean": 0.003994708994708998,
+              "residual": 0.05455026455026455,
+              "controlResiduals": [
+                0.0003389550264550189,
+                0.013855820105820099,
+                -0.0033399470899470873,
+                0.000793650793650793,
+                -0.011648478835978821
+              ],
+              "compositeDistance": 0.021507936507936504,
+              "compositeResidual": 0.0035978835978835886
+            },
+            {
+              "id": "1671810",
+              "k": 9,
+              "eligibleSize": 24,
+              "realDistance": 0.07285714285714287,
+              "localMean": 0.01648148148148148,
+              "realExcess": 0.05637566137566139,
+              "fakeExcessMean": 0.004629629629629626,
+              "residual": 0.05174603174603176,
+              "controlResiduals": [
+                -0.0007027116402116458,
+                0.005373677248677237,
+                0.0046709656084656164,
+                -0.009383267195767195,
+                0.00004133597883598447
+              ],
+              "compositeDistance": 0.011798941798941804,
+              "compositeResidual": -0.009312169312169303
+            },
+            {
+              "id": "1210230",
+              "k": 15,
+              "eligibleSize": 25,
+              "realDistance": 0.054458049886621285,
+              "localMean": 0.008351473922902489,
+              "realExcess": 0.04610657596371879,
+              "fakeExcessMean": 0.0024603174603174557,
+              "residual": 0.043646258503401335,
+              "controlResiduals": [
+                0.00770975056689342,
+                -0.004152494331065759,
+                -0.004039115646258498,
+                -0.0020549886621315143,
+                0.002536848072562352
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "1139880",
+              "k": 8,
+              "eligibleSize": 23,
+              "realDistance": 0.06727891156462587,
+              "localMean": 0.018180272108843536,
+              "realExcess": 0.049098639455782335,
+              "fakeExcessMean": 0.005493197278911569,
+              "residual": 0.04360544217687076,
+              "controlResiduals": [
+                -0.00022321428571427972,
+                0.011309523809523814,
+                -0.006388180272108848,
+                -0.002189625850340139,
+                -0.002508503401360547
+              ],
+              "compositeDistance": 0.0330952380952381,
+              "compositeResidual": 0.009421768707482993
+            },
+            {
+              "id": "1561980",
+              "k": 13,
+              "eligibleSize": 24,
+              "realDistance": 0.05166056166056167,
+              "localMean": 0.008388278388278384,
+              "realExcess": 0.04327228327228328,
+              "fakeExcessMean": 0.002466422466422464,
+              "residual": 0.040805860805860815,
+              "controlResiduals": [
+                -0.004265873015873015,
+                0.00031288156288156047,
+                -0.004895451770451761,
+                0.004033119658119653,
+                0.004815323565323562
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            }
+          ],
+          "classRows": [
+            {
+              "k": 9,
+              "eligibleSize": 19,
+              "n": 6,
+              "sumResidual": 0.08436507936507937,
+              "meanResidual": 0.01406084656084656,
+              "aggregateResidual": 0.03444189942564178
+            },
+            {
+              "k": 7,
+              "eligibleSize": 27,
+              "n": 1,
+              "sumResidual": 0.0342857142857143,
+              "meanResidual": 0.0342857142857143,
+              "aggregateResidual": 0.0342857142857143
+            },
+            {
+              "k": 6,
+              "eligibleSize": 25,
+              "n": 1,
+              "sumResidual": 0.03326984126984127,
+              "meanResidual": 0.03326984126984127,
+              "aggregateResidual": 0.03326984126984127
+            },
+            {
+              "k": 12,
+              "eligibleSize": 28,
+              "n": 22,
+              "sumResidual": 0.12666666666666665,
+              "meanResidual": 0.0057575757575757565,
+              "aggregateResidual": 0.02700542407171065
+            },
+            {
+              "k": 8,
+              "eligibleSize": 21,
+              "n": 4,
+              "sumResidual": 0.049931972789115625,
+              "meanResidual": 0.012482993197278906,
+              "aggregateResidual": 0.024965986394557813
+            },
+            {
+              "k": 8,
+              "eligibleSize": 18,
+              "n": 2,
+              "sumResidual": 0.031088435374149653,
+              "meanResidual": 0.015544217687074827,
+              "aggregateResidual": 0.02198284346954096
+            },
+            {
+              "k": 10,
+              "eligibleSize": 24,
+              "n": 22,
+              "sumResidual": -0.0983492063492063,
+              "meanResidual": -0.004470418470418468,
+              "aggregateResidual": -0.02096812124665653
+            },
+            {
+              "k": 5,
+              "eligibleSize": 22,
+              "n": 1,
+              "sumResidual": -0.02076190476190476,
+              "meanResidual": -0.02076190476190476,
+              "aggregateResidual": -0.02076190476190476
+            },
+            {
+              "k": 8,
+              "eligibleSize": 24,
+              "n": 7,
+              "sumResidual": -0.05363945578231291,
+              "meanResidual": -0.007662779397473273,
+              "aggregateResidual": -0.020273808637263645
+            },
+            {
+              "k": 9,
+              "eligibleSize": 24,
+              "n": 19,
+              "sumResidual": 0.08428571428571428,
+              "meanResidual": 0.00443609022556391,
+              "aggregateResidual": 0.019336468997661633
+            },
+            {
+              "k": 8,
+              "eligibleSize": 23,
+              "n": 4,
+              "sumResidual": 0.03442176870748301,
+              "meanResidual": 0.008605442176870752,
+              "aggregateResidual": 0.017210884353741504
+            },
+            {
+              "k": 10,
+              "eligibleSize": 28,
+              "n": 1,
+              "sumResidual": -0.017079365079365073,
+              "meanResidual": -0.017079365079365073,
+              "aggregateResidual": -0.017079365079365073
+            }
+          ]
+        }
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "summary": {
+          "windows": 9523,
+          "meanDistance": 0.012834934343030633,
+          "meanLocalDistance": 0.009797339760131953,
+          "meanRealExcess": 0.0030375945828986723,
+          "meanFakeExcess": 0.0028783575246272095,
+          "meanResidual": 0.00015923705827146058,
+          "aggregateResidual": 0.015539285216596383,
+          "rmsResidual": 0.00728209687255031,
+          "sdResidual": 0.0072803556520598806,
+          "controlAggregates": [
+            0.008575279306943084,
+            -0.012273953150360183,
+            -0.006001088188930417,
+            0.010740156061237785,
+            -0.0010403940288903253
+          ],
+          "controlAggregateRange": [
+            -0.012273953150360183,
+            0.010740156061237785
+          ],
+          "compositeWindows": 2997,
+          "compositeMeanResidual": 0.000046776284871523114,
+          "compositeAggregateResidual": 0.0025607612963075062,
+          "strongest": [
+            {
+              "id": "2010750",
+              "k": 6,
+              "eligibleSize": 24,
+              "realDistance": 0.14755555555555555,
+              "localMean": 0.03133333333333334,
+              "realExcess": 0.11622222222222223,
+              "fakeExcessMean": 0.01019047619047619,
+              "residual": 0.10603174603174603,
+              "controlResiduals": [
+                -0.01015873015873017,
+                0.00670634920634919,
+                0.014047619047619048,
+                -0.004503968253968238,
+                -0.006091269841269831
+              ],
+              "compositeDistance": 0.02342857142857142,
+              "compositeResidual": -0.0180952380952381
+            },
+            {
+              "id": "3933510",
+              "k": 8,
+              "eligibleSize": 24,
+              "realDistance": 0.1253061224489796,
+              "localMean": 0.020136054421768707,
+              "realExcess": 0.10517006802721092,
+              "fakeExcessMean": 0.006020408163265306,
+              "residual": 0.09914965986394561,
+              "controlResiduals": [
+                0.007089710884353758,
+                0.00012755102040815525,
+                -0.006462585034013613,
+                0.003103741496598634,
+                -0.003858418367346934
+              ],
+              "compositeDistance": 0.0607482993197279,
+              "compositeResidual": 0.03459183673469388
+            },
+            {
+              "id": "3790710",
+              "k": 13,
+              "eligibleSize": 23,
+              "realDistance": 0.08898656898656901,
+              "localMean": 0.00873321123321123,
+              "realExcess": 0.08025335775335779,
+              "fakeExcessMean": 0.0024633699633699576,
+              "residual": 0.07778998778998783,
+              "controlResiduals": [
+                -0.006646825396825389,
+                -0.0039186507936507945,
+                -0.003136446886446892,
+                0.0147779304029304,
+                -0.0010760073260073257
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "3825990",
+              "k": 6,
+              "eligibleSize": 20,
+              "realDistance": 0.10812698412698411,
+              "localMean": 0.026142857142857145,
+              "realExcess": 0.08198412698412698,
+              "fakeExcessMean": 0.00712698412698413,
+              "residual": 0.07485714285714284,
+              "controlResiduals": [
+                0.0024007936507936508,
+                -0.009603174603174607,
+                0.004682539682539676,
+                -0.008214285714285709,
+                0.01073412698412699
+              ],
+              "compositeDistance": 0.03193650793650793,
+              "compositeResidual": -0.0013333333333333435
+            },
+            {
+              "id": "2314410",
+              "k": 7,
+              "eligibleSize": 24,
+              "realDistance": 0.09260770975056688,
+              "localMean": 0.01709750566893424,
+              "realExcess": 0.07551020408163264,
+              "fakeExcessMean": 0.005170068027210887,
+              "residual": 0.07034013605442176,
+              "controlResiduals": [
+                0.010189909297052165,
+                -0.0012896825396825472,
+                0.003458049886621307,
+                -0.0088718820861678,
+                -0.0034863945578231257
+              ],
+              "compositeDistance": 0.03401360544217687,
+              "compositeResidual": 0.011746031746031744
+            },
+            {
+              "id": "3851400",
+              "k": 10,
+              "eligibleSize": 28,
+              "realDistance": 0.09240211640211639,
+              "localMean": 0.018423280423280418,
+              "realExcess": 0.07397883597883596,
+              "fakeExcessMean": 0.005470899470899471,
+              "residual": 0.06850793650793649,
+              "controlResiduals": [
+                0.006521164021164004,
+                0.008769841269841263,
+                -0.0035978835978835826,
+                -0.01599867724867724,
+                0.004305555555555559
+              ],
+              "compositeDistance": 0.011301587301587304,
+              "compositeResidual": -0.012592592592592586
+            },
+            {
+              "id": "3687390",
+              "k": 14,
+              "eligibleSize": 26,
+              "realDistance": 0.0723181580324437,
+              "localMean": 0.006289900575614858,
+              "realExcess": 0.06602825745682883,
+              "fakeExcessMean": 0.0018524332810047066,
+              "residual": 0.06417582417582413,
+              "controlResiduals": [
+                0.00224686028257456,
+                -0.002740711669283095,
+                -0.0031985871271585494,
+                0.003653192046049187,
+                0.00003924646781789743
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "3243240",
+              "k": 11,
+              "eligibleSize": 24,
+              "realDistance": 0.0751861471861472,
+              "localMean": 0.00959307359307359,
+              "realExcess": 0.06559307359307362,
+              "fakeExcessMean": 0.00271861471861472,
+              "residual": 0.0628744588744589,
+              "controlResiduals": [
+                -0.0017207792207792221,
+                0.007478354978354975,
+                -0.00967532467532467,
+                -0.0032359307359307384,
+                0.007153679653679655
+              ],
+              "compositeDistance": 0.013731601731601734,
+              "compositeResidual": 0.0014199134199134244
+            }
+          ],
+          "classRows": [
+            {
+              "k": 6,
+              "eligibleSize": 24,
+              "n": 2,
+              "sumResidual": 0.10222222222222223,
+              "meanResidual": 0.051111111111111114,
+              "aggregateResidual": 0.07228202652129152
+            },
+            {
+              "k": 6,
+              "eligibleSize": 20,
+              "n": 2,
+              "sumResidual": 0.06844444444444443,
+              "meanResidual": 0.034222222222222216,
+              "aggregateResidual": 0.04839753080121258
+            },
+            {
+              "k": 8,
+              "eligibleSize": 20,
+              "n": 5,
+              "sumResidual": 0.09445578231292516,
+              "meanResidual": 0.018891156462585032,
+              "aggregateResidual": 0.04224191002392459
+            },
+            {
+              "k": 6,
+              "eligibleSize": 21,
+              "n": 1,
+              "sumResidual": 0.03923809523809524,
+              "meanResidual": 0.03923809523809524,
+              "aggregateResidual": 0.03923809523809524
+            },
+            {
+              "k": 7,
+              "eligibleSize": 24,
+              "n": 6,
+              "sumResidual": 0.0859863945578231,
+              "meanResidual": 0.014331065759637183,
+              "aggregateResidual": 0.035103798581382496
+            },
+            {
+              "k": 5,
+              "eligibleSize": 22,
+              "n": 1,
+              "sumResidual": -0.03323809523809524,
+              "meanResidual": -0.03323809523809524,
+              "aggregateResidual": -0.03323809523809524
+            },
+            {
+              "k": 5,
+              "eligibleSize": 25,
+              "n": 2,
+              "sumResidual": -0.04657142857142857,
+              "meanResidual": -0.023285714285714285,
+              "aggregateResidual": -0.03293097295240207
+            },
+            {
+              "k": 4,
+              "eligibleSize": 22,
+              "n": 1,
+              "sumResidual": 0.030634920634920633,
+              "meanResidual": 0.030634920634920633,
+              "aggregateResidual": 0.030634920634920633
+            },
+            {
+              "k": 8,
+              "eligibleSize": 18,
+              "n": 1,
+              "sumResidual": 0.03017006802721088,
+              "meanResidual": 0.03017006802721088,
+              "aggregateResidual": 0.03017006802721088
+            },
+            {
+              "k": 6,
+              "eligibleSize": 25,
+              "n": 2,
+              "sumResidual": -0.0424126984126984,
+              "meanResidual": -0.0212063492063492,
+              "aggregateResidual": -0.029990306656038957
+            },
+            {
+              "k": 6,
+              "eligibleSize": 19,
+              "n": 1,
+              "sumResidual": 0.024317460317460324,
+              "meanResidual": 0.024317460317460324,
+              "aggregateResidual": 0.024317460317460324
+            },
+            {
+              "k": 11,
+              "eligibleSize": 20,
+              "n": 22,
+              "sumResidual": 0.11277922077922076,
+              "meanResidual": 0.0051263282172373074,
+              "aggregateResidual": 0.02404461066015741
+            }
+          ]
+        }
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "summary": {
+          "windows": 19047,
+          "meanDistance": 0.013620172377994315,
+          "meanLocalDistance": 0.010563309937986974,
+          "meanRealExcess": 0.0030568624400074238,
+          "meanFakeExcess": 0.003096100198299694,
+          "meanResidual": -0.000039237758292283685,
+          "aggregateResidual": -0.0054152371249126885,
+          "rmsResidual": 0.007502498828551701,
+          "sdResidual": 0.007502396221924314,
+          "controlAggregates": [
+            0.013228083970793897,
+            -0.01200053977723943,
+            -0.010979708310550831,
+            -0.002329247332151753,
+            0.012081411449147888
+          ],
+          "controlAggregateRange": [
+            -0.01200053977723943,
+            0.013228083970793897
+          ],
+          "compositeWindows": 7680,
+          "compositeMeanResidual": -0.00007388247706328081,
+          "compositeAggregateResidual": -0.006474735886706711,
+          "strongest": [
+            {
+              "id": "5975970",
+              "k": 8,
+              "eligibleSize": 22,
+              "realDistance": 0.1136054421768707,
+              "localMean": 0.017066326530612245,
+              "realExcess": 0.09653911564625846,
+              "fakeExcessMean": 0.005280612244897956,
+              "residual": 0.0912585034013605,
+              "controlResiduals": [
+                -0.009470663265306118,
+                0.016252125850340138,
+                -0.003784013605442181,
+                -0.0002763605442176924,
+                -0.002721088435374148
+              ],
+              "compositeDistance": 0.016156462585034014,
+              "compositeResidual": -0.006190476190476184
+            },
+            {
+              "id": "5826030",
+              "k": 7,
+              "eligibleSize": 23,
+              "realDistance": 0.11301587301587299,
+              "localMean": 0.017210884353741497,
+              "realExcess": 0.09580498866213151,
+              "fakeExcessMean": 0.004784580498866217,
+              "residual": 0.09102040816326529,
+              "controlResiduals": [
+                0.028245464852607715,
+                -0.010019841269841265,
+                -0.008390022675736963,
+                0.006278344671201809,
+                -0.016113945578231297
+              ],
+              "compositeDistance": 0.022267573696145126,
+              "compositeResidual": 0.00027210884353741187
+            },
+            {
+              "id": "6371400",
+              "k": 7,
+              "eligibleSize": 25,
+              "realDistance": 0.1092063492063492,
+              "localMean": 0.018038548752834466,
+              "realExcess": 0.09116780045351473,
+              "fakeExcessMean": 0.005453514739229019,
+              "residual": 0.08571428571428572,
+              "controlResiduals": [
+                0.011465419501133773,
+                0.003103741496598639,
+                -0.019217687074829924,
+                0.001686507936507941,
+                0.0029620181405895715
+              ],
+              "compositeDistance": 0.01650793650793651,
+              "compositeResidual": -0.006984126984126976
+            },
+            {
+              "id": "6158460",
+              "k": 9,
+              "eligibleSize": 24,
+              "realDistance": 0.10539682539682538,
+              "localMean": 0.01523148148148148,
+              "realExcess": 0.09016534391534389,
+              "fakeExcessMean": 0.00458333333333333,
+              "residual": 0.08558201058201056,
+              "controlResiduals": [
+                -0.0038690476190476122,
+                -0.0025876322751322844,
+                -0.004737103174603168,
+                0.023743386243386233,
+                -0.012549603174603168
+              ],
+              "compositeDistance": 0.01756613756613757,
+              "compositeResidual": -0.002248677248677241
+            },
+            {
+              "id": "7343910",
+              "k": 7,
+              "eligibleSize": 24,
+              "realDistance": 0.09741496598639458,
+              "localMean": 0.013537414965986396,
+              "realExcess": 0.08387755102040818,
+              "fakeExcessMean": 0.0042857142857142885,
+              "residual": 0.07959183673469389,
+              "controlResiduals": [
+                0.002650226757369617,
+                0.0008078231292517005,
+                -0.0009637188208616769,
+                -0.0006802721088435392,
+                -0.0018140589569161005
+              ],
+              "compositeDistance": 0.0674829931972789,
+              "compositeResidual": 0.049659863945578225
+            },
+            {
+              "id": "7803390",
+              "k": 7,
+              "eligibleSize": 22,
+              "realDistance": 0.1037641723356009,
+              "localMean": 0.020102040816326532,
+              "realExcess": 0.08366213151927436,
+              "fakeExcessMean": 0.005748299319727887,
+              "residual": 0.07791383219954648,
+              "controlResiduals": [
+                -0.004563492063492058,
+                0.0016723356009070373,
+                -0.01646825396825398,
+                0.010671768707483001,
+                0.008687641723356001
+              ],
+              "compositeDistance": 0.029750566893424035,
+              "compositeResidual": 0.0039002267573696164
+            },
+            {
+              "id": "6005790",
+              "k": 15,
+              "eligibleSize": 27,
+              "realDistance": 0.08749206349206357,
+              "localMean": 0.007746031746031739,
+              "realExcess": 0.07974603174603183,
+              "fakeExcessMean": 0.0023401360544217644,
+              "residual": 0.07740589569161006,
+              "controlResiduals": [
+                -0.0026700680272108783,
+                -0.0016638321995464814,
+                0.010113378684807234,
+                -0.005575396825396813,
+                -0.00020408163265306107
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "6613530",
+              "k": 10,
+              "eligibleSize": 24,
+              "realDistance": 0.09841269841269837,
+              "localMean": 0.0164973544973545,
+              "realExcess": 0.08191534391534389,
+              "fakeExcessMean": 0.0046878306878306835,
+              "residual": 0.0772275132275132,
+              "controlResiduals": [
+                0.020066137566137558,
+                0.007533068783068786,
+                -0.01597883597883598,
+                0.003267195767195765,
+                -0.014887566137566133
+              ],
+              "compositeDistance": 0.01602116402116402,
+              "compositeResidual": -0.00516402116402116
+            }
+          ],
+          "classRows": [
+            {
+              "k": 6,
+              "eligibleSize": 30,
+              "n": 1,
+              "sumResidual": 0.050793650793650794,
+              "meanResidual": 0.050793650793650794,
+              "aggregateResidual": 0.050793650793650794
+            },
+            {
+              "k": 9,
+              "eligibleSize": 24,
+              "n": 140,
+              "sumResidual": 0.4692592592592593,
+              "meanResidual": 0.0033518518518518524,
+              "aggregateResidual": 0.03965964595337151
+            },
+            {
+              "k": 11,
+              "eligibleSize": 31,
+              "n": 5,
+              "sumResidual": 0.07468398268398271,
+              "meanResidual": 0.014936796536796543,
+              "aggregateResidual": 0.03339969242236051
+            },
+            {
+              "k": 5,
+              "eligibleSize": 22,
+              "n": 2,
+              "sumResidual": -0.040571428571428564,
+              "meanResidual": -0.020285714285714282,
+              "aggregateResidual": -0.02868833226528278
+            },
+            {
+              "k": 4,
+              "eligibleSize": 23,
+              "n": 1,
+              "sumResidual": 0.026984126984126982,
+              "meanResidual": 0.026984126984126982,
+              "aggregateResidual": 0.026984126984126982
+            },
+            {
+              "k": 6,
+              "eligibleSize": 20,
+              "n": 3,
+              "sumResidual": 0.04476190476190478,
+              "meanResidual": 0.014920634920634926,
+              "aggregateResidual": 0.025843297763726118
+            },
+            {
+              "k": 7,
+              "eligibleSize": 19,
+              "n": 4,
+              "sumResidual": 0.050748299319727894,
+              "meanResidual": 0.012687074829931973,
+              "aggregateResidual": 0.025374149659863947
+            },
+            {
+              "k": 8,
+              "eligibleSize": 19,
+              "n": 10,
+              "sumResidual": -0.07346938775510205,
+              "meanResidual": -0.007346938775510205,
+              "aggregateResidual": -0.023233060360420745
+            },
+            {
+              "k": 12,
+              "eligibleSize": 32,
+              "n": 2,
+              "sumResidual": 0.0326984126984127,
+              "meanResidual": 0.01634920634920635,
+              "aggregateResidual": 0.023121269353083933
+            },
+            {
+              "k": 6,
+              "eligibleSize": 21,
+              "n": 7,
+              "sumResidual": 0.05930158730158729,
+              "meanResidual": 0.008471655328798185,
+              "aggregateResidual": 0.02241389319305512
+            },
+            {
+              "k": 8,
+              "eligibleSize": 25,
+              "n": 43,
+              "sumResidual": 0.14098639455782314,
+              "meanResidual": 0.0032787533618098405,
+              "aggregateResidual": 0.021500223606416544
+            },
+            {
+              "k": 8,
+              "eligibleSize": 31,
+              "n": 1,
+              "sumResidual": 0.01965986394557823,
+              "meanResidual": 0.01965986394557823,
+              "aggregateResidual": 0.01965986394557823
+            }
+          ]
+        }
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "summary": {
+          "windows": 38094,
+          "meanDistance": 0.01472061565273439,
+          "meanLocalDistance": 0.011307858411082177,
+          "meanRealExcess": 0.003412757241652182,
+          "meanFakeExcess": 0.0033106234840649474,
+          "meanResidual": 0.00010213375758721631,
+          "aggregateResidual": 0.019934144358232618,
+          "rmsResidual": 0.00829723136902305,
+          "sdResidual": 0.008296602743693376,
+          "controlAggregates": [
+            -0.005694670121699992,
+            0.008565756093791543,
+            0.0029815475868615825,
+            0.006309984346901128,
+            -0.012162617905854585
+          ],
+          "controlAggregateRange": [
+            -0.012162617905854585,
+            0.008565756093791543
+          ],
+          "compositeWindows": 18889,
+          "compositeMeanResidual": 0.00006975079311964747,
+          "compositeAggregateResidual": 0.00958635777847595,
+          "strongest": [
+            {
+              "id": "15492330",
+              "k": 3,
+              "eligibleSize": 24,
+              "realDistance": 0.24761904761904763,
+              "localMean": 0.04563492063492064,
+              "realExcess": 0.201984126984127,
+              "fakeExcessMean": 0.014682539682539677,
+              "residual": 0.1873015873015873,
+              "controlResiduals": [
+                0.0004960317460317547,
+                -0.042162698412698416,
+                -0.0004960317460317599,
+                -0.03273809523809525,
+                0.07490079365079368
+              ],
+              "compositeDistance": 0.09523809523809523,
+              "compositeResidual": 0.03492063492063493
+            },
+            {
+              "id": "14518140",
+              "k": 3,
+              "eligibleSize": 19,
+              "realDistance": 0.21904761904761907,
+              "localMean": 0.04007936507936508,
+              "realExcess": 0.17896825396825394,
+              "fakeExcessMean": 0.012301587301587296,
+              "residual": 0.16666666666666666,
+              "controlResiduals": [
+                0.017361111111111122,
+                -0.005456349206349218,
+                -0.015376984126984095,
+                -0.012896825396825417,
+                0.01636904761904761
+              ],
+              "compositeDistance": 0.12380952380952379,
+              "compositeResidual": 0.07142857142857144
+            },
+            {
+              "id": "12623100",
+              "k": 2,
+              "eligibleSize": 17,
+              "realDistance": 0.2019047619047619,
+              "localMean": 0.06333333333333332,
+              "realExcess": 0.13857142857142857,
+              "fakeExcessMean": 0.02047619047619048,
+              "residual": 0.11809523809523809,
+              "controlResiduals": [
+                0.07559523809523809,
+                -0.09107142857142862,
+                -0.019642857142857136,
+                0.033928571428571495,
+                0.0011904761904761654
+              ],
+              "compositeDistance": 0.12190476190476192,
+              "compositeResidual": 0.038095238095238106
+            },
+            {
+              "id": "13626270",
+              "k": 5,
+              "eligibleSize": 22,
+              "realDistance": 0.15180952380952378,
+              "localMean": 0.027476190476190477,
+              "realExcess": 0.12433333333333332,
+              "fakeExcessMean": 0.007857142857142858,
+              "residual": 0.11647619047619047,
+              "controlResiduals": [
+                -0.012351190476190465,
+                -0.018005952380952393,
+                -0.015476190476190485,
+                0.037351190476190475,
+                0.008482142857142869
+              ],
+              "compositeDistance": 0.056666666666666664,
+              "compositeResidual": 0.021333333333333333
+            },
+            {
+              "id": "15825810",
+              "k": 12,
+              "eligibleSize": 22,
+              "realDistance": 0.11945165945165952,
+              "localMean": 0.006944444444444445,
+              "realExcess": 0.11250721500721508,
+              "fakeExcessMean": 0.00213203463203463,
+              "residual": 0.11037518037518046,
+              "controlResiduals": [
+                0.000018037518037513755,
+                -0.0011544011544011557,
+                -0.0019886363636363582,
+                -0.0006132756132756173,
+                0.0037382756132756175
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "14723310",
+              "k": 8,
+              "eligibleSize": 24,
+              "realDistance": 0.11034013605442176,
+              "localMean": 0.009897959183673468,
+              "realExcess": 0.10044217687074827,
+              "fakeExcessMean": 0.0027210884353741486,
+              "residual": 0.09772108843537412,
+              "controlResiduals": [
+                -0.009725765306122444,
+                0.0001594387755102073,
+                0.010363520408163261,
+                -0.0009566326530612234,
+                0.00015943877551020122
+              ],
+              "compositeDistance": 0.02564625850340136,
+              "compositeResidual": 0.013027210884353739
+            },
+            {
+              "id": "12481560",
+              "k": 4,
+              "eligibleSize": 20,
+              "realDistance": 0.13365079365079366,
+              "localMean": 0.03242063492063492,
+              "realExcess": 0.10123015873015873,
+              "fakeExcessMean": 0.010436507936507943,
+              "residual": 0.09079365079365079,
+              "controlResiduals": [
+                0.0005952380952380966,
+                0.0005952380952381018,
+                -0.014781746031746045,
+                -0.005853174603174603,
+                0.019444444444444448
+              ],
+              "compositeDistance": 0.06920634920634922,
+              "compositeResidual": 0.02634920634920635
+            },
+            {
+              "id": "8421210",
+              "k": 7,
+              "eligibleSize": 23,
+              "realDistance": 0.12226757369614513,
+              "localMean": 0.02626984126984127,
+              "realExcess": 0.09599773242630387,
+              "fakeExcessMean": 0.006972789115646258,
+              "residual": 0.0890249433106576,
+              "controlResiduals": [
+                -0.015093537414965993,
+                -0.021400226757369623,
+                -0.01119614512471655,
+                0.07171201814058958,
+                -0.02402210884353742
+              ],
+              "compositeDistance": 0.01600907029478458,
+              "compositeResidual": -0.017233560090702947
+            }
+          ],
+          "classRows": [
+            {
+              "k": 3,
+              "eligibleSize": 24,
+              "n": 1,
+              "sumResidual": 0.1873015873015873,
+              "meanResidual": 0.1873015873015873,
+              "aggregateResidual": 0.1873015873015873
+            },
+            {
+              "k": 3,
+              "eligibleSize": 19,
+              "n": 1,
+              "sumResidual": 0.16666666666666666,
+              "meanResidual": 0.16666666666666666,
+              "aggregateResidual": 0.16666666666666666
+            },
+            {
+              "k": 2,
+              "eligibleSize": 17,
+              "n": 1,
+              "sumResidual": 0.11809523809523809,
+              "meanResidual": 0.11809523809523809,
+              "aggregateResidual": 0.11809523809523809
+            },
+            {
+              "k": 3,
+              "eligibleSize": 25,
+              "n": 1,
+              "sumResidual": 0.05746031746031746,
+              "meanResidual": 0.05746031746031746,
+              "aggregateResidual": 0.05746031746031746
+            },
+            {
+              "k": 4,
+              "eligibleSize": 20,
+              "n": 3,
+              "sumResidual": 0.09031746031746032,
+              "meanResidual": 0.030105820105820108,
+              "aggregateResidual": 0.05214481002680906
+            },
+            {
+              "k": 5,
+              "eligibleSize": 22,
+              "n": 16,
+              "sumResidual": 0.20076190476190475,
+              "meanResidual": 0.012547619047619047,
+              "aggregateResidual": 0.05019047619047619
+            },
+            {
+              "k": 4,
+              "eligibleSize": 21,
+              "n": 1,
+              "sumResidual": -0.046825396825396826,
+              "meanResidual": -0.046825396825396826,
+              "aggregateResidual": -0.046825396825396826
+            },
+            {
+              "k": 5,
+              "eligibleSize": 21,
+              "n": 13,
+              "sumResidual": 0.1616190476190476,
+              "meanResidual": 0.012432234432234431,
+              "aggregateResidual": 0.04482505871401018
+            },
+            {
+              "k": 4,
+              "eligibleSize": 23,
+              "n": 1,
+              "sumResidual": 0.038095238095238085,
+              "meanResidual": 0.038095238095238085,
+              "aggregateResidual": 0.038095238095238085
+            },
+            {
+              "k": 7,
+              "eligibleSize": 17,
+              "n": 3,
+              "sumResidual": 0.06494331065759636,
+              "meanResidual": 0.021647770219198784,
+              "aggregateResidual": 0.037495037890228754
+            },
+            {
+              "k": 5,
+              "eligibleSize": 27,
+              "n": 1,
+              "sumResidual": 0.03723809523809526,
+              "meanResidual": 0.03723809523809526,
+              "aggregateResidual": 0.03723809523809526
+            },
+            {
+              "k": 5,
+              "eligibleSize": 17,
+              "n": 2,
+              "sumResidual": 0.04857142857142854,
+              "meanResidual": 0.02428571428571427,
+              "aggregateResidual": 0.034345186514775146
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "q2": {
+    "q": 2,
+    "maxDegree": 18,
+    "hDegree": 5,
+    "factorDegree": 3,
+    "metric": "F_2^5 degree ultrametric",
+    "rows": [
+      {
+        "degree": 15,
+        "summary": {
+          "windows": 710,
+          "meanDistance": 0.18452582159624387,
+          "meanLocalDistance": 0.14153873239436626,
+          "meanRealExcess": 0.04298708920187791,
+          "meanFakeExcess": 0.046228873239436565,
+          "meanResidual": -0.0032417840375586894,
+          "aggregateResidual": -0.08638001076511234,
+          "rmsResidual": 0.14301748965569847,
+          "sdResidual": 0.14298074410098582,
+          "controlAggregates": [
+            -0.08696249726058662,
+            0.11651684562156817,
+            -0.12698401066608248,
+            -0.312138484772827,
+            0.409568147077928
+          ],
+          "controlAggregateRange": [
+            -0.312138484772827,
+            0.409568147077928
+          ],
+          "compositeWindows": 404,
+          "compositeMeanResidual": 0.002021452145214516,
+          "compositeAggregateResidual": 0.04063068526690779,
+          "strongest": [
+            {
+              "id": "15:821",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "15:918",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "15:930",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "15:949",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "15:179",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.5,
+              "localMean": 0,
+              "realExcess": 0.5,
+              "fakeExcessMean": 0,
+              "residual": 0.5,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "15:188",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.5,
+              "localMean": 0,
+              "realExcess": 0.5,
+              "fakeExcessMean": 0,
+              "residual": 0.5,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "15:425",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.5,
+              "localMean": 0,
+              "realExcess": 0.5,
+              "fakeExcessMean": 0,
+              "residual": 0.5,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "15:498",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.5,
+              "localMean": 0,
+              "realExcess": 0.5,
+              "fakeExcessMean": 0,
+              "residual": 0.5,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 204,
+              "sumResidual": -2.250000000000002,
+              "meanResidual": -0.011029411764705893,
+              "aggregateResidual": -0.15753150945315125
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 18,
+              "sumResidual": -0.6500000000000002,
+              "meanResidual": -0.03611111111111112,
+              "aggregateResidual": -0.15320646925708536
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 14,
+              "sumResidual": 0.39999999999999997,
+              "meanResidual": 0.02857142857142857,
+              "aggregateResidual": 0.10690449676496974
+            },
+            {
+              "k": 3,
+              "eligibleSize": 4,
+              "n": 94,
+              "sumResidual": -0.9666666666666671,
+              "meanResidual": -0.010283687943262416,
+              "aggregateResidual": -0.09970405380501673
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 168,
+              "sumResidual": 1.1249999999999993,
+              "meanResidual": 0.006696428571428568,
+              "aggregateResidual": 0.08679563435367664
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 60,
+              "sumResidual": -0.17499999999999993,
+              "meanResidual": -0.0029166666666666655,
+              "aggregateResidual": -0.02259240285287659
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 136,
+              "sumResidual": 0.2333333333333335,
+              "meanResidual": 0.0017156862745098052,
+              "aggregateResidual": 0.020008168266626044
+            },
+            {
+              "k": 5,
+              "eligibleSize": 6,
+              "n": 4,
+              "sumResidual": -0.01,
+              "meanResidual": -0.0025,
+              "aggregateResidual": -0.005
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 12,
+              "sumResidual": -0.008333333333333356,
+              "meanResidual": -0.0006944444444444463,
+              "aggregateResidual": -0.002405626121623447
+            }
+          ]
+        }
+      },
+      {
+        "degree": 16,
+        "summary": {
+          "windows": 1333,
+          "meanDistance": 0.19796324081020272,
+          "meanLocalDistance": 0.14951800450112504,
+          "meanRealExcess": 0.0484452363090773,
+          "meanFakeExcess": 0.04888909727431858,
+          "meanResidual": -0.0004438609652413121,
+          "aggregateResidual": -0.01620548480508304,
+          "rmsResidual": 0.14581664070506517,
+          "sdResidual": 0.14581596515455167,
+          "controlAggregates": [
+            0.13076371167763476,
+            -0.14088500698503478,
+            -0.09263232005440697,
+            0.0704211054051867,
+            0.03233250995662022
+          ],
+          "controlAggregateRange": [
+            -0.14088500698503478,
+            0.13076371167763476
+          ],
+          "compositeWindows": 809,
+          "compositeMeanResidual": 0.006860321384425248,
+          "compositeAggregateResidual": 0.19512760871686072,
+          "strongest": [
+            {
+              "id": "16:26",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "16:493",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "16:620",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "16:937",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "16:945",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "16:1423",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "16:1776",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "16:1954",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 364,
+              "sumResidual": -5.200000000000002,
+              "meanResidual": -0.01428571428571429,
+              "aggregateResidual": -0.27255405754769885
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 248,
+              "sumResidual": 2.966666666666664,
+              "meanResidual": 0.01196236559139784,
+              "aggregateResidual": 0.18838352171694908
+            },
+            {
+              "k": 3,
+              "eligibleSize": 4,
+              "n": 160,
+              "sumResidual": 1.5166666666666682,
+              "meanResidual": 0.009479166666666676,
+              "aggregateResidual": 0.11990302794805116
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 31,
+              "sumResidual": -0.20000000000000007,
+              "meanResidual": -0.006451612903225808,
+              "aggregateResidual": -0.035921060405355
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 371,
+              "sumResidual": 0.6749999999999986,
+              "meanResidual": 0.0018194070080862497,
+              "aggregateResidual": 0.03504425388645357
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 87,
+              "sumResidual": -0.2083333333333333,
+              "meanResidual": -0.00239463601532567,
+              "aggregateResidual": -0.02233567780912072
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 43,
+              "sumResidual": -0.12499999999999992,
+              "meanResidual": -0.0029069767441860447,
+              "aggregateResidual": -0.019062321291575573
+            },
+            {
+              "k": 5,
+              "eligibleSize": 6,
+              "n": 8,
+              "sumResidual": -0.024999999999999998,
+              "meanResidual": -0.0031249999999999997,
+              "aggregateResidual": -0.008838834764831842
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 21,
+              "sumResidual": 0.008333333333333323,
+              "meanResidual": 0.00039682539682539634,
+              "aggregateResidual": 0.0018184824186332675
+            }
+          ]
+        }
+      },
+      {
+        "degree": 17,
+        "summary": {
+          "windows": 2496,
+          "meanDistance": 0.20024372329059906,
+          "meanLocalDistance": 0.15164813701923024,
+          "meanRealExcess": 0.048595586271367716,
+          "meanFakeExcess": 0.049657952724359494,
+          "meanResidual": -0.001062366452991426,
+          "aggregateResidual": -0.05307581097997649,
+          "rmsResidual": 0.15029289054022832,
+          "sdResidual": 0.15028913574991506,
+          "controlAggregates": [
+            -0.07176055642690868,
+            -0.14900988062584722,
+            0.1579545392173032,
+            0.05451237735981775,
+            0.008303520475634893
+          ],
+          "controlAggregateRange": [
+            -0.14900988062584722,
+            0.1579545392173032
+          ],
+          "compositeWindows": 1574,
+          "compositeMeanResidual": 0.0003970775095298537,
+          "compositeAggregateResidual": 0.01575352162077275,
+          "strongest": [
+            {
+              "id": "17:69",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "17:317",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "17:888",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "17:1081",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "17:1094",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "17:1502",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "17:1681",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "17:1982",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            }
+          ],
+          "classRows": [
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 84,
+              "sumResidual": -1.833333333333332,
+              "meanResidual": -0.02182539682539681,
+              "aggregateResidual": -0.20003306604965954
+            },
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 726,
+              "sumResidual": -4.824999999999985,
+              "meanResidual": -0.006646005509641853,
+              "aggregateResidual": -0.17907254558983027
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 692,
+              "sumResidual": 2.724999999999991,
+              "meanResidual": 0.003937861271676288,
+              "aggregateResidual": 0.10358895677299704
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 72,
+              "sumResidual": 0.8500000000000002,
+              "meanResidual": 0.011805555555555559,
+              "aggregateResidual": 0.10017346066809427
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 42,
+              "sumResidual": -0.3000000000000001,
+              "meanResidual": -0.007142857142857145,
+              "aggregateResidual": -0.046291004988627586
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 140,
+              "sumResidual": 0.3916666666666664,
+              "meanResidual": 0.0027976190476190457,
+              "aggregateResidual": 0.033101874976866875
+            },
+            {
+              "k": 5,
+              "eligibleSize": 6,
+              "n": 6,
+              "sumResidual": 0.039999999999999994,
+              "meanResidual": 0.006666666666666665,
+              "aggregateResidual": 0.01632993161855452
+            },
+            {
+              "k": 3,
+              "eligibleSize": 4,
+              "n": 290,
+              "sumResidual": 0.1999999999999991,
+              "meanResidual": 0.00068965517241379,
+              "aggregateResidual": 0.011744404390294016
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 444,
+              "sumResidual": 0.10000000000000114,
+              "meanResidual": 0.0002252252252252278,
+              "aggregateResidual": 0.0047457899787625496
+            }
+          ]
+        }
+      },
+      {
+        "degree": 18,
+        "summary": {
+          "windows": 4706,
+          "meanDistance": 0.203161212636351,
+          "meanLocalDistance": 0.15380657671058334,
+          "meanRealExcess": 0.04935463592576794,
+          "meanFakeExcess": 0.050395859895168406,
+          "meanResidual": -0.0010412239694007745,
+          "aggregateResidual": -0.07142826786408754,
+          "rmsResidual": 0.15508087920580363,
+          "sdResidual": 0.1550773837407974,
+          "controlAggregates": [
+            0.020567514630507176,
+            0.001662711592499484,
+            0.18854693921521407,
+            -0.18897969976668655,
+            -0.021797465671534157
+          ],
+          "controlAggregateRange": [
+            -0.18897969976668655,
+            0.18854693921521407
+          ],
+          "compositeWindows": 3046,
+          "compositeMeanResidual": -0.001729043554388269,
+          "compositeAggregateResidual": -0.09542691472069896,
+          "strongest": [
+            {
+              "id": "18:587",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "18:704",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "18:1299",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "18:1393",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "18:1472",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            },
+            {
+              "id": "18:1622",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.75,
+              "compositeResidual": 0.75
+            },
+            {
+              "id": "18:1890",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "18:1978",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.75,
+              "localMean": 0,
+              "realExcess": 0.75,
+              "fakeExcessMean": 0,
+              "residual": 0.75,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.5,
+              "compositeResidual": 0.5
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 1345,
+              "sumResidual": -9.074999999999976,
+              "meanResidual": -0.006747211895910763,
+              "aggregateResidual": -0.24744887947895422
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 1415,
+              "sumResidual": 6.075000000000037,
+              "meanResidual": 0.004293286219081298,
+              "aggregateResidual": 0.16149833987047374
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 170,
+              "sumResidual": -1.9499999999999984,
+              "meanResidual": -0.011470588235294107,
+              "aggregateResidual": -0.1495581728252371
+            },
+            {
+              "k": 3,
+              "eligibleSize": 4,
+              "n": 499,
+              "sumResidual": -2.866666666666664,
+              "meanResidual": -0.005744822979291912,
+              "aggregateResidual": -0.12832962456360886
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 116,
+              "sumResidual": 1.2833333333333332,
+              "meanResidual": 0.011063218390804597,
+              "aggregateResidual": 0.11915450866360827
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 810,
+              "sumResidual": 1.900000000000007,
+              "meanResidual": 0.0023456790123456877,
+              "aggregateResidual": 0.06675919504799936
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 255,
+              "sumResidual": -0.26666666666666694,
+              "meanResidual": -0.001045751633986929,
+              "aggregateResidual": -0.016699314428937337
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 76,
+              "sumResidual": -2.0816681711721685e-17,
+              "meanResidual": -2.7390370673318005e-19,
+              "aggregateResidual": -2.3878371558222657e-18
+            },
+            {
+              "k": 5,
+              "eligibleSize": 6,
+              "n": 20,
+              "sumResidual": 1.734723475976807e-18,
+              "meanResidual": 8.673617379884036e-20,
+              "aggregateResidual": 3.878959614448864e-19
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "q3": {
+    "q": 3,
+    "maxDegree": 11,
+    "hDegree": 3,
+    "factorDegree": 2,
+    "metric": "F_3^3 degree ultrametric",
+    "rows": [
+      {
+        "degree": 8,
+        "summary": {
+          "windows": 219,
+          "meanDistance": 0.11040081177067468,
+          "meanLocalDistance": 0.09477253509216979,
+          "meanRealExcess": 0.015628276678505,
+          "meanFakeExcess": 0.0314104515474378,
+          "meanResidual": -0.015782174868932845,
+          "aggregateResidual": -0.233554859823111,
+          "rmsResidual": 0.11642808050405846,
+          "sdResidual": 0.11535346066012041,
+          "controlAggregates": [
+            0.09055193711931998,
+            0.26300574723168857,
+            -0.22541785555821736,
+            0.0027217199963312138,
+            -0.13086154878912262
+          ],
+          "controlAggregateRange": [
+            -0.22541785555821736,
+            0.26300574723168857
+          ],
+          "compositeWindows": 102,
+          "compositeMeanResidual": -0.01764705882352941,
+          "compositeAggregateResidual": -0.1782265577358014,
+          "strongest": [
+            {
+              "id": "8:42",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "8:223",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "8:143",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.711111111111111,
+              "localMean": 0.2666666666666667,
+              "realExcess": 0.4444444444444445,
+              "fakeExcessMean": 0.08888888888888884,
+              "residual": 0.3555555555555556,
+              "controlResiduals": [
+                -0.25,
+                -0.25,
+                -0.25,
+                1,
+                -0.25
+              ],
+              "compositeDistance": 0.17777777777777776,
+              "compositeResidual": -0.17777777777777776
+            },
+            {
+              "id": "8:157",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.711111111111111,
+              "localMean": 0.2666666666666667,
+              "realExcess": 0.4444444444444445,
+              "fakeExcessMean": 0.08888888888888884,
+              "residual": 0.3555555555555556,
+              "controlResiduals": [
+                -0.25,
+                -0.25,
+                -0.25,
+                1,
+                -0.25
+              ],
+              "compositeDistance": 0.17777777777777776,
+              "compositeResidual": -0.17777777777777776
+            },
+            {
+              "id": "8:121",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.5333333333333334,
+              "localMean": 0.19999999999999998,
+              "realExcess": 0.33333333333333337,
+              "fakeExcessMean": 0.06666666666666665,
+              "residual": 0.2666666666666667,
+              "controlResiduals": [
+                -0.1875,
+                0.7500000000000001,
+                -0.1875,
+                -0.1875,
+                -0.1875
+              ],
+              "compositeDistance": 0.1333333333333333,
+              "compositeResidual": -0.13333333333333333
+            },
+            {
+              "id": "8:220",
+              "k": 3,
+              "eligibleSize": 5,
+              "realDistance": 0.22222222222222224,
+              "localMean": 0,
+              "realExcess": 0.22222222222222224,
+              "fakeExcessMean": 0,
+              "residual": 0.22222222222222224,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": null,
+              "compositeResidual": null
+            },
+            {
+              "id": "8:133",
+              "k": 3,
+              "eligibleSize": 6,
+              "realDistance": 0.1481481481481482,
+              "localMean": 0.2555555555555556,
+              "realExcess": -0.1074074074074074,
+              "fakeExcessMean": 0.08518518518518522,
+              "residual": -0.19259259259259262,
+              "controlResiduals": [
+                -0.04861111111111112,
+                0.3564814814814815,
+                -0.04861111111111112,
+                -0.12962962962962965,
+                -0.12962962962962965
+              ],
+              "compositeDistance": 0.22222222222222227,
+              "compositeResidual": -0.11851851851851854
+            },
+            {
+              "id": "8:28",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.17777777777777776,
+              "localMean": 0.2666666666666667,
+              "realExcess": -0.08888888888888893,
+              "fakeExcessMean": 0.08888888888888884,
+              "residual": -0.17777777777777776,
+              "controlResiduals": [
+                -0.25,
+                -0.25,
+                -0.25,
+                1,
+                -0.25
+              ],
+              "compositeDistance": 0.17777777777777776,
+              "compositeResidual": -0.17777777777777776
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 12,
+              "sumResidual": 2.088888888888889,
+              "meanResidual": 0.17407407407407408,
+              "aggregateResidual": 0.6030102811536092
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 33,
+              "sumResidual": -2.8444444444444437,
+              "meanResidual": -0.08619528619528617,
+              "aggregateResidual": -0.49515422138509596
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 33,
+              "sumResidual": -1.7629629629629635,
+              "meanResidual": -0.05342312008978677,
+              "aggregateResidual": -0.30689246012930443
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 6,
+              "sumResidual": -0.7333333333333333,
+              "meanResidual": -0.12222222222222222,
+              "aggregateResidual": -0.29938207967349956
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 6,
+              "sumResidual": 0.2888888888888889,
+              "meanResidual": 0.048148148148148155,
+              "aggregateResidual": 0.11793839502289379
+            },
+            {
+              "k": 3,
+              "eligibleSize": 7,
+              "n": 18,
+              "sumResidual": -0.41481481481481486,
+              "meanResidual": -0.023045267489711935,
+              "aggregateResidual": -0.09777278949739918
+            },
+            {
+              "k": 4,
+              "eligibleSize": 7,
+              "n": 6,
+              "sumResidual": -0.23703703703703702,
+              "meanResidual": -0.03950617283950617,
+              "aggregateResidual": -0.09676996514698975
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 6,
+              "sumResidual": 0.1333333333333333,
+              "meanResidual": 0.022222222222222216,
+              "aggregateResidual": 0.05443310539518173
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 45,
+              "sumResidual": 0.1333333333333333,
+              "meanResidual": 0.0029629629629629624,
+              "aggregateResidual": 0.019876159799998124
+            },
+            {
+              "k": 6,
+              "eligibleSize": 7,
+              "n": 6,
+              "sumResidual": -0.041481481481481494,
+              "meanResidual": -0.006913580246913582,
+              "aggregateResidual": -0.016934743900723213
+            },
+            {
+              "k": 5,
+              "eligibleSize": 7,
+              "n": 18,
+              "sumResidual": -0.06222222222222222,
+              "meanResidual": -0.00345679012345679,
+              "aggregateResidual": -0.014665918424609875
+            },
+            {
+              "k": 5,
+              "eligibleSize": 6,
+              "n": 30,
+              "sumResidual": -0.004444444444444478,
+              "meanResidual": -0.00014814814814814928,
+              "aggregateResidual": -0.0008114408259335856
+            }
+          ]
+        }
+      },
+      {
+        "degree": 9,
+        "summary": {
+          "windows": 605,
+          "meanDistance": 0.1416859504132236,
+          "meanLocalDistance": 0.0982705846342213,
+          "meanRealExcess": 0.04341536577900215,
+          "meanFakeExcess": 0.032467095194367974,
+          "meanResidual": 0.010948270584634231,
+          "aggregateResidual": 0.2692918498963386,
+          "rmsResidual": 0.15106780800406364,
+          "sdResidual": 0.1506705611138365,
+          "controlAggregates": [
+            -0.05467826157101765,
+            0.02860962395454274,
+            -0.04004406247584849,
+            -0.015340028633521255,
+            0.08145272872584455
+          ],
+          "controlAggregateRange": [
+            -0.05467826157101765,
+            0.08145272872584455
+          ],
+          "compositeWindows": 273,
+          "compositeMeanResidual": 0.017528150861484217,
+          "compositeAggregateResidual": 0.289612582299294,
+          "strongest": [
+            {
+              "id": "9:257",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "9:372",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "9:435",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.6666666666666667,
+              "compositeResidual": 0.6666666666666667
+            },
+            {
+              "id": "9:645",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "9:707",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "9:708",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.6666666666666667,
+              "compositeResidual": 0.6666666666666667
+            },
+            {
+              "id": "9:249",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.6666666666666667,
+              "localMean": 0,
+              "realExcess": 0.6666666666666667,
+              "fakeExcessMean": 0,
+              "residual": 0.6666666666666667,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "9:451",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.6666666666666667,
+              "localMean": 0,
+              "realExcess": 0.6666666666666667,
+              "fakeExcessMean": 0,
+              "residual": 0.6666666666666667,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 9,
+              "sumResidual": 1.2444444444444447,
+              "meanResidual": 0.13827160493827162,
+              "aggregateResidual": 0.4148148148148149
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 72,
+              "sumResidual": 3.28888888888889,
+              "meanResidual": 0.04567901234567903,
+              "aggregateResidual": 0.387599272650404
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 48,
+              "sumResidual": 1.8666666666666671,
+              "meanResidual": 0.038888888888888896,
+              "aggregateResidual": 0.26943012562182544
+            },
+            {
+              "k": 2,
+              "eligibleSize": 8,
+              "n": 3,
+              "sumResidual": -0.2666666666666666,
+              "meanResidual": -0.08888888888888886,
+              "aggregateResidual": -0.15396007178390017
+            },
+            {
+              "k": 6,
+              "eligibleSize": 8,
+              "n": 1,
+              "sumResidual": 0.08592592592592593,
+              "meanResidual": 0.08592592592592593,
+              "aggregateResidual": 0.08592592592592593
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 96,
+              "sumResidual": 0.8370370370370368,
+              "meanResidual": 0.008719135802469134,
+              "aggregateResidual": 0.08542973485632688
+            },
+            {
+              "k": 4,
+              "eligibleSize": 7,
+              "n": 32,
+              "sumResidual": 0.3555555555555554,
+              "meanResidual": 0.011111111111111106,
+              "aggregateResidual": 0.06285393610547085
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 32,
+              "sumResidual": -0.30370370370370364,
+              "meanResidual": -0.009490740740740739,
+              "aggregateResidual": -0.053687737090089706
+            },
+            {
+              "k": 3,
+              "eligibleSize": 7,
+              "n": 30,
+              "sumResidual": 0.19999999999999996,
+              "meanResidual": 0.006666666666666665,
+              "aggregateResidual": 0.036514837167011066
+            },
+            {
+              "k": 5,
+              "eligibleSize": 7,
+              "n": 36,
+              "sumResidual": -0.21333333333333332,
+              "meanResidual": -0.005925925925925926,
+              "aggregateResidual": -0.035555555555555556
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 108,
+              "sumResidual": -0.34814814814814804,
+              "meanResidual": -0.003223593964334704,
+              "aggregateResidual": -0.03350057117520049
+            },
+            {
+              "k": 4,
+              "eligibleSize": 8,
+              "n": 3,
+              "sumResidual": -0.05185185185185187,
+              "meanResidual": -0.017283950617283956,
+              "aggregateResidual": -0.029936680624647275
+            }
+          ]
+        }
+      },
+      {
+        "degree": 10,
+        "summary": {
+          "windows": 1830,
+          "meanDistance": 0.15452013762396338,
+          "meanLocalDistance": 0.11312365917830369,
+          "meanRealExcess": 0.04139647844565864,
+          "meanFakeExcess": 0.03735438170410888,
+          "meanResidual": 0.004042096741550286,
+          "aggregateResidual": 0.17291483251743944,
+          "rmsResidual": 0.14922823037793553,
+          "sdResidual": 0.14917347685048485,
+          "controlAggregates": [
+            0.012873159503272788,
+            0.0072996604329195,
+            -0.3411793105678295,
+            0.1919556369142944,
+            0.12905085371734246
+          ],
+          "controlAggregateRange": [
+            -0.3411793105678295,
+            0.1919556369142944
+          ],
+          "compositeWindows": 1053,
+          "compositeMeanResidual": 0.0014350532869051196,
+          "compositeAggregateResidual": 0.046567423880635894,
+          "strongest": [
+            {
+              "id": "10:26",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "10:119",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.6666666666666667,
+              "compositeResidual": 0.6666666666666667
+            },
+            {
+              "id": "10:155",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "10:457",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.6666666666666667,
+              "compositeResidual": 0.6666666666666667
+            },
+            {
+              "id": "10:928",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "10:1096",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "10:1467",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "10:1631",
+              "k": 2,
+              "eligibleSize": 4,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            }
+          ],
+          "classRows": [
+            {
+              "k": 3,
+              "eligibleSize": 7,
+              "n": 66,
+              "sumResidual": 3.881481481481483,
+              "meanResidual": 0.058810325476992165,
+              "aggregateResidual": 0.477777342764225
+            },
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 78,
+              "sumResidual": 3.7111111111111086,
+              "meanResidual": 0.04757834757834754,
+              "aggregateResidual": 0.4202005882269941
+            },
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 186,
+              "sumResidual": -5.000000000000001,
+              "meanResidual": -0.02688172043010753,
+              "aggregateResidual": -0.3666177875533833
+            },
+            {
+              "k": 2,
+              "eligibleSize": 7,
+              "n": 36,
+              "sumResidual": 1.9111111111111116,
+              "meanResidual": 0.053086419753086436,
+              "aggregateResidual": 0.3185185185185186
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 351,
+              "sumResidual": 4.074074074074074,
+              "meanResidual": 0.011607048644085682,
+              "aggregateResidual": 0.2174579866488838
+            },
+            {
+              "k": 5,
+              "eligibleSize": 7,
+              "n": 51,
+              "sumResidual": -0.6044444444444443,
+              "meanResidual": -0.01185185185185185,
+              "aggregateResidual": -0.08463915174569302
+            },
+            {
+              "k": 4,
+              "eligibleSize": 7,
+              "n": 93,
+              "sumResidual": -0.7481481481481489,
+              "meanResidual": -0.008044603743528483,
+              "aggregateResidual": -0.07757934901316522
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 258,
+              "sumResidual": 0.9037037037037051,
+              "meanResidual": 0.003502727533735291,
+              "aggregateResidual": 0.05626213509369803
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 156,
+              "sumResidual": -0.5333333333333331,
+              "meanResidual": -0.0034188034188034175,
+              "aggregateResidual": -0.042700841014689885
+            },
+            {
+              "k": 6,
+              "eligibleSize": 7,
+              "n": 6,
+              "sumResidual": -0.0888888888888889,
+              "meanResidual": -0.014814814814814817,
+              "aggregateResidual": -0.03628873693012117
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 78,
+              "sumResidual": 0.31851851851851876,
+              "meanResidual": 0.00408357075023742,
+              "aggregateResidual": 0.036065120346827885
+            },
+            {
+              "k": 3,
+              "eligibleSize": 4,
+              "n": 42,
+              "sumResidual": -0.20740740740740757,
+              "meanResidual": -0.004938271604938276,
+              "aggregateResidual": -0.032003657769915386
+            }
+          ]
+        }
+      },
+      {
+        "degree": 11,
+        "summary": {
+          "windows": 5052,
+          "meanDistance": 0.16656989531098712,
+          "meanLocalDistance": 0.12411182956511725,
+          "meanRealExcess": 0.04245806574587254,
+          "meanFakeExcess": 0.041037286296588926,
+          "meanResidual": 0.0014207794492830065,
+          "aggregateResidual": 0.10098534130351233,
+          "rmsResidual": 0.15823897389478145,
+          "sdResidual": 0.1582325953937096,
+          "controlAggregates": [
+            0.11077839217101965,
+            -0.08915356418290961,
+            -0.026330833476486796,
+            -0.21641111744125427,
+            0.22111712292963123
+          ],
+          "controlAggregateRange": [
+            -0.21641111744125427,
+            0.22111712292963123
+          ],
+          "compositeWindows": 3252,
+          "compositeMeanResidual": 0.0025761924285910014,
+          "compositeAggregateResidual": 0.146910747324794,
+          "strongest": [
+            {
+              "id": "11:182",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0.6666666666666667,
+              "compositeResidual": 0.6666666666666667
+            },
+            {
+              "id": "11:748",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:1261",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:1530",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:1722",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:1968",
+              "k": 2,
+              "eligibleSize": 5,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:2125",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            },
+            {
+              "id": "11:2211",
+              "k": 2,
+              "eligibleSize": 6,
+              "realDistance": 0.888888888888889,
+              "localMean": 0,
+              "realExcess": 0.888888888888889,
+              "fakeExcessMean": 0,
+              "residual": 0.888888888888889,
+              "controlResiduals": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "compositeDistance": 0,
+              "compositeResidual": 0
+            }
+          ],
+          "classRows": [
+            {
+              "k": 2,
+              "eligibleSize": 6,
+              "n": 807,
+              "sumResidual": 21.066666666666833,
+              "meanResidual": 0.026104915324246386,
+              "aggregateResidual": 0.7415817888119027
+            },
+            {
+              "k": 2,
+              "eligibleSize": 4,
+              "n": 189,
+              "sumResidual": -8.133333333333326,
+              "meanResidual": -0.043033509700176324,
+              "aggregateResidual": -0.5916129468620233
+            },
+            {
+              "k": 2,
+              "eligibleSize": 7,
+              "n": 252,
+              "sumResidual": -7.400000000000015,
+              "meanResidual": -0.029365079365079424,
+              "aggregateResidual": -0.4661561833780478
+            },
+            {
+              "k": 2,
+              "eligibleSize": 8,
+              "n": 15,
+              "sumResidual": -1.2444444444444442,
+              "meanResidual": -0.08296296296296295,
+              "aggregateResidual": -0.3213141739075782
+            },
+            {
+              "k": 3,
+              "eligibleSize": 5,
+              "n": 564,
+              "sumResidual": 6.614814814814822,
+              "meanResidual": 0.011728395061728408,
+              "aggregateResidual": 0.2785339501897786
+            },
+            {
+              "k": 3,
+              "eligibleSize": 7,
+              "n": 264,
+              "sumResidual": -4.51851851851851,
+              "meanResidual": -0.01711560044893375,
+              "aggregateResidual": -0.27809559073108453
+            },
+            {
+              "k": 4,
+              "eligibleSize": 6,
+              "n": 504,
+              "sumResidual": 2.044444444444451,
+              "meanResidual": 0.004056437389770736,
+              "aggregateResidual": 0.09106679354053007
+            },
+            {
+              "k": 4,
+              "eligibleSize": 5,
+              "n": 234,
+              "sumResidual": -1.3481481481481474,
+              "meanResidual": -0.00576131687242798,
+              "aggregateResidual": -0.08813120146950487
+            },
+            {
+              "k": 4,
+              "eligibleSize": 7,
+              "n": 180,
+              "sumResidual": 1.1777777777777778,
+              "meanResidual": 0.00654320987654321,
+              "aggregateResidual": 0.08778637244999174
+            },
+            {
+              "k": 3,
+              "eligibleSize": 6,
+              "n": 822,
+              "sumResidual": 2.222222222222234,
+              "meanResidual": 0.0027034333603676813,
+              "aggregateResidual": 0.0775089007127955
+            },
+            {
+              "k": 4,
+              "eligibleSize": 8,
+              "n": 45,
+              "sumResidual": -0.49629629629629624,
+              "meanResidual": -0.011028806584362139,
+              "aggregateResidual": -0.07398348369999302
+            },
+            {
+              "k": 2,
+              "eligibleSize": 5,
+              "n": 852,
+              "sumResidual": -1.844444444444435,
+              "meanResidual": -0.002164840897235252,
+              "aggregateResidual": -0.06318962546187204
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

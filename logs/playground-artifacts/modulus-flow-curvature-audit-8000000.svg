@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">primorial modulus-flow curvature</text>
+<text x="70" y="38" fill="#67e8f9" font-size="13">Z real meanK</text>
+<text x="310" y="38" fill="#fbbf24" font-size="13">Z eligible meanK</text>
+<text x="550" y="38" fill="#f8fafc" font-size="13">Z balanced fake</text>
+<text x="790" y="38" fill="#fb7185" font-size="13">Z Cramer meanK</text>
+<text x="70" y="58" fill="#a78bfa" font-size="13">Z composite meanK</text>
+<text x="310" y="58" fill="#34d399" font-size="13">F_2 real meanK</text>
+<text x="550" y="58" fill="#60a5fa" font-size="13">F_3 real meanK</text>
+<rect x="70" y="60" width="1020" height="510" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="60" x2="1090" y2="60" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="64" fill="#94a3b8" font-size="12">1.20</text>
+<line x1="70" y1="162" x2="1090" y2="162" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="166" fill="#94a3b8" font-size="12">0.96</text>
+<line x1="70" y1="264" x2="1090" y2="264" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="268" fill="#94a3b8" font-size="12">0.72</text>
+<line x1="70" y1="366" x2="1090" y2="366" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="370" fill="#94a3b8" font-size="12">0.48</text>
+<line x1="70" y1="468" x2="1090" y2="468" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="472" fill="#94a3b8" font-size="12">0.24</text>
+<line x1="70" y1="570" x2="1090" y2="570" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="574" fill="#94a3b8" font-size="12">0.00</text>
+<line x1="70" y1="145" x2="1090" y2="145" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="6 6" opacity="0.6"/>
+<polyline points="70.00,468.20 133.75,481.07 197.50,482.30 261.25,492.94 325.00,495.41" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="468.2048599254634" r="4" fill="#67e8f9"/><circle cx="133.75" cy="481.07173342506394" r="4" fill="#67e8f9"/><circle cx="197.5" cy="482.2979770849695" r="4" fill="#67e8f9"/><circle cx="261.25" cy="492.93903995453695" r="4" fill="#67e8f9"/><circle cx="325" cy="495.41286139133297" r="4" fill="#67e8f9"/>
+<polyline points="70.00,349.86 133.75,328.64 197.50,306.59 261.25,333.78 325.00,296.57" fill="none" stroke="#fbbf24" stroke-width="3"/><circle cx="70" cy="349.86167231887737" r="4" fill="#fbbf24"/><circle cx="133.75" cy="328.63609403416194" r="4" fill="#fbbf24"/><circle cx="197.5" cy="306.59428348157564" r="4" fill="#fbbf24"/><circle cx="261.25" cy="333.77786464632504" r="4" fill="#fbbf24"/><circle cx="325" cy="296.5662206610301" r="4" fill="#fbbf24"/>
+<polyline points="70.00,566.83 133.75,567.73 197.50,569.34 261.25,569.65 325.00,569.70" fill="none" stroke="#f8fafc" stroke-width="3"/><circle cx="70" cy="566.8310652756984" r="4" fill="#f8fafc"/><circle cx="133.75" cy="567.7279776179982" r="4" fill="#f8fafc"/><circle cx="197.5" cy="569.3438457035387" r="4" fill="#f8fafc"/><circle cx="261.25" cy="569.6496791393486" r="4" fill="#f8fafc"/><circle cx="325" cy="569.7022656203494" r="4" fill="#f8fafc"/>
+<polyline points="70.00,226.85 133.75,228.77 197.50,241.47 261.25,276.60 325.00,233.51" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="226.84858667520803" r="4" fill="#fb7185"/><circle cx="133.75" cy="228.77139222955293" r="4" fill="#fb7185"/><circle cx="197.5" cy="241.46852447110933" r="4" fill="#fb7185"/><circle cx="261.25" cy="276.60392890128537" r="4" fill="#fb7185"/><circle cx="325" cy="233.51122665501427" r="4" fill="#fb7185"/>
+<polyline points="70.00,408.43 133.75,379.36 197.50,374.88 261.25,371.94 325.00,362.05" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="408.425085634349" r="4" fill="#a78bfa"/><circle cx="133.75" cy="379.35861072762134" r="4" fill="#a78bfa"/><circle cx="197.5" cy="374.87868302096086" r="4" fill="#a78bfa"/><circle cx="261.25" cy="371.9363817681682" r="4" fill="#a78bfa"/><circle cx="325" cy="362.0486518656289" r="4" fill="#a78bfa"/>
+<polyline points="452.50,439.16 516.25,449.50 580.00,458.57 643.75,480.03 707.50,460.92" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="452.5" cy="439.1584581809606" r="4" fill="#34d399"/><circle cx="516.25" cy="449.4992096280427" r="4" fill="#34d399"/><circle cx="580" cy="458.57204679989474" r="4" fill="#34d399"/><circle cx="643.75" cy="480.0292653663443" r="4" fill="#34d399"/><circle cx="707.5" cy="460.9224261607014" r="4" fill="#34d399"/>
+<polyline points="835.00,411.73 898.75,426.42 962.50,421.40 1026.25,409.85 1090.00,465.07" fill="none" stroke="#60a5fa" stroke-width="3"/><circle cx="835" cy="411.72771672771745" r="4" fill="#60a5fa"/><circle cx="898.75" cy="426.41966310333925" r="4" fill="#60a5fa"/><circle cx="962.5" cy="421.396281314315" r="4" fill="#60a5fa"/><circle cx="1026.25" cy="409.85268462880424" r="4" fill="#60a5fa"/><circle cx="1090" cy="465.0655421986136" r="4" fill="#60a5fa"/>
+<text x="70" y="606" fill="#94a3b8" font-size="13">x: integer endpoints, then F_2 degrees, then F_3 degrees; y: mean new chi-square energy per new residue degree of freedom</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="74" y="26" fill="#e5e7eb" font-size="18" font-weight="700">Deep-admissible next-gap PIT audit</text>
+<text x="74" y="38" fill="#67e8f9" font-size="13">real B97 Z</text>
+<text x="374" y="38" fill="#fbbf24" font-size="13">real B97 max |Z|</text>
+<text x="74" y="56" fill="#fb7185" font-size="13">fake B97 mean max</text>
+<text x="374" y="56" fill="#a78bfa" font-size="13">centered shuffle mean max</text>
+<text x="74" y="74" fill="#34d399" font-size="13">sign-flip mean max</text>
+<rect x="74" y="74" width="776" height="504" fill="#0b1626" stroke="#1f2937"/>
+<line x1="74" y1="74" x2="850" y2="74" stroke="#1f2937"/>
+<text x="18" y="78" fill="#94a3b8" font-size="12">1.18</text>
+<line x1="74" y1="158" x2="850" y2="158" stroke="#1f2937"/>
+<text x="18" y="162" fill="#94a3b8" font-size="12">0.80</text>
+<line x1="74" y1="242" x2="850" y2="242" stroke="#1f2937"/>
+<text x="18" y="246" fill="#94a3b8" font-size="12">0.42</text>
+<line x1="74" y1="326" x2="850" y2="326" stroke="#1f2937"/>
+<text x="18" y="330" fill="#94a3b8" font-size="12">0.04</text>
+<line x1="74" y1="410" x2="850" y2="410" stroke="#1f2937"/>
+<text x="18" y="414" fill="#94a3b8" font-size="12">-0.34</text>
+<line x1="74" y1="494" x2="850" y2="494" stroke="#1f2937"/>
+<text x="18" y="498" fill="#94a3b8" font-size="12">-0.72</text>
+<line x1="74" y1="578" x2="850" y2="578" stroke="#1f2937"/>
+<text x="18" y="582" fill="#94a3b8" font-size="12">-1.10</text>
+<line x1="74" y1="335.053916159397" x2="850" y2="335.053916159397" stroke="#475569" stroke-width="1.5"/>
+<polyline points="74.00,216.75 229.20,170.26 384.40,98.37 539.60,160.23 694.80,163.86 850.00,188.34" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="74" cy="216.74708494372712" r="4" fill="#67e8f9"/><circle cx="229.20000000000002" cy="170.2568193065154" r="4" fill="#67e8f9"/><circle cx="384.40000000000003" cy="98.37449420190535" r="4" fill="#67e8f9"/><circle cx="539.5999999999999" cy="160.23219266935843" r="4" fill="#67e8f9"/><circle cx="694.8000000000001" cy="163.86409232531136" r="4" fill="#67e8f9"/><circle cx="850" cy="188.33955763387115" r="4" fill="#67e8f9"/>
+<polyline points="74.00,214.05 229.20,163.71 384.40,97.73 539.60,97.73 694.80,97.73 850.00,97.73" fill="none" stroke="#fbbf24" stroke-width="3"/><circle cx="74" cy="214.04701351647745" r="4" fill="#fbbf24"/><circle cx="229.20000000000002" cy="163.710632350713" r="4" fill="#fbbf24"/><circle cx="384.40000000000003" cy="97.73217419630888" r="4" fill="#fbbf24"/><circle cx="539.5999999999999" cy="97.73217419630888" r="4" fill="#fbbf24"/><circle cx="694.8000000000001" cy="97.73217419630888" r="4" fill="#fbbf24"/><circle cx="850" cy="97.73217419630888" r="4" fill="#fbbf24"/>
+<polyline points="74.00,238.82 229.20,231.06 384.40,219.83 539.60,216.56 694.80,214.03 850.00,214.03" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="74" cy="238.8221268735394" r="4" fill="#fb7185"/><circle cx="229.20000000000002" cy="231.05985237311307" r="4" fill="#fb7185"/><circle cx="384.40000000000003" cy="219.8309200633066" r="4" fill="#fb7185"/><circle cx="539.5999999999999" cy="216.55742331113836" r="4" fill="#fb7185"/><circle cx="694.8000000000001" cy="214.0266194427557" r="4" fill="#fb7185"/><circle cx="850" cy="214.0266194427557" r="4" fill="#fb7185"/>
+<polyline points="74.00,198.54 229.20,198.54 384.40,198.54 539.60,198.54 694.80,198.54 850.00,198.54" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="74" cy="198.54042452720046" r="4" fill="#a78bfa"/><circle cx="229.20000000000002" cy="198.54042452720046" r="4" fill="#a78bfa"/><circle cx="384.40000000000003" cy="198.54042452720046" r="4" fill="#a78bfa"/><circle cx="539.5999999999999" cy="198.54042452720046" r="4" fill="#a78bfa"/><circle cx="694.8000000000001" cy="198.54042452720046" r="4" fill="#a78bfa"/><circle cx="850" cy="198.54042452720046" r="4" fill="#a78bfa"/>
+<polyline points="74.00,216.72 229.20,211.93 384.40,206.58 539.60,201.70 694.80,201.70 850.00,200.26" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="74" cy="216.71570812311765" r="4" fill="#34d399"/><circle cx="229.20000000000002" cy="211.93430463462624" r="4" fill="#34d399"/><circle cx="384.40000000000003" cy="206.5793106114917" r="4" fill="#34d399"/><circle cx="539.5999999999999" cy="201.69561704768557" r="4" fill="#34d399"/><circle cx="694.8000000000001" cy="201.69561704768557" r="4" fill="#34d399"/><circle cx="850" cy="200.2554708135134" r="4" fill="#34d399"/>
+<text x="880" y="108" fill="#cbd5e1" font-size="13">N 4000000</text>
+<text x="880" y="131" fill="#cbd5e1" font-size="13">start &gt; 100000</text>
+<text x="880" y="154" fill="#cbd5e1" font-size="13">main B 97</text>
+<text x="880" y="177" fill="#cbd5e1" font-size="13">rho 8.311</text>
+<text x="880" y="200" fill="#cbd5e1" font-size="13">scored 273553</text>
+<text x="880" y="223" fill="#cbd5e1" font-size="13">real Z 0.664286</text>
+<text x="880" y="246" fill="#cbd5e1" font-size="13">mean PIT 0.001270</text>
+<text x="880" y="269" fill="#cbd5e1" font-size="13">B2 Z 11.49</text>
+<text x="880" y="292" fill="#cbd5e1" font-size="13">B5 Z 4.33</text>
+<text x="880" y="315" fill="#cbd5e1" font-size="13">B11 Z 2.26</text>
+<text x="880" y="338" fill="#cbd5e1" font-size="13">B29 Z 0.91</text>
+<text x="880" y="361" fill="#cbd5e1" font-size="13">B97 Z 0.66</text>
+<text x="74" y="620" fill="#94a3b8" font-size="13">Hazard h_B(n)=1_{n has no prime factor &lt;=B} rho_B/log n; discrete mid-PIT over the next-event survival distribution.</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="780" viewBox="0 0 1120 780">
+<rect width="1120" height="780" fill="#08111f"/>
+<text x="92" y="38" fill="#e5e7eb" font-size="24" font-weight="700">Odd-kernel shifted Mobius neighborhood bridge</text>
+<text x="92" y="66" fill="#94a3b8" font-size="15">X(n)=mu(oddpart(n-1))mu(oddpart(n+1)); y=max |sum X| / sqrt(label count)</text>
+<line x1="92" x2="1080" y1="92" y2="92" stroke="#223044" stroke-width="1"/>
+<text x="80" y="97" fill="#94a3b8" text-anchor="end" font-size="13">2.91</text>
+<line x1="92" x2="1080" y1="234.5" y2="234.5" stroke="#223044" stroke-width="1"/>
+<text x="80" y="239.5" fill="#94a3b8" text-anchor="end" font-size="13">2.18</text>
+<line x1="92" x2="1080" y1="377" y2="377" stroke="#223044" stroke-width="1"/>
+<text x="80" y="382" fill="#94a3b8" text-anchor="end" font-size="13">1.45</text>
+<line x1="92" x2="1080" y1="519.5" y2="519.5" stroke="#223044" stroke-width="1"/>
+<text x="80" y="524.5" fill="#94a3b8" text-anchor="end" font-size="13">0.73</text>
+<line x1="92" x2="1080" y1="662" y2="662" stroke="#223044" stroke-width="1"/>
+<text x="80" y="667" fill="#94a3b8" text-anchor="end" font-size="13">0.00</text>
+<path d="M92,490.2192824813974 L339,371.2927986651049 L586,258.66829312614595 L833,369.1839464882942 L1080,301.4206788328414" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,403.0075335873376 L339,363.59194564961103 L586,217.3548023178866 L833,166.34782608695645 L1080,293.30948755914255" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,540.4321076022197 L339,563.8141240524526 L586,377.70716494655426 L833,335.6321070234113 L1080,325.754252653938" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,504.75457396374065 L339,402.0962107270805 L586,457.5332319320045 L833,379.3511705685618 L1080,383.26997259471176" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,384.5080717007188 L339,337.60156672231903 L586,367.90396373781476 L833,360.0334448160534 L1080,361.8859228731421" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,504.27083445657655 L339,533.0712248164984 L586,560.5140232082225 L833,565.4214220664815 L1080,546.9559638855264" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,216.57026422050228 L339,215.82290888122623 L586,245.67145262775193 L833,359.56873979623333 L1080,442.7781354506034" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,451.66984028455266 L339,439.6077561306956 L586,339.386847489519 L833,396.80527445311986 L1080,469.7352735428522" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,483.9593035137789 L339,502.34177486792464 L586,545.7531570224612 L833,552.6439512175812 L1080,443.33524689832166" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,377.115574260366 L339,401.0240876962982 L586,292.39420701136646 L833,284.58887672629396 L1080,388.0930710696667" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,553.7833833201621 L339,495.91826655261013 L586,406.9100136803125 L833,465.4205632749444 L1080,519.3943125455289" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,484.8975634190409 L339,481.97522359881697 L586,497.5216805659227 L833,542.5479492900835 L1080,438.5190824469353" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,550.0544885008695 L339,566.8313076109049 L586,523.9423476369651 L833,545.0757454437411 L1080,455.9987445623748" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,520.279760852347 L339,537.7908471873327 L586,558.2352084167518 L833,546.0157419968929 L1080,430.7509966924781" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,415.74206909886675 L339,347.9262762037925 L586,370.77346693942434 L833,398.41827432652167 L1080,451.14728419887683" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,465.0127842611423 L339,365.8882812138799 L586,437.985505162031 L833,388.97309640248034 L1080,471.0183145556358" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,287.42078849308564 L339,348.65823651959374 L586,362.311582135992 L833,410.0198763649539 L1080,485.76593505327014" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,371.90854211801667 L339,333.13736474686965 L586,411.8373576253545 L833,487.39628333289147 L1080,539.9634403820762" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,336.90764292649845 L339,423.3131480802459 L586,474.6767414069752 L833,531.1525982173256 L1080,556.1858229294739" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,293.2505120841151 L339,327.48527094400873 L586,428.85146782434305 L833,499.64034116778896 L1080,548.4433221682159" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,570.8240807016648 L339,559.9636975447057 L586,496.0458081091955 L833,541.5183946488294 L1080,530.008796546173" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,488.89789234663886 L339,533.9733186174137 L586,538.759756232989 L833,558.8026755852843 L1080,520.4228432227108" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,529.8609865241518 L339,558.0384842908322 L586,481.3410062960862 L833,498.81605351170566 L1080,543.6503455064848" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,507.3973542332576 L339,549.3750246484016 L586,575.8718750946457 L833,539.9933110367892 L1080,546.9685601184525" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,541.7534977369781 L339,437.7126559237399 L586,429.52408562132024 L833,440.86287625418055 L1080,354.14342211188404" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.36"/>
+<path d="M92,533.8251569284273 L339,497.3942667938177 L586,474.3387197184152 L833,525.7591973244147 L1080,358.19901774873347" fill="none" stroke="#67e8f9" stroke-width="4"/>
+<circle cx="92" cy="533.8251569284273" r="5" fill="#67e8f9"/>
+<text x="92" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">250000</text>
+<circle cx="339" cy="497.3942667938177" r="5" fill="#67e8f9"/>
+<text x="339" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">500000</text>
+<circle cx="586" cy="474.3387197184152" r="5" fill="#67e8f9"/>
+<text x="586" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">1000000</text>
+<circle cx="833" cy="525.7591973244147" r="5" fill="#67e8f9"/>
+<text x="833" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">2000000</text>
+<circle cx="1080" cy="358.19901774873347" r="5" fill="#67e8f9"/>
+<text x="1080" y="686" fill="#94a3b8" text-anchor="middle" font-size="12">4000000</text>
+<line x1="92" x2="116" y1="718" y2="718" stroke="#67e8f9" stroke-width="4"/>
+<text x="122" y="723" fill="#cbd5e1" font-size="13">real primes</text>
+<line x1="392" x2="416" y1="718" y2="718" stroke="#a78bfa" stroke-width="4"/>
+<text x="422" y="723" fill="#cbd5e1" font-size="13">sign shuffle</text>
+<line x1="692" x2="716" y1="718" y2="718" stroke="#f59e0b" stroke-width="4"/>
+<text x="722" y="723" fill="#cbd5e1" font-size="13">Cramer labels</text>
+<line x1="92" x2="116" y1="742" y2="742" stroke="#22c55e" stroke-width="4"/>
+<text x="122" y="747" fill="#cbd5e1" font-size="13">W210 labels</text>
+<line x1="392" x2="416" y1="742" y2="742" stroke="#fb7185" stroke-width="4"/>
+<text x="422" y="747" fill="#cbd5e1" font-size="13">composites</text>
+<line x1="692" x2="716" y1="742" y2="742" stroke="#f472b6" stroke-width="4"/>
+<text x="722" y="747" fill="#cbd5e1" font-size="13">local composites</text>
+<text x="92" y="762" fill="#cbd5e1" font-size="14">Endpoint real sum=-744, nonzero=151498, normalized=-1.398, max/sqrt=1.549, theta=0.682</text>
+</svg>

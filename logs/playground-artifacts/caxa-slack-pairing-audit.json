@@ -1,0 +1,4409 @@
+{
+  "generatedAt": "2026-06-14T17:57:11.102Z",
+  "inputPath": "logs/divisor-extremes-artifacts/ca-xa-transitions.json",
+  "object": "CA/XA slack-pairing balance",
+  "frontierRange": [
+    113,
+    2719
+  ],
+  "realPairs": [
+    {
+      "fromFrontier": 139,
+      "recoveredBy": 151,
+      "className": "sameTypeSingleton",
+      "debtPrimes": [
+        149
+      ],
+      "slackPrimes": [
+        151
+      ],
+      "oldRepairPrimes": [],
+      "debtSteps": 1,
+      "slackSteps": 1,
+      "oldRepairSteps": 0,
+      "lagSteps": 1,
+      "debtMicro": 11.776209093505331,
+      "slackMicro": 143.0095961930779,
+      "oldRepairMicro": 0,
+      "totalRepairMicro": 143.0095961930779,
+      "rho": 12.14394165877615,
+      "logRho": 2.496830416522511,
+      "totalRho": 12.14394165877615,
+      "logTotalRho": 2.496830416522511,
+      "finalSurplusMicro": 131.23338709957258,
+      "steps": [
+        {
+          "fromIndex": 409,
+          "toIndex": 425,
+          "fromFrontier": 139,
+          "toFrontier": 149,
+          "p": 149,
+          "oldExponent": 0,
+          "margin": -0.000011776209093505331,
+          "marginMicro": -11.776209093505331,
+          "secondOrderGapOvershoot": 0.21137322921569535,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 425,
+          "toIndex": 440,
+          "fromFrontier": 149,
+          "toFrontier": 151,
+          "p": 151,
+          "oldExponent": 0,
+          "margin": 0.0001430095961930779,
+          "marginMicro": 143.0095961930779,
+          "secondOrderGapOvershoot": -2.808877450422756,
+          "token": "N-"
+        }
+      ]
+    },
+    {
+      "fromFrontier": 523,
+      "recoveredBy": 541,
+      "className": "oldExponentRepair",
+      "debtPrimes": [
+        541
+      ],
+      "slackPrimes": [],
+      "oldRepairPrimes": [
+        31
+      ],
+      "debtSteps": 1,
+      "slackSteps": 0,
+      "oldRepairSteps": 1,
+      "lagSteps": 1,
+      "debtMicro": 1.5050115451577946,
+      "slackMicro": 0,
+      "oldRepairMicro": 9.490367501261646,
+      "totalRepairMicro": 9.490367501261646,
+      "rho": null,
+      "logRho": null,
+      "totalRho": 6.305843654021019,
+      "logTotalRho": 1.8414767676060324,
+      "finalSurplusMicro": 7.985355956103852,
+      "steps": [
+        {
+          "fromIndex": 1490,
+          "toIndex": 1508,
+          "fromFrontier": 523,
+          "toFrontier": 541,
+          "p": 541,
+          "oldExponent": 0,
+          "margin": -0.0000015050115451577945,
+          "marginMicro": -1.5050115451577946,
+          "secondOrderGapOvershoot": 0.3767767045585515,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 1508,
+          "toIndex": 1516,
+          "fromFrontier": 541,
+          "toFrontier": 541,
+          "p": 31,
+          "oldExponent": 1,
+          "margin": 0.000009490367501261646,
+          "marginMicro": 9.490367501261646,
+          "secondOrderGapOvershoot": null,
+          "token": "O1"
+        }
+      ]
+    },
+    {
+      "fromFrontier": 1399,
+      "recoveredBy": 1439,
+      "className": "sameTypeCluster",
+      "debtPrimes": [
+        1409,
+        1423,
+        1427
+      ],
+      "slackPrimes": [
+        1429,
+        1433,
+        1439
+      ],
+      "oldRepairPrimes": [],
+      "debtSteps": 3,
+      "slackSteps": 3,
+      "oldRepairSteps": 0,
+      "lagSteps": 3,
+      "debtMicro": 6.501395669889116,
+      "slackMicro": 6.503658856215179,
+      "oldRepairMicro": 0,
+      "totalRepairMicro": 6.503658856215179,
+      "rho": 1.000348107766544,
+      "logRho": 0.00034804719109281067,
+      "totalRho": 1.000348107766544,
+      "logTotalRho": 0.00034804719109281067,
+      "finalSurplusMicro": 0.00226318632606283,
+      "steps": [
+        {
+          "fromIndex": 4204,
+          "toIndex": 4223,
+          "fromFrontier": 1399,
+          "toFrontier": 1409,
+          "p": 1409,
+          "oldExponent": 0,
+          "margin": -2.5099453380332624e-7,
+          "marginMicro": -0.25099453380332626,
+          "secondOrderGapOvershoot": 0.4360256761499386,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 4223,
+          "toIndex": 4240,
+          "fromFrontier": 1409,
+          "toFrontier": 1423,
+          "p": 1423,
+          "oldExponent": 0,
+          "margin": -0.000004054948752195593,
+          "marginMicro": -4.054948752195593,
+          "secondOrderGapOvershoot": 7.182854992119019,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 4240,
+          "toIndex": 4257,
+          "fromFrontier": 1423,
+          "toFrontier": 1427,
+          "p": 1427,
+          "oldExponent": 0,
+          "margin": -0.000002195452383890197,
+          "marginMicro": -2.195452383890197,
+          "secondOrderGapOvershoot": 3.91980672363502,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 4257,
+          "toIndex": 4274,
+          "fromFrontier": 1427,
+          "toFrontier": 1429,
+          "p": 1429,
+          "oldExponent": 0,
+          "margin": 7.471883725940513e-7,
+          "marginMicro": 0.7471883725940512,
+          "secondOrderGapOvershoot": -1.346036697593263,
+          "token": "N-"
+        },
+        {
+          "fromIndex": 4274,
+          "toIndex": 4291,
+          "fromFrontier": 1429,
+          "toFrontier": 1433,
+          "p": 1433,
+          "oldExponent": 0,
+          "margin": 0.0000025431142940549392,
+          "marginMicro": 2.543114294054939,
+          "secondOrderGapOvershoot": -4.613268444834375,
+          "token": "N-"
+        },
+        {
+          "fromIndex": 4291,
+          "toIndex": 4310,
+          "fromFrontier": 1433,
+          "toFrontier": 1439,
+          "p": 1439,
+          "oldExponent": 0,
+          "margin": 0.000003213356189566189,
+          "marginMicro": 3.2133561895661886,
+          "secondOrderGapOvershoot": -5.883283805054134,
+          "token": "N-"
+        }
+      ]
+    },
+    {
+      "fromFrontier": 2633,
+      "recoveredBy": 2677,
+      "className": "sameTypeCluster",
+      "debtPrimes": [
+        2647,
+        2657,
+        2659
+      ],
+      "slackPrimes": [
+        2663,
+        2671,
+        2677
+      ],
+      "oldRepairPrimes": [],
+      "debtSteps": 3,
+      "slackSteps": 3,
+      "oldRepairSteps": 0,
+      "lagSteps": 3,
+      "debtMicro": 1.6970546040903949,
+      "slackMicro": 1.9537189671632702,
+      "oldRepairMicro": 0,
+      "totalRepairMicro": 1.9537189671632702,
+      "rho": 1.1512410752454516,
+      "logRho": 0.14084055632753856,
+      "totalRho": 1.1512410752454516,
+      "logTotalRho": 0.14084055632753856,
+      "finalSurplusMicro": 0.2566643630728753,
+      "steps": [
+        {
+          "fromIndex": 8003,
+          "toIndex": 8029,
+          "fromFrontier": 2633,
+          "toFrontier": 2647,
+          "p": 2647,
+          "oldExponent": 0,
+          "margin": -6.567448292481661e-7,
+          "marginMicro": -0.6567448292481661,
+          "secondOrderGapOvershoot": 4.07750952773813,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 8029,
+          "toIndex": 8055,
+          "fromFrontier": 2647,
+          "toFrontier": 2657,
+          "p": 2657,
+          "oldExponent": 0,
+          "margin": -9.909504800304858e-7,
+          "marginMicro": -0.9909504800304858,
+          "secondOrderGapOvershoot": 6.194855483754509,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 8055,
+          "toIndex": 8082,
+          "fromFrontier": 2657,
+          "toFrontier": 2659,
+          "p": 2659,
+          "oldExponent": 0,
+          "margin": -4.935929481174285e-8,
+          "marginMicro": -0.04935929481174285,
+          "secondOrderGapOvershoot": 0.3084343577806976,
+          "token": "N+"
+        },
+        {
+          "fromIndex": 8082,
+          "toIndex": 8109,
+          "fromFrontier": 2659,
+          "toFrontier": 2663,
+          "p": 2663,
+          "oldExponent": 0,
+          "margin": 5.672832367338543e-7,
+          "marginMicro": 0.5672832367338543,
+          "secondOrderGapOvershoot": -3.578735012216839,
+          "token": "N-"
+        },
+        {
+          "fromIndex": 8109,
+          "toIndex": 8136,
+          "fromFrontier": 2663,
+          "toFrontier": 2671,
+          "p": 2671,
+          "oldExponent": 0,
+          "margin": 5.463457937905517e-7,
+          "marginMicro": 0.5463457937905517,
+          "secondOrderGapOvershoot": -3.467403538475537,
+          "token": "N-"
+        },
+        {
+          "fromIndex": 8136,
+          "toIndex": 8163,
+          "fromFrontier": 2671,
+          "toFrontier": 2677,
+          "p": 2677,
+          "oldExponent": 0,
+          "margin": 8.400899366388642e-7,
+          "marginMicro": 0.8400899366388641,
+          "secondOrderGapOvershoot": -5.359067952443638,
+          "token": "N-"
+        }
+      ]
+    }
+  ],
+  "fakeGroups": [
+    {
+      "seed": 12345,
+      "pairs": [
+        {
+          "fromFrontier": 265,
+          "recoveredBy": 319,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 4,
+          "slackSteps": 5,
+          "oldRepairSteps": 1,
+          "lagSteps": 6,
+          "debtMicro": 309.64741322438454,
+          "slackMicro": 392.3718630027616,
+          "oldRepairMicro": 11.458017692025576,
+          "totalRepairMicro": 403.82988069478716,
+          "rho": 1.2671569218581882,
+          "logRho": 0.23677574675444193,
+          "totalRho": 1.3041603560955755,
+          "logTotalRho": 0.26555942840989943
+        },
+        {
+          "fromFrontier": 415,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 6,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 166.42618755405638,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 469,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 8,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 522.0835771833363,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 541,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 111.42982440194442,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 553,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 1,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 64.733086093784,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 565,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 12,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 398.77396284565896,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 637,
+          "recoveredBy": 679,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 5,
+          "slackSteps": 3,
+          "oldRepairSteps": 0,
+          "lagSteps": 3,
+          "debtMicro": 31.279152738171877,
+          "slackMicro": 56.10273376240775,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 56.10273376240775,
+          "rho": 1.7936142398749224,
+          "logRho": 0.5842327125743821,
+          "totalRho": 1.7936142398749224,
+          "logTotalRho": 0.5842327125743821
+        },
+        {
+          "fromFrontier": 725,
+          "recoveredBy": 767,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 2,
+          "slackSteps": 3,
+          "oldRepairSteps": 0,
+          "lagSteps": 3,
+          "debtMicro": 13.290681480245068,
+          "slackMicro": 23.43904298422435,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 23.43904298422435,
+          "rho": 1.7635696874583557,
+          "logRho": 0.5673399864759303,
+          "totalRho": 1.7635696874583557,
+          "logTotalRho": 0.5673399864759303
+        },
+        {
+          "fromFrontier": 785,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 10.841882487197832,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 809,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 4,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 26.76010082651144,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 839,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 6,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 30.54907846792112,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 889,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 14.925191115236535,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 911,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 31,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 649.4468564800444,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1469,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 21,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 641.323791302097,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1663,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 32,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 1192.3698539118354,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1951,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 57,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 2002.4814184440406,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        }
+      ],
+      "pairCount": 16,
+      "recoveredPairs": 3,
+      "openPairs": 13,
+      "sameTypePairs": 2,
+      "nontrivialSameTypePairs": 1,
+      "sameTypeRmsLogRho": 0.5758482971653773,
+      "nontrivialSameTypeRmsLogRho": 0.5842327125743821,
+      "maxLagSteps": 6
+    },
+    {
+      "seed": 271828,
+      "pairs": [
+        {
+          "fromFrontier": 829,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 74.42369846872155,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 841,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 10,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 236.2976601246879,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 919,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 6.908294619154508,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 941,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 10,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 161.63457614923033,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1037,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 23,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 592.4603365387936,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        }
+      ],
+      "pairCount": 5,
+      "recoveredPairs": 0,
+      "openPairs": 5,
+      "sameTypePairs": 0,
+      "nontrivialSameTypePairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "nontrivialSameTypeRmsLogRho": 0,
+      "maxLagSteps": 0
+    },
+    {
+      "seed": 314159,
+      "pairs": [],
+      "pairCount": 0,
+      "recoveredPairs": 0,
+      "openPairs": 0,
+      "sameTypePairs": 0,
+      "nontrivialSameTypePairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "nontrivialSameTypeRmsLogRho": 0,
+      "maxLagSteps": 0
+    },
+    {
+      "seed": 161803,
+      "pairs": [
+        {
+          "fromFrontier": 133,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 2,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 917.1824405421764,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 139,
+          "recoveredBy": 205,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 2,
+          "slackSteps": 12,
+          "oldRepairSteps": 2,
+          "lagSteps": 14,
+          "debtMicro": 270.5164619072053,
+          "slackMicro": 522.9787697234832,
+          "oldRepairMicro": -140.24928031829447,
+          "totalRepairMicro": 382.72948940518876,
+          "rho": 1.9332604235481958,
+          "logRho": 0.6592079162153205,
+          "totalRho": 1.414810347240441,
+          "logTotalRho": 0.34699549189357887
+        },
+        {
+          "fromFrontier": 151,
+          "recoveredBy": 191,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 3,
+          "slackSteps": 4,
+          "oldRepairSteps": 0,
+          "lagSteps": 4,
+          "debtMicro": 390.7375283551057,
+          "slackMicro": 451.57927103261534,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 451.57927103261534,
+          "rho": 1.1557100054700047,
+          "logRho": 0.1447148784594072,
+          "totalRho": 1.1557100054700047,
+          "logTotalRho": 0.1447148784594072
+        },
+        {
+          "fromFrontier": 205,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 1,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 153.78769633869837,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 227,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 4,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 667.1532653188912,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 253,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 3,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 207.44701821848872,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 265,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 4,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 395.08854966161357,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 301,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 19,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 2874.976918303459,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 515,
+          "recoveredBy": 845,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 5,
+          "slackSteps": 13,
+          "oldRepairSteps": 1,
+          "lagSteps": 14,
+          "debtMicro": 379.7166848814328,
+          "slackMicro": 376.44274345944075,
+          "oldRepairMicro": 6.855935574388836,
+          "totalRepairMicro": 383.2986790338296,
+          "rho": 0.9913779363605938,
+          "logRho": -0.008659448675997768,
+          "totalRho": 1.0094333335747816,
+          "logTotalRho": 0.00938911753587732
+        },
+        {
+          "fromFrontier": 635,
+          "recoveredBy": 821,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 4,
+          "slackSteps": 2,
+          "oldRepairSteps": 0,
+          "lagSteps": 2,
+          "debtMicro": 104.88583561795512,
+          "slackMicro": 111.17719155651963,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 111.17719155651963,
+          "rho": 1.0599828937958853,
+          "logRho": 0.058252770065347896,
+          "totalRho": 1.0599828937958853,
+          "logTotalRho": 0.058252770065347896
+        },
+        {
+          "fromFrontier": 1183,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 14,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 110.06009355160444,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1321,
+          "recoveredBy": null,
+          "className": "open",
+          "recovered": false,
+          "debtSteps": 18,
+          "slackSteps": 0,
+          "oldRepairSteps": 0,
+          "lagSteps": 0,
+          "debtMicro": 202.75756179494036,
+          "slackMicro": 0,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0,
+          "rho": null,
+          "logRho": null,
+          "totalRho": null,
+          "logTotalRho": null
+        },
+        {
+          "fromFrontier": 1469,
+          "recoveredBy": 2197,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 14,
+          "slackSteps": 90,
+          "oldRepairSteps": 4,
+          "lagSteps": 94,
+          "debtMicro": 162.08081941127853,
+          "slackMicro": 167.32073958266332,
+          "oldRepairMicro": -3.2611097662136506,
+          "totalRepairMicro": 164.05962981644967,
+          "rho": 1.0323290577529014,
+          "logRho": 0.03181747064783241,
+          "totalRho": 1.0122087882598245,
+          "logTotalRho": 0.012134862095482764
+        },
+        {
+          "fromFrontier": 1577,
+          "recoveredBy": 1789,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 10,
+          "slackSteps": 20,
+          "oldRepairSteps": 1,
+          "lagSteps": 21,
+          "debtMicro": 36.394254011631425,
+          "slackMicro": 38.85312157073529,
+          "oldRepairMicro": -0.7812520069714344,
+          "totalRepairMicro": 38.071869563763855,
+          "rho": 1.0675619716870148,
+          "logRho": 0.06537751753821643,
+          "totalRho": 1.0460956158517847,
+          "logTotalRho": 0.045064772413173936
+        },
+        {
+          "fromFrontier": 1661,
+          "recoveredBy": 1717,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 3,
+          "slackSteps": 5,
+          "oldRepairSteps": 0,
+          "lagSteps": 5,
+          "debtMicro": 2.6310642677993163,
+          "slackMicro": 2.810756882166976,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 2.810756882166976,
+          "rho": 1.0682965507786546,
+          "logRho": 0.06606537126342961,
+          "totalRho": 1.0682965507786546,
+          "logTotalRho": 0.06606537126342961
+        },
+        {
+          "fromFrontier": 1703,
+          "recoveredBy": 1717,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 1,
+          "slackSteps": 1,
+          "oldRepairSteps": 0,
+          "lagSteps": 1,
+          "debtMicro": 0.13069394214505325,
+          "slackMicro": 0.4262073876020855,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 0.4262073876020855,
+          "rho": 3.261110504487276,
+          "logRho": 1.1820677829203383,
+          "totalRho": 3.261110504487276,
+          "logTotalRho": 1.1820677829203383
+        },
+        {
+          "fromFrontier": 1721,
+          "recoveredBy": 1745,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 1,
+          "slackSteps": 2,
+          "oldRepairSteps": 0,
+          "lagSteps": 2,
+          "debtMicro": 0.7489797682806807,
+          "slackMicro": 1.6424386102626343,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 1.6424386102626343,
+          "rho": 2.192901170124971,
+          "logRho": 0.785225402357761,
+          "totalRho": 2.192901170124971,
+          "logTotalRho": 0.785225402357761
+        },
+        {
+          "fromFrontier": 1859,
+          "recoveredBy": 2089,
+          "className": "oldOrMixedRepair",
+          "recovered": true,
+          "debtSteps": 7,
+          "slackSteps": 25,
+          "oldRepairSteps": 1,
+          "lagSteps": 26,
+          "debtMicro": 21.646871656648393,
+          "slackMicro": 25.141116214450506,
+          "oldRepairMicro": -2.0156885954565205,
+          "totalRepairMicro": 23.125427618993985,
+          "rho": 1.1614203018905473,
+          "logRho": 0.1496436543356174,
+          "totalRho": 1.0683034475280166,
+          "logTotalRho": 0.0660718270804918
+        },
+        {
+          "fromFrontier": 1949,
+          "recoveredBy": 2075,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 9,
+          "slackSteps": 14,
+          "oldRepairSteps": 0,
+          "lagSteps": 14,
+          "debtMicro": 36.337538463441156,
+          "slackMicro": 43.80294854499901,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 43.80294854499901,
+          "rho": 1.2054462244069928,
+          "logRho": 0.18684980910572643,
+          "totalRho": 1.2054462244069928,
+          "logTotalRho": 0.18684980910572643
+        },
+        {
+          "fromFrontier": 2009,
+          "recoveredBy": 2047,
+          "className": "sameTypeCoarse",
+          "recovered": true,
+          "debtSteps": 3,
+          "slackSteps": 3,
+          "oldRepairSteps": 0,
+          "lagSteps": 3,
+          "debtMicro": 3.1953008448225773,
+          "slackMicro": 6.708438344410483,
+          "oldRepairMicro": 0,
+          "totalRepairMicro": 6.708438344410483,
+          "rho": 2.099470024952526,
+          "logRho": 0.741684943808719,
+          "totalRho": 2.099470024952526,
+          "logTotalRho": 0.741684943808719
+        }
+      ],
+      "pairCount": 20,
+      "recoveredPairs": 12,
+      "openPairs": 8,
+      "sameTypePairs": 7,
+      "nontrivialSameTypePairs": 5,
+      "sameTypeRmsLogRho": 0.6126724827122426,
+      "nontrivialSameTypeRmsLogRho": 0.3503454927877255,
+      "maxLagSteps": 94
+    },
+    {
+      "seed": 424242,
+      "pairs": [],
+      "pairCount": 0,
+      "recoveredPairs": 0,
+      "openPairs": 0,
+      "sameTypePairs": 0,
+      "nontrivialSameTypePairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "nontrivialSameTypeRmsLogRho": 0,
+      "maxLagSteps": 0
+    }
+  ],
+  "endpoints": [
+    113,
+    133,
+    139,
+    151,
+    191,
+    205,
+    227,
+    253,
+    265,
+    301,
+    319,
+    415,
+    469,
+    515,
+    523,
+    541,
+    553,
+    565,
+    635,
+    637,
+    679,
+    725,
+    767,
+    785,
+    809,
+    821,
+    829,
+    839,
+    841,
+    845,
+    889,
+    911,
+    919,
+    941,
+    1037,
+    1183,
+    1321,
+    1399,
+    1439,
+    1469,
+    1577,
+    1661,
+    1663,
+    1703,
+    1717,
+    1721,
+    1745,
+    1789,
+    1859,
+    1949,
+    1951,
+    2009,
+    2047,
+    2075,
+    2089,
+    2197,
+    2633,
+    2677,
+    2719
+  ],
+  "realRows": [
+    {
+      "Y": 113,
+      "closedPairs": 0,
+      "sameTypePairs": 0,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 133,
+      "closedPairs": 0,
+      "sameTypePairs": 0,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 139,
+      "closedPairs": 0,
+      "sameTypePairs": 0,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 0,
+      "clusterRmsLogRho": 0,
+      "openReal": 1
+    },
+    {
+      "Y": 151,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 191,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 205,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 227,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 253,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 265,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 301,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 319,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 415,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 469,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 515,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 523,
+      "closedPairs": 1,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 1
+    },
+    {
+      "Y": 541,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 553,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 565,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 635,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 637,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 679,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 725,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 767,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 785,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 809,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 821,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 829,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 839,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 841,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 845,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 889,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 911,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 919,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 941,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 1037,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 1183,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 1321,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 0
+    },
+    {
+      "Y": 1399,
+      "closedPairs": 2,
+      "sameTypePairs": 1,
+      "clusterPairs": 0,
+      "sameTypeRmsLogRho": 2.496830416522511,
+      "clusterRmsLogRho": 0,
+      "openReal": 1
+    },
+    {
+      "Y": 1439,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1469,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1577,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1661,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1663,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1703,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1717,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1721,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1745,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1789,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1859,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1949,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 1951,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2009,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2047,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2075,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2089,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2197,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 0
+    },
+    {
+      "Y": 2633,
+      "closedPairs": 3,
+      "sameTypePairs": 2,
+      "clusterPairs": 1,
+      "sameTypeRmsLogRho": 1.7655257361489838,
+      "clusterRmsLogRho": 0.00034804719109281067,
+      "openReal": 1
+    },
+    {
+      "Y": 2677,
+      "closedPairs": 4,
+      "sameTypePairs": 3,
+      "clusterPairs": 2,
+      "sameTypeRmsLogRho": 1.4438372844975147,
+      "clusterRmsLogRho": 0.09958961653580604,
+      "openReal": 0
+    },
+    {
+      "Y": 2719,
+      "closedPairs": 4,
+      "sameTypePairs": 3,
+      "clusterPairs": 2,
+      "sameTypeRmsLogRho": 1.4438372844975147,
+      "clusterRmsLogRho": 0.09958961653580604,
+      "openReal": 0
+    }
+  ],
+  "fakeRowsBySeed": [
+    [
+      {
+        "Y": 113,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 133,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 139,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 151,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 191,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 205,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 227,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 253,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 265,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 301,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 319,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 415,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 469,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 515,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 523,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 541,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 3
+      },
+      {
+        "Y": 553,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 4
+      },
+      {
+        "Y": 565,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 635,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 637,
+        "closedPairs": 1,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 6
+      },
+      {
+        "Y": 679,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5842327125743821,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 5
+      },
+      {
+        "Y": 725,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5842327125743821,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 6
+      },
+      {
+        "Y": 767,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 5
+      },
+      {
+        "Y": 785,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 6
+      },
+      {
+        "Y": 809,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 7
+      },
+      {
+        "Y": 821,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 7
+      },
+      {
+        "Y": 829,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 7
+      },
+      {
+        "Y": 839,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 8
+      },
+      {
+        "Y": 841,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 8
+      },
+      {
+        "Y": 845,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 8
+      },
+      {
+        "Y": 889,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 9
+      },
+      {
+        "Y": 911,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 919,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 941,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1037,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1183,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1321,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1399,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1439,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 10
+      },
+      {
+        "Y": 1469,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 11
+      },
+      {
+        "Y": 1577,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 11
+      },
+      {
+        "Y": 1661,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 11
+      },
+      {
+        "Y": 1663,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1703,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1717,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1721,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1745,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1789,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1859,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1949,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 12
+      },
+      {
+        "Y": 1951,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2009,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2047,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2075,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2089,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2197,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2633,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2677,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      },
+      {
+        "Y": 2719,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.5758482971653773,
+        "clusterRmsLogRho": 0.5842327125743821,
+        "openPairs": 13
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 133,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 139,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 151,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 191,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 205,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 227,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 253,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 265,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 301,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 319,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 415,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 515,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 523,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 541,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 553,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 565,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 635,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 637,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 679,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 725,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 767,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 785,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 809,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 821,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 829,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 839,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 841,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 845,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 889,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 911,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 919,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 3
+      },
+      {
+        "Y": 941,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 4
+      },
+      {
+        "Y": 1037,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1183,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1321,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1399,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1439,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1577,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1661,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1663,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1703,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1717,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1721,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1745,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1789,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1859,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1949,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 1951,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2009,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2047,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2075,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2089,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2197,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2633,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2677,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      },
+      {
+        "Y": 2719,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 5
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 133,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 139,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 151,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 191,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 205,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 227,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 253,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 265,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 301,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 319,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 415,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 515,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 523,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 541,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 553,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 565,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 635,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 637,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 679,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 725,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 767,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 785,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 809,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 821,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 829,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 839,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 841,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 845,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 889,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 911,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 919,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 941,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1037,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1183,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1321,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1399,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1439,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1577,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1661,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1663,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1703,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1717,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1721,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1745,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1789,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1859,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1949,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1951,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2009,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2047,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2075,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2089,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2197,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2633,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2677,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2719,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 133,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 1
+      },
+      {
+        "Y": 139,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 2
+      },
+      {
+        "Y": 151,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 3
+      },
+      {
+        "Y": 191,
+        "closedPairs": 1,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 2
+      },
+      {
+        "Y": 205,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 2
+      },
+      {
+        "Y": 227,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 3
+      },
+      {
+        "Y": 253,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 4
+      },
+      {
+        "Y": 265,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 5
+      },
+      {
+        "Y": 301,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 6
+      },
+      {
+        "Y": 319,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 6
+      },
+      {
+        "Y": 415,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 6
+      },
+      {
+        "Y": 469,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 6
+      },
+      {
+        "Y": 515,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 7
+      },
+      {
+        "Y": 523,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 7
+      },
+      {
+        "Y": 541,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 7
+      },
+      {
+        "Y": 553,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 7
+      },
+      {
+        "Y": 565,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 7
+      },
+      {
+        "Y": 635,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 637,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 679,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 725,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 767,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 785,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 809,
+        "closedPairs": 2,
+        "sameTypePairs": 1,
+        "clusterPairs": 1,
+        "sameTypeRmsLogRho": 0.1447148784594072,
+        "clusterRmsLogRho": 0.1447148784594072,
+        "openPairs": 8
+      },
+      {
+        "Y": 821,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 7
+      },
+      {
+        "Y": 829,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 7
+      },
+      {
+        "Y": 839,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 7
+      },
+      {
+        "Y": 841,
+        "closedPairs": 3,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 7
+      },
+      {
+        "Y": 845,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 889,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 911,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 919,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 941,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 1037,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 6
+      },
+      {
+        "Y": 1183,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 7
+      },
+      {
+        "Y": 1321,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 8
+      },
+      {
+        "Y": 1399,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 8
+      },
+      {
+        "Y": 1439,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 8
+      },
+      {
+        "Y": 1469,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 9
+      },
+      {
+        "Y": 1577,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 10
+      },
+      {
+        "Y": 1661,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 11
+      },
+      {
+        "Y": 1663,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 11
+      },
+      {
+        "Y": 1703,
+        "closedPairs": 4,
+        "sameTypePairs": 2,
+        "clusterPairs": 2,
+        "sameTypeRmsLogRho": 0.11030816213636978,
+        "clusterRmsLogRho": 0.11030816213636978,
+        "openPairs": 12
+      },
+      {
+        "Y": 1717,
+        "closedPairs": 6,
+        "sameTypePairs": 4,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.5970729976238639,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 10
+      },
+      {
+        "Y": 1721,
+        "closedPairs": 6,
+        "sameTypePairs": 4,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.5970729976238639,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 11
+      },
+      {
+        "Y": 1745,
+        "closedPairs": 7,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 10
+      },
+      {
+        "Y": 1789,
+        "closedPairs": 8,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 9
+      },
+      {
+        "Y": 1859,
+        "closedPairs": 8,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 10
+      },
+      {
+        "Y": 1949,
+        "closedPairs": 8,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 11
+      },
+      {
+        "Y": 1951,
+        "closedPairs": 8,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 11
+      },
+      {
+        "Y": 2009,
+        "closedPairs": 8,
+        "sameTypePairs": 5,
+        "clusterPairs": 3,
+        "sameTypeRmsLogRho": 0.6391499965538753,
+        "clusterRmsLogRho": 0.09781004472612902,
+        "openPairs": 12
+      },
+      {
+        "Y": 2047,
+        "closedPairs": 9,
+        "sameTypePairs": 6,
+        "clusterPairs": 4,
+        "sameTypeRmsLogRho": 0.6573507620677914,
+        "clusterRmsLogRho": 0.3803935364923163,
+        "openPairs": 11
+      },
+      {
+        "Y": 2075,
+        "closedPairs": 10,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 10
+      },
+      {
+        "Y": 2089,
+        "closedPairs": 11,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 9
+      },
+      {
+        "Y": 2197,
+        "closedPairs": 12,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 8
+      },
+      {
+        "Y": 2633,
+        "closedPairs": 12,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 8
+      },
+      {
+        "Y": 2677,
+        "closedPairs": 12,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 8
+      },
+      {
+        "Y": 2719,
+        "closedPairs": 12,
+        "sameTypePairs": 7,
+        "clusterPairs": 5,
+        "sameTypeRmsLogRho": 0.6126724827122426,
+        "clusterRmsLogRho": 0.3503454927877255,
+        "openPairs": 8
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 133,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 139,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 151,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 191,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 205,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 227,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 253,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 265,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 301,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 319,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 415,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 515,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 523,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 541,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 553,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 565,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 635,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 637,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 679,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 725,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 767,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 785,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 809,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 821,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 829,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 839,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 841,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 845,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 889,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 911,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 919,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 941,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1037,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1183,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1321,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1399,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1439,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1469,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1577,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1661,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1663,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1703,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1717,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1721,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1745,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1789,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1859,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1949,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 1951,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2009,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2047,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2075,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2089,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2197,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2633,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2677,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      },
+      {
+        "Y": 2719,
+        "closedPairs": 0,
+        "sameTypePairs": 0,
+        "clusterPairs": 0,
+        "sameTypeRmsLogRho": 0,
+        "clusterRmsLogRho": 0,
+        "openPairs": 0
+      }
+    ]
+  ],
+  "summary": {
+    "realPairCount": 4,
+    "realSameTypePairs": 3,
+    "realClusterPairs": 2,
+    "realSameTypeRmsLogRho": 1.4438372844975147,
+    "realClusterRmsLogRho": 0.09958961653580604,
+    "realClusterRhoRange": [
+      1.000348107766544,
+      1.1512410752454516
+    ],
+    "fakeSameTypeRmsLogRhoRange": [
+      0,
+      0.6126724827122426
+    ],
+    "fakeClusterRmsLogRhoRange": [
+      0,
+      0.5842327125743821
+    ],
+    "fakeOpenPairRange": [
+      0,
+      13
+    ]
+  },
+  "jsonPath": "logs/playground-artifacts/caxa-slack-pairing-audit.json",
+  "mdPath": "logs/playground-artifacts/caxa-slack-pairing-audit.md",
+  "svgPath": "logs/playground-artifacts/caxa-slack-pairing-audit.svg"
+}

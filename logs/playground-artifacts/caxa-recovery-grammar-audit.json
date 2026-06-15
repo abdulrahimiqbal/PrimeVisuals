@@ -1,0 +1,3773 @@
+{
+  "generatedAt": "2026-06-14T17:10:59.720Z",
+  "inputPath": "logs/divisor-extremes-artifacts/ca-xa-transitions.json",
+  "object": "CA/XA recovery grammar compression",
+  "frontierRange": [
+    113,
+    2719
+  ],
+  "realWords": [
+    {
+      "fromFrontier": 139,
+      "toFrontier": 149,
+      "recoveredBy": 151,
+      "recovered": true,
+      "length": 1,
+      "totalStepsToRecovery": 2,
+      "extraStepsAfterNoBaseRun": 1,
+      "noBasePrimes": [
+        149
+      ],
+      "recoveryPrimes": [
+        149,
+        151
+      ],
+      "word": "N+ N-",
+      "compactWord": "N+ N-",
+      "wordLength": 2,
+      "distinctTokens": [
+        "N+",
+        "N-"
+      ],
+      "detailedSteps": [
+        {
+          "fromIndex": 409,
+          "toIndex": 425,
+          "fromFrontier": 139,
+          "toFrontier": 149,
+          "p": 149,
+          "oldExponent": 0,
+          "margin": -0.000011776209093505331,
+          "marginMicro": -11.776209093505331,
+          "secondOrderGapOvershoot": 0.21137322921569535,
+          "secondOrderThresholdMinusFrontier": 9.788626770784305,
+          "criticalP": 148.78039186318543,
+          "criticalRatio": 1.0014760556419056,
+          "token": "N+",
+          "cumulativeMargin": -0.000011776209093505331,
+          "cumulativeMarginMicro": -11.776209093505331
+        },
+        {
+          "fromIndex": 425,
+          "toIndex": 440,
+          "fromFrontier": 149,
+          "toFrontier": 151,
+          "p": 151,
+          "oldExponent": 0,
+          "margin": 0.0001430095961930779,
+          "marginMicro": 143.0095961930779,
+          "secondOrderGapOvershoot": -2.808877450422756,
+          "secondOrderThresholdMinusFrontier": 4.808877450422756,
+          "criticalP": 153.80077422973537,
+          "criticalRatio": 0.9817895960292645,
+          "token": "N-",
+          "cumulativeMargin": 0.00013123338709957258,
+          "cumulativeMarginMicro": 131.23338709957258
+        }
+      ],
+      "finalCumulativeMargin": 0.00013123338709957258,
+      "finalCumulativeMarginMicro": 131.23338709957258,
+      "minCumulativeLogMargin": -0.000011776209093505331,
+      "debtMicro": 11.776209093505331,
+      "expectedBaseCountTotal": 1.9700148776270123,
+      "matchedStepCount": 2,
+      "missingStepCount": 0
+    },
+    {
+      "fromFrontier": 523,
+      "toFrontier": 541,
+      "recoveredBy": 541,
+      "recovered": true,
+      "length": 1,
+      "totalStepsToRecovery": 2,
+      "extraStepsAfterNoBaseRun": 1,
+      "noBasePrimes": [
+        541
+      ],
+      "recoveryPrimes": [
+        541,
+        31
+      ],
+      "word": "N+ O1",
+      "compactWord": "N+ O1",
+      "wordLength": 2,
+      "distinctTokens": [
+        "N+",
+        "O1"
+      ],
+      "detailedSteps": [
+        {
+          "fromIndex": 1490,
+          "toIndex": 1508,
+          "fromFrontier": 523,
+          "toFrontier": 541,
+          "p": 541,
+          "oldExponent": 0,
+          "margin": -0.0000015050115451577945,
+          "marginMicro": -1.5050115451577946,
+          "secondOrderGapOvershoot": 0.3767767045585515,
+          "secondOrderThresholdMinusFrontier": 17.62322329544145,
+          "criticalP": 540.6191937996913,
+          "criticalRatio": 1.000704388975967,
+          "token": "N+",
+          "cumulativeMargin": -0.0000015050115451577945,
+          "cumulativeMarginMicro": -1.5050115451577946
+        },
+        {
+          "fromIndex": 1508,
+          "toIndex": 1516,
+          "fromFrontier": 541,
+          "toFrontier": 541,
+          "p": 31,
+          "oldExponent": 1,
+          "margin": 0.000009490367501261646,
+          "marginMicro": 9.490367501261646,
+          "secondOrderGapOvershoot": null,
+          "secondOrderThresholdMinusFrontier": null,
+          "criticalP": 31.130213016138512,
+          "criticalRatio": 0.995817149851464,
+          "token": "O1",
+          "cumulativeMargin": 0.000007985355956103852,
+          "cumulativeMarginMicro": 7.985355956103852
+        }
+      ],
+      "finalCumulativeMargin": 0.000007985355956103852,
+      "finalCumulativeMarginMicro": 7.985355956103852,
+      "minCumulativeLogMargin": -0.0000015050115451577945,
+      "debtMicro": 1.5050115451577946,
+      "expectedBaseCountTotal": 2.807931861063286,
+      "matchedStepCount": 2,
+      "missingStepCount": 0
+    },
+    {
+      "fromFrontier": 1399,
+      "toFrontier": 1427,
+      "recoveredBy": 1439,
+      "recovered": true,
+      "length": 3,
+      "totalStepsToRecovery": 6,
+      "extraStepsAfterNoBaseRun": 3,
+      "noBasePrimes": [
+        1409,
+        1423,
+        1427
+      ],
+      "recoveryPrimes": [
+        1409,
+        1423,
+        1427,
+        1429,
+        1433,
+        1439
+      ],
+      "word": "N+ N+ N+ N- N- N-",
+      "compactWord": "N+^3 N-^3",
+      "wordLength": 6,
+      "distinctTokens": [
+        "N+",
+        "N-"
+      ],
+      "detailedSteps": [
+        {
+          "fromIndex": 4204,
+          "toIndex": 4223,
+          "fromFrontier": 1399,
+          "toFrontier": 1409,
+          "p": 1409,
+          "oldExponent": 0,
+          "margin": -2.5099453380332624e-7,
+          "marginMicro": -0.25099453380332626,
+          "secondOrderGapOvershoot": 0.4360256761499386,
+          "secondOrderThresholdMinusFrontier": 9.563974323850061,
+          "criticalP": 1408.5617995582595,
+          "criticalRatio": 1.000311097774963,
+          "token": "N+",
+          "cumulativeMargin": -2.5099453380332624e-7,
+          "cumulativeMarginMicro": -0.25099453380332626
+        },
+        {
+          "fromIndex": 4223,
+          "toIndex": 4240,
+          "fromFrontier": 1409,
+          "toFrontier": 1423,
+          "p": 1423,
+          "oldExponent": 0,
+          "margin": -0.000004054948752195593,
+          "marginMicro": -4.054948752195593,
+          "secondOrderGapOvershoot": 7.182854992119019,
+          "secondOrderThresholdMinusFrontier": 6.817145007880981,
+          "criticalP": 1415.8149777426693,
+          "criticalRatio": 1.0050748313658797,
+          "token": "N+",
+          "cumulativeMargin": -0.0000043059432859989194,
+          "cumulativeMarginMicro": -4.30594328599892
+        },
+        {
+          "fromIndex": 4240,
+          "toIndex": 4257,
+          "fromFrontier": 1423,
+          "toFrontier": 1427,
+          "p": 1427,
+          "oldExponent": 0,
+          "margin": -0.000002195452383890197,
+          "marginMicro": -2.195452383890197,
+          "secondOrderGapOvershoot": 3.91980672363502,
+          "secondOrderThresholdMinusFrontier": 0.08019327636498019,
+          "criticalP": 1423.0780334608285,
+          "criticalRatio": 1.002755974336582,
+          "token": "N+",
+          "cumulativeMargin": -0.0000065013956698891165,
+          "cumulativeMarginMicro": -6.501395669889116
+        },
+        {
+          "fromIndex": 4257,
+          "toIndex": 4274,
+          "fromFrontier": 1427,
+          "toFrontier": 1429,
+          "p": 1429,
+          "oldExponent": 0,
+          "margin": 7.471883725940513e-7,
+          "marginMicro": 0.7471883725940512,
+          "secondOrderGapOvershoot": -1.346036697593263,
+          "secondOrderThresholdMinusFrontier": 3.346036697593263,
+          "criticalP": 1430.3438842741205,
+          "criticalRatio": 0.9990604467297021,
+          "token": "N-",
+          "cumulativeMargin": -0.000005754207297295065,
+          "cumulativeMarginMicro": -5.754207297295065
+        },
+        {
+          "fromIndex": 4274,
+          "toIndex": 4291,
+          "fromFrontier": 1429,
+          "toFrontier": 1433,
+          "p": 1433,
+          "oldExponent": 0,
+          "margin": 0.0000025431142940549392,
+          "marginMicro": 2.543114294054939,
+          "secondOrderGapOvershoot": -4.613268444834375,
+          "secondOrderThresholdMinusFrontier": 8.613268444834375,
+          "criticalP": 1437.6111233553602,
+          "criticalRatio": 0.9967925099629182,
+          "token": "N-",
+          "cumulativeMargin": -0.000003211093003240126,
+          "cumulativeMarginMicro": -3.211093003240126
+        },
+        {
+          "fromIndex": 4291,
+          "toIndex": 4310,
+          "fromFrontier": 1433,
+          "toFrontier": 1439,
+          "p": 1439,
+          "oldExponent": 0,
+          "margin": 0.000003213356189566189,
+          "marginMicro": 3.2133561895661886,
+          "secondOrderGapOvershoot": -5.883283805054134,
+          "secondOrderThresholdMinusFrontier": 11.883283805054134,
+          "criticalP": 1444.8811459928727,
+          "criticalRatio": 0.9959296679805235,
+          "token": "N-",
+          "cumulativeMargin": 2.26318632606283e-9,
+          "cumulativeMarginMicro": 0.00226318632606283
+        }
+      ],
+      "finalCumulativeMargin": 2.26318632606283e-9,
+      "finalCumulativeMarginMicro": 0.00226318632606283,
+      "minCumulativeLogMargin": -0.0000065013956698891165,
+      "debtMicro": 6.501395669889116,
+      "expectedBaseCountTotal": 2.2706744758219197,
+      "matchedStepCount": 6,
+      "missingStepCount": 0
+    },
+    {
+      "fromFrontier": 2633,
+      "toFrontier": 2659,
+      "recoveredBy": 2677,
+      "recovered": true,
+      "length": 3,
+      "totalStepsToRecovery": 6,
+      "extraStepsAfterNoBaseRun": 3,
+      "noBasePrimes": [
+        2647,
+        2657,
+        2659
+      ],
+      "recoveryPrimes": [
+        2647,
+        2657,
+        2659,
+        2663,
+        2671,
+        2677
+      ],
+      "word": "N+ N+ N+ N- N- N-",
+      "compactWord": "N+^3 N-^3",
+      "wordLength": 6,
+      "distinctTokens": [
+        "N+",
+        "N-"
+      ],
+      "detailedSteps": [
+        {
+          "fromIndex": 8003,
+          "toIndex": 8029,
+          "fromFrontier": 2633,
+          "toFrontier": 2647,
+          "p": 2647,
+          "oldExponent": 0,
+          "margin": -6.567448292481661e-7,
+          "marginMicro": -0.6567448292481661,
+          "secondOrderGapOvershoot": 4.07750952773813,
+          "secondOrderThresholdMinusFrontier": 9.92249047226187,
+          "criticalP": 2642.921080143924,
+          "criticalRatio": 1.0015433377434992,
+          "token": "N+",
+          "cumulativeMargin": -6.567448292481661e-7,
+          "cumulativeMarginMicro": -0.6567448292481661
+        },
+        {
+          "fromIndex": 8029,
+          "toIndex": 8055,
+          "fromFrontier": 2647,
+          "toFrontier": 2657,
+          "p": 2657,
+          "oldExponent": 0,
+          "margin": -9.909504800304858e-7,
+          "marginMicro": -0.9909504800304858,
+          "secondOrderGapOvershoot": 6.194855483754509,
+          "secondOrderThresholdMinusFrontier": 3.805144516245491,
+          "criticalP": 2650.803737137349,
+          "criticalRatio": 1.0023375034431417,
+          "token": "N+",
+          "cumulativeMargin": -0.000001647695309278652,
+          "cumulativeMarginMicro": -1.647695309278652
+        },
+        {
+          "fromIndex": 8055,
+          "toIndex": 8082,
+          "fromFrontier": 2657,
+          "toFrontier": 2659,
+          "p": 2659,
+          "oldExponent": 0,
+          "margin": -4.935929481174285e-8,
+          "marginMicro": -0.04935929481174285,
+          "secondOrderGapOvershoot": 0.3084343577806976,
+          "secondOrderThresholdMinusFrontier": 1.6915656422193024,
+          "criticalP": 2658.6901612008837,
+          "criticalRatio": 1.0001165381373271,
+          "token": "N+",
+          "cumulativeMargin": -0.0000016970546040903948,
+          "cumulativeMarginMicro": -1.6970546040903949
+        },
+        {
+          "fromIndex": 8082,
+          "toIndex": 8109,
+          "fromFrontier": 2659,
+          "toFrontier": 2663,
+          "p": 2663,
+          "oldExponent": 0,
+          "margin": 5.672832367338543e-7,
+          "marginMicro": 0.5672832367338543,
+          "secondOrderGapOvershoot": -3.578735012216839,
+          "secondOrderThresholdMinusFrontier": 7.578735012216839,
+          "criticalP": 2666.5773334934,
+          "criticalRatio": 0.9986584549982979,
+          "token": "N-",
+          "cumulativeMargin": -0.0000011297713673565405,
+          "cumulativeMarginMicro": -1.1297713673565404
+        },
+        {
+          "fromIndex": 8109,
+          "toIndex": 8136,
+          "fromFrontier": 2663,
+          "toFrontier": 2671,
+          "p": 2671,
+          "oldExponent": 0,
+          "margin": 5.463457937905517e-7,
+          "marginMicro": 0.5463457937905517,
+          "secondOrderGapOvershoot": -3.467403538475537,
+          "secondOrderThresholdMinusFrontier": 11.467403538475537,
+          "criticalP": 2674.466004928085,
+          "criticalRatio": 0.9987040385177084,
+          "token": "N-",
+          "cumulativeMargin": -5.834255735659888e-7,
+          "cumulativeMarginMicro": -0.5834255735659888
+        },
+        {
+          "fromIndex": 8136,
+          "toIndex": 8163,
+          "fromFrontier": 2671,
+          "toFrontier": 2677,
+          "p": 2677,
+          "oldExponent": 0,
+          "margin": 8.400899366388642e-7,
+          "marginMicro": 0.8400899366388641,
+          "secondOrderGapOvershoot": -5.359067952443638,
+          "secondOrderThresholdMinusFrontier": 11.359067952443638,
+          "criticalP": 2682.357672238003,
+          "criticalRatio": 0.9980026257148873,
+          "token": "N-",
+          "cumulativeMargin": 2.5666436307287535e-7,
+          "cumulativeMarginMicro": 0.2566643630728753
+        }
+      ],
+      "finalCumulativeMargin": 2.5666436307287535e-7,
+      "finalCumulativeMarginMicro": 0.2566643630728753,
+      "minCumulativeLogMargin": -0.0000016970546040903948,
+      "debtMicro": 1.6970546040903949,
+      "expectedBaseCountTotal": 1.9568493095811839,
+      "matchedStepCount": 6,
+      "missingStepCount": 0
+    }
+  ],
+  "fakeGroups": [
+    {
+      "label": "seed 12345",
+      "seed": 12345,
+      "runs": [
+        {
+          "fromFrontier": 265,
+          "toFrontier": 301,
+          "recoveredBy": 319,
+          "recovered": true,
+          "length": 4,
+          "totalStepsToRecovery": 10,
+          "extraStepsAfterNoBaseRun": 6,
+          "extraNewFrontierSteps": 5,
+          "extraNonNewFrontierSteps": 1,
+          "extraBelowP2Steps": 5,
+          "wordLength": 10,
+          "coarseWord": "N+^4 N-^5 O?^1",
+          "debtMicro": 309.64741322438454
+        },
+        {
+          "fromFrontier": 415,
+          "toFrontier": 455,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 6,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 6,
+          "coarseWord": "OPEN N+^6",
+          "debtMicro": 5525.560073881215
+        },
+        {
+          "fromFrontier": 469,
+          "toFrontier": 541,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 8,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 8,
+          "coarseWord": "OPEN N+^8",
+          "debtMicro": 5430.24769201599
+        },
+        {
+          "fromFrontier": 541,
+          "toFrontier": 553,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 4878.8590083216695
+        },
+        {
+          "fromFrontier": 553,
+          "toFrontier": 565,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 1,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 1,
+          "coarseWord": "OPEN N+^1",
+          "debtMicro": 4750.622912709093
+        },
+        {
+          "fromFrontier": 565,
+          "toFrontier": 629,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 12,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 12,
+          "coarseWord": "OPEN N+^12",
+          "debtMicro": 4675.4973161010375
+        },
+        {
+          "fromFrontier": 637,
+          "toFrontier": 671,
+          "recoveredBy": 679,
+          "recovered": true,
+          "length": 5,
+          "totalStepsToRecovery": 8,
+          "extraStepsAfterNoBaseRun": 3,
+          "extraNewFrontierSteps": 3,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 3,
+          "wordLength": 8,
+          "coarseWord": "N+^5 N-^3",
+          "debtMicro": 31.279152738171877
+        },
+        {
+          "fromFrontier": 725,
+          "toFrontier": 755,
+          "recoveredBy": 767,
+          "recovered": true,
+          "length": 2,
+          "totalStepsToRecovery": 5,
+          "extraStepsAfterNoBaseRun": 3,
+          "extraNewFrontierSteps": 3,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 3,
+          "wordLength": 5,
+          "coarseWord": "N+^2 N-^3",
+          "debtMicro": 13.290681480245068
+        },
+        {
+          "fromFrontier": 785,
+          "toFrontier": 809,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 4603.865966003747
+        },
+        {
+          "fromFrontier": 809,
+          "toFrontier": 839,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 4,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 4,
+          "coarseWord": "OPEN N+^4",
+          "debtMicro": 4591.919443590566
+        },
+        {
+          "fromFrontier": 839,
+          "toFrontier": 877,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 6,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 6,
+          "coarseWord": "OPEN N+^6",
+          "debtMicro": 4564.577553841734
+        },
+        {
+          "fromFrontier": 889,
+          "toFrontier": 911,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 4537.0551895018925
+        },
+        {
+          "fromFrontier": 911,
+          "toFrontier": 1469,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 31,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 31,
+          "coarseWord": "OPEN N+^31",
+          "debtMicro": 4518.839039788058
+        },
+        {
+          "fromFrontier": 1469,
+          "toFrontier": 1663,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 21,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 21,
+          "coarseWord": "OPEN N+^21",
+          "debtMicro": 3864.5486285724696
+        },
+        {
+          "fromFrontier": 1663,
+          "toFrontier": 1951,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 32,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 32,
+          "coarseWord": "OPEN N+^32",
+          "debtMicro": 3207.883766346543
+        },
+        {
+          "fromFrontier": 1951,
+          "toFrontier": 2489,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 57,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 57,
+          "coarseWord": "OPEN N+^57",
+          "debtMicro": 2002.4814184440406
+        }
+      ],
+      "runCount": 16,
+      "recoveredRuns": 3,
+      "unrecoveredRuns": 13,
+      "distinctCoarseWords": 13,
+      "distinctRecoveredCoarseWords": 3,
+      "distinctOpenCoarseWords": 10,
+      "maxWordLength": 57,
+      "maxExtraStepsAfterNoBaseRun": 6,
+      "deepestDebtMicro": 5525.560073881215
+    },
+    {
+      "label": "seed 271828",
+      "seed": 271828,
+      "runs": [
+        {
+          "fromFrontier": 829,
+          "toFrontier": 841,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 1067.779367707411
+        },
+        {
+          "fromFrontier": 841,
+          "toFrontier": 919,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 10,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 10,
+          "coarseWord": "OPEN N+^10",
+          "debtMicro": 990.3885696227231
+        },
+        {
+          "fromFrontier": 919,
+          "toFrontier": 929,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 752.907762465525
+        },
+        {
+          "fromFrontier": 941,
+          "toFrontier": 1025,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 10,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 10,
+          "coarseWord": "OPEN N+^10",
+          "debtMicro": 752.1681705883075
+        },
+        {
+          "fromFrontier": 1037,
+          "toFrontier": 1313,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 23,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 23,
+          "coarseWord": "OPEN N+^23",
+          "debtMicro": 592.4603365387936
+        }
+      ],
+      "runCount": 5,
+      "recoveredRuns": 0,
+      "unrecoveredRuns": 5,
+      "distinctCoarseWords": 3,
+      "distinctRecoveredCoarseWords": 0,
+      "distinctOpenCoarseWords": 3,
+      "maxWordLength": 23,
+      "maxExtraStepsAfterNoBaseRun": 0,
+      "deepestDebtMicro": 1067.779367707411
+    },
+    {
+      "label": "seed 314159",
+      "seed": 314159,
+      "runs": [],
+      "runCount": 0,
+      "recoveredRuns": 0,
+      "unrecoveredRuns": 0,
+      "distinctCoarseWords": 0,
+      "distinctRecoveredCoarseWords": 0,
+      "distinctOpenCoarseWords": 0,
+      "maxWordLength": 0,
+      "maxExtraStepsAfterNoBaseRun": 0,
+      "deepestDebtMicro": 0
+    },
+    {
+      "label": "seed 161803",
+      "seed": 161803,
+      "runs": [
+        {
+          "fromFrontier": 133,
+          "toFrontier": 139,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 2,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 2,
+          "coarseWord": "OPEN N+^2",
+          "debtMicro": 5506.261620352563
+        },
+        {
+          "fromFrontier": 139,
+          "toFrontier": 145,
+          "recoveredBy": 205,
+          "recovered": true,
+          "length": 2,
+          "totalStepsToRecovery": 16,
+          "extraStepsAfterNoBaseRun": 14,
+          "extraNewFrontierSteps": 12,
+          "extraNonNewFrontierSteps": 2,
+          "extraBelowP2Steps": 9,
+          "wordLength": 16,
+          "coarseWord": "N+^2 N-^9 N?^3 O?^2",
+          "debtMicro": 626.1582204234152
+        },
+        {
+          "fromFrontier": 151,
+          "toFrontier": 175,
+          "recoveredBy": 191,
+          "recovered": true,
+          "length": 3,
+          "totalStepsToRecovery": 7,
+          "extraStepsAfterNoBaseRun": 4,
+          "extraNewFrontierSteps": 4,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 4,
+          "wordLength": 7,
+          "coarseWord": "N+^3 N-^4",
+          "debtMicro": 390.7375283551057
+        },
+        {
+          "fromFrontier": 205,
+          "toFrontier": 227,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 1,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 1,
+          "coarseWord": "OPEN N+^1",
+          "debtMicro": 4714.39440491713
+        },
+        {
+          "fromFrontier": 227,
+          "toFrontier": 253,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 4,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 4,
+          "coarseWord": "OPEN N+^4",
+          "debtMicro": 4517.257939615342
+        },
+        {
+          "fromFrontier": 253,
+          "toFrontier": 263,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 3,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 3,
+          "coarseWord": "OPEN N+^3",
+          "debtMicro": 3830.7992380772403
+        },
+        {
+          "fromFrontier": 265,
+          "toFrontier": 301,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 4,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 4,
+          "coarseWord": "OPEN N+^4",
+          "debtMicro": 3655.9307287895676
+        },
+        {
+          "fromFrontier": 301,
+          "toFrontier": 433,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 19,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 19,
+          "coarseWord": "OPEN N+^19",
+          "debtMicro": 3197.3572039571513
+        },
+        {
+          "fromFrontier": 515,
+          "toFrontier": 539,
+          "recoveredBy": 845,
+          "recovered": true,
+          "length": 5,
+          "totalStepsToRecovery": 19,
+          "extraStepsAfterNoBaseRun": 14,
+          "extraNewFrontierSteps": 13,
+          "extraNonNewFrontierSteps": 1,
+          "extraBelowP2Steps": 9,
+          "wordLength": 19,
+          "coarseWord": "N+^5 N-^9 N?^4 O?^1",
+          "debtMicro": 437.5331785672098
+        },
+        {
+          "fromFrontier": 635,
+          "toFrontier": 683,
+          "recoveredBy": 821,
+          "recovered": true,
+          "length": 4,
+          "totalStepsToRecovery": 6,
+          "extraStepsAfterNoBaseRun": 2,
+          "extraNewFrontierSteps": 2,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 2,
+          "wordLength": 6,
+          "coarseWord": "N+^4 N-^2",
+          "debtMicro": 104.88583561795512
+        },
+        {
+          "fromFrontier": 1183,
+          "toFrontier": 1321,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 14,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 14,
+          "coarseWord": "OPEN N+^14",
+          "debtMicro": 519.1070359915863
+        },
+        {
+          "fromFrontier": 1321,
+          "toFrontier": 1469,
+          "recoveredBy": null,
+          "recovered": false,
+          "length": 18,
+          "totalStepsToRecovery": null,
+          "extraStepsAfterNoBaseRun": null,
+          "extraNewFrontierSteps": 0,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 0,
+          "wordLength": 18,
+          "coarseWord": "OPEN N+^18",
+          "debtMicro": 402.3433112324318
+        },
+        {
+          "fromFrontier": 1469,
+          "toFrontier": 1543,
+          "recoveredBy": 2197,
+          "recovered": true,
+          "length": 14,
+          "totalStepsToRecovery": 108,
+          "extraStepsAfterNoBaseRun": 94,
+          "extraNewFrontierSteps": 90,
+          "extraNonNewFrontierSteps": 4,
+          "extraBelowP2Steps": 56,
+          "wordLength": 108,
+          "coarseWord": "N+^14 N-^56 N?^34 O?^4",
+          "debtMicro": 196.32755511847319
+        },
+        {
+          "fromFrontier": 1577,
+          "toFrontier": 1661,
+          "recoveredBy": 1789,
+          "recovered": true,
+          "length": 10,
+          "totalStepsToRecovery": 31,
+          "extraStepsAfterNoBaseRun": 21,
+          "extraNewFrontierSteps": 20,
+          "extraNonNewFrontierSteps": 1,
+          "extraBelowP2Steps": 15,
+          "wordLength": 31,
+          "coarseWord": "N+^10 N-^15 N?^5 O?^1",
+          "debtMicro": 39.80657028640217
+        },
+        {
+          "fromFrontier": 1661,
+          "toFrontier": 1681,
+          "recoveredBy": 1717,
+          "recovered": true,
+          "length": 3,
+          "totalStepsToRecovery": 8,
+          "extraStepsAfterNoBaseRun": 5,
+          "extraNewFrontierSteps": 5,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 4,
+          "wordLength": 8,
+          "coarseWord": "N+^3 N-^4 N?^1",
+          "debtMicro": 2.6310642677993163
+        },
+        {
+          "fromFrontier": 1703,
+          "toFrontier": 1711,
+          "recoveredBy": 1717,
+          "recovered": true,
+          "length": 1,
+          "totalStepsToRecovery": 2,
+          "extraStepsAfterNoBaseRun": 1,
+          "extraNewFrontierSteps": 1,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 1,
+          "wordLength": 2,
+          "coarseWord": "N+^1 N-^1",
+          "debtMicro": 0.13069394214505325
+        },
+        {
+          "fromFrontier": 1721,
+          "toFrontier": 1735,
+          "recoveredBy": 1745,
+          "recovered": true,
+          "length": 1,
+          "totalStepsToRecovery": 3,
+          "extraStepsAfterNoBaseRun": 2,
+          "extraNewFrontierSteps": 2,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 2,
+          "wordLength": 3,
+          "coarseWord": "N+^1 N-^2",
+          "debtMicro": 0.7489797682806807
+        },
+        {
+          "fromFrontier": 1859,
+          "toFrontier": 1949,
+          "recoveredBy": 2089,
+          "recovered": true,
+          "length": 7,
+          "totalStepsToRecovery": 33,
+          "extraStepsAfterNoBaseRun": 26,
+          "extraNewFrontierSteps": 25,
+          "extraNonNewFrontierSteps": 1,
+          "extraBelowP2Steps": 13,
+          "wordLength": 33,
+          "coarseWord": "N+^7 N-^13 N?^12 O?^1",
+          "debtMicro": 61.09096872539737
+        },
+        {
+          "fromFrontier": 1949,
+          "toFrontier": 2003,
+          "recoveredBy": 2075,
+          "recovered": true,
+          "length": 9,
+          "totalStepsToRecovery": 23,
+          "extraStepsAfterNoBaseRun": 14,
+          "extraNewFrontierSteps": 14,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 11,
+          "wordLength": 23,
+          "coarseWord": "N+^9 N-^11 N?^3",
+          "debtMicro": 37.42840847329246
+        },
+        {
+          "fromFrontier": 2009,
+          "toFrontier": 2039,
+          "recoveredBy": 2047,
+          "recovered": true,
+          "length": 3,
+          "totalStepsToRecovery": 6,
+          "extraStepsAfterNoBaseRun": 3,
+          "extraNewFrontierSteps": 3,
+          "extraNonNewFrontierSteps": 0,
+          "extraBelowP2Steps": 3,
+          "wordLength": 6,
+          "coarseWord": "N+^3 N-^3",
+          "debtMicro": 3.1953008448225773
+        }
+      ],
+      "runCount": 20,
+      "recoveredRuns": 12,
+      "unrecoveredRuns": 8,
+      "distinctCoarseWords": 19,
+      "distinctRecoveredCoarseWords": 12,
+      "distinctOpenCoarseWords": 7,
+      "maxWordLength": 108,
+      "maxExtraStepsAfterNoBaseRun": 94,
+      "deepestDebtMicro": 5506.261620352563
+    },
+    {
+      "label": "seed 424242",
+      "seed": 424242,
+      "runs": [],
+      "runCount": 0,
+      "recoveredRuns": 0,
+      "unrecoveredRuns": 0,
+      "distinctCoarseWords": 0,
+      "distinctRecoveredCoarseWords": 0,
+      "distinctOpenCoarseWords": 0,
+      "maxWordLength": 0,
+      "maxExtraStepsAfterNoBaseRun": 0,
+      "deepestDebtMicro": 0
+    }
+  ],
+  "endpoints": [
+    113,
+    133,
+    139,
+    151,
+    191,
+    205,
+    227,
+    253,
+    265,
+    301,
+    319,
+    415,
+    469,
+    515,
+    523,
+    541,
+    553,
+    565,
+    635,
+    637,
+    679,
+    725,
+    767,
+    785,
+    809,
+    821,
+    829,
+    839,
+    841,
+    845,
+    889,
+    911,
+    919,
+    941,
+    1000,
+    1037,
+    1183,
+    1321,
+    1399,
+    1439,
+    1469,
+    1577,
+    1661,
+    1663,
+    1703,
+    1717,
+    1721,
+    1745,
+    1789,
+    1859,
+    1949,
+    1951,
+    2000,
+    2009,
+    2047,
+    2075,
+    2089,
+    2197,
+    2633,
+    2677,
+    2719
+  ],
+  "realRows": [
+    {
+      "Y": 113,
+      "distinctWords": 0,
+      "recoveredRuns": 0,
+      "openRuns": 0,
+      "maxWordLength": 0
+    },
+    {
+      "Y": 133,
+      "distinctWords": 0,
+      "recoveredRuns": 0,
+      "openRuns": 0,
+      "maxWordLength": 0
+    },
+    {
+      "Y": 139,
+      "distinctWords": 0,
+      "recoveredRuns": 0,
+      "openRuns": 1,
+      "maxWordLength": 0
+    },
+    {
+      "Y": 151,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 191,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 205,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 227,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 253,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 265,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 301,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 319,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 415,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 469,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 515,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 523,
+      "distinctWords": 1,
+      "recoveredRuns": 1,
+      "openRuns": 1,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 541,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 553,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 565,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 635,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 637,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 679,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 725,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 767,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 785,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 809,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 821,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 829,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 839,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 841,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 845,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 889,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 911,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 919,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 941,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1000,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1037,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1183,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1321,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 0,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1399,
+      "distinctWords": 2,
+      "recoveredRuns": 2,
+      "openRuns": 1,
+      "maxWordLength": 2
+    },
+    {
+      "Y": 1439,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1469,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1577,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1661,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1663,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1703,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1717,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1721,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1745,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1789,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1859,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1949,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 1951,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2000,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2009,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2047,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2075,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2089,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2197,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2633,
+      "distinctWords": 3,
+      "recoveredRuns": 3,
+      "openRuns": 1,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2677,
+      "distinctWords": 3,
+      "recoveredRuns": 4,
+      "openRuns": 0,
+      "maxWordLength": 6
+    },
+    {
+      "Y": 2719,
+      "distinctWords": 3,
+      "recoveredRuns": 4,
+      "openRuns": 0,
+      "maxWordLength": 6
+    }
+  ],
+  "fakeRowsBySeed": [
+    [
+      {
+        "Y": 113,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 133,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 139,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 151,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 191,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 205,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 227,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 253,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 265,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 1,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 301,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 1,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 319,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 0,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 415,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 1,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 469,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 2,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 515,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 2,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 523,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 2,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 541,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 3,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 553,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 4,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 565,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 5,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 635,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 5,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 637,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 6,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 679,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 5,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 725,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 6,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 767,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 5,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 785,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 6,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 809,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 821,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 829,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 839,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 8,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 841,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 8,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 845,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 8,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 889,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 9,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 911,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 919,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 941,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1000,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1037,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1183,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1321,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1399,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1439,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 10,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1469,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 11,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1577,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 11,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1661,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 11,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1663,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1703,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1717,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1721,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1745,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1789,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1859,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1949,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 12,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 1951,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2000,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2009,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2047,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2075,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2089,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2197,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2633,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2677,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      },
+      {
+        "Y": 2719,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 13,
+        "maxWordLength": 10
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 133,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 139,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 151,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 191,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 205,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 227,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 253,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 265,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 301,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 319,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 415,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 515,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 523,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 541,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 553,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 565,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 635,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 637,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 679,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 725,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 767,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 785,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 809,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 821,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 829,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 1,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 839,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 1,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 841,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 2,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 845,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 2,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 889,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 2,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 911,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 2,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 919,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 3,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 941,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 4,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 4,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1037,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1183,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1321,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1399,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1439,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1577,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1661,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1663,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1703,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1717,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1721,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1745,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1789,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1859,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1949,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1951,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2009,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2047,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2075,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2089,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2197,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2633,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2677,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2719,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 5,
+        "maxWordLength": 0
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 133,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 139,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 151,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 191,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 205,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 227,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 253,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 265,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 301,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 319,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 415,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 515,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 523,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 541,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 553,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 565,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 635,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 637,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 679,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 725,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 767,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 785,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 809,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 821,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 829,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 839,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 841,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 845,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 889,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 911,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 919,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 941,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1037,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1183,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1321,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1399,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1439,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1577,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1661,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1663,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1703,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1717,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1721,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1745,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1789,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1859,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1949,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1951,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2009,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2047,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2075,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2089,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2197,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2633,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2677,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2719,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 133,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 1,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 139,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 2,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 151,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 3,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 191,
+        "distinctWords": 1,
+        "recoveredRuns": 1,
+        "openRuns": 2,
+        "maxWordLength": 7
+      },
+      {
+        "Y": 205,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 2,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 227,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 3,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 253,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 4,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 265,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 5,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 301,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 6,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 319,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 6,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 415,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 6,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 469,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 6,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 515,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 523,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 541,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 553,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 565,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 635,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 637,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 679,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 725,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 767,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 785,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 809,
+        "distinctWords": 2,
+        "recoveredRuns": 2,
+        "openRuns": 8,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 821,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 829,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 839,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 841,
+        "distinctWords": 3,
+        "recoveredRuns": 3,
+        "openRuns": 7,
+        "maxWordLength": 16
+      },
+      {
+        "Y": 845,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 889,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 911,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 919,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 941,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1000,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1037,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 6,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1183,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 7,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1321,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 8,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1399,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 8,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1439,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 8,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1469,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 9,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1577,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 10,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1661,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 11,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1663,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 11,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1703,
+        "distinctWords": 4,
+        "recoveredRuns": 4,
+        "openRuns": 12,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1717,
+        "distinctWords": 6,
+        "recoveredRuns": 6,
+        "openRuns": 10,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1721,
+        "distinctWords": 6,
+        "recoveredRuns": 6,
+        "openRuns": 11,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1745,
+        "distinctWords": 7,
+        "recoveredRuns": 7,
+        "openRuns": 10,
+        "maxWordLength": 19
+      },
+      {
+        "Y": 1789,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 9,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 1859,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 10,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 1949,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 11,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 1951,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 11,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 2000,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 11,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 2009,
+        "distinctWords": 8,
+        "recoveredRuns": 8,
+        "openRuns": 12,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 2047,
+        "distinctWords": 9,
+        "recoveredRuns": 9,
+        "openRuns": 11,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 2075,
+        "distinctWords": 10,
+        "recoveredRuns": 10,
+        "openRuns": 10,
+        "maxWordLength": 31
+      },
+      {
+        "Y": 2089,
+        "distinctWords": 11,
+        "recoveredRuns": 11,
+        "openRuns": 9,
+        "maxWordLength": 33
+      },
+      {
+        "Y": 2197,
+        "distinctWords": 12,
+        "recoveredRuns": 12,
+        "openRuns": 8,
+        "maxWordLength": 108
+      },
+      {
+        "Y": 2633,
+        "distinctWords": 12,
+        "recoveredRuns": 12,
+        "openRuns": 8,
+        "maxWordLength": 108
+      },
+      {
+        "Y": 2677,
+        "distinctWords": 12,
+        "recoveredRuns": 12,
+        "openRuns": 8,
+        "maxWordLength": 108
+      },
+      {
+        "Y": 2719,
+        "distinctWords": 12,
+        "recoveredRuns": 12,
+        "openRuns": 8,
+        "maxWordLength": 108
+      }
+    ],
+    [
+      {
+        "Y": 113,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 133,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 139,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 151,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 191,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 205,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 227,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 253,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 265,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 301,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 319,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 415,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 515,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 523,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 541,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 553,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 565,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 635,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 637,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 679,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 725,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 767,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 785,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 809,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 821,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 829,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 839,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 841,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 845,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 889,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 911,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 919,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 941,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1037,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1183,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1321,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1399,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1439,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1469,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1577,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1661,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1663,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1703,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1717,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1721,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1745,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1789,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1859,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1949,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 1951,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2000,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2009,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2047,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2075,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2089,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2197,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2633,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2677,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      },
+      {
+        "Y": 2719,
+        "distinctWords": 0,
+        "recoveredRuns": 0,
+        "openRuns": 0,
+        "maxWordLength": 0
+      }
+    ]
+  ],
+  "summary": {
+    "realDistinctClosedWords": 3,
+    "realWords": 4,
+    "realUnmatchedSteps": 0,
+    "realClosedWords": 4,
+    "fakeDistinctCoarseWordRange": [
+      0,
+      19
+    ],
+    "fakeUnrecoveredRunRange": [
+      0,
+      13
+    ],
+    "fakeMaxWordLengthRange": [
+      0,
+      108
+    ]
+  },
+  "jsonPath": "logs/playground-artifacts/caxa-recovery-grammar-audit.json",
+  "mdPath": "logs/playground-artifacts/caxa-recovery-grammar-audit.md",
+  "svgPath": "logs/playground-artifacts/caxa-recovery-grammar-audit.svg"
+}

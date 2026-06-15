@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">fixed-shift graph degree spectrum</text>
+<text x="70" y="42" fill="#67e8f9" font-size="13">Z prime graph D</text>
+<text x="340" y="42" fill="#fb7185" font-size="13">Z Cramer D</text>
+<text x="610" y="42" fill="#a78bfa" font-size="13">Z composite D</text>
+<text x="70" y="60" fill="#34d399" font-size="13">F_2 graph D</text>
+<text x="340" y="60" fill="#60a5fa" font-size="13">F_3 graph D</text>
+<rect x="70" y="62" width="1020" height="508" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="62" x2="1090" y2="62" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="66" fill="#94a3b8" font-size="12">2.00</text>
+<line x1="70" y1="163.60000000000002" x2="1090" y2="163.60000000000002" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="167.60000000000002" fill="#94a3b8" font-size="12">1.60</text>
+<line x1="70" y1="265.20000000000005" x2="1090" y2="265.20000000000005" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="269.20000000000005" fill="#94a3b8" font-size="12">1.20</text>
+<line x1="70" y1="366.8" x2="1090" y2="366.8" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="370.8" fill="#94a3b8" font-size="12">0.80</text>
+<line x1="70" y1="468.40000000000003" x2="1090" y2="468.40000000000003" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="472.40000000000003" fill="#94a3b8" font-size="12">0.40</text>
+<line x1="70" y1="570" x2="1090" y2="570" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="574" fill="#94a3b8" font-size="12">0.00</text>
+<polyline points="70.00,368.84 142.86,366.07 215.71,364.46 288.57,362.49 361.43,360.81" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="368.8379468311701" r="4" fill="#67e8f9"/><circle cx="142.85714285714283" cy="366.07387163201525" r="4" fill="#67e8f9"/><circle cx="215.7142857142857" cy="364.4610105184554" r="4" fill="#67e8f9"/><circle cx="288.57142857142856" cy="362.48590218607524" r="4" fill="#67e8f9"/><circle cx="361.4285714285714" cy="360.81371397833453" r="4" fill="#67e8f9"/>
+<polyline points="70.00,340.38 142.86,339.88 215.71,340.17 288.57,339.72 361.43,339.07" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="340.38389076250377" r="4" fill="#fb7185"/><circle cx="142.85714285714283" cy="339.87585039330435" r="4" fill="#fb7185"/><circle cx="215.7142857142857" cy="340.16691892627523" r="4" fill="#fb7185"/><circle cx="288.57142857142856" cy="339.71887171117186" r="4" fill="#fb7185"/><circle cx="361.4285714285714" cy="339.0713332863077" r="4" fill="#fb7185"/>
+<polyline points="70.00,370.97 142.86,367.10 215.71,363.46 288.57,361.41 361.43,358.76" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="370.9654608113611" r="4" fill="#a78bfa"/><circle cx="142.85714285714283" cy="367.09639367888275" r="4" fill="#a78bfa"/><circle cx="215.7142857142857" cy="363.4615946881345" r="4" fill="#a78bfa"/><circle cx="288.57142857142856" cy="361.4098157715637" r="4" fill="#a78bfa"/><circle cx="361.4285714285714" cy="358.76188066681806" r="4" fill="#a78bfa"/>
+<polyline points="507.14,267.07 580.00,262.18 652.86,257.97 725.71,256.06" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="507.1428571428571" cy="267.0741152625055" r="4" fill="#34d399"/><circle cx="580" cy="262.1847901235194" r="4" fill="#34d399"/><circle cx="652.8571428571428" cy="257.969912747869" r="4" fill="#34d399"/><circle cx="725.7142857142858" cy="256.0631886188024" r="4" fill="#34d399"/>
+<polyline points="871.43,306.27 944.29,306.46 1017.14,296.03 1090.00,288.19" fill="none" stroke="#60a5fa" stroke-width="3"/><circle cx="871.4285714285714" cy="306.2735388913187" r="4" fill="#60a5fa"/><circle cx="944.2857142857142" cy="306.46437986876504" r="4" fill="#60a5fa"/><circle cx="1017.1428571428572" cy="296.02684279485413" r="4" fill="#60a5fa"/><circle cx="1090" cy="288.1890034924303" r="4" fill="#60a5fa"/>
+<text x="70" y="606" fill="#94a3b8" font-size="13">y: D = std(fixed-shift graph degree) / sqrt(mean degree); integer endpoints, then F_2 and F_3 degrees</text>
+</svg>

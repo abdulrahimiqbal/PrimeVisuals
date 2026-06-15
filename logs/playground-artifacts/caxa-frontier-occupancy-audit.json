@@ -1,0 +1,218 @@
+{
+  "candidate": "CA-XA divisor-frontier occupancy line",
+  "generatedAt": "2026-06-14T13:27:24.565Z",
+  "inputPath": "logs/divisor-extremes-artifacts/ca-xa-transitions.json",
+  "minFrontier": 113,
+  "maxFrontier": 2719,
+  "primeFrontiers": 368,
+  "occupiedFrontiers": 357,
+  "rows": [
+    {
+      "Y": 151,
+      "primeCount": 7,
+      "occupied": 6,
+      "skipped": 1,
+      "mainLi": 7.790245421519967,
+      "piResidual": -0.2831303451938107,
+      "occupancyResidual": -0.6414118834142214,
+      "skippedCorrection": 0.35828153822041076,
+      "identityError": 1.1102230246251565e-16
+    },
+    {
+      "Y": 200,
+      "primeCount": 17,
+      "occupied": 16,
+      "skipped": 1,
+      "mainLi": 17.28066756734443,
+      "piResidual": -0.0675168189948739,
+      "occupancyResidual": -0.30807478453999315,
+      "skippedCorrection": 0.2405579655451192,
+      "identityError": -5.551115123125783e-17
+    },
+    {
+      "Y": 300,
+      "primeCount": 33,
+      "occupied": 32,
+      "skipped": 1,
+      "mainLi": 35.42211128286684,
+      "piResidual": -0.40696482266565787,
+      "occupancyResidual": -0.5749855183060208,
+      "skippedCorrection": 0.16802069564036298,
+      "identityError": 0
+    },
+    {
+      "Y": 500,
+      "primeCount": 66,
+      "occupied": 65,
+      "skipped": 1,
+      "mainLi": 68.88236889000727,
+      "piResidual": -0.34729259599011064,
+      "occupancyResidual": -0.46778119729097833,
+      "skippedCorrection": 0.12048860130086769,
+      "identityError": 0
+    },
+    {
+      "Y": 800,
+      "primeCount": 110,
+      "occupied": 109,
+      "skipped": 1,
+      "mainLi": 115.28517999884032,
+      "piResidual": -0.49223562467363946,
+      "occupancyResidual": -0.5853706976099721,
+      "skippedCorrection": 0.0931350729363326,
+      "identityError": 0
+    },
+    {
+      "Y": 1000,
+      "primeCount": 139,
+      "occupied": 138,
+      "skipped": 1,
+      "mainLi": 144.69815439153328,
+      "piResidual": -0.47369927101693793,
+      "occupancyResidual": -0.5568313236901322,
+      "skippedCorrection": 0.08313205267319429,
+      "identityError": 0
+    },
+    {
+      "Y": 1439,
+      "primeCount": 199,
+      "occupied": 193,
+      "skipped": 6,
+      "mainLi": 206.53614292412985,
+      "piResidual": -0.5243860081598174,
+      "occupancyResidual": -0.9418828736829974,
+      "skippedCorrection": 0.41749686552318005,
+      "identityError": 0
+    },
+    {
+      "Y": 1500,
+      "primeCount": 210,
+      "occupied": 204,
+      "skipped": 6,
+      "mainLi": 214.9008026117513,
+      "piResidual": -0.33430909520569624,
+      "occupancyResidual": -0.743600129785314,
+      "skippedCorrection": 0.40929103457961774,
+      "identityError": 0
+    },
+    {
+      "Y": 2000,
+      "primeCount": 274,
+      "occupied": 268,
+      "skipped": 6,
+      "mainLi": 281.8977430276648,
+      "piResidual": -0.4703890456648041,
+      "occupancyResidual": -0.8277486437300429,
+      "skippedCorrection": 0.3573595980652387,
+      "identityError": -1.1102230246251565e-16
+    },
+    {
+      "Y": 2677,
+      "primeCount": 359,
+      "occupied": 348,
+      "skipped": 11,
+      "mainLi": 369.2205832054123,
+      "piResidual": -0.5319033507354314,
+      "occupancyResidual": -1.104369396996997,
+      "skippedCorrection": 0.5724660462615657,
+      "identityError": 2.220446049250313e-16
+    },
+    {
+      "Y": 2719,
+      "primeCount": 368,
+      "occupied": 357,
+      "skipped": 11,
+      "mainLi": 374.5368683881167,
+      "piResidual": -0.33777107310113436,
+      "occupancyResidual": -0.9061597239827708,
+      "skippedCorrection": 0.5683886508816365,
+      "identityError": 0
+    }
+  ],
+  "absOccupancyTheta": 0.27379836517711564,
+  "absPrimeTheta": 0.33456254902148375,
+  "skipCorrectionTheta": 0.27539863190486463,
+  "endpoint": {
+    "Y": 2719,
+    "primeCount": 368,
+    "occupied": 357,
+    "skipped": 11,
+    "mainLi": 374.5368683881167,
+    "piResidual": -0.33777107310113436,
+    "occupancyResidual": -0.9061597239827708,
+    "skippedCorrection": 0.5683886508816365,
+    "identityError": 0
+  },
+  "realSkipOverLiTotal": 0.0293696053137314,
+  "realSkipPrimeTotal": 11,
+  "realMaxSkippedPrimeCount": 5,
+  "realFrontierChangingTransitions": 356,
+  "realNonzeroSkipTransitions": 3,
+  "fakeControls": [
+    {
+      "seed": 12345,
+      "xaCount": 4,
+      "caXaCount": 2,
+      "nonCaXaCount": 2,
+      "closureFailures": 0,
+      "skippedOverLiTotal": 0.7625307259365331,
+      "skippedPrimeTotal": 6,
+      "maxSkippedPrimeCount": 6,
+      "frontierChangingTransitions": 1,
+      "nonzeroSkipTransitions": 1
+    },
+    {
+      "seed": 271828,
+      "xaCount": 388,
+      "caXaCount": 112,
+      "nonCaXaCount": 276,
+      "closureFailures": 0,
+      "skippedOverLiTotal": 0.15527430348277485,
+      "skippedPrimeTotal": 19,
+      "maxSkippedPrimeCount": 6,
+      "frontierChangingTransitions": 98,
+      "nonzeroSkipTransitions": 5
+    },
+    {
+      "seed": 314159,
+      "xaCount": 1083,
+      "caXaCount": 182,
+      "nonCaXaCount": 901,
+      "closureFailures": 344,
+      "skippedOverLiTotal": 0.24226046434572157,
+      "skippedPrimeTotal": 49,
+      "maxSkippedPrimeCount": 24,
+      "frontierChangingTransitions": 164,
+      "nonzeroSkipTransitions": 5
+    },
+    {
+      "seed": 161803,
+      "xaCount": 18,
+      "caXaCount": 9,
+      "nonCaXaCount": 9,
+      "closureFailures": 0,
+      "skippedOverLiTotal": 0.5327149514315023,
+      "skippedPrimeTotal": 7,
+      "maxSkippedPrimeCount": 6,
+      "frontierChangingTransitions": 5,
+      "nonzeroSkipTransitions": 2
+    },
+    {
+      "seed": 424242,
+      "xaCount": 1117,
+      "caXaCount": 266,
+      "nonCaXaCount": 851,
+      "closureFailures": 1,
+      "skippedOverLiTotal": 0.37859167886919737,
+      "skippedPrimeTotal": 146,
+      "maxSkippedPrimeCount": 37,
+      "frontierChangingTransitions": 245,
+      "nonzeroSkipTransitions": 10
+    }
+  ],
+  "paths": {
+    "json": "logs/playground-artifacts/caxa-frontier-occupancy-audit.json",
+    "md": "logs/playground-artifacts/caxa-frontier-occupancy-audit.md",
+    "svg": "logs/playground-artifacts/caxa-frontier-occupancy-audit.svg"
+  }
+}

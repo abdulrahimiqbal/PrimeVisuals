@@ -49,10 +49,12 @@ Variables: `n` (int/prime domains), `t` (real), `i`, `pi`, `e`, knobs `a` `b`.
 Functions: `abs arg re im conj exp log sqrt sin cos floor frac min max dot
 mod gcd pow zeta` everywhere; on integer domains also `mu M isprime pi gap
 omega bigomega tau phi rad rowvis rowgap rowrun rowcount roughcount
-roughfirst` (Möbius, Mertens, primality 0/1, prime count, next-prime gap,
+roughfirst eulerq oddpart` (Möbius, Mertens, primality 0/1, prime count, next-prime gap,
 distinct/total prime factors, divisor count, totient, radical, row
 visibility against `lcm(1..floor(sqrt(N)))`, and rough interval witness
-counts). `rowvis(n,a)` instead tests visibility against
+counts; `eulerq(n,b)` is `((b^phi(n)-1)/n) mod n` when `gcd(b,n)=1`).
+`oddpart(n)` removes all factors of `2` from `n`.
+`rowvis(n,a)` instead tests visibility against
 `lcm(1..floor(a))`; `roughcount(n,a)` counts integers `m` with
 `n<m<n+a` and no divisor in `2..a-1`, while `roughfirst(n,a)` returns the
 first offset. Arithmetic is complex-valued; only the real part lands on the

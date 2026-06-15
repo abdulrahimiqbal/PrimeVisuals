@@ -8,6 +8,8 @@ import {
   primesUpTo,
   rowVisibleValue,
   roughIntervalWitnesses,
+  eulerQuotientValue,
+  oddPartValue,
   fareyBaseDivisorSurplusTable,
   boundedCfDenominatorTable,
   boundedCfMinHeightTable,
@@ -154,6 +156,13 @@ export const makeFns = (tab) => {
   bigomega: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.bigomega.length - 1, Math.round(z[0]))); return [tab.bigomega[k], 0]; },
   tau: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.tau.length - 1, Math.round(z[0]))); return [tab.tau[k], 0]; },
   phi: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.phi.length - 1, Math.round(z[0]))); return [tab.phi[k], 0]; },
+  eulerq: (z, b) => {
+    const n = Math.round(z[0]);
+    const base = b ? b[0] : 2;
+    const phi = tab && n >= 0 && n < tab.phi.length ? tab.phi[n] : 0;
+    return [eulerQuotientValue(n, base, phi), 0];
+  },
+  oddpart: (z) => [oddPartValue(z[0]), 0],
   fareynew: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.fareynew.length - 1, Math.round(z[0]))); return [tab.fareynew[k], 0]; },
   fareydef: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.fareydef.length - 1, Math.round(z[0]))); return [tab.fareydef[k], 0]; },
   fareyord: (z, b) => {
@@ -185,6 +194,19 @@ export const makeFns = (tab) => {
   G2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.G2.length - 1, Math.round(z[0]))); return [tab.G2[k], 0]; },
   l2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.l2.length - 1, Math.round(z[0]))); return [tab.l2[k], 0]; },
   L2: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.L2.length - 1, Math.round(z[0]))); return [tab.L2[k], 0]; },
+  pmuprev: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.pmuprev.length - 1, Math.round(z[0]))); return [tab.pmuprev[k], 0]; },
+  pmugapres: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.pmugapres.length - 1, Math.round(z[0]))); return [tab.pmugapres[k], 0]; },
+  psqprevmean: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.psqprevmean.length - 1, Math.round(z[0]))); return [tab.psqprevmean[k], 0]; },
+  sqtailgapcov: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.sqtailgapcov.length - 1, Math.round(z[0]))); return [tab.sqtailgapcov[k], 0]; },
+  oprevgapcov: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.oprevgapcov.length - 1, Math.round(z[0]))); return [tab.oprevgapcov[k], 0]; },
+  sqrtphaseres: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.sqrtphaseres.length - 1, Math.round(z[0]))); return [tab.sqrtphaseres[k], 0]; },
+  muchowla1: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.muchowla1.length - 1, Math.round(z[0]))); return [tab.muchowla1[k], 0]; },
+  gapac1mean: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.gapac1mean.length - 1, Math.round(z[0]))); return [tab.gapac1mean[k], 0]; },
+  gapz2mean: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.gapz2mean.length - 1, Math.round(z[0]))); return [tab.gapz2mean[k], 0]; },
+  roughmiss: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.roughmiss.length - 1, Math.round(z[0]))); return [tab.roughmiss[k], 0]; },
+  theta210res: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.theta210res.length - 1, Math.round(z[0]))); return [tab.theta210res[k], 0]; },
+  tm: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.tm.length - 1, Math.round(z[0]))); return [tab.tm[k], 0]; },
+  tmbal: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.tmbal.length - 1, Math.round(z[0]))); return [tab.tmbal[k], 0]; },
   rowvis: (z, y) => {
     if (y) return [rowVisibleValue(z[0], y[0]), 0];
     if (!tab) return [0, 0];

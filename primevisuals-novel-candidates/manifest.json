@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Farey Glass Orchid",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-01-farey-glass-orchid.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 3074,
+    "bright": 2709,
+    "text": 0
+  },
+  {
+    "name": "Totient Prime Loom",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-02-totient-prime-loom.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 90409,
+    "bright": 63872,
+    "text": 0
+  },
+  {
+    "name": "Prime Gap Nautilus",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-03-prime-gap-nautilus.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 46477,
+    "bright": 34907,
+    "text": 0
+  },
+  {
+    "name": "Row Visibility Lens",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-04-row-visibility-lens.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 1427,
+    "bright": 1185,
+    "text": 0
+  },
+  {
+    "name": "Rough Interval Nebula",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-05-rough-interval-nebula.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 45074,
+    "bright": 36419,
+    "text": 0
+  },
+  {
+    "name": "Mertens Dyadic Iris",
+    "file": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-novel-candidates/candidate-06-mertens-dyadic-iris.png",
+    "width": 1280,
+    "height": 720,
+    "lit": 68031,
+    "bright": 49153,
+    "text": 0
+  }
+]

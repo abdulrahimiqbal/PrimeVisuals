@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">count-conditioned admissible window shape residual</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">aggregate Z of pairwise-distance shape after conditioning on the number of hits per window</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="330.20" y2="330.20" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 324.96 L 415.33 322.50 L 748.67 320.08 L 1082.00 316.50" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 328.20 L 415.33 331.87 L 748.67 328.88 L 1082.00 327.81" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 235.89 L 415.33 200.56 L 748.67 156.08 L 1082.00 91.13" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 281.16 L 415.33 238.86 L 748.67 196.93 L 1082.00 108.05" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">Z scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest windows</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(35,230,215)"><title>15825810 k=12 z=-4.605</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(35,229,215)"><title>9330300 k=13 z=-3.961</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(36,222,212)"><title>10526460 k=14 z=-3.734</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(36,222,212)"><title>14948640 k=14 z=-3.720</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(37,221,211)"><title>14019390 k=16 z=-3.675</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(37,220,211)"><title>14883120 k=10 z=-3.655</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(37,219,211)"><title>11750970 k=15 z=-3.602</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(37,217,210)"><title>14395080 k=15 z=-3.544</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest windows</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:18 k=3 z=-1.435</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:141 k=3 z=-1.435</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:306 k=3 z=-1.435</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:354 k=3 z=-1.435</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:456 k=3 z=-1.435</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:771 k=3 z=-1.435</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:951 k=3 z=-1.435</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(48,156,186)"><title>24:981 k=3 z=-1.435</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest windows</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:263 k=3 z=-2.377</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:405 k=3 z=-2.377</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:440 k=3 z=-2.377</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:458 k=3 z=-2.377</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:506 k=3 z=-2.377</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:648 k=3 z=-2.377</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:707 k=3 z=-2.377</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(43,183,197)"><title>15:725 k=3 z=-2.377</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate 7.851116, mean 0.040226, rms 0.967992</text>
+<text x="650" y="484" fill="#94a3b8">Z shuffle aggregate -3.154926 .. 0.325069</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate 1.367015</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate 137.058126, shuffle -1.328486 .. -0.074457</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate 127.358162, shuffle 0.807838 .. 4.725059</text>
+<text x="650" y="594" fill="#94a3b8">blue = too clustered, red = too spread, clamp +/-4</text>
+</g>
+</svg>

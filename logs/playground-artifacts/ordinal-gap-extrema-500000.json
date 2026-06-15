@@ -1,0 +1,2862 @@
+{
+  "maxN": 500000,
+  "mainTerm": 0.6666666666666666,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "endpoints": [
+    31250,
+    62500,
+    125000,
+    250000,
+    500000
+  ],
+  "real": {
+    "name": "real",
+    "labels": 41537,
+    "endpointRows": [
+      {
+        "N": 31250,
+        "count": 3364,
+        "hits": 2286,
+        "expected": 2242.6666666666665,
+        "residual": 43.333333333333485,
+        "normalized": 0.7471264367816118,
+        "maxAbsResidual": 58.00000000000166,
+        "maxAbsNormalized": 1.0000000000000286,
+        "extremaRate": 0.6795481569560048
+      },
+      {
+        "N": 62500,
+        "count": 6271,
+        "hits": 4219,
+        "expected": 4180.666666666666,
+        "residual": 38.33333333333394,
+        "normalized": 0.4840700189017783,
+        "maxAbsResidual": 58.00000000000166,
+        "maxAbsNormalized": 0.7324189851209609,
+        "extremaRate": 0.672779461011003
+      },
+      {
+        "N": 125000,
+        "count": 11730,
+        "hits": 7884,
+        "expected": 7820,
+        "residual": 64,
+        "normalized": 0.5909231006035721,
+        "maxAbsResidual": 73.6666666666732,
+        "maxAbsNormalized": 0.6801771105906302,
+        "extremaRate": 0.6721227621483375
+      },
+      {
+        "N": 250000,
+        "count": 22040,
+        "hits": 14737,
+        "expected": 14693.333333333332,
+        "residual": 43.66666666666788,
+        "normalized": 0.2941333341011973,
+        "maxAbsResidual": 73.66666666667516,
+        "maxAbsNormalized": 0.49620967050664344,
+        "extremaRate": 0.6686479128856624
+      },
+      {
+        "N": 500000,
+        "count": 41534,
+        "hits": 27755,
+        "expected": 27689.333333333332,
+        "residual": 65.66666666666788,
+        "normalized": 0.32221302499131205,
+        "maxAbsResidual": 77.33333333336414,
+        "maxAbsNormalized": 0.3794589938985421,
+        "extremaRate": 0.6682477006789618
+      }
+    ],
+    "blockRows": [
+      {
+        "from": 1,
+        "to": 31250,
+        "count": 3364,
+        "hits": 2286,
+        "expected": 2242.666666666715,
+        "residual": 43.33333333328483,
+        "normalized": 0.7471264367807728,
+        "extremaRate": 0.6795481569560048
+      },
+      {
+        "from": 31250,
+        "to": 62500,
+        "count": 2907,
+        "hits": 1933,
+        "expected": 1938.0000000000805,
+        "residual": -5.00000000008049,
+        "normalized": -0.09273581401393574,
+        "extremaRate": 0.6649466804265566
+      },
+      {
+        "from": 62500,
+        "to": 125000,
+        "count": 5459,
+        "hits": 3665,
+        "expected": 3639.3333333330643,
+        "residual": 25.666666666935726,
+        "normalized": 0.3473864890014,
+        "extremaRate": 0.6713683824876351
+      },
+      {
+        "from": 125000,
+        "to": 250000,
+        "count": 10310,
+        "hits": 6853,
+        "expected": 6873.333333334223,
+        "residual": -20.333333334223425,
+        "normalized": -0.2002530999094411,
+        "extremaRate": 0.6646944713870029
+      },
+      {
+        "from": 250000,
+        "to": 500000,
+        "count": 19494,
+        "hits": 13018,
+        "expected": 12995.99999999712,
+        "residual": 22.00000000287946,
+        "normalized": 0.15756951563825478,
+        "extremaRate": 0.6677952190417564
+      }
+    ]
+  },
+  "shuffledRuns": [
+    {
+      "name": "shuffled-12345",
+      "labels": 41537,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3364,
+          "hits": 2230,
+          "expected": 2242.6666666666665,
+          "residual": -12.666666666666515,
+          "normalized": -0.21839080459769852,
+          "maxAbsResidual": 18.333333333332686,
+          "maxAbsNormalized": 0.31609195402297735,
+          "extremaRate": 0.6629013079667063
+        },
+        {
+          "N": 62500,
+          "count": 6271,
+          "hits": 4191,
+          "expected": 4180.666666666666,
+          "residual": 10.33333333333394,
+          "normalized": 0.13048843987787628,
+          "maxAbsResidual": 19.00000000000116,
+          "maxAbsNormalized": 0.23993035719480535,
+          "extremaRate": 0.6683144634029661
+        },
+        {
+          "N": 125000,
+          "count": 11730,
+          "hits": 7818,
+          "expected": 7820,
+          "residual": -2,
+          "normalized": -0.01846634689386163,
+          "maxAbsResidual": 33.999999999998956,
+          "maxAbsNormalized": 0.3139278971956381,
+          "extremaRate": 0.6664961636828645
+        },
+        {
+          "N": 250000,
+          "count": 22040,
+          "hits": 14702,
+          "expected": 14693.333333333332,
+          "residual": 8.66666666666788,
+          "normalized": 0.05837760829490067,
+          "maxAbsResidual": 40.666666666668185,
+          "maxAbsNormalized": 0.27392570046065967,
+          "extremaRate": 0.6670598911070781
+        },
+        {
+          "N": 500000,
+          "count": 41534,
+          "hits": 27684,
+          "expected": 27689.333333333332,
+          "residual": -5.333333333332121,
+          "normalized": -0.026169585786089977,
+          "maxAbsResidual": 40.666666666668185,
+          "maxAbsNormalized": 0.1995430916189889,
+          "extremaRate": 0.6665382578128762
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3364,
+          "hits": 2230,
+          "expected": 2242.666666666715,
+          "residual": -12.666666666715173,
+          "normalized": -0.21839080459853746,
+          "extremaRate": 0.6629013079667063
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2907,
+          "hits": 1961,
+          "expected": 1938.0000000000805,
+          "residual": 22.99999999991951,
+          "normalized": 0.42658474445574435,
+          "extremaRate": 0.674578603371173
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5459,
+          "hits": 3627,
+          "expected": 3639.3333333330643,
+          "residual": -12.333333333064274,
+          "normalized": -0.16692597522904754,
+          "extremaRate": 0.6644074006228247
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10310,
+          "hits": 6884,
+          "expected": 6873.333333334223,
+          "residual": 10.666666665776575,
+          "normalized": 0.10505080649650606,
+          "extremaRate": 0.6677012609117362
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19494,
+          "hits": 12982,
+          "expected": 12995.99999999712,
+          "residual": -13.99999999712054,
+          "normalized": -0.10027150991786926,
+          "extremaRate": 0.6659484969734277
+        }
+      ]
+    },
+    {
+      "name": "shuffled-271828",
+      "labels": 41537,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3364,
+          "hits": 2247,
+          "expected": 2242.6666666666665,
+          "residual": 4.333333333333485,
+          "normalized": 0.07471264367816353,
+          "maxAbsResidual": 18.666666666666664,
+          "maxAbsNormalized": 0.32183908045977005,
+          "extremaRate": 0.6679548156956004
+        },
+        {
+          "N": 62500,
+          "count": 6271,
+          "hits": 4183,
+          "expected": 4180.666666666666,
+          "residual": 2.3333333333339397,
+          "normalized": 0.02946513158533283,
+          "maxAbsResidual": 18.666666666666664,
+          "maxAbsNormalized": 0.23572105268260135,
+          "extremaRate": 0.6670387498006698
+        },
+        {
+          "N": 125000,
+          "count": 11730,
+          "hits": 7806,
+          "expected": 7820,
+          "residual": -14,
+          "normalized": -0.1292644282570314,
+          "maxAbsResidual": 31.33333333333363,
+          "maxAbsNormalized": 0.2893061013371683,
+          "extremaRate": 0.6654731457800511
+        },
+        {
+          "N": 250000,
+          "count": 22040,
+          "hits": 14685,
+          "expected": 14693.333333333332,
+          "residual": -8.33333333333212,
+          "normalized": -0.0561323156681577,
+          "maxAbsResidual": 31.33333333333363,
+          "maxAbsNormalized": 0.21105750691230565,
+          "extremaRate": 0.6662885662431942
+        },
+        {
+          "N": 500000,
+          "count": 41534,
+          "hits": 27664,
+          "expected": 27689.333333333332,
+          "residual": -25.33333333333212,
+          "normalized": -0.1243055324839497,
+          "maxAbsResidual": 53.666666666670395,
+          "maxAbsNormalized": 0.26333145697260857,
+          "extremaRate": 0.6660567246111619
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3364,
+          "hits": 2247,
+          "expected": 2242.666666666715,
+          "residual": 4.333333333284827,
+          "normalized": 0.07471264367732461,
+          "extremaRate": 0.6679548156956004
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2907,
+          "hits": 1936,
+          "expected": 1938.0000000000805,
+          "residual": -2.0000000000804903,
+          "normalized": -0.03709432560647002,
+          "extremaRate": 0.6659786721706227
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5459,
+          "hits": 3623,
+          "expected": 3639.3333333330643,
+          "residual": -16.333333333064274,
+          "normalized": -0.22106412935856834,
+          "extremaRate": 0.6636746656896868
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10310,
+          "hits": 6879,
+          "expected": 6873.333333334223,
+          "residual": 5.6666666657765745,
+          "normalized": 0.055808240947159735,
+          "extremaRate": 0.6672162948593598
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19494,
+          "hits": 12979,
+          "expected": 12995.99999999712,
+          "residual": -16.99999999712054,
+          "normalized": -0.12175826204754626,
+          "extremaRate": 0.6657946034677337
+        }
+      ]
+    },
+    {
+      "name": "shuffled-314159",
+      "labels": 41537,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3364,
+          "hits": 2243,
+          "expected": 2242.6666666666665,
+          "residual": 0.3333333333334849,
+          "normalized": 0.0057471264367842225,
+          "maxAbsResidual": 21.666666666666142,
+          "maxAbsNormalized": 0.37356321839079554,
+          "extremaRate": 0.6667657550535078
+        },
+        {
+          "N": 62500,
+          "count": 6271,
+          "hits": 4229,
+          "expected": 4180.666666666666,
+          "residual": 48.33333333333394,
+          "normalized": 0.6103491542674576,
+          "maxAbsResidual": 52.33333333333415,
+          "maxAbsNormalized": 0.6608608084137321,
+          "extremaRate": 0.6743741030138733
+        },
+        {
+          "N": 125000,
+          "count": 11730,
+          "hits": 7850,
+          "expected": 7820,
+          "residual": 30,
+          "normalized": 0.27699520340792444,
+          "maxAbsResidual": 75.66666666667021,
+          "maxAbsNormalized": 0.6986434574844643,
+          "extremaRate": 0.6692242114236999
+        },
+        {
+          "N": 250000,
+          "count": 22040,
+          "hits": 14715,
+          "expected": 14693.333333333332,
+          "residual": 21.66666666666788,
+          "normalized": 0.14594402073723942,
+          "maxAbsResidual": 75.66666666667021,
+          "maxAbsNormalized": 0.5096814262669699,
+          "extremaRate": 0.667649727767695
+        },
+        {
+          "N": 500000,
+          "count": 41534,
+          "hits": 27641,
+          "expected": 27689.333333333332,
+          "residual": -48.33333333333212,
+          "normalized": -0.23716187118648838,
+          "maxAbsResidual": 75.66666666667021,
+          "maxAbsNormalized": 0.37128099834025335,
+          "extremaRate": 0.6655029614291905
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3364,
+          "hits": 2243,
+          "expected": 2242.666666666715,
+          "residual": 0.33333333328482695,
+          "normalized": 0.005747126435945292,
+          "extremaRate": 0.6667657550535078
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2907,
+          "hits": 1986,
+          "expected": 1938.0000000000805,
+          "residual": 47.99999999991951,
+          "normalized": 0.8902638145179588,
+          "extremaRate": 0.6831785345717234
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5459,
+          "hits": 3621,
+          "expected": 3639.3333333330643,
+          "residual": -18.333333333064274,
+          "normalized": -0.24813320642332873,
+          "extremaRate": 0.6633082982231178
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10310,
+          "hits": 6865,
+          "expected": 6873.333333334223,
+          "residual": -8.333333334223425,
+          "normalized": -0.08207094259100994,
+          "extremaRate": 0.6658583899127061
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19494,
+          "hits": 12926,
+          "expected": 12995.99999999712,
+          "residual": -69.99999999712054,
+          "normalized": -0.50135754967184,
+          "extremaRate": 0.6630758182004719
+        }
+      ]
+    },
+    {
+      "name": "shuffled-161803",
+      "labels": 41537,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3364,
+          "hits": 2248,
+          "expected": 2242.6666666666665,
+          "residual": 5.333333333333485,
+          "normalized": 0.09195402298850835,
+          "maxAbsResidual": 27.333333333333464,
+          "maxAbsNormalized": 0.4712643678160942,
+          "extremaRate": 0.6682520808561236
+        },
+        {
+          "N": 62500,
+          "count": 6271,
+          "hits": 4221,
+          "expected": 4180.666666666666,
+          "residual": 40.33333333333394,
+          "normalized": 0.5093258459749141,
+          "maxAbsResidual": 44.66666666666516,
+          "maxAbsNormalized": 0.5640468046333486,
+          "extremaRate": 0.6730983894115771
+        },
+        {
+          "N": 125000,
+          "count": 11730,
+          "hits": 7855,
+          "expected": 7820,
+          "residual": 35,
+          "normalized": 0.3231610706425785,
+          "maxAbsResidual": 68.00000000000561,
+          "maxAbsNormalized": 0.6278557943913472,
+          "extremaRate": 0.6696504688832055
+        },
+        {
+          "N": 250000,
+          "count": 22040,
+          "hits": 14703,
+          "expected": 14693.333333333332,
+          "residual": 9.66666666666788,
+          "normalized": 0.06511348617508057,
+          "maxAbsResidual": 68.00000000000561,
+          "maxAbsNormalized": 0.4580396958522713,
+          "extremaRate": 0.6671052631578948
+        },
+        {
+          "N": 500000,
+          "count": 41534,
+          "hits": 27661,
+          "expected": 27689.333333333332,
+          "residual": -28.33333333333212,
+          "normalized": -0.13902592448862866,
+          "maxAbsResidual": 68.00000000000561,
+          "maxAbsNormalized": 0.3336622187727506,
+          "extremaRate": 0.6659844946309048
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3364,
+          "hits": 2248,
+          "expected": 2242.666666666715,
+          "residual": 5.333333333284827,
+          "normalized": 0.09195402298766943,
+          "extremaRate": 0.6682520808561236
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2907,
+          "hits": 1973,
+          "expected": 1938.0000000000805,
+          "residual": 34.99999999991951,
+          "normalized": 0.6491506980856073,
+          "extremaRate": 0.6787065703474372
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5459,
+          "hits": 3634,
+          "expected": 3639.3333333330643,
+          "residual": -5.3333333330642745,
+          "normalized": -0.07218420550238613,
+          "extremaRate": 0.6656896867558161
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10310,
+          "hits": 6848,
+          "expected": 6873.333333334223,
+          "residual": -25.333333334223425,
+          "normalized": -0.2494956654587874,
+          "extremaRate": 0.6642095053346265
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19494,
+          "hits": 12958,
+          "expected": 12995.99999999712,
+          "residual": -37.99999999712054,
+          "normalized": -0.2721655269552853,
+          "extremaRate": 0.6647173489278753
+        }
+      ]
+    },
+    {
+      "name": "shuffled-424242",
+      "labels": 41537,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3364,
+          "hits": 2262,
+          "expected": 2242.6666666666665,
+          "residual": 19.333333333333485,
+          "normalized": 0.3333333333333359,
+          "maxAbsResidual": 29.66666666666695,
+          "maxAbsNormalized": 0.5114942528735681,
+          "extremaRate": 0.6724137931034483
+        },
+        {
+          "N": 62500,
+          "count": 6271,
+          "hits": 4195,
+          "expected": 4180.666666666666,
+          "residual": 14.33333333333394,
+          "normalized": 0.181000094024148,
+          "maxAbsResidual": 32.999999999999275,
+          "maxAbsNormalized": 0.41672114670673255,
+          "extremaRate": 0.6689523202041142
+        },
+        {
+          "N": 125000,
+          "count": 11730,
+          "hits": 7723,
+          "expected": 7820,
+          "residual": -97,
+          "normalized": -0.895617824352289,
+          "maxAbsResidual": 97.66666666667949,
+          "maxAbsNormalized": 0.901773273317028,
+          "extremaRate": 0.6583972719522592
+        },
+        {
+          "N": 250000,
+          "count": 22040,
+          "hits": 14607,
+          "expected": 14693.333333333332,
+          "residual": -86.33333333333212,
+          "normalized": -0.5815307903221902,
+          "maxAbsResidual": 98.33333333337539,
+          "maxAbsNormalized": 0.6623613248846405,
+          "extremaRate": 0.6627495462794918
+        },
+        {
+          "N": 500000,
+          "count": 41534,
+          "hits": 27597,
+          "expected": 27689.333333333332,
+          "residual": -92.33333333333212,
+          "normalized": -0.45306095392177975,
+          "maxAbsResidual": 113.66666666675411,
+          "maxAbsNormalized": 0.5577392970665985,
+          "extremaRate": 0.6644435883854192
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3364,
+          "hits": 2262,
+          "expected": 2242.666666666715,
+          "residual": 19.333333333284827,
+          "normalized": 0.33333333333249704,
+          "extremaRate": 0.6724137931034483
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2907,
+          "hits": 1933,
+          "expected": 1938.0000000000805,
+          "residual": -5.00000000008049,
+          "normalized": -0.09273581401393574,
+          "extremaRate": 0.6649466804265566
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5459,
+          "hits": 3528,
+          "expected": 3639.3333333330643,
+          "residual": -111.33333333306427,
+          "normalized": -1.5068452899346871,
+          "extremaRate": 0.6462722110276607
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10310,
+          "hits": 6884,
+          "expected": 6873.333333334223,
+          "residual": 10.666666665776575,
+          "normalized": 0.10505080649650606,
+          "extremaRate": 0.6677012609117362
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19494,
+          "hits": 12990,
+          "expected": 12995.99999999712,
+          "residual": -5.99999999712054,
+          "normalized": -0.04297350423873059,
+          "extremaRate": 0.6663588796552785
+        }
+      ]
+    }
+  ],
+  "cramerRuns": [
+    {
+      "name": "cramer-12345",
+      "labels": 41576,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3329,
+          "hits": 2250,
+          "expected": 2219.333333333333,
+          "residual": 30.66666666666697,
+          "normalized": 0.5315078401046022,
+          "maxAbsResidual": 34.66666666666701,
+          "maxAbsNormalized": 0.6008349496834634,
+          "extremaRate": 0.6758786422349053
+        },
+        {
+          "N": 62500,
+          "count": 6246,
+          "hits": 4210,
+          "expected": 4164,
+          "residual": 46,
+          "normalized": 0.5820453738008612,
+          "maxAbsResidual": 70.66666666666829,
+          "maxAbsNormalized": 0.8941566612013436,
+          "extremaRate": 0.6740313800832533
+        },
+        {
+          "N": 125000,
+          "count": 11630,
+          "hits": 7802,
+          "expected": 7753.333333333333,
+          "residual": 48.66666666666697,
+          "normalized": 0.451275487147785,
+          "maxAbsResidual": 70.66666666666829,
+          "maxAbsNormalized": 0.6552767347625481,
+          "extremaRate": 0.6708512467755804
+        },
+        {
+          "N": 250000,
+          "count": 21905,
+          "hits": 14705,
+          "expected": 14603.333333333332,
+          "residual": 101.66666666666788,
+          "normalized": 0.6869212568461651,
+          "maxAbsResidual": 123.33333333331734,
+          "maxAbsNormalized": 0.8333143115837545,
+          "extremaRate": 0.6713079205660808
+        },
+        {
+          "N": 500000,
+          "count": 41573,
+          "hits": 27896,
+          "expected": 27715.333333333332,
+          "residual": 180.66666666666788,
+          "normalized": 0.8860788066597123,
+          "maxAbsResidual": 185.33333333329566,
+          "maxAbsNormalized": 0.9089664511119864,
+          "extremaRate": 0.6710124359560291
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3329,
+          "hits": 2250,
+          "expected": 2219.333333333387,
+          "residual": 30.666666666612855,
+          "normalized": 0.5315078401036643,
+          "extremaRate": 0.6758786422349053
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2917,
+          "hits": 1960,
+          "expected": 1944.666666666748,
+          "residual": 15.333333333252085,
+          "normalized": 0.2839019414241502,
+          "extremaRate": 0.6719232087761399
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5384,
+          "hits": 3592,
+          "expected": 3589.3333333330756,
+          "residual": 2.666666666924357,
+          "normalized": 0.03634261779022642,
+          "extremaRate": 0.6671619613670133
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10275,
+          "hits": 6903,
+          "expected": 6850.0000000008795,
+          "residual": 52.99999999912052,
+          "normalized": 0.5228594410783332,
+          "extremaRate": 0.6718248175182482
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19668,
+          "hits": 13191,
+          "expected": 13111.999999997015,
+          "residual": 79.00000000298496,
+          "normalized": 0.5633093910330388,
+          "extremaRate": 0.6706833435021354
+        }
+      ]
+    },
+    {
+      "name": "cramer-271828",
+      "labels": 41625,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3455,
+          "hits": 2345,
+          "expected": 2303.333333333333,
+          "residual": 41.66666666666697,
+          "normalized": 0.7088669565694984,
+          "maxAbsResidual": 51.33333333333446,
+          "maxAbsNormalized": 0.8733240904936348,
+          "extremaRate": 0.678726483357453
+        },
+        {
+          "N": 62500,
+          "count": 6343,
+          "hits": 4287,
+          "expected": 4228.666666666666,
+          "residual": 58.33333333333394,
+          "normalized": 0.7324355886348993,
+          "maxAbsResidual": 67.3333333333386,
+          "maxAbsNormalized": 0.8454399365957697,
+          "extremaRate": 0.67586315623522
+        },
+        {
+          "N": 125000,
+          "count": 11731,
+          "hits": 7899,
+          "expected": 7820.666666666666,
+          "residual": 78.33333333333394,
+          "normalized": 0.7232344255930453,
+          "maxAbsResidual": 84.66666666667136,
+          "maxAbsNormalized": 0.7817086983006054,
+          "extremaRate": 0.6733441309351291
+        },
+        {
+          "N": 250000,
+          "count": 22028,
+          "hits": 14768,
+          "expected": 14685.333333333332,
+          "residual": 82.66666666666788,
+          "normalized": 0.5569842211713261,
+          "maxAbsResidual": 87.99999999999739,
+          "maxAbsNormalized": 0.5929186870533207,
+          "extremaRate": 0.6704194661340113
+        },
+        {
+          "N": 500000,
+          "count": 41622,
+          "hits": 27853,
+          "expected": 27748,
+          "residual": 105,
+          "normalized": 0.5146687824226409,
+          "maxAbsResidual": 155.33333333333272,
+          "maxAbsNormalized": 0.7613830241553958,
+          "extremaRate": 0.6691893710057182
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3455,
+          "hits": 2345,
+          "expected": 2303.333333333368,
+          "residual": 41.666666666631954,
+          "normalized": 0.7088669565689028,
+          "extremaRate": 0.678726483357453
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2888,
+          "hits": 1942,
+          "expected": 1925.3333333334124,
+          "residual": 16.666666666587616,
+          "normalized": 0.3101345531505236,
+          "extremaRate": 0.6724376731301939
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5388,
+          "hits": 3612,
+          "expected": 3591.9999999997417,
+          "residual": 20.000000000258296,
+          "normalized": 0.2724684380659178,
+          "extremaRate": 0.6703786191536748
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10297,
+          "hits": 6869,
+          "expected": 6864.666666667553,
+          "residual": 4.333333332447182,
+          "normalized": 0.042703821501091754,
+          "extremaRate": 0.6670875012139458
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19594,
+          "hits": 13085,
+          "expected": 13062.666666663727,
+          "residual": 22.333333336273427,
+          "normalized": 0.15954823206178798,
+          "extremaRate": 0.6678064713687863
+        }
+      ]
+    },
+    {
+      "name": "cramer-314159",
+      "labels": 41167,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3427,
+          "hits": 2279,
+          "expected": 2284.6666666666665,
+          "residual": -5.666666666666515,
+          "normalized": -0.09679894286752928,
+          "maxAbsResidual": 18.00000000000035,
+          "maxAbsNormalized": 0.3074789949909896,
+          "extremaRate": 0.6650131310183834
+        },
+        {
+          "N": 62500,
+          "count": 6303,
+          "hits": 4207,
+          "expected": 4202,
+          "residual": 5,
+          "normalized": 0.06297908559918702,
+          "maxAbsResidual": 18.00000000000035,
+          "maxAbsNormalized": 0.22672470815707768,
+          "extremaRate": 0.6674599397112486
+        },
+        {
+          "N": 125000,
+          "count": 11767,
+          "hits": 7843,
+          "expected": 7844.666666666666,
+          "residual": -1.6666666666660603,
+          "normalized": -0.015364409471914217,
+          "maxAbsResidual": 19.666666666665353,
+          "maxAbsNormalized": 0.18130003176864162,
+          "extremaRate": 0.6665250276196142
+        },
+        {
+          "N": 250000,
+          "count": 21992,
+          "hits": 14661,
+          "expected": 14661.333333333332,
+          "residual": -0.3333333333321207,
+          "normalized": -0.0022477415923183204,
+          "maxAbsResidual": 60.33333333333023,
+          "maxAbsNormalized": 0.40684122821107516,
+          "extremaRate": 0.6666515096398691
+        },
+        {
+          "N": 500000,
+          "count": 41164,
+          "hits": 27447,
+          "expected": 27442.666666666664,
+          "residual": 4.333333333335759,
+          "normalized": 0.021358134289889003,
+          "maxAbsResidual": 63.33333333334105,
+          "maxAbsNormalized": 0.31215734731362565,
+          "extremaRate": 0.6667719366436692
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3427,
+          "hits": 2279,
+          "expected": 2284.6666666667056,
+          "residual": -5.666666666705623,
+          "normalized": -0.09679894286819733,
+          "extremaRate": 0.6650131310183834
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2876,
+          "hits": 1928,
+          "expected": 1917.3333333334115,
+          "residual": 10.666666666588526,
+          "normalized": 0.19889977083272997,
+          "extremaRate": 0.6703755215577191
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5464,
+          "hits": 3636,
+          "expected": 3642.666666666397,
+          "residual": -6.66666666639685,
+          "normalized": -0.09018896345450664,
+          "extremaRate": 0.6654465592972182
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10225,
+          "hits": 6818,
+          "expected": 6816.666666667531,
+          "residual": 1.3333333324690102,
+          "normalized": 0.013185818029696362,
+          "extremaRate": 0.6667970660146699
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19172,
+          "hits": 12786,
+          "expected": 12781.33333333065,
+          "residual": 4.666666669350889,
+          "normalized": 0.033703350047815314,
+          "extremaRate": 0.6669100771959107
+        }
+      ]
+    },
+    {
+      "name": "cramer-161803",
+      "labels": 41607,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3311,
+          "hits": 2207,
+          "expected": 2207.333333333333,
+          "residual": -0.33333333333303017,
+          "normalized": -0.005792941661452821,
+          "maxAbsResidual": 21.333333333333233,
+          "maxAbsNormalized": 0.370748266333316,
+          "extremaRate": 0.6665659921473875
+        },
+        {
+          "N": 62500,
+          "count": 6202,
+          "hits": 4139,
+          "expected": 4134.666666666666,
+          "residual": 4.33333333333394,
+          "normalized": 0.05502451416072216,
+          "maxAbsResidual": 21.333333333333233,
+          "maxAbsNormalized": 0.2708899158681315,
+          "extremaRate": 0.6673653660109642
+        },
+        {
+          "N": 125000,
+          "count": 11711,
+          "hits": 7779,
+          "expected": 7807.333333333333,
+          "residual": -28.33333333333303,
+          "normalized": -0.26181871107151067,
+          "maxAbsResidual": 55.33333333333075,
+          "maxAbsNormalized": 0.5113165416219906,
+          "extremaRate": 0.6642472888737084
+        },
+        {
+          "N": 250000,
+          "count": 22126,
+          "hits": 14718,
+          "expected": 14750.666666666666,
+          "residual": -32.66666666666606,
+          "normalized": -0.21961063461846447,
+          "maxAbsResidual": 55.33333333333075,
+          "maxAbsNormalized": 0.3719935239455518,
+          "extremaRate": 0.6651902738859261
+        },
+        {
+          "N": 500000,
+          "count": 41604,
+          "hits": 27700,
+          "expected": 27736,
+          "residual": -36,
+          "normalized": -0.17649603644196404,
+          "maxAbsResidual": 55.33333333333075,
+          "maxAbsNormalized": 0.27128094490152466,
+          "extremaRate": 0.665801365253341
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3311,
+          "hits": 2207,
+          "expected": 2207.33333333339,
+          "residual": -0.3333333333898736,
+          "normalized": -0.005792941662440693,
+          "extremaRate": 0.6665659921473875
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2891,
+          "hits": 1932,
+          "expected": 1927.3333333334126,
+          "residual": 4.666666666587389,
+          "normalized": 0.0867926073190748,
+          "extremaRate": 0.6682808716707022
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5509,
+          "hits": 3640,
+          "expected": 3672.66666666639,
+          "residual": -32.66666666639003,
+          "normalized": -0.4401172946954497,
+          "extremaRate": 0.6607369758576874
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10415,
+          "hits": 6939,
+          "expected": 6943.333333334255,
+          "residual": -4.333333334255258,
+          "normalized": -0.04246121925070156,
+          "extremaRate": 0.6662506000960153
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19478,
+          "hits": 12982,
+          "expected": 12985.333333330464,
+          "residual": -3.3333333304635744,
+          "normalized": -0.023883972593169364,
+          "extremaRate": 0.6664955334223226
+        }
+      ]
+    },
+    {
+      "name": "cramer-424242",
+      "labels": 41809,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3418,
+          "hits": 2244,
+          "expected": 2278.6666666666665,
+          "residual": -34.666666666666515,
+          "normalized": -0.5929608980508344,
+          "maxAbsResidual": 35.33333333333415,
+          "maxAbsNormalized": 0.6043639922441363,
+          "extremaRate": 0.6565242832065535
+        },
+        {
+          "N": 62500,
+          "count": 6324,
+          "hits": 4201,
+          "expected": 4216,
+          "residual": -15,
+          "normalized": -0.18862329556044632,
+          "maxAbsResidual": 49.66666666666522,
+          "maxAbsNormalized": 0.6245526897445708,
+          "extremaRate": 0.6642947501581278
+        },
+        {
+          "N": 125000,
+          "count": 11836,
+          "hits": 7874,
+          "expected": 7890.666666666666,
+          "residual": -16.66666666666606,
+          "normalized": -0.15319559275609612,
+          "maxAbsResidual": 49.66666666666522,
+          "maxAbsNormalized": 0.4565228664131698,
+          "extremaRate": 0.6652585332882731
+        },
+        {
+          "N": 250000,
+          "count": 22123,
+          "hits": 14733,
+          "expected": 14748.666666666666,
+          "residual": -15.66666666666606,
+          "normalized": -0.10533060860066841,
+          "maxAbsResidual": 49.66666666666522,
+          "maxAbsNormalized": 0.33392044003190946,
+          "extremaRate": 0.6659585047235909
+        },
+        {
+          "N": 500000,
+          "count": 41806,
+          "hits": 27805,
+          "expected": 27870.666666666664,
+          "residual": -65.66666666666424,
+          "normalized": -0.3211631163252232,
+          "maxAbsResidual": 81.66666666665995,
+          "maxAbsNormalized": 0.39941605837399047,
+          "extremaRate": 0.6650959192460413
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3418,
+          "hits": 2244,
+          "expected": 2278.666666666707,
+          "residual": -34.66666666670699,
+          "normalized": -0.5929608980515266,
+          "extremaRate": 0.6565242832065535
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2906,
+          "hits": 1957,
+          "expected": 1937.3333333334137,
+          "residual": 19.666666666586252,
+          "normalized": 0.3648236230059273,
+          "extremaRate": 0.6734342739160358
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5512,
+          "hits": 3673,
+          "expected": 3674.6666666663896,
+          "residual": -1.666666666389574,
+          "normalized": -0.022448852431282973,
+          "extremaRate": 0.6663642960812772
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10287,
+          "hits": 6859,
+          "expected": 6858.000000000883,
+          "residual": 0.9999999991168806,
+          "normalized": 0.009859516762583021,
+          "extremaRate": 0.66676387673763
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19683,
+          "hits": 13072,
+          "expected": 13121.999999997006,
+          "residual": -49.99999999700594,
+          "normalized": -0.35638905503398355,
+          "extremaRate": 0.6641264034954021
+        }
+      ]
+    }
+  ],
+  "w210Runs": [
+    {
+      "name": "w210-12345",
+      "labels": 41762,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3311,
+          "hits": 2197,
+          "expected": 2207.333333333333,
+          "residual": -10.33333333333303,
+          "normalized": -0.1795811915051955,
+          "maxAbsResidual": 17.66666666666641,
+          "maxAbsNormalized": 0.30702590805727425,
+          "extremaRate": 0.6635457565690124
+        },
+        {
+          "N": 62500,
+          "count": 6287,
+          "hits": 4211,
+          "expected": 4191.333333333333,
+          "residual": 19.66666666666697,
+          "normalized": 0.2480327490401932,
+          "maxAbsResidual": 26.000000000000686,
+          "maxAbsNormalized": 0.327907702120937,
+          "extremaRate": 0.6697948146969938
+        },
+        {
+          "N": 125000,
+          "count": 11783,
+          "hits": 7830,
+          "expected": 7855.333333333333,
+          "residual": -25.33333333333303,
+          "normalized": -0.2333804101343709,
+          "maxAbsResidual": 51.33333333333504,
+          "maxAbsNormalized": 0.4729024100091414,
+          "extremaRate": 0.6645166765679369
+        },
+        {
+          "N": 250000,
+          "count": 22096,
+          "hits": 14708,
+          "expected": 14730.666666666666,
+          "residual": -22.66666666666606,
+          "normalized": -0.15248630026215126,
+          "maxAbsResidual": 67.66666666666057,
+          "maxAbsNormalized": 0.45521645519433457,
+          "extremaRate": 0.6656408399710355
+        },
+        {
+          "N": 500000,
+          "count": 41759,
+          "hits": 27784,
+          "expected": 27839.333333333332,
+          "residual": -55.33333333333212,
+          "normalized": -0.2707770099686397,
+          "maxAbsResidual": 74.33333333331544,
+          "maxAbsNormalized": 0.36375465796983997,
+          "extremaRate": 0.6653416030077348
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3311,
+          "hits": 2197,
+          "expected": 2207.33333333339,
+          "residual": -10.333333333389874,
+          "normalized": -0.17958119150618337,
+          "extremaRate": 0.6635457565690124
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2976,
+          "hits": 2014,
+          "expected": 1984.0000000000857,
+          "residual": 29.99999999991428,
+          "normalized": 0.5499266813285035,
+          "extremaRate": 0.676747311827957
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5496,
+          "hits": 3619,
+          "expected": 3663.9999999997253,
+          "residual": -44.99999999972533,
+          "normalized": -0.6070006438669492,
+          "extremaRate": 0.6584788937409025
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10313,
+          "hits": 6878,
+          "expected": 6875.333333334224,
+          "residual": 2.666666665775665,
+          "normalized": 0.02625888149558758,
+          "extremaRate": 0.6669252399883642
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19663,
+          "hits": 13076,
+          "expected": 13108.666666663685,
+          "residual": -32.66666666368474,
+          "normalized": -0.23295923491523945,
+          "extremaRate": 0.6650053399786401
+        }
+      ]
+    },
+    {
+      "name": "w210-271828",
+      "labels": 41529,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3424,
+          "hits": 2290,
+          "expected": 2282.6666666666665,
+          "residual": 7.333333333333485,
+          "normalized": 0.12532408662119085,
+          "maxAbsResidual": 23.999999999999748,
+          "maxAbsNormalized": 0.41015155621479366,
+          "extremaRate": 0.6688084112149533
+        },
+        {
+          "N": 62500,
+          "count": 6406,
+          "hits": 4277,
+          "expected": 4270.666666666666,
+          "residual": 6.33333333333394,
+          "normalized": 0.07912958336383547,
+          "maxAbsResidual": 23.999999999999748,
+          "maxAbsNormalized": 0.2998594737997657,
+          "extremaRate": 0.6676553231345613
+        },
+        {
+          "N": 125000,
+          "count": 11839,
+          "hits": 7853,
+          "expected": 7892.666666666666,
+          "residual": -39.66666666666606,
+          "normalized": -0.36455931235448746,
+          "maxAbsResidual": 47.66666666666352,
+          "maxAbsNormalized": 0.4380838795520089,
+          "extremaRate": 0.6633161584593293
+        },
+        {
+          "N": 250000,
+          "count": 22031,
+          "hits": 14595,
+          "expected": 14687.333333333332,
+          "residual": -92.33333333333212,
+          "normalized": -0.6220730818638031,
+          "maxAbsResidual": 107.33333333335169,
+          "maxAbsNormalized": 0.7231318857768284,
+          "extremaRate": 0.662475602560029
+        },
+        {
+          "N": 500000,
+          "count": 41526,
+          "hits": 27629,
+          "expected": 27684,
+          "residual": -55,
+          "normalized": -0.2698998478184636,
+          "maxAbsResidual": 116.00000000005812,
+          "maxAbsNormalized": 0.5692433153992267,
+          "extremaRate": 0.6653421952511679
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3424,
+          "hits": 2290,
+          "expected": 2282.666666666706,
+          "residual": 7.333333333293922,
+          "normalized": 0.12532408662051472,
+          "extremaRate": 0.6688084112149533
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2982,
+          "hits": 1987,
+          "expected": 1988.0000000000862,
+          "residual": -1.0000000000861746,
+          "normalized": -0.01831243855486586,
+          "extremaRate": 0.6663313212608988
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5433,
+          "hits": 3576,
+          "expected": 3621.999999999735,
+          "residual": -45.99999999973488,
+          "normalized": -0.6240767154192175,
+          "extremaRate": 0.658199889563777
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10192,
+          "hits": 6742,
+          "expected": 6794.666666667521,
+          "residual": -52.666666667520985,
+          "normalized": -0.5216823274107611,
+          "extremaRate": 0.6614992150706437
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19495,
+          "hits": 13034,
+          "expected": 12996.666666663787,
+          "residual": 37.3333333362134,
+          "normalized": 0.2673838351719307,
+          "extremaRate": 0.6685816876122083
+        }
+      ]
+    },
+    {
+      "name": "w210-314159",
+      "labels": 41650,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3385,
+          "hits": 2254,
+          "expected": 2256.6666666666665,
+          "residual": -2.666666666666515,
+          "normalized": -0.045834172589780106,
+          "maxAbsResidual": 28.99999999999988,
+          "maxAbsNormalized": 0.49844662691388486,
+          "extremaRate": 0.6658788774002954
+        },
+        {
+          "N": 62500,
+          "count": 6341,
+          "hits": 4216,
+          "expected": 4227.333333333333,
+          "residual": -11.33333333333303,
+          "normalized": -0.14232421127162054,
+          "maxAbsResidual": 28.99999999999988,
+          "maxAbsNormalized": 0.36418254060680194,
+          "extremaRate": 0.6648793565683646
+        },
+        {
+          "N": 125000,
+          "count": 11865,
+          "hits": 7877,
+          "expected": 7910,
+          "residual": -33,
+          "normalized": -0.3029563561463208,
+          "maxAbsResidual": 53.66666666666392,
+          "maxAbsNormalized": 0.49268659938944603,
+          "extremaRate": 0.6638853771597134
+        },
+        {
+          "N": 250000,
+          "count": 22187,
+          "hits": 14690,
+          "expected": 14791.333333333332,
+          "residual": -101.33333333333212,
+          "normalized": -0.6803040198997676,
+          "maxAbsResidual": 104.00000000002602,
+          "maxAbsNormalized": 0.698206757265734,
+          "extremaRate": 0.6620994275927344
+        },
+        {
+          "N": 500000,
+          "count": 41647,
+          "hits": 27726,
+          "expected": 27764.666666666664,
+          "residual": -38.66666666666424,
+          "normalized": -0.18947192742775334,
+          "maxAbsResidual": 155.6666666667037,
+          "maxAbsNormalized": 0.7627878457654087,
+          "extremaRate": 0.6657382284438255
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3385,
+          "hits": 2254,
+          "expected": 2256.666666666712,
+          "residual": -2.66666666671199,
+          "normalized": -0.04583417259056172,
+          "extremaRate": 0.6658788774002954
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2956,
+          "hits": 1962,
+          "expected": 1970.6666666667509,
+          "residual": -8.66666666675087,
+          "normalized": -0.1594042434367192,
+          "extremaRate": 0.6637347767253045
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5524,
+          "hits": 3661,
+          "expected": 3682.6666666663878,
+          "residual": -21.666666666387755,
+          "normalized": -0.29151792696801493,
+          "extremaRate": 0.6627443881245474
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10322,
+          "hits": 6813,
+          "expected": 6881.333333334227,
+          "residual": -68.33333333422706,
+          "normalized": -0.6725904227856352,
+          "extremaRate": 0.6600465026157721
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19460,
+          "hits": 13036,
+          "expected": 12973.333333330474,
+          "residual": 62.66666666952551,
+          "normalized": 0.4492263025329568,
+          "extremaRate": 0.6698869475847893
+        }
+      ]
+    },
+    {
+      "name": "w210-161803",
+      "labels": 41515,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3300,
+          "hits": 2179,
+          "expected": 2200,
+          "residual": -21,
+          "normalized": -0.3655630775069655,
+          "maxAbsResidual": 31.66666666666663,
+          "maxAbsNormalized": 0.5512459105263758,
+          "extremaRate": 0.6603030303030303
+        },
+        {
+          "N": 62500,
+          "count": 6135,
+          "hits": 4053,
+          "expected": 4090,
+          "residual": -37,
+          "normalized": -0.47238319643122223,
+          "maxAbsResidual": 55.33333333333355,
+          "maxAbsNormalized": 0.7064469424106594,
+          "extremaRate": 0.6606356968215159
+        },
+        {
+          "N": 125000,
+          "count": 11559,
+          "hits": 7640,
+          "expected": 7706,
+          "residual": -66,
+          "normalized": -0.6138804512354437,
+          "maxAbsResidual": 88.66666666665934,
+          "maxAbsNormalized": 0.8247080809525986,
+          "extremaRate": 0.6609568301756207
+        },
+        {
+          "N": 250000,
+          "count": 21937,
+          "hits": 14630,
+          "expected": 14624.666666666666,
+          "residual": 5.33333333333394,
+          "normalized": 0.03600892119006006,
+          "maxAbsResidual": 88.66666666665934,
+          "maxAbsNormalized": 0.598648314784631,
+          "extremaRate": 0.6669097871176551
+        },
+        {
+          "N": 500000,
+          "count": 41512,
+          "hits": 27689,
+          "expected": 27674.666666666664,
+          "residual": 14.333333333335759,
+          "normalized": 0.0703493958314177,
+          "maxAbsResidual": 88.66666666665934,
+          "maxAbsNormalized": 0.43518463467796265,
+          "extremaRate": 0.6670119483522837
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3300,
+          "hits": 2179,
+          "expected": 2200.000000000058,
+          "residual": -21.000000000058208,
+          "normalized": -0.36556307750797873,
+          "extremaRate": 0.6603030303030303
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2835,
+          "hits": 1874,
+          "expected": 1890.000000000075,
+          "residual": -16.000000000075033,
+          "normalized": -0.30049929057154845,
+          "extremaRate": 0.6610229276895944
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5424,
+          "hits": 3587,
+          "expected": 3615.9999999997362,
+          "residual": -28.999999999736247,
+          "normalized": -0.39376594877675586,
+          "extremaRate": 0.6613200589970502
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10378,
+          "hits": 6990,
+          "expected": 6918.666666667577,
+          "residual": 71.33333333242263,
+          "normalized": 0.7002218933827273,
+          "extremaRate": 0.6735401811524379
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19575,
+          "hits": 13059,
+          "expected": 13049.999999997071,
+          "residual": 9.000000002928573,
+          "normalized": 0.06432675211119943,
+          "extremaRate": 0.6671264367816092
+        }
+      ]
+    },
+    {
+      "name": "w210-424242",
+      "labels": 41722,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 3433,
+          "hits": 2271,
+          "expected": 2288.6666666666665,
+          "residual": -17.666666666666515,
+          "normalized": -0.30152110301597307,
+          "maxAbsResidual": 21.333333333333165,
+          "maxAbsNormalized": 0.3641009545853262,
+          "extremaRate": 0.6615205359743664
+        },
+        {
+          "N": 62500,
+          "count": 6297,
+          "hits": 4188,
+          "expected": 4198,
+          "residual": -10,
+          "normalized": -0.12601816556767176,
+          "maxAbsResidual": 28.000000000000107,
+          "maxAbsNormalized": 0.35285086358948226,
+          "extremaRate": 0.6650786088613626
+        },
+        {
+          "N": 125000,
+          "count": 11758,
+          "hits": 7808,
+          "expected": 7838.666666666666,
+          "residual": -30.66666666666606,
+          "normalized": -0.282813309972682,
+          "maxAbsResidual": 44.999999999996135,
+          "maxAbsNormalized": 0.41499779180771246,
+          "extremaRate": 0.664058513352611
+        },
+        {
+          "N": 250000,
+          "count": 22191,
+          "hits": 14802,
+          "expected": 14794,
+          "residual": 8,
+          "normalized": 0.053703371339152754,
+          "maxAbsResidual": 64.33333333331922,
+          "maxAbsNormalized": 0.431864611185592,
+          "extremaRate": 0.6670271731783155
+        },
+        {
+          "N": 500000,
+          "count": 41719,
+          "hits": 27857,
+          "expected": 27812.666666666664,
+          "residual": 44.33333333333576,
+          "normalized": 0.2170518247548665,
+          "maxAbsResidual": 64.33333333331922,
+          "maxAbsNormalized": 0.314969941185547,
+          "extremaRate": 0.6677293319590594
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 3433,
+          "hits": 2271,
+          "expected": 2288.6666666667047,
+          "residual": -17.666666666704714,
+          "normalized": -0.30152110301662505,
+          "extremaRate": 0.6615205359743664
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2864,
+          "hits": 1917,
+          "expected": 1909.3333333334106,
+          "residual": 7.666666666589435,
+          "normalized": 0.14325839277601124,
+          "extremaRate": 0.6693435754189944
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5461,
+          "hits": 3620,
+          "expected": 3640.6666666663973,
+          "residual": -20.666666666397305,
+          "normalized": -0.27966257138968315,
+          "extremaRate": 0.6628822559970702
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10433,
+          "hits": 6994,
+          "expected": 6955.333333334261,
+          "residual": 38.666666665739285,
+          "normalized": 0.3785577405230793,
+          "extremaRate": 0.6703728553627911
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 19528,
+          "hits": 13055,
+          "expected": 13018.666666663767,
+          "residual": 36.33333333623341,
+          "normalized": 0.26000180325472994,
+          "extremaRate": 0.6685272429332241
+        }
+      ]
+    }
+  ],
+  "compositeRuns": [
+    {
+      "name": "composite-12345",
+      "labels": 41538,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 2165,
+          "hits": 1474,
+          "expected": 1443.3333333333333,
+          "residual": 30.666666666666742,
+          "normalized": 0.6590792248930759,
+          "maxAbsResidual": 38.66666666666592,
+          "maxAbsNormalized": 0.8310129357347298,
+          "extremaRate": 0.6808314087759815
+        },
+        {
+          "N": 62500,
+          "count": 4610,
+          "hits": 3104,
+          "expected": 3073.333333333333,
+          "residual": 30.66666666666697,
+          "normalized": 0.4516646588872501,
+          "maxAbsResidual": 42.33333333333538,
+          "maxAbsNormalized": 0.6234936052030757,
+          "extremaRate": 0.6733188720173536
+        },
+        {
+          "N": 125000,
+          "count": 9672,
+          "hits": 6478,
+          "expected": 6448,
+          "residual": 30,
+          "normalized": 0.3050444380432815,
+          "maxAbsResidual": 56.00000000000954,
+          "maxAbsNormalized": 0.5694162843475559,
+          "extremaRate": 0.6697684036393714
+        },
+        {
+          "N": 250000,
+          "count": 20015,
+          "hits": 13444,
+          "expected": 13343.333333333332,
+          "residual": 100.66666666666788,
+          "normalized": 0.7115540436404921,
+          "maxAbsResidual": 104.33333333332773,
+          "maxAbsNormalized": 0.7374715750313224,
+          "extremaRate": 0.6716962278291282
+        },
+        {
+          "N": 500000,
+          "count": 41535,
+          "hits": 27779,
+          "expected": 27690,
+          "residual": 89,
+          "normalized": 0.43669970570193206,
+          "maxAbsResidual": 175.0000000000254,
+          "maxAbsNormalized": 0.8586791966050473,
+          "extremaRate": 0.6688094378235223
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 2165,
+          "hits": 1474,
+          "expected": 1443.3333333333576,
+          "residual": 30.666666666642413,
+          "normalized": 0.6590792248925531,
+          "extremaRate": 0.6808314087759815
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2445,
+          "hits": 1630,
+          "expected": 1630.0000000000455,
+          "residual": -4.547473508864641e-11,
+          "normalized": -9.196673025587753e-13,
+          "extremaRate": 0.6666666666666666
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5062,
+          "hits": 3374,
+          "expected": 3374.666666666458,
+          "residual": -0.666666666457786,
+          "normalized": -0.009370174318831944,
+          "extremaRate": 0.6665349664164362
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10343,
+          "hits": 6966,
+          "expected": 6895.333333334233,
+          "residual": 70.66666666576657,
+          "normalized": 0.6948504512022515,
+          "extremaRate": 0.6734989848206516
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 21520,
+          "hits": 14335,
+          "expected": 14346.666666662559,
+          "residual": -11.666666662558782,
+          "normalized": -0.0795290245979242,
+          "extremaRate": 0.6661245353159851
+        }
+      ]
+    },
+    {
+      "name": "composite-271828",
+      "labels": 41538,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 2166,
+          "hits": 1474,
+          "expected": 1444,
+          "residual": 30,
+          "normalized": 0.64460256389031,
+          "maxAbsResidual": 32.66666666666684,
+          "maxAbsNormalized": 0.7019005695694525,
+          "extremaRate": 0.6805170821791321
+        },
+        {
+          "N": 62500,
+          "count": 4604,
+          "hits": 3113,
+          "expected": 3069.333333333333,
+          "residual": 43.66666666666697,
+          "normalized": 0.6435501316052886,
+          "maxAbsResidual": 48.66666666666975,
+          "maxAbsNormalized": 0.7172390779723469,
+          "extremaRate": 0.6761511728931364
+        },
+        {
+          "N": 125000,
+          "count": 9647,
+          "hits": 6529,
+          "expected": 6431.333333333333,
+          "residual": 97.66666666666697,
+          "normalized": 0.9943750672732194,
+          "maxAbsResidual": 103.66666666665611,
+          "maxAbsNormalized": 1.0554629553649788,
+          "extremaRate": 0.6767907121384886
+        },
+        {
+          "N": 250000,
+          "count": 19970,
+          "hits": 13424,
+          "expected": 13313.333333333332,
+          "residual": 110.66666666666788,
+          "normalized": 0.7831190642288739,
+          "maxAbsResidual": 114.6666666666142,
+          "maxAbsNormalized": 0.8114245725741157,
+          "extremaRate": 0.672208312468703
+        },
+        {
+          "N": 500000,
+          "count": 41535,
+          "hits": 27842,
+          "expected": 27690,
+          "residual": 152,
+          "normalized": 0.7458242164797042,
+          "maxAbsResidual": 204.33333333337174,
+          "maxAbsNormalized": 1.0026101857503171,
+          "extremaRate": 0.6703262308896112
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 2166,
+          "hits": 1474,
+          "expected": 1444.0000000000243,
+          "residual": 29.99999999997567,
+          "normalized": 0.6446025638897873,
+          "extremaRate": 0.6805170821791321
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2438,
+          "hits": 1639,
+          "expected": 1625.3333333333783,
+          "residual": 13.666666666621722,
+          "normalized": 0.27678704004326193,
+          "extremaRate": 0.6722723543888434
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5043,
+          "hits": 3416,
+          "expected": 3361.999999999794,
+          "residual": 54.000000000206,
+          "normalized": 0.760412549667286,
+          "extremaRate": 0.677374578623835
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10323,
+          "hits": 6895,
+          "expected": 6882.000000000894,
+          "residual": 12.999999999105967,
+          "normalized": 0.12795002898532404,
+          "extremaRate": 0.6679259905066357
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 21565,
+          "hits": 14418,
+          "expected": 14376.666666662531,
+          "residual": 41.3333333374685,
+          "normalized": 0.28146584314483986,
+          "extremaRate": 0.6685833526547647
+        }
+      ]
+    },
+    {
+      "name": "composite-314159",
+      "labels": 41538,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 2179,
+          "hits": 1475,
+          "expected": 1452.6666666666665,
+          "residual": 22.333333333333485,
+          "normalized": 0.4784371920684842,
+          "maxAbsResidual": 22.333333333333513,
+          "maxAbsNormalized": 0.4784371920684848,
+          "extremaRate": 0.67691601652134
+        },
+        {
+          "N": 62500,
+          "count": 4517,
+          "hits": 3047,
+          "expected": 3011.333333333333,
+          "residual": 35.66666666666697,
+          "normalized": 0.5306858130474493,
+          "maxAbsResidual": 48.333333333333336,
+          "maxAbsNormalized": 0.7191536718867243,
+          "extremaRate": 0.6745627628957273
+        },
+        {
+          "N": 125000,
+          "count": 9590,
+          "hits": 6472,
+          "expected": 6393.333333333333,
+          "residual": 78.66666666666697,
+          "normalized": 0.8033068025508384,
+          "maxAbsResidual": 83.3333333333348,
+          "maxAbsNormalized": 0.8509605959225102,
+          "extremaRate": 0.6748696558915537
+        },
+        {
+          "N": 250000,
+          "count": 20007,
+          "hits": 13434,
+          "expected": 13338,
+          "residual": 96,
+          "normalized": 0.6787037471741629,
+          "maxAbsResidual": 95.99999999995413,
+          "maxAbsNormalized": 0.6787037471738386,
+          "extremaRate": 0.6714649872544609
+        },
+        {
+          "N": 500000,
+          "count": 41535,
+          "hits": 27778,
+          "expected": 27690,
+          "residual": 88,
+          "normalized": 0.43179296743561824,
+          "maxAbsResidual": 114.666666666555,
+          "maxAbsNormalized": 0.5626393212034395,
+          "extremaRate": 0.6687853617431082
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 2179,
+          "hits": 1475,
+          "expected": 1452.666666666692,
+          "residual": 22.33333333330802,
+          "normalized": 0.47843719206793867,
+          "extremaRate": 0.67691601652134
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2338,
+          "hits": 1572,
+          "expected": 1558.666666666704,
+          "residual": 13.333333333295968,
+          "normalized": 0.2757506108629075,
+          "extremaRate": 0.6723695466210436
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5073,
+          "hits": 3425,
+          "expected": 3381.9999999997895,
+          "residual": 43.00000000021055,
+          "normalized": 0.6037206409131287,
+          "extremaRate": 0.6751429134634339
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10417,
+          "hits": 6962,
+          "expected": 6944.666666667589,
+          "residual": 17.333333332410803,
+          "normalized": 0.16982857158852038,
+          "extremaRate": 0.6683306134203706
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 21528,
+          "hits": 14344,
+          "expected": 14351.999999995887,
+          "residual": -7.999999995887265,
+          "normalized": -0.05452405464593834,
+          "extremaRate": 0.6662950575994054
+        }
+      ]
+    },
+    {
+      "name": "composite-161803",
+      "labels": 41538,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 2188,
+          "hits": 1469,
+          "expected": 1458.6666666666665,
+          "residual": 10.333333333333485,
+          "normalized": 0.22091071448465985,
+          "maxAbsResidual": 19.33333333333359,
+          "maxAbsNormalized": 0.4133168206487179,
+          "extremaRate": 0.6713893967093236
+        },
+        {
+          "N": 62500,
+          "count": 4622,
+          "hits": 3068,
+          "expected": 3081.333333333333,
+          "residual": -13.33333333333303,
+          "normalized": -0.19612084963834583,
+          "maxAbsResidual": 23.33333333333374,
+          "maxAbsNormalized": 0.343211486867119,
+          "extremaRate": 0.6637819125919515
+        },
+        {
+          "N": 125000,
+          "count": 9742,
+          "hits": 6509,
+          "expected": 6494.666666666666,
+          "residual": 14.33333333333394,
+          "normalized": 0.14521889849193112,
+          "maxAbsResidual": 29.000000000001123,
+          "maxAbsNormalized": 0.29381498066972006,
+          "extremaRate": 0.6681379593512625
+        },
+        {
+          "N": 250000,
+          "count": 20170,
+          "hits": 13483,
+          "expected": 13446.666666666666,
+          "residual": 36.33333333333394,
+          "normalized": 0.2558304849714195,
+          "maxAbsResidual": 44.99999999999904,
+          "maxAbsNormalized": 0.31685427037743413,
+          "extremaRate": 0.6684680218145761
+        },
+        {
+          "N": 500000,
+          "count": 41535,
+          "hits": 27746,
+          "expected": 27690,
+          "residual": 56,
+          "normalized": 0.27477734291357525,
+          "maxAbsResidual": 84.66666666666731,
+          "maxAbsNormalized": 0.41543717321457524,
+          "extremaRate": 0.6680149271698568
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 2188,
+          "hits": 1469,
+          "expected": 1458.6666666666927,
+          "residual": 10.333333333307337,
+          "normalized": 0.22091071448410082,
+          "extremaRate": 0.6713893967093236
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2434,
+          "hits": 1599,
+          "expected": 1622.6666666667113,
+          "residual": -23.666666666711308,
+          "normalized": -0.47970782976350396,
+          "extremaRate": 0.6569433032046015
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5120,
+          "hits": 3441,
+          "expected": 3413.3333333331157,
+          "residual": 27.66666666688434,
+          "normalized": 0.38665342111238066,
+          "extremaRate": 0.6720703125
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10428,
+          "hits": 6974,
+          "expected": 6952.000000000926,
+          "residual": 21.999999999074134,
+          "normalized": 0.21543793098198386,
+          "extremaRate": 0.6687763713080169
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 21365,
+          "hits": 14263,
+          "expected": 14243.33333332932,
+          "residual": 19.66666667068057,
+          "normalized": 0.13454863879304213,
+          "extremaRate": 0.6675871752866839
+        }
+      ]
+    },
+    {
+      "name": "composite-424242",
+      "labels": 41538,
+      "endpointRows": [
+        {
+          "N": 31250,
+          "count": 2173,
+          "hits": 1438,
+          "expected": 1448.6666666666665,
+          "residual": -10.666666666666515,
+          "normalized": -0.22882257074140694,
+          "maxAbsResidual": 22.33333333333318,
+          "maxAbsNormalized": 0.4790972574898243,
+          "extremaRate": 0.6617579383341003
+        },
+        {
+          "N": 62500,
+          "count": 4617,
+          "hits": 3060,
+          "expected": 3078,
+          "residual": -18,
+          "normalized": -0.26490647141300877,
+          "maxAbsResidual": 34.99999999999973,
+          "maxAbsNormalized": 0.5150959166364019,
+          "extremaRate": 0.6627680311890838
+        },
+        {
+          "N": 125000,
+          "count": 9643,
+          "hits": 6376,
+          "expected": 6428.666666666666,
+          "residual": -52.66666666666606,
+          "normalized": -0.5363271085568834,
+          "maxAbsResidual": 65.99999999999271,
+          "maxAbsNormalized": 0.6721061233813443,
+          "extremaRate": 0.6612050191849009
+        },
+        {
+          "N": 250000,
+          "count": 20065,
+          "hits": 13387,
+          "expected": 13376.666666666666,
+          "residual": 10.33333333333394,
+          "normalized": 0.0729492543439217,
+          "maxAbsResidual": 75.66666666664952,
+          "maxAbsNormalized": 0.5341767979375969,
+          "extremaRate": 0.6671816596062796
+        },
+        {
+          "N": 500000,
+          "count": 41535,
+          "hits": 27708,
+          "expected": 27690,
+          "residual": 18,
+          "normalized": 0.08832128879364919,
+          "maxAbsResidual": 75.66666666664952,
+          "maxAbsNormalized": 0.3712765288176634,
+          "extremaRate": 0.6671000361141206
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 31250,
+          "count": 2173,
+          "hits": 1438,
+          "expected": 1448.6666666666915,
+          "residual": -10.666666666691526,
+          "normalized": -0.22882257074194348,
+          "extremaRate": 0.6617579383341003
+        },
+        {
+          "from": 31250,
+          "to": 62500,
+          "count": 2444,
+          "hits": 1622,
+          "expected": 1629.3333333333787,
+          "residual": -7.333333333378732,
+          "normalized": -0.1483374555790864,
+          "extremaRate": 0.6636661211129297
+        },
+        {
+          "from": 62500,
+          "to": 125000,
+          "count": 5026,
+          "hits": 3316,
+          "expected": 3350.6666666664632,
+          "residual": -34.66666666646324,
+          "normalized": -0.4889909735946037,
+          "extremaRate": 0.6597692001591723
+        },
+        {
+          "from": 125000,
+          "to": 250000,
+          "count": 10422,
+          "hits": 7011,
+          "expected": 6948.000000000924,
+          "residual": 62.99999999907595,
+          "normalized": 0.6171134543443936,
+          "extremaRate": 0.6727115716753023
+        },
+        {
+          "from": 250000,
+          "to": 500000,
+          "count": 21470,
+          "hits": 14321,
+          "expected": 14313.333333329256,
+          "residual": 7.666666670744235,
+          "normalized": 0.0523227497074576,
+          "extremaRate": 0.6670237540754541
+        }
+      ]
+    }
+  ],
+  "controlSummaries": {
+    "shuffled": [
+      {
+        "normalized": [
+          -0.21839080459769852,
+          0.3333333333333359
+        ],
+        "maxAbsNormalized": [
+          0.31609195402297735,
+          0.5114942528735681
+        ],
+        "extremaRate": [
+          0.6629013079667063,
+          0.6724137931034483
+        ],
+        "theta": [
+          0.3236082826220941,
+          0.5451003520287985
+        ]
+      },
+      {
+        "normalized": [
+          0.02946513158533283,
+          0.6103491542674576
+        ],
+        "maxAbsNormalized": [
+          0.23572105268260135,
+          0.6608608084137321
+        ],
+        "extremaRate": [
+          0.6670387498006698,
+          0.6743741030138733
+        ],
+        "theta": [
+          0.3236082826220941,
+          0.5451003520287985
+        ]
+      },
+      {
+        "normalized": [
+          -0.895617824352289,
+          0.3231610706425785
+        ],
+        "maxAbsNormalized": [
+          0.2893061013371683,
+          0.901773273317028
+        ],
+        "extremaRate": [
+          0.6583972719522592,
+          0.6696504688832055
+        ],
+        "theta": [
+          0.3236082826220941,
+          0.5451003520287985
+        ]
+      },
+      {
+        "normalized": [
+          -0.5815307903221902,
+          0.14594402073723942
+        ],
+        "maxAbsNormalized": [
+          0.21105750691230565,
+          0.6623613248846405
+        ],
+        "extremaRate": [
+          0.6627495462794918,
+          0.667649727767695
+        ],
+        "theta": [
+          0.3236082826220941,
+          0.5451003520287985
+        ]
+      },
+      {
+        "normalized": [
+          -0.45306095392177975,
+          -0.026169585786089977
+        ],
+        "maxAbsNormalized": [
+          0.1995430916189889,
+          0.5577392970665985
+        ],
+        "extremaRate": [
+          0.6644435883854192,
+          0.6665382578128762
+        ],
+        "theta": [
+          0.3236082826220941,
+          0.5451003520287985
+        ]
+      }
+    ],
+    "cramer": [
+      {
+        "normalized": [
+          -0.5929608980508344,
+          0.7088669565694984
+        ],
+        "maxAbsNormalized": [
+          0.3074789949909896,
+          0.8733240904936348
+        ],
+        "extremaRate": [
+          0.6565242832065535,
+          0.678726483357453
+        ],
+        "theta": [
+          0.2417434968878439,
+          0.5640463715117111
+        ]
+      },
+      {
+        "normalized": [
+          -0.18862329556044632,
+          0.7324355886348993
+        ],
+        "maxAbsNormalized": [
+          0.22672470815707768,
+          0.8941566612013436
+        ],
+        "extremaRate": [
+          0.6642947501581278,
+          0.67586315623522
+        ],
+        "theta": [
+          0.2417434968878439,
+          0.5640463715117111
+        ]
+      },
+      {
+        "normalized": [
+          -0.26181871107151067,
+          0.7232344255930453
+        ],
+        "maxAbsNormalized": [
+          0.18130003176864162,
+          0.7817086983006054
+        ],
+        "extremaRate": [
+          0.6642472888737084,
+          0.6733441309351291
+        ],
+        "theta": [
+          0.2417434968878439,
+          0.5640463715117111
+        ]
+      },
+      {
+        "normalized": [
+          -0.21961063461846447,
+          0.6869212568461651
+        ],
+        "maxAbsNormalized": [
+          0.33392044003190946,
+          0.8333143115837545
+        ],
+        "extremaRate": [
+          0.6651902738859261,
+          0.6713079205660808
+        ],
+        "theta": [
+          0.2417434968878439,
+          0.5640463715117111
+        ]
+      },
+      {
+        "normalized": [
+          -0.3211631163252232,
+          0.8860788066597123
+        ],
+        "maxAbsNormalized": [
+          0.27128094490152466,
+          0.9089664511119864
+        ],
+        "extremaRate": [
+          0.6650959192460413,
+          0.6710124359560291
+        ],
+        "theta": [
+          0.2417434968878439,
+          0.5640463715117111
+        ]
+      }
+    ],
+    "w210": [
+      {
+        "normalized": [
+          -0.3655630775069655,
+          0.12532408662119085
+        ],
+        "maxAbsNormalized": [
+          0.30702590805727425,
+          0.5512459105263758
+        ],
+        "extremaRate": [
+          0.6603030303030303,
+          0.6688084112149533
+        ],
+        "theta": [
+          0.3651096658494389,
+          0.6707028865486877
+        ]
+      },
+      {
+        "normalized": [
+          -0.47238319643122223,
+          0.2480327490401932
+        ],
+        "maxAbsNormalized": [
+          0.2998594737997657,
+          0.7064469424106594
+        ],
+        "extremaRate": [
+          0.6606356968215159,
+          0.6697948146969938
+        ],
+        "theta": [
+          0.3651096658494389,
+          0.6707028865486877
+        ]
+      },
+      {
+        "normalized": [
+          -0.6138804512354437,
+          -0.2333804101343709
+        ],
+        "maxAbsNormalized": [
+          0.41499779180771246,
+          0.8247080809525986
+        ],
+        "extremaRate": [
+          0.6609568301756207,
+          0.6645166765679369
+        ],
+        "theta": [
+          0.3651096658494389,
+          0.6707028865486877
+        ]
+      },
+      {
+        "normalized": [
+          -0.6803040198997676,
+          0.053703371339152754
+        ],
+        "maxAbsNormalized": [
+          0.431864611185592,
+          0.7231318857768284
+        ],
+        "extremaRate": [
+          0.6620994275927344,
+          0.6670271731783155
+        ],
+        "theta": [
+          0.3651096658494389,
+          0.6707028865486877
+        ]
+      },
+      {
+        "normalized": [
+          -0.2707770099686397,
+          0.2170518247548665
+        ],
+        "maxAbsNormalized": [
+          0.314969941185547,
+          0.7627878457654087
+        ],
+        "extremaRate": [
+          0.6653416030077348,
+          0.6677293319590594
+        ],
+        "theta": [
+          0.3651096658494389,
+          0.6707028865486877
+        ]
+      }
+    ],
+    "composite": [
+      {
+        "normalized": [
+          -0.22882257074140694,
+          0.6590792248930759
+        ],
+        "maxAbsNormalized": [
+          0.4133168206487179,
+          0.8310129357347298
+        ],
+        "extremaRate": [
+          0.6617579383341003,
+          0.6808314087759815
+        ],
+        "theta": [
+          0.46332215632901286,
+          0.6526507034973005
+        ]
+      },
+      {
+        "normalized": [
+          -0.26490647141300877,
+          0.6435501316052886
+        ],
+        "maxAbsNormalized": [
+          0.343211486867119,
+          0.7191536718867243
+        ],
+        "extremaRate": [
+          0.6627680311890838,
+          0.6761511728931364
+        ],
+        "theta": [
+          0.46332215632901286,
+          0.6526507034973005
+        ]
+      },
+      {
+        "normalized": [
+          -0.5363271085568834,
+          0.9943750672732194
+        ],
+        "maxAbsNormalized": [
+          0.29381498066972006,
+          1.0554629553649788
+        ],
+        "extremaRate": [
+          0.6612050191849009,
+          0.6767907121384886
+        ],
+        "theta": [
+          0.46332215632901286,
+          0.6526507034973005
+        ]
+      },
+      {
+        "normalized": [
+          0.0729492543439217,
+          0.7831190642288739
+        ],
+        "maxAbsNormalized": [
+          0.31685427037743413,
+          0.8114245725741157
+        ],
+        "extremaRate": [
+          0.6671816596062796,
+          0.672208312468703
+        ],
+        "theta": [
+          0.46332215632901286,
+          0.6526507034973005
+        ]
+      },
+      {
+        "normalized": [
+          0.08832128879364919,
+          0.7458242164797042
+        ],
+        "maxAbsNormalized": [
+          0.3712765288176634,
+          1.0026101857503171
+        ],
+        "extremaRate": [
+          0.6671000361141206,
+          0.6703262308896112
+        ],
+        "theta": [
+          0.46332215632901286,
+          0.6526507034973005
+        ]
+      }
+    ]
+  },
+  "blockSummaries": {
+    "shuffled": [
+      [
+        -0.21839080459853746,
+        0.33333333333249704
+      ],
+      [
+        -0.09273581401393574,
+        0.8902638145179588
+      ],
+      [
+        -1.5068452899346871,
+        -0.07218420550238613
+      ],
+      [
+        -0.2494956654587874,
+        0.10505080649650606
+      ],
+      [
+        -0.50135754967184,
+        -0.04297350423873059
+      ]
+    ],
+    "cramer": [
+      [
+        -0.5929608980515266,
+        0.7088669565689028
+      ],
+      [
+        0.0867926073190748,
+        0.3648236230059273
+      ],
+      [
+        -0.4401172946954497,
+        0.2724684380659178
+      ],
+      [
+        -0.04246121925070156,
+        0.5228594410783332
+      ],
+      [
+        -0.35638905503398355,
+        0.5633093910330388
+      ]
+    ],
+    "w210": [
+      [
+        -0.36556307750797873,
+        0.12532408662051472
+      ],
+      [
+        -0.30049929057154845,
+        0.5499266813285035
+      ],
+      [
+        -0.6240767154192175,
+        -0.27966257138968315
+      ],
+      [
+        -0.6725904227856352,
+        0.7002218933827273
+      ],
+      [
+        -0.23295923491523945,
+        0.4492263025329568
+      ]
+    ],
+    "composite": [
+      [
+        -0.22882257074194348,
+        0.6590792248925531
+      ],
+      [
+        -0.47970782976350396,
+        0.27678704004326193
+      ],
+      [
+        -0.4889909735946037,
+        0.760412549667286
+      ],
+      [
+        0.12795002898532404,
+        0.6948504512022515
+      ],
+      [
+        -0.0795290245979242,
+        0.28146584314483986
+      ]
+    ]
+  },
+  "jsonPath": "logs/playground-artifacts/ordinal-gap-extrema-500000.json",
+  "mdPath": "logs/playground-artifacts/ordinal-gap-extrema-500000.md",
+  "svgPath": "logs/playground-artifacts/ordinal-gap-extrema-500000.svg"
+}

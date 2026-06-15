@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">adjacent local-eligible occupancy autocorrelation</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">aggregate adjacent-window correlation of centered prime occupancy vectors</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="186.23" y2="186.23" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 165.81 L 415.33 174.38 L 748.67 265.75 L 1082.00 192.37" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 170.91 L 415.33 181.99 L 748.67 257.63 L 1082.00 217.37" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 189.53 L 415.33 162.96 L 748.67 80.46 L 1082.00 312.85" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 85.36 L 415.33 321.20 L 748.67 204.72 L 1082.00 197.03" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest adjacent pairs</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(140,98,124)"><title>879060->879270 corr=0.4831</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(45,170,191)"><title>784140->784350 corr=-0.4769</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(131,100,128)"><title>996450->996660 corr=0.4319</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(130,100,129)"><title>631890->632100 corr=0.4271</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(130,100,129)"><title>775530->775740 corr=0.4265</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(47,164,189)"><title>829920->830130 corr=-0.4246</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(129,100,129)"><title>651840->652050 corr=0.4214</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(128,100,129)"><title>506100->506310 corr=0.4185</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest adjacent pairs</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(36,224,213)"><title>18:4703->18:4704 corr=-0.9500</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(36,224,213)"><title>18:7519->18:7520 corr=-0.9500</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(215,83,87)"><title>18:1847->18:1848 corr=0.9167</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(37,220,211)"><title>18:2855->18:2856 corr=-0.9167</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(215,83,87)"><title>18:7263->18:7264 corr=0.9167</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(37,220,211)"><title>18:4127->18:4128 corr=-0.9129</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(213,83,88)"><title>18:287->18:288 corr=0.9037</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(213,83,88)"><title>18:1509->18:1510 corr=0.9037</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest adjacent pairs</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(37,218,210)"><title>11:2456->11:2457 corr=-0.8981</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(207,85,91)"><title>11:2190->11:2191 corr=0.8667</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(207,85,91)"><title>11:4380->11:4381 corr=0.8667</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(38,214,209)"><title>11:2072->11:2073 corr=-0.8626</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(38,214,209)"><title>11:4318->11:4319 corr=-0.8573</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(38,214,209)"><title>11:6259->11:6260 corr=-0.8573</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(204,85,93)"><title>11:1985->11:1986 corr=0.8500</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(38,213,208)"><title>11:4055->11:4056 corr=-0.8500</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate -0.025309, mean corr -0.000519</text>
+<text x="650" y="484" fill="#94a3b8">Z controls -0.189611 .. 0.222113</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate -0.128407</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate -0.522019, controls -0.123229 .. 0.614151</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate -0.044537, controls -0.472095 .. 0.072392</text>
+<text x="650" y="594" fill="#94a3b8">red = positive corr, blue = negative corr, clamp +/-1</text>
+</g>
+</svg>

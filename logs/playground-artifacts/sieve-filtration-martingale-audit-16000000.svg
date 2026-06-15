@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<line x1="64" y1="184.36" x2="681.60" y2="184.36" stroke="#475569" stroke-dasharray="5 5"/>
+<path d="M 64.00 521.34 L 218.40 515.81 L 372.80 510.41 L 527.20 524.02 L 681.60 517.32" fill="none" stroke="#67e8f9" stroke-width="3" />
+<path d="M 64.00 452.97 L 218.40 467.28 L 372.80 439.28 L 527.20 454.69 L 681.60 405.14" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 357.29 L 218.40 417.26 L 372.80 406.84 L 527.20 319.64 L 681.60 298.25" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 452.61 L 218.40 376.67 L 372.80 427.30 L 527.20 388.14 L 681.60 405.85" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<path d="M 64.00 192.01 L 218.40 235.64 L 372.80 182.25 L 527.20 295.40 L 681.60 172.68" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<text x="64" y="30" fill="#e2e8f0" font-size="18" font-weight="700">Finite-eligible sieve-filtration martingale</text>
+<text x="64" y="52" fill="#94a3b8">y: mean chi-square per degree of freedom after deepest local-obstruction background</text>
+<text x="64" y="602" fill="#94a3b8">cyan real Z; red sampled final-eligible composites; yellow final-eligible random controls; dashed y=1 random line</text>
+<text x="761.6" y="72" fill="#e2e8f0" font-size="14" font-weight="700">Function-field real meanNorm / reducible range</text>
+<g><text x="761.6" y="110" fill="#a78bfa">F2 d19</text><rect x="841.6" y="98" width="8.89" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="110" fill="#cbd5e1">0.111106 / red 0.322399..0.502428</text></g>
+<g><text x="761.6" y="138" fill="#a78bfa">F2 d20</text><rect x="841.6" y="126" width="10.37" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="138" fill="#cbd5e1">0.129652 / red 0.310390..0.457024</text></g>
+<g><text x="761.6" y="166" fill="#a78bfa">F2 d21</text><rect x="841.6" y="154" width="5.89" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="166" fill="#cbd5e1">0.073660 / red 0.314073..0.828667</text></g>
+<g><text x="761.6" y="194" fill="#a78bfa">F2 d22</text><rect x="841.6" y="182" width="8.80" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="194" fill="#cbd5e1">0.110042 / red 0.323119..0.931569</text></g>
+<g><text x="761.6" y="222" fill="#34d399">F3 d10</text><rect x="841.6" y="210" width="22.09" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="222" fill="#cbd5e1">0.276160 / red 0.305242..0.402765</text></g>
+<g><text x="761.6" y="250" fill="#34d399">F3 d11</text><rect x="841.6" y="238" width="22.71" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="250" fill="#cbd5e1">0.283876 / red 0.369126..0.476419</text></g>
+<g><text x="761.6" y="278" fill="#34d399">F3 d12</text><rect x="841.6" y="266" width="25.63" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="278" fill="#cbd5e1">0.320361 / red 0.447085..0.628975</text></g>
+<g><text x="761.6" y="306" fill="#34d399">F3 d13</text><rect x="841.6" y="294" width="13.95" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="306" fill="#cbd5e1">0.174349 / red 0.317873..0.822499</text></g>
+</g>
+</svg>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Critical line without zeta - 20 visualizations</title>
+<style>
+body{margin:0;background:#030712;color:#e5e7eb;font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{padding:28px 34px 12px;max-width:1180px;margin:auto}
+h1{margin:0 0 8px;font-size:28px}
+.lead{color:#a8b3c7;max-width:960px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:18px;max-width:1480px;margin:0 auto;padding:18px 28px 38px}
+.card{background:#0b1220;border:1px solid #1e293b;border-radius:8px;padding:14px}
+.card h2{font-size:16px;margin:0 0 10px}
+.card img{display:block;width:100%;height:auto;border:1px solid #1f2937;background:#07111f}
+.verdict{color:#facc15;font-family:Menlo,Consolas,monospace;font-size:12px;margin:10px 0 4px}
+.card p{color:#cbd5e1;margin:7px 0}
+.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.metrics span{font:12px Menlo,Consolas,monospace;background:#111827;border:1px solid #263244;border-radius:6px;padding:4px 6px;color:#cbd5e1}
+</style>
+</head>
+<body>
+<header>
+<h1>Critical-line no-zeta batch: 20 candidate visualizations</h1>
+<p class="lead">Generated 20 SVG panels at N=1000000 (continued-fraction subrange 12000). No candidate can be honestly called mathematically undiscovered from this run. The strongest project-native survivor is #7/#8, the Dyadic-Mobius/E2 transform diagnostic; the strongest mathematical visuals are #3 and #4, but both are famous open 1/4-exponent problems.</p>
+</header>
+<main class="grid">
+<section class="card">
+  <h2>01. Squarefree count Q(x)</h2>
+  <img src="01-squarefree-residual.svg" alt="Squarefree count Q(x)"/>
+  <p class="verdict">KNOWN-MATH / classical squarefree error</p>
+  <p>The level line is real, but the 1/4 exponent question is a named classical squarefree-error problem, not an undiscovered object.</p>
+  <div class="metrics"><span><b>theta</b> 0.174594</span><span><b>density</b> 0.607926</span></div>
+</section>
+<section class="card">
+  <h2>02. Liouville L(x)</h2>
+  <img src="02-liouville-walk.svg" alt="Liouville L(x)"/>
+  <p class="verdict">KNOWN-MATH / Pólya and RH-adjacent</p>
+  <p>Distinct from Mertens in the app, but the object and its failure modes are classical; no new discovery claim survives.</p>
+  <div class="metrics"><span><b>theta</b> 0.481175</span><span><b>endpoint</b> -530.000</span></div>
+</section>
+<section class="card">
+  <h2>03. Dirichlet divisor Delta(x)</h2>
+  <img src="03-dirichlet-divisor.svg" alt="Dirichlet divisor Delta(x)"/>
+  <p class="verdict">OPEN CLASSICAL PROBLEM</p>
+  <p>This is one of the best visual 1/4 siblings, but it is exactly the Dirichlet divisor problem; the plot is not undiscovered mathematics.</p>
+  <div class="metrics"><span><b>theta</b> 0.316049</span><span><b>maxAbs</b> 169.249</span></div>
+</section>
+<section class="card">
+  <h2>04. Gauss circle E(x)</h2>
+  <img src="04-gauss-circle.svg" alt="Gauss circle E(x)"/>
+  <p class="verdict">OPEN CLASSICAL PROBLEM</p>
+  <p>A genuine non-zeta-looking 1/4 front, but the circle problem is a famous old problem, not a newly uncovered line.</p>
+  <div class="metrics"><span><b>theta</b> 0.279273</span><span><b>endpoint</b> -43.654</span></div>
+</section>
+<section class="card">
+  <h2>05. Totient summatory Phi(x)</h2>
+  <img src="05-totient-sum.svg" alt="Totient summatory Phi(x)"/>
+  <p class="verdict">KNOWN-MATH / Farey-coprimality calibration</p>
+  <p>The 3/pi^2 level line is classical and overlaps the Farey/coprimality branch.</p>
+  <div class="metrics"><span><b>theta</b> 0.998326</span><span><b>density</b> 0.303964</span></div>
+</section>
+<section class="card">
+  <h2>06. Normalized Mertens m(x)</h2>
+  <img src="06-normalized-mertens.svg" alt="Normalized Mertens m(x)"/>
+  <p class="verdict">KNOWN-MATH / Mertens branch</p>
+  <p>Calmer than M(x), but it is still a standard Mobius summatory object and belongs to the logged Mertens family.</p>
+  <div class="metrics"><span><b>theta</b> 0.000e+0</span><span><b>endpoint</b> 2.006e-4</span></div>
+</section>
+<section class="card">
+  <h2>07. Dyadic-Mobius G2</h2>
+  <img src="07-dyadic-mobius.svg" alt="Dyadic-Mobius G2"/>
+  <p class="verdict">PROJECT-NOVEL / not mathematically established as new</p>
+  <p>This is the most native unlogged transform in the batch. It is a new visualization here, but structurally it is a bounded dyadic transform of Mobius, so not an undiscovered theorem.</p>
+  <div class="metrics"><span><b>theta</b> 0.511653</span><span><b>endpoint</b> 136.885</span></div>
+</section>
+<section class="card">
+  <h2>08. E2-invariance chip-order test</h2>
+  <img src="08-e2-invariance.svg" alt="E2-invariance chip-order test"/>
+  <p class="verdict">PROJECT-NOVEL DIAGNOSTIC / not undiscovered math</p>
+  <p>Useful as an instrument test: the square-root scale persists under these dyadic orders. That is a transform diagnostic, not a new critical line.</p>
+  <div class="metrics"><span><b>M_end</b> 212.000</span><span><b>G2_end</b> 136.885</span></div>
+</section>
+<section class="card">
+  <h2>09. Chebyshev bias mod 4</h2>
+  <img src="09-chebyshev-bias-mod4.svg" alt="Chebyshev bias mod 4"/>
+  <p class="verdict">KNOWN-MATH / prime number race</p>
+  <p>The visual bias is real, but it is the classical Chebyshev/Rubinstein-Sarnak prime race.</p>
+  <div class="metrics"><span><b>endpoint</b> -2.0309</span><span><b>primes</b> 78498.0</span></div>
+</section>
+<section class="card">
+  <h2>10. Race family over moduli</h2>
+  <img src="10-prime-race-family.svg" alt="Race family over moduli"/>
+  <p class="verdict">KNOWN-MATH / prime number races</p>
+  <p>Good calibration family; the direction and scale are part of known prime-race theory.</p>
+  <div class="metrics"><span><b>moduli</b> 3,5,8</span></div>
+</section>
+<section class="card">
+  <h2>11. Liouville AP bias mod 4</h2>
+  <img src="11-liouville-ap-bias.svg" alt="Liouville AP bias mod 4"/>
+  <p class="verdict">KNOWN-MATH / multiplicative-function race</p>
+  <p>It is an independent-looking bias plot, but lambda in arithmetic progressions is a classical multiplicative-function object.</p>
+  <div class="metrics"><span><b>endpoint_r1</b> 172.000</span><span><b>endpoint_r3</b> -1088.0</span></div>
+</section>
+<section class="card">
+  <h2>12. Gap log-survival</h2>
+  <img src="12-gap-log-survival.svg" alt="Gap log-survival"/>
+  <p class="verdict">KNOWN-MATH / Cramer-Poisson calibration</p>
+  <p>The straight line is the null model itself; deviations are useful diagnostics, not an undiscovered line.</p>
+  <div class="metrics"><span><b>slope</b> -1.3427</span><span><b>r2</b> 0.999415</span></div>
+</section>
+<section class="card">
+  <h2>13. sum(g_n-log p_n) walk</h2>
+  <img src="13-gap-centered-walk.svg" alt="sum(g_n-log p_n) walk"/>
+  <p class="verdict">KNOWN-MATH DISGUISE / theta telescope</p>
+  <p>The walk telescopes to p_k-2-theta(p_{k-1}); it is Chebyshev theta in gap coordinates.</p>
+  <div class="metrics"><span><b>maxAbs</b> 1605.6</span></div>
+</section>
+<section class="card">
+  <h2>14. Maximal-gap Cramer line</h2>
+  <img src="14-max-gap-cramer.svg" alt="Maximal-gap Cramer line"/>
+  <p class="verdict">KNOWN/CONJECTURAL GAP THEORY</p>
+  <p>A legitimate frontier diagnostic, but Cramer/Granville maximal-gap behavior is already a named research area.</p>
+  <div class="metrics"><span><b>endpoint</b> 0.597272</span></div>
+</section>
+<section class="card">
+  <h2>15. sum(Omega-omega)(n)</h2>
+  <img src="15-repeat-prime-factor-law.svg" alt="sum(Omega-omega)(n)"/>
+  <p class="verdict">KNOWN-MATH / additive-function mean</p>
+  <p>The constant-slope law is standard additive-function averaging; the residual is a calibration target.</p>
+  <div class="metrics"><span><b>theta</b> 0.357052</span><span><b>endpoint</b> -245.669</span></div>
+</section>
+<section class="card">
+  <h2>16. Erdos-Kac balance</h2>
+  <img src="16-erdos-kac.svg" alt="Erdos-Kac balance"/>
+  <p class="verdict">KNOWN-MATH / CLT calibration</p>
+  <p>The slow convergence is visible; this is a textbook theorem-shaped control, not a new line.</p>
+  <div class="metrics"><span><b>loglog</b> 2.6258</span><span><b>sample</b> 5.000e+5</span></div>
+</section>
+<section class="card">
+  <h2>17. k-free ladder</h2>
+  <img src="17-kfree-ladder.svg" alt="k-free ladder"/>
+  <p class="verdict">KNOWN-MATH / zeta-density family</p>
+  <p>The slope constants and error hierarchy are classical; useful family visualization, not undiscovered.</p>
+  <div class="metrics"><span><b>endpoint2</b> 0.607926</span><span><b>endpoint3</b> 0.831910</span></div>
+</section>
+<section class="card">
+  <h2>18. Coprimality/Farey-count residual</h2>
+  <img src="18-coprimality-farey.svg" alt="Coprimality/Farey-count residual"/>
+  <p class="verdict">KNOWN-MATH / overlaps totient</p>
+  <p>This is the two-dimensional version of the totient-sum line, not a new branch distinct from #5.</p>
+  <div class="metrics"><span><b>endpoint</b> 0.002931</span></div>
+</section>
+<section class="card">
+  <h2>19. Matrix critical width W</h2>
+  <img src="19-matrix-width-front.svg" alt="Matrix critical width W"/>
+  <p class="verdict">KNOWN RESIDUE-LAYER FRONT</p>
+  <p>The contrast peaks when W has many small prime factors. That is local residue geometry, not an undiscovered critical line.</p>
+  <div class="metrics"><span><b>topW</b> 420,210,330,390,510</span><span><b>primeN</b> 3.000e+5</span></div>
+</section>
+<section class="card">
+  <h2>20. Bounded-CF / Zaremba dimension front</h2>
+  <img src="20-zaremba-cf-front.svg" alt="Bounded-CF / Zaremba dimension front"/>
+  <p class="verdict">OPEN/KNOWN ZAREMBA BRANCH</p>
+  <p>The threshold picture is meaningful, but it is the established Zaremba continued-fraction problem rather than an undiscovered line.</p>
+  <div class="metrics"><span><b>A2_density</b> 0.448833</span><span><b>A2_primeHitRate</b> 0.635605</span></div>
+</section>
+</main>
+</body>
+</html>

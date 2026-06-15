@@ -1,0 +1,964 @@
+{
+  "candidate": "gaplogwalk(x)=sum_{p_i,p_{i+1}<=x} (p_{i+1}-p_i-log(p_i))",
+  "preregisteredConfirm": "sharp flat line whose normalized residual is stable and beats five Cramer plus composite controls",
+  "preregisteredBreak": "algebraic collapse to Chebyshev theta/psi, visible drift, or fake/composite reproduction",
+  "factorCheck": "For any increasing label sequence a_i, sum_{i<k}(a_{i+1}-a_i-log a_i)=a_k-a_0-sum_{i<k}log a_i. For primes this is p_k-2-theta(p_{k-1}), hence Chebyshev theta in gap clothing.",
+  "N": 16000000,
+  "endpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000,
+    16000000
+  ],
+  "real": {
+    "name": "real-primes",
+    "rows": [
+      {
+        "N": 1000000,
+        "labels": 78498,
+        "value": 1510.640467923529,
+        "telescoped": 1510.6404679255793,
+        "identityError": -2.0502284314716235e-9,
+        "maxAbs": 1605.632288801565,
+        "maxAbsOverSqrtN": 1.605632288801565,
+        "rmsOverSqrtN": 0.780937475185858
+      },
+      {
+        "N": 2000000,
+        "labels": 148933,
+        "value": 1417.7865169496902,
+        "telescoped": 1417.7865169476718,
+        "identityError": 2.018396116909571e-9,
+        "maxAbs": 2183.109339082686,
+        "maxAbsOverSqrtN": 1.543691417737049,
+        "rmsOverSqrtN": 0.7944994660728909
+      },
+      {
+        "N": 4000000,
+        "labels": 283146,
+        "value": 2660.7097137907444,
+        "telescoped": 2660.7097138585523,
+        "identityError": -6.780783223803155e-8,
+        "maxAbs": 3233.081148893423,
+        "maxAbsOverSqrtN": 1.6165405744467114,
+        "rmsOverSqrtN": 0.7753612999657076
+      },
+      {
+        "N": 8000000,
+        "labels": 539777,
+        "value": 2949.648659715606,
+        "telescoped": 2949.6486598299816,
+        "identityError": -1.1437577995820902e-7,
+        "maxAbs": 3961.9272233190577,
+        "maxAbsOverSqrtN": 1.4007528030882472,
+        "rmsOverSqrtN": 0.7630334798598563
+      },
+      {
+        "N": 16000000,
+        "labels": 1031130,
+        "value": 4284.948206772751,
+        "telescoped": 4284.94820660539,
+        "identityError": 1.6736157704144716e-7,
+        "maxAbs": 6319.644552332222,
+        "maxAbsOverSqrtN": 1.5799111380830555,
+        "rmsOverSqrtN": 0.7677421265530103
+      }
+    ],
+    "exponent": {
+      "theta": 0.48132217557298346,
+      "C": 2.055273336451792
+    }
+  },
+  "cramer": [
+    {
+      "name": "cramer-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78571,
+          "value": 298.9566775825875,
+          "telescoped": 298.9566775819985,
+          "identityError": 5.889546628168318e-10,
+          "maxAbs": 2768.222053218529,
+          "maxAbsOverSqrtN": 2.768222053218529,
+          "rmsOverSqrtN": 1.267780344082077
+        },
+        {
+          "N": 2000000,
+          "labels": 148964,
+          "value": 760.5750870201265,
+          "telescoped": 760.5750870157499,
+          "identityError": 4.376602191769052e-9,
+          "maxAbs": 2768.222053218529,
+          "maxAbsOverSqrtN": 1.9574285856609694,
+          "rmsOverSqrtN": 0.8580784424814769
+        },
+        {
+          "N": 4000000,
+          "labels": 283084,
+          "value": 3383.8860965761846,
+          "telescoped": 3383.886096599046,
+          "identityError": -2.286151357111521e-8,
+          "maxAbs": 6333.497545957248,
+          "maxAbsOverSqrtN": 3.166748772978624,
+          "rmsOverSqrtN": 1.0685079863286413
+        },
+        {
+          "N": 8000000,
+          "labels": 539134,
+          "value": 12752.610393990099,
+          "telescoped": 12752.610393978655,
+          "identityError": 1.1443262337706983e-8,
+          "maxAbs": 13264.816239443287,
+          "maxAbsOverSqrtN": 4.689820757051893,
+          "rmsOverSqrtN": 1.7750377867660185
+        },
+        {
+          "N": 16000000,
+          "labels": 1030753,
+          "value": 9940.443706520111,
+          "telescoped": 9940.443706810474,
+          "identityError": -2.903634594986215e-7,
+          "maxAbs": 13977.594183818279,
+          "maxAbsOverSqrtN": 3.49439854595457,
+          "rmsOverSqrtN": 1.6419104638192592
+        }
+      ],
+      "exponent": {
+        "theta": 0.6932742086068887,
+        "C": 0.16360550336183458
+      }
+    },
+    {
+      "name": "cramer-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78614,
+          "value": 133.33937295089555,
+          "telescoped": 133.3393729540985,
+          "identityError": -3.2029561225499492e-9,
+          "maxAbs": 2169.7769126544304,
+          "maxAbsOverSqrtN": 2.1697769126544304,
+          "rmsOverSqrtN": 0.7774494095513018
+        },
+        {
+          "N": 2000000,
+          "labels": 148976,
+          "value": 1013.1391920984008,
+          "telescoped": 1013.1391920980532,
+          "identityError": 3.476543497527018e-10,
+          "maxAbs": 2894.0554988892764,
+          "maxAbsOverSqrtN": 2.046406268394824,
+          "rmsOverSqrtN": 0.9260162808110927
+        },
+        {
+          "N": 4000000,
+          "labels": 283531,
+          "value": -2868.1462486475352,
+          "telescoped": -2868.1462486623786,
+          "identityError": 1.4843408280285075e-8,
+          "maxAbs": 4670.534970953385,
+          "maxAbsOverSqrtN": 2.3352674854766926,
+          "rmsOverSqrtN": 0.8942678371850601
+        },
+        {
+          "N": 8000000,
+          "labels": 539682,
+          "value": 4757.467902929226,
+          "telescoped": 4757.467902879231,
+          "identityError": 4.9994923756457865e-8,
+          "maxAbs": 7369.29681548618,
+          "maxAbsOverSqrtN": 2.605439875403354,
+          "rmsOverSqrtN": 1.0109176800161803
+        },
+        {
+          "N": 16000000,
+          "labels": 1031604,
+          "value": -3416.1951288634737,
+          "telescoped": -3416.195128418505,
+          "identityError": -4.449684638530016e-7,
+          "maxAbs": 14832.84750539616,
+          "maxAbsOverSqrtN": 3.70821187634904,
+          "rmsOverSqrtN": 1.4663937872996538
+        }
+      ],
+      "exponent": {
+        "theta": 0.6894788292677054,
+        "C": 0.1409961441468787
+      }
+    },
+    {
+      "name": "cramer-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78251,
+          "value": 4765.904677503306,
+          "telescoped": 4765.904677507351,
+          "identityError": -4.045432433485985e-9,
+          "maxAbs": 7812.626370230374,
+          "maxAbsOverSqrtN": 7.812626370230374,
+          "rmsOverSqrtN": 4.683827466097446
+        },
+        {
+          "N": 2000000,
+          "labels": 148553,
+          "value": 6625.302575988096,
+          "telescoped": 6625.3025759866,
+          "identityError": 1.496118784416467e-9,
+          "maxAbs": 7812.626370230374,
+          "maxAbsOverSqrtN": 5.52436108526674,
+          "rmsOverSqrtN": 3.2305338513290933
+        },
+        {
+          "N": 4000000,
+          "labels": 282625,
+          "value": 9990.673690529344,
+          "telescoped": 9990.67369054677,
+          "identityError": -1.7425918485969305e-8,
+          "maxAbs": 10819.232533980585,
+          "maxAbsOverSqrtN": 5.409616266990293,
+          "rmsOverSqrtN": 3.0366658270512197
+        },
+        {
+          "N": 8000000,
+          "labels": 539269,
+          "value": 9954.251418180627,
+          "telescoped": 9954.251418353058,
+          "identityError": -1.7243110050912946e-7,
+          "maxAbs": 18680.170459039608,
+          "maxAbsOverSqrtN": 6.604437602653764,
+          "rmsOverSqrtN": 3.631304393394741
+        },
+        {
+          "N": 16000000,
+          "labels": 1030751,
+          "value": 9185.810696682944,
+          "telescoped": 9185.810696788132,
+          "identityError": -1.0518851922824979e-7,
+          "maxAbs": 18680.170459039608,
+          "maxAbsOverSqrtN": 4.670042614759902,
+          "rmsOverSqrtN": 2.571405630065885
+        }
+      ],
+      "exponent": {
+        "theta": 0.3772884282454667,
+        "C": 38.16186665817683
+      }
+    },
+    {
+      "name": "cramer-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78486,
+          "value": 1625.9641327372167,
+          "telescoped": 1625.9641327381833,
+          "identityError": -9.665654943091795e-10,
+          "maxAbs": 2477.4143388778953,
+          "maxAbsOverSqrtN": 2.477414338877895,
+          "rmsOverSqrtN": 0.756270383336454
+        },
+        {
+          "N": 2000000,
+          "labels": 148774,
+          "value": 3578.664578458976,
+          "telescoped": 3578.664578462485,
+          "identityError": -3.5092853067908436e-9,
+          "maxAbs": 4988.132836887924,
+          "maxAbsOverSqrtN": 3.5271425544227415,
+          "rmsOverSqrtN": 1.795183603415823
+        },
+        {
+          "N": 4000000,
+          "labels": 283065,
+          "value": 3679.361132624643,
+          "telescoped": 3679.361132632941,
+          "identityError": -8.298229658976197e-9,
+          "maxAbs": 5905.334295535892,
+          "maxAbsOverSqrtN": 2.9526671477679463,
+          "rmsOverSqrtN": 1.4758575186307192
+        },
+        {
+          "N": 8000000,
+          "labels": 540580,
+          "value": -9843.349125911802,
+          "telescoped": -9843.349125948735,
+          "identityError": 3.693276084959507e-8,
+          "maxAbs": 11234.44605340528,
+          "maxAbsOverSqrtN": 3.9719764936186595,
+          "rmsOverSqrtN": 1.3206433906809751
+        },
+        {
+          "N": 16000000,
+          "labels": 1033066,
+          "value": -26937.844187503073,
+          "telescoped": -26937.844188258052,
+          "identityError": 7.549788278993219e-7,
+          "maxAbs": 29691.49129362315,
+          "maxAbsOverSqrtN": 7.422872823405787,
+          "rmsOverSqrtN": 3.4799047568759445
+        }
+      ],
+      "exponent": {
+        "theta": 0.8337642153049617,
+        "C": 0.023589112184527923
+      }
+    },
+    {
+      "name": "cramer-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 79143,
+          "value": -6772.224255677291,
+          "telescoped": -6772.224255673471,
+          "identityError": -3.819877747446299e-9,
+          "maxAbs": 8422.413802740171,
+          "maxAbsOverSqrtN": 8.422413802740172,
+          "rmsOverSqrtN": 3.8326294780584216
+        },
+        {
+          "N": 2000000,
+          "labels": 149975,
+          "value": -12504.65294205651,
+          "telescoped": -12504.652942053042,
+          "identityError": -3.4669938031584024e-9,
+          "maxAbs": 13571.520687885048,
+          "maxAbsOverSqrtN": 9.596514309417035,
+          "rmsOverSqrtN": 5.282351583245024
+        },
+        {
+          "N": 4000000,
+          "labels": 284735,
+          "value": -19468.769829849996,
+          "telescoped": -19468.76982983062,
+          "identityError": -1.9375875126570463e-8,
+          "maxAbs": 20051.140109047,
+          "maxAbsOverSqrtN": 10.025570054523499,
+          "rmsOverSqrtN": 5.891635137959714
+        },
+        {
+          "N": 8000000,
+          "labels": 541713,
+          "value": -24383.211638480352,
+          "telescoped": -24383.21163842082,
+          "identityError": -5.953188519924879e-8,
+          "maxAbs": 31349.001748465405,
+          "maxAbsOverSqrtN": 11.083545859884412,
+          "rmsOverSqrtN": 7.217127207115633
+        },
+        {
+          "N": 16000000,
+          "labels": 1034420,
+          "value": -44956.51594736255,
+          "telescoped": -44956.515947444364,
+          "identityError": 8.181086741387844e-8,
+          "maxAbs": 46867.55193223691,
+          "maxAbsOverSqrtN": 11.716887983059227,
+          "rmsOverSqrtN": 7.500758808887469
+        }
+      ],
+      "exponent": {
+        "theta": 0.6160404671723131,
+        "C": 1.7311069806282966
+      }
+    }
+  ],
+  "wheel": [
+    {
+      "name": "wheel-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78801,
+          "value": -2483.6665335702005,
+          "telescoped": -2483.6665335656144,
+          "identityError": -4.586127033689991e-9,
+          "maxAbs": 4476.24829733307,
+          "maxAbsOverSqrtN": 4.47624829733307,
+          "rmsOverSqrtN": 2.028942545755299
+        },
+        {
+          "N": 2000000,
+          "labels": 149170,
+          "value": -1660.2981818801538,
+          "telescoped": -1660.298181885155,
+          "identityError": 5.001083991373889e-9,
+          "maxAbs": 4476.24829733307,
+          "maxAbsOverSqrtN": 3.1651855253189507,
+          "rmsOverSqrtN": 1.3808381702125567
+        },
+        {
+          "N": 4000000,
+          "labels": 283453,
+          "value": -1425.5926959261171,
+          "telescoped": -1425.5926958285272,
+          "identityError": -9.758991836861242e-8,
+          "maxAbs": 5110.574094042919,
+          "maxAbsOverSqrtN": 2.5552870470214595,
+          "rmsOverSqrtN": 1.157487696027658
+        },
+        {
+          "N": 8000000,
+          "labels": 539767,
+          "value": 3858.7866231750672,
+          "telescoped": 3858.786623330787,
+          "identityError": -1.557195901114028e-7,
+          "maxAbs": 5110.574094042919,
+          "maxAbsOverSqrtN": 1.8068607988270222,
+          "rmsOverSqrtN": 0.7186047868703158
+        },
+        {
+          "N": 16000000,
+          "labels": 1031366,
+          "value": 1071.8507323241945,
+          "telescoped": 1071.8507330138236,
+          "identityError": -6.896291324665071e-7,
+          "maxAbs": 12816.553284409725,
+          "maxAbsOverSqrtN": 3.2041383211024312,
+          "rmsOverSqrtN": 1.202832737364093
+        }
+      ],
+      "exponent": {
+        "theta": 0.32264880295131687,
+        "C": 43.16791168186325
+      }
+    },
+    {
+      "name": "wheel-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78568,
+          "value": 878.9785645945921,
+          "telescoped": 878.9785645982483,
+          "identityError": -3.656282387964893e-9,
+          "maxAbs": 2042.6705901984017,
+          "maxAbsOverSqrtN": 2.0426705901984015,
+          "rmsOverSqrtN": 0.8889319757690664
+        },
+        {
+          "N": 2000000,
+          "labels": 148963,
+          "value": 1328.2902758226837,
+          "telescoped": 1328.2902758147102,
+          "identityError": 7.973540050443262e-9,
+          "maxAbs": 3744.3552550147665,
+          "maxAbsOverSqrtN": 2.647658991992426,
+          "rmsOverSqrtN": 1.0304239085631832
+        },
+        {
+          "N": 4000000,
+          "labels": 283006,
+          "value": 5109.223627230097,
+          "telescoped": 5109.223627233878,
+          "identityError": -3.780769475270063e-9,
+          "maxAbs": 5847.220225746824,
+          "maxAbsOverSqrtN": 2.923610112873412,
+          "rmsOverSqrtN": 1.220897318409717
+        },
+        {
+          "N": 8000000,
+          "labels": 539266,
+          "value": 11213.756804493867,
+          "telescoped": 11213.75680460222,
+          "identityError": -1.0835356079041958e-7,
+          "maxAbs": 13441.161518199404,
+          "maxAbsOverSqrtN": 4.752168228271234,
+          "rmsOverSqrtN": 2.0144506904602975
+        },
+        {
+          "N": 16000000,
+          "labels": 1030853,
+          "value": 8763.517498040585,
+          "telescoped": 8763.51749840565,
+          "identityError": -3.6506571632344276e-7,
+          "maxAbs": 14178.66146721226,
+          "maxAbsOverSqrtN": 3.544665366803065,
+          "rmsOverSqrtN": 1.959660572809597
+        }
+      ],
+      "exponent": {
+        "theta": 0.7434254326207899,
+        "C": 0.07550575737639624
+      }
+    },
+    {
+      "name": "wheel-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78370,
+          "value": 3551.2390356223827,
+          "telescoped": 3551.23903561139,
+          "identityError": 1.0992607712978497e-8,
+          "maxAbs": 3984.2753671811874,
+          "maxAbsOverSqrtN": 3.9842753671811875,
+          "rmsOverSqrtN": 1.6267809819140568
+        },
+        {
+          "N": 2000000,
+          "labels": 148929,
+          "value": 1680.3573814027175,
+          "telescoped": 1680.3573813848197,
+          "identityError": 1.789771886251401e-8,
+          "maxAbs": 4517.069732423206,
+          "maxAbsOverSqrtN": 3.1940506388889527,
+          "rmsOverSqrtN": 1.4528064835779508
+        },
+        {
+          "N": 4000000,
+          "labels": 283411,
+          "value": -1148.9568190740613,
+          "telescoped": -1148.9568191235885,
+          "identityError": 4.952721610607114e-8,
+          "maxAbs": 5934.595186652639,
+          "maxAbsOverSqrtN": 2.9672975933263195,
+          "rmsOverSqrtN": 1.2288704209399604
+        },
+        {
+          "N": 8000000,
+          "labels": 539688,
+          "value": 4673.810973596971,
+          "telescoped": 4673.810973492451,
+          "identityError": 1.0452004062244669e-7,
+          "maxAbs": 8116.174839100432,
+          "maxAbsOverSqrtN": 2.869501133011776,
+          "rmsOverSqrtN": 0.9388143466125647
+        },
+        {
+          "N": 16000000,
+          "labels": 1031633,
+          "value": -3549.8800280356727,
+          "telescoped": -3549.8800278957933,
+          "identityError": -1.398793756379746e-7,
+          "maxAbs": 8116.174839100432,
+          "maxAbsOverSqrtN": 2.029043709775108,
+          "rmsOverSqrtN": 0.8166576485261519
+        }
+      ],
+      "exponent": {
+        "theta": 0.28983779254551073,
+        "C": 71.76844091110361
+      }
+    },
+    {
+      "name": "wheel-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78299,
+          "value": 3859.205220957467,
+          "telescoped": 3859.2052209563553,
+          "identityError": 1.1118572729174048e-9,
+          "maxAbs": 4048.7244127422246,
+          "maxAbsOverSqrtN": 4.048724412742224,
+          "rmsOverSqrtN": 1.7846348137499348
+        },
+        {
+          "N": 2000000,
+          "labels": 148731,
+          "value": 3798.397313507273,
+          "telescoped": 3798.397313494701,
+          "identityError": 1.2571945262607187e-8,
+          "maxAbs": 6341.851781604277,
+          "maxAbsOverSqrtN": 4.484366400052371,
+          "rmsOverSqrtN": 2.1376351745843984
+        },
+        {
+          "N": 4000000,
+          "labels": 282949,
+          "value": 5009.1523922080605,
+          "telescoped": 5009.15239222208,
+          "identityError": -1.4019860827829689e-8,
+          "maxAbs": 6341.851781604277,
+          "maxAbsOverSqrtN": 3.1709258908021383,
+          "rmsOverSqrtN": 1.6637666167200083
+        },
+        {
+          "N": 8000000,
+          "labels": 539971,
+          "value": -814.9344938660367,
+          "telescoped": -814.9344938816503,
+          "identityError": 1.5613522919011302e-8,
+          "maxAbs": 6856.73273017151,
+          "maxAbsOverSqrtN": 2.4242211051440123,
+          "rmsOverSqrtN": 1.1785127090200351
+        },
+        {
+          "N": 16000000,
+          "labels": 1032322,
+          "value": -15766.812408150176,
+          "telescoped": -15766.812408102676,
+          "identityError": -4.749927029479295e-8,
+          "maxAbs": 18528.497292574044,
+          "maxAbsOverSqrtN": 4.632124323143511,
+          "rmsOverSqrtN": 1.8822327758464892
+        }
+      ],
+      "exponent": {
+        "theta": 0.45010301870263175,
+        "C": 7.789945702260592
+      }
+    },
+    {
+      "name": "wheel-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78911,
+          "value": -3801.293997286983,
+          "telescoped": -3801.2939973006723,
+          "identityError": 1.368925950373523e-8,
+          "maxAbs": 4414.62120465375,
+          "maxAbsOverSqrtN": 4.41462120465375,
+          "rmsOverSqrtN": 1.7536290195271498
+        },
+        {
+          "N": 2000000,
+          "labels": 149798,
+          "value": -10239.041751871293,
+          "telescoped": -10239.041751911165,
+          "identityError": 3.9872247725725174e-8,
+          "maxAbs": 10655.486811316656,
+          "maxAbsOverSqrtN": 7.534566981125829,
+          "rmsOverSqrtN": 4.155851182674574
+        },
+        {
+          "N": 4000000,
+          "labels": 284238,
+          "value": -12297.367782972027,
+          "telescoped": -12297.367782917805,
+          "identityError": -5.4222255130298436e-8,
+          "maxAbs": 14722.931329265139,
+          "maxAbsOverSqrtN": 7.361465664632569,
+          "rmsOverSqrtN": 4.885750957817202
+        },
+        {
+          "N": 8000000,
+          "labels": 541990,
+          "value": -29531.176897298068,
+          "telescoped": -29531.176897207275,
+          "identityError": -9.079303708858788e-8,
+          "maxAbs": 29531.176897298068,
+          "maxAbsOverSqrtN": 10.440847720249486,
+          "rmsOverSqrtN": 5.833867507211246
+        },
+        {
+          "N": 16000000,
+          "labels": 1033842,
+          "value": -36519.88503446411,
+          "telescoped": -36519.88503400609,
+          "identityError": -4.5802153181284666e-7,
+          "maxAbs": 38872.05565494015,
+          "maxAbsOverSqrtN": 9.718013913735039,
+          "rmsOverSqrtN": 5.6858619499024154
+        }
+      ],
+      "exponent": {
+        "theta": 0.774738603647087,
+        "C": 0.1161997300665918
+      }
+    }
+  ],
+  "composite": [
+    {
+      "name": "composite-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51430,
+          "value": 342180.04022726975,
+          "telescoped": 342180.0402272608,
+          "identityError": 8.96397978067398e-9,
+          "maxAbs": 342187.85572882765,
+          "maxAbsOverSqrtN": 342.1878557288276,
+          "rmsOverSqrtN": 200.74301076470553
+        },
+        {
+          "N": 2000000,
+          "labels": 100237,
+          "value": 649130.1268661097,
+          "telescoped": 649130.1268661018,
+          "identityError": 7.916241884231567e-9,
+          "maxAbs": 649156.195866013,
+          "maxAbsOverSqrtN": 459.02274814612036,
+          "rmsOverSqrtN": 268.38489423026755
+        },
+        {
+          "N": 4000000,
+          "labels": 195003,
+          "value": 1237700.958951142,
+          "telescoped": 1237700.9589511394,
+          "identityError": 2.561137080192566e-9,
+          "maxAbs": 1237704.976708328,
+          "maxAbsOverSqrtN": 618.8524883541639,
+          "rmsOverSqrtN": 361.1969360191156
+        },
+        {
+          "N": 8000000,
+          "labels": 379540,
+          "value": 2361387.2913116533,
+          "telescoped": 2361387.291311874,
+          "identityError": -2.207234501838684e-7,
+          "maxAbs": 2361387.2913116533,
+          "maxAbsOverSqrtN": 834.8764833471017,
+          "rmsOverSqrtN": 487.10584993555534
+        },
+        {
+          "N": 16000000,
+          "labels": 738141,
+          "value": 4523495.859899316,
+          "telescoped": 4523495.859899921,
+          "identityError": -6.05359673500061e-7,
+          "maxAbs": 4523495.859899316,
+          "maxAbsOverSqrtN": 1130.873964974829,
+          "rmsOverSqrtN": 658.002503173623
+        }
+      ],
+      "exponent": {
+        "theta": 0.9312152493308213,
+        "C": 0.8823391102844773
+      }
+    },
+    {
+      "name": "composite-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51353,
+          "value": 343530.5964825106,
+          "telescoped": 343530.5964825088,
+          "identityError": 1.8044374883174896e-9,
+          "maxAbs": 343542.4119400672,
+          "maxAbsOverSqrtN": 343.5424119400672,
+          "rmsOverSqrtN": 201.38817161362473
+        },
+        {
+          "N": 2000000,
+          "labels": 100008,
+          "value": 652618.6397011004,
+          "telescoped": 652618.6397010717,
+          "identityError": 2.87545844912529e-8,
+          "maxAbs": 652618.6397011004,
+          "maxAbsOverSqrtN": 461.4710656613883,
+          "rmsOverSqrtN": 269.3635881031276
+        },
+        {
+          "N": 4000000,
+          "labels": 194809,
+          "value": 1240814.2450202524,
+          "telescoped": 1240814.2450202196,
+          "identityError": 3.282912075519562e-8,
+          "maxAbs": 1240825.868085943,
+          "maxAbsOverSqrtN": 620.4129340429714,
+          "rmsOverSqrtN": 362.35828989031427
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "value": 2361199.460941529,
+          "telescoped": 2361199.460941462,
+          "identityError": 6.705522537231445e-8,
+          "maxAbs": 2361239.040729427,
+          "maxAbsOverSqrtN": 834.8240688510981,
+          "rmsOverSqrtN": 487.99285838753207
+        },
+        {
+          "N": 16000000,
+          "labels": 738545,
+          "value": 4516754.379982974,
+          "telescoped": 4516754.379983423,
+          "identityError": -4.4889748096466064e-7,
+          "maxAbs": 4516754.379982974,
+          "maxAbsOverSqrtN": 1129.1885949957436,
+          "rmsOverSqrtN": 658.8316336624449
+        }
+      ],
+      "exponent": {
+        "theta": 0.9288684681704091,
+        "C": 0.9162586119046532
+      }
+    },
+    {
+      "name": "composite-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51194,
+          "value": 345693.21488379315,
+          "telescoped": 345693.2148837908,
+          "identityError": 2.3283064365386963e-9,
+          "maxAbs": 345712.8458849089,
+          "maxAbsOverSqrtN": 345.7128458849089,
+          "rmsOverSqrtN": 201.3158642086316
+        },
+        {
+          "N": 2000000,
+          "labels": 99809,
+          "value": 655321.6737103631,
+          "telescoped": 655321.6737103513,
+          "identityError": 1.1757947504520416e-8,
+          "maxAbs": 655350.2513655048,
+          "maxAbsOverSqrtN": 463.4026067928569,
+          "rmsOverSqrtN": 271.3381463127909
+        },
+        {
+          "N": 4000000,
+          "labels": 194729,
+          "value": 1241660.233188722,
+          "telescoped": 1241660.2331887065,
+          "identityError": 1.5599653124809265e-8,
+          "maxAbs": 1241683.0403763982,
+          "maxAbsOverSqrtN": 620.8415201881991,
+          "rmsOverSqrtN": 363.517737774187
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "value": 2360922.236194681,
+          "telescoped": 2360922.236194621,
+          "identityError": 6.007030606269836e-8,
+          "maxAbs": 2360922.236194681,
+          "maxAbsOverSqrtN": 834.7120615336834,
+          "rmsOverSqrtN": 487.62193519586856
+        },
+        {
+          "N": 16000000,
+          "labels": 738991,
+          "value": 4509126.183095877,
+          "telescoped": 4509126.183096038,
+          "identityError": -1.6111880540847778e-7,
+          "maxAbs": 4509173.123579841,
+          "maxAbsOverSqrtN": 1127.2932808949604,
+          "rmsOverSqrtN": 658.5794367273637
+        }
+      ],
+      "exponent": {
+        "theta": 0.9259446026951611,
+        "C": 0.9596963657840581
+      }
+    },
+    {
+      "name": "composite-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51288,
+          "value": 343923.13426848064,
+          "telescoped": 343923.1342684757,
+          "identityError": 4.94765117764473e-9,
+          "maxAbs": 343934.9497680385,
+          "maxAbsOverSqrtN": 343.9349497680385,
+          "rmsOverSqrtN": 201.77576056044757
+        },
+        {
+          "N": 2000000,
+          "labels": 99962,
+          "value": 652718.0255907354,
+          "telescoped": 652718.0255907471,
+          "identityError": -1.1757947504520416e-8,
+          "maxAbs": 652724.5342349738,
+          "maxAbsOverSqrtN": 461.54594440438075,
+          "rmsOverSqrtN": 270.3394959262951
+        },
+        {
+          "N": 4000000,
+          "labels": 194728,
+          "value": 1241271.710769961,
+          "telescoped": 1241271.7107699914,
+          "identityError": -3.050081431865692e-8,
+          "maxAbs": 1241302.517955637,
+          "maxAbsOverSqrtN": 620.6512589778185,
+          "rmsOverSqrtN": 363.29455646300755
+        },
+        {
+          "N": 8000000,
+          "labels": 379519,
+          "value": 2361011.587779686,
+          "telescoped": 2361011.587779723,
+          "identityError": -3.725290298461914e-8,
+          "maxAbs": 2361013.377677135,
+          "maxAbsOverSqrtN": 834.7442849138288,
+          "rmsOverSqrtN": 488.0881951011509
+        },
+        {
+          "N": 16000000,
+          "labels": 739546,
+          "value": 4499717.94780221,
+          "telescoped": 4499717.94780243,
+          "identityError": -2.1979212760925293e-7,
+          "maxAbs": 4499726.535899678,
+          "maxAbsOverSqrtN": 1124.9316339749196,
+          "rmsOverSqrtN": 657.5314542711277
+        }
+      ],
+      "exponent": {
+        "theta": 0.9274119433728921,
+        "C": 0.9363633432540148
+      }
+    },
+    {
+      "name": "composite-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51570,
+          "value": 340672.50769308105,
+          "telescoped": 340672.5076930749,
+          "identityError": 6.170012056827545e-9,
+          "maxAbs": 340681.58501886524,
+          "maxAbsOverSqrtN": 340.68158501886523,
+          "rmsOverSqrtN": 199.934975353364
+        },
+        {
+          "N": 2000000,
+          "labels": 100843,
+          "value": 640934.6603797154,
+          "telescoped": 640934.6603797153,
+          "identityError": 1.1641532182693481e-10,
+          "maxAbs": 640934.6603797154,
+          "maxAbsOverSqrtN": 453.2092446519935,
+          "rmsOverSqrtN": 267.15191443839984
+        },
+        {
+          "N": 4000000,
+          "labels": 195784,
+          "value": 1226905.7638925929,
+          "telescoped": 1226905.7638925929,
+          "identityError": 0,
+          "maxAbs": 1226944.9746416067,
+          "maxAbsOverSqrtN": 613.4724873208033,
+          "rmsOverSqrtN": 357.44292217519626
+        },
+        {
+          "N": 8000000,
+          "labels": 380954,
+          "value": 2340763.6259225425,
+          "telescoped": 2340763.6259224294,
+          "identityError": 1.1315569281578064e-7,
+          "maxAbs": 2340793.3107712166,
+          "maxAbsOverSqrtN": 827.5954117012184,
+          "rmsOverSqrtN": 482.43510457968927
+        },
+        {
+          "N": 16000000,
+          "labels": 740943,
+          "value": 4480299.830542445,
+          "telescoped": 4480299.830542561,
+          "identityError": -1.1548399925231934e-7,
+          "maxAbs": 4480337.359114502,
+          "maxAbsOverSqrtN": 1120.0843397786255,
+          "rmsOverSqrtN": 651.7766918209718
+        }
+      ],
+      "exponent": {
+        "theta": 0.9302971348575091,
+        "C": 0.8868593792955298
+      }
+    }
+  ]
+}

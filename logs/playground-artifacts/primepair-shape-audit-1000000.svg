@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="52" y="30" fill="#f8fafc" font-size="18">HL-whitened prime-pair residual direction field</text>
+<text x="52" y="50" fill="#94a3b8" font-size="12">fresh-block adjacent cosines; heatmaps show raw normalized residual cells</text>
+<line x1="82" x2="1082" y1="173.00" y2="173.00" stroke="#475569" stroke-dasharray="4 4"/>
+<rect x="82" y="58" width="1000" height="230" fill="none" stroke="#334155"/>
+<path d="M 82.00 172.31 L 332.00 161.00 L 582.00 133.27 L 832.00 200.13 L 1082.00 206.56" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 108.82 L 332.00 239.14 L 582.00 124.46 L 832.00 175.83 L 1082.00 129.35" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 151.54 L 332.00 147.56 L 582.00 196.86 L 832.00 236.00 L 1082.00 217.51" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="312" fill="#94a3b8" font-size="12">adjacent fresh-block cosine, -1..1</text>
+<text x="732" y="312" fill="#a7f3d0" font-size="12">Z real</text>
+<text x="817" y="312" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="902" y="312" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="118" y="350" fill="#e5e7eb" font-size="13">Z blocks, shifts 2..16</text>
+<rect x="118.00" y="360.00" width="55.00" height="28.33" fill="rgb(62,134,184)"><title>1..31250 h2: -0.851</title></rect>
+<rect x="173.00" y="360.00" width="55.00" height="28.33" fill="rgb(61,139,186)"><title>1..31250 h4: -0.985</title></rect>
+<rect x="228.00" y="360.00" width="55.00" height="28.33" fill="rgb(64,125,181)"><title>1..31250 h6: -0.635</title></rect>
+<rect x="283.00" y="360.00" width="55.00" height="28.33" fill="rgb(66,114,176)"><title>1..31250 h8: -0.360</title></rect>
+<rect x="338.00" y="360.00" width="55.00" height="28.33" fill="rgb(56,170,199)"><title>1..31250 h10: -1.756</title></rect>
+<rect x="393.00" y="360.00" width="55.00" height="28.33" fill="rgb(62,137,185)"><title>1..31250 h12: -0.919</title></rect>
+<rect x="448.00" y="360.00" width="55.00" height="28.33" fill="rgb(67,104,172)"><title>1..31250 h14: -0.101</title></rect>
+<rect x="503.00" y="360.00" width="55.00" height="28.33" fill="rgb(60,150,191)"><title>1..31250 h16: -1.253</title></rect>
+<rect x="118.00" y="388.33" width="55.00" height="28.33" fill="rgb(64,122,179)"><title>31250..62500 h2: -0.546</title></rect>
+<rect x="173.00" y="388.33" width="55.00" height="28.33" fill="rgb(66,113,176)"><title>31250..62500 h4: -0.334</title></rect>
+<rect x="228.00" y="388.33" width="55.00" height="28.33" fill="rgb(64,122,179)"><title>31250..62500 h6: -0.548</title></rect>
+<rect x="283.00" y="388.33" width="55.00" height="28.33" fill="rgb(74,129,142)"><title>31250..62500 h8: 0.669</title></rect>
+<rect x="338.00" y="388.33" width="55.00" height="28.33" fill="rgb(62,132,148)"><title>31250..62500 h10: 0.468</title></rect>
+<rect x="393.00" y="388.33" width="55.00" height="28.33" fill="rgb(60,149,190)"><title>31250..62500 h12: -1.220</title></rect>
+<rect x="448.00" y="388.33" width="55.00" height="28.33" fill="rgb(32,140,160)"><title>31250..62500 h14: 0.000</title></rect>
+<rect x="503.00" y="388.33" width="55.00" height="28.33" fill="rgb(91,124,135)"><title>31250..62500 h16: 0.933</title></rect>
+<rect x="118.00" y="416.67" width="55.00" height="28.33" fill="rgb(56,134,150)"><title>62500..125000 h2: 0.386</title></rect>
+<rect x="173.00" y="416.67" width="55.00" height="28.33" fill="rgb(68,102,171)"><title>62500..125000 h4: -0.052</title></rect>
+<rect x="228.00" y="416.67" width="55.00" height="28.33" fill="rgb(63,131,183)"><title>62500..125000 h6: -0.776</title></rect>
+<rect x="283.00" y="416.67" width="55.00" height="28.33" fill="rgb(39,138,157)"><title>62500..125000 h8: 0.108</title></rect>
+<rect x="338.00" y="416.67" width="55.00" height="28.33" fill="rgb(34,139,159)"><title>62500..125000 h10: 0.032</title></rect>
+<rect x="393.00" y="416.67" width="55.00" height="28.33" fill="rgb(67,107,173)"><title>62500..125000 h12: -0.185</title></rect>
+<rect x="448.00" y="416.67" width="55.00" height="28.33" fill="rgb(67,108,173)"><title>62500..125000 h14: -0.209</title></rect>
+<rect x="503.00" y="416.67" width="55.00" height="28.33" fill="rgb(66,115,176)"><title>62500..125000 h16: -0.370</title></rect>
+<rect x="118.00" y="445.00" width="55.00" height="28.33" fill="rgb(66,111,174)"><title>125000..250000 h2: -0.268</title></rect>
+<rect x="173.00" y="445.00" width="55.00" height="28.33" fill="rgb(66,110,174)"><title>125000..250000 h4: -0.238</title></rect>
+<rect x="228.00" y="445.00" width="55.00" height="28.33" fill="rgb(64,123,179)"><title>125000..250000 h6: -0.569</title></rect>
+<rect x="283.00" y="445.00" width="55.00" height="28.33" fill="rgb(64,124,180)"><title>125000..250000 h8: -0.596</title></rect>
+<rect x="338.00" y="445.00" width="55.00" height="28.33" fill="rgb(39,138,157)"><title>125000..250000 h10: 0.112</title></rect>
+<rect x="393.00" y="445.00" width="55.00" height="28.33" fill="rgb(64,125,181)"><title>125000..250000 h12: -0.633</title></rect>
+<rect x="448.00" y="445.00" width="55.00" height="28.33" fill="rgb(79,128,140)"><title>125000..250000 h14: 0.741</title></rect>
+<rect x="503.00" y="445.00" width="55.00" height="28.33" fill="rgb(63,129,182)"><title>125000..250000 h16: -0.716</title></rect>
+<rect x="118.00" y="473.33" width="55.00" height="28.33" fill="rgb(63,131,183)"><title>250000..500000 h2: -0.763</title></rect>
+<rect x="173.00" y="473.33" width="55.00" height="28.33" fill="rgb(63,128,182)"><title>250000..500000 h4: -0.696</title></rect>
+<rect x="228.00" y="473.33" width="55.00" height="28.33" fill="rgb(50,135,153)"><title>250000..500000 h6: 0.277</title></rect>
+<rect x="283.00" y="473.33" width="55.00" height="28.33" fill="rgb(68,130,145)"><title>250000..500000 h8: 0.575</title></rect>
+<rect x="338.00" y="473.33" width="55.00" height="28.33" fill="rgb(63,128,181)"><title>250000..500000 h10: -0.688</title></rect>
+<rect x="393.00" y="473.33" width="55.00" height="28.33" fill="rgb(67,103,171)"><title>250000..500000 h12: -0.086</title></rect>
+<rect x="448.00" y="473.33" width="55.00" height="28.33" fill="rgb(55,134,150)"><title>250000..500000 h14: 0.357</title></rect>
+<rect x="503.00" y="473.33" width="55.00" height="28.33" fill="rgb(98,123,132)"><title>250000..500000 h16: 1.043</title></rect>
+<rect x="118.00" y="501.67" width="55.00" height="28.33" fill="rgb(66,111,174)"><title>500000..1000000 h2: -0.266</title></rect>
+<rect x="173.00" y="501.67" width="55.00" height="28.33" fill="rgb(64,123,180)"><title>500000..1000000 h4: -0.581</title></rect>
+<rect x="228.00" y="501.67" width="55.00" height="28.33" fill="rgb(65,118,177)"><title>500000..1000000 h6: -0.446</title></rect>
+<rect x="283.00" y="501.67" width="55.00" height="28.33" fill="rgb(66,113,175)"><title>500000..1000000 h8: -0.316</title></rect>
+<rect x="338.00" y="501.67" width="55.00" height="28.33" fill="rgb(34,139,159)"><title>500000..1000000 h10: 0.034</title></rect>
+<rect x="393.00" y="501.67" width="55.00" height="28.33" fill="rgb(67,107,173)"><title>500000..1000000 h12: -0.164</title></rect>
+<rect x="448.00" y="501.67" width="55.00" height="28.33" fill="rgb(62,134,184)"><title>500000..1000000 h14: -0.849</title></rect>
+<rect x="503.00" y="501.67" width="55.00" height="28.33" fill="rgb(63,127,181)"><title>500000..1000000 h16: -0.681</title></rect>
+<text x="110" y="377.57" text-anchor="end" fill="#94a3b8">1..31250</text>
+<text x="110" y="405.90" text-anchor="end" fill="#94a3b8">31250..62500</text>
+<text x="110" y="434.23" text-anchor="end" fill="#94a3b8">62500..125000</text>
+<text x="110" y="462.57" text-anchor="end" fill="#94a3b8">125000..250000</text>
+<text x="110" y="490.90" text-anchor="end" fill="#94a3b8">250000..500000</text>
+<text x="110" y="519.23" text-anchor="end" fill="#94a3b8">500000..1000000</text>
+<text x="145.50" y="545.00" text-anchor="middle" fill="#94a3b8">2</text>
+<text x="200.50" y="545.00" text-anchor="middle" fill="#94a3b8">4</text>
+<text x="255.50" y="545.00" text-anchor="middle" fill="#94a3b8">6</text>
+<text x="310.50" y="545.00" text-anchor="middle" fill="#94a3b8">8</text>
+<text x="365.50" y="545.00" text-anchor="middle" fill="#94a3b8">10</text>
+<text x="420.50" y="545.00" text-anchor="middle" fill="#94a3b8">12</text>
+<text x="475.50" y="545.00" text-anchor="middle" fill="#94a3b8">14</text>
+<text x="530.50" y="545.00" text-anchor="middle" fill="#94a3b8">16</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="118" y="630" fill="#e5e7eb" font-size="13">F2[t] degrees</text>
+<rect x="118.00" y="640.00" width="55.00" height="28.33" fill="rgb(57,168,198)"><title>degree 15 h1: -1.688</title></rect>
+<rect x="173.00" y="640.00" width="55.00" height="28.33" fill="rgb(34,139,159)"><title>degree 15 h2: 0.037</title></rect>
+<rect x="228.00" y="640.00" width="55.00" height="28.33" fill="rgb(34,139,159)"><title>degree 15 h3: 0.037</title></rect>
+<rect x="283.00" y="640.00" width="55.00" height="28.33" fill="rgb(69,130,144)"><title>degree 15 h4: 0.582</title></rect>
+<rect x="338.00" y="640.00" width="55.00" height="28.33" fill="rgb(70,130,144)"><title>degree 15 h5: 0.601</title></rect>
+<rect x="393.00" y="640.00" width="55.00" height="28.33" fill="rgb(56,134,150)"><title>degree 15 h6: 0.379</title></rect>
+<rect x="448.00" y="640.00" width="55.00" height="28.33" fill="rgb(67,103,171)"><title>degree 15 h7: -0.086</title></rect>
+<rect x="503.00" y="640.00" width="55.00" height="28.33" fill="rgb(67,103,171)"><title>degree 15 h8: -0.086</title></rect>
+<rect x="118.00" y="668.33" width="55.00" height="28.33" fill="rgb(62,134,184)"><title>degree 16 h1: -0.852</title></rect>
+<rect x="173.00" y="668.33" width="55.00" height="28.33" fill="rgb(56,134,150)"><title>degree 16 h2: 0.381</title></rect>
+<rect x="228.00" y="668.33" width="55.00" height="28.33" fill="rgb(56,134,150)"><title>degree 16 h3: 0.381</title></rect>
+<rect x="283.00" y="668.33" width="55.00" height="28.33" fill="rgb(64,126,181)"><title>degree 16 h4: -0.646</title></rect>
+<rect x="338.00" y="668.33" width="55.00" height="28.33" fill="rgb(72,129,143)"><title>degree 16 h5: 0.635</title></rect>
+<rect x="393.00" y="668.33" width="55.00" height="28.33" fill="rgb(40,138,156)"><title>degree 16 h6: 0.131</title></rect>
+<rect x="448.00" y="668.33" width="55.00" height="28.33" fill="rgb(65,117,177)"><title>degree 16 h7: -0.413</title></rect>
+<rect x="503.00" y="668.33" width="55.00" height="28.33" fill="rgb(65,117,177)"><title>degree 16 h8: -0.413</title></rect>
+<rect x="118.00" y="696.67" width="55.00" height="28.33" fill="rgb(40,138,157)"><title>degree 17 h1: 0.130</title></rect>
+<rect x="173.00" y="696.67" width="55.00" height="28.33" fill="rgb(37,139,158)"><title>degree 17 h2: 0.078</title></rect>
+<rect x="228.00" y="696.67" width="55.00" height="28.33" fill="rgb(37,139,158)"><title>degree 17 h3: 0.078</title></rect>
+<rect x="283.00" y="696.67" width="55.00" height="28.33" fill="rgb(144,110,113)"><title>degree 17 h4: 1.776</title></rect>
+<rect x="338.00" y="696.67" width="55.00" height="28.33" fill="rgb(63,132,183)"><title>degree 17 h5: -0.808</title></rect>
+<rect x="393.00" y="696.67" width="55.00" height="28.33" fill="rgb(65,119,178)"><title>degree 17 h6: -0.471</title></rect>
+<rect x="448.00" y="696.67" width="55.00" height="28.33" fill="rgb(68,103,171)"><title>degree 17 h7: -0.066</title></rect>
+<rect x="503.00" y="696.67" width="55.00" height="28.33" fill="rgb(68,103,171)"><title>degree 17 h8: -0.066</title></rect>
+<rect x="118.00" y="725.00" width="55.00" height="28.33" fill="rgb(66,112,175)"><title>degree 18 h1: -0.298</title></rect>
+<rect x="173.00" y="725.00" width="55.00" height="28.33" fill="rgb(55,134,150)"><title>degree 18 h2: 0.357</title></rect>
+<rect x="228.00" y="725.00" width="55.00" height="28.33" fill="rgb(55,134,150)"><title>degree 18 h3: 0.357</title></rect>
+<rect x="283.00" y="725.00" width="55.00" height="28.33" fill="rgb(64,131,146)"><title>degree 18 h4: 0.511</title></rect>
+<rect x="338.00" y="725.00" width="55.00" height="28.33" fill="rgb(51,135,152)"><title>degree 18 h5: 0.295</title></rect>
+<rect x="393.00" y="725.00" width="55.00" height="28.33" fill="rgb(61,144,188)"><title>degree 18 h6: -1.089</title></rect>
+<rect x="448.00" y="725.00" width="55.00" height="28.33" fill="rgb(66,115,176)"><title>degree 18 h7: -0.370</title></rect>
+<rect x="503.00" y="725.00" width="55.00" height="28.33" fill="rgb(66,115,176)"><title>degree 18 h8: -0.370</title></rect>
+<rect x="118.00" y="753.33" width="55.00" height="28.33" fill="rgb(99,122,132)"><title>degree 19 h1: 1.058</title></rect>
+<rect x="173.00" y="753.33" width="55.00" height="28.33" fill="rgb(61,132,148)"><title>degree 19 h2: 0.454</title></rect>
+<rect x="228.00" y="753.33" width="55.00" height="28.33" fill="rgb(61,132,148)"><title>degree 19 h3: 0.454</title></rect>
+<rect x="283.00" y="753.33" width="55.00" height="28.33" fill="rgb(63,129,182)"><title>degree 19 h4: -0.725</title></rect>
+<rect x="338.00" y="753.33" width="55.00" height="28.33" fill="rgb(66,110,174)"><title>degree 19 h5: -0.254</title></rect>
+<rect x="393.00" y="753.33" width="55.00" height="28.33" fill="rgb(66,110,174)"><title>degree 19 h6: -0.254</title></rect>
+<rect x="448.00" y="753.33" width="55.00" height="28.33" fill="rgb(67,106,172)"><title>degree 19 h7: -0.144</title></rect>
+<rect x="503.00" y="753.33" width="55.00" height="28.33" fill="rgb(67,106,172)"><title>degree 19 h8: -0.144</title></rect>
+<rect x="118.00" y="781.67" width="55.00" height="28.33" fill="rgb(126,115,120)"><title>degree 20 h1: 1.484</title></rect>
+<rect x="173.00" y="781.67" width="55.00" height="28.33" fill="rgb(63,128,182)"><title>degree 20 h2: -0.699</title></rect>
+<rect x="228.00" y="781.67" width="55.00" height="28.33" fill="rgb(63,128,182)"><title>degree 20 h3: -0.699</title></rect>
+<rect x="283.00" y="781.67" width="55.00" height="28.33" fill="rgb(61,142,187)"><title>degree 20 h4: -1.042</title></rect>
+<rect x="338.00" y="781.67" width="55.00" height="28.33" fill="rgb(142,111,114)"><title>degree 20 h5: 1.730</title></rect>
+<rect x="393.00" y="781.67" width="55.00" height="28.33" fill="rgb(58,158,194)"><title>degree 20 h6: -1.451</title></rect>
+<rect x="448.00" y="781.67" width="55.00" height="28.33" fill="rgb(62,138,186)"><title>degree 20 h7: -0.940</title></rect>
+<rect x="503.00" y="781.67" width="55.00" height="28.33" fill="rgb(62,138,186)"><title>degree 20 h8: -0.940</title></rect>
+<text x="110" y="657.57" text-anchor="end" fill="#94a3b8">d15</text>
+<text x="110" y="685.90" text-anchor="end" fill="#94a3b8">d16</text>
+<text x="110" y="714.23" text-anchor="end" fill="#94a3b8">d17</text>
+<text x="110" y="742.57" text-anchor="end" fill="#94a3b8">d18</text>
+<text x="110" y="770.90" text-anchor="end" fill="#94a3b8">d19</text>
+<text x="110" y="799.23" text-anchor="end" fill="#94a3b8">d20</text>
+<text x="145.50" y="825.00" text-anchor="middle" fill="#94a3b8">1</text>
+<text x="200.50" y="825.00" text-anchor="middle" fill="#94a3b8">2</text>
+<text x="255.50" y="825.00" text-anchor="middle" fill="#94a3b8">3</text>
+<text x="310.50" y="825.00" text-anchor="middle" fill="#94a3b8">4</text>
+<text x="365.50" y="825.00" text-anchor="middle" fill="#94a3b8">5</text>
+<text x="420.50" y="825.00" text-anchor="middle" fill="#94a3b8">6</text>
+<text x="475.50" y="825.00" text-anchor="middle" fill="#94a3b8">7</text>
+<text x="530.50" y="825.00" text-anchor="middle" fill="#94a3b8">8</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="686" y="630" fill="#e5e7eb" font-size="13">F3[t] degrees</text>
+<rect x="686.00" y="640.00" width="55.00" height="28.33" fill="rgb(78,128,141)"><title>degree 7 h1: 0.720</title></rect>
+<rect x="741.00" y="640.00" width="55.00" height="28.33" fill="rgb(78,128,141)"><title>degree 7 h2: 0.720</title></rect>
+<rect x="796.00" y="640.00" width="55.00" height="28.33" fill="rgb(66,112,175)"><title>degree 7 h3: -0.289</title></rect>
+<rect x="851.00" y="640.00" width="55.00" height="28.33" fill="rgb(66,112,175)"><title>degree 7 h4: -0.289</title></rect>
+<rect x="906.00" y="640.00" width="55.00" height="28.33" fill="rgb(66,112,175)"><title>degree 7 h5: -0.289</title></rect>
+<rect x="961.00" y="640.00" width="55.00" height="28.33" fill="rgb(34,140,159)"><title>degree 7 h6: 0.028</title></rect>
+<rect x="1016.00" y="640.00" width="55.00" height="28.33" fill="rgb(66,112,175)"><title>degree 7 h7: -0.289</title></rect>
+<rect x="1071.00" y="640.00" width="55.00" height="28.33" fill="rgb(34,140,159)"><title>degree 7 h8: 0.028</title></rect>
+<rect x="686.00" y="668.33" width="55.00" height="28.33" fill="rgb(67,109,174)"><title>degree 8 h1: -0.214</title></rect>
+<rect x="741.00" y="668.33" width="55.00" height="28.33" fill="rgb(67,109,174)"><title>degree 8 h2: -0.214</title></rect>
+<rect x="796.00" y="668.33" width="55.00" height="28.33" fill="rgb(63,133,184)"><title>degree 8 h3: -0.824</title></rect>
+<rect x="851.00" y="668.33" width="55.00" height="28.33" fill="rgb(63,133,184)"><title>degree 8 h4: -0.824</title></rect>
+<rect x="906.00" y="668.33" width="55.00" height="28.33" fill="rgb(63,133,184)"><title>degree 8 h5: -0.824</title></rect>
+<rect x="961.00" y="668.33" width="55.00" height="28.33" fill="rgb(63,130,182)"><title>degree 8 h6: -0.740</title></rect>
+<rect x="1016.00" y="668.33" width="55.00" height="28.33" fill="rgb(67,104,172)"><title>degree 8 h7: -0.103</title></rect>
+<rect x="1071.00" y="668.33" width="55.00" height="28.33" fill="rgb(63,130,182)"><title>degree 8 h8: -0.740</title></rect>
+<rect x="686.00" y="696.67" width="55.00" height="28.33" fill="rgb(62,135,184)"><title>degree 9 h1: -0.866</title></rect>
+<rect x="741.00" y="696.67" width="55.00" height="28.33" fill="rgb(62,135,184)"><title>degree 9 h2: -0.866</title></rect>
+<rect x="796.00" y="696.67" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 9 h3: 0.143</title></rect>
+<rect x="851.00" y="696.67" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 9 h4: 0.143</title></rect>
+<rect x="906.00" y="696.67" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 9 h5: 0.143</title></rect>
+<rect x="961.00" y="696.67" width="55.00" height="28.33" fill="rgb(66,114,176)"><title>degree 9 h6: -0.338</title></rect>
+<rect x="1016.00" y="696.67" width="55.00" height="28.33" fill="rgb(65,120,178)"><title>degree 9 h7: -0.505</title></rect>
+<rect x="1071.00" y="696.67" width="55.00" height="28.33" fill="rgb(66,114,176)"><title>degree 9 h8: -0.338</title></rect>
+<rect x="686.00" y="725.00" width="55.00" height="28.33" fill="rgb(55,134,150)"><title>degree 10 h1: 0.366</title></rect>
+<rect x="741.00" y="725.00" width="55.00" height="28.33" fill="rgb(55,134,150)"><title>degree 10 h2: 0.366</title></rect>
+<rect x="796.00" y="725.00" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 10 h3: 0.135</title></rect>
+<rect x="851.00" y="725.00" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 10 h4: 0.135</title></rect>
+<rect x="906.00" y="725.00" width="55.00" height="28.33" fill="rgb(41,138,156)"><title>degree 10 h5: 0.135</title></rect>
+<rect x="961.00" y="725.00" width="55.00" height="28.33" fill="rgb(65,118,177)"><title>degree 10 h6: -0.443</title></rect>
+<rect x="1016.00" y="725.00" width="55.00" height="28.33" fill="rgb(68,102,171)"><title>degree 10 h7: -0.050</title></rect>
+<rect x="1071.00" y="725.00" width="55.00" height="28.33" fill="rgb(65,118,177)"><title>degree 10 h8: -0.443</title></rect>
+<rect x="686.00" y="753.33" width="55.00" height="28.33" fill="rgb(61,143,188)"><title>degree 11 h1: -1.075</title></rect>
+<rect x="741.00" y="753.33" width="55.00" height="28.33" fill="rgb(61,143,188)"><title>degree 11 h2: -1.075</title></rect>
+<rect x="796.00" y="753.33" width="55.00" height="28.33" fill="rgb(65,117,177)"><title>degree 11 h3: -0.429</title></rect>
+<rect x="851.00" y="753.33" width="55.00" height="28.33" fill="rgb(65,117,177)"><title>degree 11 h4: -0.429</title></rect>
+<rect x="906.00" y="753.33" width="55.00" height="28.33" fill="rgb(65,117,177)"><title>degree 11 h5: -0.429</title></rect>
+<rect x="961.00" y="753.33" width="55.00" height="28.33" fill="rgb(67,108,173)"><title>degree 11 h6: -0.192</title></rect>
+<rect x="1016.00" y="753.33" width="55.00" height="28.33" fill="rgb(44,137,155)"><title>degree 11 h7: 0.187</title></rect>
+<rect x="1071.00" y="753.33" width="55.00" height="28.33" fill="rgb(67,108,173)"><title>degree 11 h8: -0.192</title></rect>
+<rect x="686.00" y="781.67" width="55.00" height="28.33" fill="rgb(124,116,121)"><title>degree 12 h1: 1.454</title></rect>
+<rect x="741.00" y="781.67" width="55.00" height="28.33" fill="rgb(124,116,121)"><title>degree 12 h2: 1.454</title></rect>
+<rect x="796.00" y="781.67" width="55.00" height="28.33" fill="rgb(61,140,187)"><title>degree 12 h3: -0.997</title></rect>
+<rect x="851.00" y="781.67" width="55.00" height="28.33" fill="rgb(61,140,187)"><title>degree 12 h4: -0.997</title></rect>
+<rect x="906.00" y="781.67" width="55.00" height="28.33" fill="rgb(61,140,187)"><title>degree 12 h5: -0.997</title></rect>
+<rect x="961.00" y="781.67" width="55.00" height="28.33" fill="rgb(60,133,148)"><title>degree 12 h6: 0.437</title></rect>
+<rect x="1016.00" y="781.67" width="55.00" height="28.33" fill="rgb(73,129,143)"><title>degree 12 h7: 0.649</title></rect>
+<rect x="1071.00" y="781.67" width="55.00" height="28.33" fill="rgb(60,133,148)"><title>degree 12 h8: 0.437</title></rect>
+<text x="678" y="657.57" text-anchor="end" fill="#94a3b8">d7</text>
+<text x="678" y="685.90" text-anchor="end" fill="#94a3b8">d8</text>
+<text x="678" y="714.23" text-anchor="end" fill="#94a3b8">d9</text>
+<text x="678" y="742.57" text-anchor="end" fill="#94a3b8">d10</text>
+<text x="678" y="770.90" text-anchor="end" fill="#94a3b8">d11</text>
+<text x="678" y="799.23" text-anchor="end" fill="#94a3b8">d12</text>
+<text x="713.50" y="825.00" text-anchor="middle" fill="#94a3b8">1</text>
+<text x="768.50" y="825.00" text-anchor="middle" fill="#94a3b8">2</text>
+<text x="823.50" y="825.00" text-anchor="middle" fill="#94a3b8">3</text>
+<text x="878.50" y="825.00" text-anchor="middle" fill="#94a3b8">4</text>
+<text x="933.50" y="825.00" text-anchor="middle" fill="#94a3b8">5</text>
+<text x="988.50" y="825.00" text-anchor="middle" fill="#94a3b8">6</text>
+<text x="1043.50" y="825.00" text-anchor="middle" fill="#94a3b8">7</text>
+<text x="1098.50" y="825.00" text-anchor="middle" fill="#94a3b8">8</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="11">
+<text x="686" y="350" fill="#e5e7eb">summary</text>
+<text x="686" y="376" fill="#a7f3d0">Z mean adjacent cosine: -0.014386</text>
+<text x="686" y="396" fill="#a7f3d0">Z mean pairwise cosine: 0.157979</text>
+<text x="686" y="416" fill="#a7f3d0">Z anchor hamming: 0.350000</text>
+<text x="686" y="446" fill="#fbbf24">F2 mean adjacent cosine: 0.152019</text>
+<text x="686" y="466" fill="#f472b6">F3 mean adjacent cosine: -0.146905</text>
+<text x="686" y="502" fill="#94a3b8">blue = negative residual; red = positive residual; clamp +/-3</text>
+</g>
+</svg>

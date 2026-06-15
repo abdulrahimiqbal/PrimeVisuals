@@ -143,6 +143,16 @@ describe("makeFns — table functions", () => {
     expect(fns.roughfirst([3, 0], [2, 0])[0]).toBe(1);
     expect(fns.roughcount([7, 0], [4, 0])[0]).toBe(0);
     expect(fns.roughfirst([7, 0], [4, 0])[0]).toBe(0);
+    expect(fns.tm([7, 0])[0]).toBe(-1);
+    expect(fns.tmbal([20, 0])[0]).toBe(-2);
+  });
+
+  it("exposes Thue-Morse functions to lab formulas", () => {
+    const series = computeLabSeries({ domain: "int", N: 20, ex: "n", ey: "tm(n)+tmbal(n)" });
+    expect(series.ys[0]).toBe(-1);
+    expect(series.ys[1]).toBe(-2);
+    expect(series.ys[2]).toBe(1);
+    expect(series.ys[19]).toBe(-1);
   });
 
   it("Farey functions expose insertion rows and product base surplus", () => {
@@ -150,6 +160,31 @@ describe("makeFns — table functions", () => {
     expect(fns.fareydef([6, 0])[0]).toBe(3);
     expect(fns.fareyord([7, 0], [2, 0])[0]).toBe(-1);
     expect(fns.fareyord([8, 0], [3, 0])[0]).toBe(-1);
+  });
+
+  it("Euler quotient exposes Fermat and composite quotient phases", () => {
+    expect(fns.eulerq([7, 0], [2, 0])[0]).toBe(2);
+    expect(fns.eulerq([9, 0], [2, 0])[0]).toBe(7);
+    expect(Number.isNaN(fns.eulerq([8, 0], [2, 0])[0])).toBe(true);
+  });
+
+  it("oddpart exposes the odd kernel to lab formulas", () => {
+    expect(fns.oddpart([12, 0])[0]).toBe(3);
+    expect(fns.oddpart([40, 0])[0]).toBe(5);
+    expect(fns.oddpart([105, 0])[0]).toBe(105);
+
+    const series = computeLabSeries({
+      domain: "prime",
+      N: 13,
+      ex: "n",
+      ey: "mu(oddpart(n-1))*mu(oddpart(n+1))",
+      eh: "",
+      a: 1,
+      b: 1,
+      tMax: 60,
+    });
+    expect(Array.from(series.xs)).toEqual([2, 3, 5, 7, 11, 13]);
+    expect(Array.from(series.ys)).toEqual([-1, 1, -1, -1, 1, 1]);
   });
 
   it("continued-fraction functions expose bounded-denominator tables", () => {

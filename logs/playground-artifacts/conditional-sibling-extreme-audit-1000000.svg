@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<path d="M 64.00 472.83 L 64.00 472.83 L 149.63 471.51 L 415.61 478.32 L 681.60 482.85" fill="none" stroke="#67e8f9" stroke-width="3" />
+<path d="M 64.00 454.43 L 64.00 454.43 L 149.63 446.82 L 415.61 447.64 L 681.60 433.95" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 435.53 L 64.00 435.53 L 149.63 422.41 L 415.61 376.75 L 681.60 377.70" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 298.77 L 64.00 298.77 L 149.63 311.66 L 415.61 323.48 L 681.60 297.43" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<path d="M 64.00 243.41 L 64.00 243.41 L 149.63 235.56 L 415.61 255.43 L 681.60 281.90" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<text x="64" y="30" fill="#e2e8f0" font-size="18" font-weight="700">Conditional sibling-extreme filtration line</text>
+<text x="64" y="52" fill="#94a3b8">y: mean parent-conditioned max child innovation / sqrt(2 log sibling count)</text>
+<text x="64" y="602" fill="#94a3b8">cyan real Z; red sampled final-eligible composites; yellow parent-conditioned sibling multinomial controls</text>
+<text x="761.6" y="72" fill="#e2e8f0" font-size="14" font-weight="700">Function-field real meanExtreme / reducible range</text>
+<g><text x="761.6" y="110" fill="#a78bfa">F2 d13</text><rect x="841.6" y="98" width="2.07" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="110" fill="#cbd5e1">0.199925 / red 0.930743..1.101938</text></g>
+<g><text x="761.6" y="138" fill="#a78bfa">F2 d14</text><rect x="841.6" y="126" width="0.00" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="138" fill="#cbd5e1">0.186720 / red 0.199869..0.342644</text></g>
+<g><text x="761.6" y="166" fill="#a78bfa">F2 d15</text><rect x="841.6" y="154" width="15.43" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="166" fill="#cbd5e1">0.285229 / red 0.375160..0.619685</text></g>
+<g><text x="761.6" y="194" fill="#a78bfa">F2 d16</text><rect x="841.6" y="182" width="1.74" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="194" fill="#cbd5e1">0.197805 / red 0.392204..0.904275</text></g>
+<g><text x="761.6" y="222" fill="#34d399">F3 d7</text><rect x="841.6" y="210" width="16.72" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="222" fill="#cbd5e1">0.293473 / red 1.792516..2.116133</text></g>
+<g><text x="761.6" y="250" fill="#34d399">F3 d8</text><rect x="841.6" y="238" width="8.49" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="250" fill="#cbd5e1">0.240906 / red 1.644218..2.045986</text></g>
+<g><text x="761.6" y="278" fill="#34d399">F3 d9</text><rect x="841.6" y="266" width="3.16" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="278" fill="#cbd5e1">0.206929 / red 1.585396..2.071170</text></g>
+<g><text x="761.6" y="306" fill="#34d399">F3 d10</text><rect x="841.6" y="294" width="28.71" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="306" fill="#cbd5e1">0.370060 / red 0.370078..0.370148</text></g>
+</g>
+</svg>

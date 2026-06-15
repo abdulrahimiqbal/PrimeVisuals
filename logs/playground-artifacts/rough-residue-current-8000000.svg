@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="660" viewBox="0 0 1160 660">
+<rect width="1160" height="660" fill="#111827"/>
+<text x="64" y="38" fill="#f9fafb" font-size="20" font-weight="700">Rough-shell residue-current spectral edge</text>
+<text x="64" y="60" fill="#a7b0c4" font-size="13">Integer budget-10: covariance edge after whitening by the 257-rough shell.</text>
+<rect x="82" y="78" width="700" height="380" fill="#0b1220" stroke="#263244"/>
+<polygon points="82,253.10407503995205 257,264.9015040077829 432,239.29245514316472 607,230.28227763669366 782,247.73042850973246 782,386.5377918458106 607,354.06881108374205 432,365.73455424949873 257,391.7266476987488 82,388.49028305661295" fill="#2a9d8f" opacity="0.18"/>
+<polygon points="82,230.38868721043613 257,166.76910642829654 432,187.30163357547588 607,254.2451245750798 782,261.6446159649211 782,317.94153264875445 607,370.57837514705204 432,361.80542717227416 257,371.88081355124723 82,377.73108240265776" fill="#a78bfa" opacity="0.16"/>
+<path d="M 82.00 233.68 L 257.00 208.68 L 432.00 278.14 L 607.00 218.91 L 782.00 341.70" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<circle cx="82" cy="233.679769601244" r="4" fill="#f8fafc"/><text x="82" y="482" text-anchor="middle" fill="#9ca3af" font-size="11">500k</text>
+<circle cx="257" cy="208.68437817042934" r="4" fill="#f8fafc"/><text x="257" y="482" text-anchor="middle" fill="#9ca3af" font-size="11">1M</text>
+<circle cx="432" cy="278.1440255884327" r="4" fill="#f8fafc"/><text x="432" y="482" text-anchor="middle" fill="#9ca3af" font-size="11">2M</text>
+<circle cx="607" cy="218.9109311155828" r="4" fill="#f8fafc"/><text x="607" y="482" text-anchor="middle" fill="#9ca3af" font-size="11">4M</text>
+<circle cx="782" cy="341.70411297309613" r="4" fill="#f8fafc"/><text x="782" y="482" text-anchor="middle" fill="#9ca3af" font-size="11">8M</text>
+<text x="82" y="510" fill="#a7b0c4" font-size="12">teal: rough-random controls; violet: rough-composite controls</text>
+<rect x="810" y="82" width="310" height="450" fill="#0b1220" stroke="#263244"/>
+<text x="840" y="58" fill="#dbeafe" font-size="14">function-field budget edges</text>
+<text x="788" y="116" fill="#60a5fa" font-size="12">F3 b3</text>
+<line x1="924.2325261332415" y1="113" x2="981.9270239117128" y2="113" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="850" y="102" width="139.98400765603623" height="13" fill="#60a5fa"/>
+<text x="997.9840076560363" y="113" fill="#dbeafe" font-size="11">1.029</text>
+<text x="788" y="147" fill="#60a5fa" font-size="12">F3 b5</text>
+<line x1="942.2489530130293" y1="144" x2="985.657987952028" y2="144" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="850" y="133" width="169.4619567576247" height="13" fill="#60a5fa"/>
+<text x="1027.4619567576246" y="144" fill="#dbeafe" font-size="11">1.246</text>
+<text x="788" y="178" fill="#34d399" font-size="12">F5 b3</text>
+<line x1="931.6333679027961" y1="175" x2="980.4083044822985" y2="175" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="850" y="164" width="179.62902246253836" height="13" fill="#34d399"/>
+<text x="1037.6290224625384" y="175" fill="#dbeafe" font-size="11">1.321</text>
+<text x="788" y="209" fill="#34d399" font-size="12">F5 b5</text>
+<line x1="940.0390919481979" y1="206" x2="980.105965677137" y2="206" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="850" y="195" width="210" height="13" fill="#34d399"/>
+<text x="1068" y="206" fill="#dbeafe" font-size="11">1.544</text>
+</svg>

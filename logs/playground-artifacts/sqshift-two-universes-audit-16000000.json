@@ -1,0 +1,1420 @@
+{
+  "candidate": "two-universes squarefree shifted prime-object residual",
+  "N": 16000000,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "integer": {
+    "endpoints": [
+      1000000,
+      2000000,
+      4000000,
+      8000000,
+      16000000
+    ],
+    "real": {
+      "name": "real-primes",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78498,
+          "squarefree": 29397,
+          "expected": 0.3740033304056353,
+          "mean": 0.3744936176717878,
+          "residual": 38.48656981843669,
+          "residualOverSqrtLabels": 0.13736620799842855,
+          "binomialZ": 0.2838939670731288
+        },
+        {
+          "N": 2000000,
+          "labels": 148933,
+          "squarefree": 55778,
+          "expected": 0.3739884186512011,
+          "mean": 0.3745174004418094,
+          "residual": 78.78284502067254,
+          "residualOverSqrtLabels": 0.20414379840753194,
+          "binomialZ": 0.4219062223981441
+        },
+        {
+          "N": 4000000,
+          "labels": 283146,
+          "squarefree": 105993,
+          "expected": 0.3739776268661972,
+          "mean": 0.37434044627153484,
+          "residual": 102.73086334373511,
+          "residualOverSqrtLabels": 0.19306152063059503,
+          "binomialZ": 0.3990046753483087
+        },
+        {
+          "N": 8000000,
+          "labels": 539777,
+          "squarefree": 202013,
+          "expected": 0.37397056228402387,
+          "mean": 0.3742527006523064,
+          "residual": 152.29180201643612,
+          "residualOverSqrtLabels": 0.207285697827232,
+          "binomialZ": 0.4284037379624252
+        },
+        {
+          "N": 16000000,
+          "labels": 1031130,
+          "squarefree": 385704,
+          "expected": 0.37396593463313954,
+          "mean": 0.37405952692676964,
+          "residual": 96.50582173082512,
+          "residualOverSqrtLabels": 0.09503789351857159,
+          "binomialZ": 0.19641823187376808
+        }
+      ],
+      "exponent": {
+        "theta": 0.38731976626375403,
+        "C": 0.6607689785139763
+      }
+    },
+    "cramer": [
+      {
+        "name": "cramer-seed-12345",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78571,
+            "squarefree": 29912,
+            "expected": 0.3740033304056353,
+            "mean": 0.3807002583650456,
+            "residual": 526.1843266988253,
+            "residualOverSqrtLabels": 1.8771836695626876,
+            "binomialZ": 3.879564899128185
+          },
+          {
+            "N": 2000000,
+            "labels": 148964,
+            "squarefree": 56883,
+            "expected": 0.3739884186512011,
+            "mean": 0.38185736151016353,
+            "residual": 1172.189204042479,
+            "residualOverSqrtLabels": 3.0370857522471963,
+            "binomialZ": 6.276778363219503
+          },
+          {
+            "N": 4000000,
+            "labels": 283084,
+            "squarefree": 108137,
+            "expected": 0.3739776268661972,
+            "mean": 0.3819961566178237,
+            "residual": 2269.9174762094335,
+            "residualOverSqrtLabels": 4.266309976633468,
+            "binomialZ": 8.817280738293958
+          },
+          {
+            "N": 8000000,
+            "labels": 539134,
+            "squarefree": 205180,
+            "expected": 0.37397056228402387,
+            "mean": 0.3805732897572774,
+            "residual": 3559.754873565078,
+            "residualOverSqrtLabels": 4.848101824604796,
+            "binomialZ": 10.01972140602887
+          },
+          {
+            "N": 16000000,
+            "labels": 1030753,
+            "squarefree": 391751,
+            "expected": 0.37396593463313954,
+            "mean": 0.38006292487142895,
+            "residual": 6284.490979087539,
+            "residualOverSqrtLabels": 6.190030706879787,
+            "binomialZ": 12.793159040841635
+          }
+        ],
+        "exponent": {
+          "theta": 0.9433461835067483,
+          "C": 0.014291560027377432
+        }
+      },
+      {
+        "name": "cramer-seed-271828",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78614,
+            "squarefree": 29868,
+            "expected": 0.3740033304056353,
+            "mean": 0.37993232757524104,
+            "residual": 466.1021834913845,
+            "residualOverSqrtLabels": 1.6623833873891627,
+            "binomialZ": 3.4356383678275093
+          },
+          {
+            "N": 2000000,
+            "labels": 148976,
+            "squarefree": 56548,
+            "expected": 0.3739884186512011,
+            "mean": 0.379577918590914,
+            "residual": 832.7013430186707,
+            "residualOverSqrtLabels": 2.157402166171556,
+            "binomialZ": 4.458726668276941
+          },
+          {
+            "N": 4000000,
+            "labels": 283531,
+            "squarefree": 107673,
+            "expected": 0.3739776268661972,
+            "mean": 0.3797574162966307,
+            "residual": 1638.7494770002522,
+            "residualOverSqrtLabels": 3.077600836088811,
+            "binomialZ": 6.360548277276431
+          },
+          {
+            "N": 8000000,
+            "labels": 539682,
+            "squarefree": 204885,
+            "expected": 0.37397056228402387,
+            "mean": 0.37964023258140905,
+            "residual": 3059.819005433441,
+            "residualOverSqrtLabels": 4.165112835263975,
+            "binomialZ": 8.608167019557605
+          },
+          {
+            "N": 16000000,
+            "labels": 1031604,
+            "squarefree": 391239,
+            "expected": 0.37396593463313954,
+            "mean": 0.3792530854862913,
+            "residual": 5454.245968714706,
+            "residualOverSqrtLabels": 5.370048531139097,
+            "binomialZ": 11.09847239360951
+          }
+        ],
+        "exponent": {
+          "theta": 0.9665895267187395,
+          "C": 0.008590311953230123
+        }
+      },
+      {
+        "name": "cramer-seed-314159",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78251,
+            "squarefree": 29747,
+            "expected": 0.3740033304056353,
+            "mean": 0.380148496504837,
+            "residual": 480.86539242863,
+            "residualOverSqrtLabels": 1.7190106770557667,
+            "binomialZ": 3.552669667899761
+          },
+          {
+            "N": 2000000,
+            "labels": 148553,
+            "squarefree": 56580,
+            "expected": 0.3739884186512011,
+            "mean": 0.38087416612252867,
+            "residual": 1022.8984441081266,
+            "residualOverSqrtLabels": 2.6539443051696567,
+            "binomialZ": 5.484935741295021
+          },
+          {
+            "N": 4000000,
+            "labels": 282625,
+            "squarefree": 107663,
+            "expected": 0.3739776268661972,
+            "mean": 0.38093940734188414,
+            "residual": 1967.5732069410296,
+            "residualOverSqrtLabels": 3.701055624624798,
+            "binomialZ": 7.649056596705507
+          },
+          {
+            "N": 8000000,
+            "labels": 539269,
+            "squarefree": 205299,
+            "expected": 0.37397056228402387,
+            "mean": 0.3806986865553184,
+            "residual": 3628.2688476567273,
+            "residualOverSqrtLabels": 4.9407938326448155,
+            "binomialZ": 10.211290834792278
+          },
+          {
+            "N": 16000000,
+            "labels": 1030751,
+            "squarefree": 392254,
+            "expected": 0.37396593463313954,
+            "mean": 0.38055165602555807,
+            "residual": 6788.238910956774,
+            "residualOverSqrtLabels": 6.68621344355202,
+            "binomialZ": 13.81863774428536
+          }
+        ],
+        "exponent": {
+          "theta": 1.0178004107623826,
+          "C": 0.00532215053335749
+        }
+      },
+      {
+        "name": "cramer-seed-161803",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78486,
+            "squarefree": 29711,
+            "expected": 0.3740033304056353,
+            "mean": 0.378551588818388,
+            "residual": 356.9746097833049,
+            "residualOverSqrtLabels": 1.2742106466695422,
+            "binomialZ": 2.6334039545880996
+          },
+          {
+            "N": 2000000,
+            "labels": 148774,
+            "squarefree": 56536,
+            "expected": 0.3739884186512011,
+            "mean": 0.3800126366166131,
+            "residual": 896.2470035862134,
+            "residualOverSqrtLabels": 2.3236151360435726,
+            "binomialZ": 4.802240832210964
+          },
+          {
+            "N": 4000000,
+            "labels": 283065,
+            "squarefree": 107650,
+            "expected": 0.3739776268661972,
+            "mean": 0.3803013442142264,
+            "residual": 1790.0230511198897,
+            "residualOverSqrtLabels": 3.3644612974054304,
+            "binomialZ": 6.953409375977241
+          },
+          {
+            "N": 8000000,
+            "labels": 540580,
+            "squarefree": 205608,
+            "expected": 0.37397056228402387,
+            "mean": 0.38034703466646935,
+            "residual": 3446.9934405023814,
+            "residualOverSqrtLabels": 4.688246844592783,
+            "binomialZ": 9.689344193867644
+          },
+          {
+            "N": 16000000,
+            "labels": 1033066,
+            "squarefree": 392784,
+            "expected": 0.37396593463313954,
+            "mean": 0.38021191288843115,
+            "residual": 6452.507772281067,
+            "residualOverSqrtLabels": 6.348403203780267,
+            "binomialZ": 13.120473174888044
+          }
+        ],
+        "exponent": {
+          "theta": 1.1070138721680698,
+          "C": 0.0015282966239985826
+        }
+      },
+      {
+        "name": "cramer-seed-424242",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 79143,
+            "squarefree": 30187,
+            "expected": 0.3740033304056353,
+            "mean": 0.38142349923556096,
+            "residual": 587.2544217068025,
+            "residualOverSqrtLabels": 2.087469030952269,
+            "binomialZ": 4.314160469117113
+          },
+          {
+            "N": 2000000,
+            "labels": 149975,
+            "squarefree": 57083,
+            "expected": 0.3739884186512011,
+            "mean": 0.3806167694615769,
+            "residual": 994.0869127861151,
+            "residualOverSqrtLabels": 2.5669352921236355,
+            "binomialZ": 5.305113261772256
+          },
+          {
+            "N": 4000000,
+            "labels": 284735,
+            "squarefree": 108308,
+            "expected": 0.3739776268661972,
+            "mean": 0.38038175847718053,
+            "residual": 1823.480414253354,
+            "residualOverSqrtLabels": 3.4172808727011272,
+            "binomialZ": 7.062572804422523
+          },
+          {
+            "N": 8000000,
+            "labels": 541713,
+            "squarefree": 206283,
+            "expected": 0.37397056228402387,
+            "mean": 0.38079758100691696,
+            "residual": 3698.2847934345773,
+            "residualOverSqrtLabels": 5.0247646240762975,
+            "binomialZ": 10.384835856498952
+          },
+          {
+            "N": 16000000,
+            "labels": 1034420,
+            "squarefree": 393298,
+            "expected": 0.37396593463313954,
+            "mean": 0.3802111328087237,
+            "residual": 6460.157896787801,
+            "residualOverSqrtLabels": 6.351768754528536,
+            "binomialZ": 13.127428879636774
+          }
+        ],
+        "exponent": {
+          "theta": 0.9509668261828849,
+          "C": 0.012391111439703287
+        }
+      }
+    ],
+    "wheel": [
+      {
+        "name": "wheel-W210-seed-12345",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78801,
+            "squarefree": 29345,
+            "expected": 0.3740033304056353,
+            "mean": 0.37239375134833314,
+            "residual": -126.83643929446771,
+            "residualOverSqrtLabels": -0.4518332395819859,
+            "binomialZ": -0.9338012070763493
+          },
+          {
+            "N": 2000000,
+            "labels": 149170,
+            "squarefree": 55699,
+            "expected": 0.3739884186512011,
+            "mean": 0.37339277334584703,
+            "residual": -88.85241019966634,
+            "residualOverSqrtLabels": -0.23005330035629826,
+            "binomialZ": -0.4754536736393474
+          },
+          {
+            "N": 4000000,
+            "labels": 283453,
+            "squarefree": 105813,
+            "expected": 0.3739776268661972,
+            "mean": 0.3732999827131835,
+            "residual": -192.08026810418232,
+            "residualOverSqrtLabels": -0.36077980901111456,
+            "binomialZ": -0.7456319109914434
+          },
+          {
+            "N": 8000000,
+            "labels": 539767,
+            "squarefree": 202102,
+            "expected": 0.37397056228402387,
+            "mean": 0.374424520209646,
+            "residual": 245.0315076393017,
+            "residualOverSqrtLabels": 0.3335176081108916,
+            "binomialZ": 0.6892911160232611
+          },
+          {
+            "N": 16000000,
+            "labels": 1031366,
+            "squarefree": 386295,
+            "expected": 0.37396593463313954,
+            "mean": 0.3745469600510391,
+            "residual": 599.2498611573828,
+            "residualOverSqrtLabels": 0.590067285150781,
+            "binomialZ": 1.2195132756517024
+          }
+        ],
+        "exponent": {
+          "theta": 0.6415319535544365,
+          "C": 0.06334995360955449
+        }
+      },
+      {
+        "name": "wheel-W210-seed-271828",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78568,
+            "squarefree": 29487,
+            "expected": 0.3740033304056353,
+            "mean": 0.37530546787496183,
+            "residual": 102.30633669004237,
+            "residualOverSqrtLabels": 0.3649889236040375,
+            "binomialZ": 0.7543205492058623
+          },
+          {
+            "N": 2000000,
+            "labels": 148963,
+            "squarefree": 55975,
+            "expected": 0.3739884186512011,
+            "mean": 0.37576445157522337,
+            "residual": 264.5631924611298,
+            "residualOverSqrtLabels": 0.6854727859626578,
+            "binomialZ": 1.4166741088303676
+          },
+          {
+            "N": 4000000,
+            "labels": 283006,
+            "squarefree": 106276,
+            "expected": 0.3739776268661972,
+            "mean": 0.3755256072309421,
+            "residual": 438.08773110499897,
+            "residualOverSqrtLabels": 0.8234993659901553,
+            "binomialZ": 1.7019450385721702
+          },
+          {
+            "N": 8000000,
+            "labels": 539266,
+            "squarefree": 202293,
+            "expected": 0.37397056228402387,
+            "mean": 0.3751265609179885,
+            "residual": 623.3907593435724,
+            "residualOverSqrtLabels": 0.8489045094869893,
+            "binomialZ": 1.7544571036468675
+          },
+          {
+            "N": 16000000,
+            "labels": 1030853,
+            "squarefree": 386831,
+            "expected": 0.37396593463313954,
+            "mean": 0.3752533096377466,
+            "residual": 1327.094385624223,
+            "residualOverSqrtLabels": 1.3070838308260933,
+            "binomialZ": 2.7013971528260297
+          }
+        ],
+        "exponent": {
+          "theta": 0.9295596151247968,
+          "C": 0.003383921194976427
+        }
+      },
+      {
+        "name": "wheel-W210-seed-314159",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78370,
+            "squarefree": 29389,
+            "expected": 0.3740033304056353,
+            "mean": 0.375003189996172,
+            "residual": 78.35899611036075,
+            "residualOverSqrtLabels": 0.27990711631855975,
+            "binomialZ": 0.5784824581063247
+          },
+          {
+            "N": 2000000,
+            "labels": 148929,
+            "squarefree": 55829,
+            "expected": 0.3739884186512011,
+            "mean": 0.3748699044511143,
+            "residual": 131.27879869527533,
+            "residualOverSqrtLabels": 0.3401770081583275,
+            "binomialZ": 0.7030475457905818
+          },
+          {
+            "N": 4000000,
+            "labels": 283411,
+            "squarefree": 106505,
+            "expected": 0.3739776268661972,
+            "mean": 0.3757969874140383,
+            "residual": 515.6267922241968,
+            "residualOverSqrtLabels": 0.9685613264954206,
+            "binomialZ": 2.0017479214446268
+          },
+          {
+            "N": 8000000,
+            "labels": 539688,
+            "squarefree": 202545,
+            "expected": 0.37397056228402387,
+            "mean": 0.3753001734335394,
+            "residual": 717.5751820597216,
+            "residualOverSqrtLabels": 0.9767783590365938,
+            "binomialZ": 2.0187379281751214
+          },
+          {
+            "N": 16000000,
+            "labels": 1031633,
+            "squarefree": 386702,
+            "expected": 0.37396593463313954,
+            "mean": 0.37484454258442684,
+            "residual": 906.4009566103341,
+            "residualOverSqrtLabels": 0.8923962614961036,
+            "binomialZ": 1.8443474421029016
+          }
+        ],
+        "exponent": {
+          "theta": 1.0233053710453792,
+          "C": 0.0008461227897457663
+        }
+      },
+      {
+        "name": "wheel-W210-seed-161803",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78299,
+            "squarefree": 29412,
+            "expected": 0.3740033304056353,
+            "mean": 0.3756369813152148,
+            "residual": 127.91323256916075,
+            "residualOverSqrtLabels": 0.4571275191167736,
+            "binomialZ": 0.9447428647214531
+          },
+          {
+            "N": 2000000,
+            "labels": 148731,
+            "squarefree": 55760,
+            "expected": 0.3739884186512011,
+            "mean": 0.37490502988617036,
+            "residual": 136.3285055882152,
+            "residualOverSqrtLabels": 0.3534971568043081,
+            "binomialZ": 0.7305764427781285
+          },
+          {
+            "N": 4000000,
+            "labels": 282949,
+            "squarefree": 106251,
+            "expected": 0.3739776268661972,
+            "mean": 0.37551290161831286,
+            "residual": 434.4044558363821,
+            "residualOverSqrtLabels": 0.8166579414002856,
+            "binomialZ": 1.6878057093651657
+          },
+          {
+            "N": 8000000,
+            "labels": 539971,
+            "squarefree": 202252,
+            "expected": 0.37397056228402387,
+            "mean": 0.37456085604597283,
+            "residual": 318.7415129333385,
+            "residualOverSqrtLabels": 0.43376390670354475,
+            "binomialZ": 0.8964732298118567
+          },
+          {
+            "N": 16000000,
+            "labels": 1032322,
+            "squarefree": 386382,
+            "expected": 0.37396593463313954,
+            "mean": 0.3742843802611976,
+            "residual": 328.73842764814617,
+            "residualOverSqrtLabels": 0.3235511011559549,
+            "binomialZ": 0.6686946948949856
+          }
+        ],
+        "exponent": {
+          "theta": 0.42405744898643394,
+          "C": 1.1685095855750287
+        }
+      },
+      {
+        "name": "wheel-W210-seed-424242",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 78911,
+            "squarefree": 29660,
+            "expected": 0.3740033304056353,
+            "mean": 0.3758664824929351,
+            "residual": 147.02319436091057,
+            "residualOverSqrtLabels": 0.52337994942012,
+            "binomialZ": 1.0816663886442226
+          },
+          {
+            "N": 2000000,
+            "labels": 149798,
+            "squarefree": 56228,
+            "expected": 0.3739884186512011,
+            "mean": 0.3753588165396067,
+            "residual": 205.2828628873831,
+            "residualOverSqrtLabels": 0.5303953259849935,
+            "binomialZ": 1.096173825066363
+          },
+          {
+            "N": 4000000,
+            "labels": 284238,
+            "squarefree": 106455,
+            "expected": 0.3739776268661972,
+            "mean": 0.37452768454604946,
+            "residual": 156.34729480584792,
+            "residualOverSqrtLabels": 0.29325761751757223,
+            "binomialZ": 0.6060822482327132
+          },
+          {
+            "N": 8000000,
+            "labels": 541990,
+            "squarefree": 202975,
+            "expected": 0.37397056228402387,
+            "mean": 0.3744995295116146,
+            "residual": 286.6949476819136,
+            "residualOverSqrtLabels": 0.3894255148800327,
+            "binomialZ": 0.8048377094091569
+          },
+          {
+            "N": 16000000,
+            "labels": 1033842,
+            "squarefree": 387842,
+            "expected": 0.37396593463313954,
+            "mean": 0.3751462989509035,
+            "residual": 1220.3102070057648,
+            "residualOverSqrtLabels": 1.2001710815349618,
+            "binomialZ": 2.4804367295352514
+          }
+        ],
+        "exponent": {
+          "theta": 0.7109020589662598,
+          "C": 0.036779485348263835
+        }
+      }
+    ],
+    "composite": [
+      {
+        "name": "composite-W210-seed-12345",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 51430,
+            "squarefree": 19121,
+            "expected": 0.3740033304056353,
+            "mean": 0.37178689480847754,
+            "residual": -113.99128276182455,
+            "residualOverSqrtLabels": -0.5026473285306367,
+            "binomialZ": -1.038818398021915
+          },
+          {
+            "N": 2000000,
+            "labels": 100237,
+            "squarefree": 37318,
+            "expected": 0.3739884186512011,
+            "mean": 0.3722976545586959,
+            "residual": -169.47712034044525,
+            "residualOverSqrtLabels": -0.5352997567464515,
+            "binomialZ": -1.10630986579707
+          },
+          {
+            "N": 4000000,
+            "labels": 195003,
+            "squarefree": 72893,
+            "expected": 0.3739776268661972,
+            "mean": 0.37380450557170913,
+            "residual": -33.75917178904638,
+            "residualOverSqrtLabels": -0.0764488817508993,
+            "binomialZ": -0.15799865837648872
+          },
+          {
+            "N": 8000000,
+            "labels": 379540,
+            "squarefree": 141993,
+            "expected": 0.37397056228402387,
+            "mean": 0.37411866996890975,
+            "residual": 56.21279072159086,
+            "residualOverSqrtLabels": 0.09124443158215129,
+            "binomialZ": 0.18857767789956528
+          },
+          {
+            "N": 16000000,
+            "labels": 738141,
+            "squarefree": 276374,
+            "expected": 0.37396593463313954,
+            "mean": 0.37441897957165365,
+            "residual": 334.411043959728,
+            "residualOverSqrtLabels": 0.3892341594068629,
+            "binomialZ": 0.8044442331902969
+          }
+        ],
+        "exponent": {
+          "theta": 0.15734897441914353,
+          "C": 15.322582225719652
+        }
+      },
+      {
+        "name": "composite-W210-seed-271828",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 51353,
+            "squarefree": 19334,
+            "expected": 0.3740033304056353,
+            "mean": 0.37649212314762526,
+            "residual": 127.80697367940957,
+            "residualOverSqrtLabels": 0.56399030884317,
+            "binomialZ": 1.165595589346969
+          },
+          {
+            "N": 2000000,
+            "labels": 100008,
+            "squarefree": 37391,
+            "expected": 0.3739884186512011,
+            "mean": 0.3738800895928326,
+            "residual": -10.833772469319229,
+            "residualOverSqrtLabels": -0.03425802636142629,
+            "binomialZ": -0.07080143801435278
+          },
+          {
+            "N": 4000000,
+            "labels": 194809,
+            "squarefree": 73057,
+            "expected": 0.3739776268661972,
+            "mean": 0.37501860796985764,
+            "residual": 202.79248782299692,
+            "residualOverSqrtLabels": 0.4594596258519788,
+            "binomialZ": 0.9495757531067113
+          },
+          {
+            "N": 8000000,
+            "labels": 379554,
+            "squarefree": 142384,
+            "expected": 0.37397056228402387,
+            "mean": 0.3751350268999932,
+            "residual": 441.97720284960815,
+            "residualOverSqrtLabels": 0.717402825324413,
+            "binomialZ": 1.4826785215540663
+          },
+          {
+            "N": 16000000,
+            "labels": 738545,
+            "squarefree": 276752,
+            "expected": 0.37396593463313954,
+            "mean": 0.37472598149063363,
+            "residual": 561.3288063679356,
+            "residualOverSqrtLabels": 0.6531739395450723,
+            "binomialZ": 1.3499380674551262
+          }
+        ],
+        "exponent": {
+          "theta": 1.0004591014673438,
+          "C": 0.0007526623492809493
+        }
+      },
+      {
+        "name": "composite-W210-seed-314159",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 51194,
+            "squarefree": 19317,
+            "expected": 0.3740033304056353,
+            "mean": 0.37732937453607845,
+            "residual": 170.27350321390622,
+            "residualOverSqrtLabels": 0.7525537761081292,
+            "binomialZ": 1.5552986432998432
+          },
+          {
+            "N": 2000000,
+            "labels": 99809,
+            "squarefree": 37406,
+            "expected": 0.3739884186512011,
+            "mean": 0.37477582181967556,
+            "residual": 78.58992284227133,
+            "residualOverSqrtLabels": 0.24876083746476432,
+            "binomialZ": 0.514116745323992
+          },
+          {
+            "N": 4000000,
+            "labels": 194729,
+            "squarefree": 73134,
+            "expected": 0.3739776268661972,
+            "mean": 0.37556809720175216,
+            "residual": 309.7106979722885,
+            "residualOverSqrtLabels": 0.7018444825806905,
+            "binomialZ": 1.4505180991137983
+          },
+          {
+            "N": 8000000,
+            "labels": 379554,
+            "squarefree": 142620,
+            "expected": 0.37397056228402387,
+            "mean": 0.3757568093077665,
+            "residual": 677.9772028496081,
+            "residualOverSqrtLabels": 1.100470245284016,
+            "binomialZ": 2.2743757603046917
+          },
+          {
+            "N": 16000000,
+            "labels": 738991,
+            "squarefree": 276870,
+            "expected": 0.37396593463313954,
+            "mean": 0.3746595019425135,
+            "residual": 512.5399995215703,
+            "residualOverSqrtLabels": 0.596222264272901,
+            "binomialZ": 1.2322339923219485
+          }
+        ],
+        "exponent": {
+          "theta": 0.6531178457012086,
+          "C": 0.09489573208514054
+        }
+      },
+      {
+        "name": "composite-W210-seed-161803",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 51288,
+            "squarefree": 19343,
+            "expected": 0.3740033304056353,
+            "mean": 0.37714475120885976,
+            "residual": 161.11719015577546,
+            "residualOverSqrtLabels": 0.7114329855386395,
+            "binomialZ": 1.4703145374265174
+          },
+          {
+            "N": 2000000,
+            "labels": 99962,
+            "squarefree": 37664,
+            "expected": 0.3739884186512011,
+            "mean": 0.37678317760749086,
+            "residual": 279.36969478863466,
+            "residualOverSqrtLabels": 0.8836124470753379,
+            "binomialZ": 1.826171514969623
+          },
+          {
+            "N": 4000000,
+            "labels": 194728,
+            "squarefree": 73392,
+            "expected": 0.3739776268661972,
+            "mean": 0.376894950905879,
+            "residual": 568.0846755991515,
+            "residualOverSqrtLabels": 1.2873566252986093,
+            "binomialZ": 2.6606094816667696
+          },
+          {
+            "N": 8000000,
+            "labels": 379519,
+            "squarefree": 142613,
+            "expected": 0.37397056228402387,
+            "mean": 0.3757730179516704,
+            "residual": 684.0661725295358,
+            "residualOverSqrtLabels": 1.1104048584733035,
+            "binomialZ": 2.2949079314583853
+          },
+          {
+            "N": 16000000,
+            "labels": 739546,
+            "squarefree": 277871,
+            "expected": 0.37396593463313954,
+            "mean": 0.37573186792978397,
+            "residual": 1305.9889058001572,
+            "residualOverSqrtLabels": 1.5186471920102593,
+            "binomialZ": 3.138642758705803
+          }
+        ],
+        "exponent": {
+          "theta": 0.7615696456374933,
+          "C": 0.043998220072588405
+        }
+      },
+      {
+        "name": "composite-W210-seed-424242",
+        "rows": [
+          {
+            "N": 1000000,
+            "labels": 51570,
+            "squarefree": 19190,
+            "expected": 0.3740033304056353,
+            "mean": 0.37211557106845067,
+            "residual": -97.35174901861319,
+            "residualOverSqrtLabels": -0.4286918161116971,
+            "binomialZ": -0.885974957750353
+          },
+          {
+            "N": 2000000,
+            "labels": 100843,
+            "squarefree": 37634,
+            "expected": 0.3739884186512011,
+            "mean": 0.3731939747924992,
+            "residual": -80.11410204307322,
+            "residualOverSqrtLabels": -0.25228189860458655,
+            "binomialZ": -0.521393760917528
+          },
+          {
+            "N": 4000000,
+            "labels": 195784,
+            "squarefree": 73123,
+            "expected": 0.3739776268661972,
+            "mean": 0.37348812977567114,
+            "residual": -95.83569837154937,
+            "residualOverSqrtLabels": -0.21659015564287346,
+            "binomialZ": -0.4476318452980685
+          },
+          {
+            "N": 8000000,
+            "labels": 380954,
+            "squarefree": 142403,
+            "expected": 0.37397056228402387,
+            "mean": 0.3738062863232831,
+            "residual": -62.58158434802317,
+            "residualOverSqrtLabels": -0.10139353970272659,
+            "binomialZ": -0.2095531523361236
+          },
+          {
+            "N": 16000000,
+            "labels": 740943,
+            "squarefree": 277292,
+            "expected": 0.37396593463313954,
+            "mean": 0.37424201321829076,
+            "residual": 204.55849511770066,
+            "residualOverSqrtLabels": 0.23764305147165068,
+            "binomialZ": 0.49114543956119083
+          }
+        ],
+        "exponent": {
+          "theta": 0.1856891865551422,
+          "C": 10.317113128527172
+        }
+      }
+    ],
+    "summaries": {
+      "cramer": {
+        "meanRange": [
+          0.3792530854862913,
+          0.38055165602555807
+        ],
+        "residualOverSqrtLabelsRange": [
+          5.370048531139097,
+          6.68621344355202
+        ],
+        "binomialZRange": [
+          11.09847239360951,
+          13.81863774428536
+        ],
+        "thetaRange": [
+          0.9433461835067483,
+          1.1070138721680698
+        ]
+      },
+      "wheel": {
+        "meanRange": [
+          0.3742843802611976,
+          0.3752533096377466
+        ],
+        "residualOverSqrtLabelsRange": [
+          0.3235511011559549,
+          1.3070838308260933
+        ],
+        "binomialZRange": [
+          0.6686946948949856,
+          2.7013971528260297
+        ],
+        "thetaRange": [
+          0.42405744898643394,
+          1.0233053710453792
+        ]
+      },
+      "composite": {
+        "meanRange": [
+          0.37424201321829076,
+          0.37573186792978397
+        ],
+        "residualOverSqrtLabelsRange": [
+          0.23764305147165068,
+          1.5186471920102593
+        ],
+        "binomialZRange": [
+          0.49114543956119083,
+          3.138642758705803
+        ],
+        "thetaRange": [
+          0.15734897441914353,
+          1.0004591014673438
+        ]
+      }
+    }
+  },
+  "functionFields": [
+    {
+      "q": 2,
+      "maxDegree": 24,
+      "degrees": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "rows": [
+        {
+          "q": 2,
+          "degree": 20,
+          "labels": 52377,
+          "squarefree": 11303,
+          "expected": 0.21609694592820392,
+          "mean": 0.21580082860797678,
+          "residual": -15.50973688153681,
+          "residualOverSqrtLabels": -0.06776947485991527,
+          "binomialZ": -0.16465640442684165
+        },
+        {
+          "q": 2,
+          "degree": 21,
+          "labels": 99858,
+          "squarefree": 21552,
+          "expected": 0.21609694592820392,
+          "mean": 0.21582647359250134,
+          "residual": -27.00882649858613,
+          "residualOverSqrtLabels": -0.08547011400283586,
+          "binomialZ": -0.20766284063362736
+        },
+        {
+          "q": 2,
+          "degree": 22,
+          "labels": 190557,
+          "squarefree": 41195,
+          "expected": 0.21608735845427818,
+          "mean": 0.21618203477174808,
+          "residual": 18.04123502811126,
+          "residualOverSqrtLabels": 0.04132889661085203,
+          "binomialZ": 0.10041655004130694
+        },
+        {
+          "q": 2,
+          "degree": 23,
+          "labels": 364722,
+          "squarefree": 78840,
+          "expected": 0.21608735845427818,
+          "mean": 0.2161646404658891,
+          "residual": 28.186449838758563,
+          "residualOverSqrtLabels": 0.0466723209591038,
+          "binomialZ": 0.11339943326488834
+        },
+        {
+          "q": 2,
+          "degree": 24,
+          "labels": 698870,
+          "squarefree": 151134,
+          "expected": 0.21608304270715725,
+          "mean": 0.21625481133830327,
+          "residual": 120.04394324900932,
+          "residualOverSqrtLabels": 0.14359590456991164,
+          "binomialZ": 0.3488965547830895
+        }
+      ],
+      "exponent": {
+        "theta": 0.6390638907592745,
+        "C": 0.01278400464478817
+      },
+      "finalControls": {
+        "randomMonic": [
+          {
+            "name": "random-monic-12345",
+            "labels": 699084,
+            "squarefree": 350653,
+            "mean": 0.5015892224682584,
+            "residual": 199592.8021721097,
+            "residualOverSqrtLabels": 238.71526649121597,
+            "binomialZ": 580.0091186609222
+          },
+          {
+            "name": "random-monic-271828",
+            "labels": 699802,
+            "squarefree": 349953,
+            "mean": 0.5000743067324758,
+            "residual": 198737.65454744594,
+            "residualOverSqrtLabels": 237.57053210437581,
+            "binomialZ": 577.2277448821469
+          },
+          {
+            "name": "random-monic-314159",
+            "labels": 699340,
+            "squarefree": 349548,
+            "mean": 0.499825549804101,
+            "residual": 198432.48491317665,
+            "residualOverSqrtLabels": 237.28407186058908,
+            "binomialZ": 576.5317292649966
+          },
+          {
+            "name": "random-monic-161803",
+            "labels": 700494,
+            "squarefree": 350243,
+            "mean": 0.4999942897440949,
+            "residual": 198878.1250818926,
+            "residualOverSqrtLabels": 237.6209933915103,
+            "binomialZ": 577.3503512286433
+          },
+          {
+            "name": "random-monic-424242",
+            "labels": 699630,
+            "squarefree": 349899,
+            "mean": 0.5001200634621157,
+            "residual": 198720.82083079158,
+            "residualOverSqrtLabels": 237.57960752294784,
+            "binomialZ": 577.2497955268535
+          }
+        ],
+        "randomReducible": [
+          {
+            "name": "random-reducible-12345",
+            "labels": 700320,
+            "squarefree": 358410,
+            "mean": 0.5117803289924606,
+            "residual": 207082.72353132363,
+            "residualOverSqrtLabels": 247.45464106535186,
+            "binomialZ": 601.2432735555726
+          },
+          {
+            "name": "random-reducible-271828",
+            "labels": 699550,
+            "squarefree": 358546,
+            "mean": 0.5125380601815452,
+            "residual": 207385.10747420814,
+            "residualOverSqrtLabels": 247.95232537767058,
+            "binomialZ": 602.4525026241707
+          },
+          {
+            "name": "random-reducible-314159",
+            "labels": 698155,
+            "squarefree": 358002,
+            "mean": 0.5127829779919931,
+            "residual": 207142.54331878462,
+            "residualOverSqrtLabels": 247.90961900946826,
+            "binomialZ": 602.3487384898265
+          },
+          {
+            "name": "random-reducible-161803",
+            "labels": 700032,
+            "squarefree": 358641,
+            "mean": 0.5123208653318705,
+            "residual": 207375.9554476233,
+            "residualOverSqrtLabels": 247.85600962357861,
+            "binomialZ": 602.2184831730264
+          },
+          {
+            "name": "random-reducible-424242",
+            "labels": 699305,
+            "squarefree": 358475,
+            "mean": 0.5126160974110009,
+            "residual": 207367.0478196714,
+            "residualOverSqrtLabels": 247.9741602161104,
+            "binomialZ": 602.5055549722075
+          }
+        ],
+        "randomMonicSummary": {
+          "meanRange": [
+            0.499825549804101,
+            0.5015892224682584
+          ],
+          "residualOverSqrtLabelsRange": [
+            237.28407186058908,
+            238.71526649121597
+          ],
+          "binomialZRange": [
+            576.5317292649966,
+            580.0091186609222
+          ]
+        },
+        "randomReducibleSummary": {
+          "meanRange": [
+            0.5117803289924606,
+            0.5127829779919931
+          ],
+          "residualOverSqrtLabelsRange": [
+            247.45464106535186,
+            247.9741602161104
+          ],
+          "binomialZRange": [
+            601.2432735555726,
+            602.5055549722075
+          ]
+        }
+      }
+    },
+    {
+      "q": 3,
+      "maxDegree": 15,
+      "degrees": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "rows": [
+        {
+          "q": 3,
+          "degree": 11,
+          "labels": 16104,
+          "squarefree": 8772,
+          "expected": 0.5466635355225336,
+          "mean": 0.5447093889716841,
+          "residual": -31.469576054880235,
+          "residualOverSqrtLabels": -0.2479842001102893,
+          "binomialZ": -0.49814254110228495
+        },
+        {
+          "q": 3,
+          "degree": 12,
+          "labels": 44220,
+          "squarefree": 24278,
+          "expected": 0.5465440618717878,
+          "mean": 0.5490275893260967,
+          "residual": 109.82158402954155,
+          "residualOverSqrtLabels": 0.5222498626261793,
+          "binomialZ": 1.0490548540522473
+        },
+        {
+          "q": 3,
+          "degree": 13,
+          "labels": 122640,
+          "squarefree": 66963,
+          "expected": 0.5465440618717878,
+          "mean": 0.5460127201565558,
+          "residual": -65.16374795605952,
+          "residualOverSqrtLabels": -0.18607583832922034,
+          "binomialZ": -0.37377465345708377
+        },
+        {
+          "q": 3,
+          "degree": 14,
+          "labels": 341484,
+          "squarefree": 186720,
+          "expected": 0.546508394861453,
+          "mean": 0.5467898935235619,
+          "residual": 96.1272891316039,
+          "residualOverSqrtLabels": 0.16449833823690815,
+          "binomialZ": 0.33042923912060007
+        },
+        {
+          "q": 3,
+          "degree": 15,
+          "labels": 956576,
+          "squarefree": 522885,
+          "expected": 0.546508394861453,
+          "mean": 0.5466214916535643,
+          "residual": 108.18567701074062,
+          "residualOverSqrtLabels": 0.11061398203804626,
+          "binomialZ": 0.22219126535061057
+        }
+      ],
+      "exponent": {
+        "theta": 0.22827190008680792,
+        "C": 5.149623144153973
+      },
+      "finalControls": {
+        "randomMonic": [
+          {
+            "name": "random-monic-12345",
+            "labels": 956948,
+            "squarefree": 637996,
+            "mean": 0.6666987129917195,
+            "residual": 115015.88455412228,
+            "residualOverSqrtLabels": 117.57463907915671,
+            "binomialZ": 236.17319753621805
+          },
+          {
+            "name": "random-monic-271828",
+            "labels": 958327,
+            "squarefree": 638513,
+            "mean": 0.6662788380166687,
+            "residual": 114779.24947760836,
+            "residualOverSqrtLabels": 117.24829028585538,
+            "binomialZ": 235.51765788387712
+          },
+          {
+            "name": "random-monic-314159",
+            "labels": 957177,
+            "squarefree": 638482,
+            "mean": 0.6670469516087412,
+            "residual": 115376.73413169902,
+            "residualOverSqrtLabels": 117.92940691129833,
+            "binomialZ": 236.88582275842666
+          },
+          {
+            "name": "random-monic-161803",
+            "labels": 958155,
+            "squarefree": 639356,
+            "mean": 0.6672782587368432,
+            "residual": 115716.2489215245,
+            "residualOverSqrtLabels": 118.21605487590627,
+            "binomialZ": 237.46161501174691
+          },
+          {
+            "name": "random-monic-424242",
+            "labels": 958251,
+            "squarefree": 639263,
+            "mean": 0.6671143573030448,
+            "residual": 115570.7841156178,
+            "residualOverSqrtLabels": 118.06153331374922,
+            "binomialZ": 237.1512262092914
+          }
+        ],
+        "randomReducible": [
+          {
+            "name": "random-reducible-12345",
+            "labels": 956797,
+            "squarefree": 646491,
+            "mean": 0.6756825115463364,
+            "residual": 123593.4073217464,
+            "residualOverSqrtLabels": 126.35295492730509,
+            "binomialZ": 253.80627673660828
+          },
+          {
+            "name": "random-reducible-271828",
+            "labels": 958487,
+            "squarefree": 647458,
+            "mean": 0.6755000328642955,
+            "residual": 123636.8081344305,
+            "residualOverSqrtLabels": 126.28584401548477,
+            "binomialZ": 253.67147046581454
+          },
+          {
+            "name": "random-reducible-314159",
+            "labels": 957119,
+            "squarefree": 645728,
+            "mean": 0.6746580101324914,
+            "residual": 122654.43161860097,
+            "residualOverSqrtLabels": 125.37191959610253,
+            "binomialZ": 251.83566255585686
+          },
+          {
+            "name": "random-reducible-161803",
+            "labels": 958225,
+            "squarefree": 646852,
+            "mean": 0.67505231026116,
+            "residual": 123173.99333388422,
+            "residualOverSqrtLabels": 125.83031184319177,
+            "binomialZ": 252.75643903936356
+          },
+          {
+            "name": "random-reducible-424242",
+            "labels": 958086,
+            "squarefree": 646207,
+            "mean": 0.674477030245719,
+            "residual": 122604.95800076996,
+            "residualOverSqrtLabels": 125.2580902245591,
+            "binomialZ": 251.6070125097117
+          }
+        ],
+        "randomMonicSummary": {
+          "meanRange": [
+            0.6662788380166687,
+            0.6672782587368432
+          ],
+          "residualOverSqrtLabelsRange": [
+            117.24829028585538,
+            118.21605487590627
+          ],
+          "binomialZRange": [
+            235.51765788387712,
+            237.46161501174691
+          ]
+        },
+        "randomReducibleSummary": {
+          "meanRange": [
+            0.674477030245719,
+            0.6756825115463364
+          ],
+          "residualOverSqrtLabelsRange": [
+            125.2580902245591,
+            126.35295492730509
+          ],
+          "binomialZRange": [
+            251.6070125097117,
+            253.80627673660828
+          ]
+        }
+      }
+    }
+  ]
+}

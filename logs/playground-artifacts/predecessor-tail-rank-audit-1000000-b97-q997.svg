@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">AP-scrubbed predecessor large-prime tail rank</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">strip q&lt;=97, rank tail omega/rad, subtract AP-product weighted nulls q&lt;=97 and q&lt;=997</text>
+<rect x="82" y="72" width="1000" height="310" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="336.14" y2="336.14" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 358.56 L 415.33 356.56 L 748.67 187.99 L 1082.00 106.45" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 375.58 L 415.33 376.02 L 748.67 217.56 L 1082.00 151.23" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 82.00 186.29 L 415.33 273.44 L 748.67 267.65 L 1082.00 302.57" fill="none" stroke="#fb7185" stroke-width="3"/>
+<path d="M 82.00 179.34 L 415.33 266.34 L 748.67 260.68 L 1082.00 296.59" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="82" y="406" fill="#94a3b8" font-size="12">fresh blocks</text>
+<text x="552" y="406" fill="#a7f3d0" font-size="12">omega corrected q&lt;=97</text>
+<text x="772" y="406" fill="#7dd3fc" font-size="12">omega q&lt;=997</text>
+<text x="917" y="406" fill="#fb7185" font-size="12">rad corrected</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="90" y="460" fill="#e5e7eb">final block 500000..1000000, prime predecessors 36960</text>
+<text x="90" y="488" fill="#a7f3d0">omega: prime -3.325236, q&lt;=97 corrected 0.364665, q&lt;=997 corrected 0.293581</text>
+<text x="90" y="512" fill="#94a3b8">omega controls random -0.240959 .. 0.384873, composite 0.451285 .. 0.841684</text>
+<text x="90" y="548" fill="#fb7185">rad: prime -8.922985, q&lt;=97 corrected 0.053298, q&lt;=997 corrected 0.062793</text>
+<text x="90" y="572" fill="#94a3b8">rad controls random -0.283305 .. 0.217917, composite 1.335864 .. 1.895259</text>
+<text x="650" y="500" fill="#fbbf24">tailOneRate final 0.066200</text>
+</g>
+</svg>

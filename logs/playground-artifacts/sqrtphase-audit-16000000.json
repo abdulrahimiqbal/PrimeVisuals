@@ -1,0 +1,1021 @@
+{
+  "candidate": "sqrtphaseres(x)=sum_{p<=x}cos(2*pi*sqrt(p))-integral cos(2*pi*sqrt(t))/log(t)dt",
+  "N": 16000000,
+  "endpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000,
+    16000000
+  ],
+  "blocks": [
+    {
+      "lo": 1,
+      "hi": 1000000
+    },
+    {
+      "lo": 1000000,
+      "hi": 2000000
+    },
+    {
+      "lo": 2000000,
+      "hi": 4000000
+    },
+    {
+      "lo": 4000000,
+      "hi": 8000000
+    },
+    {
+      "lo": 8000000,
+      "hi": 16000000
+    }
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "realMaxAbsTheta": 0.5920070186631646,
+  "real": {
+    "name": "real-primes",
+    "rows": [
+      {
+        "N": 1000000,
+        "labels": 78498,
+        "phaseSum": -83.59965908197516,
+        "main": -0.3940806110936723,
+        "residual": -83.20557847088149,
+        "residualOverSqrtLabels": -0.2969772274531309,
+        "maxAbsResidual": 83.20557847088149,
+        "maxAbsResidualOverSqrtLabels": 0.2969772274531309
+      },
+      {
+        "N": 2000000,
+        "labels": 148933,
+        "phaseSum": -95.20323126667564,
+        "main": 29.820738234811976,
+        "residual": -125.02396950148761,
+        "residualOverSqrtLabels": -0.32396479232660275,
+        "maxAbsResidual": 125.02396950148761,
+        "maxAbsResidualOverSqrtLabels": 0.32396479232660275
+      },
+      {
+        "N": 4000000,
+        "labels": 283146,
+        "phaseSum": -374.624631664208,
+        "main": -0.39432260563757826,
+        "residual": -374.2303090585704,
+        "residualOverSqrtLabels": -0.7032888674473616,
+        "maxAbsResidual": 374.2303090585704,
+        "maxAbsResidualOverSqrtLabels": 0.7032888674473616
+      },
+      {
+        "N": 8000000,
+        "labels": 539777,
+        "phaseSum": -320.7230035609257,
+        "main": 24.639027348772636,
+        "residual": -345.3620309096983,
+        "residualOverSqrtLabels": -0.47007526756049983,
+        "maxAbsResidual": 374.2303090585704,
+        "maxAbsResidualOverSqrtLabels": 0.509368132323593
+      },
+      {
+        "N": 16000000,
+        "labels": 1031130,
+        "phaseSum": -184.19954220497192,
+        "main": -0.39453089122164126,
+        "residual": -183.80501131375027,
+        "residualOverSqrtLabels": -0.1810091948871144,
+        "maxAbsResidual": 374.2303090585704,
+        "maxAbsResidualOverSqrtLabels": 0.3685379765267604
+      }
+    ]
+  },
+  "realBlocks": {
+    "name": "real-prime-blocks",
+    "rows": [
+      {
+        "lo": 1,
+        "hi": 1000000,
+        "labels": 78498,
+        "phaseSum": -83.59965908197516,
+        "main": -0.3940806110936723,
+        "residual": -83.20557847088149,
+        "residualOverSqrtLabels": -0.2969772274531309
+      },
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "labels": 70435,
+        "phaseSum": -11.603572184703118,
+        "main": 30.214818845905647,
+        "residual": -41.818391030608765,
+        "residualOverSqrtLabels": -0.15756982757740381
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "labels": 134213,
+        "phaseSum": -279.4214003975317,
+        "main": -30.215060840449556,
+        "residual": -249.20633955708217,
+        "residualOverSqrtLabels": -0.6802394174046515
+      },
+      {
+        "lo": 4000000,
+        "hi": 8000000,
+        "labels": 256631,
+        "phaseSum": 53.90162810328566,
+        "main": 25.033349954410216,
+        "residual": 28.868278148875444,
+        "residualOverSqrtLabels": 0.056985757153438135
+      },
+      {
+        "lo": 8000000,
+        "hi": 16000000,
+        "labels": 491353,
+        "phaseSum": 136.52346135596184,
+        "main": -25.033558239994278,
+        "residual": 161.55701959595612,
+        "residualOverSqrtLabels": 0.2304777612135898
+      }
+    ]
+  },
+  "cramer": [
+    {
+      "name": "cramer-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78571,
+          "phaseSum": 258.3578478107018,
+          "main": -0.3940806110936723,
+          "residual": 258.75192842179547,
+          "residualOverSqrtLabels": 0.9231078727650218,
+          "maxAbsResidual": 258.75192842179547,
+          "maxAbsResidualOverSqrtLabels": 0.9231078727650218
+        },
+        {
+          "N": 2000000,
+          "labels": 148964,
+          "phaseSum": 494.30196101838874,
+          "main": 29.820738234811976,
+          "residual": 464.48122278357675,
+          "residualOverSqrtLabels": 1.2034484697840941,
+          "maxAbsResidual": 464.48122278357675,
+          "maxAbsResidualOverSqrtLabels": 1.2034484697840941
+        },
+        {
+          "N": 4000000,
+          "labels": 283084,
+          "phaseSum": 379.8270145163841,
+          "main": -0.39432260563757826,
+          "residual": 380.2213371220217,
+          "residualOverSqrtLabels": 0.7146260165375861,
+          "maxAbsResidual": 464.48122278357675,
+          "maxAbsResidualOverSqrtLabels": 0.8729924746117299
+        },
+        {
+          "N": 8000000,
+          "labels": 539134,
+          "phaseSum": 93.94555137994293,
+          "main": 24.639027348772636,
+          "residual": 69.30652403117028,
+          "residualOverSqrtLabels": 0.09438995030464703,
+          "maxAbsResidual": 464.48122278357675,
+          "maxAbsResidualOverSqrtLabels": 0.6325863278941186
+        },
+        {
+          "N": 16000000,
+          "labels": 1030753,
+          "phaseSum": 935.316599514873,
+          "main": -0.39453089122164126,
+          "residual": 935.7111304060946,
+          "residualOverSqrtLabels": 0.921646741041848,
+          "maxAbsResidual": 935.7111304060946,
+          "maxAbsResidualOverSqrtLabels": 0.921646741041848
+        }
+      ]
+    },
+    {
+      "name": "cramer-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78614,
+          "phaseSum": -29.79510289402199,
+          "main": -0.3940806110936723,
+          "residual": -29.401022282928317,
+          "residualOverSqrtLabels": -0.10486063517078988,
+          "maxAbsResidual": 29.401022282928317,
+          "maxAbsResidualOverSqrtLabels": 0.10486063517078988
+        },
+        {
+          "N": 2000000,
+          "labels": 148976,
+          "phaseSum": -53.52693150639526,
+          "main": 29.820738234811976,
+          "residual": -83.34766974120723,
+          "residualOverSqrtLabels": -0.21594109911385134,
+          "maxAbsResidual": 83.34766974120723,
+          "maxAbsResidualOverSqrtLabels": 0.21594109911385134
+        },
+        {
+          "N": 4000000,
+          "labels": 283531,
+          "phaseSum": -509.9453733649855,
+          "main": -0.39432260563757826,
+          "residual": -509.55105075934796,
+          "residualOverSqrtLabels": -0.9569459895221435,
+          "maxAbsResidual": 509.55105075934796,
+          "maxAbsResidualOverSqrtLabels": 0.9569459895221435
+        },
+        {
+          "N": 8000000,
+          "labels": 539682,
+          "phaseSum": -528.1556501225596,
+          "main": 24.639027348772636,
+          "residual": -552.7946774713322,
+          "residualOverSqrtLabels": -0.7524798696631729,
+          "maxAbsResidual": 552.7946774713322,
+          "maxAbsResidualOverSqrtLabels": 0.7524798696631729
+        },
+        {
+          "N": 16000000,
+          "labels": 1031604,
+          "phaseSum": -263.6798757572459,
+          "main": -0.39453089122164126,
+          "residual": -263.2853448660243,
+          "residualOverSqrtLabels": -0.2592209972887269,
+          "maxAbsResidual": 552.7946774713322,
+          "maxAbsResidualOverSqrtLabels": 0.5442611614517954
+        }
+      ]
+    },
+    {
+      "name": "cramer-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78251,
+          "phaseSum": -108.94960161208046,
+          "main": -0.3940806110936723,
+          "residual": -108.55552100098679,
+          "residualOverSqrtLabels": -0.38806722752821965,
+          "maxAbsResidual": 108.55552100098679,
+          "maxAbsResidualOverSqrtLabels": 0.38806722752821965
+        },
+        {
+          "N": 2000000,
+          "labels": 148553,
+          "phaseSum": -96.95219883756408,
+          "main": 29.820738234811976,
+          "residual": -126.77293707237607,
+          "residualOverSqrtLabels": -0.3289166352053803,
+          "maxAbsResidual": 126.77293707237607,
+          "maxAbsResidualOverSqrtLabels": 0.3289166352053803
+        },
+        {
+          "N": 4000000,
+          "labels": 282625,
+          "phaseSum": -88.0551171372278,
+          "main": -0.39432260563757826,
+          "residual": -87.66079453159021,
+          "residualOverSqrtLabels": -0.16489220096904098,
+          "maxAbsResidual": 126.77293707237607,
+          "maxAbsResidualOverSqrtLabels": 0.2384631434026156
+        },
+        {
+          "N": 8000000,
+          "labels": 539269,
+          "phaseSum": -90.61964773612137,
+          "main": 24.639027348772636,
+          "residual": -115.25867508489401,
+          "residualOverSqrtLabels": -0.15695346043225042,
+          "maxAbsResidual": 126.77293707237607,
+          "maxAbsResidualOverSqrtLabels": 0.17263300266130807
+        },
+        {
+          "N": 16000000,
+          "labels": 1030751,
+          "phaseSum": 52.168675164751704,
+          "main": -0.39453089122164126,
+          "residual": 52.563206055973346,
+          "residualOverSqrtLabels": 0.051773194723653104,
+          "maxAbsResidual": 126.77293707237607,
+          "maxAbsResidualOverSqrtLabels": 0.12486757276084515
+        }
+      ]
+    },
+    {
+      "name": "cramer-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78486,
+          "phaseSum": 28.019041864829756,
+          "main": -0.3940806110936723,
+          "residual": 28.41312247592343,
+          "residualOverSqrtLabels": 0.10141982698972478,
+          "maxAbsResidual": 28.41312247592343,
+          "maxAbsResidualOverSqrtLabels": 0.10141982698972478
+        },
+        {
+          "N": 2000000,
+          "labels": 148774,
+          "phaseSum": 100.05554510968564,
+          "main": 29.820738234811976,
+          "residual": 70.23480687487367,
+          "residualOverSqrtLabels": 0.18209116424215183,
+          "maxAbsResidual": 70.23480687487367,
+          "maxAbsResidualOverSqrtLabels": 0.18209116424215183
+        },
+        {
+          "N": 4000000,
+          "labels": 283065,
+          "phaseSum": -22.98423986781621,
+          "main": -0.39432260563757826,
+          "residual": -22.58991726217863,
+          "residualOverSqrtLabels": -0.04245917520036474,
+          "maxAbsResidual": 70.23480687487367,
+          "maxAbsResidualOverSqrtLabels": 0.13201075221540853
+        },
+        {
+          "N": 8000000,
+          "labels": 540580,
+          "phaseSum": -360.5508626544762,
+          "main": 24.639027348772636,
+          "residual": -385.1898900032488,
+          "residualOverSqrtLabels": -0.5238957710675471,
+          "maxAbsResidual": 385.1898900032488,
+          "maxAbsResidualOverSqrtLabels": 0.5238957710675471
+        },
+        {
+          "N": 16000000,
+          "labels": 1033066,
+          "phaseSum": 377.21423868441804,
+          "main": -0.39453089122164126,
+          "residual": 377.60876957563966,
+          "residualOverSqrtLabels": 0.37151644091736774,
+          "maxAbsResidual": 385.1898900032488,
+          "maxAbsResidualOverSqrtLabels": 0.3789752477734599
+        }
+      ]
+    },
+    {
+      "name": "cramer-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 79143,
+          "phaseSum": -196.8756004501342,
+          "main": -0.3940806110936723,
+          "residual": -196.48151983904052,
+          "residualOverSqrtLabels": -0.6984180495846575,
+          "maxAbsResidual": 196.48151983904052,
+          "maxAbsResidualOverSqrtLabels": 0.6984180495846575
+        },
+        {
+          "N": 2000000,
+          "labels": 149975,
+          "phaseSum": -43.08919788009794,
+          "main": 29.820738234811976,
+          "residual": -72.90993611490993,
+          "residualOverSqrtLabels": -0.18826833524576303,
+          "maxAbsResidual": 196.48151983904052,
+          "maxAbsResidualOverSqrtLabels": 0.5073553841598949
+        },
+        {
+          "N": 4000000,
+          "labels": 284735,
+          "phaseSum": 238.46513417193185,
+          "main": -0.39432260563757826,
+          "residual": 238.85945677756942,
+          "residualOverSqrtLabels": 0.44763291479826123,
+          "maxAbsResidual": 238.85945677756942,
+          "maxAbsResidualOverSqrtLabels": 0.44763291479826123
+        },
+        {
+          "N": 8000000,
+          "labels": 541713,
+          "phaseSum": 940.7419999602874,
+          "main": 24.639027348772636,
+          "residual": 916.1029726115148,
+          "residualOverSqrtLabels": 1.244685595052432,
+          "maxAbsResidual": 916.1029726115148,
+          "maxAbsResidualOverSqrtLabels": 1.244685595052432
+        },
+        {
+          "N": 16000000,
+          "labels": 1034420,
+          "phaseSum": 561.5239953772821,
+          "main": -0.39453089122164126,
+          "residual": 561.9185262685037,
+          "residualOverSqrtLabels": 0.5524906039088787,
+          "maxAbsResidual": 916.1029726115148,
+          "maxAbsResidualOverSqrtLabels": 0.900732509999154
+        }
+      ]
+    }
+  ],
+  "wheel": [
+    {
+      "name": "wheel-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78801,
+          "phaseSum": -51.21574894364825,
+          "main": -0.3940806110936723,
+          "residual": -50.82166833255458,
+          "residualOverSqrtLabels": -0.18104354845808845,
+          "maxAbsResidual": 50.82166833255458,
+          "maxAbsResidualOverSqrtLabels": 0.18104354845808845
+        },
+        {
+          "N": 2000000,
+          "labels": 149170,
+          "phaseSum": -193.15297277328972,
+          "main": 29.820738234811976,
+          "residual": -222.9737110081017,
+          "residualOverSqrtLabels": -0.5773151003426342,
+          "maxAbsResidual": 222.9737110081017,
+          "maxAbsResidualOverSqrtLabels": 0.5773151003426342
+        },
+        {
+          "N": 4000000,
+          "labels": 283453,
+          "phaseSum": -213.7893247154394,
+          "main": -0.39432260563757826,
+          "residual": -213.39500210980182,
+          "residualOverSqrtLabels": -0.40081476803928073,
+          "maxAbsResidual": 222.9737110081017,
+          "maxAbsResidualOverSqrtLabels": 0.4188062296350512
+        },
+        {
+          "N": 8000000,
+          "labels": 539767,
+          "phaseSum": -398.0097435119575,
+          "main": 24.639027348772636,
+          "residual": -422.6487708607301,
+          "residualOverSqrtLabels": -0.5752762511504446,
+          "maxAbsResidual": 422.6487708607301,
+          "maxAbsResidualOverSqrtLabels": 0.5752762511504446
+        },
+        {
+          "N": 16000000,
+          "labels": 1031366,
+          "phaseSum": -305.9886947699764,
+          "main": -0.39453089122164126,
+          "residual": -305.5941638787548,
+          "residualOverSqrtLabels": -0.3009114066202535,
+          "maxAbsResidual": 422.6487708607301,
+          "maxAbsResidualOverSqrtLabels": 0.41617233304390727
+        }
+      ]
+    },
+    {
+      "name": "wheel-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78568,
+          "phaseSum": -107.01658307342103,
+          "main": -0.3940806110936723,
+          "residual": -106.62250246232736,
+          "residualOverSqrtLabels": -0.38038731191790837,
+          "maxAbsResidual": 106.62250246232736,
+          "maxAbsResidualOverSqrtLabels": 0.38038731191790837
+        },
+        {
+          "N": 2000000,
+          "labels": 148963,
+          "phaseSum": -192.60147912446152,
+          "main": 29.820738234811976,
+          "residual": -222.4222173592735,
+          "residualOverSqrtLabels": -0.5762871833187961,
+          "maxAbsResidual": 222.4222173592735,
+          "maxAbsResidualOverSqrtLabels": 0.5762871833187961
+        },
+        {
+          "N": 4000000,
+          "labels": 283006,
+          "phaseSum": -338.7716108760316,
+          "main": -0.39432260563757826,
+          "residual": -338.37728827039405,
+          "residualOverSqrtLabels": -0.6360677612524854,
+          "maxAbsResidual": 338.37728827039405,
+          "maxAbsResidualOverSqrtLabels": 0.6360677612524854
+        },
+        {
+          "N": 8000000,
+          "labels": 539266,
+          "phaseSum": 254.48667027526926,
+          "main": 24.639027348772636,
+          "residual": 229.84764292649663,
+          "residualOverSqrtLabels": 0.3129958178730743,
+          "maxAbsResidual": 338.37728827039405,
+          "maxAbsResidualOverSqrtLabels": 0.4607864354986419
+        },
+        {
+          "N": 16000000,
+          "labels": 1030853,
+          "phaseSum": 203.66039321736494,
+          "main": -0.39453089122164126,
+          "residual": 204.0549241085866,
+          "residualOverSqrtLabels": 0.2009780877622536,
+          "maxAbsResidual": 338.37728827039405,
+          "maxAbsResidualOverSqrtLabels": 0.33327507599165523
+        }
+      ]
+    },
+    {
+      "name": "wheel-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78370,
+          "phaseSum": -20.85094906837403,
+          "main": -0.3940806110936723,
+          "residual": -20.456868457280358,
+          "residualOverSqrtLabels": -0.07307422686631823,
+          "maxAbsResidual": 20.456868457280358,
+          "maxAbsResidualOverSqrtLabels": 0.07307422686631823
+        },
+        {
+          "N": 2000000,
+          "labels": 148929,
+          "phaseSum": 157.73190945602087,
+          "main": 29.820738234811976,
+          "residual": 127.91117122120889,
+          "residualOverSqrtLabels": 0.33145062240445683,
+          "maxAbsResidual": 127.91117122120889,
+          "maxAbsResidualOverSqrtLabels": 0.33145062240445683
+        },
+        {
+          "N": 4000000,
+          "labels": 283411,
+          "phaseSum": 105.37559727981335,
+          "main": -0.39432260563757826,
+          "residual": 105.76991988545093,
+          "residualOverSqrtLabels": 0.19867985033450963,
+          "maxAbsResidual": 127.91117122120889,
+          "maxAbsResidualOverSqrtLabels": 0.24027031864885934
+        },
+        {
+          "N": 8000000,
+          "labels": 539688,
+          "phaseSum": 172.24616528671788,
+          "main": 24.639027348772636,
+          "residual": 147.60713793794525,
+          "residualOverSqrtLabels": 0.20092592606570206,
+          "maxAbsResidual": 147.60713793794525,
+          "maxAbsResidualOverSqrtLabels": 0.20092592606570206
+        },
+        {
+          "N": 16000000,
+          "labels": 1031633,
+          "phaseSum": 84.14098278215786,
+          "main": -0.39453089122164126,
+          "residual": 84.5355136733795,
+          "residualOverSqrtLabels": 0.08322936534389411,
+          "maxAbsResidual": 147.60713793794525,
+          "maxAbsResidualOverSqrtLabels": 0.14532647732254192
+        }
+      ]
+    },
+    {
+      "name": "wheel-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78299,
+          "phaseSum": -183.6206891220058,
+          "main": -0.3940806110936723,
+          "residual": -183.22660851091214,
+          "residualOverSqrtLabels": -0.6548026603853275,
+          "maxAbsResidual": 183.22660851091214,
+          "maxAbsResidualOverSqrtLabels": 0.6548026603853275
+        },
+        {
+          "N": 2000000,
+          "labels": 148731,
+          "phaseSum": -55.03015627232819,
+          "main": 29.820738234811976,
+          "residual": -84.85089450714017,
+          "residualOverSqrtLabels": -0.22001671500145298,
+          "maxAbsResidual": 183.22660851091214,
+          "maxAbsResidualOverSqrtLabels": 0.4751030232455103
+        },
+        {
+          "N": 4000000,
+          "labels": 282949,
+          "phaseSum": -19.879769016078452,
+          "main": -0.39432260563757826,
+          "residual": -19.485446410440872,
+          "residualOverSqrtLabels": -0.03663163289192829,
+          "maxAbsResidual": 183.22660851091214,
+          "maxAbsResidualOverSqrtLabels": 0.34445656094429383
+        },
+        {
+          "N": 8000000,
+          "labels": 539971,
+          "phaseSum": -0.6056866281699919,
+          "main": 24.639027348772636,
+          "residual": -25.244713976942627,
+          "residualOverSqrtLabels": -0.03435462691219121,
+          "maxAbsResidual": 183.22660851091214,
+          "maxAbsResidualOverSqrtLabels": 0.24934652781282374
+        },
+        {
+          "N": 16000000,
+          "labels": 1032322,
+          "phaseSum": 173.5201722057832,
+          "main": -0.39453089122164126,
+          "residual": 173.91470309700486,
+          "residualOverSqrtLabels": 0.1711704168472627,
+          "maxAbsResidual": 183.22660851091214,
+          "maxAbsResidualOverSqrtLabels": 0.18033538509294197
+        }
+      ]
+    },
+    {
+      "name": "wheel-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 78911,
+          "phaseSum": -15.341192213223641,
+          "main": -0.3940806110936723,
+          "residual": -14.947111602129969,
+          "residualOverSqrtLabels": -0.053209417386863675,
+          "maxAbsResidual": 14.947111602129969,
+          "maxAbsResidualOverSqrtLabels": 0.053209417386863675
+        },
+        {
+          "N": 2000000,
+          "labels": 149798,
+          "phaseSum": 242.54080777204297,
+          "main": 29.820738234811976,
+          "residual": 212.72006953723098,
+          "residualOverSqrtLabels": 0.5496110539321815,
+          "maxAbsResidual": 212.72006953723098,
+          "maxAbsResidualOverSqrtLabels": 0.5496110539321815
+        },
+        {
+          "N": 4000000,
+          "labels": 284238,
+          "phaseSum": -22.824752795078396,
+          "main": -0.39432260563757826,
+          "residual": -22.430430189440816,
+          "residualOverSqrtLabels": -0.0420723270295023,
+          "maxAbsResidual": 212.72006953723098,
+          "maxAbsResidualOverSqrtLabels": 0.3989949481897103
+        },
+        {
+          "N": 8000000,
+          "labels": 541990,
+          "phaseSum": -186.8928951773935,
+          "main": 24.639027348772636,
+          "residual": -211.53192252616614,
+          "residualOverSqrtLabels": -0.28732954141455974,
+          "maxAbsResidual": 212.72006953723098,
+          "maxAbsResidualOverSqrtLabels": 0.28894343369022846
+        },
+        {
+          "N": 16000000,
+          "labels": 1033842,
+          "phaseSum": 206.22259048313893,
+          "main": -0.39453089122164126,
+          "residual": 206.61712137436058,
+          "residualOverSqrtLabels": 0.20320726041615036,
+          "maxAbsResidual": 212.72006953723098,
+          "maxAbsResidualOverSqrtLabels": 0.2092094898944697
+        }
+      ]
+    }
+  ],
+  "composite": [
+    {
+      "name": "composite-W210-seed-12345",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51430,
+          "phaseSum": 23.25655718770797,
+          "main": -0.3940806110936723,
+          "residual": 23.65063779880164,
+          "residualOverSqrtLabels": 0.1042880615042485,
+          "maxAbsResidual": 23.65063779880164,
+          "maxAbsResidualOverSqrtLabels": 0.1042880615042485
+        },
+        {
+          "N": 2000000,
+          "labels": 100237,
+          "phaseSum": -17.245147015326264,
+          "main": 29.820738234811976,
+          "residual": -47.06588525013824,
+          "residualOverSqrtLabels": -0.14865934041624632,
+          "maxAbsResidual": 47.06588525013824,
+          "maxAbsResidualOverSqrtLabels": 0.14865934041624632
+        },
+        {
+          "N": 4000000,
+          "labels": 195003,
+          "phaseSum": 242.9078395400308,
+          "main": -0.39432260563757826,
+          "residual": 243.30216214566838,
+          "residualOverSqrtLabels": 0.5509666629217311,
+          "maxAbsResidual": 243.30216214566838,
+          "maxAbsResidualOverSqrtLabels": 0.5509666629217311
+        },
+        {
+          "N": 8000000,
+          "labels": 379540,
+          "phaseSum": -590.6131063424166,
+          "main": 24.639027348772636,
+          "residual": -615.2521336911892,
+          "residualOverSqrtLabels": -0.9986753992769842,
+          "maxAbsResidual": 615.2521336911892,
+          "maxAbsResidualOverSqrtLabels": 0.9986753992769842
+        },
+        {
+          "N": 16000000,
+          "labels": 738141,
+          "phaseSum": -1186.2769816911584,
+          "main": -0.39453089122164126,
+          "residual": -1185.8824507999368,
+          "residualOverSqrtLabels": -1.3802952002627376,
+          "maxAbsResidual": 1185.8824507999368,
+          "maxAbsResidualOverSqrtLabels": 1.3802952002627376
+        }
+      ]
+    },
+    {
+      "name": "composite-W210-seed-271828",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51353,
+          "phaseSum": 231.16999655061682,
+          "main": -0.3940806110936723,
+          "residual": 231.5640771617105,
+          "residualOverSqrtLabels": 1.0218526551063867,
+          "maxAbsResidual": 231.5640771617105,
+          "maxAbsResidualOverSqrtLabels": 1.0218526551063867
+        },
+        {
+          "N": 2000000,
+          "labels": 100008,
+          "phaseSum": 277.5667735674929,
+          "main": 29.820738234811976,
+          "residual": 247.7460353326809,
+          "residualOverSqrtLabels": 0.7834104171378405,
+          "maxAbsResidual": 247.7460353326809,
+          "maxAbsResidualOverSqrtLabels": 0.7834104171378405
+        },
+        {
+          "N": 4000000,
+          "labels": 194809,
+          "phaseSum": 304.4345497538576,
+          "main": -0.39432260563757826,
+          "residual": 304.82887235949516,
+          "residualOverSqrtLabels": 0.6906397823050509,
+          "maxAbsResidual": 304.82887235949516,
+          "maxAbsResidualOverSqrtLabels": 0.6906397823050509
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "phaseSum": 46.577751113875614,
+          "main": 24.639027348772636,
+          "residual": 21.938723765102978,
+          "residualOverSqrtLabels": 0.03561021317756112,
+          "maxAbsResidual": 304.82887235949516,
+          "maxAbsResidualOverSqrtLabels": 0.4947881765421481
+        },
+        {
+          "N": 16000000,
+          "labels": 738545,
+          "phaseSum": -121.43830684486235,
+          "main": -0.39453089122164126,
+          "residual": -121.04377595364072,
+          "residualOverSqrtLabels": -0.14084906938702021,
+          "maxAbsResidual": 304.82887235949516,
+          "maxAbsResidualOverSqrtLabels": 0.3547052515163898
+        }
+      ]
+    },
+    {
+      "name": "composite-W210-seed-314159",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51194,
+          "phaseSum": 261.24716352888663,
+          "main": -0.3940806110936723,
+          "residual": 261.6412441399803,
+          "residualOverSqrtLabels": 1.1563696203267544,
+          "maxAbsResidual": 261.6412441399803,
+          "maxAbsResidualOverSqrtLabels": 1.1563696203267544
+        },
+        {
+          "N": 2000000,
+          "labels": 99809,
+          "phaseSum": 215.26837964901682,
+          "main": 29.820738234811976,
+          "residual": 185.44764141420484,
+          "residualOverSqrtLabels": 0.5869977843934175,
+          "maxAbsResidual": 261.6412441399803,
+          "maxAbsResidualOverSqrtLabels": 0.8281735450766515
+        },
+        {
+          "N": 4000000,
+          "labels": 194729,
+          "phaseSum": 242.3750280585818,
+          "main": -0.39432260563757826,
+          "residual": 242.76935066421936,
+          "residualOverSqrtLabels": 0.5501467350624893,
+          "maxAbsResidual": 261.6412441399803,
+          "maxAbsResidualOverSqrtLabels": 0.5929128855330116
+        },
+        {
+          "N": 8000000,
+          "labels": 379554,
+          "phaseSum": 257.58943655955636,
+          "main": 24.639027348772636,
+          "residual": 232.95040921078373,
+          "residualOverSqrtLabels": 0.37811742472418924,
+          "maxAbsResidual": 261.6412441399803,
+          "maxAbsResidualOverSqrtLabels": 0.424687442151368
+        },
+        {
+          "N": 16000000,
+          "labels": 738991,
+          "phaseSum": -238.83706548210586,
+          "main": -0.39453089122164126,
+          "residual": -238.4425345908842,
+          "residualOverSqrtLabels": -0.27737298163158,
+          "maxAbsResidual": 261.6412441399803,
+          "maxAbsResidualOverSqrtLabels": 0.3043593381081135
+        }
+      ]
+    },
+    {
+      "name": "composite-W210-seed-161803",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51288,
+          "phaseSum": -260.8798916783187,
+          "main": -0.3940806110936723,
+          "residual": -260.48581106722503,
+          "residualOverSqrtLabels": -1.150207486108936,
+          "maxAbsResidual": 260.48581106722503,
+          "maxAbsResidualOverSqrtLabels": 1.150207486108936
+        },
+        {
+          "N": 2000000,
+          "labels": 99962,
+          "phaseSum": -267.38139002765996,
+          "main": 29.820738234811976,
+          "residual": -297.20212826247194,
+          "residualOverSqrtLabels": -0.9400142704407782,
+          "maxAbsResidual": 297.20212826247194,
+          "maxAbsResidualOverSqrtLabels": 0.9400142704407782
+        },
+        {
+          "N": 4000000,
+          "labels": 194728,
+          "phaseSum": -365.5071624526855,
+          "main": -0.39432260563757826,
+          "residual": -365.11283984704795,
+          "residualOverSqrtLabels": -0.827395023220706,
+          "maxAbsResidual": 365.11283984704795,
+          "maxAbsResidualOverSqrtLabels": 0.827395023220706
+        },
+        {
+          "N": 8000000,
+          "labels": 379519,
+          "phaseSum": -597.5383460459743,
+          "main": 24.639027348772636,
+          "residual": -622.177373394747,
+          "residualOverSqrtLabels": -1.0099443679476143,
+          "maxAbsResidual": 622.177373394747,
+          "maxAbsResidualOverSqrtLabels": 1.0099443679476143
+        },
+        {
+          "N": 16000000,
+          "labels": 739546,
+          "phaseSum": -412.8765773960353,
+          "main": -0.39453089122164126,
+          "residual": -412.4820465048137,
+          "residualOverSqrtLabels": -0.47964779708093064,
+          "maxAbsResidual": 622.177373394747,
+          "maxAbsResidualOverSqrtLabels": 0.7234884743981393
+        }
+      ]
+    },
+    {
+      "name": "composite-W210-seed-424242",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 51570,
+          "phaseSum": 110.24406725040052,
+          "main": -0.3940806110936723,
+          "residual": 110.63814786149419,
+          "residualOverSqrtLabels": 0.4871989359832672,
+          "maxAbsResidual": 110.63814786149419,
+          "maxAbsResidualOverSqrtLabels": 0.4871989359832672
+        },
+        {
+          "N": 2000000,
+          "labels": 100843,
+          "phaseSum": 10.591705255758498,
+          "main": 29.820738234811976,
+          "residual": -19.22903297905348,
+          "residualOverSqrtLabels": -0.06055284680938712,
+          "maxAbsResidual": 110.63814786149419,
+          "maxAbsResidualOverSqrtLabels": 0.3484031061795574
+        },
+        {
+          "N": 4000000,
+          "labels": 195784,
+          "phaseSum": -151.15577340209794,
+          "main": -0.39432260563757826,
+          "residual": -150.76145079646037,
+          "residualOverSqrtLabels": -0.34072320281274804,
+          "maxAbsResidual": 150.76145079646037,
+          "maxAbsResidualOverSqrtLabels": 0.34072320281274804
+        },
+        {
+          "N": 8000000,
+          "labels": 380954,
+          "phaseSum": 83.79273725330937,
+          "main": 24.639027348772636,
+          "residual": 59.15370990453673,
+          "residualOverSqrtLabels": 0.09583976015076191,
+          "maxAbsResidual": 150.76145079646037,
+          "maxAbsResidualOverSqrtLabels": 0.2442609484279448
+        },
+        {
+          "N": 16000000,
+          "labels": 740943,
+          "phaseSum": 603.8667197854013,
+          "main": -0.39453089122164126,
+          "residual": 604.2612506766229,
+          "residualOverSqrtLabels": 0.701992295231952,
+          "maxAbsResidual": 604.2612506766229,
+          "maxAbsResidualOverSqrtLabels": 0.701992295231952
+        }
+      ]
+    }
+  ],
+  "summaries": {
+    "cramer": {
+      "residualRange": [
+        -263.2853448660243,
+        935.7111304060946
+      ],
+      "residualOverSqrtLabelsRange": [
+        -0.2592209972887269,
+        0.921646741041848
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        0.12486757276084515,
+        0.921646741041848
+      ]
+    },
+    "wheel": {
+      "residualRange": [
+        -305.5941638787548,
+        206.61712137436058
+      ],
+      "residualOverSqrtLabelsRange": [
+        -0.3009114066202535,
+        0.20320726041615036
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        0.14532647732254192,
+        0.41617233304390727
+      ]
+    },
+    "composite": {
+      "residualRange": [
+        -1185.8824507999368,
+        604.2612506766229
+      ],
+      "residualOverSqrtLabelsRange": [
+        -1.3802952002627376,
+        0.701992295231952
+      ],
+      "maxAbsResidualOverSqrtLabelsRange": [
+        0.3043593381081135,
+        1.3802952002627376
+      ]
+    }
+  }
+}

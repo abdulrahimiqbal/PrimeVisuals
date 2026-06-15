@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="64" x2="976" y1="556" y2="556" stroke="#64748b"/>
+<line x1="64" x2="64" y1="64" y2="556" stroke="#64748b"/>
+<path d="M 64.00 382.03 L 292.00 371.36 L 520.00 335.73 L 748.00 311.48 L 976.00 244.75" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 64.00 500.21 L 292.00 486.59 L 520.00 475.31 L 748.00 518.57 L 976.00 473.28" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 64.00 117.44 L 292.00 116.71 L 520.00 471.86 L 748.00 504.87 L 976.00 477.48" fill="none" stroke="#f472b6" stroke-width="3"/>
+<circle cx="64.00" cy="382.03" r="4" fill="#7dd3fc"/>
+<circle cx="292.00" cy="371.36" r="4" fill="#7dd3fc"/>
+<circle cx="520.00" cy="335.73" r="4" fill="#7dd3fc"/>
+<circle cx="748.00" cy="311.48" r="4" fill="#7dd3fc"/>
+<circle cx="976.00" cy="244.75" r="4" fill="#7dd3fc"/>
+<circle cx="64.00" cy="500.21" r="4" fill="#fbbf24"/>
+<circle cx="292.00" cy="486.59" r="4" fill="#fbbf24"/>
+<circle cx="520.00" cy="475.31" r="4" fill="#fbbf24"/>
+<circle cx="748.00" cy="518.57" r="4" fill="#fbbf24"/>
+<circle cx="976.00" cy="473.28" r="4" fill="#fbbf24"/>
+<circle cx="64.00" cy="117.44" r="4" fill="#f472b6"/>
+<circle cx="292.00" cy="116.71" r="4" fill="#f472b6"/>
+<circle cx="520.00" cy="471.86" r="4" fill="#f472b6"/>
+<circle cx="748.00" cy="504.87" r="4" fill="#f472b6"/>
+<circle cx="976.00" cy="477.48" r="4" fill="#f472b6"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="64" y="26" fill="#7dd3fc">Z prime-pair residual energy</text>
+<text x="64" y="44" fill="#fbbf24">F2[t] irreducible-pair residual energy</text>
+<text x="64" y="62" fill="#f472b6">F3[t] irreducible-pair residual energy</text>
+<text x="64" y="598" fill="#94a3b8">normalized residual energy after finite-wheel / polynomial singular-series pair main</text>
+<text x="816" y="598" fill="#94a3b8">five growing scales</text>
+</g>
+</svg>

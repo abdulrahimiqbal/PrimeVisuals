@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#080d17"/>
+<style>text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }</style>
+<text x="64" y="30" fill="#e5e7eb" font-size="18" font-weight="700">Unlabeled unit-divisor shape deviation</text>
+<text x="64" y="54" fill="#a8b3c7" font-size="13">y: abs aggregate z of normalized divisor-cloud width for p-1 / f-1 after omega/largest-factor buckets</text>
+<line x1="64" x2="684" y1="494" y2="494" stroke="#334155"/>
+<line x1="64" x2="64" y1="64" y2="494" stroke="#334155"/>
+<polygon points="64,430.82660867735325 219,430.82660867735325 374,430.82660867735325 529,390.3203357489247 684,390.64431761125167 684,465.42098711209115 529,465.42098711209115 374,465.42098711209115 219,455.7307168870183 64,434.4988124345238" fill="#fb7185" opacity="0.18"/>
+<polygon points="64,394.15516354889365 219,394.15516354889365 374,394.15516354889365 529,401.8406933861185 684,355.16024787907816 684,489.5038662415089 529,489.5038662415089 374,489.5038662415089 219,487.1743491523112 64,454.76847322348743" fill="#facc15" opacity="0.18"/>
+<polyline points="64,234.6032720699597 219,234.6032720699597 374,234.6032720699597 529,210.7815883340412 684,110.07142857142867" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="38" y="516" fill="#94a3b8" font-size="11">0.2M</text>
+<text x="193" y="516" fill="#94a3b8" font-size="11">0.2M</text>
+<text x="348" y="516" fill="#94a3b8" font-size="11">0.2M</text>
+<text x="503" y="516" fill="#94a3b8" font-size="11">0.25M</text>
+<text x="658" y="516" fill="#94a3b8" font-size="11">0.5M</text>
+<text x="760" y="72" fill="#e5e7eb" font-size="15" font-weight="700">Function-field real / bucket-reducible range</text>
+<text x="680" y="106" fill="#9b7bdb" font-size="13">F2 d9</text>
+<line x1="766.8191015462174" x2="805.352349327292" y1="102" y2="102" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="98" width="90.17768144045313" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="107" fill="#dbeafe" font-size="12">3.185760</text>
+<text x="680" y="134" fill="#9b7bdb" font-size="13">F2 d10</text>
+<line x1="760.180737780014" x2="810.9045346687788" y1="130" y2="130" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="126" width="112.62398893387346" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="135" fill="#dbeafe" font-size="12">3.978733</text>
+<text x="680" y="162" fill="#9b7bdb" font-size="13">F2 d11</text>
+<line x1="762.1173586673277" x2="821.4984095285063" y1="158" y2="158" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="154" width="189.66058757574473" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="163" fill="#dbeafe" font-size="12">6.700250</text>
+<text x="680" y="190" fill="#9b7bdb" font-size="13">F2 d12</text>
+<line x1="776.2556808345456" x2="830.9021841614943" y1="186" y2="186" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="182" width="230" height="10" fill="#9b7bdb" opacity="0.9"/>
+<text x="1008" y="191" fill="#dbeafe" font-size="12">8.125344</text>
+<text x="680" y="218" fill="#38b98d" font-size="13">F3 d5</text>
+<line x1="761.1966715042632" x2="797.4722077971464" y1="214" y2="214" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="210" width="36.77121316656758" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="219" fill="#dbeafe" font-size="12">1.299038</text>
+<text x="680" y="246" fill="#38b98d" font-size="13">F3 d6</text>
+<line x1="781.7663981936286" x2="828.5545100024306" y1="242" y2="242" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="238" width="9.161225849395056" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="247" fill="#dbeafe" font-size="12">0.323644</text>
+<text x="680" y="274" fill="#38b98d" font-size="13">F3 d7</text>
+<line x1="761.0257773331965" x2="791.1559951776045" y1="270" y2="270" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="266" width="78.55728589375933" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="275" fill="#dbeafe" font-size="12">2.775239</text>
+<text x="680" y="302" fill="#38b98d" font-size="13">F3 d8</text>
+<line x1="772.6900046651331" x2="826.2013399595511" y1="298" y2="298" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+<rect x="760" y="294" width="134.3911436486081" height="10" fill="#38b98d" opacity="0.9"/>
+<text x="1008" y="303" fill="#dbeafe" font-size="12">4.747714</text>
+<text x="64" y="596" fill="#a8b3c7" font-size="12">cyan real; red odd-composite band; yellow bucket-matched composite band; bars compare function-field real to bucket-reducible controls</text>
+</svg>

@@ -1,0 +1,237 @@
+{
+  "candidate": "AP-scrubbed predecessor large-prime tail rank",
+  "N": 16000000,
+  "stripB": 97,
+  "extendedQ": 997,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "scales": [
+    2000000,
+    4000000,
+    8000000,
+    16000000
+  ],
+  "rows": [
+    {
+      "lo": 1000000,
+      "hi": 2000000,
+      "evenCount": 500000,
+      "primeCount": 70435,
+      "compositeSuccessorCount": 429565,
+      "tailOneRate": 0.049118,
+      "omegaTail": {
+        "label": "omegaTail",
+        "primeMean": 0.48231885549872155,
+        "primeAggregate": -4.692503799688061,
+        "model97Mean": 0.4818068933836487,
+        "model97Aggregate": -4.828376461669987,
+        "corrected97Aggregate": 0.13587266198192574,
+        "modelExtMean": 0.48220843409319514,
+        "modelExtAggregate": -4.721809191370265,
+        "correctedExtAggregate": 0.029305391682203873,
+        "randomRange": [
+          -0.2381010959531988,
+          0.09088104702503676
+        ],
+        "compositeRange": [
+          0.6087593983208556,
+          0.9972224872289198
+        ],
+        "cramerRange": [
+          -2.8069681734927174,
+          -2.4661454041387105
+        ]
+      },
+      "radTail": {
+        "label": "radTail",
+        "primeMean": 0.4532831785476313,
+        "primeAggregate": -12.3984543058702,
+        "model97Mean": 0.4532891095263253,
+        "model97Aggregate": -12.396880248260102,
+        "corrected97Aggregate": -0.001574057610097651,
+        "modelExtMean": 0.45326204495180245,
+        "modelExtAggregate": -12.404063076202952,
+        "correctedExtAggregate": 0.00560877033275306,
+        "randomRange": [
+          -0.9168054552006392,
+          -0.005664280512557183
+        ],
+        "compositeRange": [
+          1.852175712779959,
+          2.1425728481620587
+        ],
+        "cramerRange": [
+          -7.326565675214741,
+          -6.398474110231932
+        ]
+      }
+    },
+    {
+      "lo": 2000000,
+      "hi": 4000000,
+      "evenCount": 1000000,
+      "primeCount": 134213,
+      "compositeSuccessorCount": 865787,
+      "tailOneRate": 0.03622,
+      "omegaTail": {
+        "label": "omegaTail",
+        "primeMean": 0.4829184889423017,
+        "primeAggregate": -6.257827370595569,
+        "model97Mean": 0.48266383440988386,
+        "model97Aggregate": -6.351120294015974,
+        "corrected97Aggregate": 0.09329292342040552,
+        "modelExtMean": 0.4830940743247436,
+        "modelExtAggregate": -6.19350150338102,
+        "correctedExtAggregate": -0.06432586721454883,
+        "randomRange": [
+          -0.12061345173688735,
+          0.19484700495316287
+        ],
+        "compositeRange": [
+          0.6541416584513889,
+          1.3190394998561055
+        ],
+        "cramerRange": [
+          -3.4095975197637802,
+          -2.9970371272886887
+        ]
+      },
+      "radTail": {
+        "label": "radTail",
+        "primeMean": 0.45335253940374787,
+        "primeAggregate": -17.08934032252646,
+        "model97Mean": 0.45324622768425027,
+        "model97Aggregate": -17.12828771926671,
+        "corrected97Aggregate": 0.03894739674025036,
+        "modelExtMean": 0.45323333416023254,
+        "modelExtAggregate": -17.133011273712746,
+        "correctedExtAggregate": 0.0436709511862858,
+        "randomRange": [
+          -0.09064233844883626,
+          0.3298803397497612
+        ],
+        "compositeRange": [
+          2.358026353543926,
+          3.063693352309325
+        ],
+        "cramerRange": [
+          -9.54016502034145,
+          -9.258491468069174
+        ]
+      }
+    },
+    {
+      "lo": 4000000,
+      "hi": 8000000,
+      "evenCount": 2000000,
+      "primeCount": 256631,
+      "compositeSuccessorCount": 1743369,
+      "tailOneRate": 0.0265045,
+      "omegaTail": {
+        "label": "omegaTail",
+        "primeMean": 0.4840620124584105,
+        "primeAggregate": -8.073986912994052,
+        "model97Mean": 0.483452902904609,
+        "model97Aggregate": -8.382554262111361,
+        "corrected97Aggregate": 0.30856734911730926,
+        "modelExtMean": 0.48390642420311,
+        "modelExtAggregate": -8.152805994376449,
+        "correctedExtAggregate": 0.07881908138239631,
+        "randomRange": [
+          -0.32029968243098617,
+          0.11806386264353749
+        ],
+        "compositeRange": [
+          1.205826559987843,
+          1.8088974526689514
+        ],
+        "cramerRange": [
+          -4.653684693573355,
+          -4.120455344005202
+        ]
+      },
+      "radTail": {
+        "label": "radTail",
+        "primeMean": 0.45329221742216635,
+        "primeAggregate": -23.661583639987636,
+        "model97Mean": 0.45321638509366396,
+        "model97Aggregate": -23.69999935755,
+        "corrected97Aggregate": 0.038415717562362985,
+        "modelExtMean": 0.45321079835811273,
+        "modelExtAggregate": -23.702829528524177,
+        "correctedExtAggregate": 0.04124588853654073,
+        "randomRange": [
+          -0.14414187641465134,
+          0.20727359996087433
+        ],
+        "compositeRange": [
+          3.1933398974904366,
+          3.9022471753859387
+        ],
+        "cramerRange": [
+          -13.389638453466523,
+          -12.68294493911523
+        ]
+      }
+    },
+    {
+      "lo": 8000000,
+      "hi": 16000000,
+      "evenCount": 4000000,
+      "primeCount": 491353,
+      "compositeSuccessorCount": 3508647,
+      "tailOneRate": 0.019244,
+      "omegaTail": {
+        "label": "omegaTail",
+        "primeMean": 0.48449501224285046,
+        "primeAggregate": -10.868465563562438,
+        "model97Mean": 0.4842214365251948,
+        "model97Aggregate": -11.060232775051956,
+        "corrected97Aggregate": 0.19176721148951728,
+        "modelExtMean": 0.4846926272393497,
+        "modelExtAggregate": -10.72994421688772,
+        "correctedExtAggregate": -0.1385213466747189,
+        "randomRange": [
+          -0.24984068533516982,
+          0.1573728418111029
+        ],
+        "compositeRange": [
+          1.495505984313401,
+          1.8187326917235462
+        ],
+        "cramerRange": [
+          -6.092571423247176,
+          -5.433513634106167
+        ]
+      },
+      "radTail": {
+        "label": "radTail",
+        "primeMean": 0.45311288254457416,
+        "primeAggregate": -32.86626403197413,
+        "model97Mean": 0.4531987112141906,
+        "model97Aggregate": -32.80610107314416,
+        "corrected97Aggregate": -0.060162958829966626,
+        "modelExtMean": 0.45319586409416496,
+        "modelExtAggregate": -32.80809680680346,
+        "correctedExtAggregate": -0.05816722517067336,
+        "randomRange": [
+          -0.3070800151932433,
+          0.1249112747319917
+        ],
+        "compositeRange": [
+          4.415002694113658,
+          4.945274622617716
+        ],
+        "cramerRange": [
+          -18.768329497883812,
+          -17.869982832265226
+        ]
+      }
+    }
+  ]
+}

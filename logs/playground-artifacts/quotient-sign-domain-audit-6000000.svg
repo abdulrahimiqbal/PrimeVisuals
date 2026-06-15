@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<g stroke="#1f2937" stroke-width="1">
+<line x1="66" x2="1054" y1="447.00" y2="447.00"/>
+<line x1="66" x2="1054" y1="320.00" y2="320.00"/>
+<line x1="66" x2="1054" y1="193.00" y2="193.00"/>
+<line x1="66" x2="1054" y1="66.00" y2="66.00"/>
+</g>
+<path d="M 708.05 405.10 L 794.54 340.14 L 881.03 483.05 L 967.51 522.03 L 1054.00 561.01" fill="none" stroke="#67e8f9" stroke-width="2.5"/>
+<circle cx="708.05" cy="405.10" r="4" fill="#67e8f9"/>
+<circle cx="794.54" cy="340.14" r="4" fill="#67e8f9"/>
+<circle cx="881.03" cy="483.05" r="4" fill="#67e8f9"/>
+<circle cx="967.51" cy="522.03" r="4" fill="#67e8f9"/>
+<circle cx="1054.00" cy="561.01" r="4" fill="#67e8f9"/>
+<path d="M 708.05 269.98 L 794.54 186.83 L 881.03 140.06 L 967.51 132.26 L 1054.00 132.26" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<circle cx="708.05" cy="269.98" r="4" fill="#fbbf24"/>
+<circle cx="794.54" cy="186.83" r="4" fill="#fbbf24"/>
+<circle cx="881.03" cy="140.06" r="4" fill="#fbbf24"/>
+<circle cx="967.51" cy="132.26" r="4" fill="#fbbf24"/>
+<circle cx="1054.00" cy="132.26" r="4" fill="#fbbf24"/>
+<path d="M 708.05 132.26 L 794.54 132.26 L 881.03 132.26 L 967.51 132.26 L 1054.00 132.26" fill="none" stroke="#fb7185" stroke-width="2.5"/>
+<circle cx="708.05" cy="132.26" r="4" fill="#fb7185"/>
+<circle cx="794.54" cy="132.26" r="4" fill="#fb7185"/>
+<circle cx="881.03" cy="132.26" r="4" fill="#fb7185"/>
+<circle cx="967.51" cy="132.26" r="4" fill="#fb7185"/>
+<circle cx="1054.00" cy="132.26" r="4" fill="#fb7185"/>
+<path d="M 302.47 524.92 L 382.48 500.38 L 462.44 434.93 L 542.96 533.10 L 623.59 385.85" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+<circle cx="302.47" cy="524.92" r="4" fill="#a78bfa"/>
+<circle cx="382.48" cy="500.38" r="4" fill="#a78bfa"/>
+<circle cx="462.44" cy="434.93" r="4" fill="#a78bfa"/>
+<circle cx="542.96" cy="533.10" r="4" fill="#a78bfa"/>
+<circle cx="623.59" cy="385.85" r="4" fill="#a78bfa"/>
+<path d="M 66.00 559.28 L 189.58 397.30 L 315.29 485.65 L 441.32 308.96 L 568.60 220.61" fill="none" stroke="#34d399" stroke-width="2.5"/>
+<circle cx="66.00" cy="559.28" r="4" fill="#34d399"/>
+<circle cx="189.58" cy="397.30" r="4" fill="#34d399"/>
+<circle cx="315.29" cy="485.65" r="4" fill="#34d399"/>
+<circle cx="441.32" cy="308.96" r="4" fill="#34d399"/>
+<circle cx="568.60" cy="220.61" r="4" fill="#34d399"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="66" y="24" fill="#f8fafc" font-size="18">quotient residual sign-domain persistence</text>
+<text x="66" y="49" fill="#67e8f9" font-size="13">Z P(tau=1)</text>
+<text x="66" y="68" fill="#fbbf24" font-size="13">wheel P(tau=1)</text>
+<text x="66" y="87" fill="#fb7185" font-size="13">composite P(tau=1)</text>
+<text x="66" y="106" fill="#a78bfa" font-size="13">F_2 P(tau=1)</text>
+<text x="66" y="125" fill="#34d399" font-size="13">F_3 P(tau=1)</text>
+<text x="66" y="614" fill="#94a3b8" font-size="12">x = log(range/labels), y = largest same-sign component / quotient shape count at |R| &gt; 1</text>
+</g>
+</svg>

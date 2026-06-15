@@ -1,0 +1,23 @@
+{
+  "name": "Mertens Gap Iris",
+  "path": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-best-shots/09-mertens-gap-iris.png",
+  "lab": {
+    "domain": "int",
+    "N": 24000,
+    "ex": "M(n)*cos(a*n)+mu(n)*n/400",
+    "ey": "M(n)*sin(b*n)+gap(n)",
+    "eh": "mu(n)+omega(n)",
+    "a": 0.211,
+    "b": 0.377,
+    "tMax": 60,
+    "sMax": 1.6,
+    "ew": "s"
+  },
+  "stats": {
+    "width": 3840,
+    "height": 2160,
+    "lit": 328294,
+    "bright": 262424,
+    "text": 0
+  }
+}

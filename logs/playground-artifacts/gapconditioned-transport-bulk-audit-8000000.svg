@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">gap-conditioned trimmed transport bulk</text>
+<text x="70" y="42" fill="#67e8f9" font-size="13">prime trimmed bulk</text>
+<text x="300" y="42" fill="#34d399" font-size="13">prime full</text>
+<text x="530" y="42" fill="#fb7185" font-size="13">Cramer trimmed</text>
+<text x="760" y="42" fill="#a78bfa" font-size="13">composite trimmed</text>
+<rect x="70" y="62" width="1020" height="508" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="62" x2="1090" y2="62" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="66" fill="#94a3b8" font-size="12">7.01</text>
+<line x1="70" y1="163.60000000000002" x2="1090" y2="163.60000000000002" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="167.60000000000002" fill="#94a3b8" font-size="12">5.61</text>
+<line x1="70" y1="265.20000000000005" x2="1090" y2="265.20000000000005" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="269.20000000000005" fill="#94a3b8" font-size="12">4.21</text>
+<line x1="70" y1="366.8" x2="1090" y2="366.8" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="370.8" fill="#94a3b8" font-size="12">2.80</text>
+<line x1="70" y1="468.40000000000003" x2="1090" y2="468.40000000000003" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="472.40000000000003" fill="#94a3b8" font-size="12">1.40</text>
+<line x1="70" y1="570" x2="1090" y2="570" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="574" fill="#94a3b8" font-size="12">0.00</text>
+<polyline points="70.00,393.62 325.00,365.36 580.00,317.47 835.00,259.76 1090.00,149.17" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="393.6222914438075" r="4" fill="#67e8f9"/><circle cx="325" cy="365.3621377651559" r="4" fill="#67e8f9"/><circle cx="580" cy="317.4744552987861" r="4" fill="#67e8f9"/><circle cx="835" cy="259.75857239376757" r="4" fill="#67e8f9"/><circle cx="1090" cy="149.16964753464848" r="4" fill="#67e8f9"/>
+<polyline points="70.00,369.46 325.00,335.76 580.00,290.24 835.00,206.37 1090.00,108.18" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="70" cy="369.4597000505958" r="4" fill="#34d399"/><circle cx="325" cy="335.7633471820928" r="4" fill="#34d399"/><circle cx="580" cy="290.2382581641482" r="4" fill="#34d399"/><circle cx="835" cy="206.3688907427042" r="4" fill="#34d399"/><circle cx="1090" cy="108.18181818181824" r="4" fill="#34d399"/>
+<polyline points="70.00,452.53 325.00,443.50 580.00,419.31 835.00,407.15 1090.00,385.60" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="452.5259738167556" r="4" fill="#fb7185"/><circle cx="325" cy="443.5015114519048" r="4" fill="#fb7185"/><circle cx="580" cy="419.31347558006627" r="4" fill="#fb7185"/><circle cx="835" cy="407.15387178663775" r="4" fill="#fb7185"/><circle cx="1090" cy="385.60419587680485" r="4" fill="#fb7185"/>
+<polyline points="70.00,382.39 325.00,349.69 580.00,280.87 835.00,241.11 1090.00,158.88" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="382.38802673423123" r="4" fill="#a78bfa"/><circle cx="325" cy="349.69089659269537" r="4" fill="#a78bfa"/><circle cx="580" cy="280.8716094706898" r="4" fill="#a78bfa"/><circle cx="835" cy="241.1124336321324" r="4" fill="#a78bfa"/><circle cx="1090" cy="158.87588215301582" r="4" fill="#a78bfa"/>
+<text x="70" y="606" fill="#94a3b8" font-size="13">y: RMS after preserving gaps and trimming top 1% transition-ratio cells</text>
+</svg>

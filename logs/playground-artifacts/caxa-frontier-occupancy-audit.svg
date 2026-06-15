@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="66" y="25" fill="#e5e7eb" font-size="18" font-weight="700">CA-XA divisor-frontier occupancy residual</text>
+<text x="66" y="42" fill="#67e8f9" font-size="13">CA-XA occupancy Q</text>
+<text x="276" y="42" fill="#fbbf24" font-size="13">prime-count residual</text>
+<text x="486" y="42" fill="#fb7185" font-size="13">skip correction</text>
+<rect x="66" y="70" width="754" height="518" fill="#0b1626" stroke="#1f2937"/>
+<line x1="66" y1="70" x2="820" y2="70" stroke="#1f2937"/>
+<text x="20" y="74" fill="#94a3b8" font-size="12">1.00</text>
+<line x1="66" y1="156.33333333333331" x2="820" y2="156.33333333333331" stroke="#1f2937"/>
+<text x="20" y="160.33333333333331" fill="#94a3b8" font-size="12">0.63</text>
+<line x1="66" y1="242.66666666666666" x2="820" y2="242.66666666666666" stroke="#1f2937"/>
+<text x="20" y="246.66666666666666" fill="#94a3b8" font-size="12">0.25</text>
+<line x1="66" y1="329" x2="820" y2="329" stroke="#1f2937"/>
+<text x="20" y="333" fill="#94a3b8" font-size="12">-0.12</text>
+<line x1="66" y1="415.3333333333333" x2="820" y2="415.3333333333333" stroke="#1f2937"/>
+<text x="20" y="419.3333333333333" fill="#94a3b8" font-size="12">-0.49</text>
+<line x1="66" y1="501.6666666666667" x2="820" y2="501.6666666666667" stroke="#1f2937"/>
+<text x="20" y="505.6666666666667" fill="#94a3b8" font-size="12">-0.86</text>
+<line x1="66" y1="588" x2="820" y2="588" stroke="#1f2937"/>
+<text x="20" y="592" fill="#94a3b8" font-size="12">-1.24</text>
+<path d="M 134.72 450.10 L 201.34 372.91 L 297.46 434.72 L 418.56 409.90 L 529.98 437.13 L 582.88 430.52 L 669.16 519.68 L 679.00 473.77 L 747.19 493.25 L 816.31 557.31 L 820.00 511.41" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="134.7217532102967" cy="450.103599131283" r="4" fill="#67e8f9"/><circle cx="201.344462892203" cy="372.9123515922884" r="4" fill="#67e8f9"/><circle cx="297.46395344311327" cy="434.7211709242222" r="4" fill="#67e8f9"/><circle cx="418.560190171921" cy="409.89574552551994" r="4" fill="#67e8f9"/><circle cx="529.9791717236637" cy="437.1260785960521" r="4" fill="#67e8f9"/><circle cx="582.8775445876514" cy="430.51718362368206" r="4" fill="#67e8f9"/><circle cx="669.1550978900266" cy="519.6840048720649" r="4" fill="#67e8f9"/><circle cx="678.9970351385616" cy="473.7674464733486" r="4" fill="#67e8f9"/><circle cx="747.1948990033818" cy="493.25381265306066" r="4" fill="#67e8f9"/><circle cx="816.3095945022737" cy="557.3111921405723" r="4" fill="#67e8f9"/><circle cx="820" cy="511.4115548486632" r="4" fill="#67e8f9"/>
+<path d="M 134.72 367.14 L 201.34 317.21 L 297.46 395.81 L 418.56 381.99 L 529.98 415.56 L 582.88 411.27 L 669.16 423.00 L 679.00 378.99 L 747.19 410.50 L 816.31 424.74 L 820.00 379.79" fill="none" stroke="#fbbf24" stroke-width="3"/><circle cx="134.7217532102967" cy="367.13593966935656" r="4" fill="#fbbf24"/><circle cx="201.344462892203" cy="317.2060724874939" r="4" fill="#fbbf24"/><circle cx="297.46395344311327" cy="395.81242913504934" r="4" fill="#fbbf24"/><circle cx="418.560190171921" cy="381.9940643743567" r="4" fill="#fbbf24"/><circle cx="529.9791717236637" cy="415.5586848259895" r="4" fill="#fbbf24"/><circle cx="582.8775445876514" cy="411.2662005258106" r="4" fill="#fbbf24"/><circle cx="669.1550978900266" cy="423.0037853519635" r="4" fill="#fbbf24"/><circle cx="678.9970351385616" cy="378.98746046990914" r="4" fill="#fbbf24"/><circle cx="747.1948990033818" cy="410.49964791156697" r="4" fill="#fbbf24"/><circle cx="816.3095945022737" cy="424.74458484157736" r="4" fill="#fbbf24"/><circle cx="820" cy="379.789154591577" r="4" fill="#fbbf24"/>
+<path d="M 134.72 218.60 L 201.34 245.86 L 297.46 262.66 L 418.56 273.67 L 529.98 280.00 L 582.88 282.32 L 669.16 204.89 L 679.00 206.79 L 747.19 218.82 L 816.31 169.00 L 820.00 169.95" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="134.7217532102967" cy="218.60346718341495" r="4" fill="#fb7185"/><circle cx="201.344462892203" cy="245.86484754054686" r="4" fill="#fb7185"/><circle cx="297.46395344311327" cy="262.66238485616856" r="4" fill="#fb7185"/><circle cx="418.560190171921" cy="273.66944549417815" r="4" fill="#fb7185"/><circle cx="529.9791717236637" cy="280.00373287527884" r="4" fill="#fb7185"/><circle cx="582.8775445876514" cy="282.3201435474699" r="4" fill="#fb7185"/><circle cx="669.1550978900266" cy="204.89090712523998" r="4" fill="#fb7185"/><circle cx="678.9970351385616" cy="206.79114064190196" r="4" fill="#fb7185"/><circle cx="747.1948990033818" cy="218.81696190384773" r="4" fill="#fb7185"/><circle cx="816.3095945022737" cy="169.00451934634654" r="4" fill="#fb7185"/><circle cx="820" cy="169.94872638825524" r="4" fill="#fb7185"/>
+<text x="855" y="64" fill="#e5e7eb" font-size="14">skip / Li controls</text>
+<text x="855" y="113" fill="#cbd5e1" font-size="12">real</text>
+<rect x="943" y="100" width="6.76" height="18" fill="#67e8f9"/>
+<text x="955.7550092221583" y="113" fill="#94a3b8" font-size="12">0.029</text>
+<text x="855" y="151" fill="#cbd5e1" font-size="12">seed 12345</text>
+<rect x="943" y="138" width="175.38" height="18" fill="#a78bfa"/>
+<text x="1124.3820669654026" y="151" fill="#94a3b8" font-size="12">0.763</text>
+<text x="855" y="189" fill="#cbd5e1" font-size="12">seed 271828</text>
+<rect x="943" y="176" width="35.71" height="18" fill="#a78bfa"/>
+<text x="984.7130898010382" y="189" fill="#94a3b8" font-size="12">0.155</text>
+<text x="855" y="227" fill="#cbd5e1" font-size="12">seed 314159</text>
+<rect x="943" y="214" width="55.72" height="18" fill="#a78bfa"/>
+<text x="1004.7199067995159" y="227" fill="#94a3b8" font-size="12">0.242</text>
+<text x="855" y="265" fill="#cbd5e1" font-size="12">seed 161803</text>
+<rect x="943" y="252" width="122.52" height="18" fill="#a78bfa"/>
+<text x="1071.5244388292456" y="265" fill="#94a3b8" font-size="12">0.533</text>
+<text x="855" y="303" fill="#cbd5e1" font-size="12">seed 424242</text>
+<rect x="943" y="290" width="87.08" height="18" fill="#a78bfa"/>
+<text x="1036.0760861399153" y="303" fill="#94a3b8" font-size="12">0.379</text>
+<text x="66" y="626" fill="#94a3b8" font-size="13">Q(Y) decomposes exactly as prime-count residual minus skipped-frontier correction; x-axis is frontier Y on log scale.</text>
+</svg>

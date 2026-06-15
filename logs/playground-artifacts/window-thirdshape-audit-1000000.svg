@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">count+pair-conditioned triple-shape residual</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">aggregate Z of triple distance-variance after matching both count and pair-distance bin</text>
+<rect x="82" y="72" width="1000" height="260" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="72.00" y2="72.00" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 198.21 L 415.33 233.23 L 748.67 270.08 L 1082.00 312.74" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 111.64 L 415.33 186.76 L 748.67 119.54 L 1082.00 133.37" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M 82.00 135.44 L 415.33 144.22 L 748.67 175.32 L 1082.00 192.13" fill="none" stroke="#fbbf24" stroke-width="3"/>
+<path d="M 82.00 126.16 L 415.33 129.91 L 748.67 194.50 L 1082.00 223.16" fill="none" stroke="#f472b6" stroke-width="3"/>
+<text x="82" y="356" fill="#94a3b8" font-size="12">Z scales / F_q top degrees</text>
+<text x="722" y="356" fill="#a7f3d0" font-size="12">Z primes</text>
+<text x="827" y="356" fill="#7dd3fc" font-size="12">Z composites</text>
+<text x="957" y="356" fill="#fbbf24" font-size="12">F2[t]</text>
+<text x="1032" y="356" fill="#f472b6" font-size="12">F3[t]</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="420" fill="#e5e7eb" font-size="13">Z strongest windows</text>
+<rect x="90.00" y="430.00" width="13.75" height="120.00" fill="rgb(230,75,90)"><title>566370 k=19 bin=8 z=5.704</title></rect>
+<rect x="103.75" y="430.00" width="13.75" height="120.00" fill="rgb(230,75,90)"><title>959280 k=17 bin=7 z=5.068</title></rect>
+<rect x="117.50" y="430.00" width="13.75" height="120.00" fill="rgb(230,75,90)"><title>595770 k=15 bin=7 z=4.105</title></rect>
+<rect x="131.25" y="430.00" width="13.75" height="120.00" fill="rgb(230,75,90)"><title>574140 k=15 bin=7 z=3.999</title></rect>
+<rect x="145.00" y="430.00" width="13.75" height="120.00" fill="rgb(227,76,91)"><title>932190 k=14 bin=7 z=3.926</title></rect>
+<rect x="158.75" y="430.00" width="13.75" height="120.00" fill="rgb(221,77,94)"><title>517650 k=10 bin=5 z=3.798</title></rect>
+<rect x="172.50" y="430.00" width="13.75" height="120.00" fill="rgb(205,81,101)"><title>791700 k=14 bin=6 z=3.429</title></rect>
+<rect x="186.25" y="430.00" width="13.75" height="120.00" fill="rgb(201,82,103)"><title>639660 k=17 bin=8 z=3.330</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="90" y="645" fill="#e5e7eb" font-size="13">F2[t] strongest windows</text>
+<rect x="90.00" y="655.00" width="13.75" height="120.00" fill="rgb(49,147,183)"><title>18:4256 k=6 bin=18 z=-1.128</title></rect>
+<rect x="103.75" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:331 k=5 bin=18 z=-1.051</title></rect>
+<rect x="117.50" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:714 k=5 bin=18 z=-1.051</title></rect>
+<rect x="131.25" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:795 k=5 bin=18 z=-1.051</title></rect>
+<rect x="145.00" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:926 k=5 bin=18 z=-1.051</title></rect>
+<rect x="158.75" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:988 k=5 bin=18 z=-1.051</title></rect>
+<rect x="172.50" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:1091 k=5 bin=18 z=-1.051</title></rect>
+<rect x="186.25" y="655.00" width="13.75" height="120.00" fill="rgb(50,145,182)"><title>18:1678 k=5 bin=18 z=-1.051</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="10">
+<text x="650" y="645" fill="#e5e7eb" font-size="13">F3[t] strongest windows</text>
+<rect x="650.00" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:1851 k=7 bin=19 z=-1.680</title></rect>
+<rect x="663.75" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:2064 k=7 bin=19 z=-1.680</title></rect>
+<rect x="677.50" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:2735 k=7 bin=19 z=-1.680</title></rect>
+<rect x="691.25" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:4649 k=7 bin=19 z=-1.680</title></rect>
+<rect x="705.00" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:2671 k=7 bin=19 z=-1.680</title></rect>
+<rect x="718.75" y="655.00" width="13.75" height="120.00" fill="rgb(47,163,189)"><title>11:5071 k=7 bin=19 z=-1.680</title></rect>
+<rect x="732.50" y="655.00" width="13.75" height="120.00" fill="rgb(47,160,188)"><title>11:1134 k=5 bin=17 z=-1.566</title></rect>
+<rect x="746.25" y="655.00" width="13.75" height="120.00" fill="rgb(47,160,188)"><title>11:1377 k=5 bin=17 z=-1.566</title></rect>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="650" y="430" fill="#e5e7eb">final summary</text>
+<text x="650" y="460" fill="#a7f3d0">Z aggregate -4.190521, mean -0.085897, rms 0.996204</text>
+<text x="650" y="484" fill="#94a3b8">Z matched controls -1.861814 .. 1.294536</text>
+<text x="650" y="508" fill="#7dd3fc">composite aggregate -1.068322</text>
+<text x="650" y="532" fill="#fbbf24">F2 aggregate -2.091036, controls -0.497572 .. 0.321796</text>
+<text x="650" y="556" fill="#f472b6">F3 aggregate -2.631136, controls -0.538025 .. 0.579382</text>
+<text x="650" y="594" fill="#94a3b8">blue = low triple variance, red = high triple variance, clamp +/-4</text>
+</g>
+</svg>

@@ -1,0 +1,224 @@
+{
+  "N": 1000000,
+  "cfN": 12000,
+  "generatedAt": "2026-06-15T13:46:15.977Z",
+  "summary": "Generated 20 SVG panels at N=1000000 (continued-fraction subrange 12000). No candidate can be honestly called mathematically undiscovered from this run. The strongest project-native survivor is #7/#8, the Dyadic-Mobius/E2 transform diagnostic; the strongest mathematical visuals are #3 and #4, but both are famous open 1/4-exponent problems.",
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Squarefree count Q(x)",
+      "file": "01-squarefree-residual.svg",
+      "verdict": "KNOWN-MATH / classical squarefree error",
+      "note": "The level line is real, but the 1/4 exponent question is a named classical squarefree-error problem, not an undiscovered object.",
+      "metrics": {
+        "theta": 0.17459362701289896,
+        "density": 0.607926
+      }
+    },
+    {
+      "id": 2,
+      "name": "Liouville L(x)",
+      "file": "02-liouville-walk.svg",
+      "verdict": "KNOWN-MATH / Pólya and RH-adjacent",
+      "note": "Distinct from Mertens in the app, but the object and its failure modes are classical; no new discovery claim survives.",
+      "metrics": {
+        "theta": 0.4811747976613689,
+        "endpoint": -530
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dirichlet divisor Delta(x)",
+      "file": "03-dirichlet-divisor.svg",
+      "verdict": "OPEN CLASSICAL PROBLEM",
+      "note": "This is one of the best visual 1/4 siblings, but it is exactly the Dirichlet divisor problem; the plot is not undiscovered mathematics.",
+      "metrics": {
+        "theta": 0.31604903981387233,
+        "maxAbs": 169.24945365454187
+      }
+    },
+    {
+      "id": 4,
+      "name": "Gauss circle E(x)",
+      "file": "04-gauss-circle.svg",
+      "verdict": "OPEN CLASSICAL PROBLEM",
+      "note": "A genuine non-zeta-looking 1/4 front, but the circle problem is a famous old problem, not a newly uncovered line.",
+      "metrics": {
+        "theta": 0.2792730239309428,
+        "endpoint": -43.65358979301527
+      }
+    },
+    {
+      "id": 5,
+      "name": "Totient summatory Phi(x)",
+      "file": "05-totient-sum.svg",
+      "verdict": "KNOWN-MATH / Farey-coprimality calibration",
+      "note": "The 3/pi^2 level line is classical and overlaps the Farey/coprimality branch.",
+      "metrics": {
+        "theta": 0.9983263578324507,
+        "density": 0.303963552392
+      }
+    },
+    {
+      "id": 6,
+      "name": "Normalized Mertens m(x)",
+      "file": "06-normalized-mertens.svg",
+      "verdict": "KNOWN-MATH / Mertens branch",
+      "note": "Calmer than M(x), but it is still a standard Mobius summatory object and belongs to the logged Mertens family.",
+      "metrics": {
+        "theta": 0,
+        "endpoint": 0.0002006046853878144
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dyadic-Mobius G2",
+      "file": "07-dyadic-mobius.svg",
+      "verdict": "PROJECT-NOVEL / not mathematically established as new",
+      "note": "This is the most native unlogged transform in the batch. It is a new visualization here, but structurally it is a bounded dyadic transform of Mobius, so not an undiscovered theorem.",
+      "metrics": {
+        "theta": 0.5116526868665282,
+        "endpoint": 136.88451942458522
+      }
+    },
+    {
+      "id": 8,
+      "name": "E2-invariance chip-order test",
+      "file": "08-e2-invariance.svg",
+      "verdict": "PROJECT-NOVEL DIAGNOSTIC / not undiscovered math",
+      "note": "Useful as an instrument test: the square-root scale persists under these dyadic orders. That is a transform diagnostic, not a new critical line.",
+      "metrics": {
+        "M_end": 212,
+        "G2_end": 136.88451942458522
+      }
+    },
+    {
+      "id": 9,
+      "name": "Chebyshev bias mod 4",
+      "file": "09-chebyshev-bias-mod4.svg",
+      "verdict": "KNOWN-MATH / prime number race",
+      "note": "The visual bias is real, but it is the classical Chebyshev/Rubinstein-Sarnak prime race.",
+      "metrics": {
+        "endpoint": -2.0308800520207484,
+        "primes": 78498
+      }
+    },
+    {
+      "id": 10,
+      "name": "Race family over moduli",
+      "file": "10-prime-race-family.svg",
+      "verdict": "KNOWN-MATH / prime number races",
+      "note": "Good calibration family; the direction and scale are part of known prime-race theory.",
+      "metrics": {
+        "moduli": "3,5,8"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Liouville AP bias mod 4",
+      "file": "11-liouville-ap-bias.svg",
+      "verdict": "KNOWN-MATH / multiplicative-function race",
+      "note": "It is an independent-looking bias plot, but lambda in arithmetic progressions is a classical multiplicative-function object.",
+      "metrics": {
+        "endpoint_r1": 172,
+        "endpoint_r3": -1088
+      }
+    },
+    {
+      "id": 12,
+      "name": "Gap log-survival",
+      "file": "12-gap-log-survival.svg",
+      "verdict": "KNOWN-MATH / Cramer-Poisson calibration",
+      "note": "The straight line is the null model itself; deviations are useful diagnostics, not an undiscovered line.",
+      "metrics": {
+        "slope": -1.3427167239105016,
+        "r2": 0.9994147811810378
+      }
+    },
+    {
+      "id": 13,
+      "name": "sum(g_n-log p_n) walk",
+      "file": "13-gap-centered-walk.svg",
+      "verdict": "KNOWN-MATH DISGUISE / theta telescope",
+      "note": "The walk telescopes to p_k-2-theta(p_{k-1}); it is Chebyshev theta in gap coordinates.",
+      "metrics": {
+        "maxAbs": 1605.632288801565
+      }
+    },
+    {
+      "id": 14,
+      "name": "Maximal-gap Cramer line",
+      "file": "14-max-gap-cramer.svg",
+      "verdict": "KNOWN/CONJECTURAL GAP THEORY",
+      "note": "A legitimate frontier diagnostic, but Cramer/Granville maximal-gap behavior is already a named research area.",
+      "metrics": {
+        "endpoint": 0.5972721896319094
+      }
+    },
+    {
+      "id": 15,
+      "name": "sum(Omega-omega)(n)",
+      "file": "15-repeat-prime-factor-law.svg",
+      "verdict": "KNOWN-MATH / additive-function mean",
+      "note": "The constant-slope law is standard additive-function averaging; the residual is a calibration target.",
+      "metrics": {
+        "theta": 0.35705219477312794,
+        "endpoint": -245.66904900001828
+      }
+    },
+    {
+      "id": 16,
+      "name": "Erdos-Kac balance",
+      "file": "16-erdos-kac.svg",
+      "verdict": "KNOWN-MATH / CLT calibration",
+      "note": "The slow convergence is visible; this is a textbook theorem-shaped control, not a new line.",
+      "metrics": {
+        "loglog": 2.625791914476011,
+        "sample": 500001
+      }
+    },
+    {
+      "id": 17,
+      "name": "k-free ladder",
+      "file": "17-kfree-ladder.svg",
+      "verdict": "KNOWN-MATH / zeta-density family",
+      "note": "The slope constants and error hierarchy are classical; useful family visualization, not undiscovered.",
+      "metrics": {
+        "endpoint2": 0.607926,
+        "endpoint3": 0.83191
+      }
+    },
+    {
+      "id": 18,
+      "name": "Coprimality/Farey-count residual",
+      "file": "18-coprimality-farey.svg",
+      "verdict": "KNOWN-MATH / overlaps totient",
+      "note": "This is the two-dimensional version of the totient-sum line, not a new branch distinct from #5.",
+      "metrics": {
+        "endpoint": 0.002930973388671875
+      }
+    },
+    {
+      "id": 19,
+      "name": "Matrix critical width W",
+      "file": "19-matrix-width-front.svg",
+      "verdict": "KNOWN RESIDUE-LAYER FRONT",
+      "note": "The contrast peaks when W has many small prime factors. That is local residue geometry, not an undiscovered critical line.",
+      "metrics": {
+        "topW": "420,210,330,390,510",
+        "primeN": 300000
+      }
+    },
+    {
+      "id": 20,
+      "name": "Bounded-CF / Zaremba dimension front",
+      "file": "20-zaremba-cf-front.svg",
+      "verdict": "OPEN/KNOWN ZAREMBA BRANCH",
+      "note": "The threshold picture is meaningful, but it is the established Zaremba continued-fraction problem rather than an undiscovered line.",
+      "metrics": {
+        "A2_density": 0.4488333333333333,
+        "A2_primeHitRate": 0.6356050069541029
+      }
+    }
+  ]
+}

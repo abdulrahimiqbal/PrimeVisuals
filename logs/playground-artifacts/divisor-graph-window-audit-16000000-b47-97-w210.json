@@ -1,0 +1,482 @@
+{
+  "candidate": "local divisor-graph edge energy",
+  "N": 16000000,
+  "windowSize": 210,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "cutoffs": [
+    {
+      "cutoff": 47,
+      "rows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "cutoff": 47,
+          "scoredWindows": 4761,
+          "observedMean": 2.243284461923086,
+          "fakeMean": 2.243835139477235,
+          "residual": -0.0005506775541488373,
+          "aggregate": -0.03799675123626978,
+          "fakeAggregates": [
+            0.08620422087546631,
+            -0.10966893487992557,
+            0.006684750516865012,
+            0.0047143427126350446,
+            0.012065620774928565
+          ],
+          "fakeRange": [
+            -0.10966893487992557,
+            0.08620422087546631
+          ],
+          "compositeAggregateMean": -0.01328535022379754,
+          "compositeRange": [
+            -0.04070608048381362,
+            0.037592382623024966
+          ],
+          "compositeScored": 2386,
+          "skippedNoComposite": 2375,
+          "meanPrimeVertices": 14.791850451585802,
+          "meanEligibleVertices": 29.114051669817265,
+          "primePairs": 504501,
+          "eligiblePairs": 1959650,
+          "topDiffs": []
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "cutoff": 47,
+          "scoredWindows": 9523,
+          "observedMean": 2.243533855023548,
+          "fakeMean": 2.244058777385642,
+          "residual": -0.0005249223620937826,
+          "aggregate": -0.05122499994466867,
+          "fakeAggregates": [
+            0.017827732748589703,
+            -0.07106822310019341,
+            -0.014113596016307472,
+            0.01058690536492466,
+            0.05676718100294318
+          ],
+          "fakeRange": [
+            -0.07106822310019341,
+            0.05676718100294318
+          ],
+          "compositeAggregateMean": 0.019841060709775267,
+          "compositeRange": [
+            -0.021247058049446908,
+            0.074074208057464
+          ],
+          "compositeScored": 5778,
+          "skippedNoComposite": 3745,
+          "meanPrimeVertices": 14.092407854667647,
+          "meanEligibleVertices": 29.120340228919456,
+          "primePairs": 915568,
+          "eligiblePairs": 3920936,
+          "topDiffs": []
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "cutoff": 47,
+          "scoredWindows": 19047,
+          "observedMean": 2.2435260215484853,
+          "fakeMean": 2.2440678157550824,
+          "residual": -0.0005417942065970571,
+          "aggregate": -0.07477348934594906,
+          "fakeAggregates": [
+            -0.10279102209299382,
+            -0.003587289349610267,
+            0.07146753504838099,
+            -0.003283799243715606,
+            0.03819457563787741
+          ],
+          "fakeRange": [
+            -0.10279102209299382,
+            0.07146753504838099
+          ],
+          "compositeAggregateMean": 0.007260480133096402,
+          "compositeRange": [
+            -0.0858760501782257,
+            0.05789988055206756
+          ],
+          "compositeScored": 13277,
+          "skippedNoComposite": 5770,
+          "meanPrimeVertices": 13.47314537722476,
+          "meanEligibleVertices": 29.126896624140283,
+          "primePairs": 1672911,
+          "eligiblePairs": 7846470,
+          "topDiffs": []
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "cutoff": 47,
+          "scoredWindows": 38094,
+          "observedMean": 2.243826800759233,
+          "fakeMean": 2.243940550995548,
+          "residual": -0.00011375023631510217,
+          "aggregate": -0.02220141200182511,
+          "fakeAggregates": [
+            0.028950451151858094,
+            0.024793256989896477,
+            -0.018958167456498445,
+            -0.035629143283589786,
+            0.000843602598246984
+          ],
+          "fakeRange": [
+            -0.035629143283589786,
+            0.028950451151858094
+          ],
+          "compositeAggregateMean": 0.012475796002574282,
+          "compositeRange": [
+            -0.06580610694166726,
+            0.05370307282435224
+          ],
+          "compositeScored": 29433,
+          "skippedNoComposite": 8661,
+          "meanPrimeVertices": 12.897910432089043,
+          "meanEligibleVertices": 29.128839187273588,
+          "primePairs": 3066774,
+          "eligiblePairs": 15694156,
+          "topDiffs": [
+            {
+              "d": 6,
+              "omega": 2,
+              "observed": 79264,
+              "expected": 79724.95471063479,
+              "excess": -460.9547106347891,
+              "weightedExcess": -921.9094212695782
+            },
+            {
+              "d": 106,
+              "omega": 2,
+              "observed": 21691,
+              "expected": 21282.60149079434,
+              "excess": 408.39850920566096,
+              "weightedExcess": 816.7970184113219
+            },
+            {
+              "d": 150,
+              "omega": 3,
+              "observed": 31684,
+              "expected": 31904.64186442009,
+              "excess": -220.6418644200894,
+              "weightedExcess": -661.9255932602682
+            },
+            {
+              "d": 134,
+              "omega": 2,
+              "observed": 16249,
+              "expected": 15929.716504742877,
+              "excess": 319.2834952571229,
+              "weightedExcess": 638.5669905142458
+            },
+            {
+              "d": 30,
+              "omega": 3,
+              "observed": 90125,
+              "expected": 90331.18428488538,
+              "excess": -206.18428488538484,
+              "weightedExcess": -618.5528546561545
+            },
+            {
+              "d": 84,
+              "omega": 3,
+              "observed": 52919,
+              "expected": 53121.26453707877,
+              "excess": -202.26453707877226,
+              "weightedExcess": -606.7936112363168
+            },
+            {
+              "d": 66,
+              "omega": 3,
+              "observed": 65162,
+              "expected": 64984.98166828014,
+              "excess": 177.01833171986073,
+              "weightedExcess": 531.0549951595822
+            },
+            {
+              "d": 118,
+              "omega": 2,
+              "observed": 16195,
+              "expected": 15941.383177553369,
+              "excess": 253.61682244663098,
+              "weightedExcess": 507.23364489326195
+            },
+            {
+              "d": 158,
+              "omega": 2,
+              "observed": 10869,
+              "expected": 10628.396854061557,
+              "excess": 240.60314593844305,
+              "weightedExcess": 481.2062918768861
+            },
+            {
+              "d": 62,
+              "omega": 2,
+              "observed": 27276,
+              "expected": 27501.318322761355,
+              "excess": -225.31832276135538,
+              "weightedExcess": -450.63664552271075
+            },
+            {
+              "d": 110,
+              "omega": 3,
+              "observed": 29387,
+              "expected": 29524.266952052556,
+              "excess": -137.266952052556,
+              "weightedExcess": -411.800856157668
+            },
+            {
+              "d": 146,
+              "omega": 2,
+              "observed": 16134,
+              "expected": 15933.206777357622,
+              "excess": 200.79322264237817,
+              "weightedExcess": 401.58644528475634
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rows": [
+        {
+          "lo": 1000000,
+          "hi": 2000000,
+          "cutoff": 97,
+          "scoredWindows": 4761,
+          "observedMean": 2.243284461923086,
+          "fakeMean": 2.243835840983639,
+          "residual": -0.0005513790605529145,
+          "aggregate": -0.0380451551781511,
+          "fakeAggregates": [
+            0.07064191431117406,
+            0.074358826592555,
+            -0.023402514745733072,
+            -0.06790075162171005,
+            -0.053697474536255285
+          ],
+          "fakeRange": [
+            -0.06790075162171005,
+            0.074358826592555
+          ],
+          "compositeAggregateMean": 0.02336037273113386,
+          "compositeRange": [
+            -0.053396210906778506,
+            0.0654076821837418
+          ],
+          "compositeScored": 1055,
+          "skippedNoComposite": 3706,
+          "meanPrimeVertices": 14.791850451585802,
+          "meanEligibleVertices": 25.319890779248055,
+          "primePairs": 504501,
+          "eligiblePairs": 1479967,
+          "topDiffs": []
+        },
+        {
+          "lo": 2000000,
+          "hi": 4000000,
+          "cutoff": 97,
+          "scoredWindows": 9523,
+          "observedMean": 2.243533855023548,
+          "fakeMean": 2.2438485103609613,
+          "residual": -0.00031465533741315,
+          "aggregate": -0.030705911589071582,
+          "fakeAggregates": [
+            -0.016607649377621124,
+            0.03147599611893118,
+            0.06792984716192467,
+            -0.0420391440796395,
+            -0.040759049823595225
+          ],
+          "fakeRange": [
+            -0.0420391440796395,
+            0.06792984716192467
+          ],
+          "compositeAggregateMean": 0.027887677701841463,
+          "compositeRange": [
+            -0.03232007292769373,
+            0.07062389204397243
+          ],
+          "compositeScored": 2997,
+          "skippedNoComposite": 6526,
+          "meanPrimeVertices": 14.092407854667647,
+          "meanEligibleVertices": 25.269872939199832,
+          "primePairs": 915568,
+          "eligiblePairs": 2948211,
+          "topDiffs": []
+        },
+        {
+          "lo": 4000000,
+          "hi": 8000000,
+          "cutoff": 97,
+          "scoredWindows": 19047,
+          "observedMean": 2.2435260215484853,
+          "fakeMean": 2.2435306038302016,
+          "residual": -0.000004582281716292158,
+          "aggregate": -0.0006324046822968925,
+          "fakeAggregates": [
+            -0.06027467021869202,
+            -0.007157480394614932,
+            0.01808505278072292,
+            0.02243120669106104,
+            0.026915891141584276
+          ],
+          "fakeRange": [
+            -0.06027467021869202,
+            0.026915891141584276
+          ],
+          "compositeAggregateMean": 0.05767841303301415,
+          "compositeRange": [
+            0.007030352397991764,
+            0.1402220549929801
+          ],
+          "compositeScored": 7680,
+          "skippedNoComposite": 11367,
+          "meanPrimeVertices": 13.47314537722476,
+          "meanEligibleVertices": 25.25263821074185,
+          "primePairs": 1672911,
+          "eligiblePairs": 5888875,
+          "topDiffs": []
+        },
+        {
+          "lo": 8000000,
+          "hi": 16000000,
+          "cutoff": 97,
+          "scoredWindows": 38094,
+          "observedMean": 2.243826800759233,
+          "fakeMean": 2.2437540624262162,
+          "residual": 0.00007273833301679744,
+          "aggregate": 0.01419683819520536,
+          "fakeAggregates": [
+            0.02589596887070538,
+            0.03496564344486056,
+            -0.028627244523232936,
+            0.0033746677092079624,
+            -0.03560903550136762
+          ],
+          "fakeRange": [
+            -0.03560903550136762,
+            0.03496564344486056
+          ],
+          "compositeAggregateMean": 0.05904712649342555,
+          "compositeRange": [
+            0.010260809031947772,
+            0.1282771825180455
+          ],
+          "compositeScored": 18889,
+          "skippedNoComposite": 19205,
+          "meanPrimeVertices": 12.897910432089043,
+          "meanEligibleVertices": 25.249488108363522,
+          "primePairs": 3066774,
+          "eligiblePairs": 11774414,
+          "topDiffs": [
+            {
+              "d": 6,
+              "omega": 2,
+              "observed": 79264,
+              "expected": 79685.96759460634,
+              "excess": -421.9675946063362,
+              "weightedExcess": -843.9351892126724
+            },
+            {
+              "d": 66,
+              "omega": 3,
+              "observed": 65162,
+              "expected": 64890.964677240336,
+              "excess": 271.03532275966427,
+              "weightedExcess": 813.1059682789928
+            },
+            {
+              "d": 150,
+              "omega": 3,
+              "observed": 31684,
+              "expected": 31889.934427709646,
+              "excess": -205.93442770964612,
+              "weightedExcess": -617.8032831289383
+            },
+            {
+              "d": 84,
+              "omega": 3,
+              "observed": 52919,
+              "expected": 53121.85856522487,
+              "excess": -202.85856522487302,
+              "weightedExcess": -608.575695674619
+            },
+            {
+              "d": 42,
+              "omega": 3,
+              "observed": 74498,
+              "expected": 74348.55567835376,
+              "excess": 149.44432164623868,
+              "weightedExcess": 448.33296493871603
+            },
+            {
+              "d": 30,
+              "omega": 3,
+              "observed": 90125,
+              "expected": 90260.57815637453,
+              "excess": -135.57815637452586,
+              "weightedExcess": -406.7344691235776
+            },
+            {
+              "d": 102,
+              "omega": 3,
+              "observed": 39772,
+              "expected": 39638.4708548004,
+              "excess": 133.52914519960177,
+              "weightedExcess": 400.5874355988053
+            },
+            {
+              "d": 62,
+              "omega": 2,
+              "observed": 27276,
+              "expected": 27469.84836732906,
+              "excess": -193.84836732906115,
+              "weightedExcess": -387.6967346581223
+            },
+            {
+              "d": 98,
+              "omega": 2,
+              "observed": 26776,
+              "expected": 26587.861759206815,
+              "excess": 188.1382407931851,
+              "weightedExcess": 376.2764815863702
+            },
+            {
+              "d": 120,
+              "omega": 3,
+              "observed": 47922,
+              "expected": 47797.256316466315,
+              "excess": 124.74368353368482,
+              "weightedExcess": 374.23105060105445
+            },
+            {
+              "d": 38,
+              "omega": 2,
+              "observed": 33970,
+              "expected": 33787.404652057,
+              "excess": 182.5953479430027,
+              "weightedExcess": 365.1906958860054
+            },
+            {
+              "d": 110,
+              "omega": 3,
+              "observed": 29387,
+              "expected": 29499.692682683013,
+              "excess": -112.69268268301312,
+              "weightedExcess": -338.07804804903935
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

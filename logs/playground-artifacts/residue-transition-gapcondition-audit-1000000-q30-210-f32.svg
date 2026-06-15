@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="36" fill="#f8fafc" font-size="18">gap-conditioned transition compatibility quotient</text>
+<text x="54" y="56" fill="#94a3b8" font-size="12">first-order surprise survives row-shuffle; exact (a,gap mod W) compatibility leaves zero quotient</text>
+<rect x="82" y="72" width="1000" height="310" fill="none" stroke="#334155"/>
+<line x1="82" x2="1082" y1="382.00" y2="382.00" stroke="#64748b" stroke-dasharray="4 4"/>
+<path d="M 82.00 295.05 L 415.33 281.72 L 748.67 225.88 L 1082.00 144.69" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<path d="M 82.00 283.26 L 415.33 266.95 L 748.67 198.96 L 1082.00 94.96" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+<path d="M 82.00 283.09 L 415.33 267.07 L 748.67 198.93 L 1082.00 95.43" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<path d="M 82.00 325.60 L 415.33 313.73 L 748.67 264.75 L 1082.00 187.45" fill="none" stroke="#fb7185" stroke-width="2"/>
+<path d="M 82.00 340.92 L 415.33 316.52 L 748.67 279.15 L 1082.00 222.13" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+<path d="M 82.00 364.09 L 415.33 341.40 L 748.67 296.96 L 1082.00 210.49" fill="none" stroke="#f472b6" stroke-width="2"/>
+<path d="M 82.00 382.00 L 415.33 382.00 L 748.67 382.00 L 1082.00 382.00" fill="none" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="82" y="406" fill="#94a3b8" font-size="12">integer scales / F_q top degrees</text>
+<text x="612" y="406" fill="#fbbf24" font-size="12">first-order</text>
+<text x="732" y="406" fill="#a7f3d0" font-size="12">gap-row-shuffle</text>
+<text x="897" y="406" fill="#e5e7eb" font-size="12">exact quotient</text>
+</g>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="90" y="460" fill="#e5e7eb">final integer mod 210</text>
+<text x="90" y="488" fill="#fbbf24">first-order aggregate 514.900323</text>
+<text x="90" y="512" fill="#a7f3d0">gap-conditioned row-shuffle aggregate 622.797184</text>
+<text x="90" y="536" fill="#e5e7eb">exact compatibility quotient 0.000000, violations 0</text>
+<text x="90" y="560" fill="#7dd3fc">wheel gap aggregate range 618.136141 .. 626.376634</text>
+<text x="90" y="584" fill="#fb7185">composite gap aggregate range 419.423579 .. 424.780901</text>
+<text x="650" y="460" fill="#e5e7eb">function-field encoded-order check</text>
+<text x="650" y="488" fill="#c4b5fd">F2 gap aggregate 346.871236, violations 0</text>
+<text x="650" y="512" fill="#f472b6">F3 gap aggregate 372.134411, violations 0</text>
+<text x="650" y="560" fill="#94a3b8">dashed line = the actual compatible quotient after conditioning on gap mod W</text>
+</g>
+</svg>

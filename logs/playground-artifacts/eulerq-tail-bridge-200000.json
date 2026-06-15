@@ -1,0 +1,3230 @@
+{
+  "maxN": 200000,
+  "base": 2,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "endpoints": [
+    12500,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "real": {
+    "name": "real",
+    "labels": 17983,
+    "endpointRows": [
+      {
+        "N": 12500,
+        "count": 1491,
+        "hits": 55,
+        "expected": 61.68456160364076,
+        "variance": 53.9917824247709,
+        "zeros": 0,
+        "residual": -6.68456160364069,
+        "normalized": -0.9097228379537926,
+        "maxAbsResidual": 8.108944813838658,
+        "maxAbsNormalized": 1.1035715917163857
+      },
+      {
+        "N": 25000,
+        "count": 2761,
+        "hits": 79,
+        "expected": 80.54809543499707,
+        "variance": 72.57231923133895,
+        "zeros": 0,
+        "residual": -1.5480954349971223,
+        "normalized": -0.18172397538886811,
+        "maxAbsResidual": 8.494052082153896,
+        "maxAbsNormalized": 0.9970786533143985
+      },
+      {
+        "N": 50000,
+        "count": 5132,
+        "hits": 112,
+        "expected": 105.43771386313175,
+        "variance": 97.19804593017724,
+        "zeros": 0,
+        "residual": 6.56228613686814,
+        "normalized": 0.6656200510770187,
+        "maxAbsResidual": 8.494052082153896,
+        "maxAbsNormalized": 0.861561239917591
+      },
+      {
+        "N": 100000,
+        "count": 9591,
+        "hits": 151,
+        "expected": 138.5320990298779,
+        "variance": 130.04434364702064,
+        "zeros": 0,
+        "residual": 12.46790097012316,
+        "normalized": 1.0933208002926063,
+        "maxAbsResidual": 16.334316243487844,
+        "maxAbsNormalized": 1.4323700316803396
+      },
+      {
+        "N": 200000,
+        "count": 17983,
+        "hits": 189,
+        "expected": 182.5665918214513,
+        "variance": 173.84546862524965,
+        "zeros": 0,
+        "residual": 6.433408178550177,
+        "normalized": 0.4879321325305263,
+        "maxAbsResidual": 16.334316243487844,
+        "maxAbsNormalized": 1.2388515599999057
+      }
+    ],
+    "blockRows": [
+      {
+        "from": 1,
+        "to": 12500,
+        "count": 1491,
+        "hits": 55,
+        "expected": 61.68456160364076,
+        "variance": 53.9917824247709,
+        "residual": -6.684561603640759,
+        "normalized": -0.909722837953802
+      },
+      {
+        "from": 12500,
+        "to": 25000,
+        "count": 1270,
+        "hits": 24,
+        "expected": 18.863533831356463,
+        "variance": 18.580536806568087,
+        "residual": 5.136466168643537,
+        "normalized": 1.1916131946994097
+      },
+      {
+        "from": 25000,
+        "to": 50000,
+        "count": 2371,
+        "hits": 33,
+        "expected": 24.889618428134792,
+        "variance": 24.625726698838502,
+        "residual": 8.110381571865208,
+        "normalized": 1.6343563677138653
+      },
+      {
+        "from": 50000,
+        "to": 100000,
+        "count": 4459,
+        "hits": 39,
+        "expected": 33.0943851667452,
+        "variance": 32.84629771684373,
+        "residual": 5.905614833254802,
+        "normalized": 1.0304380953151961
+      },
+      {
+        "from": 100000,
+        "to": 200000,
+        "count": 8392,
+        "hits": 38,
+        "expected": 44.034492791572916,
+        "variance": 43.801124978229,
+        "residual": -6.034492791572916,
+        "normalized": -0.9117969609742596
+      }
+    ]
+  },
+  "randomQuotientRuns": [
+    {
+      "name": "randomQuotient-12345",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1491,
+          "hits": 71,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": 9.315438396359314,
+          "normalized": 1.2677670664451914,
+          "maxAbsResidual": 17.175325025704957,
+          "maxAbsNormalized": 2.337443553015235
+        },
+        {
+          "N": 25000,
+          "count": 2761,
+          "hits": 95,
+          "expected": 80.54809543499707,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": 14.451904565002872,
+          "normalized": 1.6964442179223496,
+          "maxAbsResidual": 17.175325025704957,
+          "maxAbsNormalized": 2.016134323316327
+        },
+        {
+          "N": 50000,
+          "count": 5132,
+          "hits": 117,
+          "expected": 105.43771386313175,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": 11.562286136868112,
+          "normalized": 1.1727756651376722,
+          "maxAbsResidual": 17.175325025704957,
+          "maxAbsNormalized": 1.742112502020551
+        },
+        {
+          "N": 100000,
+          "count": 9591,
+          "hits": 151,
+          "expected": 138.5320990298779,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": 12.467900970123104,
+          "normalized": 1.0933208002926014,
+          "maxAbsResidual": 17.175325025704957,
+          "maxAbsNormalized": 1.5061188043911675
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 192,
+          "expected": 182.5665918214513,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": 9.433408178550009,
+          "normalized": 0.7154626042441018,
+          "maxAbsResidual": 17.68756708811107,
+          "maxAbsNormalized": 1.3414868276745506
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1491,
+          "hits": 71,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "residual": 9.31543839635924,
+          "normalized": 1.2677670664451814
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 24,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": 5.136466168643537,
+          "normalized": 1.1916131946994097
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 22,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": -2.889618428134792,
+          "normalized": -0.5822989012832992
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 34,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": 0.905614833254802,
+          "normalized": 0.158015727441872
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 41,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": -3.034492791572916,
+          "normalized": -0.4585043683071984
+        }
+      ]
+    },
+    {
+      "name": "randomQuotient-271828",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1491,
+          "hits": 63,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": 1.3154383963593115,
+          "normalized": 0.17902211424569933,
+          "maxAbsResidual": 9.998815951530197,
+          "maxAbsNormalized": 1.3607700494000325
+        },
+        {
+          "N": 25000,
+          "count": 2761,
+          "hits": 78,
+          "expected": 80.54809543499707,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": -2.5480954349971205,
+          "normalized": -0.29910948747081906,
+          "maxAbsResidual": 9.998815951530197,
+          "maxAbsNormalized": 1.1737161306835537
+        },
+        {
+          "N": 50000,
+          "count": 5132,
+          "hits": 106,
+          "expected": 105.43771386313175,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": 0.5622861368681599,
+          "normalized": 0.05703331420423317,
+          "maxAbsResidual": 9.998815951530197,
+          "maxAbsNormalized": 1.0141911287555565
+        },
+        {
+          "N": 100000,
+          "count": 9591,
+          "hits": 143,
+          "expected": 138.5320990298779,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": 4.467900970123103,
+          "normalized": 0.3917940217835119,
+          "maxAbsResidual": 9.998815951530197,
+          "maxAbsNormalized": 0.8768046429227843
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 180,
+          "expected": 182.5665918214513,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": -2.56659182144985,
+          "normalized": -0.19465928261024076,
+          "maxAbsResidual": 9.998815951530197,
+          "maxAbsNormalized": 0.7583451033430058
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1491,
+          "hits": 63,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "residual": 1.3154383963592409,
+          "normalized": 0.17902211424568973
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 15,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": -3.863533831356463,
+          "normalized": -0.8963045293117796
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 28,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": 3.110381571865208,
+          "normalized": 0.6267857908969724
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 37,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": 3.905614833254802,
+          "normalized": 0.6814691481658665
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 37,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": -7.034492791572916,
+          "normalized": -1.0628944918632799
+        }
+      ]
+    },
+    {
+      "name": "randomQuotient-314159",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1491,
+          "hits": 65,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": 3.315438396359305,
+          "normalized": 0.4512083522955714,
+          "maxAbsResidual": 6.709902221709684,
+          "maxAbsNormalized": 0.9131715217048216
+        },
+        {
+          "N": 25000,
+          "count": 2761,
+          "hits": 87,
+          "expected": 80.54809543499707,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": 6.45190456500288,
+          "normalized": 0.7573601212667413,
+          "maxAbsResidual": 6.709902221709684,
+          "maxAbsNormalized": 0.787645308315213
+        },
+        {
+          "N": 50000,
+          "count": 5132,
+          "hits": 116,
+          "expected": 105.43771386313175,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": 10.56228613686814,
+          "normalized": 1.0713445423255437,
+          "maxAbsResidual": 11.957931263098356,
+          "maxAbsNormalized": 1.2129063945263532
+        },
+        {
+          "N": 100000,
+          "count": 9591,
+          "hits": 147,
+          "expected": 138.5320990298779,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": 8.467900970123132,
+          "normalized": 0.7425574110380592,
+          "maxAbsResidual": 11.957931263098356,
+          "maxAbsNormalized": 1.0486011245793143
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 185,
+          "expected": 182.5665918214513,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": 2.4334081785501964,
+          "normalized": 0.1845581702457433,
+          "maxAbsResidual": 11.957931263098356,
+          "maxAbsNormalized": 0.9069312470038113
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1491,
+          "hits": 65,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "residual": 3.315438396359241,
+          "normalized": 0.45120835229556266
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 22,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": 3.136466168643537,
+          "normalized": 0.7276314782524788
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 29,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": 4.110381571865208,
+          "normalized": 0.828299906260351
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 31,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": -2.094385166745198,
+          "normalized": -0.3654376932821225
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 38,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": -6.034492791572916,
+          "normalized": -0.9117969609742596
+        }
+      ]
+    },
+    {
+      "name": "randomQuotient-161803",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1491,
+          "hits": 60,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": -1.6845616036406899,
+          "normalized": -0.22925724282911025,
+          "maxAbsResidual": 7.1291147047460885,
+          "maxAbsNormalized": 0.9702234560554343
+        },
+        {
+          "N": 25000,
+          "count": 2761,
+          "hits": 78,
+          "expected": 80.54809543499707,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": -2.5480954349971165,
+          "normalized": -0.2991094874708186,
+          "maxAbsResidual": 7.1291147047460885,
+          "maxAbsNormalized": 0.8368547803075875
+        },
+        {
+          "N": 50000,
+          "count": 5132,
+          "hits": 108,
+          "expected": 105.43771386313175,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": 2.56228613686816,
+          "normalized": 0.2598955598284957,
+          "maxAbsResidual": 7.1291147047460885,
+          "maxAbsNormalized": 0.7231141091588714
+        },
+        {
+          "N": 100000,
+          "count": 9591,
+          "hits": 125,
+          "expected": 138.5320990298779,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": -13.532099029876878,
+          "normalized": -1.1866412298619375,
+          "maxAbsResidual": 13.532099029876878,
+          "maxAbsNormalized": 1.1866412298619375
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 170,
+          "expected": 182.5665918214513,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": -12.566591821449917,
+          "normalized": -0.9530941883222069,
+          "maxAbsResidual": 16.146524717109013,
+          "maxAbsNormalized": 1.2246087951396423
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1491,
+          "hits": 60,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "residual": -1.6845616036407591,
+          "normalized": -0.2292572428291197
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 18,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": -0.8635338313564631,
+          "normalized": -0.20033195464138318
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 30,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": 5.110381571865208,
+          "normalized": 1.0298140216237295
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 17,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": -16.094385166745198,
+          "normalized": -2.80822032332743
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 45,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": 0.9655072084270842,
+          "normalized": 0.1458857552488832
+        }
+      ]
+    },
+    {
+      "name": "randomQuotient-424242",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1491,
+          "hits": 56,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": -5.684561603640696,
+          "normalized": -0.773629718928857,
+          "maxAbsResidual": 10.293247885808588,
+          "maxAbsNormalized": 1.4008402096765238
+        },
+        {
+          "N": 25000,
+          "count": 2761,
+          "hits": 75,
+          "expected": 80.54809543499707,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": -5.548095434997135,
+          "normalized": -0.6512660237166742,
+          "maxAbsResidual": 10.293247885808588,
+          "maxAbsNormalized": 1.208278174062102
+        },
+        {
+          "N": 50000,
+          "count": 5132,
+          "hits": 98,
+          "expected": 105.43771386313175,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": -7.437713863131864,
+          "normalized": -0.7544156682928194,
+          "maxAbsResidual": 10.293247885808588,
+          "maxAbsNormalized": 1.0440556904411613
+        },
+        {
+          "N": 100000,
+          "count": 9591,
+          "hits": 135,
+          "expected": 138.5320990298779,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": -3.532099029876918,
+          "normalized": -0.30973275672557926,
+          "maxAbsResidual": 10.293247885808588,
+          "maxAbsNormalized": 0.9026236287158492
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 183,
+          "expected": 182.5665918214513,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": 0.433408178550134,
+          "normalized": 0.03287118910334637,
+          "maxAbsResidual": 10.293247885808588,
+          "maxAbsNormalized": 0.780675848974308
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1491,
+          "hits": 56,
+          "expected": 61.68456160364076,
+          "variance": 53.9917824247709,
+          "residual": -5.684561603640759,
+          "normalized": -0.7736297189288656
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 19,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": 0.1364661686435369,
+          "normalized": 0.031658903582082294
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 23,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": -1.889618428134792,
+          "normalized": -0.3807847859199206
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 37,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": 3.905614833254802,
+          "normalized": 0.6814691481658665
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 48,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": 3.965507208427084,
+          "normalized": 0.5991783479159444
+        }
+      ]
+    }
+  ],
+  "cramerRuns": [
+    {
+      "name": "cramer-12345",
+      "labels": 17843,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1457,
+          "hits": 54,
+          "expected": 60.30264102697776,
+          "variance": 52.7293418451052,
+          "zeros": 0,
+          "residual": -6.302641026977804,
+          "normalized": -0.8679533762636696,
+          "maxAbsResidual": 7.744586353216901,
+          "maxAbsNormalized": 1.0665274833625429
+        },
+        {
+          "N": 25000,
+          "count": 2699,
+          "hits": 70,
+          "expected": 78.77970116262055,
+          "variance": 70.92877808295037,
+          "zeros": 0,
+          "residual": -8.779701162620688,
+          "normalized": -1.042481831716477,
+          "maxAbsResidual": 9.525988533585393,
+          "maxAbsNormalized": 1.1310943039475858
+        },
+        {
+          "N": 50000,
+          "count": 5119,
+          "hits": 104,
+          "expected": 104.21359358324649,
+          "variance": 96.09264152090248,
+          "zeros": 0,
+          "residual": -0.21359358324668717,
+          "normalized": -0.021789292832437024,
+          "maxAbsResidual": 9.525988533585393,
+          "maxAbsNormalized": 0.9717733581771765
+        },
+        {
+          "N": 100000,
+          "count": 9491,
+          "hits": 137,
+          "expected": 136.65235623041832,
+          "variance": 128.28827731233406,
+          "zeros": 0,
+          "residual": 0.34764376958151794,
+          "normalized": 0.03069311479956283,
+          "maxAbsResidual": 9.525988533585393,
+          "maxAbsNormalized": 0.8410398379715411
+        },
+        {
+          "N": 200000,
+          "count": 17843,
+          "hits": 177,
+          "expected": 180.47179083684642,
+          "variance": 171.87550619371484,
+          "zeros": 0,
+          "residual": -3.471790836846824,
+          "normalized": -0.2648174244893322,
+          "maxAbsResidual": 9.525988533585393,
+          "maxAbsNormalized": 0.7266128254057298
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1457,
+          "hits": 54,
+          "expected": 60.30264102697776,
+          "variance": 52.7293418451052,
+          "residual": -6.30264102697776,
+          "normalized": -0.8679533762636635
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1242,
+          "hits": 16,
+          "expected": 18.47706013564289,
+          "variance": 18.19943623784521,
+          "residual": -2.4770601356428905,
+          "normalized": -0.5806408445478085
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2420,
+          "hits": 34,
+          "expected": 25.433892420625973,
+          "variance": 25.16386343795205,
+          "residual": 8.566107579374027,
+          "normalized": 1.7076342798810222
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4372,
+          "hits": 33,
+          "expected": 32.438762647171785,
+          "variance": 32.19563579143171,
+          "residual": 0.5612373528282149,
+          "normalized": 0.0989117907467342
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8352,
+          "hits": 40,
+          "expected": 43.819434606428416,
+          "variance": 43.58722888138007,
+          "residual": -3.819434606428416,
+          "normalized": -0.5785214276220745
+        }
+      ]
+    },
+    {
+      "name": "cramer-271828",
+      "labels": 17934,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1548,
+          "hits": 69,
+          "expected": 64.25155348335166,
+          "variance": 56.11043682417015,
+          "zeros": 0,
+          "residual": 4.748446516648351,
+          "normalized": 0.6339130988444323,
+          "maxAbsResidual": 9.87874973399065,
+          "maxAbsNormalized": 1.318803704459283
+        },
+        {
+          "N": 25000,
+          "count": 2834,
+          "hits": 84,
+          "expected": 83.32790931030722,
+          "variance": 74.90097045168936,
+          "zeros": 0,
+          "residual": 0.672090689692613,
+          "normalized": 0.07765763439426696,
+          "maxAbsResidual": 9.87874973399065,
+          "maxAbsNormalized": 1.141453596784053
+        },
+        {
+          "N": 50000,
+          "count": 5214,
+          "hits": 103,
+          "expected": 108.3395383994493,
+          "variance": 99.64711549060011,
+          "zeros": 0,
+          "residual": -5.33953839944952,
+          "normalized": -0.5348984609415806,
+          "maxAbsResidual": 9.87874973399065,
+          "maxAbsNormalized": 0.9896226290428802
+        },
+        {
+          "N": 100000,
+          "count": 9549,
+          "hits": 146,
+          "expected": 140.57058415255239,
+          "variance": 131.63609223284828,
+          "zeros": 0,
+          "residual": 5.42941584744701,
+          "normalized": 0.4732227506346949,
+          "maxAbsResidual": 9.87874973399065,
+          "maxAbsNormalized": 0.8610224844260176
+        },
+        {
+          "N": 200000,
+          "count": 17934,
+          "hits": 194,
+          "expected": 184.53649227083343,
+          "variance": 175.36912546359406,
+          "zeros": 0,
+          "residual": 9.463507729165963,
+          "normalized": 0.714620668812636,
+          "maxAbsResidual": 9.87874973399065,
+          "maxAbsNormalized": 0.7459769616058866
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1548,
+          "hits": 69,
+          "expected": 64.25155348335166,
+          "variance": 56.11043682417015,
+          "residual": 4.748446516648343,
+          "normalized": 0.6339130988444311
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1286,
+          "hits": 15,
+          "expected": 19.076355826955737,
+          "variance": 18.790533627519224,
+          "residual": -4.076355826955737,
+          "normalized": -0.9403781506772582
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2380,
+          "hits": 19,
+          "expected": 25.011629089142176,
+          "variance": 24.746145038910676,
+          "residual": -6.0116290891421755,
+          "normalized": -1.208477030621389
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4335,
+          "hits": 43,
+          "expected": 32.231045753103515,
+          "variance": 31.98897674224785,
+          "residual": 10.768954246896485,
+          "normalized": 1.9040281185756471
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8385,
+          "hits": 48,
+          "expected": 43.965908118281,
+          "variance": 43.73303323074584,
+          "residual": 4.034091881719,
+          "normalized": 0.6100156619851543
+        }
+      ]
+    },
+    {
+      "name": "cramer-314159",
+      "labels": 18038,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1529,
+          "hits": 60,
+          "expected": 64.90296178433434,
+          "variance": 56.62523398273946,
+          "zeros": 0,
+          "residual": -4.902961784334439,
+          "normalized": -0.6515586329099665,
+          "maxAbsResidual": 5.772551354628424,
+          "maxAbsNormalized": 0.7671191076874437
+        },
+        {
+          "N": 25000,
+          "count": 2816,
+          "hits": 82,
+          "expected": 84.00851345446148,
+          "variance": 75.44432735182384,
+          "zeros": 0,
+          "residual": -2.008513454461427,
+          "normalized": -0.23123919557104264,
+          "maxAbsResidual": 7.140744431891502,
+          "maxAbsNormalized": 0.8221104989569309
+        },
+        {
+          "N": 50000,
+          "count": 5198,
+          "hits": 114,
+          "expected": 109.01380325979454,
+          "variance": 100.18444993770859,
+          "zeros": 0,
+          "residual": 4.9861967402056635,
+          "normalized": 0.49816045735258696,
+          "maxAbsResidual": 7.140744431891502,
+          "maxAbsNormalized": 0.7134167978863757
+        },
+        {
+          "N": 100000,
+          "count": 9667,
+          "hits": 141,
+          "expected": 142.13252880690933,
+          "variance": 133.0553114817917,
+          "zeros": 0,
+          "residual": -1.1325288069094608,
+          "normalized": -0.09818228822763925,
+          "maxAbsResidual": 7.140744431891502,
+          "maxAbsNormalized": 0.6190523576041188
+        },
+        {
+          "N": 200000,
+          "count": 18038,
+          "hits": 179,
+          "expected": 186.0232596938761,
+          "variance": 176.71361555918966,
+          "zeros": 0,
+          "residual": -7.023259693876946,
+          "normalized": -0.5283281133987014,
+          "maxAbsResidual": 9.480557174868354,
+          "maxAbsNormalized": 0.713179507022011
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1529,
+          "hits": 60,
+          "expected": 64.90296178433434,
+          "variance": 56.62523398273946,
+          "residual": -4.902961784334337,
+          "normalized": -0.6515586329099531
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1287,
+          "hits": 22,
+          "expected": 19.105551670126975,
+          "variance": 18.8190933690843,
+          "residual": 2.8944483298730255,
+          "normalized": 0.667216000699358
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2382,
+          "hits": 32,
+          "expected": 25.005289805332925,
+          "variance": 24.74012258588459,
+          "residual": 6.994710194667075,
+          "normalized": 1.406270290891188
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4469,
+          "hits": 27,
+          "expected": 33.118725547115204,
+          "variance": 32.870861544083056,
+          "residual": -6.118725547115204,
+          "normalized": -1.0672236235148913
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8371,
+          "hits": 38,
+          "expected": 43.89073088696749,
+          "variance": 43.6583040773984,
+          "residual": -5.890730886967489,
+          "normalized": -0.8915295696328691
+        }
+      ]
+    },
+    {
+      "name": "cramer-161803",
+      "labels": 17969,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1441,
+          "hits": 54,
+          "expected": 60.526113878160665,
+          "variance": 52.87141701308922,
+          "zeros": 0,
+          "residual": -6.526113878160592,
+          "normalized": -0.8975200779221217,
+          "maxAbsResidual": 8.882312746833026,
+          "maxAbsNormalized": 1.2215622003386164
+        },
+        {
+          "N": 25000,
+          "count": 2696,
+          "hits": 76,
+          "expected": 79.22289360523959,
+          "variance": 71.28688529468309,
+          "zeros": 0,
+          "residual": -3.2228936052395794,
+          "normalized": -0.38171668968343925,
+          "maxAbsResidual": 8.882312746833026,
+          "maxAbsNormalized": 1.0520133252124773
+        },
+        {
+          "N": 50000,
+          "count": 5075,
+          "hits": 108,
+          "expected": 104.19352037389446,
+          "variance": 95.992783937023,
+          "zeros": 0,
+          "residual": 3.806479626105516,
+          "normalized": 0.3885118019811699,
+          "maxAbsResidual": 8.882312746833026,
+          "maxAbsNormalized": 0.9065813218506783
+        },
+        {
+          "N": 100000,
+          "count": 9508,
+          "hits": 149,
+          "expected": 137.0476556761035,
+          "variance": 128.6009629710031,
+          "zeros": 0,
+          "residual": 11.952344323896106,
+          "normalized": 1.0539766402533814,
+          "maxAbsResidual": 12.306996518117536,
+          "maxAbsNormalized": 1.0852504320714995
+        },
+        {
+          "N": 200000,
+          "count": 17969,
+          "hits": 193,
+          "expected": 181.49182519853278,
+          "variance": 172.80928963891768,
+          "zeros": 0,
+          "residual": 11.508174801465946,
+          "normalized": 0.875432987580341,
+          "maxAbsResidual": 17.321085597630166,
+          "maxAbsNormalized": 1.317624208396333
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1441,
+          "hits": 54,
+          "expected": 60.526113878160665,
+          "variance": 52.87141701308922,
+          "residual": -6.526113878160665,
+          "normalized": -0.8975200779221318
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1255,
+          "hits": 22,
+          "expected": 18.69677972707898,
+          "variance": 18.415468281593878,
+          "residual": 3.3032202729210205,
+          "normalized": 0.7697437155107151
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2379,
+          "hits": 32,
+          "expected": 24.97062676865491,
+          "variance": 24.705898642339637,
+          "residual": 7.02937323134509,
+          "normalized": 1.4142177230098416
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4433,
+          "hits": 41,
+          "expected": 32.85413530220937,
+          "variance": 32.6081790339805,
+          "residual": 8.145864697790628,
+          "normalized": 1.4265070383796565
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8461,
+          "hits": 44,
+          "expected": 44.444169522430236,
+          "variance": 44.20832666791381,
+          "residual": -0.44416952243023644,
+          "normalized": -0.0668031154608899
+        }
+      ]
+    },
+    {
+      "name": "cramer-424242",
+      "labels": 18016,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1518,
+          "hits": 64,
+          "expected": 63.755513228416106,
+          "variance": 55.70592119307871,
+          "zeros": 0,
+          "residual": 0.24448677158395232,
+          "normalized": 0.032757042604350986,
+          "maxAbsResidual": 8.647155445660527,
+          "maxAbsNormalized": 1.158570819618692
+        },
+        {
+          "N": 25000,
+          "count": 2803,
+          "hits": 83,
+          "expected": 82.84050250005359,
+          "variance": 74.50463895601334,
+          "zeros": 0,
+          "residual": 0.15949749994643214,
+          "normalized": 0.018478308897090748,
+          "maxAbsResidual": 8.647155445660527,
+          "maxAbsNormalized": 1.0018013414614022
+        },
+        {
+          "N": 50000,
+          "count": 5175,
+          "hits": 118,
+          "expected": 107.75524526452423,
+          "variance": 99.15504632744793,
+          "zeros": 0,
+          "residual": 10.244754735476148,
+          "normalized": 1.028831267969215,
+          "maxAbsResidual": 11.867116235488535,
+          "maxAbsNormalized": 1.1917572024849725
+        },
+        {
+          "N": 100000,
+          "count": 9646,
+          "hits": 152,
+          "expected": 140.9499987786505,
+          "variance": 132.10090502858822,
+          "zeros": 0,
+          "residual": 11.050001221350515,
+          "normalized": 0.961411758685734,
+          "maxAbsResidual": 12.512373039103826,
+          "maxAbsNormalized": 1.0886462659943976
+        },
+        {
+          "N": 200000,
+          "count": 18016,
+          "hits": 195,
+          "expected": 184.91960230711032,
+          "variance": 175.8372270267515,
+          "zeros": 0,
+          "residual": 10.080397692889385,
+          "normalized": 0.7601901764695466,
+          "maxAbsResidual": 14.722430983808392,
+          "maxAbsNormalized": 1.1102585184249867
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1518,
+          "hits": 64,
+          "expected": 63.755513228416106,
+          "variance": 55.70592119307871,
+          "residual": 0.24448677158389387,
+          "normalized": 0.03275704260434316
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1285,
+          "hits": 19,
+          "expected": 19.084989271637525,
+          "variance": 18.798717762934622,
+          "residual": -0.08498927163752512,
+          "normalized": -0.01960198233748788
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2372,
+          "hits": 35,
+          "expected": 24.914742764470173,
+          "variance": 24.650407371434394,
+          "residual": 10.085257235529827,
+          "normalized": 2.031304026773129
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4471,
+          "hits": 34,
+          "expected": 33.19475351412563,
+          "variance": 32.94585870114062,
+          "residual": 0.8052464858743704,
+          "normalized": 0.14029055149453742
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8370,
+          "hits": 43,
+          "expected": 43.96960352846098,
+          "variance": 43.73632199816316,
+          "residual": -0.9696035284609792,
+          "normalized": -0.1466131950343784
+        }
+      ]
+    }
+  ],
+  "w210Runs": [
+    {
+      "name": "w210-12345",
+      "labels": 18044,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1456,
+          "hits": 55,
+          "expected": 58.03781328670354,
+          "variance": 52.72682019789213,
+          "zeros": 0,
+          "residual": -3.0378132867036656,
+          "normalized": -0.41835531103651474,
+          "maxAbsResidual": 6.457545321154406,
+          "maxAbsNormalized": 0.8893069212609163
+        },
+        {
+          "N": 25000,
+          "count": 2694,
+          "hits": 75,
+          "expected": 76.38561017450053,
+          "variance": 70.79999602817108,
+          "zeros": 0,
+          "residual": -1.3856101745007627,
+          "normalized": -0.1646737771252073,
+          "maxAbsResidual": 6.457545321154406,
+          "maxAbsNormalized": 0.7674513355640206
+        },
+        {
+          "N": 50000,
+          "count": 5141,
+          "hits": 102,
+          "expected": 101.99664780862062,
+          "variance": 96.14027632868145,
+          "zeros": 0,
+          "residual": 0.003352191379191811,
+          "normalized": 0.0003418819102114242,
+          "maxAbsResidual": 6.457545321154406,
+          "maxAbsNormalized": 0.6585894657975577
+        },
+        {
+          "N": 100000,
+          "count": 9651,
+          "hits": 137,
+          "expected": 135.48145776214128,
+          "variance": 129.37399576142982,
+          "zeros": 0,
+          "residual": 1.5185422378592375,
+          "normalized": 0.13350679811242483,
+          "maxAbsResidual": 6.457545321154406,
+          "maxAbsNormalized": 0.5677327755522795
+        },
+        {
+          "N": 200000,
+          "count": 18044,
+          "hits": 176,
+          "expected": 179.47803208042566,
+          "variance": 173.13763975976303,
+          "zeros": 0,
+          "residual": -3.4780320804261198,
+          "normalized": -0.2643247542327872,
+          "maxAbsResidual": 6.457545321154406,
+          "maxAbsNormalized": 0.49076289133943224
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1456,
+          "hits": 55,
+          "expected": 58.03781328670354,
+          "variance": 52.72682019789213,
+          "residual": -3.037813286703539,
+          "normalized": -0.4183553110364973
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1238,
+          "hits": 20,
+          "expected": 18.347796887797134,
+          "variance": 18.07317583027907,
+          "residual": 1.6522031122028658,
+          "normalized": 0.38863883804403326
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2447,
+          "hits": 27,
+          "expected": 25.611037634119988,
+          "variance": 25.340280300510482,
+          "residual": 1.3889623658800119,
+          "normalized": 0.2759210101870486
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4510,
+          "hits": 35,
+          "expected": 33.48480995352009,
+          "variance": 33.233719432748764,
+          "residual": 1.5151900464799084,
+          "normalized": 0.2628316334716381
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8393,
+          "hits": 39,
+          "expected": 43.99657431828547,
+          "variance": 43.763643998333066,
+          "residual": -4.996574318285468,
+          "normalized": -0.7552932668620759
+        }
+      ]
+    },
+    {
+      "name": "w210-271828",
+      "labels": 17984,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1528,
+          "hits": 50,
+          "expected": 60.46891359188145,
+          "variance": 55.03961651661704,
+          "zeros": 0,
+          "residual": -10.468913591881439,
+          "normalized": -1.411119897196979,
+          "maxAbsResidual": 11.917678543035608,
+          "maxAbsNormalized": 1.60640100549848
+        },
+        {
+          "N": 25000,
+          "count": 2833,
+          "hits": 67,
+          "expected": 79.82829283973764,
+          "variance": 74.1089135781119,
+          "zeros": 0,
+          "residual": -12.828292839737683,
+          "normalized": -1.4901625405171135,
+          "maxAbsResidual": 13.265091974431153,
+          "maxAbsNormalized": 1.5409020829006663
+        },
+        {
+          "N": 50000,
+          "count": 5253,
+          "hits": 94,
+          "expected": 105.19240338965142,
+          "variance": 99.20451392704022,
+          "zeros": 0,
+          "residual": -11.192403389651535,
+          "normalized": -1.1237187762665928,
+          "maxAbsResidual": 13.265091974431153,
+          "maxAbsNormalized": 1.3318169835045295
+        },
+        {
+          "N": 100000,
+          "count": 9715,
+          "hits": 134,
+          "expected": 138.356406356092,
+          "variance": 132.11953040543852,
+          "zeros": 0,
+          "residual": -4.35640635609167,
+          "normalized": -0.37900494144765995,
+          "maxAbsResidual": 13.265091974431153,
+          "maxAbsNormalized": 1.154055658751158
+        },
+        {
+          "N": 200000,
+          "count": 17984,
+          "hits": 173,
+          "expected": 181.7943245148373,
+          "variance": 175.3270087698937,
+          "zeros": 0,
+          "residual": -8.794324514838062,
+          "normalized": -0.6641681962628115,
+          "maxAbsResidual": 13.265091974431153,
+          "maxAbsNormalized": 1.0018111334251198
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1528,
+          "hits": 50,
+          "expected": 60.46891359188145,
+          "variance": 55.03961651661704,
+          "residual": -10.468913591881453,
+          "normalized": -1.4111198971969807
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1305,
+          "hits": 17,
+          "expected": 19.359379247856264,
+          "variance": 19.069297061494748,
+          "residual": -2.359379247856264,
+          "normalized": -0.5402943339117819
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2420,
+          "hits": 27,
+          "expected": 25.364110549913836,
+          "variance": 25.095600348928436,
+          "residual": 1.6358894500861645,
+          "normalized": 0.32655411204104207
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4462,
+          "hits": 40,
+          "expected": 33.16400296644022,
+          "variance": 32.91501647839834,
+          "residual": 6.835997033559778,
+          "normalized": 1.1915295769422989
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8269,
+          "hits": 39,
+          "expected": 43.437918158746506,
+          "variance": 43.2074783644543,
+          "residual": -4.4379181587465055,
+          "normalized": -0.6751493104127297
+        }
+      ]
+    },
+    {
+      "name": "w210-314159",
+      "labels": 18154,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1488,
+          "hits": 63,
+          "expected": 59.637519583455784,
+          "variance": 54.25089290492898,
+          "zeros": 0,
+          "residual": 3.3624804165442566,
+          "normalized": 0.4565163311692112,
+          "maxAbsResidual": 7.331307812562832,
+          "maxAbsNormalized": 0.9953550149454998
+        },
+        {
+          "N": 25000,
+          "count": 2750,
+          "hits": 83,
+          "expected": 78.42857108475002,
+          "variance": 72.75935421025409,
+          "zeros": 0,
+          "residual": 4.571428915249797,
+          "normalized": 0.5359293640724418,
+          "maxAbsResidual": 7.331307812562832,
+          "maxAbsNormalized": 0.8594824958776434
+        },
+        {
+          "N": 50000,
+          "count": 5186,
+          "hits": 108,
+          "expected": 104.01284583378762,
+          "variance": 98.0722427544263,
+          "zeros": 0,
+          "residual": 3.9871541662125036,
+          "normalized": 0.402615021938931,
+          "maxAbsResidual": 7.331307812562832,
+          "maxAbsNormalized": 0.7403011102026006
+        },
+        {
+          "N": 100000,
+          "count": 9705,
+          "hits": 153,
+          "expected": 137.5576369725453,
+          "variance": 131.3655163336566,
+          "zeros": 0,
+          "residual": 15.442363027455794,
+          "normalized": 1.3473271746524638,
+          "maxAbsResidual": 15.89231073031334,
+          "maxAbsNormalized": 1.3865845581341616
+        },
+        {
+          "N": 200000,
+          "count": 18154,
+          "hits": 196,
+          "expected": 181.90157687407182,
+          "variance": 175.4744003268957,
+          "zeros": 0,
+          "residual": 14.098423125929088,
+          "normalized": 1.0642990074696523,
+          "maxAbsResidual": 19.27853811227042,
+          "maxAbsNormalized": 1.455349211403607
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1488,
+          "hits": 63,
+          "expected": 59.637519583455784,
+          "variance": 54.25089290492898,
+          "residual": 3.3624804165442157,
+          "normalized": 0.45651633116920565
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1262,
+          "hits": 20,
+          "expected": 18.791051501294486,
+          "variance": 18.50846130532502,
+          "residual": 1.2089484987055137,
+          "normalized": 0.2810105614221222
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2436,
+          "hits": 25,
+          "expected": 25.5842747490373,
+          "variance": 25.312888544172157,
+          "residual": -0.5842747490372986,
+          "normalized": -0.1161304914977897
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4519,
+          "hits": 45,
+          "expected": 33.54479113875679,
+          "variance": 33.293273579230046,
+          "residual": 11.455208861243207,
+          "normalized": 1.9852936901912863
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8449,
+          "hits": 43,
+          "expected": 44.3439399015265,
+          "variance": 44.108883993239274,
+          "residual": -1.3439399015264968,
+          "normalized": -0.2023563389166504
+        }
+      ]
+    },
+    {
+      "name": "w210-161803",
+      "labels": 17906,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1465,
+          "hits": 56,
+          "expected": 58.69245445371452,
+          "variance": 53.364143778061184,
+          "zeros": 0,
+          "residual": -2.692454453714512,
+          "normalized": -0.36857306364727943,
+          "maxAbsResidual": 7.1507246421392345,
+          "maxAbsNormalized": 0.9788705933410784
+        },
+        {
+          "N": 25000,
+          "count": 2706,
+          "hits": 73,
+          "expected": 77.0895608348547,
+          "variance": 71.48577126161815,
+          "zeros": 0,
+          "residual": -4.08956083485467,
+          "normalized": -0.4836897334896446,
+          "maxAbsResidual": 7.1507246421392345,
+          "maxAbsNormalized": 0.8457465816221494
+        },
+        {
+          "N": 50000,
+          "count": 5036,
+          "hits": 97,
+          "expected": 101.5254928323415,
+          "variance": 95.66283821533337,
+          "zeros": 0,
+          "residual": -4.525492832341384,
+          "normalized": -0.4626944077015023,
+          "maxAbsResidual": 7.837424525856359,
+          "maxAbsNormalized": 0.8013121737771387
+        },
+        {
+          "N": 100000,
+          "count": 9474,
+          "hits": 126,
+          "expected": 134.44182520929127,
+          "variance": 128.33260310888667,
+          "zeros": 0,
+          "residual": -8.441825209291169,
+          "normalized": -0.7451914337784866,
+          "maxAbsResidual": 10.427667919796272,
+          "maxAbsNormalized": 0.9204891851547095
+        },
+        {
+          "N": 200000,
+          "count": 17906,
+          "hits": 167,
+          "expected": 178.65416071306223,
+          "variance": 172.31085632566297,
+          "zeros": 0,
+          "residual": -11.654160713063348,
+          "normalized": -0.8878195057788424,
+          "maxAbsResidual": 18.059700721442017,
+          "maxAbsNormalized": 1.3757965900583424
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1465,
+          "hits": 56,
+          "expected": 58.69245445371452,
+          "variance": 53.364143778061184,
+          "residual": -2.692454453714518,
+          "normalized": -0.36857306364728026
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1241,
+          "hits": 17,
+          "expected": 18.39710638114015,
+          "variance": 18.121627483557,
+          "residual": -1.3971063811401514,
+          "normalized": -0.3281941812726475
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2330,
+          "hits": 24,
+          "expected": 24.43593199748666,
+          "variance": 24.177066953715027,
+          "residual": -0.4359319974866587,
+          "normalized": -0.08865779807998246
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4438,
+          "hits": 29,
+          "expected": 32.916332376949946,
+          "variance": 32.669764893553406,
+          "residual": -3.9163323769499456,
+          "normalized": -0.6851829357539555
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8432,
+          "hits": 41,
+          "expected": 44.21233550377224,
+          "variance": 43.97825321677584,
+          "residual": -3.2123355037722376,
+          "normalized": -0.48439751882684634
+        }
+      ]
+    },
+    {
+      "name": "w210-424242",
+      "labels": 18106,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1485,
+          "hits": 52,
+          "expected": 59.20310701739839,
+          "variance": 53.846581884953466,
+          "zeros": 0,
+          "residual": -7.20310701739844,
+          "normalized": -0.9816141207102423,
+          "maxAbsResidual": 7.540148746985939,
+          "maxAbsNormalized": 1.0275449836326682
+        },
+        {
+          "N": 25000,
+          "count": 2805,
+          "hits": 70,
+          "expected": 78.82552831112025,
+          "variance": 73.1744879547312,
+          "zeros": 0,
+          "residual": -8.825528311120355,
+          "normalized": -1.0317176645897665,
+          "maxAbsResidual": 9.656900534648061,
+          "maxAbsNormalized": 1.128906340284346
+        },
+        {
+          "N": 50000,
+          "count": 5190,
+          "hits": 96,
+          "expected": 103.89831900772049,
+          "variance": 97.98103099458706,
+          "zeros": 0,
+          "residual": -7.898319007720623,
+          "normalized": -0.7979279320464897,
+          "maxAbsResidual": 9.656900534648061,
+          "maxAbsNormalized": 0.9755886874230093
+        },
+        {
+          "N": 100000,
+          "count": 9635,
+          "hits": 132,
+          "expected": 136.85084495433625,
+          "variance": 130.6867902823063,
+          "zeros": 0,
+          "residual": -4.850844954335878,
+          "normalized": -0.4243278607388593,
+          "maxAbsResidual": 9.862819297446322,
+          "maxAbsNormalized": 0.8627505213495962
+        },
+        {
+          "N": 200000,
+          "count": 18106,
+          "hits": 164,
+          "expected": 181.27855441233396,
+          "variance": 174.87917783008763,
+          "zeros": 0,
+          "residual": -17.278554412333452,
+          "normalized": -1.3065870623963518,
+          "maxAbsResidual": 18.956938018156656,
+          "maxAbsNormalized": 1.433504757752938
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1485,
+          "hits": 52,
+          "expected": 59.20310701739839,
+          "variance": 53.846581884953466,
+          "residual": -7.203107017398388,
+          "normalized": -0.9816141207102351
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1320,
+          "hits": 18,
+          "expected": 19.62242129372191,
+          "variance": 19.32790606977774,
+          "residual": -1.62242129372191,
+          "normalized": -0.36903812451384
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2385,
+          "hits": 26,
+          "expected": 25.072790696600265,
+          "variance": 24.806543039855647,
+          "residual": 0.9272093033997351,
+          "normalized": 0.18616355225216677
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4445,
+          "hits": 36,
+          "expected": 32.952525946615374,
+          "variance": 32.70575928771915,
+          "residual": 3.047474053384626,
+          "normalized": 0.5328781324974143
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8471,
+          "hits": 32,
+          "expected": 44.42770945799749,
+          "variance": 44.19238754778059,
+          "residual": -12.427709457997487,
+          "normalized": -1.8694650862776165
+        }
+      ]
+    }
+  ],
+  "compositeRuns": [
+    {
+      "name": "composite-12345",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 881,
+          "hits": 29,
+          "expected": 26.676564817563374,
+          "variance": 25.581701311557232,
+          "zeros": 0,
+          "residual": 2.3234351824366004,
+          "normalized": 0.45937340595224285,
+          "maxAbsResidual": 3.702283169951002,
+          "maxAbsNormalized": 0.7319896171136102
+        },
+        {
+          "N": 25000,
+          "count": 1906,
+          "hits": 42,
+          "expected": 41.87103735699831,
+          "variance": 40.5486513149327,
+          "zeros": 0,
+          "residual": 0.12896264300169072,
+          "normalized": 0.02025236371053048,
+          "maxAbsResidual": 3.702283169951002,
+          "maxAbsNormalized": 0.5814085658607387
+        },
+        {
+          "N": 50000,
+          "count": 4115,
+          "hits": 66,
+          "expected": 64.99519715107782,
+          "variance": 63.42832001357925,
+          "zeros": 0,
+          "residual": 1.0048028489222605,
+          "normalized": 0.12616510498579755,
+          "maxAbsResidual": 3.702283169951002,
+          "maxAbsNormalized": 0.46486626239667245
+        },
+        {
+          "N": 100000,
+          "count": 8656,
+          "hits": 102,
+          "expected": 98.63425689504705,
+          "variance": 96.81569827204721,
+          "zeros": 0,
+          "residual": 3.365743104952509,
+          "normalized": 0.34206455432355404,
+          "maxAbsResidual": 4.207519354132918,
+          "maxAbsNormalized": 0.4276152955825523
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 151,
+          "expected": 147.43404877533013,
+          "variance": 145.3576268103671,
+          "zeros": 0,
+          "residual": 3.5659512246683676,
+          "normalized": 0.29577161087408593,
+          "maxAbsResidual": 6.534051569424921,
+          "maxAbsNormalized": 0.5419555222331703
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 881,
+          "hits": 29,
+          "expected": 26.676564817563374,
+          "variance": 25.581701311557232,
+          "residual": 2.3234351824366257,
+          "normalized": 0.45937340595224785
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1025,
+          "hits": 13,
+          "expected": 15.194472539434887,
+          "variance": 14.966950003375363,
+          "residual": -2.194472539434887,
+          "normalized": -0.5672356223741535
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2209,
+          "hits": 24,
+          "expected": 23.12415979407941,
+          "variance": 22.879668698646654,
+          "residual": 0.8758402059205892,
+          "normalized": 0.18310491924124062
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4541,
+          "hits": 36,
+          "expected": 33.63905974396979,
+          "variance": 33.387378258468,
+          "residual": 2.3609402560302115,
+          "normalized": 0.4085957439662264
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 9327,
+          "hits": 49,
+          "expected": 48.79979188028424,
+          "variance": 48.54192853831964,
+          "residual": 0.2002081197157608,
+          "normalized": 0.028735792146096725
+        }
+      ]
+    },
+    {
+      "name": "composite-271828",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 859,
+          "hits": 26,
+          "expected": 25.480250240924683,
+          "variance": 24.50353560285185,
+          "zeros": 0,
+          "residual": 0.5197497590753045,
+          "normalized": 0.1049977324771602,
+          "maxAbsResidual": 3.474086592168164,
+          "maxAbsNormalized": 0.7018208440460513
+        },
+        {
+          "N": 25000,
+          "count": 1920,
+          "hits": 37,
+          "expected": 41.19757158544161,
+          "variance": 39.98572230516864,
+          "zeros": 0,
+          "residual": -4.197571585441661,
+          "normalized": -0.6638128246154323,
+          "maxAbsResidual": 4.956616426037464,
+          "maxAbsNormalized": 0.783849776788734
+        },
+        {
+          "N": 50000,
+          "count": 4056,
+          "hits": 59,
+          "expected": 63.60111650149807,
+          "variance": 62.15195935611411,
+          "zeros": 0,
+          "residual": -4.601116501498181,
+          "normalized": -0.583627594568842,
+          "maxAbsResidual": 6.57883742130935,
+          "maxAbsNormalized": 0.8344911627445295
+        },
+        {
+          "N": 100000,
+          "count": 8568,
+          "hits": 93,
+          "expected": 96.9793705305718,
+          "variance": 95.28086018399301,
+          "zeros": 0,
+          "residual": -3.979370530572434,
+          "normalized": -0.40767262032326995,
+          "maxAbsResidual": 13.827207411442567,
+          "maxAbsNormalized": 1.4165491335548612
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 140,
+          "expected": 146.28216673046583,
+          "variance": 144.32288959783017,
+          "zeros": 0,
+          "residual": -6.28216673046663,
+          "normalized": -0.5229279447324835,
+          "maxAbsResidual": 13.827207411442567,
+          "maxAbsNormalized": 1.1509775947188754
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 859,
+          "hits": 26,
+          "expected": 25.480250240924683,
+          "variance": 24.50353560285185,
+          "residual": 0.5197497590753173,
+          "normalized": 0.10499773247716278
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1061,
+          "hits": 11,
+          "expected": 15.717321344516952,
+          "variance": 15.4821867023168,
+          "residual": -4.717321344516952,
+          "normalized": -1.198889926887987
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2136,
+          "hits": 22,
+          "expected": 22.403544916056482,
+          "variance": 22.166237050945586,
+          "residual": -0.40354491605648235,
+          "normalized": -0.08571284166842152
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4512,
+          "hits": 34,
+          "expected": 33.37825402907429,
+          "variance": 33.12890082787893,
+          "residual": 0.6217459709257085,
+          "normalized": 0.10802131657462279
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 9415,
+          "hits": 47,
+          "expected": 49.30279619989427,
+          "variance": 49.04202941383675,
+          "residual": -2.302796199894267,
+          "normalized": -0.32882989013602715
+        }
+      ]
+    },
+    {
+      "name": "composite-314159",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 898,
+          "hits": 27,
+          "expected": 26.9793456370625,
+          "variance": 25.908608284495553,
+          "zeros": 0,
+          "residual": 0.0206543629375097,
+          "normalized": 0.0040577918141681425,
+          "maxAbsResidual": 3.8238735429890167,
+          "maxAbsNormalized": 0.751244800340755
+        },
+        {
+          "N": 25000,
+          "count": 1882,
+          "hits": 42,
+          "expected": 41.51527358759313,
+          "variance": 40.22770021094905,
+          "zeros": 0,
+          "residual": 0.48472641240689435,
+          "normalized": 0.07642475977476466,
+          "maxAbsResidual": 3.8238735429890167,
+          "maxAbsNormalized": 0.6028939406889585
+        },
+        {
+          "N": 50000,
+          "count": 4045,
+          "hits": 71,
+          "expected": 64.15764582828494,
+          "variance": 62.630678758983365,
+          "zeros": 0,
+          "residual": 6.842354171714968,
+          "normalized": 0.8645935494846411,
+          "maxAbsResidual": 8.844093113605577,
+          "maxAbsNormalized": 1.1175314321895715
+        },
+        {
+          "N": 100000,
+          "count": 8583,
+          "hits": 103,
+          "expected": 97.75811783588051,
+          "variance": 95.97988241924202,
+          "zeros": 0,
+          "residual": 5.241882164118678,
+          "normalized": 0.5350534234142119,
+          "maxAbsResidual": 8.844093113605577,
+          "maxAbsNormalized": 0.9027410669053691
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 152,
+          "expected": 146.89756940500217,
+          "variance": 144.8598972991757,
+          "zeros": 0,
+          "residual": 5.102430594997372,
+          "normalized": 0.4239386568542848,
+          "maxAbsResidual": 8.844093113605577,
+          "maxAbsNormalized": 0.7348170417745994
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 898,
+          "hits": 27,
+          "expected": 26.9793456370625,
+          "variance": 25.908608284495553,
+          "residual": 0.020654362937499116,
+          "normalized": 0.0040577918141660625
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 984,
+          "hits": 15,
+          "expected": 14.5359279505306,
+          "variance": 14.319091926453474,
+          "residual": 0.46407204946940084,
+          "normalized": 0.12263873820703276
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2163,
+          "hits": 29,
+          "expected": 22.64237224069187,
+          "variance": 22.402978548034383,
+          "residual": 6.35762775930813,
+          "normalized": 1.343204737090723
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4538,
+          "hits": 32,
+          "expected": 33.600472007596295,
+          "variance": 33.34920366025899,
+          "residual": -1.600472007596295,
+          "normalized": -0.27714391570766145
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 9400,
+          "hits": 49,
+          "expected": 49.13945156912129,
+          "variance": 48.88001487993381,
+          "residual": -0.13945156912129164,
+          "normalized": -0.01994608845281564
+        }
+      ]
+    },
+    {
+      "name": "composite-161803",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 923,
+          "hits": 23,
+          "expected": 28.107782065030733,
+          "variance": 26.944557219632014,
+          "zeros": 0,
+          "residual": -5.107782065030738,
+          "normalized": -0.984003930613069,
+          "maxAbsResidual": 9.317675954620402,
+          "maxAbsNormalized": 1.7950315120718014
+        },
+        {
+          "N": 25000,
+          "count": 1958,
+          "hits": 33,
+          "expected": 43.42364942881383,
+          "variance": 42.03160496295622,
+          "zeros": 0,
+          "residual": -10.423649428813823,
+          "normalized": -1.6077992057145325,
+          "maxAbsResidual": 11.840343372933065,
+          "maxAbsNormalized": 1.8263176251655122
+        },
+        {
+          "N": 50000,
+          "count": 4153,
+          "hits": 58,
+          "expected": 66.36554206779121,
+          "variance": 64.73136998362062,
+          "zeros": 0,
+          "residual": -8.365542067791106,
+          "normalized": -1.039768576471103,
+          "maxAbsResidual": 12.940056471018808,
+          "maxAbsNormalized": 1.6083433670281657
+        },
+        {
+          "N": 100000,
+          "count": 8674,
+          "hits": 94,
+          "expected": 99.82663241511369,
+          "variance": 97.94237861501803,
+          "zeros": 0,
+          "residual": -5.82663241511437,
+          "normalized": -0.5887518666733852,
+          "maxAbsResidual": 14.20967315771639,
+          "maxAbsNormalized": 1.4358159225426281
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 146,
+          "expected": 148.5344041017183,
+          "variance": 146.39276412197344,
+          "zeros": 0,
+          "residual": -2.5344041017189456,
+          "normalized": -0.20946721439525406,
+          "maxAbsResidual": 14.20967315771639,
+          "maxAbsNormalized": 1.1744222840371423
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 923,
+          "hits": 23,
+          "expected": 28.107782065030733,
+          "variance": 26.944557219632014,
+          "residual": -5.107782065030733,
+          "normalized": -0.984003930613068
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1035,
+          "hits": 10,
+          "expected": 15.315867363783076,
+          "variance": 15.087047743324158,
+          "residual": -5.315867363783076,
+          "normalized": -1.3685857193228408
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2195,
+          "hits": 25,
+          "expected": 22.94189263897715,
+          "variance": 22.699765020664675,
+          "residual": 2.0581073610228486,
+          "normalized": 0.4319737386448228
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4521,
+          "hits": 36,
+          "expected": 33.46109034732321,
+          "variance": 33.21100863139757,
+          "residual": 2.538909652676793,
+          "normalized": 0.4405611671216621
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 9309,
+          "hits": 52,
+          "expected": 48.70777168660471,
+          "variance": 48.45038550695472,
+          "residual": 3.2922283133952917,
+          "normalized": 0.47297842098160653
+        }
+      ]
+    },
+    {
+      "name": "composite-424242",
+      "labels": 17983,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 897,
+          "hits": 39,
+          "expected": 27.12386296246622,
+          "variance": 26.01985538152824,
+          "zeros": 0,
+          "residual": 11.87613703753379,
+          "normalized": 2.3282132742384576,
+          "maxAbsResidual": 12.253920774996727,
+          "maxAbsNormalized": 2.402274487036258
+        },
+        {
+          "N": 25000,
+          "count": 1913,
+          "hits": 54,
+          "expected": 42.16785649168415,
+          "variance": 40.83884671584352,
+          "zeros": 0,
+          "residual": 11.832143508315957,
+          "normalized": 1.851512693716589,
+          "maxAbsResidual": 12.607272499450962,
+          "maxAbsNormalized": 1.9728061149251406
+        },
+        {
+          "N": 50000,
+          "count": 4070,
+          "hits": 79,
+          "expected": 64.78032211389579,
+          "variance": 63.21190454930362,
+          "zeros": 0,
+          "residual": 14.219677886104462,
+          "normalized": 1.7885056676950377,
+          "maxAbsResidual": 18.633870171030445,
+          "maxAbsNormalized": 2.3437086746211424
+        },
+        {
+          "N": 100000,
+          "count": 8603,
+          "hits": 118,
+          "expected": 98.2968796713559,
+          "variance": 96.47818239551464,
+          "zeros": 0,
+          "residual": 19.703120328643703,
+          "normalized": 2.0059516141980924,
+          "maxAbsResidual": 20.127728801155175,
+          "maxAbsNormalized": 2.0491805056949555
+        },
+        {
+          "N": 200000,
+          "count": 17983,
+          "hits": 169,
+          "expected": 147.35274012799061,
+          "variance": 145.27493536558427,
+          "zeros": 0,
+          "residual": 21.647259872009425,
+          "normalized": 1.7960051818807223,
+          "maxAbsResidual": 23.725852770162096,
+          "maxAbsNormalized": 1.9684595081176315
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 897,
+          "hits": 39,
+          "expected": 27.12386296246622,
+          "variance": 26.01985538152824,
+          "residual": 11.87613703753378,
+          "normalized": 2.328213274238456
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1016,
+          "hits": 15,
+          "expected": 15.043993529217818,
+          "variance": 14.818991334315255,
+          "residual": -0.043993529217818406,
+          "normalized": -0.011428243387951051
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2157,
+          "hits": 25,
+          "expected": 22.612465622211467,
+          "variance": 22.373057833460216,
+          "residual": 2.3875343777885334,
+          "normalized": 0.5047623586041682
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4533,
+          "hits": 39,
+          "expected": 33.51655755746074,
+          "variance": 33.266277846211,
+          "residual": 5.483442442539257,
+          "normalized": 0.9507168341960365
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 9380,
+          "hits": 51,
+          "expected": 49.05586045663435,
+          "variance": 48.79675297006929,
+          "residual": 1.944139543365651,
+          "normalized": 0.2783120252982424
+        }
+      ]
+    }
+  ],
+  "baseHoldouts": [
+    {
+      "base": 3,
+      "name": "base-3",
+      "labels": 17982,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1490,
+          "hits": 61,
+          "expected": 60.68456160364075,
+          "variance": 53.9917824247709,
+          "zeros": 0,
+          "residual": 0.3154383963593065,
+          "normalized": 0.042928995220762184,
+          "maxAbsResidual": 7.483193975392372,
+          "maxAbsNormalized": 1.0184112083797616
+        },
+        {
+          "N": 25000,
+          "count": 2760,
+          "hits": 76,
+          "expected": 79.54809543499705,
+          "variance": 72.57231923133895,
+          "zeros": 0,
+          "residual": -3.548095434997122,
+          "normalized": -0.41649499955277036,
+          "maxAbsResidual": 7.483193975392372,
+          "maxAbsNormalized": 0.8784185568100054
+        },
+        {
+          "N": 50000,
+          "count": 5131,
+          "hits": 99,
+          "expected": 104.43771386313173,
+          "variance": 97.19804593017724,
+          "zeros": 0,
+          "residual": -5.437713863131835,
+          "normalized": -0.5515534226685539,
+          "maxAbsResidual": 7.483193975392372,
+          "maxAbsNormalized": 0.7590287671450244
+        },
+        {
+          "N": 100000,
+          "count": 9590,
+          "hits": 123,
+          "expected": 137.53209902987786,
+          "variance": 130.04434364702064,
+          "zeros": 0,
+          "residual": -14.53209902987684,
+          "normalized": -1.2743320771755702,
+          "maxAbsResidual": 15.150299939952523,
+          "maxAbsNormalized": 1.328542638790168
+        },
+        {
+          "N": 200000,
+          "count": 17982,
+          "hits": 172,
+          "expected": 181.56659182145125,
+          "variance": 173.84546862524965,
+          "zeros": 0,
+          "residual": -9.56659182144992,
+          "normalized": -0.7255637166086188,
+          "maxAbsResidual": 18.570633080301466,
+          "maxAbsNormalized": 1.4084616349269867
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1490,
+          "hits": 61,
+          "expected": 60.68456160364075,
+          "variance": 53.9917824247709,
+          "residual": 0.315438396359248,
+          "normalized": 0.04292899522075422
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 15,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": -3.863533831356463,
+          "normalized": -0.8963045293117796
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 23,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": -1.889618428134792,
+          "normalized": -0.3807847859199206
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 24,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": -9.094385166745198,
+          "normalized": -1.5868290083047762
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 49,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": 4.965507208427084,
+          "normalized": 0.7502758788049648
+        }
+      ]
+    },
+    {
+      "base": 5,
+      "name": "base-5",
+      "labels": 17982,
+      "endpointRows": [
+        {
+          "N": 12500,
+          "count": 1490,
+          "hits": 58,
+          "expected": 60.79013441264084,
+          "variance": 53.89735523377099,
+          "zeros": 0,
+          "residual": -2.7901344126407785,
+          "normalized": -0.3800505787674392,
+          "maxAbsResidual": 6.335250272876947,
+          "maxAbsNormalized": 0.8629389042819017
+        },
+        {
+          "N": 25000,
+          "count": 2760,
+          "hits": 76,
+          "expected": 79.65366824399713,
+          "variance": 72.47789204033903,
+          "zeros": 0,
+          "residual": -3.6536682439972115,
+          "normalized": -0.4291670131750466,
+          "maxAbsResidual": 6.335250272876947,
+          "maxAbsNormalized": 0.7441508795424923
+        },
+        {
+          "N": 50000,
+          "count": 5131,
+          "hits": 102,
+          "expected": 104.54328667213181,
+          "variance": 97.10361873917732,
+          "zeros": 0,
+          "residual": -2.543286672131924,
+          "normalized": -0.25809382138109005,
+          "maxAbsResidual": 6.335250272876947,
+          "maxAbsNormalized": 0.6429039125824468
+        },
+        {
+          "N": 100000,
+          "count": 9590,
+          "hits": 133,
+          "expected": 137.63767183887794,
+          "variance": 129.94991645602067,
+          "zeros": 0,
+          "residual": -4.637671838876948,
+          "normalized": -0.40682910235886716,
+          "maxAbsResidual": 11.418610848945878,
+          "maxAbsNormalized": 1.0016713910026895
+        },
+        {
+          "N": 200000,
+          "count": 17982,
+          "hits": 178,
+          "expected": 181.67216463045133,
+          "variance": 173.7510414342497,
+          "zeros": 0,
+          "residual": -3.6721646304498816,
+          "normalized": -0.27858545307006327,
+          "maxAbsResidual": 11.418610848945878,
+          "maxAbsNormalized": 0.8662625990149607
+        }
+      ],
+      "blockRows": [
+        {
+          "from": 1,
+          "to": 12500,
+          "count": 1490,
+          "hits": 58,
+          "expected": 60.79013441264084,
+          "variance": 53.89735523377099,
+          "residual": -2.790134412640839,
+          "normalized": -0.3800505787674474
+        },
+        {
+          "from": 12500,
+          "to": 25000,
+          "count": 1270,
+          "hits": 18,
+          "expected": 18.863533831356463,
+          "variance": 18.580536806568087,
+          "residual": -0.8635338313564631,
+          "normalized": -0.20033195464138318
+        },
+        {
+          "from": 25000,
+          "to": 50000,
+          "count": 2371,
+          "hits": 26,
+          "expected": 24.889618428134792,
+          "variance": 24.625726698838502,
+          "residual": 1.110381571865208,
+          "normalized": 0.22375756017021517
+        },
+        {
+          "from": 50000,
+          "to": 100000,
+          "count": 4459,
+          "hits": 31,
+          "expected": 33.0943851667452,
+          "variance": 32.84629771684373,
+          "residual": -2.094385166745198,
+          "normalized": -0.3654376932821225
+        },
+        {
+          "from": 100000,
+          "to": 200000,
+          "count": 8392,
+          "hits": 45,
+          "expected": 44.034492791572916,
+          "variance": 43.801124978229,
+          "residual": 0.9655072084270842,
+          "normalized": 0.1458857552488832
+        }
+      ]
+    }
+  ],
+  "controlSummaries": {
+    "randomQuotient": [
+      {
+        "normalized": [
+          -0.773629718928857,
+          1.2677670664451914
+        ],
+        "maxAbsNormalized": [
+          0.9131715217048216,
+          2.337443553015235
+        ],
+        "hits": [
+          56,
+          71
+        ],
+        "theta": [
+          0,
+          0.32834484864135266
+        ]
+      },
+      {
+        "normalized": [
+          -0.6512660237166742,
+          1.6964442179223496
+        ],
+        "maxAbsNormalized": [
+          0.787645308315213,
+          2.016134323316327
+        ],
+        "hits": [
+          75,
+          95
+        ],
+        "theta": [
+          0,
+          0.32834484864135266
+        ]
+      },
+      {
+        "normalized": [
+          -0.7544156682928194,
+          1.1727756651376722
+        ],
+        "maxAbsNormalized": [
+          0.7231141091588714,
+          1.742112502020551
+        ],
+        "hits": [
+          98,
+          117
+        ],
+        "theta": [
+          0,
+          0.32834484864135266
+        ]
+      },
+      {
+        "normalized": [
+          -1.1866412298619375,
+          1.0933208002926014
+        ],
+        "maxAbsNormalized": [
+          0.8768046429227843,
+          1.5061188043911675
+        ],
+        "hits": [
+          125,
+          151
+        ],
+        "theta": [
+          0,
+          0.32834484864135266
+        ]
+      },
+      {
+        "normalized": [
+          -0.9530941883222069,
+          0.7154626042441018
+        ],
+        "maxAbsNormalized": [
+          0.7583451033430058,
+          1.3414868276745506
+        ],
+        "hits": [
+          170,
+          192
+        ],
+        "theta": [
+          0,
+          0.32834484864135266
+        ]
+      }
+    ],
+    "cramer": [
+      {
+        "normalized": [
+          -0.8975200779221217,
+          0.6339130988444323
+        ],
+        "maxAbsNormalized": [
+          0.7671191076874437,
+          1.318803704459283
+        ],
+        "hits": [
+          54,
+          69
+        ],
+        "theta": [
+          0,
+          0.23975156030938166
+        ]
+      },
+      {
+        "normalized": [
+          -1.042481831716477,
+          0.07765763439426696
+        ],
+        "maxAbsNormalized": [
+          0.8221104989569309,
+          1.141453596784053
+        ],
+        "hits": [
+          70,
+          84
+        ],
+        "theta": [
+          0,
+          0.23975156030938166
+        ]
+      },
+      {
+        "normalized": [
+          -0.5348984609415806,
+          1.028831267969215
+        ],
+        "maxAbsNormalized": [
+          0.7134167978863757,
+          1.1917572024849725
+        ],
+        "hits": [
+          103,
+          118
+        ],
+        "theta": [
+          0,
+          0.23975156030938166
+        ]
+      },
+      {
+        "normalized": [
+          -0.09818228822763925,
+          1.0539766402533814
+        ],
+        "maxAbsNormalized": [
+          0.6190523576041188,
+          1.0886462659943976
+        ],
+        "hits": [
+          137,
+          152
+        ],
+        "theta": [
+          0,
+          0.23975156030938166
+        ]
+      },
+      {
+        "normalized": [
+          -0.5283281133987014,
+          0.875432987580341
+        ],
+        "maxAbsNormalized": [
+          0.713179507022011,
+          1.317624208396333
+        ],
+        "hits": [
+          177,
+          195
+        ],
+        "theta": [
+          0,
+          0.23975156030938166
+        ]
+      }
+    ],
+    "w210": [
+      {
+        "normalized": [
+          -1.411119897196979,
+          0.4565163311692112
+        ],
+        "maxAbsNormalized": [
+          0.8893069212609163,
+          1.60640100549848
+        ],
+        "hits": [
+          50,
+          63
+        ],
+        "theta": [
+          0,
+          0.3905892764692528
+        ]
+      },
+      {
+        "normalized": [
+          -1.4901625405171135,
+          0.5359293640724418
+        ],
+        "maxAbsNormalized": [
+          0.7674513355640206,
+          1.5409020829006663
+        ],
+        "hits": [
+          67,
+          83
+        ],
+        "theta": [
+          0,
+          0.3905892764692528
+        ]
+      },
+      {
+        "normalized": [
+          -1.1237187762665928,
+          0.402615021938931
+        ],
+        "maxAbsNormalized": [
+          0.6585894657975577,
+          1.3318169835045295
+        ],
+        "hits": [
+          94,
+          108
+        ],
+        "theta": [
+          0,
+          0.3905892764692528
+        ]
+      },
+      {
+        "normalized": [
+          -0.7451914337784866,
+          1.3473271746524638
+        ],
+        "maxAbsNormalized": [
+          0.5677327755522795,
+          1.3865845581341616
+        ],
+        "hits": [
+          126,
+          153
+        ],
+        "theta": [
+          0,
+          0.3905892764692528
+        ]
+      },
+      {
+        "normalized": [
+          -1.3065870623963518,
+          1.0642990074696523
+        ],
+        "maxAbsNormalized": [
+          0.49076289133943224,
+          1.455349211403607
+        ],
+        "hits": [
+          164,
+          196
+        ],
+        "theta": [
+          0,
+          0.3905892764692528
+        ]
+      }
+    ],
+    "composite": [
+      {
+        "normalized": [
+          -0.984003930613069,
+          2.3282132742384576
+        ],
+        "maxAbsNormalized": [
+          0.7018208440460513,
+          2.402274487036258
+        ],
+        "hits": [
+          23,
+          39
+        ],
+        "theta": [
+          0.14808250665667752,
+          0.5465690681820553
+        ]
+      },
+      {
+        "normalized": [
+          -1.6077992057145325,
+          1.851512693716589
+        ],
+        "maxAbsNormalized": [
+          0.5814085658607387,
+          1.9728061149251406
+        ],
+        "hits": [
+          33,
+          54
+        ],
+        "theta": [
+          0.14808250665667752,
+          0.5465690681820553
+        ]
+      },
+      {
+        "normalized": [
+          -1.039768576471103,
+          1.7885056676950377
+        ],
+        "maxAbsNormalized": [
+          0.46486626239667245,
+          2.3437086746211424
+        ],
+        "hits": [
+          58,
+          79
+        ],
+        "theta": [
+          0.14808250665667752,
+          0.5465690681820553
+        ]
+      },
+      {
+        "normalized": [
+          -0.5887518666733852,
+          2.0059516141980924
+        ],
+        "maxAbsNormalized": [
+          0.4276152955825523,
+          2.0491805056949555
+        ],
+        "hits": [
+          93,
+          118
+        ],
+        "theta": [
+          0.14808250665667752,
+          0.5465690681820553
+        ]
+      },
+      {
+        "normalized": [
+          -0.5229279447324835,
+          1.7960051818807223
+        ],
+        "maxAbsNormalized": [
+          0.5419555222331703,
+          1.9684595081176315
+        ],
+        "hits": [
+          140,
+          169
+        ],
+        "theta": [
+          0.14808250665667752,
+          0.5465690681820553
+        ]
+      }
+    ]
+  },
+  "blockSummaries": {
+    "randomQuotient": [
+      [
+        -0.7736297189288656,
+        1.2677670664451814
+      ],
+      [
+        -0.8963045293117796,
+        1.1916131946994097
+      ],
+      [
+        -0.5822989012832992,
+        1.0298140216237295
+      ],
+      [
+        -2.80822032332743,
+        0.6814691481658665
+      ],
+      [
+        -1.0628944918632799,
+        0.5991783479159444
+      ]
+    ],
+    "cramer": [
+      [
+        -0.8975200779221318,
+        0.6339130988444311
+      ],
+      [
+        -0.9403781506772582,
+        0.7697437155107151
+      ],
+      [
+        -1.208477030621389,
+        2.031304026773129
+      ],
+      [
+        -1.0672236235148913,
+        1.9040281185756471
+      ],
+      [
+        -0.8915295696328691,
+        0.6100156619851543
+      ]
+    ],
+    "w210": [
+      [
+        -1.4111198971969807,
+        0.45651633116920565
+      ],
+      [
+        -0.5402943339117819,
+        0.38863883804403326
+      ],
+      [
+        -0.1161304914977897,
+        0.32655411204104207
+      ],
+      [
+        -0.6851829357539555,
+        1.9852936901912863
+      ],
+      [
+        -1.8694650862776165,
+        -0.2023563389166504
+      ]
+    ],
+    "composite": [
+      [
+        -0.984003930613068,
+        2.328213274238456
+      ],
+      [
+        -1.3685857193228408,
+        0.12263873820703276
+      ],
+      [
+        -0.08571284166842152,
+        1.343204737090723
+      ],
+      [
+        -0.27714391570766145,
+        0.9507168341960365
+      ],
+      [
+        -0.32882989013602715,
+        0.47297842098160653
+      ]
+    ]
+  },
+  "namedCompositeCheck": [
+    {
+      "n": 25,
+      "eq": 18,
+      "folded": 7,
+      "scaled": 1.4,
+      "hit": 0
+    },
+    {
+      "n": 35,
+      "eq": 24,
+      "folded": 11,
+      "scaled": 1.8593393604027364,
+      "hit": 0
+    },
+    {
+      "n": 77,
+      "eq": 75,
+      "folded": 2,
+      "scaled": 0.2279211529192759,
+      "hit": 1
+    }
+  ],
+  "jsonPath": "logs/playground-artifacts/eulerq-tail-bridge-200000.json",
+  "mdPath": "logs/playground-artifacts/eulerq-tail-bridge-200000.md",
+  "svgPath": "logs/playground-artifacts/eulerq-tail-bridge-200000.svg"
+}

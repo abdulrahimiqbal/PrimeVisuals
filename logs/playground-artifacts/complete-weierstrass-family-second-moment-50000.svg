@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">Complete Weierstrass family second-moment audit</text>
+<text x="70" y="38" fill="#67e8f9" font-size="13">ST residual Z</text>
+<text x="290" y="38" fill="#34d399" font-size="13">exact residual Z</text>
+<text x="510" y="38" fill="#a78bfa" font-size="13">shuffle mean max</text>
+<text x="70" y="56" fill="#fb7185" font-size="13">bootstrap mean max</text>
+<text x="290" y="56" fill="#f97316" font-size="13">Cramer-index mean max</text>
+<rect x="70" y="70" width="790" height="512" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="70" x2="860" y2="70" stroke="#1f2937"/>
+<text x="18" y="74" fill="#94a3b8" font-size="12">0.0021</text>
+<line x1="70" y1="155.33333333333331" x2="860" y2="155.33333333333331" stroke="#1f2937"/>
+<text x="18" y="159.33333333333331" fill="#94a3b8" font-size="12">0.0009</text>
+<line x1="70" y1="240.66666666666666" x2="860" y2="240.66666666666666" stroke="#1f2937"/>
+<text x="18" y="244.66666666666666" fill="#94a3b8" font-size="12">-0.0003</text>
+<line x1="70" y1="326" x2="860" y2="326" stroke="#1f2937"/>
+<text x="18" y="330" fill="#94a3b8" font-size="12">-0.0015</text>
+<line x1="70" y1="411.3333333333333" x2="860" y2="411.3333333333333" stroke="#1f2937"/>
+<text x="18" y="415.3333333333333" fill="#94a3b8" font-size="12">-0.0026</text>
+<line x1="70" y1="496.6666666666667" x2="860" y2="496.6666666666667" stroke="#1f2937"/>
+<text x="18" y="500.6666666666667" fill="#94a3b8" font-size="12">-0.0038</text>
+<line x1="70" y1="582" x2="860" y2="582" stroke="#1f2937"/>
+<text x="18" y="586" fill="#94a3b8" font-size="12">-0.0050</text>
+<line x1="70" y1="220.08578727055476" x2="860" y2="220.08578727055476" stroke="#475569" stroke-width="1.5"/>
+<polyline points="70.00,534.79 267.50,452.87 465.00,391.74 662.50,346.21 860.00,312.59" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="534.7937983396376" r="4" fill="#67e8f9"/><circle cx="267.5" cy="452.87212898499035" r="4" fill="#67e8f9"/><circle cx="465" cy="391.73775736633695" r="4" fill="#67e8f9"/><circle cx="662.5" cy="346.21245883887775" r="4" fill="#67e8f9"/><circle cx="860" cy="312.5917169270087" r="4" fill="#67e8f9"/>
+<polyline points="70.00,220.09 267.50,220.09 465.00,220.09 662.50,220.09 860.00,220.09" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="70" cy="220.08578727055476" r="4" fill="#34d399"/><circle cx="267.5" cy="220.08578727055476" r="4" fill="#34d399"/><circle cx="465" cy="220.08578727055476" r="4" fill="#34d399"/><circle cx="662.5" cy="220.08578727055476" r="4" fill="#34d399"/><circle cx="860" cy="220.08578727055476" r="4" fill="#34d399"/>
+<polyline points="70.00,162.74 267.50,140.88 465.00,131.98 662.50,113.20 860.00,95.97" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="162.7385282895553" r="4" fill="#a78bfa"/><circle cx="267.5" cy="140.8803194989817" r="4" fill="#a78bfa"/><circle cx="465" cy="131.97737385448352" r="4" fill="#a78bfa"/><circle cx="662.5" cy="113.19600052994315" r="4" fill="#a78bfa"/><circle cx="860" cy="95.97492294774082" r="4" fill="#a78bfa"/>
+<polyline points="70.00,196.57 267.50,191.61 465.00,189.79 662.50,169.32 860.00,149.77" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="196.56558332526276" r="4" fill="#fb7185"/><circle cx="267.5" cy="191.614436294867" r="4" fill="#fb7185"/><circle cx="465" cy="189.79399799623621" r="4" fill="#fb7185"/><circle cx="662.5" cy="169.32417907550445" r="4" fill="#fb7185"/><circle cx="860" cy="149.77365344321151" r="4" fill="#fb7185"/>
+<polyline points="70.00,180.77 267.50,155.43 465.00,144.60 662.50,125.97 860.00,89.58" fill="none" stroke="#f97316" stroke-width="3"/><circle cx="70" cy="180.76983818115923" r="4" fill="#f97316"/><circle cx="267.5" cy="155.434218895573" r="4" fill="#f97316"/><circle cx="465" cy="144.59511913404106" r="4" fill="#f97316"/><circle cx="662.5" cy="125.96638363387126" r="4" fill="#f97316"/><circle cx="860" cy="89.57640703528972" r="4" fill="#f97316"/>
+<text x="894" y="116" fill="#cbd5e1" font-size="13">N 50000</text>
+<text x="894" y="143" fill="#cbd5e1" font-size="13">prime fields 5131</text>
+<text x="894" y="170" fill="#cbd5e1" font-size="13">ST residual Z -0.001272279</text>
+<text x="894" y="197" fill="#cbd5e1" font-size="13">sum main -0.091134609</text>
+<text x="894" y="224" fill="#cbd5e1" font-size="13">exact residual Z 0.000000</text>
+<text x="894" y="251" fill="#cbd5e1" font-size="13">validation passed</text>
+<text x="894" y="278" fill="#cbd5e1" font-size="13">formula U2=-1/p^2</text>
+<text x="70" y="622" fill="#94a3b8" font-size="13">Two-parameter family y^2=x^3+a*x+b. The second moment is exact diagonal orthogonality.</text>
+</svg>

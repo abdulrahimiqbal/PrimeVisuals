@@ -1,0 +1,1610 @@
+{
+  "generatedAt": "2026-06-14T18:04:11.259Z",
+  "object": "quadratic predecessor character bridge",
+  "maxN": 4000000,
+  "endpoints": [
+    250000,
+    500000,
+    1000000,
+    2000000,
+    4000000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "real": {
+    "name": "real-prime-predecessor-legendre",
+    "rows": [
+      {
+        "N": 250000,
+        "transitions": 22043,
+        "pairs": 22043,
+        "zeros": 0,
+        "value": -207,
+        "normalized": -1.3942318356894439,
+        "maxAbs": 218,
+        "maxAbsOverSqrtPairs": 1.468321450146371
+      },
+      {
+        "N": 500000,
+        "transitions": 41537,
+        "pairs": 41537,
+        "zeros": 0,
+        "value": -177,
+        "normalized": -0.8684717639932251,
+        "maxAbs": 290,
+        "maxAbsOverSqrtPairs": 1.422919839310934
+      },
+      {
+        "N": 1000000,
+        "transitions": 78497,
+        "pairs": 78497,
+        "zeros": 0,
+        "value": -145,
+        "normalized": -0.5175370817680667,
+        "maxAbs": 290,
+        "maxAbsOverSqrtPairs": 1.0350741635361334
+      },
+      {
+        "N": 2000000,
+        "transitions": 148932,
+        "pairs": 148932,
+        "zeros": 0,
+        "value": -146,
+        "normalized": -0.3783196027248983,
+        "maxAbs": 408,
+        "maxAbsOverSqrtPairs": 1.057221903505195
+      },
+      {
+        "N": 4000000,
+        "transitions": 283145,
+        "pairs": 283145,
+        "zeros": 0,
+        "value": -277,
+        "normalized": -0.5205654261021905,
+        "maxAbs": 603,
+        "maxAbsOverSqrtPairs": 1.1332164329950212
+      }
+    ],
+    "blocks": [
+      {
+        "lo": 1,
+        "hi": 250000,
+        "pairs": 22043,
+        "value": -207,
+        "normalized": -1.3942318356894439
+      },
+      {
+        "lo": 250000,
+        "hi": 500000,
+        "pairs": 19494,
+        "value": 30,
+        "normalized": 0.21486752129677003
+      },
+      {
+        "lo": 500000,
+        "hi": 1000000,
+        "pairs": 36960,
+        "value": 32,
+        "normalized": 0.1664500757152958
+      },
+      {
+        "lo": 1000000,
+        "hi": 2000000,
+        "pairs": 70435,
+        "value": -1,
+        "normalized": -0.0037679552869949334
+      },
+      {
+        "lo": 2000000,
+        "hi": 4000000,
+        "pairs": 134213,
+        "value": -131,
+        "normalized": -0.35758064517294463
+      }
+    ],
+    "theta": {
+      "maxAbs": 0.3724942581513429,
+      "absValue": 0.061778806448113475
+    }
+  },
+  "controls": {
+    "cramer": [
+      {
+        "name": "cramer-jacobi-12345",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 21908,
+            "pairs": 21123,
+            "zeros": 785,
+            "value": -145,
+            "normalized": -0.9976775568808135,
+            "maxAbs": 160,
+            "maxAbsOverSqrtPairs": 1.100885580006415
+          },
+          {
+            "N": 500000,
+            "transitions": 41576,
+            "pairs": 40059,
+            "zeros": 1517,
+            "value": -217,
+            "normalized": -1.0842006966207567,
+            "maxAbs": 230,
+            "maxAbsOverSqrtPairs": 1.1491528120865164
+          },
+          {
+            "N": 1000000,
+            "transitions": 78570,
+            "pairs": 75586,
+            "zeros": 2984,
+            "value": -766,
+            "normalized": -2.78617305627744,
+            "maxAbs": 797,
+            "maxAbsOverSqrtPairs": 2.898929407118955
+          },
+          {
+            "N": 2000000,
+            "transitions": 148963,
+            "pairs": 143148,
+            "zeros": 5815,
+            "value": -988,
+            "normalized": -2.6113452975431133,
+            "maxAbs": 1090,
+            "maxAbsOverSqrtPairs": 2.880937625831977
+          },
+          {
+            "N": 4000000,
+            "transitions": 283083,
+            "pairs": 271601,
+            "zeros": 11482,
+            "value": -779,
+            "normalized": -1.49476105942615,
+            "maxAbs": 1090,
+            "maxAbsOverSqrtPairs": 2.091514190981391
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 21123,
+            "value": -145,
+            "normalized": -0.9976775568808135
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 18936,
+            "value": -72,
+            "normalized": -0.5232248642363367
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 35527,
+            "value": -549,
+            "normalized": -2.912682030346314
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 67562,
+            "value": -222,
+            "normalized": -0.854086241416264
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 128453,
+            "value": 209,
+            "normalized": 0.583141782880537
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.8447327801932939,
+          "absValue": 0.7639492176870568
+        }
+      },
+      {
+        "name": "cramer-jacobi-271828",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22031,
+            "pairs": 21301,
+            "zeros": 730,
+            "value": -61,
+            "normalized": -0.4179553019526232,
+            "maxAbs": 138,
+            "maxAbsOverSqrtPairs": 0.945538224089541
+          },
+          {
+            "N": 500000,
+            "transitions": 41625,
+            "pairs": 40140,
+            "zeros": 1485,
+            "value": -200,
+            "normalized": -0.9982545803924664,
+            "maxAbs": 238,
+            "maxAbsOverSqrtPairs": 1.187922950667035
+          },
+          {
+            "N": 1000000,
+            "transitions": 78613,
+            "pairs": 75666,
+            "zeros": 2947,
+            "value": -272,
+            "normalized": -0.9888229008561272,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 2.024905719767878
+          },
+          {
+            "N": 2000000,
+            "transitions": 148975,
+            "pairs": 143091,
+            "zeros": 5884,
+            "value": 93,
+            "normalized": 0.24585372294333818,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.4724787492412834
+          },
+          {
+            "N": 4000000,
+            "transitions": 283530,
+            "pairs": 272011,
+            "zeros": 11519,
+            "value": -273,
+            "normalized": -0.5234430206695533,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.0679771520620556
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 21301,
+            "value": -61,
+            "normalized": -0.4179553019526232
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 18839,
+            "value": -139,
+            "normalized": -1.0127118159405217
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 35526,
+            "value": -72,
+            "normalized": -0.38199646212785304
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 67425,
+            "value": 365,
+            "normalized": 1.4056667980715036
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 128920,
+            "value": -366,
+            "normalized": -1.0193443896921066
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.5712412871870768,
+          "absValue": 0.35033560710558875
+        }
+      },
+      {
+        "name": "cramer-jacobi-314159",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 21995,
+            "pairs": 21241,
+            "zeros": 754,
+            "value": 3,
+            "normalized": 0.020584189683614695,
+            "maxAbs": 90,
+            "maxAbsOverSqrtPairs": 0.6175256905084409
+          },
+          {
+            "N": 500000,
+            "transitions": 41167,
+            "pairs": 39686,
+            "zeros": 1481,
+            "value": 100,
+            "normalized": 0.5019741303254587,
+            "maxAbs": 107,
+            "maxAbsOverSqrtPairs": 0.5371123194482408
+          },
+          {
+            "N": 1000000,
+            "transitions": 78250,
+            "pairs": 75331,
+            "zeros": 2919,
+            "value": -15,
+            "normalized": -0.054651790234028066,
+            "maxAbs": 117,
+            "maxAbsOverSqrtPairs": 0.4262839638254189
+          },
+          {
+            "N": 2000000,
+            "transitions": 148552,
+            "pairs": 142709,
+            "zeros": 5843,
+            "value": -117,
+            "normalized": -0.3097135315142888,
+            "maxAbs": 223,
+            "maxAbsOverSqrtPairs": 0.5903086968178325
+          },
+          {
+            "N": 4000000,
+            "transitions": 282624,
+            "pairs": 271062,
+            "zeros": 11562,
+            "value": 244,
+            "normalized": 0.46865743054746795,
+            "maxAbs": 394,
+            "maxAbsOverSqrtPairs": 0.7567665067036983
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 21241,
+            "value": 3,
+            "normalized": 0.020584189683614695
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 18445,
+            "value": 97,
+            "normalized": 0.7142206530412614
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 35645,
+            "value": -115,
+            "normalized": -0.6091139288918271
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 67378,
+            "value": -102,
+            "normalized": -0.3929534571474141
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 128353,
+            "value": 361,
+            "normalized": 1.0076371942550726
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.5792524058860903,
+          "absValue": 1.401707655602026
+        }
+      },
+      {
+        "name": "cramer-jacobi-161803",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22129,
+            "pairs": 21388,
+            "zeros": 741,
+            "value": -430,
+            "normalized": -2.9402439692720175,
+            "maxAbs": 453,
+            "maxAbsOverSqrtPairs": 3.097512832744707
+          },
+          {
+            "N": 500000,
+            "transitions": 41607,
+            "pairs": 40156,
+            "zeros": 1451,
+            "value": -232,
+            "normalized": -1.1577445949199852,
+            "maxAbs": 453,
+            "maxAbsOverSqrtPairs": 2.2605961271497987
+          },
+          {
+            "N": 1000000,
+            "transitions": 78485,
+            "pairs": 75592,
+            "zeros": 2893,
+            "value": 122,
+            "normalized": 0.4437331887141532,
+            "maxAbs": 453,
+            "maxAbsOverSqrtPairs": 1.6476322498976343
+          },
+          {
+            "N": 2000000,
+            "transitions": 148773,
+            "pairs": 143052,
+            "zeros": 5721,
+            "value": 136,
+            "normalized": 0.3595770303370648,
+            "maxAbs": 453,
+            "maxAbsOverSqrtPairs": 1.1977087848727233
+          },
+          {
+            "N": 4000000,
+            "transitions": 283064,
+            "pairs": 271750,
+            "zeros": 11314,
+            "value": 360,
+            "normalized": 0.6905859277765904,
+            "maxAbs": 486,
+            "maxAbsOverSqrtPairs": 0.9322910024983971
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 21388,
+            "value": -430,
+            "normalized": -2.9402439692720175
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 18768,
+            "value": 198,
+            "normalized": 1.4452939771226148
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 35436,
+            "value": 354,
+            "normalized": 1.8805328120768496
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 67460,
+            "value": 14,
+            "normalized": 0.053901998453639695
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 128698,
+            "value": 224,
+            "normalized": 0.6243988857416701
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.02220331334142514,
+          "absValue": -0.1379328479456574
+        }
+      },
+      {
+        "name": "cramer-jacobi-424242",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22126,
+            "pairs": 21366,
+            "zeros": 760,
+            "value": 360,
+            "normalized": 2.462866597825746,
+            "maxAbs": 396,
+            "maxAbsOverSqrtPairs": 2.70915325760832
+          },
+          {
+            "N": 500000,
+            "transitions": 41809,
+            "pairs": 40300,
+            "zeros": 1509,
+            "value": 418,
+            "normalized": 2.082206312196481,
+            "maxAbs": 466,
+            "maxAbsOverSqrtPairs": 2.3213113432621055
+          },
+          {
+            "N": 1000000,
+            "transitions": 79142,
+            "pairs": 76182,
+            "zeros": 2960,
+            "value": 98,
+            "normalized": 0.3550584809589756,
+            "maxAbs": 466,
+            "maxAbsOverSqrtPairs": 1.6883393074171695
+          },
+          {
+            "N": 2000000,
+            "transitions": 149974,
+            "pairs": 144093,
+            "zeros": 5881,
+            "value": 169,
+            "normalized": 0.44521036116595486,
+            "maxAbs": 466,
+            "maxAbsOverSqrtPairs": 1.2276214692505028
+          },
+          {
+            "N": 4000000,
+            "transitions": 284734,
+            "pairs": 273073,
+            "zeros": 11661,
+            "value": -271,
+            "normalized": -0.5185968925126975,
+            "maxAbs": 510,
+            "maxAbsOverSqrtPairs": 0.9759572515921612
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 21366,
+            "value": 360,
+            "normalized": 2.462866597825746
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 18934,
+            "value": 58,
+            "normalized": 0.4215089564400053
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 35882,
+            "value": -320,
+            "normalized": -1.6893189639476223
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 67911,
+            "value": 71,
+            "normalized": 0.27245092450853137
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 128980,
+            "value": -440,
+            "normalized": -1.2251562790937416
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.0794057186104641,
+          "absValue": -0.23093258638866676
+        }
+      }
+    ],
+    "randomPrime": [
+      {
+        "name": "random-prime-predecessor-12345",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22042,
+            "pairs": 22042,
+            "zeros": 0,
+            "value": -94,
+            "normalized": -0.6331437943561717,
+            "maxAbs": 226,
+            "maxAbsOverSqrtPairs": 1.522239335366966
+          },
+          {
+            "N": 500000,
+            "transitions": 41536,
+            "pairs": 41536,
+            "zeros": 0,
+            "value": -312,
+            "normalized": -1.5308839103587761,
+            "maxAbs": 324,
+            "maxAbsOverSqrtPairs": 1.5897640607571908
+          },
+          {
+            "N": 1000000,
+            "transitions": 78496,
+            "pairs": 78496,
+            "zeros": 0,
+            "value": -450,
+            "normalized": -1.6061597948485236,
+            "maxAbs": 501,
+            "maxAbsOverSqrtPairs": 1.7881912382646896
+          },
+          {
+            "N": 2000000,
+            "transitions": 148931,
+            "pairs": 148931,
+            "zeros": 0,
+            "value": 63,
+            "normalized": 0.16324804786923283,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.4433200422724235
+          },
+          {
+            "N": 4000000,
+            "transitions": 283144,
+            "pairs": 283144,
+            "zeros": 0,
+            "value": 298,
+            "normalized": 0.5600316639618697,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.046770593378394
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22042,
+            "value": -94,
+            "normalized": -0.6331437943561717
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -218,
+            "normalized": -1.561370654756529
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -138,
+            "normalized": -0.7178159515222131
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": 513,
+            "normalized": 1.9329610622284008
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": 235,
+            "normalized": 0.6414614627148244
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.3671191496737682,
+          "absValue": 0.11009383155919897
+        }
+      },
+      {
+        "name": "random-prime-predecessor-271828",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22042,
+            "pairs": 22042,
+            "zeros": 0,
+            "value": -264,
+            "normalized": -1.7781910820215887,
+            "maxAbs": 286,
+            "maxAbsOverSqrtPairs": 1.9263736721900544
+          },
+          {
+            "N": 500000,
+            "transitions": 41536,
+            "pairs": 41536,
+            "zeros": 0,
+            "value": -466,
+            "normalized": -2.2865125071384287,
+            "maxAbs": 485,
+            "maxAbsOverSqrtPairs": 2.379739411935918
+          },
+          {
+            "N": 1000000,
+            "transitions": 78496,
+            "pairs": 78496,
+            "zeros": 0,
+            "value": -274,
+            "normalized": -0.9779728528633232,
+            "maxAbs": 498,
+            "maxAbsOverSqrtPairs": 1.7774835062990328
+          },
+          {
+            "N": 2000000,
+            "transitions": 148931,
+            "pairs": 148931,
+            "zeros": 0,
+            "value": -415,
+            "normalized": -1.075364124852883,
+            "maxAbs": 533,
+            "maxAbsOverSqrtPairs": 1.381130309750811
+          },
+          {
+            "N": 4000000,
+            "transitions": 283144,
+            "pairs": 283144,
+            "zeros": 0,
+            "value": 86,
+            "normalized": 0.1616198761769154,
+            "maxAbs": 533,
+            "maxAbsOverSqrtPairs": 1.0016673721197198
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22042,
+            "value": -264,
+            "normalized": -1.7781910820215887
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -202,
+            "normalized": -1.4467746433982516
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": 192,
+            "normalized": 0.9987004542917748
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -141,
+            "normalized": -0.5312816954662856
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": 501,
+            "normalized": 1.3675412460430936
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.20945633531117014,
+          "absValue": -0.37079139603053735
+        }
+      },
+      {
+        "name": "random-prime-predecessor-314159",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22042,
+            "pairs": 22042,
+            "zeros": 0,
+            "value": -92,
+            "normalized": -0.6196726497954022,
+            "maxAbs": 218,
+            "maxAbsOverSqrtPairs": 1.4683547571238877
+          },
+          {
+            "N": 500000,
+            "transitions": 41536,
+            "pairs": 41536,
+            "zeros": 0,
+            "value": -174,
+            "normalized": -0.8537621807770098,
+            "maxAbs": 300,
+            "maxAbsOverSqrtPairs": 1.4720037599603617
+          },
+          {
+            "N": 1000000,
+            "transitions": 78496,
+            "pairs": 78496,
+            "zeros": 0,
+            "value": -226,
+            "normalized": -0.8066491414128141,
+            "maxAbs": 352,
+            "maxAbsOverSqrtPairs": 1.2563738839704006
+          },
+          {
+            "N": 2000000,
+            "transitions": 148931,
+            "pairs": 148931,
+            "zeros": 0,
+            "value": -511,
+            "normalized": -1.3241230549393328,
+            "maxAbs": 586,
+            "maxAbsOverSqrtPairs": 1.518465969069372
+          },
+          {
+            "N": 4000000,
+            "transitions": 283144,
+            "pairs": 283144,
+            "zeros": 0,
+            "value": -722,
+            "normalized": -1.3568552395317781,
+            "maxAbs": 767,
+            "maxAbsOverSqrtPairs": 1.4414237793917921
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22042,
+            "value": -92,
+            "normalized": -0.6196726497954022
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -82,
+            "normalized": -0.5873045582111714
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -52,
+            "normalized": -0.2704813730373557
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -285,
+            "normalized": -1.073867256793556
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": -211,
+            "normalized": -0.5759505048205444
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.49917226689120253,
+          "absValue": 0.8143303679102598
+        }
+      },
+      {
+        "name": "random-prime-predecessor-161803",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22042,
+            "pairs": 22042,
+            "zeros": 0,
+            "value": 40,
+            "normalized": 0.26942289121539226,
+            "maxAbs": 187,
+            "maxAbsOverSqrtPairs": 1.2595520164319587
+          },
+          {
+            "N": 500000,
+            "transitions": 41536,
+            "pairs": 41536,
+            "zeros": 0,
+            "value": -24,
+            "normalized": -0.11776030079682893,
+            "maxAbs": 187,
+            "maxAbsOverSqrtPairs": 0.9175490103752921
+          },
+          {
+            "N": 1000000,
+            "transitions": 78496,
+            "pairs": 78496,
+            "zeros": 0,
+            "value": -304,
+            "normalized": -1.0850501725198916,
+            "maxAbs": 383,
+            "maxAbsOverSqrtPairs": 1.3670204476155212
+          },
+          {
+            "N": 2000000,
+            "transitions": 148931,
+            "pairs": 148931,
+            "zeros": 0,
+            "value": -1015,
+            "normalized": -2.6301074378931957,
+            "maxAbs": 1197,
+            "maxAbsOverSqrtPairs": 3.1017129095154234
+          },
+          {
+            "N": 4000000,
+            "transitions": 283144,
+            "pairs": 283144,
+            "zeros": 0,
+            "value": -796,
+            "normalized": -1.4959235050793565,
+            "maxAbs": 1225,
+            "maxAbsOverSqrtPairs": 2.3021435850781553
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22042,
+            "value": 40,
+            "normalized": 0.26942289121539226
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -64,
+            "normalized": -0.4583840454331094
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -280,
+            "normalized": -1.4564381625088383
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -711,
+            "normalized": -2.6790162090533975
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": 219,
+            "normalized": 0.5977874907853044
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.88001137278631,
+          "absValue": 1.5234875078283947
+        }
+      },
+      {
+        "name": "random-prime-predecessor-424242",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22042,
+            "pairs": 22042,
+            "zeros": 0,
+            "value": -456,
+            "normalized": -3.0714209598554714,
+            "maxAbs": 546,
+            "maxAbsOverSqrtPairs": 3.677622465090104
+          },
+          {
+            "N": 500000,
+            "transitions": 41536,
+            "pairs": 41536,
+            "zeros": 0,
+            "value": -416,
+            "normalized": -2.041178547145035,
+            "maxAbs": 546,
+            "maxAbsOverSqrtPairs": 2.6790468431278582
+          },
+          {
+            "N": 1000000,
+            "transitions": 78496,
+            "pairs": 78496,
+            "zeros": 0,
+            "value": -788,
+            "normalized": -2.8125642629791923,
+            "maxAbs": 789,
+            "maxAbsOverSqrtPairs": 2.816133506967745
+          },
+          {
+            "N": 2000000,
+            "transitions": 148931,
+            "pairs": 148931,
+            "zeros": 0,
+            "value": -1295,
+            "normalized": -3.355654317312008,
+            "maxAbs": 1382,
+            "maxAbsOverSqrtPairs": 3.5810920977028533
+          },
+          {
+            "N": 4000000,
+            "transitions": 283144,
+            "pairs": 283144,
+            "zeros": 0,
+            "value": -2000,
+            "normalized": -3.7586017715561724,
+            "maxAbs": 2054,
+            "maxAbsOverSqrtPairs": 3.860084019388189
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22042,
+            "value": -456,
+            "normalized": -3.0714209598554714
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": 40,
+            "normalized": 0.2864900283956934
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -372,
+            "normalized": -1.9349821301903136
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -507,
+            "normalized": -1.9103533305064313
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": -705,
+            "normalized": -1.924384388144473
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.5610209380094181,
+          "absValue": 0.6414942527935115
+        }
+      }
+    ],
+    "composite": [
+      {
+        "name": "random-composite-predecessor-12345",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22014,
+            "pairs": 22014,
+            "zeros": 0,
+            "value": 194,
+            "normalized": 1.3075317665098818,
+            "maxAbs": 250,
+            "maxAbsOverSqrtPairs": 1.6849636166364457
+          },
+          {
+            "N": 500000,
+            "transitions": 41508,
+            "pairs": 41508,
+            "zeros": 0,
+            "value": 60,
+            "normalized": 0.29450003202688024,
+            "maxAbs": 250,
+            "maxAbsOverSqrtPairs": 1.2270834667786676
+          },
+          {
+            "N": 1000000,
+            "transitions": 78468,
+            "pairs": 78468,
+            "zeros": 0,
+            "value": 538,
+            "normalized": 1.9205958404946526,
+            "maxAbs": 550,
+            "maxAbsOverSqrtPairs": 1.9634344094276188
+          },
+          {
+            "N": 2000000,
+            "transitions": 148903,
+            "pairs": 148903,
+            "zeros": 0,
+            "value": 443,
+            "normalized": 1.1480267361270766,
+            "maxAbs": 603,
+            "maxAbsOverSqrtPairs": 1.5626639320194746
+          },
+          {
+            "N": 4000000,
+            "transitions": 283116,
+            "pairs": 283116,
+            "zeros": 0,
+            "value": 358,
+            "normalized": 0.672822985532686,
+            "maxAbs": 719,
+            "maxAbsOverSqrtPairs": 1.3512841525083834
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22014,
+            "value": 194,
+            "normalized": 1.3075317665098818
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -134,
+            "normalized": -0.9597415951255728
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": 478,
+            "normalized": 2.486348005997231
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -95,
+            "normalized": -0.3579557522645187
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": -85,
+            "normalized": -0.23201797587557477
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.468598645919584,
+          "absValue": 0.5047579939687722
+        }
+      },
+      {
+        "name": "random-composite-predecessor-271828",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22014,
+            "pairs": 22014,
+            "zeros": 0,
+            "value": 348,
+            "normalized": 2.3454693543579324,
+            "maxAbs": 377,
+            "maxAbsOverSqrtPairs": 2.54092513388776
+          },
+          {
+            "N": 500000,
+            "transitions": 41508,
+            "pairs": 41508,
+            "zeros": 0,
+            "value": 88,
+            "normalized": 0.431933380306091,
+            "maxAbs": 377,
+            "maxAbsOverSqrtPairs": 1.8504418679022308
+          },
+          {
+            "N": 1000000,
+            "transitions": 78468,
+            "pairs": 78468,
+            "zeros": 0,
+            "value": 162,
+            "normalized": 0.578320680595044,
+            "maxAbs": 377,
+            "maxAbsOverSqrtPairs": 1.3458450406440223
+          },
+          {
+            "N": 2000000,
+            "transitions": 148903,
+            "pairs": 148903,
+            "zeros": 0,
+            "value": 229,
+            "normalized": 0.5934494866209945,
+            "maxAbs": 377,
+            "maxAbsOverSqrtPairs": 0.9769888928214625
+          },
+          {
+            "N": 4000000,
+            "transitions": 283116,
+            "pairs": 283116,
+            "zeros": 0,
+            "value": -78,
+            "normalized": -0.14659271751829472,
+            "maxAbs": 446,
+            "maxAbsOverSqrtPairs": 0.8382096411943518
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22014,
+            "value": 348,
+            "normalized": 2.3454693543579324
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -260,
+            "normalized": -1.862185184572007
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": 74,
+            "normalized": 0.3849158000916215
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": 67,
+            "normalized": 0.2524530042286605
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": -307,
+            "normalized": -0.8379943363976642
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.05275606458936497,
+          "absValue": -0.3184519389417862
+        }
+      },
+      {
+        "name": "random-composite-predecessor-314159",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22014,
+            "pairs": 22014,
+            "zeros": 0,
+            "value": 32,
+            "normalized": 0.21567534292946502,
+            "maxAbs": 150,
+            "maxAbsOverSqrtPairs": 1.0109781699818674
+          },
+          {
+            "N": 500000,
+            "transitions": 41508,
+            "pairs": 41508,
+            "zeros": 0,
+            "value": -40,
+            "normalized": -0.19633335468458682,
+            "maxAbs": 150,
+            "maxAbsOverSqrtPairs": 0.7362500800672006
+          },
+          {
+            "N": 1000000,
+            "transitions": 78468,
+            "pairs": 78468,
+            "zeros": 0,
+            "value": 40,
+            "normalized": 0.1427952297765541,
+            "maxAbs": 150,
+            "maxAbsOverSqrtPairs": 0.5354821116620778
+          },
+          {
+            "N": 2000000,
+            "transitions": 148903,
+            "pairs": 148903,
+            "zeros": 0,
+            "value": 245,
+            "normalized": 0.6349132062102343,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.44345573820041
+          },
+          {
+            "N": 4000000,
+            "transitions": 283116,
+            "pairs": 283116,
+            "zeros": 0,
+            "value": 226,
+            "normalized": 0.4247430020401873,
+            "maxAbs": 557,
+            "maxAbsOverSqrtPairs": 1.0468223545857713
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22014,
+            "value": 32,
+            "normalized": 0.21567534292946502
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -72,
+            "normalized": -0.5156820511122481
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": 80,
+            "normalized": 0.4161251892882395
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": 205,
+            "normalized": 0.7724308338339614
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": -19,
+            "normalized": -0.05186284166630495
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.6168672823261041,
+          "absValue": 0.8965654179407191
+        }
+      },
+      {
+        "name": "random-composite-predecessor-161803",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22014,
+            "pairs": 22014,
+            "zeros": 0,
+            "value": 170,
+            "normalized": 1.145775259312783,
+            "maxAbs": 245,
+            "maxAbsOverSqrtPairs": 1.6512643443037167
+          },
+          {
+            "N": 500000,
+            "transitions": 41508,
+            "pairs": 41508,
+            "zeros": 0,
+            "value": 378,
+            "normalized": 1.8553502017693455,
+            "maxAbs": 391,
+            "maxAbsOverSqrtPairs": 1.9191585420418362
+          },
+          {
+            "N": 1000000,
+            "transitions": 78468,
+            "pairs": 78468,
+            "zeros": 0,
+            "value": 366,
+            "normalized": 1.3065763524554699,
+            "maxAbs": 515,
+            "maxAbsOverSqrtPairs": 1.838488583373134
+          },
+          {
+            "N": 2000000,
+            "transitions": 148903,
+            "pairs": 148903,
+            "zeros": 0,
+            "value": 329,
+            "normalized": 0.8525977340537432,
+            "maxAbs": 515,
+            "maxAbsOverSqrtPairs": 1.3346134742786557
+          },
+          {
+            "N": 4000000,
+            "transitions": 283116,
+            "pairs": 283116,
+            "zeros": 0,
+            "value": 680,
+            "normalized": 1.277987793749236,
+            "maxAbs": 705,
+            "maxAbsOverSqrtPairs": 1.3249726391076637
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22014,
+            "value": 170,
+            "normalized": 1.145775259312783
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": 208,
+            "normalized": 1.4897481476576055
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -12,
+            "normalized": -0.062418778393235924
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -37,
+            "normalized": -0.13941434561881255
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": 351,
+            "normalized": 0.958097759203844
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.373939308173486,
+          "absValue": 0.41233120377723315
+        }
+      },
+      {
+        "name": "random-composite-predecessor-424242",
+        "rows": [
+          {
+            "N": 250000,
+            "transitions": 22014,
+            "pairs": 22014,
+            "zeros": 0,
+            "value": 170,
+            "normalized": 1.145775259312783,
+            "maxAbs": 188,
+            "maxAbsOverSqrtPairs": 1.267092639710607
+          },
+          {
+            "N": 500000,
+            "transitions": 41508,
+            "pairs": 41508,
+            "zeros": 0,
+            "value": -70,
+            "normalized": -0.34358337069802697,
+            "maxAbs": 215,
+            "maxAbsOverSqrtPairs": 1.0552917814296543
+          },
+          {
+            "N": 1000000,
+            "transitions": 78468,
+            "pairs": 78468,
+            "zeros": 0,
+            "value": -194,
+            "normalized": -0.6925568644162874,
+            "maxAbs": 430,
+            "maxAbsOverSqrtPairs": 1.5350487200979566
+          },
+          {
+            "N": 2000000,
+            "transitions": 148903,
+            "pairs": 148903,
+            "zeros": 0,
+            "value": -559,
+            "normalized": -1.448638703149065,
+            "maxAbs": 622,
+            "maxAbsOverSqrtPairs": 1.6119020990316968
+          },
+          {
+            "N": 4000000,
+            "transitions": 283116,
+            "pairs": 283116,
+            "zeros": 0,
+            "value": -14,
+            "normalized": -0.026311513400719563,
+            "maxAbs": 740,
+            "maxAbsOverSqrtPairs": 1.3907514226094626
+          }
+        ],
+        "blocks": [
+          {
+            "lo": 1,
+            "hi": 250000,
+            "pairs": 22014,
+            "value": 170,
+            "normalized": 1.145775259312783
+          },
+          {
+            "lo": 250000,
+            "hi": 500000,
+            "pairs": 19494,
+            "value": -240,
+            "normalized": -1.7189401703741602
+          },
+          {
+            "lo": 500000,
+            "hi": 1000000,
+            "pairs": 36960,
+            "value": -124,
+            "normalized": -0.6449940433967712
+          },
+          {
+            "lo": 1000000,
+            "hi": 2000000,
+            "pairs": 70435,
+            "value": -365,
+            "normalized": -1.3753036797531508
+          },
+          {
+            "lo": 2000000,
+            "hi": 4000000,
+            "pairs": 134213,
+            "value": 545,
+            "normalized": 1.4876446688492735
+          }
+        ],
+        "theta": {
+          "maxAbs": 0.5954079188657148,
+          "absValue": -0.4584723613782759
+        }
+      }
+    ]
+  },
+  "summary": {
+    "cramer": {
+      "normalized": [
+        -1.49476105942615,
+        0.6905859277765904
+      ],
+      "maxAbsOverSqrtPairs": [
+        0.7567665067036983,
+        2.091514190981391
+      ],
+      "maxAbsTheta": [
+        0.02220331334142514,
+        0.8447327801932939
+      ]
+    },
+    "randomPrime": {
+      "normalized": [
+        -3.7586017715561724,
+        0.5600316639618697
+      ],
+      "maxAbsOverSqrtPairs": [
+        1.0016673721197198,
+        3.860084019388189
+      ],
+      "maxAbsTheta": [
+        0.20945633531117014,
+        0.88001137278631
+      ]
+    },
+    "composite": {
+      "normalized": [
+        -0.14659271751829472,
+        1.277987793749236
+      ],
+      "maxAbsOverSqrtPairs": [
+        0.8382096411943518,
+        1.3907514226094626
+      ],
+      "maxAbsTheta": [
+        0.05275606458936497,
+        0.6168672823261041
+      ]
+    }
+  },
+  "jsonPath": "logs/playground-artifacts/quadratic-predecessor-bridge-4000000.json",
+  "mdPath": "logs/playground-artifacts/quadratic-predecessor-bridge-4000000.md",
+  "svgPath": "logs/playground-artifacts/quadratic-predecessor-bridge-4000000.svg"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Two-Universes Rupture",
+  "basedOn": "COUNCIL.md two-universes work: compare ordinary integer primes with function-field prime universes F_2[t] and F_3[t].",
+  "path": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-best-shots/10-two-universes-rupture.png",
+  "stats": {
+    "width": 3840,
+    "height": 2160,
+    "textLength": 0,
+    "litSamplePixels": 495831,
+    "brightSamplePixels": 11258,
+    "maxLuma": 765,
+    "meanSampleLuma": 43.58,
+    "integerPrimes": 60978,
+    "integerPrimePointsDrawn": 60976,
+    "f2PointsDrawn": 194476,
+    "f3PointsDrawn": 94771,
+    "concept": "COUNCIL.md Two-Universes Program: ordinary integer primes compared against F_2[t] and F_3[t] finite-field prime worlds."
+  }
+}

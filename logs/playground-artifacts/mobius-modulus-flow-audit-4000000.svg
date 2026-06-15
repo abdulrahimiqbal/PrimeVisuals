@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="26" fill="#e5e7eb" font-size="18" font-weight="700">Mobius-twisted local modulus flow</text>
+<text x="70" y="38" fill="#67e8f9" font-size="13">Z real</text>
+<text x="340" y="38" fill="#f8fafc" font-size="13">Z stratified fake</text>
+<text x="610" y="38" fill="#a78bfa" font-size="13">Z composite</text>
+<text x="70" y="58" fill="#fb7185" font-size="13">Z Cramer</text>
+<text x="340" y="58" fill="#34d399" font-size="13">F_2 real</text>
+<text x="610" y="58" fill="#60a5fa" font-size="13">F_3 real</text>
+<rect x="70" y="62" width="1020" height="508" fill="#0b1626" stroke="#1f2937"/>
+<line x1="70" y1="62" x2="1090" y2="62" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="66" fill="#94a3b8" font-size="12">2.30</text>
+<line x1="70" y1="163.60000000000002" x2="1090" y2="163.60000000000002" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="167.60000000000002" fill="#94a3b8" font-size="12">1.84</text>
+<line x1="70" y1="265.20000000000005" x2="1090" y2="265.20000000000005" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="269.20000000000005" fill="#94a3b8" font-size="12">1.38</text>
+<line x1="70" y1="366.8" x2="1090" y2="366.8" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="370.8" fill="#94a3b8" font-size="12">0.92</text>
+<line x1="70" y1="468.40000000000003" x2="1090" y2="468.40000000000003" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="472.40000000000003" fill="#94a3b8" font-size="12">0.46</text>
+<line x1="70" y1="570" x2="1090" y2="570" stroke="#1f2937" stroke-width="1"/>
+<text x="18" y="574" fill="#94a3b8" font-size="12">0.00</text>
+<line x1="70" y1="348.9805423624736" x2="1090" y2="348.9805423624736" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="6 6" opacity="0.6"/>
+<polyline points="70.00,482.90 133.75,479.71 197.50,370.59 261.25,367.42 325.00,315.38" fill="none" stroke="#67e8f9" stroke-width="3"/><circle cx="70" cy="482.8975380622105" r="4" fill="#67e8f9"/><circle cx="133.75" cy="479.7081667492056" r="4" fill="#67e8f9"/><circle cx="197.5" cy="370.5873618403431" r="4" fill="#67e8f9"/><circle cx="261.25" cy="367.4213221691687" r="4" fill="#67e8f9"/><circle cx="325" cy="315.38020178622105" r="4" fill="#67e8f9"/>
+<polyline points="70.00,210.12 133.75,285.46 197.50,108.18 261.25,307.89 325.00,312.28" fill="none" stroke="#f8fafc" stroke-width="3"/><circle cx="70" cy="210.12392831784103" r="4" fill="#f8fafc"/><circle cx="133.75" cy="285.4569480318793" r="4" fill="#f8fafc"/><circle cx="197.5" cy="108.18181818181824" r="4" fill="#f8fafc"/><circle cx="261.25" cy="307.8903195434125" r="4" fill="#f8fafc"/><circle cx="325" cy="312.2769684424954" r="4" fill="#f8fafc"/>
+<polyline points="70.00,223.71 133.75,324.22 197.50,271.76 261.25,235.89 325.00,178.71" fill="none" stroke="#a78bfa" stroke-width="3"/><circle cx="70" cy="223.7131174997949" r="4" fill="#a78bfa"/><circle cx="133.75" cy="324.2199435836205" r="4" fill="#a78bfa"/><circle cx="197.5" cy="271.7576412987768" r="4" fill="#a78bfa"/><circle cx="261.25" cy="235.8865221256372" r="4" fill="#a78bfa"/><circle cx="325" cy="178.71289543234417" r="4" fill="#a78bfa"/>
+<polyline points="70.00,427.83 133.75,414.33 197.50,376.18 261.25,389.23 325.00,406.13" fill="none" stroke="#fb7185" stroke-width="3"/><circle cx="70" cy="427.83234929548524" r="4" fill="#fb7185"/><circle cx="133.75" cy="414.3267800726999" r="4" fill="#fb7185"/><circle cx="197.5" cy="376.1800303289995" r="4" fill="#fb7185"/><circle cx="261.25" cy="389.2324775571607" r="4" fill="#fb7185"/><circle cx="325" cy="406.13471755073897" r="4" fill="#fb7185"/>
+<polyline points="452.50,447.14 516.25,442.16 580.00,404.09 643.75,463.85" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="452.5" cy="447.136568931702" r="4" fill="#34d399"/><circle cx="516.25" cy="442.1594847624661" r="4" fill="#34d399"/><circle cx="580" cy="404.093774003112" r="4" fill="#34d399"/><circle cx="643.75" cy="463.84883973736066" r="4" fill="#34d399"/>
+<polyline points="835.00,410.90 898.75,451.50 962.50,301.55" fill="none" stroke="#60a5fa" stroke-width="3"/><circle cx="835" cy="410.9034262179884" r="4" fill="#60a5fa"/><circle cx="898.75" cy="451.4956617333673" r="4" fill="#60a5fa"/><circle cx="962.5" cy="301.5527057693064" r="4" fill="#60a5fa"/>
+<text x="70" y="606" fill="#94a3b8" font-size="13">x: integer endpoints, then F_2 degrees, then F_3 degrees; y: locally standardized residue energy of mu(label-1)</text>
+</svg>

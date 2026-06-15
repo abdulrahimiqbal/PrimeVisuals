@@ -1,0 +1,961 @@
+{
+  "candidate": "pmuprev(n)=sum_{p<=n} mu(p-1)",
+  "preregisteredConfirm": "flat zero line whose max residual/sqrt(N) is materially smaller for real primes than Cramer and composite controls",
+  "preregisteredBreak": "same scale reproduced by Cramer/wheel/composite controls, or explainable as ordinary Mobius cancellation sampled through local congruences",
+  "N": 4000000,
+  "endpoints": [
+    250000,
+    500000,
+    1000000,
+    2000000,
+    4000000
+  ],
+  "real": {
+    "name": "real-primes",
+    "rows": [
+      {
+        "N": 250000,
+        "labels": 22044,
+        "value": -2,
+        "maxAbs": 70,
+        "maxAbsOverSqrtN": 0.14,
+        "rmsOverSqrtN": 0.052651873113247497
+      },
+      {
+        "N": 500000,
+        "labels": 41538,
+        "value": -64,
+        "maxAbs": 94,
+        "maxAbsOverSqrtN": 0.13293607486307094,
+        "rmsOverSqrtN": 0.05155667615901041
+      },
+      {
+        "N": 1000000,
+        "labels": 78498,
+        "value": -287,
+        "maxAbs": 292,
+        "maxAbsOverSqrtN": 0.292,
+        "rmsOverSqrtN": 0.1291173417125008
+      },
+      {
+        "N": 2000000,
+        "labels": 148933,
+        "value": -446,
+        "maxAbs": 485,
+        "maxAbsOverSqrtN": 0.34294678887547553,
+        "rmsOverSqrtN": 0.17929613376615391
+      },
+      {
+        "N": 4000000,
+        "labels": 283146,
+        "value": -825,
+        "maxAbs": 833,
+        "maxAbsOverSqrtN": 0.4165,
+        "rmsOverSqrtN": 0.22688866110241543
+      }
+    ],
+    "exponent": {
+      "theta": 0.9513031422238014,
+      "C": 0.0004679293040033923
+    }
+  },
+  "cramer": [
+    {
+      "name": "cramer-seed-12345",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 21909,
+          "value": -1,
+          "maxAbs": 65,
+          "maxAbsOverSqrtN": 0.13,
+          "rmsOverSqrtN": 0.0562625380207473
+        },
+        {
+          "N": 500000,
+          "labels": 41577,
+          "value": -6,
+          "maxAbs": 78,
+          "maxAbsOverSqrtN": 0.11030865786510141,
+          "rmsOverSqrtN": 0.039731176913521515
+        },
+        {
+          "N": 1000000,
+          "labels": 78571,
+          "value": -6,
+          "maxAbs": 78,
+          "maxAbsOverSqrtN": 0.078,
+          "rmsOverSqrtN": 0.026013667286558042
+        },
+        {
+          "N": 2000000,
+          "labels": 148964,
+          "value": 55,
+          "maxAbs": 206,
+          "maxAbsOverSqrtN": 0.14566399692442877,
+          "rmsOverSqrtN": 0.04852588587669626
+        },
+        {
+          "N": 4000000,
+          "labels": 283084,
+          "value": 77,
+          "maxAbs": 299,
+          "maxAbsOverSqrtN": 0.1495,
+          "rmsOverSqrtN": 0.05828141073762411
+        }
+      ],
+      "exponent": {
+        "theta": 0.5804366030660268,
+        "C": 0.03932860804711828
+      }
+    },
+    {
+      "name": "cramer-seed-271828",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22032,
+          "value": -6,
+          "maxAbs": 103,
+          "maxAbsOverSqrtN": 0.206,
+          "rmsOverSqrtN": 0.105643844225791
+        },
+        {
+          "N": 500000,
+          "labels": 41626,
+          "value": 17,
+          "maxAbs": 103,
+          "maxAbsOverSqrtN": 0.14566399692442877,
+          "rmsOverSqrtN": 0.05900925440890906
+        },
+        {
+          "N": 1000000,
+          "labels": 78614,
+          "value": 226,
+          "maxAbs": 231,
+          "maxAbsOverSqrtN": 0.231,
+          "rmsOverSqrtN": 0.10503536300270606
+        },
+        {
+          "N": 2000000,
+          "labels": 148976,
+          "value": 130,
+          "maxAbs": 293,
+          "maxAbsOverSqrtN": 0.2071822868876584,
+          "rmsOverSqrtN": 0.11300087991201814
+        },
+        {
+          "N": 4000000,
+          "labels": 283531,
+          "value": 385,
+          "maxAbs": 452,
+          "maxAbsOverSqrtN": 0.226,
+          "rmsOverSqrtN": 0.11552601619051166
+        }
+      ],
+      "exponent": {
+        "theta": 0.5775613197702969,
+        "C": 0.0686895352975182
+      }
+    },
+    {
+      "name": "cramer-seed-314159",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 21996,
+          "value": 94,
+          "maxAbs": 96,
+          "maxAbsOverSqrtN": 0.192,
+          "rmsOverSqrtN": 0.043609202036647504
+        },
+        {
+          "N": 500000,
+          "labels": 41168,
+          "value": -26,
+          "maxAbs": 158,
+          "maxAbsOverSqrtN": 0.223445742854949,
+          "rmsOverSqrtN": 0.08844205028848251
+        },
+        {
+          "N": 1000000,
+          "labels": 78251,
+          "value": -93,
+          "maxAbs": 158,
+          "maxAbsOverSqrtN": 0.158,
+          "rmsOverSqrtN": 0.07219746426973452
+        },
+        {
+          "N": 2000000,
+          "labels": 148553,
+          "value": -208,
+          "maxAbs": 228,
+          "maxAbsOverSqrtN": 0.16122034611053282,
+          "rmsOverSqrtN": 0.07839063969166066
+        },
+        {
+          "N": 4000000,
+          "labels": 282625,
+          "value": 247,
+          "maxAbs": 329,
+          "maxAbsOverSqrtN": 0.1645,
+          "rmsOverSqrtN": 0.06661841660700982
+        }
+      ],
+      "exponent": {
+        "theta": 0.4083071812015809,
+        "C": 0.632557694882631
+      }
+    },
+    {
+      "name": "cramer-seed-161803",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22130,
+          "value": 102,
+          "maxAbs": 115,
+          "maxAbsOverSqrtN": 0.23,
+          "rmsOverSqrtN": 0.08813305268255979
+        },
+        {
+          "N": 500000,
+          "labels": 41608,
+          "value": 87,
+          "maxAbs": 140,
+          "maxAbsOverSqrtN": 0.1979898987322333,
+          "rmsOverSqrtN": 0.09927936143722518
+        },
+        {
+          "N": 1000000,
+          "labels": 78486,
+          "value": 67,
+          "maxAbs": 140,
+          "maxAbsOverSqrtN": 0.14,
+          "rmsOverSqrtN": 0.06660230759982334
+        },
+        {
+          "N": 2000000,
+          "labels": 148774,
+          "value": 158,
+          "maxAbs": 351,
+          "maxAbsOverSqrtN": 0.24819448019647816,
+          "rmsOverSqrtN": 0.11452707510578691
+        },
+        {
+          "N": 4000000,
+          "labels": 283065,
+          "value": 160,
+          "maxAbs": 351,
+          "maxAbsOverSqrtN": 0.1755,
+          "rmsOverSqrtN": 0.08054212184155966
+        }
+      ],
+      "exponent": {
+        "theta": 0.4545718542079963,
+        "C": 0.36415183577834986
+      }
+    },
+    {
+      "name": "cramer-seed-424242",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22127,
+          "value": 60,
+          "maxAbs": 65,
+          "maxAbsOverSqrtN": 0.13,
+          "rmsOverSqrtN": 0.04405380712260578
+        },
+        {
+          "N": 500000,
+          "labels": 41810,
+          "value": 0,
+          "maxAbs": 65,
+          "maxAbsOverSqrtN": 0.09192388155425117,
+          "rmsOverSqrtN": 0.0361784483411348
+        },
+        {
+          "N": 1000000,
+          "labels": 79143,
+          "value": -51,
+          "maxAbs": 130,
+          "maxAbsOverSqrtN": 0.13,
+          "rmsOverSqrtN": 0.04723078755298204
+        },
+        {
+          "N": 2000000,
+          "labels": 149975,
+          "value": -75,
+          "maxAbs": 170,
+          "maxAbsOverSqrtN": 0.12020815280171307,
+          "rmsOverSqrtN": 0.05108147298986006
+        },
+        {
+          "N": 4000000,
+          "labels": 284735,
+          "value": -74,
+          "maxAbs": 235,
+          "maxAbsOverSqrtN": 0.1175,
+          "rmsOverSqrtN": 0.044503077375651325
+        }
+      ],
+      "exponent": {
+        "theta": 0.5095321390182339,
+        "C": 0.10258043484582385
+      }
+    }
+  ],
+  "wheelExpect": [
+    {
+      "name": "wheel-expect-W6",
+      "rows": [
+        {
+          "N": 250000,
+          "value": -7.370651993543868,
+          "maxAbs": 34.32196720540008,
+          "maxAbsOverSqrtN": 0.06864393441080016
+        },
+        {
+          "N": 500000,
+          "value": -11.761450233920586,
+          "maxAbs": 34.32196720540008,
+          "maxAbsOverSqrtN": 0.04853859150920138
+        },
+        {
+          "N": 1000000,
+          "value": -14.787964972437695,
+          "maxAbs": 51.78721540689371,
+          "maxAbsOverSqrtN": 0.05178721540689371
+        },
+        {
+          "N": 2000000,
+          "value": -81.71952592374717,
+          "maxAbs": 93.30164519357031,
+          "maxAbsOverSqrtN": 0.06597422601223481
+        },
+        {
+          "N": 4000000,
+          "value": 1.505757262434138,
+          "maxAbs": 93.30164519357031,
+          "maxAbsOverSqrtN": 0.04665082259678516
+        }
+      ],
+      "exponent": {
+        "theta": 0.43283108261935105,
+        "C": 0.14061854688067543
+      }
+    },
+    {
+      "name": "wheel-expect-W30",
+      "rows": [
+        {
+          "N": 250000,
+          "value": -2.1998892198749425,
+          "maxAbs": 41.36608875440937,
+          "maxAbsOverSqrtN": 0.08273217750881874
+        },
+        {
+          "N": 500000,
+          "value": -7.880017302919568,
+          "maxAbs": 41.36608875440937,
+          "maxAbsOverSqrtN": 0.0585004837388149
+        },
+        {
+          "N": 1000000,
+          "value": 3.056827104723856,
+          "maxAbs": 51.92312658187996,
+          "maxAbsOverSqrtN": 0.05192312658187996
+        },
+        {
+          "N": 2000000,
+          "value": -54.370908404040314,
+          "maxAbs": 66.26272477722473,
+          "maxAbsOverSqrtN": 0.04685482202987347
+        },
+        {
+          "N": 4000000,
+          "value": -2.9772304652523496,
+          "maxAbs": 113.26875023352439,
+          "maxAbsOverSqrtN": 0.05663437511676219
+        }
+      ],
+      "exponent": {
+        "theta": 0.3586207836701537,
+        "C": 0.41028073867762455
+      }
+    },
+    {
+      "name": "wheel-expect-W210",
+      "rows": [
+        {
+          "N": 250000,
+          "value": -18.154746284441867,
+          "maxAbs": 61.01675826828514,
+          "maxAbsOverSqrtN": 0.12203351653657027
+        },
+        {
+          "N": 500000,
+          "value": -12.474373254189537,
+          "maxAbs": 61.01675826828514,
+          "maxAbsOverSqrtN": 0.08629072707504952
+        },
+        {
+          "N": 1000000,
+          "value": -15.672593388884215,
+          "maxAbs": 73.47846301806419,
+          "maxAbsOverSqrtN": 0.07347846301806418
+        },
+        {
+          "N": 2000000,
+          "value": -63.883347929224485,
+          "maxAbs": 81.9798981037248,
+          "maxAbsOverSqrtN": 0.057968541870126
+        },
+        {
+          "N": 4000000,
+          "value": -75.8646446034643,
+          "maxAbs": 184.27699983921528,
+          "maxAbsOverSqrtN": 0.09213849991960764
+        }
+      ],
+      "exponent": {
+        "theta": 0.361526181586506,
+        "C": 0.5676625931665081
+      }
+    },
+    {
+      "name": "wheel-expect-W2310",
+      "rows": [
+        {
+          "N": 250000,
+          "value": -7.624000133210963,
+          "maxAbs": 60.60231050896382,
+          "maxAbsOverSqrtN": 0.12120462101792763
+        },
+        {
+          "N": 500000,
+          "value": -14.542647368448279,
+          "maxAbs": 60.60231050896382,
+          "maxAbsOverSqrtN": 0.08570460943292217
+        },
+        {
+          "N": 1000000,
+          "value": -45.56682736794999,
+          "maxAbs": 91.67326151675434,
+          "maxAbsOverSqrtN": 0.09167326151675434
+        },
+        {
+          "N": 2000000,
+          "value": -53.708823436084096,
+          "maxAbs": 91.67326151675434,
+          "maxAbsOverSqrtN": 0.06482278487198476
+        },
+        {
+          "N": 4000000,
+          "value": -93.95334597900167,
+          "maxAbs": 208.69454792359346,
+          "maxAbsOverSqrtN": 0.10434727396179673
+        }
+      ],
+      "exponent": {
+        "theta": 0.41650246181873574,
+        "C": 0.2902553248579353
+      }
+    }
+  ],
+  "wheel": [
+    {
+      "name": "wheel-W210-seed-12345",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22100,
+          "value": 15,
+          "maxAbs": 53,
+          "maxAbsOverSqrtN": 0.106,
+          "rmsOverSqrtN": 0.04979526408999008
+        },
+        {
+          "N": 500000,
+          "labels": 41763,
+          "value": 9,
+          "maxAbs": 77,
+          "maxAbsOverSqrtN": 0.10889444430272832,
+          "rmsOverSqrtN": 0.03869721023442398
+        },
+        {
+          "N": 1000000,
+          "labels": 78801,
+          "value": -21,
+          "maxAbs": 81,
+          "maxAbsOverSqrtN": 0.081,
+          "rmsOverSqrtN": 0.02801416751038177
+        },
+        {
+          "N": 2000000,
+          "labels": 149170,
+          "value": -137,
+          "maxAbs": 149,
+          "maxAbsOverSqrtN": 0.10535891039679558,
+          "rmsOverSqrtN": 0.029892740089117454
+        },
+        {
+          "N": 4000000,
+          "labels": 283453,
+          "value": -23,
+          "maxAbs": 179,
+          "maxAbsOverSqrtN": 0.0895,
+          "rmsOverSqrtN": 0.031719998709550265
+        }
+      ],
+      "exponent": {
+        "theta": 0.44641726251693725,
+        "C": 0.20443469728252284
+      }
+    },
+    {
+      "name": "wheel-W210-seed-271828",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22033,
+          "value": -7,
+          "maxAbs": 75,
+          "maxAbsOverSqrtN": 0.15,
+          "rmsOverSqrtN": 0.07095330402499109
+        },
+        {
+          "N": 500000,
+          "labels": 41529,
+          "value": 19,
+          "maxAbs": 75,
+          "maxAbsOverSqrtN": 0.10606601717798213,
+          "rmsOverSqrtN": 0.04013092241708491
+        },
+        {
+          "N": 1000000,
+          "labels": 78568,
+          "value": -99,
+          "maxAbs": 178,
+          "maxAbsOverSqrtN": 0.178,
+          "rmsOverSqrtN": 0.05604483616741583
+        },
+        {
+          "N": 2000000,
+          "labels": 148963,
+          "value": -155,
+          "maxAbs": 180,
+          "maxAbsOverSqrtN": 0.12727922061357855,
+          "rmsOverSqrtN": 0.04935040619267234
+        },
+        {
+          "N": 4000000,
+          "labels": 283006,
+          "value": -230,
+          "maxAbs": 447,
+          "maxAbsOverSqrtN": 0.2235,
+          "rmsOverSqrtN": 0.09069736850827233
+        }
+      ],
+      "exponent": {
+        "theta": 0.6413659067208668,
+        "C": 0.02152925844118245
+      }
+    },
+    {
+      "name": "wheel-W210-seed-314159",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22190,
+          "value": -54,
+          "maxAbs": 91,
+          "maxAbsOverSqrtN": 0.182,
+          "rmsOverSqrtN": 0.07447229402762963
+        },
+        {
+          "N": 500000,
+          "labels": 41650,
+          "value": -98,
+          "maxAbs": 187,
+          "maxAbsOverSqrtN": 0.2644579361637688,
+          "rmsOverSqrtN": 0.12222673104322394
+        },
+        {
+          "N": 1000000,
+          "labels": 78370,
+          "value": -159,
+          "maxAbs": 242,
+          "maxAbsOverSqrtN": 0.242,
+          "rmsOverSqrtN": 0.11224769368012118
+        },
+        {
+          "N": 2000000,
+          "labels": 148929,
+          "value": -343,
+          "maxAbs": 422,
+          "maxAbsOverSqrtN": 0.29839906166072305,
+          "rmsOverSqrtN": 0.16205711241679574
+        },
+        {
+          "N": 4000000,
+          "labels": 283411,
+          "value": -305,
+          "maxAbs": 542,
+          "maxAbsOverSqrtN": 0.271,
+          "rmsOverSqrtN": 0.1601261471723028
+        }
+      ],
+      "exponent": {
+        "theta": 0.6322913531129899,
+        "C": 0.03990744297958089
+      }
+    },
+    {
+      "name": "wheel-W210-seed-161803",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 21940,
+          "value": 32,
+          "maxAbs": 85,
+          "maxAbsOverSqrtN": 0.17,
+          "rmsOverSqrtN": 0.08444647158617466
+        },
+        {
+          "N": 500000,
+          "labels": 41515,
+          "value": -28,
+          "maxAbs": 85,
+          "maxAbsOverSqrtN": 0.12020815280171307,
+          "rmsOverSqrtN": 0.0492719793975405
+        },
+        {
+          "N": 1000000,
+          "labels": 78299,
+          "value": -12,
+          "maxAbs": 85,
+          "maxAbsOverSqrtN": 0.085,
+          "rmsOverSqrtN": 0.030207968069417526
+        },
+        {
+          "N": 2000000,
+          "labels": 148731,
+          "value": 6,
+          "maxAbs": 120,
+          "maxAbsOverSqrtN": 0.0848528137423857,
+          "rmsOverSqrtN": 0.03166621853902953
+        },
+        {
+          "N": 4000000,
+          "labels": 282949,
+          "value": -319,
+          "maxAbs": 362,
+          "maxAbsOverSqrtN": 0.181,
+          "rmsOverSqrtN": 0.07274336487425473
+        }
+      ],
+      "exponent": {
+        "theta": 0.46784095613618204,
+        "C": 0.18975078529616057
+      }
+    },
+    {
+      "name": "wheel-W210-seed-424242",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 22193,
+          "value": 52,
+          "maxAbs": 79,
+          "maxAbsOverSqrtN": 0.158,
+          "rmsOverSqrtN": 0.09572401715353317
+        },
+        {
+          "N": 500000,
+          "labels": 41721,
+          "value": 25,
+          "maxAbs": 98,
+          "maxAbsOverSqrtN": 0.13859292911256332,
+          "rmsOverSqrtN": 0.06465034250884051
+        },
+        {
+          "N": 1000000,
+          "labels": 78911,
+          "value": 114,
+          "maxAbs": 118,
+          "maxAbsOverSqrtN": 0.118,
+          "rmsOverSqrtN": 0.04713338714275216
+        },
+        {
+          "N": 2000000,
+          "labels": 149798,
+          "value": 210,
+          "maxAbs": 333,
+          "maxAbsOverSqrtN": 0.23546655813512032,
+          "rmsOverSqrtN": 0.08866919119379728
+        },
+        {
+          "N": 4000000,
+          "labels": 284238,
+          "value": 441,
+          "maxAbs": 482,
+          "maxAbsOverSqrtN": 0.241,
+          "rmsOverSqrtN": 0.13030038151902637
+        }
+      ],
+      "exponent": {
+        "theta": 0.6982885699061768,
+        "C": 0.01105385770778536
+      }
+    }
+  ],
+  "composite": [
+    {
+      "name": "composite-W210-seed-12345",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 13434,
+          "value": 51,
+          "maxAbs": 77,
+          "maxAbsOverSqrtN": 0.154,
+          "rmsOverSqrtN": 0.06924068918315934
+        },
+        {
+          "N": 500000,
+          "labels": 26325,
+          "value": 30,
+          "maxAbs": 102,
+          "maxAbsOverSqrtN": 0.14424978336205568,
+          "rmsOverSqrtN": 0.07598489078580224
+        },
+        {
+          "N": 1000000,
+          "labels": 51430,
+          "value": 7,
+          "maxAbs": 102,
+          "maxAbsOverSqrtN": 0.102,
+          "rmsOverSqrtN": 0.054639551206938586
+        },
+        {
+          "N": 2000000,
+          "labels": 100237,
+          "value": 30,
+          "maxAbs": 161,
+          "maxAbsOverSqrtN": 0.11384419177103415,
+          "rmsOverSqrtN": 0.03963162194340348
+        },
+        {
+          "N": 4000000,
+          "labels": 195003,
+          "value": 309,
+          "maxAbs": 364,
+          "maxAbsOverSqrtN": 0.182,
+          "rmsOverSqrtN": 0.061097971927543286
+        }
+      ],
+      "exponent": {
+        "theta": 0.514050773515071,
+        "C": 0.11220676062113454
+      }
+    },
+    {
+      "name": "composite-W210-seed-271828",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 13505,
+          "value": -143,
+          "maxAbs": 177,
+          "maxAbsOverSqrtN": 0.354,
+          "rmsOverSqrtN": 0.17146516814632964
+        },
+        {
+          "N": 500000,
+          "labels": 26392,
+          "value": -163,
+          "maxAbs": 191,
+          "maxAbsOverSqrtN": 0.27011479041326114,
+          "rmsOverSqrtN": 0.16615002355513506
+        },
+        {
+          "N": 1000000,
+          "labels": 51353,
+          "value": -82,
+          "maxAbs": 196,
+          "maxAbsOverSqrtN": 0.196,
+          "rmsOverSqrtN": 0.1249041696026732
+        },
+        {
+          "N": 2000000,
+          "labels": 100008,
+          "value": -203,
+          "maxAbs": 207,
+          "maxAbsOverSqrtN": 0.14637110370561532,
+          "rmsOverSqrtN": 0.0737412244171855
+        },
+        {
+          "N": 4000000,
+          "labels": 194809,
+          "value": -79,
+          "maxAbs": 362,
+          "maxAbsOverSqrtN": 0.181,
+          "rmsOverSqrtN": 0.08846177227870793
+        }
+      ],
+      "exponent": {
+        "theta": 0.2180538803463991,
+        "C": 10.736557198132655
+      }
+    },
+    {
+      "name": "composite-W210-seed-314159",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 13580,
+          "value": 20,
+          "maxAbs": 80,
+          "maxAbsOverSqrtN": 0.16,
+          "rmsOverSqrtN": 0.07483287811209073
+        },
+        {
+          "N": 500000,
+          "labels": 26375,
+          "value": -15,
+          "maxAbs": 80,
+          "maxAbsOverSqrtN": 0.1131370849898476,
+          "rmsOverSqrtN": 0.04404070155395948
+        },
+        {
+          "N": 1000000,
+          "labels": 51194,
+          "value": -101,
+          "maxAbs": 183,
+          "maxAbsOverSqrtN": 0.183,
+          "rmsOverSqrtN": 0.07471131310776094
+        },
+        {
+          "N": 2000000,
+          "labels": 99809,
+          "value": -226,
+          "maxAbs": 238,
+          "maxAbsOverSqrtN": 0.1682914139223983,
+          "rmsOverSqrtN": 0.067148112854379
+        },
+        {
+          "N": 4000000,
+          "labels": 194729,
+          "value": -270,
+          "maxAbs": 373,
+          "maxAbsOverSqrtN": 0.1865,
+          "rmsOverSqrtN": 0.09052005528854262
+        }
+      ],
+      "exponent": {
+        "theta": 0.6015097119156335,
+        "C": 0.03929389669348188
+      }
+    },
+    {
+      "name": "composite-W210-seed-161803",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 13343,
+          "value": 72,
+          "maxAbs": 79,
+          "maxAbsOverSqrtN": 0.158,
+          "rmsOverSqrtN": 0.08608861506615201
+        },
+        {
+          "N": 500000,
+          "labels": 26223,
+          "value": 211,
+          "maxAbs": 220,
+          "maxAbsOverSqrtN": 0.3111269837220809,
+          "rmsOverSqrtN": 0.15318232999029668
+        },
+        {
+          "N": 1000000,
+          "labels": 51288,
+          "value": 419,
+          "maxAbs": 427,
+          "maxAbsOverSqrtN": 0.427,
+          "rmsOverSqrtN": 0.22969788622493548
+        },
+        {
+          "N": 2000000,
+          "labels": 99962,
+          "value": 436,
+          "maxAbs": 517,
+          "maxAbsOverSqrtN": 0.3655742058734451,
+          "rmsOverSqrtN": 0.25509400521487896
+        },
+        {
+          "N": 4000000,
+          "labels": 194728,
+          "value": 680,
+          "maxAbs": 716,
+          "maxAbsOverSqrtN": 0.358,
+          "rmsOverSqrtN": 0.22623025527018667
+        }
+      ],
+      "exponent": {
+        "theta": 0.759273081496458,
+        "C": 0.008553379738489691
+      }
+    },
+    {
+      "name": "composite-W210-seed-424242",
+      "rows": [
+        {
+          "N": 250000,
+          "labels": 13514,
+          "value": -41,
+          "maxAbs": 45,
+          "maxAbsOverSqrtN": 0.09,
+          "rmsOverSqrtN": 0.037034856326155885
+        },
+        {
+          "N": 500000,
+          "labels": 26432,
+          "value": 50,
+          "maxAbs": 54,
+          "maxAbsOverSqrtN": 0.07636753236814713,
+          "rmsOverSqrtN": 0.027189203733040873
+        },
+        {
+          "N": 1000000,
+          "labels": 51570,
+          "value": 148,
+          "maxAbs": 163,
+          "maxAbsOverSqrtN": 0.163,
+          "rmsOverSqrtN": 0.08134560031087121
+        },
+        {
+          "N": 2000000,
+          "labels": 100843,
+          "value": 294,
+          "maxAbs": 371,
+          "maxAbsOverSqrtN": 0.2623366158202091,
+          "rmsOverSqrtN": 0.15114731900855377
+        },
+        {
+          "N": 4000000,
+          "labels": 195784,
+          "value": 365,
+          "maxAbs": 421,
+          "maxAbsOverSqrtN": 0.2105,
+          "rmsOverSqrtN": 0.1316438665082084
+        }
+      ],
+      "exponent": {
+        "theta": 0.9232034527930774,
+        "C": 0.00041597694391274986
+      }
+    }
+  ]
+}

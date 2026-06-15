@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#070b14"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<line x1="64" y1="465.45" x2="681.60" y2="465.45" stroke="#475569" stroke-dasharray="5 5"/>
+<path d="M 64.00 350.82 L 218.40 322.99 L 372.80 277.75 L 527.20 320.40 L 681.60 320.76" fill="none" stroke="#67e8f9" stroke-width="3" />
+<path d="M 64.00 325.75 L 218.40 340.30 L 372.80 303.85 L 527.20 310.69 L 681.60 316.57" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 265.61 L 218.40 166.35 L 372.80 265.76 L 527.20 176.47 L 681.60 271.63" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M 64.00 505.23 L 218.40 556.00 L 372.80 501.12 L 527.20 479.72 L 681.60 532.56" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<path d="M 64.00 446.92 L 218.40 404.11 L 372.80 425.46 L 527.20 436.99 L 681.60 416.38" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="2 5"/>
+<text x="64" y="30" fill="#e2e8f0" font-size="18" font-weight="700">Residual-field branch persistence</text>
+<text x="64" y="52" fill="#94a3b8">y: adjacent ancestor sign alignment of standardized residual fields</text>
+<text x="64" y="602" fill="#94a3b8">cyan real Z; red sampled final-eligible composites; yellow level-permutation controls; dashed y=0 random sign line</text>
+<text x="761.6" y="72" fill="#e2e8f0" font-size="14" font-weight="700">Function-field real alignment / reducible range</text>
+<g><text x="761.6" y="110" fill="#a78bfa">F2 d19</text><rect x="841.6" y="98" width="0.00" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="110" fill="#cbd5e1">nan / red 0.032273..0.114039</text></g>
+<g><text x="761.6" y="138" fill="#a78bfa">F2 d20</text><rect x="841.6" y="126" width="0.00" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="138" fill="#cbd5e1">nan / red 0.019931..0.108150</text></g>
+<g><text x="761.6" y="166" fill="#a78bfa">F2 d21</text><rect x="841.6" y="154" width="27.57" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="166" fill="#cbd5e1">-0.038193 / red 0.016304..0.162551</text></g>
+<g><text x="761.6" y="194" fill="#a78bfa">F2 d22</text><rect x="841.6" y="182" width="0.00" height="10" fill="#a78bfa" opacity="0.75"/><text x="1041.6" y="194" fill="#cbd5e1">nan / red 0.020388..0.168297</text></g>
+<g><text x="761.6" y="222" fill="#34d399">F3 d10</text><rect x="841.6" y="210" width="46.85" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="222" fill="#cbd5e1">0.061317 / red 0.049928..0.066728</text></g>
+<g><text x="761.6" y="250" fill="#34d399">F3 d11</text><rect x="841.6" y="238" width="0.00" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="250" fill="#cbd5e1">nan / red 0.024219..0.049012</text></g>
+<g><text x="761.6" y="278" fill="#34d399">F3 d12</text><rect x="841.6" y="266" width="38.99" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="278" fill="#cbd5e1">0.020765 / red 0.038513..0.063802</text></g>
+<g><text x="761.6" y="306" fill="#34d399">F3 d13</text><rect x="841.6" y="294" width="0.00" height="10" fill="#34d399" opacity="0.75"/><text x="1041.6" y="306" fill="#cbd5e1">nan / red 0.015628..0.062473</text></g>
+</g>
+</svg>

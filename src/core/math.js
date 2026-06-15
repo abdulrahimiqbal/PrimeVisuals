@@ -30,6 +30,13 @@ export function mobiusUpTo(N) {
   return mu;
 }
 
+export function oddPartValue(n) {
+  let m = Math.abs(Math.round(n));
+  if (m < 1) return 0;
+  while (m % 2 === 0) m = Math.floor(m / 2);
+  return m;
+}
+
 function oddMobius(n) {
   let m = Math.max(1, Math.round(n));
   let mu = 1;
@@ -119,6 +126,16 @@ export function rowVisibleValue(n, y) {
   return 1;
 }
 
+export function thueMorseValue(n) {
+  let x = Math.max(0, Math.round(n)) >>> 0;
+  x ^= x >>> 16;
+  x ^= x >>> 8;
+  x ^= x >>> 4;
+  x &= 0xf;
+  const parity = (0x6996 >>> x) & 1;
+  return parity ? -1 : 1;
+}
+
 export function rowVisibilityTable(N, y = Math.floor(Math.sqrt(N))) {
   const nMax = Math.max(0, Math.round(N));
   const yy = Math.max(1, Math.min(nMax, Math.floor(y)));
@@ -167,6 +184,47 @@ function gcdInt(a, b) {
     y = t;
   }
   return x;
+}
+
+function totientValue(n) {
+  let m = Math.max(1, Math.round(n));
+  let out = m;
+  for (let p = 2; p * p <= m; p += p === 2 ? 1 : 2) {
+    if (m % p !== 0) continue;
+    out -= Math.floor(out / p);
+    while (m % p === 0) m = Math.floor(m / p);
+  }
+  if (m > 1) out -= Math.floor(out / m);
+  return out;
+}
+
+function modPowBigInt(base, exponent, modulus) {
+  if (modulus <= 1n) return 0n;
+  let b = base % modulus;
+  if (b < 0n) b += modulus;
+  let e = exponent;
+  let out = 1n;
+  while (e > 0n) {
+    if (e & 1n) out = (out * b) % modulus;
+    b = (b * b) % modulus;
+    e >>= 1n;
+  }
+  return out;
+}
+
+/* Euler quotient modulo n:
+   EQ_b(n)=((b^phi(n)-1)/n) mod n, computed from b^phi(n) mod n^2.
+   For prime n=p this is the Fermat quotient q_p(b) mod p. */
+export function eulerQuotientValue(n, base = 2, phiValue = 0) {
+  const m = Math.max(0, Math.round(n));
+  const b = Math.round(base);
+  if (m < 2 || !Number.isFinite(b) || gcdInt(b, m) !== 1) return NaN;
+  const phi = phiValue > 0 ? Math.round(phiValue) : totientValue(m);
+  const bigM = BigInt(m);
+  const residue = modPowBigInt(BigInt(b), BigInt(phi), bigM * bigM);
+  const shifted = residue - 1n;
+  if (shifted % bigM !== 0n) return NaN;
+  return Number((shifted / bigM) % bigM);
 }
 
 function basePowerValuation(n, base) {
@@ -351,17 +409,91 @@ export function integerLabTables(N) {
   const G2 = new Float64Array(N + 1);
   const l2 = new Float64Array(N + 1);
   const L2 = new Float64Array(N + 1);
+  const pmuprev = new Int32Array(N + 1);
+  const pmugapres = new Float64Array(N + 1);
+  const psqprevmean = new Float64Array(N + 1);
+  const sqtailgapcov = new Float64Array(N + 1);
+  const oprevgapcov = new Float64Array(N + 1);
+  const sqrtphaseres = new Float64Array(N + 1);
+  const muchowla1 = new Int32Array(N + 1);
+  const gapac1mean = new Float64Array(N + 1);
+  const gapz2mean = new Float64Array(N + 1);
+  const roughmiss = new Int32Array(N + 1);
+  const theta210res = new Float64Array(N + 1);
+  const tm = new Int8Array(N + 1);
+  const tmbal = new Int32Array(N + 1);
   const row = rowVisibilityTable(N);
   tau.fill(1); rad.fill(1);
   for (let i = 0; i <= N; i++) phi[i] = i;
-  let pc = 0, mc = 0, lastPrime = 0;
+  let pc = 0, mc = 0, pmc = 0, psqCount = 0, t210 = 0, tmPrimeBalance = 0, lastPrime = 0, chowla1 = 0;
+  let sqrtPhasePrime = 0, sqrtPhaseMain = 0;
   for (let i = 0; i <= N; i++) {
+    tm[i] = thueMorseValue(i);
+    if (i > 1) chowla1 += (mu[i - 1] || 0) * (mu[i] || 0);
+    muchowla1[i] = chowla1;
+    if (i > 2) {
+      const mid = i - 0.5;
+      sqrtPhaseMain += Math.cos(2 * Math.PI * Math.sqrt(mid)) / Math.log(mid);
+    }
     pc += isp[i]; pic[i] = pc;
     mc += mu[i] || 0; mertens[i] = mc;
+    if (isp[i]) {
+      pmc += mu[i - 1] || 0;
+      tmPrimeBalance += tm[i];
+      if ((mu[i - 1] || 0) !== 0) psqCount++;
+      sqrtPhasePrime += Math.cos(2 * Math.PI * Math.sqrt(i));
+    }
+    pmuprev[i] = pmc;
+    tmbal[i] = tmPrimeBalance;
+    psqprevmean[i] = pc ? psqCount / pc : 0;
+    sqrtphaseres[i] = sqrtPhasePrime - sqrtPhaseMain;
+    if (i >= 2 && gcdInt(i, 210) === 1) t210 += (isp[i] ? Math.log(i) : 0) - 210 / 48;
+    theta210res[i] = t210;
     if (isp[i]) {
       if (lastPrime) gap[lastPrime] = i - lastPrime;
       lastPrime = i;
     }
+  }
+  let roughMissCount = 0;
+  for (let i = 0; i <= N; i++) {
+    if (isp[i] && gap[i] > 0 && roughIntervalWitnesses(i, gap[i]).count === 0) roughMissCount++;
+    roughmiss[i] = roughMissCount;
+  }
+  let pmgr = 0;
+  for (let i = 0; i <= N; i++) {
+    if (isp[i] && gap[i] > 0) pmgr += (mu[i - 1] || 0) * (gap[i] - Math.log(i));
+    pmugapres[i] = pmgr;
+  }
+  let gapPairSum = 0, gapPairCount = 0, lastGapPairMean = 0;
+  let gapZ2Sum = 0, gapZ2Count = 0, lastGapZ2Mean = 0;
+  const smallSquareProduct = (1 - 1 / 2) * (1 - 1 / 6) * (1 - 1 / 20) * (1 - 1 / 42);
+  const tailSquarefreeExpectation = 0.373955838964 / smallSquareProduct;
+  let sqTailGapSum = 0, sqTailGapCount = 0, lastSqTailGapCov = 0;
+  for (let i = 0; i <= N; i++) {
+    if (isp[i] && gap[i] > 0) {
+      const z = gap[i] / Math.log(i) - 1;
+      const predecessor = i - 1;
+      const smallClean = predecessor % 4 !== 0 && predecessor % 9 !== 0 && predecessor % 25 !== 0 && predecessor % 49 !== 0;
+      if (smallClean) {
+        sqTailGapSum += (((mu[predecessor] || 0) !== 0 ? 1 : 0) - tailSquarefreeExpectation) * z;
+        sqTailGapCount++;
+        lastSqTailGapCov = sqTailGapSum / sqTailGapCount;
+      }
+      gapZ2Sum += z * z;
+      gapZ2Count++;
+      lastGapZ2Mean = gapZ2Sum / gapZ2Count;
+      const q = i + gap[i];
+      if (q <= N && gap[q] > 0) {
+        const z0 = z;
+        const z1 = gap[q] / Math.log(q) - 1;
+        gapPairSum += z0 * z1;
+        gapPairCount++;
+        lastGapPairMean = gapPairSum / gapPairCount;
+      }
+    }
+    sqtailgapcov[i] = lastSqTailGapCov;
+    gapz2mean[i] = lastGapZ2Mean;
+    gapac1mean[i] = lastGapPairMean;
   }
   for (let p = 2; p <= N; p++) if (isp[p]) {
     for (let j = p; j <= N; j += p) {
@@ -371,6 +503,17 @@ export function integerLabTables(N) {
       let q = j;
       while (q % p === 0) { bigomega[j]++; q = Math.floor(q / p); }
     }
+  }
+  let oprevGapSum = 0, oprevGapCount = 0, lastOprevGapCov = 0;
+  for (let i = 0; i <= N; i++) {
+    if (i >= 3 && isp[i] && gap[i] > 0) {
+      const centeredOmega = omega[i - 1] - Math.log(Math.log(i));
+      const centeredGap = gap[i] / Math.log(i) - 1;
+      oprevGapSum += centeredOmega * centeredGap;
+      oprevGapCount++;
+      lastOprevGapCov = oprevGapSum / oprevGapCount;
+    }
+    oprevgapcov[i] = lastOprevGapCov;
   }
   for (let i = 1; i <= N; i++) {
     fareynew[i] = phi[i];
@@ -402,7 +545,7 @@ export function integerLabTables(N) {
     L2[i] = L2[i - 1] + ls;
   }
   return {
-    isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2,
+    isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2, pmuprev, pmugapres, psqprevmean, sqtailgapcov, oprevgapcov, sqrtphaseres, muchowla1, gapac1mean, gapz2mean, roughmiss, theta210res, tm, tmbal,
     rowY: row.y, rowvis: row.visible, rowcount: row.count, rowgap: row.gap, rowrun: row.run,
   };
 }

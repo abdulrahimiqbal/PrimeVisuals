@@ -7,12 +7,15 @@ import {
   zetaHalf,
   zetaC,
   integerLabTables,
+  oddPartValue,
   dyadicExpMobiusValue,
   dyadicExpMangoldtValue,
   dyadicExpTransform,
   rowVisibleValue,
   rowVisibilityTable,
   roughIntervalWitnesses,
+  thueMorseValue,
+  eulerQuotientValue,
   fareyBaseDivisorSurplusTable,
   boundedCfDenominatorTable,
   boundedCfMinHeightTable,
@@ -63,6 +66,22 @@ describe("mobiusUpTo", () => {
     let sum = 0;
     for (let i = 1; i <= 10000; i++) sum += mu[i];
     expect(sum).toBe(-23);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// oddPartValue
+// ---------------------------------------------------------------------------
+describe("oddPartValue", () => {
+  it("removes exactly the powers of 2 from hand-computed values", () => {
+    expect(oddPartValue(0)).toBe(0);
+    expect(oddPartValue(1)).toBe(1);
+    expect(oddPartValue(2)).toBe(1);
+    expect(oddPartValue(12)).toBe(3);
+    expect(oddPartValue(40)).toBe(5);
+    expect(oddPartValue(48)).toBe(3);
+    expect(oddPartValue(72)).toBe(9);
+    expect(oddPartValue(105)).toBe(105);
   });
 });
 
@@ -149,6 +168,20 @@ describe("integerLabTables(100)", () => {
   it("pic[100] = 25", () => expect(tab.pic[100]).toBe(25));
   it("gap[7] = 4 (next prime after 7 is 11)", () => expect(tab.gap[7]).toBe(4));
   it("mertens[100] = 1", () => expect(tab.mertens[100]).toBe(1));
+  it("computes Thue-Morse signs and prime balance", () => {
+    const signs = Array.from({ length: 16 }, (_, n) => thueMorseValue(n));
+    expect(signs).toEqual([1, -1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1]);
+    expect(Array.from(tab.tm.slice(0, 16))).toEqual(signs);
+    expect(tab.tmbal[1]).toBe(0);
+    expect(tab.tmbal[2]).toBe(-1);
+    expect(tab.tmbal[3]).toBe(0);
+    expect(tab.tmbal[5]).toBe(1);
+    expect(tab.tmbal[7]).toBe(0);
+    expect(tab.tmbal[11]).toBe(-1);
+    expect(tab.tmbal[13]).toBe(-2);
+    expect(tab.tmbal[17]).toBe(-1);
+    expect(tab.tmbal[20]).toBe(-2);
+  });
   it("g2[12] = 1/2 and G2[12] is the cumulative sum", () => {
     expect(tab.g2[12]).toBeCloseTo(0.5, 14);
     let sum = 0;
@@ -222,6 +255,32 @@ describe("row visibility", () => {
     expect(roughIntervalWitnesses(3, 2)).toEqual({ count: 1, firstOffset: 1 });
     expect(roughIntervalWitnesses(7, 4)).toEqual({ count: 0, firstOffset: 0 });
     expect(roughIntervalWitnesses(47, 6)).toEqual({ count: 1, firstOffset: 2 });
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Euler quotient
+// ---------------------------------------------------------------------------
+describe("Euler quotient", () => {
+  it("matches hand-computed Fermat quotients for small primes at base 2", () => {
+    expect(eulerQuotientValue(3, 2)).toBe(1);   // (2^2-1)/3 = 1
+    expect(eulerQuotientValue(5, 2)).toBe(3);   // (2^4-1)/5 = 3
+    expect(eulerQuotientValue(7, 2)).toBe(2);   // (2^6-1)/7 = 9 == 2 mod 7
+    expect(eulerQuotientValue(11, 2)).toBe(5);  // (2^10-1)/11 = 93 == 5 mod 11
+    expect(eulerQuotientValue(13, 2)).toBe(3);  // (2^12-1)/13 = 315 == 3 mod 13
+  });
+
+  it("matches hand-computed composite Euler quotients", () => {
+    expect(eulerQuotientValue(9, 2)).toBe(7);   // (2^6-1)/9 = 7
+    expect(eulerQuotientValue(15, 2)).toBe(2);  // (2^8-1)/15 = 17 == 2 mod 15
+    expect(eulerQuotientValue(25, 2)).toBe(18);
+    expect(eulerQuotientValue(35, 2)).toBe(24);
+    expect(eulerQuotientValue(77, 2)).toBe(75);
+  });
+
+  it("returns NaN when the base is not coprime to n", () => {
+    expect(Number.isNaN(eulerQuotientValue(8, 2))).toBe(true);
+    expect(Number.isNaN(eulerQuotientValue(21, 3))).toBe(true);
   });
 });
 

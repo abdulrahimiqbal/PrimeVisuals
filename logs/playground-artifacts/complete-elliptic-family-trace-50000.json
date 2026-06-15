@@ -1,0 +1,637 @@
+{
+  "candidate": "complete elliptic family trace main line",
+  "generatedAt": "2026-06-15T13:28:39.722Z",
+  "N": 50000,
+  "endpoints": [
+    3125,
+    6250,
+    12500,
+    25000,
+    50000
+  ],
+  "score": {
+    "endpointRows": [
+      {
+        "N": 3125,
+        "primes": 443,
+        "sumNormalized": -443.69147691161606,
+        "rawZ": -21.08041823936973,
+        "sumExactMain": -443.69147691161606,
+        "sumNaiveMain": -443.6646800367364,
+        "sumCorrection": -0.026796874879530645,
+        "residual": 0,
+        "residualZ": 0,
+        "maxAbsResidual": 0,
+        "maxAbsResidualZ": 0,
+        "maxAbsRawZ": 21.08041823936973
+      },
+      {
+        "N": 6250,
+        "primes": 810,
+        "sumNormalized": -810.7291813414561,
+        "rawZ": -28.48611976225206,
+        "sumExactMain": -810.7291813414561,
+        "sumNaiveMain": -810.7057581017037,
+        "sumCorrection": -0.02342323975150988,
+        "residual": 0,
+        "residualZ": 0,
+        "maxAbsResidual": 0,
+        "maxAbsResidualZ": 0,
+        "maxAbsRawZ": 28.48611976225206
+      },
+      {
+        "N": 12500,
+        "primes": 1490,
+        "sumNormalized": -1490.7660780079311,
+        "rawZ": -38.62036444535507,
+        "sumExactMain": -1490.7660780079311,
+        "sumNaiveMain": -1490.742847257697,
+        "sumCorrection": -0.02323075023235737,
+        "residual": 0,
+        "residualZ": 0,
+        "maxAbsResidual": 0,
+        "maxAbsResidualZ": 0,
+        "maxAbsRawZ": 38.62036444535507
+      },
+      {
+        "N": 25000,
+        "primes": 2760,
+        "sumNormalized": -2760.7977039764887,
+        "rawZ": -52.5508861819467,
+        "sumExactMain": -2760.7977039764887,
+        "sumNaiveMain": -2760.778217266775,
+        "sumCorrection": -0.01948670971240913,
+        "residual": 0,
+        "residualZ": 0,
+        "maxAbsResidual": 0,
+        "maxAbsResidualZ": 0,
+        "maxAbsRawZ": 52.5508861819467
+      },
+      {
+        "N": 50000,
+        "primes": 5131,
+        "sumNormalized": -5131.831286887695,
+        "rawZ": -71.64260400386335,
+        "sumExactMain": -5131.831286887695,
+        "sumNaiveMain": -5131.811270973459,
+        "sumCorrection": -0.020015914234179758,
+        "residual": 0,
+        "residualZ": 0,
+        "maxAbsResidual": 0,
+        "maxAbsResidualZ": 0,
+        "maxAbsRawZ": 71.64260400386335
+      }
+    ],
+    "singularHistogram": {
+      "0": 1705,
+      "1": 2575,
+      "3": 851
+    }
+  },
+  "validation": [
+    {
+      "p": 5,
+      "singularCount": 1,
+      "formulaGood": -6,
+      "bruteGood": -6,
+      "goodCount": 4,
+      "bruteGoodCount": 4,
+      "ok": true
+    },
+    {
+      "p": 7,
+      "singularCount": 0,
+      "formulaGood": -7,
+      "bruteGood": -7,
+      "goodCount": 7,
+      "bruteGoodCount": 7,
+      "ok": true
+    },
+    {
+      "p": 11,
+      "singularCount": 1,
+      "formulaGood": -10,
+      "bruteGood": -10,
+      "goodCount": 10,
+      "bruteGoodCount": 10,
+      "ok": true
+    },
+    {
+      "p": 13,
+      "singularCount": 0,
+      "formulaGood": -13,
+      "bruteGood": -13,
+      "goodCount": 13,
+      "bruteGoodCount": 13,
+      "ok": true
+    },
+    {
+      "p": 17,
+      "singularCount": 1,
+      "formulaGood": -16,
+      "bruteGood": -16,
+      "goodCount": 16,
+      "bruteGoodCount": 16,
+      "ok": true
+    },
+    {
+      "p": 19,
+      "singularCount": 0,
+      "formulaGood": -19,
+      "bruteGood": -19,
+      "goodCount": 19,
+      "bruteGoodCount": 19,
+      "ok": true
+    },
+    {
+      "p": 23,
+      "singularCount": 1,
+      "formulaGood": -24,
+      "bruteGood": -24,
+      "goodCount": 22,
+      "bruteGoodCount": 22,
+      "ok": true
+    },
+    {
+      "p": 29,
+      "singularCount": 1,
+      "formulaGood": -30,
+      "bruteGood": -30,
+      "goodCount": 28,
+      "bruteGoodCount": 28,
+      "ok": true
+    },
+    {
+      "p": 31,
+      "singularCount": 3,
+      "formulaGood": -28,
+      "bruteGood": -28,
+      "goodCount": 28,
+      "bruteGoodCount": 28,
+      "ok": true
+    },
+    {
+      "p": 37,
+      "singularCount": 0,
+      "formulaGood": -37,
+      "bruteGood": -37,
+      "goodCount": 37,
+      "bruteGoodCount": 37,
+      "ok": true
+    },
+    {
+      "p": 41,
+      "singularCount": 1,
+      "formulaGood": -40,
+      "bruteGood": -40,
+      "goodCount": 40,
+      "bruteGoodCount": 40,
+      "ok": true
+    },
+    {
+      "p": 43,
+      "singularCount": 3,
+      "formulaGood": -46,
+      "bruteGood": -46,
+      "goodCount": 40,
+      "bruteGoodCount": 40,
+      "ok": true
+    },
+    {
+      "p": 47,
+      "singularCount": 1,
+      "formulaGood": -48,
+      "bruteGood": -48,
+      "goodCount": 46,
+      "bruteGoodCount": 46,
+      "ok": true
+    },
+    {
+      "p": 53,
+      "singularCount": 1,
+      "formulaGood": -54,
+      "bruteGood": -54,
+      "goodCount": 52,
+      "bruteGoodCount": 52,
+      "ok": true
+    },
+    {
+      "p": 59,
+      "singularCount": 1,
+      "formulaGood": -58,
+      "bruteGood": -58,
+      "goodCount": 58,
+      "bruteGoodCount": 58,
+      "ok": true
+    },
+    {
+      "p": 61,
+      "singularCount": 0,
+      "formulaGood": -61,
+      "bruteGood": -61,
+      "goodCount": 61,
+      "bruteGoodCount": 61,
+      "ok": true
+    },
+    {
+      "p": 67,
+      "singularCount": 0,
+      "formulaGood": -67,
+      "bruteGood": -67,
+      "goodCount": 67,
+      "bruteGoodCount": 67,
+      "ok": true
+    },
+    {
+      "p": 71,
+      "singularCount": 1,
+      "formulaGood": -72,
+      "bruteGood": -72,
+      "goodCount": 70,
+      "bruteGoodCount": 70,
+      "ok": true
+    },
+    {
+      "p": 73,
+      "singularCount": 0,
+      "formulaGood": -73,
+      "bruteGood": -73,
+      "goodCount": 73,
+      "bruteGoodCount": 73,
+      "ok": true
+    },
+    {
+      "p": 79,
+      "singularCount": 0,
+      "formulaGood": -79,
+      "bruteGood": -79,
+      "goodCount": 79,
+      "bruteGoodCount": 79,
+      "ok": true
+    },
+    {
+      "p": 83,
+      "singularCount": 1,
+      "formulaGood": -82,
+      "bruteGood": -82,
+      "goodCount": 82,
+      "bruteGoodCount": 82,
+      "ok": true
+    },
+    {
+      "p": 89,
+      "singularCount": 1,
+      "formulaGood": -88,
+      "bruteGood": -88,
+      "goodCount": 88,
+      "bruteGoodCount": 88,
+      "ok": true
+    },
+    {
+      "p": 97,
+      "singularCount": 0,
+      "formulaGood": -97,
+      "bruteGood": -97,
+      "goodCount": 97,
+      "bruteGoodCount": 97,
+      "ok": true
+    }
+  ],
+  "namedComposites": [
+    {
+      "n": 25,
+      "primeField": false,
+      "reason": "complete parameter family E_a/F_p is only defined over a prime field in this audit"
+    },
+    {
+      "n": 35,
+      "primeField": false,
+      "reason": "complete parameter family E_a/F_p is only defined over a prime field in this audit"
+    },
+    {
+      "n": 77,
+      "primeField": false,
+      "reason": "complete parameter family E_a/F_p is only defined over a prime field in this audit"
+    },
+    {
+      "n": 289,
+      "primeField": false,
+      "reason": "complete parameter family E_a/F_p is only defined over a prime field in this audit"
+    }
+  ],
+  "sampleRows": [
+    {
+      "p": 5,
+      "singular": [
+        3
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -5,
+      "goodCount": 4,
+      "goodTraceSum": -6,
+      "normalized": -1.3416407864998738,
+      "naiveMain": -1.118033988749895,
+      "singularCorrection": -0.22360679774997896,
+      "exactMain": -1.3416407864998738,
+      "residual": 0
+    },
+    {
+      "p": 7,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -7,
+      "goodCount": 7,
+      "goodTraceSum": -7,
+      "normalized": -0.9999999999999999,
+      "naiveMain": -0.9999999999999999,
+      "singularCorrection": 0,
+      "exactMain": -0.9999999999999999,
+      "residual": 0
+    },
+    {
+      "p": 11,
+      "singular": [
+        6
+      ],
+      "singularCount": 1,
+      "singularTraceSum": -1,
+      "allTraceSum": -11,
+      "goodCount": 10,
+      "goodTraceSum": -10,
+      "normalized": -0.9534625892455924,
+      "naiveMain": -1.0488088481701516,
+      "singularCorrection": 0.09534625892455924,
+      "exactMain": -0.9534625892455924,
+      "residual": 0
+    },
+    {
+      "p": 13,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -13,
+      "goodCount": 13,
+      "goodTraceSum": -13,
+      "normalized": -1.0000000000000002,
+      "naiveMain": -1.0000000000000002,
+      "singularCorrection": 0,
+      "exactMain": -1.0000000000000002,
+      "residual": 0
+    },
+    {
+      "p": 17,
+      "singular": [
+        5
+      ],
+      "singularCount": 1,
+      "singularTraceSum": -1,
+      "allTraceSum": -17,
+      "goodCount": 16,
+      "goodTraceSum": -16,
+      "normalized": -0.9701425001453319,
+      "naiveMain": -1.0307764064044151,
+      "singularCorrection": 0.06063390625908324,
+      "exactMain": -0.9701425001453319,
+      "residual": 0
+    },
+    {
+      "p": 19,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -19,
+      "goodCount": 19,
+      "goodTraceSum": -19,
+      "normalized": -0.9999999999999998,
+      "naiveMain": -0.9999999999999998,
+      "singularCorrection": 0,
+      "exactMain": -0.9999999999999998,
+      "residual": 0
+    },
+    {
+      "p": 23,
+      "singular": [
+        22
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -23,
+      "goodCount": 22,
+      "goodTraceSum": -24,
+      "normalized": -1.0669301387385288,
+      "naiveMain": -1.0224747162910903,
+      "singularCorrection": -0.044455422447438706,
+      "exactMain": -1.0669301387385288,
+      "residual": 0
+    },
+    {
+      "p": 29,
+      "singular": [
+        19
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -29,
+      "goodCount": 28,
+      "goodTraceSum": -30,
+      "normalized": -1.0527936095153947,
+      "naiveMain": -1.0177004891982149,
+      "singularCorrection": -0.03509312031717982,
+      "exactMain": -1.0527936095153947,
+      "residual": 0
+    },
+    {
+      "p": 31,
+      "singular": [
+        1,
+        5,
+        25
+      ],
+      "singularCount": 3,
+      "singularTraceSum": -3,
+      "allTraceSum": -31,
+      "goodCount": 28,
+      "goodTraceSum": -28,
+      "normalized": -0.9503819266229829,
+      "naiveMain": -1.0522085616183026,
+      "singularCorrection": 0.1018266349953196,
+      "exactMain": -0.9503819266229829,
+      "residual": 0
+    },
+    {
+      "p": 37,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -37,
+      "goodCount": 37,
+      "goodTraceSum": -37,
+      "normalized": -1.0000000000000002,
+      "naiveMain": -1.0000000000000002,
+      "singularCorrection": 0,
+      "exactMain": -1.0000000000000002,
+      "residual": 0
+    },
+    {
+      "p": 41,
+      "singular": [
+        13
+      ],
+      "singularCount": 1,
+      "singularTraceSum": -1,
+      "allTraceSum": -41,
+      "goodCount": 40,
+      "goodTraceSum": -40,
+      "normalized": -0.9877295966495896,
+      "naiveMain": -1.0124228365658294,
+      "singularCorrection": 0.02469323991623974,
+      "exactMain": -0.9877295966495896,
+      "residual": 0
+    },
+    {
+      "p": 43,
+      "singular": [
+        13,
+        35,
+        38
+      ],
+      "singularCount": 3,
+      "singularTraceSum": 3,
+      "allTraceSum": -43,
+      "goodCount": 40,
+      "goodTraceSum": -46,
+      "normalized": -1.1091584909919479,
+      "naiveMain": -1.0368220676663862,
+      "singularCorrection": -0.07233642332556182,
+      "exactMain": -1.1091584909919479,
+      "residual": 0
+    },
+    {
+      "p": 47,
+      "singular": [
+        39
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -47,
+      "goodCount": 46,
+      "goodTraceSum": -48,
+      "normalized": -1.0323177446864167,
+      "naiveMain": -1.0108111250054497,
+      "singularCorrection": -0.021506619680967013,
+      "exactMain": -1.0323177446864167,
+      "residual": 0
+    },
+    {
+      "p": 53,
+      "singular": [
+        26
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -53,
+      "goodCount": 52,
+      "goodTraceSum": -54,
+      "normalized": -1.0286180789752701,
+      "naiveMain": -1.0095695960312838,
+      "singularCorrection": -0.019048482943986485,
+      "exactMain": -1.0286180789752701,
+      "residual": 0
+    },
+    {
+      "p": 59,
+      "singular": [
+        2
+      ],
+      "singularCount": 1,
+      "singularTraceSum": -1,
+      "allTraceSum": -59,
+      "goodCount": 58,
+      "goodTraceSum": -58,
+      "normalized": -0.9914892069294688,
+      "naiveMain": -1.0085838484282528,
+      "singularCorrection": 0.017094641498783945,
+      "exactMain": -0.9914892069294688,
+      "residual": 0
+    },
+    {
+      "p": 61,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -61,
+      "goodCount": 61,
+      "goodTraceSum": -61,
+      "normalized": -1.0000000000000002,
+      "naiveMain": -1.0000000000000002,
+      "singularCorrection": 0,
+      "exactMain": -1.0000000000000002,
+      "residual": 0
+    },
+    {
+      "p": 67,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -67,
+      "goodCount": 67,
+      "goodTraceSum": -67,
+      "normalized": -1,
+      "naiveMain": -1,
+      "singularCorrection": 0,
+      "exactMain": -1,
+      "residual": 0
+    },
+    {
+      "p": 71,
+      "singular": [
+        33
+      ],
+      "singularCount": 1,
+      "singularTraceSum": 1,
+      "allTraceSum": -71,
+      "goodCount": 70,
+      "goodTraceSum": -72,
+      "normalized": -1.0213022814527555,
+      "naiveMain": -1.0071175275436894,
+      "singularCorrection": -0.01418475390906605,
+      "exactMain": -1.0213022814527555,
+      "residual": 0
+    },
+    {
+      "p": 73,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -73,
+      "goodCount": 73,
+      "goodTraceSum": -73,
+      "normalized": -1.0000000000000002,
+      "naiveMain": -1.0000000000000002,
+      "singularCorrection": 0,
+      "exactMain": -1.0000000000000002,
+      "residual": 0
+    },
+    {
+      "p": 79,
+      "singular": [],
+      "singularCount": 0,
+      "singularTraceSum": 0,
+      "allTraceSum": -79,
+      "goodCount": 79,
+      "goodTraceSum": -79,
+      "normalized": -1,
+      "naiveMain": -1,
+      "singularCorrection": 0,
+      "exactMain": -1,
+      "residual": 0
+    }
+  ],
+  "paths": {
+    "json": "logs/playground-artifacts/complete-elliptic-family-trace-50000.json",
+    "md": "logs/playground-artifacts/complete-elliptic-family-trace-50000.md",
+    "svg": "logs/playground-artifacts/complete-elliptic-family-trace-50000.svg"
+  }
+}

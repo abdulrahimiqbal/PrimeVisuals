@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580">
+<rect width="100%" height="100%" fill="#070b14"/>
+<line x1="60" x2="980" y1="290" y2="290" stroke="#64748b" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M 60.00 324.15 L 290.00 327.26 L 520.00 370.88 L 750.00 344.06 L 980.00 310.82" fill="none" stroke="#7dd3fc" stroke-width="3" />
+<path d="M 60.00 183.84 L 290.00 151.60 L 520.00 207.82 L 750.00 279.15 L 980.00 184.01" fill="none" stroke="#fbbf24" stroke-width="1.4" />
+<path d="M 60.00 310.82 L 290.00 356.39 L 520.00 336.09 L 750.00 356.16 L 980.00 324.60" fill="none" stroke="#f472b6" stroke-width="1.4" />
+<path d="M 60.00 278.01 L 290.00 307.10 L 520.00 226.64 L 750.00 404.85 L 980.00 448.73" fill="none" stroke="#a7f3d0" stroke-width="1.4" />
+<path d="M 60.00 324.15 L 290.00 308.12 L 520.00 368.23 L 750.00 283.45 L 980.00 263.50" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+<g font-family="Menlo, Consolas, monospace" font-size="12">
+<text x="60" y="24" fill="#7dd3fc">real-primes</text>
+<text x="60" y="42" fill="#fbbf24">cramer-seed-12345</text>
+<text x="60" y="60" fill="#f472b6">wheel-W210-seed-12345</text>
+<text x="60" y="78" fill="#a7f3d0">composite-W210-seed-12345</text>
+<text x="60" y="96" fill="#ffffff">real dyadic blocks</text>
+<text x="60" y="562" fill="#94a3b8">sqrt-phase residual / sqrt(labels), after midpoint density integral</text>
+</g>
+</svg>
