@@ -1,0 +1,548 @@
+[
+  {
+    "idx": 1,
+    "family": "lab-residual",
+    "out": "logs/shots/cycle6-01-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 30000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 2,
+    "family": "gaps-stack",
+    "out": "logs/shots/cycle6-02-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "abs",
+            "p": {}
+          },
+          {
+            "op": "cumsum",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9857,
+        "flat": 0.759,
+        "slope": 61.9,
+        "thetaY": 1.378,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.9196,
+        "flat": 0.771,
+        "thetaY": 1.061,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0.411,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 3,
+    "family": "gaps-stack",
+    "out": "logs/shots/cycle6-03-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "offset",
+            "p": {
+              "a": 289.764
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.7709,
+        "flat": 0.224,
+        "slope": 0.0021,
+        "thetaY": 0.207,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8553,
+        "flat": 0.604,
+        "thetaY": 0.405,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 4,
+    "family": "mu-walk-chip",
+    "out": "logs/shots/cycle6-04-mu-walk-chip.png",
+    "spec": {
+      "cfg": {
+        "source": "mobius",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "offset",
+            "p": {
+              "a": 206.275
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.0197,
+        "flat": 0.245,
+        "slope": 0.000124,
+        "thetaY": 0.02,
+        "thetaX": 1
+      },
+      "twin": {
+        "lin": 0.307,
+        "flat": 0.372,
+        "thetaY": 0.124,
+        "thetaX": 1
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 5,
+    "family": "gaps-stack",
+    "out": "logs/shots/cycle6-05-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "offset",
+            "p": {
+              "a": -803.595
+            }
+          },
+          {
+            "op": "offset",
+            "p": {
+              "a": 387.523
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.7709,
+        "flat": 1.1,
+        "slope": 0.0021,
+        "thetaY": -0.298,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8553,
+        "flat": 1.061,
+        "thetaY": 0.146,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 6,
+    "family": "lab-residual",
+    "out": "logs/shots/cycle6-06-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 40000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 7,
+    "family": "mu-walk-chip",
+    "out": "logs/shots/cycle6-07-mu-walk-chip.png",
+    "spec": {
+      "cfg": {
+        "source": "mobius",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "scale",
+            "p": {
+              "a": 9.185
+            }
+          },
+          {
+            "op": "offset",
+            "p": {
+              "a": 768.853
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.0197,
+        "flat": 0.582,
+        "slope": 0.00114,
+        "thetaY": 0.079,
+        "thetaX": 1
+      },
+      "twin": {
+        "lin": 0.307,
+        "flat": 0.691,
+        "thetaY": 0.256,
+        "thetaX": 1
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 8,
+    "family": "lab-residual",
+    "out": "logs/shots/cycle6-08-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 20000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 9,
+    "family": "gaps-stack",
+    "out": "logs/shots/cycle6-09-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "scale",
+            "p": {
+              "a": -6.608
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.7709,
+        "flat": 0.415,
+        "slope": -0.0139,
+        "thetaY": 0.478,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8553,
+        "flat": 0.869,
+        "thetaY": 0.712,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 10,
+    "family": "dyexp-compose",
+    "out": "logs/shots/cycle6-10-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 11,
+    "family": "mu-walk-chip",
+    "out": "logs/shots/cycle6-11-mu-walk-chip.png",
+    "spec": {
+      "cfg": {
+        "source": "mobius",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 20000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "norm",
+            "p": {}
+          },
+          {
+            "op": "mod",
+            "p": {
+              "a": 361
+            }
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.0173,
+        "flat": 1.063,
+        "slope": -0.00041,
+        "thetaY": -0.054,
+        "thetaX": 1
+      },
+      "twin": {
+        "lin": 0.3235,
+        "flat": 3.14,
+        "thetaY": -0.21,
+        "thetaX": 1
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 12,
+    "family": "lab-residual",
+    "out": "logs/shots/cycle6-12-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 30000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    }
+  },
+  {
+    "idx": 13,
+    "family": "mu-walk-chip",
+    "out": "logs/shots/cycle6-13-mu-walk-chip.png",
+    "spec": {
+      "cfg": {
+        "source": "mobius",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "abs",
+            "p": {}
+          },
+          {
+            "op": "abs",
+            "p": {}
+          },
+          {
+            "op": "cumsum",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9755,
+        "flat": 0.755,
+        "slope": 43.3,
+        "thetaY": 1.489,
+        "thetaX": 1
+      },
+      "twin": {
+        "lin": 0.9781,
+        "flat": 0.634,
+        "thetaY": 1.331,
+        "thetaX": 1
+      },
+      "holdoutR2": 0.375,
+      "persistent": true
+    }
+  }
+]

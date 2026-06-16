@@ -1,0 +1,742 @@
+[
+  {
+    "index": 1,
+    "family": "lab-residual",
+    "file": "logs/shots/cycle10-01-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 30000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6InByaW1lIiwiTiI6MzAwMDAsInRNYXgiOjYwLCJzTWF4IjoxLjYsImV4IjoibiIsImV5IjoibiAtIHBpKG4pKmxvZyhwaShuKSkiLCJlaCI6IiIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ"
+  },
+  {
+    "index": 2,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-02-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 20000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjoyMDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 3,
+    "family": "gaps-stack",
+    "file": "logs/shots/cycle10-03-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9027,
+        "flat": 0.385,
+        "slope": 0.00847,
+        "thetaY": 0.486,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.7787,
+        "flat": 0.717,
+        "thetaY": 0.086,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fSx7Im9wIjoiZHlleHAiLCJwIjp7fX1dfSwicmVzaWR1YWwiOmZhbHNlLCJ0d2luTW9kZSI6InJlYWwifQ"
+  },
+  {
+    "index": 4,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-04-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "primes",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "offset",
+            "p": {
+              "a": 110.14
+            }
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.6744,
+        "flat": 0.468,
+        "slope": -0.000306,
+        "thetaY": -0.225,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8687,
+        "flat": 0.251,
+        "thetaY": 0.025,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoicHJpbWVzIiwicGxhbmUiOiJ3YWxrIiwibGVucyI6Im1vbm8iLCJwIjp7Ik4iOjMwMDAwfX0sImNoaXBzIjp7IngiOltdLCJ5IjpbeyJvcCI6ImR5ZXhwIiwicCI6e319LHsib3AiOiJvZmZzZXQiLCJwIjp7ImEiOjExMC4xNH19XX0sInJlc2lkdWFsIjpmYWxzZSwidHdpbk1vZGUiOiJyZWFsIn0"
+  },
+  {
+    "index": 5,
+    "family": "lab-residual",
+    "file": "logs/shots/cycle10-05-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 20000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6InByaW1lIiwiTiI6MjAwMDAsInRNYXgiOjYwLCJzTWF4IjoxLjYsImV4IjoibiIsImV5IjoibiAtIHBpKG4pKmxvZyhwaShuKSkiLCJlaCI6IiIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ"
+  },
+  {
+    "index": 6,
+    "family": "gaps-stack",
+    "file": "logs/shots/cycle10-06-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "norm",
+            "p": {}
+          },
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "sqrt",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8303,
+        "flat": 0.223,
+        "slope": 0.00000324,
+        "thetaY": -0.005,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.7661,
+        "flat": 0.763,
+        "thetaY": -0.237,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJub3JtIiwicCI6e319LHsib3AiOiJkeWV4cCIsInAiOnt9fSx7Im9wIjoic3FydCIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 7,
+    "family": "lab-residual",
+    "file": "logs/shots/cycle10-07-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 20000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6InByaW1lIiwiTiI6MjAwMDAsInRNYXgiOjYwLCJzTWF4IjoxLjYsImV4IjoibiIsImV5IjoibiAtIHBpKG4pKmxvZyhwaShuKSkiLCJlaCI6IiIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ"
+  },
+  {
+    "index": 8,
+    "family": "lab-residual",
+    "file": "logs/shots/cycle10-08-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 30000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6InByaW1lIiwiTiI6MzAwMDAsInRNYXgiOjYwLCJzTWF4IjoxLjYsImV4IjoibiIsImV5IjoibiAtIHBpKG4pKmxvZyhwaShuKSkiLCJlaCI6IiIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ"
+  },
+  {
+    "index": 9,
+    "family": "lab-residual",
+    "file": "logs/shots/cycle10-09-lab-residual.png",
+    "spec": {
+      "domain": "prime",
+      "N": 20000,
+      "tMax": 60,
+      "ex": "",
+      "ey": "n - pi(n)*log(pi(n))",
+      "a": 0.5,
+      "b": 2.399
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9999,
+        "flat": 0.609,
+        "slope": 0.119,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 0.609,
+        "thetaY": 0.983,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.994,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoibGFiIiwibGFiIjp7ImRvbWFpbiI6InByaW1lIiwiTiI6MjAwMDAsInRNYXgiOjYwLCJzTWF4IjoxLjYsImV4IjoibiIsImV5IjoibiAtIHBpKG4pKmxvZyhwaShuKSkiLCJlaCI6IiIsImV3IjoicyIsImEiOjAuNSwiYiI6Mi4zOTl9fQ"
+  },
+  {
+    "index": 10,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-10-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "scale",
+            "p": {
+              "a": -8.595
+            }
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": -0.0364,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjozMDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fSx7Im9wIjoic2NhbGUiLCJwIjp7ImEiOi04LjU5NX19XX0sInJlc2lkdWFsIjpmYWxzZSwidHdpbk1vZGUiOiJyZWFsIn0"
+  },
+  {
+    "index": 11,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-11-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 12,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-12-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 13,
+    "family": "prime-walk-chip",
+    "file": "logs/shots/cycle10-13-prime-walk-chip.png",
+    "spec": {
+      "cfg": {
+        "source": "primes",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 20000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "offset",
+            "p": {
+              "a": -524.003
+            }
+          },
+          {
+            "op": "mod",
+            "p": {
+              "a": 138
+            }
+          },
+          {
+            "op": "diff",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0,
+        "flat": 4.645,
+        "slope": 2.46e-8,
+        "thetaY": 0.273,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0,
+        "flat": 5.384,
+        "thetaY": -0.136,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoicHJpbWVzIiwicGxhbmUiOiJ3YWxrIiwibGVucyI6Im1vbm8iLCJwIjp7Ik4iOjIwMDAwfX0sImNoaXBzIjp7IngiOltdLCJ5IjpbeyJvcCI6Im9mZnNldCIsInAiOnsiYSI6LTUyNC4wMDN9fSx7Im9wIjoibW9kIiwicCI6eyJhIjoxMzh9fSx7Im9wIjoiZGlmZiIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 14,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-14-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8806,
+        "flat": 0.903,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 15,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-15-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 30000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "dyexp",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9027,
+        "flat": 0.385,
+        "slope": 0.00847,
+        "thetaY": 0.486,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.7787,
+        "flat": 0.717,
+        "thetaY": 0.086,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjozMDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fSx7Im9wIjoiZHlleHAiLCJwIjp7fX1dfSwicmVzaWR1YWwiOmZhbHNlLCJ0d2luTW9kZSI6InJlYWwifQ"
+  },
+  {
+    "index": 16,
+    "family": "gaps-stack",
+    "file": "logs/shots/cycle10-16-gaps-stack.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 20000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "cumsum",
+            "p": {}
+          },
+          {
+            "op": "norm",
+            "p": {}
+          },
+          {
+            "op": "symlog",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.9982,
+        "flat": 0.685,
+        "slope": 0.00000361,
+        "thetaY": -0.005,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8699,
+        "flat": 1.064,
+        "thetaY": -0.119,
+        "thetaX": 1.004
+      },
+      "holdoutR2": 0.921,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjoyMDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJjdW1zdW0iLCJwIjp7fX0seyJvcCI6Im5vcm0iLCJwIjp7fX0seyJvcCI6InN5bWxvZyIsInAiOnt9fV19LCJyZXNpZHVhbCI6ZmFsc2UsInR3aW5Nb2RlIjoicmVhbCJ9"
+  },
+  {
+    "index": 17,
+    "family": "dyexp-compose",
+    "file": "logs/shots/cycle10-17-dyexp-compose.png",
+    "spec": {
+      "cfg": {
+        "source": "gaps",
+        "plane": "walk",
+        "lens": "mono",
+        "p": {
+          "N": 40000
+        }
+      },
+      "chips": {
+        "x": [],
+        "y": [
+          {
+            "op": "dyexp",
+            "p": {}
+          },
+          {
+            "op": "abs",
+            "p": {}
+          }
+        ]
+      },
+      "residual": false,
+      "twinMode": "real"
+    },
+    "metrics": {
+      "real": {
+        "lin": 0.8838,
+        "flat": 0.388,
+        "slope": 0.00423,
+        "thetaY": 0.483,
+        "thetaX": 1.004
+      },
+      "twin": {
+        "lin": 0.8952,
+        "flat": 0.688,
+        "thetaY": 0.355,
+        "thetaX": 1.003
+      },
+      "holdoutR2": 0,
+      "persistent": true
+    },
+    "url": "http://localhost:5173/#v=eyJtb2RlIjoicGF0Y2giLCJjZmciOnsic291cmNlIjoiZ2FwcyIsInBsYW5lIjoid2FsayIsImxlbnMiOiJtb25vIiwicCI6eyJOIjo0MDAwMH19LCJjaGlwcyI6eyJ4IjpbXSwieSI6W3sib3AiOiJkeWV4cCIsInAiOnt9fSx7Im9wIjoiYWJzIiwicCI6e319XX0sInJlc2lkdWFsIjpmYWxzZSwidHdpbk1vZGUiOiJyZWFsIn0"
+  }
+]

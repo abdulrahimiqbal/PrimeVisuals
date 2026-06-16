@@ -4604,3 +4604,349 @@ brute-force mutation: PNT-linear prime-index coordinates, Mertens/Mobius
 postprocessing, dyadic transforms, and cumulative-gap telescopes. Future hunts
 should downweight bar-5-failed `dyexp-compose` promotions or require a
 non-telescoping residual statement before rewarding that family.
+
+Update, Cycle 4 after the order-sensitive-null reset:
+`100` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle4.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle4-annotated.jsonl`. Five specs
+mechanically cleared bars 2-4, but none survived bar 5. The promoted set was
+three `gaps:walk` dyadic transforms, one scaled cumulative-gap walk, and the
+prime-index PNT coordinate `domain:"prime", ey:"n - pi(n)*log(pi(n))"`.
+Screenshots are in `logs/shots/cycle4-*.png`, with contact sheet
+`logs/shots/cycle4-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The corrected gauntlet reduced invalid
+shuffle-null promotions, but still finds the same dead ends: cumulative-gap
+display transforms and prime-index PNT straightening. `logs/bias.md` now
+contains a survival-aware penalty lesson for `dyexp-compose`.
+
+CONNECTION: this confirms the previous no-survivor entry rather than changing
+the frontier. Future generator cycles need to make the bar-1 statement stricter
+before promotion: no cumulative gap or dyadic-smoothed gap walk should be
+treated as a live lead unless it states a non-telescoping residual with a real
+local/null subtraction.
+
+Additional Cycle 4b cross-domain check:
+`12` prime-fed LAB probes from p-adic, Hamiltonian/KAM, stat-mech, entropy,
+local-gap geometry, topology, spectral-graph, category-magnitude, and shell
+energy templates were scanned in
+`logs/2026-06-15-critical-line-hunt-crossdomain2.jsonl`. They used only
+allowed real/integer LAB formulas and produced `0` bars 2-4 promotions. The
+best linearity was `0.0156`, best flatness `0.307`, and all holdout scores
+were `0`.
+
+CONNECTION: this keeps the cross-domain branch active without reusing the
+retired registry probes. No new foreign object beat the gauntlet in this
+cycle; the live cross-domain lesson remains that a prime-fed construction must
+produce a non-telescoping residual before visual flatness or imported jargon is
+worth escalation.
+
+Update, Cycle 5 survival-aware scan:
+`120` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle5.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle5-annotated.jsonl`. Nine specs
+mechanically cleared bars 2-4, but none survived bar 5. The promoted set was
+five `dyexp-compose` postprocesses of prime/gap walks, three `gaps-stack`
+transforms of the cumulative centered-gap walk, and one `mu-walk-chip` Mertens
+display transform. Screenshots are in `logs/shots/cycle5-*.png`, with contact
+sheet `logs/shots/cycle5-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The only high-holdout promoted row was
+`gaps:walk` plus `symlog+symlog+cumsum`, which is an uncentered additive cost
+over the already logged Chebyshev/gap residual path rather than a
+non-telescoping cancellation law. The other promoted rows had holdout `0` or
+were duplicates of retired dyadic cumulative-gap buckets. `logs/bias.md` now
+contains an additional survival-aware penalty lesson for `dyexp-compose`.
+
+Additional Cycle 5b cross-domain check:
+`12` new prime-fed LAB probes from renormalized gap ratios, Binder-style
+cumulants, spectral/local graph energy, persistence lifetime, ergodic return
+maps, p-adic/local shells, least-action second differences, category magnitude,
+curvature, Hamiltonian two-angle energy, and ultrametric shell templates were
+scanned in `logs/2026-06-15-critical-line-hunt-crossdomain3.jsonl`. They
+produced `0` bars 2-4 promotions; best linearity was `0.0144`, best flatness
+`0.401`, and all holdout scores were `0`.
+
+CONNECTION: this confirms Cycle 4 rather than expanding the live frontier.
+Mechanical promotions are still dominated by display transforms of known
+Mertens/Chebyshev/gap walks. Cross-domain pointwise templates remained barren;
+future cycles should tighten bar-1 promotion criteria before rewarding any
+family whose apparent signal is just dyadic smoothing, uncentered cumulative
+cost, or holdout-free chip output.
+
+Update, Cycle 6 survival-aware scan:
+`140` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle6.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle6-annotated.jsonl`. Thirteen specs
+mechanically cleared bars 2-4, but none survived bar 5. The promoted set was
+four repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, four `gaps-stack` transforms of
+the cumulative centered-gap/Chebyshev path, four `mu-walk-chip` Mertens display
+or uncentered additive-cost transforms, and one repeated `dyexp-compose`
+cumulative-gap transform. Screenshots are in `logs/shots/cycle6-*.png`, with
+contact sheet `logs/shots/cycle6-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows had excellent holdout
+(`0.994`) but are known by `p_k ~ k log k`. The gap/Mertens rows either had
+holdout `0`, were uncentered additive costs, or were affine/modulo/dyadic
+display transforms of already logged summatory branches. `logs/bias.md` now
+contains a survival-aware penalty lesson for `lab-residual`.
+
+Additional Cycle 6b cross-domain check:
+`16` new prime-fed LAB probes from renormalization flow, Binder cumulants,
+local curvature, persistence lifetime, category magnitude, p-adic shells,
+ergodic return maps, Hamiltonian energy, spectral rough degree, least-action
+second differences, ultrametric depth, and rough-front free-energy templates
+were scanned in `logs/2026-06-15-critical-line-hunt-crossdomain4.jsonl`. They
+produced `0` bars 2-4 promotions; best linearity was `0.0284`, best flatness
+`0.065`, and all holdout scores were `0`.
+
+CONNECTION: this extends Cycles 4-5 without changing the frontier. The live
+generator now has three repeatedly penalized mechanical attractors:
+prime-index PNT straightening, cumulative-gap/Chebyshev chip stacks, and
+Mertens chip stacks. Cross-domain pointwise gap templates still do not create
+a non-telescoping residual, so future progress likely requires either a new
+source/plane object with its own null or a stricter pre-promotion filter.
+
+Update, Cycle 7 survival-aware scan:
+`160` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle7.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle7-annotated.jsonl`. Twelve specs
+mechanically cleared bars 2-4, but none survived bar 5. The promoted set was
+four repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, three dyadic transforms of the
+cumulative centered-gap/Chebyshev path, three prime-walk display chips, one
+absolute-value gap-walk display, and one Mertens modulo/norm chip. Screenshots
+are in `logs/shots/cycle7-*.png`, with contact sheet
+`logs/shots/cycle7-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The gap, Mertens, and
+prime-walk rows had holdout `0` or reduced to arbitrary display chips over
+already logged summatory branches. `logs/bias.md` now contains another
+survival-aware penalty lesson for `lab-residual`.
+
+Additional Cycle 7b targeted check:
+`24` residual/LAB probes from predecessor-weighted Mobius/gap residuals,
+squarefree/divisor covariance, centered gap second moments, rough-row
+visibility, Thue-Morse balance, local autocorrelation, and prime-row features
+were scanned in `logs/2026-06-15-critical-line-hunt-targeted7.jsonl`. They
+produced `0` bars 2-4 promotions. The closest misses were
+`target/roughmiss-centered` (`lin=0.9965`, holdout `0.453`) and
+`target/gap-z2-centered` (`flat=0.028`, holdout `0`).
+
+CONNECTION: this confirms the current frontier rather than expanding it:
+raw pointwise and chip-based displays continue to manufacture cheap lines or
+flatness, while the decisive holdout/twin/bar-5 checks retire them. Future
+progress should bias toward non-telescoping residuals with their own nulls,
+especially 2-D fronts or foreign-object constructions that define a real
+subtraction before visual scoring.
+
+Update, Cycle 8 survival-aware scan:
+`180` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle8.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle8-annotated.jsonl` and combined
+generator/targeted annotations in
+`logs/2026-06-15-critical-line-hunt-cycle8-combined-annotated.jsonl`.
+Thirteen generator specs mechanically cleared bars 2-4, but none survived bar
+5. The promoted set was six repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, four dyadic transforms of the
+cumulative centered-gap/Chebyshev path, two shifted/differenced gap-display
+variants, and one Mertens modulo/absolute chip. Screenshots are in
+`logs/shots/cycle8-*.png`, with contact sheet
+`logs/shots/cycle8-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The dyadic/gap/Mertens
+rows had holdout `0` and no non-telescoping residual statement.
+`logs/bias.md` now contains a further survival-aware penalty lesson for
+`lab-residual`; its weight is down to `0.62`, while `dyexp-compose` is down to
+`0.61`.
+
+Additional Cycle 8b targeted check:
+`30` residual and foreign-object LAB probes were scanned in
+`logs/2026-06-15-critical-line-hunt-targeted8.jsonl`, with annotations in
+`logs/2026-06-15-critical-line-hunt-targeted8-annotated.jsonl`. One spec
+mechanically promoted:
+`target8/rowvis-free-energy`,
+`domain:"prime", ey:"(rowvis(n,a)-rowcount(n,a)/max(1,a))*sqrt(log(n))", a=30`,
+with `lin=0.9997` and holdout `0.975`.
+
+That targeted row is `KNOWN-MATH/ARTIFACT`, not a survivor. For primes
+`n>30`, `rowvis(n,30)=1`; meanwhile `rowcount(n,a)` resolves to the default
+row-visibility count table, which is the Legendre/Eratosthenes sieve
+prime-counting coordinate above the sieve threshold. The line is therefore a
+row-visibility/PNT display, not a new non-telescoping residual. The closest
+nonpromoted flatness repeat was `target8/gapz2-centered` (`flat=0.028`,
+holdout `0`), matching the prior centered gap-second-moment miss.
+
+CONNECTION: Cycle 8 connects the wildcard hunt to the earlier rough-row
+visibility `rowvis/rowgap` entry. Row visibility remains a useful finite
+lattice dictionary, but any straight line that mixes fixed local visibility
+with cumulative row counts must be treated as a Legendre/PNT counting disguise
+unless it first subtracts a local-shell null and states a residual law.
+
+Update, Cycle 9 survival-aware scan:
+`200` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle9.jsonl`, with survival annotations in
+`logs/2026-06-15-critical-line-hunt-cycle9-annotated.jsonl` and combined
+generator/custom annotations in
+`logs/2026-06-15-critical-line-hunt-cycle9-combined-annotated.jsonl`. Ten
+specs mechanically cleared bars 2-4, but none survived bar 5. The promoted
+set was three repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, four dyadic transforms of the
+cumulative centered-gap/Chebyshev or prime-race path, two affine/absolute
+gap-walk displays, and one arbitrary prime-walk modulo flatness display.
+Screenshots are in `logs/shots/cycle9-*.png`, with contact sheet
+`logs/shots/cycle9-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The dyadic/gap/prime-walk
+rows had holdout `0` or no non-telescoping residual statement. The learning
+loop penalized `dyexp-compose`; current weights include
+`dyexp-compose=0.59` and `lab-residual=0.59`.
+
+Additional Cycle 9b standalone residual-walk screen:
+`6` event-score walks were tested through `N=25000,50000,100000,200000` with
+Cramer twins and a shuffled-order diagnostic in
+`logs/2026-06-15-critical-line-hunt-custom9.jsonl`: predecessor-Mobius centered
+gap, Mobius-edge gap product, gap second difference, local gap energy,
+parity-modulated gap energy, and rough-first-offset residual. They produced
+`0` bars 2-4 promotions. Apparent exponent gaps were unstable across the
+ladder or comparable to null/shuffle variance.
+
+CONNECTION: Cycle 9 confirms the current frontier rather than expanding it:
+cheap visual straightness still comes from prime-index PNT and
+Chebyshev/gap/Mertens-style summatory displays. Future candidates should start
+from a locally centered, non-telescoping residual with a matched Cramer/null
+before any line, flatness, or exponent is scored.
+
+Update, Cycle 10 survival-aware scan:
+`220` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle10.jsonl`, with survival annotations
+in `logs/2026-06-15-critical-line-hunt-cycle10-annotated.jsonl` and combined
+generator/cross-domain annotations in
+`logs/2026-06-15-critical-line-hunt-cycle10-combined-annotated.jsonl`.
+Seventeen specs mechanically cleared bars 2-4, but none survived bar 5. The
+promoted set was five repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, eight dyadic transforms of the
+cumulative centered-gap/Chebyshev or prime-race path, three gap-walk display
+transforms, and one arbitrary prime-walk modulo/difference display. Screenshots
+are in `logs/shots/cycle10-*.png`, with contact sheet
+`logs/shots/cycle10-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The dyadic/gap/prime-walk
+rows had holdout `0` or no non-telescoping residual statement; the best
+gap-stack display had `lin=0.9982`, below the required `0.999`, with holdout
+`0.921` and no cancellation statement. The learning loop again penalized
+`dyexp-compose`; current weights include `dyexp-compose=0.50`,
+`lab-residual=0.54`, and `gaps-stack=0.71`.
+
+Additional Cycle 10b cross-domain residual screen:
+`7` foreign-object event-score walks were tested through
+`N=25000,50000,100000,200000` with five Cramer twins and a shuffled-order
+diagnostic in `logs/2026-06-15-critical-line-hunt-crossdomain10.jsonl`:
+stat-mech Ising gap energy, KAM/Lyapunov gap map, spectral transition front
+modulo `30`, topology gap lifetime, category gap magnitude, p-adic shell flow,
+and Hamiltonian two-gap action. They produced `0` bars 2-4 promotions.
+Closest leads were `spectral-transition-front-q30` (`thetaY=0.2682`,
+`R2=0.9644`) and `category-gap-magnitude` (`thetaY=0.1528`, `R2=0.9847`), but
+Cramer/shuffle controls reproduced the scale closely enough to retire them
+before bar 5.
+
+CONNECTION: Cycle 10 keeps the foreign-object route alive but shows the same
+lesson as prior cross-domain probes: a stable exponent is not enough unless
+the matched null fails. The next useful mutation is a locally whitened
+transition/magnitude score trained on Cramer shells before cumulative scoring,
+rather than another raw visual transform.
+
+Update, Cycle 11 survival-aware scan:
+`240` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle11.jsonl`, with survival annotations
+in `logs/2026-06-15-critical-line-hunt-cycle11-annotated.jsonl` and combined
+generator/whitened-cross-domain annotations in
+`logs/2026-06-15-critical-line-hunt-cycle11-combined-annotated.jsonl`.
+Fourteen specs mechanically cleared bars 2-4, but none survived bar 5. The
+promoted set was four repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, four dyadic transforms of the
+cumulative centered-gap/Chebyshev path, two affine/absolute gap-walk displays,
+two arbitrary prime-walk chips, one Mertens modulo/norm chip, and one
+order-sensitive finite-polynomial `F_q[t]` `diff+cos` flatness display.
+Screenshots are in `logs/shots/cycle11-*.png`, with contact sheet
+`logs/shots/cycle11-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The dyadic/gap/Mertens and
+prime-walk rows had holdout `0` or reduced to arbitrary displays over already
+logged summatory branches. The `polyprime-stack` row had flatness `0.006`, but
+it was an order-sensitive finite-function-field display with no Cramer twin and
+no integer-prime non-telescoping residual statement. The learning loop
+penalized `lab-residual`; current weights include `dyexp-compose=0.49`,
+`lab-residual=0.54`, and `gaps-stack=0.71`.
+
+Additional Cycle 11b whitened cross-domain screen:
+`8` Cramer-whitened foreign-object residual walks were tested through
+`N=25000,50000,100000,200000` in
+`logs/2026-06-15-critical-line-hunt-whitened11.jsonl`: spectral transition
+modulo `30`, category-theory gap magnitude, hybrid spectrum/magnitude, and
+front curvature, each with an alternate centering. They produced `0` bars 2-4
+promotions. Several real exponents were visually stable, but shuffled prime
+order reproduced them: spectral transition `thetaY=0.9492` vs shuffle `0.952`,
+category magnitude `0.86` vs `0.8747`, hybrid spectrum/magnitude `0.9023` vs
+`0.904`, and front-curvature alternate `1.0328` vs `1.0053`.
+
+CONNECTION: Cycle 11 closes the locally whitened mutation proposed after Cycle
+10. Whitening against Cramer shells can make exponent fits extremely straight,
+but the surviving scale is still a distribution/order-insensitive artifact
+when the shuffle keeps it. The next cross-domain candidate must encode
+arithmetic adjacency or order-sensitive cancellation after centering, and then
+still beat both Cramer and shuffle controls.
+
+Update, Cycle 12 survival-aware scan:
+`260` additional generator specs were scanned in
+`logs/2026-06-15-critical-line-hunt-cycle12.jsonl`, with survival annotations
+in `logs/2026-06-15-critical-line-hunt-cycle12-annotated.jsonl` and combined
+generator/custom annotations in
+`logs/2026-06-15-critical-line-hunt-cycle12-combined-annotated.jsonl`.
+Twenty-five generator specs mechanically cleared bars 2-4, but none survived
+bar 5. The promoted set was eight repeats of the prime-index PNT coordinate
+`domain:"prime", ey:"n - pi(n)*log(pi(n))"`, nine dyadic transforms of the
+cumulative centered-gap/Chebyshev or prime-race path, four gap-walk display
+transforms, two arbitrary prime-walk chips, one Mertens uncentered additive
+cost, and one order-sensitive finite-polynomial `F_q[t]` `diff+cos` flatness
+display. Screenshots are in `logs/shots/cycle12-*.png`, with contact sheet
+`logs/shots/cycle12-contact-sheet.png`.
+
+STATUS remains `CLOSED-NO-SURVIVOR`. The PNT-index rows again had excellent
+holdout (`0.994`) but are known by `p_k ~ k log k`. The dyadic/gap/Mertens and
+prime-walk rows had holdout `0` or reduced to arbitrary displays over already
+logged summatory branches. The `polyprime-stack` row had flatness `0.014`, but
+it was an order-sensitive finite-function-field display with no Cramer twin and
+no integer-prime non-telescoping residual statement. The learning loop
+penalized `dyexp-compose`; current weights include `dyexp-compose=0.44`,
+`lab-residual=0.50`, `gaps-stack=0.67`, and `cross-domain=0.92`.
+
+Additional Cycle 12b order-adjacency cross-domain screen:
+`6` Cramer-centered consecutive normalized-gap event walks were tested through
+`N=25000,50000,100000,200000` in
+`logs/2026-06-15-critical-line-hunt-orderadj12.jsonl`: ergodic return rank
+curvature, topology turn lifetime, Hamiltonian gap action, KAM twist signed
+action, spectral Laplacian jerk, and ordinal extrema excess. One row
+mechanically promoted. `ergodic-return-rank-curvature` had real
+`thetaY=1.2368`, `R2=0.9938`, Cramer mean `thetaY=0.7760`, and shuffled real
+values `thetaY=0.7493`, so it was a real order-sensitive contrast.
+
+Bar 5 retires that row as `KNOWN-MATH/ARTIFACT`: it is an ordinal/rank form of
+adjacent normalized-gap anti-persistence, already logged via the ordinal
+normalized-gap extrema bridge, `gapac1mean`, and the Lemke
+Oliver-Soundararajan consecutive-residue transition layer. Other tested
+order-adjacency rows either failed decisiveness because shuffle reproduced the
+exponent, failed persistence, or stayed within Cramer variance.
+
+CONNECTION: Cycle 12 validates the proposed order-sensitive mutation while
+closing this specific route. To keep the order-adjacency branch alive, future
+statistics must first subtract the LO-S/residue-transition layer or combine
+gap order with a genuinely different arithmetic feature; otherwise Cramer and
+shuffle may be beaten while bar 5 still recognizes the known adjacent-gap
+anti-persistence funnel.
