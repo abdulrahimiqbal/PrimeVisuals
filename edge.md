@@ -55,6 +55,31 @@ sign pattern in `{±1}^k` has natural density exactly `1/2^k`. (`λ(n)=(−1)^Ω
 parity of Ω(n). Structure here is invisible to the field's main tool.
 **Synthesis / clue angles → see the section below.**
 
+#### Refined target — function-field-calibrated power-saving binary Chowla
+The decisive fact: **function fields have no parity barrier — geometry beats it.**
+The *same* binary correlation is **open over ℤ but PROVEN over `F_q[t]`** in the
+true (fixed q, degree→∞) regime:
+- Carmon–Rudnick 2014: `Σ_{deg f=n} λ(f)λ(f+h) = O(rn·q^{n-1/2})` — the large-q
+  (easy) direction.
+- **Sawin–Shusterman 2022 (Annals): Chowla + twin primes over `F_q[T]`, fixed q,
+  degree→∞** — the real analog of `N→∞`. Mechanism: λ mimics a quadratic Dirichlet
+  character on certain progressions; geometry gives level of distribution ≈ 1.
+
+Refined conjecture: for fixed `h`, `S(h,N)=Σ_{n≤N}λ(n)λ(n+h) ≪ N^{1−δ}` (conj.
+`δ=½`), and the normalized correlation depends on the **factorization type of h**,
+not h's additive size — matching the proven `F_q[t]` structure under the dictionary
+`N↔q^n`, `log N↔n`.
+
+The synthesis to chase — the **parity defect**
+`D(h,N) = [ℤ normalized corr] − [F_q[t] ground-truth structure]`, where the
+function-field side `A(h;q,n)=Σ_{deg f=n}λ(f)λ(f+h)` is a finite, exactly computable
+sum and (Sawin–Shusterman) the *proven* answer. `D` is by construction the
+**computable shadow of the parity obstruction**. Clue dichotomy: `D≈0` ⇒ parity is a
+proof-technique gap (evidence for `δ=½`); `D` with persistent h-structure surviving
+the twin ⇒ a new "parity anomaly" object — the real lead. Most likely outcome:
+`D≈noise` (ℤ indistinguishable from its proven function-field shadow) — a clean
+result, not a dead end. Tool already has `F_q` machinery (`polyprimes`).
+
 ### 3. Sarnak's Möbius disjointness
 `Σ_{n≤N} μ(n) f(n) = o(N)` for every f from a zero-entropy dynamical system.
 **Status:** many cases proven; general open. **Chowla ⟹ Sarnak.** **Clue:** the
