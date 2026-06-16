@@ -55,30 +55,52 @@ sign pattern in `{±1}^k` has natural density exactly `1/2^k`. (`λ(n)=(−1)^Ω
 parity of Ω(n). Structure here is invisible to the field's main tool.
 **Synthesis / clue angles → see the section below.**
 
-#### Refined target — function-field-calibrated power-saving binary Chowla
-The decisive fact: **function fields have no parity barrier — geometry beats it.**
-The *same* binary correlation is **open over ℤ but PROVEN over `F_q[t]`** in the
-true (fixed q, degree→∞) regime:
-- Carmon–Rudnick 2014: `Σ_{deg f=n} λ(f)λ(f+h) = O(rn·q^{n-1/2})` — the large-q
-  (easy) direction.
-- **Sawin–Shusterman 2022 (Annals): Chowla + twin primes over `F_q[T]`, fixed q,
-  degree→∞** — the real analog of `N→∞`. Mechanism: λ mimics a quadratic Dirichlet
-  character on certain progressions; geometry gives level of distribution ≈ 1.
+#### Corrected target (referee-checked 2026-06-16)
 
-Refined conjecture: for fixed `h`, `S(h,N)=Σ_{n≤N}λ(n)λ(n+h) ≪ N^{1−δ}` (conj.
-`δ=½`), and the normalized correlation depends on the **factorization type of h**,
-not h's additive size — matching the proven `F_q[t]` structure under the dictionary
-`N↔q^n`, `log N↔n`.
+**Use Möbius, not Liouville.** Over `F_q[t]`, `Σ_{deg=n} μ_q = 0` for `n≥2` (mean-zero),
+whereas `λ_q` carries an *exact* `±q^{n/2}` degree-parity oscillation from
+`ζ_q(u²)/ζ_q(u)`. So λ needs square-divisor bookkeeping; μ is the clean object.
+Recover λ via `λ(n)=Σ_{d²∣n} μ(n/d²)`.
 
-The synthesis to chase — the **parity defect**
-`D(h,N) = [ℤ normalized corr] − [F_q[t] ground-truth structure]`, where the
-function-field side `A(h;q,n)=Σ_{deg f=n}λ(f)λ(f+h)` is a finite, exactly computable
-sum and (Sawin–Shusterman) the *proven* answer. `D` is by construction the
-**computable shadow of the parity obstruction**. Clue dichotomy: `D≈0` ⇒ parity is a
-proof-technique gap (evidence for `δ=½`); `D` with persistent h-structure surviving
-the twin ⇒ a new "parity anomaly" object — the real lead. Most likely outcome:
-`D≈noise` (ℤ indistinguishable from its proven function-field shadow) — a clean
-result, not a dead end. Tool already has `F_q` machinery (`polyprimes`).
+**Target — uniform power-saving binary Chowla (correct quantifiers).** Do NOT write
+`≪_h` and "uniform in h" together; they pull opposite ways. Correct form:
+`∀η>0 ∃δ(η)>0:  sup_{1≤|h|≤N^{1−η}} |Σ_{n≤N} μ(n)μ(n+h)| ≪_η N^{1−δ(η)}`.
+"Nailing δ" is ill-posed (any δ ⇒ all smaller); the testable question is whether the
+true scale is `N^{1/2+o(1)}`.
+
+**The engine — the *unshifted* Type-II form is FALSE.** Not
+`|Σ_{m∼M}Σ_{n∼N} α_m β_n μ(mn)| ≪ X^{1−δ}` for arbitrary `|α|,|β|≤1`:
+take `α_m=μ(m), β_n=μ(n)`; since `μ(mn)=μ(m)μ(n)1_{(m,n)=1}` the sum counts coprime
+squarefree pairs `≍ X` (for λ every term is `+1`). Same counterexample over `F_q[t]`,
+so this is *not* what Sawin–Shusterman prove. The parity-sensitive engine needs the
+shift **inside** the form (a shifted bilinear / cut-norm):
+`sup_{|α|,|β|≤1} |Σ_{m∼M}Σ_{n∼N} α_m β_n μ(mn+h)| ≪_η X^{1−δ}`, `MN≍X`, `M,N≥X^η`.
+Caveat: not literally equivalent to binary Chowla — also needs Type-I estimates,
+decompositions, shift-uniformity, local-factor control.
+
+**Binary Chowla ≠ twin primes.** The prime parity-breaker is a shifted-prime Möbius
+estimate `Σ_{n≤x} Λ(n) μ(n+h) = o(x)` plus Elliott–Halberstam (Murty–Vatwani).
+
+**What `F_q[t]` actually gives (corrected anchors).**
+- Carmon–Rudnick 2014: *large-q, fixed-n*, normalized correlation `O(q^{−1})` (Pellet +
+  Weil RH for curves). Not the fixed-q, `n→∞` regime that mirrors `N→∞`.
+- Sawin–Shusterman 2022: power-saving μ-cancellation on polynomial sequences, quadratic
+  Bateman–Horn, near-level-1 distribution; mechanism = **μ mimics a quadratic character
+  on special subspaces** (sheaf/trace-function geometry) — *not* the arbitrary-coefficient
+  Type-II form.
+- Keating–Rudnick reformulation: `Σ_{deg f=n} μ(f)μ(f+1) = |Y_n(F_q)| − q^n` (point count
+  on a double cover) — the geometric source of cancellation.
+
+**Route A (ergodic) — correct strength.** Frantzikinakis–Host: log-Furstenberg systems
+of μ have no irrational spectrum, ergodic components = Bernoulli × ∞-step nil; ergodicity
+of the Liouville system ⟹ log-Chowla. This yields `o(N)` (qualitative); a **power saving
+`N^{1−δ}` is a separate quantitative mixing input** not delivered by structure alone.
+
+**Computational program (corrected objects).** (i) shifted bilinear cut norms
+`sup_{|α|,|β|≤1}|Σ α_m β_n μ(mn+h)|` — measure the scale; (ii) block entropy / spectral
+measure of the Liouville Furstenberg model (Route A shadow); (iii) exact `F_q[t]`
+analogues (`μ_q` correlations; the `Y_n` point counts). Goal is not to "prove δ" but to
+test `N^{1/2+o(1)}` and expose the secondary/local structure any proof must reproduce.
 
 ### 3. Sarnak's Möbius disjointness
 `Σ_{n≤N} μ(n) f(n) = o(N)` for every f from a zero-entropy dynamical system.
