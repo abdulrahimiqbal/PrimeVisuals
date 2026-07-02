@@ -8,6 +8,58 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-07-02 · TRACK Q / S4+S2 — the Möbius walk is spectrally rigid, not chaos-class, at 10^8
+
+Source: `logs/2026-07-02-quantum-placement.md`;
+`scripts/quantum-placement.mjs`; artifacts in
+`logs/quantum-placement-artifacts/`. Program: COUNCIL3.md (Track Q);
+prompt `prompts/quantum-probability.md`.
+
+Three-way placement of the real Mertens walk `W(u)=M(e^u)/e^{u/2}` on
+8192 log-samples of `[10^4,10^8]` against two exactly simulated worlds:
+**Model Z** (200 draws of truncated zero sums, amplitude ladder
+`1/(|ρ||ζ′(ρ)|)` from the bundled 267 zeros, LI-random phases) and
+**Model C** (60 random-completely-multiplicative ±1 walks on squarefree
+support — Harper's critical-chaos class). Predeclared rules: consistent
+iff |z| ≤ 2.5 ensemble-sd; discriminating iff ensembles separate ≥ 3
+combined sd.
+
+**[ℤ: measured] The placement.** Real is inside the Z-band on every
+non-truncation statistic (|z_Z| ≤ 1.5): variance 0.0290 vs Z-predicted
+0.0287±0.0003 (the 267-zero ladder predicts the real variance to ~1%);
+skewness, kurtosis, moment ratio, max, min all BOTH-consistent. The two
+discriminating statistics — short-lag autocorrelation in u at Δu=0.1 and
+0.25 (separations 8.8 and 5.0) — put real on the **Z-side at 8.9σ and
+5.0σ from the chaos class** (real −0.1012/−0.4012 vs Z −0.0976±0.0071 /
+−0.4071±0.0093 vs C +0.8307±0.1051 / +0.6460±0.2093). Replicated in
+direction at 10^7 with independent small ensembles. `signChanges` (real
+445 vs Z 147±12) is truncation-dominated by construction (the real walk
+contains all zeros; K=267 lacks the high-frequency tail) — flagged and
+excluded as predeclared; the Z variance ladder itself converges by
+K≈200 (0.02775/0.02832/0.02861/0.02866 for K=50/100/200/267).
+
+**[ℤ: measured] Where discrimination lives.** One-point distribution
+shape does NOT separate the two worlds at this scale (all seps ≤ 1.3);
+the two-scale correlation structure does (seps 5–8.8). Model tests of μ
+should use correlation shape, not histograms/moments.
+
+STATUS: **S4 placement statement + S2-flavored divergence
+quantification** — at N=10^8 the Möbius walk already exhibits the
+almost-periodic rigidity of ζ's spectrum and is rejected from the
+critical-multiplicative-chaos class at 8.9σ, while remaining
+indistinguishable from it in one-point shape. Not new mathematics under
+RH (the zeros representation is classical); the finite-N calibrated
+placement and the discrimination-structure finding are the
+contributions. Caveats logged: shared-data caveat between the 07-02
+ladder verification and this placement; LI-random phases assumed;
+L(x) and 10^9 replications in HANDOFF.
+
+CONNECTION: consumes the amplitude ladder measured in the
+missing-spectrum entry below; the C-ensemble is the RCM null promoted to
+a rival model; complements the M–S variance entry (rigidity in prime
+counts) with rigidity in the Möbius walk; realizes COUNCIL3's Track Q
+design — the "quantum probability" merge — at first scale.
+
 ## 2026-07-02 · MISSING-SPECTRUM HUNT / CLOSED-NO-SURVIVOR + S4 — binary Chowla spectra at 10^8
 
 Source: `logs/2026-07-02-missing-spectrum.md`; scripts
