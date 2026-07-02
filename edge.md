@@ -166,3 +166,12 @@ the empirical ones light up.
   the (rigged) shuffle null; `update` rewards bar-5 *survival*, not promotion.
 - Murmuration reproduction from scratch failed *for the right reason*: signal lives
   in the rank-parity split; bare family average ≈ twin (needs labeled data).
+
+---
+
+## See also
+
+`radical.md` — five programs that invert the hunt: choose spaces where the
+critical locus is *forced by a theorem* (Lee–Yang circle, HN concavity,
+self-adjoint spectra, the Weil wall, LLN persistence measures) and move the
+prime content into the measure the primes induce on the forced locus.
