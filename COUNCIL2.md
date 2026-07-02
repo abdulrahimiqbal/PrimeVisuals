@@ -286,3 +286,61 @@ the fence govern between sprints.
 The council adjourns. The graveyard was not waste — it is the map of
 where structure is not, drawn at a precision nobody else has bothered to
 reach. The program above spends it.
+
+---
+
+## AMENDMENT A (July 2026) — the critical-line re-evaluation
+
+The workshop restated its ambition: a critical line that is NOT a
+reformulation of ζ's. The council re-derived the search space from
+structure rather than defending its first cut, and re-graded its own
+critical-line-adjacent candidates:
+
+- λ/μ walk spectra: **partial reformulation.** The walks oscillate at
+  the SAME frequencies γ_k (explicit formula for M(x)/L(x)), with
+  1/ζ′(ρ)-type amplitudes. The amplitude ladder is new information
+  (simplicity/LI-adjacent) but the line is ζ's. Demoted to a labeled
+  calibration row.
+- Montgomery–Soundararajan short-interval variance: structure *around*
+  the known line (pair-correlation physics), not a new line. Secondary
+  row.
+- "Third-exponent dashboard": right spirit, but a scan, not a target —
+  and the graveyard's core lesson is that scans die.
+
+**The frame**: a critical line is the spectral signature of an
+unexplained cancellation. Do not hunt lines; enumerate *unowned
+cancellations* and read their spectra. A search location is "right" iff
+it passes all five filters: (1) outside the linear-functional funnel;
+(2) hosts a conjectured cancellation with no known mechanism; (3) has a
+theorem-grade twin where the analogous spectrum provably exists (so the
+instrument can be validated on a known answer); (4) spectral resolution
+adequate at reachable N (the June machinery resolved Δγ ≈ 0.68 over
+10^4..10^8); (5) barrier-protected novelty.
+
+**Exactly one in-reach object passes all five: the binary Chowla sum**
+`C_h(x) = Σ_{n≤x} μ(n)μ(n+h)`. Bilinear in μ (outside the funnel);
+independent of RH in both directions (cannot be a reformulation);
+expected `x^{1/2+o(1)}` cancellation unproven and owned by NO spectral
+object over ℤ (this absence is the parity barrier); over F_q[t] the same
+sum equals `|Y_n(F_q)| − q^n` (Keating–Rudnick, edge.md) whose
+square-root cancellation IS a proven second critical line — the Weil
+circle for the Frobenius eigenvalues of the Y_n family, distinct from
+the spectral family behind ζ_q. The integer counterpart of that
+spectrum is missing from mathematics; hunting it is a non-reformulation
+critical-line search by construction. Replicable discrete frequencies
+in the integer C_h walk would be the first empirical sighting of an
+unknown arithmetic spectrum; a clean null is the θ₂(h) measurement and
+the strongest spectral calibration of Chowla sums to date.
+
+**Decision**: Sprint P1 is restructured as **P1-CL — the
+missing-spectrum hunt** (prompts/parity-battery.md rewritten): Row 0 is
+a hard validation gate (recover the known Y_n line from exact F_q[t]
+data before any ℤ claim), Row 1 is the integer C_h spectral hunt under
+colored-noise peak discipline, and the original battery rows become the
+time-domain flank plus labeled calibration rows. Landing discipline
+unchanged and mandatory: preregistered statement template, ≥10-seed
+colored-noise nulls, octave/shift stability, adversarial audit, LO-S
+adoption standard. The council reminds the workshop that certainty of
+outcome is not purchasable; this design purchases certainty of
+*meaning* — zero rediscovery risk in the target space, and a null that
+is still a result.
