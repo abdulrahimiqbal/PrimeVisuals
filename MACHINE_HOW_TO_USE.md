@@ -47,9 +47,10 @@ node scripts/explore.mjs link '<the same spec>'
 
 Variables: `n` (int/prime domains), `t` (real), `i`, `pi`, `e`, knobs `a` `b`.
 Functions: `abs arg re im conj exp log sqrt sin cos floor frac min max dot
-mod gcd pow zeta` everywhere; on integer domains also `mu M isprime pi gap
-omega bigomega tau phi rad rowvis rowgap rowrun rowcount roughcount
-roughfirst eulerq oddpart` (Möbius, Mertens, primality 0/1, prime count, next-prime gap,
+mod gcd pow zeta` everywhere; on integer domains also `mu lambda liouville
+M isprime pi gap omega bigomega tau phi rad rowvis rowgap rowrun rowcount roughcount
+roughfirst eulerq oddpart` (Möbius, Liouville `(-1)^Ω(n)`, Mertens,
+primality 0/1, prime count, next-prime gap,
 distinct/total prime factors, divisor count, totient, radical, row
 visibility against `lcm(1..floor(sqrt(N)))`, and rough interval witness
 counts; `eulerq(n,b)` is `((b^phi(n)-1)/n) mod n` when `gcd(b,n)=1`).
@@ -251,9 +252,9 @@ All core modules are dependency-free ES modules importable in Node ≥ 18:
 - `src/core/engine.js` — `computeLabSeries(lab)`, `parseExpr`, `evalAst`,
   `makeFns(tables)`; complex scalars are `[re, im]`.
 - `src/core/math.js` — `sieve`, `primesUpTo`, `mobiusUpTo`,
-  `integerLabTables(N)`, `zetaHalf(t)`, `zetaC(sigma, t)`, `psiExplicit(x,
-  K)`, `primePowersUpTo(N)`, `cramerPrimes(N, seed)`, `ZEROS` (267 zeta
-  zeros to t = 500).
+  `liouvilleUpTo`, `integerLabTables(N)`, `zetaHalf(t)`, `zetaC(sigma, t)`,
+  `psiExplicit(x, K)`, `primePowersUpTo(N)`, `cramerPrimes(N, seed)`,
+  `ZEROS` (267 zeta zeros to t = 500).
 - `src/core/registry.js` — `SOURCES`, `PLANES`, `LENSES`, `withDefaults`.
 - `src/core/chips.js` — `CHIP_OPS`, `applyChips(array, chips)`.
 - `src/core/residuals.js` — `RESIDUALS`, `residualFor(cfg)`.

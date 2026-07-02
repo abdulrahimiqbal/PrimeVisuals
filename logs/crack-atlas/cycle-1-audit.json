@@ -1,0 +1,204 @@
+{
+  "schema": "prime-crack-atlas-audit/v1",
+  "generatedAt": "2026-06-16T13:34:01.035Z",
+  "manifest": {
+    "schema": "prime-crack-atlas-manifest/v1",
+    "cycle": 1,
+    "quick": false,
+    "ranges": {
+      "cycle": 1,
+      "discoveryN": 2000000,
+      "confirmationN": 8000000,
+      "holdoutN": 32000000
+    }
+  },
+  "N": 32000000,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    112358,
+    141421,
+    173205,
+    223606,
+    99991,
+    100003,
+    444444,
+    555555,
+    777777,
+    10101,
+    20202,
+    30303,
+    40404,
+    50505,
+    60606,
+    70707,
+    80808,
+    90909,
+    111111
+  ],
+  "candidateCount": 2,
+  "breakthroughCount": 2,
+  "results": [
+    {
+      "ordinal": 137,
+      "id": "nearby:mu_p_plus_6:conditional_prev_gap",
+      "family": "nearby-arithmetic",
+      "response": "conditional_corr_prev_gap_bucket",
+      "feature": "mu_p_plus_6",
+      "offset": 6,
+      "side": "plus",
+      "arithmetic": "mu",
+      "baseline": "within quartiles of g_prev/log(p)",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 360554,
+          "effect": 0.029664126409562525,
+          "z": 17.812165519399592
+        },
+        {
+          "label": "B2",
+          "n": 342815,
+          "effect": 0.022032211150954915,
+          "z": 12.899948999200456
+        },
+        {
+          "label": "B3",
+          "n": 668414,
+          "effect": 0.017655337616129613,
+          "z": 14.43440197883462
+        }
+      ],
+      "overall": {
+        "n": 1371783,
+        "effect": 0.022183011413905503,
+        "z": 25.981439587007916
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 25,
+          "meanAbsZ": 0.7652527047500421,
+          "maxAbsZ": 2.131930408658617,
+          "ratio": 33.95145084197298,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 25,
+          "meanAbsZ": 0.8624085512271563,
+          "maxAbsZ": 2.5129964929333566,
+          "ratio": 30.126602467053306,
+          "reproduced": false
+        },
+        "composite": {
+          "n": 25,
+          "meanAbsZ": 8.450519432224583,
+          "maxAbsZ": 10.10897710053998,
+          "ratio": 3.0745375826167827,
+          "reproduced": false
+        }
+      },
+      "promoted": true,
+      "deathReason": null,
+      "breakthroughCandidate": true
+    },
+    {
+      "ordinal": 136,
+      "id": "nearby:mu_p_plus_6:corr_next_gap",
+      "family": "nearby-arithmetic",
+      "response": "corr_next_gap",
+      "feature": "mu_p_plus_6",
+      "offset": 6,
+      "side": "plus",
+      "arithmetic": "mu",
+      "baseline": "raw correlation against g_next/log(p)",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 360554,
+          "effect": 0.029179881334818084,
+          "z": 17.521395000685732
+        },
+        {
+          "label": "B2",
+          "n": 342815,
+          "effect": 0.021695576836301852,
+          "z": 12.702848242465148
+        },
+        {
+          "label": "B3",
+          "n": 668414,
+          "effect": 0.01728866333394325,
+          "z": 14.134621589501071
+        }
+      ],
+      "overall": {
+        "n": 1371783,
+        "effect": 0.021807458370002305,
+        "z": 25.54158006839579
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 25,
+          "meanAbsZ": 0.7659396600813164,
+          "maxAbsZ": 2.1373755565236943,
+          "ratio": 33.34672611897933,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 25,
+          "meanAbsZ": 0.8629816905093227,
+          "maxAbsZ": 2.5204115729189227,
+          "ratio": 29.59689683951628,
+          "reproduced": false
+        },
+        "composite": {
+          "n": 25,
+          "meanAbsZ": 8.485145096798218,
+          "maxAbsZ": 10.141769256485057,
+          "ratio": 3.0101524225005463,
+          "reproduced": false
+        }
+      },
+      "promoted": true,
+      "deathReason": null,
+      "breakthroughCandidate": true
+    }
+  ],
+  "failureSummary": {
+    "deathReasonCounts": {
+      "promoted": 2
+    },
+    "nextCycle": {
+      "topDeathReason": "promoted",
+      "addExactlyOneCoordinateFamily": "increase range and keep only the highest-power coordinate families"
+    }
+  }
+}

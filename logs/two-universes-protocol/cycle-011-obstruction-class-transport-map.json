@@ -1,0 +1,156 @@
+{
+  "candidate": "Obstruction-class transport map",
+  "generatedAt": "2026-06-17T02:37:09.885Z",
+  "purpose": "Classify finite-field failure modes by same-form integer transport before any new experiment.",
+  "obstructionClasses": [
+    {
+      "id": "repeated-root-squarefactor",
+      "family": "mobius-zero-obstruction",
+      "finiteFieldIdentity": "mu(F)=0 exactly when F has a repeated irreducible factor; equivalently gcd(F,F') != 1.",
+      "finiteFieldFailureMode": "Repeated roots make discriminant zero and remove the polynomial from squarefree Mobius parity statistics.",
+      "integerSameForm": "mu(n)=0 exactly when n has a repeated prime factor.",
+      "transportClass": "honest-known-local-transport",
+      "theoremShape": "squarefactor-zero obstruction",
+      "noveltyStatus": "known-local-obstruction",
+      "priorCycleContact": [
+        "cycle-004",
+        "cycle-005",
+        "cycle-008"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "Transport is exact but classical; previous squarefree/local controls already absorbed it.",
+      "nextUse": "Keep as a mandatory local control, never as a breakthrough signal."
+    },
+    {
+      "id": "linear-factor-admissibility",
+      "family": "tuple-local-obstruction",
+      "finiteFieldIdentity": "A polynomial tuple is locally inadmissible when some low-degree irreducible divides every shifted member in the local pattern.",
+      "finiteFieldFailureMode": "Irreducible-pair and tuple counts vanish or distort before local obstruction removal.",
+      "integerSameForm": "Prime tuples are blocked when a residue class modulo p forces divisibility for every candidate.",
+      "transportClass": "honest-known-local-transport",
+      "theoremShape": "admissibility / singular-series local factor",
+      "noveltyStatus": "known-local-obstruction",
+      "priorCycleContact": [
+        "cycle-002",
+        "cycle-003",
+        "cycle-004",
+        "cycle-005",
+        "cycle-007"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "Transport is exact at the local-obstruction level, but it is the classical admissibility/singular-series object already controlled in prior cycles.",
+      "nextUse": "Keep as required baseline subtraction for any future tuple statistic."
+    },
+    {
+      "id": "pellet-discriminant-square-class",
+      "family": "mobius-discriminant-character",
+      "finiteFieldIdentity": "For odd q and squarefree F, polynomial Mobius parity is (-1)^deg(F) times the quadratic character of Disc(F).",
+      "finiteFieldFailureMode": "Coefficient-space discriminant square classes create exact Mobius parity structure.",
+      "integerSameForm": "No integer coefficient-space discriminant character determines mu(n) or primality.",
+      "transportClass": "no-honest-integer-transport",
+      "theoremShape": "odd-characteristic discriminant character",
+      "noveltyStatus": "finite-field-only-mechanism",
+      "priorCycleContact": [
+        "cycle-001",
+        "cycle-009",
+        "cycle-010"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "The exact finite-field mechanism depends on coefficient-space geometry with no same-form integer object.",
+      "nextUse": "Use in novelty audits to reject coefficient-neighborhood Mobius claims over Z."
+    },
+    {
+      "id": "berlekamp-artin-schreier-parity",
+      "family": "mobius-discriminant-characteristic-two",
+      "finiteFieldIdentity": "In characteristic 2, Berlekamp/Artin-Schreier trace data replaces the quadratic discriminant character for Mobius parity mechanisms.",
+      "finiteFieldFailureMode": "Characteristic-2 trace parity creates q=2-specific Mobius behavior.",
+      "integerSameForm": "No integer Artin-Schreier trace-parity analogue exists.",
+      "transportClass": "no-honest-integer-transport",
+      "theoremShape": "characteristic-2 trace obstruction",
+      "noveltyStatus": "finite-field-only-mechanism",
+      "priorCycleContact": [
+        "cycle-001",
+        "cycle-008",
+        "cycle-009",
+        "cycle-010"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "Characteristic-2 algebra is not a transport map to integer primes.",
+      "nextUse": "Treat q=2-only behavior as a warning flag unless an independent integer obstruction is named."
+    },
+    {
+      "id": "coefficient-space-morse-failure",
+      "family": "very-short-interval-genericity",
+      "finiteFieldIdentity": "Very-short-interval theorems require generic/Morse coefficient-space conditions; non-generic centers can violate the generic correlation law.",
+      "finiteFieldFailureMode": "A polynomial center can be exceptional because its coefficient-line family has bad critical-value geometry.",
+      "integerSameForm": "Integer short intervals do not have a coefficient-line Morse condition with the same logical form.",
+      "transportClass": "obstruction-or-coefficient-space-only",
+      "theoremShape": "generic Morse condition / non-generic exception",
+      "noveltyStatus": "finite-field-only-warning",
+      "priorCycleContact": [
+        "cycle-001",
+        "cycle-009",
+        "cycle-010"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "The obstruction is tied to coefficient-space families, not an integer-local obstruction.",
+      "nextUse": "Use as a negative-control catalog for future finite-field experiments."
+    },
+    {
+      "id": "residue-theorem-bouniakowsky-obstruction",
+      "family": "finite-field-bouniakowsky-obstruction",
+      "finiteFieldIdentity": "Some finite-field polynomial-prime-value analogues fail from global Mobius/residue-theorem obstructions.",
+      "finiteFieldFailureMode": "A theorem-side obstruction exists even when the naive classical analogue would predict no obstruction.",
+      "integerSameForm": "No known classical integer obstruction has the same residue-theorem form.",
+      "transportClass": "finite-field-obstruction-no-classical-analogue",
+      "theoremShape": "global finite-field residue obstruction",
+      "noveltyStatus": "finite-field-only-veto",
+      "priorCycleContact": [
+        "cycle-009",
+        "cycle-010"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "The obstruction argues against transport instead of producing a Z statistic.",
+      "nextUse": "Use as a veto class for finite-field-only discoveries."
+    },
+    {
+      "id": "complete-degree-shell-cancellation",
+      "family": "complete-family-cancellation",
+      "finiteFieldIdentity": "Complete monic degree shells can have exact Mobius/Liouville cancellations caused by the rational zeta function of F_q[t].",
+      "finiteFieldFailureMode": "Complete-family averaging produces exact finite-field identities with no sampled integer counterpart.",
+      "integerSameForm": "Integer partial sums over n<=X are not complete finite coefficient shells.",
+      "transportClass": "finite-field-complete-family-only",
+      "theoremShape": "complete-shell cancellation identity",
+      "noveltyStatus": "finite-field-only-calibration",
+      "priorCycleContact": [
+        "cycle-008",
+        "cycle-009"
+      ],
+      "experimentEligibility": false,
+      "eligibilityReason": "The exact cancellation is a calibration identity, not an integer-prime experiment.",
+      "nextUse": "Use to test finite-field table correctness and to block complete-family overinterpretation."
+    }
+  ],
+  "summary": {
+    "classCount": 7,
+    "honestKnownTransportCount": 2,
+    "noHonestNewTransportCount": 5,
+    "exhaustedKnownTransportCount": 2,
+    "experimentallyActionableCount": 0,
+    "branchDecision": "NO_ACTIONABLE_OBSTRUCTION_CLASS",
+    "stoppedReason": "Every same-form obstruction is known local structure already controlled, and every other finite-field failure mode has no honest integer transport.",
+    "nextRequiredArtifact": "cycle-012 branch-stop ledger or new-domain proposal outside aggregate Two-Universes transport",
+    "byTransportClass": {
+      "honest-known-local-transport": 2,
+      "no-honest-integer-transport": 2,
+      "obstruction-or-coefficient-space-only": 1,
+      "finite-field-obstruction-no-classical-analogue": 1,
+      "finite-field-complete-family-only": 1
+    }
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.json",
+    "md": "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.md",
+    "svg": "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.svg"
+  }
+}

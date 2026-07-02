@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-06-16T20:08:12.669Z",
+  "count": 9,
+  "breakthroughs": 0,
+  "shots": [
+    {
+      "index": 1,
+      "title": "01 Distribution Wall: theta = 1/2 to theta = 1",
+      "shortTitle": "Distribution Wall",
+      "svg": "primevisuals-critical-boundaries/01-distribution-wall.svg",
+      "png": "primevisuals-critical-boundaries/01-distribution-wall.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "Finite samples show relative AP error worsening as q grows, but do not provide new control beyond theta=1/2.",
+        "metrics": {
+          "xs": [
+            5000,
+            10000,
+            20000,
+            40000,
+            80000
+          ],
+          "thetaMin": 0.1,
+          "thetaMax": 0.9500000000000001,
+          "leftMean": 0.07234899474382206,
+          "rightMean": 1.7667439129404932,
+          "rightOverLeft": 24.41974376003831
+        }
+      }
+    },
+    {
+      "index": 2,
+      "title": "02 Sieve Parity Wall",
+      "shortTitle": "Sieve Parity Wall",
+      "svg": "primevisuals-critical-boundaries/02-sieve-parity-wall.svg",
+      "png": "primevisuals-critical-boundaries/02-sieve-parity-wall.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "The candidate set remains parity-mixed; the sieve selects many non-primes and gives no lower-bound separator for primes/twins.",
+        "metrics": {
+          "start": 1000000,
+          "width": 7200,
+          "survivors": 993,
+          "truePrimes": 537,
+          "oddParitySurvivors": 561,
+          "evenParitySurvivors": 432,
+          "twinCandidates": 182,
+          "twinTruth": 61
+        }
+      }
+    },
+    {
+      "index": 3,
+      "title": "03 Robin Wall: divisor abundance ceiling",
+      "shortTitle": "Robin Wall",
+      "svg": "primevisuals-critical-boundaries/03-robin-wall.svg",
+      "png": "primevisuals-critical-boundaries/03-robin-wall.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "No Robin inequality breach appears in the scanned range; the record ridge stays below the RH-equivalent ceiling after 5040.",
+        "metrics": {
+          "robinN": 220000,
+          "worstAfter5040": {
+            "n": 10080,
+            "r": 0.985818611972329
+          }
+        }
+      }
+    },
+    {
+      "index": 4,
+      "title": "04 Nicolas primorial pressure gauge",
+      "shortTitle": "Nicolas Gauge",
+      "svg": "primevisuals-critical-boundaries/04-nicolas-gauge.svg",
+      "png": "primevisuals-critical-boundaries/04-nicolas-gauge.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "Margins stay positive in the rendered primorial range and follow the known slow decay; no new anomaly is flagged.",
+        "metrics": {
+          "nicolasPrimorials": 158,
+          "nicolasMinMargin": 0.010880949286752317,
+          "nicolasLastMargin": 0.010880949286752317
+        }
+      }
+    },
+    {
+      "index": 5,
+      "title": "05 Farey Sea: rational uniformity shadow",
+      "shortTitle": "Farey Sea",
+      "svg": "primevisuals-critical-boundaries/05-farey-sea.svg",
+      "png": "primevisuals-critical-boundaries/05-farey-sea.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "The discrepancy trace stays modest in this small range but supplies no new asymptotic control.",
+        "metrics": {
+          "orderMin": 20,
+          "orderMax": 225,
+          "maxScaledDiscrepancy": 0.8920863309352518,
+          "lastScaledDiscrepancy": 0.3529297381384496
+        }
+      }
+    },
+    {
+      "index": 6,
+      "title": "06 Nyman-Beurling sawtooth theatre",
+      "shortTitle": "Nyman-Beurling Sawtooth Theatre",
+      "svg": "primevisuals-critical-boundaries/06-nyman-beurling-sawtooth-theatre.svg",
+      "png": "primevisuals-critical-boundaries/06-nyman-beurling-sawtooth-theatre.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "The finite least-squares error decreases but does not suggest a new rate, proof mechanism, or exceptional obstruction.",
+        "metrics": {
+          "samples": 520,
+          "maxBasis": 36,
+          "firstError": 0.562491277498089,
+          "lastError": 0.07949219372694834,
+          "errorRatio": 0.14132164694272686
+        }
+      }
+    },
+    {
+      "index": 7,
+      "title": "07 Divisibility Matrix determinant pressure",
+      "shortTitle": "Redheffer Divisibility Matrix",
+      "svg": "primevisuals-critical-boundaries/07-redheffer-divisibility-matrix.svg",
+      "png": "primevisuals-critical-boundaries/07-redheffer-divisibility-matrix.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "The determinant/Mertens walk remains within small square-root scale in this range, matching known finite behavior.",
+        "metrics": {
+          "N": 9000,
+          "matrixSize": 90,
+          "zeroMertensCount": 375,
+          "maxAbsMOverSqrtN": 0.8320502943378437,
+          "maxAtN": 13
+        }
+      }
+    },
+    {
+      "index": 8,
+      "title": "08 Landau permutation-order mountain",
+      "shortTitle": "Landau Permutation Mountain",
+      "svg": "primevisuals-critical-boundaries/08-landau-permutation-mountain.svg",
+      "png": "primevisuals-critical-boundaries/08-landau-permutation-mountain.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "The residual oscillates around the classical main scale; no unexpected packing law or persistent anomaly appears.",
+        "metrics": {
+          "N": 520,
+          "logGAtN": 55.69764805798976,
+          "mainAtN": 57.026230648879874,
+          "residualAtN": -1.3285825908901145,
+          "topPackingBlocks": [
+            67,
+            59,
+            53,
+            47,
+            43,
+            41,
+            37,
+            31,
+            29,
+            23,
+            19,
+            17,
+            13,
+            11,
+            9,
+            8,
+            7,
+            5
+          ]
+        }
+      }
+    },
+    {
+      "index": 9,
+      "title": "09 Critical Boundaries breakthrough triage",
+      "shortTitle": "Critical Boundaries breakthrough triage",
+      "svg": "primevisuals-critical-boundaries/09-critical-boundaries-breakthrough-triage.svg",
+      "png": "primevisuals-critical-boundaries/09-critical-boundaries-breakthrough-triage.png",
+      "audit": {
+        "breakthrough": false,
+        "verdict": "no breakthrough",
+        "reason": "None of the seven computed boundary instruments produced a persistent anomaly, null-model failure, or formal candidate strong enough to label as a breakthrough.",
+        "metrics": {
+          "instrumentsTriaged": 8,
+          "breakthroughsFlagged": 0
+        }
+      }
+    }
+  ]
+}

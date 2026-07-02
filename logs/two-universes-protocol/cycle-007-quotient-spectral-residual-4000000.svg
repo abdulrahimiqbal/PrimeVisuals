@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="1180" height="680" fill="#111827"/>
+<text x="64" y="38" fill="#f9fafb" font-size="20" font-weight="700">Quotient spectral residual audit</text>
+<text x="64" y="60" fill="#a7b0c4" font-size="13">Integer budget-8: covariance edge after rough/local admissibility subtraction.</text>
+<rect x="84" y="82" width="710" height="390" fill="#0b1220" stroke="#263244"/>
+<polygon points="84,222.24938657434112 439,225.2512787200126 794,337.2904030735725 794,363.33418500933834 439,379.14894777756297 84,386.43647853797677" fill="#2a9d8f" opacity="0.18"/>
+<polygon points="84,216.273688693083 439,244.17065366733286 794,270.64129594353017 794,325.0411752477946 439,333.62934310467506 84,348.7216721657446" fill="#a78bfa" opacity="0.16"/>
+<path d="M 84.00 187.46 L 439.00 265.99 L 794.00 198.30" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<circle cx="84" cy="187.46106301438272" r="4" fill="#f8fafc"/><text x="84" y="496" text-anchor="middle" fill="#9ca3af" font-size="11">1M</text>
+<circle cx="439" cy="265.98569946193527" r="4" fill="#f8fafc"/><text x="439" y="496" text-anchor="middle" fill="#9ca3af" font-size="11">2M</text>
+<circle cx="794" cy="198.3002268139524" r="4" fill="#f8fafc"/><text x="794" y="496" text-anchor="middle" fill="#9ca3af" font-size="11">4M</text>
+<text x="84" y="524" fill="#a7b0c4" font-size="12">teal: rough-random controls; violet: rough-composite controls</text>
+<rect x="820" y="84" width="318" height="480" fill="#0b1220" stroke="#263244"/>
+<text x="850" y="62" fill="#dbeafe" font-size="14">function-field quotient edges</text>
+<text x="796" y="120" fill="#a78bfa" font-size="12">F2 b2</text>
+<line x1="858" y1="117" x2="858" y2="117" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="106" width="0" height="13" fill="#a78bfa"/>
+<text x="866" y="117" fill="#dbeafe" font-size="11">0.000</text>
+<text x="796" y="149" fill="#a78bfa" font-size="12">F2 b3</text>
+<line x1="982.3736247614991" y1="146" x2="999.7859755925459" y2="146" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="135" width="141.805192800894" height="13" fill="#a78bfa"/>
+<text x="1007.805192800894" y="146" fill="#dbeafe" font-size="11">0.750</text>
+<text x="796" y="178" fill="#60a5fa" font-size="12">F3 b2</text>
+<line x1="965.719642641063" y1="175" x2="987.5029539664622" y2="175" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="164" width="0" height="13" fill="#60a5fa"/>
+<text x="866" y="175" fill="#dbeafe" font-size="11">0.000</text>
+<text x="796" y="207" fill="#60a5fa" font-size="12">F3 b3</text>
+<line x1="976.2845867699547" y1="204" x2="1002.9213823959841" y2="204" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="193" width="0" height="13" fill="#60a5fa"/>
+<text x="866" y="204" fill="#dbeafe" font-size="11">0.000</text>
+<text x="796" y="236" fill="#60a5fa" font-size="12">F3 b5</text>
+<line x1="993.3573786303066" y1="233" x2="1032.5812788389346" y2="233" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="222" width="154.91913088665507" height="13" fill="#60a5fa"/>
+<text x="1020.919130886655" y="233" fill="#dbeafe" font-size="11">0.820</text>
+<text x="796" y="265" fill="#34d399" font-size="12">F5 b2</text>
+<line x1="858" y1="262" x2="1003.7422747895454" y2="262" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="251" width="167.85569154815167" height="13" fill="#34d399"/>
+<text x="1033.8556915481518" y="262" fill="#dbeafe" font-size="11">0.888</text>
+<text x="796" y="294" fill="#34d399" font-size="12">F5 b3</text>
+<line x1="979.8311172477723" y1="291" x2="1015.0084551752481" y2="291" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="280" width="190.44085575984096" height="13" fill="#34d399"/>
+<text x="1056.440855759841" y="291" fill="#dbeafe" font-size="11">1.008</text>
+<text x="796" y="323" fill="#34d399" font-size="12">F5 b5</text>
+<line x1="990.429639676927" y1="320" x2="1037.6076770584696" y2="320" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="309" width="218" height="13" fill="#34d399"/>
+<text x="1084" y="320" fill="#dbeafe" font-size="11">1.154</text>
+<text x="796" y="352" fill="#34d399" font-size="12">F5 b8</text>
+<line x1="1012.6113952602593" y1="349" x2="1023.0124236976307" y2="349" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="338" width="166.97770542063353" height="13" fill="#34d399"/>
+<text x="1032.9777054206336" y="349" fill="#dbeafe" font-size="11">0.884</text>
+</svg>

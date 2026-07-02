@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="1180" height="680" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="70" y="42" fill="#f8fafc" font-size="21" font-weight="700">Cycle 011: obstruction-class transport map</text>
+<text x="70" y="70" fill="#94a3b8" font-size="13">Finite-field failure modes only seed experiments when the same obstruction has a non-exhausted integer theorem form.</text>
+<text x="70" y="104" fill="#cbd5e1" font-size="14">Transport class counts</text>
+<text x="70" y="150" fill="#e5edf7" font-size="12">honest-known-local-transport</text>
+<rect x="480" y="128" width="540.00" height="28" fill="#22c55e" opacity="0.86"/>
+<text x="1032" y="148" fill="#f8fafc" font-size="12">2</text>
+<text x="70" y="202" fill="#e5edf7" font-size="12">no-honest-integer-transport</text>
+<rect x="480" y="180" width="540.00" height="28" fill="#ef4444" opacity="0.86"/>
+<text x="1032" y="200" fill="#f8fafc" font-size="12">2</text>
+<text x="70" y="254" fill="#e5edf7" font-size="12">obstruction-or-coefficient-space-only</text>
+<rect x="480" y="232" width="270.00" height="28" fill="#f59e0b" opacity="0.86"/>
+<text x="762" y="252" fill="#f8fafc" font-size="12">1</text>
+<text x="70" y="306" fill="#e5edf7" font-size="12">finite-field-obstruction-no-classical-analogue</text>
+<rect x="480" y="284" width="270.00" height="28" fill="#38bdf8" opacity="0.86"/>
+<text x="762" y="304" fill="#f8fafc" font-size="12">1</text>
+<text x="70" y="358" fill="#e5edf7" font-size="12">finite-field-complete-family-only</text>
+<rect x="480" y="336" width="270.00" height="28" fill="#a78bfa" opacity="0.86"/>
+<text x="762" y="356" fill="#f8fafc" font-size="12">1</text>
+<text x="70" y="430" fill="#cbd5e1" font-size="14">Class eligibility</text>
+<text x="70" y="470" fill="#f59e0b" font-size="11">repeated-root-squarefactor: BLOCKED</text>
+<text x="590" y="470" fill="#f59e0b" font-size="11">linear-factor-admissibility: BLOCKED</text>
+<text x="70" y="504" fill="#ef4444" font-size="11">pellet-discriminant-square-class: BLOCKED</text>
+<text x="590" y="504" fill="#ef4444" font-size="11">berlekamp-artin-schreier-parity: BLOCKED</text>
+<text x="70" y="538" fill="#ef4444" font-size="11">coefficient-space-morse-failure: BLOCKED</text>
+<text x="590" y="538" fill="#ef4444" font-size="11">residue-theorem-bouniakowsky-obstruction: BLOCKED</text>
+<text x="70" y="572" fill="#ef4444" font-size="11">complete-degree-shell-cancellation: BLOCKED</text>
+<text x="70" y="642" fill="#f8fafc" font-size="12">Decision: NO_ACTIONABLE_OBSTRUCTION_CLASS</text>
+</g>
+</svg>

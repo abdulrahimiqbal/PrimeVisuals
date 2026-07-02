@@ -1,0 +1,431 @@
+{
+  "generatedAt": "2026-06-17T10:08:51.872Z",
+  "cycle": 17,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-017-complete-weierstrass-second-moment",
+    "title": "Complete Weierstrass second-moment transport",
+    "class": "forced mutation from complete trace identity to a higher-moment algebraic-family statistic",
+    "councilSuccessTarget": "Calibration only unless the exact second-moment theorem leaves a nonzero, control-surviving residual across rational primes and F_q[t] irreducibles",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-017-complete-weierstrass-second-moment-8000000.json",
+      "logs/two-universes-protocol/cycle-017-complete-weierstrass-second-moment-8000000.md",
+      "logs/two-universes-protocol/cycle-017-complete-weierstrass-second-moment-8000000.svg",
+      "scripts/complete-weierstrass-second-moment-transport-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states M2(K)/(|K|*good_count)-1 with theorem residual subtracting -1/|K|^2 for the complete family y^2=x^3+a*x+b.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: K=F_q[t]/P for monic irreducibles P over q=3,5,7, and the family is defined over the finite residue field K.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Exact second-moment identity absorbs the signal: max exact residual z=0; max ST-baseline residual z=0.001459028.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "One parameter-free second-moment identity covers every odd finite field, with no fitted coefficients.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "pass",
+      "evidence": "Exact residual is stable across complete integer and q=3,5,7 ladders. Integer ladder=true; field ladders=true; validation=true; allExactResidualsZero=true.",
+      "severity": "pass"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "This is a higher-moment mutation, but the exact residual is standard diagonal character orthogonality plus singular-curve bookkeeping.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the full 8M and q=3,5,7 run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The exact formula is stated in the artifact and brute-validated over small prime fields.",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because the candidate is fully explained by exact second-moment orthogonality.",
+      "severity": "hard-fail"
+    }
+  },
+  "weierstrassSecondMomentEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "allExactResidualsZero": true,
+      "absorbedByExactSecondMoment": true,
+      "maxAbsExactResidualZ": 0,
+      "maxAbsStResidualZ": 0.0014590278775828617,
+      "theoremShape": {
+        "statistic": "M2(K)/( |K| * good_count ) - 1, with theorem residual subtracting -1/|K|^2",
+        "integer": "K=F_p for rational primes p>=5",
+        "functionField": "K=F_q[t]/P for monic irreducibles P over q=3,5,7",
+        "exactIdentity": "For odd finite fields K, the complete nonsingular family y^2=x^3+a*x+b has normalized second moment 1-1/|K|^2"
+      },
+      "finalInteger": {
+        "label": "Z<=8000000",
+        "endpoint": 8000000,
+        "labels": 539775,
+        "finalPrime": 7999993,
+        "meanStResidual": -1.6884127925321158e-7,
+        "stResidualZ": -0.00012404664337727748,
+        "stEnergyZ": -1.9666577256020334,
+        "maxAbsStResidualZ": 0.042715021883922094,
+        "exactResidualZ": 0,
+        "maxAbsExactResidualZ": 0
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "final": {
+            "label": "F_3:deg12",
+            "q": 3,
+            "degree": 12,
+            "labels": 44220,
+            "cumulativeLabels": 69706,
+            "residueFieldSize": 531441,
+            "normalizedSecondMoment": 0.9999999999964592,
+            "stResidual": -3.5408342924370118e-12,
+            "exactMain": -3.5407061614721497e-12,
+            "stResidualZ": -0.0014590278775828617,
+            "stEnergyZ": -1.9889619251685113,
+            "maxAbsStResidualZ": 0.19245008972987535,
+            "exactResidualZ": 0,
+            "maxAbsExactResidualZ": 0
+          }
+        },
+        {
+          "q": 5,
+          "final": {
+            "label": "F_5:deg8",
+            "q": 5,
+            "degree": 8,
+            "labels": 48750,
+            "cumulativeLabels": 63319,
+            "residueFieldSize": 390625,
+            "normalizedSecondMoment": 0.9999999999934464,
+            "stResidual": -6.553646514362299e-12,
+            "exactMain": -6.5536e-12,
+            "stResidualZ": -0.0008703981652403294,
+            "stEnergyZ": -2.444791211078021,
+            "maxAbsStResidualZ": 0.08944271909999166,
+            "exactResidualZ": 0,
+            "maxAbsExactResidualZ": 0
+          }
+        },
+        {
+          "q": 7,
+          "final": {
+            "label": "F_7:deg7",
+            "q": 7,
+            "degree": 7,
+            "labels": 117648,
+            "cumulativeLabels": 141280,
+            "residueFieldSize": 823543,
+            "normalizedSecondMoment": 0.9999999999985255,
+            "stResidual": -1.4744871990046704e-12,
+            "exactMain": -1.474441138959365e-12,
+            "stResidualZ": -0.0004061777201011806,
+            "stEnergyZ": -2.8257370489365266,
+            "maxAbsStResidualZ": 0.053994924715603944,
+            "exactResidualZ": 0,
+            "maxAbsExactResidualZ": 0
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "label": "Z<=1000000",
+        "endpoint": 1000000,
+        "labels": 78496,
+        "finalPrime": 999983,
+        "meanStResidual": -0.0000011610303856789915,
+        "stResidualZ": -0.0003252874808790862,
+        "stEnergyZ": -1.9666564231909713,
+        "maxAbsStResidualZ": 0.042715021883922094,
+        "exactResidualZ": 0,
+        "maxAbsExactResidualZ": 0
+      },
+      {
+        "label": "Z<=2000000",
+        "endpoint": 2000000,
+        "labels": 148931,
+        "finalPrime": 1999993,
+        "meanStResidual": -6.119362428195418e-7,
+        "stResidualZ": -0.0002361558609785801,
+        "stEnergyZ": -1.9666571876398642,
+        "maxAbsStResidualZ": 0.042715021883922094,
+        "exactResidualZ": 0,
+        "maxAbsExactResidualZ": 0
+      },
+      {
+        "label": "Z<=4000000",
+        "endpoint": 4000000,
+        "labels": 283144,
+        "finalPrime": 3999971,
+        "meanStResidual": -3.2187259291118673e-7,
+        "stResidualZ": -0.0001712725170019392,
+        "stEnergyZ": -1.9666575516371017,
+        "maxAbsStResidualZ": 0.042715021883922094,
+        "exactResidualZ": 0,
+        "maxAbsExactResidualZ": 0
+      },
+      {
+        "label": "Z<=8000000",
+        "endpoint": 8000000,
+        "labels": 539775,
+        "finalPrime": 7999993,
+        "meanStResidual": -1.6884127925321158e-7,
+        "stResidualZ": -0.00012404664337727748,
+        "stEnergyZ": -1.9666577256020334,
+        "maxAbsStResidualZ": 0.042715021883922094,
+        "exactResidualZ": 0,
+        "maxAbsExactResidualZ": 0
+      }
+    ],
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 12,
+        "final": {
+          "label": "F_3:deg12",
+          "q": 3,
+          "degree": 12,
+          "labels": 44220,
+          "cumulativeLabels": 69706,
+          "residueFieldSize": 531441,
+          "normalizedSecondMoment": 0.9999999999964592,
+          "stResidual": -3.5408342924370118e-12,
+          "exactMain": -3.5407061614721497e-12,
+          "stResidualZ": -0.0014590278775828617,
+          "stEnergyZ": -1.9889619251685113,
+          "maxAbsStResidualZ": 0.19245008972987535,
+          "exactResidualZ": 0,
+          "maxAbsExactResidualZ": 0
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "final": {
+          "label": "F_5:deg8",
+          "q": 5,
+          "degree": 8,
+          "labels": 48750,
+          "cumulativeLabels": 63319,
+          "residueFieldSize": 390625,
+          "normalizedSecondMoment": 0.9999999999934464,
+          "stResidual": -6.553646514362299e-12,
+          "exactMain": -6.5536e-12,
+          "stResidualZ": -0.0008703981652403294,
+          "stEnergyZ": -2.444791211078021,
+          "maxAbsStResidualZ": 0.08944271909999166,
+          "exactResidualZ": 0,
+          "maxAbsExactResidualZ": 0
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 7,
+        "final": {
+          "label": "F_7:deg7",
+          "q": 7,
+          "degree": 7,
+          "labels": 117648,
+          "cumulativeLabels": 141280,
+          "residueFieldSize": 823543,
+          "normalizedSecondMoment": 0.9999999999985255,
+          "stResidual": -1.4744871990046704e-12,
+          "exactMain": -1.474441138959365e-12,
+          "stResidualZ": -0.0004061777201011806,
+          "stEnergyZ": -2.8257370489365266,
+          "maxAbsStResidualZ": 0.053994924715603944,
+          "exactResidualZ": 0,
+          "maxAbsExactResidualZ": 0
+        }
+      }
+    ],
+    "validation": [
+      {
+        "p": 5,
+        "formulaGoodCount": 20,
+        "bruteGoodCount": 20,
+        "formulaSingularCount": 5,
+        "bruteSingularCount": 5,
+        "formulaSingularTraceSquareSum": 4,
+        "bruteSingularTraceSquareSum": 4,
+        "formulaGoodSecondMoment": 96,
+        "bruteGoodSecondMoment": 96,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "formulaGoodCount": 42,
+        "bruteGoodCount": 42,
+        "formulaSingularCount": 7,
+        "bruteSingularCount": 7,
+        "formulaSingularTraceSquareSum": 6,
+        "bruteSingularTraceSquareSum": 6,
+        "formulaGoodSecondMoment": 288,
+        "bruteGoodSecondMoment": 288,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "formulaGoodCount": 110,
+        "bruteGoodCount": 110,
+        "formulaSingularCount": 11,
+        "bruteSingularCount": 11,
+        "formulaSingularTraceSquareSum": 10,
+        "bruteSingularTraceSquareSum": 10,
+        "formulaGoodSecondMoment": 1200,
+        "bruteGoodSecondMoment": 1200,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "formulaGoodCount": 156,
+        "bruteGoodCount": 156,
+        "formulaSingularCount": 13,
+        "bruteSingularCount": 13,
+        "formulaSingularTraceSquareSum": 12,
+        "bruteSingularTraceSquareSum": 12,
+        "formulaGoodSecondMoment": 2016,
+        "bruteGoodSecondMoment": 2016,
+        "ok": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "WEIERSTRASS_SECOND_MOMENT_CALIBRATION_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 017 executes the higher-moment algebraic-family mutation, but exact orthogonality absorbs the full theorem-normalized residual.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Exact second-moment identity absorbs the signal: max exact residual z=0; max ST-baseline residual z=0.001459028.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "This is a higher-moment mutation, but the exact residual is standard diagonal character orthogonality plus singular-curve bookkeeping.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because the candidate is fully explained by exact second-moment orthogonality.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Normalized second moment is exactly 1-1/|K|^2; max exact residual z=0; max ST-baseline residual z=0.001459028.",
+    "expectedNull": "After subtracting the exact second-moment identity, no residual should remain.",
+    "knownExplanation": "Diagonal character orthogonality and singular-curve bookkeeping prove the complete-family second moment over every odd finite field.",
+    "survivedControls": [
+      "Exact second-moment theorem baseline removes every residual"
+    ],
+    "failedControls": [
+      "No control-surviving theorem-normalized residual remains"
+    ],
+    "whatFailed": "The candidate is higher-moment calibration, not a breakthrough signal.",
+    "suspectedInvariant": "Complete all-parameter algebraic-family moments are too rigid; useful next objects must break completeness or use monodromy/spectral residuals.",
+    "nextMutation": "Leave complete orthogonality moments; register an incomplete-family, monodromy, or spectral residual"
+  },
+  "nextMutation": {
+    "title": "Leave complete orthogonality moments; register an incomplete-family, monodromy, or spectral residual",
+    "reason": "The higher-moment mutation also collapses exactly under finite-field character orthogonality, leaving no theorem-normalized residual.",
+    "preregisteredNextMove": [
+      "Do not promote complete all-parameter moments whose residual is exactly zero after orthogonality bookkeeping.",
+      "A next algebraic-family cycle must use an incomplete family, monodromy/spectral statistic, or a finite-field theorem whose integer analogue has a nonzero residual after the theorem baseline.",
+      "Before data, preregister the finite-field object, integer analogue, local/null controls, full ladders, novelty audit, proof path, and expert-pack criteria.",
+      "If the next object cannot name a nonzero theorem-normalized residual, stop rather than adding another complete-family calibration."
+    ]
+  }
+}

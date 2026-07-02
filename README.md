@@ -48,6 +48,33 @@ battery, and the anomaly scanner, plus jsdom interaction tests of the UI.
 (requires `npx playwright install chromium` and a running dev server).
 `scripts/genzeros.mjs` regenerates the bundled zeta-zero table.
 
+## Crack atlas
+
+The systematic prime crack-hunt runner is available as npm scripts:
+
+```sh
+npm run crack:quick   # smoke-test the full plan/run/audit/pack loop
+npm run crack:plan    # freeze the cycle manifest
+npm run crack:run     # discovery sweep
+npm run crack:audit   # holdout and hostile controls
+npm run crack:pack    # evidence pack
+```
+
+Artifacts are written to `logs/crack-atlas/`.
+
+## FrontierLab
+
+The residual-first Chowla/Liouville atlas is available as:
+
+```sh
+npm run frontier:liouville
+```
+
+It builds `C_h(N)=sum_{n<=N} lambda(n)lambda(n+h)` across shifts and
+dyadic ranges, compares against random completely multiplicative and
+shuffled nulls, calibrates against `F_2[t]` and `F_3[t]`, and writes JSON,
+Markdown, and SVG evidence packs to `logs/frontierlab-artifacts/`.
+
 ## Build for production
 
 ```sh

@@ -1,0 +1,146 @@
+{
+  "candidate": "Proof-obligation map for honest-open finite-field theorem families",
+  "generatedAt": "2026-06-17T02:33:36.085Z",
+  "catalogPath": "logs/two-universes-protocol/cycle-009-theorem-first-finite-field-catalog.json",
+  "summary": {
+    "obligationCount": 3,
+    "blockedCount": 3,
+    "potentialProofRouteCount": 0,
+    "majorOpenLemmaCount": 5,
+    "notTransportableIngredientCount": 1,
+    "experimentallyActionableCount": 0,
+    "nextRequiredArtifact": "cycle-011 explicit obstruction-class transport map or a named weaker lemma that is not equivalent to Chowla/twin-prime conjectures",
+    "obligations": [
+      {
+        "id": "carmon-rudnick-large-q-chowla-proof-map",
+        "catalogEntryId": "carmon-rudnick-large-q-chowla",
+        "finiteFieldTheoremInput": "Fixed degree n, fixed distinct polynomial shifts, q odd and growing; Mobius products over monic degree-n shells cancel in the large-q limit.",
+        "proofIngredients": [
+          {
+            "ingredient": "Pellet discriminant character",
+            "finiteFieldRole": "Convert polynomial Mobius parity into a quadratic character of a discriminant.",
+            "integerSubstitute": "No coefficient-space discriminant character exists for integer Mobius products.",
+            "substituteStatus": "not-transportable"
+          },
+          {
+            "ingredient": "square-independence of shifted discriminants",
+            "finiteFieldRole": "Show the character product is not a square, enabling cancellation.",
+            "integerSubstitute": "Uniform cancellation of shifted Mobius products over intervals.",
+            "substituteStatus": "open-major-conjecture"
+          },
+          {
+            "ingredient": "Weil character-sum cancellation",
+            "finiteFieldRole": "Provide square-root cancellation for nontrivial character sums over coefficient space.",
+            "integerSubstitute": "Power-saving cancellation for shifted Mobius correlations.",
+            "substituteStatus": "open-major-conjecture"
+          }
+        ],
+        "integerStatement": "For fixed distinct shifts h_1,...,h_k, sum_{n<=X} mu(n+h_1)...mu(n+h_k)=o(X).",
+        "priorEvidence": [
+          "cycle-006 signed profiles failed",
+          "cycle-008 fixed-lag Mobius/Liouville controls failed on Z"
+        ],
+        "experimentStatus": "blocked",
+        "blocker": "The missing integer substitute is the Chowla conjecture itself, not a smaller data-testable lemma.",
+        "nextAllowedAction": "Do not run another aggregate Mobius-correlation experiment unless a strictly weaker, fixed, testable substitute lemma is named first.",
+        "classification": {
+          "decision": "blocked",
+          "hasMajorOpen": true,
+          "hasNotTransportable": true,
+          "missingOpenCount": 2,
+          "notTransportableCount": 1,
+          "testedNoBreakthroughCount": 0
+        }
+      },
+      {
+        "id": "sawin-shusterman-chowla-uniform-proof-map",
+        "catalogEntryId": "sawin-shusterman-chowla-uniform",
+        "finiteFieldTheoremInput": "Uniform Chowla-type Mobius correlations over F_q[T] for high-degree polynomials and large families of shifts under finite-field hypotheses.",
+        "proofIngredients": [
+          {
+            "ingredient": "algebraic-geometry equidistribution / monodromy control",
+            "finiteFieldRole": "Turn polynomial shift families into controlled geometric families with equidistributed Frobenius data.",
+            "integerSubstitute": "An integer mechanism producing comparable independence of shifted Mobius signs.",
+            "substituteStatus": "open-major-conjecture"
+          },
+          {
+            "ingredient": "uniformity over many shifts",
+            "finiteFieldRole": "Prevent the theorem from being a single hand-picked shift identity.",
+            "integerSubstitute": "Uniform Chowla estimates across structured shift sets.",
+            "substituteStatus": "open-major-conjecture"
+          },
+          {
+            "ingredient": "finite-field local obstruction accounting",
+            "finiteFieldRole": "Separate genuine Mobius cancellation from squarefactor/repeated-root obstructions.",
+            "integerSubstitute": "Squarefactor/local obstruction conditioning, already tested in local tensor cycles.",
+            "substituteStatus": "tested-no-breakthrough"
+          }
+        ],
+        "integerStatement": "Uniform higher-order Chowla correlations for integer Mobius/Liouville over fixed and structured shift families.",
+        "priorEvidence": [
+          "cycle-005 exact admissibility tensor rejected",
+          "cycle-006 signed profile rejected",
+          "cycle-008 multiplicative signs rejected"
+        ],
+        "experimentStatus": "blocked",
+        "blocker": "The proof ingredient that matters is a major open uniform Chowla substitute; previous data-first variants were absorbed by controls.",
+        "nextAllowedAction": "Only proceed after isolating a narrower missing lemma that is not equivalent to uniform Chowla.",
+        "classification": {
+          "decision": "blocked",
+          "hasMajorOpen": true,
+          "hasNotTransportable": false,
+          "missingOpenCount": 2,
+          "notTransportableCount": 0,
+          "testedNoBreakthroughCount": 1
+        }
+      },
+      {
+        "id": "sawin-shusterman-twin-irreducibles-proof-map",
+        "catalogEntryId": "sawin-shusterman-twin-irreducibles",
+        "finiteFieldTheoremInput": "Quantitative counts of irreducible pairs F and F+A over F_q[T] under finite-field hypotheses.",
+        "proofIngredients": [
+          {
+            "ingredient": "finite-field tuple equidistribution",
+            "finiteFieldRole": "Control simultaneous irreducibility of shifted polynomial families after local obstructions are removed.",
+            "integerSubstitute": "Uniform Hardy-Littlewood prime-tuple estimates with power-saving control.",
+            "substituteStatus": "open-major-conjecture"
+          },
+          {
+            "ingredient": "exact local obstruction removal",
+            "finiteFieldRole": "Account for repeated-root and congruence obstructions in polynomial tuples.",
+            "integerSubstitute": "Admissibility and singular-series correction.",
+            "substituteStatus": "known-but-insufficient"
+          },
+          {
+            "ingredient": "degree-shell normalization",
+            "finiteFieldRole": "Use degree n as the scale and compare counts inside a complete finite shell.",
+            "integerSubstitute": "Log-scale normalization for primes up to X or in windows.",
+            "substituteStatus": "known-but-insufficient"
+          }
+        ],
+        "integerStatement": "Hardy-Littlewood twin/prime-pair asymptotics for fixed admissible shifts.",
+        "priorEvidence": [
+          "cycle-002 fixed-shift graph rejected",
+          "cycle-003/004/005 local tensor leads not promoted/rejected",
+          "cycle-007 quotient spectral residual rejected"
+        ],
+        "experimentStatus": "blocked",
+        "blocker": "After local admissibility is handled, the remaining missing ingredient is the open prime-tuple theorem itself.",
+        "nextAllowedAction": "Do not rerun prime-pair visuals; only a new lemma that beats local/composite controls and has a proof route can reopen this family.",
+        "classification": {
+          "decision": "blocked",
+          "hasMajorOpen": true,
+          "hasNotTransportable": false,
+          "missingOpenCount": 1,
+          "notTransportableCount": 0,
+          "testedNoBreakthroughCount": 0
+        }
+      }
+    ]
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-010-proof-obligation-map.json",
+    "md": "logs/two-universes-protocol/cycle-010-proof-obligation-map.md",
+    "svg": "logs/two-universes-protocol/cycle-010-proof-obligation-map.svg"
+  }
+}

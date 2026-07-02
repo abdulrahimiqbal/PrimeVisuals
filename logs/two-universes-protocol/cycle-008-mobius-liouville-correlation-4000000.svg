@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="1180" height="680" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="78" y="38" fill="#f8fafc" font-size="20" font-weight="700">Mobius/Liouville matched-correlation energy</text>
+<text x="78" y="61" fill="#94a3b8" font-size="13">square-root-normalized fixed-lag energy, h=1..8</text>
+<rect x="78" y="86" width="1024" height="410" fill="none" stroke="#334155"/>
+<path d="M 78.00 472.92 L 590.00 452.26 L 1102.00 454.13" fill="none" stroke="#67e8f9" stroke-width="2.5"/>
+<path d="M 78.00 462.81 L 590.00 456.92 L 1102.00 450.18" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+<path d="M 78.00 441.07 L 590.00 453.39 L 1102.00 417.82" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<path d="M 78.00 404.51 L 590.00 403.15 L 1102.00 274.94" fill="none" stroke="#fde68a" stroke-width="2.5"/>
+<path d="M 78.00 440.87 L 590.00 366.81 L 1102.00 426.15" fill="none" stroke="#34d399" stroke-width="2.5"/>
+<path d="M 78.00 442.59 L 590.00 400.00 L 1102.00 370.64" fill="none" stroke="#86efac" stroke-width="2.5"/>
+<path d="M 78.00 129.93 L 590.00 333.32 L 1102.00 224.26" fill="none" stroke="#fb7185" stroke-width="2.5"/>
+<path d="M 78.00 189.52 L 590.00 225.63 L 1102.00 228.39" fill="none" stroke="#fda4af" stroke-width="2.5"/>
+<text x="78" y="530" fill="#67e8f9" font-size="12">Z mu</text>
+<text x="288" y="530" fill="#a78bfa" font-size="12">Z lambda</text>
+<text x="498" y="530" fill="#fbbf24" font-size="12">F_2 mu</text>
+<text x="708" y="530" fill="#fde68a" font-size="12">F_2 lambda</text>
+<text x="78" y="550" fill="#34d399" font-size="12">F_3 mu</text>
+<text x="288" y="550" fill="#86efac" font-size="12">F_3 lambda</text>
+<text x="498" y="550" fill="#fb7185" font-size="12">F_5 mu</text>
+<text x="708" y="550" fill="#fda4af" font-size="12">F_5 lambda</text>
+</g>
+</svg>

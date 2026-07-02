@@ -1,0 +1,264 @@
+{
+  "generatedAt": "2026-06-17T01:42:38.448Z",
+  "cycle": 4,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-004-local-state-centered-shift-tensor",
+    "title": "Local-state centered multi-shift residual tensor",
+    "class": "forced mutation from global pair-rate centering to residue/factor-state conditioned baselines",
+    "councilSuccessTarget": "S1/S2 candidate only if local-state centered residual tensors survive controls with low fallback, small residual means, and scale stability across Z and F_q[t]",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-004-local-state-centered-tensor-2000000.json",
+      "logs/two-universes-protocol/cycle-004-local-state-centered-tensor-2000000.md",
+      "logs/two-universes-protocol/cycle-004-local-state-centered-tensor-2000000.svg",
+      "scripts/local-state-centered-tensor-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states a locally conditioned residual Z_h(v)=(1_{v+h prime-like}-p_h(train, local_state(v,h)))/sqrt(p_h(1-p_h)) and scores holdout off-diagonal covariance RMS.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: local state is divisibility of f+a by irreducible moduli of degree <=2, with degree-preserving polynomial shifts.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side uses train range <=1000000 and holdout (1000000, 2000000] with 70431 holdout vertices.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Real tensors separate from listed random controls, but local-state support is not clean enough for promotion: max fallback=0.329819 (threshold 0.05) and max mean residual=0.240496 (threshold 0.05).",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "One low-parameter statistic is used: off-diagonal RMS of a fixed-shift local-state residual covariance tensor.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Single N/degree ladder only; current levels are Z=0.037195, F_2=0.025333, F_3=0.044332, ratio=1.75.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No catalog audit has ruled out Hardy-Littlewood local tuple effects, Bateman-Horn-style local factors, finite-field short-interval biases, or estimator fallback artifacts.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the local-state audit script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "Fallback and residual means are too large for a theorem-shaped residual statement: max fallback=0.329819, max mean residual=0.240496.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready evidence pack exists because local support, scale stability, novelty audit, and proof path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "localStateEvidence": {
+    "estimator": {
+      "minStateCount": 25,
+      "minEdgeSupport": 3,
+      "localRatePriorWeight": 16,
+      "fallbackThreshold": 0.05,
+      "residualThreshold": 0.05,
+      "maxFallback": 0.32981898238747553,
+      "maxMeanAbsResidual": 0.24049580672572535
+    },
+    "integer": {
+      "N": 2000000,
+      "split": 1000000,
+      "labels": 148933,
+      "offdiagRms": 0.03719516835100046,
+      "maxAbsOffdiag": 0.07284784609262507,
+      "meanAbsResidual": 0.2093095919797647,
+      "fallbackFraction": 0.2812823898567392,
+      "cramerRange": [
+        0.0045922563273588625,
+        0.007276547622845356
+      ],
+      "compositeRange": [
+        0.016732093871607446,
+        0.017643519662868597
+      ],
+      "separatesCramer": true,
+      "separatesComposite": true
+    },
+    "fields": [
+      {
+        "q": 2,
+        "trainDegree": 21,
+        "holdoutDegree": 22,
+        "offdiagRms": 0.025333073749002948,
+        "maxAbsOffdiag": 0.06067938136723201,
+        "meanAbsResidual": 0.14108770656732608,
+        "fallbackFraction": 0.2777777777777778,
+        "randomMonicRange": [
+          0.0016212364911545884,
+          0.0031172448574811043
+        ],
+        "randomReducibleRange": [
+          0.0018292564083872923,
+          0.0032201940801740363
+        ]
+      },
+      {
+        "q": 3,
+        "trainDegree": 12,
+        "holdoutDegree": 13,
+        "offdiagRms": 0.04433195952675365,
+        "maxAbsOffdiag": 0.05098545915817628,
+        "meanAbsResidual": 0.24049580672572535,
+        "fallbackFraction": 0.32981898238747553,
+        "randomMonicRange": [
+          0.0020491889442555366,
+          0.0033486552695696933
+        ],
+        "randomReducibleRange": [
+          0.002140357636749215,
+          0.0031950084010149158
+        ]
+      }
+    ]
+  },
+  "decision": {
+    "status": "LEAD_NOT_PROMOTED_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Local-state centering produces a genuine lead, but not a breakthrough candidate: fallback/residual support, scale stability, novelty audit, proof path, and expert pack gates fail.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Real tensors separate from listed random controls, but local-state support is not clean enough for promotion: max fallback=0.329819 (threshold 0.05) and max mean residual=0.240496 (threshold 0.05).",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Single N/degree ladder only; current levels are Z=0.037195, F_2=0.025333, F_3=0.044332, ratio=1.75.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No catalog audit has ruled out Hardy-Littlewood local tuple effects, Bateman-Horn-style local factors, finite-field short-interval biases, or estimator fallback artifacts.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "Fallback and residual means are too large for a theorem-shaped residual statement: max fallback=0.329819, max mean residual=0.240496.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready evidence pack exists because local support, scale stability, novelty audit, and proof path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Local-state holdout offdiagRms is Z=0.037195, F_2=0.025333, F_3=0.044332.",
+    "expectedNull": "After local-state centering, random controls should be near null, fallback should be low, residual means should be small, and the signal should survive scale changes.",
+    "knownExplanation": "Residual local admissibility and fallback-to-global baselines can still manufacture covariance even when random controls are separated.",
+    "survivedControls": [
+      "Z separates from Cramer controls",
+      "Z separates from composite controls",
+      "F_2 separates from monic=true reducible=true",
+      "F_3 separates from monic=true reducible=true"
+    ],
+    "failedControls": [
+      "Max fallback fraction 0.329819 exceeds 0.05",
+      "Max mean residual 0.240496 exceeds 0.05"
+    ],
+    "whatFailed": "The estimator is still too dependent on fallback/global baselines and has only one scale.",
+    "suspectedInvariant": "A real two-universe lead, if present, must survive exact pair/triple admissibility subtraction and multi-scale whitening.",
+    "nextMutation": "Replace fallback-heavy local states with exact admissibility-conditioned residuals and a scale ladder"
+  },
+  "nextMutation": {
+    "title": "Replace fallback-heavy local states with exact admissibility-conditioned residuals and a scale ladder",
+    "reason": "Cycle 004 separates from random controls, but too much of the score still uses fallback/global baselines and residual means remain large.",
+    "preregisteredNextMove": [
+      "Define exact local admissibility tensors for every shift pair/triple, not just per-shift local rates.",
+      "For Z, condition on the complete residue pattern of v+h over a controlled primorial and require low fallback before scoring.",
+      "For F_q[t], condition on divisibility patterns by all low-degree irreducibles that can force reducibility of f+a.",
+      "Score locally whitened covariance eigenvalues and third-order cumulants after the pair/triple admissibility tensor is subtracted.",
+      "Run a scale ladder at N=2M,4M,8M and q=2,3,5 degree holdouts before any novelty memo or expert pack."
+    ]
+  }
+}

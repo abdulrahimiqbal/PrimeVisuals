@@ -7,7 +7,15 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "vitest run"
+    "test": "vitest run",
+    "crack:plan": "node scripts/crack-atlas.mjs plan",
+    "crack:run": "node scripts/crack-atlas.mjs run",
+    "crack:audit": "node scripts/crack-atlas.mjs audit",
+    "crack:pack": "node scripts/crack-atlas.mjs pack",
+    "crack:quick": "node scripts/crack-atlas.mjs plan --quick && node scripts/crack-atlas.mjs run --quick && node scripts/crack-atlas.mjs audit --quick && node scripts/crack-atlas.mjs pack --quick",
+    "frontier:liouville": "node scripts/frontierlab-liouville-atlas.mjs",
+    "frontier:chowla": "node scripts/frontier-chowla.mjs --N0 20000 --levels 4 --H 256 --seeds 20",
+    "frontier:chowla-weather": "node scripts/frontier-chowla-weather.mjs --N 300000 --H 512 --windows 256,512,1024,2048,4096,8192 --stride 512 --seeds 30"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",

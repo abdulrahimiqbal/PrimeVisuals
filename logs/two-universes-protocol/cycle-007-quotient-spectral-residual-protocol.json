@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-06-17T02:20:03.049Z",
+  "cycle": 7,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-007-quotient-spectral-residual",
+    "title": "Quotient spectral residual edge",
+    "class": "forced mutation from local additive-shift tensors to quotient-domain prime-indicator residual spectra",
+    "councilSuccessTarget": "S1/S2 candidate only if quotient spectral residual profiles survive rough-random, rough-composite, Cramer, and finite-field eligible controls across Z and F_q[t]",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-4000000.json",
+      "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-4000000.md",
+      "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-4000000.svg",
+      "scripts/quotient-spectral-residual-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states a quotient residual matrix X(block,residue)=(observed prime-like count - rough-shell expected count)/sqrt(expected), then scores lambda_max(cov X) normalized by a Marchenko-Pastur edge.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: quotient residues are polynomial residues modulo irreducible moduli, and rough shells remove divisibility by low-degree irreducibles for q=2,3,5.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side uses fresh block holdouts over endpoints 1000000, 2000000, 4000000 with final endpoint N=4000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Integer final budget clears rough-random, rough-composite, and Cramer controls (true), but field controls fail: F_2 pass=true edge=0.750494 random=0.658239..0.750392 composite=0.697764..0.749017; F_3 pass=false edge=0.819899 random=0.716369..0.923959 composite=0.720150..0.903004; F_5 pass=false edge=0.883718 random=0.818270..0.873317 composite=0.793460..0.964438.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter statistic: fixed rough cutoff, fixed quotient modulus budget path, covariance spectral edge, and MP normalization.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate fails: required 1M/2M/4M/8M integer ladder present=false; final budget excess-edge slope=0.194172.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No novelty audit has ruled out classical prime races, Chebyshev bias, residue-current covariance, or rough-shell finite-size effects.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the quotient spectral residual script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The field-side quotient spectral edge is absorbed by controls for q=3 and q=5, so no two-universe spectral law or divergence statement is theorem-shaped yet.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready evidence pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "quotientSpectralEvidence": {
+    "diagnostics": {
+      "integerPass": true,
+      "allFieldsPass": false,
+      "completeIntegerLadder": false,
+      "maxFieldControlMiss": 0.00010170573431134144,
+      "minFieldControlMargin": -0.10406054612123039,
+      "finalBudget": 8,
+      "excessEdgeSlope": 0.19417241391158335
+    },
+    "integer": {
+      "N": 4000000,
+      "budget": 8,
+      "moduli": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "edge": 1.1039777021436938,
+      "randomRange": [
+        0.9049894814791974,
+        0.956970373091997
+      ],
+      "compositeRange": [
+        0.9448797319968129,
+        1.02746389635055
+      ],
+      "cramerRange": [
+        0.9111830114159375,
+        1.0862618742509718
+      ],
+      "energy": 0.4414492396400096,
+      "strongestColumns": [
+        {
+          "universe": "Z",
+          "modulus": 19,
+          "residue": 7,
+          "rms": 0.5880734614982359
+        },
+        {
+          "universe": "Z",
+          "modulus": 23,
+          "residue": 12,
+          "rms": 0.5727307282266726
+        },
+        {
+          "universe": "Z",
+          "modulus": 19,
+          "residue": 14,
+          "rms": 0.5684941037848287
+        },
+        {
+          "universe": "Z",
+          "modulus": 17,
+          "residue": 5,
+          "rms": 0.5534408156332362
+        },
+        {
+          "universe": "Z",
+          "modulus": 17,
+          "residue": 16,
+          "rms": 0.541266331455462
+        },
+        {
+          "universe": "Z",
+          "modulus": 23,
+          "residue": 18,
+          "rms": 0.5403389218541713
+        },
+        {
+          "universe": "Z",
+          "modulus": 17,
+          "residue": 4,
+          "rms": 0.5395403119132204
+        },
+        {
+          "universe": "Z",
+          "modulus": 23,
+          "residue": 6,
+          "rms": 0.5362171341944395
+        }
+      ]
+    },
+    "fields": [
+      {
+        "q": 2,
+        "degrees": [
+          20,
+          21,
+          22
+        ],
+        "budget": 3,
+        "edge": 0.7504940885147126,
+        "randomRange": [
+          0.6582387309448633,
+          0.7503923827804012
+        ],
+        "compositeRange": [
+          0.697764344546509,
+          0.7490168375016704
+        ],
+        "dim": 5,
+        "rows": 3,
+        "passControls": true
+      },
+      {
+        "q": 3,
+        "degrees": [
+          11,
+          12,
+          13
+        ],
+        "budget": 5,
+        "edge": 0.8198986908153526,
+        "randomRange": [
+          0.7163694819097794,
+          0.923959236936583
+        ],
+        "compositeRange": [
+          0.7201502452293871,
+          0.9030041647713465
+        ],
+        "dim": 22,
+        "rows": 3,
+        "passControls": false
+      },
+      {
+        "q": 5,
+        "degrees": [
+          6,
+          7,
+          8
+        ],
+        "budget": 8,
+        "edge": 0.8837178551556295,
+        "randomRange": [
+          0.8182700214847475,
+          0.8733167387631531
+        ],
+        "compositeRange": [
+          0.7934596241341998,
+          0.9644378897985284
+        ],
+        "dim": 92,
+        "rows": 3,
+        "passControls": false
+      }
+    ]
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Quotient spectral residuals produce an integer lead, but the q=3 and q=5 finite-field spectra are absorbed by controls and the 8M scale ladder is incomplete.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Integer final budget clears rough-random, rough-composite, and Cramer controls (true), but field controls fail: F_2 pass=true edge=0.750494 random=0.658239..0.750392 composite=0.697764..0.749017; F_3 pass=false edge=0.819899 random=0.716369..0.923959 composite=0.720150..0.903004; F_5 pass=false edge=0.883718 random=0.818270..0.873317 composite=0.793460..0.964438.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate fails: required 1M/2M/4M/8M integer ladder present=false; final budget excess-edge slope=0.194172.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No novelty audit has ruled out classical prime races, Chebyshev bias, residue-current covariance, or rough-shell finite-size effects.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The field-side quotient spectral edge is absorbed by controls for q=3 and q=5, so no two-universe spectral law or divergence statement is theorem-shaped yet.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready evidence pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer budget-8 edge=1.103978 clears controls; field margins against strongest controls are F_2=0.000102, F_3=-0.104061, F_5=-0.080720.",
+    "expectedNull": "A transportable quotient spectral residual law should clear local controls in Z and every F_q[t] field or show a precise stable divergence pattern.",
+    "knownExplanation": "Integer residue currents can reflect classical prime races and rough-shell finite-size bias; finite fields do not reproduce the same edge after local quotient controls.",
+    "survivedControls": [
+      "Z final quotient spectral edge clears rough-random, rough-composite, and Cramer controls"
+    ],
+    "failedControls": [
+      "F_3 edge=0.819899 is within controls",
+      "F_5 edge=0.883718 is within controls"
+    ],
+    "whatFailed": "Prime-indicator quotient geometry does not give a stable two-universe law.",
+    "suspectedInvariant": "The next plausible bridge is a multiplicative-sign object where F_q[t] has exact Mobius/Liouville structure.",
+    "nextMutation": "Leave prime-indicator local geometry and test Möbius/Liouville matched correlations"
+  },
+  "nextMutation": {
+    "title": "Leave prime-indicator local geometry and test Möbius/Liouville matched correlations",
+    "reason": "Additive shifts, signed local tensors, and quotient spectral prime-indicator residuals all fail to produce a stable matched law across q=2,3,5.",
+    "preregisteredNextMove": [
+      "Switch the object from prime indicators to completely multiplicative signs.",
+      "For Z, compute Liouville/Mobius short-lag correlations on train/holdout intervals with local residue controls.",
+      "For F_q[t], compute polynomial Liouville/Mobius correlations using exact factorization tables and degree holdouts.",
+      "Use random completely multiplicative sign controls, degree-preserving polynomial controls, and integer residue/composite controls.",
+      "Promote only if a precise S1 shared law or S2 divergence survives q=2,3,5, integer scale ladders, novelty audit, and an expert-ready pack."
+    ]
+  }
+}

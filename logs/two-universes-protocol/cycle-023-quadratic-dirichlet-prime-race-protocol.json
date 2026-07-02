@@ -1,0 +1,603 @@
+{
+  "generatedAt": "2026-06-17T10:44:17.404Z",
+  "cycle": 23,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-023-quadratic-dirichlet-prime-race",
+    "title": "Quadratic Dirichlet prime race",
+    "class": "new-domain registration after algebraic-family stop: Dirichlet character prime races",
+    "councilSuccessTarget": "S1/S2 candidate only if a matched quadratic character race survives nearby-character, random, bootstrap, and q=3,5,7 finite-field profile controls beyond known Dirichlet/PNT calibration",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-8000000.json",
+      "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-8000000.md",
+      "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-8000000.svg",
+      "scripts/quadratic-dirichlet-prime-race-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states Z(X)=sum chi(P)/sqrt(labels) for a fixed quadratic Dirichlet character on rational primes and the matched polynomial Dirichlet character on F_q[t] irreducibles.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: chi(P) is the quadratic residue character modulo a fixed irreducible quadratic polynomial M_q(t), checked across q=3,5,7 degree ladders.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No control-surviving matched profile: integerBeatsControls=false, signsAligned=true, profileSpread=2.209918.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter object: one integer quadratic character, one fixed irreducible quadratic modulus per q, and one normalized cumulative character sum.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete integer and field ladders plus a matched control-surviving profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The object is a real new domain after the algebraic-family stop, but the observed small character-race sums are standard Dirichlet/PNT-in-progressions calibration and do not beat nearby-character controls.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the 8M quadratic Dirichlet race run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The proof path is classical calibration: Dirichlet characters and prime number theorem in arithmetic progressions on Z, polynomial Dirichlet characters and prime polynomial theorem on F_q[t].",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because controls, novelty, and matched-profile gates fail; this is a calibration artifact.",
+      "severity": "hard-fail"
+    }
+  },
+  "quadraticDirichletEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "integerBeatsControls": false,
+      "signsAligned": true,
+      "profileSpread": 2.2099177350140224,
+      "matchedProfile": false,
+      "maxAbsEndpointZ": 0.4292004426772116,
+      "theoremShape": {
+        "statistic": "Z(X)=sum chi(P)/sqrt(labels), with chi a fixed quadratic Dirichlet character",
+        "integer": "P ranges over rational primes p<=N and chi(p)=(p/m) for fixed odd prime modulus m.",
+        "functionField": "P ranges over monic irreducibles in F_q[t] and chi(P) is the quadratic residue character modulo a fixed irreducible quadratic M_q(t).",
+        "baseline": "Dirichlet prime number theorem / prime polynomial theorem in arithmetic progressions predicts cancellation; promotion requires a residual beyond nearby-character and random controls."
+      },
+      "finalInteger": {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -216,
+        "mean": -0.0004001659947830211,
+        "z": -0.293999753185496,
+        "energyZ": -0.293999753185496,
+        "maxAbsZ": 1.7320508075688774
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "modulus": "t^2 + 1",
+          "final": {
+            "label": "F_3:deg12",
+            "q": 3,
+            "degree": 12,
+            "labels": 44220,
+            "cumulativeLabels": 69705,
+            "degreeSum": -60,
+            "degreeMean": -0.0013568521031207597,
+            "z": -0.39012632702306954,
+            "energyZ": -0.39012632702306954,
+            "maxAbsZ": 2.1213203435596424
+          }
+        },
+        {
+          "q": 5,
+          "modulus": "t^2 + 2",
+          "final": {
+            "label": "F_5:deg8",
+            "q": 5,
+            "degree": 8,
+            "labels": 48750,
+            "cumulativeLabels": 63318,
+            "degreeSum": -78,
+            "degreeMean": -0.0016,
+            "z": -0.4292004426772116,
+            "energyZ": -0.4292004426772116,
+            "maxAbsZ": 1.5205718425394108
+          }
+        },
+        {
+          "q": 7,
+          "modulus": "t^2 + 1",
+          "final": {
+            "label": "F_7:deg7",
+            "q": 7,
+            "degree": 7,
+            "labels": 117648,
+            "cumulativeLabels": 141279,
+            "degreeSum": 0,
+            "degreeMean": 0,
+            "z": -0.19421557457861127,
+            "energyZ": -0.19421557457861127,
+            "maxAbsZ": 1.6164477182409742
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "endpoint": 1000000,
+        "count": 78497,
+        "sum": -77,
+        "mean": -0.0009809292074856365,
+        "z": -0.2748300365251113,
+        "energyZ": -0.2748300365251113,
+        "maxAbsZ": 1.7320508075688774
+      },
+      {
+        "endpoint": 2000000,
+        "count": 148932,
+        "sum": -116,
+        "mean": -0.000778878951467784,
+        "z": -0.3005826980553986,
+        "energyZ": -0.3005826980553986,
+        "maxAbsZ": 1.7320508075688774
+      },
+      {
+        "endpoint": 4000000,
+        "count": 283145,
+        "sum": -81,
+        "mean": -0.0002860725070193717,
+        "z": -0.15222310293962973,
+        "energyZ": -0.15222310293962973,
+        "maxAbsZ": 1.7320508075688774
+      },
+      {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -216,
+        "mean": -0.0004001659947830211,
+        "z": -0.293999753185496,
+        "energyZ": -0.293999753185496,
+        "maxAbsZ": 1.7320508075688774
+      }
+    ],
+    "controlSummary": {
+      "localCharacters": {
+        "zRange": [
+          -0.46413892917872823,
+          -0.3035278041256786
+        ],
+        "absZRange": [
+          0.3035278041256786,
+          0.46413892917872823
+        ],
+        "maxAbsZRange": [
+          1,
+          1.6329931618554523
+        ],
+        "energyZRange": [
+          -0.46413892917872823,
+          -0.3035278041256786
+        ]
+      },
+      "shuffle": {
+        "zRange": [
+          -0.293999753185496,
+          -0.293999753185496
+        ],
+        "absZRange": [
+          0.293999753185496,
+          0.293999753185496
+        ],
+        "maxAbsZRange": [
+          1.52056668778905,
+          3.4412360080584263
+        ],
+        "energyZRange": [
+          -0.293999753185496,
+          -0.293999753185496
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -1.5462209241607567,
+          1.30122112983951
+        ],
+        "absZRange": [
+          0.09799991772849867,
+          1.5462209241607567
+        ],
+        "maxAbsZRange": [
+          1.725402189524656,
+          3.65655170486763
+        ],
+        "energyZRange": [
+          -1.5462209241607567,
+          1.30122112983951
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -0.4137774304092166,
+          0.6914438639732962
+        ],
+        "absZRange": [
+          0.08438881804398496,
+          0.6914438639732962
+        ],
+        "maxAbsZRange": [
+          1.889822365046136,
+          3.295779364613559
+        ],
+        "energyZRange": [
+          -0.4137774304092166,
+          0.6914438639732962
+        ]
+      }
+    },
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 12,
+        "modulus": "t^2 + 1",
+        "final": {
+          "label": "F_3:deg12",
+          "q": 3,
+          "degree": 12,
+          "labels": 44220,
+          "cumulativeLabels": 69705,
+          "degreeSum": -60,
+          "degreeMean": -0.0013568521031207597,
+          "z": -0.39012632702306954,
+          "energyZ": -0.39012632702306954,
+          "maxAbsZ": 2.1213203435596424
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "modulus": "t^2 + 2",
+        "final": {
+          "label": "F_5:deg8",
+          "q": 5,
+          "degree": 8,
+          "labels": 48750,
+          "cumulativeLabels": 63318,
+          "degreeSum": -78,
+          "degreeMean": -0.0016,
+          "z": -0.4292004426772116,
+          "energyZ": -0.4292004426772116,
+          "maxAbsZ": 1.5205718425394108
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 7,
+        "modulus": "t^2 + 1",
+        "final": {
+          "label": "F_7:deg7",
+          "q": 7,
+          "degree": 7,
+          "labels": 117648,
+          "cumulativeLabels": 141279,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.19421557457861127,
+          "energyZ": -0.19421557457861127,
+          "maxAbsZ": 1.6164477182409742
+        }
+      }
+    ],
+    "integerValidation": [
+      {
+        "p": 2,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 3,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "residue": 1,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 19,
+        "residue": 4,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 23,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "residue": 4,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 31,
+        "residue": 1,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      }
+    ],
+    "fieldValidation": [
+      {
+        "q": 3,
+        "modulus": "t^2 + 1",
+        "rows": [
+          {
+            "residue": 1,
+            "chi": 1,
+            "square": 1,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 2,
+            "chi": 1,
+            "square": 1,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 3,
+            "chi": 1,
+            "square": 2,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 4,
+            "chi": -1,
+            "square": 6,
+            "chiSquare": 1,
+            "ok": true
+          }
+        ]
+      },
+      {
+        "q": 5,
+        "modulus": "t^2 + 2",
+        "rows": [
+          {
+            "residue": 1,
+            "chi": 1,
+            "square": 1,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 2,
+            "chi": 1,
+            "square": 4,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 3,
+            "chi": 1,
+            "square": 4,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 4,
+            "chi": 1,
+            "square": 1,
+            "chiSquare": 1,
+            "ok": true
+          }
+        ]
+      },
+      {
+        "q": 7,
+        "modulus": "t^2 + 1",
+        "rows": [
+          {
+            "residue": 1,
+            "chi": 1,
+            "square": 1,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 2,
+            "chi": 1,
+            "square": 4,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 3,
+            "chi": 1,
+            "square": 2,
+            "chiSquare": 1,
+            "ok": true
+          },
+          {
+            "residue": 4,
+            "chi": 1,
+            "square": 2,
+            "chiSquare": 1,
+            "ok": true
+          }
+        ]
+      }
+    ]
+  },
+  "decision": {
+    "status": "QUADRATIC_DIRICHLET_PRIME_RACE_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 023 opens a new Dirichlet-character domain, but the character-race profile is absorbed by nearby-character/random controls and remains known calibration.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No control-surviving matched profile: integerBeatsControls=false, signsAligned=true, profileSpread=2.209918.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete integer and field ladders plus a matched control-surviving profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The object is a real new domain after the algebraic-family stop, but the observed small character-race sums are standard Dirichlet/PNT-in-progressions calibration and do not beat nearby-character controls.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because controls, novelty, and matched-profile gates fail; this is a calibration artifact.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer final z=-0.294000; max endpoint |z|=0.429200; profileSpread=2.209918; matchedProfile=false.",
+    "expectedNull": "A useful character-race residual should survive nearby-character, shuffle, bootstrap, and q=3,5,7 profile controls beyond Dirichlet/PNT calibration.",
+    "knownExplanation": "Quadratic character cancellation under Dirichlet/PNT-in-progressions and polynomial Dirichlet character sums explain the small observed profiles.",
+    "survivedControls": [],
+    "failedControls": [
+      "Integer profile does not beat nearby-character/random controls despite full ladders and exact q-side character objects"
+    ],
+    "whatFailed": "The object is a standard Dirichlet-character calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "Single-character count imbalances are too classical; any continuation needs higher-order transition bias with a non-arbitrary F_q[t] analogue.",
+    "nextMutation": "Leave single-character prime races; require higher-order transition bias with canonical F_q[t] analogue or stop"
+  },
+  "nextMutation": {
+    "title": "Leave single-character prime races; require higher-order transition bias with canonical F_q[t] analogue or stop",
+    "reason": "The quadratic character race has exact objects and full ladders, but the signal is small, control-absorbed, and explained by classical Dirichlet/PNT-in-progressions calibration.",
+    "preregisteredNextMove": [
+      "Do not promote single Dirichlet-character prime races or residue-class count imbalances by themselves.",
+      "A next character-race cycle must either name a higher-order transition/consecutive-bias statistic with a canonical order-free F_q[t] analogue, or stop this branch.",
+      "Before data, register the finite-field theorem/null model, integer analogue, local character controls, holdout ladder, q-ladders, novelty audit, proof path, and expert-pack criteria.",
+      "If the F_q[t] analogue depends on arbitrary lexicographic ordering, reject it before computation rather than reviving the cycle-001 ordering failure."
+    ]
+  }
+}

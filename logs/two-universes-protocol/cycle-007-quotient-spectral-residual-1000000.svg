@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="1180" height="680" fill="#111827"/>
+<text x="64" y="38" fill="#f9fafb" font-size="20" font-weight="700">Quotient spectral residual audit</text>
+<text x="64" y="60" fill="#a7b0c4" font-size="13">Integer budget-8: covariance edge after rough/local admissibility subtraction.</text>
+<rect x="84" y="82" width="710" height="390" fill="#0b1220" stroke="#263244"/>
+<polygon points="84,230.1475760857795 84,379.1776105210214" fill="#2a9d8f" opacity="0.18"/>
+<polygon points="84,223.83535484793427 84,338.728117544489" fill="#a78bfa" opacity="0.16"/>
+<path d="M 84.00 193.40" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<circle cx="84" cy="193.40013684643702" r="4" fill="#f8fafc"/><text x="84" y="496" text-anchor="middle" fill="#9ca3af" font-size="11">1M</text>
+<text x="84" y="524" fill="#a7b0c4" font-size="12">teal: rough-random controls; violet: rough-composite controls</text>
+<rect x="820" y="84" width="318" height="480" fill="#0b1220" stroke="#263244"/>
+<text x="850" y="62" fill="#dbeafe" font-size="14">function-field quotient edges</text>
+<text x="796" y="120" fill="#a78bfa" font-size="12">F2 b2</text>
+<line x1="858" y1="117" x2="858" y2="117" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="106" width="0" height="13" fill="#a78bfa"/>
+<text x="866" y="117" fill="#dbeafe" font-size="11">0.000</text>
+<text x="796" y="149" fill="#a78bfa" font-size="12">F2 b3</text>
+<line x1="986.7922153256644" y1="146" x2="999.476120878875" y2="146" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="135" width="141.7215422592415" height="13" fill="#a78bfa"/>
+<text x="1007.7215422592415" y="146" fill="#dbeafe" font-size="11">0.750</text>
+<text x="796" y="178" fill="#60a5fa" font-size="12">F3 b2</text>
+<line x1="966.1697713333298" y1="175" x2="986.3564730571845" y2="175" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="164" width="129.5976763198487" height="13" fill="#60a5fa"/>
+<text x="995.5976763198487" y="175" fill="#dbeafe" font-size="11">0.686</text>
+<text x="796" y="207" fill="#60a5fa" font-size="12">F3 b3</text>
+<line x1="958.3178735123196" y1="204" x2="1002.9195332270122" y2="204" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="193" width="151.79668985912036" height="13" fill="#60a5fa"/>
+<text x="1017.7966898591203" y="204" fill="#dbeafe" font-size="11">0.804</text>
+<text x="796" y="236" fill="#60a5fa" font-size="12">F3 b5</text>
+<line x1="993.19944148999" y1="233" x2="1031.9983100235595" y2="233" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="222" width="149.21851405861398" height="13" fill="#60a5fa"/>
+<text x="1015.218514058614" y="233" fill="#dbeafe" font-size="11">0.790</text>
+<text x="796" y="265" fill="#34d399" font-size="12">F5 b2</text>
+<line x1="959.7976713718326" y1="262" x2="1003.3974789721934" y2="262" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="251" width="167.85569154815184" height="13" fill="#34d399"/>
+<text x="1033.8556915481518" y="262" fill="#dbeafe" font-size="11">0.889</text>
+<text x="796" y="294" fill="#34d399" font-size="12">F5 b3</text>
+<line x1="974.6487925020091" y1="291" x2="1006.3733947668542" y2="291" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="280" width="190.44085575984104" height="13" fill="#34d399"/>
+<text x="1056.440855759841" y="291" fill="#dbeafe" font-size="11">1.008</text>
+<text x="796" y="323" fill="#34d399" font-size="12">F5 b5</text>
+<line x1="979.0938522816509" y1="320" x2="1000.6761284029537" y2="320" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="309" width="218" height="13" fill="#34d399"/>
+<text x="1084" y="320" fill="#dbeafe" font-size="11">1.154</text>
+<text x="796" y="352" fill="#34d399" font-size="12">F5 b8</text>
+<line x1="1014.4194533273193" y1="349" x2="1030.7695569346147" y2="349" stroke="#f4a261" stroke-width="5" opacity="0.65"/>
+<rect x="858" y="338" width="0" height="13" fill="#34d399"/>
+<text x="866" y="349" fill="#dbeafe" font-size="11">0.000</text>
+</svg>

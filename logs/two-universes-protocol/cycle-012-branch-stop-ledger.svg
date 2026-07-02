@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+<rect width="1180" height="720" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="70" y="42" fill="#f8fafc" font-size="21" font-weight="700">Cycle 012: branch-stop ledger</text>
+<text x="70" y="70" fill="#94a3b8" font-size="13">The current aggregate Two-Universes transport route stops unless a new domain/object restarts strict registration.</text>
+<text x="70" y="104" fill="#cbd5e1" font-size="14">Gate kill counts across exhausted families</text>
+<text x="70" y="148" fill="#e5edf7" font-size="12">integer_holdout</text>
+<rect x="320" y="128" width="320.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="652" y="146" fill="#f8fafc" font-size="12">4</text>
+<text x="70" y="190" fill="#e5edf7" font-size="12">proof_path</text>
+<rect x="320" y="170" width="560.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="892" y="188" fill="#f8fafc" font-size="12">7</text>
+<text x="70" y="232" fill="#e5edf7" font-size="12">controls</text>
+<rect x="320" y="212" width="480.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="812" y="230" fill="#f8fafc" font-size="12">6</text>
+<text x="70" y="274" fill="#e5edf7" font-size="12">scale_stability</text>
+<rect x="320" y="254" width="480.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="812" y="272" fill="#f8fafc" font-size="12">6</text>
+<text x="70" y="316" fill="#e5edf7" font-size="12">novelty_audit</text>
+<rect x="320" y="296" width="240.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="572" y="314" fill="#f8fafc" font-size="12">3</text>
+<text x="70" y="358" fill="#e5edf7" font-size="12">expert_pack</text>
+<rect x="320" y="338" width="240.00" height="24" fill="#ef4444" opacity="0.86"/>
+<text x="572" y="356" fill="#f8fafc" font-size="12">3</text>
+<text x="70" y="404" fill="#cbd5e1" font-size="14">Exhausted families</text>
+<text x="70" y="440" fill="#f59e0b" font-size="11">coefficient-neighborhood-mobius-gap</text>
+<text x="70" y="456" fill="#94a3b8" font-size="10">cycles 001 blocked</text>
+<text x="590" y="440" fill="#f59e0b" font-size="11">prime-indicator-additive-shift-graphs-and-tensors</text>
+<text x="590" y="456" fill="#94a3b8" font-size="10">cycles 002,003,004,005,006 blocked</text>
+<text x="70" y="482" fill="#f59e0b" font-size="11">quotient-spectral-prime-indicator-residuals</text>
+<text x="70" y="498" fill="#94a3b8" font-size="10">cycles 007 blocked</text>
+<text x="590" y="482" fill="#f59e0b" font-size="11">mobius-liouville-fixed-lag-correlations</text>
+<text x="590" y="498" fill="#94a3b8" font-size="10">cycles 008 blocked</text>
+<text x="70" y="524" fill="#f59e0b" font-size="11">theorem-first-catalog-without-proof-map</text>
+<text x="70" y="540" fill="#94a3b8" font-size="10">cycles 009 blocked</text>
+<text x="590" y="524" fill="#f59e0b" font-size="11">honest-open-chowla-and-twin-prime-theorem-families</text>
+<text x="590" y="540" fill="#94a3b8" font-size="10">cycles 010 blocked</text>
+<text x="70" y="566" fill="#f59e0b" font-size="11">finite-field-obstruction-transport</text>
+<text x="70" y="582" fill="#94a3b8" font-size="10">cycles 011 blocked</text>
+<text x="70" y="680" fill="#f8fafc" font-size="12">Decision: STOP_CURRENT_AGGREGATE_TWO_UNIVERSES_ROUTE</text>
+</g>
+</svg>

@@ -1,0 +1,435 @@
+{
+  "generatedAt": "2026-06-17T09:50:01.397Z",
+  "cycle": 14,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-014-joint-cubic-chebotarev-residual",
+    "title": "Joint cubic Chebotarev residual",
+    "class": "forced mutation from single-extension class proportions to joint splitting residuals across two Kummer cubic covers",
+    "councilSuccessTarget": "S1/S2 candidate only if joint splitting residuals beat product-Chebotarev controls across Z and F_q[t] with scale stability and novelty beyond known Chebotarev",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.json",
+      "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.md",
+      "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.svg",
+      "scripts/joint-cubic-chebotarev-residual-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states a fixed joint splitting-type residual for two cubic Kummer covers on each side: x^3-2/x^3-5 over Z and x^3-t/x^3-(t+1) over F_q[t].",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: monic irreducibles P define finite residue fields, and the joint class is computed by cube-residue splitting of t and t+1.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks endpoints 1000000, 2000000, 4000000 for joint splitting type over unramified primes.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Observed joint splitting residuals are inside preregistered product-Chebotarev multinomial controls; no anomaly survives.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter statistic: two fixed cubic covers per universe, nine fixed joint classes, and product Chebotarev baselines.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete 1M/2M/4M/8M ladder and a control-surviving residual. Complete ladder=false; all within controls=true.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No novelty audit has found structure beyond known Chebotarev/Kummer character independence; the residual is calibration-only at this scale.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the joint Chebotarev residual script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The joint residual lies inside controls and has no proof path beyond standard Chebotarev/Kummer equidistribution.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and proof path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "jointChebotarevEvidence": {
+    "diagnostics": {
+      "completeScaleLadder": false,
+      "allWithinControls": true,
+      "integerWithinControls": true,
+      "fieldsWithinControls": true,
+      "maxChi": 0.4001911171965325,
+      "finalInteger": {
+        "label": "Z<=4000000",
+        "chi": 0.4001911171965325,
+        "maxAbsZ": 0.9612784456676249,
+        "control": {
+          "chiRange": [
+            0.3314644349049512,
+            0.9925009227585827
+          ],
+          "maxAbsZRange": [
+            0.9339305524765216,
+            2.033315858759273
+          ]
+        },
+        "withinControls": true
+      },
+      "finalFields": [
+        {
+          "q": 2,
+          "label": "F_2:deg18",
+          "chi": 0.22177536484764335,
+          "maxAbsZ": 0.5719089898320338,
+          "control": {
+            "chiRange": [
+              0.2128438045983765,
+              0.8905770501235459
+            ],
+            "maxAbsZRange": [
+              0.40473559280421534,
+              2.0285904733873052
+            ]
+          },
+          "withinControls": true
+        },
+        {
+          "q": 5,
+          "label": "F_5:deg8",
+          "chi": 0.12767288788292586,
+          "maxAbsZ": 0.24019223070762197,
+          "control": {
+            "chiRange": [
+              0.5424394768825249,
+              0.9990279524702264
+            ],
+            "maxAbsZRange": [
+              1.421938005789165,
+              1.82900729695308
+            ]
+          },
+          "withinControls": true
+        }
+      ],
+      "theoremShape": {
+        "integer": "joint factorization type of x^3-2 and x^3-5 modulo unramified rational primes p",
+        "functionField": "joint factorization type of x^3-t and x^3-(t+1) over residue fields F_q[t]/P",
+        "expectedIntegerDensities": {
+          "split/split": 0.05555555555555555,
+          "split/linearQuad": 0,
+          "split/inert": 0.1111111111111111,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5,
+          "linearQuad/inert": 0,
+          "inert/split": 0.1111111111111111,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2222222222222222
+        },
+        "expectedFieldRule": "if q^deg(P)-1 is divisible by 3, split/inert joint densities are product 1/3 by 2/3; otherwise linear+quadratic/linear+quadratic is deterministic"
+      }
+    },
+    "integerRows": [
+      {
+        "label": "Z<=1000000",
+        "labels": 78496,
+        "counts": {
+          "split/split": 4331,
+          "split/linearQuad": 0,
+          "split/inert": 8701,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 39264,
+          "linearQuad/inert": 0,
+          "inert/split": 8747,
+          "inert/linearQuad": 0,
+          "inert/inert": 17453
+        },
+        "chi": 0.20392446925583457,
+        "maxAbsZ": 0.46572982605883345
+      },
+      {
+        "label": "Z<=2000000",
+        "labels": 148931,
+        "counts": {
+          "split/split": 8221,
+          "split/linearQuad": 0,
+          "split/inert": 16576,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 74519,
+          "linearQuad/inert": 0,
+          "inert/split": 16537,
+          "inert/linearQuad": 0,
+          "inert/inert": 33078
+        },
+        "chi": 0.23796681250305576,
+        "maxAbsZ": 0.5989297517715296
+      },
+      {
+        "label": "Z<=4000000",
+        "labels": 283143,
+        "counts": {
+          "split/split": 15613,
+          "split/linearQuad": 0,
+          "split/inert": 31531,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 141695,
+          "linearQuad/inert": 0,
+          "inert/split": 31461,
+          "inert/linearQuad": 0,
+          "inert/inert": 62843
+        },
+        "chi": 0.4001911171965325,
+        "maxAbsZ": 0.9612784456676249
+      }
+    ],
+    "fields": [
+      {
+        "q": 2,
+        "maxDegree": 18,
+        "final": {
+          "label": "F_2:deg18",
+          "scale": 18,
+          "labels": 14532,
+          "counts": {
+            "split/split": 1593,
+            "split/linearQuad": 0,
+            "split/inert": 3230,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 3230,
+            "inert/linearQuad": 0,
+            "inert/inert": 6479
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.10962014863748967,
+            "split/linearQuad": 0,
+            "split/inert": 0.22226809799064134,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22226809799064134,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4458436553812276
+          },
+          "z": {
+            "split/split": -0.5719089898320338,
+            "split/linearQuad": 0,
+            "split/inert": 0.013302232612381783,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.013302232612381783,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.3394481118582083
+          },
+          "chi": 0.22177536484764335,
+          "maxAbsZ": 0.5719089898320338
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "final": {
+          "label": "F_5:deg8",
+          "scale": 8,
+          "labels": 48750,
+          "counts": {
+            "split/split": 5400,
+            "split/linearQuad": 0,
+            "split/inert": 10850,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 10850,
+            "inert/linearQuad": 0,
+            "inert/inert": 21650
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.11076923076923077,
+            "split/linearQuad": 0,
+            "split/inert": 0.22256410256410256,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22256410256410256,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4441025641025641
+          },
+          "z": {
+            "split/split": -0.24019223070762197,
+            "split/linearQuad": 0,
+            "split/inert": 0.18156825980065394,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.18156825980065394,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.15191090506252788
+          },
+          "chi": 0.12767288788292586,
+          "maxAbsZ": 0.24019223070762197
+        }
+      }
+    ]
+  },
+  "decision": {
+    "status": "JOINT_CHEBOTAREV_RESIDUAL_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 014 tests a non-classical joint residual, but it remains inside product-Chebotarev controls and lacks scale, novelty, proof-path, and expert-pack gates.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Observed joint splitting residuals are inside preregistered product-Chebotarev multinomial controls; no anomaly survives.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete 1M/2M/4M/8M ladder and a control-surviving residual. Complete ladder=false; all within controls=true.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No novelty audit has found structure beyond known Chebotarev/Kummer character independence; the residual is calibration-only at this scale.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The joint residual lies inside controls and has no proof path beyond standard Chebotarev/Kummer equidistribution.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and proof path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Joint Chebotarev maxChi=0.400191; integer within controls=true; fields within controls=true; complete ladder=false.",
+    "expectedNull": "Joint Kummer splitting should match product Chebotarev baselines up to multinomial fluctuations unless a new covariance mechanism exists.",
+    "knownExplanation": "Chebotarev/Kummer character equidistribution explains the observed joint classes.",
+    "survivedControls": [
+      "All endpoint diagnostics are within product-Chebotarev multinomial controls"
+    ],
+    "failedControls": [
+      "No joint residual beats controls"
+    ],
+    "whatFailed": "The joint residual is a valid Chebotarev calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "A useful Chebotarev branch would need a varying-family covariance, not fixed-cover class counts.",
+    "nextMutation": "Leave basic Kummer splitting residuals unless a family-covariance theorem target is named"
+  },
+  "nextMutation": {
+    "title": "Leave basic Kummer splitting residuals unless a family-covariance theorem target is named",
+    "reason": "Both single-extension and joint Kummer splitting statistics are calibration-level Chebotarev objects and stay inside controls.",
+    "preregisteredNextMove": [
+      "Do not mutate by adding more fixed Kummer covers without a theorem-shaped covariance target.",
+      "If staying in Chebotarev, register a family-level object such as low-conductor covariance across varying covers, with expected Chebotarev baseline and controls before data.",
+      "Require q=2,5,7 ladders, complete 1M/2M/4M/8M integer ladder, and an explicit novelty audit against Chebotarev independence.",
+      "If no such family-level target is named, stop the Chebotarev branch as calibration-only."
+    ]
+  }
+}

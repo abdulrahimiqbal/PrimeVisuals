@@ -1,0 +1,597 @@
+{
+  "generatedAt": "2026-06-17T10:34:05.488Z",
+  "cycle": 21,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-021-legendre-special-supersingular-residual",
+    "title": "Legendre special supersingular residual",
+    "class": "forced mutation from pilot-scale non-CM trace computation to theorem-first nonzero residual",
+    "councilSuccessTarget": "S1/S2 candidate only if a theorem-first Legendre supersingular residual survives local congruence controls, integer 8M ladder, and q=3,5,7 profile gates",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-021-legendre-special-supersingular-residual-8000000.json",
+      "logs/two-universes-protocol/cycle-021-legendre-special-supersingular-residual-8000000.md",
+      "logs/two-universes-protocol/cycle-021-legendre-special-supersingular-residual-8000000.svg",
+      "scripts/legendre-special-supersingular-residual-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states R(K)=B(K)-3/2, where B(K) counts supersingular Legendre parameters in the j=1728 and j=0 special automorphism loci.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: for K=F_q[t]/P, the special-locus count is determined by q mod 4, q mod 3, and whether q^deg(P) contains the j=0 lambda roots.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "The integer signal is explained exactly by the local mod-4 theorem control B(F_p)=3*1_{p=3 mod 4}; no control-surviving residual remains.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter object: two special Legendre automorphism loci, one supersingularity count, and one centered residual.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires full ladders, matched q=3,5,7 profile, and a non-local residual. Integer ladder=true; field ladders=true; matchedProfile=false; localControlExplains=true.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The large field-side z values and the integer residual are known supersingular special-locus congruence effects, not new two-universe structure.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the theorem-first 8M run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The proof path is explicit: Deuring/Hasse invariant detects supersingular Legendre parameters, and the special j=1728/j=0 loci reduce to congruence criteria.",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because the result is a known local congruence/CM special-locus theorem and fails controls, novelty, and matched-profile gates.",
+      "severity": "hard-fail"
+    }
+  },
+  "legendreSpecialSupersingularEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "localControlExplains": true,
+      "integerBeatsControls": false,
+      "signsAligned": false,
+      "profileSpread": 1074.5177718001396,
+      "matchedProfile": false,
+      "maxAbsEndpointZ": 563.8084781200084,
+      "theoremShape": {
+        "statistic": "R(K)=B(K)-3/2, where B(K) counts supersingular Legendre parameters in the j=1728 and j=0 special automorphism loci",
+        "integer": "For rational primes p>=5, B(F_p)=3*1_{p=3 mod 4}; this is the Deuring/Hasse invariant criterion for the j=1728 orbit.",
+        "functionField": "For K=F_q[t]/P of degree d, B(K) is determined by q mod 4, q mod 3, and whether q^d contains the j=0 lambda roots.",
+        "baseline": "This is a theorem-first nonzero residual, but it is exactly a local congruence/CM special-locus signal and is not novel."
+      },
+      "finalInteger": {
+        "endpoint": 8000000,
+        "count": 539775,
+        "sum": 385.5,
+        "mean": 0.0007141864665832986,
+        "z": 0.5247083788809376,
+        "energyZ": 0.34980558592062505,
+        "maxAbsZ": 1.5
+      },
+      "finalLocalControl": {
+        "endpoint": 8000000,
+        "count": 539775,
+        "sum": 385.5,
+        "mean": 0.0007141864665832986,
+        "z": 0.5247083788809376,
+        "energyZ": 0.34980558592062505,
+        "maxAbsZ": 1.5
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "final": {
+            "label": "F_3:deg12",
+            "q": 3,
+            "degree": 12,
+            "labels": 44220,
+            "cumulativeLabels": 69706,
+            "specialCount": 1,
+            "value": -0.5,
+            "z": -132.00946935731542,
+            "energyZ": -264.01893871463085,
+            "maxAbsZ": 132.00946935731542
+          }
+        },
+        {
+          "q": 5,
+          "final": {
+            "label": "F_5:deg8",
+            "q": 5,
+            "degree": 8,
+            "labels": 48750,
+            "cumulativeLabels": 63319,
+            "specialCount": 2,
+            "value": 0.5,
+            "z": 31.79833540146527,
+            "energyZ": 40.266160040676475,
+            "maxAbsZ": 135.6521409567351
+          }
+        },
+        {
+          "q": 7,
+          "final": {
+            "label": "F_7:deg7",
+            "q": 7,
+            "degree": 7,
+            "labels": 117648,
+            "cumulativeLabels": 141280,
+            "specialCount": 3,
+            "value": 1.5,
+            "z": 563.8084781200084,
+            "energyZ": 375.87231874667225,
+            "maxAbsZ": 563.8084781200084
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "endpoint": 1000000,
+        "count": 78496,
+        "sum": 219,
+        "mean": 0.002789951080309825,
+        "z": 0.7816644334929481,
+        "energyZ": 0.5211096223286321,
+        "maxAbsZ": 1.5
+      },
+      {
+        "endpoint": 2000000,
+        "count": 148931,
+        "sum": 148.5,
+        "mean": 0.0009971060423954717,
+        "z": 0.38479896997747737,
+        "energyZ": 0.2565326466516516,
+        "maxAbsZ": 1.5
+      },
+      {
+        "endpoint": 4000000,
+        "count": 283144,
+        "sum": 210,
+        "mean": 0.000741672082050123,
+        "z": 0.3946531860133981,
+        "energyZ": 0.26310212400893207,
+        "maxAbsZ": 1.5
+      },
+      {
+        "endpoint": 8000000,
+        "count": 539775,
+        "sum": 385.5,
+        "mean": 0.0007141864665832986,
+        "z": 0.5247083788809376,
+        "energyZ": 0.34980558592062505,
+        "maxAbsZ": 1.5
+      }
+    ],
+    "controlSummary": {
+      "localMod4": {
+        "zRange": [
+          0.5247083788809376,
+          0.5247083788809376
+        ],
+        "absZRange": [
+          0.5247083788809376,
+          0.5247083788809376
+        ],
+        "maxAbsZRange": [
+          1.5,
+          1.5
+        ],
+        "energyZRange": [
+          0.34980558592062505,
+          0.34980558592062505
+        ]
+      },
+      "shuffle": {
+        "zRange": [
+          0.5247083788809376,
+          0.5247083788809376
+        ],
+        "absZRange": [
+          0.5247083788809376,
+          0.5247083788809376
+        ],
+        "maxAbsZRange": [
+          2.1388823566311763,
+          3.534133417105386
+        ],
+        "energyZRange": [
+          0.34980558592062505,
+          0.34980558592062505
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -2.5051252174587955,
+          2.8644585819842625
+        ],
+        "absZRange": [
+          0.210291684921154,
+          2.8644585819842625
+        ],
+        "maxAbsZRange": [
+          2.2613350843332274,
+          4.144808782291015
+        ],
+        "energyZRange": [
+          -1.6700834783058636,
+          1.909639054656175
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -3.1625419411928886,
+          2.2887085320059577
+        ],
+        "absZRange": [
+          0.06737500584852507,
+          3.1625419411928886
+        ],
+        "maxAbsZRange": [
+          2.806243040080456,
+          5.306957047447084
+        ],
+        "energyZRange": [
+          -2.1083612941285925,
+          1.5258056880039716
+        ]
+      }
+    },
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 12,
+        "final": {
+          "label": "F_3:deg12",
+          "q": 3,
+          "degree": 12,
+          "labels": 44220,
+          "cumulativeLabels": 69706,
+          "specialCount": 1,
+          "value": -0.5,
+          "z": -132.00946935731542,
+          "energyZ": -264.01893871463085,
+          "maxAbsZ": 132.00946935731542
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "final": {
+          "label": "F_5:deg8",
+          "q": 5,
+          "degree": 8,
+          "labels": 48750,
+          "cumulativeLabels": 63319,
+          "specialCount": 2,
+          "value": 0.5,
+          "z": 31.79833540146527,
+          "energyZ": 40.266160040676475,
+          "maxAbsZ": 135.6521409567351
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 7,
+        "final": {
+          "label": "F_7:deg7",
+          "q": 7,
+          "degree": 7,
+          "labels": 117648,
+          "cumulativeLabels": 141280,
+          "specialCount": 3,
+          "value": 1.5,
+          "z": 563.8084781200084,
+          "energyZ": 375.87231874667225,
+          "maxAbsZ": 563.8084781200084
+        }
+      }
+    ],
+    "validation": [
+      {
+        "p": 5,
+        "pMod4": 1,
+        "specialLambdas": [
+          2,
+          3,
+          4
+        ],
+        "deuringSupersingular": [],
+        "deuringCount": 0,
+        "formulaCount": 0,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "deuringSupersingular": [
+          2,
+          4,
+          6
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          6,
+          10
+        ],
+        "deuringSupersingular": [
+          2,
+          6,
+          10
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "pMod4": 1,
+        "specialLambdas": [
+          2,
+          4,
+          7,
+          10,
+          12
+        ],
+        "deuringSupersingular": [],
+        "deuringCount": 0,
+        "formulaCount": 0,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "pMod4": 1,
+        "specialLambdas": [
+          2,
+          9,
+          16
+        ],
+        "deuringSupersingular": [],
+        "deuringCount": 0,
+        "formulaCount": 0,
+        "ok": true
+      },
+      {
+        "p": 19,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          8,
+          10,
+          12,
+          18
+        ],
+        "deuringSupersingular": [
+          2,
+          10,
+          18
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      },
+      {
+        "p": 23,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          12,
+          22
+        ],
+        "deuringSupersingular": [
+          2,
+          12,
+          22
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "pMod4": 1,
+        "specialLambdas": [
+          2,
+          15,
+          28
+        ],
+        "deuringSupersingular": [],
+        "deuringCount": 0,
+        "formulaCount": 0,
+        "ok": true
+      },
+      {
+        "p": 31,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          6,
+          16,
+          26,
+          30
+        ],
+        "deuringSupersingular": [
+          2,
+          16,
+          30
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      },
+      {
+        "p": 43,
+        "pMod4": 3,
+        "specialLambdas": [
+          2,
+          7,
+          22,
+          37,
+          42
+        ],
+        "deuringSupersingular": [
+          2,
+          22,
+          42
+        ],
+        "deuringCount": 3,
+        "formulaCount": 3,
+        "ok": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "LEGENDRE_SPECIAL_SUPERSINGULAR_RESIDUAL_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 021 is theorem-first and full-scale, but it is exactly explained by known local congruence and CM special-locus criteria.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "The integer signal is explained exactly by the local mod-4 theorem control B(F_p)=3*1_{p=3 mod 4}; no control-surviving residual remains.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires full ladders, matched q=3,5,7 profile, and a non-local residual. Integer ladder=true; field ladders=true; matchedProfile=false; localControlExplains=true.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The large field-side z values and the integer residual are known supersingular special-locus congruence effects, not new two-universe structure.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because the result is a known local congruence/CM special-locus theorem and fails controls, novelty, and matched-profile gates.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer final z=0.524708; max endpoint |z|=563.808478; profileSpread=1074.517772; localControlExplains=true.",
+    "expectedNull": "A useful theorem-first residual should remain after local congruence, special automorphism, and CM controls are subtracted.",
+    "knownExplanation": "Deuring/Hasse invariant plus j=1728 and j=0 special-locus congruence criteria explain the entire signal.",
+    "survivedControls": [],
+    "failedControls": [
+      "Exact local mod-4 theorem control reproduces the integer signal; q=3,5,7 profiles are fixed by q-local congruence and extension-degree effects"
+    ],
+    "whatFailed": "The object is a known theorem calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "Large theorem-first signals can be fake breakthroughs unless all local congruence and special-locus baselines are subtracted first.",
+    "nextMutation": "Leave special automorphism and CM loci; require generic non-CM residual with a named baseline"
+  },
+  "nextMutation": {
+    "title": "Leave special automorphism and CM loci; require generic non-CM residual with a named baseline",
+    "reason": "The theorem-first supersingular residual is computable without point-counting and has a full integer ladder, but the signal is exactly a known local congruence/CM special-locus effect.",
+    "preregisteredNextMove": [
+      "Do not promote supersingular special-orbit signals or any statistic exactly explained by p mod 4, p mod 3, or fixed-character local controls.",
+      "A next algebraic cycle must use generic non-CM Legendre/elliptic-family structure, not j=1728 or j=0 special automorphism loci.",
+      "Before data, name the finite-field theorem baseline and the nonzero residual that remains after subtracting all local congruence and CM-special-locus controls.",
+      "If no generic residual can be stated before computation, stop rather than using large z-scores from known local theorem effects."
+    ]
+  }
+}

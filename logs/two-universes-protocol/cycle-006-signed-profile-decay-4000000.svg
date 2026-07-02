@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="76" y="36" fill="#f8fafc" font-size="19" font-weight="700">signed residual profile audit: order-2 residual RMS</text>
+<text x="76" y="61" fill="#94a3b8" font-size="13">exact admissibility subtraction; profile matching checked in JSON/MD</text>
+<line x1="76" x2="1104" y1="564" y2="564" stroke="#334155"/>
+<rect x="84.00" y="378.36" width="69.67" height="185.64" fill="#67e8f9" opacity="0.84"/><text transform="translate(118.83 573) rotate(58)" fill="#cbd5e1" font-size="12">Z 1000000</text>
+<rect x="169.67" y="395.14" width="69.67" height="168.86" fill="#67e8f9" opacity="0.84"/><text transform="translate(204.50 573) rotate(58)" fill="#cbd5e1" font-size="12">Z 2000000</text>
+<rect x="255.33" y="419.07" width="69.67" height="144.93" fill="#67e8f9" opacity="0.84"/><text transform="translate(290.17 573) rotate(58)" fill="#cbd5e1" font-size="12">Z 4000000</text>
+<rect x="341.00" y="503.65" width="69.67" height="60.35" fill="#a78bfa" opacity="0.84"/><text transform="translate(375.83 573) rotate(58)" fill="#cbd5e1" font-size="12">F_2 d20</text>
+<rect x="426.67" y="506.63" width="69.67" height="57.37" fill="#a78bfa" opacity="0.84"/><text transform="translate(461.50 573) rotate(58)" fill="#cbd5e1" font-size="12">F_2 d21</text>
+<rect x="512.33" y="511.07" width="69.67" height="52.93" fill="#a78bfa" opacity="0.84"/><text transform="translate(547.17 573) rotate(58)" fill="#cbd5e1" font-size="12">F_2 d22</text>
+<rect x="598.00" y="329.00" width="69.67" height="235.00" fill="#34d399" opacity="0.84"/><text transform="translate(632.83 573) rotate(58)" fill="#cbd5e1" font-size="12">F_3 d11</text>
+<rect x="683.67" y="433.31" width="69.67" height="130.69" fill="#34d399" opacity="0.84"/><text transform="translate(718.50 573) rotate(58)" fill="#cbd5e1" font-size="12">F_3 d12</text>
+<rect x="769.33" y="435.81" width="69.67" height="128.19" fill="#34d399" opacity="0.84"/><text transform="translate(804.17 573) rotate(58)" fill="#cbd5e1" font-size="12">F_3 d13</text>
+<rect x="855.00" y="564.00" width="69.67" height="0.00" fill="#fbbf24" opacity="0.84"/><text transform="translate(889.83 573) rotate(58)" fill="#cbd5e1" font-size="12">F_5 d6</text>
+<rect x="940.67" y="200.52" width="69.67" height="363.48" fill="#fbbf24" opacity="0.84"/><text transform="translate(975.50 573) rotate(58)" fill="#cbd5e1" font-size="12">F_5 d7</text>
+<rect x="1026.33" y="253.48" width="69.67" height="310.52" fill="#fbbf24" opacity="0.84"/><text transform="translate(1061.17 573) rotate(58)" fill="#cbd5e1" font-size="12">F_5 d8</text>
+</svg>

@@ -8,6 +8,147 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-06-16 · FRONTIER / LOCAL CHOWLA WEATHER — no survivor
+
+Source: `logs/frontier/chowla-weather-report.md`; audit data
+`logs/frontier/chowla-weather-laws.json`; feature matrix
+`logs/frontier/chowla-weather-feature-matrix.csv`; visuals
+`logs/frontier/chowla-weather-heatmap.svg` and
+`logs/frontier/chowla-weather-phase.svg`; implementation
+`src/core/frontier/chowlaWeather.js` and
+`scripts/frontier-chowla-weather.mjs`.
+
+Object:
+`lambda(n)=(-1)^Omega(n)`,
+`B(h,x,L)=sum_{n=x}^{x+L-1} lambda(n)lambda(n+h)`, and
+`Z(h,x,L)=B(h,x,L)/sqrt(L)`, scanned locally over
+`N=300,000`, `H=512`, windows `256..8192`, stride `512`, with a
+dyadic rerun at `N/2=150,000`.
+
+Run result:
+no feature-family law survived the preregistered gates. The top-ranked
+law was `omega(h)=1 and h mod 8=3`, but it had train real-vs-null
+`z=0.416506`, far below the required `4`, and was not separated from
+h-size or one-modulus controls. The strongest one-modulus control had
+`z=0.855507`; h-size control had `z=0.289745`; parity control had `z=0`.
+No individual `h` column is promoted.
+
+Disguise check:
+the run does not use zeta, zeros, explicit formula terms, RH-equivalent
+criteria, Robin, Nicolas, or Lagarias criteria. Candidate promotion is
+limited to feature laws of complexity at most two unless overwhelming,
+with train/holdout split by `h<=H/2`, dyadic persistence, and controls
+for h-size, parity, and one-modulus explanations. The local heatmap is
+retained as a diagnostic artifact only, not as evidence.
+
+STATUS: `NO SURVIVOR / LOCAL WEATHER ALSO NULL`.
+
+CONNECTION:
+this directly strengthens the earlier terminal `C_h(N)` negative result.
+The previous run rejected isolated h outliers; this run keeps local
+position and window scale but still finds no rigid residual locus after
+feature-law, null, holdout, and dyadic gates. Future Chowla searches
+should change the statistic or null geometry, not merely rescan terminal
+or local h columns.
+
+## 2026-06-16 · FRONTIER / CHOWLA RESIDUAL ATLAS — no survivor
+
+Source: `logs/frontier/chowla-report.md`; audit data
+`logs/frontier/chowla-atlas.json`; heatmap
+`logs/frontier/chowla-heatmap.svg`; implementation
+`src/core/frontier/chowla.js` and `scripts/frontier-chowla.mjs`.
+
+Object:
+`S(h,N)=sum_{1<=n<=N-h} lambda(n)lambda(n+h)`, with
+`lambda(n)=(-1)^Omega(n)` and residual
+`(Z_real-mean_random_multiplicative)/sd_random_multiplicative`, where
+`Z=S/sqrt(N)`.
+
+Run result:
+at `N0=20,000`, `levels=4`, `H=256`, and `20` seeds per null, no locus
+survived the random-multiplicative null, shuffled-Liouville null, dyadic
+persistence, holdout, feature-support, and known-disguise gates. The top
+ranked columns were isolated single shifts `h=101` and `h=92`; both had
+dyadic persistence but failed the single-shift multiple-testing /
+low-complexity gate. At `N=160,000`, real field energy was `0.9494`
+against random multiplicative `0.9898±0.0536` and shuffled
+`0.9954±0.0600`.
+
+Feature audit:
+final feature dependence was weak: `omega(h)` R2 `0.0155`,
+`Omega(h)` R2 `0.0405`, squarefree R2 `0.0042`, `v2(h)` R2 `0.0336`,
+parity R2 `0.0033`, radical bucket R2 `0.0351`, and oddpart bucket R2
+`0.0542`. No candidate conjecture is promoted.
+
+Disguise check:
+the statistic is fixed-shift Chowla parity, not prime-counting, explicit
+formula residuals, cumulative gaps, or an endpoint telescope. Parity-only
+and `v2`-only explanations are disqualified as known low-complexity
+artifacts; isolated high-h columns are treated as sampling artifacts
+unless they clear a stronger multiple-testing/description gate.
+
+STATUS: `NO SURVIVOR / CALIBRATED NEGATIVE`.
+
+CONNECTION:
+this is the dependency-free, reusable successor to the earlier
+Liouville residual calibration entry. It narrows the future search target:
+single-shift outliers are not enough; the next credible lead needs a
+pre-registered factorization-family law or a held-out expansion in `H`
+and `N`.
+
+## 2026-06-16 · NEW-OBJECT / CALIBRATION — Liouville residual atlas
+
+Source: `logs/2026-06-16-frontierlab-liouville-atlas.md`; audit script
+`scripts/frontierlab-liouville-atlas.mjs`; artifacts in
+`logs/frontierlab-artifacts/`.
+
+New object:
+`lambda(n)=(-1)^Omega(n)` and its polynomial analogue
+`lambda(f)=(-1)^Omega(f)` over `F_q[t]` are now first-class lab objects.
+Integer formulas can call `lambda(n)` or `liouville(n)`. The function-field
+kernel exposes `polynomialLiouville`, `liouvilleTwoPoint`, and random
+completely multiplicative polynomial controls.
+
+First integer values for `n=1..16`:
+`1,-1,-1,1,-1,1,-1,-1,1,1,-1,-1,-1,1,1,1`.
+
+Motivation:
+search the fixed-shift Chowla residual field
+`C_h(N)=sum_{n<=N} lambda(n)lambda(n+h)` for a rigid shift-space locus
+after null comparison and two-universe calibration.
+
+Run result:
+at `N=2,000,000`, `h<=32`, `F_2[t]` degree `20`, and `F_3[t]` degree
+`13`, the integer Liouville field is not promoted. Integer final energy is
+`0.702596`, while the combined integer null energy range is
+`0.762999..1.460655`; the real-vs-null z-score is `-1.599384`,
+persistence is `0.663134`, and cross-world coherence is `0.000896`.
+
+Function-field calibration:
+`F_2[t]` degree `20` has energy `2.175326` against random multiplicative
+control range `1.459062..1.685726`; `F_3[t]` degree `13` has energy
+`2.016338` against range `0.847596..1.252154`. These are structured
+finite-degree polynomial effects, not coherent integer residual laws:
+integer-minus-`F_2[t]` cosine is `0.107869`, and integer-minus-`F_3[t]`
+cosine is `-0.106076`.
+
+Disguise check:
+this is not prime-counting, `psi(x)-x`, Mertens, a cumulative-gap
+telescope, a residue-class Fourier shadow, or dyadic smoothing. It is the
+standard Liouville/Chowla parity object on all positive integers, so
+composite control as a primality signature is not applicable. No
+RH-equivalence or theorem is claimed; positive future findings must be
+reported as Chowla-adjacent conjectural evidence unless proved separately.
+
+STATUS: `CALIBRATION / NOT-PROMOTED`.
+
+CONNECTION:
+this implements the COUNCIL two-universes recommendation on the
+Chowla/multiplicative-randomness target. It is also a corrective to the
+gap-line graveyard entries above: the measurement starts from a centered,
+non-telescoping residual with matched random multiplicative and
+function-field controls before any line or phase boundary is scored.
+
 ## 2026-06-15 · PLAYGROUND / GRAVEYARD — deep-admissible PIT gap null
 
 Source: `logs/2026-06-13-playground-critical-line.md`; audit script

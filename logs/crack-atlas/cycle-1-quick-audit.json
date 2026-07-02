@@ -1,0 +1,851 @@
+{
+  "schema": "prime-crack-atlas-audit/v1",
+  "generatedAt": "2026-06-16T17:54:34.277Z",
+  "manifest": {
+    "schema": "prime-crack-atlas-manifest/v1",
+    "cycle": 1,
+    "quick": true,
+    "ranges": {
+      "cycle": 1,
+      "discoveryN": 12000,
+      "confirmationN": 24000,
+      "holdoutN": 48000
+    }
+  },
+  "N": 48000,
+  "seeds": [
+    12345,
+    271828
+  ],
+  "candidateCount": 11,
+  "breakthroughCount": 0,
+  "results": [
+    {
+      "ordinal": 251,
+      "id": "residue:transition_mod_17:lo_s_residual",
+      "family": "residue-transition",
+      "response": "transition_residual",
+      "modulus": 17,
+      "baseline": "independence of consecutive residue classes; audit subtracts matched composite transition baselines",
+      "knownArtifactRisk": "LO-S transition artifact",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1435,
+          "effect": 0.9716509852007423,
+          "z": 36.80749365488851
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": 0.8875470949831449,
+          "z": 31.127479987143417
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": 0.8177158929825383,
+          "z": 39.028269799817316
+        }
+      ],
+      "overall": {
+        "n": 4943,
+        "effect": 0.8593855037453266,
+        "z": 60.42036282518775
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 58.2903773176005,
+          "maxAbsZ": 59.54635020740531,
+          "ratio": 1.0365409456175214,
+          "reproduced": true
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 57.35495340440793,
+          "maxAbsZ": 57.89481790672752,
+          "ratio": 1.0534462890967013,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 18.368236144023104,
+          "maxAbsZ": 18.368236144023104,
+          "ratio": 3.289393840074738,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 250,
+      "id": "residue:transition_mod_13:lo_s_residual",
+      "family": "residue-transition",
+      "response": "transition_residual",
+      "modulus": 13,
+      "baseline": "independence of consecutive residue classes; audit subtracts matched composite transition baselines",
+      "knownArtifactRisk": "LO-S transition artifact",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1435,
+          "effect": 0.8038830142407942,
+          "z": 30.45220907158102
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": 0.7018705796814068,
+          "z": 24.615552849071786
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": 0.645191513896715,
+          "z": 30.793957526090654
+        }
+      ],
+      "overall": {
+        "n": 4943,
+        "effect": 0.6884829766192783,
+        "z": 48.404809093253526
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 46.58336996313598,
+          "maxAbsZ": 47.886799526466554,
+          "ratio": 1.0391006303657067,
+          "reproduced": true
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 48.68291104220904,
+          "maxAbsZ": 49.086160559189764,
+          "ratio": 0.9942874831639711,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 16.639816774968374,
+          "maxAbsZ": 16.639816774968374,
+          "ratio": 2.9089748852325044,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 249,
+      "id": "residue:transition_mod_11:lo_s_residual",
+      "family": "residue-transition",
+      "response": "transition_residual",
+      "modulus": 11,
+      "baseline": "independence of consecutive residue classes; audit subtracts matched composite transition baselines",
+      "knownArtifactRisk": "LO-S transition artifact",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1435,
+          "effect": 0.688749408151125,
+          "z": 26.090787593956097
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": 0.5952290303390838,
+          "z": 20.87548912545139
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": 0.5148856759429623,
+          "z": 24.574668597265916
+        }
+      ],
+      "overall": {
+        "n": 4943,
+        "effect": 0.5738316668405419,
+        "z": 40.34407999667907
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 40.735865347300674,
+          "maxAbsZ": 41.32894352175406,
+          "ratio": 0.9903822995465699,
+          "reproduced": true
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 41.55712970114982,
+          "maxAbsZ": 41.966968512845405,
+          "ratio": 0.9708100700603203,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 13.914155284429961,
+          "maxAbsZ": 13.914155284429961,
+          "ratio": 2.899499047694572,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 248,
+      "id": "residue:transition_mod_7:lo_s_residual",
+      "family": "residue-transition",
+      "response": "transition_residual",
+      "modulus": 7,
+      "baseline": "independence of consecutive residue classes; audit subtracts matched composite transition baselines",
+      "knownArtifactRisk": "LO-S transition artifact",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1435,
+          "effect": 0.47147931867571535,
+          "z": 17.86029376276733
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": 0.39257055985193995,
+          "z": 13.767981794323838
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": 0.35358481054419066,
+          "z": 16.876036654616723
+        }
+      ],
+      "overall": {
+        "n": 4943,
+        "effect": 0.3918344220205835,
+        "z": 27.548495806251417
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 25.32247196073459,
+          "maxAbsZ": 26.26132048918376,
+          "ratio": 1.0879070514509221,
+          "reproduced": true
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 28.21343891343134,
+          "maxAbsZ": 29.058284974980474,
+          "ratio": 0.9764316888409031,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 10.658973722666806,
+          "maxAbsZ": 10.658973722666806,
+          "ratio": 2.584535483718123,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 247,
+      "id": "residue:transition_mod_5:lo_s_residual",
+      "family": "residue-transition",
+      "response": "transition_residual",
+      "modulus": 5,
+      "baseline": "independence of consecutive residue classes; audit subtracts matched composite transition baselines",
+      "knownArtifactRisk": "LO-S transition artifact",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1435,
+          "effect": 0.3863608881982299,
+          "z": 14.635888973977002
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": 0.3416855046599246,
+          "z": 11.983373917077362
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": 0.29315450840616936,
+          "z": 13.991795127495598
+        }
+      ],
+      "overall": {
+        "n": 4943,
+        "effect": 0.32834871858425374,
+        "z": 23.08503997750144
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 17.645903614972568,
+          "maxAbsZ": 17.68740936501096,
+          "ratio": 1.308237905023677,
+          "reproduced": true
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 23.576774983454555,
+          "maxAbsZ": 23.903522716967085,
+          "ratio": 0.9791432455754361,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 8.85550346434864,
+          "maxAbsZ": 8.85550346434864,
+          "ratio": 2.606857991805827,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 319,
+      "id": "summatory:lambda_minus_1:window_64:local_mean",
+      "family": "local-summatory",
+      "response": "local_summatory_mean",
+      "summatory": "lambda_minus_1",
+      "window": {
+        "kind": "fixed",
+        "value": 64
+      },
+      "baseline": "local-window residual around prime centers",
+      "knownArtifactRisk": "summatory/zeta disguise",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1437,
+          "effect": -0.5078825511379168,
+          "z": -13.092842923578951
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": -0.4644762836663515,
+          "z": -8.912424927826825
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": -0.526794702440823,
+          "z": -12.221942422215161
+        }
+      ],
+      "overall": {
+        "n": 4945,
+        "effect": -0.505798056027298,
+        "z": -19.26612014235265
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 6.557378564745666,
+          "maxAbsZ": 6.698234046138417,
+          "ratio": 2.9380826426482067,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 14.62914708637281,
+          "maxAbsZ": 15.348366426689248,
+          "ratio": 1.3169681067940882,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 3.683622025088824,
+          "maxAbsZ": 3.683622025088824,
+          "ratio": 5.23021092042908,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 321,
+      "id": "summatory:lambda_minus_1:window_log2:local_mean",
+      "family": "local-summatory",
+      "response": "local_summatory_mean",
+      "summatory": "lambda_minus_1",
+      "window": {
+        "kind": "log2",
+        "value": 1
+      },
+      "baseline": "local-window residual around prime centers",
+      "knownArtifactRisk": "summatory/zeta disguise",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1437,
+          "effect": -0.5259339756626281,
+          "z": -13.670427302964656
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": -0.3397777758444006,
+          "z": -6.901897674756277
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": -0.47436594582072866,
+          "z": -11.990550975582476
+        }
+      ],
+      "overall": {
+        "n": 4945,
+        "effect": -0.4558745018999855,
+        "z": -18.490525194161183
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 6.776769832536612,
+          "maxAbsZ": 7.097126642888028,
+          "ratio": 2.7285160409882177,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 13.330837192587204,
+          "maxAbsZ": 13.793415814040927,
+          "ratio": 1.387049059787715,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 2.065688355415708,
+          "maxAbsZ": 2.065688355415708,
+          "ratio": 8.951265637763674,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 320,
+      "id": "summatory:lambda_minus_1:window_256:local_mean",
+      "family": "local-summatory",
+      "response": "local_summatory_mean",
+      "summatory": "lambda_minus_1",
+      "window": {
+        "kind": "fixed",
+        "value": 256
+      },
+      "baseline": "local-window residual around prime centers",
+      "knownArtifactRisk": "summatory/zeta disguise",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1437,
+          "effect": -0.36403329224310854,
+          "z": -15.94736069034009
+        },
+        {
+          "label": "B2",
+          "n": 1230,
+          "effect": -0.12523926570053537,
+          "z": -2.9406814953058777
+        },
+        {
+          "label": "B3",
+          "n": 2278,
+          "effect": -0.42662624567028923,
+          "z": -11.784738244683606
+        }
+      ],
+      "overall": {
+        "n": 4945,
+        "effect": -0.33347112748269403,
+        "z": -15.947912119061318
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 5.6580748273050565,
+          "maxAbsZ": 5.674137764636999,
+          "ratio": 2.8186110303983583,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 9.920189245603277,
+          "maxAbsZ": 10.596748172848498,
+          "ratio": 1.6076217624708709,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 2.378009709065056,
+          "maxAbsZ": 2.378009709065056,
+          "ratio": 6.70641169305042,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 53,
+      "id": "nearby:omega_p_plus_2:conditional_prev_gap",
+      "family": "nearby-arithmetic",
+      "response": "conditional_corr_prev_gap_bucket",
+      "feature": "omega_p_plus_2",
+      "offset": 2,
+      "side": "plus",
+      "arithmetic": "omega",
+      "baseline": "within quartiles of g_prev/log(p)",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1202,
+          "effect": -0.1865079158234624,
+          "z": -6.466205502696593
+        },
+        {
+          "label": "B2",
+          "n": 1063,
+          "effect": -0.054160273501957026,
+          "z": -1.7658242678796257
+        },
+        {
+          "label": "B3",
+          "n": 2005,
+          "effect": -0.13681866856022906,
+          "z": -6.126360491639436
+        }
+      ],
+      "overall": {
+        "n": 4270,
+        "effect": -0.13109620181170964,
+        "z": -8.566512378604216
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 3.263759213311821,
+          "maxAbsZ": 3.603699888442091,
+          "ratio": 2.6247378616854378,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 9.43735812215924,
+          "maxAbsZ": 10.623723007708707,
+          "ratio": 0.9077235670955149,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 0.7389014745476148,
+          "maxAbsZ": 0.7389014745476148,
+          "ratio": 11.59357867549118,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 52,
+      "id": "nearby:omega_p_plus_2:corr_next_gap",
+      "family": "nearby-arithmetic",
+      "response": "corr_next_gap",
+      "feature": "omega_p_plus_2",
+      "offset": 2,
+      "side": "plus",
+      "arithmetic": "omega",
+      "baseline": "raw correlation against g_next/log(p)",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1202,
+          "effect": -0.1779839420834855,
+          "z": -6.170680427211587
+        },
+        {
+          "label": "B2",
+          "n": 1063,
+          "effect": -0.0441528443665995,
+          "z": -1.4395452429839812
+        },
+        {
+          "label": "B3",
+          "n": 2005,
+          "effect": -0.1340475348125337,
+          "z": -6.002276808560353
+        }
+      ],
+      "overall": {
+        "n": 4270,
+        "effect": -0.12505446315301197,
+        "z": -8.171713533994195
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 3.2926123266293663,
+          "maxAbsZ": 3.7598719644809386,
+          "ratio": 2.481832880204134,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 9.216924798138848,
+          "maxAbsZ": 10.504919797111297,
+          "ratio": 0.8865986989114081,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 0.6619506386056256,
+          "maxAbsZ": 0.6619506386056256,
+          "ratio": 12.344898633541023,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    },
+    {
+      "ordinal": 54,
+      "id": "nearby:omega_p_plus_2:bin_mean_gap",
+      "family": "nearby-arithmetic",
+      "response": "bin_mean_gap",
+      "feature": "omega_p_plus_2",
+      "offset": 2,
+      "side": "plus",
+      "arithmetic": "omega",
+      "baseline": "top-vs-bottom feature bins for g_next/log(p)",
+      "blockScores": [
+        {
+          "label": "B1",
+          "n": 1202,
+          "effect": -0.23528289857637885,
+          "z": -6.042111462655604,
+          "meanA": 1.0277499848343612,
+          "meanB": 1.26303288341074
+        },
+        {
+          "label": "B2",
+          "n": 1063,
+          "effect": -0.0661882536459959,
+          "z": -1.4972114143803892,
+          "meanA": 1.0895311255837834,
+          "meanB": 1.1557193792297793
+        },
+        {
+          "label": "B3",
+          "n": 2005,
+          "effect": -0.1616435522415589,
+          "z": -4.707345140619168,
+          "meanA": 1.044825731586176,
+          "meanB": 1.2064692838277349
+        }
+      ],
+      "overall": {
+        "n": 4270,
+        "effect": -0.16034751276631365,
+        "z": -7.187043102343209,
+        "meanA": 1.0519739570435138,
+        "meanB": 1.2123214698098275
+      },
+      "promotion": {
+        "sameSign": true,
+        "lateStable": true,
+        "passesReal": true
+      },
+      "thresholds": {
+        "minAbsZ": 6,
+        "maxLateShrink": 0.5,
+        "minControlRatio": 3,
+        "killReproductionFraction": 0.5,
+        "minBreakthroughN": 32000000
+      },
+      "controls": {
+        "cramer": {
+          "n": 2,
+          "meanAbsZ": 2.5719948616187245,
+          "maxAbsZ": 2.607517296057967,
+          "ratio": 2.7943458245557817,
+          "reproduced": false
+        },
+        "wheel": {
+          "n": 2,
+          "meanAbsZ": 7.609725121618325,
+          "maxAbsZ": 8.676993371339753,
+          "ratio": 0.9444550213680745,
+          "reproduced": true
+        },
+        "composite": {
+          "n": 2,
+          "meanAbsZ": 1.1649658428200942,
+          "maxAbsZ": 1.1649658428200942,
+          "ratio": 6.169316591244559,
+          "reproduced": false
+        }
+      },
+      "promoted": false,
+      "deathReason": "insufficient power",
+      "breakthroughCandidate": false
+    }
+  ],
+  "failureSummary": {
+    "deathReasonCounts": {
+      "insufficient power": 11
+    },
+    "nextCycle": {
+      "topDeathReason": "insufficient power",
+      "addExactlyOneCoordinateFamily": "increase range and keep only the highest-power coordinate families"
+    }
+  }
+}

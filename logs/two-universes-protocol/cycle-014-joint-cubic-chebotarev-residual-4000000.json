@@ -1,0 +1,1924 @@
+{
+  "candidate": "Joint cubic Chebotarev residual",
+  "generatedAt": "2026-06-17T09:47:22.673Z",
+  "maxN": 4000000,
+  "q2MaxDegree": 18,
+  "q5MaxDegree": 8,
+  "classes": [
+    "split",
+    "linearQuad",
+    "inert"
+  ],
+  "jointClasses": [
+    "split/split",
+    "split/linearQuad",
+    "split/inert",
+    "linearQuad/split",
+    "linearQuad/linearQuad",
+    "linearQuad/inert",
+    "inert/split",
+    "inert/linearQuad",
+    "inert/inert"
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "theoremShape": {
+    "integer": "joint factorization type of x^3-2 and x^3-5 modulo unramified rational primes p",
+    "functionField": "joint factorization type of x^3-t and x^3-(t+1) over residue fields F_q[t]/P",
+    "expectedIntegerDensities": {
+      "split/split": 0.05555555555555555,
+      "split/linearQuad": 0,
+      "split/inert": 0.1111111111111111,
+      "linearQuad/split": 0,
+      "linearQuad/linearQuad": 0.5,
+      "linearQuad/inert": 0,
+      "inert/split": 0.1111111111111111,
+      "inert/linearQuad": 0,
+      "inert/inert": 0.2222222222222222
+    },
+    "expectedFieldRule": "if q^deg(P)-1 is divisible by 3, split/inert joint densities are product 1/3 by 2/3; otherwise linear+quadratic/linear+quadratic is deterministic"
+  },
+  "integer": {
+    "polynomials": [
+      "x^3 - 2",
+      "x^3 - 5"
+    ],
+    "endpoints": [
+      1000000,
+      2000000,
+      4000000
+    ],
+    "rows": [
+      {
+        "label": "Z<=1000000",
+        "scale": 1000000,
+        "labels": 78496,
+        "counts": {
+          "split/split": 4331,
+          "split/linearQuad": 0,
+          "split/inert": 8701,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 39264,
+          "linearQuad/inert": 0,
+          "inert/split": 8747,
+          "inert/linearQuad": 0,
+          "inert/inert": 17453
+        },
+        "expected": {
+          "split/split": 0.05555555555555555,
+          "split/linearQuad": 0,
+          "split/inert": 0.1111111111111111,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5,
+          "linearQuad/inert": 0,
+          "inert/split": 0.1111111111111111,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2222222222222222
+        },
+        "fractions": {
+          "split/split": 0.05517478597635549,
+          "split/linearQuad": 0,
+          "split/inert": 0.1108464125560538,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.500203832042397,
+          "linearQuad/inert": 0,
+          "inert/split": 0.11143242967794538,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.22234253974724827
+        },
+        "z": {
+          "split/split": -0.46572982605883345,
+          "split/linearQuad": 0,
+          "split/inert": -0.23597872471936363,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.11421580763367278,
+          "linearQuad/inert": 0,
+          "inert/split": 0.2864554572796655,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.0810832493908665
+        },
+        "chi": 0.20392446925583457,
+        "maxAbsZ": 0.46572982605883345
+      },
+      {
+        "label": "Z<=2000000",
+        "scale": 2000000,
+        "labels": 148931,
+        "counts": {
+          "split/split": 8221,
+          "split/linearQuad": 0,
+          "split/inert": 16576,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 74519,
+          "linearQuad/inert": 0,
+          "inert/split": 16537,
+          "inert/linearQuad": 0,
+          "inert/inert": 33078
+        },
+        "expected": {
+          "split/split": 0.05555555555555555,
+          "split/linearQuad": 0,
+          "split/inert": 0.1111111111111111,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5,
+          "linearQuad/inert": 0,
+          "inert/split": 0.1111111111111111,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2222222222222222
+        },
+        "fractions": {
+          "split/split": 0.05520005908776548,
+          "split/linearQuad": 0,
+          "split/inert": 0.11129986369526827,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5003592267560145,
+          "linearQuad/inert": 0,
+          "inert/split": 0.1110379974619119,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2221028529990398
+        },
+        "z": {
+          "split/split": -0.5989297517715296,
+          "split/linearQuad": 0,
+          "split/inert": 0.23178374461066403,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.2772625574921891,
+          "linearQuad/inert": 0,
+          "inert/split": -0.08978184573849496,
+          "inert/linearQuad": 0,
+          "inert/inert": -0.11080603431949244
+        },
+        "chi": 0.23796681250305576,
+        "maxAbsZ": 0.5989297517715296
+      },
+      {
+        "label": "Z<=4000000",
+        "scale": 4000000,
+        "labels": 283143,
+        "counts": {
+          "split/split": 15613,
+          "split/linearQuad": 0,
+          "split/inert": 31531,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 141695,
+          "linearQuad/inert": 0,
+          "inert/split": 31461,
+          "inert/linearQuad": 0,
+          "inert/inert": 62843
+        },
+        "expected": {
+          "split/split": 0.05555555555555555,
+          "split/linearQuad": 0,
+          "split/inert": 0.1111111111111111,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5,
+          "linearQuad/inert": 0,
+          "inert/split": 0.1111111111111111,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2222222222222222
+        },
+        "fractions": {
+          "split/split": 0.055141748162589224,
+          "split/linearQuad": 0,
+          "split/inert": 0.11136069053446492,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.5004361753601537,
+          "linearQuad/inert": 0,
+          "inert/split": 0.11111346563397294,
+          "inert/linearQuad": 0,
+          "inert/inert": 0.2219479203088192
+        },
+        "z": {
+          "split/split": -0.9612784456676249,
+          "split/linearQuad": 0,
+          "split/inert": 0.42258026150029093,
+          "linearQuad/split": 0,
+          "linearQuad/linearQuad": 0.4641881384912042,
+          "linearQuad/inert": 0,
+          "inert/split": 0.003986606240575966,
+          "inert/linearQuad": 0,
+          "inert/inert": -0.3510833577471502
+        },
+        "chi": 0.4001911171965325,
+        "maxAbsZ": 0.9612784456676249
+      }
+    ],
+    "controls": {
+      "Z<=1000000": {
+        "chiRange": [
+          0.5196727741183198,
+          1.429312748881183
+        ],
+        "maxAbsZRange": [
+          1.2694898238913561,
+          3.005303438361015
+        ]
+      },
+      "Z<=2000000": {
+        "chiRange": [
+          0.21229992006523735,
+          1.0236900225340948
+        ],
+        "maxAbsZRange": [
+          0.3815882806878641,
+          2.360618596966208
+        ]
+      },
+      "Z<=4000000": {
+        "chiRange": [
+          0.3314644349049512,
+          0.9925009227585827
+        ],
+        "maxAbsZRange": [
+          0.9339305524765216,
+          2.033315858759273
+        ]
+      }
+    }
+  },
+  "fields": [
+    {
+      "q": 2,
+      "polynomials": [
+        "x^3 - t",
+        "x^3 - (t + 1)"
+      ],
+      "maxDegree": 18,
+      "rows": [
+        {
+          "label": "F_2:deg1",
+          "scale": 1,
+          "labels": 0,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg2",
+          "scale": 2,
+          "labels": 1,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 1
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 1
+          },
+          "z": {
+            "split/split": -0.3535533905932738,
+            "split/linearQuad": 0,
+            "split/inert": -0.5345224838248487,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": -0.5345224838248487,
+            "inert/linearQuad": 0,
+            "inert/inert": 1.118033988749895
+          },
+          "chi": 0.4650482139196336,
+          "maxAbsZ": 1.118033988749895
+        },
+        {
+          "label": "F_2:deg3",
+          "scale": 3,
+          "labels": 2,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 2,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg4",
+          "scale": 4,
+          "labels": 3,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 1,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 1,
+            "inert/linearQuad": 0,
+            "inert/inert": 1
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0.3333333333333333,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.3333333333333333,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.3333333333333333
+          },
+          "z": {
+            "split/split": -0.6123724356957945,
+            "split/linearQuad": 0,
+            "split/inert": 0.46291004988627577,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.46291004988627577,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.38729833462074165
+          },
+          "chi": 0.3255032733358928,
+          "maxAbsZ": 0.6123724356957945
+        },
+        {
+          "label": "F_2:deg5",
+          "scale": 5,
+          "labels": 6,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 6,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg6",
+          "scale": 6,
+          "labels": 9,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 2,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 2,
+            "inert/linearQuad": 0,
+            "inert/inert": 5
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.5555555555555556
+          },
+          "z": {
+            "split/split": -1.0606601717798212,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.6708203932499369
+          },
+          "chi": 0.4183300132670377,
+          "maxAbsZ": 1.0606601717798212
+        },
+        {
+          "label": "F_2:deg7",
+          "scale": 7,
+          "labels": 18,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 18,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg8",
+          "scale": 8,
+          "labels": 30,
+          "counts": {
+            "split/split": 3,
+            "split/linearQuad": 0,
+            "split/inert": 7,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 7,
+            "inert/linearQuad": 0,
+            "inert/inert": 13
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.1,
+            "split/linearQuad": 0,
+            "split/inert": 0.23333333333333334,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.23333333333333334,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.43333333333333335
+          },
+          "z": {
+            "split/split": -0.19364916731037068,
+            "split/linearQuad": 0,
+            "split/inert": 0.14638501094228024,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.14638501094228024,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.12247448713915847
+          },
+          "chi": 0.10293317295817754,
+          "maxAbsZ": 0.19364916731037068
+        },
+        {
+          "label": "F_2:deg9",
+          "scale": 9,
+          "labels": 56,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 56,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg10",
+          "scale": 10,
+          "labels": 99,
+          "counts": {
+            "split/split": 9,
+            "split/linearQuad": 0,
+            "split/inert": 22,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 22,
+            "inert/linearQuad": 0,
+            "inert/inert": 46
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.09090909090909091,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.46464646464646464
+          },
+          "z": {
+            "split/split": -0.6396021490668313,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.40451991747794525
+          },
+          "chi": 0.2522624895547565,
+          "maxAbsZ": 0.6396021490668313
+        },
+        {
+          "label": "F_2:deg11",
+          "scale": 11,
+          "labels": 186,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 186,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg12",
+          "scale": 12,
+          "labels": 335,
+          "counts": {
+            "split/split": 35,
+            "split/linearQuad": 0,
+            "split/inert": 76,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 76,
+            "inert/linearQuad": 0,
+            "inert/inert": 148
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.1044776119402985,
+            "split/linearQuad": 0,
+            "split/inert": 0.22686567164179106,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22686567164179106,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4417910447761194
+          },
+          "z": {
+            "split/split": -0.3863337046431278,
+            "split/linearQuad": 0,
+            "split/inert": 0.20442858111359938,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.20442858111359938,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.09773555548504383
+          },
+          "chi": 0.1641097396058478,
+          "maxAbsZ": 0.3863337046431278
+        },
+        {
+          "label": "F_2:deg13",
+          "scale": 13,
+          "labels": 630,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 630,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg14",
+          "scale": 14,
+          "labels": 1161,
+          "counts": {
+            "split/split": 123,
+            "split/linearQuad": 0,
+            "split/inert": 258,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 258,
+            "inert/linearQuad": 0,
+            "inert/inert": 522
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.10594315245478036,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4496124031007752
+          },
+          "z": {
+            "split/split": -0.5603155257282213,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.354374653931171
+          },
+          "chi": 0.2209914235945042,
+          "maxAbsZ": 0.5603155257282213
+        },
+        {
+          "label": "F_2:deg15",
+          "scale": 15,
+          "labels": 2182,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 2182,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg16",
+          "scale": 16,
+          "labels": 4080,
+          "counts": {
+            "split/split": 450,
+            "split/linearQuad": 0,
+            "split/inert": 910,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 910,
+            "inert/linearQuad": 0,
+            "inert/inert": 1810
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.11029411764705882,
+            "split/linearQuad": 0,
+            "split/inert": 0.22303921568627452,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22303921568627452,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.44362745098039214
+          },
+          "z": {
+            "split/split": -0.16605279103876694,
+            "split/linearQuad": 0,
+            "split/inert": 0.1255241113133599,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.1255241113133599,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.10502100630209835
+          },
+          "chi": 0.08826446763278295,
+          "maxAbsZ": 0.16605279103876694
+        },
+        {
+          "label": "F_2:deg17",
+          "scale": 17,
+          "labels": 7710,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 7710,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg18",
+          "scale": 18,
+          "labels": 14532,
+          "counts": {
+            "split/split": 1593,
+            "split/linearQuad": 0,
+            "split/inert": 3230,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 3230,
+            "inert/linearQuad": 0,
+            "inert/inert": 6479
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.10962014863748967,
+            "split/linearQuad": 0,
+            "split/inert": 0.22226809799064134,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22226809799064134,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4458436553812276
+          },
+          "z": {
+            "split/split": -0.5719089898320338,
+            "split/linearQuad": 0,
+            "split/inert": 0.013302232612381783,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.013302232612381783,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.3394481118582083
+          },
+          "chi": 0.22177536484764335,
+          "maxAbsZ": 0.5719089898320338
+        }
+      ],
+      "controls": {
+        "F_2:deg1": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg2": {
+          "chiRange": [
+            0.4650482139196336,
+            0.7234726659748095
+          ],
+          "maxAbsZRange": [
+            1.118033988749895,
+            1.8708286933869707
+          ]
+        },
+        "F_2:deg3": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg4": {
+          "chiRange": [
+            0.3255032733358928,
+            1.2530914153556776
+          ],
+          "maxAbsZRange": [
+            0.6123724356957945,
+            3.24037034920393
+          ]
+        },
+        "F_2:deg5": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg6": {
+          "chiRange": [
+            0.3484660262185848,
+            0.9837973078114937
+          ],
+          "maxAbsZRange": [
+            0.8017837257372732,
+            2.4053511772118195
+          ]
+        },
+        "F_2:deg7": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg8": {
+          "chiRange": [
+            0.42412374654215296,
+            0.9052755434252101
+          ],
+          "maxAbsZRange": [
+            0.9797958971132716,
+            2.0493901531919194
+          ]
+        },
+        "F_2:deg9": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg10": {
+          "chiRange": [
+            0.3423562358243124,
+            0.739427648085495
+          ],
+          "maxAbsZRange": [
+            0.7252406676228423,
+            1.918806447200494
+          ]
+        },
+        "F_2:deg11": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg12": {
+          "chiRange": [
+            0.3398109066267548,
+            1.1984674925617782
+          ],
+          "maxAbsZRange": [
+            0.7301020754057116,
+            1.9509852084477957
+          ]
+        },
+        "F_2:deg13": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg14": {
+          "chiRange": [
+            0.17299716101345536,
+            0.9543135154205277
+          ],
+          "maxAbsZRange": [
+            0.282372483201007,
+            1.9060142616067972
+          ]
+        },
+        "F_2:deg15": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg16": {
+          "chiRange": [
+            0.2890630086489582,
+            1.5452460529461511
+          ],
+          "maxAbsZRange": [
+            0.6652777899607983,
+            3.392178503557856
+          ]
+        },
+        "F_2:deg17": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg18": {
+          "chiRange": [
+            0.2128438045983765,
+            0.8905770501235459
+          ],
+          "maxAbsZRange": [
+            0.40473559280421534,
+            2.0285904733873052
+          ]
+        }
+      }
+    },
+    {
+      "q": 5,
+      "polynomials": [
+        "x^3 - t",
+        "x^3 - (t + 1)"
+      ],
+      "maxDegree": 8,
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "scale": 1,
+          "labels": 3,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 3,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg2",
+          "scale": 2,
+          "labels": 10,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 2,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 2,
+            "inert/linearQuad": 0,
+            "inert/inert": 6
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0.2,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.6
+          },
+          "z": {
+            "split/split": -1.118033988749895,
+            "split/linearQuad": 0,
+            "split/inert": -0.1690308509457034,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": -0.1690308509457034,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.9899494936611664
+          },
+          "chi": 0.5041100912766815,
+          "maxAbsZ": 1.118033988749895
+        },
+        {
+          "label": "F_5:deg3",
+          "scale": 3,
+          "labels": 40,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 40,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg4",
+          "scale": 4,
+          "labels": 150,
+          "counts": {
+            "split/split": 15,
+            "split/linearQuad": 0,
+            "split/inert": 35,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 35,
+            "inert/linearQuad": 0,
+            "inert/inert": 65
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.1,
+            "split/linearQuad": 0,
+            "split/inert": 0.23333333333333334,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.23333333333333334,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.43333333333333335
+          },
+          "z": {
+            "split/split": -0.43301270189221874,
+            "split/linearQuad": 0,
+            "split/inert": 0.32732683535398954,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.32732683535398954,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.2738612787525815
+          },
+          "chi": 0.2301655718742281,
+          "maxAbsZ": 0.43301270189221874
+        },
+        {
+          "label": "F_5:deg5",
+          "scale": 5,
+          "labels": 624,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 624,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg6",
+          "scale": 6,
+          "labels": 2580,
+          "counts": {
+            "split/split": 270,
+            "split/linearQuad": 0,
+            "split/inert": 574,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 574,
+            "inert/linearQuad": 0,
+            "inert/inert": 1162
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.10465116279069768,
+            "split/linearQuad": 0,
+            "split/inert": 0.22248062015503875,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22248062015503875,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4503875968992248
+          },
+          "z": {
+            "split/split": -1.0440863369806936,
+            "split/linearQuad": 0,
+            "split/inert": 0.031570203370647046,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.031570203370647046,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.6075111253646865
+          },
+          "chi": 0.402930846285254,
+          "maxAbsZ": 1.0440863369806936
+        },
+        {
+          "label": "F_5:deg7",
+          "scale": 7,
+          "labels": 11160,
+          "counts": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 11160,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "expected": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "fractions": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 1,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "z": {
+            "split/split": 0,
+            "split/linearQuad": 0,
+            "split/inert": 0,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0,
+            "inert/linearQuad": 0,
+            "inert/inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg8",
+          "scale": 8,
+          "labels": 48750,
+          "counts": {
+            "split/split": 5400,
+            "split/linearQuad": 0,
+            "split/inert": 10850,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 10850,
+            "inert/linearQuad": 0,
+            "inert/inert": 21650
+          },
+          "expected": {
+            "split/split": 0.1111111111111111,
+            "split/linearQuad": 0,
+            "split/inert": 0.2222222222222222,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.2222222222222222,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4444444444444444
+          },
+          "fractions": {
+            "split/split": 0.11076923076923077,
+            "split/linearQuad": 0,
+            "split/inert": 0.22256410256410256,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.22256410256410256,
+            "inert/linearQuad": 0,
+            "inert/inert": 0.4441025641025641
+          },
+          "z": {
+            "split/split": -0.24019223070762197,
+            "split/linearQuad": 0,
+            "split/inert": 0.18156825980065394,
+            "linearQuad/split": 0,
+            "linearQuad/linearQuad": 0,
+            "linearQuad/inert": 0,
+            "inert/split": 0.18156825980065394,
+            "inert/linearQuad": 0,
+            "inert/inert": -0.15191090506252788
+          },
+          "chi": 0.12767288788292586,
+          "maxAbsZ": 0.24019223070762197
+        }
+      ],
+      "controls": {
+        "F_5:deg1": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg2": {
+          "chiRange": [
+            0.22878214493546004,
+            0.9709265743084864
+          ],
+          "maxAbsZRange": [
+            0.5916079783099616,
+            2.1128856368212916
+          ]
+        },
+        "F_5:deg3": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg4": {
+          "chiRange": [
+            0.3494553585496259,
+            0.8396286027025227
+          ],
+          "maxAbsZRange": [
+            0.6024948132556812,
+            1.6979399282660166
+          ]
+        },
+        "F_5:deg5": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg6": {
+          "chiRange": [
+            0.233994869845611,
+            1.023354092733334
+          ],
+          "maxAbsZRange": [
+            0.417634534792276,
+            2.0338415936121974
+          ]
+        },
+        "F_5:deg7": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg8": {
+          "chiRange": [
+            0.5424394768825249,
+            0.9990279524702264
+          ],
+          "maxAbsZRange": [
+            1.421938005789165,
+            1.82900729695308
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "hasRequiredIntegerScaleLadder": false,
+    "finalInteger": {
+      "label": "Z<=4000000",
+      "chi": 0.4001911171965325,
+      "maxAbsZ": 0.9612784456676249,
+      "control": {
+        "chiRange": [
+          0.3314644349049512,
+          0.9925009227585827
+        ],
+        "maxAbsZRange": [
+          0.9339305524765216,
+          2.033315858759273
+        ]
+      },
+      "withinControls": true
+    },
+    "finalFields": [
+      {
+        "q": 2,
+        "label": "F_2:deg18",
+        "chi": 0.22177536484764335,
+        "maxAbsZ": 0.5719089898320338,
+        "control": {
+          "chiRange": [
+            0.2128438045983765,
+            0.8905770501235459
+          ],
+          "maxAbsZRange": [
+            0.40473559280421534,
+            2.0285904733873052
+          ]
+        },
+        "withinControls": true
+      },
+      {
+        "q": 5,
+        "label": "F_5:deg8",
+        "chi": 0.12767288788292586,
+        "maxAbsZ": 0.24019223070762197,
+        "control": {
+          "chiRange": [
+            0.5424394768825249,
+            0.9990279524702264
+          ],
+          "maxAbsZRange": [
+            1.421938005789165,
+            1.82900729695308
+          ]
+        },
+        "withinControls": true
+      }
+    ],
+    "allWithinControls": true,
+    "maxChi": 0.4001911171965325
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.json",
+    "md": "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.md",
+    "svg": "logs/two-universes-protocol/cycle-014-joint-cubic-chebotarev-residual-4000000.svg"
+  }
+}

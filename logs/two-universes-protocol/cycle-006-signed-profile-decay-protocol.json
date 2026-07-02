@@ -1,0 +1,484 @@
+{
+  "generatedAt": "2026-06-17T02:10:43.886Z",
+  "cycle": 6,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-006-signed-profile-decay",
+    "title": "Signed residual-profile and scale-decay matching",
+    "class": "forced mutation from raw exact-admissibility tensor magnitude to signed profile and decay-law comparison",
+    "councilSuccessTarget": "S1/S2 candidate only if signed residual profiles and decay slopes match across Z and F_q[t] beyond eligible random/composite controls",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-006-signed-profile-decay-4000000.json",
+      "logs/two-universes-protocol/cycle-006-signed-profile-decay-4000000.md",
+      "logs/two-universes-protocol/cycle-006-signed-profile-decay-4000000.svg",
+      "scripts/signed-profile-decay-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states R_S=mean_holdout Z_S(v), bins signed residuals by train allowed-rate for |S|=2,3, and compares profile correlations plus log-slope decay across scale and field.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact and includes degree ladders for q=2,3,5 using irreducibles, deterministic low-degree obstruction subtraction, and eligible monic/reducible controls.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side uses train/holdout splits at N=1000000, 2000000, 4000000 with endpoint holdout 134208 vertices.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Signed profile match fails: min cross-universe Pearson=-0.322225 and min within-ladder stability Pearson=-0.781938 against threshold 0.8.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The profile statistic is fixed: exact admissibility residuals, |S|=2,3, 8 train-rate bins, Pearson profile match, and log-slope decay.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate fails: required integer ladder 1M,2M,4M,8M present=false; max slope gap=0.542981 with threshold 0.35.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No novelty audit has ruled out known finite-size Hardy-Littlewood tuple-error profiles, quotient-ring spectral artifacts, or binning-induced correlations.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the signed-profile audit script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The central matched-profile condition fails, so there is no theorem-shaped transport statement for this additive-shift tensor family.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready evidence pack exists because controls/profile match, scale ladder, novelty, and proof-path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "signedProfileEvidence": {
+    "diagnostics": {
+      "minProfilePearson": 0.8,
+      "maxSlopeGapThreshold": 0.35,
+      "minCrossCorrelation": -0.32222461104944283,
+      "minStabilityCorrelation": -0.7819377871626894,
+      "maxSlopeGap": 0.5429808223867826,
+      "completeScaleLadder": false,
+      "profileMatch": false,
+      "stabilityMatch": false,
+      "slopeMatch": false
+    },
+    "integerRuns": [
+      {
+        "label": "Z N=1000000",
+        "N": 1000000,
+        "order2Rms": 0.04036335971531549,
+        "order3Rms": 0.021320837645029653,
+        "order2PositiveFraction": 0,
+        "order3PositiveFraction": 0
+      },
+      {
+        "label": "Z N=2000000",
+        "N": 2000000,
+        "order2Rms": 0.036715290608273846,
+        "order3Rms": 0.019088254479461147,
+        "order2PositiveFraction": 0,
+        "order3PositiveFraction": 0
+      },
+      {
+        "label": "Z N=4000000",
+        "N": 4000000,
+        "order2Rms": 0.031512223740452684,
+        "order3Rms": 0.015729124179589934,
+        "order2PositiveFraction": 0,
+        "order3PositiveFraction": 0
+      }
+    ],
+    "fieldGroups": [
+      {
+        "q": 2,
+        "runs": [
+          {
+            "label": "F_2 degree=20",
+            "holdoutDegree": 20,
+            "order2Rms": 0.013122697090487216,
+            "order3Rms": 0.00706237676185545,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0.15
+          },
+          {
+            "label": "F_2 degree=21",
+            "holdoutDegree": 21,
+            "order2Rms": 0.012474472755202711,
+            "order3Rms": 0.00585750306970816,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0.05
+          },
+          {
+            "label": "F_2 degree=22",
+            "holdoutDegree": 22,
+            "order2Rms": 0.011508016505998525,
+            "order3Rms": 0.006117983810016022,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          }
+        ]
+      },
+      {
+        "q": 3,
+        "runs": [
+          {
+            "label": "F_3 degree=11",
+            "holdoutDegree": 11,
+            "order2Rms": 0.0510966570744638,
+            "order3Rms": 0.028477219841810737,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          },
+          {
+            "label": "F_3 degree=12",
+            "holdoutDegree": 12,
+            "order2Rms": 0.028415536812152163,
+            "order3Rms": 0.013891963455822836,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          },
+          {
+            "label": "F_3 degree=13",
+            "holdoutDegree": 13,
+            "order2Rms": 0.027871997729942873,
+            "order3Rms": 0.014388135946248291,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          }
+        ]
+      },
+      {
+        "q": 5,
+        "runs": [
+          {
+            "label": "F_5 degree=6",
+            "holdoutDegree": 6,
+            "order2Rms": 0,
+            "order3Rms": 0,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          },
+          {
+            "label": "F_5 degree=7",
+            "holdoutDegree": 7,
+            "order2Rms": 0.07903172106687278,
+            "order3Rms": 0.13156480713361784,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          },
+          {
+            "label": "F_5 degree=8",
+            "holdoutDegree": 8,
+            "order2Rms": 0.06751758557567183,
+            "order3Rms": 0.03856997858988897,
+            "order2PositiveFraction": 0,
+            "order3PositiveFraction": 0
+          }
+        ]
+      }
+    ],
+    "crossUniverseProfile": {
+      "order2": [
+        {
+          "field": "F_2 degree=22",
+          "pearson": 0.48976618374561737
+        },
+        {
+          "field": "F_3 degree=13",
+          "pearson": 0.5978862917675234
+        },
+        {
+          "field": "F_5 degree=8",
+          "pearson": 0.5274266881189573
+        }
+      ],
+      "order3": [
+        {
+          "field": "F_2 degree=22",
+          "pearson": -0.32222461104944283
+        },
+        {
+          "field": "F_3 degree=13",
+          "pearson": 0.25760182905811574
+        },
+        {
+          "field": "F_5 degree=8",
+          "pearson": 0.6420119982422565
+        }
+      ]
+    },
+    "integerProfileStability": {
+      "order2": [
+        {
+          "from": "Z N=1000000",
+          "to": "Z N=2000000",
+          "pearson": 0.4594448297739496
+        },
+        {
+          "from": "Z N=2000000",
+          "to": "Z N=4000000",
+          "pearson": 0.9065665889573009
+        }
+      ],
+      "order3": [
+        {
+          "from": "Z N=1000000",
+          "to": "Z N=2000000",
+          "pearson": 0.7833859942321922
+        },
+        {
+          "from": "Z N=2000000",
+          "to": "Z N=4000000",
+          "pearson": 0.5470637012543302
+        }
+      ]
+    },
+    "fieldProfileStability": [
+      {
+        "q": 2,
+        "order2": [
+          {
+            "from": "F_2 degree=20",
+            "to": "F_2 degree=21",
+            "pearson": 0.6046942144251339
+          },
+          {
+            "from": "F_2 degree=21",
+            "to": "F_2 degree=22",
+            "pearson": 0.6327094560588098
+          }
+        ],
+        "order3": [
+          {
+            "from": "F_2 degree=20",
+            "to": "F_2 degree=21",
+            "pearson": 0.5155109812003197
+          },
+          {
+            "from": "F_2 degree=21",
+            "to": "F_2 degree=22",
+            "pearson": 0.524881249263363
+          }
+        ]
+      },
+      {
+        "q": 3,
+        "order2": [
+          {
+            "from": "F_3 degree=11",
+            "to": "F_3 degree=12",
+            "pearson": 0.6861728457306742
+          },
+          {
+            "from": "F_3 degree=12",
+            "to": "F_3 degree=13",
+            "pearson": 0.7396822584762007
+          }
+        ],
+        "order3": [
+          {
+            "from": "F_3 degree=11",
+            "to": "F_3 degree=12",
+            "pearson": 0.8274128972735791
+          },
+          {
+            "from": "F_3 degree=12",
+            "to": "F_3 degree=13",
+            "pearson": 0.5456880207518868
+          }
+        ]
+      },
+      {
+        "q": 5,
+        "order2": [
+          {
+            "from": "F_5 degree=6",
+            "to": "F_5 degree=7",
+            "pearson": 0
+          },
+          {
+            "from": "F_5 degree=7",
+            "to": "F_5 degree=8",
+            "pearson": -0.7819377871626894
+          }
+        ],
+        "order3": [
+          {
+            "from": "F_5 degree=6",
+            "to": "F_5 degree=7",
+            "pearson": 0
+          },
+          {
+            "from": "F_5 degree=7",
+            "to": "F_5 degree=8",
+            "pearson": -0.7722590660307505
+          }
+        ]
+      }
+    ],
+    "decaySlopes": {
+      "integer": {
+        "order2": -0.17856734965037407,
+        "order3": -0.2194128888140884
+      },
+      "fields": [
+        {
+          "q": 2,
+          "order2Slope": -0.09471253508499931,
+          "order3Slope": -0.10354874928393379
+        },
+        {
+          "q": 3,
+          "order2Slope": -0.2758464304517289,
+          "order3Slope": -0.31071038278586177
+        },
+        {
+          "q": 5,
+          "order2Slope": -0.09783615270634763,
+          "order3Slope": -0.762393711200871
+        }
+      ]
+    }
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Signed residual profiles do not match across the two universes, and the full integer scale ladder is still incomplete; the additive-shift tensor family is rejected under the strict protocol.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Signed profile match fails: min cross-universe Pearson=-0.322225 and min within-ladder stability Pearson=-0.781938 against threshold 0.8.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate fails: required integer ladder 1M,2M,4M,8M present=false; max slope gap=0.542981 with threshold 0.35.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No novelty audit has ruled out known finite-size Hardy-Littlewood tuple-error profiles, quotient-ring spectral artifacts, or binning-induced correlations.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The central matched-profile condition fails, so there is no theorem-shaped transport statement for this additive-shift tensor family.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready evidence pack exists because controls/profile match, scale ladder, novelty, and proof-path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Cross-universe order2 endpoint Pearson values are F_2 degree=22=0.489766, F_3 degree=13=0.597886, F_5 degree=8=0.527427; threshold is 0.8.",
+    "expectedNull": "If the additive-shift tensor family carries a transportable two-universe law, signed profile correlations and decay slopes should be stable across scales and fields.",
+    "knownExplanation": "The residual profile is sensitive to finite-range tuple geometry and quotient choice; no matched profile survives the controls.",
+    "survivedControls": [],
+    "failedControls": [
+      "Min cross-universe profile Pearson -0.322225 is below 0.8",
+      "Min within-ladder profile Pearson -0.781938 is below 0.8",
+      "Complete 1M/2M/4M/8M integer ladder present=false"
+    ],
+    "whatFailed": "Neither raw tensor magnitude nor signed profile shape gives a stable matched law.",
+    "suspectedInvariant": "If a two-universe prime-indicator law remains, it is likely spectral/quotient-domain rather than local additive-shift tensor structure.",
+    "nextMutation": "Reject additive-shift tensor family and move to quotient spectral residuals"
+  },
+  "nextMutation": {
+    "title": "Reject additive-shift tensor family and move to quotient spectral residuals",
+    "reason": "Magnitude, exact-admissibility residuals, and signed profiles all fail to produce a stable matched law across Z and F_q[t].",
+    "preregisteredNextMove": [
+      "Build residual prime-indicator fields after local admissibility subtraction.",
+      "For Z, project residuals onto Fourier/Dirichlet modes over controlled residue quotients and short windows.",
+      "For F_q[t], project residuals onto additive and multiplicative characters of matched low-degree quotient rings.",
+      "Compare spectral energy profiles and decay exponents against eligible random/composite/reducible controls.",
+      "Promote only if the same low-parameter spectral law or divergence survives q=2,3,5 and integer scale ladders."
+    ]
+  }
+}

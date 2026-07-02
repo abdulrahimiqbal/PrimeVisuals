@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="458" viewBox="0 0 1280 458">
+<rect width="1280" height="458" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="54" y="42" fill="#f8fafc" font-size="20" font-weight="700">Generic non-CM residual obstruction map</text>
+<text x="54" y="68" fill="#94a3b8" font-size="13">Cycle 022 screens candidate representation jumps before data; experiment-eligible classes: 0</text>
+<text x="74" y="98" fill="#38bdf8" font-size="12">candidate class</text>
+<text x="440" y="98" fill="#38bdf8" font-size="12">decision</text>
+<text x="560" y="98" fill="#38bdf8" font-size="12">blocking condition</text>
+<rect x="54" y="88" width="1170" height="38" fill="#0b1424" stroke="#1e293b"/>
+<text x="74" y="112" fill="#e2e8f0" font-size="13">complete_legendre_second_moment</text>
+<text x="440" y="112" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="112" fill="#94a3b8" font-size="12">No nonzero residual remains after the exact complete-family theorem baseline.</text>
+<rect x="54" y="132" width="1170" height="38" fill="#0f1b2d" stroke="#1e293b"/>
+<text x="74" y="156" fill="#e2e8f0" font-size="13">special_excised_complete_legendre_moment</text>
+<text x="440" y="156" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="156" fill="#94a3b8" font-size="12">Deleting special loci still leaves no named nonzero generic residual.</text>
+<rect x="54" y="176" width="1170" height="38" fill="#0b1424" stroke="#1e293b"/>
+<text x="74" y="200" fill="#e2e8f0" font-size="13">fixed_generic_lambda_trace</text>
+<text x="440" y="200" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="200" fill="#94a3b8" font-size="12">No preregistered finite-field theorem baseline and no full-scale integer trace engine.</text>
+<rect x="54" y="220" width="1170" height="38" fill="#0f1b2d" stroke="#1e293b"/>
+<text x="74" y="244" fill="#e2e8f0" font-size="13">incomplete_generic_lambda_window</text>
+<text x="440" y="244" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="244" fill="#94a3b8" font-size="12">The required nonzero residual is not stated before computation.</text>
+<rect x="54" y="264" width="1170" height="38" fill="#0b1424" stroke="#1e293b"/>
+<text x="74" y="288" fill="#e2e8f0" font-size="13">generic_supersingular_lambda_roots</text>
+<text x="440" y="288" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="288" fill="#94a3b8" font-size="12">The residual after known supersingular, class-number, and extension-degree baselines is not </text>
+<rect x="54" y="308" width="1170" height="38" fill="#0f1b2d" stroke="#1e293b"/>
+<text x="74" y="332" fill="#e2e8f0" font-size="13">higher_generic_legendre_moments</text>
+<text x="440" y="332" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="332" fill="#94a3b8" font-size="12">No exact baseline or reproducible implementation exists.</text>
+<rect x="54" y="352" width="1170" height="38" fill="#0b1424" stroke="#1e293b"/>
+<text x="74" y="376" fill="#e2e8f0" font-size="13">l_adic_monodromy_trace_function</text>
+<text x="440" y="376" fill="#f97316" font-size="13">blocked</text>
+<text x="560" y="376" fill="#94a3b8" font-size="12">The object is not concrete enough to score or reproduce.</text>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="76" y="36" fill="#f8fafc" font-size="19" font-weight="700">exact admissibility tensor residual RMS</text>
+<text x="76" y="61" fill="#94a3b8" font-size="13">left bar: real primes/irreducibles; right bar: strongest listed control</text>
+<line x1="76" x2="1104" y1="604" y2="604" stroke="#334155"/>
+<rect x="82.00" y="439.29" width="43.40" height="164.71" fill="#67e8f9" opacity="0.86"/><rect x="129.40" y="503.74" width="43.40" height="100.26" fill="#94a3b8" opacity="0.72"/><text transform="translate(123.40 613) rotate(58)" fill="#cbd5e1" font-size="12">Z 1M o2</text>
+<rect x="184.80" y="517.00" width="43.40" height="87.00" fill="#67e8f9" opacity="0.86"/><rect x="232.20" y="548.25" width="43.40" height="55.75" fill="#94a3b8" opacity="0.72"/><text transform="translate(226.20 613) rotate(58)" fill="#cbd5e1" font-size="12">Z 1M o3</text>
+<rect x="287.60" y="454.17" width="43.40" height="149.83" fill="#67e8f9" opacity="0.86"/><rect x="335.00" y="520.58" width="43.40" height="83.42" fill="#94a3b8" opacity="0.72"/><text transform="translate(329.00 613) rotate(58)" fill="#cbd5e1" font-size="12">Z 2M o2</text>
+<rect x="390.40" y="526.11" width="43.40" height="77.89" fill="#67e8f9" opacity="0.86"/><rect x="437.80" y="556.40" width="43.40" height="47.60" fill="#94a3b8" opacity="0.72"/><text transform="translate(431.80 613) rotate(58)" fill="#cbd5e1" font-size="12">Z 2M o3</text>
+<rect x="493.20" y="557.04" width="43.40" height="46.96" fill="#a78bfa" opacity="0.86"/><rect x="540.60" y="545.40" width="43.40" height="58.60" fill="#94a3b8" opacity="0.72"/><text transform="translate(534.60 613) rotate(58)" fill="#cbd5e1" font-size="12">F_2 o2</text>
+<rect x="596.00" y="579.03" width="43.40" height="24.97" fill="#a78bfa" opacity="0.86"/><rect x="643.40" y="568.07" width="43.40" height="35.93" fill="#94a3b8" opacity="0.72"/><text transform="translate(637.40 613) rotate(58)" fill="#cbd5e1" font-size="12">F_2 o3</text>
+<rect x="698.80" y="490.26" width="43.40" height="113.74" fill="#34d399" opacity="0.86"/><rect x="746.20" y="479.65" width="43.40" height="124.35" fill="#94a3b8" opacity="0.72"/><text transform="translate(740.20 613) rotate(58)" fill="#cbd5e1" font-size="12">F_3 o2</text>
+<rect x="801.60" y="545.29" width="43.40" height="58.71" fill="#34d399" opacity="0.86"/><rect x="849.00" y="536.12" width="43.40" height="67.88" fill="#94a3b8" opacity="0.72"/><text transform="translate(843.00 613) rotate(58)" fill="#cbd5e1" font-size="12">F_3 o3</text>
+<rect x="904.40" y="328.48" width="43.40" height="275.52" fill="#fbbf24" opacity="0.86"/><rect x="951.80" y="207.48" width="43.40" height="396.52" fill="#94a3b8" opacity="0.72"/><text transform="translate(945.80 613) rotate(58)" fill="#cbd5e1" font-size="12">F_5 o2</text>
+<rect x="1007.20" y="446.61" width="43.40" height="157.39" fill="#fbbf24" opacity="0.86"/><rect x="1054.60" y="312.60" width="43.40" height="291.40" fill="#94a3b8" opacity="0.72"/><text transform="translate(1048.60 613) rotate(58)" fill="#cbd5e1" font-size="12">F_5 o3</text>
+</svg>

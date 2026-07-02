@@ -3,6 +3,7 @@ import {
   sieve,
   primesUpTo,
   mobiusUpTo,
+  liouvilleUpTo,
   ulamXY,
   zetaHalf,
   zetaC,
@@ -66,6 +67,18 @@ describe("mobiusUpTo", () => {
     let sum = 0;
     for (let i = 1; i <= 10000; i++) sum += mu[i];
     expect(sum).toBe(-23);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// liouvilleUpTo
+// ---------------------------------------------------------------------------
+describe("liouvilleUpTo", () => {
+  it("individual lambda values match (-1)^Omega(n)", () => {
+    const lambda = liouvilleUpTo(16);
+    expect(Array.from(lambda.slice(1, 17))).toEqual([
+      1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, 1, 1, 1,
+    ]);
   });
 });
 
@@ -168,6 +181,10 @@ describe("integerLabTables(100)", () => {
   it("pic[100] = 25", () => expect(tab.pic[100]).toBe(25));
   it("gap[7] = 4 (next prime after 7 is 11)", () => expect(tab.gap[7]).toBe(4));
   it("mertens[100] = 1", () => expect(tab.mertens[100]).toBe(1));
+  it("lambda[12] = -1 and lambda[16] = 1", () => {
+    expect(tab.lambda[12]).toBe(-1);
+    expect(tab.lambda[16]).toBe(1);
+  });
   it("computes Thue-Morse signs and prime balance", () => {
     const signs = Array.from({ length: 16 }, (_, n) => thueMorseValue(n));
     expect(signs).toEqual([1, -1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1]);

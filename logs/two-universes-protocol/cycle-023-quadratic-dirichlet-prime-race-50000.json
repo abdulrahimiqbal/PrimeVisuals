@@ -1,0 +1,1583 @@
+{
+  "candidate": "Quadratic Dirichlet prime race",
+  "generatedAt": "2026-06-17T10:42:29.505Z",
+  "maxN": 50000,
+  "integerModulus": 5,
+  "q3MaxDegree": 6,
+  "q5MaxDegree": 5,
+  "q7MaxDegree": 4,
+  "endpoints": [
+    12500,
+    25000,
+    50000
+  ],
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    11235813
+  ],
+  "theoremShape": {
+    "statistic": "Z(X)=sum chi(P)/sqrt(labels), with chi a fixed quadratic Dirichlet character",
+    "integer": "P ranges over rational primes p<=N and chi(p)=(p/m) for fixed odd prime modulus m.",
+    "functionField": "P ranges over monic irreducibles in F_q[t] and chi(P) is the quadratic residue character modulo a fixed irreducible quadratic M_q(t).",
+    "baseline": "Dirichlet prime number theorem / prime polynomial theorem in arithmetic progressions predicts cancellation; promotion requires a residual beyond nearby-character and random controls."
+  },
+  "integer": {
+    "endpoints": [
+      12500,
+      25000,
+      50000
+    ],
+    "modulus": 5,
+    "recordsCount": 5132,
+    "real": {
+      "name": "real primes chi_5",
+      "rows": [
+        {
+          "endpoint": 12500,
+          "count": 1491,
+          "sum": -17,
+          "mean": -0.011401743796109993,
+          "z": -0.4402608823571201,
+          "energyZ": -0.4402608823571201,
+          "maxAbsZ": 1.7320508075688774
+        },
+        {
+          "endpoint": 25000,
+          "count": 2761,
+          "sum": -9,
+          "mean": -0.0032596885186526622,
+          "z": -0.1712810458511798,
+          "energyZ": -0.1712810458511798,
+          "maxAbsZ": 1.7320508075688774
+        },
+        {
+          "endpoint": 50000,
+          "count": 5132,
+          "sum": -26,
+          "mean": -0.005066250974279034,
+          "z": -0.3629359796592987,
+          "energyZ": -0.3629359796592987,
+          "maxAbsZ": 1.7320508075688774
+        }
+      ]
+    },
+    "controls": {
+      "localCharacters": [
+        {
+          "name": "local-character-chi-3",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -19,
+              "mean": -0.012743125419181758,
+              "z": -0.4920562802814871,
+              "energyZ": -0.4920562802814871,
+              "maxAbsZ": 1
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -19,
+              "mean": -0.006881564650488953,
+              "z": -0.36159331901915737,
+              "energyZ": -0.36159331901915737,
+              "maxAbsZ": 1
+            },
+            {
+              "endpoint": 50000,
+              "count": 5131,
+              "sum": -19,
+              "mean": -0.0037029818748781913,
+              "z": -0.2652482905179327,
+              "energyZ": -0.2652482905179327,
+              "maxAbsZ": 1
+            }
+          ]
+        },
+        {
+          "name": "local-character-chi-7",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -9,
+              "mean": -0.006036217303822937,
+              "z": -0.2330792906596518,
+              "energyZ": -0.2330792906596518,
+              "maxAbsZ": 1
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -31,
+              "mean": -0.011227816008692503,
+              "z": -0.5899680468207305,
+              "energyZ": -0.5899680468207305,
+              "maxAbsZ": 1
+            },
+            {
+              "endpoint": 50000,
+              "count": 5131,
+              "sum": -5,
+              "mean": -0.0009744689144416293,
+              "z": -0.06980218171524545,
+              "energyZ": -0.06980218171524545,
+              "maxAbsZ": 1
+            }
+          ]
+        },
+        {
+          "name": "local-character-chi-11",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -13,
+              "mean": -0.008718980549966466,
+              "z": -0.3366700865083859,
+              "energyZ": -0.3366700865083859,
+              "maxAbsZ": 1.6329931618554523
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -29,
+              "mean": -0.010503440782325244,
+              "z": -0.5519055921871349,
+              "energyZ": -0.5519055921871349,
+              "maxAbsZ": 1.6329931618554523
+            },
+            {
+              "endpoint": 50000,
+              "count": 5131,
+              "sum": -47,
+              "mean": -0.009160007795751315,
+              "z": -0.6561405081233072,
+              "energyZ": -0.6561405081233072,
+              "maxAbsZ": 1.6329931618554523
+            }
+          ]
+        },
+        {
+          "name": "local-character-chi-13",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -5,
+              "mean": -0.00335345405767941,
+              "z": -0.12948849481091768,
+              "energyZ": -0.12948849481091768,
+              "maxAbsZ": 1.4596008983995234
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -17,
+              "mean": -0.006157189424121695,
+              "z": -0.32353086438556183,
+              "energyZ": -0.32353086438556183,
+              "maxAbsZ": 1.4596008983995234
+            },
+            {
+              "endpoint": 50000,
+              "count": 5131,
+              "sum": -33,
+              "mean": -0.006431494835314753,
+              "z": -0.46069439932061995,
+              "energyZ": -0.46069439932061995,
+              "maxAbsZ": 1.4596008983995234
+            }
+          ]
+        }
+      ],
+      "shuffle": [
+        {
+          "name": "shuffle-12345",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -57,
+              "mean": -0.03822937625754527,
+              "z": -1.4761688408444613,
+              "energyZ": -1.4761688408444613,
+              "maxAbsZ": 1.812311617377076
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -37,
+              "mean": -0.013400941687794278,
+              "z": -0.7041554107215169,
+              "energyZ": -0.7041554107215169,
+              "maxAbsZ": 1.812311617377076
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 1.812311617377076
+            }
+          ]
+        },
+        {
+          "name": "shuffle-271828",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -49,
+              "mean": -0.03286384976525822,
+              "z": -1.2689872491469931,
+              "energyZ": -1.2689872491469931,
+              "maxAbsZ": 1.8973665961010275
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -69,
+              "mean": -0.024990945309670408,
+              "z": -1.3131546848590452,
+              "energyZ": -1.3131546848590452,
+              "maxAbsZ": 1.8973665961010275
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 1.8973665961010275
+            }
+          ]
+        },
+        {
+          "name": "shuffle-314159",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 11,
+              "mean": 0.007377598926894702,
+              "z": 0.2848746885840189,
+              "energyZ": 0.2848746885840189,
+              "maxAbsZ": 2.9211869733608857
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 7,
+              "mean": 0.0025353132922854038,
+              "z": 0.13321859121758428,
+              "energyZ": 0.13321859121758428,
+              "maxAbsZ": 2.9211869733608857
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 2.9211869733608857
+            }
+          ]
+        },
+        {
+          "name": "shuffle-161803",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 27,
+              "mean": 0.018108651911468814,
+              "z": 0.6992378719789554,
+              "energyZ": 0.6992378719789554,
+              "maxAbsZ": 1.697749375254331
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -37,
+              "mean": -0.013400941687794278,
+              "z": -0.7041554107215169,
+              "energyZ": -0.7041554107215169,
+              "maxAbsZ": 1.697749375254331
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 1.697749375254331
+            }
+          ]
+        },
+        {
+          "name": "shuffle-424242",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 5,
+              "mean": 0.00335345405767941,
+              "z": 0.12948849481091768,
+              "energyZ": 0.12948849481091768,
+              "maxAbsZ": 2
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -11,
+              "mean": -0.00398406374501992,
+              "z": -0.20934350048477532,
+              "energyZ": -0.20934350048477532,
+              "maxAbsZ": 2
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 2
+            }
+          ]
+        },
+        {
+          "name": "shuffle-8675309",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -25,
+              "mean": -0.01676727028839705,
+              "z": -0.6474424740545883,
+              "energyZ": -0.6474424740545883,
+              "maxAbsZ": 2.141798680385621
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -49,
+              "mean": -0.01774719304599783,
+              "z": -0.93253013852309,
+              "energyZ": -0.93253013852309,
+              "maxAbsZ": 2.141798680385621
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 2.141798680385621
+            }
+          ]
+        },
+        {
+          "name": "shuffle-11235813",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 11,
+              "mean": 0.007377598926894702,
+              "z": 0.2848746885840189,
+              "energyZ": 0.2848746885840189,
+              "maxAbsZ": 1.8973665961010275
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 11,
+              "mean": 0.00398406374501992,
+              "z": 0.20934350048477532,
+              "energyZ": 0.20934350048477532,
+              "maxAbsZ": 1.8973665961010275
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -26,
+              "mean": -0.005066250974279034,
+              "z": -0.3629359796592987,
+              "energyZ": -0.3629359796592987,
+              "maxAbsZ": 1.8973665961010275
+            }
+          ]
+        }
+      ],
+      "signFlip": [
+        {
+          "name": "sign-flip-12345",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -27,
+              "mean": -0.018108651911468814,
+              "z": -0.6992378719789554,
+              "energyZ": -0.6992378719789554,
+              "maxAbsZ": 2.23606797749979
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -5,
+              "mean": -0.0018109380659181455,
+              "z": -0.09515613658398878,
+              "energyZ": -0.09515613658398878,
+              "maxAbsZ": 2.23606797749979
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 38,
+              "mean": 0.0074045206547155105,
+              "z": 0.5304448933482058,
+              "energyZ": 0.5304448933482058,
+              "maxAbsZ": 2.23606797749979
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-271828",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -17,
+              "mean": -0.011401743796109993,
+              "z": -0.4402608823571201,
+              "energyZ": -0.4402608823571201,
+              "maxAbsZ": 1.556540648986177
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -11,
+              "mean": -0.00398406374501992,
+              "z": -0.20934350048477532,
+              "energyZ": -0.20934350048477532,
+              "maxAbsZ": 1.556540648986177
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -74,
+              "mean": -0.014419329696024942,
+              "z": -1.0329716344149271,
+              "energyZ": -1.0329716344149271,
+              "maxAbsZ": 1.556540648986177
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-314159",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 7,
+              "mean": 0.004694835680751174,
+              "z": 0.18128389273528472,
+              "energyZ": 0.18128389273528472,
+              "maxAbsZ": 1.7320508075688774
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -25,
+              "mean": -0.009054690329590729,
+              "z": -0.47578068291994385,
+              "energyZ": -0.47578068291994385,
+              "maxAbsZ": 1.7320508075688774
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -24,
+              "mean": -0.004676539360872954,
+              "z": -0.33501782737781416,
+              "energyZ": -0.33501782737781416,
+              "maxAbsZ": 1.7320508075688774
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-161803",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -1,
+              "mean": -0.0006706908115358819,
+              "z": -0.025897698962183534,
+              "energyZ": -0.025897698962183534,
+              "maxAbsZ": 1.414213562373095
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -41,
+              "mean": -0.014849692140528795,
+              "z": -0.780280319988708,
+              "energyZ": -0.780280319988708,
+              "maxAbsZ": 1.414213562373095
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -4,
+              "mean": -0.000779423226812159,
+              "z": -0.05583630456296903,
+              "energyZ": -0.05583630456296903,
+              "maxAbsZ": 1.414213562373095
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-424242",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 91,
+              "mean": 0.06103286384976526,
+              "z": 2.3566906055587014,
+              "energyZ": 2.3566906055587014,
+              "maxAbsZ": 3.65655170486763
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 133,
+              "mean": 0.04817095255342267,
+              "z": 2.5311532331341016,
+              "energyZ": 2.5311532331341016,
+              "maxAbsZ": 3.65655170486763
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 84,
+              "mean": 0.01636788776305534,
+              "z": 1.1725623958223497,
+              "energyZ": 1.1725623958223497,
+              "maxAbsZ": 3.65655170486763
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-8675309",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 57,
+              "mean": 0.03822937625754527,
+              "z": 1.4761688408444613,
+              "energyZ": 1.4761688408444613,
+              "maxAbsZ": 2.8942722045797455
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 87,
+              "mean": 0.03151032234697573,
+              "z": 1.6557167765614047,
+              "energyZ": 1.6557167765614047,
+              "maxAbsZ": 2.8942722045797455
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 74,
+              "mean": 0.014419329696024942,
+              "z": 1.0329716344149271,
+              "energyZ": 1.0329716344149271,
+              "maxAbsZ": 2.8942722045797455
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-11235813",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 9,
+              "mean": 0.006036217303822937,
+              "z": 0.2330792906596518,
+              "energyZ": 0.2330792906596518,
+              "maxAbsZ": 2.1105794120443453
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -33,
+              "mean": -0.01195219123505976,
+              "z": -0.6280305014543259,
+              "energyZ": -0.6280305014543259,
+              "maxAbsZ": 2.1105794120443453
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -46,
+              "mean": -0.008963367108339828,
+              "z": -0.6421175024741438,
+              "energyZ": -0.6421175024741438,
+              "maxAbsZ": 2.1105794120443453
+            }
+          ]
+        }
+      ],
+      "bootstrap": [
+        {
+          "name": "bootstrap-12345",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 55,
+              "mean": 0.03688799463447351,
+              "z": 1.4243734429200943,
+              "energyZ": 1.4243734429200943,
+              "maxAbsZ": 2.400396792595916
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 35,
+              "mean": 0.012676566461427018,
+              "z": 0.6660929560879214,
+              "energyZ": 0.6660929560879214,
+              "maxAbsZ": 2.400396792595916
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 38,
+              "mean": 0.0074045206547155105,
+              "z": 0.5304448933482058,
+              "energyZ": 0.5304448933482058,
+              "maxAbsZ": 2.400396792595916
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-271828",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -49,
+              "mean": -0.03286384976525822,
+              "z": -1.2689872491469931,
+              "energyZ": -1.2689872491469931,
+              "maxAbsZ": 2.3570226039551585
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -47,
+              "mean": -0.017022817819630567,
+              "z": -0.8944676838894945,
+              "energyZ": -0.8944676838894945,
+              "maxAbsZ": 2.3570226039551585
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -8,
+              "mean": -0.001558846453624318,
+              "z": -0.11167260912593806,
+              "energyZ": -0.11167260912593806,
+              "maxAbsZ": 2.3570226039551585
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-314159",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -63,
+              "mean": -0.04225352112676056,
+              "z": -1.6315550346175625,
+              "energyZ": -1.6315550346175625,
+              "maxAbsZ": 2.662632726198493
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -61,
+              "mean": -0.022093444404201378,
+              "z": -1.160904866324663,
+              "energyZ": -1.160904866324663,
+              "maxAbsZ": 2.662632726198493
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -32,
+              "mean": -0.006235385814497272,
+              "z": -0.44669043650375223,
+              "energyZ": -0.44669043650375223,
+              "maxAbsZ": 2.662632726198493
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-161803",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 13,
+              "mean": 0.008718980549966466,
+              "z": 0.3366700865083859,
+              "energyZ": 0.3366700865083859,
+              "maxAbsZ": 1.9611613513818404
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 17,
+              "mean": 0.006157189424121695,
+              "z": 0.32353086438556183,
+              "energyZ": 0.32353086438556183,
+              "maxAbsZ": 1.9611613513818404
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -8,
+              "mean": -0.001558846453624318,
+              "z": -0.11167260912593806,
+              "energyZ": -0.11167260912593806,
+              "maxAbsZ": 1.9611613513818404
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-424242",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 13,
+              "mean": 0.008718980549966466,
+              "z": 0.3366700865083859,
+              "energyZ": 0.3366700865083859,
+              "maxAbsZ": 2.6457513110645903
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": 39,
+              "mean": 0.014125316914161535,
+              "z": 0.7422178653551125,
+              "energyZ": 0.7422178653551125,
+              "maxAbsZ": 2.6457513110645903
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 30,
+              "mean": 0.005845674201091193,
+              "z": 0.4187722842222677,
+              "energyZ": 0.4187722842222677,
+              "maxAbsZ": 2.6457513110645903
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-8675309",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": -73,
+              "mean": -0.04896042924211938,
+              "z": -1.890532024239398,
+              "energyZ": -1.890532024239398,
+              "maxAbsZ": 2.0035513493491184
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -61,
+              "mean": -0.022093444404201378,
+              "z": -1.160904866324663,
+              "energyZ": -1.160904866324663,
+              "maxAbsZ": 2.135570087711676
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": -112,
+              "mean": -0.021823850350740453,
+              "z": -1.563416527763133,
+              "energyZ": -1.563416527763133,
+              "maxAbsZ": 2.135570087711676
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-11235813",
+          "rows": [
+            {
+              "endpoint": 12500,
+              "count": 1491,
+              "sum": 13,
+              "mean": 0.008718980549966466,
+              "z": 0.3366700865083859,
+              "energyZ": 0.3366700865083859,
+              "maxAbsZ": 1.3969077819782347
+            },
+            {
+              "endpoint": 25000,
+              "count": 2761,
+              "sum": -5,
+              "mean": -0.0018109380659181455,
+              "z": -0.09515613658398878,
+              "energyZ": -0.09515613658398878,
+              "maxAbsZ": 1.3969077819782347
+            },
+            {
+              "endpoint": 50000,
+              "count": 5132,
+              "sum": 76,
+              "mean": 0.014809041309431021,
+              "z": 1.0608897866964115,
+              "energyZ": 1.0608897866964115,
+              "maxAbsZ": 1.3969077819782347
+            }
+          ]
+        }
+      ]
+    },
+    "controlSummary": {
+      "localCharacters": {
+        "zRange": [
+          -0.6561405081233072,
+          -0.06980218171524545
+        ],
+        "absZRange": [
+          0.06980218171524545,
+          0.6561405081233072
+        ],
+        "maxAbsZRange": [
+          1,
+          1.6329931618554523
+        ],
+        "energyZRange": [
+          -0.6561405081233072,
+          -0.06980218171524545
+        ]
+      },
+      "shuffle": {
+        "zRange": [
+          -0.3629359796592987,
+          -0.3629359796592987
+        ],
+        "absZRange": [
+          0.3629359796592987,
+          0.3629359796592987
+        ],
+        "maxAbsZRange": [
+          1.697749375254331,
+          2.9211869733608857
+        ],
+        "energyZRange": [
+          -0.3629359796592987,
+          -0.3629359796592987
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -1.0329716344149271,
+          1.1725623958223497
+        ],
+        "absZRange": [
+          0.05583630456296903,
+          1.1725623958223497
+        ],
+        "maxAbsZRange": [
+          1.414213562373095,
+          3.65655170486763
+        ],
+        "energyZRange": [
+          -1.0329716344149271,
+          1.1725623958223497
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -1.563416527763133,
+          1.0608897866964115
+        ],
+        "absZRange": [
+          0.11167260912593806,
+          1.563416527763133
+        ],
+        "maxAbsZRange": [
+          1.3969077819782347,
+          2.662632726198493
+        ],
+        "energyZRange": [
+          -1.563416527763133,
+          1.0608897866964115
+        ]
+      }
+    },
+    "validation": [
+      {
+        "p": 2,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 3,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "residue": 1,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "residue": 2,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 19,
+        "residue": 4,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 23,
+        "residue": 3,
+        "chi": -1,
+        "euler": 4,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "residue": 4,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      },
+      {
+        "p": 31,
+        "residue": 1,
+        "chi": 1,
+        "euler": 1,
+        "ok": true
+      }
+    ],
+    "sampleRecords": [
+      {
+        "p": 2,
+        "chi": -1
+      },
+      {
+        "p": 3,
+        "chi": -1
+      },
+      {
+        "p": 7,
+        "chi": -1
+      },
+      {
+        "p": 11,
+        "chi": 1
+      },
+      {
+        "p": 13,
+        "chi": -1
+      },
+      {
+        "p": 17,
+        "chi": -1
+      },
+      {
+        "p": 19,
+        "chi": 1
+      },
+      {
+        "p": 23,
+        "chi": -1
+      },
+      {
+        "p": 29,
+        "chi": 1
+      },
+      {
+        "p": 31,
+        "chi": 1
+      },
+      {
+        "p": 37,
+        "chi": -1
+      },
+      {
+        "p": 41,
+        "chi": 1
+      },
+      {
+        "p": 43,
+        "chi": -1
+      },
+      {
+        "p": 47,
+        "chi": -1
+      },
+      {
+        "p": 53,
+        "chi": -1
+      },
+      {
+        "p": 59,
+        "chi": 1
+      }
+    ]
+  },
+  "fields": [
+    {
+      "q": 3,
+      "maxDegree": 6,
+      "modulusPoly": 10,
+      "modulus": "t^2 + 1",
+      "theoremObject": "quadratic Dirichlet character modulo an irreducible quadratic polynomial M_q(t)",
+      "rows": [
+        {
+          "label": "F_3:deg1",
+          "q": 3,
+          "degree": 1,
+          "labels": 3,
+          "cumulativeLabels": 3,
+          "degreeSum": -1,
+          "degreeMean": -0.3333333333333333,
+          "z": -0.5773502691896258,
+          "energyZ": -0.5773502691896258,
+          "maxAbsZ": 1
+        },
+        {
+          "label": "F_3:deg2",
+          "q": 3,
+          "degree": 2,
+          "labels": 2,
+          "cumulativeLabels": 5,
+          "degreeSum": -2,
+          "degreeMean": -1,
+          "z": -1.3416407864998738,
+          "energyZ": -1.3416407864998738,
+          "maxAbsZ": 1.3416407864998738
+        },
+        {
+          "label": "F_3:deg3",
+          "q": 3,
+          "degree": 3,
+          "labels": 8,
+          "cumulativeLabels": 13,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.8320502943378437,
+          "energyZ": -0.8320502943378437,
+          "maxAbsZ": 2.1213203435596424
+        },
+        {
+          "label": "F_3:deg4",
+          "q": 3,
+          "degree": 4,
+          "labels": 18,
+          "cumulativeLabels": 31,
+          "degreeSum": -2,
+          "degreeMean": -0.1111111111111111,
+          "z": -0.8980265101338746,
+          "energyZ": -0.8980265101338746,
+          "maxAbsZ": 2.1213203435596424
+        },
+        {
+          "label": "F_3:deg5",
+          "q": 3,
+          "degree": 5,
+          "labels": 48,
+          "cumulativeLabels": 79,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.562543950463012,
+          "energyZ": -0.562543950463012,
+          "maxAbsZ": 2.1213203435596424
+        },
+        {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "labels": 116,
+          "cumulativeLabels": 195,
+          "degreeSum": -4,
+          "degreeMean": -0.034482758620689655,
+          "z": -0.6445033866354896,
+          "energyZ": -0.6445033866354896,
+          "maxAbsZ": 2.1213203435596424
+        }
+      ],
+      "validationResidues": [
+        {
+          "residue": 1,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 2,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 3,
+          "chi": 1,
+          "square": 2,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 4,
+          "chi": -1,
+          "square": 6,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 5,
+          "chi": -1,
+          "square": 3,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 6,
+          "chi": 1,
+          "square": 2,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 7,
+          "chi": -1,
+          "square": 3,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 8,
+          "chi": -1,
+          "square": 6,
+          "chiSquare": 1,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 5,
+      "modulusPoly": 27,
+      "modulus": "t^2 + 2",
+      "theoremObject": "quadratic Dirichlet character modulo an irreducible quadratic polynomial M_q(t)",
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "q": 5,
+          "degree": 1,
+          "labels": 5,
+          "cumulativeLabels": 5,
+          "degreeSum": -1,
+          "degreeMean": -0.2,
+          "z": -0.4472135954999579,
+          "energyZ": -0.4472135954999579,
+          "maxAbsZ": 1.414213562373095
+        },
+        {
+          "label": "F_5:deg2",
+          "q": 5,
+          "degree": 2,
+          "labels": 9,
+          "cumulativeLabels": 14,
+          "degreeSum": -3,
+          "degreeMean": -0.3333333333333333,
+          "z": -1.0690449676496976,
+          "energyZ": -1.0690449676496976,
+          "maxAbsZ": 1.414213562373095
+        },
+        {
+          "label": "F_5:deg3",
+          "q": 5,
+          "degree": 3,
+          "labels": 40,
+          "cumulativeLabels": 54,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.5443310539518174,
+          "energyZ": -0.5443310539518174,
+          "maxAbsZ": 1.5
+        },
+        {
+          "label": "F_5:deg4",
+          "q": 5,
+          "degree": 4,
+          "labels": 150,
+          "cumulativeLabels": 204,
+          "degreeSum": -6,
+          "degreeMean": -0.04,
+          "z": -0.7001400420140048,
+          "energyZ": -0.7001400420140048,
+          "maxAbsZ": 1.5
+        },
+        {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 828,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.34752402342845795,
+          "energyZ": -0.34752402342845795,
+          "maxAbsZ": 1.5
+        }
+      ],
+      "validationResidues": [
+        {
+          "residue": 1,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 2,
+          "chi": 1,
+          "square": 4,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 3,
+          "chi": 1,
+          "square": 4,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 4,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 5,
+          "chi": -1,
+          "square": 3,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 6,
+          "chi": -1,
+          "square": 14,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 7,
+          "chi": 1,
+          "square": 22,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 8,
+          "chi": 1,
+          "square": 7,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 9,
+          "chi": -1,
+          "square": 19,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 10,
+          "chi": -1,
+          "square": 2,
+          "chiSquare": 1,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "q": 7,
+      "maxDegree": 4,
+      "modulusPoly": 50,
+      "modulus": "t^2 + 1",
+      "theoremObject": "quadratic Dirichlet character modulo an irreducible quadratic polynomial M_q(t)",
+      "rows": [
+        {
+          "label": "F_7:deg1",
+          "q": 7,
+          "degree": 1,
+          "labels": 7,
+          "cumulativeLabels": 7,
+          "degreeSum": -1,
+          "degreeMean": -0.14285714285714285,
+          "z": -0.3779644730092272,
+          "energyZ": -0.3779644730092272,
+          "maxAbsZ": 1.414213562373095
+        },
+        {
+          "label": "F_7:deg2",
+          "q": 7,
+          "degree": 2,
+          "labels": 20,
+          "cumulativeLabels": 27,
+          "degreeSum": -4,
+          "degreeMean": -0.2,
+          "z": -0.9622504486493763,
+          "energyZ": -0.9622504486493763,
+          "maxAbsZ": 1.414213562373095
+        },
+        {
+          "label": "F_7:deg3",
+          "q": 7,
+          "degree": 3,
+          "labels": 112,
+          "cumulativeLabels": 139,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.4240944648399855,
+          "energyZ": -0.4240944648399855,
+          "maxAbsZ": 1.6164477182409742
+        },
+        {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 727,
+          "degreeSum": -12,
+          "degreeMean": -0.02040816326530612,
+          "z": -0.6304951003194414,
+          "energyZ": -0.6304951003194414,
+          "maxAbsZ": 1.6164477182409742
+        }
+      ],
+      "validationResidues": [
+        {
+          "residue": 1,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 2,
+          "chi": 1,
+          "square": 4,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 3,
+          "chi": 1,
+          "square": 2,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 4,
+          "chi": 1,
+          "square": 2,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 5,
+          "chi": 1,
+          "square": 4,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 6,
+          "chi": 1,
+          "square": 1,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 7,
+          "chi": 1,
+          "square": 6,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 8,
+          "chi": 1,
+          "square": 14,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 9,
+          "chi": -1,
+          "square": 31,
+          "chiSquare": 1,
+          "ok": true
+        },
+        {
+          "residue": 10,
+          "chi": -1,
+          "square": 43,
+          "chiSquare": 1,
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "completeIntegerLadder": false,
+    "completeFieldLadders": true,
+    "validationPassed": true,
+    "integerBeatsControls": false,
+    "signsAligned": true,
+    "profileSpread": 1.8545577951049719,
+    "matchedProfile": false,
+    "maxAbsEndpointZ": 0.6445033866354896,
+    "finalInteger": {
+      "endpoint": 50000,
+      "count": 5132,
+      "sum": -26,
+      "mean": -0.005066250974279034,
+      "z": -0.3629359796592987,
+      "energyZ": -0.3629359796592987,
+      "maxAbsZ": 1.7320508075688774
+    },
+    "finalFields": [
+      {
+        "q": 3,
+        "modulus": "t^2 + 1",
+        "final": {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "labels": 116,
+          "cumulativeLabels": 195,
+          "degreeSum": -4,
+          "degreeMean": -0.034482758620689655,
+          "z": -0.6445033866354896,
+          "energyZ": -0.6445033866354896,
+          "maxAbsZ": 2.1213203435596424
+        }
+      },
+      {
+        "q": 5,
+        "modulus": "t^2 + 2",
+        "final": {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 828,
+          "degreeSum": 0,
+          "degreeMean": 0,
+          "z": -0.34752402342845795,
+          "energyZ": -0.34752402342845795,
+          "maxAbsZ": 1.5
+        }
+      },
+      {
+        "q": 7,
+        "modulus": "t^2 + 1",
+        "final": {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 727,
+          "degreeSum": -12,
+          "degreeMean": -0.02040816326530612,
+          "z": -0.6304951003194414,
+          "energyZ": -0.6304951003194414,
+          "maxAbsZ": 1.6164477182409742
+        }
+      }
+    ]
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-50000.json",
+    "md": "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-50000.md",
+    "svg": "logs/two-universes-protocol/cycle-023-quadratic-dirichlet-prime-race-50000.svg"
+  }
+}

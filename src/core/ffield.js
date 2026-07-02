@@ -6,6 +6,7 @@
 const SUPPORTED_Q = new Set([2, 3, 4, 5, 7, 8]);
 const universeCache = new Map();
 const fieldCache = new Map();
+const liouvilleCache = new WeakMap();
 
 function assertSupported(q) {
   if (!SUPPORTED_Q.has(q)) throw new Error(`unsupported finite field F_${q}; expected q in {2,3,4,5,7,8}`);
@@ -466,6 +467,32 @@ function buildMobiusTables(q, maxDegree, pow, irreduciblesByDegree) {
   return muByDegree;
 }
 
+export function polynomialCompletelyMultiplicativeTables(universe, primeSignFn) {
+  const { q, maxDegree, pow, irreduciblesByDegree } = universe;
+  const valuesByDegree = Array.from({ length: maxDegree + 1 }, (_, d) => {
+    const arr = new Int8Array(pow[d]);
+    arr.fill(1);
+    return arr;
+  });
+  valuesByDegree[0][0] = 1;
+
+  for (let degree = 1; degree <= maxDegree; degree++) {
+    for (const primePoly of irreduciblesByDegree[degree]) {
+      if (primeSignFn(primePoly, degree, q) >= 0) continue;
+      let power = primePoly;
+      for (let powerDegree = degree; powerDegree <= maxDegree; powerDegree += degree) {
+        for (let totalDegree = powerDegree; totalDegree <= maxDegree; totalDegree++) {
+          const hDegree = totalDegree - powerDegree;
+          flipMobiusMultiples(valuesByDegree[totalDegree], power, q, hDegree, totalDegree, pow);
+        }
+        if (powerDegree + degree <= maxDegree) power = polyMul(power, primePoly, q);
+      }
+    }
+  }
+
+  return valuesByDegree;
+}
+
 export function buildPolynomialUniverse(q, maxDegree) {
   assertSupported(q);
   const max = Math.max(0, Math.floor(maxDegree));
@@ -528,6 +555,23 @@ export function polynomialMobius(poly, universe) {
   if (degree === 0) return poly === 1 ? 1 : 0;
   const idx = poly - universe.pow[degree];
   return idx >= 0 && idx < universe.pow[degree] ? universe.muByDegree[degree][idx] : 0;
+}
+
+export function polynomialLiouvilleTables(universe) {
+  const cached = liouvilleCache.get(universe);
+  if (cached) return cached;
+  const tables = polynomialCompletelyMultiplicativeTables(universe, () => -1);
+  liouvilleCache.set(universe, tables);
+  return tables;
+}
+
+export function polynomialLiouville(poly, universe) {
+  const degree = polyDegree(poly, universe.q);
+  if (degree < 0 || degree > universe.maxDegree) return 0;
+  if (degree === 0) return poly === 1 ? 1 : 0;
+  const idx = poly - universe.pow[degree];
+  const tables = polynomialLiouvilleTables(universe);
+  return idx >= 0 && idx < universe.pow[degree] ? tables[degree][idx] : 0;
 }
 
 export function polynomialPrimeList(q, maxDegree) {
@@ -603,6 +647,26 @@ export function chowlaTwoPoint(q, maxDegree, shiftPoly) {
       const muA = universe.muByDegree[degree][lower];
       const muB = polyDegree(mate, q) === degree ? polynomialMobius(mate, universe) : 0;
       sum += muA * muB;
+    }
+    out[degree] = sum / universe.pow[degree];
+  }
+  return out;
+}
+
+export function liouvilleTwoPoint(q, maxDegree, shiftPoly) {
+  const universe = buildPolynomialUniverse(q, maxDegree);
+  const lambdaByDegree = polynomialLiouvilleTables(universe);
+  const shift = Math.floor(shiftPoly);
+  const out = new Float64Array(universe.maxDegree + 1);
+  for (let degree = 1; degree <= universe.maxDegree; degree++) {
+    let sum = 0;
+    const lead = universe.pow[degree];
+    const values = lambdaByDegree[degree];
+    for (let lower = 0; lower < universe.pow[degree]; lower++) {
+      const poly = lead + lower;
+      const mate = polyAdd(poly, shift, q);
+      const lambdaB = polyDegree(mate, q) === degree ? values[mate - lead] : 0;
+      sum += values[lower] * lambdaB;
     }
     out[degree] = sum / universe.pow[degree];
   }

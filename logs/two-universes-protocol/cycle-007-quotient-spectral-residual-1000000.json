@@ -1,0 +1,1314 @@
+{
+  "candidate": "quotient spectral residual edge",
+  "generatedAt": "2026-06-17T02:13:57.639Z",
+  "maxN": 1000000,
+  "q2MaxDegree": 16,
+  "q3MaxDegree": 9,
+  "q5MaxDegree": 6,
+  "roughCutoff": 257,
+  "blockCount": 24,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "integer": {
+    "roughCutoff": 257,
+    "moduli": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "budgets": [
+      3,
+      5,
+      8
+    ],
+    "endpoints": [
+      1000000
+    ],
+    "byBudget": [
+      {
+        "budget": 3,
+        "moduli": [
+          3,
+          5,
+          7
+        ],
+        "rows": [
+          {
+            "N": 1000000,
+            "real": {
+              "rows": 24,
+              "dim": 12,
+              "energy": 0.34488353892872375,
+              "centeredEnergy": 0.34394415364613207,
+              "lambdaMax": 0.41250000614656984,
+              "mpEdge": 2.9663693674640124,
+              "normalizedEdge": 1.1755006354064281,
+              "maxColumnVarianceShare": 0.1522389677123068,
+              "strongestColumns": [
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 1,
+                  "rms": 0.4651113536319261
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 5,
+                  "rms": 0.4476516901392225
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 4,
+                  "rms": 0.41136874729199874
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 2,
+                  "rms": 0.39177021998973666
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 6,
+                  "rms": 0.31319771620747194
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 3,
+                  "residue": 2,
+                  "rms": 0.304921044135307
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 3,
+                  "residue": 1,
+                  "rms": 0.30436221395274005
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 5,
+                  "residue": 4,
+                  "rms": 0.3009546061413831
+                }
+              ]
+            },
+            "random": {
+              "edge": [
+                0.9275250613133469,
+                1.081210027368723
+              ],
+              "energy": [
+                0.8561993205458983,
+                0.9027431325886756
+              ],
+              "maxColumnVarianceShare": [
+                0.1103739922426057,
+                0.18715733434619486
+              ]
+            },
+            "composite": {
+              "edge": [
+                0.8794343887080034,
+                1.1880549339665347
+              ],
+              "energy": [
+                1.2972484027661428,
+                1.3340479335156807
+              ],
+              "maxColumnVarianceShare": [
+                0.11492273914485793,
+                0.1625226819744765
+              ]
+            },
+            "cramer": {
+              "edge": [
+                0.9013713861256347,
+                1.1083118303199475
+              ],
+              "energy": [
+                2.865195046513828,
+                2.924501138010065
+              ],
+              "maxColumnVarianceShare": [
+                0.1103836325551953,
+                0.1480488504977047
+              ]
+            },
+            "excessEdge": 0.15541664453158188
+          }
+        ],
+        "edgeSlope": null
+      },
+      {
+        "budget": 5,
+        "moduli": [
+          3,
+          5,
+          7,
+          11,
+          13
+        ],
+        "rows": [
+          {
+            "N": 1000000,
+            "real": {
+              "rows": 24,
+              "dim": 34,
+              "energy": 0.36742205972685266,
+              "centeredEnergy": 0.3662619821630703,
+              "lambdaMax": 0.6429878965533194,
+              "mpEdge": 4.909935905062533,
+              "normalizedEdge": 0.9762100902593717,
+              "maxColumnVarianceShare": 0.04850286311049581,
+              "strongestColumns": [
+                {
+                  "universe": "Z",
+                  "modulus": 13,
+                  "residue": 6,
+                  "rms": 0.4716305760527932
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 1,
+                  "rms": 0.4651113536319261
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 5,
+                  "rms": 0.4476516901392225
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 11,
+                  "residue": 8,
+                  "rms": 0.44665442961913354
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 13,
+                  "residue": 8,
+                  "rms": 0.43405371961095984
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 13,
+                  "residue": 12,
+                  "rms": 0.4199198508250136
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 7,
+                  "residue": 4,
+                  "rms": 0.41136874729199874
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 11,
+                  "residue": 5,
+                  "rms": 0.40389423933013757
+                }
+              ]
+            },
+            "random": {
+              "edge": [
+                0.88983992843852,
+                1.1909690753444464
+              ],
+              "energy": [
+                0.9255059377111765,
+                0.9592663756774242
+              ],
+              "maxColumnVarianceShare": [
+                0.046055169973346875,
+                0.05122995777276194
+              ]
+            },
+            "composite": {
+              "edge": [
+                0.9202162151587011,
+                1.074407123229049
+              ],
+              "energy": [
+                1.400342498336339,
+                1.4631947960750737
+              ],
+              "maxColumnVarianceShare": [
+                0.04655157252960488,
+                0.04886258249505646
+              ]
+            },
+            "cramer": {
+              "edge": [
+                0.8926446563886912,
+                1.0368997325140494
+              ],
+              "energy": [
+                2.00541331874457,
+                2.025377371447168
+              ],
+              "maxColumnVarianceShare": [
+                0.04529964094657063,
+                0.06652851934022548
+              ]
+            },
+            "excessEdge": -0.013220505609944477
+          }
+        ],
+        "edgeSlope": null
+      },
+      {
+        "budget": 8,
+        "moduli": [
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23
+        ],
+        "rows": [
+          {
+            "N": 1000000,
+            "real": {
+              "rows": 24,
+              "dim": 90,
+              "energy": 0.40496297749250665,
+              "centeredEnergy": 0.40297046095666084,
+              "lambdaMax": 1.6065124066649932,
+              "mpEdge": 8.869326318635594,
+              "normalizedEdge": 1.1154420844634356,
+              "maxColumnVarianceShare": 0.022900916841341573,
+              "strongestColumns": [
+                {
+                  "universe": "Z",
+                  "modulus": 17,
+                  "residue": 9,
+                  "rms": 0.5824692565775156
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 23,
+                  "residue": 4,
+                  "rms": 0.5369457583343261
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 23,
+                  "residue": 19,
+                  "rms": 0.5253402024980368
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 17,
+                  "residue": 2,
+                  "rms": 0.5167495604375388
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 19,
+                  "residue": 2,
+                  "rms": 0.5130320768264905
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 23,
+                  "residue": 8,
+                  "rms": 0.504206478433493
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 23,
+                  "residue": 12,
+                  "rms": 0.49822259783460127
+                },
+                {
+                  "universe": "Z",
+                  "modulus": 17,
+                  "residue": 16,
+                  "rms": 0.4961559523893711
+                }
+              ]
+            },
+            "random": {
+              "edge": [
+                0.9294243484461236,
+                1.0786471204856722
+              ],
+              "energy": [
+                0.9391734199544656,
+                0.9902051937053613
+              ],
+              "maxColumnVarianceShare": [
+                0.020098016318372793,
+                0.023081527918245644
+              ]
+            },
+            "composite": {
+              "edge": [
+                0.9699261539541619,
+                1.0849675051947523
+              ],
+              "energy": [
+                1.490520279960544,
+                1.5518349278433416
+              ],
+              "maxColumnVarianceShare": [
+                0.02018777654680672,
+                0.02537830937783487
+              ]
+            },
+            "cramer": {
+              "edge": [
+                0.8942966025689486,
+                1.0326418835486797
+              ],
+              "energy": [
+                1.477385961821134,
+                1.4919828145831429
+              ],
+              "maxColumnVarianceShare": [
+                0.01895878078676167,
+                0.027840024408012476
+              ]
+            },
+            "excessEdge": 0.13054748498134505
+          }
+        ],
+        "edgeSlope": null
+      }
+    ]
+  },
+  "fields": [
+    {
+      "q": 2,
+      "maxDegree": 16,
+      "degrees": [
+        14,
+        15,
+        16
+      ],
+      "roughDegree": 2,
+      "moduli": [
+        "t",
+        "t + 1",
+        "t^2 + t + 1"
+      ],
+      "byBudget": [
+        {
+          "budget": 2,
+          "moduli": [
+            "t",
+            "t + 1"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 2,
+            "energy": 0,
+            "centeredEnergy": 0,
+            "lambdaMax": 0,
+            "mpEdge": 4,
+            "normalizedEdge": 0,
+            "maxColumnVarianceShare": 0,
+            "strongestColumns": [
+              {
+                "universe": "F_2[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0
+              },
+              {
+                "universe": "F_2[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0,
+              0
+            ],
+            "energy": [
+              0,
+              0
+            ],
+            "maxColumnVarianceShare": [
+              0,
+              0
+            ]
+          },
+          "composite": {
+            "edge": [
+              0,
+              0
+            ],
+            "energy": [
+              0,
+              0
+            ],
+            "maxColumnVarianceShare": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "budget": 3,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t^2 + t + 1"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 5,
+            "energy": 0.015634067793490712,
+            "centeredEnergy": 0.012765162899377444,
+            "lambdaMax": 0.0008147469192382116,
+            "mpEdge": 6.662277660168381,
+            "normalizedEdge": 0.7504940885147122,
+            "maxColumnVarianceShare": 0.6666666666667046,
+            "strongestColumns": [
+              {
+                "universe": "F_2[t]",
+                "modulus": "t^2 + t + 1",
+                "modulusDegree": 2,
+                "residue": 1,
+                "rms": 0.028543771986867084
+              },
+              {
+                "universe": "F_2[t]",
+                "modulus": "t^2 + t + 1",
+                "modulusDegree": 2,
+                "residue": 2,
+                "rms": 0.014271885993432324
+              },
+              {
+                "universe": "F_2[t]",
+                "modulus": "t^2 + t + 1",
+                "modulusDegree": 2,
+                "residue": 3,
+                "rms": 0.014271885993432324
+              },
+              {
+                "universe": "F_2[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0
+              },
+              {
+                "universe": "F_2[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.6820261387772337,
+              0.7491944463274768
+            ],
+            "energy": [
+              0.49772191931060267,
+              0.6215869628603965
+            ],
+            "maxColumnVarianceShare": [
+              0.5158702861573751,
+              0.6238489936601832
+            ]
+          },
+          "composite": {
+            "edge": [
+              0.6463939238647097,
+              0.7090422924692001
+            ],
+            "energy": [
+              0.5183558569512323,
+              0.806801489015603
+            ],
+            "maxColumnVarianceShare": [
+              0.4941129514880071,
+              0.5662583593261867
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "maxDegree": 9,
+      "degrees": [
+        7,
+        8,
+        9
+      ],
+      "roughDegree": 2,
+      "moduli": [
+        "t",
+        "t + 1",
+        "t + 2",
+        "t^2 + 1",
+        "t^2 + t + 2",
+        "t^2 + 2*t + 2"
+      ],
+      "byBudget": [
+        {
+          "budget": 2,
+          "moduli": [
+            "t",
+            "t + 1"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 4,
+            "energy": 0.15195591972532557,
+            "centeredEnergy": 0.12407148890745631,
+            "lambdaMax": 0.061574937438852215,
+            "mpEdge": 5.82842712474619,
+            "normalizedEdge": 0.6862915010152395,
+            "maxColumnVarianceShare": 0.2501831501831502,
+            "strongestColumns": [
+              {
+                "universe": "F_3[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.1520115710436994
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.1520115710436994
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.15190024801811716
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.15190024801811716
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.5728188717644191,
+              0.6797186420382274
+            ],
+            "energy": [
+              0.3281222171670058,
+              0.900797946613277
+            ],
+            "maxColumnVarianceShare": [
+              0.29471379500970774,
+              0.46940043820640587
+            ]
+          },
+          "composite": {
+            "edge": [
+              0.3828619437022113,
+              0.6862914581779788
+            ],
+            "energy": [
+              0.48469329088909857,
+              1.0989426087055385
+            ],
+            "maxColumnVarianceShare": [
+              0.2630255798126403,
+              0.500238966166469
+            ]
+          }
+        },
+        {
+          "budget": 3,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t + 2"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 6,
+            "energy": 0.15195591972532557,
+            "centeredEnergy": 0.12407148890745633,
+            "lambdaMax": 0.09236240615827836,
+            "mpEdge": 7.464101615137754,
+            "normalizedEdge": 0.8038475772933683,
+            "maxColumnVarianceShare": 0.16678876678876678,
+            "strongestColumns": [
+              {
+                "universe": "F_3[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.1520115710436994
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.1520115710436994
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 2",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.1520115710436994
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.15190024801811716
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.15190024801811716
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t + 2",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.15190024801811716
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.5312387223788698,
+              0.7674292225682565
+            ],
+            "energy": [
+              0.5263567283763593,
+              0.8299357996600747
+            ],
+            "maxColumnVarianceShare": [
+              0.19573854381504827,
+              0.47173783431885435
+            ]
+          },
+          "composite": {
+            "edge": [
+              0.6494837749694934,
+              0.7921916558229357
+            ],
+            "energy": [
+              0.6242874114987262,
+              0.995341311406558
+            ],
+            "maxColumnVarianceShare": [
+              0.2921483917362405,
+              0.4241353492155456
+            ]
+          }
+        },
+        {
+          "budget": 5,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t + 2",
+            "t^2 + 1",
+            "t^2 + t + 2"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 22,
+            "energy": 0.21721548138234106,
+            "centeredEnergy": 0.17330288571884117,
+            "lambdaMax": 0.442215852057315,
+            "mpEdge": 18.6332495807108,
+            "normalizedEdge": 0.7901947079653424,
+            "maxColumnVarianceShare": 0.12170035803375961,
+            "strongestColumns": [
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + 1",
+                "modulusDegree": 2,
+                "residue": 5,
+                "rms": 0.30889835048889475
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + 1",
+                "modulusDegree": 2,
+                "residue": 8,
+                "rms": 0.30889835048889475
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + t + 2",
+                "modulusDegree": 2,
+                "residue": 4,
+                "rms": 0.30889835048889475
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + t + 2",
+                "modulusDegree": 2,
+                "residue": 6,
+                "rms": 0.30889835048889475
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + 1",
+                "modulusDegree": 2,
+                "residue": 3,
+                "rms": 0.29034984694463417
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + t + 2",
+                "modulusDegree": 2,
+                "residue": 5,
+                "rms": 0.29034984694463417
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + 1",
+                "modulusDegree": 2,
+                "residue": 6,
+                "rms": 0.2875660569219631
+              },
+              {
+                "universe": "F_3[t]",
+                "modulus": "t^2 + t + 2",
+                "modulusDegree": 2,
+                "residue": 7,
+                "rms": 0.2875660569219631
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.7159559513057141,
+              0.9214174570959865
+            ],
+            "energy": [
+              0.7259592707341462,
+              0.9095554679415749
+            ],
+            "maxColumnVarianceShare": [
+              0.14803909101057994,
+              0.1902095122222543
+            ]
+          },
+          "composite": {
+            "edge": [
+              0.7629480570818385,
+              0.8940267857821632
+            ],
+            "energy": [
+              0.7826078013903526,
+              0.9688731705200342
+            ],
+            "maxColumnVarianceShare": [
+              0.15254949844229096,
+              0.2644729558148662
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 6,
+      "degrees": [
+        4,
+        5,
+        6
+      ],
+      "roughDegree": 2,
+      "moduli": [
+        "t",
+        "t + 1",
+        "t + 2",
+        "t + 3",
+        "t + 4",
+        "t^2 + 2",
+        "t^2 + 3",
+        "t^2 + t + 1",
+        "t^2 + t + 2",
+        "t^2 + 2*t + 3",
+        "t^2 + 2*t + 4",
+        "t^2 + 3*t + 3",
+        "t^2 + 3*t + 4",
+        "t^2 + 4*t + 1",
+        "t^2 + 4*t + 2"
+      ],
+      "byBudget": [
+        {
+          "budget": 2,
+          "moduli": [
+            "t",
+            "t + 1"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 8,
+            "energy": 0.11366572324507893,
+            "centeredEnergy": 0.09280767439828407,
+            "lambdaMax": 0.0689061154177433,
+            "mpEdge": 9,
+            "normalizedEdge": 0.8888888888888891,
+            "maxColumnVarianceShare": 0.125,
+            "strongestColumns": [
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.5390750719419428,
+              0.7699602100996594
+            ],
+            "energy": [
+              0.8491607180023955,
+              1.0025071268189891
+            ],
+            "maxColumnVarianceShare": [
+              0.228081698814919,
+              0.3994346378509614
+            ]
+          },
+          "composite": {
+            "edge": [
+              0.8851360179144205,
+              0.8875841840205635
+            ],
+            "energy": [
+              8.051626057545311,
+              8.081576968940503
+            ],
+            "maxColumnVarianceShare": [
+              0.1495911662842068,
+              0.18348605412873079
+            ]
+          }
+        },
+        {
+          "budget": 3,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t + 2"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 12,
+            "energy": 0.11366572324507893,
+            "centeredEnergy": 0.09280767439828407,
+            "lambdaMax": 0.10335917312661494,
+            "mpEdge": 11.898979485566354,
+            "normalizedEdge": 1.0084898469281494,
+            "maxColumnVarianceShare": 0.08333333333333336,
+            "strongestColumns": [
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.6177199867399018,
+              0.7857193330685941
+            ],
+            "energy": [
+              0.7739176079970296,
+              0.9922215366628218
+            ],
+            "maxColumnVarianceShare": [
+              0.23909330547862878,
+              0.3551317126278452
+            ]
+          },
+          "composite": {
+            "edge": [
+              1.0048116045825592,
+              1.0071198507326338
+            ],
+            "energy": [
+              8.050352948859189,
+              8.073744945839803
+            ],
+            "maxColumnVarianceShare": [
+              0.09977709976717049,
+              0.12246503606975885
+            ]
+          }
+        },
+        {
+          "budget": 5,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t + 2",
+            "t + 3",
+            "t + 4"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 20,
+            "energy": 0.11366572324507891,
+            "centeredEnergy": 0.09280767439828407,
+            "lambdaMax": 0.17226528854435819,
+            "mpEdge": 17.324555320336763,
+            "normalizedEdge": 1.1544307851020341,
+            "maxColumnVarianceShare": 0.05000000000000002,
+            "strongestColumns": [
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 1,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 2,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 3,
+                "rms": 0.11366572324507891
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t + 1",
+                "modulusDegree": 1,
+                "residue": 4,
+                "rms": 0.11366572324507891
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.6412590411033763,
+              0.755549151043764
+            ],
+            "energy": [
+              0.7491134140055161,
+              0.9825213354683451
+            ],
+            "maxColumnVarianceShare": [
+              0.12179629732510391,
+              0.19182564767480864
+            ]
+          },
+          "composite": {
+            "edge": [
+              1.150991079834843,
+              1.1531813218544262
+            ],
+            "energy": [
+              8.045529357081417,
+              8.065971524920409
+            ],
+            "maxColumnVarianceShare": [
+              0.05997111312951258,
+              0.07363035718197429
+            ]
+          }
+        },
+        {
+          "budget": 8,
+          "moduli": [
+            "t",
+            "t + 1",
+            "t + 2",
+            "t + 3",
+            "t + 4",
+            "t^2 + 2",
+            "t^2 + 3",
+            "t^2 + t + 1"
+          ],
+          "real": {
+            "rows": 3,
+            "dim": 92,
+            "energy": 0.12094477427850994,
+            "centeredEnergy": 0.09875099467947891,
+            "lambdaMax": 0,
+            "mpEdge": 60.56465996625054,
+            "normalizedEdge": 0,
+            "maxColumnVarianceShare": 0.05264385930618877,
+            "strongestColumns": [
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 2",
+                "modulusDegree": 2,
+                "residue": 14,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 2",
+                "modulusDegree": 2,
+                "residue": 19,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 3",
+                "modulusDegree": 2,
+                "residue": 6,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 3",
+                "modulusDegree": 2,
+                "residue": 21,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + t + 1",
+                "modulusDegree": 2,
+                "residue": 10,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + t + 1",
+                "modulusDegree": 2,
+                "residue": 18,
+                "rms": 0.26616741199907407
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 2",
+                "modulusDegree": 2,
+                "residue": 1,
+                "rms": 0.23869801881466587
+              },
+              {
+                "universe": "F_5[t]",
+                "modulus": "t^2 + 3",
+                "modulusDegree": 2,
+                "residue": 4,
+                "rms": 0.23869801881466587
+              }
+            ]
+          },
+          "random": {
+            "edge": [
+              0.8283276711462759,
+              0.9149105286869623
+            ],
+            "energy": [
+              0.907413424938388,
+              1.00761414757216
+            ],
+            "maxColumnVarianceShare": [
+              0.044250234821474145,
+              0.07732166252266767
+            ]
+          },
+          "composite": {
+            "edge": [
+              1.5024755987709713,
+              1.507035391774653
+            ],
+            "energy": [
+              4.776867046022335,
+              4.7922460280844055
+            ],
+            "maxColumnVarianceShare": [
+              0.036147243424000476,
+              0.04505428138847886
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-1000000.json",
+    "md": "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-1000000.md",
+    "svg": "logs/two-universes-protocol/cycle-007-quotient-spectral-residual-1000000.svg"
+  }
+}
