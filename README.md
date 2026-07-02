@@ -17,7 +17,11 @@ with OEIS lookup links.
 
 See [HOW_TO_USE.md](HOW_TO_USE.md) for a practical guide to the controls,
 presets, and what each dot represents. [ROADMAP.md](ROADMAP.md) tracks what
-is built and what comes next.
+is built and what comes next. [COUNCIL2.md](COUNCIL2.md) is the active
+research program (July 2026): the post-mortem of the first campaign and
+the three-track Parity Bridge program, with sprint prompts in
+[prompts/](prompts/). [KNOWLEDGE.md](KNOWLEDGE.md) is the compounding
+record of what has been established, refuted, and left open.
 
 [MACHINE_HOW_TO_USE.md](MACHINE_HOW_TO_USE.md) documents the headless
 interface for AI coding agents: `scripts/explore.mjs` evaluates any

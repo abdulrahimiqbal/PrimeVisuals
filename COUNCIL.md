@@ -1,5 +1,14 @@
 # COUNCIL REPORT — beyond RH: the alternate path (June 2026)
 
+> **AMENDED July 2026.** The council reconvened after the first program's
+> results (a ~2,000-candidate graveyard, one refuted star conjecture, one
+> surviving unexplained object, and an unexecuted frontier plan). The
+> post-mortem, the evidence review, and the active program now live in
+> **COUNCIL2.md**; this report remains the record of the June decision.
+> The two-universes build and the S1/S2/S3 success taxonomy defined here
+> still stand; the hunting style (summatory/wildcard scans, order-sensitive
+> gap statistics) is superseded by COUNCIL2's fence.
+
 The question put to the council: RH-grade precision about prime structure
 exists via zeta (zeros, critical line). To reach the *same grade of truth*
 by a genuinely different route — not a reformulation — which mathematical
