@@ -344,3 +344,10 @@ adoption standard. The council reminds the workshop that certainty of
 outcome is not purchasable; this design purchases certainty of
 *meaning* — zero rediscovery risk in the target space, and a null that
 is still a result.
+
+*Execution note (2026-07-02):* P1-CL ran end to end — Row 0 gate PASS,
+integer hunt NO SURVIVOR at 10^8, known-line calibration PASS
+(amplitude ladder verified), M–S variance slope 0.998 vs flat Cramér,
+pilot H1 refuted. See `logs/2026-07-02-missing-spectrum.md` and the
+three 2026-07-02 KNOWLEDGE entries. **COUNCIL3.md** now formalizes the
+follow-on primary track (Track Q, quantum probability).
