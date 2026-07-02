@@ -8,6 +8,126 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-07-02 · MISSING-SPECTRUM HUNT / CLOSED-NO-SURVIVOR + S4 — binary Chowla spectra at 10^8
+
+Source: `logs/2026-07-02-missing-spectrum.md`; scripts
+`scripts/missing-spectrum-row0.mjs`, `scripts/missing-spectrum-row12.mjs`,
+`scripts/missing-spectrum-plots.mjs`; artifacts in
+`logs/missing-spectrum-artifacts/` (`row0-ynseries.json`,
+`row12-N100000000.json`, `spectrum-panel.svg`, `exponent-dashboard.svg`).
+Program: COUNCIL2.md Amendment A (P1-CL); prompt
+`prompts/parity-battery.md`.
+
+Object: `C_h(x) = Σ_{n≤x} μ(n)μ(n+h)` — bilinear in μ, outside the
+explicit-formula funnel; over `F_q[t]` the `h=1` sum equals
+`|Y_n(F_q)| − q^n` (Keating–Rudnick), Weil-proven square-root
+cancellation — a second critical line whose integer spectral counterpart
+does not exist in current mathematics. Hunt: discrete frequencies in the
+DFT of `C_h(e^u)/e^{u/2}`.
+
+**[F_q[t]: exact] Row-0 gate PASS.** Raw `S_n(1)`: `F_2` to degree 24,
+slope of `log_q|S_n|` vs n = `0.4944`; `F_3` to degree 15, slope
+`0.5306`; `|S_n|/q^{n/2}` bounded in both. No exact low-order linear
+recurrence (Prony residuals 0.18–0.76 — the Y_n variety varies with n),
+but dominant fitted modes lie ON the Weil circle (`F_3` order-3:
+`|α|/√q = 1.084, 1.084, 0.996`).
+
+**[ℤ: measured] θ₂(h) table at N=10^8** (RMS-over-octaves slope of
+`C_h`): h=1..12 → `0.504, 0.526, 0.491, 0.447, 0.579, 0.455, 0.525,
+0.520`; spot h=101 → `0.293`, h=1009 → `0.527`. Small-h mean `0.506`;
+20-null-walk spread `0.542 ± 0.119`. Binary Chowla shows
+square-root-scale cancellation, exponent indistinguishable from a
+matched random walk.
+
+**[ℤ: measured] Spectra: NO SURVIVOR.** Grid: 8192 log samples on
+`[10^4, 10^8]`, `Δγ = 0.682`, ramp bins < 8 excluded (predeclared). Real
+top peak scores across ten shifts: `2.91–4.33`; null envelope (10
+Bernoulli-on-squarefree + 10 RCM walks): per-seed max mean `3.69`, max
+`7.28`. Octave halves share no top frequency (h=1: γ=12.3 vs 150.1). No
+shift-coherent line.
+
+**[ℤ: measured] Known-line calibration PASS on the Mertens walk.** M(x)
+spectrum peaks land within 0.01–0.23 of `γ_1..γ_7` (γ₈ below local
+background at this resolution); measured/predicted amplitude ratios vs
+`2/|ρ ζ′(ρ)|` cluster at 0.47–0.50 = Hann coherent gain 0.5;
+window-corrected: `0.95, 0.98, 0.93, —, 0.94, 1.00, 1.00`. First
+verification in this repo of the μ-walk amplitude ladder (the
+`1/|ζ′(ρ)|` weights), complementing the June ψ-side zero-spectrum entry.
+
+**[ℤ: measured] Parity-breaker profile flat.** avg_{p≤10^8} μ(p+h) for
+h=1..8 all at the 10^-4 scale, naive |z| ≤ 1.15 — the (unproven)
+`Σ Λ(n)μ(n+h) = o(x)` estimate holds empirically with no secondary
+structure.
+
+STATUS: `CLOSED-NO-SURVIVOR` for the spectral hunt at 10^8; the S4-grade
+statement stands: **at N=10^8, uniform-shift binary Chowla is spectrally
+structureless against matched multiplicative colored-noise nulls, while
+the identical instrument recovers ζ's line (frequencies and amplitudes)
+from the Mertens walk and the Weil line from exact F_q[t] data.**
+Escalation is power-gated: 10^9 buys Δγ 0.55 only; log-weighted walks
+are the better next variant.
+
+CONNECTION: extends the 2026-06-12 zero-spectrum entry (same machinery,
+new walk, amplitude ladder added); the theorem-side series extends the
+two-universes calibration entry with exact raw `S_n` and mode structure;
+the no-survivor verdict is the parity-space counterpart of the
+2026-06-15 critical-line CLOSED-NO-SURVIVOR — but under a validated
+instrument and predeclared bars rather than an exhausted scan.
+
+## 2026-07-02 · KNOWN-MATH(shape) + OBSERVED — M–S short-interval variance: slope 1.00, Cramér flat
+
+Source: `logs/2026-07-02-missing-spectrum.md`;
+`scripts/missing-spectrum-row3.mjs`; artifacts
+`row3-msvariance-X10000000.json`, `ms-variance-curve.svg`.
+
+**[ℤ: measured]** V(X,H)/H for ψ-increments at X=10^7, H=100..102400
+(8192 samples): falls 10.68 → 3.76 as log(X/H) falls 11.51 → 4.58 —
+fitted slope **0.998** against the Montgomery–Soundararajan conjecture
+`V/H ~ log(X/H) − γ − log 2π` (slope 1). Intercept offset +1.2–1.6
+(finite-size; grows toward the Maier-adjacent end H≈(log X)²).
+**Five Cramér twins are flat at V/H ≈ 13.3–13.5 with no H-dependence.**
+The real primes carry a variance deficit that grows with window size —
+spectral rigidity (zero repulsion) visible directly in prime counts with
+no ζ input.
+
+STATUS: KNOWN-MATH conjecture-shape confirmed + OBSERVED calibration
+(the constant's finite-size behavior is the open measurable part).
+Around-the-line physics, not a new line.
+
+CONNECTION: edge.md conjecture 6 (M–S / Maier) gets its first in-repo
+measurement; complements the GUE spacing calibrations and the
+pair-correlation layer; the flat-Cramér contrast is the cleanest
+beyond-Cramér structure demonstration in the repo.
+
+## 2026-07-02 · CORRECTION/CLOSED — pilot H1 (λ block-χ² drift) refuted at 10^8; Gowers/ML flank null
+
+Source: `logs/2026-07-02-missing-spectrum.md`;
+`scripts/missing-spectrum-row4.mjs`; artifact `row4-flank-N100000000.json`.
+Corrects the preregistered target from the council-2 pilot
+(`logs/council2-artifacts/pilot-10000000.md`).
+
+**[ℤ: measured] H1 REFUTED.** λ block-χ² z at k=10/11/12 at N=10^8:
+`−1.85 / −1.34 / −0.70` vs 30-seed null band `0.11±2.56 / −0.02±2.36 /
+−0.19±2.18` (20 Bernoulli + 10 RCM); z-of-z ≤ |0.77|. The pilot's
+k=10–12 drift (z≈3 at 10^7) was look-elsewhere noise; note the null sd
+of block-χ²z is ~2.2–2.6 (long-range dependence within a sequence), so
+naive χ² z-scores overstate significance — future block claims must use
+the seed-band, not the analytic sd.
+
+**[ℤ: measured] Gowers/ML null.** U²(λ)=2.6274e−2 and U³(λ)=1.6211e−1
+(2^22 window) are inside the null range (2.6273–2.6288e−2 /
+1.6210–1.6211e−1); logistic probe holdout accuracy 0.500006 vs nulls
+0.499640–0.500128. No linear phase, no quadratic structure, no
+predictability edge.
+
+STATUS: CLOSED. Multiplicative parity behaved as conjectured randomness
+in every time-domain statistic measured at this scale.
+
+CONNECTION: closes the council-2 pilot's one flagged thread; strengthens
+the S4 pack of the missing-spectrum entry; the seed-band-vs-analytic-sd
+lesson joins the colored-noise-spectrum lesson from the zero-spectrum
+entry as instrument discipline.
+
 ## 2026-06-15 · PLAYGROUND / GRAVEYARD — deep-admissible PIT gap null
 
 Source: `logs/2026-06-13-playground-critical-line.md`; audit script
