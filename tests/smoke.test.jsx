@@ -69,6 +69,19 @@ describe("PrimeVisuals", () => {
     expect(container.textContent).toContain("CANVAS LAB");
   });
 
+  it("opens the searchable Prime Theory Atlas as a first-class mode", () => {
+    const { getByText, getByPlaceholderText, container } = render(<PrimeVisuals />);
+    fireEvent.click(getByText("ATLAS"));
+    expect(container.textContent).toContain("PRIME THEORY ATLAS");
+    expect(container.textContent).toContain("Prime numbers");
+    expect(container.querySelector('svg[aria-labelledby="prime-theory-map-title prime-theory-map-description"]')).toBeTruthy();
+
+    fireEvent.change(getByPlaceholderText("Search theorem, operation, obstruction…"), {
+      target: { value: "category" },
+    });
+    expect(container.textContent).toContain("MATCHES");
+  });
+
   it("renders the prime matrix plane and the plain-words panel", () => {
     const { container, getAllByText } = render(<PrimeVisuals />);
     // The "IN PLAIN WORDS" panel is always present in patch mode

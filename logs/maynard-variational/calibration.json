@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-07-10T14:02:54.936Z",
+  "object": "Maynard--Tao variational quotient",
+  "exactPublishedM5": {
+    "numerator": "1417255",
+    "denominator": "708216",
+    "value": 2.0011620748472216
+  },
+  "exactCalibratedCubicM5": {
+    "numerator": "11148726395",
+    "denominator": "5566329648",
+    "value": 2.002886479963646,
+    "coefficientDenominator": "10000"
+  },
+  "degreeLadder": [
+    {
+      "degree": 0,
+      "dimension": 1,
+      "quotient": 1.6666666666666667,
+      "residual": 4.440892098500626e-16,
+      "iterations": 2,
+      "converged": true
+    },
+    {
+      "degree": 1,
+      "dimension": 6,
+      "quotient": 1.9507648882254787,
+      "residual": 9.399946161901965e-7,
+      "iterations": 33,
+      "converged": true
+    },
+    {
+      "degree": 2,
+      "dimension": 21,
+      "quotient": 1.9905525591639872,
+      "residual": 9.186379686739445e-7,
+      "iterations": 57,
+      "converged": true
+    },
+    {
+      "degree": 3,
+      "dimension": 56,
+      "quotient": 2.0028871957607293,
+      "residual": 8.745501156988066e-7,
+      "iterations": 84,
+      "converged": true
+    },
+    {
+      "degree": 4,
+      "dimension": 126,
+      "quotient": 2.0058793714573437,
+      "residual": 9.916166219334771e-7,
+      "iterations": 92,
+      "converged": true
+    }
+  ],
+  "symmetricRuns": [
+    {
+      "k": 54,
+      "weightedDegree": 11,
+      "dimension": 42,
+      "quotient": 3.6999457147594614,
+      "residual": 9.345862286450929e-7,
+      "iterations": 142,
+      "converged": true
+    },
+    {
+      "k": 105,
+      "weightedDegree": 11,
+      "dimension": 42,
+      "quotient": 4.002069762947066,
+      "residual": 7.504793386517066e-8,
+      "iterations": 1803,
+      "converged": true
+    }
+  ],
+  "krylovRuns": [
+    {
+      "k": 5,
+      "dimension": 10,
+      "maximumMoment": 19,
+      "finalPolynomialTermCount": 933,
+      "quotient": 2.0071402914256926,
+      "residual": 6.623911059809277e-8,
+      "rotations": 230,
+      "converged": true
+    },
+    {
+      "k": 54,
+      "dimension": 8,
+      "maximumMoment": 15,
+      "finalPolynomialTermCount": 684,
+      "quotient": 3.6993988682164685,
+      "residual": 6.013118503457296e-10,
+      "rotations": 137,
+      "converged": true
+    }
+  ],
+  "gates": {
+    "exactPublishedM5": true,
+    "exactIndependentCubicAboveTwo": true,
+    "numericalM105Reproduction": true,
+    "krylovM5Reproduction": true,
+    "modernM54Reproduction": false
+  },
+  "verdict": "CALIBRATION PASSED THROUGH MAYNARD 2015; MODERN M54 GATE OPEN",
+  "paths": {
+    "json": "logs/maynard-variational/calibration.json",
+    "md": "logs/maynard-variational/calibration.md"
+  }
+}

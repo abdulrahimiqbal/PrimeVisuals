@@ -1,0 +1,34 @@
+{
+  "name": "Two-Universes Rupture",
+  "basedOn": "COUNCIL.md decision: compare ordinary integer primes with function-field prime universes F_2[t] and F_3[t].",
+  "source": {
+    "source": "COUNCIL.md",
+    "decision": "DECISION — the Two-Universes Program",
+    "primaryBet": "Primary bet: build the function-field universe (F_2[t], F_3[t] irreducible polynomials) into PrimeVisuals as a first-class second universe, and make the workshop's signature object the MEASURED DEVIATION between the two universes at matched statistics.",
+    "success": [
+      "S1: a precisely characterized, replicable law holding in BOTH",
+      "S2: a precisely characterized divergence between the universes",
+      "S3: an LO-S-class statistical phenomenon in either universe, new to"
+    ]
+  },
+  "path": "primevisuals-best-shots/10-two-universes-rupture-described.png",
+  "stats": {
+    "litSamplePixels": 31779,
+    "brightSamplePixels": 164,
+    "maxLuma": 634,
+    "meanSampleLuma": 66.95,
+    "width": 3840,
+    "height": 2160,
+    "textLength": 466,
+    "described": true,
+    "dataBackedParticlesOnly": true,
+    "decorativeSpecks": 0,
+    "integerPrimes": 60978,
+    "integerPrimePointsDrawn": 60978,
+    "f2PointsDrawn": 194476,
+    "f3PointsDrawn": 94771,
+    "totalDataParticleMarks": 350225,
+    "note": "Every square/dot particle is data-backed by one integer prime or one sampled irreducible polynomial. Lines, glow, and the central ribbon are structural overlays, not counted particles.",
+    "concept": "Primary bet: build the function-field universe (F_2[t], F_3[t] irreducible polynomials) into PrimeVisuals as a first-class second universe, and make the workshop's signature object the MEASURED DEVIATION between the two universes at matched statistics."
+  }
+}

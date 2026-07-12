@@ -1,19 +1,34 @@
 {
   "name": "Two-Universes Rupture",
-  "basedOn": "COUNCIL.md two-universes work: compare ordinary integer primes with function-field prime universes F_2[t] and F_3[t].",
+  "basedOn": "COUNCIL.md decision: compare ordinary integer primes with function-field prime universes F_2[t] and F_3[t].",
+  "source": {
+    "source": "COUNCIL.md",
+    "decision": "DECISION — the Two-Universes Program",
+    "primaryBet": "Primary bet: build the function-field universe (F_2[t], F_3[t] irreducible polynomials) into PrimeVisuals as a first-class second universe, and make the workshop's signature object the MEASURED DEVIATION between the two universes at matched statistics.",
+    "success": [
+      "S1: a precisely characterized, replicable law holding in BOTH",
+      "S2: a precisely characterized divergence between the universes",
+      "S3: an LO-S-class statistical phenomenon in either universe, new to"
+    ]
+  },
   "path": "/Users/rahim/Downloads/PrimeVisuals/primevisuals-best-shots/10-two-universes-rupture.png",
   "stats": {
+    "litSamplePixels": 31777,
+    "brightSamplePixels": 21,
+    "maxLuma": 533,
+    "meanSampleLuma": 64.57,
     "width": 3840,
     "height": 2160,
     "textLength": 0,
-    "litSamplePixels": 495831,
-    "brightSamplePixels": 11258,
-    "maxLuma": 765,
-    "meanSampleLuma": 43.58,
+    "described": false,
+    "dataBackedParticlesOnly": true,
+    "decorativeSpecks": 0,
     "integerPrimes": 60978,
-    "integerPrimePointsDrawn": 60976,
+    "integerPrimePointsDrawn": 60978,
     "f2PointsDrawn": 194476,
     "f3PointsDrawn": 94771,
-    "concept": "COUNCIL.md Two-Universes Program: ordinary integer primes compared against F_2[t] and F_3[t] finite-field prime worlds."
+    "totalDataParticleMarks": 350225,
+    "note": "Every square/dot particle is data-backed by one integer prime or one sampled irreducible polynomial. Lines, glow, and the central ribbon are structural overlays, not counted particles.",
+    "concept": "Primary bet: build the function-field universe (F_2[t], F_3[t] irreducible polynomials) into PrimeVisuals as a first-class second universe, and make the workshop's signature object the MEASURED DEVIATION between the two universes at matched statistics."
   }
 }

@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-06-17T01:16:07.559Z",
+  "cycle": 2,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-002-fixed-shift-graph-degree",
+    "title": "Order-free fixed-shift graph degree spectrum",
+    "class": "forced representation mutation from lexicographic gaps to unordered additive-shift graphs",
+    "councilSuccessTarget": "S1/S2 candidate only if Z and F_q[t] share a residual law after local controls",
+    "preregistration": "logs/2026-06-13-playground-critical-line.md",
+    "evidenceFiles": [
+      "logs/playground-artifacts/fixed-shift-graph-degree-audit-8000000.json",
+      "logs/playground-artifacts/fixed-shift-graph-degree-audit-8000000.md",
+      "logs/playground-artifacts/fixed-shift-graph-degree-audit-8000000.svg",
+      "logs/playground-artifacts/fixed-shift-graph-degree-audit-8000000.png",
+      "scripts/fixed-shift-graph-degree-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states an unordered graph G_H on primes/irreducibles and scores D=std(degree)/sqrt(mean degree).",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is an exact finite graph on monic irreducibles of fixed degree with explicit polynomial shifts divisible by all linear factors.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side was checked over endpoints 500000, 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Endpoint integer D=0.823568 is absorbed by sampled composite controls 0.830489..0.832803; Cramer separation is therefore only local-constraint detection.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The statistic is one low-parameter graph invariant over a fixed shift set.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Integer D is stable, but F_2[t] endpoint D=1.235972 and F_3[t] endpoint D=1.109492 do not match the integer endpoint D=0.823568.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The result reduces to local tuple admissibility / Hardy-Littlewood pair calibration rather than a new two-universe invariant.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/PNG/script artifacts are present.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "A proof path would first need subtraction of local pair/triple expectations; raw graph D has no theorem-shaped residual statement.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready pack exists because the candidate is rejected at controls and matched-field gates.",
+      "severity": "hard-fail"
+    }
+  },
+  "graphEvidence": {
+    "integerEndpoint": {
+      "N": 8000000,
+      "labels": 539777,
+      "D": 0.8235680552034073,
+      "meanDegree": 3.3009372388968035,
+      "cramerDRange": [
+        0.9063409403102145,
+        0.9119950180653155
+      ],
+      "compositeDRange": [
+        0.8304888551658504,
+        0.8328034230481807
+      ],
+      "compositeAbsorbs": false,
+      "cramerSeparates": true
+    },
+    "fieldEndpoints": [
+      {
+        "q": 2,
+        "degree": 22,
+        "labels": 190557,
+        "D": 1.2359716983511715,
+        "meanDegree": 2.0201409551997567,
+        "randomMonicDRange": [
+          1.377753234356615,
+          1.3808586475353015
+        ],
+        "randomReducibleDRange": [
+          1.378675173511497,
+          1.385171575179154
+        ]
+      },
+      {
+        "q": 3,
+        "degree": 13,
+        "labels": 122640,
+        "D": 1.1094921122345265,
+        "meanDegree": 3.8808219178082193,
+        "randomMonicDRange": [
+          1.350878976121091,
+          1.3634332701825307
+        ],
+        "randomReducibleDRange": [
+          1.3582746444005294,
+          1.3677245783100793
+        ]
+      }
+    ]
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Order-free representation fixed the lexicographic issue, but raw graph degree variance is absorbed by local/composite controls and mismatches finite fields.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Endpoint integer D=0.823568 is absorbed by sampled composite controls 0.830489..0.832803; Cramer separation is therefore only local-constraint detection.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Integer D is stable, but F_2[t] endpoint D=1.235972 and F_3[t] endpoint D=1.109492 do not match the integer endpoint D=0.823568.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The result reduces to local tuple admissibility / Hardy-Littlewood pair calibration rather than a new two-universe invariant.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "A proof path would first need subtraction of local pair/triple expectations; raw graph D has no theorem-shaped residual statement.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready pack exists because the candidate is rejected at controls and matched-field gates.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer D stays flat near 0.824 through N=8000000, while Cramer controls are higher.",
+    "expectedNull": "If this is prime-specific two-universe structure, composite controls should not absorb it and F_q[t] levels should align after matched shift design.",
+    "knownExplanation": "Local Hardy-Littlewood tuple admissibility and composite-shell geometry reproduce the integer endpoint.",
+    "survivedControls": [
+      "Separates from Cramer random labels"
+    ],
+    "failedControls": [
+      "Integer sampled-composite D range 0.830489..0.832803 contains real D=0.823568",
+      "F_2[t] D=1.235972 and F_3[t] D=1.109492 do not align with Z D=0.823568"
+    ],
+    "whatFailed": "Raw graph degree variance is not centered enough; it measures local admissibility before any deeper residual.",
+    "suspectedInvariant": "If anything survives, it must live in a locally centered multi-shift covariance tensor.",
+    "nextMutation": "Subtract local pair/triple admissibility tensor before spectral scoring"
+  },
+  "nextMutation": {
+    "title": "Subtract local pair/triple admissibility tensor before spectral scoring",
+    "reason": "Raw fixed-shift graph degree spectra mostly measure local tuple admissibility and composite-shell geometry.",
+    "preregisteredNextMove": [
+      "For each shift h or polynomial shift a, estimate the local Hardy-Littlewood / exact finite-field expected edge rate.",
+      "Build centered edge variables E_h(v)=1_{v+h prime}-expected_h(local state).",
+      "Score covariance/spectral invariants of the centered multi-shift tensor, not raw degree variance.",
+      "Use composite/eligible shell controls with the same local state, Cramer controls, and reducible/monic controls in F_q[t].",
+      "Promote only if the centered residual survives train/holdout and aligns across Z and at least two F_q[t] universes."
+    ]
+  }
+}

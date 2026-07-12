@@ -4,8 +4,10 @@ import {
   chowlaTwoPoint,
   irreducibleCountFormula,
   isMonicIrreducible,
+  liouvilleTwoPoint,
   monicPolynomial,
   polyAdd,
+  polynomialLiouville,
   polynomialMobius,
   polyMul,
   polyToString,
@@ -99,6 +101,23 @@ describe("F_q[t] polynomial Mobius", () => {
 
   it("computes Chowla two-point averages by degree", () => {
     const C = chowlaTwoPoint(2, 3, 1);
+    expect(C[1]).toBe(1);
+    expect(Math.abs(C[2])).toBeLessThanOrEqual(1);
+  });
+});
+
+describe("F_q[t] polynomial Liouville", () => {
+  it("keeps prime-power parity instead of zeroing squares", () => {
+    const universe = buildPolynomialUniverse(2, 4);
+    expect(polynomialLiouville(1, universe)).toBe(1);
+    expect(polynomialLiouville(0b10, universe)).toBe(-1); // t
+    expect(polynomialLiouville(0b11, universe)).toBe(-1); // t + 1
+    expect(polynomialLiouville(0b110, universe)).toBe(1); // t(t + 1)
+    expect(polynomialLiouville(0b100, universe)).toBe(1); // t^2
+  });
+
+  it("computes Liouville two-point averages by degree", () => {
+    const C = liouvilleTwoPoint(2, 3, 1);
     expect(C[1]).toBe(1);
     expect(Math.abs(C[2])).toBeLessThanOrEqual(1);
   });

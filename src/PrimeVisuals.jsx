@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
+import TheoryMap from "./TheoryMap.jsx";
+
 import { T, FONT_CSS, hslPx } from "./core/theme.js";
 import { loadPresets, savePresets } from "./core/storage.js";
 import { ZEROS } from "./core/math.js";
@@ -181,7 +183,7 @@ function StatReadout({ cfg, data }) {
 export default function PrimeVisuals() {
   const boot = useMemo(() => decodeState(), []);
   const [cfg, setCfg] = useState(() => withDefaults(boot?.cfg || LIBRARY[0].cfg));
-  const [mode, setMode] = useState(boot?.mode || "patch"); // 'patch' | 'lab'
+  const [mode, setMode] = useState(boot?.mode || "patch"); // 'patch' | 'lab' | 'atlas'
   const [chips, setChips] = useState(() => boot?.chips || { x: [], y: [] });
   const [residual, setResidual] = useState(!!boot?.residual);
   const [twinMode, setTwinMode] = useState(boot?.twinMode || "real"); // 'real' | 'both' | 'twin'
@@ -982,6 +984,7 @@ export default function PrimeVisuals() {
   };
 
   const cap = useMemo(() => {
+    if (mode === "atlas") return "typed theory graph · open bridges name the missing lemma";
     if (mode === "lab") {
       if (labData && labData.err) return `⚠ ${friendlyLabError(labData.err, lab).text}`;
       if (labData && labData.field) return fieldNote || "complex field";
@@ -998,7 +1001,7 @@ export default function PrimeVisuals() {
   }, [mode, labData, lab, fieldNote, cfg, data, tick]);
 
   const readingSections = useMemo(
-    () => mode === "patch" ? patchGuide(cfg, data) : labGuide(lab, labData),
+    () => mode === "patch" ? patchGuide(cfg, data) : mode === "lab" ? labGuide(lab, labData) : [],
     [mode, cfg, data, lab, labData]
   );
 
@@ -1408,7 +1411,7 @@ export default function PrimeVisuals() {
             PRIME<span style={{ color: T.ion }}>VISUALS</span>
           </span>
           <div className="flex gap-1">
-            {["patch", "lab"].map((m) => (
+            {["patch", "lab", "atlas"].map((m) => (
               <button
                 key={m} onClick={() => setMode(m)}
                 className="px-2 py-1 rounded-md"
@@ -1463,12 +1466,25 @@ export default function PrimeVisuals() {
             </div>
           )}
           <span className="hidden xl:inline" style={{ fontFamily: T.mono, fontSize: 10, color: T.faint, letterSpacing: "0.08em" }}>
-            {mode === "patch" ? "patch a source into a plane · turn the lens" : "write the math · turn the knobs"}
+            {mode === "patch"
+              ? "patch a source into a plane · turn the lens"
+              : mode === "lab"
+                ? "write the math · turn the knobs"
+                : "trace operations · theories · open proof obligations"}
           </span>
         </div>
         <span style={{ fontFamily: T.mono, fontSize: 10, color: T.dim }} className="truncate text-right ml-3">{cap}</span>
       </header>}
 
+      {mode === "atlas" ? (
+        <TheoryMap
+          uiVisible={uiVisible}
+          onOpenView={(viewName) => {
+            const item = LIBRARY.find((entry) => entry.name === viewName);
+            if (item) applyAny(item);
+          }}
+        />
+      ) : (
       <div className={uiVisible ? "flex-1 flex flex-col lg:flex-row min-h-0" : "flex-1 min-h-0"}>
         {/* ── rail: the patch chain ── */}
         {uiVisible && <aside
@@ -1864,6 +1880,7 @@ export default function PrimeVisuals() {
           </div>}
         </section>
       </div>
+      )}
     </div>
   );
 }

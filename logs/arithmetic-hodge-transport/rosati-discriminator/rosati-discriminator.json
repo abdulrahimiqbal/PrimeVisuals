@@ -1,0 +1,390 @@
+{
+  "generatedAt": "2026-07-12T19:02:47.704Z",
+  "verdict": "EXACT DISCRIMINATOR: ALGEBRAIC DUALITY SURVIVES, POSITIVE ROSATI FAILS",
+  "theorem": {
+    "frobeniusPolynomial": "x^2-a*x+q",
+    "frobeniusMatrix": "[[0,-q],[1,a]]",
+    "verschiebung": "a*I-F",
+    "symmetricAdjointPairing": "J=[[2,a],[a,2q]] (unique up to scale)",
+    "adjointIdentity": "F^T J = J V",
+    "centeredIdentity": "(2F-aI)^2=(a^2-4q)I",
+    "determinant": "det(J)=4q-a^2",
+    "conclusion": "J is positive definite iff a^2<4q"
+  },
+  "calibration": [
+    {
+      "q": "5",
+      "trace": "4",
+      "characteristicPolynomial": [
+        "1",
+        "-4",
+        "5"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-5"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "4",
+          "5"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-4",
+          "-10"
+        ],
+        [
+          "2",
+          "4"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "4"
+        ],
+        [
+          "4",
+          "10"
+        ]
+      ],
+      "pairingDeterminant": "4",
+      "rosatiNormScalar": "4",
+      "pairingSignature": "positive-definite",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true
+      }
+    },
+    {
+      "q": "4",
+      "trace": "4",
+      "characteristicPolynomial": [
+        "1",
+        "-4",
+        "4"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-4"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "4",
+          "4"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-4",
+          "-8"
+        ],
+        [
+          "2",
+          "4"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "4"
+        ],
+        [
+          "4",
+          "8"
+        ]
+      ],
+      "pairingDeterminant": "0",
+      "rosatiNormScalar": "0",
+      "pairingSignature": "positive-semidefinite-boundary",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true
+      }
+    }
+  ],
+  "controls": [
+    {
+      "leftExponent": 1,
+      "rightExponent": 2,
+      "leftRoot": "2",
+      "rightRoot": "4",
+      "expectedNegativeDeterminant": "-4",
+      "q": "8",
+      "trace": "6",
+      "characteristicPolynomial": [
+        "1",
+        "-6",
+        "8"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-8"
+        ],
+        [
+          "1",
+          "6"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "6",
+          "8"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-6",
+          "-16"
+        ],
+        [
+          "2",
+          "6"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "6"
+        ],
+        [
+          "6",
+          "16"
+        ]
+      ],
+      "pairingDeterminant": "-4",
+      "rosatiNormScalar": "-4",
+      "pairingSignature": "indefinite",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true,
+        "controlFailsPositivityExactly": true
+      }
+    },
+    {
+      "leftExponent": 1,
+      "rightExponent": 3,
+      "leftRoot": "2",
+      "rightRoot": "8",
+      "expectedNegativeDeterminant": "-36",
+      "q": "16",
+      "trace": "10",
+      "characteristicPolynomial": [
+        "1",
+        "-10",
+        "16"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-16"
+        ],
+        [
+          "1",
+          "10"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "10",
+          "16"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-10",
+          "-32"
+        ],
+        [
+          "2",
+          "10"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "10"
+        ],
+        [
+          "10",
+          "32"
+        ]
+      ],
+      "pairingDeterminant": "-36",
+      "rosatiNormScalar": "-36",
+      "pairingSignature": "indefinite",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true,
+        "controlFailsPositivityExactly": true
+      }
+    },
+    {
+      "leftExponent": 2,
+      "rightExponent": 3,
+      "leftRoot": "4",
+      "rightRoot": "8",
+      "expectedNegativeDeterminant": "-16",
+      "q": "32",
+      "trace": "12",
+      "characteristicPolynomial": [
+        "1",
+        "-12",
+        "32"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-32"
+        ],
+        [
+          "1",
+          "12"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "12",
+          "32"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-12",
+          "-64"
+        ],
+        [
+          "2",
+          "12"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "12"
+        ],
+        [
+          "12",
+          "64"
+        ]
+      ],
+      "pairingDeterminant": "-16",
+      "rosatiNormScalar": "-16",
+      "pairingSignature": "indefinite",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true,
+        "controlFailsPositivityExactly": true
+      }
+    },
+    {
+      "leftExponent": 2,
+      "rightExponent": 5,
+      "leftRoot": "4",
+      "rightRoot": "32",
+      "expectedNegativeDeterminant": "-784",
+      "q": "128",
+      "trace": "36",
+      "characteristicPolynomial": [
+        "1",
+        "-36",
+        "128"
+      ],
+      "frobenius": [
+        [
+          "0",
+          "-128"
+        ],
+        [
+          "1",
+          "36"
+        ]
+      ],
+      "verschiebung": [
+        [
+          "36",
+          "128"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "centeredFrobenius": [
+        [
+          "-36",
+          "-256"
+        ],
+        [
+          "2",
+          "36"
+        ]
+      ],
+      "pairing": [
+        [
+          "2",
+          "36"
+        ],
+        [
+          "36",
+          "256"
+        ]
+      ],
+      "pairingDeterminant": "-784",
+      "rosatiNormScalar": "-784",
+      "pairingSignature": "indefinite",
+      "checks": {
+        "frobeniusTimesVerschiebungIsQ": true,
+        "adjointIdentity": true,
+        "centeredSquareIdentity": true,
+        "determinantEqualsRosatiNorm": true,
+        "controlFailsPositivityExactly": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "generatedAt": "2026-06-17T10:28:36.907Z",
+  "cycle": 20,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-020-noncm-legendre-family-pilot",
+    "title": "Non-CM Legendre family pilot",
+    "class": "forced mutation from CM twist factorization to non-CM non-isotrivial Legendre family",
+    "councilSuccessTarget": "S1/S2 candidate only if the non-CM Legendre-family trace statistic survives integer controls, the full 1M/2M/4M/8M ladder, and q=3,5,7 F_q[t] residue-field profile gates",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-020-noncm-legendre-family-pilot-20000.json",
+      "logs/two-universes-protocol/cycle-020-noncm-legendre-family-pilot-20000.md",
+      "logs/two-universes-protocol/cycle-020-noncm-legendre-family-pilot-20000.svg",
+      "scripts/noncm-legendre-family-pilot-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states V_S(K)=sum_lambda a_K(E_lambda)/sqrt(|K|*good_lambda) for the non-CM Legendre family E_lambda:y^2=x(x-1)(x-lambda).",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: K=F_q[t]/P, lambda is a low-degree polynomial window, and traces are computed by quadratic characters in the residue field.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "fail",
+      "evidence": "Integer side only ran pilot endpoints 5000, 10000, 20000 through N=20000; preregistered promotion requires 1M, 2M, 4M, and 8M.",
+      "severity": "hard-fail"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No matched profile survives: integerBeatsControls=false, signsAligned=true, profileSpread=6.427625.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter object: one Legendre family, one fixed lambda-window rule, and one normalized trace statistic.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires the full integer ladder, q=3,5,7 field ladders, and matched profile. Integer ladder=false; field ladders=true; matchedProfile=false.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The object is a genuine forced mutation out of CM, but the present result is only a known-style Legendre-family mean-zero trace pilot with no control-surviving new residual.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the non-CM pilot run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The trace statistic is exact and small-prime point-count validation passes; a proof path would start from Legendre-family trace sums and monodromy baselines.",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because this is pilot-scale, lacks the full integer ladder, and fails control/profile gates.",
+      "severity": "hard-fail"
+    }
+  },
+  "nonCmLegendreEvidence": {
+    "diagnostics": {
+      "hasRequiredIntegerScaleLadder": false,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "integerBeatsControls": false,
+      "signsAligned": true,
+      "profileSpread": 6.427624621676206,
+      "matchedProfile": false,
+      "maxAbsEndpointZ": 1.1265536398594638,
+      "theoremShape": {
+        "statistic": "V_S(K)=sum_{lambda in S good} a_K(E_lambda)/sqrt(|K|*good), E_lambda:y^2=x(x-1)(x-lambda)",
+        "integer": "K=F_p with integer lambda window",
+        "functionField": "K=F_q[t]/P with low-degree polynomial lambda(t) window",
+        "baseline": "Non-CM Legendre-family monodromy suggests mean-zero trace sums; promotion requires full integer ladder and matched field controls."
+      },
+      "finalInteger": {
+        "endpoint": 20000,
+        "count": 2260,
+        "sum": 36.30241872688963,
+        "mean": 0.01606301713579187,
+        "z": 0.7636271171721967,
+        "energyZ": 0.7862651561946477,
+        "maxAbsZ": 1.2021392745233737
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "final": {
+            "label": "F_3:deg7",
+            "q": 3,
+            "degree": 7,
+            "labels": 312,
+            "cumulativeLabels": 508,
+            "fieldSize": 2187,
+            "degreeMean": -0.018518518518518507,
+            "z": 0.1752674908955214,
+            "energyZ": 0.17504830488370512,
+            "maxAbsZ": 1.0285003986214645
+          }
+        },
+        {
+          "q": 5,
+          "final": {
+            "label": "F_5:deg5",
+            "q": 5,
+            "degree": 5,
+            "labels": 624,
+            "cumulativeLabels": 829,
+            "fieldSize": 3125,
+            "degreeMean": 0.011784462147434517,
+            "z": 0.5556222801431753,
+            "energyZ": 0.5523673174782812,
+            "maxAbsZ": 2.0637121236346636
+          }
+        },
+        {
+          "q": 7,
+          "final": {
+            "label": "F_7:deg4",
+            "q": 7,
+            "degree": 4,
+            "labels": 588,
+            "cumulativeLabels": 728,
+            "fieldSize": 2401,
+            "degreeMean": 0.046248938681440276,
+            "z": 1.1265536398594638,
+            "energyZ": 1.2273541956252054,
+            "maxAbsZ": 1.46892458950519
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "endpoint": 5000,
+        "count": 667,
+        "sum": 11.847244782943337,
+        "mean": 0.01776198618132434,
+        "z": 0.4587271499719702,
+        "energyZ": 0.4900958639625036,
+        "maxAbsZ": 1.058776877539528
+      },
+      {
+        "endpoint": 10000,
+        "count": 1227,
+        "sum": 15.341158880870763,
+        "mean": 0.012502981972999807,
+        "z": 0.43796145142289983,
+        "energyZ": 0.4550096032316391,
+        "maxAbsZ": 1.058776877539528
+      },
+      {
+        "endpoint": 20000,
+        "count": 2260,
+        "sum": 36.30241872688963,
+        "mean": 0.01606301713579187,
+        "z": 0.7636271171721967,
+        "energyZ": 0.7862651561946477,
+        "maxAbsZ": 1.2021392745233737
+      }
+    ],
+    "controlSummary": {
+      "shuffle": {
+        "zRange": [
+          0.7636271171721953,
+          0.7636271171721998
+        ],
+        "absZRange": [
+          0.7636271171721953,
+          0.7636271171721998
+        ],
+        "maxAbsZRange": [
+          1.2724981299517524,
+          3.3160706959111357
+        ],
+        "energyZRange": [
+          0.7862651561946467,
+          0.7862651561946514
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -1.4282565975499015,
+          0.9188642453554603
+        ],
+        "absZRange": [
+          0.16447422476545334,
+          1.4282565975499015
+        ],
+        "maxAbsZRange": [
+          1.238743991991095,
+          2.015645649436366
+        ],
+        "energyZRange": [
+          -1.4705978500569374,
+          0.9461043526996332
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          0.17281848120517188,
+          3.4241156440649756
+        ],
+        "absZRange": [
+          0.17281848120517188,
+          3.4241156440649756
+        ],
+        "maxAbsZRange": [
+          1.8120031080998904,
+          3.582679512525775
+        ],
+        "energyZRange": [
+          0.17510890889910444,
+          3.5581790405146765
+        ]
+      }
+    },
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 7,
+        "parameters": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+1t+0",
+          "t^2+1t+1",
+          "t^2+1t+2",
+          "t^2+2t+0",
+          "t^2+2t+1",
+          "t^2+2t+2"
+        ],
+        "final": {
+          "label": "F_3:deg7",
+          "q": 3,
+          "degree": 7,
+          "labels": 312,
+          "cumulativeLabels": 508,
+          "fieldSize": 2187,
+          "degreeMean": -0.018518518518518507,
+          "z": 0.1752674908955214,
+          "energyZ": 0.17504830488370512,
+          "maxAbsZ": 1.0285003986214645
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 5,
+        "parameters": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t+3",
+          "t+4",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+0t+3",
+          "t^2+0t+4",
+          "t^2+1t+0",
+          "t^2+1t+1"
+        ],
+        "final": {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 829,
+          "fieldSize": 3125,
+          "degreeMean": 0.011784462147434517,
+          "z": 0.5556222801431753,
+          "energyZ": 0.5523673174782812,
+          "maxAbsZ": 2.0637121236346636
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 4,
+        "parameters": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t+3",
+          "t+4",
+          "t+5",
+          "t+6",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+0t+3",
+          "t^2+0t+4"
+        ],
+        "final": {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 728,
+          "fieldSize": 2401,
+          "degreeMean": 0.046248938681440276,
+          "z": 1.1265536398594638,
+          "energyZ": 1.2273541956252054,
+          "maxAbsZ": 1.46892458950519
+        }
+      }
+    ],
+    "validation": [
+      {
+        "p": 5,
+        "lambda": 2,
+        "trace": -2,
+        "pointCount": 8,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "lambda": 2,
+        "trace": 0,
+        "pointCount": 8,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "lambda": 2,
+        "trace": 0,
+        "pointCount": 12,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "lambda": 2,
+        "trace": 6,
+        "pointCount": 8,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "lambda": 2,
+        "trace": 2,
+        "pointCount": 16,
+        "ok": true
+      },
+      {
+        "p": 19,
+        "lambda": 2,
+        "trace": 0,
+        "pointCount": 20,
+        "ok": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "NONCM_LEGENDRE_FAMILY_PILOT_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 020 reaches a genuine non-CM non-isotrivial family, but remains pilot-scale and fails integer holdout, control/profile, scale, novelty, and expert-pack gates.",
+    "hardFailures": [
+      {
+        "id": "integer_holdout",
+        "status": "fail",
+        "evidence": "Integer side only ran pilot endpoints 5000, 10000, 20000 through N=20000; preregistered promotion requires 1M, 2M, 4M, and 8M.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No matched profile survives: integerBeatsControls=false, signsAligned=true, profileSpread=6.427625.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires the full integer ladder, q=3,5,7 field ladders, and matched profile. Integer ladder=false; field ladders=true; matchedProfile=false.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The object is a genuine forced mutation out of CM, but the present result is only a known-style Legendre-family mean-zero trace pilot with no control-surviving new residual.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because this is pilot-scale, lacks the full integer ladder, and fails control/profile gates.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer final z=0.763627; max endpoint |z|=1.126554; profileSpread=6.427625; matchedProfile=false.",
+    "expectedNull": "A useful non-CM Legendre-family residual should survive integer controls, full integer scale ladder, and align in sign/scale across q=3,5,7 field profiles.",
+    "knownExplanation": "Known Legendre-family trace-sum/monodromy baselines predict mean-zero behavior; the pilot profile is small and control-absorbed.",
+    "survivedControls": [],
+    "failedControls": [
+      "Integer profile does not beat controls, full integer holdout ladder is absent, and q-field profile spread is too large"
+    ],
+    "whatFailed": "The object is an exact non-CM pilot, not a breakthrough candidate.",
+    "suspectedInvariant": "A useful continuation needs either full-scale non-CM trace computation or a theorem-first residual with a named nonzero baseline.",
+    "nextMutation": "Require fast non-CM trace engine or theorem-first nonzero residual before promotion attempt"
+  },
+  "nextMutation": {
+    "title": "Require fast non-CM trace engine or theorem-first nonzero residual before promotion attempt",
+    "reason": "The non-CM Legendre family is the right kind of representation jump, but the current exact evaluator is only a pilot and the observed profile does not survive the strict holdout/control/scale gates.",
+    "preregisteredNextMove": [
+      "Do not promote pilot-scale non-CM trace profiles as breakthrough structure.",
+      "A next cycle must either implement a faster non-CM trace engine for the full 1M/2M/4M/8M integer ladder, or formulate a theorem-first residual computable without brute rational-prime point counting.",
+      "Keep the exact finite-field object, integer analogue, q=3,5,7 ladders, local/null controls, novelty audit, proof path, and expert-pack criteria preregistered before data.",
+      "If the next proposal cannot name the theorem baseline and the nonzero residual in advance, stop rather than fitting another trace statistic."
+    ]
+  }
+}

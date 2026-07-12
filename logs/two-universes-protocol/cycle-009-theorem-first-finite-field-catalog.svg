@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620">
+<rect width="1180" height="620" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="70" y="42" fill="#f8fafc" font-size="21" font-weight="700">Cycle 009: theorem-first finite-field catalog</text>
+<text x="70" y="69" fill="#94a3b8" font-size="13">A result can seed a new experiment only after exact theorem, transport class, and proof-obligation checks.</text>
+<text x="70" y="101" fill="#cbd5e1" font-size="14">Transport class counts</text>
+<text x="70" y="155" fill="#e5edf7" font-size="13">honest-integer-analogue-known</text>
+<rect x="430" y="132" width="240.00" height="34" fill="#38bdf8" opacity="0.85"/>
+<text x="682" y="155" fill="#f8fafc" font-size="13">1</text>
+<text x="70" y="207" fill="#e5edf7" font-size="13">finite-field-complete-family-only</text>
+<rect x="430" y="184" width="240.00" height="34" fill="#f59e0b" opacity="0.85"/>
+<text x="682" y="207" fill="#f8fafc" font-size="13">1</text>
+<text x="70" y="259" fill="#e5edf7" font-size="13">no-honest-integer-transport</text>
+<rect x="430" y="236" width="480.00" height="34" fill="#22c55e" opacity="0.85"/>
+<text x="922" y="259" fill="#f8fafc" font-size="13">2</text>
+<text x="70" y="311" fill="#e5edf7" font-size="13">honest-integer-analogue-open</text>
+<rect x="430" y="288" width="720.00" height="34" fill="#ef4444" opacity="0.85"/>
+<text x="1162" y="311" fill="#f8fafc" font-size="13">3</text>
+<text x="70" y="363" fill="#e5edf7" font-size="13">obstruction-or-coefficient-space-only</text>
+<rect x="430" y="340" width="240.00" height="34" fill="#a78bfa" opacity="0.85"/>
+<text x="682" y="363" fill="#f8fafc" font-size="13">1</text>
+<text x="70" y="415" fill="#e5edf7" font-size="13">finite-field-obstruction-no-classical-analogue</text>
+<rect x="430" y="392" width="240.00" height="34" fill="#94a3b8" opacity="0.85"/>
+<text x="682" y="415" fill="#f8fafc" font-size="13">1</text>
+<text x="70" y="402" fill="#cbd5e1" font-size="14">Entry experiment eligibility</text>
+<text x="70" y="440" fill="#f97316" font-size="11">gauss-necklace-irreducible-count: BLOCKED</text>
+<text x="410" y="440" fill="#f97316" font-size="11">complete-degree-shell-mobius-sum: BLOCKED</text>
+<text x="750" y="440" fill="#f97316" font-size="11">pellet-mobius-discriminant: BLOCKED</text>
+<text x="70" y="470" fill="#f97316" font-size="11">berlekamp-characteristic-two-mobius: BLOCKED</text>
+<text x="410" y="470" fill="#f97316" font-size="11">carmon-rudnick-large-q-chowla: BLOCKED</text>
+<text x="750" y="470" fill="#f97316" font-size="11">sawin-shusterman-chowla-uniform: BLOCKED</text>
+<text x="70" y="500" fill="#f97316" font-size="11">sawin-shusterman-twin-irreducibles: BLOCKED</text>
+<text x="410" y="500" fill="#f97316" font-size="11">kurlberg-rosenzweig-very-short-intervals: BLOCKED</text>
+<text x="750" y="500" fill="#f97316" font-size="11">conrad-residue-theorem-obstruction: BLOCKED</text>
+</g>
+</svg>

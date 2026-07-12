@@ -1,0 +1,379 @@
+{
+  "generatedAt": "2026-06-17T09:44:26.815Z",
+  "cycle": 13,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-013-cubic-chebotarev-transport",
+    "title": "Cubic Chebotarev splitting transport",
+    "class": "new-domain registration after aggregate branch stop: Frobenius splitting types instead of prime tuples or Mobius correlations",
+    "councilSuccessTarget": "Calibration only unless splitting-type residuals beat Chebotarev controls and produce a theorem-shaped new mechanism beyond known Chebotarev density",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-4000000.json",
+      "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-4000000.md",
+      "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-4000000.svg",
+      "scripts/cubic-chebotarev-transport-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states a fixed splitting-type statistic for x^3-2 modulo rational primes and x^3-t over residue fields F_q[t]/P, with classes split, linear+quadratic, and inert.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: closed points are monic irreducibles P, and the class is the factorization type of x^3-t over F_q[t]/P for q=2,5 degree ladders.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks endpoints 1000000, 2000000, 4000000 for factorization type of x^3-2 modulo unramified primes.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Observed splitting distributions are inside the preregistered Chebotarev multinomial controls; this validates calibration but gives no anomaly to promote.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter statistic: one cubic polynomial on each side, three splitting classes, and fixed Chebotarev expected proportions.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete 1M/2M/4M/8M integer ladder and a control-surviving anomaly. Complete ladder=false; all within controls=true.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The observed object is a known Chebotarev calibration domain; no novelty audit has isolated a mechanism beyond classical/effective Chebotarev density.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the cubic Chebotarev audit script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "Known Chebotarev explains the class proportions; the audit found no theorem-shaped new residual or proof path beyond calibration.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because the result is calibration-only and lacks novelty/proof promotion gates.",
+      "severity": "hard-fail"
+    }
+  },
+  "chebotarevEvidence": {
+    "diagnostics": {
+      "completeScaleLadder": false,
+      "allWithinControls": true,
+      "integerWithinControls": true,
+      "fieldsWithinControls": true,
+      "maxChi": 0.3500682406333604,
+      "finalInteger": {
+        "label": "Z<=4000000",
+        "chi": 0.3500682406333604,
+        "maxAbsZ": 0.46606661967296537,
+        "control": {
+          "chiRange": [
+            0.31140720737989963,
+            1.2841570206610435
+          ],
+          "maxAbsZRange": [
+            0.4504806136991318,
+            1.702646602514946
+          ]
+        },
+        "withinControls": true
+      },
+      "finalFields": [
+        {
+          "q": 2,
+          "label": "F_2:deg22",
+          "chi": 0.246002694141032,
+          "maxAbsZ": 0.3012905379977427,
+          "control": {
+            "chiRange": [
+              0.269809406477261,
+              1.0633664843515578
+            ],
+            "maxAbsZRange": [
+              0.33044768683623393,
+              1.3023526481192749
+            ]
+          },
+          "withinControls": true
+        },
+        {
+          "q": 5,
+          "label": "F_5:deg8",
+          "chi": 0,
+          "maxAbsZ": 0,
+          "control": {
+            "chiRange": [
+              0.21180542594923876,
+              1.2002307470456863
+            ],
+            "maxAbsZRange": [
+              0.25940760916424116,
+              1.4699764519307
+            ]
+          },
+          "withinControls": true
+        }
+      ],
+      "theoremShape": {
+        "integer": "factorization type of x^3-2 modulo unramified rational primes p",
+        "functionField": "factorization type of x^3-t over residue fields F_q[t]/P for unramified monic irreducibles P",
+        "expectedIntegerDensities": {
+          "split": 0.16666666666666666,
+          "linearQuad": 0.5,
+          "inert": 0.3333333333333333
+        },
+        "expectedFieldRule": "if q^deg(P)-1 is divisible by 3, split/inert densities are 1/3 and 2/3; otherwise all unramified classes are linear+quadratic"
+      }
+    },
+    "integerRows": [
+      {
+        "label": "Z<=1000000",
+        "labels": 78497,
+        "counts": {
+          "split": 13032,
+          "linearQuad": 39265,
+          "inert": 26200
+        },
+        "fractions": {
+          "split": 0.1660190835318547,
+          "linearQuad": 0.5002101991158898,
+          "inert": 0.3337707173522555
+        },
+        "chi": 0.325814057356529,
+        "maxAbsZ": 0.48684230233327197
+      },
+      {
+        "label": "Z<=2000000",
+        "labels": 148932,
+        "counts": {
+          "split": 24797,
+          "linearQuad": 74520,
+          "inert": 49615
+        },
+        "fractions": {
+          "split": 0.16649880482367793,
+          "linearQuad": 0.5003625815808557,
+          "inert": 0.33313861359546637
+        },
+        "chi": 0.21130048035474697,
+        "maxAbsZ": 0.2798528568101987
+      },
+      {
+        "label": "Z<=4000000",
+        "labels": 283144,
+        "counts": {
+          "split": 47144,
+          "linearQuad": 141696,
+          "inert": 94304
+        },
+        "fractions": {
+          "split": 0.1665018506484333,
+          "linearQuad": 0.5004379397055915,
+          "inert": 0.3330602096459752
+        },
+        "chi": 0.3500682406333604,
+        "maxAbsZ": 0.46606661967296537
+      }
+    ],
+    "fields": [
+      {
+        "q": 2,
+        "maxDegree": 22,
+        "final": {
+          "label": "F_2:deg22",
+          "scale": 22,
+          "labels": 190557,
+          "counts": {
+            "split": 63457,
+            "linearQuad": 0,
+            "inert": 127100
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3330079713681471,
+            "linearQuad": 0,
+            "inert": 0.6669920286318529
+          },
+          "z": {
+            "split": -0.3012905379977427,
+            "linearQuad": 0,
+            "inert": 0.3012905379977427
+          },
+          "chi": 0.246002694141032,
+          "maxAbsZ": 0.3012905379977427
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "final": {
+          "label": "F_5:deg8",
+          "scale": 8,
+          "labels": 48750,
+          "counts": {
+            "split": 16250,
+            "linearQuad": 0,
+            "inert": 32500
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        }
+      }
+    ]
+  },
+  "decision": {
+    "status": "CHEBOTAREV_CALIBRATION_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 013 registers a genuinely new domain, but the cubic splitting-type statistic is Chebotarev calibration: it lies within controls and has no novelty/proof path beyond known density theorems.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Observed splitting distributions are inside the preregistered Chebotarev multinomial controls; this validates calibration but gives no anomaly to promote.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete 1M/2M/4M/8M integer ladder and a control-surviving anomaly. Complete ladder=false; all within controls=true.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The observed object is a known Chebotarev calibration domain; no novelty audit has isolated a mechanism beyond classical/effective Chebotarev density.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "Known Chebotarev explains the class proportions; the audit found no theorem-shaped new residual or proof path beyond calibration.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because the result is calibration-only and lacks novelty/proof promotion gates.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Cubic splitting maxChi=0.350068; integer within controls=true; fields within controls=true; complete ladder=false.",
+    "expectedNull": "A basic Chebotarev splitting-type distribution should match expected class proportions up to multinomial fluctuations.",
+    "knownExplanation": "Classical/effective Chebotarev density explains the observed splitting-type proportions on both sides.",
+    "survivedControls": [
+      "All endpoint diagnostics are within Chebotarev multinomial controls"
+    ],
+    "failedControls": [
+      "No anomaly beats controls"
+    ],
+    "whatFailed": "The object is a valid new-domain calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "If Chebotarev is useful here, it must be through residual covariance or joint-family structure beyond single-extension class proportions.",
+    "nextMutation": "Stay in Chebotarev domain only if a non-classical residual is preregistered"
+  },
+  "nextMutation": {
+    "title": "Stay in Chebotarev domain only if a non-classical residual is preregistered",
+    "reason": "The new domain is valid and reproducible, but the first object is exactly the classical Chebotarev splitting-type calibration and lies within controls.",
+    "preregisteredNextMove": [
+      "Do not promote splitting-type proportions themselves; they are known calibration.",
+      "If continuing in Chebotarev, mutate to a residual object not explained by class densities, such as low-conductor family covariance or joint splitting across independent extensions.",
+      "Before running data, state the exact finite-field cover, the integer Galois representation, expected Chebotarev baseline, and null controls.",
+      "Require q=2,5,7 field ladders and a complete 1M/2M/4M/8M integer ladder before any novelty memo.",
+      "If no non-classical Chebotarev residual is named, keep this new domain as calibration only."
+    ]
+  }
+}

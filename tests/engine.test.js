@@ -111,6 +111,11 @@ describe("makeFns — table functions", () => {
     expect(fns.phi([10, 0])).toEqual([4, 0]);
   });
 
+  it("lambda and liouville expose (-1)^Omega(n)", () => {
+    expect(fns.lambda([12, 0])).toEqual([-1, 0]);
+    expect(fns.liouville([16, 0])).toEqual([1, 0]);
+  });
+
   it("mod([7,0],[3,0]) → [1,0]", () => {
     expect(fns.mod([7, 0], [3, 0])).toEqual([1, 0]);
   });

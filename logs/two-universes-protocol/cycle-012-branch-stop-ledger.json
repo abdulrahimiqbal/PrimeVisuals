@@ -1,0 +1,203 @@
+{
+  "candidate": "Branch-stop ledger for aggregate Two-Universes transport route",
+  "generatedAt": "2026-06-17T02:40:30.558Z",
+  "exhaustedFamilies": [
+    {
+      "id": "coefficient-neighborhood-mobius-gap",
+      "cycles": [
+        "001"
+      ],
+      "object": "Mobius parity and next irreducible gap in coefficient neighborhoods",
+      "killedByGates": [
+        "integer_holdout",
+        "proof_path"
+      ],
+      "finalReason": "Strong finite-field mechanism, but no honest integer-prime coefficient-neighborhood analogue.",
+      "revivalRequirements": [
+        "Define a same-form integer object before scoring data.",
+        "Provide preregistered integer holdout and controls.",
+        "Explain why the object is not merely Pellet/Berlekamp coefficient-space algebra."
+      ],
+      "forbiddenRevival": "Do not present coefficient-order pictures as integer-prime evidence."
+    },
+    {
+      "id": "prime-indicator-additive-shift-graphs-and-tensors",
+      "cycles": [
+        "002",
+        "003",
+        "004",
+        "005",
+        "006"
+      ],
+      "object": "Fixed-shift prime/irreducible graph degree spectra, centered tensors, exact admissibility tensors, and signed profile/decay comparisons",
+      "killedByGates": [
+        "controls",
+        "scale_stability",
+        "novelty_audit",
+        "proof_path"
+      ],
+      "finalReason": "Local/composite/admissibility controls absorb the apparent structure, and signed profiles do not match across universes.",
+      "revivalRequirements": [
+        "Name a new invariant not reducible to local admissibility or singular-series correction.",
+        "Show which prior local/composite control gate is fixed.",
+        "Run complete scale ladders and q=2,3,5 field checks before any claim."
+      ],
+      "forbiddenRevival": "Do not rerun a prime-pair tensor with different binning unless it fixes a named failed gate."
+    },
+    {
+      "id": "quotient-spectral-prime-indicator-residuals",
+      "cycles": [
+        "007"
+      ],
+      "object": "Quotient-domain residual spectra of prime indicators after rough-shell subtraction",
+      "killedByGates": [
+        "controls",
+        "scale_stability",
+        "novelty_audit",
+        "proof_path"
+      ],
+      "finalReason": "Integer quotient spectral edge clears controls, but q=3 and q=5 finite-field spectra are absorbed by controls and the integer 8M ladder is incomplete.",
+      "revivalRequirements": [
+        "Explain why the field controls should no longer absorb the edge.",
+        "Supply a complete 1M/2M/4M/8M integer ladder.",
+        "Audit classical prime races, Chebyshev bias, and rough-shell finite-size effects."
+      ],
+      "forbiddenRevival": "Do not call an integer-only quotient spectral edge a Two-Universes law."
+    },
+    {
+      "id": "mobius-liouville-fixed-lag-correlations",
+      "cycles": [
+        "008"
+      ],
+      "object": "Fixed-lag Mobius/Liouville correlation energy over Z and F_q[t]",
+      "killedByGates": [
+        "controls",
+        "scale_stability",
+        "novelty_audit",
+        "proof_path"
+      ],
+      "finalReason": "Finite-field Mobius/Liouville energies clear controls, but integer Mobius and Liouville sit inside null controls.",
+      "revivalRequirements": [
+        "Name a narrower theorem-shaped lemma than Chowla.",
+        "Show integer Mobius or Liouville beats preregistered null controls.",
+        "Complete scale ladder before any expert pack."
+      ],
+      "forbiddenRevival": "Do not report finite-field-only multiplicative-sign energy as an integer-prime breakthrough."
+    },
+    {
+      "id": "theorem-first-catalog-without-proof-map",
+      "cycles": [
+        "009"
+      ],
+      "object": "Exact finite-field theorem catalog and transport classification",
+      "killedByGates": [
+        "integer_holdout",
+        "controls",
+        "scale_stability",
+        "proof_path",
+        "expert_pack"
+      ],
+      "finalReason": "The catalog is useful evidence routing, but contains no immediately experiment-eligible breakthrough candidate.",
+      "revivalRequirements": [
+        "Convert a catalog family into a proof-obligation map.",
+        "Name an honest integer transport map and testable missing lemma.",
+        "Only then preregister controls and holdouts."
+      ],
+      "forbiddenRevival": "Do not treat a known finite-field theorem as a new result over Z."
+    },
+    {
+      "id": "honest-open-chowla-and-twin-prime-theorem-families",
+      "cycles": [
+        "010"
+      ],
+      "object": "Proof-obligation maps for large-q Chowla, uniform Chowla, and twin irreducibles",
+      "killedByGates": [
+        "integer_holdout",
+        "controls",
+        "scale_stability",
+        "proof_path",
+        "expert_pack"
+      ],
+      "finalReason": "The missing integer substitutes are major open Chowla/twin-prime-scale conjectures or non-transportable proof ingredients.",
+      "revivalRequirements": [
+        "Name a strictly weaker integer lemma that is not equivalent to the original open conjecture.",
+        "State why previous aggregate controls do not apply.",
+        "Provide a proof route smaller than proving Chowla or Hardy-Littlewood outright."
+      ],
+      "forbiddenRevival": "Do not relabel an open conjecture as a computational lead."
+    },
+    {
+      "id": "finite-field-obstruction-transport",
+      "cycles": [
+        "011"
+      ],
+      "object": "Repeated-root, admissibility, discriminant, characteristic-2, Morse, residue-theorem, and complete-shell obstruction classes",
+      "killedByGates": [
+        "integer_holdout",
+        "controls",
+        "scale_stability",
+        "proof_path",
+        "expert_pack"
+      ],
+      "finalReason": "Same-form transports are known local controls; the remaining finite-field obstructions have no honest integer transport.",
+      "revivalRequirements": [
+        "Identify a non-exhausted same-form integer obstruction.",
+        "Show it is not squarefactor/admissibility in disguise.",
+        "Preregister a fixed local form and matched null controls."
+      ],
+      "forbiddenRevival": "Do not recycle known local obstructions or finite-field-only algebra as a new bridge."
+    }
+  ],
+  "forbiddenWithoutNewProofIngredient": [
+    "aggregate Chowla or Mobius/Liouville fixed-lag correlation plots",
+    "prime-pair or tuple tensors differing only by bins, windows, whitening, or labels",
+    "integer-only quotient spectral edges without q=2,3,5 control survival",
+    "coefficient-neighborhood finite-field visuals used as integer analogues",
+    "finite-field exact identities with no transport map",
+    "known squarefactor/admissibility controls reported as discoveries"
+  ],
+  "resetConditions": [
+    "new domain/object not covered by prime tuples, Chowla/Mobius correlations, quotient spectra, finite-field coefficient artifacts, or known local obstructions",
+    "theorem-shaped statement written before data",
+    "exact finite-field anchor or explicit reason the new domain is not a Two-Universes claim",
+    "integer transport map with preregistered holdouts",
+    "local/null/random controls that directly target the prior failure mode",
+    "scale ladder and q=2,3,5 field checks where applicable",
+    "novelty audit against known theorem catalogs and prior rejected cycles",
+    "proof-path memo and expert-ready evidence pack before any promotion"
+  ],
+  "summary": {
+    "familyCount": 7,
+    "coveredCycles": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011"
+    ],
+    "promotedCount": 0,
+    "gateKillCounts": {
+      "integer_holdout": 4,
+      "proof_path": 7,
+      "controls": 6,
+      "scale_stability": 6,
+      "novelty_audit": 3,
+      "expert_pack": 3
+    },
+    "forbiddenCount": 6,
+    "resetConditionCount": 8,
+    "branchDecision": "STOP_CURRENT_AGGREGATE_TWO_UNIVERSES_ROUTE",
+    "completionClaim": "No breakthrough candidate is promoted; current branch is stopped unless a new domain/object restarts strict registration or a rejected family fixes a named failed gate before data."
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-012-branch-stop-ledger.json",
+    "md": "logs/two-universes-protocol/cycle-012-branch-stop-ledger.md",
+    "svg": "logs/two-universes-protocol/cycle-012-branch-stop-ledger.svg"
+  }
+}

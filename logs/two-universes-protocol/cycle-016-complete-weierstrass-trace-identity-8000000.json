@@ -1,0 +1,600 @@
+{
+  "candidate": "Complete Weierstrass trace identity transport",
+  "generatedAt": "2026-06-17T10:03:04.228Z",
+  "maxN": 8000000,
+  "q3MaxDegree": 12,
+  "q5MaxDegree": 8,
+  "q7MaxDegree": 7,
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "theoremShape": {
+    "statistic": "T(K)=|K|^-1 sum_{a in K} -sum_{x in K} chi(x^3+a*x+1), residual R(K)=T(K)+1",
+    "integer": "K=F_p for rational primes p>=5",
+    "functionField": "K=F_q[t]/P for monic irreducibles P over q=3,5,7",
+    "exactIdentity": "T(K)=-1 for every odd finite field K"
+  },
+  "integer": {
+    "endpoints": [
+      1000000,
+      2000000,
+      4000000,
+      8000000
+    ],
+    "labels": "rational primes p>=5",
+    "family": "T(K)=|K|^-1 sum_{a in K} -sum_{x in K} chi(x^3+a*x+1)",
+    "rows": [
+      {
+        "label": "Z<=1000000",
+        "endpoint": 1000000,
+        "labels": 78496,
+        "rawMeanTracePerFieldSize": -1,
+        "exactMain": -1,
+        "residualMean": 0,
+        "residualSum": 0,
+        "residualZ": 0,
+        "wrongZeroBaselineZ": -280.1713761253994
+      },
+      {
+        "label": "Z<=2000000",
+        "endpoint": 2000000,
+        "labels": 148931,
+        "rawMeanTracePerFieldSize": -1,
+        "exactMain": -1,
+        "residualMean": 0,
+        "residualSum": 0,
+        "residualZ": 0,
+        "wrongZeroBaselineZ": -385.9157939240114
+      },
+      {
+        "label": "Z<=4000000",
+        "endpoint": 4000000,
+        "labels": 283144,
+        "rawMeanTracePerFieldSize": -1,
+        "exactMain": -1,
+        "residualMean": 0,
+        "residualSum": 0,
+        "residualZ": 0,
+        "wrongZeroBaselineZ": -532.1127700027505
+      },
+      {
+        "label": "Z<=8000000",
+        "endpoint": 8000000,
+        "labels": 539775,
+        "rawMeanTracePerFieldSize": -1,
+        "exactMain": -1,
+        "residualMean": 0,
+        "residualSum": 0,
+        "residualZ": 0,
+        "wrongZeroBaselineZ": -734.6938137755075
+      }
+    ]
+  },
+  "fields": [
+    {
+      "q": 3,
+      "maxDegree": 12,
+      "labels": "monic irreducibles P in F_3[t]",
+      "family": "T(F_q[t]/P)=|F_q[t]/P|^-1 sum_a -sum_x chi(x^3+a*x+1)",
+      "rows": [
+        {
+          "label": "F_3:deg1",
+          "q": 3,
+          "degree": 1,
+          "residueFieldSize": 3,
+          "labels": 3,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -1.7320508075688772
+        },
+        {
+          "label": "F_3:deg2",
+          "q": 3,
+          "degree": 2,
+          "residueFieldSize": 9,
+          "labels": 3,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -1.7320508075688772
+        },
+        {
+          "label": "F_3:deg3",
+          "q": 3,
+          "degree": 3,
+          "residueFieldSize": 27,
+          "labels": 8,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -2.8284271247461903
+        },
+        {
+          "label": "F_3:deg4",
+          "q": 3,
+          "degree": 4,
+          "residueFieldSize": 81,
+          "labels": 18,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -4.242640687119285
+        },
+        {
+          "label": "F_3:deg5",
+          "q": 3,
+          "degree": 5,
+          "residueFieldSize": 243,
+          "labels": 48,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -6.928203230275509
+        },
+        {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "residueFieldSize": 729,
+          "labels": 116,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -10.770329614269007
+        },
+        {
+          "label": "F_3:deg7",
+          "q": 3,
+          "degree": 7,
+          "residueFieldSize": 2187,
+          "labels": 312,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -17.663521732655695
+        },
+        {
+          "label": "F_3:deg8",
+          "q": 3,
+          "degree": 8,
+          "residueFieldSize": 6561,
+          "labels": 810,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -28.460498941515414
+        },
+        {
+          "label": "F_3:deg9",
+          "q": 3,
+          "degree": 9,
+          "residueFieldSize": 19683,
+          "labels": 2184,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -46.73328578219169
+        },
+        {
+          "label": "F_3:deg10",
+          "q": 3,
+          "degree": 10,
+          "residueFieldSize": 59049,
+          "labels": 5880,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -76.68115805072325
+        },
+        {
+          "label": "F_3:deg11",
+          "q": 3,
+          "degree": 11,
+          "residueFieldSize": 177147,
+          "labels": 16104,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -126.90153663372244
+        },
+        {
+          "label": "F_3:deg12",
+          "q": 3,
+          "degree": 12,
+          "residueFieldSize": 531441,
+          "labels": 44220,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -210.28552018624583
+        }
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 8,
+      "labels": "monic irreducibles P in F_5[t]",
+      "family": "T(F_q[t]/P)=|F_q[t]/P|^-1 sum_a -sum_x chi(x^3+a*x+1)",
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "q": 5,
+          "degree": 1,
+          "residueFieldSize": 5,
+          "labels": 5,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -2.23606797749979
+        },
+        {
+          "label": "F_5:deg2",
+          "q": 5,
+          "degree": 2,
+          "residueFieldSize": 25,
+          "labels": 10,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -3.1622776601683795
+        },
+        {
+          "label": "F_5:deg3",
+          "q": 5,
+          "degree": 3,
+          "residueFieldSize": 125,
+          "labels": 40,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -6.324555320336759
+        },
+        {
+          "label": "F_5:deg4",
+          "q": 5,
+          "degree": 4,
+          "residueFieldSize": 625,
+          "labels": 150,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -12.24744871391589
+        },
+        {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "residueFieldSize": 3125,
+          "labels": 624,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -24.979991993593593
+        },
+        {
+          "label": "F_5:deg6",
+          "q": 5,
+          "degree": 6,
+          "residueFieldSize": 15625,
+          "labels": 2580,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -50.79370039680118
+        },
+        {
+          "label": "F_5:deg7",
+          "q": 5,
+          "degree": 7,
+          "residueFieldSize": 78125,
+          "labels": 11160,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -105.64090116995405
+        },
+        {
+          "label": "F_5:deg8",
+          "q": 5,
+          "degree": 8,
+          "residueFieldSize": 390625,
+          "labels": 48750,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -220.79402165819616
+        }
+      ]
+    },
+    {
+      "q": 7,
+      "maxDegree": 7,
+      "labels": "monic irreducibles P in F_7[t]",
+      "family": "T(F_q[t]/P)=|F_q[t]/P|^-1 sum_a -sum_x chi(x^3+a*x+1)",
+      "rows": [
+        {
+          "label": "F_7:deg1",
+          "q": 7,
+          "degree": 1,
+          "residueFieldSize": 7,
+          "labels": 7,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -2.6457513110645907
+        },
+        {
+          "label": "F_7:deg2",
+          "q": 7,
+          "degree": 2,
+          "residueFieldSize": 49,
+          "labels": 21,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -4.58257569495584
+        },
+        {
+          "label": "F_7:deg3",
+          "q": 7,
+          "degree": 3,
+          "residueFieldSize": 343,
+          "labels": 112,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -10.583005244258363
+        },
+        {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "residueFieldSize": 2401,
+          "labels": 588,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -24.24871130596428
+        },
+        {
+          "label": "F_7:deg5",
+          "q": 7,
+          "degree": 5,
+          "residueFieldSize": 16807,
+          "labels": 3360,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -57.96550698475775
+        },
+        {
+          "label": "F_7:deg6",
+          "q": 7,
+          "degree": 6,
+          "residueFieldSize": 117649,
+          "labels": 19544,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -139.79985693841036
+        },
+        {
+          "label": "F_7:deg7",
+          "q": 7,
+          "degree": 7,
+          "residueFieldSize": 823543,
+          "labels": 117648,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -342.99854227095483
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "primeChecks": [
+      {
+        "p": 5,
+        "traceSum": -5,
+        "expectedTraceSum": -5,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "traceSum": -7,
+        "expectedTraceSum": -7,
+        "ok": true
+      },
+      {
+        "p": 11,
+        "traceSum": -11,
+        "expectedTraceSum": -11,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "traceSum": -13,
+        "expectedTraceSum": -13,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "traceSum": -17,
+        "expectedTraceSum": -17,
+        "ok": true
+      }
+    ],
+    "fieldChecks": [
+      {
+        "q": 3,
+        "degree": 2,
+        "size": 9,
+        "modulus": 10,
+        "traceSum": -9,
+        "expectedTraceSum": -9,
+        "ok": true
+      },
+      {
+        "q": 3,
+        "degree": 3,
+        "size": 27,
+        "modulus": 34,
+        "traceSum": -27,
+        "expectedTraceSum": -27,
+        "ok": true
+      },
+      {
+        "q": 5,
+        "degree": 2,
+        "size": 25,
+        "modulus": 27,
+        "traceSum": -25,
+        "expectedTraceSum": -25,
+        "ok": true
+      },
+      {
+        "q": 7,
+        "degree": 1,
+        "size": 7,
+        "modulus": 7,
+        "traceSum": -7,
+        "expectedTraceSum": -7,
+        "ok": true
+      }
+    ]
+  },
+  "summary": {
+    "completeIntegerLadder": true,
+    "completeFieldLadders": true,
+    "validationPassed": true,
+    "allResidualsZero": true,
+    "absorbedByExactIdentity": true,
+    "maxAbsResidualZ": 0,
+    "maxWrongBaselineZ": 734.6938137755075,
+    "finalInteger": {
+      "label": "Z<=8000000",
+      "endpoint": 8000000,
+      "labels": 539775,
+      "rawMeanTracePerFieldSize": -1,
+      "exactMain": -1,
+      "residualMean": 0,
+      "residualSum": 0,
+      "residualZ": 0,
+      "wrongZeroBaselineZ": -734.6938137755075
+    },
+    "finalFields": [
+      {
+        "q": 3,
+        "final": {
+          "label": "F_3:deg12",
+          "q": 3,
+          "degree": 12,
+          "residueFieldSize": 531441,
+          "labels": 44220,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -210.28552018624583
+        }
+      },
+      {
+        "q": 5,
+        "final": {
+          "label": "F_5:deg8",
+          "q": 5,
+          "degree": 8,
+          "residueFieldSize": 390625,
+          "labels": 48750,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -220.79402165819616
+        }
+      },
+      {
+        "q": 7,
+        "final": {
+          "label": "F_7:deg7",
+          "q": 7,
+          "degree": 7,
+          "residueFieldSize": 823543,
+          "labels": 117648,
+          "rawMeanTracePerFieldSize": -1,
+          "exactMain": -1,
+          "residualMean": 0,
+          "residualSum": 0,
+          "residualZ": 0,
+          "wrongZeroBaselineZ": -342.99854227095483
+        }
+      }
+    ]
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-016-complete-weierstrass-trace-identity-8000000.json",
+    "md": "logs/two-universes-protocol/cycle-016-complete-weierstrass-trace-identity-8000000.md",
+    "svg": "logs/two-universes-protocol/cycle-016-complete-weierstrass-trace-identity-8000000.svg"
+  }
+}

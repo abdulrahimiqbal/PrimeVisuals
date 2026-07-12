@@ -1,0 +1,465 @@
+{
+  "generatedAt": "2026-06-17T10:13:42.032Z",
+  "cycle": 18,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-018-cm-elliptic-spectral-residual",
+    "title": "CM elliptic spectral residual",
+    "class": "forced mutation from complete-family orthogonality moments to a fixed-curve spectral statistic",
+    "councilSuccessTarget": "S1/S2 candidate only if the fixed CM elliptic u2 spectral residual survives integer controls and matches F_q[t] residue-field profiles across q=3,5,7",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-8000000.json",
+      "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-8000000.md",
+      "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-8000000.svg",
+      "scripts/cm-elliptic-spectral-residual-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states u2(K)=a_K(E)^2/|K|-1 for the fixed CM curve E:y^2=x^3-x.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: K=F_q[t]/P and, for constant E/F_q, a_K is computed by the Frobenius recurrence from a_q.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No matched profile survives: integerBeatsControls=false, fieldSignsAligned=false, fieldIntegerZSpread=4485.312225.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter object: one fixed CM curve and one fixed u2 spectral statistic.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete ladders and matched integer/field profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The mutation is genuine, but the finite-field side is a constant-curve degree profile and the integer side is absorbed by controls; this is CM calibration, not new structure.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the full 8M and q=3,5,7 run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The CM trace formula is brute-validated over small prime fields and the field recurrence is explicit.",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because controls and matched-field gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "cmEllipticEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "integerBeatsControls": false,
+      "fieldSignsAligned": false,
+      "fieldIntegerZSpread": 4485.3122245098,
+      "matchedProfile": false,
+      "maxAbsEndpointZ": 2262.660872284467,
+      "theoremShape": {
+        "statistic": "u2(K)=a_K(E)^2/|K|-1 for E:y^2=x^3-x",
+        "integer": "K=F_p for rational primes p>=3, with CM trace formula by two-square representation",
+        "functionField": "K=F_q[t]/P; for constant E/F_q, a_K is computed by the Frobenius recurrence a_{q^d}=a_q*a_{q^{d-1}}-q*a_{q^{d-2}}",
+        "baseline": "CM Sato-Tate predicts mean-zero u2 in aggregate, but no exact labelwise cancellation is subtracted."
+      },
+      "finalInteger": {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -370.6240284279917,
+        "mean": -0.000686625615862861,
+        "z": -0.5044600596409435,
+        "energyZ": -0.356828934921013,
+        "maxAbsZ": 1.607452936688034
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "final": {
+            "label": "F_3:deg14",
+            "q": 3,
+            "degree": 14,
+            "labels": 341484,
+            "cumulativeLabels": 533830,
+            "fieldSize": 4782969,
+            "trace": -4374,
+            "u2": 3,
+            "z": 1418.3437373970419,
+            "energyZ": 540.6407757979115,
+            "maxAbsZ": 1418.3437373970419
+          }
+        },
+        {
+          "q": 5,
+          "final": {
+            "label": "F_5:deg10",
+            "q": 5,
+            "degree": 10,
+            "labels": 976248,
+            "cumulativeLabels": 1256567,
+            "fieldSize": 9765625,
+            "trace": 474,
+            "u2": -0.9769931776,
+            "z": -397.4127835987785,
+            "energyZ": -319.39003955611344,
+            "maxAbsZ": 960.0519095128813
+          }
+        },
+        {
+          "q": 7,
+          "final": {
+            "label": "F_7:deg8",
+            "q": 7,
+            "degree": 8,
+            "labels": 720300,
+            "cumulativeLabels": 861580,
+            "fieldSize": 5764801,
+            "trace": 4802,
+            "u2": 3,
+            "z": 2262.660872284467,
+            "energyZ": 806.2798689803786,
+            "maxAbsZ": 2262.660872284467
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "endpoint": 1000000,
+        "count": 78497,
+        "sum": -260.7252959283524,
+        "mean": -0.0033214682844994385,
+        "z": -0.9305862675715525,
+        "energyZ": -0.6589403400681122,
+        "maxAbsZ": 1.607452936688034
+      },
+      {
+        "endpoint": 2000000,
+        "count": 148932,
+        "sum": -151.808439232564,
+        "mean": -0.0010193137756329333,
+        "z": -0.3933706056215786,
+        "energyZ": -0.27830947282111274,
+        "maxAbsZ": 1.607452936688034
+      },
+      {
+        "endpoint": 4000000,
+        "count": 283145,
+        "sum": -270.33069389434604,
+        "mean": -0.0009547429546499003,
+        "z": -0.508031815363217,
+        "energyZ": -0.35938954185900773,
+        "maxAbsZ": 1.607452936688034
+      },
+      {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -370.6240284279917,
+        "mean": -0.000686625615862861,
+        "z": -0.5044600596409435,
+        "energyZ": -0.356828934921013,
+        "maxAbsZ": 1.607452936688034
+      }
+    ],
+    "controlSummary": {
+      "shuffle": {
+        "zRange": [
+          -0.5044600596409861,
+          -0.5044600596409433
+        ],
+        "absZRange": [
+          0.5044600596409433,
+          0.5044600596409861
+        ],
+        "maxAbsZRange": [
+          2.600926902942871,
+          4.38943150829851
+        ],
+        "energyZRange": [
+          -0.35682893492104995,
+          -0.3568289349210184
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -0.5132180649178048,
+          2.402714792728784
+        ],
+        "absZRange": [
+          0.16945733211735098,
+          2.402714792728784
+        ],
+        "maxAbsZRange": [
+          2.1260065884519075,
+          4.051351061277797
+        ],
+        "energyZRange": [
+          -0.3630238945322839,
+          1.6995560778758398
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -0.988441880265048,
+          1.3613762966738545
+        ],
+        "absZRange": [
+          0.17686799626610666,
+          1.3613762966738545
+        ],
+        "maxAbsZRange": [
+          3.0941965178384985,
+          4.358104078207043
+        ],
+        "energyZRange": [
+          -0.6991949152141458,
+          0.9624142970867801
+        ]
+      }
+    },
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 14,
+        "final": {
+          "label": "F_3:deg14",
+          "q": 3,
+          "degree": 14,
+          "labels": 341484,
+          "cumulativeLabels": 533830,
+          "fieldSize": 4782969,
+          "trace": -4374,
+          "u2": 3,
+          "z": 1418.3437373970419,
+          "energyZ": 540.6407757979115,
+          "maxAbsZ": 1418.3437373970419
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 10,
+        "final": {
+          "label": "F_5:deg10",
+          "q": 5,
+          "degree": 10,
+          "labels": 976248,
+          "cumulativeLabels": 1256567,
+          "fieldSize": 9765625,
+          "trace": 474,
+          "u2": -0.9769931776,
+          "z": -397.4127835987785,
+          "energyZ": -319.39003955611344,
+          "maxAbsZ": 960.0519095128813
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 8,
+        "final": {
+          "label": "F_7:deg8",
+          "q": 7,
+          "degree": 8,
+          "labels": 720300,
+          "cumulativeLabels": 861580,
+          "fieldSize": 5764801,
+          "trace": 4802,
+          "u2": 3,
+          "z": 2262.660872284467,
+          "energyZ": 806.2798689803786,
+          "maxAbsZ": 2262.660872284467
+        }
+      }
+    ],
+    "validation": [
+      {
+        "p": 3,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 5,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "formulaTrace": 6,
+        "bruteTrace": 6,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "formulaTrace": 2,
+        "bruteTrace": 2,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "formulaTrace": -10,
+        "bruteTrace": -10,
+        "ok": true
+      },
+      {
+        "p": 37,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 53,
+        "formulaTrace": 14,
+        "bruteTrace": 14,
+        "ok": true
+      },
+      {
+        "p": 97,
+        "formulaTrace": 18,
+        "bruteTrace": 18,
+        "ok": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "CM_ELLIPTIC_SPECTRAL_RESIDUAL_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 018 breaks complete-family orthogonality with a fixed CM curve, but the integer profile is absorbed by controls and the F_q[t] side is degree-rigid.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No matched profile survives: integerBeatsControls=false, fieldSignsAligned=false, fieldIntegerZSpread=4485.312225.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete ladders and matched integer/field profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The mutation is genuine, but the finite-field side is a constant-curve degree profile and the integer side is absorbed by controls; this is CM calibration, not new structure.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because controls and matched-field gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer final z=-0.504460; max field endpoint |z|=2262.660872; matchedProfile=false.",
+    "expectedNull": "A true two-universe spectral residual should survive integer controls and align across q=3,5,7 field profiles.",
+    "knownExplanation": "CM trace formula and constant-curve Frobenius recurrence explain the observed profiles.",
+    "survivedControls": [],
+    "failedControls": [
+      "Integer order/null controls absorb the prime profile and field profiles are degree-rigid/misaligned"
+    ],
+    "whatFailed": "The object is a fixed-curve calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "Constant curves over F_q[t] are too rigid; useful algebraic-family transport must use nonconstant monodromy or incomplete-family residuals.",
+    "nextMutation": "Leave constant curves; register nonconstant monodromy or an incomplete-family residual"
+  },
+  "nextMutation": {
+    "title": "Leave constant curves; register nonconstant monodromy or an incomplete-family residual",
+    "reason": "The fixed CM curve avoids complete-family orthogonality, but its F_q[t] side is degree-rigid and its integer profile is absorbed by controls.",
+    "preregisteredNextMove": [
+      "Do not promote constant-curve residue-field degree profiles as two-universe structure.",
+      "A next algebraic cycle must use a nonconstant curve/family over F_q(t), an incomplete family, or a monodromy/spectral statistic whose finite-field profile is not determined only by degree.",
+      "Before data, preregister the theorem baseline, integer analogue, local/null controls, full ladders, novelty audit, proof path, and expert-pack criteria.",
+      "If the object cannot avoid complete-family orthogonality and constant-curve degree rigidity, stop rather than adding another calibration."
+    ]
+  }
+}

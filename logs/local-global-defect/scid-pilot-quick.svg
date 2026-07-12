@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="68" y="38" fill="#f8fafc" font-size="21" font-weight="700">SCID calibration pilot — final-scale shape A</text>
+<text x="68" y="63" fill="#94a3b8" font-size="13">real interaction defect versus local-information depth; amber bars show listed control envelope</text>
+<rect x="88" y="86" width="820" height="500" fill="#0b1627" stroke="#334155"/>
+<line x1="88" x2="908" y1="586" y2="586" stroke="#64748b"/>
+<text x="498" y="634" text-anchor="middle" fill="#cbd5e1" font-size="14">local information depth tau</text>
+<text transform="translate(28 336) rotate(-90)" text-anchor="middle" fill="#cbd5e1" font-size="14">relative total correlation (SCID)</text>
+<polyline points="478.90,474.04 738.62,530.38" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<line x1="478.900735253407" x2="478.900735253407" y1="582.0879289108005" y2="572.2267956629096" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="478.900735253407" cy="474.0448523462774" r="5" fill="#f8fafc"/>
+<line x1="738.6228407407777" x2="738.6228407407777" y1="585.3441619830876" y2="566.0773724086669" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="738.6228407407777" cy="530.3846407688926" r="5" fill="#f8fafc"/>
+<polyline points="498.00,151.22 908.00,422.97" fill="none" stroke="#a78bfa" stroke-width="3"/>
+<line x1="498" x2="498" y1="564.2537246496499" y2="472.42510644462124" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="498" cy="151.21739130434776" r="5" fill="#a78bfa"/>
+<line x1="908" x2="908" y1="562.9376902792052" y2="453.65997482737623" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="908" cy="422.97104126438603" r="5" fill="#a78bfa"/>
+<circle cx="970" cy="130" r="6" fill="#f8fafc"/><text x="988" y="135" fill="#dbeafe" font-size="14">Z</text>
+<circle cx="970" cy="164" r="6" fill="#a78bfa"/><text x="988" y="169" fill="#dbeafe" font-size="14">F_2[t]</text>
+<text x="950" y="94" fill="#f8fafc" font-size="14" font-weight="700">universe</text>
+</svg>

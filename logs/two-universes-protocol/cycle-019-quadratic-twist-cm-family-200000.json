@@ -1,0 +1,1116 @@
+{
+  "candidate": "Quadratic-twist CM family residual",
+  "generatedAt": "2026-06-17T10:16:48.551Z",
+  "maxN": 200000,
+  "q3MaxDegree": 6,
+  "q5MaxDegree": 5,
+  "q7MaxDegree": 4,
+  "familyLimit": 8,
+  "endpoints": [
+    200000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    11235813
+  ],
+  "theoremShape": {
+    "statistic": "V_S(K)=sum_{D in S, D nonzero} chi_K(D)*a_K(E)/sqrt(|K|*good_D), E:y^2=x^3-x",
+    "integer": "K=F_p with squarefree integer twists d in a low-conductor window",
+    "functionField": "K=F_q[t]/P with low-degree nonconstant polynomial twists D(t)",
+    "baseline": "Quadratic-twist trace factorization gives exact values; promotion requires matched residual profile beyond integer controls."
+  },
+  "integer": {
+    "endpoints": [
+      200000
+    ],
+    "twists": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "7",
+      "10",
+      "11"
+    ],
+    "recordsCount": 17983,
+    "real": {
+      "name": "real-prime-order quadratic-twist CM family",
+      "rows": [
+        {
+          "endpoint": 200000,
+          "count": 17983,
+          "sum": -51.77172627495317,
+          "mean": -0.002878926000942733,
+          "z": -0.38606601622864023,
+          "energyZ": -0.39810176920031715,
+          "maxAbsZ": 1.1175263622551006
+        }
+      ],
+      "blocks": [
+        {
+          "lo": 1,
+          "hi": 200000,
+          "count": 17983,
+          "sum": -51.77172627495317,
+          "z": -0.38606601622864023
+        }
+      ]
+    },
+    "controls": {
+      "shuffle": [
+        {
+          "name": "shuffle-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.77172627495311,
+              "mean": -0.00287892600094273,
+              "z": -0.38606601622863984,
+              "energyZ": -0.398101769200317,
+              "maxAbsZ": 2.624894911484682
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.77172627495311,
+              "z": -0.38606601622863984
+            }
+          ]
+        },
+        {
+          "name": "shuffle-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.7717262749532,
+              "mean": -0.002878926000942735,
+              "z": -0.3860660162286405,
+              "energyZ": -0.39810176920031715,
+              "maxAbsZ": 2.4715170474458494
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.7717262749532,
+              "z": -0.3860660162286405
+            }
+          ]
+        },
+        {
+          "name": "shuffle-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.771726274952684,
+              "mean": -0.002878926000942706,
+              "z": -0.3860660162286366,
+              "energyZ": -0.3981017692003134,
+              "maxAbsZ": 1.7419203817870885
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.771726274952684,
+              "z": -0.3860660162286366
+            }
+          ]
+        },
+        {
+          "name": "shuffle-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.77172627495342,
+              "mean": -0.002878926000942747,
+              "z": -0.3860660162286422,
+              "energyZ": -0.39810176920031914,
+              "maxAbsZ": 1.403660503008663
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.77172627495342,
+              "z": -0.3860660162286422
+            }
+          ]
+        },
+        {
+          "name": "shuffle-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.77172627495327,
+              "mean": -0.0028789260009427385,
+              "z": -0.386066016228641,
+              "energyZ": -0.39810176920031853,
+              "maxAbsZ": 1.8257218088431844
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.77172627495327,
+              "z": -0.386066016228641
+            }
+          ]
+        },
+        {
+          "name": "shuffle-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.77172627495342,
+              "mean": -0.002878926000942747,
+              "z": -0.3860660162286422,
+              "energyZ": -0.3981017692003195,
+              "maxAbsZ": 4.2113979336784135
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.77172627495342,
+              "z": -0.3860660162286422
+            }
+          ]
+        },
+        {
+          "name": "shuffle-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -51.77172627495365,
+              "mean": -0.0028789260009427597,
+              "z": -0.38606601622864384,
+              "energyZ": -0.398101769200321,
+              "maxAbsZ": 2.051101458319504
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -51.77172627495365,
+              "z": -0.38606601622864384
+            }
+          ]
+        }
+      ],
+      "signFlip": [
+        {
+          "name": "sign-flip-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 78.68070526945394,
+              "mean": 0.0043752825040012195,
+              "z": 0.5867284833446543,
+              "energyZ": 0.6050199640503809,
+              "maxAbsZ": 2.791151262872784
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 78.68070526945394,
+              "z": 0.5867284833446543
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 100.50886350510828,
+              "mean": 0.005589104348835471,
+              "z": 0.7495028526382748,
+              "energyZ": 0.7728688854065644,
+              "maxAbsZ": 2.154584085513582
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 100.50886350510828,
+              "z": 0.7495028526382748
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 16.478983281935953,
+              "mean": 0.0009163645266049021,
+              "z": 0.12288513219296032,
+              "energyZ": 0.12671612231587862,
+              "maxAbsZ": 1.1561139790609345
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 16.478983281935953,
+              "z": 0.12288513219296032
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 106.79789701467644,
+              "mean": 0.00593882539146285,
+              "z": 0.7964006922056226,
+              "energyZ": 0.8212287827262414,
+              "maxAbsZ": 1.4543828584595406
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 106.79789701467644,
+              "z": 0.7964006922056226
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -105.04432394809388,
+              "mean": -0.005841312570099198,
+              "z": -0.783324153780268,
+              "energyZ": -0.8077445783069988,
+              "maxAbsZ": 1.524885319927794
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -105.04432394809388,
+              "z": -0.783324153780268
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 28.414578862319374,
+              "mean": 0.0015800800123627523,
+              "z": 0.21188984902551605,
+              "energyZ": 0.21849559460496298,
+              "maxAbsZ": 1.6399000155310015
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 28.414578862319374,
+              "z": 0.21188984902551605
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -70.77056422690319,
+              "mean": -0.003935414793243796,
+              "z": -0.5277419117189434,
+              "energyZ": -0.5441944639127319,
+              "maxAbsZ": 1.7217293562937606
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -70.77056422690319,
+              "z": -0.5277419117189434
+            }
+          ]
+        }
+      ],
+      "bootstrap": [
+        {
+          "name": "bootstrap-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -172.98664060490566,
+              "mean": -0.009619453962348088,
+              "z": -1.2899755910094362,
+              "energyZ": -1.3347848286732984,
+              "maxAbsZ": 2.248665492837886
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -172.98664060490566,
+              "z": -1.2899755910094362
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -165.11112157473914,
+              "mean": -0.009181511515027479,
+              "z": -1.2312471985745062,
+              "energyZ": -1.2687146451048783,
+              "maxAbsZ": 2.985708769647095
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -165.11112157473914,
+              "z": -1.2312471985745062
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 156.8477218424702,
+              "mean": 0.008721999768807774,
+              "z": 1.1696263478769837,
+              "energyZ": 1.1794171472237387,
+              "maxAbsZ": 2.3159842792751686
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 156.8477218424702,
+              "z": 1.1696263478769837
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 4.0004964433643675,
+              "mean": 0.00022245990342903673,
+              "z": 0.02983203064591886,
+              "energyZ": 0.030789153381316294,
+              "maxAbsZ": 1.9885389628942012
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 4.0004964433643675,
+              "z": 0.02983203064591886
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -273.3621012502649,
+              "mean": -0.015201140035047819,
+              "z": -2.038483647562618,
+              "energyZ": -2.0847899445747906,
+              "maxAbsZ": 2.674158408353382
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -273.3621012502649,
+              "z": -2.038483647562618
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -289.8451708852868,
+              "mean": -0.016117731795878706,
+              "z": -2.1613992520262615,
+              "energyZ": -2.1811081916648156,
+              "maxAbsZ": 2.2789881376955314
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -289.8451708852868,
+              "z": -2.1613992520262615
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 153.29564141675843,
+              "mean": 0.00852447541660226,
+              "z": 1.143138192315099,
+              "energyZ": 1.183044970211171,
+              "maxAbsZ": 2.0950111429536706
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 153.29564141675843,
+              "z": 1.143138192315099
+            }
+          ]
+        }
+      ]
+    },
+    "controlSummary": {
+      "shuffle": {
+        "zRange": [
+          -0.38606601622864384,
+          -0.3860660162286366
+        ],
+        "absZRange": [
+          0.3860660162286366,
+          0.38606601622864384
+        ],
+        "maxAbsZRange": [
+          1.403660503008663,
+          4.2113979336784135
+        ],
+        "energyZRange": [
+          -0.398101769200321,
+          -0.3981017692003134
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -0.783324153780268,
+          0.7964006922056226
+        ],
+        "absZRange": [
+          0.12288513219296032,
+          0.7964006922056226
+        ],
+        "maxAbsZRange": [
+          1.1561139790609345,
+          2.791151262872784
+        ],
+        "energyZRange": [
+          -0.8077445783069988,
+          0.8212287827262414
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -2.1613992520262615,
+          1.1696263478769837
+        ],
+        "absZRange": [
+          0.02983203064591886,
+          2.1613992520262615
+        ],
+        "maxAbsZRange": [
+          1.9885389628942012,
+          2.985708769647095
+        ],
+        "energyZRange": [
+          -2.1811081916648156,
+          1.183044970211171
+        ]
+      }
+    },
+    "holdout": {
+      "real": {
+        "lo": 1,
+        "hi": 200000,
+        "count": 17983,
+        "sum": -51.77172627495317,
+        "z": -0.38606601622864023
+      },
+      "shuffle": {
+        "zRange": [
+          -0.38606601622864384,
+          -0.3860660162286366
+        ],
+        "absZRange": [
+          0.3860660162286366,
+          0.38606601622864384
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -0.783324153780268,
+          0.7964006922056226
+        ],
+        "absZRange": [
+          0.12288513219296032,
+          0.7964006922056226
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -2.1613992520262615,
+          1.1696263478769837
+        ],
+        "absZRange": [
+          0.02983203064591886,
+          2.1613992520262615
+        ]
+      }
+    },
+    "validation": [
+      {
+        "p": 3,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 5,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "formulaTrace": 6,
+        "bruteTrace": 6,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "formulaTrace": 2,
+        "bruteTrace": 2,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "formulaTrace": -10,
+        "bruteTrace": -10,
+        "ok": true
+      },
+      {
+        "p": 37,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 53,
+        "formulaTrace": 14,
+        "bruteTrace": 14,
+        "ok": true
+      },
+      {
+        "p": 97,
+        "formulaTrace": 18,
+        "bruteTrace": 18,
+        "ok": true
+      }
+    ],
+    "sampleRecords": [
+      {
+        "p": 3,
+        "baseTrace": 0,
+        "good": 6,
+        "characterSum": 0,
+        "value": 0
+      },
+      {
+        "p": 5,
+        "baseTrace": -2,
+        "good": 6,
+        "characterSum": 0,
+        "value": 0
+      },
+      {
+        "p": 7,
+        "baseTrace": 0,
+        "good": 7,
+        "characterSum": -1,
+        "value": 0
+      },
+      {
+        "p": 11,
+        "baseTrace": 0,
+        "good": 7,
+        "characterSum": -1,
+        "value": 0
+      },
+      {
+        "p": 13,
+        "baseTrace": 6,
+        "good": 8,
+        "characterSum": -2,
+        "value": -1.1766968108291043
+      },
+      {
+        "p": 17,
+        "baseTrace": 2,
+        "good": 8,
+        "characterSum": -4,
+        "value": -0.6859943405700353
+      },
+      {
+        "p": 19,
+        "baseTrace": 0,
+        "good": 8,
+        "characterSum": 2,
+        "value": 0
+      },
+      {
+        "p": 23,
+        "baseTrace": 0,
+        "good": 8,
+        "characterSum": 0,
+        "value": 0
+      },
+      {
+        "p": 29,
+        "baseTrace": -10,
+        "good": 8,
+        "characterSum": 0,
+        "value": 0
+      },
+      {
+        "p": 31,
+        "baseTrace": 0,
+        "good": 8,
+        "characterSum": 2,
+        "value": 0
+      },
+      {
+        "p": 37,
+        "baseTrace": -2,
+        "good": 8,
+        "characterSum": 2,
+        "value": -0.23249527748763857
+      },
+      {
+        "p": 41,
+        "baseTrace": 10,
+        "good": 8,
+        "characterSum": 0,
+        "value": 0
+      }
+    ]
+  },
+  "fields": [
+    {
+      "q": 3,
+      "maxDegree": 6,
+      "twists": [
+        "t+0",
+        "t+1",
+        "t+2",
+        "t^2+0t+0",
+        "t^2+0t+1",
+        "t^2+0t+2",
+        "t^2+1t+0",
+        "t^2+1t+1"
+      ],
+      "theoremObject": "incomplete quadratic-twist family E_D:y^2=x^3-D(t)^2*x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_3:deg1",
+          "q": 3,
+          "degree": 1,
+          "labels": 3,
+          "cumulativeLabels": 3,
+          "fieldSize": 3,
+          "baseTrace": 0,
+          "degreeMean": 0,
+          "z": 0,
+          "energyZ": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_3:deg2",
+          "q": 3,
+          "degree": 2,
+          "labels": 3,
+          "cumulativeLabels": 6,
+          "fieldSize": 9,
+          "baseTrace": -6,
+          "degreeMean": 0.21942820545154693,
+          "z": 0.268743569265442,
+          "energyZ": 0.41051258289716525,
+          "maxAbsZ": 0.3779644730092272
+        },
+        {
+          "label": "F_3:deg3",
+          "q": 3,
+          "degree": 3,
+          "labels": 8,
+          "cumulativeLabels": 14,
+          "fieldSize": 27,
+          "baseTrace": 0,
+          "degreeMean": 0,
+          "z": 0.17593396409878512,
+          "energyZ": 0.41051258289716525,
+          "maxAbsZ": 0.3779644730092272
+        },
+        {
+          "label": "F_3:deg4",
+          "q": 3,
+          "degree": 4,
+          "labels": 18,
+          "cumulativeLabels": 32,
+          "fieldSize": 81,
+          "baseTrace": 18,
+          "degreeMean": 0.9428090415820635,
+          "z": 3.116369379043788,
+          "energyZ": 2.998232134678781,
+          "maxAbsZ": 3.1662344553445276
+        },
+        {
+          "label": "F_3:deg5",
+          "q": 3,
+          "degree": 5,
+          "labels": 48,
+          "cumulativeLabels": 80,
+          "fieldSize": 243,
+          "baseTrace": 0,
+          "degreeMean": 0,
+          "z": 1.9709650536365952,
+          "energyZ": 2.998232134678781,
+          "maxAbsZ": 3.1662344553445276
+        },
+        {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "labels": 116,
+          "cumulativeLabels": 196,
+          "fieldSize": 729,
+          "baseTrace": -54,
+          "degreeMean": -1.2679156076448435,
+          "z": -9.246383080140715,
+          "energyZ": -5.706595424645465,
+          "maxAbsZ": 9.246383080140715
+        }
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 5,
+      "twists": [
+        "t+0",
+        "t+1",
+        "t+2",
+        "t+3",
+        "t+4",
+        "t^2+0t+0",
+        "t^2+0t+1",
+        "t^2+0t+2"
+      ],
+      "theoremObject": "incomplete quadratic-twist family E_D:y^2=x^3-D(t)^2*x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "q": 5,
+          "degree": 1,
+          "labels": 5,
+          "cumulativeLabels": 5,
+          "fieldSize": 5,
+          "baseTrace": -2,
+          "degreeMean": -0.15689401657952595,
+          "z": -0.35082568633479905,
+          "energyZ": -0.6892893700534912,
+          "maxAbsZ": 0.5612658923945182
+        },
+        {
+          "label": "F_5:deg2",
+          "q": 5,
+          "degree": 2,
+          "labels": 10,
+          "cumulativeLabels": 15,
+          "fieldSize": 25,
+          "baseTrace": -6,
+          "degreeMean": 0.20920270446604983,
+          "z": 0.33760975580834385,
+          "energyZ": 0.5789419008378939,
+          "maxAbsZ": 0.7886438831973882
+        },
+        {
+          "label": "F_5:deg3",
+          "q": 5,
+          "degree": 3,
+          "labels": 40,
+          "cumulativeLabels": 55,
+          "fieldSize": 125,
+          "baseTrace": 22,
+          "degreeMean": 0.6957010852370435,
+          "z": 3.9286435526154206,
+          "energyZ": 2.565197336124605,
+          "maxAbsZ": 3.9286435526154206
+        },
+        {
+          "label": "F_5:deg4",
+          "q": 5,
+          "degree": 4,
+          "labels": 150,
+          "cumulativeLabels": 205,
+          "fieldSize": 625,
+          "baseTrace": -14,
+          "degreeMean": -0.14255272708720798,
+          "z": 0.5414714483370816,
+          "energyZ": 0.6068889690019391,
+          "maxAbsZ": 3.946323395762756
+        },
+        {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 829,
+          "fieldSize": 3125,
+          "baseTrace": -82,
+          "degreeMean": -0.518613536267614,
+          "z": -10.970346100499983,
+          "energyZ": -8.025834732195941,
+          "maxAbsZ": 10.990249980367643
+        }
+      ]
+    },
+    {
+      "q": 7,
+      "maxDegree": 4,
+      "twists": [
+        "t+0",
+        "t+1",
+        "t+2",
+        "t+3",
+        "t+4",
+        "t+5",
+        "t+6",
+        "t^2+0t+0"
+      ],
+      "theoremObject": "incomplete quadratic-twist family E_D:y^2=x^3-D(t)^2*x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_7:deg1",
+          "q": 7,
+          "degree": 1,
+          "labels": 7,
+          "cumulativeLabels": 7,
+          "fieldSize": 7,
+          "baseTrace": 0,
+          "degreeMean": 0,
+          "z": 0,
+          "energyZ": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_7:deg2",
+          "q": 7,
+          "degree": 2,
+          "labels": 21,
+          "cumulativeLabels": 28,
+          "fieldSize": 49,
+          "baseTrace": -14,
+          "degreeMean": 0,
+          "z": 0,
+          "energyZ": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_7:deg3",
+          "q": 7,
+          "degree": 3,
+          "labels": 112,
+          "cumulativeLabels": 140,
+          "fieldSize": 343,
+          "baseTrace": 0,
+          "degreeMean": 0,
+          "z": 0,
+          "energyZ": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 728,
+          "fieldSize": 2401,
+          "baseTrace": 98,
+          "degreeMean": 0.6060915267313277,
+          "z": 13.2083889426962,
+          "energyZ": 7.93725393319379,
+          "maxAbsZ": 13.25650809879817
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "completeIntegerLadder": false,
+    "completeFieldLadders": true,
+    "validationPassed": true,
+    "integerBeatsControls": false,
+    "signsAligned": false,
+    "profileSpread": 34.21277291310143,
+    "matchedProfile": false,
+    "maxAbsEndpointZ": 13.2083889426962,
+    "finalInteger": {
+      "endpoint": 200000,
+      "count": 17983,
+      "sum": -51.77172627495317,
+      "mean": -0.002878926000942733,
+      "z": -0.38606601622864023,
+      "energyZ": -0.39810176920031715,
+      "maxAbsZ": 1.1175263622551006
+    },
+    "finalFields": [
+      {
+        "q": 3,
+        "final": {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "labels": 116,
+          "cumulativeLabels": 196,
+          "fieldSize": 729,
+          "baseTrace": -54,
+          "degreeMean": -1.2679156076448435,
+          "z": -9.246383080140715,
+          "energyZ": -5.706595424645465,
+          "maxAbsZ": 9.246383080140715
+        }
+      },
+      {
+        "q": 5,
+        "final": {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 829,
+          "fieldSize": 3125,
+          "baseTrace": -82,
+          "degreeMean": -0.518613536267614,
+          "z": -10.970346100499983,
+          "energyZ": -8.025834732195941,
+          "maxAbsZ": 10.990249980367643
+        }
+      },
+      {
+        "q": 7,
+        "final": {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 728,
+          "fieldSize": 2401,
+          "baseTrace": 98,
+          "degreeMean": 0.6060915267313277,
+          "z": 13.2083889426962,
+          "energyZ": 7.93725393319379,
+          "maxAbsZ": 13.25650809879817
+        }
+      }
+    ]
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-200000.json",
+    "md": "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-200000.md",
+    "svg": "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-200000.svg"
+  }
+}

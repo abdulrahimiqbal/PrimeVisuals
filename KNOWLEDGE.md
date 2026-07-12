@@ -8,6 +8,376 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-07-10 · RH-EQUIVALENT / NEW VIEW — Weil screw prime-knot decomposition
+
+Source: `logs/weil-screw/PREREGISTRATION.md`, pilot artifacts, and
+`logs/weil-screw/NOVELTY_AUDIT.md`; implementation `src/core/weilScrew.js`
+and `scripts/weil-screw-knot-pilot.mjs`.
+
+Object:
+Suzuki's June-2026 continuous screw function expresses the Weil kernel through
+archimedean terms and prime-power knots
+`Lambda(n)/sqrt(n)(|t|-log n)_+`. On positive points every knot decomposes
+exactly into `-2 min(t,u)` plus the increment kernel of the positive triangular
+stationary covariance `(c-|t-u|)_+`.
+
+Result:
+matrix reconstruction errors stay below `2e-10` through `exp(a)=1000` on
+uniform and Chebyshev grids of dimensions 12, 20, and 28. All sampled total
+Weil kernels are nonnegative. Separate-eigenvalue domination fails strongly:
+the simple lower bound falls to about `-62`, while the full generalized minimum
+remains near `8e-4`. Finite positivity is produced by cross-eigenspace
+alignment.
+
+Disguise:
+the second derivative of each knot produces cosine frequency
+`cos(xi log n)`; summing prime-power weights recovers the prime side of Weil's
+explicit formula. A global Fourier proof is therefore circular. The only
+unclosed residue is a uniform principal-angle bound for localized compressed
+operators, already adjacent to work of Yoshida, Bombieri,
+Connes--Consani--Moscovici, and Suzuki.
+
+STATUS: `EXACT NEW COORDINATE / NO RH CLAIM / LOCALIZED ANGLE PROBLEM OPEN`.
+
+CONNECTION:
+this is the first campaign object whose failure mode isolates a genuinely
+operator-theoretic obstruction rather than a local-sieve or Möbius shadow. A
+future survivor must control eigenspace alignment uniformly in support radius;
+finite positivity or the knot identity alone is insufficient.
+
+Follow-up alignment audit:
+the deficit-normalized triangular frame has coverage above one on every
+frozen 28-point cell and its exact Schur reserve is positive.  This does not
+survive the disguise audit as a new invariant.  Once the archimedean/linear
+block is negative on the whole sampled space, coverage above one is, by
+congruence, exactly equivalent to positivity of the sampled Weil matrix.  At
+smaller radii the Schur complement is likewise an exact reformulation.  No
+independent reserve bound or valid extrapolation was obtained.
+
+CORRECTION/STATUS:
+`logs/weil-screw/ALIGNMENT_NOVELTY_AUDIT.md` supersedes the pilot verdict
+"frame-coverage law survives."  The computation survives only as a calibrated
+coordinate and anti-circularity test: `FINITE IDENTITY / NOT PROMOTED`.
+
+CvS parity follow-up:
+using the July-2026 cutoff-free closed forms, a proposed full alternation of
+even and odd finite spectra was preregistered and falsified.  Bulk violations
+occur with macroscopic margins, including at `c=3,N=7` and `c=13,N=6`.
+However, the actually relevant ground inequality `E_0<O_0` survived all 88
+zeta cells through `c=100,N=12`, with positive-cell ratios `O_0/E_0` from
+about `84.6` upward.  Reversed and signed prime-weight controls can break the
+ground ordering, so it is not forced by centrosymmetry alone.  A new unseen
+holdout is frozen in
+`logs/cvs-parity-interlacing/GROUND_PARITY_PREREGISTRATION.md`.
+
+STATUS: `FULL INTERLACING FALSIFIED / GROUND-PARITY CONJECTURE LIVE / NO THEOREM`.
+
+Ground-parity holdout result (2026-07-11):
+all 105 unseen cutoff-free zeta cells at 90 digits, with cutoffs
+`11,19,23,31,43,59,97` and `N=2,...,16`, satisfy `E_0<O_0`.  The smallest
+positive-cell ratio is about `178.8`.  The new reversed/signed controls also
+pass, while earlier controls at `c=17` and `c=100` failed, so arithmetic
+specificity is mixed.  No comparison theorem or continuum gap bound is known.
+
+DECISION: `FINITE CONJECTURE SURVIVES / PAUSE BRUTE FORCE`.  Additional matrix
+ladders are low value; continue only with a symbolic parity comparison or a
+proof-level obstruction.
+
+## 2026-07-10 · RH-EQUIVALENT / CALIBRATED NEGATIVE — Nyman--Beurling Schur flow
+
+Source: `logs/nyman-beurling/PREREGISTRATION.md`, pilot artifacts and
+`logs/nyman-beurling/NOVELTY_AUDIT.md`; implementation
+`src/core/nymanBeurling.js` and `scripts/nyman-schur-pilot.mjs`.
+
+Object:
+use Ehm's q=1 Gram formula for the Báez--Duarte integer-dilation form of the
+Nyman--Beurling criterion, compute the optimal squared distance `d_N^2`, and
+score the one-step Schur innovation `d_(N-1)^2-d_N^2` only after removing
+index, Gram-pivot, and newest-coefficient magnitude effects. The limit
+`d_N->0` is equivalent to RH; finite monotonicity is automatic and never
+counts as evidence.
+
+Result:
+the prime class has a full-range residual innovation effect at permutation
+`z=4.55`, but misses the frozen final-third gate at `z=3.01`. The containing
+negative-Möbius class falls from `z=4.04` to `z=2.55`. Müntz direct cutoffs
+2048/4096/8192 give log-gain correlations 1 at printed precision and maximum
+distance change below `9.5e-13`.
+
+Disguise:
+optimal Nyman--Beurling Dirichlet polynomials are already governed by
+Möbius/Levinson--Selberg coefficients. The observed feature is a finite
+coefficient shadow and supplies no bound forcing the approximation distance to
+zero. Ehm's decomposition locates the true unresolved work in Landau/Mertens
+and inversion-error estimates.
+
+STATUS: `CALIBRATED NEGATIVE / NO CONJECTURE / RH PROOF OBLIGATION SHARPENED`.
+
+CONNECTION:
+the exact Gram/Krylov machinery transfers successfully from the Maynard sieve
+problem into an RH-equivalent Hilbert-space problem, but descriptive arithmetic
+classification is again insufficient. The next candidate must control the full
+quadratic error or factor it positively, not merely explain finite innovations.
+
+## 2026-07-10 · THEOREM-ADJACENT / EXACT CALIBRATION — Maynard--Tao variational engine
+
+Source: `logs/maynard-variational/PREREGISTRATION.md` and
+`logs/maynard-variational/calibration.md`; implementation
+`src/core/maynardVariational.js` and
+`scripts/maynard-variational-audit.mjs`.
+
+Object:
+maximize `sum_m J_k^(m)(F)/I_k(F)` over polynomial functions on the simplex
+`sum t_i<=1`. Complete monomial Gram matrices and Maynard's symmetric
+`(1-P1)^b P2^c` matrices are evaluated by closed-form simplex integrals.
+Candidate eigenvectors are numerical; promotion requires a rational witness
+rechecked with `BigInt`-only arithmetic.
+
+Calibration result:
+Maynard's explicit `k=5` witness is reproduced exactly as
+`1417255/708216 = 2.001162074847...`. The complete cubic optimizer proposes
+`2.002887195760...`; a four-decimal rationalization remains exactly
+`11148726395/5566329648 = 2.002886479963...`. The 42-dimensional symmetric
+engine reproduces Maynard's numerical `M_105` lower bound as
+`4.002069762947...`.
+
+Krylov extension:
+the exact moment generator reproduces the first Polymath8b formulas and a
+10-dimensional generalized eigenproblem gives `M_5>=2.007140291425...`,
+matching the later published table value `2.00714`. The stable
+8-dimensional k=54 ladder reaches `3.699398868216...`; deeper double-precision
+Hankel systems are too ill-conditioned to certify.
+
+Correction:
+the earlier council target `M_50>4` conflated two quantities. Polymath8b
+proves standard `M_54>4.00238`; its k=50 value above 4 is the enlarged-support
+`M_{50,1/25}>4.0043`. The present 42-term basis gives only
+`3.699945714759...` at k=54. The Krylov basis is now implemented, but
+high-precision depth and rational certification remain the next mandatory
+calibration.
+
+STATUS: `VALIDATED ENGINE / KNOWN RESULTS REPRODUCED / NO NEW THEOREM YET`.
+
+CONNECTION:
+unlike the two invariant pilots above, this route has a direct theorem gate:
+an exact improvement to `M_k`, combined with a checked admissible tuple, can
+change a bounded-gap consequence. Numerical eigenvalues alone never qualify.
+
+## 2026-07-10 · NEW-OBJECT / CALIBRATION — sieve-conditioned interaction defect flow
+
+Source: `logs/2026-07-10-local-global-defect.md`; preregistration
+`logs/local-global-defect/PREREGISTRATION.md`; pilot and factor artifacts in
+`logs/local-global-defect/`; implementation
+`src/core/localGlobalDefect.js`, `scripts/local-global-defect-pilot.mjs`, and
+`scripts/scid-factor-check.mjs`.
+
+Object:
+for a fixed three-shift constellation, restrict centers to those where every
+shift avoids all local factors through a cutoff. On the resulting three-bit
+prime/irreducible mask distribution `P`, define total correlation
+`TC=sum_i H(P_i)-H(P)` and normalized defect
+`SCID=TC/sum_i H(P_i)`. The local-information coordinate is
+`tau=-log(eligible fraction)`.
+
+Result:
+the shallow-cutoff signal is strong but decays under deeper exact local
+conditioning. At `N=1,000,000`, integer strict control z-scores fall from
+`47.5..56.1` at `p<=5` to `-1.09..0.63` at `p<=29`. `F_3[t]` and `F_5[t]`
+show the same qualitative collapse before their deep composite controls lose
+support. `F_2[t]` degree 20 retains two shape-level excesses at local degree 3,
+but fails three-shape replication and remains the same order as the truncated
+tuple Euler-product prediction.
+
+Disguise check:
+the eight three-bit mask probabilities are recovered by inclusion–exclusion
+from the seven nonempty subset moments. SCID is therefore a nonlinear summary
+of fixed single/pair/triple prime-tuple counts, not a new arithmetic invariant.
+The factor audit reconstructs its scale from Hardy–Littlewood and
+prime-polynomial tuple Euler products. Named composites/reducibles are included
+as strict controls; deeper `F_3[t]`/`F_5[t]` points fail rather than bypass that
+gate when their reducible pools are too small.
+
+STATUS: `CALIBRATION / KNOWN-CONJECTURAL TUPLE CONTENT / NO SURVIVOR`.
+
+CONNECTION:
+this supplies the common explanation for the centered-tensor and quotient
+spectral cycles 003–007: any fixed-dimensional statistic of a fixed shift mask
+factors through finitely many tuple moments. Future searches must use growing
+exclusion sets, genuine sequence dynamics, or another object not recoverable
+from fixed tuple counts.
+
+## 2026-07-10 · NEW-OBJECT / CALIBRATED NEGATIVE — deep-admissible gap transition copula
+
+Source: `logs/2026-07-10-local-global-defect.md`; preregistration and artifacts
+in `logs/gap-transition-copula/`; implementation
+`src/core/gapTransitionCopula.js` and
+`scripts/gap-transition-copula-pilot.mjs`.
+
+Object:
+map each consecutive prime gap to its pointwise `B`-admissible mid-PIT value,
+cross-fit an empirical rank coordinate, subtract a shrunk training mean for
+the residue transition class `(p_i mod W,p_{i+1} mod W)`, and score lag-one
+correlation of the holdout residual sequence.
+
+Result:
+the shallow `B=29,W=210` cell reaches adjusted correlation `-0.0254121` and
+strict `|z|=4.86` at `N=2,000,000`, but the preregistered deeper cutoff breaks
+the lead. At `B=97,W=210`, correlation is `-0.0081227`, inside the same-B fake
+and B-rough-composite controls, with strict `|z|=0.63`. `B=97,W=30` similarly
+has strict `|z|=1.07`. Support passes, and the sign is stable, but cutoff and
+control survival fail.
+
+STATUS: `CALIBRATED NEGATIVE / NO CONFIRMATORY RUN`.
+
+CONNECTION:
+this is the order-sensitive successor to the one-gap PIT and
+transition-matched adjacent-gap entries. It shows that even after marginal
+rank removal and residue-transition subtraction, the apparent lag-one signal
+at cutoff 29 is leftover local admissibility: extending the exact pointwise
+null through 97 absorbs it.
+
+
+## 2026-06-16 · FRONTIER / LOCAL CHOWLA WEATHER — no survivor
+
+Source: `logs/frontier/chowla-weather-report.md`; audit data
+`logs/frontier/chowla-weather-laws.json`; feature matrix
+`logs/frontier/chowla-weather-feature-matrix.csv`; visuals
+`logs/frontier/chowla-weather-heatmap.svg` and
+`logs/frontier/chowla-weather-phase.svg`; implementation
+`src/core/frontier/chowlaWeather.js` and
+`scripts/frontier-chowla-weather.mjs`.
+
+Object:
+`lambda(n)=(-1)^Omega(n)`,
+`B(h,x,L)=sum_{n=x}^{x+L-1} lambda(n)lambda(n+h)`, and
+`Z(h,x,L)=B(h,x,L)/sqrt(L)`, scanned locally over
+`N=300,000`, `H=512`, windows `256..8192`, stride `512`, with a
+dyadic rerun at `N/2=150,000`.
+
+Run result:
+no feature-family law survived the preregistered gates. The top-ranked
+law was `omega(h)=1 and h mod 8=3`, but it had train real-vs-null
+`z=0.416506`, far below the required `4`, and was not separated from
+h-size or one-modulus controls. The strongest one-modulus control had
+`z=0.855507`; h-size control had `z=0.289745`; parity control had `z=0`.
+No individual `h` column is promoted.
+
+Disguise check:
+the run does not use zeta, zeros, explicit formula terms, RH-equivalent
+criteria, Robin, Nicolas, or Lagarias criteria. Candidate promotion is
+limited to feature laws of complexity at most two unless overwhelming,
+with train/holdout split by `h<=H/2`, dyadic persistence, and controls
+for h-size, parity, and one-modulus explanations. The local heatmap is
+retained as a diagnostic artifact only, not as evidence.
+
+STATUS: `NO SURVIVOR / LOCAL WEATHER ALSO NULL`.
+
+CONNECTION:
+this directly strengthens the earlier terminal `C_h(N)` negative result.
+The previous run rejected isolated h outliers; this run keeps local
+position and window scale but still finds no rigid residual locus after
+feature-law, null, holdout, and dyadic gates. Future Chowla searches
+should change the statistic or null geometry, not merely rescan terminal
+or local h columns.
+
+## 2026-06-16 · FRONTIER / CHOWLA RESIDUAL ATLAS — no survivor
+
+Source: `logs/frontier/chowla-report.md`; audit data
+`logs/frontier/chowla-atlas.json`; heatmap
+`logs/frontier/chowla-heatmap.svg`; implementation
+`src/core/frontier/chowla.js` and `scripts/frontier-chowla.mjs`.
+
+Object:
+`S(h,N)=sum_{1<=n<=N-h} lambda(n)lambda(n+h)`, with
+`lambda(n)=(-1)^Omega(n)` and residual
+`(Z_real-mean_random_multiplicative)/sd_random_multiplicative`, where
+`Z=S/sqrt(N)`.
+
+Run result:
+at `N0=20,000`, `levels=4`, `H=256`, and `20` seeds per null, no locus
+survived the random-multiplicative null, shuffled-Liouville null, dyadic
+persistence, holdout, feature-support, and known-disguise gates. The top
+ranked columns were isolated single shifts `h=101` and `h=92`; both had
+dyadic persistence but failed the single-shift multiple-testing /
+low-complexity gate. At `N=160,000`, real field energy was `0.9494`
+against random multiplicative `0.9898±0.0536` and shuffled
+`0.9954±0.0600`.
+
+Feature audit:
+final feature dependence was weak: `omega(h)` R2 `0.0155`,
+`Omega(h)` R2 `0.0405`, squarefree R2 `0.0042`, `v2(h)` R2 `0.0336`,
+parity R2 `0.0033`, radical bucket R2 `0.0351`, and oddpart bucket R2
+`0.0542`. No candidate conjecture is promoted.
+
+Disguise check:
+the statistic is fixed-shift Chowla parity, not prime-counting, explicit
+formula residuals, cumulative gaps, or an endpoint telescope. Parity-only
+and `v2`-only explanations are disqualified as known low-complexity
+artifacts; isolated high-h columns are treated as sampling artifacts
+unless they clear a stronger multiple-testing/description gate.
+
+STATUS: `NO SURVIVOR / CALIBRATED NEGATIVE`.
+
+CONNECTION:
+this is the dependency-free, reusable successor to the earlier
+Liouville residual calibration entry. It narrows the future search target:
+single-shift outliers are not enough; the next credible lead needs a
+pre-registered factorization-family law or a held-out expansion in `H`
+and `N`.
+
+## 2026-06-16 · NEW-OBJECT / CALIBRATION — Liouville residual atlas
+
+Source: `logs/2026-06-16-frontierlab-liouville-atlas.md`; audit script
+`scripts/frontierlab-liouville-atlas.mjs`; artifacts in
+`logs/frontierlab-artifacts/`.
+
+New object:
+`lambda(n)=(-1)^Omega(n)` and its polynomial analogue
+`lambda(f)=(-1)^Omega(f)` over `F_q[t]` are now first-class lab objects.
+Integer formulas can call `lambda(n)` or `liouville(n)`. The function-field
+kernel exposes `polynomialLiouville`, `liouvilleTwoPoint`, and random
+completely multiplicative polynomial controls.
+
+First integer values for `n=1..16`:
+`1,-1,-1,1,-1,1,-1,-1,1,1,-1,-1,-1,1,1,1`.
+
+Motivation:
+search the fixed-shift Chowla residual field
+`C_h(N)=sum_{n<=N} lambda(n)lambda(n+h)` for a rigid shift-space locus
+after null comparison and two-universe calibration.
+
+Run result:
+at `N=2,000,000`, `h<=32`, `F_2[t]` degree `20`, and `F_3[t]` degree
+`13`, the integer Liouville field is not promoted. Integer final energy is
+`0.702596`, while the combined integer null energy range is
+`0.762999..1.460655`; the real-vs-null z-score is `-1.599384`,
+persistence is `0.663134`, and cross-world coherence is `0.000896`.
+
+Function-field calibration:
+`F_2[t]` degree `20` has energy `2.175326` against random multiplicative
+control range `1.459062..1.685726`; `F_3[t]` degree `13` has energy
+`2.016338` against range `0.847596..1.252154`. These are structured
+finite-degree polynomial effects, not coherent integer residual laws:
+integer-minus-`F_2[t]` cosine is `0.107869`, and integer-minus-`F_3[t]`
+cosine is `-0.106076`.
+
+Disguise check:
+this is not prime-counting, `psi(x)-x`, Mertens, a cumulative-gap
+telescope, a residue-class Fourier shadow, or dyadic smoothing. It is the
+standard Liouville/Chowla parity object on all positive integers, so
+composite control as a primality signature is not applicable. No
+RH-equivalence or theorem is claimed; positive future findings must be
+reported as Chowla-adjacent conjectural evidence unless proved separately.
+
+STATUS: `CALIBRATION / NOT-PROMOTED`.
+
+CONNECTION:
+this implements the COUNCIL two-universes recommendation on the
+Chowla/multiplicative-randomness target. It is also a corrective to the
+gap-line graveyard entries above: the measurement starts from a centered,
+non-telescoping residual with matched random multiplicative and
+function-field controls before any line or phase boundary is scored.
+
 ## 2026-06-15 · PLAYGROUND / GRAVEYARD — deep-admissible PIT gap null
 
 Source: `logs/2026-06-13-playground-critical-line.md`; audit script
@@ -4950,3 +5320,481 @@ statistics must first subtract the LO-S/residue-transition layer or combine
 gap order with a genuinely different arithmetic feature; otherwise Cramer and
 shuffle may be beaten while bar 5 still recognizes the known adjacent-gap
 anti-persistence funnel.
+
+## 2026-07-11 · CANDIDATE-CONJECTURE — adjacent-block prime anticorrelation
+
+Define `A(x,H)=psi(x+H)-psi(x)-H` and
+`ABAC(X,H)=-(XH)^(-1) integral_X^(2X) A(x,H)A(x+H,H) dx`. The candidate is
+`ABAC(X,H) -> log(2)` uniformly for `X^epsilon <= H <= X^(1-epsilon)`.
+Unlike a raw dyadic variance difference, splitting the same `2H` interval
+gives the exact polarization identity
+`(A^2+B^2-(A+B)^2)/(2H)=-AB/H`; the two blocks are disjoint, so the
+von-Mangoldt diagonal vanishes pointwise.
+
+Expanding with `a(n)=Lambda(n)-1` gives an exact negative tent-weighted sum of
+distinct-shift correlations. After subtracting the Hardy--Littlewood pair
+singular series, the entire conjecture reduces to one uniform statement:
+the tent-weighted average of the aligned prime-pair remainders is `o(1)`.
+Montgomery's constant-term singular-series calculation supplies the `log(2)`
+main term. This additive statement is stronger than the ordinary relative
+variance asymptotic; the latter alone cannot resolve a constant dyadic
+difference.
+
+On the spectral side the exact kernel is
+`K_H(alpha)=-(1/H)|sum_{j<=H}e(j alpha)|^2 cos(2 pi H alpha)`. It changes sign
+and has exactly zero Lebesgue mean, so a flat white-noise spectrum contributes
+zero while the prime prediction is `log(2)`. This is the current invariant
+interpretation; its relationship to known polarized Selberg integrals still
+requires an expert literature audit.
+
+The exact identities and finite audit are implemented in
+`src/core/primeVariance.js`, `tests/prime-variance.test.js`, and
+`scripts/dpvr-audit.mjs`. At `X=1.6e6`, integer-start values were close at
+`H=36,117,303` and noisy at `H=1265,5278`; this is diagnostic only. Full
+derivation, proof obligation, citations, and novelty caveat are in
+`logs/2026-07-11-adjacent-block-prime-anticorrelation.md`. Status is
+`CANDIDATE-CONJECTURE / EXACT-REDUCTION / NOVELTY-UNRESOLVED`; no RH
+consequence is claimed.
+
+Feasibility verdict, same day: `PARKED / NO-GO AS PRIMARY BREAKTHROUGH BET`.
+Writing the normalized tent remainder as
+`T(X,H)=sum_{h<2H} tau_H(h) E_X(h)`, ABAC needs `T=o(X)`. The 2024/2026
+Matomaki--Radziwill--Shao--Tao--Teravainen almost-all-shift Hardy--Littlewood
+machinery controls correlation errors at total scale `o(HX)`, missing the ABAC
+secondary term by a full factor `H`. Its quantitative `U^2` input for `Lambda`
+gives polylogarithmic savings, while a generalized von Neumann treatment of
+the `X H^2` three-variable form would require uniformity `o(1/H)` for
+polynomial `H`. Type I/local terms recover the singular-series main; Type II
+is the obstruction. Absolute values, phase-by-phase estimates, and
+Cauchy--Schwarz respectively lose the zero-mean kernel, an `H` factor, or
+return to the original positive variance problem. Full audit:
+`logs/2026-07-11-abac-feasibility-verdict.md`. Reopen only upon a direct signed
+Type II bound `T << X/log^A X` for actual `Lambda` without RH/PCC/HL.
+
+## 2026-07-11 · PARALLEL-TOURNAMENT — invariant search and structural narrowing
+
+Three independent agent lanes (frontier audit, exact-kernel construction,
+and solvable-model transport) were cross-examined. No exact RH-leading
+invariant survived. Full report:
+`logs/2026-07-11-invariant-agent-tournament.md`.
+
+Structural result: every translation-invariant quadratic prime-block
+statistic has lag kernel `K_fg(h)=sum_u f(u)g(u+h)`, with
+`K_fg(0)=<f,g>` and `sum_h K_fg(h)=(sum f)(sum g)`. Cancelling both the
+diagonal and constant background forces the main to the lower-order
+singular-series scale while retaining normalized kernel mass `asymp H`.
+This recreates ABAC's missing-factor-`H` requirement. Stop searching the
+quadratic block/covariance class.
+
+Sieve-flow innovations are exact martingale differences over complete CRT
+periods, but the candidate fails as a terminal route: finite-`X` density near
+`y=X^(1/u)` is Buchstab `omega(u)/log y`, not Mertens
+`exp(-gamma)/log y`, and at `y=sqrt(2X)` the innovation energy is prime
+short-interval variance in another basis. Keep only a capped
+Buchstab-corrected calibration.
+
+The sole surviving field-level mechanism is nonlinear large-value incidence
+for Dirichlet polynomials. The tightly gated candidate restricts the
+Guth--Maynard incidence functional to balanced prime-detecting
+Vaughan/Heath--Brown coefficient classes and asks for a fixed-power deficit in
+the critical rationally concentrated `S3` branch. Pass only if the structured
+deficit occurs in a zero-density-limiting parameter range and the zero
+detector preserves that structure. Kill if balanced coefficients saturate the
+generic `S3` example or yield only logarithmic savings. This can improve
+zero-density/short-interval exponents but is not an RH implication; a separate
+zero-exclusion principle remains necessary.
+
+## 2026-07-12 · KILL-TEST — structured large-value incidence
+
+Exact reconstruction killed the provisional tournament survivor as a primary
+invariant. Full audit:
+`logs/2026-07-12-structured-incidence-kill-test.md`.
+
+Corrections: the `30/13` bottleneck is at `sigma=7/10`, base detector length
+`N=T^(5/13)`, squared-polynomial length `P=T^(10/13)`, local height
+`T1=T^(12/13)=P^(6/5)`, threshold `V=P^(7/10)`, and
+`|W|~T1^(2/3)`. It is not the headline `V=P^(3/4)` regime. The detector
+coefficients are a balanced convolution of truncated-Mobius/divisor-sum
+weights, not prime-supported Heath--Brown coefficients.
+
+More decisively, Guth--Maynard pass from the coefficient vector to the top
+singular value of a universal matrix `M_W`; their later cubic trace and
+`S1+S2+S3` decomposition depend on `W`, not the coefficients. A structured
+gain therefore needs a new directional top-singular-subspace theorem for the
+specific detector, not a better coefficient-sensitive bound on their existing
+`S3`. At the true parameters both dominant terms
+`P^(18/5)V^(-4)` and `T1 P^(12/5)V^(-4)` equal `P^(4/5)=T1^(2/3)`, so both
+must improve. The saving must also extend below `sigma=7/10`, or Ingham's
+left-hand branch leaves the uniform `30/13` constant unchanged.
+
+Verdict: `KILLED AS PRIMARY / RETAINED AS ESTABLISHED FRONTIER`. There is no
+unconditional first lemma between current results and the required
+fixed-power directional deficit, and finite simulation cannot represent the
+`T^(1/100)` detector cutoff or critical rational concentration. Reopen only
+if an independent coefficient-sensitive spectral theorem appears.
+
+## 2026-07-12 · HARD KILL — flat prime-square completion of the Weil form
+
+Source: `logs/prime-square-completion/PREREGISTRATION.md`, finite problem
+exports and cone projections, `hard-death-certificate-N8.json`, and the full
+account in `logs/prime-square-completion/VERDICT.md`; implementation in
+`src/core/primeSquareCompletion.js` and the corresponding export, SDP, and Arb
+certificate scripts.
+
+Object:
+lift causal log-prime shifts to the divisor-exponent lattice.  The exact
+finite Euler product `D_a(sigma)` gives a pulled-back metric strain whose
+prime-power expansion is
+`sum (log p) p^(-k sigma) (T_(k log p)+T_(k log p)^*)`; at `sigma=1/2` the
+prime screw block is its negative after Brownian/Volterra congruence.  The
+frozen positivity conjecture allowed a cell-norm ray, prime-edge Grams, and one
+PSD block on `(Delta_p,Delta_q,Delta_p Delta_q)` for each closed divisor
+square.
+
+Result:
+the algebraic normalization survives, but every discovery and holdout cone
+projection fails with relative residual `0.77..0.84`.  A rational `7 x 7`
+separator at `N=8`, re-evaluated from the exact formulas with 256-bit Arb
+balls and an explicit Lerch tail, has boundary/edge margins above `0.10`, a
+positive-definite `(2,3)` adjoint block, and target pairing
+`-0.1953768654...`.  This proves exact nonmembership in the frozen cone.  An
+independent audit found no target-sign, cell-basis, or SDP cross-factor error.
+
+Scope:
+the hard counterexample kills the flat three-generator prime-square mechanism,
+not every two-prime-local algebra or the divisor-cube lift.  Post-hoc identity
+cross-terms, a global edge/plaquette block, and repeated-axis differences
+through degree three all retain macroscopic residuals, so routine dictionary
+enlargement is not a plausible breakthrough path.  The metric-strain identity
+remains an exact coordinate, not a positivity theorem.  The Arb certificate
+is rigorous but has not been replayed in Lean.
+
+STATUS: `FROZEN WIDTH-TWO GRAMMAR HARD-KILLED / EXACT STRAIN COORDINATE RETAINED
+/ BROADER DIVISOR-CUBE PROGRAM UNRESOLVED`.
+
+## 2026-07-12 · PROGRAM KILL-TEST — Arithmetic Hodge--Transport survives narrowly
+
+Source: frozen criteria, hostile audit, exact controls, and atlas in
+`logs/arithmetic-hodge-transport/`; implementation
+`src/core/arithmeticHodgeControls.js` and
+`scripts/arithmetic-hodge-control-audit.mjs`.
+
+Question:
+is the broad search for a global-field cohomology/dynamics with prime orbits,
+trace formula, duality, and independently derived Hodge positivity worth an
+atlas, or is it universally impossible, circular, unfalsifiable, or presently
+too remote?
+
+Exact control theorem:
+for distinct positive integers `u,v`, set `q=2^(u+v)`, `r=2^u`, `s=2^v` and
+
+`Z_(u,v)(T)=((1-rT)(1-sT))/((1-T)(1-qT))`.
+
+This reciprocal system has nonnegative trace counts
+`N_n=q^n+1-r^n-s^n`, nonnegative integer primitive closed-orbit counts in
+every degree, an exact Euler product, a functional equation, and weight-one
+algebraic duality.  Its spectral weights are `u/(u+v)` and `v/(u+v)`, off
+`1/2`.  The duality pairing `J=[[0,1],[1,0]]` is indefinite.  Thus orbit data,
+Euler product, trace, reciprocity, and algebraic duality do not force RH;
+positive polarization/effectivity is a genuine falsifiable discriminator.
+Four cells were checked with exact `BigInt` arithmetic through degree 100,
+while a disjoint-subalphabet injection on primitive necklaces proves orbit
+nonnegativity for all degrees.
+
+Gate result:
+no candidate-neutral hard kill fired.  Deninger's theorem rules out naive real
+Weil cohomology but not the full admissible derived/semilinear/topological/
+noncommutative design space.  Independently defined carriers already provide
+prime orbit, functorial cover, Riemann--Roch, special-value, local Frobenius,
+and archimedean positivity components.  Non-RH intermediate theorem classes
+exist, but no framework supplies the global finite-place-sensitive positive
+polarization and uniform closure.
+
+STATUS: `SURVIVE, NARROW / OBSTRUCTION ATLAS BUILT / NO RH CLAIM`.
+
+CONNECTION:
+the exact `N=8` prime-square separator and the positive-orbit control point in
+the same direction.  Flat bounded local positivity is insufficient, while
+even globally consistent orbit/trace/duality data can be RH-false.  A future
+survivor must add a restriction-compatible geometric effectivity or
+polarization theorem, not more atoms, zeros, or scalar invariants.
+
+## 2026-07-12 · ROSATI CAMPAIGN — P2 reconstructed, first P3 target isolated
+
+Source: `logs/arithmetic-hodge-transport/rosati-discriminator/`; exact modules
+`src/core/rosatiDiscriminator.js` and
+`src/core/rosatiTransportObstructions.js`; generated audits and tests under the
+matching script/test names.
+
+Finite-field discriminator:
+for `F` with polynomial `x^2-a*x+q`, `V=aI-F`, the symmetric solutions of
+`F^T J=J V` are generated by `J=[[2,a],[a,2q]]`, and
+`det(J)=4q-a^2`.  For the frozen RH-false controls with roots `r,s`, this is
+`-(r-s)^2<0`.  Thus Frobenius--Verschiebung duality survives; independently
+geometric Rosati positivity is exactly what fails.  Choosing a positive
+solution after solving the adjoint equation would merely restate the Hasse
+sign.
+
+Arithmetic transport:
+the adele-class convolution involution
+`f^sharp(g)=|g|^(-1) conjugate(f(g^(-1)))` gives exactly
+`Phi_t^sharp=e^t Phi_(-t)` and `Theta^sharp=1-Theta`, reconstructing the P2
+arithmetic Rosati datum from existing cyclic/trace mathematics.  Two elementary
+but architectural obstruction theorems rule out the naive carrier: the coarse
+arithmetic Jacobian is the orbit quotient by scaling and hence has trivial
+induced flow, while every homomorphism from its idempotent Abel--Jacobi prime
+stratum to an abelian group is zero.  The weight-one object must retain the
+action groupoid through relative/transverse or cyclic cohomology.
+
+First P3 target:
+`S={infinity,2}`, prime cutoff `c=3`, localization half-width
+`a=(log 3)/2`.  Cutoff-free Arb interval `LDL^T` certificates prove all finite
+Galerkin blocks positive through `N=200` (dimension `401`).  Diagnostic
+pole-neutral/zero-moment minima remain around `9.5e-4` through `N=400`, but
+finite PSD is not an infinite theorem.  The pole-free continuum form is a
+positive nonlocal jump energy plus an explicit potential; the potential is
+strongly negative (`~ -3.08` at the center and `~ -3.53` after the prime-2
+jump), killing the pointwise shortcut.  The exact missing lemma is a constrained
+nonlocal Poincare inequality, equivalently a uniform frequency-tail
+Schur/resolvent bound exploiting Loewner/Cauchy structure.
+
+STATUS: `ARITHMETIC ROSATI LEAD / P2 RECONSTRUCTED / P3 FINITE KILL TEST
+SURVIVES / NO FIELD-LEVEL OR RH CLAIM`.
+
+## 2026-07-12 · P3 FIELD-LEVEL ATTACK — no landing; comparison gate reset
+
+Source: `logs/arithmetic-hodge-transport/rosati-discriminator/` documents
+`P3_ATTACK_AND_RESET.md` and `P3_REBOOT_PREREGISTRATION.md`, with source-level
+audits of Suzuki, Connes--Consani, Connes--Consani--Moscovici, and the
+CvS/CCM/Groskin finite dictionary.
+
+The fixed localization `a=(log 3)/2` is a legitimate non-RH intermediate
+problem: Yoshida/Suzuki require positivity or nondegeneracy for every width in
+their RH equivalences.  The attempted theorem nevertheless fails to promote
+for a more basic reason.  Three operators had been conflated:
+
+`A_a = localized Weil`,
+
+`A_tilde_a=A_a-W_0,2 = pole-free Weil`,
+
+`E_Sonin=A_a-T_Sonin = preregistered comparison remainder`.
+
+The Arb matrices certify finite compressions of `A_a`; the nonlocal
+Dirichlet form represents `A_tilde_a`.  No finite compression or kernel of
+`E_Sonin` was constructed.  The Sonin trace is an infinite-dimensional
+compressed-scaling trace and is not the rank-two pole term.  Thus the prior
+claim that the pole-free Poincare inequality was “equivalent” to Sonin
+domination lacked a comparison theorem and triggered the atlas's own stop
+rule against merging frameworks by analogy.
+
+The reported “zero moment” also has a narrower exact meaning:
+`M_0(v)=v_0+sqrt(2) sum_(k>=1)v_k` in Groskin's finite dictionary.  Its
+identification with the semilocal Mellin-zero constraint must be transported,
+not assumed.
+
+The analytic reconnaissance remains useful in a separate Lane W: finite
+localized-Weil blocks are rigorously positive through dimension `401`, the
+finite constrained margin is about `9.65e-4` at band `400`, the full minimum
+is near `5.53e-8`, and the pointwise-potential route is dead.  No uniform
+tail/Schur proof was obtained, so no localized Weil theorem was proved.
+
+Self-improvement rules now enforced:
+
+1. semantic kill before numerical or spectral kill;
+2. no “equivalently” without a named comparison theorem;
+3. typed matrix artifacts declaring operator, domain, basis, constraints, and
+   promotion scope;
+4. separate labels for localized Weil positivity and Sonin domination;
+5. promotion only along a complete native-carrier-to-consequence proof chain.
+
+P3-C0a was recovered as an exact operator subtheorem.  In common unitary
+Mellin coordinates, the one-prime Sonin space is the image of the classical
+space under the bounded invertible multiplier
+
+`d_2(s)=1-2^(-1/2-is)`.
+
+If `P` is the classical Sonin projection, `D=M_(d_2)`, and
+`G=P D^*D P`, then the native semilocal orthogonal projection is
+
+`P_S=D P G^(-1) P D^*`.
+
+Consequently its compressed scaling trace is a Hilbert--Schmidt square and is
+finite and positive whenever the published archimedean trace is finite.  With
+`m=1-1/sqrt(2)` and `M=1+1/sqrt(2)`, it lies between
+`(m/M)^2` and `(M/m)^2` times the archimedean trace.  This uses no zeros or RH.
+
+The corrected first unproved P3 arrow is P3-C0b: derive this trace in the same
+explicit basis as the Weil form and assemble the exact same-coordinate
+remainder `E_S=Q_S-T_S`, with archimedean calibration.  Only after P3-C0b may
+a sign attack begin.
+
+STATUS: `FIELD-LEVEL ATTACK DOES NOT LAND / P2 RETAINED / P3 RESET AT EXACT
+COMPARISON GATE / NO POSITIVITY OR RH CLAIM`.
+
+## 2026-07-12 · ATLAS FIVE-FRONTIER KILL CAMPAIGN — zero field-level survivors
+
+Source: frozen targets, evidence, control audits, and verdicts in
+`logs/atlas-kill-campaigns/README.md` and its five subdirectories.
+
+The five highest-ranked theorem-search routes were run against preregistered
+semantic, novelty, hostile-control, proof-obligation, and downstream-
+consequence gates.  None survives as a field-level theorem or as a currently
+justified privileged breakthrough lead.
+
+1. **P3-C0b Sonin--Weil.**  An exact same-coordinate resolvent reduction was
+   derived, but the compressed resolvent density remains unevaluated, so no
+   independent `T_N` or `E_N` exists.  More decisively, Groskin's `M_0` row is
+   endpoint evaluation; the true Mellin-zero row is `v_0=0`.  The prior
+   stronger constrained finite margin therefore tested the wrong core.
+2. **Finite-field discriminator.**  The RH-false controls have positive
+   integral closed-orbit data, commute with every base extension, and even
+   match the genus-one Riemann--Roch coefficient profile.  Only an
+   independently geometric positive Rosati form rejects them, via
+   `det J=-(r-s)^2<0`; the sufficient Jacobian/Rosati package is classical.
+3. **Frobenius-conditioned tuples.**  Across 36 frozen holdout cells through
+   8M, RMS `z=0.5847` is below its conditional 99% envelope `1.2753` and is
+   absorbed by every local/stochastic control.  Algebraically the statistic is
+   a zero-sum residue-class projection of Hardy--Littlewood in progressions,
+   not an independent Chebotarev/additive bridge.
+4. **Generic non-CM family residual.**  Complete Legendre moments reduce to
+   character orthogonality or Birch/Kaplan--Petrow Hecke-trace terms.  After
+   removing CM parameters and special reductions, the incomplete pilot has
+   `z=0.724878` at 20,000 versus bootstrap `|z|` up to `2.440632`, while the
+   required exact 1M--8M integer engine and frozen nonzero baseline do not
+   exist.
+5. **Exact Maynard witness.**  The exact rational `k=54`, dimension-21 Krylov
+   quotient is `3.986547432134...`, below 4 and the `4.00238` signature-basis
+   record.  The proper published Krylov calibration is `4.00223` at dimension
+   25, which the repo did not spend further compute to reproduce.  Increasing
+   the `k=54` margin cannot improve the recorded numerical gap consequence
+   because `H(54)=270` is exact.  A consequence-changing reopen is an exact
+   `M_53>4`, which would lower the Elliott--Halberstam two-gap bound from 270
+   to 264.
+
+Retained infrastructure is not a theorem survivor: keep the P3 coordinate
+identity, the Rosati hostile control, and the exact Maynard rational-
+certificate engine.  Atlas edges for the fixed-cover tuple and complete
+Legendre residual bridges are now marked refuted.  Revival requires satisfying
+the written reopen condition, not retuning the killed experiment.
+
+STATUS: `0/5 FIELD-LEVEL SURVIVORS / THREE CALIBRATION INSTRUMENTS RETAINED /
+SEARCH SPACE NARROWED`.
+
+## 2026-07-12 · ATLAS REDESIGN — three kill-resistant theorem programs
+
+Source: source audit, exact targets, mechanism ladders, and hostile gates in
+`logs/atlas-next-frontiers/README.md`; live nodes and typed edges in
+`src/data/primeTheoryMap.js`.
+
+Postmortem:
+the five-campaign portfolio was too often observable-first, fixed-label,
+one-sided, and consequence-insensitive.  It asked residuals to reveal missing
+mechanisms, confused a basis failure with a target failure, and optimized
+`k=54` after the numerical prime-gap consequence had already saturated.
+
+Three replacements are now registered.
+
+1. **Free-boundary Maynard 49.**  Target an exact rational
+   `M_(49,epsilon)>4` witness in the enlarged simplex using boundary-adapted
+   piecewise polynomials.  The existing theorem chain and an admissible
+   diameter-240 tuple would give the unconditional bound
+   `liminf(p_(n+1)-p_n)<=240`.  Progress is a certified two-sided interval for
+   the variational constant after first reproducing `M_(50,1/25)>4.0043`.
+2. **Signed Type-II packet dispersion.**  Sum the full tent-weighted shift
+   packet before Cauchy--Schwarz, cancel its low-conductor modes against the
+   exact local model, and seek a Kuznetsov/spectral-large-sieve bound of
+   `X log^(-A)X` rather than `HX`.  The frozen theorem would prove ABAC and its
+   `log 2` constant on a polynomial `H` range.  Progress is removal of every
+   residual power of `H` in a genuine balanced Heath--Brown box.
+3. **Frobenius prime correspondence.**  For
+   `E_0:y^2+y=x^3-x`, draw `p->#E_0(F_p)` when the point count is prime and
+   target Jones's positive-constant asymptotic for reciprocal edges.  The shift
+   varies across the Hasse window and feeds Frobenius into a second
+   characteristic, so it is not the killed fixed-congruence bridge.  Progress
+   is the proved staircase from curve-family concentration to twists and then
+   a fixed-curve amplifier; raw cycle counts do not qualify.
+
+Portfolio order:
+run the finite-certificate Maynard program first, develop signed packet
+dispersion as the reusable analytic program, and treat the fixed-curve
+Frobenius graph as the geometric moonshot.  No success guarantee is claimed;
+the anti-kill property is that a surviving milestone is already a native prime
+theorem with a checked consequence.
+
+STATUS: `THREE THEOREM-FIRST FRONTIERS REGISTERED / CONSEQUENCE AND MECHANISM
+GATES EXPLICIT / NO BREAKTHROUGH CLAIM`.
+
+## 2026-07-12 · FIRST SURVIVAL ROUND — one live mechanism, no theorem yet
+
+Source: `logs/atlas-next-frontiers/FIRST_SURVIVAL_ROUND.md` and the three
+frontier evidence/verdict dossiers below it.
+
+The three redesigned theorem programs were run against their frozen algebra,
+hostile-control, scaling, parity, and consequence gates. No field-level theorem
+has yet been proved. The run leaves **one concrete mechanism alive in parked
+form**.
+
+1. **Free-boundary Maynard 49 — PARK / mechanism survives.** An exact rational
+   `k=2` boundary cell improves the variational quotient from `<1.641` to
+   `138736208/80929935 > 1.714`. The general inactive-chamber correction keeps
+   every numerator marginal and removes denominator mass. The naive
+   cell-by-polynomial tensor is killed at 126,300 variables and 118.85 GiB per
+   dense matrix; the orbit-compressed central correction survives. Promotion
+   waits on an independent exact reconstruction of the published
+   `M_(50,1/25)>4.0043` calibration.
+2. **Signed Type-II packet — KILL mechanism / retain target.** The zero-mean
+   periodic comparator does not algebraically cancel the finite prime mean,
+   and the theorem-relevant locally subtracted residual has negative fitted
+   H-exponent gains on all three frozen paths. Every sensitivity fit with
+   `z>=11` is negative. ABAC and the canonical packet theorem are not refuted,
+   but local subtraction plus sum-before-norm is no longer a privileged route.
+3. **Frobenius prime correspondence — PARK target / mechanism fails.** The
+   fixed-curve amicable-pair conjecture is canonical prior Jones/Silverman--
+   Stange theory, not a new Atlas object. Exact constant, pair, CM, and
+   zero-constant controls pass. The proposed twist amplifier supplies no
+   prime-versus-semiprime separator, and its 34-twist panel contains one unique
+   event with `variance/mean^2=2.4`, so neither parity nor de-averaging passes.
+
+Allocation rule: spend the next theorem-search budget only on the exact
+`k=50` signature calibration and compressed chamber correction. Do not enlarge
+the Type-II or Frobenius scans until their written analytic reopen lemmas exist.
+
+STATUS: `0/3 FIELD-LEVEL THEOREMS / 1/3 LIVE MECHANISMS / MAYNARD-49 PARKED /
+TYPE-II MECHANISM KILLED / FROBENIUS TARGET PARKED`.
+
+## 2026-07-12 · MAYNARD-49 BREAKTHROUGH GATE — mechanism killed, target open
+
+Source: `logs/atlas-next-frontiers/free-boundary-maynard-49/BREAKTHROUGH_GATE.md`,
+with full numeric, exact-formula, source, and conditioning audits beside it.
+
+The last parked mechanism from the redesigned three-frontier portfolio was run
+at full degree and does not land a theorem.
+
+- The Section 7 enlarged-signature formulas, 2,526-dimensional degree-27
+  basis, and orbit-compressed chamber integral are independently validated.
+- Double precision cannot reproduce the known `k=50` positive control because
+  the scaled Gram problem has condition estimate around `10^17`. Apparent
+  values above four occur only after the eigen/direct quotient identity breaks
+  and are rejected as roundoff artifacts.
+- The last self-consistent `k=49, epsilon=1/24, d=27` direct value is
+  `3.9760025490`. Chamber-specific reoptimization with 20,000 training and
+  40,000 independent holdout points gives `3.9760038765`, still
+  `0.0239961235` below four.
+- The holdout witness puts only `3.3521e-5` of its denominator mass in the
+  inactive chamber. The fixed-witness mass needed to lift the historical
+  `3.98855708` result above four is `0.00286073`.
+- The reduced-inner-support idea was already proposed during Polymath8b, and
+  polynomial `L^2` density shows that it is a finite-basis convergence
+  accelerator rather than a larger limiting variational space.
+- The pure-JavaScript exact chamber contraction exceeded a frozen 20-minute
+  ceiling even at degree 7; it is retained only as a sparse final-certificate
+  checker.
+
+This is not a proof that `M_(49,epsilon)<=4`. The exact target remains open and
+would still imply `H_1<=240`. Reopening requires a better-conditioned or
+multiprecision proposal that first reproduces `M_(50,1/25)>4.0043`, followed by
+an explicit rational `k=49` certificate with independently checked
+`N-4D>0`.
+
+STATUS: `NO BREAKTHROUGH / 0 LIVE MECHANISMS FROM THE THREE-FRONTIER PORTFOLIO /
+M49 TARGET OPEN / INACTIVE-CHAMBER ROUTE KILLED AS PRIVILEGED LEAD`.

@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-06-17T01:57:33.101Z",
+  "cycle": 5,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-005-exact-admissibility-tensor",
+    "title": "Exact admissibility-conditioned pair/triple residual tensor",
+    "class": "forced mutation from fallback-heavy local rates to deterministic obstruction subtraction and allowed pair/triple rates",
+    "councilSuccessTarget": "S1/S2 candidate only if exact admissibility residual tensors survive local controls with a matched signed/scale-stable law across Z and F_q[t]",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-005-exact-admissibility-tensor-2000000.json",
+      "logs/two-universes-protocol/cycle-005-exact-admissibility-tensor-2000000.md",
+      "logs/two-universes-protocol/cycle-005-exact-admissibility-tensor-2000000.svg",
+      "scripts/exact-admissibility-tensor-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states Z_S(v)=0 for locally obstructed subsets and otherwise centers 1_{all h in S are prime-like} by train allowed-rate p_S, scoring RMS holdout residual means for |S|=1,2,3.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: local obstruction is divisibility of f+a by all irreducible moduli of degree <=2, with separate train/holdout degrees and q=2,3,5 checks.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side uses train/holdout splits at N=1000000, 2000000 with endpoint holdout 70431 vertices.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "Z endpoint order2/order3 exceed local random and composite controls, but F_q[t] does not show a matched excess: F_2 order2 above monic=false reducible=false, order3 above monic=false reducible=false; F_3 order2 above monic=false reducible=false, order3 above monic=false reducible=false; F_5 order2 above monic=false reducible=false, order3 above monic=false reducible=false; max low-edge fraction=0.150000.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The statistic has fixed order-1/2/3 subset tensors, deterministic obstruction subtraction, and a single Beta(1/2,1/2) allowed-rate prior.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Only a two-point integer scale check is present and field levels mismatch: endpoint Z order2=0.036715, F_2=0.011508, F_3=0.027872, F_5=0.067518, ratio=5.87, integer 2M/1M ratio=0.910.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No novelty audit has ruled out Hardy-Littlewood tuple constants, Bateman-Horn finite-field local factors, or finite-sample decay of admissible-tuple residuals.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the exact-admissibility audit script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The finite-field side is absorbed by eligible random/reducible controls or moves in the opposite direction, so there is no theorem-shaped two-universe residual law yet.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready evidence pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "exactAdmissibilityEvidence": {
+    "estimator": {
+      "betaPriorAlpha": 0.5,
+      "betaPriorBeta": 0.5,
+      "minTrainEdges": 3,
+      "maxLowEdgeFraction": 0.15,
+      "fieldRatio": 5.86700458245593,
+      "integerDecay": 0.909619290049896
+    },
+    "integerScales": [
+      {
+        "N": 1000000,
+        "labels": 78498,
+        "trainVertices": 41527,
+        "holdoutVertices": 36953,
+        "order1Rms": 0.060790484952471004,
+        "order2Rms": 0.04036335971531549,
+        "order3Rms": 0.021320837645029653,
+        "randomEligibleOrder2Range": [
+          0.003657776335275128,
+          0.005321146708999111
+        ],
+        "compositeOrder2Range": [
+          0.022231671829154535,
+          0.024568644066238824
+        ],
+        "randomEligibleOrder3Range": [
+          0.0026850986878192012,
+          0.003939312700646612
+        ],
+        "compositeOrder3Range": [
+          0.01201231772793029,
+          0.013662550414511318
+        ]
+      },
+      {
+        "N": 2000000,
+        "labels": 148933,
+        "trainVertices": 78486,
+        "holdoutVertices": 70431,
+        "order1Rms": 0.05668694593048883,
+        "order2Rms": 0.036715290608273846,
+        "order3Rms": 0.019088254479461147,
+        "randomEligibleOrder2Range": [
+          0.002095303449987213,
+          0.004265040625358501
+        ],
+        "compositeOrder2Range": [
+          0.017729727508341363,
+          0.020441894141083692
+        ],
+        "randomEligibleOrder3Range": [
+          0.002110533245156313,
+          0.003058010050977916
+        ],
+        "compositeOrder3Range": [
+          0.009454088565558573,
+          0.011663482990595638
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "q": 2,
+        "trainDegree": 21,
+        "holdoutDegree": 22,
+        "trainVertices": 99858,
+        "holdoutVertices": 190557,
+        "order1Rms": 0.018670962452782863,
+        "order2Rms": 0.011508016505998525,
+        "order3Rms": 0.006117983810016022,
+        "randomMonicOrder2Range": [
+          0.012427453297168104,
+          0.014023955890072833
+        ],
+        "randomReducibleOrder2Range": [
+          0.01226812853970508,
+          0.014359603051553715
+        ],
+        "randomMonicOrder3Range": [
+          0.0059180434468804706,
+          0.008024621195830209
+        ],
+        "randomReducibleOrder3Range": [
+          0.006692010326739188,
+          0.008803849488268477
+        ],
+        "order3LowEdgeFraction": 0.15
+      },
+      {
+        "q": 3,
+        "trainDegree": 12,
+        "holdoutDegree": 13,
+        "trainVertices": 44220,
+        "holdoutVertices": 122640,
+        "order1Rms": 0.04371766845225543,
+        "order2Rms": 0.027871997729942873,
+        "order3Rms": 0.014388135946248291,
+        "randomMonicOrder2Range": [
+          0.027390740809683997,
+          0.030471932375274038
+        ],
+        "randomReducibleOrder2Range": [
+          0.023846369450872033,
+          0.028811646646785507
+        ],
+        "randomMonicOrder3Range": [
+          0.013281661679509395,
+          0.01663393073682235
+        ],
+        "randomReducibleOrder3Range": [
+          0.011765794777208124,
+          0.01586342416303777
+        ],
+        "order3LowEdgeFraction": 0
+      },
+      {
+        "q": 5,
+        "trainDegree": 7,
+        "holdoutDegree": 8,
+        "trainVertices": 11160,
+        "holdoutVertices": 48750,
+        "order1Rms": 0.09709767962437912,
+        "order2Rms": 0.06751758557567183,
+        "order3Rms": 0.03856997858988897,
+        "randomMonicOrder2Range": [
+          0.07768686860386002,
+          0.08253716269154653
+        ],
+        "randomReducibleOrder2Range": [
+          0.09716917333281443,
+          0.09716917333281443
+        ],
+        "randomMonicOrder3Range": [
+          0.04906534939102646,
+          0.05336164800069891
+        ],
+        "randomReducibleOrder3Range": [
+          0.07140768503221674,
+          0.07140768503221674
+        ],
+        "order3LowEdgeFraction": 0
+      }
+    ]
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Exact admissibility subtraction fixed the fallback artifact, but the surviving integer residual is not a matched two-universe law: finite-field tensors are absorbed by or below local eligible controls.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "Z endpoint order2/order3 exceed local random and composite controls, but F_q[t] does not show a matched excess: F_2 order2 above monic=false reducible=false, order3 above monic=false reducible=false; F_3 order2 above monic=false reducible=false, order3 above monic=false reducible=false; F_5 order2 above monic=false reducible=false, order3 above monic=false reducible=false; max low-edge fraction=0.150000.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Only a two-point integer scale check is present and field levels mismatch: endpoint Z order2=0.036715, F_2=0.011508, F_3=0.027872, F_5=0.067518, ratio=5.87, integer 2M/1M ratio=0.910.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No novelty audit has ruled out Hardy-Littlewood tuple constants, Bateman-Horn finite-field local factors, or finite-sample decay of admissible-tuple residuals.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The finite-field side is absorbed by eligible random/reducible controls or moves in the opposite direction, so there is no theorem-shaped two-universe residual law yet.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready evidence pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Endpoint Z order2=0.036715 and order3=0.019088 exceed integer controls; finite fields are F_2 order2=0.011508, F_3 order2=0.027872, F_5 order2=0.067518.",
+    "expectedNull": "After exact admissibility subtraction, a two-universe candidate should have matched residual direction or matched scale law across Z and F_q[t], not only an integer excess.",
+    "knownExplanation": "The integer residual may be finite-range Hardy-Littlewood tuple error or sampling geometry; finite-field eligible controls absorb the analogous tensor magnitude.",
+    "survivedControls": [
+      "Z order2 exceeds random eligible and composite controls",
+      "Z order3 exceeds random eligible and composite controls"
+    ],
+    "failedControls": [
+      "F_2: order2 above monic=false, reducible=false; order3 above monic=false, reducible=false",
+      "F_3: order2 above monic=false, reducible=false; order3 above monic=false, reducible=false",
+      "F_5: order2 above monic=false, reducible=false; order3 above monic=false, reducible=false"
+    ],
+    "whatFailed": "The exact-admissibility tensor family has no matched raw-magnitude law across the two universes.",
+    "suspectedInvariant": "If there is still a lead here, it must be in signed residual profile or asymptotic decay, not raw residual RMS.",
+    "nextMutation": "Replace raw tensor magnitude matching with signed residual-profile and scale-decay matching"
+  },
+  "nextMutation": {
+    "title": "Replace raw tensor magnitude matching with signed residual-profile and scale-decay matching",
+    "reason": "Exact admissibility subtraction removes the cycle-004 fallback problem, but the remaining integer excess is not shared by F_q[t] controls at q=2,3,5.",
+    "preregisteredNextMove": [
+      "Keep deterministic admissibility subtraction, but stop comparing only raw RMS magnitudes.",
+      "Extract the signed residual vector over shift pairs/triples and compare profile correlations across scale and field, not just size.",
+      "Estimate log-slope decay across N=1M,2M,4M,8M and degree ladders for q=2,3,5.",
+      "Require the same signed profile or same decay exponent to beat eligible random/composite/reducible controls before any novelty memo.",
+      "If profile/decay matching fails, reject this tensor family and mutate away from additive-shift tensors."
+    ]
+  }
+}

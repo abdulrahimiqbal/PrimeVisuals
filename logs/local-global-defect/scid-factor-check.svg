@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="90" y="40" fill="#f8fafc" font-size="21" font-weight="700">SCID factor check</text>
+<text x="90" y="66" fill="#94a3b8" font-size="13">debiased observed defect versus truncated tuple Euler-product prediction (log-log)</text>
+<rect x="90" y="90" width="820" height="580" fill="#0b1627" stroke="#334155"/>
+<line x1="90" y1="670" x2="910" y2="-150" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 7"/>
+<circle cx="642.4293835012602" cy="90.09960608712754" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=250000 A p<=5</title></circle>
+<circle cx="642.4293835012602" cy="105.89389260544749" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=250000 B p<=5</title></circle>
+<circle cx="642.4293835012602" cy="106.18609708803433" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=250000 C p<=5</title></circle>
+<circle cx="625.7043680705846" cy="135.36731688181078" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 A p<=5</title></circle>
+<circle cx="625.7043680705846" cy="131.65846816728833" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 B p<=5</title></circle>
+<circle cx="625.7043680705846" cy="130.74081578263156" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 C p<=5</title></circle>
+<circle cx="529.2409989977723" cy="243.403879190446" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 A p<=7</title></circle>
+<circle cx="529.2409989977723" cy="233.53963669614052" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 B p<=7</title></circle>
+<circle cx="529.2409989977723" cy="230.40773322416544" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 C p<=7</title></circle>
+<circle cx="478.4615456771495" cy="287.1159963344689" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 A p<=11</title></circle>
+<circle cx="478.4615456771495" cy="308.0665976576433" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 B p<=11</title></circle>
+<circle cx="478.4615456771495" cy="288.16746810918914" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=500000 C p<=11</title></circle>
+<circle cx="610.4271250352637" cy="165.87761791177024" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 A p<=5</title></circle>
+<circle cx="610.4271250352637" cy="162.44898894250514" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 B p<=5</title></circle>
+<circle cx="610.4271250352637" cy="160.43807349214921" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 C p<=5</title></circle>
+<circle cx="512.2817341480454" cy="306.74288574051127" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 A p<=7</title></circle>
+<circle cx="512.2817341480454" cy="268.0397126550828" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 B p<=7</title></circle>
+<circle cx="512.2817341480454" cy="255.37834118657304" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 C p<=7</title></circle>
+<circle cx="460.1787987558294" cy="388.9194170613396" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 A p<=11</title></circle>
+<circle cx="460.1787987558294" cy="354.0408892485021" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 B p<=11</title></circle>
+<circle cx="460.1787987558294" cy="290.20300776082195" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 C p<=11</title></circle>
+<circle cx="368.6858220127628" cy="591.6650455408328" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 A p<=17</title></circle>
+<circle cx="368.6858220127628" cy="505.70795427693383" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 B p<=17</title></circle>
+<circle cx="368.6858220127628" cy="406.8821616186287" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 C p<=17</title></circle>
+<circle cx="269.5610100111981" cy="599.1763119673673" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 B p<=29</title></circle>
+<circle cx="269.5610100111981" cy="525.5606182128208" r="4.5" fill="#f8fafc" opacity="0.8"><title>Z N=1000000 C p<=29</title></circle>
+<circle cx="806.9123905189377" cy="-37.253436592091134" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=18 A deg(P)<=1</title></circle>
+<circle cx="834.8931397037034" cy="-79.17631196736727" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=18 B deg(P)<=1</title></circle>
+<circle cx="808.6352683917271" cy="-32.143314409573236" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=18 C deg(P)<=1</title></circle>
+<circle cx="637.2094962058978" cy="130.57654201635046" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=18 B deg(P)<=2</title></circle>
+<circle cx="672.3578852005078" cy="94.94949489933163" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=18 C deg(P)<=2</title></circle>
+<circle cx="780.9979522676539" cy="-17.489942191792807" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 A deg(P)<=1</title></circle>
+<circle cx="809.550707502645" cy="-56.3615846528221" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 B deg(P)<=1</title></circle>
+<circle cx="782.3029302378216" cy="-17.095756517756513" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 C deg(P)<=1</title></circle>
+<circle cx="607.1267292107104" cy="164.11511590322198" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 A deg(P)<=2</title></circle>
+<circle cx="607.1267292107104" cy="192.2093950357912" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 B deg(P)<=2</title></circle>
+<circle cx="642.6451561615137" cy="119.83039289254998" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 C deg(P)<=2</title></circle>
+<circle cx="444.33366038026975" cy="241.98450368132967" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 A deg(P)<=3</title></circle>
+<circle cx="444.33366038026975" cy="529.5128411583377" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 B deg(P)<=3</title></circle>
+<circle cx="444.3336603801117" cy="279.51285314880096" r="4.5" fill="#a78bfa" opacity="0.8"><title>F_2[t] degree=20 C deg(P)<=3</title></circle>
+<circle cx="640.6039106927014" cy="88.65642566858457" r="4.5" fill="#60a5fa" opacity="0.8"><title>F_3[t] degree=11 A deg(P)<=1</title></circle>
+<circle cx="640.6039106927014" cy="97.22849687348037" r="4.5" fill="#60a5fa" opacity="0.8"><title>F_3[t] degree=11 B deg(P)<=1</title></circle>
+<circle cx="651.5247067995691" cy="106.49632638723256" r="4.5" fill="#60a5fa" opacity="0.8"><title>F_3[t] degree=11 C deg(P)<=1</title></circle>
+<circle cx="397.9711286565653" cy="334.3392501310747" r="4.5" fill="#34d399" opacity="0.8"><title>F_5[t] degree=9 A deg(P)<=1</title></circle>
+<circle cx="404.8452908861227" cy="350.39860762187203" r="4.5" fill="#34d399" opacity="0.8"><title>F_5[t] degree=9 B deg(P)<=1</title></circle>
+<circle cx="378.1278549623222" cy="380.6150371886524" r="4.5" fill="#34d399" opacity="0.8"><title>F_5[t] degree=9 C deg(P)<=1</title></circle>
+<text x="500" y="736" text-anchor="middle" fill="#cbd5e1" font-size="14">Euler-product predicted SCID</text>
+<text transform="translate(28 380) rotate(-90)" text-anchor="middle" fill="#cbd5e1" font-size="14">debiased observed SCID</text>
+</svg>

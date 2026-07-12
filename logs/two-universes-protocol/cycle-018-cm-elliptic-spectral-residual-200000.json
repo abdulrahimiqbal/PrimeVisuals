@@ -1,0 +1,1134 @@
+{
+  "candidate": "CM elliptic spectral residual",
+  "generatedAt": "2026-06-17T10:11:48.090Z",
+  "maxN": 200000,
+  "q3MaxDegree": 8,
+  "q5MaxDegree": 6,
+  "q7MaxDegree": 5,
+  "endpoints": [
+    200000
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    11235813
+  ],
+  "theoremShape": {
+    "statistic": "u2(K)=a_K(E)^2/|K|-1 for E:y^2=x^3-x",
+    "integer": "K=F_p for rational primes p>=3, with CM trace formula by two-square representation",
+    "functionField": "K=F_q[t]/P; for constant E/F_q, a_K is computed by the Frobenius recurrence a_{q^d}=a_q*a_{q^{d-1}}-q*a_{q^{d-2}}",
+    "baseline": "CM Sato-Tate predicts mean-zero u2 in aggregate, but no exact labelwise cancellation is subtracted."
+  },
+  "integer": {
+    "endpoints": [
+      200000
+    ],
+    "recordsCount": 17983,
+    "traceFormula": "E:y^2=x^3-x has a_p=0 for p=3 mod 4; for p=a^2+b^2, choose odd a with a+b=1 mod 4 and a_p=2a",
+    "real": {
+      "name": "real-prime-order CM U2",
+      "rows": [
+        {
+          "endpoint": 200000,
+          "count": 17983,
+          "sum": -80.81548536357394,
+          "mean": -0.004493993514072954,
+          "z": -0.6026477138930828,
+          "energyZ": -0.4270858958494248,
+          "maxAbsZ": 1.607452936688034
+        }
+      ],
+      "blocks": [
+        {
+          "lo": 1,
+          "hi": 200000,
+          "count": 17983,
+          "sum": -80.81548536357394,
+          "z": -0.6026477138930828
+        }
+      ]
+    },
+    "controls": {
+      "shuffle": [
+        {
+          "name": "shuffle-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.8154853635741,
+              "mean": -0.004493993514072963,
+              "z": -0.602647713893084,
+              "energyZ": -0.4270858958494248,
+              "maxAbsZ": 2.9578271076150076
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.8154853635741,
+              "z": -0.602647713893084
+            }
+          ]
+        },
+        {
+          "name": "shuffle-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.81548536357376,
+              "mean": -0.004493993514072944,
+              "z": -0.6026477138930815,
+              "energyZ": -0.42708589584942347,
+              "maxAbsZ": 4.084251236737537
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.81548536357376,
+              "z": -0.6026477138930815
+            }
+          ]
+        },
+        {
+          "name": "shuffle-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.81548536357367,
+              "mean": -0.0044939935140729395,
+              "z": -0.6026477138930808,
+              "energyZ": -0.4270858958494226,
+              "maxAbsZ": 2.4627290797454933
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.81548536357367,
+              "z": -0.6026477138930808
+            }
+          ]
+        },
+        {
+          "name": "shuffle-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.8154853635738,
+              "mean": -0.0044939935140729465,
+              "z": -0.6026477138930818,
+              "energyZ": -0.42708589584942375,
+              "maxAbsZ": 2.267699435311481
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.8154853635738,
+              "z": -0.6026477138930818
+            }
+          ]
+        },
+        {
+          "name": "shuffle-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.81548536357407,
+              "mean": -0.004493993514072961,
+              "z": -0.6026477138930838,
+              "energyZ": -0.4270858958494252,
+              "maxAbsZ": 2.7640578424533917
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.81548536357407,
+              "z": -0.6026477138930838
+            }
+          ]
+        },
+        {
+          "name": "shuffle-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.81548536357433,
+              "mean": -0.004493993514072976,
+              "z": -0.6026477138930857,
+              "energyZ": -0.42708589584942697,
+              "maxAbsZ": 3.7265007429481867
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.81548536357433,
+              "z": -0.6026477138930857
+            }
+          ]
+        },
+        {
+          "name": "shuffle-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -80.81548536357401,
+              "mean": -0.004493993514072959,
+              "z": -0.6026477138930834,
+              "energyZ": -0.4270858958494253,
+              "maxAbsZ": 2.6930030357415573
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -80.81548536357401,
+              "z": -0.6026477138930834
+            }
+          ]
+        }
+      ],
+      "signFlip": [
+        {
+          "name": "sign-flip-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 90.72884290300735,
+              "mean": 0.005045256236612765,
+              "z": 0.676572435513787,
+              "energyZ": 0.4794750532807912,
+              "maxAbsZ": 2.0530322338286937
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 90.72884290300735,
+              "z": 0.676572435513787
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -162.00735054954345,
+              "mean": -0.009008916785271838,
+              "z": -1.208102123043909,
+              "energyZ": -0.8561608475450687,
+              "maxAbsZ": 2.767638162021537
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -162.00735054954345,
+              "z": -1.208102123043909
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 189.33174142032215,
+              "mean": 0.010528373542808327,
+              "z": 1.4118623506502137,
+              "energyZ": 1.000562157530226,
+              "maxAbsZ": 4.051351061277797
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 189.33174142032215,
+              "z": 1.4118623506502137
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 94.15680768644586,
+              "mean": 0.0052358787569619005,
+              "z": 0.7021350505343034,
+              "energyZ": 0.4975908315117663,
+              "maxAbsZ": 2.658004717091462
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 94.15680768644586,
+              "z": 0.7021350505343034
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 132.06459678835682,
+              "mean": 0.007343857909601114,
+              "z": 0.9848165482476703,
+              "energyZ": 0.6979222654618987,
+              "maxAbsZ": 1.920329739085644
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 132.06459678835682,
+              "z": 0.9848165482476703
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 68.61672512251249,
+              "mean": 0.0038156439483129894,
+              "z": 0.5116805565651001,
+              "energyZ": 0.36261906226712787,
+              "maxAbsZ": 3.2042236667495625
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 68.61672512251249,
+              "z": 0.5116805565651001
+            }
+          ]
+        },
+        {
+          "name": "sign-flip-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -41.8014251885738,
+              "mean": -0.00232449675741388,
+              "z": -0.31171666190006375,
+              "energyZ": -0.22090814704791176,
+              "maxAbsZ": 3.1989406108874117
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -41.8014251885738,
+              "z": -0.31171666190006375
+            }
+          ]
+        }
+      ],
+      "bootstrap": [
+        {
+          "name": "bootstrap-12345",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -209.5774982735313,
+              "mean": -0.01165420109400719,
+              "z": -1.5628366228299995,
+              "energyZ": -1.1123948094364997,
+              "maxAbsZ": 2.8478709395641655
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -209.5774982735313,
+              "z": -1.5628366228299995
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-271828",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 85.39790778586077,
+              "mean": 0.004748813200570581,
+              "z": 0.6368192143729685,
+              "energyZ": 0.44971526339966617,
+              "maxAbsZ": 4.212004927714579
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 85.39790778586077,
+              "z": 0.6368192143729685
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-314159",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 52.77756337781992,
+              "mean": 0.0029348586652849866,
+              "z": 0.39356662614101606,
+              "energyZ": 0.2783952276136142,
+              "maxAbsZ": 2.3788983893993043
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 52.77756337781992,
+              "z": 0.39356662614101606
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-161803",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -168.40323795444743,
+              "mean": -0.009364579767249482,
+              "z": -1.255796780887544,
+              "energyZ": -0.8931668507195192,
+              "maxAbsZ": 4.147307184982365
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -168.40323795444743,
+              "z": -1.255796780887544
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-424242",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -130.563125675848,
+              "mean": -0.00726036399242885,
+              "z": -0.9736199548057185,
+              "energyZ": -0.6874963785890525,
+              "maxAbsZ": 3.1066129833431484
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -130.563125675848,
+              "z": -0.9736199548057185
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-8675309",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": 20.186253734993635,
+              "mean": 0.0011225186973805056,
+              "z": 0.15053055253867043,
+              "energyZ": 0.1060367018750381,
+              "maxAbsZ": 3.2389851094443056
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": 20.186253734993635,
+              "z": 0.15053055253867043
+            }
+          ]
+        },
+        {
+          "name": "bootstrap-11235813",
+          "rows": [
+            {
+              "endpoint": 200000,
+              "count": 17983,
+              "sum": -313.354301280637,
+              "mean": -0.017425029265452762,
+              "z": -2.3367087688179287,
+              "energyZ": -1.6682937826619446,
+              "maxAbsZ": 3.1435320645545217
+            }
+          ],
+          "blocks": [
+            {
+              "lo": 1,
+              "hi": 200000,
+              "count": 17983,
+              "sum": -313.354301280637,
+              "z": -2.3367087688179287
+            }
+          ]
+        }
+      ]
+    },
+    "controlSummary": {
+      "shuffle": {
+        "zRange": [
+          -0.6026477138930857,
+          -0.6026477138930808
+        ],
+        "absZRange": [
+          0.6026477138930808,
+          0.6026477138930857
+        ],
+        "maxAbsZRange": [
+          2.267699435311481,
+          4.084251236737537
+        ],
+        "energyZRange": [
+          -0.42708589584942697,
+          -0.4270858958494226
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -1.208102123043909,
+          1.4118623506502137
+        ],
+        "absZRange": [
+          0.31171666190006375,
+          1.4118623506502137
+        ],
+        "maxAbsZRange": [
+          1.920329739085644,
+          4.051351061277797
+        ],
+        "energyZRange": [
+          -0.8561608475450687,
+          1.000562157530226
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -2.3367087688179287,
+          0.6368192143729685
+        ],
+        "absZRange": [
+          0.15053055253867043,
+          2.3367087688179287
+        ],
+        "maxAbsZRange": [
+          2.3788983893993043,
+          4.212004927714579
+        ],
+        "energyZRange": [
+          -1.6682937826619446,
+          0.44971526339966617
+        ]
+      }
+    },
+    "holdout": {
+      "real": {
+        "lo": 1,
+        "hi": 200000,
+        "count": 17983,
+        "sum": -80.81548536357394,
+        "z": -0.6026477138930828
+      },
+      "shuffle": {
+        "zRange": [
+          -0.6026477138930857,
+          -0.6026477138930808
+        ],
+        "absZRange": [
+          0.6026477138930808,
+          0.6026477138930857
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -1.208102123043909,
+          1.4118623506502137
+        ],
+        "absZRange": [
+          0.31171666190006375,
+          1.4118623506502137
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -2.3367087688179287,
+          0.6368192143729685
+        ],
+        "absZRange": [
+          0.15053055253867043,
+          2.3367087688179287
+        ]
+      }
+    },
+    "validation": [
+      {
+        "p": 3,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 5,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "formulaTrace": 6,
+        "bruteTrace": 6,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "formulaTrace": 2,
+        "bruteTrace": 2,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "formulaTrace": -10,
+        "bruteTrace": -10,
+        "ok": true
+      },
+      {
+        "p": 37,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 53,
+        "formulaTrace": 14,
+        "bruteTrace": 14,
+        "ok": true
+      },
+      {
+        "p": 97,
+        "formulaTrace": 18,
+        "bruteTrace": 18,
+        "ok": true
+      }
+    ],
+    "sampleRecords": [
+      {
+        "p": 3,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 5,
+        "trace": -2,
+        "u1": -0.4472135954999579,
+        "u2": -0.19999999999999996,
+        "mod4": 1
+      },
+      {
+        "p": 7,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 11,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 13,
+        "trace": 6,
+        "u1": 0.8320502943378437,
+        "u2": 1.7692307692307692,
+        "mod4": 1
+      },
+      {
+        "p": 17,
+        "trace": 2,
+        "u1": 0.24253562503633297,
+        "u2": -0.7647058823529411,
+        "mod4": 1
+      },
+      {
+        "p": 19,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 23,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 29,
+        "trace": -10,
+        "u1": -0.9284766908852594,
+        "u2": 2.4482758620689653,
+        "mod4": 1
+      },
+      {
+        "p": 31,
+        "trace": 0,
+        "u1": 0,
+        "u2": -1,
+        "mod4": 3
+      },
+      {
+        "p": 37,
+        "trace": -2,
+        "u1": -0.1643989873053573,
+        "u2": -0.8918918918918919,
+        "mod4": 1
+      },
+      {
+        "p": 41,
+        "trace": 10,
+        "u1": 0.7808688094430304,
+        "u2": 1.4390243902439024,
+        "mod4": 1
+      }
+    ]
+  },
+  "fields": [
+    {
+      "q": 3,
+      "maxDegree": 8,
+      "baseTrace": 0,
+      "labels": "monic irreducibles P in F_3[t]",
+      "theoremObject": "constant CM elliptic curve E:y^2=x^3-x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_3:deg1",
+          "q": 3,
+          "degree": 1,
+          "labels": 3,
+          "cumulativeLabels": 3,
+          "fieldSize": 3,
+          "trace": 0,
+          "u2": -1,
+          "z": -1.7320508075688774,
+          "energyZ": -1.7320508075688774,
+          "maxAbsZ": 1.7320508075688774
+        },
+        {
+          "label": "F_3:deg2",
+          "q": 3,
+          "degree": 2,
+          "labels": 3,
+          "cumulativeLabels": 6,
+          "fieldSize": 9,
+          "trace": -6,
+          "u2": 3,
+          "z": 2.4494897427831783,
+          "energyZ": 1.0954451150103321,
+          "maxAbsZ": 2.4494897427831783
+        },
+        {
+          "label": "F_3:deg3",
+          "q": 3,
+          "degree": 3,
+          "labels": 8,
+          "cumulativeLabels": 14,
+          "fieldSize": 27,
+          "trace": 0,
+          "u2": -1,
+          "z": -0.5345224838248488,
+          "energyZ": -0.3244428422615251,
+          "maxAbsZ": 2.4494897427831783
+        },
+        {
+          "label": "F_3:deg4",
+          "q": 3,
+          "degree": 4,
+          "labels": 18,
+          "cumulativeLabels": 32,
+          "fieldSize": 81,
+          "trace": 18,
+          "u2": 3,
+          "z": 9.192388155425117,
+          "energyZ": 3.676955262170047,
+          "maxAbsZ": 9.192388155425117
+        },
+        {
+          "label": "F_3:deg5",
+          "q": 3,
+          "degree": 5,
+          "labels": 48,
+          "cumulativeLabels": 80,
+          "fieldSize": 243,
+          "trace": 0,
+          "u2": -1,
+          "z": 0.4472135954999579,
+          "energyZ": 0.254000254000381,
+          "maxAbsZ": 9.192388155425117
+        },
+        {
+          "label": "F_3:deg6",
+          "q": 3,
+          "degree": 6,
+          "labels": 116,
+          "cumulativeLabels": 196,
+          "fieldSize": 729,
+          "trace": -54,
+          "u2": 3,
+          "z": 25.142857142857142,
+          "energyZ": 9.792901959713967,
+          "maxAbsZ": 25.142857142857142
+        },
+        {
+          "label": "F_3:deg7",
+          "q": 3,
+          "degree": 7,
+          "labels": 312,
+          "cumulativeLabels": 508,
+          "fieldSize": 2187,
+          "trace": 0,
+          "u2": -1,
+          "z": 1.7747130188322278,
+          "energyZ": 0.9987523388778445,
+          "maxAbsZ": 25.142857142857142
+        },
+        {
+          "label": "F_3:deg8",
+          "q": 3,
+          "degree": 8,
+          "labels": 810,
+          "cumulativeLabels": 1318,
+          "fieldSize": 6561,
+          "trace": 162,
+          "u2": 3,
+          "z": 68.03607451571811,
+          "energyZ": 26.190777476541722,
+          "maxAbsZ": 68.03607451571811
+        }
+      ]
+    },
+    {
+      "q": 5,
+      "maxDegree": 6,
+      "baseTrace": -2,
+      "labels": "monic irreducibles P in F_5[t]",
+      "theoremObject": "constant CM elliptic curve E:y^2=x^3-x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "q": 5,
+          "degree": 1,
+          "labels": 5,
+          "cumulativeLabels": 5,
+          "fieldSize": 5,
+          "trace": -2,
+          "u2": -0.19999999999999996,
+          "z": -0.4472135954999578,
+          "energyZ": -2.23606797749979,
+          "maxAbsZ": 0.4472135954999578
+        },
+        {
+          "label": "F_5:deg2",
+          "q": 5,
+          "degree": 2,
+          "labels": 10,
+          "cumulativeLabels": 15,
+          "fieldSize": 25,
+          "trace": -6,
+          "u2": 0.43999999999999995,
+          "z": 0.8778762251403477,
+          "energyZ": 2.326367343891887,
+          "maxAbsZ": 0.8778762251403477
+        },
+        {
+          "label": "F_5:deg3",
+          "q": 5,
+          "degree": 3,
+          "labels": 40,
+          "cumulativeLabels": 55,
+          "fieldSize": 125,
+          "trace": 22,
+          "u2": 2.872,
+          "z": 15.948871946430454,
+          "energyZ": 6.4907608119872275,
+          "maxAbsZ": 15.948871946430454
+        },
+        {
+          "label": "F_5:deg4",
+          "q": 5,
+          "degree": 4,
+          "labels": 150,
+          "cumulativeLabels": 205,
+          "fieldSize": 625,
+          "trace": -14,
+          "u2": -0.6864,
+          "z": 1.0699952131189934,
+          "energyZ": 0.7633869102224714,
+          "maxAbsZ": 15.948871946430454
+        },
+        {
+          "label": "F_5:deg5",
+          "q": 5,
+          "degree": 5,
+          "labels": 624,
+          "cumulativeLabels": 829,
+          "fieldSize": 3125,
+          "trace": -82,
+          "u2": 1.1516799999999998,
+          "z": 25.491773425572546,
+          "energyZ": 20.924488937820858,
+          "maxAbsZ": 25.491773425572546
+        },
+        {
+          "label": "F_5:deg6",
+          "q": 5,
+          "degree": 6,
+          "labels": 2580,
+          "cumulativeLabels": 3409,
+          "fieldSize": 15625,
+          "trace": 234,
+          "u2": 2.504384,
+          "z": 123.23502012748187,
+          "energyZ": 54.528471224809365,
+          "maxAbsZ": 123.23502012748187
+        }
+      ]
+    },
+    {
+      "q": 7,
+      "maxDegree": 5,
+      "baseTrace": 0,
+      "labels": "monic irreducibles P in F_7[t]",
+      "theoremObject": "constant CM elliptic curve E:y^2=x^3-x over residue fields F_q[t]/P",
+      "rows": [
+        {
+          "label": "F_7:deg1",
+          "q": 7,
+          "degree": 1,
+          "labels": 7,
+          "cumulativeLabels": 7,
+          "fieldSize": 7,
+          "trace": 0,
+          "u2": -1,
+          "z": -2.6457513110645903,
+          "energyZ": -2.6457513110645903,
+          "maxAbsZ": 2.6457513110645903
+        },
+        {
+          "label": "F_7:deg2",
+          "q": 7,
+          "degree": 2,
+          "labels": 21,
+          "cumulativeLabels": 28,
+          "fieldSize": 49,
+          "trace": -14,
+          "u2": 3,
+          "z": 10.583005244258361,
+          "energyZ": 4,
+          "maxAbsZ": 10.583005244258361
+        },
+        {
+          "label": "F_7:deg3",
+          "q": 7,
+          "degree": 3,
+          "labels": 112,
+          "cumulativeLabels": 140,
+          "fieldSize": 343,
+          "trace": 0,
+          "u2": -1,
+          "z": -4.732863826479693,
+          "energyZ": -3.1908961408698624,
+          "maxAbsZ": 10.583005244258361
+        },
+        {
+          "label": "F_7:deg4",
+          "q": 7,
+          "degree": 4,
+          "labels": 588,
+          "cumulativeLabels": 728,
+          "fieldSize": 2401,
+          "trace": 98,
+          "u2": 3,
+          "z": 63.302691642858036,
+          "energyZ": 22.82411005932104,
+          "maxAbsZ": 63.302691642858036
+        },
+        {
+          "label": "F_7:deg5",
+          "q": 7,
+          "degree": 5,
+          "labels": 3360,
+          "cumulativeLabels": 4088,
+          "fieldSize": 16807,
+          "trace": 0,
+          "u2": -1,
+          "z": -25.83774450481099,
+          "energyZ": -17.452435360143866,
+          "maxAbsZ": 63.302691642858036
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "completeIntegerLadder": false,
+    "completeFieldLadders": true,
+    "validationPassed": true,
+    "integerBeatsControls": false,
+    "fieldSignsAligned": false,
+    "fieldIntegerZSpread": 204.48931819783738,
+    "matchedProfile": false,
+    "maxAbsEndpointZ": 123.23502012748187,
+    "finalInteger": {
+      "endpoint": 200000,
+      "count": 17983,
+      "sum": -80.81548536357394,
+      "mean": -0.004493993514072954,
+      "z": -0.6026477138930828,
+      "energyZ": -0.4270858958494248,
+      "maxAbsZ": 1.607452936688034
+    },
+    "finalFields": [
+      {
+        "q": 3,
+        "final": {
+          "label": "F_3:deg8",
+          "q": 3,
+          "degree": 8,
+          "labels": 810,
+          "cumulativeLabels": 1318,
+          "fieldSize": 6561,
+          "trace": 162,
+          "u2": 3,
+          "z": 68.03607451571811,
+          "energyZ": 26.190777476541722,
+          "maxAbsZ": 68.03607451571811
+        }
+      },
+      {
+        "q": 5,
+        "final": {
+          "label": "F_5:deg6",
+          "q": 5,
+          "degree": 6,
+          "labels": 2580,
+          "cumulativeLabels": 3409,
+          "fieldSize": 15625,
+          "trace": 234,
+          "u2": 2.504384,
+          "z": 123.23502012748187,
+          "energyZ": 54.528471224809365,
+          "maxAbsZ": 123.23502012748187
+        }
+      },
+      {
+        "q": 7,
+        "final": {
+          "label": "F_7:deg5",
+          "q": 7,
+          "degree": 5,
+          "labels": 3360,
+          "cumulativeLabels": 4088,
+          "fieldSize": 16807,
+          "trace": 0,
+          "u2": -1,
+          "z": -25.83774450481099,
+          "energyZ": -17.452435360143866,
+          "maxAbsZ": 63.302691642858036
+        }
+      }
+    ]
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-200000.json",
+    "md": "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-200000.md",
+    "svg": "logs/two-universes-protocol/cycle-018-cm-elliptic-spectral-residual-200000.svg"
+  }
+}

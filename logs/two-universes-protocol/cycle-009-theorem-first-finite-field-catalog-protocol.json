@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-06-17T02:35:07.922Z",
+  "cycle": 9,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-009-theorem-first-finite-field-catalog",
+    "title": "Theorem-first finite-field catalog",
+    "class": "forced mutation from statistic-first experiments to exact theorem transport classification",
+    "councilSuccessTarget": "Catalog only: no S1/S2 promotion unless a theorem family has an honest integer transport map, proof obligations, controls, holdouts, novelty audit, and expert pack",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-009-theorem-first-finite-field-catalog.json",
+      "logs/two-universes-protocol/cycle-009-theorem-first-finite-field-catalog.md",
+      "logs/two-universes-protocol/cycle-009-theorem-first-finite-field-catalog.svg",
+      "scripts/theorem-first-finite-field-catalog.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Catalog has 9 theorem-shaped entries with finite-field object, transport class, and integer-analogue classification.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "Catalog is finite-field-first and cites 6 source records covering Chowla, twin irreducibles, Mobius/discriminant mechanisms, and short intervals.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "fail",
+      "evidence": "Cycle 009 intentionally runs no integer holdout experiment; it is a theorem/transport catalog that blocks data-first promotion.",
+      "severity": "hard-fail"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No candidate statistic is scored in this cycle, so there are no local/null/random controls to clear.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The catalog uses one fixed classification rule: exact finite-field theorem -> transport class -> experiment eligibility.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "No scale ladder is applicable until a specific honest-open theorem family is converted into a preregistered experiment or proof obligation.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "pass",
+      "evidence": "Novelty screen is source-backed: 3 honest-open families remain, 0 are immediately experiment-eligible.",
+      "severity": "pass"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the theorem-first catalog script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The required proof-obligation map is the next artifact; the catalog identifies theorem families but does not yet propose lemmas, substitutions, or a proof chain.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "The catalog is an evidence-routing artifact, not an expert-ready breakthrough pack with holdouts, controls, proof path, and novelty conclusion.",
+      "severity": "hard-fail"
+    }
+  },
+  "theoremCatalogEvidence": {
+    "diagnostics": {
+      "sourceCount": 6,
+      "entryCount": 9,
+      "byTransportClass": {
+        "honest-integer-analogue-known": 1,
+        "finite-field-complete-family-only": 1,
+        "no-honest-integer-transport": 2,
+        "honest-integer-analogue-open": 3,
+        "obstruction-or-coefficient-space-only": 1,
+        "finite-field-obstruction-no-classical-analogue": 1
+      },
+      "honestOpenEntries": [
+        "carmon-rudnick-large-q-chowla",
+        "sawin-shusterman-chowla-uniform",
+        "sawin-shusterman-twin-irreducibles"
+      ],
+      "immediatelyEligible": [],
+      "blockedByNoTransport": [
+        "gauss-necklace-irreducible-count",
+        "complete-degree-shell-mobius-sum",
+        "pellet-mobius-discriminant",
+        "berlekamp-characteristic-two-mobius",
+        "kurlberg-rosenzweig-very-short-intervals",
+        "conrad-residue-theorem-obstruction"
+      ],
+      "nextRequiredArtifact": "cycle-010 proof-obligation map for honest-open theorem families before any new integer experiment"
+    },
+    "entries": [
+      {
+        "id": "gauss-necklace-irreducible-count",
+        "family": "prime-polynomial-count",
+        "transportClass": "honest-integer-analogue-known",
+        "statusForLoop": "known calibration, not a discovery target",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "localImplementation"
+        ],
+        "priorCycleContact": [
+          "cycle-002",
+          "cycle-007"
+        ]
+      },
+      {
+        "id": "complete-degree-shell-mobius-sum",
+        "family": "mobius-complete-family",
+        "transportClass": "finite-field-complete-family-only",
+        "statusForLoop": "exact calibration, no honest transport as an experiment",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "localImplementation"
+        ],
+        "priorCycleContact": [
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "pellet-mobius-discriminant",
+        "family": "mobius-discriminant-character",
+        "transportClass": "no-honest-integer-transport",
+        "statusForLoop": "finite-field mechanism only",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "carmonRudnick2012"
+        ],
+        "priorCycleContact": [
+          "cycle-001"
+        ]
+      },
+      {
+        "id": "berlekamp-characteristic-two-mobius",
+        "family": "mobius-discriminant-character",
+        "transportClass": "no-honest-integer-transport",
+        "statusForLoop": "finite-field mechanism only",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "carmonChar2",
+          "conradMobiusResidue"
+        ],
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "carmon-rudnick-large-q-chowla",
+        "family": "chowla-mobius-correlation",
+        "transportClass": "honest-integer-analogue-open",
+        "statusForLoop": "proof-target family, not a numeric-discovery family",
+        "eligible": false,
+        "eligibilityReason": "Honest analogue exists, but related experimental families already failed controls in cycle-006, cycle-008; require proof-obligation map before new data.",
+        "sourceIds": [
+          "carmonRudnick2012"
+        ],
+        "priorCycleContact": [
+          "cycle-006",
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "sawin-shusterman-chowla-uniform",
+        "family": "chowla-mobius-correlation",
+        "transportClass": "honest-integer-analogue-open",
+        "statusForLoop": "major theorem-side target, but integer side remains open",
+        "eligible": false,
+        "eligibilityReason": "Honest analogue exists, but related experimental families already failed controls in cycle-005, cycle-006, cycle-008; require proof-obligation map before new data.",
+        "sourceIds": [
+          "sawinShusterman2022"
+        ],
+        "priorCycleContact": [
+          "cycle-005",
+          "cycle-006",
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "sawin-shusterman-twin-irreducibles",
+        "family": "prime-tuples",
+        "transportClass": "honest-integer-analogue-open",
+        "statusForLoop": "major theorem-side target, but not a current experimental survivor",
+        "eligible": false,
+        "eligibilityReason": "Honest analogue exists, but related experimental families already failed controls in cycle-002, cycle-003, cycle-004, cycle-005, cycle-007; require proof-obligation map before new data.",
+        "sourceIds": [
+          "sawinShusterman2022"
+        ],
+        "priorCycleContact": [
+          "cycle-002",
+          "cycle-003",
+          "cycle-004",
+          "cycle-005",
+          "cycle-007"
+        ]
+      },
+      {
+        "id": "kurlberg-rosenzweig-very-short-intervals",
+        "family": "very-short-intervals",
+        "transportClass": "obstruction-or-coefficient-space-only",
+        "statusForLoop": "intuition source and negative control catalog",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "kurlbergRosenzweig2018"
+        ],
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-002",
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "conrad-residue-theorem-obstruction",
+        "family": "finite-field-bouniakowsky-obstruction",
+        "transportClass": "finite-field-obstruction-no-classical-analogue",
+        "statusForLoop": "negative transport guard",
+        "eligible": false,
+        "eligibilityReason": "No honest open integer analogue that can seed an experiment.",
+        "sourceIds": [
+          "conradMobiusResidue"
+        ],
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-009"
+        ]
+      }
+    ],
+    "sources": {
+      "sawinShusterman2022": {
+        "title": "On the Chowla and twin primes conjectures over F_q[T]",
+        "authors": "Will Sawin, Mark Shusterman",
+        "venue": "Annals of Mathematics 196 (2022), 457-506",
+        "url": "https://annals.math.princeton.edu/2022/196-2/p01",
+        "role": "large-uniformity Chowla k-point correlations and quantitative twin irreducibles over F_q[T]"
+      },
+      "carmonRudnick2012": {
+        "title": "The autocorrelation of the Mobius function and Chowla's conjecture for the rational function field",
+        "authors": "Dan Carmon, Zeev Rudnick",
+        "venue": "Quarterly Journal of Mathematics / arXiv:1205.1599",
+        "url": "https://arxiv.org/abs/1205.1599",
+        "role": "large-q Mobius autocorrelation / Chowla theorem in odd characteristic"
+      },
+      "carmonChar2": {
+        "title": "The autocorrelation of the Mobius function and Chowla's conjecture for the rational function field in characteristic 2",
+        "authors": "Dan Carmon",
+        "venue": "arXiv:1409.3694",
+        "url": "https://arxiv.org/pdf/1409.3694",
+        "role": "characteristic-2 Chowla analogue using Berlekamp-style discriminant data"
+      },
+      "kurlbergRosenzweig2018": {
+        "title": "Prime and Mobius correlations for very short intervals in F_q[x]",
+        "authors": "Par Kurlberg, Lior Rosenzweig",
+        "venue": "arXiv:1802.01215",
+        "url": "https://arxiv.org/abs/1802.01215",
+        "role": "very-short-interval prime/Mobius correlations, generic Morse cases, and non-generic failures"
+      },
+      "conradMobiusResidue": {
+        "title": "The Mobius function and the residue theorem",
+        "authors": "Brian Conrad, Keith Conrad",
+        "venue": "expository article",
+        "url": "https://kconrad.math.uconn.edu/articles/mobresidue.pdf",
+        "role": "finite-field Bouniakowsky obstruction and Mobius-value phenomena with no classical analogue"
+      },
+      "localImplementation": {
+        "title": "PrimeVisuals function-field arithmetic kernel",
+        "authors": "local repository",
+        "venue": "src/core/ffield.js",
+        "url": "src/core/ffield.js",
+        "role": "exact finite polynomial arithmetic, Mobius, Liouville, irreducible tables, and two-point evaluators"
+      }
+    }
+  },
+  "decision": {
+    "status": "CATALOG_ONLY_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 009 is useful but not promotable: it converts theorem sources into transport classes, and it finds no immediately experiment-eligible breakthrough candidate.",
+    "hardFailures": [
+      {
+        "id": "integer_holdout",
+        "status": "fail",
+        "evidence": "Cycle 009 intentionally runs no integer holdout experiment; it is a theorem/transport catalog that blocks data-first promotion.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No candidate statistic is scored in this cycle, so there are no local/null/random controls to clear.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "No scale ladder is applicable until a specific honest-open theorem family is converted into a preregistered experiment or proof obligation.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The required proof-obligation map is the next artifact; the catalog identifies theorem families but does not yet propose lemmas, substitutions, or a proof chain.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "The catalog is an evidence-routing artifact, not an expert-ready breakthrough pack with holdouts, controls, proof path, and novelty conclusion.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Catalog contains 9 exact theorem/identity families; honest-open families are carmon-rudnick-large-q-chowla, sawin-shusterman-chowla-uniform, sawin-shusterman-twin-irreducibles; immediately experiment-eligible families are none.",
+    "expectedNull": "A theorem-first pass should reject finite-field-only mechanisms and block experiments that merely rename prior failed control families.",
+    "knownExplanation": "The strongest finite-field results are either known calibrations, no-transport coefficient/discriminant mechanisms, or honest-open Chowla/twin-prime analogues already touched by failed aggregate-statistic cycles.",
+    "survivedControls": [
+      "Source-backed novelty classification exists"
+    ],
+    "failedControls": [
+      "No integer holdout experiment or null controls were run in cycle 009 by design"
+    ],
+    "whatFailed": "No theorem family is ready for promotion or immediate data-first experimentation.",
+    "suspectedInvariant": "A real next lead must come from mapping proof ingredients, not from another plotted aggregate statistic.",
+    "nextMutation": "Build a proof-obligation map before any new integer experiment"
+  },
+  "nextMutation": {
+    "title": "Build a proof-obligation map before any new integer experiment",
+    "reason": "The catalog found honest-open theorem families, but every one either has related failed control cycles or needs a proof-substitution plan before more data can be meaningful.",
+    "preregisteredNextMove": [
+      "For each honest-open family, write the finite-field theorem input and the exact integer statement it would support.",
+      "Name the finite-field proof ingredient: monodromy/equidistribution, character sum, discriminant character, or generic Morse condition.",
+      "Name the missing integer substitute lemma and mark whether it is known, open, false, or experimentally testable.",
+      "Run no new integer experiment unless the proof-obligation map yields a fixed statistic, normalization, controls, holdouts, and scale ladder.",
+      "If all honest-open families reduce to already failed controls, mutate away from aggregate correlations into explicit obstruction-class transport."
+    ]
+  }
+}

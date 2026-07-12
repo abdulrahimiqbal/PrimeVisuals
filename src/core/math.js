@@ -30,6 +30,30 @@ export function mobiusUpTo(N) {
   return mu;
 }
 
+export function liouvilleUpTo(N) {
+  const nMax = Math.max(0, Math.round(N));
+  const lambda = new Int8Array(nMax + 1);
+  const spf = new Int32Array(nMax + 1);
+  const ps = [];
+  if (nMax >= 1) lambda[1] = 1;
+  for (let i = 2; i <= nMax; i++) {
+    if (!spf[i]) {
+      spf[i] = i;
+      ps.push(i);
+      lambda[i] = -1;
+    }
+    for (let k = 0; k < ps.length; k++) {
+      const p = ps[k];
+      const m = i * p;
+      if (m > nMax || p > spf[i]) break;
+      spf[m] = p;
+      lambda[m] = -lambda[i];
+      if (i % p === 0) break;
+    }
+  }
+  return lambda;
+}
+
 export function oddPartValue(n) {
   let m = Math.abs(Math.round(n));
   if (m < 1) return 0;
@@ -402,6 +426,7 @@ export function integerLabTables(N) {
   const bigomega = new Int16Array(N + 1);
   const tau = new Int32Array(N + 1);
   const phi = new Int32Array(N + 1);
+  const lambda = new Int8Array(N + 1);
   const fareynew = new Int32Array(N + 1);
   const fareydef = new Int32Array(N + 1);
   const rad = new Int32Array(N + 1);
@@ -424,6 +449,7 @@ export function integerLabTables(N) {
   const tmbal = new Int32Array(N + 1);
   const row = rowVisibilityTable(N);
   tau.fill(1); rad.fill(1);
+  if (N >= 1) lambda[1] = 1;
   for (let i = 0; i <= N; i++) phi[i] = i;
   let pc = 0, mc = 0, pmc = 0, psqCount = 0, t210 = 0, tmPrimeBalance = 0, lastPrime = 0, chowla1 = 0;
   let sqrtPhasePrime = 0, sqrtPhaseMain = 0;
@@ -504,6 +530,7 @@ export function integerLabTables(N) {
       while (q % p === 0) { bigomega[j]++; q = Math.floor(q / p); }
     }
   }
+  for (let i = 2; i <= N; i++) lambda[i] = bigomega[i] % 2 ? -1 : 1;
   let oprevGapSum = 0, oprevGapCount = 0, lastOprevGapCov = 0;
   for (let i = 0; i <= N; i++) {
     if (i >= 3 && isp[i] && gap[i] > 0) {
@@ -545,7 +572,7 @@ export function integerLabTables(N) {
     L2[i] = L2[i - 1] + ls;
   }
   return {
-    isp, mu, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2, pmuprev, pmugapres, psqprevmean, sqtailgapcov, oprevgapcov, sqrtphaseres, muchowla1, gapac1mean, gapz2mean, roughmiss, theta210res, tm, tmbal,
+    isp, mu, lambda, pic, mertens, gap, omega, bigomega, tau, phi, fareynew, fareydef, rad, g2, G2, l2, L2, pmuprev, pmugapres, psqprevmean, sqtailgapcov, oprevgapcov, sqrtphaseres, muchowla1, gapac1mean, gapz2mean, roughmiss, theta210res, tm, tmbal,
     rowY: row.y, rowvis: row.visible, rowcount: row.count, rowgap: row.gap, rowrun: row.run,
   };
 }

@@ -1,0 +1,1140 @@
+{
+  "candidate": "Mobius/Liouville matched fixed-lag correlations",
+  "generatedAt": "2026-06-17T02:23:52.705Z",
+  "maxN": 1000000,
+  "q2MaxDegree": 16,
+  "q3MaxDegree": 9,
+  "q5MaxDegree": 6,
+  "shifts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159
+  ],
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "integer": {
+    "endpoints": [
+      1000000
+    ],
+    "shifts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mobius": {
+      "name": "Z-mobius",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 999992,
+          "sums": [
+            411,
+            -385,
+            -303,
+            -527,
+            161,
+            36,
+            -507,
+            126
+          ],
+          "normalized": [
+            0.41100164400986405,
+            -0.3850015400092401,
+            -0.30300121200727204,
+            -0.5270021080126481,
+            0.16100064400386402,
+            0.03600014400086401,
+            -0.5070020280121681,
+            0.126000504003024
+          ],
+          "energy": 0.3512182182545414,
+          "maxAbsCell": 0.5270021080126481,
+          "positiveFraction": 0.5
+        }
+      ],
+      "blocks": [
+        {
+          "lo": 1,
+          "hi": 1000000,
+          "labels": 999992,
+          "sums": [
+            411,
+            -385,
+            -303,
+            -527,
+            161,
+            36,
+            -507,
+            126
+          ],
+          "normalized": [
+            0.41100164400986405,
+            -0.3850015400092401,
+            -0.30300121200727204,
+            -0.5270021080126481,
+            0.16100064400386402,
+            0.03600014400086401,
+            -0.5070020280121681,
+            0.126000504003024
+          ],
+          "energy": 0.3512182182545414,
+          "maxAbsCell": 0.5270021080126481,
+          "positiveFraction": 0.5
+        }
+      ],
+      "summary": {
+        "energySlope": null,
+        "maxAbsSlope": null,
+        "stability": null
+      }
+    },
+    "liouville": {
+      "name": "Z-liouville",
+      "rows": [
+        {
+          "N": 1000000,
+          "labels": 999992,
+          "sums": [
+            -1104,
+            68,
+            -426,
+            -704,
+            130,
+            178,
+            282,
+            -112
+          ],
+          "normalized": [
+            -1.1040044160264961,
+            0.06800027200163201,
+            -0.4260017040102241,
+            -0.7040028160168961,
+            0.13000052000312,
+            0.17800071200427203,
+            0.2820011280067681,
+            -0.11200044800268802
+          ],
+          "energy": 0.5051237879968924,
+          "maxAbsCell": 1.1040044160264961,
+          "positiveFraction": 0.5
+        }
+      ],
+      "blocks": [
+        {
+          "lo": 1,
+          "hi": 1000000,
+          "labels": 999992,
+          "sums": [
+            -1104,
+            68,
+            -426,
+            -704,
+            130,
+            178,
+            282,
+            -112
+          ],
+          "normalized": [
+            -1.1040044160264961,
+            0.06800027200163201,
+            -0.4260017040102241,
+            -0.7040028160168961,
+            0.13000052000312,
+            0.17800071200427203,
+            0.2820011280067681,
+            -0.11200044800268802
+          ],
+          "energy": 0.5051237879968924,
+          "maxAbsCell": 1.1040044160264961,
+          "positiveFraction": 0.5
+        }
+      ],
+      "summary": {
+        "energySlope": null,
+        "maxAbsSlope": null,
+        "stability": null
+      }
+    },
+    "controls": {
+      "mobius": {
+        "randomSquarefree": {
+          "energyRange": [
+            0.31335688206944545,
+            0.5415834160134263
+          ],
+          "maxAbsRange": [
+            0.6290025160150962,
+            1.0450041800250802
+          ],
+          "energySlopeRange": [
+            null,
+            null
+          ],
+          "stabilityRange": [
+            null,
+            null
+          ]
+        },
+        "shuffled": {
+          "energyRange": [
+            0.35898036984666376,
+            0.5567641824783982
+          ],
+          "maxAbsRange": [
+            0.6490025960155761,
+            0.9960039840239042
+          ],
+          "energySlopeRange": [
+            null,
+            null
+          ],
+          "stabilityRange": [
+            null,
+            null
+          ]
+        }
+      },
+      "liouville": {
+        "randomMultiplicative": {
+          "energyRange": [
+            0.8189168852813575,
+            1.7549602955865164
+          ],
+          "maxAbsRange": [
+            1.5440061760370563,
+            2.9260117040702247
+          ],
+          "energySlopeRange": [
+            null,
+            null
+          ],
+          "stabilityRange": [
+            null,
+            null
+          ]
+        },
+        "shuffled": {
+          "energyRange": [
+            0.676651064325848,
+            0.9408932363667293
+          ],
+          "maxAbsRange": [
+            1.2720050880305283,
+            1.8720074880449282
+          ],
+          "energySlopeRange": [
+            null,
+            null
+          ],
+          "stabilityRange": [
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  "fields": [
+    {
+      "q": 2,
+      "maxDegree": 16,
+      "degrees": [
+        14,
+        15,
+        16
+      ],
+      "shifts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mobius": {
+        "name": "F_2-mobius",
+        "rows": [
+          {
+            "q": 2,
+            "degree": 14,
+            "labels": 16384,
+            "sums": [
+              140,
+              -4,
+              -4,
+              -60,
+              -60,
+              138,
+              -254,
+              -2
+            ],
+            "normalized": [
+              1.09375,
+              -0.03125,
+              -0.03125,
+              -0.46875,
+              -0.46875,
+              1.078125,
+              -1.984375,
+              -0.015625
+            ],
+            "energy": 0.9177443209695579,
+            "maxAbsCell": 1.984375,
+            "positiveFraction": 0.25
+          },
+          {
+            "q": 2,
+            "degree": 15,
+            "labels": 32768,
+            "sums": [
+              -16,
+              172,
+              172,
+              -8,
+              -8,
+              -164,
+              -260,
+              178
+            ],
+            "normalized": [
+              -0.08838834764831843,
+              0.9501747372194231,
+              0.9501747372194231,
+              -0.044194173824159216,
+              -0.044194173824159216,
+              -0.905980563395264,
+              -1.4363106492851745,
+              0.9833203675875426
+            ],
+            "energy": 0.8417311640536201,
+            "maxAbsCell": 1.4363106492851745,
+            "positiveFraction": 0.375
+          },
+          {
+            "q": 2,
+            "degree": 16,
+            "labels": 65536,
+            "sums": [
+              376,
+              328,
+              328,
+              272,
+              272,
+              232,
+              416,
+              -176
+            ],
+            "normalized": [
+              1.46875,
+              1.28125,
+              1.28125,
+              1.0625,
+              1.0625,
+              0.90625,
+              1.625,
+              -0.6875
+            ],
+            "energy": 1.2058613363484212,
+            "maxAbsCell": 1.625,
+            "positiveFraction": 0.875
+          }
+        ],
+        "summary": {
+          "energySlope": 0.19694991613390753,
+          "maxAbsSlope": -0.14412248431553681,
+          "stability": 0.0413027934639742
+        }
+      },
+      "liouville": {
+        "name": "F_2-liouville",
+        "rows": [
+          {
+            "q": 2,
+            "degree": 14,
+            "labels": 16384,
+            "sums": [
+              536,
+              -224,
+              -224,
+              320,
+              320,
+              288,
+              -328,
+              -128
+            ],
+            "normalized": [
+              4.1875,
+              -1.75,
+              -1.75,
+              2.5,
+              2.5,
+              2.25,
+              -2.5625,
+              -1
+            ],
+            "energy": 2.4695410125162933,
+            "maxAbsCell": 4.1875,
+            "positiveFraction": 0.5
+          },
+          {
+            "q": 2,
+            "degree": 15,
+            "labels": 32768,
+            "sums": [
+              0,
+              624,
+              624,
+              -232,
+              -232,
+              -432,
+              -512,
+              344
+            ],
+            "normalized": [
+              0,
+              3.447145558284419,
+              3.447145558284419,
+              -1.2816310409006173,
+              -1.2816310409006173,
+              -2.3864853865045976,
+              -2.82842712474619,
+              1.9003494744388463
+            ],
+            "energy": 2.35471393896902,
+            "maxAbsCell": 3.447145558284419,
+            "positiveFraction": 0.375
+          },
+          {
+            "q": 2,
+            "degree": 16,
+            "labels": 65536,
+            "sums": [
+              1320,
+              8,
+              8,
+              744,
+              744,
+              1072,
+              584,
+              -272
+            ],
+            "normalized": [
+              5.15625,
+              0.03125,
+              0.03125,
+              2.90625,
+              2.90625,
+              4.1875,
+              2.28125,
+              -1.0625
+            ],
+            "energy": 2.90149981421247,
+            "maxAbsCell": 5.15625,
+            "positiveFraction": 0.875
+          }
+        ],
+        "summary": {
+          "energySlope": 0.11627795413280574,
+          "maxAbsSlope": 0.15011651189402175,
+          "stability": -0.4338760852375524
+        }
+      },
+      "controls": {
+        "mobius": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              0.6809211147064871,
+              0.8687169789138031
+            ],
+            "maxAbsRange": [
+              1.171875,
+              1.296875
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        },
+        "liouville": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              1.221551267855754,
+              1.6380932846987073
+            ],
+            "maxAbsRange": [
+              1.859375,
+              2.828125
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": 3,
+      "maxDegree": 9,
+      "degrees": [
+        7,
+        8,
+        9
+      ],
+      "shifts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mobius": {
+        "name": "F_3-mobius",
+        "rows": [
+          {
+            "q": 3,
+            "degree": 7,
+            "labels": 2187,
+            "sums": [
+              -18,
+              -18,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "normalized": [
+              -0.3849001794597505,
+              -0.3849001794597505,
+              0.12830005981991682,
+              0.12830005981991682,
+              0.12830005981991682,
+              0.12830005981991682,
+              0.12830005981991682,
+              0.12830005981991682
+            ],
+            "energy": 0.2222222222222222,
+            "maxAbsCell": 0.3849001794597505,
+            "positiveFraction": 0.75
+          },
+          {
+            "q": 3,
+            "degree": 8,
+            "labels": 6561,
+            "sums": [
+              51,
+              51,
+              -5,
+              -5,
+              -5,
+              -5,
+              -5,
+              -5
+            ],
+            "normalized": [
+              0.6296296296296297,
+              0.6296296296296297,
+              -0.06172839506172839,
+              -0.06172839506172839,
+              -0.06172839506172839,
+              -0.06172839506172839,
+              -0.06172839506172839,
+              -0.06172839506172839
+            ],
+            "energy": 0.3193214112685818,
+            "maxAbsCell": 0.6296296296296297,
+            "positiveFraction": 0.25
+          },
+          {
+            "q": 3,
+            "degree": 9,
+            "labels": 19683,
+            "sums": [
+              -33,
+              -33,
+              -25,
+              -25,
+              -25,
+              -25,
+              -25,
+              -25
+            ],
+            "normalized": [
+              -0.2352167763365142,
+              -0.2352167763365142,
+              -0.17819452752766227,
+              -0.17819452752766227,
+              -0.17819452752766227,
+              -0.17819452752766227,
+              -0.17819452752766227,
+              -0.17819452752766227
+            ],
+            "energy": 0.1940275758703915,
+            "maxAbsCell": 0.2352167763365142,
+            "positiveFraction": 0
+          }
+        ],
+        "summary": {
+          "energySlope": -0.061749532105936644,
+          "maxAbsSlope": -0.22413570746365966,
+          "stability": -0.7009725180886837
+        }
+      },
+      "liouville": {
+        "name": "F_3-liouville",
+        "rows": [
+          {
+            "q": 3,
+            "degree": 7,
+            "labels": 2187,
+            "sums": [
+              -69,
+              -69,
+              63,
+              63,
+              63,
+              63,
+              63,
+              63
+            ],
+            "normalized": [
+              -1.4754506879290437,
+              -1.4754506879290437,
+              1.3471506281091268,
+              1.3471506281091268,
+              1.3471506281091268,
+              1.3471506281091268,
+              1.3471506281091268,
+              1.3471506281091268
+            ],
+            "energy": 1.3803440854506832,
+            "maxAbsCell": 1.4754506879290437,
+            "positiveFraction": 0.75
+          },
+          {
+            "q": 3,
+            "degree": 8,
+            "labels": 6561,
+            "sums": [
+              69,
+              69,
+              -11,
+              -11,
+              -11,
+              -11,
+              -11,
+              -11
+            ],
+            "normalized": [
+              0.8518518518518519,
+              0.8518518518518519,
+              -0.13580246913580246,
+              -0.13580246913580246,
+              -0.13580246913580246,
+              -0.13580246913580246,
+              -0.13580246913580246,
+              -0.13580246913580246
+            ],
+            "energy": 0.4418649424240317,
+            "maxAbsCell": 0.8518518518518519,
+            "positiveFraction": 0.25
+          },
+          {
+            "q": 3,
+            "degree": 9,
+            "labels": 19683,
+            "sums": [
+              -213,
+              -213,
+              311,
+              311,
+              311,
+              311,
+              311,
+              311
+            ],
+            "normalized": [
+              -1.5182173745356826,
+              -1.5182173745356826,
+              2.2167399224441184,
+              2.2167399224441184,
+              2.2167399224441184,
+              2.2167399224441184,
+              2.2167399224441184,
+              2.2167399224441184
+            ],
+            "energy": 2.064388023580759,
+            "maxAbsCell": 2.2167399224441184,
+            "positiveFraction": 0.75
+          }
+        ],
+        "summary": {
+          "energySlope": 0.1831861088074722,
+          "maxAbsSlope": 0.18526741558997878,
+          "stability": -0.6710502751801709
+        }
+      },
+      "controls": {
+        "mobius": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              0.4887080348861602,
+              0.942512615826022
+            ],
+            "maxAbsRange": [
+              0.7769281400206075,
+              1.161828319480358
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        },
+        "liouville": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              0.5432566384661255,
+              1.2447114156117653
+            ],
+            "maxAbsRange": [
+              0.8624615132338854,
+              2.2309954846463316
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": 5,
+      "maxDegree": 6,
+      "degrees": [
+        4,
+        5,
+        6
+      ],
+      "shifts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mobius": {
+        "name": "F_5-mobius",
+        "rows": [
+          {
+            "q": 5,
+            "degree": 4,
+            "labels": 625,
+            "sums": [
+              -25,
+              -25,
+              -25,
+              -25,
+              5,
+              5,
+              5,
+              5
+            ],
+            "normalized": [
+              -1,
+              -1,
+              -1,
+              -1,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "energy": 0.7211102550927979,
+            "maxAbsCell": 1,
+            "positiveFraction": 0.5
+          },
+          {
+            "q": 5,
+            "degree": 5,
+            "labels": 3125,
+            "sums": [
+              25,
+              25,
+              25,
+              25,
+              55,
+              55,
+              55,
+              55
+            ],
+            "normalized": [
+              0.4472135954999579,
+              0.4472135954999579,
+              0.4472135954999579,
+              0.4472135954999579,
+              0.9838699100999074,
+              0.9838699100999074,
+              0.9838699100999074,
+              0.9838699100999074
+            ],
+            "energy": 0.764198926981712,
+            "maxAbsCell": 0.9838699100999074,
+            "positiveFraction": 1
+          },
+          {
+            "q": 5,
+            "degree": 6,
+            "labels": 15625,
+            "sums": [
+              -1340,
+              -240,
+              -240,
+              -1340,
+              208,
+              208,
+              208,
+              208
+            ],
+            "normalized": [
+              -10.72,
+              -1.92,
+              -1.92,
+              -10.72,
+              1.664,
+              1.664,
+              1.664,
+              1.664
+            ],
+            "energy": 5.570964727944345,
+            "maxAbsCell": 10.72,
+            "positiveFraction": 0.5
+          }
+        ],
+        "summary": {
+          "energySlope": 0.6351694146004744,
+          "maxAbsSlope": 0.7369377648296771,
+          "stability": -0.18344917084063123
+        }
+      },
+      "liouville": {
+        "name": "F_5-liouville",
+        "rows": [
+          {
+            "q": 5,
+            "degree": 4,
+            "labels": 625,
+            "sums": [
+              -75,
+              -15,
+              -15,
+              -75,
+              9,
+              9,
+              9,
+              9
+            ],
+            "normalized": [
+              -3,
+              -0.6,
+              -0.6,
+              -3,
+              0.36,
+              0.36,
+              0.36,
+              0.36
+            ],
+            "energy": 1.5507417579984102,
+            "maxAbsCell": 3,
+            "positiveFraction": 0.5
+          },
+          {
+            "q": 5,
+            "degree": 5,
+            "labels": 3125,
+            "sums": [
+              65,
+              65,
+              65,
+              65,
+              -87,
+              -87,
+              -87,
+              -87
+            ],
+            "normalized": [
+              1.1627553482998907,
+              1.1627553482998907,
+              1.1627553482998907,
+              1.1627553482998907,
+              -1.5563033123398538,
+              -1.5563033123398538,
+              -1.5563033123398538,
+              -1.5563033123398538
+            ],
+            "energy": 1.3736957450614748,
+            "maxAbsCell": 1.5563033123398538,
+            "positiveFraction": 0.5
+          },
+          {
+            "q": 5,
+            "degree": 6,
+            "labels": 15625,
+            "sums": [
+              -1115,
+              -15,
+              -15,
+              -1115,
+              241,
+              241,
+              241,
+              241
+            ],
+            "normalized": [
+              -8.92,
+              -0.12,
+              -0.12,
+              -8.92,
+              1.928,
+              1.928,
+              1.928,
+              1.928
+            ],
+            "energy": 4.664096053899405,
+            "maxAbsCell": 8.92,
+            "positiveFraction": 0.5
+          }
+        ],
+        "summary": {
+          "energySlope": 0.3420947975275791,
+          "maxAbsSlope": 0.3385292621433839,
+          "stability": -0.6335289411473083
+        }
+      },
+      "controls": {
+        "mobius": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              0.3799789467852133,
+              0.8763560920082657
+            ],
+            "maxAbsRange": [
+              1.024,
+              1.536
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        },
+        "liouville": {
+          "randomDegreePreserving": {
+            "energyRange": [
+              0.6274264897181183,
+              1.2565603845418651
+            ],
+            "maxAbsRange": [
+              1.304,
+              1.64
+            ],
+            "energySlopeRange": [
+              null,
+              null
+            ],
+            "stabilityRange": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "hasRequiredIntegerScaleLadder": false,
+    "integerObjects": [
+      {
+        "label": "Z-mobius",
+        "finalEnergy": 0.3512182182545414,
+        "finalMaxAbsCell": 0.5270021080126481,
+        "energySlope": null,
+        "stability": null,
+        "controlRanges": {
+          "randomSquarefree": [
+            0.31335688206944545,
+            0.5415834160134263
+          ],
+          "shuffled": [
+            0.35898036984666376,
+            0.5567641824783982
+          ]
+        },
+        "beatsControls": false
+      },
+      {
+        "label": "Z-liouville",
+        "finalEnergy": 0.5051237879968924,
+        "finalMaxAbsCell": 1.1040044160264961,
+        "energySlope": null,
+        "stability": null,
+        "controlRanges": {
+          "randomMultiplicative": [
+            0.8189168852813575,
+            1.7549602955865164
+          ],
+          "shuffled": [
+            0.676651064325848,
+            0.9408932363667293
+          ]
+        },
+        "beatsControls": false
+      }
+    ],
+    "fieldObjects": [
+      {
+        "label": "F_2-mobius",
+        "finalEnergy": 1.2058613363484212,
+        "finalMaxAbsCell": 1.625,
+        "energySlope": 0.19694991613390753,
+        "stability": 0.0413027934639742,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.6809211147064871,
+            0.8687169789138031
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_2-liouville",
+        "finalEnergy": 2.90149981421247,
+        "finalMaxAbsCell": 5.15625,
+        "energySlope": 0.11627795413280574,
+        "stability": -0.4338760852375524,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            1.221551267855754,
+            1.6380932846987073
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_3-mobius",
+        "finalEnergy": 0.1940275758703915,
+        "finalMaxAbsCell": 0.2352167763365142,
+        "energySlope": -0.061749532105936644,
+        "stability": -0.7009725180886837,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.4887080348861602,
+            0.942512615826022
+          ]
+        },
+        "beatsControls": false
+      },
+      {
+        "label": "F_3-liouville",
+        "finalEnergy": 2.064388023580759,
+        "finalMaxAbsCell": 2.2167399224441184,
+        "energySlope": 0.1831861088074722,
+        "stability": -0.6710502751801709,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.5432566384661255,
+            1.2447114156117653
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_5-mobius",
+        "finalEnergy": 5.570964727944345,
+        "finalMaxAbsCell": 10.72,
+        "energySlope": 0.6351694146004744,
+        "stability": -0.18344917084063123,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.3799789467852133,
+            0.8763560920082657
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_5-liouville",
+        "finalEnergy": 4.664096053899405,
+        "finalMaxAbsCell": 8.92,
+        "energySlope": 0.3420947975275791,
+        "stability": -0.6335289411473083,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.6274264897181183,
+            1.2565603845418651
+          ]
+        },
+        "beatsControls": true
+      }
+    ],
+    "anySharedControlBeatingLaw": false,
+    "allObjectsWithinControls": false,
+    "maxEnergy": 5.570964727944345
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-1000000.json",
+    "md": "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-1000000.md",
+    "svg": "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-1000000.svg"
+  }
+}

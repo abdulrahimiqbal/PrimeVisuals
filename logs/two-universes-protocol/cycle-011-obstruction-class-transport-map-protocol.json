@@ -1,0 +1,316 @@
+{
+  "generatedAt": "2026-06-17T02:38:48.267Z",
+  "cycle": 11,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-011-obstruction-class-transport-map",
+    "title": "Obstruction-class transport map",
+    "class": "forced mutation from broad theorem families to explicit finite-field failure-mode transport",
+    "councilSuccessTarget": "No experiment or promotion unless a finite-field obstruction has a same-form, non-exhausted integer obstruction with fixed controls",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.json",
+      "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.md",
+      "logs/two-universes-protocol/cycle-011-obstruction-class-transport-map.svg",
+      "scripts/obstruction-class-transport-map.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Obstruction map contains 7 finite-field failure modes with theorem-shaped identities, same-form integer tests, transport classes, and eligibility reasons.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "Every class begins from an exact finite-field failure mode or identity: repeated roots, local admissibility, discriminant characters, characteristic-2 trace parity, coefficient-space Morse failure, residue-theorem obstruction, or complete-shell cancellation.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "fail",
+      "evidence": "Cycle 011 intentionally runs no integer holdout: the transport map found no non-exhausted obstruction class that justifies a new statistic.",
+      "severity": "hard-fail"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "The only honest transports are known squarefactor/admissibility controls already absorbed in prior cycles; no new class has controls to clear.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The classification uses one fixed rule: finite-field failure mode -> same-form integer obstruction -> transport class -> experiment eligibility.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "No scale ladder applies because no obstruction class is allowed to proceed to a new experiment.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "pass",
+      "evidence": "Novelty screen blocks the branch: actionable classes=0, honest known local transports=2, non-actionable/no-new transports=5.",
+      "severity": "pass"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the obstruction-class transport script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "Every same-form obstruction is known local structure already controlled, and every other finite-field failure mode has no honest integer transport.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because the branch has no non-exhausted integer obstruction, no holdout, and no controls.",
+      "severity": "hard-fail"
+    }
+  },
+  "obstructionTransportEvidence": {
+    "diagnostics": {
+      "classCount": 7,
+      "honestKnownTransportCount": 2,
+      "noHonestNewTransportCount": 5,
+      "exhaustedKnownTransportCount": 2,
+      "experimentallyActionableCount": 0,
+      "branchDecision": "NO_ACTIONABLE_OBSTRUCTION_CLASS",
+      "stoppedReason": "Every same-form obstruction is known local structure already controlled, and every other finite-field failure mode has no honest integer transport.",
+      "nextRequiredArtifact": "cycle-012 branch-stop ledger or new-domain proposal outside aggregate Two-Universes transport",
+      "byTransportClass": {
+        "honest-known-local-transport": 2,
+        "no-honest-integer-transport": 2,
+        "obstruction-or-coefficient-space-only": 1,
+        "finite-field-obstruction-no-classical-analogue": 1,
+        "finite-field-complete-family-only": 1
+      },
+      "knownTransportOnly": true,
+      "noActionableClass": true
+    },
+    "classes": [
+      {
+        "id": "repeated-root-squarefactor",
+        "family": "mobius-zero-obstruction",
+        "theoremShape": "squarefactor-zero obstruction",
+        "transportClass": "honest-known-local-transport",
+        "noveltyStatus": "known-local-obstruction",
+        "experimentEligibility": false,
+        "eligibilityReason": "Transport is exact but classical; previous squarefree/local controls already absorbed it.",
+        "priorCycleContact": [
+          "cycle-004",
+          "cycle-005",
+          "cycle-008"
+        ]
+      },
+      {
+        "id": "linear-factor-admissibility",
+        "family": "tuple-local-obstruction",
+        "theoremShape": "admissibility / singular-series local factor",
+        "transportClass": "honest-known-local-transport",
+        "noveltyStatus": "known-local-obstruction",
+        "experimentEligibility": false,
+        "eligibilityReason": "Transport is exact at the local-obstruction level, but it is the classical admissibility/singular-series object already controlled in prior cycles.",
+        "priorCycleContact": [
+          "cycle-002",
+          "cycle-003",
+          "cycle-004",
+          "cycle-005",
+          "cycle-007"
+        ]
+      },
+      {
+        "id": "pellet-discriminant-square-class",
+        "family": "mobius-discriminant-character",
+        "theoremShape": "odd-characteristic discriminant character",
+        "transportClass": "no-honest-integer-transport",
+        "noveltyStatus": "finite-field-only-mechanism",
+        "experimentEligibility": false,
+        "eligibilityReason": "The exact finite-field mechanism depends on coefficient-space geometry with no same-form integer object.",
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-009",
+          "cycle-010"
+        ]
+      },
+      {
+        "id": "berlekamp-artin-schreier-parity",
+        "family": "mobius-discriminant-characteristic-two",
+        "theoremShape": "characteristic-2 trace obstruction",
+        "transportClass": "no-honest-integer-transport",
+        "noveltyStatus": "finite-field-only-mechanism",
+        "experimentEligibility": false,
+        "eligibilityReason": "Characteristic-2 algebra is not a transport map to integer primes.",
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-008",
+          "cycle-009",
+          "cycle-010"
+        ]
+      },
+      {
+        "id": "coefficient-space-morse-failure",
+        "family": "very-short-interval-genericity",
+        "theoremShape": "generic Morse condition / non-generic exception",
+        "transportClass": "obstruction-or-coefficient-space-only",
+        "noveltyStatus": "finite-field-only-warning",
+        "experimentEligibility": false,
+        "eligibilityReason": "The obstruction is tied to coefficient-space families, not an integer-local obstruction.",
+        "priorCycleContact": [
+          "cycle-001",
+          "cycle-009",
+          "cycle-010"
+        ]
+      },
+      {
+        "id": "residue-theorem-bouniakowsky-obstruction",
+        "family": "finite-field-bouniakowsky-obstruction",
+        "theoremShape": "global finite-field residue obstruction",
+        "transportClass": "finite-field-obstruction-no-classical-analogue",
+        "noveltyStatus": "finite-field-only-veto",
+        "experimentEligibility": false,
+        "eligibilityReason": "The obstruction argues against transport instead of producing a Z statistic.",
+        "priorCycleContact": [
+          "cycle-009",
+          "cycle-010"
+        ]
+      },
+      {
+        "id": "complete-degree-shell-cancellation",
+        "family": "complete-family-cancellation",
+        "theoremShape": "complete-shell cancellation identity",
+        "transportClass": "finite-field-complete-family-only",
+        "noveltyStatus": "finite-field-only-calibration",
+        "experimentEligibility": false,
+        "eligibilityReason": "The exact cancellation is a calibration identity, not an integer-prime experiment.",
+        "priorCycleContact": [
+          "cycle-008",
+          "cycle-009"
+        ]
+      }
+    ]
+  },
+  "decision": {
+    "status": "NO_ACTIONABLE_OBSTRUCTION_CLASS_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 011 blocks promotion: finite-field obstruction classes either do not transport to integers or transport only as known local controls already absorbed by prior cycles.",
+    "hardFailures": [
+      {
+        "id": "integer_holdout",
+        "status": "fail",
+        "evidence": "Cycle 011 intentionally runs no integer holdout: the transport map found no non-exhausted obstruction class that justifies a new statistic.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "The only honest transports are known squarefactor/admissibility controls already absorbed in prior cycles; no new class has controls to clear.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "No scale ladder applies because no obstruction class is allowed to proceed to a new experiment.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "Every same-form obstruction is known local structure already controlled, and every other finite-field failure mode has no honest integer transport.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because the branch has no non-exhausted integer obstruction, no holdout, and no controls.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Obstruction map has 7 classes; honest known transports=2; actionable=0; decision=NO_ACTIONABLE_OBSTRUCTION_CLASS.",
+    "expectedNull": "A strict obstruction transport pass should block finite-field-only mechanisms and known local controls from being repackaged as breakthroughs.",
+    "knownExplanation": "Squarefactor/admissibility obstructions are classical and already controlled; discriminant, characteristic-2, coefficient-space, residue-theorem, and complete-shell mechanisms do not have same-form integer transport.",
+    "survivedControls": [
+      "Known local obstruction transports were identified but classified as exhausted controls"
+    ],
+    "failedControls": [
+      "No new obstruction class is eligible for holdout/control testing"
+    ],
+    "whatFailed": "No non-exhausted same-form integer obstruction exists in the finite-field failure catalog.",
+    "suspectedInvariant": "This aggregate Two-Universes route should stop unless a new domain/object is registered.",
+    "nextMutation": "Write a branch-stop ledger or propose a genuinely new domain"
+  },
+  "nextMutation": {
+    "title": "Write a branch-stop ledger or propose a genuinely new domain",
+    "reason": "The finite-field theorem, proof-obligation, and obstruction-transport passes found no actionable Two-Universes route that is smaller than known open conjectures or already-exhausted local controls.",
+    "preregisteredNextMove": [
+      "Write a branch-stop ledger for the current aggregate Two-Universes transport route.",
+      "State exactly why no candidate is promoted: no honest non-exhausted transport, no holdout, no controls, and no proof path.",
+      "If continuing, require a new domain/object not covered by prime tuples, Chowla/Mobius correlations, quotient spectra, or coefficient-space finite-field artifacts.",
+      "For any new domain, restart at cycle 001-style registration: theorem-shaped object, exact finite-field anchor, integer transport map, controls, holdouts, novelty audit, proof path.",
+      "Do not revive a rejected family without naming the exact gate failure it now fixes."
+    ]
+  }
+}

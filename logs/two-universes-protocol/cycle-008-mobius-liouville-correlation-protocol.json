@@ -1,0 +1,373 @@
+{
+  "generatedAt": "2026-06-17T02:26:36.976Z",
+  "cycle": 8,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-008-mobius-liouville-correlation",
+    "title": "Mobius/Liouville matched fixed-lag correlations",
+    "class": "forced mutation from prime-indicator local geometry to multiplicative-sign correlations",
+    "councilSuccessTarget": "S1/S2 candidate only if Mobius/Liouville fixed-lag correlation energy/profile survives controls across Z and F_q[t]",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-4000000.json",
+      "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-4000000.md",
+      "logs/two-universes-protocol/cycle-008-mobius-liouville-correlation-4000000.svg",
+      "scripts/mobius-liouville-correlation-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states C_f(X,h)=sum_a f(a)f(a+h)/sqrt(X), h=1..8, and scores fixed-lag correlation energy for Mobius and Liouville signs.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact for q=2,3,5: polynomial Mobius and Liouville values come from factorization tables over monic polynomials.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side was checked at endpoints 1000000, 2000000, 4000000 with fixed lags h=1,2,3,4,5,6,7,8.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No single family clears controls in both universes: mobius Z=false fields=F_2:true/F_3:true/F_5:true; liouville Z=false fields=F_2:true/F_3:true/F_5:true.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The statistic is low-parameter: two fixed multiplicative signs, eight fixed shifts, square-root normalization, and seeded null controls.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate fails unless a complete 1M/2M/4M/8M integer ladder is present and a single family has stable slopes and profiles. Complete ladder=false; stable families=none.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "No literature/catalog audit has ruled out known Mobius/Liouville correlation theorems, Chowla-type finite-field results, or finite-degree artifacts.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present and generated by the Mobius/Liouville audit script.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "The controls gate fails: finite-field correlation energies can be large, but the corresponding integer Mobius/Liouville energies are inside their null controls.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready evidence pack exists because controls, complete scale ladder, novelty audit, and proof-path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "mobiusLiouvilleEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": false,
+      "sharedFamilyControls": false,
+      "anySharedControlBeatingLaw": false,
+      "allObjectsWithinControls": false,
+      "maxEnergy": 4.135409474284257,
+      "slopeThreshold": 0.25,
+      "stabilityThreshold": 0.5,
+      "scaleStable": false,
+      "families": [
+        {
+          "family": "mobius",
+          "controlsPass": false,
+          "integerBeatsControls": false,
+          "fieldPasses": [
+            {
+              "q": 2,
+              "beatsControls": true
+            },
+            {
+              "q": 3,
+              "beatsControls": true
+            },
+            {
+              "q": 5,
+              "beatsControls": true
+            }
+          ],
+          "maxAbsEnergySlope": 0.42974562993498766,
+          "minStability": -0.5689544171492257
+        },
+        {
+          "family": "liouville",
+          "controlsPass": false,
+          "integerBeatsControls": false,
+          "fieldPasses": [
+            {
+              "q": 2,
+              "beatsControls": true
+            },
+            {
+              "q": 3,
+              "beatsControls": true
+            },
+            {
+              "q": 5,
+              "beatsControls": true
+            }
+          ],
+          "maxAbsEnergySlope": 0.6363982279668623,
+          "minStability": -0.6016692528428178
+        }
+      ]
+    },
+    "integer": [
+      {
+        "label": "Z-mobius",
+        "finalEnergy": 0.637251201197916,
+        "finalMaxAbsCell": 1.174001174001761,
+        "energySlope": 0.42974562993498766,
+        "stability": 0.5768794990507864,
+        "controlRanges": {
+          "randomSquarefree": [
+            0.2702115879798728,
+            0.7787698595958812
+          ],
+          "shuffled": [
+            0.2677429730592369,
+            0.6011536338752207
+          ]
+        },
+        "beatsControls": false
+      },
+      {
+        "label": "Z-liouville",
+        "finalEnergy": 0.6972639187237103,
+        "finalMaxAbsCell": 1.1470011470017205,
+        "energySlope": 0.2325329169277412,
+        "stability": 0.48943466266521385,
+        "controlRanges": {
+          "randomMultiplicative": [
+            0.64117846362744,
+            1.0036320987068812
+          ],
+          "shuffled": [
+            0.5853824052233896,
+            0.93971791838803
+          ]
+        },
+        "beatsControls": false
+      }
+    ],
+    "fields": [
+      {
+        "label": "F_2-mobius",
+        "finalEnergy": 1.1897913760344807,
+        "finalMaxAbsCell": 2.275390625,
+        "energySlope": 0.254584150793698,
+        "stability": -0.27644200583011236,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.7670588399059545,
+            1.0054555730541659
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_2-liouville",
+        "finalEnergy": 3.3641808488565945,
+        "finalMaxAbsCell": 6.8828125,
+        "energySlope": 0.6363982279668623,
+        "stability": -0.6016692528428178,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            1.486356356499295,
+            1.620086283328665
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_3-mobius",
+        "finalEnergy": 1.063014289201599,
+        "finalMaxAbsCell": 1.7866971293440272,
+        "energySlope": 0.10774971971920617,
+        "stability": 0.18064093620811583,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.3716771473089065,
+            0.6244857536433329
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_3-liouville",
+        "finalEnergy": 1.9077914910563951,
+        "finalMaxAbsCell": 3.5567627694521393,
+        "energySlope": 0.3883351477525177,
+        "stability": 0.5108777285846928,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.6003473405598914,
+            1.0036713109198663
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_5-mobius",
+        "finalEnergy": 4.135409474284257,
+        "finalMaxAbsCell": 6.824,
+        "energySlope": -0.092573278952157,
+        "stability": -0.5689544171492257,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.6305806847660337,
+            0.8895726614504293
+          ]
+        },
+        "beatsControls": true
+      },
+      {
+        "label": "F_5-liouville",
+        "finalEnergy": 4.072552575474011,
+        "finalMaxAbsCell": 6.52,
+        "energySlope": -0.042133987042147734,
+        "stability": -0.4177127860087837,
+        "controlRanges": {
+          "randomDegreePreserving": [
+            0.3506556145279867,
+            1.2206154513195382
+          ]
+        },
+        "beatsControls": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Mobius/Liouville fixed-lag correlations do not form a breakthrough candidate: no single family beats controls simultaneously in Z and every F_q[t], and the complete 8M ladder plus novelty/proof gates are absent.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No single family clears controls in both universes: mobius Z=false fields=F_2:true/F_3:true/F_5:true; liouville Z=false fields=F_2:true/F_3:true/F_5:true.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate fails unless a complete 1M/2M/4M/8M integer ladder is present and a single family has stable slopes and profiles. Complete ladder=false; stable families=none.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "No literature/catalog audit has ruled out known Mobius/Liouville correlation theorems, Chowla-type finite-field results, or finite-degree artifacts.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "The controls gate fails: finite-field correlation energies can be large, but the corresponding integer Mobius/Liouville energies are inside their null controls.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready evidence pack exists because controls, complete scale ladder, novelty audit, and proof-path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Endpoint energies are Z-mobius=0.637251, Z-liouville=0.697264, F_2-mobius=1.189791*, F_2-liouville=3.364181*, F_3-mobius=1.063014*, F_3-liouville=1.907791*, F_5-mobius=4.135409*, F_5-liouville=4.072553* where * means above controls.",
+    "expectedNull": "A real two-universe multiplicative-sign law should have the same family, Mobius or Liouville, beat controls in Z and in q=2,3,5 with stable scale behavior.",
+    "knownExplanation": "Finite-field energies can reflect exact polynomial factorization/degree artifacts, while integer Mobius and Liouville correlations are consistent with their null sign controls at this scale.",
+    "survivedControls": [],
+    "failedControls": [
+      "mobius: Z=false, fields=F_2=true,F_3=true,F_5=true",
+      "liouville: Z=false, fields=F_2=true,F_3=true,F_5=true"
+    ],
+    "whatFailed": "The multiplicative-sign object did not produce a family-consistent cross-universe signal and lacks the required complete integer scale ladder.",
+    "suspectedInvariant": "Future work should begin from exact finite-field theorems and only then test a matched integer analogue.",
+    "nextMutation": "Theorem-first finite-field catalog search before more integer fitting"
+  },
+  "nextMutation": {
+    "title": "Theorem-first finite-field catalog search before more integer fitting",
+    "reason": "The multiplicative-sign mutation found exact finite-field correlation structure, but no matching integer family beats null controls or the complete scale ladder.",
+    "preregisteredNextMove": [
+      "Stop inventing statistics from visuals and first enumerate exact finite-field identities for Mobius, Liouville, short intervals, character sums, and irreducible correlations.",
+      "For each exact identity, write the theorem-shaped statement before running any integer-prime experiment.",
+      "Classify whether the identity has an honest integer analogue, an obstruction-only analogue, or no transport map.",
+      "Run integer experiments only for identities with a preregistered transport map, fixed normalization, holdout endpoints, and null controls.",
+      "Promote only if the same theorem-shaped family clears controls, complete scale ladders, novelty audit, proof path, and expert pack gates."
+    ]
+  }
+}

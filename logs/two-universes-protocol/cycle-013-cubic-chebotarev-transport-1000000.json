@@ -1,0 +1,1015 @@
+{
+  "candidate": "Cubic Chebotarev splitting transport",
+  "generatedAt": "2026-06-17T09:41:02.413Z",
+  "maxN": 1000000,
+  "q2MaxDegree": 16,
+  "q5MaxDegree": 7,
+  "classes": [
+    "split",
+    "linearQuad",
+    "inert"
+  ],
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242
+  ],
+  "requiredIntegerEndpoints": [
+    1000000,
+    2000000,
+    4000000,
+    8000000
+  ],
+  "theoremShape": {
+    "integer": "factorization type of x^3-2 modulo unramified rational primes p",
+    "functionField": "factorization type of x^3-t over residue fields F_q[t]/P for unramified monic irreducibles P",
+    "expectedIntegerDensities": {
+      "split": 0.16666666666666666,
+      "linearQuad": 0.5,
+      "inert": 0.3333333333333333
+    },
+    "expectedFieldRule": "if q^deg(P)-1 is divisible by 3, split/inert densities are 1/3 and 2/3; otherwise all unramified classes are linear+quadratic"
+  },
+  "integer": {
+    "polynomial": "x^3 - 2",
+    "endpoints": [
+      1000000
+    ],
+    "rows": [
+      {
+        "label": "Z<=1000000",
+        "scale": 1000000,
+        "labels": 78496,
+        "counts": {
+          "split": 13032,
+          "linearQuad": 39265,
+          "inert": 26199
+        },
+        "expected": {
+          "split": 0.16666666666666666,
+          "linearQuad": 0.5,
+          "inert": 0.3333333333333333
+        },
+        "fractions": {
+          "split": 0.1660211985324093,
+          "linearQuad": 0.5002165715450468,
+          "inert": 0.33376222992254384
+        },
+        "z": {
+          "split": -0.48524918895046454,
+          "linearQuad": 0.12135429561077733,
+          "inert": 0.25490749942948715
+        },
+        "chi": 0.32412521947834994,
+        "maxAbsZ": 0.48524918895046454
+      }
+    ],
+    "controls": {
+      "Z<=1000000": {
+        "chiRange": [
+          0.8061046215965798,
+          2.2686084092873933
+        ],
+        "maxAbsZRange": [
+          1.1077728195119232,
+          3.005303438361015
+        ]
+      }
+    }
+  },
+  "fields": [
+    {
+      "q": 2,
+      "polynomial": "x^3 - t",
+      "maxDegree": 16,
+      "rows": [
+        {
+          "label": "F_2:deg1",
+          "scale": 1,
+          "labels": 1,
+          "counts": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg2",
+          "scale": 2,
+          "labels": 1,
+          "counts": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 1
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 1
+          },
+          "z": {
+            "split": -0.7071067811865475,
+            "linearQuad": 0,
+            "inert": 0.7071067811865476
+          },
+          "chi": 0.5773502691896257,
+          "maxAbsZ": 0.7071067811865476
+        },
+        {
+          "label": "F_2:deg3",
+          "scale": 3,
+          "labels": 2,
+          "counts": {
+            "split": 0,
+            "linearQuad": 2,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg4",
+          "scale": 4,
+          "labels": 3,
+          "counts": {
+            "split": 1,
+            "linearQuad": 0,
+            "inert": 2
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg5",
+          "scale": 5,
+          "labels": 6,
+          "counts": {
+            "split": 0,
+            "linearQuad": 6,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg6",
+          "scale": 6,
+          "labels": 9,
+          "counts": {
+            "split": 2,
+            "linearQuad": 0,
+            "inert": 7
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.2222222222222222,
+            "linearQuad": 0,
+            "inert": 0.7777777777777778
+          },
+          "z": {
+            "split": -0.7071067811865475,
+            "linearQuad": 0,
+            "inert": 0.7071067811865475
+          },
+          "chi": 0.5773502691896257,
+          "maxAbsZ": 0.7071067811865475
+        },
+        {
+          "label": "F_2:deg7",
+          "scale": 7,
+          "labels": 18,
+          "counts": {
+            "split": 0,
+            "linearQuad": 18,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg8",
+          "scale": 8,
+          "labels": 30,
+          "counts": {
+            "split": 10,
+            "linearQuad": 0,
+            "inert": 20
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg9",
+          "scale": 9,
+          "labels": 56,
+          "counts": {
+            "split": 0,
+            "linearQuad": 56,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg10",
+          "scale": 10,
+          "labels": 99,
+          "counts": {
+            "split": 31,
+            "linearQuad": 0,
+            "inert": 68
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.31313131313131315,
+            "linearQuad": 0,
+            "inert": 0.6868686868686869
+          },
+          "z": {
+            "split": -0.42640143271122083,
+            "linearQuad": 0,
+            "inert": 0.42640143271122083
+          },
+          "chi": 0.34815531191139565,
+          "maxAbsZ": 0.42640143271122083
+        },
+        {
+          "label": "F_2:deg11",
+          "scale": 11,
+          "labels": 186,
+          "counts": {
+            "split": 0,
+            "linearQuad": 186,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg12",
+          "scale": 12,
+          "labels": 335,
+          "counts": {
+            "split": 111,
+            "linearQuad": 0,
+            "inert": 224
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.33134328358208953,
+            "linearQuad": 0,
+            "inert": 0.6686567164179105
+          },
+          "z": {
+            "split": -0.07726674092862448,
+            "linearQuad": 0,
+            "inert": 0.07726674092862777
+          },
+          "chi": 0.06308802978765163,
+          "maxAbsZ": 0.07726674092862777
+        },
+        {
+          "label": "F_2:deg13",
+          "scale": 13,
+          "labels": 630,
+          "counts": {
+            "split": 0,
+            "linearQuad": 630,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg14",
+          "scale": 14,
+          "labels": 1161,
+          "counts": {
+            "split": 381,
+            "linearQuad": 0,
+            "inert": 780
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3281653746770026,
+            "linearQuad": 0,
+            "inert": 0.6718346253229974
+          },
+          "z": {
+            "split": -0.37354368381881414,
+            "linearQuad": 0,
+            "inert": 0.37354368381881414
+          },
+          "chi": 0.30499714066520933,
+          "maxAbsZ": 0.37354368381881414
+        },
+        {
+          "label": "F_2:deg15",
+          "scale": 15,
+          "labels": 2182,
+          "counts": {
+            "split": 0,
+            "linearQuad": 2182,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_2:deg16",
+          "scale": 16,
+          "labels": 4080,
+          "counts": {
+            "split": 1360,
+            "linearQuad": 0,
+            "inert": 2720
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        }
+      ],
+      "controls": {
+        "F_2:deg1": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg2": {
+          "chiRange": [
+            0.5773502691896257,
+            1.1547005383792515
+          ],
+          "maxAbsZRange": [
+            0.7071067811865476,
+            1.4142135623730951
+          ]
+        },
+        "F_2:deg3": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg4": {
+          "chiRange": [
+            0,
+            1.9999999999999998
+          ],
+          "maxAbsZRange": [
+            0,
+            2.449489742783178
+          ]
+        },
+        "F_2:deg5": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg6": {
+          "chiRange": [
+            0,
+            1.1547005383792515
+          ],
+          "maxAbsZRange": [
+            0,
+            1.414213562373095
+          ]
+        },
+        "F_2:deg7": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg8": {
+          "chiRange": [
+            0.6324555320336758,
+            1.2649110640673515
+          ],
+          "maxAbsZRange": [
+            0.7745966692414833,
+            1.5491933384829666
+          ]
+        },
+        "F_2:deg9": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg10": {
+          "chiRange": [
+            0,
+            0.8703882797784892
+          ],
+          "maxAbsZRange": [
+            0,
+            1.0660035817780522
+          ]
+        },
+        "F_2:deg11": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg12": {
+          "chiRange": [
+            0.031544014893825134,
+            0.9147764319209425
+          ],
+          "maxAbsZRange": [
+            0.038633370464313886,
+            1.1203677434650732
+          ]
+        },
+        "F_2:deg13": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg14": {
+          "chiRange": [
+            0.2541642838876744,
+            0.9149914219956279
+          ],
+          "maxAbsZRange": [
+            0.31128640318234513,
+            1.1206310514564424
+          ]
+        },
+        "F_2:deg15": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_2:deg16": {
+          "chiRange": [
+            0.18981415059132412,
+            1.8710251986859094
+          ],
+          "maxAbsZRange": [
+            0.232473907454275,
+            2.2915285163349965
+          ]
+        }
+      }
+    },
+    {
+      "q": 5,
+      "polynomial": "x^3 - t",
+      "maxDegree": 7,
+      "rows": [
+        {
+          "label": "F_5:deg1",
+          "scale": 1,
+          "labels": 4,
+          "counts": {
+            "split": 0,
+            "linearQuad": 4,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg2",
+          "scale": 2,
+          "labels": 10,
+          "counts": {
+            "split": 2,
+            "linearQuad": 0,
+            "inert": 8
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.2,
+            "linearQuad": 0,
+            "inert": 0.8
+          },
+          "z": {
+            "split": -0.8944271909999156,
+            "linearQuad": 0,
+            "inert": 0.8944271909999163
+          },
+          "chi": 0.7302967433402215,
+          "maxAbsZ": 0.8944271909999163
+        },
+        {
+          "label": "F_5:deg3",
+          "scale": 3,
+          "labels": 40,
+          "counts": {
+            "split": 0,
+            "linearQuad": 40,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg4",
+          "scale": 4,
+          "labels": 150,
+          "counts": {
+            "split": 50,
+            "linearQuad": 0,
+            "inert": 100
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg5",
+          "scale": 5,
+          "labels": 624,
+          "counts": {
+            "split": 0,
+            "linearQuad": 624,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        },
+        {
+          "label": "F_5:deg6",
+          "scale": 6,
+          "labels": 2580,
+          "counts": {
+            "split": 844,
+            "linearQuad": 0,
+            "inert": 1736
+          },
+          "expected": {
+            "split": 0.3333333333333333,
+            "linearQuad": 0,
+            "inert": 0.6666666666666666
+          },
+          "fractions": {
+            "split": 0.3271317829457364,
+            "linearQuad": 0,
+            "inert": 0.6728682170542636
+          },
+          "z": {
+            "split": -0.6682152556676454,
+            "linearQuad": 0,
+            "inert": 0.6682152556676454
+          },
+          "chi": 0.5455954715763788,
+          "maxAbsZ": 0.6682152556676454
+        },
+        {
+          "label": "F_5:deg7",
+          "scale": 7,
+          "labels": 11160,
+          "counts": {
+            "split": 0,
+            "linearQuad": 11160,
+            "inert": 0
+          },
+          "expected": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "fractions": {
+            "split": 0,
+            "linearQuad": 1,
+            "inert": 0
+          },
+          "z": {
+            "split": 0,
+            "linearQuad": 0,
+            "inert": 0
+          },
+          "chi": 0,
+          "maxAbsZ": 0
+        }
+      ],
+      "controls": {
+        "F_5:deg1": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg2": {
+          "chiRange": [
+            0.18257418583505544,
+            0.9128709291752769
+          ],
+          "maxAbsZRange": [
+            0.22360679774997938,
+            1.1180339887498951
+          ]
+        },
+        "F_5:deg3": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg4": {
+          "chiRange": [
+            0,
+            1.1313708498984758
+          ],
+          "maxAbsZRange": [
+            0,
+            1.3856406460551016
+          ]
+        },
+        "F_5:deg5": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "F_5:deg6": {
+          "chiRange": [
+            0.10229915092057103,
+            0.7842934903910445
+          ],
+          "maxAbsZRange": [
+            0.12529036043768352,
+            0.9605594300222403
+          ]
+        },
+        "F_5:deg7": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "hasRequiredIntegerScaleLadder": false,
+    "finalInteger": {
+      "label": "Z<=1000000",
+      "chi": 0.32412521947834994,
+      "maxAbsZ": 0.48524918895046454,
+      "control": {
+        "chiRange": [
+          0.8061046215965798,
+          2.2686084092873933
+        ],
+        "maxAbsZRange": [
+          1.1077728195119232,
+          3.005303438361015
+        ]
+      },
+      "withinControls": true
+    },
+    "finalFields": [
+      {
+        "q": 2,
+        "label": "F_2:deg16",
+        "chi": 0,
+        "maxAbsZ": 0,
+        "control": {
+          "chiRange": [
+            0.18981415059132412,
+            1.8710251986859094
+          ],
+          "maxAbsZRange": [
+            0.232473907454275,
+            2.2915285163349965
+          ]
+        },
+        "withinControls": true
+      },
+      {
+        "q": 5,
+        "label": "F_5:deg7",
+        "chi": 0,
+        "maxAbsZ": 0,
+        "control": {
+          "chiRange": [
+            0,
+            0
+          ],
+          "maxAbsZRange": [
+            0,
+            0
+          ]
+        },
+        "withinControls": true
+      }
+    ],
+    "allWithinControls": true,
+    "maxChi": 0.32412521947834994
+  },
+  "paths": {
+    "json": "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-1000000.json",
+    "md": "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-1000000.md",
+    "svg": "logs/two-universes-protocol/cycle-013-cubic-chebotarev-transport-1000000.svg"
+  }
+}

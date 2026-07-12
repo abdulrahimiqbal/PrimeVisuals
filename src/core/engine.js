@@ -148,6 +148,8 @@ export const makeFns = (tab) => {
   dot: (x, y) => [x[0] * y[0] + x[1] * y[1], 0],
   zeta: (z) => zetaC(z[0], z[1]),
   mu: (z) => [(tab && tab.mu[Math.round(z[0])]) || 0, 0],
+  lambda: (z) => [(tab && tab.lambda[Math.round(z[0])]) || 0, 0],
+  liouville: (z) => [(tab && tab.lambda[Math.round(z[0])]) || 0, 0],
   M: (z) => [(tab && tab.mertens[Math.round(z[0])]) || 0, 0],
   isprime: (z) => [(tab && tab.isp[Math.round(z[0])]) || 0, 0],
   pi: (z) => { if (!tab) return [0, 0]; const k = Math.max(0, Math.min(tab.pic.length - 1, Math.round(z[0]))); return [tab.pic[k], 0]; },

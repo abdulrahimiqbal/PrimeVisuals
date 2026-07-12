@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-07-12T14:50:26-04:00",
+  "status": "LOCALIZED-WEIL FINITE KILL TEST SURVIVES / DOES NOT TEST SONIN REMAINDER",
+  "target": {
+    "primeCutoff": 3,
+    "finitePlaces": [2],
+    "matrix": "cutoff-free Connes-van Suijlekom / Connes-Consani-Moscovici localized Weil block A_3",
+    "represents": "Q_W at c=3",
+    "doesNotRepresent": ["Q_W minus the semilocal Sonin trace", "the P3 comparison remainder E_S"],
+    "domain": "finite CvS/CCM trigonometric Galerkin space",
+    "basis": "frequencies -N,...,N with the published normalization",
+    "constraints": {
+      "poleNeutral": "exact finite-dictionary pole row",
+      "reportedZeroMoment": "Groskin M_0(v)=v_0+sqrt(2) sum_(k>=1) v_k",
+      "semilocalMellinIdentificationProved": false
+    },
+    "comparisonMap": null,
+    "finiteOnly": true,
+    "promotionAllowed": false
+  },
+  "provenance": {
+    "source": "arXiv:2607.02828v1 ancillary package",
+    "archivalDoi": "10.5281/zenodo.21124802",
+    "script": "arb_ldlt_certify.py",
+    "scriptSha256": "02462e7f75a601ed8a5cc4d5c22064ece8088140ff45b9a21fd0295162c72039",
+    "checksumMatchesUpstreamManifest": true,
+    "intervalLibrary": "python-flint 0.8.0 / Arb",
+    "method": "cutoff-free interval matrix entries plus interval LDL^T inertia"
+  },
+  "rigorousCertificates": [
+    {"N": 8, "dimension": 17, "precisionBits": 400, "positivePivots": 17, "negativePivots": 0, "undeterminedPivot": null, "sourceOutputSha256": "e895a427128dae92e67a1c362c7f2a7f04ef33f25e7ebedb82e36a711c14e693", "storedArtifactSha256": "3bc24cb323b4ea788d88d3065297edcae309cf63cac464e08b46ef8a7b2d4549"},
+    {"N": 20, "dimension": 41, "precisionBits": 600, "positivePivots": 41, "negativePivots": 0, "undeterminedPivot": null, "sourceOutputSha256": "2f701c22ae7b4d7a14a086d9efe79b87ad10c846a090c9f705327c73d32be85d", "storedArtifactSha256": "b3dfb6b1bcccaf4e44b59cd9ac581548d7859e5846acb43e18d8251489ea07ea"},
+    {"N": 50, "dimension": 101, "precisionBits": 600, "positivePivots": 101, "negativePivots": 0, "undeterminedPivot": null, "sourceOutputSha256": "fbe268edfeca380648e38b8cc74dca8529b2eec1bf6fa2c8665803484a9f1cc4", "storedArtifactSha256": "69a25b8f96b67cb192873980415a35952418d065ed7579367169106ba56f5f0d"},
+    {"N": 100, "dimension": 201, "precisionBits": 600, "positivePivots": 201, "negativePivots": 0, "undeterminedPivot": null, "sourceOutputSha256": "3f3580cdd9ea6b6f1415598e4136d1f2f850bf971cf41c02dc1cac77dbe2abf4", "storedArtifactSha256": "e7512b405c809c8468e45b8ab99ba250497313a492ba75e3f35f9c0be60fc137"},
+    {"N": 200, "dimension": 401, "precisionBits": 1000, "positivePivots": 401, "negativePivots": 0, "undeterminedPivot": null, "sourceOutputSha256": "756a5bb50682dc6fee53ca84f83b350e00ccf87184256efcf4ae58f528120924", "storedArtifactSha256": "b9846727ed98acdd572ac2c4b64db32aecbc1d848c4a3842cb5e2b250b0394af"}
+  ],
+  "diagnosticEigenvalueFlow": [
+    {"N": 4, "dimension": 9, "minimum": 3.0558219149986953e-7},
+    {"N": 8, "dimension": 17, "minimum": 1.0256014506111362e-7},
+    {"N": 20, "dimension": 41, "minimum": 6.619332167385409e-8},
+    {"N": 50, "dimension": 101, "minimum": 5.66657772525232e-8},
+    {"N": 100, "dimension": 201, "minimum": 5.561161948004836e-8},
+    {"N": 200, "dimension": 401, "minimum": 5.53933479347343e-8},
+    {"N": 300, "dimension": 601, "minimum": 5.53551097870751e-8},
+    {"N": 400, "dimension": 801, "minimum": 5.534137059589047e-8}
+  ],
+  "diagnosticConstrainedEvenSector": [
+    {"N": 8, "poleNeutralMinimum": 0.001399566942537, "zeroMomentAndPoleNeutralMinimum": 0.003476608943595},
+    {"N": 20, "poleNeutralMinimum": 0.0009969907993241, "zeroMomentAndPoleNeutralMinimum": 0.001547853715875},
+    {"N": 50, "poleNeutralMinimum": 0.0009520122743495, "zeroMomentAndPoleNeutralMinimum": 0.00113420141778},
+    {"N": 100, "poleNeutralMinimum": 0.0009466479771718, "zeroMomentAndPoleNeutralMinimum": 0.001031377160712},
+    {"N": 200, "poleNeutralMinimum": 0.000945319224056, "zeroMomentAndPoleNeutralMinimum": 0.0009860817161158},
+    {"N": 400, "poleNeutralMinimum": 0.0009449370679637, "zeroMomentAndPoleNeutralMinimum": 0.0009649566976941}
+  ],
+  "gates": {
+    "negativeFiniteDirectionFound": false,
+    "finiteTargetKilled": false,
+    "uniformClosureProved": false,
+    "soninProjectionTransportConstructed": true,
+    "soninRemainderConstructed": false,
+    "fieldLevelBreakthrough": false
+  },
+  "nextLemma": {
+    "lane": "W: fixed-width localized Weil positivity",
+    "name": "c=3 frequency-tail Schur bound",
+    "statement": "Prove a uniform positive lower bound for the high-frequency block and a rigorous bound on its infinite Schur correction to the pole-neutral low block.",
+    "why": "Principal-matrix positivity is monotone downward with N and cannot by itself exclude convergence to zero or a later negative direction.",
+    "doesNotImply": "P3 Sonin domination without the independent P3-C0 comparison identity"
+  }
+}

@@ -1,0 +1,2634 @@
+{
+  "generatedAt": "2026-07-10T18:18:28.266Z",
+  "maximumIndex": 60,
+  "cutoffs": [
+    2048,
+    4096,
+    8192
+  ],
+  "burnolConstant": 0.04619141793224202,
+  "ladders": [
+    {
+      "cutoff": 2048,
+      "rows": [
+        {
+          "n": 1,
+          "distanceSquared": 0.8582120513955298,
+          "gain": 0.1417879486044702,
+          "logScaledDistance": 0,
+          "newestCoefficient": -0.33536708159125034,
+          "minPivot": 1.2606614015079811,
+          "pivotRatio": 1
+        },
+        {
+          "n": 2,
+          "distanceSquared": 0.28996457374194073,
+          "gain": 0.5682474776535891,
+          "logScaledDistance": 0.20098812675149255,
+          "newestCoefficient": -1.9005428584584063,
+          "minPivot": 0.15731936374865352,
+          "pivotRatio": 8.013389906166404
+        },
+        {
+          "n": 3,
+          "distanceSquared": 0.093837228496773,
+          "gain": 0.19612734524516773,
+          "logScaledDistance": 0.10309073236111214,
+          "newestCoefficient": -1.3492779165191746,
+          "minPivot": 0.10772966890154242,
+          "pivotRatio": 11.702081834672116
+        },
+        {
+          "n": 4,
+          "distanceSquared": 0.06512886865982148,
+          "gain": 0.028708359836951525,
+          "logScaledDistance": 0.09028778336922849,
+          "newestCoefficient": -0.6998652583641387,
+          "minPivot": 0.05861105114556143,
+          "pivotRatio": 21.50893691323006
+        },
+        {
+          "n": 5,
+          "distanceSquared": 0.036101599818588404,
+          "gain": 0.029027268841233078,
+          "logScaledDistance": 0.05810328344756022,
+          "newestCoefficient": -0.7506618181250176,
+          "minPivot": 0.051513080609250535,
+          "pivotRatio": 24.47264629872662
+        },
+        {
+          "n": 6,
+          "distanceSquared": 0.03598631735355062,
+          "gain": 0.00011528246503778039,
+          "logScaledDistance": 0.06447882488087021,
+          "newestCoefficient": 0.059918594675029094,
+          "minPivot": 0.03210997862218685,
+          "pivotRatio": 39.260736244679684
+        },
+        {
+          "n": 7,
+          "distanceSquared": 0.024302100543455052,
+          "gain": 0.011684216810095571,
+          "logScaledDistance": 0.047289704090871826,
+          "newestCoefficient": -0.6136029622567412,
+          "minPivot": 0.031033067919972398,
+          "pivotRatio": 40.62316380574926
+        },
+        {
+          "n": 8,
+          "distanceSquared": 0.024161421585875864,
+          "gain": 0.0001406789575791878,
+          "logScaledDistance": 0.05024226375171017,
+          "newestCoefficient": -0.0806338997203346,
+          "minPivot": 0.021636838981876256,
+          "pivotRatio": 58.26458303654954
+        },
+        {
+          "n": 9,
+          "distanceSquared": 0.024014950782765387,
+          "gain": 0.00014647080311047667,
+          "logScaledDistance": 0.05276624008341179,
+          "newestCoefficient": -0.08591336251907497,
+          "minPivot": 0.019844018755685873,
+          "pivotRatio": 63.528533057184596
+        },
+        {
+          "n": 10,
+          "distanceSquared": 0.02377186555600186,
+          "gain": 0.00024308522676352862,
+          "logScaledDistance": 0.0547367432619085,
+          "newestCoefficient": 0.12629865720584538,
+          "minPivot": 0.015239162477744239,
+          "pivotRatio": 82.7251106055921
+        },
+        {
+          "n": 11,
+          "distanceSquared": 0.020444444564801767,
+          "gain": 0.003327420991200092,
+          "logScaledDistance": 0.0490236369769265,
+          "newestCoefficient": -0.46773084193292963,
+          "minPivot": 0.0152095279758522,
+          "pivotRatio": 82.88629361210307
+        },
+        {
+          "n": 12,
+          "distanceSquared": 0.020443063207498335,
+          "gain": 0.0000013813573034315851,
+          "logScaledDistance": 0.05079910370634902,
+          "newestCoefficient": -0.011149833716144565,
+          "minPivot": 0.011111411898438265,
+          "pivotRatio": 113.45645477197817
+        },
+        {
+          "n": 13,
+          "distanceSquared": 0.01982440645625183,
+          "gain": 0.0006186567512465047,
+          "logScaledDistance": 0.05084859860201947,
+          "newestCoefficient": -0.23084880566589092,
+          "minPivot": 0.011111411898438265,
+          "pivotRatio": 113.45645477197817
+        },
+        {
+          "n": 14,
+          "distanceSquared": 0.018486425618223445,
+          "gain": 0.0013379808380283853,
+          "logScaledDistance": 0.048786737026159877,
+          "newestCoefficient": 0.38423903170955676,
+          "minPivot": 0.009062477374188839,
+          "pivotRatio": 139.10781229628392
+        },
+        {
+          "n": 15,
+          "distanceSquared": 0.018335034600711397,
+          "gain": 0.0001513910175120481,
+          "logScaledDistance": 0.04965219413767248,
+          "newestCoefficient": 0.13207871627652884,
+          "minPivot": 0.008678295410940687,
+          "pivotRatio": 145.26601617164025
+        },
+        {
+          "n": 16,
+          "distanceSquared": 0.01789402347691127,
+          "gain": 0.00044101112380012797,
+          "logScaledDistance": 0.04961276768757806,
+          "newestCoefficient": -0.24643720330119553,
+          "minPivot": 0.007261678226337701,
+          "pivotRatio": 173.60469057078743
+        },
+        {
+          "n": 17,
+          "distanceSquared": 0.017069238443303325,
+          "gain": 0.0008247850336079443,
+          "logScaledDistance": 0.048360794130444335,
+          "newestCoefficient": -0.33146637609272,
+          "minPivot": 0.007261678226337701,
+          "pivotRatio": 173.60469057078743
+        },
+        {
+          "n": 18,
+          "distanceSquared": 0.01705923539562515,
+          "gain": 0.000010003047678175392,
+          "logScaledDistance": 0.04930753219881753,
+          "newestCoefficient": -0.04176715617528448,
+          "minPivot": 0.005734063873925475,
+          "pivotRatio": 219.85478871984498
+        },
+        {
+          "n": 19,
+          "distanceSquared": 0.01681731800065689,
+          "gain": 0.0002419173949682607,
+          "logScaledDistance": 0.049517566646171574,
+          "newestCoefficient": -0.19715463133316985,
+          "minPivot": 0.005734063873925475,
+          "pivotRatio": 219.85478871984498
+        },
+        {
+          "n": 20,
+          "distanceSquared": 0.016503583071004857,
+          "gain": 0.000313734929652032,
+          "logScaledDistance": 0.04944031643508853,
+          "newestCoefficient": 0.2505381519026659,
+          "minPivot": 0.004998217312848466,
+          "pivotRatio": 252.22220695913174
+        },
+        {
+          "n": 21,
+          "distanceSquared": 0.016090756354282254,
+          "gain": 0.00041282671672260296,
+          "logScaledDistance": 0.048988668760553064,
+          "newestCoefficient": 0.28730664857316096,
+          "minPivot": 0.004998217312848466,
+          "pivotRatio": 252.22220695913174
+        },
+        {
+          "n": 22,
+          "distanceSquared": 0.016057382489117034,
+          "gain": 0.00003337386516522045,
+          "logScaledDistance": 0.04963405096367318,
+          "newestCoefficient": 0.08855335365996383,
+          "minPivot": 0.004255949640725154,
+          "pivotRatio": 296.2115410024406
+        },
+        {
+          "n": 23,
+          "distanceSquared": 0.015547299628786315,
+          "gain": 0.0005100828603307184,
+          "logScaledDistance": 0.04874846805937691,
+          "newestCoefficient": -0.3354336559563938,
+          "minPivot": 0.004255949640725154,
+          "pivotRatio": 296.2115410024406
+        },
+        {
+          "n": 24,
+          "distanceSquared": 0.015546914888379226,
+          "gain": 3.8474040708891266e-7,
+          "logScaledDistance": 0.0494089324111071,
+          "newestCoefficient": 0.01044658599150998,
+          "minPivot": 0.003525486315946793,
+          "pivotRatio": 357.58510699804606
+        },
+        {
+          "n": 25,
+          "distanceSquared": 0.015520009300678872,
+          "gain": 0.00002690558770035434,
+          "logScaledDistance": 0.04995698273968485,
+          "newestCoefficient": 0.08324187854026759,
+          "minPivot": 0.003525486315946793,
+          "pivotRatio": 357.58510699804606
+        },
+        {
+          "n": 26,
+          "distanceSquared": 0.015423409012463973,
+          "gain": 0.00009660028821489863,
+          "logScaledDistance": 0.0502509555079982,
+          "newestCoefficient": 0.17346129144317646,
+          "minPivot": 0.003210504413437977,
+          "pivotRatio": 392.6677054955357
+        },
+        {
+          "n": 27,
+          "distanceSquared": 0.015313964627490573,
+          "gain": 0.00010944438497340059,
+          "logScaledDistance": 0.05047232918396968,
+          "newestCoefficient": -0.18295722585581933,
+          "minPivot": 0.003210504413437977,
+          "pivotRatio": 392.6677054955357
+        },
+        {
+          "n": 28,
+          "distanceSquared": 0.015214590975218711,
+          "gain": 0.00009937365227186135,
+          "logScaledDistance": 0.05069812866809474,
+          "newestCoefficient": -0.1879081518796749,
+          "minPivot": 0.0028143623311403946,
+          "pivotRatio": 447.9385570077448
+        },
+        {
+          "n": 29,
+          "distanceSquared": 0.014702947028117253,
+          "gain": 0.0005116439471014589,
+          "logScaledDistance": 0.049509172216291246,
+          "newestCoefficient": -0.40940323324911815,
+          "minPivot": 0.0028143623311403946,
+          "pivotRatio": 447.9385570077448
+        },
+        {
+          "n": 30,
+          "distanceSquared": 0.01453011047409003,
+          "gain": 0.00017283655402722253,
+          "logScaledDistance": 0.04941977369973687,
+          "newestCoefficient": -0.2701897964351687,
+          "minPivot": 0.002367542101164969,
+          "pivotRatio": 532.4768674177587
+        },
+        {
+          "n": 31,
+          "distanceSquared": 0.01452951781080436,
+          "gain": 5.92663285670092e-7,
+          "logScaledDistance": 0.04989417824964121,
+          "newestCoefficient": 0.01482275811106282,
+          "minPivot": 0.002367542101164969,
+          "pivotRatio": 532.4768674177587
+        },
+        {
+          "n": 32,
+          "distanceSquared": 0.014051943699478597,
+          "gain": 0.00047757411132576255,
+          "logScaledDistance": 0.048700325783403386,
+          "newestCoefficient": 0.4600557556326888,
+          "minPivot": 0.002256419474778926,
+          "pivotRatio": 558.6999295117744
+        },
+        {
+          "n": 33,
+          "distanceSquared": 0.013498813598497472,
+          "gain": 0.0005531301009811251,
+          "logScaledDistance": 0.04719870381797296,
+          "newestCoefficient": 0.48848623647592493,
+          "minPivot": 0.002256419474778926,
+          "pivotRatio": 558.6999295117744
+        },
+        {
+          "n": 34,
+          "distanceSquared": 0.013278355307350553,
+          "gain": 0.00022045829114691884,
+          "logScaledDistance": 0.04682426798766849,
+          "newestCoefficient": 0.3305407862729723,
+          "minPivot": 0.0020177916710656706,
+          "pivotRatio": 624.77282446219
+        },
+        {
+          "n": 35,
+          "distanceSquared": 0.013250422616539526,
+          "gain": 0.000027932690811027783,
+          "logScaledDistance": 0.04710986436362929,
+          "newestCoefficient": 0.1142445581900779,
+          "minPivot": 0.0020177916710656706,
+          "pivotRatio": 624.77282446219
+        },
+        {
+          "n": 36,
+          "distanceSquared": 0.013154740901545559,
+          "gain": 0.00009568171499396705,
+          "logScaledDistance": 0.04714026315117171,
+          "newestCoefficient": -0.23272587882994586,
+          "minPivot": 0.0017666055603091952,
+          "pivotRatio": 713.6066079670537
+        },
+        {
+          "n": 37,
+          "distanceSquared": 0.013070781821399313,
+          "gain": 0.00008395908014624531,
+          "logScaledDistance": 0.04719752021115528,
+          "newestCoefficient": -0.20516835266412925,
+          "minPivot": 0.0017666055603091952,
+          "pivotRatio": 713.6066079670537
+        },
+        {
+          "n": 38,
+          "distanceSquared": 0.01296384482149282,
+          "gain": 0.00010693699990649286,
+          "logScaledDistance": 0.04715710249950286,
+          "newestCoefficient": 0.2526130622587852,
+          "minPivot": 0.001675777630377592,
+          "pivotRatio": 752.2844192781859
+        },
+        {
+          "n": 39,
+          "distanceSquared": 0.012963758905072509,
+          "gain": 8.591642031152702e-8,
+          "logScaledDistance": 0.0474935299142953,
+          "newestCoefficient": 0.007062151223291494,
+          "minPivot": 0.001675777630377592,
+          "pivotRatio": 752.2844192781859
+        },
+        {
+          "n": 40,
+          "distanceSquared": 0.01271519719527714,
+          "gain": 0.0002485617097953696,
+          "logScaledDistance": 0.04690482968866499,
+          "newestCoefficient": -0.4067660902538327,
+          "minPivot": 0.0015022587608430574,
+          "pivotRatio": 839.1772671710075
+        },
+        {
+          "n": 41,
+          "distanceSquared": 0.01232649194863411,
+          "gain": 0.0003887052466430285,
+          "logScaledDistance": 0.045775316180903185,
+          "newestCoefficient": -0.48194842640320656,
+          "minPivot": 0.0015022587608430574,
+          "pivotRatio": 839.1772671710075
+        },
+        {
+          "n": 42,
+          "distanceSquared": 0.012136577765798684,
+          "gain": 0.00018991418283542671,
+          "logScaledDistance": 0.04536251798515918,
+          "newestCoefficient": -0.3789926134212683,
+          "minPivot": 0.001322196209824251,
+          "pivotRatio": 953.4601537509708
+        },
+        {
+          "n": 43,
+          "distanceSquared": 0.012129940668440198,
+          "gain": 0.000006637097358486166,
+          "logScaledDistance": 0.04562313424549332,
+          "newestCoefficient": -0.06587048064946746,
+          "minPivot": 0.001322196209824251,
+          "pivotRatio": 953.4601537509708
+        },
+        {
+          "n": 44,
+          "distanceSquared": 0.012063231382773432,
+          "gain": 0.00006670928566676615,
+          "logScaledDistance": 0.04564955515024867,
+          "newestCoefficient": 0.22729370100061425,
+          "minPivot": 0.001291253434409219,
+          "pivotRatio": 976.3082659948669
+        },
+        {
+          "n": 45,
+          "distanceSquared": 0.012022649354869408,
+          "gain": 0.000040582027904023654,
+          "logScaledDistance": 0.04576616832684271,
+          "newestCoefficient": 0.17572624546354682,
+          "minPivot": 0.001291253434409219,
+          "pivotRatio": 976.3082659948669
+        },
+        {
+          "n": 46,
+          "distanceSquared": 0.011925253400211888,
+          "gain": 0.00009739595465751982,
+          "logScaledDistance": 0.04565751883167357,
+          "newestCoefficient": 0.2858889248267996,
+          "minPivot": 0.0011916432467014995,
+          "pivotRatio": 1057.9184709832625
+        },
+        {
+          "n": 47,
+          "distanceSquared": 0.011885203008200507,
+          "gain": 0.0000400503920113815,
+          "logScaledDistance": 0.04575978585786035,
+          "newestCoefficient": -0.17408517668382198,
+          "minPivot": 0.0011916432467014995,
+          "pivotRatio": 1057.9184709832625
+        },
+        {
+          "n": 48,
+          "distanceSquared": 0.011873207147298337,
+          "gain": 0.000011995860902169753,
+          "logScaledDistance": 0.04596357151134012,
+          "newestCoefficient": 0.10648767593488563,
+          "minPivot": 0.0010578710291369346,
+          "pivotRatio": 1191.6966877677833
+        },
+        {
+          "n": 49,
+          "distanceSquared": 0.011872614669223958,
+          "gain": 5.924780743793434e-7,
+          "logScaledDistance": 0.04620608276133178,
+          "newestCoefficient": 0.0221066737773034,
+          "minPivot": 0.0010578710291369346,
+          "pivotRatio": 1191.6966877677833
+        },
+        {
+          "n": 50,
+          "distanceSquared": 0.011869048866014142,
+          "gain": 0.0000035658032098151438,
+          "logScaledDistance": 0.046431992216398175,
+          "newestCoefficient": 0.05924636978585186,
+          "minPivot": 0.0010158600504698483,
+          "pivotRatio": 1240.9794055046352
+        },
+        {
+          "n": 51,
+          "distanceSquared": 0.011832332992991357,
+          "gain": 0.00003671587302278567,
+          "logScaledDistance": 0.04652267015677316,
+          "newestCoefficient": 0.1850391130505364,
+          "minPivot": 0.0010158600504698483,
+          "pivotRatio": 1240.9794055046352
+        },
+        {
+          "n": 52,
+          "distanceSquared": 0.0118286753143384,
+          "gain": 0.000003657678652957408,
+          "logScaledDistance": 0.046737979034918796,
+          "newestCoefficient": -0.061902035168307556,
+          "minPivot": 0.0009545434290855878,
+          "pivotRatio": 1320.6956992157407
+        },
+        {
+          "n": 53,
+          "distanceSquared": 0.011799959254922165,
+          "gain": 0.000028716059416233897,
+          "logScaledDistance": 0.046849282810061996,
+          "newestCoefficient": -0.16382641644977955,
+          "minPivot": 0.0009545434290855878,
+          "pivotRatio": 1320.6956992157407
+        },
+        {
+          "n": 54,
+          "distanceSquared": 0.01173927695812016,
+          "gain": 0.000060682296802005986,
+          "logScaledDistance": 0.0468277885041409,
+          "newestCoefficient": 0.2665454941467828,
+          "minPivot": 0.000854120842236594,
+          "pivotRatio": 1475.975458234719
+        },
+        {
+          "n": 55,
+          "distanceSquared": 0.0116228079312799,
+          "gain": 0.00011646902684026017,
+          "logScaledDistance": 0.04657646392860111,
+          "newestCoefficient": 0.34563474185504833,
+          "minPivot": 0.000854120842236594,
+          "pivotRatio": 1475.975458234719
+        },
+        {
+          "n": 56,
+          "distanceSquared": 0.011611728723096904,
+          "gain": 0.000011079208182995792,
+          "logScaledDistance": 0.046741291847876024,
+          "newestCoefficient": 0.11504952887326943,
+          "minPivot": 0.0008370261646713972,
+          "pivotRatio": 1506.1194676069608
+        },
+        {
+          "n": 57,
+          "distanceSquared": 0.011564932318110954,
+          "gain": 0.00004679640498594928,
+          "logScaledDistance": 0.04675761427115926,
+          "newestCoefficient": 0.23020173911927788,
+          "minPivot": 0.0008370261646713972,
+          "pivotRatio": 1506.1194676069608
+        },
+        {
+          "n": 58,
+          "distanceSquared": 0.011564775808130312,
+          "gain": 1.5650998064220545e-7,
+          "logScaledDistance": 0.04695811309865904,
+          "newestCoefficient": 0.014111037912367714,
+          "minPivot": 0.0007860028487129845,
+          "pivotRatio": 1603.8890998578584
+        },
+        {
+          "n": 59,
+          "distanceSquared": 0.011483523341368818,
+          "gain": 0.00008125246676149445,
+          "logScaledDistance": 0.04682449641239668,
+          "newestCoefficient": -0.3035714726234289,
+          "minPivot": 0.0007860028487129845,
+          "pivotRatio": 1603.8890998578584
+        },
+        {
+          "n": 60,
+          "distanceSquared": 0.011470726441207169,
+          "gain": 0.000012796900161649027,
+          "logScaledDistance": 0.046965106429293836,
+          "newestCoefficient": -0.13518069741771865,
+          "minPivot": 0.000700285955215422,
+          "pivotRatio": 1800.2094603199296
+        }
+      ]
+    },
+    {
+      "cutoff": 4096,
+      "rows": [
+        {
+          "n": 1,
+          "distanceSquared": 0.8582120513955661,
+          "gain": 0.1417879486044339,
+          "logScaledDistance": 0,
+          "newestCoefficient": -0.3353670815911645,
+          "minPivot": 1.2606614015083037,
+          "pivotRatio": 1
+        },
+        {
+          "n": 2,
+          "distanceSquared": 0.28996457374288664,
+          "gain": 0.5682474776526795,
+          "logScaledDistance": 0.20098812675214822,
+          "newestCoefficient": -1.9005428584548474,
+          "minPivot": 0.15731936374899091,
+          "pivotRatio": 8.01338990615127
+        },
+        {
+          "n": 3,
+          "distanceSquared": 0.0938372284977198,
+          "gain": 0.19612734524516684,
+          "logScaledDistance": 0.10309073236215231,
+          "newestCoefficient": -1.349277916518661,
+          "minPivot": 0.1077296689016239,
+          "pivotRatio": 11.70208183466626
+        },
+        {
+          "n": 4,
+          "distanceSquared": 0.0651288686604834,
+          "gain": 0.028708359837236408,
+          "logScaledDistance": 0.09028778337014609,
+          "newestCoefficient": -0.6998652583666569,
+          "minPivot": 0.058611051145720926,
+          "pivotRatio": 21.50893691317703
+        },
+        {
+          "n": 5,
+          "distanceSquared": 0.0361015998192975,
+          "gain": 0.029027268841185894,
+          "logScaledDistance": 0.058103283448701463,
+          "newestCoefficient": -0.7506618181239686,
+          "minPivot": 0.051513080609311035,
+          "pivotRatio": 24.47264629870414
+        },
+        {
+          "n": 6,
+          "distanceSquared": 0.03598631735427105,
+          "gain": 0.00011528246502645612,
+          "logScaledDistance": 0.06447882488216103,
+          "newestCoefficient": 0.059918594672025705,
+          "minPivot": 0.03210997862224814,
+          "pivotRatio": 39.2607362446148
+        },
+        {
+          "n": 7,
+          "distanceSquared": 0.02430210054420301,
+          "gain": 0.011684216810068038,
+          "logScaledDistance": 0.04728970409232729,
+          "newestCoefficient": -0.6136029622557324,
+          "minPivot": 0.0310330679200005,
+          "pivotRatio": 40.62316380572287
+        },
+        {
+          "n": 8,
+          "distanceSquared": 0.024161421586626375,
+          "gain": 0.0001406789575766343,
+          "logScaledDistance": 0.05024226375327081,
+          "newestCoefficient": -0.08063389971963197,
+          "minPivot": 0.021636838981928596,
+          "pivotRatio": 58.26458303642351
+        },
+        {
+          "n": 9,
+          "distanceSquared": 0.02401495078351157,
+          "gain": 0.00014647080311480654,
+          "logScaledDistance": 0.05276624008505132,
+          "newestCoefficient": -0.08591336252034584,
+          "minPivot": 0.01984401875570758,
+          "pivotRatio": 63.528533057131355
+        },
+        {
+          "n": 10,
+          "distanceSquared": 0.02377186555676203,
+          "gain": 0.0002430852267495398,
+          "logScaledDistance": 0.05473674326365885,
+          "newestCoefficient": 0.1262986572020306,
+          "minPivot": 0.015239162477772013,
+          "pivotRatio": 82.7251106054625
+        },
+        {
+          "n": 11,
+          "distanceSquared": 0.02044444456559058,
+          "gain": 0.003327420991171448,
+          "logScaledDistance": 0.049023636978817994,
+          "newestCoefficient": -0.4677308419307895,
+          "minPivot": 0.015209527975861205,
+          "pivotRatio": 82.8862936120752
+        },
+        {
+          "n": 12,
+          "distanceSquared": 0.020443063208287815,
+          "gain": 0.0000013813573027654513,
+          "logScaledDistance": 0.050799103708310804,
+          "newestCoefficient": -0.011149833711831023,
+          "minPivot": 0.011111411898464638,
+          "pivotRatio": 113.45645477173792
+        },
+        {
+          "n": 13,
+          "distanceSquared": 0.019824406457032873,
+          "gain": 0.0006186567512549423,
+          "logScaledDistance": 0.050848598604022806,
+          "newestCoefficient": -0.23084880566741373,
+          "minPivot": 0.011111411898464638,
+          "pivotRatio": 113.45645477173792
+        },
+        {
+          "n": 14,
+          "distanceSquared": 0.018486425619023694,
+          "gain": 0.0013379808380091784,
+          "logScaledDistance": 0.04878673702827178,
+          "newestCoefficient": 0.3842390317066019,
+          "minPivot": 0.009062477374199067,
+          "pivotRatio": 139.10781229616254
+        },
+        {
+          "n": 15,
+          "distanceSquared": 0.018335034601517752,
+          "gain": 0.00015139101750594186,
+          "logScaledDistance": 0.04965219413985613,
+          "newestCoefficient": 0.13207871627366985,
+          "minPivot": 0.008678295410953567,
+          "pivotRatio": 145.2660161714618
+        },
+        {
+          "n": 16,
+          "distanceSquared": 0.0178940234777224,
+          "gain": 0.000441011123795354,
+          "logScaledDistance": 0.04961276768982699,
+          "newestCoefficient": -0.24643720329976965,
+          "minPivot": 0.007261678226353902,
+          "pivotRatio": 173.60469057044455
+        },
+        {
+          "n": 17,
+          "distanceSquared": 0.017069238444112678,
+          "gain": 0.0008247850336097207,
+          "logScaledDistance": 0.0483607941327374,
+          "newestCoefficient": -0.3314663760927696,
+          "minPivot": 0.007261678226353902,
+          "pivotRatio": 173.60469057044455
+        },
+        {
+          "n": 18,
+          "distanceSquared": 0.017059235396434724,
+          "gain": 0.000010003047677953347,
+          "logScaledDistance": 0.04930753220115751,
+          "newestCoefficient": -0.041767156173881256,
+          "minPivot": 0.00573406387393481,
+          "pivotRatio": 219.8547887195433
+        },
+        {
+          "n": 19,
+          "distanceSquared": 0.016817318001474013,
+          "gain": 0.00024191739496071119,
+          "logScaledDistance": 0.049517566648577545,
+          "newestCoefficient": -0.19715463133031286,
+          "minPivot": 0.00573406387393481,
+          "pivotRatio": 219.8547887195433
+        },
+        {
+          "n": 20,
+          "distanceSquared": 0.016503583071811323,
+          "gain": 0.0003137349296626901,
+          "logScaledDistance": 0.04944031643750449,
+          "newestCoefficient": 0.2505381519065978,
+          "minPivot": 0.004998217312853848,
+          "pivotRatio": 252.22220695892472
+        },
+        {
+          "n": 21,
+          "distanceSquared": 0.0160907563550996,
+          "gain": 0.0004128267167117228,
+          "logScaledDistance": 0.0489886687630415,
+          "newestCoefficient": 0.2873066485695149,
+          "minPivot": 0.004998217312853848,
+          "pivotRatio": 252.22220695892472
+        },
+        {
+          "n": 22,
+          "distanceSquared": 0.016057382489937155,
+          "gain": 0.000033373865162444893,
+          "logScaledDistance": 0.04963405096620821,
+          "newestCoefficient": 0.08855335365601853,
+          "minPivot": 0.0042559496407316745,
+          "pivotRatio": 296.2115410020625
+        },
+        {
+          "n": 23,
+          "distanceSquared": 0.015547299629600775,
+          "gain": 0.0005100828603363805,
+          "logScaledDistance": 0.04874846806193064,
+          "newestCoefficient": -0.3354336559580315,
+          "minPivot": 0.0042559496407316745,
+          "pivotRatio": 296.2115410020625
+        },
+        {
+          "n": 24,
+          "distanceSquared": 0.015546914889194019,
+          "gain": 3.8474040675584575e-7,
+          "logScaledDistance": 0.04940893241369656,
+          "newestCoefficient": 0.010446585989522842,
+          "minPivot": 0.0035254863159541986,
+          "pivotRatio": 357.5851069973864
+        },
+        {
+          "n": 25,
+          "distanceSquared": 0.015520009301492887,
+          "gain": 0.000026905587701131495,
+          "logScaledDistance": 0.04995698274230506,
+          "newestCoefficient": 0.08324187854126401,
+          "minPivot": 0.0035254863159541986,
+          "pivotRatio": 357.5851069973864
+        },
+        {
+          "n": 26,
+          "distanceSquared": 0.015423409013276768,
+          "gain": 0.00009660028821611988,
+          "logScaledDistance": 0.05025095551064636,
+          "newestCoefficient": 0.17346129144425138,
+          "minPivot": 0.0032105044134438064,
+          "pivotRatio": 392.6677054949232
+        },
+        {
+          "n": 27,
+          "distanceSquared": 0.01531396462830581,
+          "gain": 0.0001094443849709581,
+          "logScaledDistance": 0.05047232918665657,
+          "newestCoefficient": -0.18295722585352925,
+          "minPivot": 0.0032105044134438064,
+          "pivotRatio": 392.6677054949232
+        },
+        {
+          "n": 28,
+          "distanceSquared": 0.015214590976039721,
+          "gain": 0.00009937365226608819,
+          "logScaledDistance": 0.05069812867083052,
+          "newestCoefficient": -0.1879081518742538,
+          "minPivot": 0.0028143623311453307,
+          "pivotRatio": 447.93855700707377
+        },
+        {
+          "n": 29,
+          "distanceSquared": 0.014702947028943925,
+          "gain": 0.0005116439470957967,
+          "logScaledDistance": 0.049509172219074894,
+          "newestCoefficient": -0.40940323324658306,
+          "minPivot": 0.0028143623311453307,
+          "pivotRatio": 447.93855700707377
+        },
+        {
+          "n": 30,
+          "distanceSquared": 0.014530110474923807,
+          "gain": 0.0001728365540201171,
+          "logScaledDistance": 0.049419773702572715,
+          "newestCoefficient": -0.2701897964287714,
+          "minPivot": 0.0023675421011706142,
+          "pivotRatio": 532.4768674166254
+        },
+        {
+          "n": 31,
+          "distanceSquared": 0.014529517811639026,
+          "gain": 5.926632847819135e-7,
+          "logScaledDistance": 0.049894178252507436,
+          "newestCoefficient": 0.014822758107664414,
+          "minPivot": 0.0023675421011706142,
+          "pivotRatio": 532.4768674166254
+        },
+        {
+          "n": 32,
+          "distanceSquared": 0.014051943700320813,
+          "gain": 0.00047757411131821303,
+          "logScaledDistance": 0.04870032578632228,
+          "newestCoefficient": 0.4600557556285088,
+          "minPivot": 0.002256419474784022,
+          "pivotRatio": 558.6999295106557
+        },
+        {
+          "n": 33,
+          "distanceSquared": 0.01349881359934435,
+          "gain": 0.0005531301009764622,
+          "logScaledDistance": 0.04719870382093407,
+          "newestCoefficient": 0.48848623647361966,
+          "minPivot": 0.002256419474784022,
+          "pivotRatio": 558.6999295106557
+        },
+        {
+          "n": 34,
+          "distanceSquared": 0.013278355308206313,
+          "gain": 0.00022045829113803705,
+          "logScaledDistance": 0.04682426799068621,
+          "newestCoefficient": 0.33054078626667105,
+          "minPivot": 0.002017791671068522,
+          "pivotRatio": 624.7728244614669
+        },
+        {
+          "n": 35,
+          "distanceSquared": 0.013250422617395508,
+          "gain": 0.000027932690810805738,
+          "logScaledDistance": 0.047109864366672596,
+          "newestCoefficient": 0.11424455818920197,
+          "minPivot": 0.002017791671068522,
+          "pivotRatio": 624.7728244614669
+        },
+        {
+          "n": 36,
+          "distanceSquared": 0.013154740902399653,
+          "gain": 0.00009568171499585443,
+          "logScaledDistance": 0.04714026315423237,
+          "newestCoefficient": -0.2327258788311378,
+          "minPivot": 0.001766605560310766,
+          "pivotRatio": 713.6066079666018
+        },
+        {
+          "n": 37,
+          "distanceSquared": 0.013070781822253408,
+          "gain": 0.00008395908014624531,
+          "logScaledDistance": 0.04719752021423935,
+          "newestCoefficient": -0.20516835266575448,
+          "minPivot": 0.001766605560310766,
+          "pivotRatio": 713.6066079666018
+        },
+        {
+          "n": 38,
+          "distanceSquared": 0.012963844822348913,
+          "gain": 0.00010693699990449446,
+          "logScaledDistance": 0.047157102502616975,
+          "newestCoefficient": 0.25261306225654184,
+          "minPivot": 0.0016757776303804807,
+          "pivotRatio": 752.2844192770815
+        },
+        {
+          "n": 39,
+          "distanceSquared": 0.012963758905927825,
+          "gain": 8.591642108868314e-8,
+          "logScaledDistance": 0.047493529917428806,
+          "newestCoefficient": 0.007062151224214783,
+          "minPivot": 0.0016757776303804807,
+          "pivotRatio": 752.2844192770815
+        },
+        {
+          "n": 40,
+          "distanceSquared": 0.012715197196131678,
+          "gain": 0.0002485617097961468,
+          "logScaledDistance": 0.04690482969181728,
+          "newestCoefficient": -0.40676609025411264,
+          "minPivot": 0.001502258760846118,
+          "pivotRatio": 839.1772671695127
+        },
+        {
+          "n": 41,
+          "distanceSquared": 0.0123264919494952,
+          "gain": 0.0003887052466364782,
+          "logScaledDistance": 0.045775316184100905,
+          "newestCoefficient": -0.481948426399181,
+          "minPivot": 0.001502258760846118,
+          "pivotRatio": 839.1772671695127
+        },
+        {
+          "n": 42,
+          "distanceSquared": 0.012136577766664214,
+          "gain": 0.00018991418283098582,
+          "logScaledDistance": 0.045362517988394246,
+          "newestCoefficient": -0.3789926134159625,
+          "minPivot": 0.0013221962098278308,
+          "pivotRatio": 953.4601537486333
+        },
+        {
+          "n": 43,
+          "distanceSquared": 0.012129940669306727,
+          "gain": 0.000006637097357486965,
+          "logScaledDistance": 0.04562313424875251,
+          "newestCoefficient": -0.06587048064372396,
+          "minPivot": 0.0013221962098278308,
+          "pivotRatio": 953.4601537486333
+        },
+        {
+          "n": 44,
+          "distanceSquared": 0.012063231383636852,
+          "gain": 0.00006670928566987477,
+          "logScaledDistance": 0.045649555153516014,
+          "newestCoefficient": 0.22729370100599847,
+          "minPivot": 0.001291253434409947,
+          "pivotRatio": 976.3082659945662
+        },
+        {
+          "n": 45,
+          "distanceSquared": 0.01202264935573294,
+          "gain": 0.00004058202790391263,
+          "logScaledDistance": 0.04576616833012988,
+          "newestCoefficient": 0.17572624546390508,
+          "minPivot": 0.001291253434409947,
+          "pivotRatio": 976.3082659945662
+        },
+        {
+          "n": 46,
+          "distanceSquared": 0.011925253401076641,
+          "gain": 0.00009739595465629858,
+          "logScaledDistance": 0.0456575188349844,
+          "newestCoefficient": 0.2858889248248494,
+          "minPivot": 0.0011916432467043313,
+          "pivotRatio": 1057.9184709810193
+        },
+        {
+          "n": 47,
+          "distanceSquared": 0.011885203009066592,
+          "gain": 0.00004005039201004923,
+          "logScaledDistance": 0.045759785861194904,
+          "newestCoefficient": -0.17408517667882045,
+          "minPivot": 0.0011916432467043313,
+          "pivotRatio": 1057.9184709810193
+        },
+        {
+          "n": 48,
+          "distanceSquared": 0.011873207148165532,
+          "gain": 0.00001199586090105953,
+          "logScaledDistance": 0.0459635715146972,
+          "newestCoefficient": 0.10648767593102848,
+          "minPivot": 0.0010578710291378151,
+          "pivotRatio": 1191.6966877670964
+        },
+        {
+          "n": 49,
+          "distanceSquared": 0.011872614670091375,
+          "gain": 5.924780741572988e-7,
+          "logScaledDistance": 0.04620608276470761,
+          "newestCoefficient": 0.022106673776775287,
+          "minPivot": 0.0010578710291378151,
+          "pivotRatio": 1191.6966877670964
+        },
+        {
+          "n": 50,
+          "distanceSquared": 0.01186904886688167,
+          "gain": 0.0000035658032097041215,
+          "logScaledDistance": 0.04643199221979196,
+          "newestCoefficient": 0.05924636978689873,
+          "minPivot": 0.0010158600504712465,
+          "pivotRatio": 1240.9794055032448
+        },
+        {
+          "n": 51,
+          "distanceSquared": 0.011832332993858996,
+          "gain": 0.00003671587302267465,
+          "logScaledDistance": 0.04652267016018456,
+          "newestCoefficient": 0.1850391130499026,
+          "minPivot": 0.0010158600504712465,
+          "pivotRatio": 1240.9794055032448
+        },
+        {
+          "n": 52,
+          "distanceSquared": 0.011828675315206483,
+          "gain": 0.0000036576786525133187,
+          "logScaledDistance": 0.0467379790383488,
+          "newestCoefficient": -0.06190203516865572,
+          "minPivot": 0.0009545434290892728,
+          "pivotRatio": 1320.6956992109801
+        },
+        {
+          "n": 53,
+          "distanceSquared": 0.011799959255790249,
+          "gain": 0.000028716059416233897,
+          "logScaledDistance": 0.04684928281350854,
+          "newestCoefficient": -0.16382641645342472,
+          "minPivot": 0.0009545434290892728,
+          "pivotRatio": 1320.6956992109801
+        },
+        {
+          "n": 54,
+          "distanceSquared": 0.011739276958987133,
+          "gain": 0.00006068229680311621,
+          "logScaledDistance": 0.04682778850759924,
+          "newestCoefficient": 0.26654549414495465,
+          "minPivot": 0.0008541208422385322,
+          "pivotRatio": 1475.9754582317476
+        },
+        {
+          "n": 55,
+          "distanceSquared": 0.01162280793215198,
+          "gain": 0.00011646902683515314,
+          "logScaledDistance": 0.04657646393209582,
+          "newestCoefficient": 0.34563474184760873,
+          "minPivot": 0.0008541208422385322,
+          "pivotRatio": 1475.9754582317476
+        },
+        {
+          "n": 56,
+          "distanceSquared": 0.011611728723970538,
+          "gain": 0.00001107920818144148,
+          "logScaledDistance": 0.046741291851392704,
+          "newestCoefficient": 0.1150495288672885,
+          "minPivot": 0.0008370261646725341,
+          "pivotRatio": 1506.1194676053005
+        },
+        {
+          "n": 57,
+          "distanceSquared": 0.0115649323189847,
+          "gain": 0.00004679640498583826,
+          "logScaledDistance": 0.046757614274691855,
+          "newestCoefficient": 0.2302017391161368,
+          "minPivot": 0.0008370261646725341,
+          "pivotRatio": 1506.1194676053005
+        },
+        {
+          "n": 58,
+          "distanceSquared": 0.011564775809005168,
+          "gain": 1.5650997953198242e-7,
+          "logScaledDistance": 0.046958113102211346,
+          "newestCoefficient": 0.014111037902288048,
+          "minPivot": 0.0007860028487151187,
+          "pivotRatio": 1603.8890998539136
+        },
+        {
+          "n": 59,
+          "distanceSquared": 0.011483523342243562,
+          "gain": 0.00008125246676160547,
+          "logScaledDistance": 0.04682449641596348,
+          "newestCoefficient": -0.30357147262331724,
+          "minPivot": 0.0007860028487151187,
+          "pivotRatio": 1603.8890998539136
+        },
+        {
+          "n": 60,
+          "distanceSquared": 0.011470726442079804,
+          "gain": 0.000012796900163758451,
+          "logScaledDistance": 0.04696510643286671,
+          "newestCoefficient": -0.13518069742486133,
+          "minPivot": 0.0007002859552168245,
+          "pivotRatio": 1800.2094603167848
+        }
+      ]
+    },
+    {
+      "cutoff": 8192,
+      "rows": [
+        {
+          "n": 1,
+          "distanceSquared": 0.8582120513955668,
+          "gain": 0.14178794860443322,
+          "logScaledDistance": 0,
+          "newestCoefficient": -0.3353670815911629,
+          "minPivot": 1.2606614015083097,
+          "pivotRatio": 1
+        },
+        {
+          "n": 2,
+          "distanceSquared": 0.28996457374286233,
+          "gain": 0.5682474776527044,
+          "logScaledDistance": 0.20098812675213137,
+          "newestCoefficient": -1.9005428584549497,
+          "minPivot": 0.1573193637489809,
+          "pivotRatio": 8.013389906151819
+        },
+        {
+          "n": 3,
+          "distanceSquared": 0.09383722849772069,
+          "gain": 0.19612734524514164,
+          "logScaledDistance": 0.10309073236215328,
+          "newestCoefficient": -1.3492779165185815,
+          "minPivot": 0.1077296689016228,
+          "pivotRatio": 11.702081834666435
+        },
+        {
+          "n": 4,
+          "distanceSquared": 0.06512886866048473,
+          "gain": 0.028708359837235964,
+          "logScaledDistance": 0.09028778337014794,
+          "newestCoefficient": -0.6998652583666438,
+          "minPivot": 0.058611051145722605,
+          "pivotRatio": 21.508936913176516
+        },
+        {
+          "n": 5,
+          "distanceSquared": 0.036101599819316155,
+          "gain": 0.029027268841168574,
+          "logScaledDistance": 0.05810328344873148,
+          "newestCoefficient": -0.7506618181239232,
+          "minPivot": 0.051513080609285875,
+          "pivotRatio": 24.47264629871621
+        },
+        {
+          "n": 6,
+          "distanceSquared": 0.035986317354290254,
+          "gain": 0.000115282465025901,
+          "logScaledDistance": 0.06447882488219545,
+          "newestCoefficient": 0.05991859467187865,
+          "minPivot": 0.03210997862224852,
+          "pivotRatio": 39.26073624461451
+        },
+        {
+          "n": 7,
+          "distanceSquared": 0.02430210054423032,
+          "gain": 0.011684216810059933,
+          "logScaledDistance": 0.04728970409238043,
+          "newestCoefficient": -0.613602962255631,
+          "minPivot": 0.03103306791998947,
+          "pivotRatio": 40.6231638057375
+        },
+        {
+          "n": 8,
+          "distanceSquared": 0.024161421586651244,
+          "gain": 0.00014067895757907678,
+          "logScaledDistance": 0.050242263753322525,
+          "newestCoefficient": -0.08063389972026766,
+          "minPivot": 0.021636838981935528,
+          "pivotRatio": 58.26458303640512
+        },
+        {
+          "n": 9,
+          "distanceSquared": 0.024014950783536437,
+          "gain": 0.00014647080311480654,
+          "logScaledDistance": 0.05276624008510596,
+          "newestCoefficient": -0.08591336252039096,
+          "minPivot": 0.019844018755705836,
+          "pivotRatio": 63.528533057137246
+        },
+        {
+          "n": 10,
+          "distanceSquared": 0.023771865556787564,
+          "gain": 0.00024308522674887367,
+          "logScaledDistance": 0.05473674326371765,
+          "newestCoefficient": 0.12629865720190253,
+          "minPivot": 0.015239162477766565,
+          "pivotRatio": 82.72511060549247
+        },
+        {
+          "n": 11,
+          "distanceSquared": 0.020444444565612674,
+          "gain": 0.0033274209911748898,
+          "logScaledDistance": 0.04902363697887097,
+          "newestCoefficient": -0.46773084193103703,
+          "minPivot": 0.01520952797585999,
+          "pivotRatio": 82.88629361208221
+        },
+        {
+          "n": 12,
+          "distanceSquared": 0.020443063208310353,
+          "gain": 0.0000013813573023213621,
+          "logScaledDistance": 0.05079910370836681,
+          "newestCoefficient": -0.011149833712193821,
+          "minPivot": 0.011111411898464471,
+          "pivotRatio": 113.45645477174016
+        },
+        {
+          "n": 13,
+          "distanceSquared": 0.0198244064570533,
+          "gain": 0.0006186567512570518,
+          "logScaledDistance": 0.0508485986040752,
+          "newestCoefficient": -0.23084880566778013,
+          "minPivot": 0.011111411898464471,
+          "pivotRatio": 113.45645477174016
+        },
+        {
+          "n": 14,
+          "distanceSquared": 0.018486425619043012,
+          "gain": 0.0013379808380102887,
+          "logScaledDistance": 0.04878673702832276,
+          "newestCoefficient": 0.38423903170670787,
+          "minPivot": 0.009062477374196807,
+          "pivotRatio": 139.1078122961979
+        },
+        {
+          "n": 15,
+          "distanceSquared": 0.01833503460153596,
+          "gain": 0.00015139101750705208,
+          "logScaledDistance": 0.04965219413990544,
+          "newestCoefficient": 0.13207871627438492,
+          "minPivot": 0.008678295410953517,
+          "pivotRatio": 145.26601617146335
+        },
+        {
+          "n": 16,
+          "distanceSquared": 0.017894023477744603,
+          "gain": 0.0004410111237913572,
+          "logScaledDistance": 0.04961276768988855,
+          "newestCoefficient": -0.24643720329848845,
+          "minPivot": 0.007261678226356622,
+          "pivotRatio": 173.60469057038034
+        },
+        {
+          "n": 17,
+          "distanceSquared": 0.01706923844413022,
+          "gain": 0.0008247850336143836,
+          "logScaledDistance": 0.0483607941327871,
+          "newestCoefficient": -0.33146637609382873,
+          "minPivot": 0.007261678226356622,
+          "pivotRatio": 173.60469057038034
+        },
+        {
+          "n": 18,
+          "distanceSquared": 0.017059235396452377,
+          "gain": 0.000010003047677842325,
+          "logScaledDistance": 0.04930753220120853,
+          "newestCoefficient": -0.041767156174033565,
+          "minPivot": 0.005734063873938308,
+          "pivotRatio": 219.85478871941024
+        },
+        {
+          "n": 19,
+          "distanceSquared": 0.01681731800149011,
+          "gain": 0.0002419173949622655,
+          "logScaledDistance": 0.049517566648624944,
+          "newestCoefficient": -0.19715463133084582,
+          "minPivot": 0.005734063873938308,
+          "pivotRatio": 219.85478871941024
+        },
+        {
+          "n": 20,
+          "distanceSquared": 0.016503583071828087,
+          "gain": 0.000313734929662024,
+          "logScaledDistance": 0.04944031643755471,
+          "newestCoefficient": 0.2505381519063376,
+          "minPivot": 0.00499821731285479,
+          "pivotRatio": 252.22220695887836
+        },
+        {
+          "n": 21,
+          "distanceSquared": 0.016090756355114255,
+          "gain": 0.0004128267167138322,
+          "logScaledDistance": 0.048988668763086114,
+          "newestCoefficient": 0.28730664857016985,
+          "minPivot": 0.00499821731285479,
+          "pivotRatio": 252.22220695887836
+        },
+        {
+          "n": 22,
+          "distanceSquared": 0.016057382489951477,
+          "gain": 0.00003337386516277796,
+          "logScaledDistance": 0.04963405096625248,
+          "newestCoefficient": 0.08855335365671202,
+          "minPivot": 0.00425594964073267,
+          "pivotRatio": 296.21154100199465
+        },
+        {
+          "n": 23,
+          "distanceSquared": 0.015547299629616651,
+          "gain": 0.0005100828603348262,
+          "logScaledDistance": 0.04874846806198042,
+          "newestCoefficient": -0.3354336559576009,
+          "minPivot": 0.00425594964073267,
+          "pivotRatio": 296.21154100199465
+        },
+        {
+          "n": 24,
+          "distanceSquared": 0.015546914889209673,
+          "gain": 3.8474040697789036e-7,
+          "logScaledDistance": 0.04940893241374631,
+          "newestCoefficient": 0.01044658599023026,
+          "minPivot": 0.0035254863159542085,
+          "pivotRatio": 357.58510699738713
+        },
+        {
+          "n": 25,
+          "distanceSquared": 0.01552000930150843,
+          "gain": 0.000026905587701242517,
+          "logScaledDistance": 0.0499569827423551,
+          "newestCoefficient": 0.08324187854064874,
+          "minPivot": 0.0035254863159542085,
+          "pivotRatio": 357.58510699738713
+        },
+        {
+          "n": 26,
+          "distanceSquared": 0.015423409013292977,
+          "gain": 0.00009660028821545374,
+          "logScaledDistance": 0.05025095551069917,
+          "newestCoefficient": 0.17346129144383765,
+          "minPivot": 0.0032105044134439747,
+          "pivotRatio": 392.6677054949045
+        },
+        {
+          "n": 27,
+          "distanceSquared": 0.015313964628321575,
+          "gain": 0.00010944438497140219,
+          "logScaledDistance": 0.05047232918670853,
+          "newestCoefficient": -0.18295722585377247,
+          "minPivot": 0.0032105044134439747,
+          "pivotRatio": 392.6677054949045
+        },
+        {
+          "n": 28,
+          "distanceSquared": 0.015214590976055375,
+          "gain": 0.00009937365226619921,
+          "logScaledDistance": 0.05069812867088268,
+          "newestCoefficient": -0.18790815187496895,
+          "minPivot": 0.0028143623311452527,
+          "pivotRatio": 447.9385570070883
+        },
+        {
+          "n": 29,
+          "distanceSquared": 0.014702947028957691,
+          "gain": 0.0005116439470976841,
+          "logScaledDistance": 0.04950917221912125,
+          "newestCoefficient": -0.40940323324732747,
+          "minPivot": 0.0028143623311452527,
+          "pivotRatio": 447.9385570070883
+        },
+        {
+          "n": 30,
+          "distanceSquared": 0.014530110474936797,
+          "gain": 0.00017283655402089426,
+          "logScaledDistance": 0.049419773702616895,
+          "newestCoefficient": -0.2701897964294731,
+          "minPivot": 0.0023675421011704494,
+          "pivotRatio": 532.476867416665
+        },
+        {
+          "n": 31,
+          "distanceSquared": 0.014529517811651238,
+          "gain": 5.926632855590697e-7,
+          "logScaledDistance": 0.049894178252549375,
+          "newestCoefficient": 0.014822758106622218,
+          "minPivot": 0.0023675421011704494,
+          "pivotRatio": 532.476867416665
+        },
+        {
+          "n": 32,
+          "distanceSquared": 0.014051943700335912,
+          "gain": 0.00047757411131532645,
+          "logScaledDistance": 0.048700325786374614,
+          "newestCoefficient": 0.46005575562726764,
+          "minPivot": 0.002256419474786405,
+          "pivotRatio": 558.6999295100683
+        },
+        {
+          "n": 33,
+          "distanceSquared": 0.013498813599354231,
+          "gain": 0.0005531301009816803,
+          "logScaledDistance": 0.04719870382096862,
+          "newestCoefficient": 0.4884862364758647,
+          "minPivot": 0.002256419474786405,
+          "pivotRatio": 558.6999295100683
+        },
+        {
+          "n": 34,
+          "distanceSquared": 0.013278355308211531,
+          "gain": 0.0002204582911427,
+          "logScaledDistance": 0.04682426799070461,
+          "newestCoefficient": 0.3305407862692283,
+          "minPivot": 0.0020177916710696457,
+          "pivotRatio": 624.772824461122
+        },
+        {
+          "n": 35,
+          "distanceSquared": 0.013250422617401392,
+          "gain": 0.000027932690810139604,
+          "logScaledDistance": 0.04710986436669352,
+          "newestCoefficient": 0.11424455818833874,
+          "minPivot": 0.0020177916710696457,
+          "pivotRatio": 624.772824461122
+        },
+        {
+          "n": 36,
+          "distanceSquared": 0.013154740902406092,
+          "gain": 0.00009568171499529932,
+          "logScaledDistance": 0.04714026315425545,
+          "newestCoefficient": -0.23272587883094017,
+          "minPivot": 0.0017666055603105706,
+          "pivotRatio": 713.6066079666841
+        },
+        {
+          "n": 37,
+          "distanceSquared": 0.013070781822259625,
+          "gain": 0.00008395908014646736,
+          "logScaledDistance": 0.047197520214261796,
+          "newestCoefficient": -0.20516835266509292,
+          "minPivot": 0.0017666055603105706,
+          "pivotRatio": 713.6066079666841
+        },
+        {
+          "n": 38,
+          "distanceSquared": 0.012963844822355353,
+          "gain": 0.00010693699990427241,
+          "logScaledDistance": 0.047157102502640394,
+          "newestCoefficient": 0.25261306225677,
+          "minPivot": 0.0016757776303799256,
+          "pivotRatio": 752.2844192773343
+        },
+        {
+          "n": 39,
+          "distanceSquared": 0.01296375890593493,
+          "gain": 8.591642042254932e-8,
+          "logScaledDistance": 0.047493529917454834,
+          "newestCoefficient": 0.007062151224228515,
+          "minPivot": 0.0016757776303799256,
+          "pivotRatio": 752.2844192773343
+        },
+        {
+          "n": 40,
+          "distanceSquared": 0.012715197196138783,
+          "gain": 0.0002485617097961468,
+          "logScaledDistance": 0.04690482969184349,
+          "newestCoefficient": -0.4067660902542352,
+          "minPivot": 0.001502258760846829,
+          "pivotRatio": 839.1772671691195
+        },
+        {
+          "n": 41,
+          "distanceSquared": 0.012326491949500529,
+          "gain": 0.00038870524663825456,
+          "logScaledDistance": 0.045775316184120694,
+          "newestCoefficient": -0.48194842639939967,
+          "minPivot": 0.001502258760846829,
+          "pivotRatio": 839.1772671691195
+        },
+        {
+          "n": 42,
+          "distanceSquared": 0.012136577766666878,
+          "gain": 0.00018991418283365036,
+          "logScaledDistance": 0.045362517988404204,
+          "newestCoefficient": -0.37899261341906026,
+          "minPivot": 0.0013221962098270768,
+          "pivotRatio": 953.4601537491816
+        },
+        {
+          "n": 43,
+          "distanceSquared": 0.012129940669310169,
+          "gain": 0.000006637097356709809,
+          "logScaledDistance": 0.045623134248765455,
+          "newestCoefficient": -0.06587048064274156,
+          "minPivot": 0.0013221962098270768,
+          "pivotRatio": 953.4601537491816
+        },
+        {
+          "n": 44,
+          "distanceSquared": 0.012063231383639295,
+          "gain": 0.00006670928567087397,
+          "logScaledDistance": 0.045649555153525256,
+          "newestCoefficient": 0.22729370100667198,
+          "minPivot": 0.001291253434410879,
+          "pivotRatio": 976.3082659938661
+        },
+        {
+          "n": 45,
+          "distanceSquared": 0.012022649355735049,
+          "gain": 0.0000405820279042457,
+          "logScaledDistance": 0.04576616833013791,
+          "newestCoefficient": 0.17572624546350288,
+          "minPivot": 0.001291253434410879,
+          "pivotRatio": 976.3082659938661
+        },
+        {
+          "n": 46,
+          "distanceSquared": 0.01192525340107975,
+          "gain": 0.00009739595465529938,
+          "logScaledDistance": 0.0456575188349963,
+          "newestCoefficient": 0.2858889248239292,
+          "minPivot": 0.00119164324670659,
+          "pivotRatio": 1057.918470979019
+        },
+        {
+          "n": 47,
+          "distanceSquared": 0.011885203009069256,
+          "gain": 0.00004005039201049332,
+          "logScaledDistance": 0.04575978586120517,
+          "newestCoefficient": -0.17408517668072548,
+          "minPivot": 0.00119164324670659,
+          "pivotRatio": 1057.918470979019
+        },
+        {
+          "n": 48,
+          "distanceSquared": 0.011873207148169085,
+          "gain": 0.000011995860900171351,
+          "logScaledDistance": 0.045963571514710956,
+          "newestCoefficient": 0.10648767592764702,
+          "minPivot": 0.0010578710291384904,
+          "pivotRatio": 1191.6966877663413
+        },
+        {
+          "n": 49,
+          "distanceSquared": 0.011872614670093706,
+          "gain": 5.924780753785441e-7,
+          "logScaledDistance": 0.04620608276471669,
+          "newestCoefficient": 0.022106673778005213,
+          "minPivot": 0.0010578710291384904,
+          "pivotRatio": 1191.6966877663413
+        },
+        {
+          "n": 50,
+          "distanceSquared": 0.011869048866885001,
+          "gain": 0.0000035658032087049207,
+          "logScaledDistance": 0.04643199221980499,
+          "newestCoefficient": 0.0592463697891711,
+          "minPivot": 0.001015860050471836,
+          "pivotRatio": 1240.9794055025304
+        },
+        {
+          "n": 51,
+          "distanceSquared": 0.011832332993860994,
+          "gain": 0.00003671587302400692,
+          "logScaledDistance": 0.04652267016019242,
+          "newestCoefficient": 0.18503911305314852,
+          "minPivot": 0.001015860050471836,
+          "pivotRatio": 1240.9794055025304
+        },
+        {
+          "n": 52,
+          "distanceSquared": 0.011828675315208481,
+          "gain": 0.0000036576786525133187,
+          "logScaledDistance": 0.0467379790383567,
+          "newestCoefficient": -0.061902035168224415,
+          "minPivot": 0.0009545434290892101,
+          "pivotRatio": 1320.6956992110731
+        },
+        {
+          "n": 53,
+          "distanceSquared": 0.011799959255791026,
+          "gain": 0.000028716059417455142,
+          "logScaledDistance": 0.046849282813511625,
+          "newestCoefficient": -0.16382641645273233,
+          "minPivot": 0.0009545434290892101,
+          "pivotRatio": 1320.6956992110731
+        },
+        {
+          "n": 54,
+          "distanceSquared": 0.011739276958988909,
+          "gain": 0.00006068229680211701,
+          "logScaledDistance": 0.04682778850760633,
+          "newestCoefficient": 0.2665454941430799,
+          "minPivot": 0.0008541208422394257,
+          "pivotRatio": 1475.9754582302107
+        },
+        {
+          "n": 55,
+          "distanceSquared": 0.011622807932151202,
+          "gain": 0.00011646902683770666,
+          "logScaledDistance": 0.04657646393209271,
+          "newestCoefficient": 0.3456347418504086,
+          "minPivot": 0.0008541208422394257,
+          "pivotRatio": 1475.9754582302107
+        },
+        {
+          "n": 56,
+          "distanceSquared": 0.011611728723970649,
+          "gain": 0.000011079208180553302,
+          "logScaledDistance": 0.046741291851393155,
+          "newestCoefficient": 0.115049528868028,
+          "minPivot": 0.0008370261646718651,
+          "pivotRatio": 1506.1194676065115
+        },
+        {
+          "n": 57,
+          "distanceSquared": 0.011564932318984367,
+          "gain": 0.00004679640498628235,
+          "logScaledDistance": 0.04675761427469051,
+          "newestCoefficient": 0.23020173911838565,
+          "minPivot": 0.0008370261646718651,
+          "pivotRatio": 1506.1194676065115
+        },
+        {
+          "n": 58,
+          "distanceSquared": 0.01156477580900428,
+          "gain": 1.5650998008709394e-7,
+          "logScaledDistance": 0.04695811310220774,
+          "newestCoefficient": 0.014111037902802924,
+          "minPivot": 0.0007860028487162412,
+          "pivotRatio": 1603.8890998516308
+        },
+        {
+          "n": 59,
+          "distanceSquared": 0.011483523342243895,
+          "gain": 0.00008125246676038422,
+          "logScaledDistance": 0.04682449641596484,
+          "newestCoefficient": -0.303571472623866,
+          "minPivot": 0.0007860028487162412,
+          "pivotRatio": 1603.8890998516308
+        },
+        {
+          "n": 60,
+          "distanceSquared": 0.011470726442079915,
+          "gain": 0.000012796900163980496,
+          "logScaledDistance": 0.04696510643286716,
+          "newestCoefficient": -0.1351806974216907,
+          "minPivot": 0.0007002859552164289,
+          "pivotRatio": 1800.2094603178102
+        }
+      ]
+    }
+  ],
+  "residualRows": [
+    {
+      "n": 5,
+      "distanceSquared": 0.0361015998192975,
+      "gain": 0.029027268841185894,
+      "logScaledDistance": 0.058103283448701463,
+      "newestCoefficient": -0.7506618181239686,
+      "minPivot": 0.051513080609311035,
+      "pivotRatio": 24.47264629870414,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -3.5395195859368713,
+      "residualLogGain": 0.02287355446915873
+    },
+    {
+      "n": 6,
+      "distanceSquared": 0.03598631735427105,
+      "gain": 0.00011528246502645612,
+      "logScaledDistance": 0.06447882488216103,
+      "newestCoefficient": 0.059918594672025705,
+      "minPivot": 0.03210997862224814,
+      "pivotRatio": 39.2607362446148,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.068125223551792,
+      "residualLogGain": 0.042480416075157734
+    },
+    {
+      "n": 7,
+      "distanceSquared": 0.02430210054420301,
+      "gain": 0.011684216810068038,
+      "logScaledDistance": 0.04728970409232729,
+      "newestCoefficient": -0.6136029622557324,
+      "minPivot": 0.0310330679200005,
+      "pivotRatio": 40.62316380572287,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -4.449516338477827,
+      "residualLogGain": -0.0010549722986814558
+    },
+    {
+      "n": 8,
+      "distanceSquared": 0.024161421586626375,
+      "gain": 0.0001406789575766343,
+      "logScaledDistance": 0.05024226375327081,
+      "newestCoefficient": -0.08063389971963197,
+      "minPivot": 0.021636838981928596,
+      "pivotRatio": 58.26458303642351,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -8.869030160276234,
+      "residualLogGain": 0.015679909971863637
+    },
+    {
+      "n": 9,
+      "distanceSquared": 0.02401495078351157,
+      "gain": 0.00014647080311480654,
+      "logScaledDistance": 0.05276624008505132,
+      "newestCoefficient": -0.08591336252034584,
+      "minPivot": 0.01984401875570758,
+      "pivotRatio": 63.528533057131355,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -8.828684445513932,
+      "residualLogGain": -0.012355167493812047
+    },
+    {
+      "n": 10,
+      "distanceSquared": 0.02377186555676203,
+      "gain": 0.0002430852267495398,
+      "logScaledDistance": 0.05473674326365885,
+      "newestCoefficient": 0.1262986572020306,
+      "minPivot": 0.015239162477772013,
+      "pivotRatio": 82.7251106054625,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -8.322098448749829,
+      "residualLogGain": 0.005845334861026785
+    },
+    {
+      "n": 11,
+      "distanceSquared": 0.02044444456559058,
+      "gain": 0.003327420991171448,
+      "logScaledDistance": 0.049023636978817994,
+      "newestCoefficient": -0.4677308419307895,
+      "minPivot": 0.015209527975861205,
+      "pivotRatio": 82.8862936120752,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -5.705557752177823,
+      "residualLogGain": -0.025971603492699558
+    },
+    {
+      "n": 12,
+      "distanceSquared": 0.020443063208287815,
+      "gain": 0.0000013813573027654513,
+      "logScaledDistance": 0.050799103708310804,
+      "newestCoefficient": -0.011149833711831023,
+      "minPivot": 0.011111411898464638,
+      "pivotRatio": 113.45645477173792,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -13.492443989437637,
+      "residualLogGain": -0.00907944314604947
+    },
+    {
+      "n": 13,
+      "distanceSquared": 0.019824406457032873,
+      "gain": 0.0006186567512549423,
+      "logScaledDistance": 0.050848598604022806,
+      "newestCoefficient": -0.23084880566741373,
+      "minPivot": 0.011111411898464638,
+      "pivotRatio": 113.45645477173792,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -7.387959960481037,
+      "residualLogGain": 0.016956291170165727
+    },
+    {
+      "n": 14,
+      "distanceSquared": 0.018486425619023694,
+      "gain": 0.0013379808380091784,
+      "logScaledDistance": 0.04878673702827178,
+      "newestCoefficient": 0.3842390317066019,
+      "minPivot": 0.009062477374199067,
+      "pivotRatio": 139.10781229616254,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -6.616593638746979,
+      "residualLogGain": -0.008852478348701176
+    },
+    {
+      "n": 15,
+      "distanceSquared": 0.018335034601517752,
+      "gain": 0.00015139101750594186,
+      "logScaledDistance": 0.04965219413985613,
+      "newestCoefficient": 0.13207871627366985,
+      "minPivot": 0.008678295410953567,
+      "pivotRatio": 145.2660161714618,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -8.795644548272236,
+      "residualLogGain": -0.032246033738335456
+    },
+    {
+      "n": 16,
+      "distanceSquared": 0.0178940234777224,
+      "gain": 0.000441011123795354,
+      "logScaledDistance": 0.04961276768982699,
+      "newestCoefficient": -0.24643720329976965,
+      "minPivot": 0.007261678226353902,
+      "pivotRatio": 173.60469057044455,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -7.726440458809803,
+      "residualLogGain": -0.015546080938248608
+    },
+    {
+      "n": 17,
+      "distanceSquared": 0.017069238444112678,
+      "gain": 0.0008247850336097207,
+      "logScaledDistance": 0.0483607941327374,
+      "newestCoefficient": -0.3314663760927696,
+      "minPivot": 0.007261678226353902,
+      "pivotRatio": 173.60469057044455,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -7.100387770904185,
+      "residualLogGain": -0.005433610068685368
+    },
+    {
+      "n": 18,
+      "distanceSquared": 0.017059235396434724,
+      "gain": 0.000010003047677953347,
+      "logScaledDistance": 0.04930753220115751,
+      "newestCoefficient": -0.041767156173881256,
+      "minPivot": 0.00573406387393481,
+      "pivotRatio": 219.8547887195433,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -11.512620743607165,
+      "residualLogGain": -0.019013432037588984
+    },
+    {
+      "n": 19,
+      "distanceSquared": 0.016817318001474013,
+      "gain": 0.00024191739496071119,
+      "logScaledDistance": 0.049517566648577545,
+      "newestCoefficient": -0.19715463133031286,
+      "minPivot": 0.00573406387393481,
+      "pivotRatio": 219.8547887195433,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -8.326914233215975,
+      "residualLogGain": 0.04854462242593094
+    },
+    {
+      "n": 20,
+      "distanceSquared": 0.016503583071811323,
+      "gain": 0.0003137349296626901,
+      "logScaledDistance": 0.04944031643750449,
+      "newestCoefficient": 0.2505381519065978,
+      "minPivot": 0.004998217312853848,
+      "pivotRatio": 252.22220695892472,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -8.0669621016195,
+      "residualLogGain": -0.022328041172249513
+    },
+    {
+      "n": 21,
+      "distanceSquared": 0.0160907563550996,
+      "gain": 0.0004128267167117228,
+      "logScaledDistance": 0.0489886687630415,
+      "newestCoefficient": 0.2873066485695149,
+      "minPivot": 0.004998217312853848,
+      "pivotRatio": 252.22220695892472,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -7.792482625174833,
+      "residualLogGain": -0.04080872707822447
+    },
+    {
+      "n": 22,
+      "distanceSquared": 0.016057382489937155,
+      "gain": 0.000033373865162444893,
+      "logScaledDistance": 0.04963405096620821,
+      "newestCoefficient": 0.08855335365601853,
+      "minPivot": 0.0042559496407316745,
+      "pivotRatio": 296.2115410020625,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -10.307737444445337,
+      "residualLogGain": -0.030003171864395384
+    },
+    {
+      "n": 23,
+      "distanceSquared": 0.015547299629600775,
+      "gain": 0.0005100828603363805,
+      "logScaledDistance": 0.04874846806193064,
+      "newestCoefficient": -0.3354336559580315,
+      "minPivot": 0.0042559496407316745,
+      "pivotRatio": 296.2115410020625,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -7.580937374195122,
+      "residualLogGain": 0.02159602429238383
+    },
+    {
+      "n": 24,
+      "distanceSquared": 0.015546914889194019,
+      "gain": 3.8474040675584575e-7,
+      "logScaledDistance": 0.04940893241369656,
+      "newestCoefficient": 0.010446585989522842,
+      "minPivot": 0.0035254863159541986,
+      "pivotRatio": 357.5851069973864,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -14.770696998246276,
+      "residualLogGain": -0.03346286216913086
+    },
+    {
+      "n": 25,
+      "distanceSquared": 0.015520009301492887,
+      "gain": 0.000026905587701131495,
+      "logScaledDistance": 0.04995698274230506,
+      "newestCoefficient": 0.08324187854126401,
+      "minPivot": 0.0035254863159541986,
+      "pivotRatio": 357.5851069973864,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -10.523176571695895,
+      "residualLogGain": 0.05659995057583167
+    },
+    {
+      "n": 26,
+      "distanceSquared": 0.015423409013276768,
+      "gain": 0.00009660028821611988,
+      "logScaledDistance": 0.05025095551064636,
+      "newestCoefficient": 0.17346129144425138,
+      "minPivot": 0.0032105044134438064,
+      "pivotRatio": 392.6677054949232,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.244928833146528,
+      "residualLogGain": -0.03139398521714831
+    },
+    {
+      "n": 27,
+      "distanceSquared": 0.01531396462830581,
+      "gain": 0.0001094443849709581,
+      "logScaledDistance": 0.05047232918665657,
+      "newestCoefficient": -0.18295722585352925,
+      "minPivot": 0.0032105044134438064,
+      "pivotRatio": 392.6677054949232,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -9.120094037541119,
+      "residualLogGain": -0.028169546526488176
+    },
+    {
+      "n": 28,
+      "distanceSquared": 0.015214590976039721,
+      "gain": 0.00009937365226608819,
+      "logScaledDistance": 0.05069812867083052,
+      "newestCoefficient": -0.1879081518742538,
+      "minPivot": 0.0028143623311453307,
+      "pivotRatio": 447.93855700707377,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -9.216623547184001,
+      "residualLogGain": -0.03158040982245147
+    },
+    {
+      "n": 29,
+      "distanceSquared": 0.014702947028943925,
+      "gain": 0.0005116439470957967,
+      "logScaledDistance": 0.049509172219074894,
+      "newestCoefficient": -0.40940323324658306,
+      "minPivot": 0.0028143623311453307,
+      "pivotRatio": 447.93855700707377,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -7.577881590667036,
+      "residualLogGain": 0.03922380939422876
+    },
+    {
+      "n": 30,
+      "distanceSquared": 0.014530110474923807,
+      "gain": 0.0001728365540201171,
+      "logScaledDistance": 0.049419773702572715,
+      "newestCoefficient": -0.2701897964287714,
+      "minPivot": 0.0023675421011706142,
+      "pivotRatio": 532.4768674166254,
+      "isPrime": false,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -8.663164184497367,
+      "residualLogGain": -0.019130404188514305
+    },
+    {
+      "n": 31,
+      "distanceSquared": 0.014529517811639026,
+      "gain": 5.926632847819135e-7,
+      "logScaledDistance": 0.049894178252507436,
+      "newestCoefficient": 0.014822758107664414,
+      "minPivot": 0.0023675421011706142,
+      "pivotRatio": 532.4768674166254,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -14.338639415774196,
+      "residualLogGain": 0.0840445449250069
+    },
+    {
+      "n": 32,
+      "distanceSquared": 0.014051943700320813,
+      "gain": 0.00047757411131821303,
+      "logScaledDistance": 0.04870032578632228,
+      "newestCoefficient": 0.4600557556285088,
+      "minPivot": 0.002256419474784022,
+      "pivotRatio": 558.6999295106557,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -7.646791203137704,
+      "residualLogGain": -0.03194073023411459
+    },
+    {
+      "n": 33,
+      "distanceSquared": 0.01349881359934435,
+      "gain": 0.0005531301009764622,
+      "logScaledDistance": 0.04719870382093407,
+      "newestCoefficient": 0.48848623647361966,
+      "minPivot": 0.002256419474784022,
+      "pivotRatio": 558.6999295106557,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -7.499917320140265,
+      "residualLogGain": -0.01715655710749342
+    },
+    {
+      "n": 34,
+      "distanceSquared": 0.013278355308206313,
+      "gain": 0.00022045829113803705,
+      "logScaledDistance": 0.04682426799068621,
+      "newestCoefficient": 0.33054078626667105,
+      "minPivot": 0.002017791671068522,
+      "pivotRatio": 624.7728244614669,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -8.419802036806162,
+      "residualLogGain": -0.03310056396338723
+    },
+    {
+      "n": 35,
+      "distanceSquared": 0.013250422617395508,
+      "gain": 0.000027932690810805738,
+      "logScaledDistance": 0.047109864366672596,
+      "newestCoefficient": 0.11424455818920197,
+      "minPivot": 0.002017791671068522,
+      "pivotRatio": 624.7728244614669,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -10.485712841408692,
+      "residualLogGain": 0.008911390844012601
+    },
+    {
+      "n": 36,
+      "distanceSquared": 0.013154740902399653,
+      "gain": 0.00009568171499585443,
+      "logScaledDistance": 0.04714026315423237,
+      "newestCoefficient": -0.2327258788311378,
+      "minPivot": 0.001766605560310766,
+      "pivotRatio": 713.6066079666018,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -9.254483343634815,
+      "residualLogGain": -0.028227256513597254
+    },
+    {
+      "n": 37,
+      "distanceSquared": 0.013070781822253408,
+      "gain": 0.00008395908014624531,
+      "logScaledDistance": 0.04719752021423935,
+      "newestCoefficient": -0.20516835266575448,
+      "minPivot": 0.001766605560310766,
+      "pivotRatio": 713.6066079666018,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -9.385181018928868,
+      "residualLogGain": 0.08144092905447131
+    },
+    {
+      "n": 38,
+      "distanceSquared": 0.012963844822348913,
+      "gain": 0.00010693699990449446,
+      "logScaledDistance": 0.047157102502616975,
+      "newestCoefficient": 0.25261306225654184,
+      "minPivot": 0.0016757776303804807,
+      "pivotRatio": 752.2844192770815,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.14327068284418,
+      "residualLogGain": -0.03792022223067981
+    },
+    {
+      "n": 39,
+      "distanceSquared": 0.012963758905927825,
+      "gain": 8.591642108868314e-8,
+      "logScaledDistance": 0.047493529917428806,
+      "newestCoefficient": 0.007062151224214783,
+      "minPivot": 0.0016757776303804807,
+      "pivotRatio": 752.2844192770815,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -16.26989086104918,
+      "residualLogGain": -0.0380882467287762
+    },
+    {
+      "n": 40,
+      "distanceSquared": 0.012715197196131678,
+      "gain": 0.0002485617097961468,
+      "logScaledDistance": 0.04690482969181728,
+      "newestCoefficient": -0.40676609025411264,
+      "minPivot": 0.001502258760846118,
+      "pivotRatio": 839.1772671695127,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -8.299819414096628,
+      "residualLogGain": -0.03196261826475677
+    },
+    {
+      "n": 41,
+      "distanceSquared": 0.0123264919494952,
+      "gain": 0.0003887052466364782,
+      "logScaledDistance": 0.045775316184100905,
+      "newestCoefficient": -0.481948426399181,
+      "minPivot": 0.001502258760846118,
+      "pivotRatio": 839.1772671695127,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -7.852689222290122,
+      "residualLogGain": 0.0667962089855143
+    },
+    {
+      "n": 42,
+      "distanceSquared": 0.012136577766664214,
+      "gain": 0.00018991418283098582,
+      "logScaledDistance": 0.045362517988394246,
+      "newestCoefficient": -0.3789926134159625,
+      "minPivot": 0.0013221962098278308,
+      "pivotRatio": 953.4601537486333,
+      "isPrime": false,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -8.568938257147696,
+      "residualLogGain": -0.023528425844428824
+    },
+    {
+      "n": 43,
+      "distanceSquared": 0.012129940669306727,
+      "gain": 0.000006637097357486965,
+      "logScaledDistance": 0.04562313424875251,
+      "newestCoefficient": -0.06587048064372396,
+      "minPivot": 0.0013221962098278308,
+      "pivotRatio": 953.4601537486333,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -11.922835835008426,
+      "residualLogGain": 0.10426418850942376
+    },
+    {
+      "n": 44,
+      "distanceSquared": 0.012063231383636852,
+      "gain": 0.00006670928566987477,
+      "logScaledDistance": 0.045649555153516014,
+      "newestCoefficient": 0.22729370100599847,
+      "minPivot": 0.001291253434409947,
+      "pivotRatio": 976.3082659945662,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -9.615166399291866,
+      "residualLogGain": -0.039529583516026534
+    },
+    {
+      "n": 45,
+      "distanceSquared": 0.01202264935573294,
+      "gain": 0.00004058202790391263,
+      "logScaledDistance": 0.04576616833012988,
+      "newestCoefficient": 0.17572624546390508,
+      "minPivot": 0.001291253434409947,
+      "pivotRatio": 976.3082659945662,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -10.112185251825744,
+      "residualLogGain": -0.0322520023073114
+    },
+    {
+      "n": 46,
+      "distanceSquared": 0.011925253401076641,
+      "gain": 0.00009739595465629858,
+      "logScaledDistance": 0.0456575188349844,
+      "newestCoefficient": 0.2858889248248494,
+      "minPivot": 0.0011916432467043313,
+      "pivotRatio": 1057.9184709810193,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.236725881481206,
+      "residualLogGain": -0.038478816585215014
+    },
+    {
+      "n": 47,
+      "distanceSquared": 0.011885203009066592,
+      "gain": 0.00004005039201004923,
+      "logScaledDistance": 0.045759785861194904,
+      "newestCoefficient": -0.17408517667882045,
+      "minPivot": 0.0011916432467043313,
+      "pivotRatio": 1057.9184709810193,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -10.125372096481598,
+      "residualLogGain": 0.053896912067415315
+    },
+    {
+      "n": 48,
+      "distanceSquared": 0.011873207148165532,
+      "gain": 0.00001199586090105953,
+      "logScaledDistance": 0.0459635715146972,
+      "newestCoefficient": 0.10648767593102848,
+      "minPivot": 0.0010578710291378151,
+      "pivotRatio": 1191.6966877670964,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -11.330948892588259,
+      "residualLogGain": -0.033867282681375954
+    },
+    {
+      "n": 49,
+      "distanceSquared": 0.011872614670091375,
+      "gain": 5.924780741572988e-7,
+      "logScaledDistance": 0.04620608276470761,
+      "newestCoefficient": 0.022106673776775287,
+      "minPivot": 0.0010578710291378151,
+      "pivotRatio": 1191.6966877670964,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -14.33895197026354,
+      "residualLogGain": 0.08650173051370302
+    },
+    {
+      "n": 50,
+      "distanceSquared": 0.01186904886688167,
+      "gain": 0.0000035658032097041215,
+      "logScaledDistance": 0.04643199221979196,
+      "newestCoefficient": 0.05924636978689873,
+      "minPivot": 0.0010158600504712465,
+      "pivotRatio": 1240.9794055032448,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -12.544121225210379,
+      "residualLogGain": -0.04416283553273459
+    },
+    {
+      "n": 51,
+      "distanceSquared": 0.011832332993858996,
+      "gain": 0.00003671587302267465,
+      "logScaledDistance": 0.04652267016018456,
+      "newestCoefficient": 0.1850391130499026,
+      "minPivot": 0.0010158600504712465,
+      "pivotRatio": 1240.9794055032448,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -10.2123013889783,
+      "residualLogGain": 0.00741209013398425
+    },
+    {
+      "n": 52,
+      "distanceSquared": 0.011828675315206483,
+      "gain": 0.0000036576786525133187,
+      "logScaledDistance": 0.0467379790383488,
+      "newestCoefficient": -0.06190203516865572,
+      "minPivot": 0.0009545434290892728,
+      "pivotRatio": 1320.6956992109801,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -12.518681859718496,
+      "residualLogGain": -0.04591577979914341
+    },
+    {
+      "n": 53,
+      "distanceSquared": 0.011799959255790249,
+      "gain": 0.000028716059416233897,
+      "logScaledDistance": 0.04684928281350854,
+      "newestCoefficient": -0.16382641645342472,
+      "minPivot": 0.0009545434290892728,
+      "pivotRatio": 1320.6956992109801,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -10.45805403015363,
+      "residualLogGain": 0.06519024227849357
+    },
+    {
+      "n": 54,
+      "distanceSquared": 0.011739276958987133,
+      "gain": 0.00006068229680311621,
+      "logScaledDistance": 0.04682778850759924,
+      "newestCoefficient": 0.26654549414495465,
+      "minPivot": 0.0008541208422385322,
+      "pivotRatio": 1475.9754582317476,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -9.709858553127168,
+      "residualLogGain": -0.029315325495399946
+    },
+    {
+      "n": 55,
+      "distanceSquared": 0.01162280793215198,
+      "gain": 0.00011646902683515314,
+      "logScaledDistance": 0.04657646393209582,
+      "newestCoefficient": 0.34563474184760873,
+      "minPivot": 0.0008541208422385322,
+      "pivotRatio": 1475.9754582317476,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.057885184382576,
+      "residualLogGain": 0.0968112327587658
+    },
+    {
+      "n": 56,
+      "distanceSquared": 0.011611728723970538,
+      "gain": 0.00001107920818144148,
+      "logScaledDistance": 0.046741291851392704,
+      "newestCoefficient": 0.1150495288672885,
+      "minPivot": 0.0008370261646725341,
+      "pivotRatio": 1506.1194676053005,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -11.410440342967613,
+      "residualLogGain": -0.043568518405837864
+    },
+    {
+      "n": 57,
+      "distanceSquared": 0.0115649323189847,
+      "gain": 0.00004679640498583826,
+      "logScaledDistance": 0.046757614274691855,
+      "newestCoefficient": 0.2302017391161368,
+      "minPivot": 0.0008370261646725341,
+      "pivotRatio": 1506.1194676053005,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -9.969704174533133,
+      "residualLogGain": 0.00616461771408261
+    },
+    {
+      "n": 58,
+      "distanceSquared": 0.011564775809005168,
+      "gain": 1.5650997953198242e-7,
+      "logScaledDistance": 0.046958113102211346,
+      "newestCoefficient": 0.014111037902288048,
+      "minPivot": 0.0007860028487151187,
+      "pivotRatio": 1603.8890998539136,
+      "isPrime": false,
+      "mobius": 1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": true,
+      "isNonsquarefree": false,
+      "logGain": -15.670146062021708,
+      "residualLogGain": -0.05384200356796853
+    },
+    {
+      "n": 59,
+      "distanceSquared": 0.011483523342243562,
+      "gain": 0.00008125246676160547,
+      "logScaledDistance": 0.04682449641596348,
+      "newestCoefficient": -0.30357147262331724,
+      "minPivot": 0.0007860028487151187,
+      "pivotRatio": 1603.8890998539136,
+      "isPrime": true,
+      "mobius": -1,
+      "isSquarefree": true,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": false,
+      "logGain": -9.41794937707245,
+      "residualLogGain": 0.06892052877130617
+    },
+    {
+      "n": 60,
+      "distanceSquared": 0.011470726442079804,
+      "gain": 0.000012796900163758451,
+      "logScaledDistance": 0.04696510643286671,
+      "newestCoefficient": -0.13518069742486133,
+      "minPivot": 0.0007002859552168245,
+      "pivotRatio": 1800.2094603167848,
+      "isPrime": false,
+      "mobius": 0,
+      "isSquarefree": false,
+      "isSquarefreeComposite": false,
+      "isNonsquarefree": true,
+      "logGain": -11.266307591074103,
+      "residualLogGain": -0.030867791413985657
+    }
+  ],
+  "featureScores": {
+    "prime": {
+      "full": {
+        "observed": 0.05839367406032178,
+        "nullMean": 0.0020442827498154685,
+        "sd": 0.012388573779803218,
+        "z": 4.548497051563055
+      },
+      "finalThird": {
+        "observed": 0.08637619572435676,
+        "nullMean": -0.000650639599651378,
+        "sd": 0.02887872827233295,
+        "z": 3.013527275277684
+      }
+    },
+    "squarefreeComposite": {
+      "full": {
+        "observed": -0.018873079698772197,
+        "nullMean": 0.00040735235566933425,
+        "sd": 0.012266088540604759,
+        "z": -1.5718484332325668
+      },
+      "finalThird": {
+        "observed": -0.011345266991847153,
+        "nullMean": -0.000009467360129043844,
+        "sd": 0.0266258866851902,
+        "z": -0.4257435542239908
+      }
+    },
+    "nonsquarefree": {
+      "full": {
+        "observed": -0.03027317449045594,
+        "nullMean": -0.0020636398357915114,
+        "sd": 0.01177282069426441,
+        "z": -2.3961576742953206
+      },
+      "finalThird": {
+        "observed": -0.0558102247677939,
+        "nullMean": 0.0005009416992393238,
+        "sd": 0.025262813405314354,
+        "z": -2.2290140675775825
+      }
+    },
+    "positiveMobius": {
+      "full": {
+        "observed": -0.016408567943281237,
+        "nullMean": 0.000736195212821318,
+        "sd": 0.012588150096012562,
+        "z": -1.3619763845629194
+      },
+      "finalThird": {
+        "observed": -0.004557393651244308,
+        "nullMean": 0.00002034268565766728,
+        "sd": 0.028692111604063764,
+        "z": -0.15954686082615177
+      }
+    },
+    "negativeMobius": {
+      "full": {
+        "observed": 0.050562918650462294,
+        "nullMean": 0.0015920138326870616,
+        "sd": 0.012108937715667732,
+        "z": 4.044194954806966
+      },
+      "finalThird": {
+        "observed": 0.06984543780779666,
+        "nullMean": -0.0006085586862978333,
+        "sd": 0.02762833513809569,
+        "z": 2.5500630473005983
+      }
+    }
+  },
+  "cutoffStability": [
+    {
+      "leftCutoff": 2048,
+      "rightCutoff": 4096,
+      "correlation": 1.0000000000000004,
+      "maximumDistanceDelta": 9.467981954003335e-13
+    },
+    {
+      "leftCutoff": 4096,
+      "rightCutoff": 8192,
+      "correlation": 1,
+      "maximumDistanceDelta": 2.731148640577885e-14
+    }
+  ],
+  "strongestFeature": "prime",
+  "leadPass": false,
+  "verdict": "NO SCHUR-INNOVATION SURVIVOR"
+}

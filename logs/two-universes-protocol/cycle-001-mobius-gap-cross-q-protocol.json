@@ -1,0 +1,292 @@
+{
+  "generatedAt": "2026-06-17T01:16:07.356Z",
+  "cycle": 1,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-001-mobius-gap-cross-q",
+    "title": "Cross-q Mobius-parity gap law",
+    "class": "finite-field lead audited under strict Two-Universes gates",
+    "councilSuccessTarget": "S1/S2/S3 candidate only if integer analogue and holdouts exist",
+    "preregistration": "logs/2026-06-13-mobius-gap-cross-q.md",
+    "expertPack": "logs/two-universes-artifacts/mobius-gap-cross-q-expert-pack.md",
+    "evidenceFiles": [
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law.json",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-refined.json",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-f8-holdout.json",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-f2-null.json",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law.md",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-refined.md",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-f8-holdout.md",
+      "logs/two-universes-artifacts/mobius-gap-cross-q-law-f2-null.md",
+      "logs/two-universes-artifacts/mobius_gap_cross_q_stub.lean",
+      "scripts/mobius-gap-cross-q-law.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Expert pack states R_q(n)=Corr(mu(f-t), G_+(f) | scrub) and a q^-2-scale law.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "Mechanism is anchored in Pellet's discriminant formula for odd q and Berlekamp-Artin-Schreier parity in characteristic 2.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "fail",
+      "evidence": "The pack explicitly says the clean coefficient-space analogue is null or absent over Z; no integer-prime analogue or preregistered Z holdout exists.",
+      "severity": "hard-fail"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "4/5 refined/holdout/null rows pass finite-field cyclic, composite, and high-placebo gates.",
+      "severity": "pass"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "The proposed rule is low-parameter: positive low-coefficient parity coupling with q^-2 scale in odd characteristic, null/Artin-Schreier split in characteristic 2.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "pass",
+      "evidence": "Evidence spans F_3, F_5, F_7, F_8 holdout, and F_2 null, but remains finite-field only.",
+      "severity": "pass"
+    },
+    "novelty_audit": {
+      "status": "pass",
+      "evidence": "Expert pack compares against Pellet, Berlekamp/Carmon, and Kurlberg-Rosenzweig short-interval catalog results.",
+      "severity": "pass"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "All listed JSON/MD/script/Lean-stub artifacts are present.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "There is a plausible finite-field mechanism, but the strict protocol requires an integer analogue and obstruction/conjecture chain; that chain is absent.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "pass",
+      "evidence": "Expert pack present: logs/two-universes-artifacts/mobius-gap-cross-q-expert-pack.md",
+      "severity": "pass"
+    }
+  },
+  "finiteFieldEvidence": {
+    "holdoutRows": [
+      {
+        "source": "refined",
+        "label": "F_5[t]",
+        "q": 5,
+        "scrub": "previous",
+        "prediction": {
+          "kind": "odd",
+          "sign": 1,
+          "rMin": 0.005,
+          "rMax": 0.009
+        },
+        "degree": 12,
+        "realR": 0.007364236067874491,
+        "realZ": 27.35286456329191,
+        "cyclicMeanAbsR": 0.00019269810967160946,
+        "compositeMeanAbsR": 0.00022621612866319975,
+        "highPlaceboR": -0.00044957044835055687,
+        "verdictPass": true,
+        "verdictReason": "sign + and 0.005<=r<=0.009"
+      },
+      {
+        "source": "refined",
+        "label": "F_7[t]",
+        "q": 7,
+        "scrub": "previous",
+        "prediction": {
+          "kind": "small-nonnegative",
+          "rMax": 0.004
+        },
+        "degree": 10,
+        "realR": 0.0024916893556513986,
+        "realZ": 9.340812009353844,
+        "cyclicMeanAbsR": 0.0003124470134570201,
+        "compositeMeanAbsR": 0.00018573183930322492,
+        "highPlaceboR": -0.00005720117903467344,
+        "verdictPass": true,
+        "verdictReason": "small nonnegative gate 0<=r<=0.004"
+      },
+      {
+        "source": "refined",
+        "label": "F_8[t]",
+        "q": 8,
+        "scrub": "two-sided",
+        "prediction": {
+          "kind": "char2-null",
+          "maxAbsR": 0.003
+        },
+        "degree": 8,
+        "realR": 0.010016679242385218,
+        "realZ": 4.9439999036464,
+        "cyclicMeanAbsR": 0.0015974083228277806,
+        "compositeMeanAbsR": 0.0023634475443433584,
+        "highPlaceboR": 0.0008145783089373939,
+        "verdictPass": false,
+        "verdictReason": "null gate |r|<0.003"
+      },
+      {
+        "source": "f8Holdout",
+        "label": "F_8[t]",
+        "q": 8,
+        "scrub": "two-sided",
+        "prediction": {
+          "kind": "odd",
+          "sign": 1,
+          "rMin": 0.004,
+          "rMax": 0.009
+        },
+        "degree": 9,
+        "realR": 0.0064834136318425,
+        "realZ": 9.887881741038822,
+        "cyclicMeanAbsR": 0.0002865976957486304,
+        "compositeMeanAbsR": 0.0004018682419811755,
+        "highPlaceboR": -0.0003681903818053212,
+        "verdictPass": true,
+        "verdictReason": "sign + and 0.004<=r<=0.009"
+      },
+      {
+        "source": "f2Null",
+        "label": "F_2[t]",
+        "q": 2,
+        "scrub": "two-sided",
+        "prediction": {
+          "kind": "char2-null",
+          "maxAbsR": 0.003
+        },
+        "degree": 25,
+        "realR": 0.00007612562617201059,
+        "realZ": 0.08410176442921576,
+        "cyclicMeanAbsR": 0.0006400942826683861,
+        "compositeMeanAbsR": 0.0009858624831111176,
+        "highPlaceboR": -0.0004307528936990123,
+        "verdictPass": true,
+        "verdictReason": "null gate |r|<0.003"
+      }
+    ],
+    "passingHoldouts": 4,
+    "failingHoldouts": 1
+  },
+  "decision": {
+    "status": "REJECT_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Strong finite-field phenomenon, but not a strict Two-Universes breakthrough candidate because integer-prime holdout and proof-path gates fail.",
+    "hardFailures": [
+      {
+        "id": "integer_holdout",
+        "status": "fail",
+        "evidence": "The pack explicitly says the clean coefficient-space analogue is null or absent over Z; no integer-prime analogue or preregistered Z holdout exists.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "4/5 refined/holdout/null rows pass finite-field cyclic, composite, and high-placebo gates.",
+        "severity": "pass"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "There is a plausible finite-field mechanism, but the strict protocol requires an integer analogue and obstruction/conjecture chain; that chain is absent.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Low-coefficient Mobius/Frobenius parity predicts forward lexicographic irreducible gap in several F_q[t] settings after direct leakage scrubs.",
+    "expectedNull": "Cyclic shifts, reducible-polynomial controls, and high-coefficient placebo should be near zero.",
+    "knownExplanation": "Pellet/Berlekamp parity characters explain the finite-field mechanism.",
+    "survivedControls": [
+      "F_5[t] previous degree 12: r=0.007364",
+      "F_7[t] previous degree 10: r=0.002492",
+      "F_8[t] two-sided degree 9: r=0.006483",
+      "F_2[t] two-sided degree 25: r=0.000076"
+    ],
+    "failedControls": [
+      "F_8[t] two-sided degree 8: null gate |r|<0.003"
+    ],
+    "whatFailed": "No honest Z coefficient-neighborhood analogue and no integer holdout.",
+    "suspectedInvariant": "Local Frobenius-parity obstruction to immediate irreducibility in short coefficient neighborhoods.",
+    "nextMutation": "Replace lexicographic coefficient-neighborhood statistic with an order-free matched statistic"
+  },
+  "nextMutation": {
+    "title": "Replace lexicographic coefficient-neighborhood statistic with an order-free matched statistic",
+    "reason": "The current candidate's strongest feature is native to coefficient-space ordering in F_q[t], and that structure has no honest integer-prime analogue.",
+    "preregisteredNextMove": [
+      "Use additive fixed-shift graphs instead of consecutive lexicographic gaps.",
+      "For Z: vertices are primes p<=N; edges connect p and p+h for admissible h.",
+      "For F_q[t]: vertices are monic irreducibles of degree n; edges connect f and f+a for low-degree shifts a.",
+      "Score centered degree/energy after Hardy-Littlewood or exact finite-field local baselines.",
+      "Require train/holdout split in N or degree, q=2/3/5 controls, random-label controls, reducible/composite controls, and high-shift placebo."
+    ]
+  }
+}

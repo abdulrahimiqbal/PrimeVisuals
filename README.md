@@ -13,11 +13,20 @@ and gap correlations, then re-scores every candidate on an unseen range of
 primes. Every view is a shareable URL; pinned finds live in the notebook
 with OEIS lookup links.
 
+The **ATLAS** mode is the repo-wide theory map: primes sit at the center,
+surrounded by operations, mathematical frameworks, proved results, open
+conjectures, project programs, and named proof obstructions. Search and
+status lenses expose typed connections, while dashed “open bridge” edges
+state the missing lemma or comparison theorem instead of treating visual
+proximity as evidence.
+
 ## User guide
 
 See [HOW_TO_USE.md](HOW_TO_USE.md) for a practical guide to the controls,
 presets, and what each dot represents. [ROADMAP.md](ROADMAP.md) tracks what
-is built and what comes next.
+is built and what comes next. [THEORY_MAP.md](THEORY_MAP.md) defines how the
+Atlas evolves without mixing mathematical truth status with the lifecycle of
+this project’s experiments.
 
 [MACHINE_HOW_TO_USE.md](MACHINE_HOW_TO_USE.md) documents the headless
 interface for AI coding agents: `scripts/explore.mjs` evaluates any
@@ -47,6 +56,33 @@ battery, and the anomaly scanner, plus jsdom interaction tests of the UI.
 `scripts/verify.mjs` drives a headless Chromium through the main flows
 (requires `npx playwright install chromium` and a running dev server).
 `scripts/genzeros.mjs` regenerates the bundled zeta-zero table.
+
+## Crack atlas
+
+The systematic prime crack-hunt runner is available as npm scripts:
+
+```sh
+npm run crack:quick   # smoke-test the full plan/run/audit/pack loop
+npm run crack:plan    # freeze the cycle manifest
+npm run crack:run     # discovery sweep
+npm run crack:audit   # holdout and hostile controls
+npm run crack:pack    # evidence pack
+```
+
+Artifacts are written to `logs/crack-atlas/`.
+
+## FrontierLab
+
+The residual-first Chowla/Liouville atlas is available as:
+
+```sh
+npm run frontier:liouville
+```
+
+It builds `C_h(N)=sum_{n<=N} lambda(n)lambda(n+h)` across shifts and
+dyadic ranges, compares against random completely multiplicative and
+shuffled nulls, calibrates against `F_2[t]` and `F_3[t]`, and writes JSON,
+Markdown, and SVG evidence packs to `logs/frontierlab-artifacts/`.
 
 ## Build for production
 

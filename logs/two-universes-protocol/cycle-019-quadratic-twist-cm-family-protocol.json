@@ -1,0 +1,507 @@
+{
+  "generatedAt": "2026-06-17T10:18:55.092Z",
+  "cycle": 19,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-019-quadratic-twist-cm-family",
+    "title": "Quadratic-twist CM family residual",
+    "class": "forced mutation from constant CM curve to a nonconstant incomplete quadratic-twist family",
+    "councilSuccessTarget": "S1/S2 candidate only if the incomplete quadratic-twist CM family survives integer controls and matches q=3,5,7 F_q[t] twist-family profiles",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-8000000.json",
+      "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-8000000.md",
+      "logs/two-universes-protocol/cycle-019-quadratic-twist-cm-family-8000000.svg",
+      "scripts/quadratic-twist-cm-family-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states V_S(K)=sum_D chi_K(D)a_K(E)/sqrt(|K|*good_D) for an incomplete quadratic-twist family of E:y^2=x^3-x.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: K=F_q[t]/P, with nonconstant low-degree twist polynomials D(t) and quadratic characters in the residue field.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No matched profile survives: integerBeatsControls=false, signsAligned=false, profileSpread=192.683362.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter object: one CM curve, one fixed twist-window rule, and one normalized family trace statistic.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete ladders and matched integer/field profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The mutation is genuine and nonconstant on the F_q[t] side, but the signal still factors through CM trace and quadratic-character windows; controls/profile gates fail.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the full 8M and q=3,5,7 run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "pass",
+      "evidence": "The CM trace formula is brute-validated and the quadratic-twist trace factorization is explicit.",
+      "severity": "pass"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and matched-profile gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "quadraticTwistCmEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "validationPassed": true,
+      "integerBeatsControls": false,
+      "signsAligned": false,
+      "profileSpread": 192.68336186124247,
+      "matchedProfile": false,
+      "maxAbsEndpointZ": 91.53649313632194,
+      "theoremShape": {
+        "statistic": "V_S(K)=sum_{D in S, D nonzero} chi_K(D)*a_K(E)/sqrt(|K|*good_D), E:y^2=x^3-x",
+        "integer": "K=F_p with squarefree integer twists d in a low-conductor window",
+        "functionField": "K=F_q[t]/P with low-degree nonconstant polynomial twists D(t)",
+        "baseline": "Quadratic-twist trace factorization gives exact values; promotion requires matched residual profile beyond integer controls."
+      },
+      "finalInteger": {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -349.02524477456075,
+        "mean": -0.0006466112698129609,
+        "z": -0.4750617399038342,
+        "energyZ": -0.47840516501705876,
+        "maxAbsZ": 0.8548390402996677
+      },
+      "finalFields": [
+        {
+          "q": 3,
+          "final": {
+            "label": "F_3:deg10",
+            "q": 3,
+            "degree": 10,
+            "labels": 5880,
+            "cumulativeLabels": 9382,
+            "fieldSize": 59049,
+            "baseTrace": -486,
+            "degreeMean": -1.7108420221700642,
+            "z": -91.53649313632194,
+            "energyZ": -44.4197769698717,
+            "maxAbsZ": 91.53649313632194
+          }
+        },
+        {
+          "q": 5,
+          "final": {
+            "label": "F_5:deg7",
+            "q": 5,
+            "degree": 7,
+            "labels": 11160,
+            "cumulativeLabels": 14569,
+            "fieldSize": 78125,
+            "baseTrace": -58,
+            "degreeMean": -0.05990214242134117,
+            "z": 2.961278552749152,
+            "energyZ": 3.589264327841179,
+            "maxAbsZ": 17.663333404072937
+          }
+        },
+        {
+          "q": 7,
+          "final": {
+            "label": "F_7:deg6",
+            "q": 7,
+            "degree": 6,
+            "labels": 19544,
+            "cumulativeLabels": 23632,
+            "fieldSize": 117649,
+            "baseTrace": -686,
+            "degreeMean": -0.5591529827681783,
+            "z": -69.32017690341955,
+            "energyZ": -38.15749100166609,
+            "maxAbsZ": 69.34858030075533
+          }
+        }
+      ]
+    },
+    "integerRows": [
+      {
+        "endpoint": 1000000,
+        "count": 78497,
+        "sum": -26.67380678477813,
+        "mean": -0.00033980670324697926,
+        "z": -0.09520471808992642,
+        "energyZ": -0.09718105482471336,
+        "maxAbsZ": 0.8548390402996677
+      },
+      {
+        "endpoint": 2000000,
+        "count": 148932,
+        "sum": -313.76985458753876,
+        "mean": -0.0021067994426150105,
+        "z": -0.8130499091411422,
+        "energyZ": -0.8249102290534382,
+        "maxAbsZ": 0.8548390402996677
+      },
+      {
+        "endpoint": 4000000,
+        "count": 283145,
+        "sum": -215.41086322032112,
+        "mean": -0.0007607793293906695,
+        "z": -0.4048211111889067,
+        "energyZ": -0.4086263052649608,
+        "maxAbsZ": 0.8548390402996677
+      },
+      {
+        "endpoint": 8000000,
+        "count": 539776,
+        "sum": -349.02524477456075,
+        "mean": -0.0006466112698129609,
+        "z": -0.4750617399038342,
+        "energyZ": -0.47840516501705876,
+        "maxAbsZ": 0.8548390402996677
+      }
+    ],
+    "controlSummary": {
+      "shuffle": {
+        "zRange": [
+          -0.47506173990384826,
+          -0.4750617399038272
+        ],
+        "absZRange": [
+          0.4750617399038272,
+          0.47506173990384826
+        ],
+        "maxAbsZRange": [
+          1.6624188439071292,
+          3.6849810338094953
+        ],
+        "energyZRange": [
+          -0.4784051650170711,
+          -0.4784051650170503
+        ]
+      },
+      "signFlip": {
+        "zRange": [
+          -0.02913115816646548,
+          1.4525511902198234
+        ],
+        "absZRange": [
+          0.005293770614563954,
+          1.4525511902198234
+        ],
+        "maxAbsZRange": [
+          1.393964398439407,
+          3.0354144597862525
+        ],
+        "energyZRange": [
+          -0.029336179614437262,
+          1.4627740638374889
+        ]
+      },
+      "bootstrap": {
+        "zRange": [
+          -1.2022456838539117,
+          0.45426391385035203
+        ],
+        "absZRange": [
+          0.23899789697371723,
+          1.2022456838539117
+        ],
+        "maxAbsZRange": [
+          1.475425117582541,
+          2.839583795628294
+        ],
+        "energyZRange": [
+          -1.2082692362050138,
+          0.4572961670686988
+        ]
+      }
+    },
+    "fields": [
+      {
+        "q": 3,
+        "maxDegree": 10,
+        "twists": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+1t+0",
+          "t^2+1t+1",
+          "t^2+1t+2",
+          "t^2+2t+0",
+          "t^2+2t+1",
+          "t^2+2t+2"
+        ],
+        "final": {
+          "label": "F_3:deg10",
+          "q": 3,
+          "degree": 10,
+          "labels": 5880,
+          "cumulativeLabels": 9382,
+          "fieldSize": 59049,
+          "baseTrace": -486,
+          "degreeMean": -1.7108420221700642,
+          "z": -91.53649313632194,
+          "energyZ": -44.4197769698717,
+          "maxAbsZ": 91.53649313632194
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 7,
+        "twists": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t+3",
+          "t+4",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+0t+3",
+          "t^2+0t+4",
+          "t^2+1t+0",
+          "t^2+1t+1"
+        ],
+        "final": {
+          "label": "F_5:deg7",
+          "q": 5,
+          "degree": 7,
+          "labels": 11160,
+          "cumulativeLabels": 14569,
+          "fieldSize": 78125,
+          "baseTrace": -58,
+          "degreeMean": -0.05990214242134117,
+          "z": 2.961278552749152,
+          "energyZ": 3.589264327841179,
+          "maxAbsZ": 17.663333404072937
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 6,
+        "twists": [
+          "t+0",
+          "t+1",
+          "t+2",
+          "t+3",
+          "t+4",
+          "t+5",
+          "t+6",
+          "t^2+0t+0",
+          "t^2+0t+1",
+          "t^2+0t+2",
+          "t^2+0t+3",
+          "t^2+0t+4"
+        ],
+        "final": {
+          "label": "F_7:deg6",
+          "q": 7,
+          "degree": 6,
+          "labels": 19544,
+          "cumulativeLabels": 23632,
+          "fieldSize": 117649,
+          "baseTrace": -686,
+          "degreeMean": -0.5591529827681783,
+          "z": -69.32017690341955,
+          "energyZ": -38.15749100166609,
+          "maxAbsZ": 69.34858030075533
+        }
+      }
+    ],
+    "validation": [
+      {
+        "p": 3,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 5,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 7,
+        "formulaTrace": 0,
+        "bruteTrace": 0,
+        "ok": true
+      },
+      {
+        "p": 13,
+        "formulaTrace": 6,
+        "bruteTrace": 6,
+        "ok": true
+      },
+      {
+        "p": 17,
+        "formulaTrace": 2,
+        "bruteTrace": 2,
+        "ok": true
+      },
+      {
+        "p": 29,
+        "formulaTrace": -10,
+        "bruteTrace": -10,
+        "ok": true
+      },
+      {
+        "p": 37,
+        "formulaTrace": -2,
+        "bruteTrace": -2,
+        "ok": true
+      },
+      {
+        "p": 53,
+        "formulaTrace": 14,
+        "bruteTrace": 14,
+        "ok": true
+      },
+      {
+        "p": 97,
+        "formulaTrace": 18,
+        "bruteTrace": 18,
+        "ok": true
+      }
+    ]
+  },
+  "decision": {
+    "status": "QUADRATIC_TWIST_CM_FAMILY_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 019 uses a nonconstant incomplete twist family, but the integer side is absorbed by controls and q-profile alignment fails.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No matched profile survives: integerBeatsControls=false, signsAligned=false, profileSpread=192.683362.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete ladders and matched integer/field profile. Integer ladder=true; field ladders=true; matchedProfile=false.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The mutation is genuine and nonconstant on the F_q[t] side, but the signal still factors through CM trace and quadratic-character windows; controls/profile gates fail.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and matched-profile gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Integer final z=-0.475062; max endpoint |z|=91.536493; profileSpread=192.683362; matchedProfile=false.",
+    "expectedNull": "A useful incomplete twist-family residual should survive integer controls and align in sign/scale across q=3,5,7 field profiles.",
+    "knownExplanation": "CM trace factorization and quadratic-character windows explain the observed profile behavior.",
+    "survivedControls": [],
+    "failedControls": [
+      "Integer controls absorb the prime profile and q-field profiles do not align in sign/scale"
+    ],
+    "whatFailed": "The object is a nonconstant CM-character calibration, not a breakthrough candidate.",
+    "suspectedInvariant": "CM factorization remains too rigid; useful algebraic-family transport likely requires non-CM monodromy or theorem-first nonzero residuals.",
+    "nextMutation": "Leave CM twist factorization; register non-CM monodromy or theorem-first incomplete-family residual"
+  },
+  "nextMutation": {
+    "title": "Leave CM twist factorization; register non-CM monodromy or theorem-first incomplete-family residual",
+    "reason": "The nonconstant twist family avoids the constant-curve failure, but the profiles still factor through CM traces and quadratic-character windows and do not survive the strict matched-profile gates.",
+    "preregisteredNextMove": [
+      "Do not promote CM twist-family character-window profiles as breakthrough structure.",
+      "A next algebraic cycle must use non-CM monodromy, a non-isotrivial curve/family over F_q(t), or a theorem-first incomplete-family residual with a named nonzero baseline.",
+      "Before data, preregister the theorem baseline, integer analogue, local/null controls, full ladders, novelty audit, proof path, and expert-pack criteria.",
+      "If no such non-CM/non-isotrivial object is named, stop rather than adding another CM-character calibration."
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640">
+<rect width="1180" height="640" fill="#07111f"/>
+<g font-family="Menlo, Consolas, monospace">
+<text x="70" y="42" fill="#f8fafc" font-size="21" font-weight="700">Cycle 010: proof-obligation map</text>
+<text x="70" y="70" fill="#94a3b8" font-size="13">Honest-open finite-field theorem families are blocked until the missing integer substitute is smaller than the original open conjecture.</text>
+<text x="70" y="112" fill="#ef4444" font-size="12">red=open major conjecture</text>
+<text x="315" y="112" fill="#f59e0b" font-size="12">orange=not transportable</text>
+<text x="570" y="112" fill="#38bdf8" font-size="12">blue=tested no breakthrough</text>
+<text x="70" y="150" fill="#f8fafc" font-size="14">carmon-rudnick-large-q-chowla</text>
+<rect x="70" y="168" width="180" height="24" fill="#ef4444" opacity="0.85"/>
+<rect x="258" y="168" width="90" height="24" fill="#f59e0b" opacity="0.85"/>
+<rect x="356" y="168" width="0" height="24" fill="#38bdf8" opacity="0.85"/>
+<text x="70" y="212" fill="#94a3b8" font-size="12">open=2 no-transport=1 tested-no-breakthrough=0</text>
+<text x="70" y="236" fill="#cbd5e1" font-size="11">The missing integer substitute is the Chowla conjecture itself, not a smaller data-testable lemma.</text>
+<text x="70" y="282" fill="#f8fafc" font-size="14">sawin-shusterman-chowla-uniform</text>
+<rect x="70" y="300" width="180" height="24" fill="#ef4444" opacity="0.85"/>
+<rect x="258" y="300" width="0" height="24" fill="#f59e0b" opacity="0.85"/>
+<rect x="266" y="300" width="90" height="24" fill="#38bdf8" opacity="0.85"/>
+<text x="70" y="344" fill="#94a3b8" font-size="12">open=2 no-transport=0 tested-no-breakthrough=1</text>
+<text x="70" y="368" fill="#cbd5e1" font-size="11">The proof ingredient that matters is a major open uniform Chowla substitute; previous data-first variants were absorbed by controls.</text>
+<text x="70" y="414" fill="#f8fafc" font-size="14">sawin-shusterman-twin-irreducibles</text>
+<rect x="70" y="432" width="90" height="24" fill="#ef4444" opacity="0.85"/>
+<rect x="168" y="432" width="0" height="24" fill="#f59e0b" opacity="0.85"/>
+<rect x="176" y="432" width="0" height="24" fill="#38bdf8" opacity="0.85"/>
+<text x="70" y="476" fill="#94a3b8" font-size="12">open=1 no-transport=0 tested-no-breakthrough=0</text>
+<text x="70" y="500" fill="#cbd5e1" font-size="11">After local admissibility is handled, the remaining missing ingredient is the open prime-tuple theorem itself.</text>
+</g>
+</svg>

@@ -1,0 +1,2227 @@
+{
+  "generatedAt": "2026-06-17T09:59:31.157Z",
+  "cycle": 15,
+  "protocolVersion": "two-universes-breakthrough-candidate-v1",
+  "candidate": {
+    "id": "cycle-015-family-cubic-chebotarev-covariance",
+    "title": "Family cubic Chebotarev covariance",
+    "class": "forced mutation from fixed Kummer covers to low-conductor family covariance across cubic residue characters",
+    "councilSuccessTarget": "S1/S2 candidate only if centered family covariance survives controls in Z and q=2,5,7 F_q[t] ladders, with novelty beyond Chebotarev/Kummer independence",
+    "preregistration": "logs/two-universes-protocol/README.md",
+    "evidenceFiles": [
+      "logs/two-universes-protocol/cycle-015-family-cubic-chebotarev-covariance-8000000.json",
+      "logs/two-universes-protocol/cycle-015-family-cubic-chebotarev-covariance-8000000.md",
+      "logs/two-universes-protocol/cycle-015-family-cubic-chebotarev-covariance-8000000.svg",
+      "scripts/family-cubic-chebotarev-covariance-audit.mjs"
+    ]
+  },
+  "gates": [
+    {
+      "id": "precise_statement",
+      "name": "Precise theorem-shaped statement",
+      "required": true,
+      "question": "Can the candidate be stated as a formula, law, or divergence rather than a visual impression?"
+    },
+    {
+      "id": "finite_field_anchor",
+      "name": "Exact finite-field interpretation",
+      "required": true,
+      "question": "Is there an exact F_q[t] object or known algebraic mechanism on the theorem side?"
+    },
+    {
+      "id": "integer_holdout",
+      "name": "Integer-prime holdout evidence",
+      "required": true,
+      "question": "Was an integer-prime analogue preregistered and checked on unseen ranges?"
+    },
+    {
+      "id": "controls",
+      "name": "Local/null/random controls",
+      "required": true,
+      "question": "Does the candidate beat local baselines, random controls, and known leakage/placebo tests?"
+    },
+    {
+      "id": "compression",
+      "name": "Compression / low parameter count",
+      "required": true,
+      "question": "Is the rule simpler than the data and not explained by tuning many fitted knobs?"
+    },
+    {
+      "id": "scale_stability",
+      "name": "Scale and field stability",
+      "required": true,
+      "question": "Does the result survive changes in degree, q, range, or normalization?"
+    },
+    {
+      "id": "novelty_audit",
+      "name": "Novelty audit",
+      "required": true,
+      "question": "Is it not just a renamed known theorem, local obstruction, or plotting artifact?"
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducible code, logs, plots",
+      "required": true,
+      "question": "Are the scripts, raw JSON/MD artifacts, and evidence pack present?"
+    },
+    {
+      "id": "proof_path",
+      "name": "Plausible proof path",
+      "required": true,
+      "question": "Can the result be organized into definitions, finite-field proposition, integer analogue, and obstruction/conjecture?"
+    },
+    {
+      "id": "expert_pack",
+      "name": "Expert-ready evidence pack",
+      "required": true,
+      "question": "Is there a concise pack with object, mechanism, holdouts, controls, novelty, and artifacts?"
+    }
+  ],
+  "gateResults": {
+    "precise_statement": {
+      "status": "pass",
+      "evidence": "Candidate states Z_AB=sum_lambda (X_A-1/3)(X_B-1/3)/sqrt(|labels|*4/81) across low-conductor cubic Kummer cover families.",
+      "severity": "pass"
+    },
+    "finite_field_anchor": {
+      "status": "pass",
+      "evidence": "F_q[t] side is exact: A(t) ranges over low-degree squarefree polynomials, P ranges over monic irreducibles, and X_A(P) is cube-residue splitting in F_q[t]/P.",
+      "severity": "pass"
+    },
+    "integer_holdout": {
+      "status": "pass",
+      "evidence": "Integer side checks the preregistered ladder 1000000, 2000000, 4000000, 8000000 through N=8000000.",
+      "severity": "pass"
+    },
+    "controls": {
+      "status": "fail",
+      "evidence": "No matched anomaly survives: allWithinControls=true, integerWithinControls=true, fieldsWithinControls=true.",
+      "severity": "hard-fail"
+    },
+    "compression": {
+      "status": "pass",
+      "evidence": "Low-parameter statistic: one centered covariance formula over fixed low-conductor cover families and preregistered control envelopes.",
+      "severity": "pass"
+    },
+    "scale_stability": {
+      "status": "fail",
+      "evidence": "Scale gate requires complete integer/field ladders and matched control survival. Integer ladder=true; field ladders=true; matched control survival=false; profileAligned=false.",
+      "severity": "hard-fail"
+    },
+    "novelty_audit": {
+      "status": "fail",
+      "evidence": "The run is a genuine family-level mutation, but the observed covariance is explained by standard Chebotarev/Kummer independence and stays inside controls.",
+      "severity": "hard-fail"
+    },
+    "reproducibility": {
+      "status": "pass",
+      "evidence": "JSON/MD/SVG/script artifacts are present for the full 8M and q=2,5,7 run.",
+      "severity": "pass"
+    },
+    "proof_path": {
+      "status": "fail",
+      "evidence": "There is no anomaly to prove; the natural proof path is the known equidistribution/null statement, not a new integer-prime breakthrough.",
+      "severity": "hard-fail"
+    },
+    "expert_pack": {
+      "status": "fail",
+      "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+      "severity": "hard-fail"
+    }
+  },
+  "familyChebotarevEvidence": {
+    "diagnostics": {
+      "completeIntegerLadder": true,
+      "completeFieldLadders": true,
+      "allWithinControls": true,
+      "matchedControlSurvival": false,
+      "profileSpread": 2.2543587798583213,
+      "profileAligned": false,
+      "maxCovRmsZ": 0.7440583759892583,
+      "maxAbsCovZ": 2.070663671396489,
+      "finalInteger": {
+        "label": "Z<=8000000",
+        "covRmsZ": 0.7440583759892583,
+        "maxAbsCovZ": 2.070663671396489,
+        "withinControls": true,
+        "beatsControls": false,
+        "envelope": {
+          "covRmsZHigh": 1.75,
+          "maxAbsCovZHigh": 4.25
+        },
+        "topPairs": [
+          {
+            "key": "19|29",
+            "a": "19",
+            "b": "29",
+            "labels": 269775,
+            "splitRateA": 0.33311833935687146,
+            "splitRateB": 0.3329923084051524,
+            "bothRate": 0.1100398480214994,
+            "covariance": -0.0008859234547316028,
+            "covZ": -2.070663671396489,
+            "bothZ": -1.7704941988298282
+          },
+          {
+            "key": "5|31",
+            "a": "5",
+            "b": "31",
+            "labels": 269775,
+            "splitRateA": 0.3330775646371977,
+            "splitRateB": 0.3337484941154666,
+            "bothRate": 0.11054026503567788,
+            "covariance": -0.0006239767707665708,
+            "covZ": -1.4584172302031086,
+            "bothZ": -0.9434467357086281
+          },
+          {
+            "key": "5|17",
+            "a": "5",
+            "b": "17",
+            "labels": 269776,
+            "splitRateA": 0.3330763299922899,
+            "splitRateB": 0.3329984876341854,
+            "bothRate": 0.11032856888678014,
+            "covariance": -0.0005852592109346622,
+            "covZ": -1.3679254410103874,
+            "bothZ": -1.2933228539337802
+          },
+          {
+            "key": "19|31",
+            "a": "19",
+            "b": "31",
+            "labels": 269774,
+            "splitRateA": 0.3331195741620764,
+            "splitRateB": 0.33374602445009527,
+            "bothRate": 0.11060739730292764,
+            "covariance": -0.00057002445668572,
+            "covZ": -1.332312335048028,
+            "bothZ": -0.8324945860691563
+          },
+          {
+            "key": "29|31",
+            "a": "29",
+            "b": "31",
+            "labels": 269775,
+            "splitRateA": 0.3329886016124548,
+            "splitRateB": 0.3337484941154666,
+            "bothRate": 0.11059957371883977,
+            "covariance": -0.0005350137460232293,
+            "covZ": -1.2504844765890923,
+            "bothZ": -0.8454262956350045
+          },
+          {
+            "key": "13|17",
+            "a": "13",
+            "b": "17",
+            "labels": 269775,
+            "splitRateA": 0.3329626540635715,
+            "splitRateB": 0.33299972199054767,
+            "bothRate": 0.11035492540079696,
+            "covariance": -0.0005214221727982436,
+            "covZ": -1.2187169725640077,
+            "bothZ": -1.2497606109387023
+          },
+          {
+            "key": "7|19",
+            "a": "7",
+            "b": "19",
+            "labels": 269774,
+            "splitRateA": 0.33341241187067694,
+            "splitRateB": 0.3331195741620764,
+            "bothRate": 0.11054808839991993,
+            "covariance": -0.000518129166553656,
+            "covZ": -1.2110180039664313,
+            "bothZ": -0.9305152078140108
+          },
+          {
+            "key": "11|13",
+            "a": "11",
+            "b": "13",
+            "labels": 269775,
+            "splitRateA": 0.33343341673616905,
+            "splitRateB": 0.3329626540635715,
+            "bothRate": 0.11051061069409693,
+            "covariance": -0.0005103017947061343,
+            "covZ": -1.1927253783641454,
+            "bothZ": -0.99245695574544
+          }
+        ]
+      },
+      "finalFields": [
+        {
+          "q": 2,
+          "label": "F_2:deg18",
+          "covRmsZ": 0.3956109846773188,
+          "maxAbsCovZ": 0.5474963660614801,
+          "withinControls": true,
+          "beatsControls": false,
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "topPairs": [
+            {
+              "key": "t^2+t|t^2+t+1",
+              "a": "t^2+t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33319570602807597,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11202862647949353,
+              "covariance": 0.0010092669052206447,
+              "covZ": 0.5474963660614801,
+              "bothZ": 0.3519439937427905
+            },
+            {
+              "key": "t+1|t^2+t",
+              "a": "t+1",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015521,
+              "covZ": -0.5226101676041551,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t^2+t",
+              "a": "t",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015326,
+              "covZ": -0.5226101676041445,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t+1",
+              "a": "t",
+              "b": "t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33188824662813105,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0005275713368199189,
+              "covZ": -0.2861912822594298,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t+1|t^2+t+1",
+              "a": "t+1",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525739442,
+              "covZ": 0.07465859537203834,
+              "bothZ": -0.1495761973406888
+            },
+            {
+              "key": "t|t^2+t+1",
+              "a": "t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525736084,
+              "covZ": 0.07465859537202012,
+              "bothZ": -0.1495761973406888
+            }
+          ]
+        },
+        {
+          "q": 5,
+          "label": "F_5:deg8",
+          "covRmsZ": 0.6647768085062873,
+          "maxAbsCovZ": 1.0190493307299267,
+          "withinControls": true,
+          "beatsControls": false,
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "topPairs": [
+            {
+              "key": "t+3|t^2+t",
+              "a": "t+3",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256408147,
+              "covZ": -1.0190493307299267,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+2|t^2+t",
+              "a": "t+2",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256407587,
+              "covZ": -1.019049330729871,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+3|t^2+4",
+              "a": "t+3",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406828,
+              "covZ": -1.0190493307297956,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+t",
+              "a": "t+4",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406418,
+              "covZ": -1.0190493307297548,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+2|t^2+4",
+              "a": "t+2",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406017,
+              "covZ": -1.019049330729715,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640526,
+              "covZ": -1.01904933072964,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+1",
+              "a": "t+4",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640491,
+              "covZ": -1.019049330729605,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+1|t^2+1",
+              "a": "t+1",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256403812,
+              "covZ": -1.0190493307294959,
+              "bothZ": -0.9607689228305273
+            }
+          ]
+        },
+        {
+          "q": 7,
+          "label": "F_7:deg7",
+          "covRmsZ": 0.33005322073712673,
+          "maxAbsCovZ": 0.7346969999673365,
+          "withinControls": true,
+          "beatsControls": false,
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "topPairs": [
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.1105671154630763,
+              "covariance": -0.0004759961920297841,
+              "covZ": -0.7346969999673365,
+              "bothZ": -0.5937248351943522
+            },
+            {
+              "key": "t^2+2|t^2+3",
+              "a": "t^2+2",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.334047327621379,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11189310485516116,
+              "covariance": 0.0003739970080242095,
+              "covZ": 0.5772619285470111,
+              "bothZ": 0.8534794505918812
+            },
+            {
+              "key": "t^2+1|t^2+2",
+              "a": "t^2+1",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.33312933496532027,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11090711274309806,
+              "covariance": -0.00037399700802359773,
+              "covZ": -0.5772619285460668,
+              "bothZ": -0.22264681319788207
+            },
+            {
+              "key": "t+4|t^2+3",
+              "a": "t+4",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.0003399972800215329,
+              "covZ": -0.5247835714056395,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+3|t^2+3",
+              "a": "t+3",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.00033999728002127714,
+              "covZ": -0.5247835714052447,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+6|t^2+3",
+              "a": "t+6",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.00030599755202024713,
+              "covZ": 0.4723052142664145,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+1|t^2+3",
+              "a": "t+1",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.0003059975520201487,
+              "covZ": 0.4723052142662625,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+5|t^2+1",
+              "a": "t+5",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00023799809601602866,
+              "covZ": 0.36734849998542257,
+              "bothZ": 0.18553901099823505
+            }
+          ]
+        }
+      ],
+      "theoremShape": {
+        "statistic": "Z_AB(S)=sum_{lambda in S_AB}(X_A(lambda)-1/3)(X_B(lambda)-1/3)/sqrt(|S_AB|*4/81), then E(S)=RMS_{A<B} Z_AB",
+        "integer": "A ranges over low-conductor constants c and labels are rational primes p == 1 mod 3; X_c(p)=1 when c is a cubic residue mod p",
+        "functionField": "A ranges over low-degree squarefree polynomials A(t) and labels are monic irreducibles P with mu_3 in F_q[t]/P; X_A(P)=1 when A(t) is a cube modulo P",
+        "baseline": "independent cubic Kummer characters give E[split]=1/3 and E[(X_A-1/3)(X_B-1/3)]=0 for unrelated covers"
+      }
+    },
+    "integerRows": [
+      {
+        "label": "Z<=1000000",
+        "coverCount": 10,
+        "activePairCount": 45,
+        "minPairLabels": 39230,
+        "covRmsZ": 0.9043900150944771,
+        "maxAbsCovZ": 1.9311532985833515,
+        "withinControls": true,
+        "envelope": {
+          "covRmsZHigh": 1.75,
+          "maxAbsCovZHigh": 4.25
+        }
+      },
+      {
+        "label": "Z<=2000000",
+        "coverCount": 10,
+        "activePairCount": 45,
+        "minPairLabels": 74410,
+        "covRmsZ": 0.8877106874121428,
+        "maxAbsCovZ": 1.9007854917965163,
+        "withinControls": true,
+        "envelope": {
+          "covRmsZHigh": 1.75,
+          "maxAbsCovZHigh": 4.25
+        }
+      },
+      {
+        "label": "Z<=4000000",
+        "coverCount": 10,
+        "activePairCount": 45,
+        "minPairLabels": 141446,
+        "covRmsZ": 0.7467914431391891,
+        "maxAbsCovZ": 1.8426224756170237,
+        "withinControls": true,
+        "envelope": {
+          "covRmsZHigh": 1.75,
+          "maxAbsCovZHigh": 4.25
+        }
+      },
+      {
+        "label": "Z<=8000000",
+        "coverCount": 10,
+        "activePairCount": 45,
+        "minPairLabels": 269774,
+        "covRmsZ": 0.7440583759892583,
+        "maxAbsCovZ": 2.070663671396489,
+        "withinControls": true,
+        "envelope": {
+          "covRmsZHigh": 1.75,
+          "maxAbsCovZHigh": 4.25
+        }
+      }
+    ],
+    "fields": [
+      {
+        "q": 2,
+        "maxDegree": 18,
+        "coverCount": 4,
+        "final": {
+          "label": "F_2:deg18",
+          "scale": 18,
+          "coverCount": 4,
+          "pairCount": 6,
+          "activePairCount": 6,
+          "minPairLabels": 14532,
+          "maxPairLabels": 14532,
+          "covRmsZ": 0.3956109846773188,
+          "bothRmsZ": 0.4377690278189971,
+          "maxAbsCovZ": 0.5474963660614801,
+          "topPairs": [
+            {
+              "key": "t^2+t|t^2+t+1",
+              "a": "t^2+t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33319570602807597,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11202862647949353,
+              "covariance": 0.0010092669052206447,
+              "covZ": 0.5474963660614801,
+              "bothZ": 0.3519439937427905
+            },
+            {
+              "key": "t+1|t^2+t",
+              "a": "t+1",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015521,
+              "covZ": -0.5226101676041551,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t^2+t",
+              "a": "t",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015326,
+              "covZ": -0.5226101676041445,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t+1",
+              "a": "t",
+              "b": "t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33188824662813105,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0005275713368199189,
+              "covZ": -0.2861912822594298,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t+1|t^2+t+1",
+              "a": "t+1",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525739442,
+              "covZ": 0.07465859537203834,
+              "bothZ": -0.1495761973406888
+            },
+            {
+              "key": "t|t^2+t+1",
+              "a": "t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525736084,
+              "covZ": 0.07465859537202012,
+              "bothZ": -0.1495761973406888
+            }
+          ],
+          "pairs": [
+            {
+              "key": "t|t+1",
+              "a": "t",
+              "b": "t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33188824662813105,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0005275713368199189,
+              "covZ": -0.2861912822594298,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t^2+t",
+              "a": "t",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015326,
+              "covZ": -0.5226101676041445,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t|t^2+t+1",
+              "a": "t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525736084,
+              "covZ": 0.07465859537202012,
+              "bothZ": -0.1495761973406888
+            },
+            {
+              "key": "t+1|t^2+t",
+              "a": "t+1",
+              "b": "t^2+t",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.10962014863748967,
+              "covariance": -0.0009633911368015521,
+              "covZ": -0.5226101676041551,
+              "bothZ": -0.5719089898320397
+            },
+            {
+              "key": "t+1|t^2+t+1",
+              "a": "t+1",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33188824662813105,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11072116707954859,
+              "covariance": 0.00013762730525739442,
+              "covZ": 0.07465859537203834,
+              "bothZ": -0.1495761973406888
+            },
+            {
+              "key": "t^2+t|t^2+t+1",
+              "a": "t^2+t",
+              "b": "t^2+t+1",
+              "labels": 14532,
+              "splitRateA": 0.33319570602807597,
+              "splitRateB": 0.33319570602807597,
+              "bothRate": 0.11202862647949353,
+              "covariance": 0.0010092669052206447,
+              "covZ": 0.5474963660614801,
+              "bothZ": 0.3519439937427905
+            }
+          ],
+          "activeLabels": 14532,
+          "activeDegree": true,
+          "controls": {
+            "covRmsZRange": [
+              0.4296624565744503,
+              1.0873541171362326
+            ],
+            "bothRmsZRange": [
+              0.799366233272823,
+              1.112788110198808
+            ],
+            "maxAbsCovZRange": [
+              0.6843704575768782,
+              2.1153268688741957
+            ]
+          },
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "withinControls": true,
+          "beatsControls": false
+        }
+      },
+      {
+        "q": 5,
+        "maxDegree": 8,
+        "coverCount": 10,
+        "final": {
+          "label": "F_5:deg8",
+          "scale": 8,
+          "coverCount": 10,
+          "pairCount": 45,
+          "activePairCount": 45,
+          "minPairLabels": 48750,
+          "maxPairLabels": 48750,
+          "covRmsZ": 0.6647768085062873,
+          "bothRmsZ": 0.7006151143541965,
+          "maxAbsCovZ": 1.0190493307299267,
+          "topPairs": [
+            {
+              "key": "t+3|t^2+t",
+              "a": "t+3",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256408147,
+              "covZ": -1.0190493307299267,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+2|t^2+t",
+              "a": "t+2",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256407587,
+              "covZ": -1.019049330729871,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+3|t^2+4",
+              "a": "t+3",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406828,
+              "covZ": -1.0190493307297956,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+t",
+              "a": "t+4",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406418,
+              "covZ": -1.0190493307297548,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+2|t^2+4",
+              "a": "t+2",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406017,
+              "covZ": -1.019049330729715,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640526,
+              "covZ": -1.01904933072964,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+1",
+              "a": "t+4",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640491,
+              "covZ": -1.019049330729605,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+1|t^2+1",
+              "a": "t+1",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256403812,
+              "covZ": -1.0190493307294959,
+              "bothZ": -0.9607689228305273
+            }
+          ],
+          "pairs": [
+            {
+              "key": "t|t+1",
+              "a": "t",
+              "b": "t+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.00034188034188034204,
+              "covZ": -0.3396831102433789,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t|t+2",
+              "a": "t",
+              "b": "t+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.0003418803418803433,
+              "covZ": -0.3396831102433801,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t|t+3",
+              "a": "t",
+              "b": "t+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.00034188034188026875,
+              "covZ": -0.33968311024330605,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t|t+4",
+              "a": "t",
+              "b": "t+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.0003418803418803153,
+              "covZ": -0.3396831102433523,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640526,
+              "covZ": -1.01904933072964,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+2",
+              "a": "t",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256403304,
+              "covZ": -1.0190493307294455,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+3",
+              "a": "t",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640266,
+              "covZ": -1.0190493307293813,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+4",
+              "a": "t",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256400442,
+              "covZ": -1.019049330729161,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t|t^2+t",
+              "a": "t",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": -2.6307730922489544e-17,
+              "covZ": -2.613865369985169e-14,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+1|t+2",
+              "a": "t+1",
+              "b": "t+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.00034188034188033445,
+              "covZ": -0.3396831102433714,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+1|t+3",
+              "a": "t+1",
+              "b": "t+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.000341880341880189,
+              "covZ": -0.33968311024322684,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+1|t+4",
+              "a": "t+1",
+              "b": "t+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.00034188034188029564,
+              "covZ": -0.33968311024333275,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+1|t^2+1",
+              "a": "t+1",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256403812,
+              "covZ": -1.0190493307294959,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+1|t^2+2",
+              "a": "t+1",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11113846153846153,
+              "covariance": 0.0003692307692308166,
+              "covZ": 0.3668577590628961,
+              "bothZ": 0.019215378456606088
+            },
+            {
+              "key": "t+1|t^2+3",
+              "a": "t+1",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1099076923076923,
+              "covariance": -0.0008615384615375244,
+              "covZ": -0.8560014378123832,
+              "bothZ": -0.8454766520908645
+            },
+            {
+              "key": "t+1|t^2+4",
+              "a": "t+1",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": 6.64653517408927e-18,
+              "covZ": 6.603818540309231e-15,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+1|t^2+t",
+              "a": "t+1",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": 3.677628002699352e-17,
+              "covZ": 3.653992245954552e-14,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+2|t+3",
+              "a": "t+2",
+              "b": "t+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.0003418803418802889,
+              "covZ": -0.3396831102433261,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+2|t+4",
+              "a": "t+2",
+              "b": "t+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.0003418803418803147,
+              "covZ": -0.33968311024335174,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+2|t^2+1",
+              "a": "t+2",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": 6.663843266370606e-17,
+              "covZ": 6.621015395168353e-14,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+2|t^2+2",
+              "a": "t+2",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1099076923076923,
+              "covariance": -0.0008615384615379201,
+              "covZ": -0.8560014378127764,
+              "bothZ": -0.8454766520908645
+            },
+            {
+              "key": "t+2|t^2+3",
+              "a": "t+2",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11113846153846153,
+              "covariance": 0.00036923076923079935,
+              "covZ": 0.36685775906287893,
+              "bothZ": 0.019215378456606088
+            },
+            {
+              "key": "t+2|t^2+4",
+              "a": "t+2",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406017,
+              "covZ": -1.019049330729715,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+2|t^2+t",
+              "a": "t+2",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256407587,
+              "covZ": -1.019049330729871,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+3|t+4",
+              "a": "t+3",
+              "b": "t+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11076923076923077,
+              "covariance": -0.00034188034188034817,
+              "covZ": -0.339683110243385,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+3|t^2+1",
+              "a": "t+3",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": -2.6488213332133736e-17,
+              "covZ": -2.6317976166639255e-14,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+3|t^2+2",
+              "a": "t+3",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1099076923076923,
+              "covariance": -0.0008615384615378372,
+              "covZ": -0.856001437812694,
+              "bothZ": -0.8454766520908645
+            },
+            {
+              "key": "t+3|t^2+3",
+              "a": "t+3",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11113846153846153,
+              "covariance": 0.00036923076923107815,
+              "covZ": 0.366857759063156,
+              "bothZ": 0.019215378456606088
+            },
+            {
+              "key": "t+3|t^2+4",
+              "a": "t+3",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406828,
+              "covZ": -1.0190493307297956,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+3|t^2+t",
+              "a": "t+3",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256408147,
+              "covZ": -1.0190493307299267,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+1",
+              "a": "t+4",
+              "b": "t^2+1",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.001025641025640491,
+              "covZ": -1.019049330729605,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t+4|t^2+2",
+              "a": "t+4",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11113846153846153,
+              "covariance": 0.0003692307692308837,
+              "covZ": 0.36685775906296275,
+              "bothZ": 0.019215378456606088
+            },
+            {
+              "key": "t+4|t^2+3",
+              "a": "t+4",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1099076923076923,
+              "covariance": -0.0008615384615381801,
+              "covZ": -0.8560014378130347,
+              "bothZ": -0.8454766520908645
+            },
+            {
+              "key": "t+4|t^2+4",
+              "a": "t+4",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11076923076923077,
+              "covariance": 3.447498696774486e-17,
+              "covZ": 3.42534195865003e-14,
+              "bothZ": -0.2401922307076351
+            },
+            {
+              "key": "t+4|t^2+t",
+              "a": "t+4",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.0010256410256406418,
+              "covZ": -1.0190493307297548,
+              "bothZ": -0.9607689228305273
+            },
+            {
+              "key": "t^2+1|t^2+2",
+              "a": "t^2+1",
+              "b": "t^2+2",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1096,
+              "covariance": -0.0008273504273503031,
+              "covZ": -0.822033126788853,
+              "bothZ": -1.061649659727732
+            },
+            {
+              "key": "t^2+1|t^2+3",
+              "a": "t^2+1",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1096,
+              "covariance": -0.0008273504273499834,
+              "covZ": -0.8220331267885355,
+              "bothZ": -1.061649659727732
+            },
+            {
+              "key": "t^2+1|t^2+4",
+              "a": "t^2+1",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11001025641025641,
+              "covariance": -0.0004170940170939284,
+              "covZ": -0.4144133944968339,
+              "bothZ": -0.7734189828785752
+            },
+            {
+              "key": "t^2+1|t^2+t",
+              "a": "t^2+1",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11001025641025641,
+              "covariance": -0.0004170940170940097,
+              "covZ": -0.4144133944969147,
+              "bothZ": -0.7734189828785752
+            },
+            {
+              "key": "t^2+2|t^2+3",
+              "a": "t^2+2",
+              "b": "t^2+3",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11001025641025641,
+              "covariance": -0.00041709401709375194,
+              "covZ": -0.4144133944966586,
+              "bothZ": -0.7734189828785752
+            },
+            {
+              "key": "t^2+2|t^2+4",
+              "a": "t^2+2",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1096,
+              "covariance": -0.000827350427350361,
+              "covZ": -0.8220331267889105,
+              "bothZ": -1.061649659727732
+            },
+            {
+              "key": "t^2+2|t^2+t",
+              "a": "t^2+2",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11017435897435897,
+              "covariance": -0.00025299145299122894,
+              "covZ": -0.25136550157987764,
+              "bothZ": -0.6581267121389125
+            },
+            {
+              "key": "t^2+3|t^2+4",
+              "a": "t^2+3",
+              "b": "t^2+4",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.1096,
+              "covariance": -0.000827350427349996,
+              "covZ": -0.8220331267885479,
+              "bothZ": -1.061649659727732
+            },
+            {
+              "key": "t^2+3|t^2+t",
+              "a": "t^2+3",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.11011282051282051,
+              "covariance": -0.0003145299145296623,
+              "covZ": -0.31250846142365785,
+              "bothZ": -0.7013613136662861
+            },
+            {
+              "key": "t^2+4|t^2+t",
+              "a": "t^2+4",
+              "b": "t^2+t",
+              "labels": 48750,
+              "splitRateA": 0.3323076923076923,
+              "splitRateB": 0.3323076923076923,
+              "bothRate": 0.10974358974358975,
+              "covariance": -0.000683760683760591,
+              "covZ": -0.6793662204866653,
+              "bothZ": -0.9607689228305273
+            }
+          ],
+          "activeLabels": 48750,
+          "activeDegree": true,
+          "controls": {
+            "covRmsZRange": [
+              0.8253378484613075,
+              1.1758545174271116
+            ],
+            "bothRmsZRange": [
+              0.9247561009011213,
+              1.1184054583337701
+            ],
+            "maxAbsCovZRange": [
+              1.909019079567781,
+              2.7718141795858764
+            ]
+          },
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "withinControls": true,
+          "beatsControls": false
+        }
+      },
+      {
+        "q": 7,
+        "maxDegree": 7,
+        "coverCount": 10,
+        "final": {
+          "label": "F_7:deg7",
+          "scale": 7,
+          "coverCount": 10,
+          "pairCount": 45,
+          "activePairCount": 45,
+          "minPairLabels": 117648,
+          "maxPairLabels": 117648,
+          "covRmsZ": 0.33005322073712673,
+          "bothRmsZ": 0.27380540579907847,
+          "maxAbsCovZ": 0.7346969999673365,
+          "topPairs": [
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.1105671154630763,
+              "covariance": -0.0004759961920297841,
+              "covZ": -0.7346969999673365,
+              "bothZ": -0.5937248351943522
+            },
+            {
+              "key": "t^2+2|t^2+3",
+              "a": "t^2+2",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.334047327621379,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11189310485516116,
+              "covariance": 0.0003739970080242095,
+              "covZ": 0.5772619285470111,
+              "bothZ": 0.8534794505918812
+            },
+            {
+              "key": "t^2+1|t^2+2",
+              "a": "t^2+1",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.33312933496532027,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11090711274309806,
+              "covariance": -0.00037399700802359773,
+              "covZ": -0.5772619285460668,
+              "bothZ": -0.22264681319788207
+            },
+            {
+              "key": "t+4|t^2+3",
+              "a": "t+4",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.0003399972800215329,
+              "covZ": -0.5247835714056395,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+3|t^2+3",
+              "a": "t+3",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.00033999728002127714,
+              "covZ": -0.5247835714052447,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+6|t^2+3",
+              "a": "t+6",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.00030599755202024713,
+              "covZ": 0.4723052142664145,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+1|t^2+3",
+              "a": "t+1",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.0003059975520201487,
+              "covZ": 0.4723052142662625,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+5|t^2+1",
+              "a": "t+5",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00023799809601602866,
+              "covZ": 0.36734849998542257,
+              "bothZ": 0.18553901099823505
+            }
+          ],
+          "pairs": [
+            {
+              "key": "t|t+1",
+              "a": "t",
+              "b": "t+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.00023799809601478353,
+              "covZ": -0.3673484999835008,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t|t+2",
+              "a": "t",
+              "b": "t+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600456554,
+              "covZ": 0.10495671428152759,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t|t+3",
+              "a": "t",
+              "b": "t+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.0001699986400110729,
+              "covZ": 0.26239178570329275,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t|t+4",
+              "a": "t",
+              "b": "t+4",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00016999864001118476,
+              "covZ": 0.2623917857034654,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t|t+5",
+              "a": "t",
+              "b": "t+5",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600461178,
+              "covZ": 0.10495671428159897,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t|t+6",
+              "a": "t",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.00023799809601491323,
+              "covZ": -0.36734849998370095,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t|t^2+1",
+              "a": "t",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.1105671154630763,
+              "covariance": -0.0004759961920297841,
+              "covZ": -0.7346969999673365,
+              "bothZ": -0.5937248351943522
+            },
+            {
+              "key": "t|t^2+2",
+              "a": "t",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11128110975112199,
+              "covariance": -0.00006799945600436077,
+              "covZ": -0.10495671428121152,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t|t^2+3",
+              "a": "t",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11128110975112199,
+              "covariance": 4.588934574824604e-16,
+              "covZ": 7.082990413837304e-13,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+1|t+2",
+              "a": "t+1",
+              "b": "t+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.0002379980960147531,
+              "covZ": -0.36734849998345376,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t+1|t+3",
+              "a": "t+1",
+              "b": "t+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.0000679994560046185,
+              "covZ": 0.10495671428160934,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+1|t+4",
+              "a": "t+1",
+              "b": "t+4",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.0001699986400109386,
+              "covZ": 0.2623917857030854,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+1|t+5",
+              "a": "t+1",
+              "b": "t+5",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.0001699986400109158,
+              "covZ": 0.2623917857030502,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+1|t+6",
+              "a": "t+1",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600452846,
+              "covZ": 0.10495671428147035,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+1|t^2+1",
+              "a": "t+1",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.0001359989120092245,
+              "covZ": 0.2099134285631994,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+1|t^2+2",
+              "a": "t+1",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11117911056711546,
+              "covariance": -0.0001699986400106352,
+              "covZ": -0.2623917857026172,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+1|t^2+3",
+              "a": "t+1",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.0003059975520201487,
+              "covZ": 0.4723052142662625,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+2|t+3",
+              "a": "t+2",
+              "b": "t+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.0002379980960147717,
+              "covZ": -0.36734849998348246,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t+2|t+4",
+              "a": "t+2",
+              "b": "t+4",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600468919,
+              "covZ": 0.10495671428171846,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+2|t+5",
+              "a": "t+2",
+              "b": "t+5",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00016999864001091,
+              "covZ": 0.2623917857030413,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+2|t+6",
+              "a": "t+2",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00016999864001095475,
+              "covZ": 0.26239178570311034,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+2|t^2+1",
+              "a": "t+2",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00023799809601530338,
+              "covZ": 0.36734849998430313,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+2|t^2+2",
+              "a": "t+2",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.00023799809601540492,
+              "covZ": 0.36734849998445984,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+2|t^2+3",
+              "a": "t+2",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11128110975112199,
+              "covariance": 1.4199630561238578e-16,
+              "covZ": 2.1917036624809197e-13,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+3|t+4",
+              "a": "t+3",
+              "b": "t+4",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.0002379980960148262,
+              "covZ": -0.3673484999835666,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t+3|t+5",
+              "a": "t+3",
+              "b": "t+5",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600460658,
+              "covZ": 0.10495671428159092,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+3|t+6",
+              "a": "t+3",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00016999864001097253,
+              "covZ": 0.2623917857031378,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+3|t^2+1",
+              "a": "t+3",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.0002379980960153161,
+              "covZ": 0.3673484999843228,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+3|t^2+2",
+              "a": "t+3",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11117911056711546,
+              "covariance": -0.00016999864001047879,
+              "covZ": -0.2623917857023757,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+3|t^2+3",
+              "a": "t+3",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.00033999728002127714,
+              "covZ": -0.5247835714052447,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+4|t+5",
+              "a": "t+4",
+              "b": "t+5",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.00023799809601483915,
+              "covZ": -0.3673484999835866,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t+4|t+6",
+              "a": "t+4",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00006799945600447524,
+              "covZ": 0.1049567142813882,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+4|t^2+1",
+              "a": "t+4",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.0002379980960152522,
+              "covZ": 0.36734849998422414,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+4|t^2+2",
+              "a": "t+4",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11117911056711546,
+              "covariance": -0.00016999864001087945,
+              "covZ": -0.26239178570299415,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+4|t^2+3",
+              "a": "t+4",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11094111247110024,
+              "covariance": -0.0003399972800215329,
+              "covZ": -0.5247835714056395,
+              "bothZ": -0.18553901099823505
+            },
+            {
+              "key": "t+5|t+6",
+              "a": "t+5",
+              "b": "t+6",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.3333333333333333,
+              "bothRate": 0.11087311301509588,
+              "covariance": -0.00023799809601501954,
+              "covZ": -0.36734849998386504,
+              "bothZ": -0.2597546153975291
+            },
+            {
+              "key": "t+5|t^2+1",
+              "a": "t+5",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00023799809601602866,
+              "covZ": 0.36734849998542257,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+5|t^2+2",
+              "a": "t+5",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.00023799809601582548,
+              "covZ": 0.367348499985109,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t+5|t^2+3",
+              "a": "t+5",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11128110975112199,
+              "covariance": 1.377242571011675e-16,
+              "covZ": 2.1257648739472794e-13,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t+6|t^2+1",
+              "a": "t+6",
+              "b": "t^2+1",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33312933496532027,
+              "bothRate": 0.11117911056711546,
+              "covariance": 0.00013599891200874142,
+              "covZ": 0.2099134285624537,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+6|t^2+2",
+              "a": "t+6",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11117911056711546,
+              "covariance": -0.0001699986400108452,
+              "covZ": -0.26239178570294125,
+              "bothZ": 0.07421560439929402
+            },
+            {
+              "key": "t+6|t^2+3",
+              "a": "t+6",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.3333333333333333,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11158710730314157,
+              "covariance": 0.00030599755202024713,
+              "covZ": 0.4723052142664145,
+              "bothZ": 0.5195092307950582
+            },
+            {
+              "key": "t^2+1|t^2+2",
+              "a": "t^2+1",
+              "b": "t^2+2",
+              "labels": 117648,
+              "splitRateA": 0.33312933496532027,
+              "splitRateB": 0.334047327621379,
+              "bothRate": 0.11090711274309806,
+              "covariance": -0.00037399700802359773,
+              "covZ": -0.5772619285460668,
+              "bothZ": -0.22264681319788207
+            },
+            {
+              "key": "t^2+1|t^2+3",
+              "a": "t^2+1",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.33312933496532027,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11128110975112199,
+              "covariance": 0.00006799945600490954,
+              "covZ": 0.10495671428205855,
+              "bothZ": 0.18553901099823505
+            },
+            {
+              "key": "t^2+2|t^2+3",
+              "a": "t^2+2",
+              "b": "t^2+3",
+              "labels": 117648,
+              "splitRateA": 0.334047327621379,
+              "splitRateB": 0.33384332925336596,
+              "bothRate": 0.11189310485516116,
+              "covariance": 0.0003739970080242095,
+              "covZ": 0.5772619285470111,
+              "bothZ": 0.8534794505918812
+            }
+          ],
+          "activeLabels": 117648,
+          "activeDegree": true,
+          "controls": {
+            "covRmsZRange": [
+              0.8748987235206478,
+              1.1462623450419271
+            ],
+            "bothRmsZRange": [
+              0.8960603713514437,
+              1.2168288415469792
+            ],
+            "maxAbsCovZRange": [
+              2.3046745177585413,
+              3.5554086962761833
+            ]
+          },
+          "envelope": {
+            "covRmsZHigh": 1.75,
+            "maxAbsCovZHigh": 4.25
+          },
+          "withinControls": true,
+          "beatsControls": false
+        }
+      }
+    ]
+  },
+  "decision": {
+    "status": "FAMILY_CHEBOTAREV_COVARIANCE_NO_PROMOTION_UNDER_STRICT_TWO_UNIVERSES_PROTOCOL",
+    "promoted": false,
+    "reason": "Cycle 015 executes the required family-level Chebotarev covariance mutation, but it remains inside controls across the complete integer and q=2,5,7 ladders.",
+    "hardFailures": [
+      {
+        "id": "controls",
+        "status": "fail",
+        "evidence": "No matched anomaly survives: allWithinControls=true, integerWithinControls=true, fieldsWithinControls=true.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "scale_stability",
+        "status": "fail",
+        "evidence": "Scale gate requires complete integer/field ladders and matched control survival. Integer ladder=true; field ladders=true; matched control survival=false; profileAligned=false.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "novelty_audit",
+        "status": "fail",
+        "evidence": "The run is a genuine family-level mutation, but the observed covariance is explained by standard Chebotarev/Kummer independence and stays inside controls.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "proof_path",
+        "status": "fail",
+        "evidence": "There is no anomaly to prove; the natural proof path is the known equidistribution/null statement, not a new integer-prime breakthrough.",
+        "severity": "hard-fail"
+      },
+      {
+        "id": "expert_pack",
+        "status": "fail",
+        "evidence": "No expert-ready breakthrough pack exists because controls, scale stability, novelty, and proof-path gates fail.",
+        "severity": "hard-fail"
+      }
+    ]
+  },
+  "surpriseLedger": {
+    "observedSignal": "Family covariance maxCovRmsZ=0.744058; maxAbsCovZ=2.070664; matchedControlSurvival=false.",
+    "expectedNull": "Independent cubic Kummer characters should have zero centered covariance after conditioning on active unramified labels.",
+    "knownExplanation": "Standard Chebotarev/Kummer equidistribution explains the observed family covariance levels.",
+    "survivedControls": [],
+    "failedControls": [
+      "Integer and field endpoint family covariance energies remain inside preregistered null envelopes"
+    ],
+    "whatFailed": "The Chebotarev branch produced calibration, not a control-surviving residual.",
+    "suspectedInvariant": "No non-classical Chebotarev residual is visible in fixed-cover or low-conductor family covariance tests.",
+    "nextMutation": "Stop the Chebotarev branch unless a non-Chebotarev theorem object is registered"
+  },
+  "nextMutation": {
+    "title": "Stop the Chebotarev branch unless a non-Chebotarev theorem object is registered",
+    "reason": "Single-cover, fixed joint-cover, and family-covariance Chebotarev statistics all reduce to calibration under known Kummer/Chebotarev independence and stay inside controls.",
+    "preregisteredNextMove": [
+      "Do not add more Kummer/Chebotarev cover counts or covariance matrices without a named theorem target that is not an equidistribution calibration.",
+      "Move only to a genuinely different domain/object, or to a proof-first lemma smaller than a famous open conjecture.",
+      "Before data, name the exact finite-field theorem mechanism, the integer-prime analogue, local/null controls, complete holdout ladders, novelty audit, proof path, and expert-pack criteria.",
+      "If no such object is named, keep the research program stopped rather than manufacturing another statistic."
+    ]
+  }
+}
