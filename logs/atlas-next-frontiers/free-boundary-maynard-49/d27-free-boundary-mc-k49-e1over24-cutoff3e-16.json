@@ -1,0 +1,30 @@
+{
+  "status": "MONTE_CARLO_RECONNAISSANCE_ONLY",
+  "k": 49,
+  "epsilon": "1/24",
+  "degree": 27,
+  "cutoff": 3e-16,
+  "stableRank": 2052,
+  "trainingSamples": 20000,
+  "holdoutSamples": 40000,
+  "uniformChamberVolumeRatio": 0.12303025749284202,
+  "training": {
+    "rawMinimumCorrectedDenominatorEigenvalue": -0.04108273861409323,
+    "correctionEigenvalueCap": 0.99,
+    "minimumCorrectedDenominatorEigenvalue": 0.010000000000000092,
+    "correctedQuotient": 3.9760075553404617,
+    "globalI": 1.0000344475690333,
+    "chamberI": 3.4447569033498954e-05,
+    "chamberMassRatio": 3.4446382439361926e-05
+  },
+  "holdout": {
+    "numerator": 3.9760075553404617,
+    "globalI": 1.0000344475690333,
+    "chamberI": 3.352231172431158e-05,
+    "chamberIStandardError": 1.551264371606567e-06,
+    "chamberMassRatio": 3.352115700194168e-05,
+    "correctedQuotient": 3.9760038765138144,
+    "marginBelowFour": 0.023996123486185628
+  },
+  "candidatePath": "/tmp/maynard-enlarged-k49-e1over24-d27/free-boundary-mc-cutoff-3e-16.npy"
+}

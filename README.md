@@ -13,11 +13,20 @@ and gap correlations, then re-scores every candidate on an unseen range of
 primes. Every view is a shareable URL; pinned finds live in the notebook
 with OEIS lookup links.
 
+The **ATLAS** mode is the repo-wide theory map: primes sit at the center,
+surrounded by operations, mathematical frameworks, proved results, open
+conjectures, project programs, and named proof obstructions. Search and
+status lenses expose typed connections, while dashed “open bridge” edges
+state the missing lemma or comparison theorem instead of treating visual
+proximity as evidence.
+
 ## User guide
 
 See [HOW_TO_USE.md](HOW_TO_USE.md) for a practical guide to the controls,
 presets, and what each dot represents. [ROADMAP.md](ROADMAP.md) tracks what
-is built and what comes next.
+is built and what comes next. [THEORY_MAP.md](THEORY_MAP.md) defines how the
+Atlas evolves without mixing mathematical truth status with the lifecycle of
+this project’s experiments.
 
 [MACHINE_HOW_TO_USE.md](MACHINE_HOW_TO_USE.md) documents the headless
 interface for AI coding agents: `scripts/explore.mjs` evaluates any

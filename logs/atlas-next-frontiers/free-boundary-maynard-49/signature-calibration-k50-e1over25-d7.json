@@ -1,0 +1,274 @@
+{
+  "generatedAt": "2026-07-12T22:58:10.311Z",
+  "theoremObject": "Polymath8b M_(50,1/25)",
+  "basis": "(1+epsilon-P_(1))^a P_alpha, alpha an even-entry signature, a+|alpha|<=d",
+  "k": 50,
+  "epsilon": "1/25",
+  "maximumDegree": 7,
+  "dimension": 28,
+  "buildSeconds": 1.41,
+  "solveSeconds": 10.162,
+  "precision": 60,
+  "rationalDigits": 28,
+  "numericalQuotient": "3.67171343603601238582768788855343691353608184776205068276486",
+  "numericalResidual": "2.08611821972002416948773174397620642573692516392105502229143e-42",
+  "eigensolverConvergedFlag": false,
+  "exactNumerator": "10302732360726950362261475672752905828777485273131891586226767197778157713535581232814667311874505089098228115315216462203066112802816",
+  "exactDenominator": "2805973979235644397576235293863184107226350829662676212601684379465508332528082255954648538561578197325744555700343243228837097700725",
+  "exactQuotient": "3.67171343603601238582768788855343691353608176056398138790237",
+  "exactAboveFour": false,
+  "publishedCalibration": {
+    "degree": 27,
+    "dimension": 2526,
+    "threshold": "4.0043",
+    "reproduced": false
+  },
+  "coefficients": [
+    {
+      "index": 0,
+      "slackPower": 0,
+      "signature": [],
+      "numerator": "-111028095439700083886",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 1,
+      "slackPower": 1,
+      "signature": [],
+      "numerator": "-21754285421691835345396",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 2,
+      "slackPower": 2,
+      "signature": [],
+      "numerator": "-187595828158334419191108",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 3,
+      "slackPower": 0,
+      "signature": [
+        2
+      ],
+      "numerator": "8519177045160809454993",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 4,
+      "slackPower": 3,
+      "signature": [],
+      "numerator": "4438435824413407320513181",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 5,
+      "slackPower": 1,
+      "signature": [
+        2
+      ],
+      "numerator": "1736806868551438822566746",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 6,
+      "slackPower": 4,
+      "signature": [],
+      "numerator": "20993604649265623624928009",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 7,
+      "slackPower": 2,
+      "signature": [
+        2
+      ],
+      "numerator": "12628558900160667247759033",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 8,
+      "slackPower": 0,
+      "signature": [
+        2,
+        2
+      ],
+      "numerator": "-434218357773911653332980",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 9,
+      "slackPower": 0,
+      "signature": [
+        4
+      ],
+      "numerator": "-160647801120363303245452",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 10,
+      "slackPower": 5,
+      "signature": [],
+      "numerator": "-136264676320884922239449015",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 11,
+      "slackPower": 3,
+      "signature": [
+        2
+      ],
+      "numerator": "-295481762981075502520795129",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 12,
+      "slackPower": 1,
+      "signature": [
+        2,
+        2
+      ],
+      "numerator": "-95991512213761223834250046",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 13,
+      "slackPower": 1,
+      "signature": [
+        4
+      ],
+      "numerator": "-34473867480607269496844188",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 14,
+      "slackPower": 6,
+      "signature": [],
+      "numerator": "-291094016461274291166487661",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 15,
+      "slackPower": 4,
+      "signature": [
+        2
+      ],
+      "numerator": "-711019339362959197568583122",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 16,
+      "slackPower": 2,
+      "signature": [
+        2,
+        2
+      ],
+      "numerator": "-420411360599692811698777603",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 17,
+      "slackPower": 2,
+      "signature": [
+        4
+      ],
+      "numerator": "-153272066971932655575596202",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 18,
+      "slackPower": 0,
+      "signature": [
+        2,
+        2,
+        2
+      ],
+      "numerator": "10948113665964058657505853",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 19,
+      "slackPower": 0,
+      "signature": [
+        4,
+        2
+      ],
+      "numerator": "4182366621842319863699464",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 20,
+      "slackPower": 0,
+      "signature": [
+        6
+      ],
+      "numerator": "722655377837133371492241",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 21,
+      "slackPower": 7,
+      "signature": [],
+      "numerator": "1122902309750939727766126788",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 22,
+      "slackPower": 5,
+      "signature": [
+        2
+      ],
+      "numerator": "5255713222948030727473821720",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 23,
+      "slackPower": 3,
+      "signature": [
+        2,
+        2
+      ],
+      "numerator": "10000000000000000000000000000",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 24,
+      "slackPower": 3,
+      "signature": [
+        4
+      ],
+      "numerator": "3564592049559386988207712049",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 25,
+      "slackPower": 1,
+      "signature": [
+        2,
+        2,
+        2
+      ],
+      "numerator": "2748104953510012728349852890",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 26,
+      "slackPower": 1,
+      "signature": [
+        4,
+        2
+      ],
+      "numerator": "998850654672578341000878135",
+      "denominator": "10000000000000000000000000000"
+    },
+    {
+      "index": 27,
+      "slackPower": 1,
+      "signature": [
+        6
+      ],
+      "numerator": "176910360101890946212339372",
+      "denominator": "10000000000000000000000000000"
+    }
+  ]
+}

@@ -15,3 +15,31 @@ body {
   overflow: hidden;
   background: #07080f;
 }
+
+.pv-atlas-map text {
+  user-select: none;
+  pointer-events: none;
+}
+
+.pv-atlas-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.pv-atlas-node .pv-atlas-node-shape,
+.pv-atlas-edge {
+  transition: opacity 140ms ease, stroke-width 140ms ease, filter 140ms ease;
+}
+
+.pv-atlas-node:hover .pv-atlas-node-shape,
+.pv-atlas-node:focus-visible .pv-atlas-node-shape {
+  filter: brightness(1.32);
+  stroke-width: 2.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pv-atlas-node .pv-atlas-node-shape,
+  .pv-atlas-edge {
+    transition: none;
+  }
+}

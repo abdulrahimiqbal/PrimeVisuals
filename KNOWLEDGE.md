@@ -5432,3 +5432,369 @@ unconditional first lemma between current results and the required
 fixed-power directional deficit, and finite simulation cannot represent the
 `T^(1/100)` detector cutoff or critical rational concentration. Reopen only
 if an independent coefficient-sensitive spectral theorem appears.
+
+## 2026-07-12 · HARD KILL — flat prime-square completion of the Weil form
+
+Source: `logs/prime-square-completion/PREREGISTRATION.md`, finite problem
+exports and cone projections, `hard-death-certificate-N8.json`, and the full
+account in `logs/prime-square-completion/VERDICT.md`; implementation in
+`src/core/primeSquareCompletion.js` and the corresponding export, SDP, and Arb
+certificate scripts.
+
+Object:
+lift causal log-prime shifts to the divisor-exponent lattice.  The exact
+finite Euler product `D_a(sigma)` gives a pulled-back metric strain whose
+prime-power expansion is
+`sum (log p) p^(-k sigma) (T_(k log p)+T_(k log p)^*)`; at `sigma=1/2` the
+prime screw block is its negative after Brownian/Volterra congruence.  The
+frozen positivity conjecture allowed a cell-norm ray, prime-edge Grams, and one
+PSD block on `(Delta_p,Delta_q,Delta_p Delta_q)` for each closed divisor
+square.
+
+Result:
+the algebraic normalization survives, but every discovery and holdout cone
+projection fails with relative residual `0.77..0.84`.  A rational `7 x 7`
+separator at `N=8`, re-evaluated from the exact formulas with 256-bit Arb
+balls and an explicit Lerch tail, has boundary/edge margins above `0.10`, a
+positive-definite `(2,3)` adjoint block, and target pairing
+`-0.1953768654...`.  This proves exact nonmembership in the frozen cone.  An
+independent audit found no target-sign, cell-basis, or SDP cross-factor error.
+
+Scope:
+the hard counterexample kills the flat three-generator prime-square mechanism,
+not every two-prime-local algebra or the divisor-cube lift.  Post-hoc identity
+cross-terms, a global edge/plaquette block, and repeated-axis differences
+through degree three all retain macroscopic residuals, so routine dictionary
+enlargement is not a plausible breakthrough path.  The metric-strain identity
+remains an exact coordinate, not a positivity theorem.  The Arb certificate
+is rigorous but has not been replayed in Lean.
+
+STATUS: `FROZEN WIDTH-TWO GRAMMAR HARD-KILLED / EXACT STRAIN COORDINATE RETAINED
+/ BROADER DIVISOR-CUBE PROGRAM UNRESOLVED`.
+
+## 2026-07-12 · PROGRAM KILL-TEST — Arithmetic Hodge--Transport survives narrowly
+
+Source: frozen criteria, hostile audit, exact controls, and atlas in
+`logs/arithmetic-hodge-transport/`; implementation
+`src/core/arithmeticHodgeControls.js` and
+`scripts/arithmetic-hodge-control-audit.mjs`.
+
+Question:
+is the broad search for a global-field cohomology/dynamics with prime orbits,
+trace formula, duality, and independently derived Hodge positivity worth an
+atlas, or is it universally impossible, circular, unfalsifiable, or presently
+too remote?
+
+Exact control theorem:
+for distinct positive integers `u,v`, set `q=2^(u+v)`, `r=2^u`, `s=2^v` and
+
+`Z_(u,v)(T)=((1-rT)(1-sT))/((1-T)(1-qT))`.
+
+This reciprocal system has nonnegative trace counts
+`N_n=q^n+1-r^n-s^n`, nonnegative integer primitive closed-orbit counts in
+every degree, an exact Euler product, a functional equation, and weight-one
+algebraic duality.  Its spectral weights are `u/(u+v)` and `v/(u+v)`, off
+`1/2`.  The duality pairing `J=[[0,1],[1,0]]` is indefinite.  Thus orbit data,
+Euler product, trace, reciprocity, and algebraic duality do not force RH;
+positive polarization/effectivity is a genuine falsifiable discriminator.
+Four cells were checked with exact `BigInt` arithmetic through degree 100,
+while a disjoint-subalphabet injection on primitive necklaces proves orbit
+nonnegativity for all degrees.
+
+Gate result:
+no candidate-neutral hard kill fired.  Deninger's theorem rules out naive real
+Weil cohomology but not the full admissible derived/semilinear/topological/
+noncommutative design space.  Independently defined carriers already provide
+prime orbit, functorial cover, Riemann--Roch, special-value, local Frobenius,
+and archimedean positivity components.  Non-RH intermediate theorem classes
+exist, but no framework supplies the global finite-place-sensitive positive
+polarization and uniform closure.
+
+STATUS: `SURVIVE, NARROW / OBSTRUCTION ATLAS BUILT / NO RH CLAIM`.
+
+CONNECTION:
+the exact `N=8` prime-square separator and the positive-orbit control point in
+the same direction.  Flat bounded local positivity is insufficient, while
+even globally consistent orbit/trace/duality data can be RH-false.  A future
+survivor must add a restriction-compatible geometric effectivity or
+polarization theorem, not more atoms, zeros, or scalar invariants.
+
+## 2026-07-12 · ROSATI CAMPAIGN — P2 reconstructed, first P3 target isolated
+
+Source: `logs/arithmetic-hodge-transport/rosati-discriminator/`; exact modules
+`src/core/rosatiDiscriminator.js` and
+`src/core/rosatiTransportObstructions.js`; generated audits and tests under the
+matching script/test names.
+
+Finite-field discriminator:
+for `F` with polynomial `x^2-a*x+q`, `V=aI-F`, the symmetric solutions of
+`F^T J=J V` are generated by `J=[[2,a],[a,2q]]`, and
+`det(J)=4q-a^2`.  For the frozen RH-false controls with roots `r,s`, this is
+`-(r-s)^2<0`.  Thus Frobenius--Verschiebung duality survives; independently
+geometric Rosati positivity is exactly what fails.  Choosing a positive
+solution after solving the adjoint equation would merely restate the Hasse
+sign.
+
+Arithmetic transport:
+the adele-class convolution involution
+`f^sharp(g)=|g|^(-1) conjugate(f(g^(-1)))` gives exactly
+`Phi_t^sharp=e^t Phi_(-t)` and `Theta^sharp=1-Theta`, reconstructing the P2
+arithmetic Rosati datum from existing cyclic/trace mathematics.  Two elementary
+but architectural obstruction theorems rule out the naive carrier: the coarse
+arithmetic Jacobian is the orbit quotient by scaling and hence has trivial
+induced flow, while every homomorphism from its idempotent Abel--Jacobi prime
+stratum to an abelian group is zero.  The weight-one object must retain the
+action groupoid through relative/transverse or cyclic cohomology.
+
+First P3 target:
+`S={infinity,2}`, prime cutoff `c=3`, localization half-width
+`a=(log 3)/2`.  Cutoff-free Arb interval `LDL^T` certificates prove all finite
+Galerkin blocks positive through `N=200` (dimension `401`).  Diagnostic
+pole-neutral/zero-moment minima remain around `9.5e-4` through `N=400`, but
+finite PSD is not an infinite theorem.  The pole-free continuum form is a
+positive nonlocal jump energy plus an explicit potential; the potential is
+strongly negative (`~ -3.08` at the center and `~ -3.53` after the prime-2
+jump), killing the pointwise shortcut.  The exact missing lemma is a constrained
+nonlocal Poincare inequality, equivalently a uniform frequency-tail
+Schur/resolvent bound exploiting Loewner/Cauchy structure.
+
+STATUS: `ARITHMETIC ROSATI LEAD / P2 RECONSTRUCTED / P3 FINITE KILL TEST
+SURVIVES / NO FIELD-LEVEL OR RH CLAIM`.
+
+## 2026-07-12 · P3 FIELD-LEVEL ATTACK — no landing; comparison gate reset
+
+Source: `logs/arithmetic-hodge-transport/rosati-discriminator/` documents
+`P3_ATTACK_AND_RESET.md` and `P3_REBOOT_PREREGISTRATION.md`, with source-level
+audits of Suzuki, Connes--Consani, Connes--Consani--Moscovici, and the
+CvS/CCM/Groskin finite dictionary.
+
+The fixed localization `a=(log 3)/2` is a legitimate non-RH intermediate
+problem: Yoshida/Suzuki require positivity or nondegeneracy for every width in
+their RH equivalences.  The attempted theorem nevertheless fails to promote
+for a more basic reason.  Three operators had been conflated:
+
+`A_a = localized Weil`,
+
+`A_tilde_a=A_a-W_0,2 = pole-free Weil`,
+
+`E_Sonin=A_a-T_Sonin = preregistered comparison remainder`.
+
+The Arb matrices certify finite compressions of `A_a`; the nonlocal
+Dirichlet form represents `A_tilde_a`.  No finite compression or kernel of
+`E_Sonin` was constructed.  The Sonin trace is an infinite-dimensional
+compressed-scaling trace and is not the rank-two pole term.  Thus the prior
+claim that the pole-free Poincare inequality was “equivalent” to Sonin
+domination lacked a comparison theorem and triggered the atlas's own stop
+rule against merging frameworks by analogy.
+
+The reported “zero moment” also has a narrower exact meaning:
+`M_0(v)=v_0+sqrt(2) sum_(k>=1)v_k` in Groskin's finite dictionary.  Its
+identification with the semilocal Mellin-zero constraint must be transported,
+not assumed.
+
+The analytic reconnaissance remains useful in a separate Lane W: finite
+localized-Weil blocks are rigorously positive through dimension `401`, the
+finite constrained margin is about `9.65e-4` at band `400`, the full minimum
+is near `5.53e-8`, and the pointwise-potential route is dead.  No uniform
+tail/Schur proof was obtained, so no localized Weil theorem was proved.
+
+Self-improvement rules now enforced:
+
+1. semantic kill before numerical or spectral kill;
+2. no “equivalently” without a named comparison theorem;
+3. typed matrix artifacts declaring operator, domain, basis, constraints, and
+   promotion scope;
+4. separate labels for localized Weil positivity and Sonin domination;
+5. promotion only along a complete native-carrier-to-consequence proof chain.
+
+P3-C0a was recovered as an exact operator subtheorem.  In common unitary
+Mellin coordinates, the one-prime Sonin space is the image of the classical
+space under the bounded invertible multiplier
+
+`d_2(s)=1-2^(-1/2-is)`.
+
+If `P` is the classical Sonin projection, `D=M_(d_2)`, and
+`G=P D^*D P`, then the native semilocal orthogonal projection is
+
+`P_S=D P G^(-1) P D^*`.
+
+Consequently its compressed scaling trace is a Hilbert--Schmidt square and is
+finite and positive whenever the published archimedean trace is finite.  With
+`m=1-1/sqrt(2)` and `M=1+1/sqrt(2)`, it lies between
+`(m/M)^2` and `(M/m)^2` times the archimedean trace.  This uses no zeros or RH.
+
+The corrected first unproved P3 arrow is P3-C0b: derive this trace in the same
+explicit basis as the Weil form and assemble the exact same-coordinate
+remainder `E_S=Q_S-T_S`, with archimedean calibration.  Only after P3-C0b may
+a sign attack begin.
+
+STATUS: `FIELD-LEVEL ATTACK DOES NOT LAND / P2 RETAINED / P3 RESET AT EXACT
+COMPARISON GATE / NO POSITIVITY OR RH CLAIM`.
+
+## 2026-07-12 · ATLAS FIVE-FRONTIER KILL CAMPAIGN — zero field-level survivors
+
+Source: frozen targets, evidence, control audits, and verdicts in
+`logs/atlas-kill-campaigns/README.md` and its five subdirectories.
+
+The five highest-ranked theorem-search routes were run against preregistered
+semantic, novelty, hostile-control, proof-obligation, and downstream-
+consequence gates.  None survives as a field-level theorem or as a currently
+justified privileged breakthrough lead.
+
+1. **P3-C0b Sonin--Weil.**  An exact same-coordinate resolvent reduction was
+   derived, but the compressed resolvent density remains unevaluated, so no
+   independent `T_N` or `E_N` exists.  More decisively, Groskin's `M_0` row is
+   endpoint evaluation; the true Mellin-zero row is `v_0=0`.  The prior
+   stronger constrained finite margin therefore tested the wrong core.
+2. **Finite-field discriminator.**  The RH-false controls have positive
+   integral closed-orbit data, commute with every base extension, and even
+   match the genus-one Riemann--Roch coefficient profile.  Only an
+   independently geometric positive Rosati form rejects them, via
+   `det J=-(r-s)^2<0`; the sufficient Jacobian/Rosati package is classical.
+3. **Frobenius-conditioned tuples.**  Across 36 frozen holdout cells through
+   8M, RMS `z=0.5847` is below its conditional 99% envelope `1.2753` and is
+   absorbed by every local/stochastic control.  Algebraically the statistic is
+   a zero-sum residue-class projection of Hardy--Littlewood in progressions,
+   not an independent Chebotarev/additive bridge.
+4. **Generic non-CM family residual.**  Complete Legendre moments reduce to
+   character orthogonality or Birch/Kaplan--Petrow Hecke-trace terms.  After
+   removing CM parameters and special reductions, the incomplete pilot has
+   `z=0.724878` at 20,000 versus bootstrap `|z|` up to `2.440632`, while the
+   required exact 1M--8M integer engine and frozen nonzero baseline do not
+   exist.
+5. **Exact Maynard witness.**  The exact rational `k=54`, dimension-21 Krylov
+   quotient is `3.986547432134...`, below 4 and the `4.00238` signature-basis
+   record.  The proper published Krylov calibration is `4.00223` at dimension
+   25, which the repo did not spend further compute to reproduce.  Increasing
+   the `k=54` margin cannot improve the recorded numerical gap consequence
+   because `H(54)=270` is exact.  A consequence-changing reopen is an exact
+   `M_53>4`, which would lower the Elliott--Halberstam two-gap bound from 270
+   to 264.
+
+Retained infrastructure is not a theorem survivor: keep the P3 coordinate
+identity, the Rosati hostile control, and the exact Maynard rational-
+certificate engine.  Atlas edges for the fixed-cover tuple and complete
+Legendre residual bridges are now marked refuted.  Revival requires satisfying
+the written reopen condition, not retuning the killed experiment.
+
+STATUS: `0/5 FIELD-LEVEL SURVIVORS / THREE CALIBRATION INSTRUMENTS RETAINED /
+SEARCH SPACE NARROWED`.
+
+## 2026-07-12 · ATLAS REDESIGN — three kill-resistant theorem programs
+
+Source: source audit, exact targets, mechanism ladders, and hostile gates in
+`logs/atlas-next-frontiers/README.md`; live nodes and typed edges in
+`src/data/primeTheoryMap.js`.
+
+Postmortem:
+the five-campaign portfolio was too often observable-first, fixed-label,
+one-sided, and consequence-insensitive.  It asked residuals to reveal missing
+mechanisms, confused a basis failure with a target failure, and optimized
+`k=54` after the numerical prime-gap consequence had already saturated.
+
+Three replacements are now registered.
+
+1. **Free-boundary Maynard 49.**  Target an exact rational
+   `M_(49,epsilon)>4` witness in the enlarged simplex using boundary-adapted
+   piecewise polynomials.  The existing theorem chain and an admissible
+   diameter-240 tuple would give the unconditional bound
+   `liminf(p_(n+1)-p_n)<=240`.  Progress is a certified two-sided interval for
+   the variational constant after first reproducing `M_(50,1/25)>4.0043`.
+2. **Signed Type-II packet dispersion.**  Sum the full tent-weighted shift
+   packet before Cauchy--Schwarz, cancel its low-conductor modes against the
+   exact local model, and seek a Kuznetsov/spectral-large-sieve bound of
+   `X log^(-A)X` rather than `HX`.  The frozen theorem would prove ABAC and its
+   `log 2` constant on a polynomial `H` range.  Progress is removal of every
+   residual power of `H` in a genuine balanced Heath--Brown box.
+3. **Frobenius prime correspondence.**  For
+   `E_0:y^2+y=x^3-x`, draw `p->#E_0(F_p)` when the point count is prime and
+   target Jones's positive-constant asymptotic for reciprocal edges.  The shift
+   varies across the Hasse window and feeds Frobenius into a second
+   characteristic, so it is not the killed fixed-congruence bridge.  Progress
+   is the proved staircase from curve-family concentration to twists and then
+   a fixed-curve amplifier; raw cycle counts do not qualify.
+
+Portfolio order:
+run the finite-certificate Maynard program first, develop signed packet
+dispersion as the reusable analytic program, and treat the fixed-curve
+Frobenius graph as the geometric moonshot.  No success guarantee is claimed;
+the anti-kill property is that a surviving milestone is already a native prime
+theorem with a checked consequence.
+
+STATUS: `THREE THEOREM-FIRST FRONTIERS REGISTERED / CONSEQUENCE AND MECHANISM
+GATES EXPLICIT / NO BREAKTHROUGH CLAIM`.
+
+## 2026-07-12 · FIRST SURVIVAL ROUND — one live mechanism, no theorem yet
+
+Source: `logs/atlas-next-frontiers/FIRST_SURVIVAL_ROUND.md` and the three
+frontier evidence/verdict dossiers below it.
+
+The three redesigned theorem programs were run against their frozen algebra,
+hostile-control, scaling, parity, and consequence gates. No field-level theorem
+has yet been proved. The run leaves **one concrete mechanism alive in parked
+form**.
+
+1. **Free-boundary Maynard 49 — PARK / mechanism survives.** An exact rational
+   `k=2` boundary cell improves the variational quotient from `<1.641` to
+   `138736208/80929935 > 1.714`. The general inactive-chamber correction keeps
+   every numerator marginal and removes denominator mass. The naive
+   cell-by-polynomial tensor is killed at 126,300 variables and 118.85 GiB per
+   dense matrix; the orbit-compressed central correction survives. Promotion
+   waits on an independent exact reconstruction of the published
+   `M_(50,1/25)>4.0043` calibration.
+2. **Signed Type-II packet — KILL mechanism / retain target.** The zero-mean
+   periodic comparator does not algebraically cancel the finite prime mean,
+   and the theorem-relevant locally subtracted residual has negative fitted
+   H-exponent gains on all three frozen paths. Every sensitivity fit with
+   `z>=11` is negative. ABAC and the canonical packet theorem are not refuted,
+   but local subtraction plus sum-before-norm is no longer a privileged route.
+3. **Frobenius prime correspondence — PARK target / mechanism fails.** The
+   fixed-curve amicable-pair conjecture is canonical prior Jones/Silverman--
+   Stange theory, not a new Atlas object. Exact constant, pair, CM, and
+   zero-constant controls pass. The proposed twist amplifier supplies no
+   prime-versus-semiprime separator, and its 34-twist panel contains one unique
+   event with `variance/mean^2=2.4`, so neither parity nor de-averaging passes.
+
+Allocation rule: spend the next theorem-search budget only on the exact
+`k=50` signature calibration and compressed chamber correction. Do not enlarge
+the Type-II or Frobenius scans until their written analytic reopen lemmas exist.
+
+STATUS: `0/3 FIELD-LEVEL THEOREMS / 1/3 LIVE MECHANISMS / MAYNARD-49 PARKED /
+TYPE-II MECHANISM KILLED / FROBENIUS TARGET PARKED`.
+
+## 2026-07-12 · MAYNARD-49 BREAKTHROUGH GATE — mechanism killed, target open
+
+Source: `logs/atlas-next-frontiers/free-boundary-maynard-49/BREAKTHROUGH_GATE.md`,
+with full numeric, exact-formula, source, and conditioning audits beside it.
+
+The last parked mechanism from the redesigned three-frontier portfolio was run
+at full degree and does not land a theorem.
+
+- The Section 7 enlarged-signature formulas, 2,526-dimensional degree-27
+  basis, and orbit-compressed chamber integral are independently validated.
+- Double precision cannot reproduce the known `k=50` positive control because
+  the scaled Gram problem has condition estimate around `10^17`. Apparent
+  values above four occur only after the eigen/direct quotient identity breaks
+  and are rejected as roundoff artifacts.
+- The last self-consistent `k=49, epsilon=1/24, d=27` direct value is
+  `3.9760025490`. Chamber-specific reoptimization with 20,000 training and
+  40,000 independent holdout points gives `3.9760038765`, still
+  `0.0239961235` below four.
+- The holdout witness puts only `3.3521e-5` of its denominator mass in the
+  inactive chamber. The fixed-witness mass needed to lift the historical
+  `3.98855708` result above four is `0.00286073`.
+- The reduced-inner-support idea was already proposed during Polymath8b, and
+  polynomial `L^2` density shows that it is a finite-basis convergence
+  accelerator rather than a larger limiting variational space.
+- The pure-JavaScript exact chamber contraction exceeded a frozen 20-minute
+  ceiling even at degree 7; it is retained only as a sparse final-certificate
+  checker.
+
+This is not a proof that `M_(49,epsilon)<=4`. The exact target remains open and
+would still imply `H_1<=240`. Reopening requires a better-conditioned or
+multiprecision proposal that first reproduces `M_(50,1/25)>4.0043`, followed by
+an explicit rational `k=49` certificate with independently checked
+`N-4D>0`.
+
+STATUS: `NO BREAKTHROUGH / 0 LIVE MECHANISMS FROM THE THREE-FRONTIER PORTFOLIO /
+M49 TARGET OPEN / INACTIVE-CHAMBER ROUTE KILLED AS PRIVILEGED LEAD`.

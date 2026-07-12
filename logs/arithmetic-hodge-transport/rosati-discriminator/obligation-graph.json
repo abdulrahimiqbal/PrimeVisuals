@@ -1,0 +1,55 @@
+{
+  "version": "2026-07-12",
+  "verdict": "ARITHMETIC ROSATI LEAD / P2 RECONSTRUCTED / P3 RESET AT COMPARISON GATE",
+  "nodes": [
+    {"id": "O", "label": "nonnegative closed-orbit data", "status": "control-retained"},
+    {"id": "T", "label": "trace and Euler product", "status": "control-retained"},
+    {"id": "D", "label": "reciprocity and algebraic duality", "status": "control-retained"},
+    {"id": "R", "label": "modular Rosati adjoint", "status": "constructed-arithmetic"},
+    {"id": "W", "label": "localized one-prime Weil form Q_S", "status": "constructed-finite-compressions"},
+    {"id": "S", "label": "native semilocal Sonin space and positive trace", "status": "projection-transport-and-trace-class-positivity-proved"},
+    {"id": "E", "label": "same-coordinate comparison remainder E_S=Q_S-T_S", "status": "missing"},
+    {"id": "P", "label": "independently geometric positive polarization", "status": "missing-finite-place"},
+    {"id": "C", "label": "trace/determinant comparison", "status": "partial-arithmetic"},
+    {"id": "U", "label": "uniform restriction-compatible closure", "status": "missing"},
+    {"id": "RH", "label": "critical-line purity", "status": "endpoint"}
+  ],
+  "edges": [
+    {"from": "O", "to": "T", "status": "available-in-controls"},
+    {"from": "T", "to": "D", "status": "available-in-controls"},
+    {"from": "D", "to": "R", "status": "available-algebraically"},
+    {"from": "R", "to": "P", "status": "false-in-general", "witness": "positive-orbit reciprocal controls"},
+    {"from": "W", "to": "E", "status": "missing-comparison-map"},
+    {"from": "S", "to": "E", "status": "projection-transport-proved-explicit-basis-kernel-missing"},
+    {"from": "E", "to": "P", "status": "requires-infinite-sign"},
+    {"from": "P", "to": "RH", "status": "linear-algebraic-after-comparison"},
+    {"from": "C", "to": "RH", "status": "requires-P-and-U"},
+    {"from": "U", "to": "RH", "status": "analytic-closure"}
+  ],
+  "carrierObstructions": [
+    {
+      "id": "coarse-flow-collapse",
+      "statement": "The action defining a coarse orbit quotient acts trivially on that quotient.",
+      "consequence": "Theta must live on a cover, action groupoid, or transverse/relative cohomology."
+    },
+    {
+      "id": "idempotent-linearization-collapse",
+      "statement": "Every homomorphism from an idempotent commutative monoid to an abelian group is zero.",
+      "consequence": "Ordinary group completion kills the Abel-Jacobi idempotent prime stratum."
+    },
+    {
+      "id": "compactness-sign-gap",
+      "statement": "A compact or trace-class remainder need not have the required sign.",
+      "witness": "K=2P gives I-K with eigenvalue -1."
+    }
+  ],
+  "firstUnprovedArrow": {
+    "id": "P3-C0b",
+    "places": ["infinity", 2],
+    "supportBeforeAutocorrelation": "[3^(-1/2),3^(1/2)]",
+    "achieved": "P3-C0a exact projection P_S=D P (P D^*D P)^(-1) P D^* and trace-class positivity",
+    "target": "Derive the native Sonin trace in the same explicit basis as Q_S and assemble the calibrated remainder E_S=Q_S-T_S on the pole-neutral support core.",
+    "signDeferred": "Do not test E_S>=0 until P3-C0 and archimedean calibration are proved.",
+    "promotion": "P3-C0 is a comparison theorem; FIELD-LEVEL BREAKTHROUGH still requires a rigorous infinite-dimensional sign and a new trace consequence"
+  }
+}

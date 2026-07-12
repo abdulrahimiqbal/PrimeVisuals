@@ -1,0 +1,86 @@
+{
+  "horizons": [
+    8,
+    12,
+    18,
+    26,
+    10,
+    15,
+    22,
+    30
+  ],
+  "manifest": [
+    {
+      "N": 8,
+      "split": "discovery",
+      "dimension": 7,
+      "primes": 4,
+      "squares": 1,
+      "strainPrimeError": 6.38378239159465e-16,
+      "file": "problem-N8.json"
+    },
+    {
+      "N": 12,
+      "split": "discovery",
+      "dimension": 11,
+      "primes": 5,
+      "squares": 2,
+      "strainPrimeError": 1.7763568394002505e-15,
+      "file": "problem-N12.json"
+    },
+    {
+      "N": 18,
+      "split": "discovery",
+      "dimension": 17,
+      "primes": 7,
+      "squares": 4,
+      "strainPrimeError": 1.7763568394002505e-15,
+      "file": "problem-N18.json"
+    },
+    {
+      "N": 26,
+      "split": "discovery",
+      "dimension": 25,
+      "primes": 9,
+      "squares": 6,
+      "strainPrimeError": 3.3410774147313305e-15,
+      "file": "problem-N26.json"
+    },
+    {
+      "N": 10,
+      "split": "holdout",
+      "dimension": 9,
+      "primes": 4,
+      "squares": 1,
+      "strainPrimeError": 8.881784197001252e-16,
+      "file": "problem-N10.json"
+    },
+    {
+      "N": 15,
+      "split": "holdout",
+      "dimension": 14,
+      "primes": 6,
+      "squares": 3,
+      "strainPrimeError": 1.7763568394002505e-15,
+      "file": "problem-N15.json"
+    },
+    {
+      "N": 22,
+      "split": "holdout",
+      "dimension": 21,
+      "primes": 8,
+      "squares": 5,
+      "strainPrimeError": 3.1086244689504383e-15,
+      "file": "problem-N22.json"
+    },
+    {
+      "N": 30,
+      "split": "holdout",
+      "dimension": 29,
+      "primes": 10,
+      "squares": 7,
+      "strainPrimeError": 3.552713678800501e-15,
+      "file": "problem-N30.json"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": "2026-07-12",
+  "status": "P3-C0A PROJECTION TRANSPORT PROVED / P3-C0B KERNEL COMPARISON REQUIRED BEFORE SIGN TESTING",
+  "places": ["infinity", 2],
+  "primeCutoff": 3,
+  "localizationHalfWidth": "log(3)/2",
+  "operators": {
+    "localizedWeil": {
+      "symbol": "Q_S",
+      "constructed": true,
+      "finiteCompressionsCertified": true,
+      "maximumCertifiedBand": 200,
+      "maximumCertifiedDimension": 401
+    },
+    "poleFreeWeil": {
+      "symbol": "Q_S-W_0,2",
+      "constructed": true,
+      "equalsSoninRemainder": false
+    },
+    "soninTrace": {
+      "symbol": "T_S",
+      "nativeSpaceConstructed": true,
+      "projectionTransportFormula": "P_S=D P (P D^*D P)^(-1) P D^*",
+      "projectionTransportProved": true,
+      "traceClassOnPublishedArchimedeanAdmissibilityClassProved": true,
+      "positive": true,
+      "sameCoordinateMatrixConstructed": false
+    },
+    "comparisonRemainder": {
+      "symbol": "E_S=Q_S-T_S",
+      "abstractFormDefined": true,
+      "explicitKernelConstructed": false,
+      "finiteCompressionConstructed": false,
+      "signTestAllowed": false
+    }
+  },
+  "requiredArtifactContract": {
+    "fields": [
+      "represents",
+      "domain",
+      "basis",
+      "constraints",
+      "comparisonMap",
+      "finiteOnly",
+      "promotionAllowed"
+    ],
+    "archimedeanCalibrationRequired": true,
+    "independentAssemblyOfQTERequired": true
+  },
+  "separateLane": {
+    "name": "W: fixed-width localized Weil positivity",
+    "currentEvidence": "finite Q_S blocks positive through dimension 401",
+    "missing": "constraint transport plus uniform infinite tail/Schur or Poincare proof",
+    "canPromoteSoninP3": false
+  },
+  "promotion": {
+    "projectionTransport": "EXACT OPERATOR SUBTHEOREM",
+    "comparisonOnly": "SEMILOCAL COMPARISON THEOREM",
+    "finiteRemainderPositivity": "P3 REMAINDER LEAD",
+    "infiniteRemainderPositivityPlusNewConsequence": "FIELD-LEVEL BREAKTHROUGH"
+  }
+}

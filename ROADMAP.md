@@ -164,3 +164,25 @@ now so nothing is lost in translation.
 - [ ] Proof attempts happen outside the tool (experts, AI-for-math
       systems); the tool's deliverable is the crisp formal statement plus
       the reproducible evidence behind it.
+
+## Phase 5 — Prime Theory Atlas
+
+The Atlas turns the repo's chronological research memory into a navigable
+theory space without pretending that graph proximity is proof.
+
+- [x] **First-class ATLAS mode**: primes at the center; radial rings for
+      operations, frameworks, and results/frontiers; native pan, zoom,
+      selection, search, and status lenses.
+- [x] **Typed, validated graph**: stable node IDs, directed relation types,
+      separate mathematical and project statuses, repo provenance, linked
+      instrument presets, and integrity tests.
+- [x] **Open-bridge view**: conjectural/programmatic edges carry a named
+      missing lemma, comparison theorem, or transport obligation.
+- [ ] Split the curated seed into low-conflict domain shards with an
+      append-only revision ledger and stable anchors into `KNOWLEDGE.md`.
+- [ ] Import reviewed campaign graphs and corrections; do not auto-promote
+      prose extraction into canonical truth claims.
+- [ ] Add two-node path queries, missing-operation motifs, and theorem-in-one-
+      universe/open-in-another searches.
+- [ ] Add a time lens so the map can replay discoveries, corrections, killed
+      routes, and superseding results.

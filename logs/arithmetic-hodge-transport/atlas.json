@@ -1,0 +1,97 @@
+{
+  "version": "2026-07-12-p3-reset",
+  "entryVerdict": "SURVIVE, NARROW",
+  "mission": "Find a candidate-neutral global-field structure deriving orbit trace, duality, positive polarization, and closure without defining them from zeta zeros or RH-equivalent positivity.",
+  "axioms": [
+    {"id":"A0","name":"independent arithmetic carrier"},
+    {"id":"A1","name":"closed-point and orbit dictionary"},
+    {"id":"A2","name":"archimedean realization"},
+    {"id":"A3","name":"functoriality and base change"},
+    {"id":"A4","name":"cohomology and flow"},
+    {"id":"A5","name":"Lefschetz trace and regularized determinant"},
+    {"id":"A6","name":"Poincare or Serre duality"},
+    {"id":"A7","name":"positive polarization or Hodge index"},
+    {"id":"A8","name":"finite-field comparison and analytic closure"}
+  ],
+  "missingEdges": [
+    {"id":"M1","from":"local realizations","to":"one all-place global carrier"},
+    {"id":"M2","from":"arithmetic carrier","to":"functorial cohomology with flow"},
+    {"id":"M3","from":"Frobenius correspondences","to":"intersection and effectivity"},
+    {"id":"M4","from":"algebraic duality","to":"positive polarization"},
+    {"id":"M5","from":"bounded correspondences","to":"dense analytic test space"},
+    {"id":"M6","from":"finite-field realization","to":"arithmetic realization"},
+    {"id":"M7","from":"carrier functoriality","to":"coefficient objects and L-functions"},
+    {"id":"M8","from":"semilocal Sonin projection","to":"same-coordinate Weil-minus-Sonin comparison remainder"}
+  ],
+  "controls": [
+    {
+      "id":"positive-orbit-reciprocal",
+      "retains":["nonnegative closed orbits","Euler product","trace counts","functional equation","algebraic weight-one duality"],
+      "fails":"positive polarization",
+      "artifact":"positive-orbit-control.json"
+    },
+    {
+      "id":"davenport-heilbronn",
+      "retains":["Dirichlet series","analytic continuation","Riemann-type functional equation"],
+      "fails":"Euler/local-orbit factorization"
+    },
+    {
+      "id":"beurling-primes",
+      "retains":["generalized-prime Euler product"],
+      "fails":"full global duality or polarization depending on system"
+    },
+    {
+      "id":"prime-square-separator",
+      "retains":["positive complete target"],
+      "fails":"generation by frozen bounded local positive atoms"
+    }
+  ],
+  "theoremLadder": [
+    {"id":"T0","target":"axiom-independence and countermodel theorems"},
+    {"id":"T1","target":"comparison functor on a restricted global-field class"},
+    {"id":"T2","target":"global local-to-archimedean gluing with a new special-value theorem"},
+    {"id":"T3","target":"orbit-trace and determinant theorem without positivity"},
+    {"id":"T4","target":"one-finite-place semi-local polarization"},
+    {"id":"T5","target":"Hodge index for bounded-conductor intrinsic correspondences"},
+    {"id":"T6","target":"restriction-compatible uniform analytic closure"},
+    {"id":"T7","target":"full arithmetic Hodge-Riemann polarization"}
+  ],
+  "workshopProgram": [
+    {"id":"W1","status":"completed","target":"positive-orbit RH-false control family"},
+    {"id":"W2","status":"side-diagnostic","target":"prime-square separator channel diagnosis"},
+    {"id":"W3","status":"completed","target":"finite-field geometric discriminator theorem"},
+    {"id":"W4","status":"completed-core","target":"formal axiom implication DAG"},
+    {"id":"W5","status":"in-progress","target":"source-level proof-obligation maps"}
+  ],
+  "rosatiCampaign": {
+    "verdict": "ARITHMETIC ROSATI LEAD / P2 RECONSTRUCTED / P3 RESET AT COMPARISON GATE",
+    "p1": "Exact degree-two discriminator det(J)=4q-a^2; controls have det(J)=-(r-s)^2.",
+    "p2": "The adele-class modular involution gives Phi_t^sharp=exp(t)Phi_-t and Theta^sharp=1-Theta.",
+    "carrierObstructions": [
+      "the coarse Jacobian quotients away the scaling flow",
+      "group completion kills the idempotent Abel-Jacobi prime stratum"
+    ],
+    "p3Target": {
+      "places": ["infinity", 2],
+      "primeCutoff": 3,
+      "localizationHalfWidth": "log(3)/2",
+      "achievedSubgate": "P3-C0a: exact one-prime Sonin projection transport and trace-class positivity",
+      "firstGate": "P3-C0b: derive the Sonin trace kernel and exact remainder E_S=Q_S-T_S in the same explicit coordinates with archimedean calibration",
+      "finiteAudit": "interval LDLT positive through dimension 401 for Q_W only",
+      "finiteAuditDoesNotTest": "E_S=Q_S-T_S",
+      "localizedWeilSideLane": "constrained nonlocal Poincare inequality / uniform frequency-tail Schur bound",
+      "promotionAllowed": false
+    },
+    "artifact": "rosati-discriminator/VERDICT.md"
+  },
+  "stopRules": [
+    "spectrum defined from known zeros",
+    "positivity defined as Weil positivity without independent proof",
+    "literal q to 1 fitting",
+    "arbitrary PSD remainder or target-selected atom",
+    "finite positivity extrapolated without compatible restrictions and uniform bounds",
+    "frameworks merged without a comparison functor",
+    "no independent theorem before RH",
+    "candidate accepts every positive-orbit control"
+  ]
+}

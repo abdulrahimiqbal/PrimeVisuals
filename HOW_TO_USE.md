@@ -23,6 +23,29 @@ for example `Primes -> Sacks spiral -> Ion mono`.
    current pipeline as you change it.
 5. `Save view` keeps a combination you like. The eye button (top right)
    toggles focus mode, hiding everything except the canvas.
+6. Switch to `ATLAS` when you want to navigate the theory space rather than
+   manipulate one visualization.
+
+## Atlas mode
+
+`ATLAS` places prime numbers at the center of three rings: operations,
+mathematical frameworks, and results/frontiers. Click a node to highlight its
+one-hop neighborhood and read its mathematical status, separate project
+status, scope, next proof obligation, and repo evidence.
+
+- Search matches labels, tags, summaries, questions, and evidence paths.
+- `PROVED`, `OPEN BRIDGES`, `THIS REPO`, and `CATEGORY` act as lenses; they
+  retain nearby context while dimming the rest of the graph.
+- Solid edges are proved or defined, dashed edges are conditional,
+  conjectural, or programmatic, dotted edges are analogies, and rose edges are
+  refuted or killed routes.
+- The `OPEN BRIDGES` list names a missing lemma, comparison theorem, or
+  transport obligation. It is a research queue, not automatic theorem
+  generation.
+- Nodes with an executable preset show `OPEN …`; use it to jump directly back
+  into the corresponding `PATCH` view.
+
+See [THEORY_MAP.md](THEORY_MAP.md) for the ontology and update rules.
 
 ## What one dot means
 

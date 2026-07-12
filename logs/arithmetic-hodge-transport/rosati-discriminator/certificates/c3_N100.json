@@ -1,0 +1,14 @@
+{
+  "script": "arb_ldlt_certify.py",
+  "c": 3,
+  "N": 100,
+  "dimension": 201,
+  "prec_bits": 600,
+  "n_pos": 201,
+  "n_neg": 0,
+  "undetermined_pivot": null,
+  "certified_positive_definite": true,
+  "build_seconds": 3.0,
+  "ldlt_seconds": 2.9,
+  "date": "2026-07-12T14:49:41"
+}
