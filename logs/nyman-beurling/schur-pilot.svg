@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="70" y="38" fill="#f8fafc" font-size="22" font-weight="700">Nyman–Beurling Schur innovations</text>
+<text x="70" y="61" fill="#94a3b8" font-size="13">residual log distance gain after scale, pivot, and coefficient controls</text>
+<line x1="70" y1="340" x2="1030" y2="340" stroke="#475569"/>
+<circle cx="70" cy="333.82414029332716" r="5" fill="#f59e0b"><title>N=5 residual=0.02287355446915873</title></circle>
+<circle cx="87.45454545454545" cy="328.5302876597074" r="5" fill="#60a5fa"><title>N=6 residual=0.042480416075157734</title></circle>
+<circle cx="104.9090909090909" cy="340.284842520644" r="5" fill="#f59e0b"><title>N=7 residual=-0.0010549722986814558</title></circle>
+<circle cx="122.36363636363636" cy="335.7664243075968" r="5" fill="#a78bfa"><title>N=8 residual=0.015679909971863637</title></circle>
+<circle cx="139.8181818181818" cy="343.33589522332926" r="5" fill="#a78bfa"><title>N=9 residual=-0.012355167493812047</title></circle>
+<circle cx="157.27272727272728" cy="338.4217595875228" r="5" fill="#60a5fa"><title>N=10 residual=0.005845334861026785</title></circle>
+<circle cx="174.72727272727272" cy="347.01233294302887" r="5" fill="#f59e0b"><title>N=11 residual=-0.025971603492699558</title></circle>
+<circle cx="192.1818181818182" cy="342.45144964943336" r="5" fill="#a78bfa"><title>N=12 residual=-0.00907944314604947</title></circle>
+<circle cx="209.63636363636363" cy="335.42180138405524" r="5" fill="#f59e0b"><title>N=13 residual=0.016956291170165727</title></circle>
+<circle cx="227.0909090909091" cy="342.3901691541493" r="5" fill="#60a5fa"><title>N=14 residual=-0.008852478348701176</title></circle>
+<circle cx="244.54545454545456" cy="348.70642910935055" r="5" fill="#60a5fa"><title>N=15 residual=-0.032246033738335456</title></circle>
+<circle cx="262" cy="344.1974418533271" r="5" fill="#a78bfa"><title>N=16 residual=-0.015546080938248608</title></circle>
+<circle cx="279.45454545454544" cy="341.46707471854506" r="5" fill="#f59e0b"><title>N=17 residual=-0.005433610068685368</title></circle>
+<circle cx="296.9090909090909" cy="345.13362665014904" r="5" fill="#a78bfa"><title>N=18 residual=-0.019013432037588984</title></circle>
+<circle cx="314.3636363636364" cy="326.89295194499863" r="5" fill="#f59e0b"><title>N=19 residual=0.04854462242593094</title></circle>
+<circle cx="331.8181818181818" cy="346.02857111650735" r="5" fill="#a78bfa"><title>N=20 residual=-0.022328041172249513</title></circle>
+<circle cx="349.27272727272725" cy="351.0183563111206" r="5" fill="#60a5fa"><title>N=21 residual=-0.04080872707822447</title></circle>
+<circle cx="366.72727272727275" cy="348.10085640338673" r="5" fill="#60a5fa"><title>N=22 residual=-0.030003171864395384</title></circle>
+<circle cx="384.1818181818182" cy="334.16907344105636" r="5" fill="#f59e0b"><title>N=23 residual=0.02159602429238383</title></circle>
+<circle cx="401.6363636363636" cy="349.03497278566533" r="5" fill="#a78bfa"><title>N=24 residual=-0.03346286216913086</title></circle>
+<circle cx="419.0909090909091" cy="324.71801334452545" r="5" fill="#a78bfa"><title>N=25 residual=0.05659995057583167</title></circle>
+<circle cx="436.54545454545456" cy="348.47637600863004" r="5" fill="#60a5fa"><title>N=26 residual=-0.03139398521714831</title></circle>
+<circle cx="454" cy="347.6057775621518" r="5" fill="#a78bfa"><title>N=27 residual=-0.028169546526488176</title></circle>
+<circle cx="471.45454545454544" cy="348.5267106520619" r="5" fill="#a78bfa"><title>N=28 residual=-0.03158040982245147</title></circle>
+<circle cx="488.9090909090909" cy="329.4095714635582" r="5" fill="#f59e0b"><title>N=29 residual=0.03922380939422876</title></circle>
+<circle cx="506.3636363636364" cy="345.16520913089886" r="5" fill="#60a5fa"><title>N=30 residual=-0.019130404188514305</title></circle>
+<circle cx="523.8181818181818" cy="317.30797287024814" r="5" fill="#f59e0b"><title>N=31 residual=0.0840445449250069</title></circle>
+<circle cx="541.2727272727273" cy="348.62399716321096" r="5" fill="#a78bfa"><title>N=32 residual=-0.03194073023411459</title></circle>
+<circle cx="558.7272727272727" cy="344.6322704190232" r="5" fill="#60a5fa"><title>N=33 residual=-0.01715655710749342</title></circle>
+<circle cx="576.1818181818181" cy="348.93715227011455" r="5" fill="#60a5fa"><title>N=34 residual=-0.03310056396338723</title></circle>
+<circle cx="593.6363636363636" cy="337.5939244721166" r="5" fill="#60a5fa"><title>N=35 residual=0.008911390844012601</title></circle>
+<circle cx="611.090909090909" cy="347.62135925867125" r="5" fill="#a78bfa"><title>N=36 residual=-0.028227256513597254</title></circle>
+<circle cx="628.5454545454545" cy="318.01094915529274" r="5" fill="#f59e0b"><title>N=37 residual=0.08144092905447131</title></circle>
+<circle cx="646" cy="350.23846000228355" r="5" fill="#60a5fa"><title>N=38 residual=-0.03792022223067981</title></circle>
+<circle cx="663.4545454545455" cy="350.2838266167696" r="5" fill="#60a5fa"><title>N=39 residual=-0.0380882467287762</title></circle>
+<circle cx="680.9090909090909" cy="348.62990693148436" r="5" fill="#a78bfa"><title>N=40 residual=-0.03196261826475677</title></circle>
+<circle cx="698.3636363636364" cy="321.96502357391114" r="5" fill="#f59e0b"><title>N=41 residual=0.0667962089855143</title></circle>
+<circle cx="715.8181818181819" cy="346.3526749779958" r="5" fill="#60a5fa"><title>N=42 residual=-0.023528425844428824</title></circle>
+<circle cx="733.2727272727273" cy="311.8486691024556" r="5" fill="#f59e0b"><title>N=43 residual=0.10426418850942376</title></circle>
+<circle cx="750.7272727272727" cy="350.67298754932716" r="5" fill="#a78bfa"><title>N=44 residual=-0.039529583516026534</title></circle>
+<circle cx="768.1818181818182" cy="348.70804062297407" r="5" fill="#a78bfa"><title>N=45 residual=-0.0322520023073114</title></circle>
+<circle cx="785.6363636363636" cy="350.38928047800806" r="5" fill="#60a5fa"><title>N=46 residual=-0.038478816585215014</title></circle>
+<circle cx="803.0909090909091" cy="325.44783374179787" r="5" fill="#f59e0b"><title>N=47 residual=0.053896912067415315</title></circle>
+<circle cx="820.5454545454546" cy="349.1441663239715" r="5" fill="#a78bfa"><title>N=48 residual=-0.033867282681375954</title></circle>
+<circle cx="838" cy="316.6445327613002" r="5" fill="#a78bfa"><title>N=49 residual=0.08650173051370302</title></circle>
+<circle cx="855.4545454545455" cy="351.9239655938383" r="5" fill="#a78bfa"><title>N=50 residual=-0.04416283553273459</title></circle>
+<circle cx="872.9090909090909" cy="337.9987356638243" r="5" fill="#60a5fa"><title>N=51 residual=0.00741209013398425</title></circle>
+<circle cx="890.3636363636363" cy="352.39726054576875" r="5" fill="#a78bfa"><title>N=52 residual=-0.04591577979914341</title></circle>
+<circle cx="907.8181818181818" cy="322.39863458480676" r="5" fill="#f59e0b"><title>N=53 residual=0.06519024227849357</title></circle>
+<circle cx="925.2727272727273" cy="347.915137883758" r="5" fill="#a78bfa"><title>N=54 residual=-0.029315325495399946</title></circle>
+<circle cx="942.7272727272727" cy="313.8609671551332" r="5" fill="#60a5fa"><title>N=55 residual=0.0968112327587658</title></circle>
+<circle cx="960.1818181818181" cy="351.76349996957623" r="5" fill="#a78bfa"><title>N=56 residual=-0.043568518405837864</title></circle>
+<circle cx="977.6363636363636" cy="338.3355532171977" r="5" fill="#60a5fa"><title>N=57 residual=0.00616461771408261</title></circle>
+<circle cx="995.0909090909091" cy="354.5373409633515" r="5" fill="#60a5fa"><title>N=58 residual=-0.05384200356796853</title></circle>
+<circle cx="1012.5454545454545" cy="321.3914572317473" r="5" fill="#f59e0b"><title>N=59 residual=0.06892052877130617</title></circle>
+<circle cx="1030" cy="348.33430368177613" r="5" fill="#a78bfa"><title>N=60 residual=-0.030867791413985657</title></circle>
+<text x="550" y="660" text-anchor="middle" fill="#cbd5e1" font-size="14">new dilation index N</text>
+</svg>

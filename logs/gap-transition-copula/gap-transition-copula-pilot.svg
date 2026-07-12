@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="64" y="36" fill="#f8fafc" font-size="21" font-weight="700">Deep-admissible gap transition copula pilot</text>
+<text x="64" y="62" fill="#94a3b8" font-size="13">white: real adjusted correlation; green: same-B fake; violet: B-rough composite</text>
+<rect x="80" y="82" width="790" height="500" fill="#0b1627" stroke="#334155"/>
+<line x1="80" x2="870" y1="332" y2="332" stroke="#64748b"/>
+<line x1="168.75" x2="168.75" y1="401.98277987469106" y2="330.85958675994345" stroke="#34d399" stroke-width="8" opacity="0.55"/><line x1="188.75" x2="188.75" y1="413.88660790619986" y2="306.7933720463173" stroke="#a78bfa" stroke-width="8" opacity="0.55"/><circle cx="178.75" cy="467.13884082432696" r="6" fill="#f8fafc"/><text x="178.75" y="610" text-anchor="middle" fill="#cbd5e1" font-size="12">B29/W30</text>
+<line x1="366.25" x2="366.25" y1="419.3727175305835" y2="364.20880392307413" stroke="#34d399" stroke-width="8" opacity="0.55"/><line x1="386.25" x2="386.25" y1="446.17478854060516" y2="369.44910972407416" stroke="#a78bfa" stroke-width="8" opacity="0.55"/><circle cx="376.25" cy="495.93157701413134" r="6" fill="#f8fafc"/><text x="376.25" y="610" text-anchor="middle" fill="#cbd5e1" font-size="12">B29/W210</text>
+<line x1="563.75" x2="563.75" y1="379.38272056688675" y2="311.06091858939755" stroke="#34d399" stroke-width="8" opacity="0.55"/><line x1="583.75" x2="583.75" y1="410.1651065895756" y2="283.9130980639855" stroke="#a78bfa" stroke-width="8" opacity="0.55"/><circle cx="573.75" cy="379.5384770844372" r="6" fill="#f8fafc"/><text x="573.75" y="610" text-anchor="middle" fill="#cbd5e1" font-size="12">B97/W30</text>
+<line x1="761.25" x2="761.25" y1="392.18347790264687" y2="326.24336014169234" stroke="#34d399" stroke-width="8" opacity="0.55"/><line x1="781.25" x2="781.25" y1="441.743853260308" y2="296.1217257043283" stroke="#a78bfa" stroke-width="8" opacity="0.55"/><circle cx="771.25" cy="384.3987178806057" r="6" fill="#f8fafc"/><text x="771.25" y="610" text-anchor="middle" fill="#cbd5e1" font-size="12">B97/W210</text>
+<text x="920" y="120" fill="#f8fafc" font-size="16" font-weight="700">pilot gate</text>
+<text x="920" y="151" fill="#fb7185" font-size="26" font-weight="700">FAIL</text>
+<text x="920" y="190" fill="#cbd5e1" font-size="13">all final cells |z| >= 4: false</text>
+<text x="920" y="214" fill="#cbd5e1" font-size="13">sign stable: true</text>
+</svg>

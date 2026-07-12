@@ -77,7 +77,10 @@ Daily driver (unchanged): route E sprints per prompts/research-loop.md —
 uncomputed second-order statistics — now run across both universes.
 
 Side bet (occasional sprints): route D's M_k variational problem
-(reproduce M_5 > 2, then M_50 > 4 — sharp published benchmarks); the one
+(reproduce M_5 > 2, then M_105 > 4, then the sharper Polymath8b
+M_54 > 4.00238 benchmark). Correction, 2026-07-10: the earlier text said
+M_50 > 4, but Polymath8b's k=50 result is for the enlarged-support quantity
+M_{50,1/25}; the standard-simplex benchmark above 4 is k=54. This is the one
 theorem-adjacent computation an agent farm can grind honestly.
 
 Demoted to calibration suites (not paths): A's GUE/FHK checks (instrument

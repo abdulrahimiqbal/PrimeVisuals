@@ -1,0 +1,546 @@
+{
+  "candidate": "deep-admissible prime-gap transition copula",
+  "grade": "EXPLORATORY_PILOT_ONLY",
+  "generatedAt": "2026-07-10T13:45:44.320Z",
+  "quick": true,
+  "N": 500000,
+  "endpoints": [
+    500000
+  ],
+  "cutoffs": [
+    29,
+    97
+  ],
+  "wheels": [
+    30,
+    210
+  ],
+  "startAfter": 100000,
+  "shrinkage": 20,
+  "minimumPairs": 2000,
+  "seeds": [
+    12345,
+    271828,
+    314159
+  ],
+  "rows": [
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 500000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 30,
+        "trainingCount": 10310,
+        "holdoutCount": 19493,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": 0.00013798645269054823,
+        "adjustedCorrelation": -0.014294214706092169,
+        "pairs": 19492
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 3,
+          "range": [
+            -0.008593599626457662,
+            -0.004066815185304753
+          ],
+          "mean": -0.0058439752274849184,
+          "sd": 0.0024149967987742793,
+          "min": -0.008593599626457662,
+          "max": -0.004066815185304753,
+          "z": -3.4990686045199437
+        },
+        "roughComposite": {
+          "count": 3,
+          "range": [
+            -0.0009905729174813675,
+            0.00239653118005245
+          ],
+          "mean": 0.0010091685736392806,
+          "sd": 0.0017746477018578293,
+          "min": -0.0009905729174813675,
+          "max": 0.00239653118005245,
+          "z": -8.623335923919301
+        },
+        "realOrderShuffle": {
+          "count": 3,
+          "range": [
+            -0.00531579922515963,
+            0.0034728720956067522
+          ],
+          "mean": -0.0012259585566715707,
+          "sd": 0.004425871382720359,
+          "min": -0.00531579922515963,
+          "max": 0.0034728720956067522,
+          "z": -2.9526967729885096
+        }
+      },
+      "strictAbsZ": 2.9526967729885096,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10404,
+          "holdoutCount": 19491,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0023100448302463277,
+          "adjustedCorrelation": -0.00487151087069234,
+          "pairs": 19490
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10285,
+          "holdoutCount": 19673,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0009865375939921742,
+          "adjustedCorrelation": -0.008593599626457662,
+          "pairs": 19672
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10250,
+          "holdoutCount": 19546,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005790982012640094,
+          "adjustedCorrelation": -0.004066815185304753,
+          "pairs": 19545
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4943,
+          "holdoutCount": 9881,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0022132498572002605,
+          "adjustedCorrelation": 0.00239653118005245,
+          "pairs": 9880
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4952,
+          "holdoutCount": 9906,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.006042703890118825,
+          "adjustedCorrelation": 0.001621547458346759,
+          "pairs": 9905
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4872,
+          "holdoutCount": 9832,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004819060476664907,
+          "adjustedCorrelation": -0.0009905729174813675,
+          "pairs": 9831
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 500000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 210,
+        "trainingCount": 10310,
+        "holdoutCount": 19493,
+        "classCount": 529,
+        "unseenFraction": 0.010619196634689375,
+        "rawCorrelation": 0.00013798645269054823,
+        "adjustedCorrelation": -0.008300516165305269,
+        "pairs": 19492
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 3,
+          "range": [
+            -0.006201188596497242,
+            -0.0024727822490257455
+          ],
+          "mean": -0.004451730182553475,
+          "sd": 0.0018747673329417693,
+          "min": -0.006201188596497242,
+          "max": -0.0024727822490257455,
+          "z": -2.0529406050149785
+        },
+        "roughComposite": {
+          "count": 3,
+          "range": [
+            -0.0022134686930843617,
+            0.004931430921897796
+          ],
+          "mean": 0.000872013093874081,
+          "sd": 0.0036706690379421933,
+          "min": -0.0022134686930843617,
+          "max": 0.004931430921897796,
+          "z": -2.498871231474888
+        },
+        "realOrderShuffle": {
+          "count": 3,
+          "range": [
+            -0.011387981935181738,
+            -0.0019950618823472684
+          ],
+          "mean": -0.006070537019314235,
+          "sd": 0.004818049758824794,
+          "min": -0.011387981935181738,
+          "max": -0.0019950618823472684,
+          "z": -0.46283854622019593
+        }
+      },
+      "strictAbsZ": 0.46283854622019593,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10404,
+          "holdoutCount": 19491,
+          "classCount": 537,
+          "unseenFraction": 0.012108152480632087,
+          "rawCorrelation": -0.0023100448302463277,
+          "adjustedCorrelation": -0.004681219702137438,
+          "pairs": 19490
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10285,
+          "holdoutCount": 19673,
+          "classCount": 538,
+          "unseenFraction": 0.012250292278757688,
+          "rawCorrelation": -0.0009865375939921742,
+          "adjustedCorrelation": -0.006201188596497242,
+          "pairs": 19672
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10250,
+          "holdoutCount": 19546,
+          "classCount": 539,
+          "unseenFraction": 0.011767113475902998,
+          "rawCorrelation": 0.005790982012640094,
+          "adjustedCorrelation": -0.0024727822490257455,
+          "pairs": 19545
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4943,
+          "holdoutCount": 9881,
+          "classCount": 895,
+          "unseenFraction": 0.046553992510879466,
+          "rawCorrelation": 0.0022132498572002605,
+          "adjustedCorrelation": -0.00010192294719119094,
+          "pairs": 9880
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4952,
+          "holdoutCount": 9906,
+          "classCount": 895,
+          "unseenFraction": 0.050373511003432264,
+          "rawCorrelation": 0.006042703890118825,
+          "adjustedCorrelation": 0.004931430921897796,
+          "pairs": 9905
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4872,
+          "holdoutCount": 9832,
+          "classCount": 893,
+          "unseenFraction": 0.046379170056956874,
+          "rawCorrelation": -0.004819060476664907,
+          "adjustedCorrelation": -0.0022134686930843617,
+          "pairs": 9831
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 500000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 30,
+        "trainingCount": 10310,
+        "holdoutCount": 19493,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": 0.017185667454479258,
+        "adjustedCorrelation": 0.008420410405124179,
+        "pairs": 19492
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 3,
+          "range": [
+            -0.007253811169500008,
+            -0.0003434850667820379
+          ],
+          "mean": -0.0030804632014909115,
+          "sd": 0.0036722636663218395,
+          "min": -0.007253811169500008,
+          "max": -0.0003434850667820379,
+          "z": 3.13182131013333
+        },
+        "roughComposite": {
+          "count": 3,
+          "range": [
+            0.00023874818037060148,
+            0.004944941322526216
+          ],
+          "mean": 0.0025492691916765334,
+          "sd": 0.002354251793604032,
+          "min": 0.00023874818037060148,
+          "max": 0.004944941322526216,
+          "z": 2.4938459129130552
+        },
+        "realOrderShuffle": {
+          "count": 3,
+          "range": [
+            -0.010649447869288921,
+            0.013363143575894344
+          ],
+          "mean": 0.0026729288787860684,
+          "sd": 0.012220775129885751,
+          "min": -0.010649447869288921,
+          "max": 0.013363143575894344,
+          "z": 0.4703041718100775
+        }
+      },
+      "strictAbsZ": 0.4703041718100775,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10410,
+          "holdoutCount": 19527,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0022680251390596413,
+          "adjustedCorrelation": -0.007253811169500008,
+          "pairs": 19526
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10361,
+          "holdoutCount": 19739,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0010530792323321728,
+          "adjustedCorrelation": -0.0003434850667820379,
+          "pairs": 19738
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10415,
+          "holdoutCount": 19660,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005037131910213929,
+          "adjustedCorrelation": -0.0016440933681906886,
+          "pairs": 19659
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3335,
+          "holdoutCount": 7004,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005063570071896093,
+          "adjustedCorrelation": 0.002464118072132783,
+          "pairs": 7003
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3328,
+          "holdoutCount": 6961,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00017014962906433212,
+          "adjustedCorrelation": 0.00023874818037060148,
+          "pairs": 6960
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3261,
+          "holdoutCount": 6998,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004740860762753997,
+          "adjustedCorrelation": 0.004944941322526216,
+          "pairs": 6997
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 500000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 210,
+        "trainingCount": 10310,
+        "holdoutCount": 19493,
+        "classCount": 529,
+        "unseenFraction": 0.010619196634689375,
+        "rawCorrelation": 0.017185667454479258,
+        "adjustedCorrelation": 0.012761505150667226,
+        "pairs": 19492
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 3,
+          "range": [
+            -0.0035175266110089682,
+            0.0020656424345804995
+          ],
+          "mean": 0.00007378197744525022,
+          "sd": 0.003116347203296178,
+          "min": -0.0035175266110089682,
+          "max": 0.0020656424345804995,
+          "z": 4.071344540750177
+        },
+        "roughComposite": {
+          "count": 3,
+          "range": [
+            0.0019424408886367175,
+            0.005613389474823869
+          ],
+          "mean": 0.0042838763356432075,
+          "sd": 0.0020339508225161265,
+          "min": 0.0019424408886367175,
+          "max": 0.005613389474823869,
+          "z": 4.1680598769525075
+        },
+        "realOrderShuffle": {
+          "count": 3,
+          "range": [
+            -0.007674455404349967,
+            -0.0010797860027739455
+          ],
+          "mean": -0.0047142840328711876,
+          "sd": 0.003348649498068351,
+          "min": -0.007674455404349967,
+          "max": -0.0010797860027739455,
+          "z": 5.218757350872111
+        }
+      },
+      "strictAbsZ": 4.071344540750177,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10410,
+          "holdoutCount": 19527,
+          "classCount": 524,
+          "unseenFraction": 0.013314897321657193,
+          "rawCorrelation": -0.0022680251390596413,
+          "adjustedCorrelation": -0.0035175266110089682,
+          "pairs": 19526
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10361,
+          "holdoutCount": 19739,
+          "classCount": 515,
+          "unseenFraction": 0.013121232078626071,
+          "rawCorrelation": 0.0010530792323321728,
+          "adjustedCorrelation": 0.0016732301087642194,
+          "pairs": 19738
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10415,
+          "holdoutCount": 19660,
+          "classCount": 528,
+          "unseenFraction": 0.011495422177009156,
+          "rawCorrelation": 0.005037131910213929,
+          "adjustedCorrelation": 0.0020656424345804995,
+          "pairs": 19659
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3335,
+          "holdoutCount": 7004,
+          "classCount": 1036,
+          "unseenFraction": 0.10151342090234151,
+          "rawCorrelation": 0.005063570071896093,
+          "adjustedCorrelation": 0.005295798643469037,
+          "pairs": 7003
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3328,
+          "holdoutCount": 6961,
+          "classCount": 1054,
+          "unseenFraction": 0.09969831920701049,
+          "rawCorrelation": 0.00017014962906433212,
+          "adjustedCorrelation": 0.0019424408886367175,
+          "pairs": 6960
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3261,
+          "holdoutCount": 6998,
+          "classCount": 1050,
+          "unseenFraction": 0.10431551871963418,
+          "rawCorrelation": 0.004740860762753997,
+          "adjustedCorrelation": 0.005613389474823869,
+          "pairs": 6997
+        }
+      ]
+    }
+  ],
+  "leadGate": {
+    "allFinalPass": false,
+    "signStable": false,
+    "passed": false
+  },
+  "paths": {
+    "json": "logs/gap-transition-copula/gap-transition-copula-quick.json",
+    "md": "logs/gap-transition-copula/gap-transition-copula-quick.md",
+    "svg": "logs/gap-transition-copula/gap-transition-copula-quick.svg"
+  }
+}

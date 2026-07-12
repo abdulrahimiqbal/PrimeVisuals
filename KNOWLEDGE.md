@@ -8,6 +8,235 @@ theorem), `OBSERVED` (replicated here, unexplained in hand), `OPEN`
 
 ---
 
+## 2026-07-10 · RH-EQUIVALENT / NEW VIEW — Weil screw prime-knot decomposition
+
+Source: `logs/weil-screw/PREREGISTRATION.md`, pilot artifacts, and
+`logs/weil-screw/NOVELTY_AUDIT.md`; implementation `src/core/weilScrew.js`
+and `scripts/weil-screw-knot-pilot.mjs`.
+
+Object:
+Suzuki's June-2026 continuous screw function expresses the Weil kernel through
+archimedean terms and prime-power knots
+`Lambda(n)/sqrt(n)(|t|-log n)_+`. On positive points every knot decomposes
+exactly into `-2 min(t,u)` plus the increment kernel of the positive triangular
+stationary covariance `(c-|t-u|)_+`.
+
+Result:
+matrix reconstruction errors stay below `2e-10` through `exp(a)=1000` on
+uniform and Chebyshev grids of dimensions 12, 20, and 28. All sampled total
+Weil kernels are nonnegative. Separate-eigenvalue domination fails strongly:
+the simple lower bound falls to about `-62`, while the full generalized minimum
+remains near `8e-4`. Finite positivity is produced by cross-eigenspace
+alignment.
+
+Disguise:
+the second derivative of each knot produces cosine frequency
+`cos(xi log n)`; summing prime-power weights recovers the prime side of Weil's
+explicit formula. A global Fourier proof is therefore circular. The only
+unclosed residue is a uniform principal-angle bound for localized compressed
+operators, already adjacent to work of Yoshida, Bombieri,
+Connes--Consani--Moscovici, and Suzuki.
+
+STATUS: `EXACT NEW COORDINATE / NO RH CLAIM / LOCALIZED ANGLE PROBLEM OPEN`.
+
+CONNECTION:
+this is the first campaign object whose failure mode isolates a genuinely
+operator-theoretic obstruction rather than a local-sieve or Möbius shadow. A
+future survivor must control eigenspace alignment uniformly in support radius;
+finite positivity or the knot identity alone is insufficient.
+
+Follow-up alignment audit:
+the deficit-normalized triangular frame has coverage above one on every
+frozen 28-point cell and its exact Schur reserve is positive.  This does not
+survive the disguise audit as a new invariant.  Once the archimedean/linear
+block is negative on the whole sampled space, coverage above one is, by
+congruence, exactly equivalent to positivity of the sampled Weil matrix.  At
+smaller radii the Schur complement is likewise an exact reformulation.  No
+independent reserve bound or valid extrapolation was obtained.
+
+CORRECTION/STATUS:
+`logs/weil-screw/ALIGNMENT_NOVELTY_AUDIT.md` supersedes the pilot verdict
+"frame-coverage law survives."  The computation survives only as a calibrated
+coordinate and anti-circularity test: `FINITE IDENTITY / NOT PROMOTED`.
+
+CvS parity follow-up:
+using the July-2026 cutoff-free closed forms, a proposed full alternation of
+even and odd finite spectra was preregistered and falsified.  Bulk violations
+occur with macroscopic margins, including at `c=3,N=7` and `c=13,N=6`.
+However, the actually relevant ground inequality `E_0<O_0` survived all 88
+zeta cells through `c=100,N=12`, with positive-cell ratios `O_0/E_0` from
+about `84.6` upward.  Reversed and signed prime-weight controls can break the
+ground ordering, so it is not forced by centrosymmetry alone.  A new unseen
+holdout is frozen in
+`logs/cvs-parity-interlacing/GROUND_PARITY_PREREGISTRATION.md`.
+
+STATUS: `FULL INTERLACING FALSIFIED / GROUND-PARITY CONJECTURE LIVE / NO THEOREM`.
+
+Ground-parity holdout result (2026-07-11):
+all 105 unseen cutoff-free zeta cells at 90 digits, with cutoffs
+`11,19,23,31,43,59,97` and `N=2,...,16`, satisfy `E_0<O_0`.  The smallest
+positive-cell ratio is about `178.8`.  The new reversed/signed controls also
+pass, while earlier controls at `c=17` and `c=100` failed, so arithmetic
+specificity is mixed.  No comparison theorem or continuum gap bound is known.
+
+DECISION: `FINITE CONJECTURE SURVIVES / PAUSE BRUTE FORCE`.  Additional matrix
+ladders are low value; continue only with a symbolic parity comparison or a
+proof-level obstruction.
+
+## 2026-07-10 · RH-EQUIVALENT / CALIBRATED NEGATIVE — Nyman--Beurling Schur flow
+
+Source: `logs/nyman-beurling/PREREGISTRATION.md`, pilot artifacts and
+`logs/nyman-beurling/NOVELTY_AUDIT.md`; implementation
+`src/core/nymanBeurling.js` and `scripts/nyman-schur-pilot.mjs`.
+
+Object:
+use Ehm's q=1 Gram formula for the Báez--Duarte integer-dilation form of the
+Nyman--Beurling criterion, compute the optimal squared distance `d_N^2`, and
+score the one-step Schur innovation `d_(N-1)^2-d_N^2` only after removing
+index, Gram-pivot, and newest-coefficient magnitude effects. The limit
+`d_N->0` is equivalent to RH; finite monotonicity is automatic and never
+counts as evidence.
+
+Result:
+the prime class has a full-range residual innovation effect at permutation
+`z=4.55`, but misses the frozen final-third gate at `z=3.01`. The containing
+negative-Möbius class falls from `z=4.04` to `z=2.55`. Müntz direct cutoffs
+2048/4096/8192 give log-gain correlations 1 at printed precision and maximum
+distance change below `9.5e-13`.
+
+Disguise:
+optimal Nyman--Beurling Dirichlet polynomials are already governed by
+Möbius/Levinson--Selberg coefficients. The observed feature is a finite
+coefficient shadow and supplies no bound forcing the approximation distance to
+zero. Ehm's decomposition locates the true unresolved work in Landau/Mertens
+and inversion-error estimates.
+
+STATUS: `CALIBRATED NEGATIVE / NO CONJECTURE / RH PROOF OBLIGATION SHARPENED`.
+
+CONNECTION:
+the exact Gram/Krylov machinery transfers successfully from the Maynard sieve
+problem into an RH-equivalent Hilbert-space problem, but descriptive arithmetic
+classification is again insufficient. The next candidate must control the full
+quadratic error or factor it positively, not merely explain finite innovations.
+
+## 2026-07-10 · THEOREM-ADJACENT / EXACT CALIBRATION — Maynard--Tao variational engine
+
+Source: `logs/maynard-variational/PREREGISTRATION.md` and
+`logs/maynard-variational/calibration.md`; implementation
+`src/core/maynardVariational.js` and
+`scripts/maynard-variational-audit.mjs`.
+
+Object:
+maximize `sum_m J_k^(m)(F)/I_k(F)` over polynomial functions on the simplex
+`sum t_i<=1`. Complete monomial Gram matrices and Maynard's symmetric
+`(1-P1)^b P2^c` matrices are evaluated by closed-form simplex integrals.
+Candidate eigenvectors are numerical; promotion requires a rational witness
+rechecked with `BigInt`-only arithmetic.
+
+Calibration result:
+Maynard's explicit `k=5` witness is reproduced exactly as
+`1417255/708216 = 2.001162074847...`. The complete cubic optimizer proposes
+`2.002887195760...`; a four-decimal rationalization remains exactly
+`11148726395/5566329648 = 2.002886479963...`. The 42-dimensional symmetric
+engine reproduces Maynard's numerical `M_105` lower bound as
+`4.002069762947...`.
+
+Krylov extension:
+the exact moment generator reproduces the first Polymath8b formulas and a
+10-dimensional generalized eigenproblem gives `M_5>=2.007140291425...`,
+matching the later published table value `2.00714`. The stable
+8-dimensional k=54 ladder reaches `3.699398868216...`; deeper double-precision
+Hankel systems are too ill-conditioned to certify.
+
+Correction:
+the earlier council target `M_50>4` conflated two quantities. Polymath8b
+proves standard `M_54>4.00238`; its k=50 value above 4 is the enlarged-support
+`M_{50,1/25}>4.0043`. The present 42-term basis gives only
+`3.699945714759...` at k=54. The Krylov basis is now implemented, but
+high-precision depth and rational certification remain the next mandatory
+calibration.
+
+STATUS: `VALIDATED ENGINE / KNOWN RESULTS REPRODUCED / NO NEW THEOREM YET`.
+
+CONNECTION:
+unlike the two invariant pilots above, this route has a direct theorem gate:
+an exact improvement to `M_k`, combined with a checked admissible tuple, can
+change a bounded-gap consequence. Numerical eigenvalues alone never qualify.
+
+## 2026-07-10 · NEW-OBJECT / CALIBRATION — sieve-conditioned interaction defect flow
+
+Source: `logs/2026-07-10-local-global-defect.md`; preregistration
+`logs/local-global-defect/PREREGISTRATION.md`; pilot and factor artifacts in
+`logs/local-global-defect/`; implementation
+`src/core/localGlobalDefect.js`, `scripts/local-global-defect-pilot.mjs`, and
+`scripts/scid-factor-check.mjs`.
+
+Object:
+for a fixed three-shift constellation, restrict centers to those where every
+shift avoids all local factors through a cutoff. On the resulting three-bit
+prime/irreducible mask distribution `P`, define total correlation
+`TC=sum_i H(P_i)-H(P)` and normalized defect
+`SCID=TC/sum_i H(P_i)`. The local-information coordinate is
+`tau=-log(eligible fraction)`.
+
+Result:
+the shallow-cutoff signal is strong but decays under deeper exact local
+conditioning. At `N=1,000,000`, integer strict control z-scores fall from
+`47.5..56.1` at `p<=5` to `-1.09..0.63` at `p<=29`. `F_3[t]` and `F_5[t]`
+show the same qualitative collapse before their deep composite controls lose
+support. `F_2[t]` degree 20 retains two shape-level excesses at local degree 3,
+but fails three-shape replication and remains the same order as the truncated
+tuple Euler-product prediction.
+
+Disguise check:
+the eight three-bit mask probabilities are recovered by inclusion–exclusion
+from the seven nonempty subset moments. SCID is therefore a nonlinear summary
+of fixed single/pair/triple prime-tuple counts, not a new arithmetic invariant.
+The factor audit reconstructs its scale from Hardy–Littlewood and
+prime-polynomial tuple Euler products. Named composites/reducibles are included
+as strict controls; deeper `F_3[t]`/`F_5[t]` points fail rather than bypass that
+gate when their reducible pools are too small.
+
+STATUS: `CALIBRATION / KNOWN-CONJECTURAL TUPLE CONTENT / NO SURVIVOR`.
+
+CONNECTION:
+this supplies the common explanation for the centered-tensor and quotient
+spectral cycles 003–007: any fixed-dimensional statistic of a fixed shift mask
+factors through finitely many tuple moments. Future searches must use growing
+exclusion sets, genuine sequence dynamics, or another object not recoverable
+from fixed tuple counts.
+
+## 2026-07-10 · NEW-OBJECT / CALIBRATED NEGATIVE — deep-admissible gap transition copula
+
+Source: `logs/2026-07-10-local-global-defect.md`; preregistration and artifacts
+in `logs/gap-transition-copula/`; implementation
+`src/core/gapTransitionCopula.js` and
+`scripts/gap-transition-copula-pilot.mjs`.
+
+Object:
+map each consecutive prime gap to its pointwise `B`-admissible mid-PIT value,
+cross-fit an empirical rank coordinate, subtract a shrunk training mean for
+the residue transition class `(p_i mod W,p_{i+1} mod W)`, and score lag-one
+correlation of the holdout residual sequence.
+
+Result:
+the shallow `B=29,W=210` cell reaches adjusted correlation `-0.0254121` and
+strict `|z|=4.86` at `N=2,000,000`, but the preregistered deeper cutoff breaks
+the lead. At `B=97,W=210`, correlation is `-0.0081227`, inside the same-B fake
+and B-rough-composite controls, with strict `|z|=0.63`. `B=97,W=30` similarly
+has strict `|z|=1.07`. Support passes, and the sign is stable, but cutoff and
+control survival fail.
+
+STATUS: `CALIBRATED NEGATIVE / NO CONFIRMATORY RUN`.
+
+CONNECTION:
+this is the order-sensitive successor to the one-gap PIT and
+transition-matched adjacent-gap entries. It shows that even after marginal
+rank removal and residue-transition subtraction, the apparent lag-one signal
+at cutoff 29 is leftover local admissibility: extending the exact pointwise
+null through 97 absorbs it.
+
+
 ## 2026-06-16 · FRONTIER / LOCAL CHOWLA WEATHER — no survivor
 
 Source: `logs/frontier/chowla-weather-report.md`; audit data
@@ -5091,3 +5320,115 @@ statistics must first subtract the LO-S/residue-transition layer or combine
 gap order with a genuinely different arithmetic feature; otherwise Cramer and
 shuffle may be beaten while bar 5 still recognizes the known adjacent-gap
 anti-persistence funnel.
+
+## 2026-07-11 · CANDIDATE-CONJECTURE — adjacent-block prime anticorrelation
+
+Define `A(x,H)=psi(x+H)-psi(x)-H` and
+`ABAC(X,H)=-(XH)^(-1) integral_X^(2X) A(x,H)A(x+H,H) dx`. The candidate is
+`ABAC(X,H) -> log(2)` uniformly for `X^epsilon <= H <= X^(1-epsilon)`.
+Unlike a raw dyadic variance difference, splitting the same `2H` interval
+gives the exact polarization identity
+`(A^2+B^2-(A+B)^2)/(2H)=-AB/H`; the two blocks are disjoint, so the
+von-Mangoldt diagonal vanishes pointwise.
+
+Expanding with `a(n)=Lambda(n)-1` gives an exact negative tent-weighted sum of
+distinct-shift correlations. After subtracting the Hardy--Littlewood pair
+singular series, the entire conjecture reduces to one uniform statement:
+the tent-weighted average of the aligned prime-pair remainders is `o(1)`.
+Montgomery's constant-term singular-series calculation supplies the `log(2)`
+main term. This additive statement is stronger than the ordinary relative
+variance asymptotic; the latter alone cannot resolve a constant dyadic
+difference.
+
+On the spectral side the exact kernel is
+`K_H(alpha)=-(1/H)|sum_{j<=H}e(j alpha)|^2 cos(2 pi H alpha)`. It changes sign
+and has exactly zero Lebesgue mean, so a flat white-noise spectrum contributes
+zero while the prime prediction is `log(2)`. This is the current invariant
+interpretation; its relationship to known polarized Selberg integrals still
+requires an expert literature audit.
+
+The exact identities and finite audit are implemented in
+`src/core/primeVariance.js`, `tests/prime-variance.test.js`, and
+`scripts/dpvr-audit.mjs`. At `X=1.6e6`, integer-start values were close at
+`H=36,117,303` and noisy at `H=1265,5278`; this is diagnostic only. Full
+derivation, proof obligation, citations, and novelty caveat are in
+`logs/2026-07-11-adjacent-block-prime-anticorrelation.md`. Status is
+`CANDIDATE-CONJECTURE / EXACT-REDUCTION / NOVELTY-UNRESOLVED`; no RH
+consequence is claimed.
+
+Feasibility verdict, same day: `PARKED / NO-GO AS PRIMARY BREAKTHROUGH BET`.
+Writing the normalized tent remainder as
+`T(X,H)=sum_{h<2H} tau_H(h) E_X(h)`, ABAC needs `T=o(X)`. The 2024/2026
+Matomaki--Radziwill--Shao--Tao--Teravainen almost-all-shift Hardy--Littlewood
+machinery controls correlation errors at total scale `o(HX)`, missing the ABAC
+secondary term by a full factor `H`. Its quantitative `U^2` input for `Lambda`
+gives polylogarithmic savings, while a generalized von Neumann treatment of
+the `X H^2` three-variable form would require uniformity `o(1/H)` for
+polynomial `H`. Type I/local terms recover the singular-series main; Type II
+is the obstruction. Absolute values, phase-by-phase estimates, and
+Cauchy--Schwarz respectively lose the zero-mean kernel, an `H` factor, or
+return to the original positive variance problem. Full audit:
+`logs/2026-07-11-abac-feasibility-verdict.md`. Reopen only upon a direct signed
+Type II bound `T << X/log^A X` for actual `Lambda` without RH/PCC/HL.
+
+## 2026-07-11 · PARALLEL-TOURNAMENT — invariant search and structural narrowing
+
+Three independent agent lanes (frontier audit, exact-kernel construction,
+and solvable-model transport) were cross-examined. No exact RH-leading
+invariant survived. Full report:
+`logs/2026-07-11-invariant-agent-tournament.md`.
+
+Structural result: every translation-invariant quadratic prime-block
+statistic has lag kernel `K_fg(h)=sum_u f(u)g(u+h)`, with
+`K_fg(0)=<f,g>` and `sum_h K_fg(h)=(sum f)(sum g)`. Cancelling both the
+diagonal and constant background forces the main to the lower-order
+singular-series scale while retaining normalized kernel mass `asymp H`.
+This recreates ABAC's missing-factor-`H` requirement. Stop searching the
+quadratic block/covariance class.
+
+Sieve-flow innovations are exact martingale differences over complete CRT
+periods, but the candidate fails as a terminal route: finite-`X` density near
+`y=X^(1/u)` is Buchstab `omega(u)/log y`, not Mertens
+`exp(-gamma)/log y`, and at `y=sqrt(2X)` the innovation energy is prime
+short-interval variance in another basis. Keep only a capped
+Buchstab-corrected calibration.
+
+The sole surviving field-level mechanism is nonlinear large-value incidence
+for Dirichlet polynomials. The tightly gated candidate restricts the
+Guth--Maynard incidence functional to balanced prime-detecting
+Vaughan/Heath--Brown coefficient classes and asks for a fixed-power deficit in
+the critical rationally concentrated `S3` branch. Pass only if the structured
+deficit occurs in a zero-density-limiting parameter range and the zero
+detector preserves that structure. Kill if balanced coefficients saturate the
+generic `S3` example or yield only logarithmic savings. This can improve
+zero-density/short-interval exponents but is not an RH implication; a separate
+zero-exclusion principle remains necessary.
+
+## 2026-07-12 · KILL-TEST — structured large-value incidence
+
+Exact reconstruction killed the provisional tournament survivor as a primary
+invariant. Full audit:
+`logs/2026-07-12-structured-incidence-kill-test.md`.
+
+Corrections: the `30/13` bottleneck is at `sigma=7/10`, base detector length
+`N=T^(5/13)`, squared-polynomial length `P=T^(10/13)`, local height
+`T1=T^(12/13)=P^(6/5)`, threshold `V=P^(7/10)`, and
+`|W|~T1^(2/3)`. It is not the headline `V=P^(3/4)` regime. The detector
+coefficients are a balanced convolution of truncated-Mobius/divisor-sum
+weights, not prime-supported Heath--Brown coefficients.
+
+More decisively, Guth--Maynard pass from the coefficient vector to the top
+singular value of a universal matrix `M_W`; their later cubic trace and
+`S1+S2+S3` decomposition depend on `W`, not the coefficients. A structured
+gain therefore needs a new directional top-singular-subspace theorem for the
+specific detector, not a better coefficient-sensitive bound on their existing
+`S3`. At the true parameters both dominant terms
+`P^(18/5)V^(-4)` and `T1 P^(12/5)V^(-4)` equal `P^(4/5)=T1^(2/3)`, so both
+must improve. The saving must also extend below `sigma=7/10`, or Ingham's
+left-hand branch leaves the uniform `30/13` constant unchanged.
+
+Verdict: `KILLED AS PRIMARY / RETAINED AS ESTABLISHED FRONTIER`. There is no
+unconditional first lemma between current results and the required
+fixed-power directional deficit, and finite simulation cannot represent the
+`T^(1/100)` detector cutoff or critical rational concentration. Reopen only
+if an independent coefficient-sensitive spectral theorem appears.

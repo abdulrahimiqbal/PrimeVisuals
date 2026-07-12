@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-07-10T17:54:33.051Z",
+  "k": 5,
+  "dimension": 4,
+  "precision": 60,
+  "rationalDigits": 30,
+  "moments": 8,
+  "finalPolynomialTermCount": 42,
+  "numericalQuotient": "2.002207261895853647839082487377306489723380930118820117",
+  "numericalResidual": "3.628621832107e-52",
+  "rotations": 28,
+  "converged": true,
+  "exactNumerator": "108361796823078427812898247093644462571082662823552900826201771",
+  "exactDenominator": "54121168614917824675649326032229167893684139254332871781770106",
+  "exactQuotient": "2.002207261895853647839082487377306489723380930118820117",
+  "exactAboveFour": false,
+  "marginAboveFour": "-1.99779273810414635216091751262269351027661906988117988315427",
+  "coefficients": [
+    {
+      "krylovPower": 0,
+      "numerator": "-79604161788067350236677150177",
+      "denominator": "1000000000000000000000000000000"
+    },
+    {
+      "krylovPower": 1,
+      "numerator": "593162094912746924385236876169",
+      "denominator": "1000000000000000000000000000000"
+    },
+    {
+      "krylovPower": 2,
+      "numerator": "-1000000000000000000000000000000",
+      "denominator": "1000000000000000000000000000000"
+    },
+    {
+      "krylovPower": 3,
+      "numerator": "421598300234526705958403588882",
+      "denominator": "1000000000000000000000000000000"
+    }
+  ]
+}

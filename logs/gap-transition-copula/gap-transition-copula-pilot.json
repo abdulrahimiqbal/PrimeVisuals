@@ -1,0 +1,3949 @@
+{
+  "candidate": "deep-admissible prime-gap transition copula",
+  "grade": "EXPLORATORY_PILOT_ONLY",
+  "generatedAt": "2026-07-10T13:45:56.902Z",
+  "quick": false,
+  "N": 2000000,
+  "endpoints": [
+    500000,
+    1000000,
+    2000000
+  ],
+  "cutoffs": [
+    29,
+    97
+  ],
+  "wheels": [
+    30,
+    210
+  ],
+  "startAfter": 100000,
+  "shrinkage": 20,
+  "minimumPairs": 20000,
+  "seeds": [
+    12345,
+    271828,
+    314159,
+    161803,
+    424242,
+    8675309,
+    104729,
+    130363,
+    999983,
+    15485863,
+    32452843,
+    49979687
+  ],
+  "rows": [
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 500000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 30,
+        "trainingCount": 10310,
+        "holdoutCount": 19494,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": 0.00006489454859243723,
+        "adjustedCorrelation": -0.014322367778729101,
+        "pairs": 19493
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.018564940178243432,
+            0.004628754830946682
+          ],
+          "mean": -0.00741678767666899,
+          "sd": 0.005534576172662595,
+          "min": -0.018564940178243432,
+          "max": 0.004628754830946682,
+          "z": -1.2477161550634053
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.019055737789953626,
+            0.005036557960460391
+          ],
+          "mean": -0.006242776546388521,
+          "sd": 0.008043817719296317,
+          "min": -0.019055737789953626,
+          "max": 0.005036557960460391,
+          "z": -1.0044473301475303
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.014205137918716042,
+            0.012272317295435297
+          ],
+          "mean": 0.00002232018054129481,
+          "sd": 0.008648414605398384,
+          "min": -0.014205137918716042,
+          "max": 0.012272317295435297,
+          "z": -1.658649430418885
+        }
+      },
+      "strictAbsZ": 1.0044473301475303,
+      "supportPass": false,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10404,
+          "holdoutCount": 19492,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002366455781127076,
+          "adjustedCorrelation": -0.004901572105201086,
+          "pairs": 19491
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10285,
+          "holdoutCount": 19674,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0009410506795785969,
+          "adjustedCorrelation": -0.00852679181496972,
+          "pairs": 19673
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10250,
+          "holdoutCount": 19547,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005767046557479868,
+          "adjustedCorrelation": -0.004059868159403796,
+          "pairs": 19546
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10310,
+          "holdoutCount": 19561,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0005363200749491835,
+          "adjustedCorrelation": -0.005563050585043273,
+          "pairs": 19560
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10296,
+          "holdoutCount": 19694,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.006311394206097309,
+          "adjustedCorrelation": -0.018564940178243432,
+          "pairs": 19693
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10276,
+          "holdoutCount": 19497,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.008603612326777475,
+          "adjustedCorrelation": -0.0068421706040301756,
+          "pairs": 19496
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10235,
+          "holdoutCount": 19471,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00224053601536266,
+          "adjustedCorrelation": -0.008808037146302228,
+          "pairs": 19470
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10181,
+          "holdoutCount": 19599,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0015205344135447623,
+          "adjustedCorrelation": -0.006786724687500383,
+          "pairs": 19598
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10260,
+          "holdoutCount": 19324,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00762741204283728,
+          "adjustedCorrelation": -0.0068438155799889055,
+          "pairs": 19323
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10245,
+          "holdoutCount": 19461,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.005303669905253277,
+          "adjustedCorrelation": -0.013723888126336022,
+          "pairs": 19460
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10294,
+          "holdoutCount": 19453,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0014853523363799331,
+          "adjustedCorrelation": -0.009009347963955553,
+          "pairs": 19452
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10311,
+          "holdoutCount": 19700,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.014909552277037007,
+          "adjustedCorrelation": 0.004628754830946682,
+          "pairs": 19699
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4943,
+          "holdoutCount": 9882,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.002169785783886242,
+          "adjustedCorrelation": 0.002285413280152866,
+          "pairs": 9881
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4952,
+          "holdoutCount": 9907,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005966592630236971,
+          "adjustedCorrelation": 0.0015224390800516047,
+          "pairs": 9906
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4872,
+          "holdoutCount": 9833,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004877653001865371,
+          "adjustedCorrelation": -0.0011118506505470142,
+          "pairs": 9832
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4935,
+          "holdoutCount": 9928,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.01580577567091952,
+          "adjustedCorrelation": -0.01740993919005701,
+          "pairs": 9927
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4948,
+          "holdoutCount": 9880,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.021754110287398768,
+          "adjustedCorrelation": -0.019055737789953626,
+          "pairs": 9879
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4886,
+          "holdoutCount": 9844,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00036911928270013473,
+          "adjustedCorrelation": 0.005036557960460391,
+          "pairs": 9843
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4955,
+          "holdoutCount": 9888,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.01370147348632759,
+          "adjustedCorrelation": -0.0051634294526035525,
+          "pairs": 9887
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4864,
+          "holdoutCount": 9845,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.006443267597845543,
+          "adjustedCorrelation": -0.010916232367174001,
+          "pairs": 9844
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4950,
+          "holdoutCount": 9923,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.01434725104760534,
+          "adjustedCorrelation": -0.015063419956231422,
+          "pairs": 9922
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4848,
+          "holdoutCount": 9860,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0003247936862695078,
+          "adjustedCorrelation": -0.000774731756992736,
+          "pairs": 9859
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4876,
+          "holdoutCount": 9827,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.005532128183431832,
+          "adjustedCorrelation": -0.008543487061341493,
+          "pairs": 9826
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 4969,
+          "holdoutCount": 9858,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0005623500275339663,
+          "adjustedCorrelation": -0.0057189006524262665,
+          "pairs": 9857
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 500000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 210,
+        "trainingCount": 10310,
+        "holdoutCount": 19494,
+        "classCount": 529,
+        "unseenFraction": 0.01061865189289012,
+        "rawCorrelation": 0.00006489454859243723,
+        "adjustedCorrelation": -0.008350265407944665,
+        "pairs": 19493
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.012117866182676473,
+            0.008443035771570906
+          ],
+          "mean": -0.004711533147291995,
+          "sd": 0.005568370343580136,
+          "min": -0.012117866182676473,
+          "max": 0.008443035771570906,
+          "z": -0.6534644853225007
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.021167259720505163,
+            0.00482729948661883
+          ],
+          "mean": -0.007235810862407797,
+          "sd": 0.00773189037765667,
+          "min": -0.021167259720505163,
+          "max": 0.00482729948661883,
+          "z": -0.1441373960444884
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.01001272962270358,
+            0.020516371758042263
+          ],
+          "mean": 0.004478060426689569,
+          "sd": 0.009269337152019295,
+          "min": -0.01001272962270358,
+          "max": 0.020516371758042263,
+          "z": -1.383952878641341
+        }
+      },
+      "strictAbsZ": 0.1441373960444884,
+      "supportPass": false,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10404,
+          "holdoutCount": 19492,
+          "classCount": 537,
+          "unseenFraction": 0.01210753129489021,
+          "rawCorrelation": -0.002366455781127076,
+          "adjustedCorrelation": -0.0047153109141402265,
+          "pairs": 19491
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10285,
+          "holdoutCount": 19674,
+          "classCount": 538,
+          "unseenFraction": 0.012249669614719934,
+          "rawCorrelation": -0.0009410506795785969,
+          "adjustedCorrelation": -0.006158431230166904,
+          "pairs": 19673
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10250,
+          "holdoutCount": 19547,
+          "classCount": 539,
+          "unseenFraction": 0.011766511485138385,
+          "rawCorrelation": 0.005767046557479868,
+          "adjustedCorrelation": -0.0024782777957405955,
+          "pairs": 19546
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10310,
+          "holdoutCount": 19561,
+          "classCount": 536,
+          "unseenFraction": 0.013547364654158785,
+          "rawCorrelation": 0.0005363200749491835,
+          "adjustedCorrelation": -0.004988673140596974,
+          "pairs": 19560
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10296,
+          "holdoutCount": 19694,
+          "classCount": 531,
+          "unseenFraction": 0.011729460749466843,
+          "rawCorrelation": -0.006311394206097309,
+          "adjustedCorrelation": -0.012117866182676473,
+          "pairs": 19693
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10276,
+          "holdoutCount": 19497,
+          "classCount": 547,
+          "unseenFraction": 0.011078627481150946,
+          "rawCorrelation": 0.008603612326777475,
+          "adjustedCorrelation": 0.0010659958860564616,
+          "pairs": 19496
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10235,
+          "holdoutCount": 19471,
+          "classCount": 546,
+          "unseenFraction": 0.011812439011863797,
+          "rawCorrelation": -0.00224053601536266,
+          "adjustedCorrelation": -0.007256237983696917,
+          "pairs": 19470
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10181,
+          "holdoutCount": 19599,
+          "classCount": 549,
+          "unseenFraction": 0.01061278636665136,
+          "rawCorrelation": -0.0015205344135447623,
+          "adjustedCorrelation": -0.002832824062103074,
+          "pairs": 19598
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10260,
+          "holdoutCount": 19324,
+          "classCount": 526,
+          "unseenFraction": 0.013403022148623473,
+          "rawCorrelation": -0.00762741204283728,
+          "adjustedCorrelation": -0.011389470218358821,
+          "pairs": 19323
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10245,
+          "holdoutCount": 19461,
+          "classCount": 536,
+          "unseenFraction": 0.011921278454344587,
+          "rawCorrelation": -0.005303669905253277,
+          "adjustedCorrelation": -0.008933333071168283,
+          "pairs": 19460
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10294,
+          "holdoutCount": 19453,
+          "classCount": 540,
+          "unseenFraction": 0.012028992957384466,
+          "rawCorrelation": 0.0014853523363799331,
+          "adjustedCorrelation": -0.0051770048264830355,
+          "pairs": 19452
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10311,
+          "holdoutCount": 19700,
+          "classCount": 533,
+          "unseenFraction": 0.01284263959390863,
+          "rawCorrelation": 0.014909552277037007,
+          "adjustedCorrelation": 0.008443035771570906,
+          "pairs": 19699
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4943,
+          "holdoutCount": 9882,
+          "classCount": 895,
+          "unseenFraction": 0.04654928152195912,
+          "rawCorrelation": 0.002169785783886242,
+          "adjustedCorrelation": -0.00016477149123155847,
+          "pairs": 9881
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4952,
+          "holdoutCount": 9907,
+          "classCount": 895,
+          "unseenFraction": 0.050368426365196325,
+          "rawCorrelation": 0.005966592630236971,
+          "adjustedCorrelation": 0.00482729948661883,
+          "pairs": 9906
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4872,
+          "holdoutCount": 9833,
+          "classCount": 893,
+          "unseenFraction": 0.04637445337130072,
+          "rawCorrelation": -0.004877653001865371,
+          "adjustedCorrelation": -0.002257118261278034,
+          "pairs": 9832
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4935,
+          "holdoutCount": 9928,
+          "classCount": 897,
+          "unseenFraction": 0.045527800161160356,
+          "rawCorrelation": -0.01580577567091952,
+          "adjustedCorrelation": -0.0170764344518644,
+          "pairs": 9927
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4948,
+          "holdoutCount": 9880,
+          "classCount": 885,
+          "unseenFraction": 0.046153846153846156,
+          "rawCorrelation": -0.021754110287398768,
+          "adjustedCorrelation": -0.021167259720505163,
+          "pairs": 9879
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4886,
+          "holdoutCount": 9844,
+          "classCount": 893,
+          "unseenFraction": 0.053738317757009345,
+          "rawCorrelation": -0.00036911928270013473,
+          "adjustedCorrelation": -0.002985817600511969,
+          "pairs": 9843
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4955,
+          "holdoutCount": 9888,
+          "classCount": 874,
+          "unseenFraction": 0.0505663430420712,
+          "rawCorrelation": -0.01370147348632759,
+          "adjustedCorrelation": -0.012594841974794492,
+          "pairs": 9887
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4864,
+          "holdoutCount": 9845,
+          "classCount": 889,
+          "unseenFraction": 0.049162011173184354,
+          "rawCorrelation": -0.006443267597845543,
+          "adjustedCorrelation": -0.006855846659414858,
+          "pairs": 9844
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4950,
+          "holdoutCount": 9923,
+          "classCount": 870,
+          "unseenFraction": 0.049984883603748864,
+          "rawCorrelation": -0.01434725104760534,
+          "adjustedCorrelation": -0.015511098256855376,
+          "pairs": 9922
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4848,
+          "holdoutCount": 9860,
+          "classCount": 891,
+          "unseenFraction": 0.04979716024340771,
+          "rawCorrelation": -0.0003247936862695078,
+          "adjustedCorrelation": -0.0036432008798311663,
+          "pairs": 9859
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4876,
+          "holdoutCount": 9827,
+          "classCount": 907,
+          "unseenFraction": 0.04915030019334487,
+          "rawCorrelation": -0.005532128183431832,
+          "adjustedCorrelation": -0.00631338953265164,
+          "pairs": 9826
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 4969,
+          "holdoutCount": 9858,
+          "classCount": 881,
+          "unseenFraction": 0.04503956177723676,
+          "rawCorrelation": -0.0005623500275339663,
+          "adjustedCorrelation": -0.0030872510065737364,
+          "pairs": 9857
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 1000000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 1000000,
+        "wheel": 30,
+        "trainingCount": 19494,
+        "holdoutCount": 36960,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": -0.006906426132588654,
+        "adjustedCorrelation": -0.017031126203271987,
+        "pairs": 36959
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.014080658658858927,
+            0.0010920138606580509
+          ],
+          "mean": -0.005669629825743667,
+          "sd": 0.004823198125200378,
+          "min": -0.014080658658858927,
+          "max": 0.0010920138606580509,
+          "z": -2.3555939612280206
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.028789009371548428,
+            0.0047772012328465415
+          ],
+          "mean": -0.00811846448797722,
+          "sd": 0.008845276386935042,
+          "min": -0.028789009371548428,
+          "max": 0.0047772012328465415,
+          "z": -1.0076182275614651
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.009613561976449945,
+            0.009954234755458312
+          ],
+          "mean": 0.00021429371551993763,
+          "sd": 0.006406575947697643,
+          "min": -0.009613561976449945,
+          "max": 0.009954234755458312,
+          "z": -2.69183102792834
+        }
+      },
+      "strictAbsZ": 1.0076182275614651,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19492,
+          "holdoutCount": 37098,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0020494259568698426,
+          "adjustedCorrelation": -0.002653135638550016,
+          "pairs": 37097
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19674,
+          "holdoutCount": 37114,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002473772702693013,
+          "adjustedCorrelation": -0.01053066329309306,
+          "pairs": 37113
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19547,
+          "holdoutCount": 36976,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0014506533986522454,
+          "adjustedCorrelation": -0.0030557374615248325,
+          "pairs": 36975
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19561,
+          "holdoutCount": 36947,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00767230266851084,
+          "adjustedCorrelation": 0.0010920138606580509,
+          "pairs": 36946
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19694,
+          "holdoutCount": 37109,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0026127724613646537,
+          "adjustedCorrelation": -0.0029091796868154977,
+          "pairs": 37108
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19497,
+          "holdoutCount": 36835,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0024334737888261505,
+          "adjustedCorrelation": -0.0008875641998285544,
+          "pairs": 36834
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19471,
+          "holdoutCount": 37095,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004082401521764534,
+          "adjustedCorrelation": -0.01029137054901168,
+          "pairs": 37094
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19599,
+          "holdoutCount": 36920,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004514104338414585,
+          "adjustedCorrelation": -0.011614652929999981,
+          "pairs": 36919
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19324,
+          "holdoutCount": 37085,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0072392933982412845,
+          "adjustedCorrelation": -0.005023077294497115,
+          "pairs": 37084
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19461,
+          "holdoutCount": 36810,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005069513847065078,
+          "adjustedCorrelation": -0.005905255922686608,
+          "pairs": 36809
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19453,
+          "holdoutCount": 36889,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0067227417081561144,
+          "adjustedCorrelation": -0.014080658658858927,
+          "pairs": 36888
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19700,
+          "holdoutCount": 36969,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.006794544765673412,
+          "adjustedCorrelation": -0.0021762761347157785,
+          "pairs": 36968
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9882,
+          "holdoutCount": 19690,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.008208800090155476,
+          "adjustedCorrelation": -0.0035020413035016535,
+          "pairs": 19689
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9907,
+          "holdoutCount": 19806,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.029110345354110383,
+          "adjustedCorrelation": -0.028789009371548428,
+          "pairs": 19805
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9833,
+          "holdoutCount": 19754,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.006082040970376203,
+          "adjustedCorrelation": -0.008491738485046356,
+          "pairs": 19753
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9928,
+          "holdoutCount": 19650,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.014642059223550394,
+          "adjustedCorrelation": -0.015211228040671654,
+          "pairs": 19649
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9880,
+          "holdoutCount": 19514,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.006707516348123113,
+          "adjustedCorrelation": 0.0039592319868573264,
+          "pairs": 19513
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9844,
+          "holdoutCount": 19733,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0013914225080868575,
+          "adjustedCorrelation": 0.0047772012328465415,
+          "pairs": 19732
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9888,
+          "holdoutCount": 19667,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004168046366159268,
+          "adjustedCorrelation": -0.008073515870735307,
+          "pairs": 19666
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9845,
+          "holdoutCount": 19701,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00930758540840151,
+          "adjustedCorrelation": -0.008243500289141196,
+          "pairs": 19700
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9923,
+          "holdoutCount": 19580,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.011943042084712153,
+          "adjustedCorrelation": -0.008982339154579298,
+          "pairs": 19579
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9860,
+          "holdoutCount": 19650,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.012243190381395742,
+          "adjustedCorrelation": -0.013544127095545323,
+          "pairs": 19649
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9827,
+          "holdoutCount": 19584,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.005530821033985986,
+          "adjustedCorrelation": -0.0037704990365531746,
+          "pairs": 19583
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 9858,
+          "holdoutCount": 19553,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004862546351698221,
+          "adjustedCorrelation": -0.0075500084281081145,
+          "pairs": 19552
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 1000000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 1000000,
+        "wheel": 210,
+        "trainingCount": 19494,
+        "holdoutCount": 36960,
+        "classCount": 625,
+        "unseenFraction": 0.00744047619047619,
+        "rawCorrelation": -0.006906426132588654,
+        "adjustedCorrelation": -0.014301110847858288,
+        "pairs": 36959
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.013438010112524785,
+            0.0017621438407414295
+          ],
+          "mean": -0.005205708621374342,
+          "sd": 0.004361655428143107,
+          "min": -0.013438010112524785,
+          "max": 0.0017621438407414295,
+          "z": -2.0853096665538624
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.03369927038250558,
+            0.0014444137660200847
+          ],
+          "mean": -0.01171912818241465,
+          "sd": 0.009313826645959446,
+          "min": -0.03369927038250558,
+          "max": 0.0014444137660200847,
+          "z": -0.27722039110141283
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.010503559787876909,
+            0.0046706201711591375
+          ],
+          "mean": -0.0028734752840024994,
+          "sd": 0.004051649453124351,
+          "min": -0.010503559787876909,
+          "max": 0.0046706201711591375,
+          "z": -2.8204897032845695
+        }
+      },
+      "strictAbsZ": 0.27722039110141283,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19492,
+          "holdoutCount": 37098,
+          "classCount": 640,
+          "unseenFraction": 0.006550218340611353,
+          "rawCorrelation": 0.0020494259568698426,
+          "adjustedCorrelation": -0.004677860428734086,
+          "pairs": 37097
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19674,
+          "holdoutCount": 37114,
+          "classCount": 637,
+          "unseenFraction": 0.007894595031524492,
+          "rawCorrelation": -0.002473772702693013,
+          "adjustedCorrelation": -0.008481491087106214,
+          "pairs": 37113
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19547,
+          "holdoutCount": 36976,
+          "classCount": 628,
+          "unseenFraction": 0.007410212029424492,
+          "rawCorrelation": -0.0014506533986522454,
+          "adjustedCorrelation": -0.0024308559045363447,
+          "pairs": 36975
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19561,
+          "holdoutCount": 36947,
+          "classCount": 650,
+          "unseenFraction": 0.00622513329904999,
+          "rawCorrelation": 0.00767230266851084,
+          "adjustedCorrelation": -0.0014090701762057602,
+          "pairs": 36946
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19694,
+          "holdoutCount": 37109,
+          "classCount": 623,
+          "unseenFraction": 0.008757983238567463,
+          "rawCorrelation": 0.0026127724613646537,
+          "adjustedCorrelation": -0.003344660211832659,
+          "pairs": 37108
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19497,
+          "holdoutCount": 36835,
+          "classCount": 645,
+          "unseenFraction": 0.006841319397312339,
+          "rawCorrelation": 0.0024334737888261505,
+          "adjustedCorrelation": -0.003420236305258104,
+          "pairs": 36834
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19471,
+          "holdoutCount": 37095,
+          "classCount": 639,
+          "unseenFraction": 0.006631621512333198,
+          "rawCorrelation": -0.004082401521764534,
+          "adjustedCorrelation": -0.013438010112524785,
+          "pairs": 37094
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19599,
+          "holdoutCount": 36920,
+          "classCount": 632,
+          "unseenFraction": 0.0072589382448537375,
+          "rawCorrelation": -0.004514104338414585,
+          "adjustedCorrelation": -0.006861477223239291,
+          "pairs": 36919
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19324,
+          "holdoutCount": 37085,
+          "classCount": 642,
+          "unseenFraction": 0.0075232573816907105,
+          "rawCorrelation": 0.0072392933982412845,
+          "adjustedCorrelation": -0.0058811895917137555,
+          "pairs": 37084
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19461,
+          "holdoutCount": 36810,
+          "classCount": 630,
+          "unseenFraction": 0.007552295571855474,
+          "rawCorrelation": 0.005069513847065078,
+          "adjustedCorrelation": -0.0025350594628627565,
+          "pairs": 36809
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19453,
+          "holdoutCount": 36889,
+          "classCount": 634,
+          "unseenFraction": 0.006993954837485429,
+          "rawCorrelation": -0.0067227417081561144,
+          "adjustedCorrelation": -0.011750736793219774,
+          "pairs": 36888
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19700,
+          "holdoutCount": 36969,
+          "classCount": 620,
+          "unseenFraction": 0.007952608942627606,
+          "rawCorrelation": 0.006794544765673412,
+          "adjustedCorrelation": 0.0017621438407414295,
+          "pairs": 36968
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9882,
+          "holdoutCount": 19690,
+          "classCount": 1057,
+          "unseenFraction": 0.026206196038598275,
+          "rawCorrelation": -0.008208800090155476,
+          "adjustedCorrelation": -0.007747429632624809,
+          "pairs": 19689
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9907,
+          "holdoutCount": 19806,
+          "classCount": 1071,
+          "unseenFraction": 0.02489144703625164,
+          "rawCorrelation": -0.029110345354110383,
+          "adjustedCorrelation": -0.03369927038250558,
+          "pairs": 19805
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9833,
+          "holdoutCount": 19754,
+          "classCount": 1067,
+          "unseenFraction": 0.02161587526576896,
+          "rawCorrelation": -0.006082040970376203,
+          "adjustedCorrelation": -0.007703172789763966,
+          "pairs": 19753
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9928,
+          "holdoutCount": 19650,
+          "classCount": 1069,
+          "unseenFraction": 0.022595419847328244,
+          "rawCorrelation": -0.014642059223550394,
+          "adjustedCorrelation": -0.01761573106725946,
+          "pairs": 19649
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9880,
+          "holdoutCount": 19514,
+          "classCount": 1042,
+          "unseenFraction": 0.025878856205800962,
+          "rawCorrelation": 0.006707516348123113,
+          "adjustedCorrelation": 0.0014444137660200847,
+          "pairs": 19513
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9844,
+          "holdoutCount": 19733,
+          "classCount": 1067,
+          "unseenFraction": 0.02108143718643896,
+          "rawCorrelation": -0.0013914225080868575,
+          "adjustedCorrelation": 0.00036906396511961263,
+          "pairs": 19732
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9888,
+          "holdoutCount": 19667,
+          "classCount": 1060,
+          "unseenFraction": 0.025169064931102863,
+          "rawCorrelation": -0.004168046366159268,
+          "adjustedCorrelation": -0.010473267984196738,
+          "pairs": 19666
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9845,
+          "holdoutCount": 19701,
+          "classCount": 1047,
+          "unseenFraction": 0.0236028627988427,
+          "rawCorrelation": -0.00930758540840151,
+          "adjustedCorrelation": -0.011759850521845349,
+          "pairs": 19700
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9923,
+          "holdoutCount": 19580,
+          "classCount": 1039,
+          "unseenFraction": 0.024872318692543412,
+          "rawCorrelation": -0.011943042084712153,
+          "adjustedCorrelation": -0.01819647288948896,
+          "pairs": 19579
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9860,
+          "holdoutCount": 19650,
+          "classCount": 1063,
+          "unseenFraction": 0.02508905852417303,
+          "rawCorrelation": -0.012243190381395742,
+          "adjustedCorrelation": -0.015029638625858512,
+          "pairs": 19649
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9827,
+          "holdoutCount": 19584,
+          "classCount": 1051,
+          "unseenFraction": 0.026041666666666668,
+          "rawCorrelation": -0.005530821033985986,
+          "adjustedCorrelation": -0.006547826791961218,
+          "pairs": 19583
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 9858,
+          "holdoutCount": 19553,
+          "classCount": 1050,
+          "unseenFraction": 0.02459980565642101,
+          "rawCorrelation": -0.004862546351698221,
+          "adjustedCorrelation": -0.013670355234610913,
+          "pairs": 19552
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 2000000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 2000000,
+        "wheel": 30,
+        "trainingCount": 36960,
+        "holdoutCount": 70434,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": -0.014876625929517402,
+        "adjustedCorrelation": -0.020948769546139927,
+        "pairs": 70433
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.010848495657136284,
+            0.00017678303297249452
+          ],
+          "mean": -0.006819144334591094,
+          "sd": 0.0029690803368184705,
+          "min": -0.010848495657136284,
+          "max": 0.00017678303297249452,
+          "z": -4.7589231710346676
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.012693787126471338,
+            0.003907446865874933
+          ],
+          "mean": -0.0025376290215794414,
+          "sd": 0.004882033017511903,
+          "min": -0.012693787126471338,
+          "max": 0.003907446865874933,
+          "z": -3.7712036068825285
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.006005948366739416,
+            0.008934794946980807
+          ],
+          "mean": -0.00045344327465115424,
+          "sd": 0.0041726352551726695,
+          "min": -0.006005948366739416,
+          "max": 0.008934794946980807,
+          "z": -4.911842281465037
+        }
+      },
+      "strictAbsZ": 3.7712036068825285,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37098,
+          "holdoutCount": 70494,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004059957885382666,
+          "adjustedCorrelation": -0.0040851356545694596,
+          "pairs": 70493
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37114,
+          "holdoutCount": 70317,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.001068600689715631,
+          "adjustedCorrelation": -0.008856620374975272,
+          "pairs": 70316
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36976,
+          "holdoutCount": 70559,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002349506366093811,
+          "adjustedCorrelation": -0.009089048351437175,
+          "pairs": 70558
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36947,
+          "holdoutCount": 70299,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.008435982526367911,
+          "adjustedCorrelation": 0.00017678303297249452,
+          "pairs": 70298
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37109,
+          "holdoutCount": 70498,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0007771671003537716,
+          "adjustedCorrelation": -0.005726906123283731,
+          "pairs": 70497
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36835,
+          "holdoutCount": 70398,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002112105299886685,
+          "adjustedCorrelation": -0.006920609677324299,
+          "pairs": 70397
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37095,
+          "holdoutCount": 70336,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0028201829820054584,
+          "adjustedCorrelation": -0.010848495657136284,
+          "pairs": 70335
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36920,
+          "holdoutCount": 70376,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0012537700615414733,
+          "adjustedCorrelation": -0.005180928634186143,
+          "pairs": 70375
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37085,
+          "holdoutCount": 70543,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0033777112521138275,
+          "adjustedCorrelation": -0.007403028929752239,
+          "pairs": 70542
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36810,
+          "holdoutCount": 70371,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0020002728877436425,
+          "adjustedCorrelation": -0.010047268652507631,
+          "pairs": 70370
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36889,
+          "holdoutCount": 70140,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0009446390798561869,
+          "adjustedCorrelation": -0.006510870066455651,
+          "pairs": 70139
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 36969,
+          "holdoutCount": 70349,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002906687709028586,
+          "adjustedCorrelation": -0.007337602926437737,
+          "pairs": 70348
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19690,
+          "holdoutCount": 39082,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00515993146686121,
+          "adjustedCorrelation": -0.00003844153279572838,
+          "pairs": 39081
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19806,
+          "holdoutCount": 38970,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00623708377860775,
+          "adjustedCorrelation": -0.004538835215388989,
+          "pairs": 38969
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19754,
+          "holdoutCount": 39327,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.003218572535575408,
+          "adjustedCorrelation": -0.004026788714633612,
+          "pairs": 39326
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19650,
+          "holdoutCount": 39091,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00039818346658389173,
+          "adjustedCorrelation": 0.0014039781953747827,
+          "pairs": 39090
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19514,
+          "holdoutCount": 38882,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0010363876245198876,
+          "adjustedCorrelation": 0.003907446865874933,
+          "pairs": 38881
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19733,
+          "holdoutCount": 38779,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.009427995713651641,
+          "adjustedCorrelation": -0.012693787126471338,
+          "pairs": 38778
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19667,
+          "holdoutCount": 39037,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0005466469165949659,
+          "adjustedCorrelation": -0.00019836320894150232,
+          "pairs": 39036
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19701,
+          "holdoutCount": 39110,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.002465356236387353,
+          "adjustedCorrelation": 0.0021697598103797644,
+          "pairs": 39109
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19580,
+          "holdoutCount": 39051,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.008659151866307403,
+          "adjustedCorrelation": -0.009943136041798731,
+          "pairs": 39050
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19650,
+          "holdoutCount": 39110,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0016249728918211299,
+          "adjustedCorrelation": -0.004133159768242133,
+          "pairs": 39109
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19584,
+          "holdoutCount": 39192,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0016074371201637496,
+          "adjustedCorrelation": -0.0005552536584623642,
+          "pairs": 39191
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 19553,
+          "holdoutCount": 39205,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002877195584730134,
+          "adjustedCorrelation": -0.0018049678638483724,
+          "pairs": 39204
+        }
+      ]
+    },
+    {
+      "cutoff": 29,
+      "rho": 6.33122875072338,
+      "endpoint": 2000000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 2000000,
+        "wheel": 210,
+        "trainingCount": 36960,
+        "holdoutCount": 70434,
+        "classCount": 730,
+        "unseenFraction": 0.004600051111679018,
+        "rawCorrelation": -0.014876625929517402,
+        "adjustedCorrelation": -0.025412122874936834,
+        "pairs": 70433
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.013544225427740116,
+            -0.004992900683663595
+          ],
+          "mean": -0.010919427772914441,
+          "sd": 0.0027270384044988066,
+          "min": -0.013544225427740116,
+          "max": -0.004992900683663595,
+          "z": -5.31444481240665
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.017698992521518166,
+            -0.005805235301208191
+          ],
+          "mean": -0.00884382626590881,
+          "sd": 0.0034084616987312814,
+          "min": -0.017698992521518166,
+          "max": -0.005805235301208191,
+          "z": -4.860930846074984
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.005539877268575678,
+            0.00541941723040074
+          ],
+          "mean": 0.00009536985559562895,
+          "sd": 0.0035273156327868464,
+          "min": -0.005539877268575678,
+          "max": 0.00541941723040074,
+          "z": -7.231417708536509
+        }
+      },
+      "strictAbsZ": 4.860930846074984,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37098,
+          "holdoutCount": 70494,
+          "classCount": 739,
+          "unseenFraction": 0.004737991885834255,
+          "rawCorrelation": 0.004059957885382666,
+          "adjustedCorrelation": -0.008724232100994229,
+          "pairs": 70493
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37114,
+          "holdoutCount": 70317,
+          "classCount": 750,
+          "unseenFraction": 0.0043090575536499,
+          "rawCorrelation": -0.001068600689715631,
+          "adjustedCorrelation": -0.012569563399071837,
+          "pairs": 70316
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36976,
+          "holdoutCount": 70559,
+          "classCount": 752,
+          "unseenFraction": 0.0043367961564081126,
+          "rawCorrelation": -0.002349506366093811,
+          "adjustedCorrelation": -0.013059777481236328,
+          "pairs": 70558
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36947,
+          "holdoutCount": 70299,
+          "classCount": 753,
+          "unseenFraction": 0.004310160884223104,
+          "rawCorrelation": 0.008435982526367911,
+          "adjustedCorrelation": -0.004992900683663595,
+          "pairs": 70298
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37109,
+          "holdoutCount": 70498,
+          "classCount": 741,
+          "unseenFraction": 0.004368918267184885,
+          "rawCorrelation": -0.0007771671003537716,
+          "adjustedCorrelation": -0.009001063167518952,
+          "pairs": 70497
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36835,
+          "holdoutCount": 70398,
+          "classCount": 741,
+          "unseenFraction": 0.0037785164351259977,
+          "rawCorrelation": -0.002112105299886685,
+          "adjustedCorrelation": -0.012383958724950801,
+          "pairs": 70397
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37095,
+          "holdoutCount": 70336,
+          "classCount": 741,
+          "unseenFraction": 0.004720200181983622,
+          "rawCorrelation": -0.0028201829820054584,
+          "adjustedCorrelation": -0.013544225427740116,
+          "pairs": 70335
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36920,
+          "holdoutCount": 70376,
+          "classCount": 756,
+          "unseenFraction": 0.003950210298965556,
+          "rawCorrelation": 0.0012537700615414733,
+          "adjustedCorrelation": -0.007830596684230882,
+          "pairs": 70375
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37085,
+          "holdoutCount": 70543,
+          "classCount": 741,
+          "unseenFraction": 0.004507888805409466,
+          "rawCorrelation": -0.0033777112521138275,
+          "adjustedCorrelation": -0.012218477311552792,
+          "pairs": 70542
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36810,
+          "holdoutCount": 70371,
+          "classCount": 752,
+          "unseenFraction": 0.0038083869775902006,
+          "rawCorrelation": -0.0020002728877436425,
+          "adjustedCorrelation": -0.013265698948440529,
+          "pairs": 70370
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36889,
+          "holdoutCount": 70140,
+          "classCount": 755,
+          "unseenFraction": 0.004433989164528087,
+          "rawCorrelation": -0.0009446390798561869,
+          "adjustedCorrelation": -0.010338663179573082,
+          "pairs": 70139
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 36969,
+          "holdoutCount": 70349,
+          "classCount": 755,
+          "unseenFraction": 0.0039801560789776685,
+          "rawCorrelation": -0.002906687709028586,
+          "adjustedCorrelation": -0.013103976166000163,
+          "pairs": 70348
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19690,
+          "holdoutCount": 39082,
+          "classCount": 1230,
+          "unseenFraction": 0.012230694437336882,
+          "rawCorrelation": -0.00515993146686121,
+          "adjustedCorrelation": -0.010975167342972778,
+          "pairs": 39081
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19806,
+          "holdoutCount": 38970,
+          "classCount": 1218,
+          "unseenFraction": 0.011957916345907108,
+          "rawCorrelation": -0.00623708377860775,
+          "adjustedCorrelation": -0.010590614172390652,
+          "pairs": 38969
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19754,
+          "holdoutCount": 39327,
+          "classCount": 1220,
+          "unseenFraction": 0.012815622854527423,
+          "rawCorrelation": -0.003218572535575408,
+          "adjustedCorrelation": -0.007490495595684747,
+          "pairs": 39326
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19650,
+          "holdoutCount": 39091,
+          "classCount": 1237,
+          "unseenFraction": 0.012253459875674708,
+          "rawCorrelation": 0.00039818346658389173,
+          "adjustedCorrelation": -0.005805235301208191,
+          "pairs": 39090
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19514,
+          "holdoutCount": 38882,
+          "classCount": 1222,
+          "unseenFraction": 0.012833701970063269,
+          "rawCorrelation": 0.0010363876245198876,
+          "adjustedCorrelation": -0.0061128547331190785,
+          "pairs": 38881
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19733,
+          "holdoutCount": 38779,
+          "classCount": 1223,
+          "unseenFraction": 0.014131359756569277,
+          "rawCorrelation": -0.009427995713651641,
+          "adjustedCorrelation": -0.011424516467278845,
+          "pairs": 38778
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19667,
+          "holdoutCount": 39037,
+          "classCount": 1233,
+          "unseenFraction": 0.012039859620360171,
+          "rawCorrelation": 0.0005466469165949659,
+          "adjustedCorrelation": -0.007959498236403224,
+          "pairs": 39036
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19701,
+          "holdoutCount": 39110,
+          "classCount": 1218,
+          "unseenFraction": 0.012528765021733572,
+          "rawCorrelation": 0.002465356236387353,
+          "adjustedCorrelation": -0.006039875084148327,
+          "pairs": 39109
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19580,
+          "holdoutCount": 39051,
+          "classCount": 1224,
+          "unseenFraction": 0.01410975391155156,
+          "rawCorrelation": -0.008659151866307403,
+          "adjustedCorrelation": -0.017698992521518166,
+          "pairs": 39050
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19650,
+          "holdoutCount": 39110,
+          "classCount": 1219,
+          "unseenFraction": 0.013525952441830734,
+          "rawCorrelation": -0.0016249728918211299,
+          "adjustedCorrelation": -0.006908768841584541,
+          "pairs": 39109
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19584,
+          "holdoutCount": 39192,
+          "classCount": 1239,
+          "unseenFraction": 0.012885282710757298,
+          "rawCorrelation": 0.0016074371201637496,
+          "adjustedCorrelation": -0.006882506914698006,
+          "pairs": 39191
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 19553,
+          "holdoutCount": 39205,
+          "classCount": 1211,
+          "unseenFraction": 0.01165667644433108,
+          "rawCorrelation": -0.002877195584730134,
+          "adjustedCorrelation": -0.008237389979899142,
+          "pairs": 39204
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 500000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 30,
+        "trainingCount": 10310,
+        "holdoutCount": 19494,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": 0.017212757828484724,
+        "adjustedCorrelation": 0.00845397358354672,
+        "pairs": 19493
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.0071572725553291135,
+            0.006834516465707226
+          ],
+          "mean": -0.0017574843520575055,
+          "sd": 0.00470760004846543,
+          "min": -0.0071572725553291135,
+          "max": 0.006834516465707226,
+          "z": 2.169143051762209
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.029310053084067488,
+            0.007667639642983144
+          ],
+          "mean": -0.009221432019880288,
+          "sd": 0.012517366125659807,
+          "min": -0.029310053084067488,
+          "max": 0.007667639642983144,
+          "z": 1.412070672534979
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.01337475006620922,
+            0.006252376261386642
+          ],
+          "mean": -0.0017184036557749253,
+          "sd": 0.0066189924128848086,
+          "min": -0.01337475006620922,
+          "max": 0.006252376261386642,
+          "z": 1.5368467894780584
+        }
+      },
+      "strictAbsZ": 1.412070672534979,
+      "supportPass": false,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10410,
+          "holdoutCount": 19528,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0022058268067802742,
+          "adjustedCorrelation": -0.0071572725553291135,
+          "pairs": 19527
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10361,
+          "holdoutCount": 19740,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0011154856574349923,
+          "adjustedCorrelation": -0.00022504096209628627,
+          "pairs": 19739
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10415,
+          "holdoutCount": 19661,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004966320669939676,
+          "adjustedCorrelation": -0.0016994114683350945,
+          "pairs": 19660
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10299,
+          "holdoutCount": 19668,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0020104353620527117,
+          "adjustedCorrelation": -0.006006653614861023,
+          "pairs": 19667
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10397,
+          "holdoutCount": 19678,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0032340619558147835,
+          "adjustedCorrelation": -0.005911196515886374,
+          "pairs": 19677
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10376,
+          "holdoutCount": 19627,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.002889660112161061,
+          "adjustedCorrelation": -0.006302716568477721,
+          "pairs": 19626
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10354,
+          "holdoutCount": 19718,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0019870193060596694,
+          "adjustedCorrelation": -0.0036135624026825287,
+          "pairs": 19717
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10292,
+          "holdoutCount": 19699,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00598764031596903,
+          "adjustedCorrelation": -0.004895735569226593,
+          "pairs": 19698
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10289,
+          "holdoutCount": 19601,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0007521616201075315,
+          "adjustedCorrelation": 0.0026050886844419595,
+          "pairs": 19600
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10348,
+          "holdoutCount": 19600,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00694697203706209,
+          "adjustedCorrelation": 0.005034420605982656,
+          "pairs": 19599
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10373,
+          "holdoutCount": 19572,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.002551279027316317,
+          "adjustedCorrelation": 0.0002477516760728311,
+          "pairs": 19571
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 10292,
+          "holdoutCount": 19674,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00705617352893294,
+          "adjustedCorrelation": 0.006834516465707226,
+          "pairs": 19673
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3335,
+          "holdoutCount": 7005,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005136845072027034,
+          "adjustedCorrelation": 0.0025995853259659614,
+          "pairs": 7004
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3328,
+          "holdoutCount": 6962,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0002186465615977987,
+          "adjustedCorrelation": 0.00028432664843686573,
+          "pairs": 6961
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3261,
+          "holdoutCount": 6999,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004814710614914887,
+          "adjustedCorrelation": 0.005086590847034593,
+          "pairs": 6998
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3290,
+          "holdoutCount": 6997,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.026878460433778933,
+          "adjustedCorrelation": -0.029310053084067488,
+          "pairs": 6996
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3294,
+          "holdoutCount": 7017,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.003095135642311275,
+          "adjustedCorrelation": 0.007667639642983144,
+          "pairs": 7016
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3282,
+          "holdoutCount": 6927,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.004733213092456538,
+          "adjustedCorrelation": -0.008977313525423586,
+          "pairs": 6926
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3323,
+          "holdoutCount": 6944,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00599301556393129,
+          "adjustedCorrelation": -0.008487509812157932,
+          "pairs": 6943
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3325,
+          "holdoutCount": 6948,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0035867319404051558,
+          "adjustedCorrelation": -0.00519626019192041,
+          "pairs": 6947
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3307,
+          "holdoutCount": 7027,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.025453145136966025,
+          "adjustedCorrelation": -0.029137071643578424,
+          "pairs": 7026
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3305,
+          "holdoutCount": 6902,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.007870197956400106,
+          "adjustedCorrelation": -0.010277971375818923,
+          "pairs": 6901
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3298,
+          "holdoutCount": 6943,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.01810600890505587,
+          "adjustedCorrelation": -0.012464499015623274,
+          "pairs": 6942
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 30,
+          "trainingCount": 3291,
+          "holdoutCount": 7017,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.022893580990096966,
+          "adjustedCorrelation": -0.022444648054393983,
+          "pairs": 7016
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 500000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 500000,
+        "wheel": 210,
+        "trainingCount": 10310,
+        "holdoutCount": 19494,
+        "classCount": 529,
+        "unseenFraction": 0.01061865189289012,
+        "rawCorrelation": 0.017212757828484724,
+        "adjustedCorrelation": 0.012794718352503395,
+        "pairs": 19493
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.004789525051343708,
+            0.007250273954301416
+          ],
+          "mean": -0.0001735954969974984,
+          "sd": 0.003841552695639744,
+          "min": -0.004789525051343708,
+          "max": 0.007250273954301416,
+          "z": 3.3758000675664936
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.026680111399389052,
+            0.005673447705529208
+          ],
+          "mean": -0.008531293943286165,
+          "sd": 0.012103156716320859,
+          "min": -0.026680111399389052,
+          "max": 0.005673447705529208,
+          "z": 1.7620206691227809
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.01422858063675636,
+            0.010839268244340155
+          ],
+          "mean": -0.0013142820942237544,
+          "sd": 0.007921990559457436,
+          "min": -0.01422858063675636,
+          "max": 0.010839268244340155,
+          "z": 1.780991827853611
+        }
+      },
+      "strictAbsZ": 1.7620206691227809,
+      "supportPass": false,
+      "fakeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10410,
+          "holdoutCount": 19528,
+          "classCount": 524,
+          "unseenFraction": 0.01331421548545678,
+          "rawCorrelation": -0.0022058268067802742,
+          "adjustedCorrelation": -0.003466013090613219,
+          "pairs": 19527
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10361,
+          "holdoutCount": 19740,
+          "classCount": 515,
+          "unseenFraction": 0.013120567375886525,
+          "rawCorrelation": 0.0011154856574349923,
+          "adjustedCorrelation": 0.0017430775690882709,
+          "pairs": 19739
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10415,
+          "holdoutCount": 19661,
+          "classCount": 528,
+          "unseenFraction": 0.011494837495549566,
+          "rawCorrelation": 0.004966320669939676,
+          "adjustedCorrelation": 0.002010466864974095,
+          "pairs": 19660
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10299,
+          "holdoutCount": 19668,
+          "classCount": 532,
+          "unseenFraction": 0.012151718527557453,
+          "rawCorrelation": -0.0020104353620527117,
+          "adjustedCorrelation": -0.004789525051343708,
+          "pairs": 19667
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10397,
+          "holdoutCount": 19678,
+          "classCount": 525,
+          "unseenFraction": 0.013771724768777315,
+          "rawCorrelation": -0.0032340619558147835,
+          "adjustedCorrelation": -0.004623297151659857,
+          "pairs": 19677
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10376,
+          "holdoutCount": 19627,
+          "classCount": 526,
+          "unseenFraction": 0.012228053192031385,
+          "rawCorrelation": 0.002889660112161061,
+          "adjustedCorrelation": -0.0018971165643979233,
+          "pairs": 19626
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10354,
+          "holdoutCount": 19718,
+          "classCount": 527,
+          "unseenFraction": 0.01176589917841566,
+          "rawCorrelation": 0.0019870193060596694,
+          "adjustedCorrelation": -0.0011986028948450466,
+          "pairs": 19717
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10292,
+          "holdoutCount": 19699,
+          "classCount": 520,
+          "unseenFraction": 0.012031067566881567,
+          "rawCorrelation": -0.00598764031596903,
+          "adjustedCorrelation": -0.00414722257668422,
+          "pairs": 19698
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10289,
+          "holdoutCount": 19601,
+          "classCount": 522,
+          "unseenFraction": 0.012346308861792766,
+          "rawCorrelation": 0.0007521616201075315,
+          "adjustedCorrelation": 0.0020995354851264646,
+          "pairs": 19600
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10348,
+          "holdoutCount": 19600,
+          "classCount": 537,
+          "unseenFraction": 0.01183673469387755,
+          "rawCorrelation": 0.00694697203706209,
+          "adjustedCorrelation": 0.0044548848528567315,
+          "pairs": 19599
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10373,
+          "holdoutCount": 19572,
+          "classCount": 530,
+          "unseenFraction": 0.01170038830983037,
+          "rawCorrelation": 0.002551279027316317,
+          "adjustedCorrelation": 0.00048039263922701675,
+          "pairs": 19571
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 10292,
+          "holdoutCount": 19674,
+          "classCount": 536,
+          "unseenFraction": 0.011690556063840602,
+          "rawCorrelation": 0.00705617352893294,
+          "adjustedCorrelation": 0.007250273954301416,
+          "pairs": 19673
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3335,
+          "holdoutCount": 7005,
+          "classCount": 1036,
+          "unseenFraction": 0.10149892933618844,
+          "rawCorrelation": 0.005136845072027034,
+          "adjustedCorrelation": 0.005342232142440294,
+          "pairs": 7004
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3328,
+          "holdoutCount": 6962,
+          "classCount": 1054,
+          "unseenFraction": 0.09968399885090491,
+          "rawCorrelation": 0.0002186465615977987,
+          "adjustedCorrelation": 0.001969995150024737,
+          "pairs": 6961
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3261,
+          "holdoutCount": 6999,
+          "classCount": 1050,
+          "unseenFraction": 0.1044434919274182,
+          "rawCorrelation": 0.004814710614914887,
+          "adjustedCorrelation": 0.005673447705529208,
+          "pairs": 6998
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3290,
+          "holdoutCount": 6997,
+          "classCount": 1057,
+          "unseenFraction": 0.0957553237101615,
+          "rawCorrelation": -0.026878460433778933,
+          "adjustedCorrelation": -0.026680111399389052,
+          "pairs": 6996
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3294,
+          "holdoutCount": 7017,
+          "classCount": 1048,
+          "unseenFraction": 0.10061279749180561,
+          "rawCorrelation": 0.003095135642311275,
+          "adjustedCorrelation": 0.003374478132073905,
+          "pairs": 7016
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3282,
+          "holdoutCount": 6927,
+          "classCount": 1066,
+          "unseenFraction": 0.09484625378951927,
+          "rawCorrelation": -0.004733213092456538,
+          "adjustedCorrelation": -0.004372284927487994,
+          "pairs": 6926
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3323,
+          "holdoutCount": 6944,
+          "classCount": 1041,
+          "unseenFraction": 0.09475806451612903,
+          "rawCorrelation": -0.00599301556393129,
+          "adjustedCorrelation": -0.0052985024293097024,
+          "pairs": 6943
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3325,
+          "holdoutCount": 6948,
+          "classCount": 1065,
+          "unseenFraction": 0.09067357512953368,
+          "rawCorrelation": -0.0035867319404051558,
+          "adjustedCorrelation": -0.007140350616665809,
+          "pairs": 6947
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3307,
+          "holdoutCount": 7027,
+          "classCount": 1044,
+          "unseenFraction": 0.1013234666287178,
+          "rawCorrelation": -0.025453145136966025,
+          "adjustedCorrelation": -0.02547619131146365,
+          "pairs": 7026
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3305,
+          "holdoutCount": 6902,
+          "classCount": 1040,
+          "unseenFraction": 0.10011590843233845,
+          "rawCorrelation": -0.007870197956400106,
+          "adjustedCorrelation": -0.008360029005533669,
+          "pairs": 6901
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3298,
+          "holdoutCount": 6943,
+          "classCount": 1039,
+          "unseenFraction": 0.10197321042776898,
+          "rawCorrelation": -0.01810600890505587,
+          "adjustedCorrelation": -0.017349974761455576,
+          "pairs": 6942
+        },
+        {
+          "endpoint": 500000,
+          "wheel": 210,
+          "trainingCount": 3291,
+          "holdoutCount": 7017,
+          "classCount": 1052,
+          "unseenFraction": 0.09391477839532564,
+          "rawCorrelation": -0.022893580990096966,
+          "adjustedCorrelation": -0.02405823599819668,
+          "pairs": 7016
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 1000000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 1000000,
+        "wheel": 30,
+        "trainingCount": 19494,
+        "holdoutCount": 36960,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": -0.0009042891247856955,
+        "adjustedCorrelation": -0.006916892726657655,
+        "pairs": 36959
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.011841842585380095,
+            0.008730798923948832
+          ],
+          "mean": -0.0016610659194696035,
+          "sd": 0.0052087850335166405,
+          "min": -0.011841842585380095,
+          "max": 0.008730798923948832,
+          "z": -1.0090312372978947
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.014063032308065064,
+            0.009383673822314064
+          ],
+          "mean": -0.0020731055425028556,
+          "sd": 0.005898864862873565,
+          "min": -0.014063032308065064,
+          "max": 0.009383673822314064,
+          "z": -0.8211388626040169
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.004537456949244266,
+            0.007300168087920238
+          ],
+          "mean": -0.00005063586804413784,
+          "sd": 0.003966458438574837,
+          "min": -0.004537456949244266,
+          "max": 0.007300168087920238,
+          "z": -1.73107999615914
+        }
+      },
+      "strictAbsZ": 0.8211388626040169,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19528,
+          "holdoutCount": 37275,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005905116627458058,
+          "adjustedCorrelation": 0.0012511119704196382,
+          "pairs": 37274
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19740,
+          "holdoutCount": 37399,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.003468885844030557,
+          "adjustedCorrelation": -0.0017971209541487211,
+          "pairs": 37398
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19661,
+          "holdoutCount": 37163,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.009082435472032486,
+          "adjustedCorrelation": 0.008730798923948832,
+          "pairs": 37162
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19668,
+          "holdoutCount": 37195,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0023725292622061222,
+          "adjustedCorrelation": -0.005520331094486822,
+          "pairs": 37194
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19678,
+          "holdoutCount": 37289,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0033602359979572668,
+          "adjustedCorrelation": 0.0008476063807749472,
+          "pairs": 37288
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19627,
+          "holdoutCount": 37106,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0021511999497051274,
+          "adjustedCorrelation": -0.0009697574213052199,
+          "pairs": 37105
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19718,
+          "holdoutCount": 37256,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.007364804881895964,
+          "adjustedCorrelation": -0.011841842585380095,
+          "pairs": 37255
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19699,
+          "holdoutCount": 37232,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.005429726251470128,
+          "adjustedCorrelation": -0.007846279703594795,
+          "pairs": 37231
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19601,
+          "holdoutCount": 37326,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.000943705722507829,
+          "adjustedCorrelation": -0.0018786725678380533,
+          "pairs": 37325
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19600,
+          "holdoutCount": 37212,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.007559829211330823,
+          "adjustedCorrelation": -0.0005019875667199409,
+          "pairs": 37211
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19572,
+          "holdoutCount": 37033,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0015555027806269672,
+          "adjustedCorrelation": -0.0027273957984659688,
+          "pairs": 37032
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 19674,
+          "holdoutCount": 37436,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.008036943899816473,
+          "adjustedCorrelation": 0.0023210793831609546,
+          "pairs": 37435
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 7005,
+          "holdoutCount": 14393,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00954633683200818,
+          "adjustedCorrelation": -0.007419592721064584,
+          "pairs": 14392
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6962,
+          "holdoutCount": 14571,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0007129579584011387,
+          "adjustedCorrelation": -0.0017916582990384357,
+          "pairs": 14570
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6999,
+          "holdoutCount": 14402,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002514238923030691,
+          "adjustedCorrelation": -0.0068033629667975295,
+          "pairs": 14401
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6997,
+          "holdoutCount": 14479,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.006407694988483118,
+          "adjustedCorrelation": 0.0004374720747088841,
+          "pairs": 14478
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 7017,
+          "holdoutCount": 14388,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.003942402494319757,
+          "adjustedCorrelation": -0.003790532542267194,
+          "pairs": 14387
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6927,
+          "holdoutCount": 14384,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0007618663739847032,
+          "adjustedCorrelation": -0.004610456412120019,
+          "pairs": 14383
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6944,
+          "holdoutCount": 14506,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0008184142072209411,
+          "adjustedCorrelation": -0.0003112721770343795,
+          "pairs": 14505
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6948,
+          "holdoutCount": 14509,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.010795338084363646,
+          "adjustedCorrelation": -0.014063032308065064,
+          "pairs": 14508
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 7027,
+          "holdoutCount": 14562,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.009282912817034658,
+          "adjustedCorrelation": 0.009383673822314064,
+          "pairs": 14561
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6902,
+          "holdoutCount": 14445,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004266077166397975,
+          "adjustedCorrelation": 0.0008790959402981323,
+          "pairs": 14444
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 6943,
+          "holdoutCount": 14454,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0006113527244270372,
+          "adjustedCorrelation": 0.0005760937117499878,
+          "pairs": 14453
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 30,
+          "trainingCount": 7017,
+          "holdoutCount": 14400,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.007325936945215706,
+          "adjustedCorrelation": 0.0026363053672818697,
+          "pairs": 14399
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 1000000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 1000000,
+        "wheel": 210,
+        "trainingCount": 19494,
+        "holdoutCount": 36960,
+        "classCount": 625,
+        "unseenFraction": 0.00744047619047619,
+        "rawCorrelation": -0.0009042891247856955,
+        "adjustedCorrelation": -0.00331288856533001,
+        "pairs": 36959
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.01154638945891068,
+            0.008373610240901235
+          ],
+          "mean": -0.0007928372131695347,
+          "sd": 0.005128555950260956,
+          "min": -0.01154638945891068,
+          "max": 0.008373610240901235,
+          "z": -0.4913763984640253
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.012019168095828762,
+            0.008118514948284255
+          ],
+          "mean": -0.0005634473939369193,
+          "sd": 0.006307320154318767,
+          "min": -0.012019168095828762,
+          "max": 0.008118514948284255,
+          "z": -0.4359127337955859
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.012957007789406259,
+            0.0047056981098917905
+          ],
+          "mean": -0.0014693876987269113,
+          "sd": 0.005247558997388594,
+          "min": -0.012957007789406259,
+          "max": 0.0047056981098917905,
+          "z": -0.35130636311483154
+        }
+      },
+      "strictAbsZ": 0.35130636311483154,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19528,
+          "holdoutCount": 37275,
+          "classCount": 631,
+          "unseenFraction": 0.006975184439973172,
+          "rawCorrelation": 0.005905116627458058,
+          "adjustedCorrelation": 0.0012107190159638907,
+          "pairs": 37274
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19740,
+          "holdoutCount": 37399,
+          "classCount": 602,
+          "unseenFraction": 0.007807695392924944,
+          "rawCorrelation": 0.003468885844030557,
+          "adjustedCorrelation": -0.0014355448820766185,
+          "pairs": 37398
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19661,
+          "holdoutCount": 37163,
+          "classCount": 615,
+          "unseenFraction": 0.0076958264940935875,
+          "rawCorrelation": 0.009082435472032486,
+          "adjustedCorrelation": 0.008373610240901235,
+          "pairs": 37162
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19668,
+          "holdoutCount": 37195,
+          "classCount": 646,
+          "unseenFraction": 0.006506250840166689,
+          "rawCorrelation": 0.0023725292622061222,
+          "adjustedCorrelation": -0.002885929577073291,
+          "pairs": 37194
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19678,
+          "holdoutCount": 37289,
+          "classCount": 624,
+          "unseenFraction": 0.006141221271688702,
+          "rawCorrelation": 0.0033602359979572668,
+          "adjustedCorrelation": 0.0005589986950622013,
+          "pairs": 37288
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19627,
+          "holdoutCount": 37106,
+          "classCount": 616,
+          "unseenFraction": 0.0070878025117231715,
+          "rawCorrelation": 0.0021511999497051274,
+          "adjustedCorrelation": -0.0015952634053107092,
+          "pairs": 37105
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19718,
+          "holdoutCount": 37256,
+          "classCount": 620,
+          "unseenFraction": 0.006817693794288169,
+          "rawCorrelation": -0.007364804881895964,
+          "adjustedCorrelation": -0.01154638945891068,
+          "pairs": 37255
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19699,
+          "holdoutCount": 37232,
+          "classCount": 630,
+          "unseenFraction": 0.00730554361839278,
+          "rawCorrelation": -0.005429726251470128,
+          "adjustedCorrelation": -0.007668353071483258,
+          "pairs": 37231
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19601,
+          "holdoutCount": 37326,
+          "classCount": 630,
+          "unseenFraction": 0.00707281787493972,
+          "rawCorrelation": 0.000943705722507829,
+          "adjustedCorrelation": -0.00047593253384124864,
+          "pairs": 37325
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19600,
+          "holdoutCount": 37212,
+          "classCount": 630,
+          "unseenFraction": 0.007228850908309148,
+          "rawCorrelation": 0.007559829211330823,
+          "adjustedCorrelation": 0.0027214333875713033,
+          "pairs": 37211
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19572,
+          "holdoutCount": 37033,
+          "classCount": 637,
+          "unseenFraction": 0.0064537034536764504,
+          "rawCorrelation": 0.0015555027806269672,
+          "adjustedCorrelation": -0.00026568685760444086,
+          "pairs": 37032
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 19674,
+          "holdoutCount": 37436,
+          "classCount": 622,
+          "unseenFraction": 0.007158884496206859,
+          "rawCorrelation": 0.008036943899816473,
+          "adjustedCorrelation": 0.003494291888767201,
+          "pairs": 37435
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 7005,
+          "holdoutCount": 14393,
+          "classCount": 1283,
+          "unseenFraction": 0.042520669770027095,
+          "rawCorrelation": -0.00954633683200818,
+          "adjustedCorrelation": -0.010907090247999653,
+          "pairs": 14392
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6962,
+          "holdoutCount": 14571,
+          "classCount": 1283,
+          "unseenFraction": 0.03973646283714227,
+          "rawCorrelation": -0.0007129579584011387,
+          "adjustedCorrelation": -0.0008391546489878434,
+          "pairs": 14570
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6999,
+          "holdoutCount": 14402,
+          "classCount": 1281,
+          "unseenFraction": 0.044716011665046525,
+          "rawCorrelation": -0.002514238923030691,
+          "adjustedCorrelation": -0.004784129120108763,
+          "pairs": 14401
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6997,
+          "holdoutCount": 14479,
+          "classCount": 1277,
+          "unseenFraction": 0.04516886525312522,
+          "rawCorrelation": 0.006407694988483118,
+          "adjustedCorrelation": 0.0056380804210519365,
+          "pairs": 14478
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 7017,
+          "holdoutCount": 14388,
+          "classCount": 1271,
+          "unseenFraction": 0.04635807617458994,
+          "rawCorrelation": -0.003942402494319757,
+          "adjustedCorrelation": -0.00043938647920863826,
+          "pairs": 14387
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6927,
+          "holdoutCount": 14384,
+          "classCount": 1266,
+          "unseenFraction": 0.04484149054505006,
+          "rawCorrelation": -0.0007618663739847032,
+          "adjustedCorrelation": -0.0031386157038501877,
+          "pairs": 14383
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6944,
+          "holdoutCount": 14506,
+          "classCount": 1265,
+          "unseenFraction": 0.04798014614642217,
+          "rawCorrelation": 0.0008184142072209411,
+          "adjustedCorrelation": 0.0005624703515183482,
+          "pairs": 14505
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6948,
+          "holdoutCount": 14509,
+          "classCount": 1289,
+          "unseenFraction": 0.042525329106072096,
+          "rawCorrelation": -0.010795338084363646,
+          "adjustedCorrelation": -0.012019168095828762,
+          "pairs": 14508
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 7027,
+          "holdoutCount": 14562,
+          "classCount": 1265,
+          "unseenFraction": 0.04264524103831891,
+          "rawCorrelation": 0.009282912817034658,
+          "adjustedCorrelation": 0.008118514948284255,
+          "pairs": 14561
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6902,
+          "holdoutCount": 14445,
+          "classCount": 1278,
+          "unseenFraction": 0.044444444444444446,
+          "rawCorrelation": 0.004266077166397975,
+          "adjustedCorrelation": 0.002371321689857543,
+          "pairs": 14444
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 6943,
+          "holdoutCount": 14454,
+          "classCount": 1282,
+          "unseenFraction": 0.04102670541026705,
+          "rawCorrelation": 0.0006113527244270372,
+          "adjustedCorrelation": 0.003096654234523261,
+          "pairs": 14453
+        },
+        {
+          "endpoint": 1000000,
+          "wheel": 210,
+          "trainingCount": 7017,
+          "holdoutCount": 14400,
+          "classCount": 1262,
+          "unseenFraction": 0.044583333333333336,
+          "rawCorrelation": 0.007325936945215706,
+          "adjustedCorrelation": 0.005579133923505471,
+          "pairs": 14399
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 2000000,
+      "wheel": 30,
+      "real": {
+        "endpoint": 2000000,
+        "wheel": 30,
+        "trainingCount": 36960,
+        "holdoutCount": 70434,
+        "classCount": 64,
+        "unseenFraction": 0,
+        "rawCorrelation": -0.006501359375886506,
+        "adjustedCorrelation": -0.007369255167068579,
+        "pairs": 70433
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.007345110314474236,
+            0.0032459061236790668
+          ],
+          "mean": -0.0026058508178392254,
+          "sd": 0.0032808304417628817,
+          "min": -0.007345110314474236,
+          "max": 0.0032459061236790668,
+          "z": -1.4518898290488442
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.012116892482621591,
+            0.007454270146914402
+          ],
+          "mean": -0.0007731687853526472,
+          "sd": 0.0061713263595660015,
+          "min": -0.012116892482621591,
+          "max": 0.007454270146914402,
+          "z": -1.0688279953776099
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.008860536421675155,
+            0.0061706633101752265
+          ],
+          "mean": 0.000720207935250741,
+          "sd": 0.004000383441155771,
+          "min": -0.008860536421675155,
+          "max": 0.0061706633101752265,
+          "z": -2.0221719295943674
+        }
+      },
+      "strictAbsZ": 1.0688279953776099,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37275,
+          "holdoutCount": 70562,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.005475322799639526,
+          "adjustedCorrelation": 0.0016173618159175587,
+          "pairs": 70561
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37399,
+          "holdoutCount": 70529,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0010135415244343327,
+          "adjustedCorrelation": -0.005967013697669281,
+          "pairs": 70528
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37163,
+          "holdoutCount": 70865,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0036545671866306676,
+          "adjustedCorrelation": -0.0012048613570511222,
+          "pairs": 70864
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37195,
+          "holdoutCount": 70445,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00023861237992196357,
+          "adjustedCorrelation": -0.0038966449992153844,
+          "pairs": 70444
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37289,
+          "holdoutCount": 70823,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0023341987047409006,
+          "adjustedCorrelation": -0.0018615895288764115,
+          "pairs": 70822
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37106,
+          "holdoutCount": 70448,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0051158743971087516,
+          "adjustedCorrelation": 0.0032459061236790668,
+          "pairs": 70447
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37256,
+          "holdoutCount": 70610,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0032321632180303834,
+          "adjustedCorrelation": -0.002244216562963759,
+          "pairs": 70609
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37232,
+          "holdoutCount": 70514,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0007577383271816875,
+          "adjustedCorrelation": -0.00382400319571844,
+          "pairs": 70513
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37326,
+          "holdoutCount": 70827,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0026986044296526614,
+          "adjustedCorrelation": -0.007345110314474236,
+          "pairs": 70826
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37212,
+          "holdoutCount": 70372,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00443666991061925,
+          "adjustedCorrelation": 0.00046104907092963917,
+          "pairs": 70371
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37033,
+          "holdoutCount": 70696,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0027378519703197125,
+          "adjustedCorrelation": -0.006652739187876117,
+          "pairs": 70695
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 37436,
+          "holdoutCount": 70460,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.00021495656872322924,
+          "adjustedCorrelation": -0.0035983479807522164,
+          "pairs": 70459
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14393,
+          "holdoutCount": 29289,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.002509565193235951,
+          "adjustedCorrelation": -0.003050785010823133,
+          "pairs": 29288
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14571,
+          "holdoutCount": 29488,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004607648509623264,
+          "adjustedCorrelation": 0.0068847178164907225,
+          "pairs": 29487
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14402,
+          "holdoutCount": 29422,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.00042729442863657637,
+          "adjustedCorrelation": 0.0023698910016036424,
+          "pairs": 29421
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14479,
+          "holdoutCount": 29378,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0020278111274574344,
+          "adjustedCorrelation": 0.0011375765268202588,
+          "pairs": 29377
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14388,
+          "holdoutCount": 29145,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.006875722368550223,
+          "adjustedCorrelation": 0.007454270146914402,
+          "pairs": 29144
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14384,
+          "holdoutCount": 29314,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.01131885431204652,
+          "adjustedCorrelation": -0.011017469353154048,
+          "pairs": 29313
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14506,
+          "holdoutCount": 29428,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0015689095443481257,
+          "adjustedCorrelation": -0.0005135887871374628,
+          "pairs": 29427
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14509,
+          "holdoutCount": 29418,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0020532006636768923,
+          "adjustedCorrelation": -0.00166479402691508,
+          "pairs": 29417
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14562,
+          "holdoutCount": 29196,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.0035962701181585332,
+          "adjustedCorrelation": 0.001690043279388746,
+          "pairs": 29195
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14445,
+          "holdoutCount": 29344,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.008507517190783645,
+          "adjustedCorrelation": -0.012116892482621591,
+          "pairs": 29343
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14454,
+          "holdoutCount": 29336,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": 0.004131210379118412,
+          "adjustedCorrelation": 0.0038199465905660946,
+          "pairs": 29335
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 30,
+          "trainingCount": 14400,
+          "holdoutCount": 29202,
+          "classCount": 64,
+          "unseenFraction": 0,
+          "rawCorrelation": -0.0029956152428540733,
+          "adjustedCorrelation": -0.004270941125364318,
+          "pairs": 29201
+        }
+      ]
+    },
+    {
+      "cutoff": 97,
+      "rho": 8.31135737891573,
+      "endpoint": 2000000,
+      "wheel": 210,
+      "real": {
+        "endpoint": 2000000,
+        "wheel": 210,
+        "trainingCount": 36960,
+        "holdoutCount": 70434,
+        "classCount": 730,
+        "unseenFraction": 0.004600051111679018,
+        "rawCorrelation": -0.006501359375886506,
+        "adjustedCorrelation": -0.00812267338315374,
+        "pairs": 70433
+      },
+      "controls": {
+        "sameBFake": {
+          "count": 12,
+          "range": [
+            -0.009329440754243891,
+            0.000892374990167166
+          ],
+          "mean": -0.0035521261705083,
+          "sd": 0.0034650806194502677,
+          "min": -0.009329440754243891,
+          "max": 0.000892374990167166,
+          "z": -1.3190305550150676
+        },
+        "roughComposite": {
+          "count": 12,
+          "range": [
+            -0.017012123805650824,
+            0.005561729665198686
+          ],
+          "mean": -0.003989830547972299,
+          "sd": 0.006559029728895183,
+          "min": -0.017012123805650824,
+          "max": 0.005561729665198686,
+          "z": -0.6300997260272497
+        },
+        "realOrderShuffle": {
+          "count": 12,
+          "range": [
+            -0.004366036115521171,
+            0.0031539090592263316
+          ],
+          "mean": -0.00019865166543946332,
+          "sd": 0.00270243761051385,
+          "min": -0.004366036115521171,
+          "max": 0.0031539090592263316,
+          "z": -2.9321756353914785
+        }
+      },
+      "strictAbsZ": 0.6300997260272497,
+      "supportPass": true,
+      "fakeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37275,
+          "holdoutCount": 70562,
+          "classCount": 743,
+          "unseenFraction": 0.004166548567217482,
+          "rawCorrelation": 0.005475322799639526,
+          "adjustedCorrelation": 0.0005695088013797719,
+          "pairs": 70561
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37399,
+          "holdoutCount": 70529,
+          "classCount": 735,
+          "unseenFraction": 0.004182676629471565,
+          "rawCorrelation": -0.0010135415244343327,
+          "adjustedCorrelation": -0.006875966447755875,
+          "pairs": 70528
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37163,
+          "holdoutCount": 70865,
+          "classCount": 729,
+          "unseenFraction": 0.004487405630424045,
+          "rawCorrelation": 0.0036545671866306676,
+          "adjustedCorrelation": -0.0017241029805125571,
+          "pairs": 70864
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37195,
+          "holdoutCount": 70445,
+          "classCount": 732,
+          "unseenFraction": 0.005195542621903613,
+          "rawCorrelation": -0.00023861237992196357,
+          "adjustedCorrelation": -0.0042780795346989775,
+          "pairs": 70444
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37289,
+          "holdoutCount": 70823,
+          "classCount": 717,
+          "unseenFraction": 0.004857179164960535,
+          "rawCorrelation": 0.0023341987047409006,
+          "adjustedCorrelation": -0.003458790567509959,
+          "pairs": 70822
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37106,
+          "holdoutCount": 70448,
+          "classCount": 739,
+          "unseenFraction": 0.004201680672268907,
+          "rawCorrelation": 0.0051158743971087516,
+          "adjustedCorrelation": 0.00015592735451431478,
+          "pairs": 70447
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37256,
+          "holdoutCount": 70610,
+          "classCount": 747,
+          "unseenFraction": 0.0039229570882311285,
+          "rawCorrelation": 0.0032321632180303834,
+          "adjustedCorrelation": -0.001979396455647718,
+          "pairs": 70609
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37232,
+          "holdoutCount": 70514,
+          "classCount": 726,
+          "unseenFraction": 0.004793374365374252,
+          "rawCorrelation": 0.0007577383271816875,
+          "adjustedCorrelation": -0.0045314993635316905,
+          "pairs": 70513
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37326,
+          "holdoutCount": 70827,
+          "classCount": 725,
+          "unseenFraction": 0.004249791746085532,
+          "rawCorrelation": -0.0026986044296526614,
+          "adjustedCorrelation": -0.008994313423849225,
+          "pairs": 70826
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37212,
+          "holdoutCount": 70372,
+          "classCount": 728,
+          "unseenFraction": 0.004717785482862502,
+          "rawCorrelation": 0.00443666991061925,
+          "adjustedCorrelation": 0.000892374990167166,
+          "pairs": 70371
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37033,
+          "holdoutCount": 70696,
+          "classCount": 727,
+          "unseenFraction": 0.004583003281656671,
+          "rawCorrelation": -0.0027378519703197125,
+          "adjustedCorrelation": -0.009329440754243891,
+          "pairs": 70695
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 37436,
+          "holdoutCount": 70460,
+          "classCount": 728,
+          "unseenFraction": 0.004186772636957139,
+          "rawCorrelation": -0.00021495656872322924,
+          "adjustedCorrelation": -0.0030717356644109624,
+          "pairs": 70459
+        }
+      ],
+      "compositeRows": [
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14393,
+          "holdoutCount": 29289,
+          "classCount": 1496,
+          "unseenFraction": 0.020485506504148314,
+          "rawCorrelation": -0.002509565193235951,
+          "adjustedCorrelation": -0.008825725148313646,
+          "pairs": 29288
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14571,
+          "holdoutCount": 29488,
+          "classCount": 1475,
+          "unseenFraction": 0.021025501899077592,
+          "rawCorrelation": 0.004607648509623264,
+          "adjustedCorrelation": 0.0013162894827440585,
+          "pairs": 29487
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14402,
+          "holdoutCount": 29422,
+          "classCount": 1474,
+          "unseenFraction": 0.021446536605261367,
+          "rawCorrelation": 0.00042729442863657637,
+          "adjustedCorrelation": -0.0014036623293306454,
+          "pairs": 29421
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14479,
+          "holdoutCount": 29378,
+          "classCount": 1471,
+          "unseenFraction": 0.020287289808700388,
+          "rawCorrelation": -0.0020278111274574344,
+          "adjustedCorrelation": -0.005116019050376687,
+          "pairs": 29377
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14388,
+          "holdoutCount": 29145,
+          "classCount": 1470,
+          "unseenFraction": 0.02134156802195917,
+          "rawCorrelation": 0.006875722368550223,
+          "adjustedCorrelation": 0.005561729665198686,
+          "pairs": 29144
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14384,
+          "holdoutCount": 29314,
+          "classCount": 1490,
+          "unseenFraction": 0.02050214914375384,
+          "rawCorrelation": -0.01131885431204652,
+          "adjustedCorrelation": -0.012092488454860169,
+          "pairs": 29313
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14506,
+          "holdoutCount": 29428,
+          "classCount": 1483,
+          "unseenFraction": 0.019709120565447873,
+          "rawCorrelation": -0.0015689095443481257,
+          "adjustedCorrelation": -0.0029399208585605134,
+          "pairs": 29427
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14509,
+          "holdoutCount": 29418,
+          "classCount": 1477,
+          "unseenFraction": 0.020531647290774356,
+          "rawCorrelation": -0.0020532006636768923,
+          "adjustedCorrelation": -0.0014375992137354082,
+          "pairs": 29417
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14562,
+          "holdoutCount": 29196,
+          "classCount": 1468,
+          "unseenFraction": 0.02305110289080696,
+          "rawCorrelation": 0.0035962701181585332,
+          "adjustedCorrelation": -0.0019594689832422027,
+          "pairs": 29195
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14445,
+          "holdoutCount": 29344,
+          "classCount": 1477,
+          "unseenFraction": 0.021128680479825517,
+          "rawCorrelation": -0.008507517190783645,
+          "adjustedCorrelation": -0.017012123805650824,
+          "pairs": 29343
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14454,
+          "holdoutCount": 29336,
+          "classCount": 1468,
+          "unseenFraction": 0.022600218161985274,
+          "rawCorrelation": 0.004131210379118412,
+          "adjustedCorrelation": 0.003824357131561413,
+          "pairs": 29335
+        },
+        {
+          "endpoint": 2000000,
+          "wheel": 210,
+          "trainingCount": 14400,
+          "holdoutCount": 29202,
+          "classCount": 1491,
+          "unseenFraction": 0.0204780494486679,
+          "rawCorrelation": -0.0029956152428540733,
+          "adjustedCorrelation": -0.007793335011101662,
+          "pairs": 29201
+        }
+      ]
+    }
+  ],
+  "leadGate": {
+    "allFinalPass": false,
+    "signStable": true,
+    "passed": false
+  },
+  "paths": {
+    "json": "logs/gap-transition-copula/gap-transition-copula-pilot.json",
+    "md": "logs/gap-transition-copula/gap-transition-copula-pilot.md",
+    "svg": "logs/gap-transition-copula/gap-transition-copula-pilot.svg"
+  }
+}

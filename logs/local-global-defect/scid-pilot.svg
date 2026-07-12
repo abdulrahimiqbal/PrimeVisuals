@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="68" y="38" fill="#f8fafc" font-size="21" font-weight="700">SCID calibration pilot — final-scale shape A</text>
+<text x="68" y="63" fill="#94a3b8" font-size="13">real interaction defect versus local-information depth; amber bars show listed control envelope</text>
+<rect x="88" y="86" width="820" height="500" fill="#0b1627" stroke="#334155"/>
+<line x1="88" x2="908" y1="586" y2="586" stroke="#64748b"/>
+<text x="498" y="634" text-anchor="middle" fill="#cbd5e1" font-size="14">local information depth tau</text>
+<text transform="translate(28 336) rotate(-90)" text-anchor="middle" fill="#cbd5e1" font-size="14">relative total correlation (SCID)</text>
+<polyline points="379.94,NaN 503.54,NaN 573.88,NaN 674.73,NaN 767.59,NaN" fill="none" stroke="#f8fafc" stroke-width="3"/>
+<line x1="379.9384806833553" x2="379.9384806833553" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="379.9384806833553" cy="NaN" r="5" fill="#f8fafc"/>
+<line x1="503.5423145805556" x2="503.5423145805556" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="503.5423145805556" cy="NaN" r="5" fill="#f8fafc"/>
+<line x1="573.881634939997" x2="573.881634939997" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="573.881634939997" cy="NaN" r="5" fill="#f8fafc"/>
+<line x1="674.7252393615715" x2="674.7252393615715" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="674.7252393615715" cy="NaN" r="5" fill="#f8fafc"/>
+<line x1="767.5868801123898" x2="767.5868801123898" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="767.5868801123898" cy="NaN" r="5" fill="#f8fafc"/>
+<polyline points="394.19,NaN 700.38,NaN 908.00,NaN" fill="none" stroke="#a78bfa" stroke-width="3"/>
+<line x1="394.1904344071416" x2="394.1904344071416" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="394.1904344071416" cy="NaN" r="5" fill="#a78bfa"/>
+<line x1="700.3808688142832" x2="700.3808688142832" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="700.3808688142832" cy="NaN" r="5" fill="#a78bfa"/>
+<line x1="908" x2="908" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="908" cy="NaN" r="5" fill="#a78bfa"/>
+<polyline points="356.66,NaN 625.33,NaN 833.09,NaN" fill="none" stroke="#60a5fa" stroke-width="3"/>
+<line x1="356.66488331154807" x2="356.66488331154807" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="356.66488331154807" cy="NaN" r="5" fill="#60a5fa"/>
+<line x1="625.3297666230961" x2="625.3297666230961" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="625.3297666230961" cy="NaN" r="5" fill="#60a5fa"/>
+<line x1="833.0943743236347" x2="833.0943743236347" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="833.0943743236347" cy="NaN" r="5" fill="#60a5fa"/>
+<polyline points="334.43,NaN 617.23,NaN 827.38,NaN" fill="none" stroke="#34d399" stroke-width="3"/>
+<line x1="334.42825805356244" x2="334.42825805356244" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="334.42825805356244" cy="NaN" r="5" fill="#34d399"/>
+<line x1="617.2269907470774" x2="617.2269907470774" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="617.2269907470774" cy="NaN" r="5" fill="#34d399"/>
+<line x1="827.3795349938637" x2="827.3795349938637" y1="NaN" y2="NaN" stroke="#f59e0b" stroke-width="5" opacity="0.45"/><circle cx="827.3795349938637" cy="NaN" r="5" fill="#34d399"/>
+<circle cx="970" cy="130" r="6" fill="#f8fafc"/><text x="988" y="135" fill="#dbeafe" font-size="14">Z</text>
+<circle cx="970" cy="164" r="6" fill="#a78bfa"/><text x="988" y="169" fill="#dbeafe" font-size="14">F_2[t]</text>
+<circle cx="970" cy="198" r="6" fill="#60a5fa"/><text x="988" y="203" fill="#dbeafe" font-size="14">F_3[t]</text>
+<circle cx="970" cy="232" r="6" fill="#34d399"/><text x="988" y="237" fill="#dbeafe" font-size="14">F_5[t]</text>
+<text x="950" y="94" fill="#f8fafc" font-size="14" font-weight="700">universe</text>
+</svg>
