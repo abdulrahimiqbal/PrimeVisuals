@@ -5798,3 +5798,59 @@ an explicit rational `k=49` certificate with independently checked
 
 STATUS: `NO BREAKTHROUGH / 0 LIVE MECHANISMS FROM THE THREE-FRONTIER PORTFOLIO /
 M49 TARGET OPEN / INACTIVE-CHAMBER ROUTE KILLED AS PRIVILEGED LEAD`.
+
+## 2026-07-12 · FIELD-BREAKTHROUGH CAMPAIGN — twelve rounds, no Class A/B/C/D result
+
+Source: `logs/2026-07-12-field-breakthrough/`, including the approach registry,
+full derivations, primary-literature audit, hostile audits, dependency graph,
+exact Maynard proof of concept, and terminal verdict.
+
+Twelve theorem-first routes were frozen and adjudicated after a clean baseline
+of 306 tests. No proof or disproof of RH, material new unconditional prime/zero
+theorem, information-creating RH equivalent, or broad field-level no-go theorem
+survived.
+
+Rigorous calibration lemmas established during the campaign:
+
+1. an explicit real even order-one canonical product has completed-zeta
+   symmetry, Riemann--von Mangoldt leading zero count, and exactly one off-line
+   quartet, so symmetry/order/leading density alone do not amplify a bad zero;
+2. Blaschke inner factors show boundary-modulus `L^2` data can carry arbitrary
+   finite interior zeros;
+3. nested Nyman--Beurling projections converge strongly automatically, while
+   an explicit compact residual example retains a positive floor with
+   `1/(N log^2 N)` innovations;
+4. the semilocal Sonin range-projection and positive Hilbert--Schmidt trace
+   formulas extend to every finite prime set, with final-projection path
+   independence; Kronecker density shows divergence of the raw Euler-multiplier
+   condition number, obstructing only scalar-normalized uniform metric
+   equivalence, not general global closure;
+5. an exact prime-divisor identity freezes the actual shifted Möbius bilinear
+   coefficients, but corrected dispersion reduces them to averaged growing-
+   slope affine Chowla plus separate parity-sensitive endpoints;
+6. the Maynard gate can be tested directly by exact inertia of `A-tau I`; a
+   reproducible dimension-14 rational `LDL^T` check brackets the degree-5
+   optimum but does not reach degree 27.
+
+All six are elementary, standard, or direct consequences/applications of
+published frameworks. They are useful repository lemmas and death
+certificates, not field-level novelty.
+
+Strongest surviving consequence-changing target:
+an exact rational certificate `M_(49,epsilon)>4`, which would imply the
+unconditional bounded-gap improvement `H_1<=240`. The minimal mathematical
+lemma is one rational vector with `D>0` and `N-4D>0`; stable reproduction of
+the published `M_(50,1/25)>4.0043` value remains the mandatory proposal-layer
+calibration gate but is not logically part of the implication. The new
+threshold-inertia strategy passes only degree 5 and does not defeat the prior
+death certificate.
+
+STATUS: `NO QUALIFYING BREAKTHROUGH / 12 ROUNDS COMPLETE / STANDARD RIGOROUS
+CALIBRATIONS RETAINED / M49 EXACT TARGET OPEN / NO PRIVILEGED LIVE MECHANISM`.
+
+CONNECTION:
+this campaign closes the analytic portfolio gap identified by the prior Atlas
+audit while confirming the same general lesson as the earlier operator,
+function-field, and empirical campaigns: finite or coordinate-level structure
+is valuable only when a separately proved mechanism crosses the exact
+infinite, parity, individualization, or certificate gate.
